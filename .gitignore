@@ -1,0 +1,95 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Capacitor generated platform folders
+ios/App/App/public/
+ios/App/Pods/
+ios/App/build/
+ios/DerivedData/
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/captures/
+android/.idea/
+
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.gradle/
+local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Secrets — never commit
+.env
+.env.local
+.env.production
+*.pem
+*.key
+*.p8
+*.p12
+*.mobileprovision
+AuthKey*.p8
+GoogleService-Info.plist
+google-services.json
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+.history/
+
+# Python build helpers
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# Misc
+*.log
+.tmp/
+tmp/
+coverage/
+.nyc_output/

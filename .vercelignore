@@ -1,0 +1,19 @@
+# Files in this list are not uploaded to Vercel.
+# Keeps the deployment focused on the web app + marketing site.
+
+# Capacitor / mobile build files — only used locally on Mac
+mobile_setup/
+setup_mobile.sh
+
+# Documents — not needed at runtime
+docs/
+LAUNCH_PLAN.md
+WHAT_TO_DO_NEXT.md
+CLAUDE_CODE_TASK.md
+LICENSE
+README.md
+
+# Dev artifacts
+.DS_Store
+*.bak
+node_modules/

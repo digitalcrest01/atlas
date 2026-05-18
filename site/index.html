@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+<title>Myatlastic — Explore Every Country</title>
+<meta name="description" content="An interactive world geography app for kids and Gen Z. Discover all 195 countries — capitals, currencies, languages, cultures, history. Available on iOS and Android.">
+<meta property="og:title" content="Myatlastic — Explore Every Country">
+<meta property="og:description" content="An interactive geography app for kids and Gen Z. Discover all 195 countries.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23d4a056'/%3E%3Cpath d='M50 5 A45 45 0 0 1 50 95 M5 50 L95 50 M50 5 A30 45 0 0 0 50 95 A30 45 0 0 0 50 5' stroke='%230b0e13' stroke-width='3' fill='none'/%3E%3C/svg%3E" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0e13;
+    --bg-2: #11151c;
+    --ink: #e8e4d8;
+    --ink-dim: #8a8676;
+    --line: #232a36;
+    --accent: #d4a056;
+    --accent-2: #6ea8c4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Fraunces', Georgia, serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-weight: 800; font-size: 24px; letter-spacing: -0.01em; display: flex; align-items: center; gap: 8px; }
+  .logo-mark { width: 24px; height: 24px; flex-shrink: 0; }
+  .logo-mark .star { fill: var(--accent); }
+  .logo-mark .inner { fill: var(--bg); }
+  .logo-mark .ring { stroke: var(--accent); fill: none; stroke-width: 1; opacity: 0.3; }
+  nav .links a { color: var(--ink-dim); margin-left: 24px; font-size: 14px; }
+  nav .links a:hover { color: var(--ink); }
+
+  .hero {
+    padding: 100px 0 80px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    max-width: 760px;
+    margin-left: auto; margin-right: auto;
+  }
+  .hero h1 .accent { color: var(--accent); }
+  .hero p.lede {
+    font-size: 20px;
+    color: var(--ink-dim);
+    max-width: 600px;
+    margin: 0 auto 36px;
+    line-height: 1.5;
+  }
+  .cta-row {
+    display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  }
+  .btn {
+    background: var(--accent); color: var(--bg);
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.1s;
+  }
+  .btn:hover { transform: translateY(-2px); text-decoration: none; }
+  .btn.outline {
+    background: transparent; color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .btn.outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  .features {
+    padding: 80px 0;
+    border-top: 1px solid var(--line);
+  }
+  .features h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: -0.01em;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .feature {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 28px;
+  }
+  .feature .icon {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .feature h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .feature p {
+    color: var(--ink-dim);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .pricing {
+    padding: 80px 0;
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  .pricing h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .pricing p.sub {
+    color: var(--ink-dim);
+    margin-bottom: 40px;
+  }
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .plan {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 32px 24px;
+    position: relative;
+  }
+  .plan.featured {
+    border-color: var(--accent);
+    transform: scale(1.04);
+  }
+  .plan.featured::before {
+    content: 'BEST VALUE';
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: var(--bg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    letter-spacing: 0.15em;
+  }
+  .plan h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink-dim);
+    margin-bottom: 12px;
+  }
+  .plan .price {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .plan .price-detail { color: var(--ink-dim); font-size: 13px; margin-bottom: 20px; }
+  .plan ul { list-style: none; text-align: left; margin: 20px 0; }
+  .plan ul li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .plan ul li::before {
+    content: '✓';
+    color: var(--accent);
+    margin-right: 10px;
+    font-weight: 700;
+  }
+
+  .schools {
+    padding: 80px 0;
+    border-top: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(110,168,196,0.04), rgba(212,160,86,0.04));
+  }
+  .schools-inner {
+    max-width: 720px; margin: 0 auto; text-align: center;
+  }
+  .schools h2 { font-size: 32px; margin-bottom: 16px; letter-spacing: -0.01em; }
+  .schools p { color: var(--ink-dim); margin-bottom: 24px; }
+  .school-form {
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: left;
+  }
+  .school-form label {
+    display: block; font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--ink-dim);
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin: 14px 0 6px;
+  }
+  .school-form input, .school-form textarea {
+    width: 100%; background: var(--bg);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 11px 14px;
+    font-family: inherit;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .school-form textarea { resize: vertical; min-height: 90px; font-family: inherit; }
+  .school-form .form-actions { margin-top: 20px; text-align: center; }
+
+  footer {
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-dim);
+    font-size: 13px;
+  }
+  footer .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px; margin-bottom: 40px;
+  }
+  footer h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  footer ul { list-style: none; }
+  footer ul li { padding: 4px 0; }
+  footer ul li a { color: var(--ink-dim); }
+  footer ul li a:hover { color: var(--accent); }
+  .footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 12px;
+  }
+
+  @media (max-width: 900px) {
+    .hero h1 { font-size: 44px; }
+    .hero p.lede { font-size: 17px; }
+    .feature-grid { grid-template-columns: 1fr; }
+    .plan-grid { grid-template-columns: 1fr; }
+    .plan.featured { transform: none; }
+    footer .footer-grid { grid-template-columns: 1fr 1fr; }
+    nav .links a { margin-left: 12px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg>Myatlastic</div>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#schools">Schools</a>
+      <a href="app/">Try the app</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Explore every country.<br><span class="accent">All 195 of them.</span></h1>
+    <p class="lede">An interactive world geography app for kids and Gen Z. A photorealistic 3D globe, daily challenges, side-by-side comparisons. Coming to iOS and Android.</p>
+    <div class="cta-row">
+      <a href="app/" class="btn">Try the web app</a>
+      <a href="#pricing" class="btn outline">See pricing</a>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <h2>What's inside</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="icon">🌍</div>
+        <h3>Photorealistic globe</h3>
+        <p>Spin and zoom a real 3D Earth with NASA Blue Marble imagery. Hover any country to see its flag. Click for the full story.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎯</div>
+        <h3>Daily challenge</h3>
+        <p>One new country every day. Build a streak. Learn capitals, cultures, history without realising you're studying.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">⚔️</div>
+        <h3>Quiz battles</h3>
+        <p>Four question types: flag-to-country, country-to-capital, capital-to-country, and culture-hint. Get faster, get sharper.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">↔️</div>
+        <h3>Compare side-by-side</h3>
+        <p>Pick two countries. See their religions, currencies, cultures, notable figures next to each other. Great for school projects.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">👨‍👩‍👧</div>
+        <h3>Built for ages 7+</h3>
+        <p>Kids mode for ages 7-12 — brighter UI, larger text. Teen+ mode for ages 13+ with full content depth.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔒</div>
+        <h3>Privacy-first</h3>
+        <p>No tracking, no ads, no data sold. COPPA and GDPR-K compliant. Your kids' data stays on the device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <h2>Simple, fair pricing</h2>
+    <p class="sub">Try 10 countries free. Upgrade once and use forever.</p>
+    <div class="plan-grid">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <div class="price-detail">forever</div>
+        <ul>
+          <li>10 free countries</li>
+          <li>3 quizzes per day</li>
+          <li>One daily challenge</li>
+          <li>Basic facts only</li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <h3>Pro Annual</h3>
+        <div class="price">$24.99</div>
+        <div class="price-detail">/year · save 48%</div>
+        <ul>
+          <li>All 195 countries</li>
+          <li>Landmark images</li>
+          <li>Full history, culture, religion, figures</li>
+          <li>Unlimited quizzes</li>
+          <li>Compare mode</li>
+          <li>Full daily challenge with streaks</li>
+          <li>Offline mode on mobile</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Pro Monthly</h3>
+        <div class="price">$3.99</div>
+        <div class="price-detail">/month · cancel anytime</div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>No annual commitment</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top: 40px; color: var(--ink-dim); font-size: 13px;">
+      Family plan: <strong style="color:var(--ink);">$39.99/year</strong> for up to 6 profiles.<br>
+      Schools: see below.
+    </p>
+  </div>
+</section>
+
+<section class="schools" id="schools">
+  <div class="wrap schools-inner">
+    <h2>Myatlastic for schools</h2>
+    <p>Classroom licence at $199/year. Teacher dashboard with student progress, content aligned to US Common Core and UK National Curriculum. Term-long free trial.</p>
+    <form class="school-form" id="schoolForm" onsubmit="return submitSchoolForm(event)">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="role">Your role</label>
+      <input type="text" id="role" name="role" placeholder="Teacher, head of geography, IT lead..." required>
+
+      <label for="school">School name</label>
+      <input type="text" id="school" name="school" required>
+
+      <label for="email">Work email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="students">Roughly how many students?</label>
+      <input type="text" id="students" name="students" placeholder="e.g. 200">
+
+      <label for="notes">Anything we should know?</label>
+      <textarea id="notes" name="notes" placeholder="What's your curriculum, when's your term starting, anything else..."></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Request a trial</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:12px;"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg>Myatlastic</div>
+        <p style="color: var(--ink-dim); font-size: 13px; line-height: 1.6;">An interactive geography app for kids and Gen Z. Explore every country, one tap at a time.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="app/">Try the web app</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Schools</h4>
+        <ul>
+          <li><a href="#schools">Request trial</a></li>
+          <li><a href="mailto:schools@myatlastic.com">schools@myatlastic.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+          <li><a href="mailto:support@myatlastic.com">support@myatlastic.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Myatlastic. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  function submitSchoolForm(e) {
+    e.preventDefault();
+    // In production this would POST to a serverless function (Vercel, Netlify, Cloudflare Workers)
+    // or to a mailto: with form data.
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const subject = `Myatlastic school trial: ${data.school}`;
+    const body = `Name: ${data.name}%0D%0ARole: ${data.role}%0D%0ASchool: ${data.school}%0D%0AEmail: ${data.email}%0D%0AStudents: ${data.students}%0D%0ANotes: ${data.notes}`;
+    window.location.href = `mailto:schools@myatlastic.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    return false;
+  }
+</script>
+
+</body>
+</html>
