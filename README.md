@@ -21,9 +21,14 @@ myatlastic/
 │   ├── capacitor.config.json
 │   ├── package.json
 │   └── README.md              Build instructions
+├── docs/
+│   ├── BUSINESS_PLAN.md       11 sections, USD
+│   └── financial_model.xlsx   1,429 formulas, Bear/Base/Bull scenarios
 ├── assets/                    Reserved for icons, screenshots, store listings
 ├── vercel.json                Hosting config (handles routing + headers)
 ├── setup_mobile.sh            One-command iOS/Android setup
+├── LAUNCH_PLAN.md             14-day day-by-day plan
+├── WHAT_TO_DO_NEXT.md         Concise next-steps guide
 ├── LICENSE                    Proprietary, all rights reserved
 ├── README.md                  This file
 └── .gitignore
@@ -98,6 +103,9 @@ Tight-free model: 10 countries fully unlocked, hard paywall on the other 187.
 | Family Annual | $39.99/yr — 6 profiles |
 | School Classroom | $199/yr |
 
+See `docs/BUSINESS_PLAN.md` §1 for pricing rationale and §8 for the strategy risk analysis. The financial model on the `Cover` sheet has a Bear/Base/Bull selector that recalculates the full forecast.
+
+**Honest finding from the model**: Base scenario does NOT reach cash-positive in 36 months. Minimum funding need: $150k. Recommended raise: $200k. Document this clearly before fundraising.
 
 ## App Store + Play Store path
 
@@ -120,6 +128,7 @@ Before App Store submission, you need:
 5. Privacy manifest (`PrivacyInfo.xcprivacy`) — required since May 2024
 6. Globe texture bundled locally instead of from CDN (eliminate first-launch network dependency)
 
+See `LAUNCH_PLAN.md` for a 14-day day-by-day plan.
 
 ## Status
 
@@ -127,6 +136,8 @@ Before App Store submission, you need:
 |---|---|
 | Web app | Done — voice, expanded facts, all 197 countries, paywall, mobile-responsive |
 | Marketing site | Done — landing + privacy + terms |
+| Financial model | Done — 1,429 formulas, no errors |
+| Business plan | Done |
 | Vercel deploy config | Ready |
 | Domain | `myatlastic.com` owned |
 | Trademark | Searched USPTO/EU/UK — clean |
@@ -142,6 +153,7 @@ Before App Store submission, you need:
 - **Wikimedia landmark image URLs are unverified at scale.** ~30-50 of 195 may 404. An `onerror` handler degrades gracefully. Pre-launch task: HEAD-check all 195.
 - **Paywall is a UI simulation.** Clicking Upgrade sets `localStorage.myatlastic_pro = '1'`. Production needs RevenueCat (recommended) or native StoreKit + Play Billing + verification backend.
 - **No analytics.** Deliberate privacy choice. No funnel data. If needed post-launch, add Plausible (self-hosted). Do not add Google Analytics or Mixpanel.
+- **Tight-free monetisation is aggressive.** Base scenario doesn't cash-positive in 36 months. Re-read `BUSINESS_PLAN.md` §8 before raising.
 - **Voice pronunciation depends on the browser's installed voices.** Older Android devices may have lower-quality TTS. About 60 countries get locale-specific voices; the rest fall back to English.
 
 ## Licence

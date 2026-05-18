@@ -18,6 +18,7 @@ ios/App/Pods/
 ios/App/build/
 ios/DerivedData/
 android/app/build/
+android/app/src/main/assets/public/
 android/build/
 android/.gradle/
 android/local.properties
