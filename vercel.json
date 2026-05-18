@@ -6,23 +6,28 @@
     {
       "source": "/web/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=300, must-revalidate"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/", "destination": "/site/index.html" },
-    { "source": "/app", "destination": "/web/index.html" },
-    { "source": "/app/", "destination": "/web/index.html" },
-    { "source": "/privacy", "destination": "/site/privacy.html" },
-    { "source": "/terms", "destination": "/site/terms.html" }
   ]
 }
