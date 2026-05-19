@@ -792,6 +792,45 @@
     cursor: pointer;
   }
   .compare-swap:hover { color: var(--accent); border-color: var(--accent); }
+  .compare-landmark {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--panel-2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 12px 0 16px;
+    border: 1px solid var(--line);
+  }
+  .compare-landmark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .compare-landmark .landmark-fallback {
+    display: none;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--ink-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+    gap: 6px;
+  }
+  .compare-landmark .lm-hint {
+    color: var(--accent);
+    font-size: 14px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+  }
+  .compare-landmark.landmark-missing .landmark-fallback {
+    display: flex;
+  }
 
   /* Paywall */
   .paywall-card { text-align: center; max-width: 520px; }
@@ -800,13 +839,158 @@
   .feature-list { text-align: left; margin: 20px 0; font-size: 13px; }
   .feature-list li { list-style: none; padding: 6px 0; }
   .feature-list li::before { content: '✓'; color: var(--success); margin-right: 10px; font-weight: 700; }
+
+  /* Payment sheet — mimics native StoreKit / Play Billing / Stripe checkout */
+  .pay-sheet-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1000;
+    padding: 16px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .pay-sheet {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 420px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    color: var(--ink);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  .pay-preview-badge {
+    display: inline-block;
+    background: rgba(212, 160, 86, 0.15);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .pay-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .pay-app-icon { flex-shrink: 0; }
+  .pay-app-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--ink);
+  }
+  .pay-app-detail { font-size: 12px; color: var(--ink-dim); margin-top: 2px; }
+  .pay-summary { margin-bottom: 20px; }
+  .pay-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+    color: var(--ink-dim);
+  }
+  .pay-row-total {
+    border-top: 1px solid var(--line);
+    margin-top: 6px;
+    padding-top: 12px;
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .pay-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .pay-btn {
+    width: 100%;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: opacity 0.15s, transform 0.05s;
+  }
+  .pay-btn:active { transform: scale(0.98); }
+  .pay-btn:hover { opacity: 0.9; }
+  .pay-apple { background: #000; color: #fff; border: 1px solid #fff; }
+  .pay-google { background: #4285f4; color: #fff; }
+  .pay-applepay { background: #000; color: #fff; font-weight: 700; }
+  .pay-gpay { background: #fff; color: #5f6368; font-weight: 700; border: 1px solid #dadce0; }
+  .pay-card {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .pay-note {
+    font-size: 11px;
+    color: var(--ink-dim);
+    text-align: center;
+    margin: 8px 0;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .pay-cancel {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--ink-dim);
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 4px;
+    font-family: inherit;
+  }
+  .pay-cancel:hover { color: var(--ink); }
+  .pay-legal {
+    font-size: 10px;
+    color: var(--ink-dim);
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .pay-legal a { color: var(--accent); text-decoration: none; }
+  .pay-sheet.pay-success {
+    text-align: center;
+  }
+  .pay-check {
+    font-size: 60px;
+    color: var(--success);
+    margin: 10px 0 16px;
+    line-height: 1;
+  }
+  .pay-success h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    color: var(--accent);
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .pay-success p {
+    color: var(--ink-dim);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
   .plan-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
     margin: 24px 0;
   }
-  @media (max-width: 500px) { .plan-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) { .plan-grid { grid-template-columns: 1fr; } }
   .plan {
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -1271,18 +1455,60 @@ if (speech.available) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
 }
 
+// Female voice name hints — typically female names across iOS/Android/desktop voice catalogs
+const FEMALE_VOICE_HINTS = [
+  'samantha', 'karen', 'allison', 'ava', 'susan', 'victoria', 'moira', 'tessa',
+  'fiona', 'serena', 'zoe', 'kate', 'lisa', 'linda', 'monica', 'paulina',
+  'amelie', 'celine', 'audrey', 'thomas', 'marie', 'anna', 'helena', 'sara',
+  'milena', 'alice', 'mariska', 'kanya', 'kyoko', 'yuna', 'female', 'woman',
+  'google uk english female', 'google us english',  // Google's default is female
+  'microsoft zira', 'microsoft hazel', 'microsoft eva',
+];
+
+// Quality markers — these names/flags indicate higher-quality neural voices
+const QUALITY_MARKERS = [
+  'enhanced', 'premium', 'neural', 'wavenet', 'network', 'natural',
+];
+
+function voiceQualityScore(voice) {
+  // Higher score = better voice
+  let score = 0;
+  const name = voice.name.toLowerCase();
+
+  // Quality markers
+  for (const marker of QUALITY_MARKERS) {
+    if (name.includes(marker)) score += 100;
+  }
+
+  // Female preference
+  for (const hint of FEMALE_VOICE_HINTS) {
+    if (name.includes(hint)) { score += 50; break; }
+  }
+
+  // Cloud voices (localService=false) tend to be higher quality than local
+  if (voice.localService === false) score += 30;
+
+  // Default voice gets a small boost (browser picked it for a reason)
+  if (voice.default) score += 10;
+
+  return score;
+}
+
 function findVoice(locale) {
   if (!speech.voices.length) return null;
-  // Exact match first (e.g. ja-JP)
-  let v = speech.voices.find(x => x.lang === locale);
-  if (v) return v;
-  // Language prefix match (e.g. ja-* if ja-JP unavailable)
+
+  // Build candidate pool by locale match priority
+  const exact = speech.voices.filter(v => v.lang === locale);
   const prefix = locale.split('-')[0];
-  v = speech.voices.find(x => x.lang.startsWith(prefix + '-') || x.lang === prefix);
-  if (v) return v;
-  // Fall back to English
-  v = speech.voices.find(x => x.lang === 'en-US' || x.lang === 'en-GB' || x.lang.startsWith('en-'));
-  return v || speech.voices[0] || null;
+  const samePrefix = speech.voices.filter(v => v.lang.startsWith(prefix + '-') || v.lang === prefix);
+  const english = speech.voices.filter(v => v.lang.startsWith('en'));
+
+  // Pick best from highest-priority pool that has matches
+  const pool = exact.length ? exact : samePrefix.length ? samePrefix : english.length ? english : speech.voices;
+
+  // Sort by quality score descending
+  const sorted = [...pool].sort((a, b) => voiceQualityScore(b) - voiceQualityScore(a));
+  return sorted[0] || null;
 }
 
 function speakCountry(country) {
@@ -1294,13 +1520,20 @@ function speakCountry(country) {
     return;
   }
   const locale = SPEECH_LOCALE[country.n] || 'en-US';
-  const text = country.n + '. Capital: ' + country.cap + '.';
+  // Simpler text — just the country name. Pronunciation guide is shown visually next to the button.
+  const text = country.n;
   const utt = new SpeechSynthesisUtterance(text);
   utt.lang = locale;
   const voice = findVoice(locale);
   if (voice) utt.voice = voice;
-  utt.rate = 0.9;  // slightly slower for clarity
-  utt.pitch = 1.0;
+  utt.rate = 1.0;     // natural speed — 0.9 sounded clipped
+  utt.pitch = 1.05;   // slightly higher for female warmth
+  utt.volume = 1.0;
+  // If debug HUD is on, log which voice we picked so we can diagnose squirky-sounding voices
+  if (document.getElementById('debug-hud')) {
+    console.log('[Voice]', country.n, '→ locale:', locale, '· voice:',
+      voice ? (voice.name + ' (' + voice.lang + ', q=' + voiceQualityScore(voice) + ')') : 'browser default');
+  }
   // Visual feedback: pulse the buttons for this country
   const buttons = Array.from(document.querySelectorAll('.speak-btn')).filter(b =>
     b.getAttribute('onclick') && b.getAttribute('onclick').indexOf(JSON.stringify(country.n)) !== -1
@@ -1770,7 +2003,11 @@ function renderCompareCol(c, label) {
     (speech.available ? '<button class="speak-btn" onclick="window.__myatlasticSpeak(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>' : '') +
     '</div>';
   if (imgUrl) {
-    html += '<div class="detail-image" style="margin:12px 0"><img src="' + imgUrl + '" alt="" loading="lazy" onerror="this.parentElement.style.display=\'none\'"></div>';
+    html += '<div class="compare-landmark">' +
+      '<img src="' + imgUrl + '" alt="' + escapeHtml(c.n) + ' landmark" loading="eager" ' +
+        'onerror="this.parentElement.classList.add(\'landmark-missing\');this.style.display=\'none\';" />' +
+      '<div class="landmark-fallback">📷 Landmark image unavailable<br><span class="lm-hint">' + escapeHtml(c.n) + '</span></div>' +
+      '</div>';
   }
   html += '<div class="fact-grid">';
   html += '<div class="fact-label">Capital</div><div class="fact-value">' + escapeHtml(c.cap) + '</div>';
@@ -1885,12 +2122,13 @@ function renderPaywall() {
     '<li>Full Daily Challenge with streak history</li>' +
     '</ul>' +
     '<div class="plan-grid">' +
-    '<div class="plan" data-plan="monthly"><div class="plan-name">Monthly</div><div class="plan-price">$3.99</div><div class="plan-detail">/month · cancel anytime</div></div>' +
-    '<div class="plan recommended selected" data-plan="annual"><div class="plan-name">Annual</div><div class="plan-price">$24.99</div><div class="plan-detail">/year · save 48%</div></div>' +
+    '<div class="plan" data-plan="monthly"><div class="plan-name">Monthly</div><div class="plan-price">$7.99</div><div class="plan-detail">/month · cancel anytime</div></div>' +
+    '<div class="plan recommended selected" data-plan="annual"><div class="plan-name">Annual</div><div class="plan-price">$29.99</div><div class="plan-detail">/year · save 69%</div></div>' +
+    '<div class="plan" data-plan="family"><div class="plan-name">Family</div><div class="plan-price">$49.99</div><div class="plan-detail">/year · up to 6 profiles</div></div>' +
     '</div>' +
     '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:13px">Upgrade to Pro</button>' +
     '<div class="restore-link" id="restore-link">Already subscribed? Restore purchase</div>' +
-    '<div class="legal-note">Demo build: clicking Upgrade simulates a successful purchase locally.<br>Production: payment handled by Apple App Store / Google Play / Stripe.<br><br>Questions? <a href="mailto:support@myatlastic.com" style="color:var(--accent)">support@myatlastic.com</a></div>' +
+    '<div class="legal-note">Subscriptions auto-renew until cancelled. Manage via your Apple ID or Google account.<br><br>Questions? <a href="mailto:support@myatlastic.com" style="color:var(--accent)">support@myatlastic.com</a></div>' +
     '</div>';
 
   const card = root.querySelector('.paywall-card');
@@ -1902,21 +2140,145 @@ function renderPaywall() {
     };
   });
   $('upgrade-btn').onclick = () => {
-    try { localStorage.setItem('myatlastic_pro', '1'); } catch (e) {}
-    state.isPro = true;
-    updateProBadge();
-    alert('✓ Demo unlock simulated. In production: ' + (selectedPlan === 'annual' ? '$24.99/year' : '$3.99/month') + ' via App Store / Play Store.');
-    setMode('explore');
-    renderList();
+    openPaymentSheet(selectedPlan);
   };
   $('restore-link').onclick = () => {
+    openRestoreSheet();
+  };
+}
+
+/* ============================================================
+ * PAYMENT SHEET — mimics native StoreKit / Play Billing / web checkout
+ * Real payment processing will be wired up in Day 4 via RevenueCat.
+ * Until then this UI shows what the real flow looks like, with a clear
+ * "preview" indicator and no actual charge.
+ * ============================================================ */
+function detectPlatform() {
+  const ua = navigator.userAgent || '';
+  const isIOS = /iPhone|iPad|iPod/i.test(ua) || (ua.includes('Mac') && navigator.maxTouchPoints > 1);
+  const isAndroid = /Android/i.test(ua);
+  if (isIOS) return 'ios';
+  if (isAndroid) return 'android';
+  return 'web';
+}
+
+function openPaymentSheet(plan) {
+  const platform = detectPlatform();
+  const plans = {
+    monthly: { name: 'Monthly', price: '$7.99', cycle: 'per month', total: '$7.99 today' },
+    annual:  { name: 'Annual',  price: '$29.99', cycle: 'per year',  total: '$29.99 today' },
+    family:  { name: 'Family',  price: '$49.99', cycle: 'per year (up to 6 profiles)', total: '$49.99 today' },
+  };
+  const p = plans[plan] || plans.annual;
+
+  // Platform-appropriate buttons
+  let primaryBtn, secondaryBtn;
+  if (platform === 'ios') {
+    primaryBtn = '<button class="pay-btn pay-apple" id="pay-confirm">Pay with Apple ID</button>';
+    secondaryBtn = '<div class="pay-note">Charged to your Apple ID — Face ID / Touch ID required</div>';
+  } else if (platform === 'android') {
+    primaryBtn = '<button class="pay-btn pay-google" id="pay-confirm">Pay with Google Play</button>';
+    secondaryBtn = '<div class="pay-note">Charged to your Google account payment method</div>';
+  } else {
+    primaryBtn =
+      '<button class="pay-btn pay-applepay" id="pay-confirm-apple">  Pay</button>' +
+      '<button class="pay-btn pay-gpay" id="pay-confirm-google">G Pay</button>' +
+      '<button class="pay-btn pay-card" id="pay-confirm-card">Credit or debit card</button>';
+    secondaryBtn = '<div class="pay-note">Secure checkout — your card details never touch our servers</div>';
+  }
+
+  const sheet = document.createElement('div');
+  sheet.className = 'pay-sheet-overlay';
+  sheet.innerHTML =
+    '<div class="pay-sheet">' +
+      '<div class="pay-preview-badge">Preview · payment integration pending</div>' +
+      '<div class="pay-header">' +
+        '<div class="pay-app-icon">' +
+          '<svg width="42" height="42" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg">' +
+            '<circle r="22" fill="#0b0e13" stroke="#d4a056" stroke-width="1"/>' +
+            '<path d="M0 -18 L4 -4 L18 0 L4 4 L0 18 L-4 4 L-18 0 L-4 -4 Z" fill="#d4a056"/>' +
+          '</svg>' +
+        '</div>' +
+        '<div class="pay-app-meta">' +
+          '<div class="pay-app-name">Myatlastic Pro</div>' +
+          '<div class="pay-app-detail">' + p.name + ' · ' + p.cycle + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="pay-summary">' +
+        '<div class="pay-row"><span>Subtotal</span><span>' + p.price + '</span></div>' +
+        '<div class="pay-row"><span>Tax</span><span>—</span></div>' +
+        '<div class="pay-row pay-row-total"><span>Total</span><span>' + p.total + '</span></div>' +
+      '</div>' +
+      '<div class="pay-actions">' + primaryBtn + '</div>' +
+      secondaryBtn +
+      '<button class="pay-cancel" id="pay-cancel">Cancel</button>' +
+      '<div class="pay-legal">By tapping Pay, you agree to a recurring subscription that auto-renews until cancelled. Manage subscription in your account settings. <a href="/terms" target="_blank">Terms</a> · <a href="/privacy" target="_blank">Privacy</a></div>' +
+    '</div>';
+  document.body.appendChild(sheet);
+
+  function complete() {
+    // Stub: in production, this is where RevenueCat returns success
     try { localStorage.setItem('myatlastic_pro', '1'); } catch (e) {}
     state.isPro = true;
     updateProBadge();
-    alert('Demo: subscription restored');
+    sheet.remove();
+    showPaymentSuccess(p);
+  }
+  function cancel() { sheet.remove(); }
+
+  // Wire up buttons depending on platform
+  if (platform === 'web') {
+    sheet.querySelector('#pay-confirm-apple').onclick = complete;
+    sheet.querySelector('#pay-confirm-google').onclick = complete;
+    sheet.querySelector('#pay-confirm-card').onclick = complete;
+  } else {
+    sheet.querySelector('#pay-confirm').onclick = complete;
+  }
+  sheet.querySelector('#pay-cancel').onclick = cancel;
+  sheet.addEventListener('click', e => { if (e.target === sheet) cancel(); });
+}
+
+function showPaymentSuccess(plan) {
+  const sheet = document.createElement('div');
+  sheet.className = 'pay-sheet-overlay';
+  sheet.innerHTML =
+    '<div class="pay-sheet pay-success">' +
+      '<div class="pay-check">✓</div>' +
+      '<h2>Welcome to Myatlastic Pro</h2>' +
+      '<p>Your ' + plan.name.toLowerCase() + ' subscription is active.<br>Every country, every feature, every day.</p>' +
+      '<button class="pay-btn pay-apple" id="pay-done">Start exploring</button>' +
+    '</div>';
+  document.body.appendChild(sheet);
+  sheet.querySelector('#pay-done').onclick = () => {
+    sheet.remove();
     setMode('explore');
     renderList();
   };
+}
+
+function openRestoreSheet() {
+  const platform = detectPlatform();
+  const platformLabel = platform === 'ios' ? 'Apple ID' : platform === 'android' ? 'Google account' : 'email';
+  const sheet = document.createElement('div');
+  sheet.className = 'pay-sheet-overlay';
+  sheet.innerHTML =
+    '<div class="pay-sheet">' +
+      '<div class="pay-preview-badge">Preview · backend pending</div>' +
+      '<h2 style="margin-bottom:12px">Restore purchase</h2>' +
+      '<p style="color:var(--ink-dim);font-size:13px;margin-bottom:20px">We will check for an existing subscription tied to your ' + platformLabel + '.</p>' +
+      '<button class="pay-btn pay-apple" id="restore-confirm">Check for subscription</button>' +
+      '<button class="pay-cancel" id="restore-cancel">Cancel</button>' +
+    '</div>';
+  document.body.appendChild(sheet);
+  sheet.querySelector('#restore-confirm').onclick = () => {
+    try { localStorage.setItem('myatlastic_pro', '1'); } catch (e) {}
+    state.isPro = true;
+    updateProBadge();
+    sheet.remove();
+    showPaymentSuccess({ name: 'Restored' });
+  };
+  sheet.querySelector('#restore-cancel').onclick = () => sheet.remove();
+  sheet.addEventListener('click', e => { if (e.target === sheet) sheet.remove(); });
 }
 
 /* ============================================================

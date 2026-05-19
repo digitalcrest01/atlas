@@ -33,9 +33,9 @@ Apple App Store review averages 24-48 hours but can take up to 7 days for new ap
   - Option A: **RevenueCat** (recommended) — `npm install @revenuecat/purchases-capacitor`. Configure two products in App Store Connect + Google Play. Wire to existing paywall UI. ~1 day of work.
   - Option B: Native StoreKit 2 + Play Billing 6 — more code, more testing, no third-party dependency.
 - [ ] Create products in App Store Connect:
-  - `myatlastic_pro_monthly` — $3.99/month auto-renewing
-  - `myatlastic_pro_annual` — $24.99/year auto-renewing
-  - `myatlastic_pro_family` — $39.99/year family share group
+  - `myatlastic_pro_monthly` — $7.99/month auto-renewing
+  - `myatlastic_pro_annual` — $29.99/year auto-renewing
+  - `myatlastic_pro_family` — $49.99/year family share group
 - [ ] Same in Google Play Console
 - [ ] Generate app icons: square 1024x1024 + adaptive Android icon. Tools: `npx capacitor-assets generate` once you have a square PNG
 - [ ] Take 5-8 screenshots per device family (iPhone 6.7", 6.5", 5.5"; iPad 12.9"; Android phone + tablet) — Simulator can do this

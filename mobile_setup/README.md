@@ -60,7 +60,7 @@ The web build loads NASA Blue Marble from a CDN. On mobile this causes a 1–3s 
 The `localStorage.myatlastic_pro` simulation must be replaced with real billing. Recommended path:
 
 - Install **RevenueCat** SDK (`@revenuecat/purchases-capacitor`) — handles StoreKit + Play Billing + receipt verification across both stores
-- Configure two products: `myatlastic_pro_monthly` ($3.99) and `myatlastic_pro_annual` ($24.99)
+- Configure two products: `myatlastic_pro_monthly` ($7.99) and `myatlastic_pro_annual` ($29.99)
 - Replace the `Upgrade` button handler in `index.html` with `Purchases.purchaseProduct(...)`
 - On purchase success/restore, set `isPro = true` from the entitlement state
 

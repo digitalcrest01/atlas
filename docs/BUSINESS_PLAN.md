@@ -17,9 +17,9 @@ Monetisation is **tight-free** with a 10-country preview and a hard paywall ther
 | Plan | Price | Features |
 |---|---|---|
 | Free | $0 | 10 countries · 3 quizzes/day · 1 daily challenge |
-| Pro Monthly | $3.99/mo | Everything unlocked |
-| Pro Annual | $24.99/yr | Everything · save 48% |
-| Family Annual | $39.99/yr | Up to 6 profiles |
+| Pro Monthly | $7.99/mo | Everything unlocked |
+| Pro Annual | $29.99/yr | Everything · save 69% |
+| Family Annual | $49.99/yr | Up to 6 profiles |
 | School Classroom | $199/yr | Teacher dashboard, progress reports |
 
 **Base-case financials (3 years, USD, tight-free):**
@@ -103,7 +103,7 @@ US alone: ~50m K-12 students, ~130,000 schools.
 ### TAM (bottom-up)
 - English-speaking children 7–17, internet-connected: ~80m
 - Of those, parents who buy educational apps: ~15% → 12m
-- Annual willingness to pay $24.99: ~10% → 1.2m → **TAM (consumer): ~$30m/year**
+- Annual willingness to pay $29.99: ~10% → 1.2m → **TAM (consumer): ~$30m/year**
 
 ### SOM — 3-year target (tight-free)
 - Y3 paid users in Base: 5,200
@@ -282,8 +282,8 @@ TAM under tight-free is even tighter than under generous-free. Y3 revenue of $12
 
 ### A. Pricing rationale
 
-- $3.99/month is at the bottom of impulse-buy band
-- $24.99/year is ~48% disc on monthly, drives annual mix
+- $7.99/month sits in the middle of the impulse-buy band, above casual but below committed-purchase
+- $29.99/year is ~69% disc on monthly, drives annual mix
 - $39.99 family is a 60% premium for 6× seats
 - $199 school is below the $500–$2,000 norm
 
