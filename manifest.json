@@ -1,0 +1,23 @@
+{
+  "name": "Myatlastic",
+  "short_name": "Myatlastic",
+  "description": "Explore all 195 countries with a photorealistic 3D globe. Capitals, currencies, cultures, history, daily challenges and quizzes.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#0b0e13",
+  "theme_color": "#0b0e13",
+  "orientation": "portrait",
+  "lang": "en",
+  "categories": ["education", "kids", "games"],
+  "icons": [
+    {
+      "src": "/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

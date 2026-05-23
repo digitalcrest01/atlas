@@ -1,0 +1,24 @@
+Copyright (c) 2026 Vertotech LLC and its subsidiaries. All rights reserved.
+
+This source code is proprietary and confidential. Unauthorised copying,
+modification, distribution, or use of any part of this codebase, via any
+medium, is strictly prohibited without prior written permission from the
+copyright holder.
+
+The country dataset (`web/countries_data.js`) contains factual reference
+material curated from public sources. Facts themselves are not copyrightable;
+the curation, arrangement, prose summaries, and depth fields (history,
+culture, religion, notable figures) are original work and protected.
+
+Country flag emoji are part of the Unicode standard and are unrestricted.
+
+Landmark image URLs reference images hosted on Wikimedia Commons under their
+respective Creative Commons or public domain licences. These images are
+referenced, not redistributed.
+
+The Three.js library is licensed separately under the MIT licence and is
+loaded at runtime from a CDN.
+
+The NASA Blue Marble Earth texture is in the public domain (US Government work).
+
+For licensing enquiries: licensing@myatlastic.com

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Myatlastic app icon</title>
+  <desc>Compass star mark on dark background. Brand colours: gold #d4a056 on black #0b0e13.</desc>
+
+  <!-- Background. iOS auto-rounds corners; Android adaptive icon masks. -->
+  <rect width="1024" height="1024" fill="#0b0e13"/>
+
+  <!-- Subtle outer ring -->
+  <circle cx="512" cy="512" r="400" fill="none" stroke="#d4a056" stroke-width="6" opacity="0.25"/>
+
+  <!-- Main compass star -->
+  <g transform="translate(512 512)">
+    <!-- Outer 4-point star -->
+    <path d="M0 -340 L80 -80 L340 0 L80 80 L0 340 L-80 80 L-340 0 L-80 -80 Z" fill="#d4a056"/>
+    <!-- Inner negative space -->
+    <path d="M0 -160 L40 -40 L160 0 L40 40 L0 160 L-40 40 L-160 0 L-40 -40 Z" fill="#0b0e13"/>
+    <!-- Centre dot -->
+    <circle r="30" fill="#d4a056"/>
+  </g>
+</svg>

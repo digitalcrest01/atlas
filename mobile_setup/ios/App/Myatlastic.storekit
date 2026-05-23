@@ -1,0 +1,92 @@
+{
+  "identifier" : "A754442B-ABD7-49A2-BD4B-4333419A9662",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "149.00",
+      "familyShareable" : true,
+      "internalID" : "C47ED134-2FA4-4C2A-AAEE-A4ABF4E113AB",
+      "localizations" : [
+        {
+          "description" : "Lifetime access to Myatlastic Pro, including all future updates.",
+          "displayName" : "Myatlastic Pro — Lifetime",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "app.myatlastic.pro.lifetime",
+      "referenceName" : "Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0000000000",
+    "_developerTeamID" : "0000000000",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "641A8713-848F-472B-BF49-01B244AFB997",
+      "localizations" : [],
+      "name" : "Myatlastic Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "9.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "4AA76CD2-E9F8-4A1B-8AE6-7AFC4D9E33E2",
+          "introductoryOffer" : {
+            "internalID" : "CBF6D3DA-E169-4DED-8BE8-D4CBA9966179",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Myatlastic Pro, billed monthly. Starts with a 1-week free trial.",
+              "displayName" : "Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "app.myatlastic.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "641A8713-848F-472B-BF49-01B244AFB997",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "69.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "A6B147D6-4D55-4C77-A1AE-D6205FB7C99C",
+          "introductoryOffer" : {
+            "internalID" : "8071C147-7D9E-4098-ACC4-AD3F338FB890",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Myatlastic Pro, billed yearly (save 42%). Starts with a 1-week free trial.",
+              "displayName" : "Pro Annual",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "app.myatlastic.pro.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Annual",
+          "subscriptionGroupID" : "641A8713-848F-472B-BF49-01B244AFB997",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

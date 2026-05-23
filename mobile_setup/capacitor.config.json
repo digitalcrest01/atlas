@@ -1,0 +1,35 @@
+{
+  "appId": "app.myatlastic.myatlastic",
+  "appName": "Myatlastic",
+  "webDir": "../web",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "iosScheme": "https"
+  },
+  "ios": {
+    "contentInset": "always",
+    "scrollEnabled": true,
+    "backgroundColor": "#0b0e13"
+  },
+  "android": {
+    "backgroundColor": "#0b0e13",
+    "allowMixedContent": false,
+    "captureInput": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#0b0e13",
+      "showSpinner": false,
+      "androidSplashResourceName": "splash",
+      "iosSpinnerStyle": "small",
+      "spinnerColor": "#d4a056"
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#0b0e13"
+    }
+  }
+}
