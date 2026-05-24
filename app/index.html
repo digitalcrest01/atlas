@@ -1534,10 +1534,6 @@ function escapeHtml(s) {
  * MODE / PANE SWITCHING
  * ============================================================ */
 function setMode(newMode) {
-  // Stop the AI clock if we're leaving the game mid-round
-  if (state.mode === 'game' && newMode !== 'game' && gameState && gameState.aiTimerId) {
-    clearTimeout(gameState.aiTimerId);
-  }
   // Remember where to return from the paywall
   if (newMode === 'paywall' && state.mode !== 'paywall') state.returnMode = state.mode;
   state.mode = newMode;
@@ -1769,7 +1765,7 @@ function renderDetails() {
 
 window.__myatlasticOpenPaywall = () => setMode('paywall');
 window.__myatlasticPaywallBack = () => setMode(state.returnMode || 'explore');
-window.__myatlasticExitGame = () => { if (gameState && gameState.aiTimerId) clearTimeout(gameState.aiTimerId); gameState = null; setMode('explore'); };
+window.__myatlasticExitGame = () => { gameState = null; setMode('explore'); };
 
 /* ============================================================
  * FAVOURITES
@@ -2472,7 +2468,7 @@ function renderPaywall() {
     '<ul class="feature-list">' +
     '<li>All 195 countries — full depth (history, culture, religion, notable figures)</li>' +
     '<li>Landmark photo for every country</li>' +
-    '<li>Spell-the-Country word game vs the computer</li>' +
+    '<li>Spell-the-Country spelling game</li>' +
     '<li>Compare any two countries side by side</li>' +
     '<li>Currency converter with live exchange rates</li>' +
     '<li>Unlimited quizzes (free: 3 per day)</li>' +
@@ -2627,7 +2623,7 @@ function renderCurrency() {
 }
 
 /* ============================================================
- * SPELL-THE-COUNTRY GAME (free) — race a system-generated opponent
+ * SPELL-THE-COUNTRY GAME (Pro) — solo spelling, learn at your own pace
  * ============================================================ */
 let gameState = null;
 const GAME_POOL = COUNTRIES.filter(c =>
@@ -2649,7 +2645,7 @@ function renderGame() {
       '<div style="text-align:left"><button class="back-btn" onclick="setMode(\'explore\')">← Exit</button></div>' +
       '<div class="quiz-eyebrow">Pro feature</div>' +
       '<h2 style="font-size:24px;margin:20px 0">🔒 Spell-the-Country is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Race the computer to spell each country. Unlock the game with Myatlastic Pro.</p>' +
+      '<p style="color:var(--ink-dim);margin-bottom:24px">Spell each country from scrambled letters and learn as you play. Unlock the game with Myatlastic Pro.</p>' +
       '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
       '</div>';
     return;
@@ -2660,40 +2656,27 @@ function renderGame() {
 }
 
 function renderGameIntro(root) {
-  const diff = state.gameDifficulty || 'medium';
-  const diffBtn = (key, label) =>
-    '<button class="game-diff" data-diff="' + key + '" style="flex:1;padding:10px;border-radius:10px;cursor:pointer;font-size:14px;' +
-    'border:1px solid ' + (key === diff ? 'var(--accent)' : 'var(--line)') + ';' +
-    'background:' + (key === diff ? 'var(--accent)' : 'var(--panel-2)') + ';' +
-    'color:' + (key === diff ? '#1a1206' : 'var(--ink)') + '">' + label + '</button>';
   root.innerHTML =
     '<div class="center-card" style="max-width:480px;text-align:center">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticExitGame()">← Back</button></div>' +
-      '<div class="quiz-eyebrow">Bonus game</div>' +
+      '<div class="quiz-eyebrow">Pro game</div>' +
       '<h2 style="color:var(--accent);font-size:30px;margin:14px 0 6px">Spell-the-Country</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:22px;font-size:14px">See the flag, hear the name, then beat the computer to spell it. 5 rounds.</p>' +
-      '<div style="font-size:12px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.04em;text-align:left;margin-bottom:8px">Difficulty</div>' +
-      '<div style="display:flex;gap:8px;margin-bottom:24px">' + diffBtn('easy', 'Easy') + diffBtn('medium', 'Medium') + diffBtn('hard', 'Hard') + '</div>' +
-      '<button class="btn-primary" id="game-start" style="width:100%;padding:14px">Start Game</button>' +
+      '<p style="color:var(--ink-dim);margin-bottom:24px;font-size:14px">See the flag, hear the name in an American accent, then spell the country from the scrambled letters. Learn at your own pace — no timer, no pressure.</p>' +
+      '<button class="btn-primary" id="game-start" style="width:100%;padding:14px">Start playing</button>' +
     '</div>';
-  root.querySelectorAll('.game-diff').forEach(b => {
-    b.onclick = () => { state.gameDifficulty = b.dataset.diff; renderGameIntro(root); };
-  });
   $('game-start').onclick = startGame;
 }
 
 function startGame() {
   gameState = {
-    round: 0, totalRounds: 5, you: 0, ai: 0,
-    difficulty: state.gameDifficulty || 'medium',
-    pool: gameShuffle([...GAME_POOL]).slice(0, 5),
+    round: 0, totalRounds: 10, correct: 0,
+    pool: gameShuffle([...GAME_POOL]).slice(0, 10),
     status: 'playing'
   };
   nextGameRound();
 }
 
 function nextGameRound() {
-  if (gameState.aiTimerId) clearTimeout(gameState.aiTimerId);
   gameState.round++;
   if (gameState.round > gameState.totalRounds) { gameState.status = 'over'; renderGame(); return; }
   const target = gameState.pool[gameState.round - 1];
@@ -2702,22 +2685,8 @@ function nextGameRound() {
   gameState.tiles = gameShuffle(letters.map((ch, i) => ({ ch: ch, id: i })));
   gameState.placed = [];      // tile ids in placement order
   gameState.wrong = false;
-  gameState.roundResult = null;
+  gameState.revealed = false;
   gameState.status = 'playing';
-  gameState.startTime = Date.now();
-  // System opponent "solves" after a difficulty-scaled, slightly random delay
-  const perLetter = { easy: 1100, medium: 700, hard: 450 }[gameState.difficulty];
-  const base = { easy: 2500, medium: 1500, hard: 800 }[gameState.difficulty];
-  const delay = base + letters.length * perLetter * (0.7 + Math.random() * 0.7);
-  gameState.aiTimerId = setTimeout(aiSolves, delay);
-  renderGame();
-}
-
-function aiSolves() {
-  if (!gameState || gameState.status !== 'playing' || state.mode !== 'game') return;
-  gameState.ai += 80;
-  gameState.status = 'roundOver';
-  gameState.roundResult = { winner: 'ai' };
   renderGame();
 }
 
@@ -2727,13 +2696,8 @@ function checkGameAnswer() {
   const answer = g.target.n.toUpperCase().replace(/ /g, '');
   if (guess.length < answer.length) return;
   if (guess === answer) {
-    if (g.aiTimerId) clearTimeout(g.aiTimerId);
-    const elapsed = (Date.now() - g.startTime) / 1000;
-    const speed = Math.max(0, Math.round(100 - elapsed * 5));
-    const youGain = 100 + speed + 50; // base + speed bonus + beat-the-AI bonus
-    g.you += youGain;
+    g.correct++;
     g.status = 'roundOver';
-    g.roundResult = { winner: 'you', youGain: youGain, speed: speed };
     renderGame();
   } else {
     g.wrong = true;
@@ -2763,10 +2727,10 @@ function renderGameRound(root) {
   }).join('');
 
   let statusHtml = '';
-  if (g.status === 'roundOver' && g.roundResult.winner === 'you') {
-    statusHtml = '<div style="color:var(--success);font-weight:700;font-size:18px;margin:14px 0">✓ Correct! +' + g.roundResult.youGain + ' (speed bonus +' + g.roundResult.speed + ')</div>';
+  if (g.status === 'roundOver' && !g.revealed) {
+    statusHtml = '<div style="color:var(--success);font-weight:700;font-size:18px;margin:14px 0">✓ Correct! It\'s ' + escapeHtml(t.n) + '</div>';
   } else if (g.status === 'roundOver') {
-    statusHtml = '<div style="color:var(--danger);font-weight:700;font-size:17px;margin:14px 0">🤖 The computer spelled it first!<br>Answer: ' + escapeHtml(t.n) + '</div>';
+    statusHtml = '<div style="color:var(--ink-dim);font-weight:600;font-size:17px;margin:14px 0">It\'s ' + escapeHtml(t.n) + '</div>';
   } else if (g.wrong) {
     statusHtml = '<div style="color:var(--danger);margin:10px 0">Not quite — tap a letter to remove it, then try again.</div>';
   }
@@ -2779,8 +2743,8 @@ function renderGameRound(root) {
     '<div class="center-card" style="max-width:520px;text-align:center">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticExitGame()" style="margin-bottom:8px">← Quit</button></div>' +
       '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:13px;color:var(--ink-dim)">' +
-        '<span>Round ' + g.round + ' / ' + g.totalRounds + '</span>' +
-        '<span>You <b style="color:var(--accent)">' + g.you + '</b> &nbsp;·&nbsp; AI <b style="color:var(--accent-2)">' + g.ai + '</b></span>' +
+        '<span>Country ' + g.round + ' / ' + g.totalRounds + '</span>' +
+        '<span>Correct: <b style="color:var(--accent)">' + g.correct + '</b></span>' +
       '</div>' +
       '<div style="font-size:64px;line-height:1;margin:14px 0 6px">' + (t.flag || '🌐') + '</div>' +
       '<div style="color:var(--ink-dim);font-size:13px">' + escapeHtml(t.c) + (t.cap ? ' · capital ' + escapeHtml(t.cap) : '') + '</div>' +
@@ -2789,8 +2753,11 @@ function renderGameRound(root) {
       statusHtml +
       (g.status === 'playing'
         ? '<div style="margin:16px 0">' + rack + '</div>' +
-          '<button id="game-clear" style="background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:8px;padding:8px 16px;cursor:pointer">Clear</button>'
-        : '<button class="btn-primary" id="game-next" style="width:100%;padding:14px;margin-top:8px">' + (g.round >= g.totalRounds ? 'See results' : 'Next round →') + '</button>'
+          '<div style="display:flex;gap:8px;justify-content:center">' +
+          '<button id="game-clear" style="background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:8px;padding:8px 16px;cursor:pointer">Clear</button>' +
+          '<button id="game-reveal" style="background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:8px;padding:8px 16px;cursor:pointer">Reveal</button>' +
+          '</div>'
+        : '<button class="btn-primary" id="game-next" style="width:100%;padding:14px;margin-top:8px">' + (g.round >= g.totalRounds ? 'See results' : 'Next →') + '</button>'
       ) +
     '</div>';
 
@@ -2814,6 +2781,8 @@ function renderGameRound(root) {
     });
     const clr = $('game-clear');
     if (clr) clr.onclick = () => { g.placed = []; g.wrong = false; renderGame(); };
+    const rev = $('game-reveal');
+    if (rev) rev.onclick = () => { g.revealed = true; g.status = 'roundOver'; renderGame(); };
   } else {
     const nx = $('game-next');
     if (nx) nx.onclick = nextGameRound;
@@ -2822,16 +2791,18 @@ function renderGameRound(root) {
 
 function renderGameOver(root) {
   const g = gameState;
-  const won = g.you > g.ai, tie = g.you === g.ai;
+  const pct = g.totalRounds ? g.correct / g.totalRounds : 0;
+  const emoji = pct === 1 ? '🏆' : pct >= 0.6 ? '🌟' : '🌍';
+  const msg = pct === 1 ? 'Perfect — you spelled them all!' : pct >= 0.6 ? 'Great work!' : 'Keep exploring!';
   root.innerHTML =
     '<div class="center-card" style="max-width:460px;text-align:center">' +
-      '<div style="font-size:64px;margin:10px 0">' + (won ? '🏆' : tie ? '🤝' : '🤖') + '</div>' +
-      '<h2 style="color:var(--accent);font-size:26px;margin-bottom:8px">' + (won ? 'You win!' : tie ? "It's a tie!" : 'The computer wins') + '</h2>' +
-      '<p style="font-size:18px;margin:14px 0">You <b style="color:var(--accent)">' + g.you + '</b> &nbsp;—&nbsp; AI <b style="color:var(--accent-2)">' + g.ai + '</b></p>' +
+      '<div style="font-size:64px;margin:10px 0">' + emoji + '</div>' +
+      '<h2 style="color:var(--accent);font-size:26px;margin-bottom:8px">' + msg + '</h2>' +
+      '<p style="font-size:18px;margin:14px 0">You spelled <b style="color:var(--accent)">' + g.correct + '</b> of ' + g.totalRounds + ' countries</p>' +
       '<button class="btn-primary" id="game-again" style="width:100%;padding:14px;margin-top:10px">Play again</button>' +
       '<button id="game-explore" style="width:100%;padding:12px;margin-top:10px;background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:10px;cursor:pointer">Back to Explore</button>' +
     '</div>';
-  $('game-again').onclick = () => { const d = g.difficulty; gameState = null; state.gameDifficulty = d; renderGameIntro(root); };
+  $('game-again').onclick = () => { gameState = null; renderGameIntro(root); };
   $('game-explore').onclick = () => { gameState = null; setMode('explore'); };
 }
 
