@@ -1,6 +1,6 @@
 # Myatlastic — Business Plan
 
-**An interactive world geography app for kids and Gen Z, monetised via tight-free subscription with school B2B.**
+**An interactive world geography app for kids and curious minds of all ages, monetised via tight-free subscription with school B2B.**
 
 Version 1.0 · Pre-launch · Confidential · All figures USD
 

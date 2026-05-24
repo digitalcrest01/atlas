@@ -1,6 +1,6 @@
 # Myatlastic
 
-Interactive geography app for kids 7-12 and Gen Z. Photorealistic 3D globe with all 197 countries, native-language pronunciation, paywall-gated depth content, four game modes. Single web codebase, shipped as iOS, Android, and PWA.
+Interactive geography app for kids and curious minds of all ages. Photorealistic 3D globe with all 197 countries, native-language pronunciation, paywall-gated depth content, four game modes. Single web codebase, shipped as iOS, Android, and PWA.
 
 **Live**: [myatlastic.com](https://myatlastic.com) (once deployed to Vercel)
 **Repo**: this one

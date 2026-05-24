@@ -282,7 +282,7 @@ https://play.google.com/console → All apps → Create app
 
 **Short description** (80 chars):
 ```
-Explore all 195 countries on a 3D globe. Geography for kids & Gen Z.
+Explore all 195 countries on a 3D globe. Geography for all ages.
 ```
 
 **Full description** (4,000 chars): Same as App Store description above.
