@@ -141,9 +141,9 @@
   }
   .plan-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 900px;
+    max-width: 1040px;
     margin: 0 auto;
   }
   .plan {
@@ -299,7 +299,7 @@
 <section class="pricing" id="pricing">
   <div class="wrap">
     <h2>Simple, fair pricing</h2>
-    <p class="sub">Try 10 countries free. Upgrade once and use forever.</p>
+    <p class="sub">Try 10 countries free. Subscriptions start with a 1-week free trial — or unlock forever once.</p>
     <div class="plan-grid">
       <div class="plan">
         <h3>Free</h3>
@@ -312,32 +312,40 @@
           <li>Basic facts only</li>
         </ul>
       </div>
+      <div class="plan">
+        <h3>Pro Monthly</h3>
+        <div class="price">$9.99</div>
+        <div class="price-detail">/month · 1-week free trial</div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>Cancel anytime</li>
+        </ul>
+      </div>
       <div class="plan featured">
         <h3>Pro Annual</h3>
-        <div class="price">$24.99</div>
-        <div class="price-detail">/year · save 48%</div>
+        <div class="price">$69.99</div>
+        <div class="price-detail">/year · save 42% · 1-week free trial</div>
         <ul>
-          <li>All 195 countries</li>
-          <li>Landmark images</li>
-          <li>Full history, culture, religion, figures</li>
+          <li>All 195 countries — full depth</li>
+          <li>Landmark photo for every country</li>
+          <li>Spell-the-Country word game</li>
+          <li>Compare + currency converter</li>
           <li>Unlimited quizzes</li>
-          <li>Compare mode</li>
           <li>Full daily challenge with streaks</li>
-          <li>Offline mode on mobile</li>
         </ul>
       </div>
       <div class="plan">
-        <h3>Pro Monthly</h3>
-        <div class="price">$3.99</div>
-        <div class="price-detail">/month · cancel anytime</div>
+        <h3>Lifetime</h3>
+        <div class="price">$149</div>
+        <div class="price-detail">one-time · all future updates</div>
         <ul>
-          <li>Everything in Pro</li>
-          <li>No annual commitment</li>
+          <li>Everything in Pro, forever</li>
+          <li>No subscription</li>
         </ul>
       </div>
     </div>
     <p style="margin-top: 40px; color: var(--ink-dim); font-size: 13px;">
-      Family plan: <strong style="color:var(--ink);">$39.99/year</strong> for up to 6 profiles.
+      Family Sharing included — one purchase covers your whole Apple Family.
     </p>
   </div>
 </section>
