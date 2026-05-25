@@ -5,6 +5,10 @@ modification, distribution, or use of any part of this codebase, via any
 medium, is strictly prohibited without prior written permission from the
 copyright holder.
 
+Trademarks: "Myatlastic", "Itinero", and other Vertotech LLC product names,
+logos, and brand marks are trademarks of Vertotech LLC. All rights reserved.
+No trademark licence is granted by this document or by access to this code.
+
 The country dataset (`web/countries_data.js`) contains factual reference
 material curated from public sources. Facts themselves are not copyrightable;
 the curation, arrangement, prose summaries, and depth fields (history,

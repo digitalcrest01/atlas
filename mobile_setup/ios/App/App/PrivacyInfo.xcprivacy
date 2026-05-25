@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Myatlastic (Vertotech LLC) privacy manifest.
+	     The app has no accounts, no analytics, no ads, and no tracking.
+	     It collects no personal data; preferences are stored locally on device.
+	     Third-party SDKs (RevenueCat, Capacitor plugins) ship their own manifests. -->
+
+	<!-- We do not track users across apps/websites owned by other companies. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+
+	<!-- No domains are used for tracking. -->
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+
+	<!-- The app collects no data types from the user. -->
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+
+	<!-- Required-reason API usage. The app stores its own settings (streak, Pro
+	     status, quiz preferences) locally via UserDefaults — accessed only by the app. -->
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
