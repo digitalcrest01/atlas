@@ -50,30 +50,15 @@ This creates all 19 required iOS icon sizes automatically.
 
 ---
 
-### Step 3: Privacy Manifest (required since May 2024)
+### Step 3: Privacy Manifest (required) — already created
 
-In Xcode: File → New → File → Resource → **Privacy Manifest**.
-Name it `PrivacyInfo.xcprivacy`.
+`PrivacyInfo.xcprivacy` already exists at `mobile_setup/ios/App/App/PrivacyInfo.xcprivacy`
+(no tracking, no data collected, `UserDefaults` reason `CA92.1`). One-time step in Xcode:
+right-click the **App** group → **Add Files to "App"…** → select `PrivacyInfo.xcprivacy` →
+tick the **App** target so it ships in the build. RevenueCat and the Capacitor plugins
+include their own privacy manifests, so their declarations are already covered.
 
-Paste this (Myatlastic collects nothing):
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>NSPrivacyTracking</key>
-  <false/>
-  <key>NSPrivacyTrackingDomains</key>
-  <array/>
-  <key>NSPrivacyCollectedDataTypes</key>
-  <array/>
-  <key>NSPrivacyAccessedAPITypes</key>
-  <array/>
-</dict>
-</plist>
-```
+Matching App Store Connect **App Privacy** answers: **"Data Not Collected"** for every category.
 
 ---
 
@@ -107,45 +92,67 @@ Go to https://appstoreconnect.apple.com → My Apps → `+` → New App.
 
 **Category**: Primary = **Education** · Secondary = **Reference**
 
-**Subtitle** (30 chars): `Explore Every Country`
+**App Name** (30 chars): `Myatlastic: World Geography`  *(alt: `Myatlastic`)*
+
+**Subtitle** (30 chars): `Explore all 195 countries`
+
+**Promotional text** (170 chars — editable anytime, no review):
+```
+Spin a 3D globe and discover all 195 countries — flags, capitals, cultures, quizzes, a daily challenge, and a relaxed spelling game. No ads, no tracking.
+```
 
 **Description** (4,000 chars max):
 ```
-Discover the world — all 195 countries — with Myatlastic.
+Discover the whole world — all 195 countries — with Myatlastic, an interactive geography app for kids and curious minds of all ages.
 
-Spin a photorealistic 3D globe with NASA Blue Marble imagery. Tap any country to instantly see its flag, capital, currency, language, culture, history, notable figures, religion, national food, sport, and traditional attire.
+Spin a photorealistic 3D globe and tap any country to instantly explore its flag, capital, currency, language, culture, history, notable figures, religion, national food, sport, and traditional dress.
 
-FEATURES
-• Photorealistic 3D globe — drag to rotate, pinch to zoom, tap to explore
-• All 195 countries: detailed facts, landmark images, and pronunciation guide
-• Daily Challenge — one new country every day, build a streak
-• Four quiz types: flag recognition, capitals, culture hints, and food/sport
-• Compare Mode — place any two countries side-by-side
-• Kids Mode — brighter UI and simplified language for ages 7-12
-• Native pronunciation in 60+ country-specific voices (Japanese, French, Arabic, and more)
-• Offline friendly — no account required, no ads, no tracking
-• Privacy-first: COPPA and GDPR-K compliant. Zero data collection.
+WHAT YOU CAN DO
+• Spin a 3D globe — drag to rotate, pinch to zoom, tap a pin to dive in
+• Explore all 195 countries with rich, readable detail and a landmark photo for each
+• Hear each country's name read aloud
+• Take a Daily Challenge and build a streak
+• Test yourself with quizzes — flags, capitals, culture, food and more
+• Compare any two countries side by side
+• Convert currencies with live exchange rates
+• Play Spell-the-Country, a relaxed word game for learning country names
 
-FREE TIER
+MADE FOR FAMILIES
+• Kids mode with a brighter, simpler interface
+• No ads. No tracking. No account required.
+• Collects zero personal data — COPPA and GDPR-K compliant
+• Family Sharing — one purchase covers your whole Apple Family
+
+FREE
 • 10 countries fully unlocked
-• 3 quiz rounds per day
-• One daily challenge
+• 3 quizzes per day
+• A daily challenge
 
-MYATLASTIC PRO
-• All 195 countries with full depth
-• Landmark images
+MYATLASTIC PRO — unlock everything
+• All 195 countries in full depth
+• A landmark photo for every country
+• Compare mode + currency converter
+• The Spell-the-Country game
 • Unlimited quizzes
-• Compare mode
-• Full daily challenge with streak history
+• Full Daily Challenge with streak history
 
-Subscription terms: Auto-renews unless cancelled 24 hours before the renewal date. Manage subscriptions in Settings.
+PRICING
+• Monthly — $9.99 / month
+• Annual — $69.99 / year (save 42%)
+• Lifetime — $149 one-time, includes all future updates
+Subscriptions start with a 1-week free trial.
+
+Payment is charged to your Apple ID. Subscriptions auto-renew unless turned off at least 24 hours before the end of the period; manage or cancel anytime in Settings. The Lifetime option is a one-time purchase and does not renew.
+
+Privacy Policy: https://myatlastic.com/privacy
+Terms of Use: https://myatlastic.com/terms
 
 Questions? support@myatlastic.com
 ```
 
 **Keywords** (100 chars max):
 ```
-geography,world,countries,capitals,globe,kids,education,flags,quiz,atlas,map,culture,history
+capitals,flags,globe,atlas,maps,quiz,nations,culture,currency,spelling,learn,education,travel,kids
 ```
 
 **Support URL**: `https://myatlastic.com`
@@ -156,50 +163,44 @@ geography,world,countries,capitals,globe,kids,education,flags,quiz,atlas,map,cul
 
 ### Step 6: Screenshots
 
-Required sizes:
-| Device | Size |
-|---|---|
-| iPhone 6.7" (15 Pro Max) | 1290 × 2796 |
-| iPhone 6.5" (14 Plus) | 1242 × 2688 |
-| iPhone 5.5" (8 Plus) | 1242 × 2208 |
-| iPad Pro 12.9" | 2048 × 2732 |
+Apple needs **iPhone 6.9"** screenshots (it scales them down for smaller phones, so this one set covers every iPhone). Add **iPad 13"** only if you ship an iPad build.
 
-To take screenshots in Simulator:
-1. Open Simulator with the correct device
-2. Load the app
-3. `Cmd + S` saves screenshot to Desktop
+| Device (Simulator) | Portrait size | Required? |
+|---|---|---|
+| iPhone 16 Pro Max — 6.9" | 1320 × 2868 | ✅ required |
+| iPad Pro 13" (M4) | 2064 × 2752 | only if iPad-supported |
 
-**Minimum required**: iPhone 6.7" and iPad 12.9" (5 screenshots each).
+Capture in the iOS Simulator: open the device, load the app, **Cmd + S** saves to Desktop. **Unlock Pro via the demo paywall first** so the Pro screens are populated. You may upload 3–10 per device; aim for 5–8.
 
-Suggested screens:
-1. Globe view with a country tooltip visible
-2. Country detail (Japan or France — rich data)
-3. Quiz mode in progress
-4. Daily challenge with streak display
-5. Compare mode side-by-side
+Suggested order (lead with the most striking):
+1. The 3D globe — rotated to a region, a country pin/tooltip showing
+2. A country detail with its landmark photo (e.g. Brazil, Japan, or France)
+3. Compare — two countries side by side
+4. Currency converter — a live conversion
+5. Spell-the-Country game — mid-round with the letter tiles
+6. A quiz question
+7. Daily Challenge with a streak
+8. The "Myatlastic Pro" plans screen
+
+Tip: a short caption across the top of each shot (e.g. "Spin the globe", "Compare any two countries") noticeably lifts conversion — optional but recommended.
 
 ---
 
 ### Step 7: In-App Purchases
 
-In App Store Connect → My Apps → Myatlastic → **In-App Purchases** → `+`
+In App Store Connect → My Apps → Myatlastic → create these (IDs **must match** `BILLING_CONFIG` in `web/index.html`):
 
-| Product ID | Type | Price |
-|---|---|---|
-| `myatlastic_pro_monthly` | Auto-Renewable Subscription | $3.99/month |
-| `myatlastic_pro_annual` | Auto-Renewable Subscription | $24.99/year |
-| `myatlastic_pro_family` | Auto-Renewable Subscription | $39.99/year |
+| Product ID | Type | Price | Free trial |
+|---|---|---|---|
+| `app.myatlastic.pro.monthly` | Auto-renewable subscription | $9.99 / month | 1 week |
+| `app.myatlastic.pro.annual` | Auto-renewable subscription | $69.99 / year | 1 week |
+| `app.myatlastic.pro.lifetime` | Non-consumable | $149 one-time | — |
 
-Create a **Subscription Group** called "Pro". Add all three products.
+- Put the two subscriptions in one **Subscription Group** ("Myatlastic Pro"); add a **1-week free Introductory Offer** to each.
+- The Lifetime tier is a **Non-consumable** (not in the group).
+- Turn on **Family Sharing** for all three.
 
-**IMPORTANT**: The app currently uses `localStorage` to simulate purchases. Before shipping, replace this with RevenueCat:
-
-```bash
-cd mobile_setup
-npm install @revenuecat/purchases-capacitor
-```
-
-Wire RevenueCat in `web/index.html` paywall section — replace `localStorage.setItem('myatlastic_pro', '1')` with `Purchases.purchasePackage(...)`.
+RevenueCat is **already integrated** in the app (`@revenuecat/purchases-capacitor`, gated behind `BILLING_CONFIG`; entitlement `pro`). Once the products + RevenueCat project exist, paste the `appl_…` key into `BILLING_CONFIG.revenueCatApiKey` and rebuild — no other code change. Full steps: `mobile_setup/REVENUECAT_SETUP.md`.
 
 ---
 
@@ -311,8 +312,9 @@ Play Console → Myatlastic → Monetise → In-app products → Subscriptions �
 
 | Product ID | Name | Price |
 |---|---|---|
-| `myatlastic_pro_monthly` | Myatlastic Pro Monthly | $3.99/month |
-| `myatlastic_pro_annual` | Myatlastic Pro Annual | $24.99/year |
+| `app.myatlastic.pro.monthly` | Myatlastic Pro Monthly | $9.99/month |
+| `app.myatlastic.pro.annual` | Myatlastic Pro Annual | $69.99/year |
+| `app.myatlastic.pro.lifetime` | Myatlastic Pro Lifetime | $149 one-time |
 
 ---
 
