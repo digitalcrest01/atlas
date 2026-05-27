@@ -9,7 +9,7 @@
 ### Prerequisites you already have
 - Mac with Xcode 15+
 - Apple Developer account ($99/yr)
-- Bundle ID reserved: `app.myatlastic.myatlastic`
+- Bundle ID reserved: `io.vertotech.atlastic`
 
 ---
 
@@ -25,7 +25,7 @@ npx cap open ios         # opens Xcode
 ```
 
 In Xcode:
-- Select the `App` target → General → set **Bundle Identifier**: `app.myatlastic.myatlastic`
+- Select the `App` target → General → set **Bundle Identifier**: `io.vertotech.atlastic`
 - Set **Version**: `1.0.0`  **Build**: `1`
 - Set **Team**: your Apple Developer account
 - Minimum iOS: **16.0** (covers 98% of active iPhones as of 2025)
@@ -81,7 +81,7 @@ Go to https://appstoreconnect.apple.com → My Apps → `+` → New App.
 | Platform | iOS |
 | Name | Myatlastic |
 | Primary Language | English (US) |
-| Bundle ID | app.myatlastic.myatlastic |
+| Bundle ID | io.vertotech.atlastic |
 | SKU | myatlastic-ios-v1 |
 
 **Age Rating**: Fill questionnaire. Select:
@@ -192,9 +192,9 @@ In App Store Connect → My Apps → Myatlastic → create these (IDs **must mat
 
 | Product ID | Type | Price | Free trial |
 |---|---|---|---|
-| `app.myatlastic.pro.monthly` | Auto-renewable subscription | $9.99 / month | 1 week |
-| `app.myatlastic.pro.annual` | Auto-renewable subscription | $69.99 / year | 1 week |
-| `app.myatlastic.pro.lifetime` | Non-consumable | $149 one-time | — |
+| `io.vertotech.atlastic.pro.monthly` | Auto-renewable subscription | $9.99 / month | 1 week |
+| `io.vertotech.atlastic.pro.annual` | Auto-renewable subscription | $69.99 / year | 1 week |
+| `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $149 one-time | — |
 
 - Put the two subscriptions in one **Subscription Group** ("Myatlastic Pro"); add a **1-week free Introductory Offer** to each.
 - The Lifetime tier is a **Non-consumable** (not in the group).
@@ -312,9 +312,9 @@ Play Console → Myatlastic → Monetise → In-app products → Subscriptions �
 
 | Product ID | Name | Price |
 |---|---|---|
-| `app.myatlastic.pro.monthly` | Myatlastic Pro Monthly | $9.99/month |
-| `app.myatlastic.pro.annual` | Myatlastic Pro Annual | $69.99/year |
-| `app.myatlastic.pro.lifetime` | Myatlastic Pro Lifetime | $149 one-time |
+| `io.vertotech.atlastic.pro.monthly` | Myatlastic Pro Monthly | $9.99/month |
+| `io.vertotech.atlastic.pro.annual` | Myatlastic Pro Annual | $69.99/year |
+| `io.vertotech.atlastic.pro.lifetime` | Myatlastic Pro Lifetime | $149 one-time |
 
 ---
 

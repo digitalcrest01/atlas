@@ -78,7 +78,7 @@ npx cap open ios
 
 In Xcode, select the `App` target:
 
-- **General → Bundle Identifier**: `app.myatlastic.myatlastic`
+- **General → Bundle Identifier**: `io.vertotech.atlastic`
 - **General → Version**: `1.0.0` / **Build**: `1`
 - **General → Deployment Info → Minimum iOS**: `16.0`
 - **Signing & Capabilities → Team**: select your Apple Developer account

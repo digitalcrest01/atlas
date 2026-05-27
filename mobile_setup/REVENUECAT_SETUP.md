@@ -8,9 +8,9 @@ RevenueCat, and `BILLING_CONFIG`.
 ## Product IDs (already in BILLING_CONFIG)
 | Plan | Product ID | Type | Price | Trial |
 |---|---|---|---|---|
-| Monthly | `app.myatlastic.pro.monthly` | Auto-renewable sub | $9.99 / month | 1-week free |
-| Annual | `app.myatlastic.pro.annual` | Auto-renewable sub | $69.99 / year | 1-week free |
-| Lifetime | `app.myatlastic.pro.lifetime` | Non-consumable | $149 one-time | — |
+| Monthly | `io.vertotech.atlastic.pro.monthly` | Auto-renewable sub | $9.99 / month | 1-week free |
+| Annual | `io.vertotech.atlastic.pro.annual` | Auto-renewable sub | $69.99 / year | 1-week free |
+| Lifetime | `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $149 one-time | — |
 
 Entitlement id: **`pro`**
 
@@ -18,10 +18,10 @@ Entitlement id: **`pro`**
 > we use **1 week**. Change in App Store Connect + the StoreKit file + paywall copy if you prefer 3 days.
 
 ## 1. App Store Connect (needs the paid Apple Developer account)
-1. Create the app (bundle id `app.myatlastic.myatlastic`).
+1. Create the app (bundle id `io.vertotech.atlastic`).
 2. Create a **subscription group** "Myatlastic Pro" with the two auto-renewable subs above; add a
    **1-week free Introductory Offer** to each.
-3. Create the **non-consumable** `app.myatlastic.pro.lifetime`.
+3. Create the **non-consumable** `io.vertotech.atlastic.pro.lifetime`.
 4. Agreements, Tax, and Banking → sign the **Paid Applications Agreement** and add bank + tax info.
 5. Users → generate an **App Store Connect API key** (for RevenueCat) and a **Sandbox test account**.
 

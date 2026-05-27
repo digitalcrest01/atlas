@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Myatlastic</string>
-    <string name="title_activity_main">Myatlastic</string>
-    <string name="package_name">app.myatlastic.myatlastic</string>
-    <string name="custom_url_scheme">app.myatlastic.myatlastic</string>
-</resources>

@@ -13,7 +13,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "app.myatlastic.pro.lifetime",
+      "productID" : "io.vertotech.atlastic.pro.lifetime",
       "referenceName" : "Pro Lifetime",
       "type" : "NonConsumable"
     }
@@ -51,7 +51,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "app.myatlastic.pro.monthly",
+          "productID" : "io.vertotech.atlastic.pro.monthly",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Pro Monthly",
           "subscriptionGroupID" : "641A8713-848F-472B-BF49-01B244AFB997",
@@ -76,7 +76,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "app.myatlastic.pro.annual",
+          "productID" : "io.vertotech.atlastic.pro.annual",
           "recurringSubscriptionPeriod" : "P1Y",
           "referenceName" : "Pro Annual",
           "subscriptionGroupID" : "641A8713-848F-472B-BF49-01B244AFB997",

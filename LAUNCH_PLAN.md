@@ -22,7 +22,7 @@ Apple App Store review averages 24-48 hours but can take up to 7 days for new ap
 - [ ] Clone repo to your Mac
 - [ ] Run `./setup_mobile.sh` — adds iOS + Android Capacitor projects
 - [ ] `cd mobile_setup && npx cap open ios` — opens in Xcode
-- [ ] In Xcode: set bundle identifier to `app.myatlastic.myatlastic` (or your own), set Team to your Apple Developer account, set Version 1.0
+- [ ] In Xcode: set bundle identifier to `io.vertotech.atlastic` (or your own), set Team to your Apple Developer account, set Version 1.0
 - [ ] Build to iOS Simulator first — confirm everything renders
 - [ ] Build to a real iPhone via Xcode — confirm again. Real device is the only thing that matters.
 - [ ] Same for Android in Android Studio
