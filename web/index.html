@@ -2846,10 +2846,26 @@ function openSettings() {
   const diffBtns = ['easy', 'medium', 'hard'].map(d =>
     '<button class="seg' + (state.difficulty === d ? ' on' : '') + '" data-diff="' + d + '">' + d.charAt(0).toUpperCase() + d.slice(1) + '</button>').join('');
 
+  // Account / sign-in (for cross-device & cross-platform Pro sync)
+  const acc = getAccount();
+  let accountHtml = '<div class="set-group"><div class="set-label">👤 Account</div>';
+  if (acc) {
+    accountHtml += '<div class="set-hint">Signed in' + (acc.email ? ' as <b>' + escapeHtml(acc.email) + '</b>' : ' with ' + escapeHtml(acc.provider)) + '. Your Pro unlock follows you across phone, tablet and web.</div>' +
+      '<button class="set-action" id="set-signout">Sign out</button>';
+  } else if (Account.configured()) {
+    accountHtml += '<div class="set-hint">Sign in so a purchase on any device unlocks Pro everywhere.</div>';
+    if (BILLING_CONFIG.auth.googleClientId) accountHtml += '<button class="set-action" id="set-google">Continue with Google</button>';
+    if (BILLING_CONFIG.auth.appleEnabled) accountHtml += '<button class="set-action" id="set-apple"> Sign in with Apple</button>';
+  } else {
+    accountHtml += '<div class="set-hint">Accounts are coming soon — signing in will let your purchases follow you across phone, tablet and web.</div>';
+  }
+  accountHtml += '</div>';
+
   modal.innerHTML = '<div class="ts-box">' +
     '<button class="ts-close" aria-label="Close">✕</button>' +
     '<h2 class="ts-title">⚙️ Settings</h2>' +
     lockNote +
+    accountHtml +
     '<div class="set-group"><div class="set-label">👶 Age band' + proTag + '</div>' +
       '<div class="set-hint">Scales reading level and question difficulty.</div>' +
       '<div class="seg-row" id="seg-band">' + bandBtns + '</div></div>' +
@@ -2886,6 +2902,23 @@ function openSettings() {
   };
   $('set-2player').onclick = () => { if (!gate()) return; modal.remove(); startTwoPlayer(); };
   $('set-teacher').onclick = () => { if (!gate()) return; modal.remove(); openTeacher(); };
+
+  // Account handlers (only present when sign-in is configured / signed in)
+  const sg = $('set-google');
+  if (sg) sg.onclick = async () => {
+    sg.disabled = true; sg.textContent = 'Signing in…';
+    const r = await Account.signInGoogle();
+    if (r.ok) { updateProBadge(); renderList(); openSettings(); }
+    else { alert(r.error || 'Sign-in failed'); sg.disabled = false; sg.textContent = 'Continue with Google'; }
+  };
+  const sa = $('set-apple');
+  if (sa) sa.onclick = async () => {
+    const r = await Account.signInApple();
+    if (r.ok) { updateProBadge(); renderList(); openSettings(); }
+    else alert(r.error || 'Sign-in failed');
+  };
+  const so = $('set-signout');
+  if (so) so.onclick = async () => { await Account.signOut(); updateProBadge(); renderList(); openSettings(); };
 }
 
 /* ---- Two-player pass-and-play quiz ---- */
@@ -3626,19 +3659,48 @@ const BILLING_CONFIG = {
     annual:   'io.vertotech.atlastic.pro.annual',
     lifetime: 'io.vertotech.atlastic.pro.lifetime',
   },
-  // WEB CHECKOUT — on the website Apple's IAP rule doesn't apply, so we send the
-  // user to a hosted checkout that handles cards, Apple Pay, Google Pay & PayPal.
-  // Paste a RevenueCat Web Billing / Stripe Payment Link per plan to go live.
-  // Until set, the web Upgrade button shows a clean "coming soon" message
-  // instead of a fake unlock. NOTE: syncing a web purchase back to a user's
-  // iPhone requires accounts (sign-in) + RevenueCat logIn with a shared user id.
-  webCheckout: {
-    monthly:  '',
-    annual:   '',
-    lifetime: '',
+  // WEB BILLING (RevenueCat) — on the website Apple's IAP rule doesn't apply, so
+  // we send the user to RevenueCat's hosted checkout (card, Apple Pay, Google Pay,
+  // PayPal). Paste your Web Billing public key + paywall link from the RevenueCat
+  // dashboard. The user's app_user_id is appended so the purchase is granted to the
+  // SAME RevenueCat customer — which is what makes it sync to their iPhone.
+  webBilling: {
+    paywallLink: '',                    // e.g. https://pay.rev.cat/abcd…  (Web Billing paywall link)
+    publicApiKey: '',                   // RevenueCat Web Billing public API key (rcb_…)
+  },
+  // Fallback per-plan checkout links (e.g. Stripe Payment Links) if not using the
+  // RevenueCat paywall link above.
+  webCheckout: { monthly: '', annual: '', lifetime: '' },
+  // ACCOUNTS — required for cross-platform sync. Fill these in to switch sign-in on.
+  // See docs/WEB_BILLING_AND_ACCOUNTS.md for the dashboard/credential steps.
+  auth: {
+    googleClientId: '',                 // Google Identity Services web client id
+    appleEnabled: false,                // Sign in with Apple (native iOS via Capacitor; web needs a verify endpoint)
   },
   devMode: false,                       // true = let web Upgrade unlock locally for testing
 };
+
+// Stable RevenueCat app_user_id. Anonymous per-install until the user signs in,
+// at which point it becomes their account id so purchases follow them across
+// devices and platforms.
+function getAppUserId() {
+  try {
+    const acc = getAccount();
+    if (acc && acc.id) return acc.id;
+    let id = localStorage.getItem('myatlastic_uid');
+    if (!id) {
+      const rnd = (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID()
+        : (Date.now().toString(36) + Math.random().toString(36).slice(2));
+      id = 'atl_' + rnd;
+      localStorage.setItem('myatlastic_uid', id);
+    }
+    return id;
+  } catch (e) { return 'atl_anon'; }
+}
+function getAccount() { try { return JSON.parse(localStorage.getItem('myatlastic_account') || 'null'); } catch (e) { return null; } }
+function setAccount(acc) {
+  try { acc ? localStorage.setItem('myatlastic_account', JSON.stringify(acc)) : localStorage.removeItem('myatlastic_account'); } catch (e) {}
+}
 
 function setProState(isPro) {
   state.isPro = !!isPro;
@@ -3660,10 +3722,26 @@ const Billing = {
     try {
       await this._rc().configure({ apiKey: BILLING_CONFIG.revenueCatApiKey });
       this.configured = true;
+      // If the user is signed in, tie this device to their RevenueCat customer so
+      // entitlements bought on web (or another device) sync here.
+      const acc = getAccount();
+      if (acc && acc.id) { try { await this._rc().logIn({ appUserID: acc.id }); } catch (e) {} }
       // Real-time entitlement updates (renewals, family-shared access, restores elsewhere)
       try { this._rc().addCustomerInfoUpdateListener((customerInfo) => setProState(this._hasPro(customerInfo))); } catch (e) {}
       await this.refresh();
     } catch (e) { console.warn('[Billing] configure failed', e); }
+  },
+
+  // Point this install at a signed-in user's RevenueCat customer (cross-platform sync).
+  async identify(userId) {
+    if (this.live() && this.configured) {
+      try { await this._rc().logIn({ appUserID: userId }); await this.refresh(); } catch (e) { console.warn('[Billing] logIn failed', e); }
+    }
+  },
+  async signOut() {
+    if (this.live() && this.configured) { try { await this._rc().logOut(); } catch (e) {} }
+    setProState(false);
+    await this.refresh();
   },
 
   _wireResume() {
@@ -3699,6 +3777,14 @@ const Billing = {
   },
 
   _webCheckoutUrl(plan) {
+    const wb = BILLING_CONFIG.webBilling || {};
+    if (wb.paywallLink) {
+      // RevenueCat Web Billing paywall link — grant the purchase to this app_user_id
+      // so it syncs to the same customer's other devices/platforms.
+      const sep = wb.paywallLink.indexOf('?') === -1 ? '?' : '&';
+      return wb.paywallLink + sep + 'app_user_id=' + encodeURIComponent(getAppUserId()) +
+        (plan ? '&plan=' + encodeURIComponent(plan) : '');
+    }
     const m = BILLING_CONFIG.webCheckout || {};
     return m[plan] || m.all || '';
   },
@@ -3749,6 +3835,78 @@ const Billing = {
       setProState(ok);
       return { ok: ok };
     } catch (e) { return { ok: false, error: (e && e.message) || 'Restore failed' }; }
+  },
+};
+
+/* ============================================================
+ * ACCOUNTS — sign-in so a purchase made on one platform (e.g. web)
+ * follows the same person to their iPhone. Gated by BILLING_CONFIG.auth;
+ * inert until you add credentials (see docs/WEB_BILLING_AND_ACCOUNTS.md).
+ * ============================================================ */
+function loadScriptOnce(src) {
+  return new Promise((resolve, reject) => {
+    if (document.querySelector('script[data-src="' + src + '"]')) return resolve();
+    const s = document.createElement('script');
+    s.src = src; s.async = true; s.defer = true; s.dataset.src = src;
+    s.onload = () => resolve();
+    s.onerror = () => reject(new Error('script load failed: ' + src));
+    document.head.appendChild(s);
+  });
+}
+function decodeJwt(token) {
+  try {
+    const part = token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    return JSON.parse(decodeURIComponent(escape(atob(part))));
+  } catch (e) { return {}; }
+}
+const Account = {
+  configured() { const a = BILLING_CONFIG.auth || {}; return !!(a.googleClientId || a.appleEnabled); },
+  current() { return getAccount(); },
+  async afterSignIn(acc) {
+    setAccount(acc);
+    await Billing.identify(getAppUserId());   // tie this device to the account's RC customer
+    await Billing.refresh();                   // pull any entitlement bought elsewhere
+  },
+  async signInGoogle() {
+    const cid = BILLING_CONFIG.auth && BILLING_CONFIG.auth.googleClientId;
+    if (!cid) return { ok: false, error: 'Google sign-in not configured' };
+    try {
+      await loadScriptOnce('https://accounts.google.com/gsi/client');
+      await new Promise(r => setTimeout(r, 350));
+      if (!(window.google && google.accounts && google.accounts.id)) return { ok: false, error: 'Google library unavailable' };
+      return await new Promise((resolve) => {
+        google.accounts.id.initialize({
+          client_id: cid,
+          callback: async (resp) => {
+            const c = decodeJwt(resp.credential);
+            if (!c.sub) return resolve({ ok: false, error: 'No identity returned' });
+            await Account.afterSignIn({ provider: 'google', id: 'g_' + c.sub, email: c.email || '', name: c.name || '' });
+            resolve({ ok: true });
+          },
+        });
+        google.accounts.id.prompt();
+      });
+    } catch (e) { return { ok: false, error: (e && e.message) || 'Google sign-in failed' }; }
+  },
+  async signInApple() {
+    // Native iOS via the Capacitor Sign in with Apple plugin (web Apple needs a
+    // server verify endpoint — see the setup doc).
+    const p = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.SignInWithApple;
+    if (p && p.authorize) {
+      try {
+        const r = await p.authorize({ requestedScopes: [] });
+        const resp = (r && r.response) || {};
+        const uid = resp.user || (resp.identityToken && decodeJwt(resp.identityToken).sub);
+        if (!uid) return { ok: false, error: 'No Apple identity' };
+        await Account.afterSignIn({ provider: 'apple', id: 'a_' + uid, email: resp.email || '' });
+        return { ok: true };
+      } catch (e) { return { ok: false, error: (e && e.message) || 'Apple sign-in failed' }; }
+    }
+    return { ok: false, error: 'Apple sign-in needs the native app (or a web verify endpoint).' };
+  },
+  async signOut() {
+    setAccount(null);
+    await Billing.signOut();
   },
 };
 
