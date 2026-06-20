@@ -400,6 +400,35 @@
     -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
   }
   .globe-explorer .ge-ic { font-size: 15px; margin-right: 5px; }
+  /* Globe Flag Hunt overlay */
+  .globe-hunt {
+    position: absolute; top: 12px; left: 50%; transform: translateX(-50%);
+    z-index: 5; width: min(320px, calc(100% - 24px));
+  }
+  .gh-card {
+    position: relative; background: rgba(17,21,28,0.92); border: 1px solid var(--accent);
+    border-radius: 14px; padding: 12px 14px; text-align: center;
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+  }
+  .gh-x { position: absolute; top: 8px; right: 10px; background: none; border: none; color: var(--ink-dim); font-size: 15px; cursor: pointer; }
+  .gh-label { font-size: 11px; color: var(--ink-dim); letter-spacing: 0.04em; }
+  .gh-flag { font-size: 54px; line-height: 1.1; margin: 2px 0; }
+  .gh-hint { font-size: 13px; color: var(--ink); }
+  .gh-hint b { color: var(--accent); }
+  .gh-result { font-size: 22px; font-weight: 800; color: var(--accent); margin: 6px 0 12px; }
+  .gh-fb { margin-top: 8px; font-size: 13px; font-weight: 600; border-radius: 8px; padding: 6px 8px; }
+  .gh-fb.ok { color: var(--success); background: rgba(111,184,122,0.12); }
+  .gh-fb.no { color: var(--danger); background: rgba(201,112,100,0.12); }
+  .gh-row { display: flex; gap: 8px; }
+  .gh-btn { flex: 1; padding: 9px; border-radius: 9px; border: none; background: var(--accent); color: var(--bg); font-weight: 700; cursor: pointer; }
+  .gh-btn.ghost { background: none; border: 1px solid var(--line); color: var(--ink-dim); }
+  /* Globe Flag Hunt launcher card in the Quiz tab */
+  .hunt-launch { max-width: 520px; padding: 14px 16px; margin-bottom: 14px; }
+  .hunt-launch-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; }
+  .hunt-launch-title { font-weight: 700; font-size: 15px; color: var(--ink); }
+  .hunt-launch-sub { font-size: 12px; color: var(--ink-dim); margin-top: 2px; }
+  .hunt-launch #hunt-start { width: auto; padding: 10px 18px; flex-shrink: 0; }
   .globe-tooltip {
     position: absolute;
     background: var(--panel);
@@ -1328,6 +1357,7 @@
       <button class="globe-btn globe-btn-2" id="daynight-toggle" title="Show where it is day and night right now">🌗 Day &amp; Night</button>
       <button class="globe-btn globe-btn-3" id="truesize-btn" title="See the real size of countries">📐 True Size</button>
       <div class="globe-explorer" id="globe-explorer" title="Your explorer rank — visit more countries to level up"></div>
+      <div class="globe-hunt" id="globe-hunt" style="display:none"></div>
     </div>
 
     <aside class="pane details" id="details-pane">
@@ -3298,13 +3328,26 @@ function newQuizQuestion() {
   return { type, correct, options };
 }
 
+// A small card that launches the Globe Flag Hunt — shown at the top of the Quiz tab.
+function huntLauncherHtml() {
+  return '<div class="center-card hunt-launch">' +
+    '<div class="hunt-launch-row">' +
+      '<div><div class="hunt-launch-title">🌍 Globe Flag Hunt</div>' +
+      '<div class="hunt-launch-sub">See a flag, then tap that country on the 3D globe.</div></div>' +
+      '<button class="btn-primary" id="hunt-start">Play</button>' +
+    '</div></div>';
+}
+function wireHuntLauncher() { const b = $('hunt-start'); if (b) b.onclick = startGlobeHunt; }
+
 function renderQuiz() {
   const root = $('view-quiz');
   if (!canQuiz()) {
-    root.innerHTML = '<div class="center-card quiz-card"><div class="quiz-eyebrow">Daily limit reached</div>' +
+    root.innerHTML = huntLauncherHtml() +
+      '<div class="center-card quiz-card"><div class="quiz-eyebrow">Daily limit reached</div>' +
       '<h2 style="font-size:24px;margin:20px 0">You have used your 3 free quizzes today</h2>' +
       '<p style="color:var(--ink-dim);margin-bottom:24px">Upgrade for unlimited quizzes.</p>' +
       '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button></div>';
+    wireHuntLauncher();
     return;
   }
 
@@ -3339,13 +3382,15 @@ function renderQuiz() {
       textFn = c => c.flag + ' ' + c.n; break;
   }
 
-  root.innerHTML = '<div class="center-card quiz-card">' +
+  root.innerHTML = huntLauncherHtml() +
+    '<div class="center-card quiz-card">' +
     '<div class="quiz-eyebrow">' + eyebrow + '</div>' + promptHtml +
     '<div class="quiz-options">' +
     options.map((o, i) => '<button class="quiz-option" data-idx="' + i + '">' + escapeHtml(textFn(o)) + '</button>').join('') +
     '</div>' +
     '<div class="quiz-score">Score: ' + state.quiz.score + ' / ' + state.quiz.total + '</div>' +
     '</div>';
+  wireHuntLauncher();
 
   const card = root.querySelector('.quiz-card');
   card.querySelectorAll('.quiz-option').forEach(btn => {
@@ -3369,6 +3414,73 @@ function renderQuiz() {
       card.querySelector('.quiz-score').textContent = 'Score: ' + state.quiz.score + ' / ' + state.quiz.total;
     };
   });
+}
+
+/* ============================================================
+ * GLOBE FLAG HUNT — see a flag, tap that country on the 3D globe.
+ * Scored by nearest country to the tap (forgiving for small ones).
+ * ============================================================ */
+let globeHunt = null;
+function huntPool() { return gameShuffle(SOVEREIGN_COUNTRIES.filter(c => c.flag && typeof c.lat === 'number')).slice(0, 10); }
+
+function startGlobeHunt() {
+  globeHunt = { active: true, pool: huntPool(), round: 0, total: 10, score: 0, target: null, status: 'playing', feedback: null };
+  setMode('explore');
+  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (globeAPI && globeAPI.resize) requestAnimationFrame(() => globeAPI.resize());
+  nextHuntRound();
+}
+function endGlobeHunt(goQuiz) {
+  globeHunt = null;
+  renderHuntOverlay();
+  if (goQuiz) setMode('quiz');
+}
+function nextHuntRound() {
+  const g = globeHunt;
+  if (!g) return;
+  g.round++;
+  if (g.round > g.total) { g.status = 'over'; renderHuntOverlay(); return; }
+  g.target = g.pool[g.round - 1];
+  g.feedback = null;
+  g.status = 'playing';
+  renderHuntOverlay();
+}
+// Called by the globe when a country is tapped during a hunt.
+function onHuntPick(country) {
+  const g = globeHunt;
+  if (!g || !g.active || g.status !== 'playing' || !country) return;
+  const ok = country.n === g.target.n;
+  if (ok) { g.score++; stampCountry(g.target.n); checkAchievements(); g.feedback = { ok: true, text: '✓ Yes — ' + g.target.n + '!' }; }
+  else { g.feedback = { ok: false, text: '✗ That was ' + country.n + '. Here is ' + g.target.n + '.' }; }
+  g.status = 'reveal';
+  if (globeAPI) globeAPI.focus(g.target);   // fly to the answer so they learn where it is
+  renderHuntOverlay();
+  setTimeout(() => { if (globeHunt === g) nextHuntRound(); }, 1700);
+}
+function renderHuntOverlay() {
+  const el = $('globe-hunt');
+  if (!el) return;
+  const g = globeHunt;
+  if (!g || !g.active) { el.style.display = 'none'; el.innerHTML = ''; return; }
+  el.style.display = 'block';
+  if (g.status === 'over') {
+    const emoji = g.score >= 8 ? '🏆' : g.score >= 5 ? '🌟' : '🌍';
+    el.innerHTML = '<div class="gh-card"><div class="gh-flag" style="font-size:42px">' + emoji + '</div>' +
+      '<div class="gh-result">' + g.score + ' / ' + g.total + ' found</div>' +
+      '<div class="gh-row"><button class="gh-btn" id="gh-again">Play again</button>' +
+      '<button class="gh-btn ghost" id="gh-done">Done</button></div></div>';
+    $('gh-again').onclick = startGlobeHunt;
+    $('gh-done').onclick = () => endGlobeHunt(true);
+    return;
+  }
+  const fb = g.feedback ? '<div class="gh-fb ' + (g.feedback.ok ? 'ok' : 'no') + '">' + escapeHtml(g.feedback.text) + '</div>' : '';
+  el.innerHTML = '<div class="gh-card">' +
+    '<button class="gh-x" id="gh-x" title="Quit" aria-label="Quit">✕</button>' +
+    '<div class="gh-label">Find this country · ' + g.round + '/' + g.total + ' · ⭐ ' + g.score + '</div>' +
+    '<div class="gh-flag">' + (g.target.flag || '🌐') + '</div>' +
+    '<div class="gh-hint">Tap <b>' + escapeHtml(g.target.n) + '</b> on the globe</div>' +
+    fb + '</div>';
+  $('gh-x').onclick = () => endGlobeHunt(true);
 }
 
 /* ============================================================
@@ -4552,6 +4664,30 @@ function setupGlobe(THREE) {
     const hits = raycaster.intersectObjects(pinsGroup.children, false);
     return hits.length ? hits[0].object.userData : null;
   }
+  // For the Flag Hunt: where on the Earth did they tap → nearest country.
+  // Tolerant (you don't need to hit a tiny pin, just the right area).
+  function pickCountryAt(clientX, clientY) {
+    const rect = canvas.getBoundingClientRect();
+    mouseVec.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+    mouseVec.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+    raycaster.setFromCamera(mouseVec, camera);
+    const hits = raycaster.intersectObject(earth, false);
+    if (!hits.length) return null;
+    const p = earth.worldToLocal(hits[0].point.clone());
+    const r = p.length() || 1;
+    const lat = 90 - Math.acos(Math.max(-1, Math.min(1, p.y / r))) * 180 / Math.PI;
+    let lon = Math.atan2(p.z, -p.x) * 180 / Math.PI - 180;
+    lon = ((lon + 180) % 360 + 360) % 360 - 180;
+    let best = null, bestD = Infinity;
+    for (const c of SOVEREIGN_COUNTRIES) {
+      const dLat = (c.lat - lat) * Math.PI / 180;
+      const dLon = (c.lon - lon) * Math.PI / 180;
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat * Math.PI / 180) * Math.cos(c.lat * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
+      const d = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      if (d < bestD) { bestD = d; best = c; }
+    }
+    return best;
+  }
 
   canvas.addEventListener('mousedown', e => {
     isDragging = true; prevX = e.clientX; prevY = e.clientY;
@@ -4562,12 +4698,16 @@ function setupGlobe(THREE) {
     if (isDragging) {
       const moved = Math.abs(e.clientX - dragStartX) + Math.abs(e.clientY - dragStartY);
       if (moved < 5) {
-        const c = pickPin(e.clientX, e.clientY);
-        if (c) {
-          state.activeCountry = c;
-          renderList();
-          renderDetails();
-          if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+        if (globeHunt && globeHunt.active && globeHunt.status === 'playing') {
+          onHuntPick(pickCountryAt(e.clientX, e.clientY));
+        } else {
+          const c = pickPin(e.clientX, e.clientY);
+          if (c) {
+            state.activeCountry = c;
+            renderList();
+            renderDetails();
+            if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+          }
         }
       }
     }
@@ -4580,8 +4720,10 @@ function setupGlobe(THREE) {
       targetRotX = Math.max(-Math.PI / 2 + 0.1, Math.min(Math.PI / 2 - 0.1, targetRotX));
       prevX = e.clientX; prevY = e.clientY;
     } else if (canvas.contains(e.target)) {
-      const c = pickPin(e.clientX, e.clientY);
       const tt = $('globe-tooltip');
+      // During a Flag Hunt, don't reveal country names on hover (no cheating).
+      if (globeHunt && globeHunt.active && globeHunt.status === 'playing') { tt.style.display = 'none'; canvas.style.cursor = 'crosshair'; return; }
+      const c = pickPin(e.clientX, e.clientY);
       if (c) {
         $('tt-flag').textContent = c.flag || '🌐';
         $('tt-name').textContent = c.n;
@@ -4616,12 +4758,16 @@ function setupGlobe(THREE) {
       const t = e.changedTouches[0];
       const moved = Math.abs(t.clientX - dragStartX) + Math.abs(t.clientY - dragStartY);
       if (moved < 8) {
-        const c = pickPin(t.clientX, t.clientY);
-        if (c) {
-          state.activeCountry = c;
-          renderList();
-          renderDetails();
-          if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+        if (globeHunt && globeHunt.active && globeHunt.status === 'playing') {
+          onHuntPick(pickCountryAt(t.clientX, t.clientY));
+        } else {
+          const c = pickPin(t.clientX, t.clientY);
+          if (c) {
+            state.activeCountry = c;
+            renderList();
+            renderDetails();
+            if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+          }
         }
       }
     }
