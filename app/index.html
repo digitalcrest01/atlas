@@ -595,6 +595,19 @@
   .hello-speak:active { transform: scale(0.9); }
   .hello-phon { font-size: 13px; color: var(--ink-dim); margin-top: 6px; }
   .hello-phon b { color: var(--accent-2); font-style: italic; }
+  /* Phrasebook rows inside the hello card */
+  .phrase-row { padding: 10px 0; border-top: 1px solid var(--line); }
+  .phrase-row.first { border-top: none; padding-top: 2px; }
+  .phrase-en {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 3px;
+  }
+  .phrase-main { display: flex; align-items: center; gap: 10px; }
+  .phrase-loc { font-size: 20px; font-weight: 700; color: var(--ink); }
+  .phrase-row.first .phrase-loc { font-size: 26px; }
+  .phrase-speak { width: 34px; height: 34px; font-size: 16px; }
+  .phrase-phon { font-size: 12px; color: var(--ink-dim); margin-top: 4px; }
+  .phrase-phon b { color: var(--accent-2); font-style: italic; }
   /* NATIONAL ANTHEM card */
   .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
   .anthem-head { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
@@ -1666,6 +1679,58 @@ const HELLO_BY_LANG = {
   '11 official languages': {hi:'Sawubona', phon:'sah-woo-BOH-nah'},
 };
 
+// Mini phrasebook for the major languages, keyed the same way as HELLO_BY_LANG
+// (by primary language). [phrase, phonetic]. Languages not listed here just show
+// the greeting. Greeting ("Hello") comes from HELLO_BY_LANG above.
+const PHRASES = {
+  'English':    { meet:['Nice to meet you','nice to MEET you'], thanks:['Thank you','THANK you'], bye:['Goodbye','good-BYE'] },
+  'Spanish':    { meet:['Mucho gusto','MOO-cho GOOS-to'], thanks:['Gracias','GRAH-see-as'], bye:['Adiós','ah-dee-OHS'] },
+  'Portuguese': { meet:['Muito prazer','MOO-ee-too prah-ZEHR'], thanks:['Obrigado','oh-bree-GAH-doo'], bye:['Tchau','CHOW'] },
+  'French':     { meet:['Enchanté','on-shon-TAY'], thanks:['Merci','mair-SEE'], bye:['Au revoir','oh ruh-VWAR'] },
+  'German':     { meet:['Freut mich','FROYT mish'], thanks:['Danke','DAHN-kuh'], bye:['Auf Wiedersehen','owf VEE-der-zane'] },
+  'Italian':    { meet:['Piacere','pyah-CHEH-reh'], thanks:['Grazie','GRAH-tsee-eh'], bye:['Arrivederci','ah-ree-veh-DAIR-chee'] },
+  'Dutch':      { meet:['Aangenaam','AHN-guh-nahm'], thanks:['Dank je','DAHNK yuh'], bye:['Tot ziens','tot ZEENS'] },
+  'Arabic':     { meet:['Tasharrafna','ta-SHAR-raf-na'], thanks:['Shukran','SHOOK-ran'], bye:["Ma'a salama",'ma-ah sa-LA-ma'] },
+  'Russian':    { meet:['Ochen priyatno','OH-chen pree-YAHT-na'], thanks:['Spasibo','spah-SEE-ba'], bye:['Do svidaniya','da svee-DAH-nya'] },
+  'Mandarin':   { meet:['Hěn gāoxìng rènshí nǐ','hen gow-SHING ren-shir nee'], thanks:['Xièxie','SHYEH-shyeh'], bye:['Zàijiàn','dzai-JYEN'] },
+  'Chinese':    { meet:['Hěn gāoxìng rènshí nǐ','hen gow-SHING ren-shir nee'], thanks:['Xièxie','SHYEH-shyeh'], bye:['Zàijiàn','dzai-JYEN'] },
+  'Japanese':   { meet:['Hajimemashite','ha-jee-meh-MASH-teh'], thanks:['Arigatō','ah-ree-GAH-toh'], bye:['Sayōnara','sah-YOH-nah-rah'] },
+  'Korean':     { meet:['Bangapseumnida','pan-gap-SUM-ni-da'], thanks:['Gamsahamnida','kam-sa-HAM-ni-da'], bye:['Annyeonghi gaseyo','an-NYUNG-hee ga-SE-yo'] },
+  'Hindi':      { meet:['Aapse milkar khushi hui','AHP-se mil-KAR khu-SHEE hu-EE'], thanks:['Dhanyavaad','DHUN-ya-vaad'], bye:['Alvida','al-vee-DAH'] },
+  'Greek':      { meet:['Chárika polý','HA-ree-ka po-LEE'], thanks:['Efcharistó','ef-cha-ri-STO'], bye:['Antío','an-DEE-o'] },
+  'Turkish':    { meet:['Memnun oldum','mem-NOON ol-DUM'], thanks:['Teşekkürler','te-shek-koor-LER'], bye:['Hoşça kal','HOSH-cha kal'] },
+  'Polish':     { meet:['Miło mi','MEE-wo mee'], thanks:['Dziękuję','jen-KOO-yeh'], bye:['Do widzenia','do vee-DZEN-ya'] },
+  'Swahili':    { meet:['Nimefurahi kukutana','nee-meh-foo-RAH-hee koo-koo-TAH-na'], thanks:['Asante','ah-SAHN-teh'], bye:['Kwaheri','kwah-HEH-ree'] },
+  'Vietnamese': { meet:['Rất vui được gặp bạn','rut voo-ee duok gap ban'], thanks:['Cảm ơn','kahm uhn'], bye:['Tạm biệt','tahm bee-et'] },
+  'Thai':       { meet:['Yindee tee dai roojak','yin-DEE tee dai roo-JAK'], thanks:['Khob khun','kop koon'], bye:['La gon','lah gawn'] },
+  'Indonesian': { meet:['Senang bertemu','suh-NANG ber-TEH-moo'], thanks:['Terima kasih','teh-REE-ma KA-see'], bye:['Selamat tinggal','suh-LA-mat TING-gal'] },
+  'Hebrew':     { meet:["Na'im me'od",'na-EEM meh-OD'], thanks:['Toda','toh-DAH'], bye:["Lehitra'ot",'leh-hit-ra-OT'] },
+  'Persian':    { meet:['Khoshvaghtam','khosh-VACH-tam'], thanks:['Mamnoonam','mam-NOO-nam'], bye:['Khodahafez','kho-da-HA-fez'] },
+  'Urdu':       { meet:['Aap se mil kar khushi hui','ahp se mil kar khu-SHEE hu-EE'], thanks:['Shukriya','shook-REE-ya'], bye:['Khuda hafiz','khu-DA HA-fiz'] },
+  'Bengali':    { meet:['Apnake peye bhalo laglo','AHP-na-ke PEH-yeh BHA-lo LAHG-lo'], thanks:['Dhonnobad','DHON-no-bahd'], bye:['Abar dekha hobe','AH-bar DEH-kha HO-beh'] },
+  'Ukrainian':  { meet:['Pryyemno poznayomytysya','pri-YEM-no poz-na-YO-mi-ti-sya'], thanks:['Dyakuyu','DYA-koo-yu'], bye:['Do pobachennya','do po-BA-chen-nya'] },
+  'Czech':      { meet:['Těší mě','TYEH-shee myeh'], thanks:['Děkuji','DYEH-koo-yi'], bye:['Na shledanou','nas-KHLE-da-no'] },
+  'Swedish':    { meet:['Trevligt att träffas','TREV-leet at TREF-fas'], thanks:['Tack','TAHK'], bye:['Hej då','HAY doh'] },
+  'Norwegian':  { meet:['Hyggelig å møte deg','HEW-geh-lee oh MUH-teh dye'], thanks:['Takk','TAHK'], bye:['Ha det','HA deh'] },
+  'Danish':     { meet:['Hyggeligt at møde dig','HEW-geh-lee at MUH-the die'], thanks:['Tak','TAK'], bye:['Farvel','fah-VEL'] },
+  'Finnish':    { meet:['Hauska tavata','HOWS-ka TA-va-ta'], thanks:['Kiitos','KEE-tos'], bye:['Näkemiin','NAK-eh-meen'] },
+  'Filipino':   { meet:['Ikinagagalak kong makilala ka','ee-kee-na-ga-GA-lak kong ma-kee-LA-la ka'], thanks:['Salamat','sa-LA-mat'], bye:['Paalam','pa-AH-lam'] },
+  'Tagalog':    { meet:['Ikinagagalak kong makilala ka','ee-kee-na-ga-GA-lak kong ma-kee-LA-la ka'], thanks:['Salamat','sa-LA-mat'], bye:['Paalam','pa-AH-lam'] },
+};
+
+// Builds the ordered phrase list for a country: Hello (always) + any extras.
+function phrasesFor(c) {
+  const g = helloFor(c);
+  const out = [{ key: 'hi', label: 'Hello', t: g.hi, p: g.phon }];
+  const ph = PHRASES[primaryLang(c)];
+  if (ph) {
+    if (ph.meet)   out.push({ key: 'meet',   label: 'Nice to meet you', t: ph.meet[0],   p: ph.meet[1] });
+    if (ph.thanks) out.push({ key: 'thanks', label: 'Thank you',        t: ph.thanks[0], p: ph.thanks[1] });
+    if (ph.bye)    out.push({ key: 'bye',    label: 'Goodbye',          t: ph.bye[0],    p: ph.bye[1] });
+  }
+  return out;
+}
+
 // Notable wildlife to spot — the strongest pull for this age group.
 // Framed as "wildlife", not "official national animal", so a sensible
 // iconic species is fine where a country has no official one.
@@ -2070,6 +2135,16 @@ window.__myatlasticSayHello = (countryName) => {
   speakInLocale(greeting.hi, locale, '.hello-speak');
 };
 
+// Speak any phrasebook line (hello / nice to meet you / thank you / goodbye).
+window.__myatlasticSpeakPhrase = (countryName, key) => {
+  const c = COUNTRIES.find(x => x.n === countryName);
+  if (!c) return;
+  const p = phrasesFor(c).find(x => x.key === key);
+  if (!p) return;
+  const locale = SPEECH_LOCALE[c.n] || 'en-US';
+  speakInLocale(p.t, locale, '.phrase-speak.k-' + key);
+};
+
 // Read-aloud of the country's detail text, so pre-readers get the same content.
 window.__myatlasticReadAloud = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
@@ -2260,16 +2335,22 @@ function renderDetails() {
   // it is the hook that makes a child want to dig in (and unlock Pro).
   html += '<div class="wow-fact"><span class="wow-spark">✨</span><span><span class="wow-label">Wow fact</span>' + escapeHtml(wowFor(c)) + '</span></div>';
 
-  // SAY HELLO in the local language, with a phonetic spell-out + spoken playback.
-  const greet = helloFor(c);
+  // USEFUL PHRASES in the local language — phonetic spell-out + spoken playback.
+  const phrases = phrasesFor(c);
+  const langLabel = escapeHtml(primaryLang(c) || c.lang);
   html += '<div class="hello-card">' +
-    '<div class="hello-head">👋 Say hello in ' + escapeHtml(primaryLang(c) || c.lang) + '</div>' +
-    '<div class="hello-row">' +
-    '<span class="hello-word">' + escapeHtml(greet.hi) + '</span>' +
-    (speech.available ? '<button class="hello-speak" onclick="window.__myatlasticSayHello(' + cq + ')" aria-label="Hear the greeting" title="Hear it">🔊</button>' : '') +
-    '</div>' +
-    '<div class="hello-phon">say it: <b>' + escapeHtml(greet.phon) + '</b></div>' +
+    '<div class="hello-head">🗣 ' + (phrases.length > 1 ? 'Useful phrases' : 'Say hello') + ' in ' + langLabel + '</div>';
+  phrases.forEach((p, i) => {
+    html += '<div class="phrase-row' + (i === 0 ? ' first' : '') + '">' +
+      '<div class="phrase-en">' + escapeHtml(p.label) + '</div>' +
+      '<div class="phrase-main">' +
+        '<span class="phrase-loc">' + escapeHtml(p.t) + '</span>' +
+        (speech.available ? '<button class="hello-speak phrase-speak k-' + p.key + '" onclick="window.__myatlasticSpeakPhrase(' + cq + ', \'' + p.key + '\')" aria-label="Hear it" title="Hear it">🔊</button>' : '') +
+      '</div>' +
+      (p.p ? '<div class="phrase-phon">say it: <b>' + escapeHtml(p.p) + '</b></div>' : '') +
     '</div>';
+  });
+  html += '</div>';
 
   // NATIONAL ANTHEM (opening) — synthesized on-device; only shown where we have
   // a verified public-domain melody.
