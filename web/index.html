@@ -391,6 +391,15 @@
   .globe-btn-3 { top: 88px; }
   .globe-btn:hover { border-color: var(--accent); }
   .globe-btn.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  /* Explorer rank badge — explains the avatar (compass) bobbing on the globe */
+  .globe-explorer {
+    position: absolute; bottom: 12px; left: 12px; z-index: 3;
+    background: rgba(17,21,28,0.82); border: 1px solid var(--line);
+    color: var(--ink); border-radius: 16px; padding: 6px 11px;
+    font-size: 12px; font-weight: 600; pointer-events: none;
+    -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  }
+  .globe-explorer .ge-ic { font-size: 15px; margin-right: 5px; }
   .globe-tooltip {
     position: absolute;
     background: var(--panel);
@@ -1305,6 +1314,7 @@
       <button class="globe-btn" id="flags-toggle" title="Show every country's flag on the globe">🚩 All Flags</button>
       <button class="globe-btn globe-btn-2" id="daynight-toggle" title="Show where it is day and night right now">🌗 Day &amp; Night</button>
       <button class="globe-btn globe-btn-3" id="truesize-btn" title="See the real size of countries">📐 True Size</button>
+      <div class="globe-explorer" id="globe-explorer" title="Your explorer rank — visit more countries to level up"></div>
     </div>
 
     <aside class="pane details" id="details-pane">
@@ -3095,8 +3105,18 @@ function recordCountryView(name) {
       localStorage.setItem('myatlastic_viewed', JSON.stringify([...set]));
       localStorage.setItem('myatlastic_viewed_count', String(set.size));
       updateExploreProgress();
+      updateExplorerBadge();
     }
   } catch (e) {}
+}
+// Labels the explorer avatar (the compass etc.) on the globe with its rank.
+function updateExplorerBadge() {
+  const el = $('globe-explorer');
+  if (!el) return;
+  const viewed = getViewedSet();
+  const n = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
+  const lvl = explorerLevel();
+  el.innerHTML = '<span class="ge-ic">' + lvl.icon + '</span>' + escapeHtml(lvl.title) + ' · ' + n + '/195';
 }
 
 /* ============================================================
@@ -3606,6 +3626,18 @@ const BILLING_CONFIG = {
     annual:   'io.vertotech.atlastic.pro.annual',
     lifetime: 'io.vertotech.atlastic.pro.lifetime',
   },
+  // WEB CHECKOUT — on the website Apple's IAP rule doesn't apply, so we send the
+  // user to a hosted checkout that handles cards, Apple Pay, Google Pay & PayPal.
+  // Paste a RevenueCat Web Billing / Stripe Payment Link per plan to go live.
+  // Until set, the web Upgrade button shows a clean "coming soon" message
+  // instead of a fake unlock. NOTE: syncing a web purchase back to a user's
+  // iPhone requires accounts (sign-in) + RevenueCat logIn with a shared user id.
+  webCheckout: {
+    monthly:  '',
+    annual:   '',
+    lifetime: '',
+  },
+  devMode: false,                       // true = let web Upgrade unlock locally for testing
 };
 
 function setProState(isPro) {
@@ -3666,9 +3698,22 @@ const Billing = {
     } catch (e) { return null; }
   },
 
-  // resolves to { ok, demo?, cancelled?, error? }
+  _webCheckoutUrl(plan) {
+    const m = BILLING_CONFIG.webCheckout || {};
+    return m[plan] || m.all || '';
+  },
+  // Web (browser) purchase path — not Apple IAP. Sends the user to a hosted
+  // checkout if configured; otherwise a clean "coming soon" status.
+  _webPurchase(plan) {
+    if (BILLING_CONFIG.devMode) { setProState(true); return { ok: true, demo: true }; }
+    const url = this._webCheckoutUrl(plan);
+    if (url) return { ok: false, web: true, url: url };
+    return { ok: false, webUnconfigured: true };
+  },
+
+  // resolves to { ok, demo?, web?, url?, webUnconfigured?, cancelled?, error? }
   async purchase(plan) {
-    if (!this.live()) { setProState(true); return { ok: true, demo: true }; }
+    if (!this.live()) return this._webPurchase(plan);
     try {
       if (!this.configured) await this.init();
       const rc = this._rc();
@@ -3693,7 +3738,10 @@ const Billing = {
   },
 
   async restore() {
-    if (!this.live()) { setProState(true); return { ok: true, demo: true }; }
+    if (!this.live()) {
+      if (BILLING_CONFIG.devMode) { setProState(true); return { ok: true, demo: true }; }
+      return { ok: false, webUnconfigured: true };
+    }
     try {
       if (!this.configured) await this.init();
       const { customerInfo } = await this._rc().restorePurchases();
@@ -3732,7 +3780,7 @@ function renderPaywall() {
     '<div style="font-size:13px;color:var(--accent);margin:14px 0;padding:10px 12px;border:1px solid var(--accent);border-radius:10px">▶ Monthly &amp; Annual start with a 1-week free trial — cancel anytime before it ends and you won\'t be charged. Lifetime is a one-time purchase with all future updates included.</div>' +
     '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:13px">Upgrade to Pro</button>' +
     '<div class="restore-link" id="restore-link">Already subscribed? Restore purchase</div>' +
-    '<div class="legal-note">Demo build: clicking Upgrade simulates a successful purchase locally.<br>Production: payment handled by Apple App Store / Google Play / Stripe.<br><br>Questions? <a href="mailto:support@myatlastic.com" style="color:var(--accent)">support@myatlastic.com</a></div>' +
+    '<div class="legal-note">On iPhone &amp; iPad, payment is handled securely by the Apple App Store. On the web, checkout supports card, Apple Pay, Google Pay and PayPal.<br><br>Questions? <a href="mailto:support@myatlastic.com" style="color:var(--accent)">support@myatlastic.com</a></div>' +
     '</div>';
 
   const card = root.querySelector('.paywall-card');
@@ -3749,13 +3797,14 @@ function renderPaywall() {
     const res = await Billing.purchase(selectedPlan);
     btn.disabled = false; btn.textContent = orig;
     if (res.ok) {
-      if (res.demo) {
-        const priceLabel = selectedPlan === 'annual' ? '$69.99/year' : selectedPlan === 'lifetime' ? '$149 one-time (lifetime)' : '$9.99/month';
-        const trialLabel = selectedPlan === 'lifetime' ? '' : ' after a 1-week free trial';
-        alert('✓ Demo unlock (no RevenueCat key set yet). In production this charges ' + priceLabel + trialLabel + ' via the App Store.');
-      }
+      if (res.demo) alert('✓ Dev unlock (BILLING_CONFIG.devMode is on). No charge — for testing Pro only.');
       setMode('explore');
       renderList();
+    } else if (res.web && res.url) {
+      // Redirect to the hosted checkout (cards, Apple Pay, Google Pay, PayPal).
+      window.location.href = res.url;
+    } else if (res.webUnconfigured) {
+      alert('Web checkout is launching soon. For now you can subscribe to Atlastic Pro in the iOS app — one tap, secure Apple payment.');
     } else if (res.cancelled) {
       /* user dismissed the purchase sheet — no-op */
     } else {
@@ -3765,9 +3814,11 @@ function renderPaywall() {
   $('restore-link').onclick = async () => {
     const res = await Billing.restore();
     if (res.ok) {
-      alert(res.demo ? 'Demo: Pro unlocked.' : '✓ Purchases restored.');
+      alert(res.demo ? 'Dev unlock restored.' : '✓ Purchases restored.');
       setMode('explore');
       renderList();
+    } else if (res.webUnconfigured) {
+      alert('On the web, restoring will be available once web checkout launches. In the iOS app, use “Restore purchase”.');
     } else {
       alert('No active purchases to restore' + (res.error ? ' (' + res.error + ')' : '') + '.');
     }
@@ -4525,6 +4576,7 @@ try {
   updateProBadge();
   applySettings();
   updateExploreProgress();
+  updateExplorerBadge();
   renderFilters();
   renderList();
   renderDetails();
