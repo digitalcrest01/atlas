@@ -94,22 +94,22 @@ Go to https://appstoreconnect.apple.com → My Apps → `+` → New App.
 
 **App Name** (30 chars): `Myatlastic: World Geography`  *(alt: `Myatlastic`)*
 
-**Subtitle** (30 chars): `Explore all 195 countries`
+**Subtitle** (30 chars): `Explore all 197 countries`
 
 **Promotional text** (170 chars — editable anytime, no review):
 ```
-Spin a 3D globe and discover all 195 countries — flags, capitals, cultures, quizzes, a daily challenge, and a relaxed spelling game. No ads, no tracking.
+Spin a 3D globe and discover all 197 countries — flags, capitals, cultures, quizzes, a daily challenge, and a relaxed spelling game. No ads, no tracking.
 ```
 
 **Description** (4,000 chars max):
 ```
-Discover the whole world — all 195 countries — with Myatlastic, an interactive geography app for kids and curious minds of all ages.
+Discover the whole world — all 197 countries — with Myatlastic, an interactive geography app for kids and curious minds of all ages.
 
 Spin a photorealistic 3D globe and tap any country to instantly explore its flag, capital, currency, language, culture, history, notable figures, religion, national food, sport, and traditional dress.
 
 WHAT YOU CAN DO
 • Spin a 3D globe — drag to rotate, pinch to zoom, tap a pin to dive in
-• Explore all 195 countries with rich, readable detail and a landmark photo for each
+• Explore all 197 countries with rich, readable detail and a landmark photo for each
 • Hear each country's name read aloud
 • Take a Daily Challenge and build a streak
 • Test yourself with quizzes — flags, capitals, culture, food and more
@@ -129,7 +129,7 @@ FREE
 • A daily challenge
 
 MYATLASTIC PRO — unlock everything
-• All 195 countries in full depth
+• All 197 countries in full depth
 • A landmark photo for every country
 • Compare mode + currency converter
 • The Spell-the-Country game
@@ -208,7 +208,7 @@ RevenueCat is **already integrated** in the app (`@revenuecat/purchases-capacito
 
 In the "Review Notes" field on App Store Connect:
 ```
-This is an educational geography reference app covering 195 countries.
+This is an educational geography reference app covering 197 countries.
 It uses a 3D globe with NASA Blue Marble public domain imagery.
 Landmark images link to Wikimedia Commons (Creative Commons / Public Domain).
 The paywall (Myatlastic Pro) uses auto-renewing subscriptions.
@@ -283,7 +283,7 @@ https://play.google.com/console → All apps → Create app
 
 **Short description** (80 chars):
 ```
-Explore all 195 countries on a 3D globe. Geography for all ages.
+Explore all 197 countries on a 3D globe. Geography for all ages.
 ```
 
 **Full description** (4,000 chars): Same as App Store description above.
@@ -322,7 +322,7 @@ Play Console → Myatlastic → Monetise → In-app products → Subscriptions �
 
 1. Play Console → Testing → Internal testing → Create new release
 2. Upload the `.aab` file from Android Studio
-3. Add release notes: `First release. Explore 195 countries with a 3D globe, daily challenges, and quiz modes.`
+3. Add release notes: `First release. Explore 197 countries with a 3D globe, daily challenges, and quiz modes.`
 4. Roll out to internal testing first (your own Google account)
 5. After passing internal testing: Production → Create release
 
