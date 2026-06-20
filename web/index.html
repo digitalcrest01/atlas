@@ -371,6 +371,26 @@
     text-align: center;
     opacity: 0.7;
   }
+  .globe-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 3;
+    background: rgba(17,21,28,0.82);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    border-radius: 20px;
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  .globe-btn-2 { top: 50px; }
+  .globe-btn-3 { top: 88px; }
+  .globe-btn:hover { border-color: var(--accent); }
+  .globe-btn.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
   .globe-tooltip {
     position: absolute;
     background: var(--panel);
@@ -509,6 +529,201 @@
   .qf-body {
     font-size: 13px;
     line-height: 1.4;
+  }
+  /* WOW FACT banner — surfaced first */
+  .wow-fact {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: linear-gradient(135deg, rgba(212,160,86,0.16), rgba(110,168,196,0.10));
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 4px 0 14px;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .wow-spark { font-size: 18px; line-height: 1.3; }
+  .wow-label {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 3px;
+  }
+  /* SAY HELLO card */
+  .hello-card {
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+  }
+  .hello-head {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    margin-bottom: 8px;
+  }
+  .hello-row { display: flex; align-items: center; gap: 10px; }
+  .hello-word { font-size: 26px; font-weight: 700; color: var(--ink); }
+  .hello-speak {
+    background: var(--accent-2);
+    border: none;
+    color: var(--bg);
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: transform 0.1s;
+  }
+  .hello-speak:active { transform: scale(0.9); }
+  .hello-phon { font-size: 13px; color: var(--ink-dim); margin-top: 6px; }
+  .hello-phon b { color: var(--accent-2); font-style: italic; }
+  /* NATIONAL ANTHEM card */
+  .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
+  .anthem-head { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .anthem-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); border: none; color: var(--bg); font-weight: 700; font-size: 14px; border-radius: 22px; padding: 9px 16px; cursor: pointer; transition: transform 0.1s, opacity 0.1s; }
+  .anthem-btn:active { transform: scale(0.96); }
+  .anthem-play { font-size: 12px; }
+  .anthem-btn.playing { animation: speak-pulse 1s ease-in-out infinite; }
+  .anthem-btn.playing .anthem-play::before { content: '⏸'; }
+  .anthem-btn.playing .anthem-play { font-size: 0; }
+  .anthem-btn.playing .anthem-play::before { font-size: 12px; }
+  .anthem-note { font-size: 12px; color: var(--ink-dim); margin-top: 8px; }
+  /* LANDMARK card */
+  .landmark-card {
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.1s;
+  }
+  .landmark-card:hover { border-color: var(--accent); }
+  .landmark-card:active { transform: scale(0.99); }
+  .landmark-head { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .landmark-fact { font-size: 13px; line-height: 1.45; color: var(--ink-dim); }
+  .landmark-cta { font-size: 12px; color: var(--accent); margin-top: 8px; font-weight: 600; }
+  /* PASSPORT */
+  .passport-wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 60px; }
+  .explorer-card {
+    display: flex; align-items: center; gap: 16px;
+    background: linear-gradient(135deg, rgba(212,160,86,0.18), rgba(110,168,196,0.10));
+    border: 1px solid var(--accent); border-radius: 16px; padding: 18px; margin-bottom: 22px;
+  }
+  .explorer-avatar { font-size: 52px; line-height: 1; flex-shrink: 0; }
+  .explorer-meta { flex: 1; min-width: 0; }
+  .explorer-title { font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+  .explorer-bar { height: 10px; background: var(--panel); border-radius: 6px; overflow: hidden; border: 1px solid var(--line); }
+  .explorer-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width 0.6s ease; }
+  .explorer-sub { font-size: 13px; color: var(--ink); margin-top: 7px; font-weight: 600; }
+  .explorer-next { font-size: 12px; color: var(--ink-dim); margin-top: 3px; }
+  .passport-section { margin-bottom: 26px; }
+  .passport-section h3 { font-size: 16px; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .count-pill { font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 2px 8px; font-weight: 600; }
+  .passport-hint { font-size: 13px; color: var(--ink-dim); line-height: 1.5; }
+  .streak-big { font-size: 30px; font-weight: 800; color: var(--accent); margin-bottom: 14px; }
+  .reward-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .reward { flex: 1; min-width: 64px; text-align: center; padding: 12px 6px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--line); opacity: 0.45; }
+  .reward.got { opacity: 1; border-color: var(--accent); background: rgba(212,160,86,0.12); }
+  .reward-ic { font-size: 26px; }
+  .reward-lb { font-size: 11px; color: var(--ink-dim); margin-top: 4px; }
+  .badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+  .badge-cell { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 12px; text-align: center; opacity: 0.5; }
+  .badge-cell.got { opacity: 1; border-color: var(--accent); }
+  .badge-ic { font-size: 30px; margin-bottom: 6px; }
+  .badge-nm { font-size: 13px; font-weight: 700; color: var(--ink); }
+  .badge-ds { font-size: 11px; color: var(--ink-dim); margin-top: 3px; line-height: 1.35; }
+  .cont-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cont-chip { font-size: 13px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 20px; padding: 7px 13px; color: var(--ink-dim); }
+  .cont-chip b { color: var(--ink); }
+  .cont-chip.full { border-color: var(--success); color: var(--success); }
+  .cont-chip.full b { color: var(--success); }
+  .stamp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 10px; }
+  .stamp { position: relative; background: var(--panel-2); border: 1px dashed var(--line); border-radius: 12px; padding: 12px 6px 8px; cursor: pointer; text-align: center; transition: transform 0.1s, border-color 0.15s; }
+  .stamp:hover { border-color: var(--accent); }
+  .stamp:active { transform: scale(0.95); }
+  /* default = "to collect": greyed flag, dashed border */
+  .stamp .stamp-flag { filter: grayscale(1); opacity: 0.32; transition: filter 0.2s, opacity 0.2s; }
+  .stamp .stamp-nm { color: var(--ink-dim); }
+  /* collected */
+  .stamp.got { border-style: solid; }
+  .stamp.got .stamp-flag { filter: none; opacity: 1; }
+  .stamp.got .stamp-nm { color: var(--ink); }
+  /* answered correctly */
+  .stamp.gold { border-color: var(--accent); border-style: solid; box-shadow: 0 0 0 1px var(--accent) inset; }
+  /* Pro-locked teaser */
+  .stamp.locked { opacity: 0.7; }
+  .stamp.locked .stamp-flag { opacity: 0.22; }
+  .stamp-flag { font-size: 30px; display: block; }
+  .stamp-star { position: absolute; top: 3px; right: 5px; font-size: 13px; }
+  .stamp-lock { position: absolute; top: 3px; right: 5px; font-size: 11px; opacity: 0.85; }
+  .lock-tease { color: var(--accent); cursor: pointer; font-weight: 600; white-space: nowrap; }
+  .lock-tease:hover { text-decoration: underline; }
+  /* MYSTERY COUNTRY */
+  .clue-list { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+  .clue { display: flex; gap: 10px; align-items: flex-start; background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--accent-2); border-radius: 10px; padding: 11px 13px; font-size: 14px; line-height: 1.4; animation: clue-in 0.3s ease; }
+  @keyframes clue-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+  .clue-ic { font-size: 20px; line-height: 1.2; }
+  .mystery-score { text-align: center; font-size: 13px; color: var(--ink-dim); margin: 8px 0 12px; }
+  .mystery-score b { color: var(--accent); font-size: 16px; }
+  .clue-btn { display: block; width: 100%; padding: 11px; margin-bottom: 14px; background: none; border: 1px dashed var(--accent-2); color: var(--accent-2); border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .clue-btn:hover { background: rgba(110,168,196,0.1); }
+  .mystery-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .mystery-opt { display: flex; align-items: center; gap: 8px; padding: 12px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; color: var(--ink); font-size: 14px; cursor: pointer; text-align: left; transition: border-color 0.12s, transform 0.1s; }
+  .mystery-opt:hover { border-color: var(--accent); }
+  .mystery-opt:active { transform: scale(0.97); }
+  .mystery-opt.wrong { opacity: 0.4; border-color: var(--danger); text-decoration: line-through; cursor: default; }
+  /* TRUE SIZE modal */
+  .ts-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 9000; display: flex; align-items: center; justify-content: center; padding: 16px; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+  .ts-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; max-width: 460px; width: 100%; max-height: 92vh; overflow: auto; position: relative; }
+  .ts-close { position: absolute; top: 12px; right: 12px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 14px; }
+  .ts-title { font-size: 24px; color: var(--accent); margin-bottom: 6px; }
+  .ts-intro { font-size: 13px; color: var(--ink-dim); line-height: 1.5; margin-bottom: 16px; }
+  .ts-pickers { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
+  .ts-select { flex: 1; min-width: 0; background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; font-size: 13px; }
+  .ts-vs { color: var(--ink-dim); font-size: 12px; }
+  .ts-stage { display: flex; align-items: flex-end; justify-content: center; gap: 14px; min-height: 180px; padding: 8px 0 14px; }
+  .ts-sq { border: 2px solid; border-radius: 8px; display: flex; align-items: center; justify-content: center; min-width: 22px; min-height: 22px; transition: width 0.4s ease, height 0.4s ease; }
+  .ts-sq span { font-size: 26px; }
+  .ts-verdict { text-align: center; font-size: 16px; color: var(--ink); line-height: 1.5; margin-bottom: 12px; }
+  .ts-verdict b { color: var(--accent); }
+  .ts-areas { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--ink-dim); margin-bottom: 14px; flex-wrap: wrap; }
+  .ts-illusion { font-size: 13px; line-height: 1.55; color: var(--ink-dim); background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .ts-illusion b { color: var(--accent-2); }
+  /* SETTINGS + PRO TOOLS */
+  .set-group { margin-bottom: 18px; }
+  .set-label { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .set-hint { font-size: 12px; color: var(--ink-dim); margin-bottom: 8px; line-height: 1.4; }
+  .pro-tag { font-size: 9px; background: var(--accent); color: var(--bg); border-radius: 6px; padding: 2px 6px; letter-spacing: 0.08em; vertical-align: middle; font-weight: 700; }
+  .set-locked-note { font-size: 13px; color: var(--ink-dim); background: var(--panel-2); border: 1px solid var(--accent); border-radius: 10px; padding: 10px 12px; margin-bottom: 18px; }
+  .link-btn { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 13px; text-decoration: underline; padding: 0; }
+  .seg-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .seg { flex: 1; min-width: 70px; padding: 9px 8px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 8px; cursor: pointer; font-size: 13px; }
+  .seg.on { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 700; }
+  .set-toggle { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink); cursor: pointer; }
+  .set-toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
+  .set-action { display: block; width: 100%; text-align: left; padding: 12px 14px; margin-bottom: 8px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink); border-radius: 10px; cursor: pointer; font-size: 14px; }
+  .set-action:hover { border-color: var(--accent); }
+  /* Dyslexia-friendly reading mode */
+  body.dyslexia, body.dyslexia .section-body, body.dyslexia .fact-value,
+  body.dyslexia .qf-body, body.dyslexia p, body.dyslexia .clue, body.dyslexia .wow-fact {
+    font-family: 'OpenDyslexic', 'Comic Sans MS', 'Trebuchet MS', Verdana, sans-serif !important;
+    letter-spacing: 0.04em;
+    word-spacing: 0.12em;
+    line-height: 1.7 !important;
+  }
+  .speaking {
+    animation: speak-pulse 1s ease-in-out infinite;
   }
   .speak-btn {
     background: transparent;
@@ -1051,6 +1266,7 @@
     <span class="streak" id="streak-display"></span>
     <button class="badge hidden" id="pro-badge">Upgrade</button>
     <button class="kids-toggle" id="kids-toggle">Kids: Off</button>
+    <button class="kids-toggle" id="settings-btn" title="Settings, reading help, 2-player &amp; teacher tools" aria-label="Settings">⚙️</button>
   </div>
 </header>
 <div class="explore-progress" id="explore-progress" style="display:none"><div class="explore-progress-fill" id="explore-progress-fill"></div></div>
@@ -1062,6 +1278,8 @@
   <button data-mode="compare">Compare</button>
   <button data-mode="currency">Currency</button>
   <button data-mode="game">Game</button>
+  <button data-mode="mystery">Mystery</button>
+  <button data-mode="passport">Passport</button>
 </nav>
 
 <main>
@@ -1084,6 +1302,9 @@
         <span class="tt-cap" id="tt-cap"></span>
       </div>
       <div class="globe-hint" id="globe-hint">Drag to spin &middot; tap a pin to select</div>
+      <button class="globe-btn" id="flags-toggle" title="Show every country's flag on the globe">🚩 All Flags</button>
+      <button class="globe-btn globe-btn-2" id="daynight-toggle" title="Show where it is day and night right now">🌗 Day &amp; Night</button>
+      <button class="globe-btn globe-btn-3" id="truesize-btn" title="See the real size of countries">📐 True Size</button>
     </div>
 
     <aside class="pane details" id="details-pane">
@@ -1098,6 +1319,8 @@
   <section class="view" id="view-compare"></section>
   <section class="view" id="view-currency"></section>
   <section class="view" id="view-game"></section>
+  <section class="view" id="view-mystery"></section>
+  <section class="view" id="view-passport"></section>
   <section class="view" id="view-paywall"></section>
 
 </main>
@@ -1327,6 +1550,260 @@ const COUNTRIES = [
 ];
 
 /* ============================================================
+ * KID DATA LAYER — wildlife, wow-facts, landmarks, greetings,
+ * rough timezone offsets. Keyed by sovereign country name (or
+ * primary language for greetings). Everything degrades
+ * gracefully: a card only renders when its data exists, and
+ * wow-facts fall back to safe values derived from real fields.
+ * ============================================================ */
+
+// "Hello" in the local language, with a phonetic spell-out for pre-readers.
+// Keyed by the FIRST language listed on each country (see primaryLang()).
+const HELLO_BY_LANG = {
+  'English': {hi:'Hello', phon:'heh-LOH'},
+  'Spanish': {hi:'¡Hola!', phon:'OH-lah'},
+  'Portuguese': {hi:'Olá', phon:'oh-LAH'},
+  'French': {hi:'Bonjour', phon:'bawn-ZHOOR'},
+  'German': {hi:'Hallo', phon:'HAH-loh'},
+  'Italian': {hi:'Ciao', phon:'CHOW'},
+  'Dutch': {hi:'Hallo', phon:'HAH-loh'},
+  'Catalan': {hi:'Hola', phon:'OH-lah'},
+  'Arabic': {hi:'Marhaba', phon:'MAR-ha-bah'},
+  'Pashto': {hi:'Salaam', phon:'sah-LAAM'},
+  'Persian': {hi:'Salaam', phon:'sah-LAAM'},
+  'Urdu': {hi:'Assalam-o-alaikum', phon:'ah-sah-LAHM oh ah-LAY-koom'},
+  'Albanian': {hi:'Përshëndetje', phon:'puhr-shen-DET-yeh'},
+  'Armenian': {hi:'Barev', phon:'bah-REV'},
+  'Azerbaijani': {hi:'Salam', phon:'sah-LAHM'},
+  'Bengali': {hi:'Nomoshkar', phon:'no-mosh-KAR'},
+  'Russian': {hi:'Privyet', phon:'pree-VYET'},
+  'Belarusian': {hi:'Pryvitannie', phon:'pree-vee-TAH-nye'},
+  'Bosnian': {hi:'Zdravo', phon:'ZDRAH-vo'},
+  'Croatian': {hi:'Bok', phon:'BOHK'},
+  'Serbian': {hi:'Zdravo', phon:'ZDRAH-vo'},
+  'Bulgarian': {hi:'Zdravei', phon:'ZDRAH-vey'},
+  'Tswana': {hi:'Dumela', phon:'doo-MEH-lah'},
+  'Malay': {hi:'Apa khabar', phon:'AH-pah KAH-bar'},
+  'Dzongkha': {hi:'Kuzuzangpo', phon:'koo-zoo-ZANG-po'},
+  'Khmer': {hi:'Suosdei', phon:'soo-uh-SDAY'},
+  'Mandarin': {hi:'Nǐ hǎo', phon:'nee-HOW'},
+  'Chinese': {hi:'Nǐ hǎo', phon:'nee-HOW'},
+  'Greek': {hi:'Yia sou', phon:'YAH-soo'},
+  'Amharic': {hi:'Selam', phon:'SEH-lahm'},
+  'Finnish': {hi:'Hei', phon:'HAY'},
+  'Georgian': {hi:'Gamarjoba', phon:'gah-mar-JO-bah'},
+  'Hindi': {hi:'Namaste', phon:'nuh-muh-STAY'},
+  'Indonesian': {hi:'Halo', phon:'HAH-loh'},
+  'Irish': {hi:'Dia duit', phon:'DEE-ah gwit'},
+  'Hebrew': {hi:'Shalom', phon:'shah-LOHM'},
+  'Japanese': {hi:'Konnichiwa', phon:'kon-nee-chee-WAH'},
+  'Kazakh': {hi:'Salem', phon:'sah-LEM'},
+  'Swahili': {hi:'Jambo', phon:'JAHM-bo'},
+  'Korean': {hi:'Annyeong', phon:'ahn-NYUNG'},
+  'Lao': {hi:'Sabaidee', phon:'sah-bye-DEE'},
+  'Latvian': {hi:'Sveiki', phon:'SVAY-kee'},
+  'Lithuanian': {hi:'Labas', phon:'LAH-bahs'},
+  'Malagasy': {hi:'Salama', phon:'sah-LAH-mah'},
+  'Maltese': {hi:'Bonġu', phon:'BON-joo'},
+  'Mongolian': {hi:'Sain baina uu', phon:'SAIN by-noo'},
+  'Burmese': {hi:'Mingalaba', phon:'min-gah-lah-BAH'},
+  'Nepali': {hi:'Namaste', phon:'nuh-muh-STAY'},
+  'Norwegian': {hi:'Hei', phon:'HAY'},
+  'Danish': {hi:'Hej', phon:'HIGH'},
+  'Swedish': {hi:'Hej', phon:'HAY'},
+  'Polish': {hi:'Cześć', phon:'CHESHCH'},
+  'Romanian': {hi:'Salut', phon:'sah-LOOT'},
+  'Kinyarwanda': {hi:'Muraho', phon:'moo-RAH-ho'},
+  'Samoan': {hi:'Talofa', phon:'tah-LOH-fah'},
+  'Sinhala': {hi:'Ayubowan', phon:'ah-yoo-BOH-wan'},
+  'Slovak': {hi:'Ahoj', phon:'AH-hoy'},
+  'Czech': {hi:'Ahoj', phon:'AH-hoy'},
+  'Slovene': {hi:'Živjo', phon:'ZHEEV-yo'},
+  'Slovenian': {hi:'Živjo', phon:'ZHEEV-yo'},
+  'Somali': {hi:'Salaan', phon:'sah-LAHN'},
+  'Zulu': {hi:'Sawubona', phon:'sah-woo-BOH-nah'},
+  'Afrikaans': {hi:'Hallo', phon:'HAH-loh'},
+  'Thai': {hi:'Sawasdee', phon:'sah-wah-DEE'},
+  'Turkish': {hi:'Merhaba', phon:'MER-hah-bah'},
+  'Turkmen': {hi:'Salam', phon:'sah-LAHM'},
+  'Uzbek': {hi:'Salom', phon:'sah-LOHM'},
+  'Tajik': {hi:'Salom', phon:'sah-LOHM'},
+  'Kyrgyz': {hi:'Salam', phon:'sah-LAHM'},
+  'Ukrainian': {hi:'Pryvit', phon:'PRIH-veet'},
+  'Vietnamese': {hi:'Xin chào', phon:'sin-CHOW'},
+  'Hungarian': {hi:'Szia', phon:'SEE-yah'},
+  'Icelandic': {hi:'Halló', phon:'HAH-loh'},
+  'Estonian': {hi:'Tere', phon:'TEH-reh'},
+  'Filipino': {hi:'Kumusta', phon:'koo-moos-TAH'},
+  'Tagalog': {hi:'Kumusta', phon:'koo-moos-TAH'},
+  'Tongan': {hi:'Mālō e lelei', phon:'MAH-loh eh leh-LAY'},
+  'Fijian': {hi:'Bula', phon:'BOO-lah'},
+  'Shona': {hi:'Mhoro', phon:'MHO-ro'},
+  'Maori': {hi:'Kia ora', phon:'KEE-ah OR-ah'},
+  'Luxembourgish': {hi:'Moien', phon:'MOY-en'},
+  'Kirundi': {hi:'Amahoro', phon:'ah-mah-HOH-roh'},
+  'Tigrinya': {hi:'Selam', phon:'SEH-lahm'},
+  'Swazi': {hi:'Sawubona', phon:'sah-woo-BOH-nah'},
+  'Sesotho': {hi:'Lumela', phon:'loo-MEH-lah'},
+  'Dhivehi': {hi:'Assalaam alaikum', phon:'ah-sah-LAHM ah-LAY-koom'},
+  'Marshallese': {hi:'Iakwe', phon:'YAH-kway'},
+  'Montenegrin': {hi:'Zdravo', phon:'ZDRAH-vo'},
+  'Macedonian': {hi:'Zdravo', phon:'ZDRAH-vo'},
+  'Palauan': {hi:'Alii', phon:'ah-LEE'},
+  'Tetum': {hi:'Bondia', phon:'bon-DEE-ah'},
+  'Tuvaluan': {hi:'Talofa', phon:'tah-LOH-fah'},
+  'Bislama': {hi:'Halo', phon:'HAH-loh'},
+  '11 official languages': {hi:'Sawubona', phon:'sah-woo-BOH-nah'},
+};
+
+// Notable wildlife to spot — the strongest pull for this age group.
+// Framed as "wildlife", not "official national animal", so a sensible
+// iconic species is fine where a country has no official one.
+const ANIMALS = {
+  'Afghanistan':['Snow leopard','🐆'],'Albania':['Golden eagle','🦅'],'Algeria':['Fennec fox','🦊'],'Andorra':['Pyrenean chamois','🐐'],'Angola':['Giant sable antelope','🦌'],'Antigua and Barbuda':['Fallow deer','🦌'],'Argentina':['Rufous hornero','🐦'],'Armenia':['Eagle','🦅'],'Australia':['Kangaroo','🦘'],'Austria':['Black eagle','🦅'],'Azerbaijan':['Karabakh horse','🐎'],'Bahamas':['Flamingo','🦩'],'Bahrain':['Arabian oryx','🦌'],'Bangladesh':['Royal Bengal tiger','🐅'],'Barbados':['Green monkey','🐒'],'Belarus':['European bison','🦬'],'Belgium':['Lion','🦁'],'Belize':['Baird\'s tapir','🐗'],'Benin':['Leopard','🐆'],'Bhutan':['Takin','🐐'],'Bolivia':['Llama','🦙'],'Bosnia and Herzegovina':['Grey wolf','🐺'],'Botswana':['Zebra','🦓'],'Brazil':['Jaguar','🐆'],'Brunei':['Proboscis monkey','🐒'],'Bulgaria':['Lion','🦁'],'Burkina Faso':['White stallion','🐎'],'Burundi':['Lion','🦁'],'Cambodia':['Kouprey (wild ox)','🐂'],'Cameroon':['Lion','🦁'],'Canada':['Beaver','🦫'],'Cape Verde':['Cape Verde warbler','🐦'],'Central African Republic':['Forest elephant','🐘'],'Chad':['Lion','🦁'],'Chile':['Huemul deer','🦌'],'China':['Giant panda','🐼'],'Colombia':['Andean condor','🦅'],'Comoros':['Livingstone\'s fruit bat','🦇'],'Congo (DRC)':['Okapi','🦓'],'Congo (Republic)':['Forest elephant','🐘'],'Costa Rica':['Clay-coloured thrush','🐦'],'Côte d\'Ivoire':['African elephant','🐘'],'Croatia':['Pine marten','🐾'],'Cuba':['Cuban trogon','🐦'],'Cyprus':['Cypriot mouflon','🐑'],'Czech Republic':['Lion','🦁'],'Denmark':['Mute swan','🦢'],'Djibouti':['Dromedary camel','🐪'],'Dominica':['Sisserou parrot','🦜'],'Dominican Republic':['Palmchat','🐦'],'Ecuador':['Andean condor','🦅'],'Egypt':['Steppe eagle','🦅'],'El Salvador':['Turquoise-browed motmot','🐦'],'Equatorial Guinea':['Gorilla','🦍'],'Eritrea':['Arabian camel','🐪'],'Estonia':['Barn swallow','🐦'],'Eswatini':['Lion','🦁'],'Ethiopia':['Lion','🦁'],'Fiji':['Banded iguana','🦎'],'Finland':['Brown bear','🐻'],'France':['Gallic rooster','🐓'],'Gabon':['Black panther','🐆'],'Gambia':['Spotted hyena','🐺'],'Georgia':['Caucasian leopard','🐆'],'Germany':['Federal eagle','🦅'],'Ghana':['Tawny eagle','🦅'],'Greece':['Dolphin','🐬'],'Grenada':['Grenada dove','🕊'],'Guatemala':['Resplendent quetzal','🐦'],'Guinea':['Elephant','🐘'],'Guinea-Bissau':['Hippopotamus','🦛'],'Guyana':['Jaguar','🐆'],'Haiti':['Hispaniolan trogon','🐦'],'Honduras':['White-tailed deer','🦌'],'Hungary':['Turul falcon','🦅'],'Iceland':['Gyrfalcon','🦅'],'India':['Bengal tiger','🐅'],'Indonesia':['Komodo dragon','🦎'],'Iran':['Persian leopard','🐆'],'Iraq':['Lion','🦁'],'Ireland':['Irish hare','🐇'],'Israel':['Hoopoe','🐦'],'Italy':['Italian wolf','🐺'],'Jamaica':['Doctor bird','🐦'],'Japan':['Green pheasant','🐦'],'Jordan':['Arabian oryx','🦌'],'Kazakhstan':['Golden eagle','🦅'],'Kenya':['Lion','🦁'],'Kiribati':['Great frigatebird','🐦'],'Kosovo':['Eagle','🦅'],'Kuwait':['Arabian camel','🐪'],'Kyrgyzstan':['Snow leopard','🐆'],'Laos':['Asian elephant','🐘'],'Latvia':['White wagtail','🐦'],'Lebanon':['Striped hyena','🐺'],'Lesotho':['Basotho pony','🐎'],'Liberia':['Elephant','🐘'],'Libya':['Camel','🐪'],'Liechtenstein':['Kestrel','🦅'],'Lithuania':['White stork','🐦'],'Luxembourg':['Lion','🦁'],'Madagascar':['Ring-tailed lemur','🐒'],'Malawi':['African fish eagle','🦅'],'Malaysia':['Malayan tiger','🐅'],'Maldives':['Yellowfin tuna','🐟'],'Mali':['Giraffe','🦒'],'Malta':['Pharaoh hound','🐕'],'Marshall Islands':['Green sea turtle','🐢'],'Mauritania':['Camel','🐪'],'Mauritius':['Dodo (extinct symbol)','🐦'],'Mexico':['Golden eagle','🦅'],'Micronesia':['Sea turtle','🐢'],'Moldova':['Aurochs','🦬'],'Monaco':['Hedgehog','🦔'],'Mongolia':['Przewalski\'s horse','🐎'],'Montenegro':['Golden eagle','🦅'],'Morocco':['Barbary lion','🦁'],'Mozambique':['Elephant','🐘'],'Myanmar':['Green peafowl','🦚'],'Namibia':['Oryx (gemsbok)','🦌'],'Nauru':['Frigatebird','🐦'],'Nepal':['Cow','🐄'],'Netherlands':['Lion','🦁'],'New Zealand':['Kiwi','🐦'],'Nicaragua':['Turquoise-browed motmot','🐦'],'Niger':['Giraffe','🦒'],'Nigeria':['Eagle','🦅'],'North Korea':['Siberian tiger','🐅'],'North Macedonia':['Balkan lynx','🐆'],'Norway':['Moose','🦌'],'Oman':['Arabian oryx','🦌'],'Pakistan':['Markhor','🐐'],'Palau':['Dugong','🦭'],'Palestine':['Palestine sunbird','🐦'],'Panama':['Harpy eagle','🦅'],'Papua New Guinea':['Bird-of-paradise','🐦'],'Paraguay':['Pampas fox','🦊'],'Peru':['Vicuña','🦙'],'Philippines':['Philippine eagle','🦅'],'Poland':['White-tailed eagle','🦅'],'Portugal':['Barcelos rooster','🐓'],'Qatar':['Arabian oryx','🦌'],'Romania':['Lynx','🐆'],'Russia':['Brown bear','🐻'],'Rwanda':['Mountain gorilla','🦍'],'Saint Kitts and Nevis':['Vervet monkey','🐒'],'Saint Lucia':['Saint Lucia parrot','🦜'],'Saint Vincent and the Grenadines':['Saint Vincent parrot','🦜'],'Samoa':['Tooth-billed pigeon','🐦'],'San Marino':['Barn owl','🦉'],'São Tomé and Príncipe':['Grey parrot','🦜'],'Saudi Arabia':['Arabian camel','🐪'],'Senegal':['Lion','🦁'],'Serbia':['Grey wolf','🐺'],'Seychelles':['Giant tortoise','🐢'],'Sierra Leone':['Chimpanzee','🐒'],'Singapore':['Lion (Merlion)','🦁'],'Slovakia':['Brown bear','🐻'],'Slovenia':['Lipizzaner horse','🐎'],'Solomon Islands':['Saltwater crocodile','🐊'],'Somalia':['Leopard','🐆'],'South Africa':['Springbok','🦌'],'South Korea':['Korean tiger','🐅'],'South Sudan':['African fish eagle','🦅'],'Spain':['Bull','🐂'],'Sri Lanka':['Sri Lankan junglefowl','🐓'],'Sudan':['Camel','🐪'],'Suriname':['Jaguar','🐆'],'Sweden':['Eurasian elk','🦌'],'Switzerland':['Alpine cow','🐄'],'Syria':['Hawk','🦅'],'Taiwan':['Formosan black bear','🐻'],'Tajikistan':['Markhor','🐐'],'Tanzania':['Giraffe','🦒'],'Thailand':['Asian elephant','🐘'],'Timor-Leste':['Saltwater crocodile','🐊'],'Togo':['Lion','🦁'],'Tonga':['Flying fox','🦇'],'Trinidad and Tobago':['Scarlet ibis','🐦'],'Tunisia':['Camel','🐪'],'Turkey':['Grey wolf','🐺'],'Turkmenistan':['Akhal-Teke horse','🐎'],'Tuvalu':['Sea turtle','🐢'],'Uganda':['Grey crowned crane','🐦'],'Ukraine':['Nightingale','🐦'],'United Arab Emirates':['Arabian oryx','🦌'],'United Kingdom':['Lion','🦁'],'United States':['Bald eagle','🦅'],'Uruguay':['Southern lapwing','🐦'],'Uzbekistan':['Karakul sheep','🐑'],'Vanuatu':['Dugong','🦭'],'Vatican City':['Dove','🕊'],'Venezuela':['Troupial','🐦'],'Vietnam':['Water buffalo','🐃'],'Yemen':['Arabian leopard','🐆'],'Zambia':['African fish eagle','🦅'],'Zimbabwe':['Sable antelope','🦌'],
+};
+
+// A single "wow fact" surfaced before the heavier detail. Curated for the
+// most-explored countries; wowFor() derives a safe fact for the rest.
+const WOW = {
+  'Australia':'More kangaroos live here than people!','Brazil':'The Amazon rainforest makes about 20% of the world\'s oxygen.','Canada':'Has more lakes than the rest of the world combined.','China':'The Great Wall is over 21,000 km long — you can\'t see it from space, though!','Egypt':'The Great Pyramid stood as the tallest building on Earth for ~3,800 years.','France':'You could visit a different château every day for years — it has thousands.','Iceland':'Runs almost entirely on clean energy from volcanoes and waterfalls.','India':'Home to the wettest place on Earth — Mawsynram.','Italy':'Has more UNESCO World Heritage Sites than any other country.','Japan':'Has over 6,800 islands and bullet trains that hit 320 km/h.','Kenya':'The Great Migration sees ~2 million animals cross its plains each year.','Mexico':'Gave the world chocolate, chillies, and corn.','Nepal':'Home to Mount Everest, the tallest mountain on Earth (8,849 m).','Netherlands':'A quarter of the country sits below sea level.','New Zealand':'Has more sheep than people — by about 5 to 1.','Norway':'In summer the sun never fully sets in the far north.','Russia':'So big it spans 11 time zones.','South Africa':'Has three capital cities, not one.','Spain':'People often eat dinner as late as 10 p.m.','Switzerland':'Invented milk chocolate — and eats the most of it.','United States':'Has the world\'s largest national park system, including Yellowstone.','United Kingdom':'Big Ben is the bell, not the tower!','Argentina':'Home to the widest waterfall in the world, Iguazú Falls.','Greece':'Has around 6,000 islands, but only about 200 are lived on.','Germany':'Has over 1,500 kinds of sausage.','Indonesia':'Made of more than 17,000 islands.','Peru':'Machu Picchu was built without any wheels or iron tools.','Turkey':'The only country that sits on two continents at once.','Vietnam':'Has a cave so big it has its own jungle and clouds inside.','Madagascar':'9 out of 10 of its animals live nowhere else on Earth.','Mongolia':'The least crowded country — vast steppe with very few people.','Saudi Arabia':'Has no rivers at all.','Morocco':'Has a blue city, Chefchaouen, painted entirely in shades of blue.','Finland':'Has more saunas than cars.','Bhutan':'Measures success with "Gross National Happiness."','Costa Rica':'Has no army — it abolished it in 1948.','Chile':'The Atacama Desert is the driest place on Earth.','Colombia':'Second-most biodiverse country in the world.','Ireland':'There are no wild snakes anywhere on the island.','Portugal':'One of the oldest countries in Europe with the same borders since 1139.',
+};
+
+// Famous landmark with one fun fact, tappable to fly the globe there.
+const LANDMARKS = {
+  'France':{name:'Eiffel Tower','fact':'It grows about 15 cm taller in summer as the metal heats up.'},
+  'China':{name:'Great Wall of China','fact':'It would stretch halfway around the planet if laid in a line.'},
+  'Egypt':{name:'Pyramids of Giza','fact':'Built over 4,500 years ago from 2.3 million stone blocks.'},
+  'India':{name:'Taj Mahal','fact':'It changes colour through the day as the light shifts.'},
+  'Italy':{name:'Colosseum','fact':'Could hold up to 50,000 cheering spectators.'},
+  'United States':{name:'Statue of Liberty','fact':'Her sandals are a US size 879!'},
+  'United Kingdom':{name:'Big Ben','fact':'"Big Ben" is really the great bell inside the tower.'},
+  'Brazil':{name:'Christ the Redeemer','fact':'Gets struck by lightning several times every year.'},
+  'Peru':{name:'Machu Picchu','fact':'A hidden Inca city perched 2,430 m up in the Andes.'},
+  'Australia':{name:'Sydney Opera House','fact':'Its roof is covered in over a million tiles.'},
+  'Jordan':{name:'Petra','fact':'A whole city carved straight into rose-red cliffs.'},
+  'Japan':{name:'Mount Fuji','fact':'A sacred volcano that last erupted in 1707.'},
+  'Russia':{name:"St. Basil's Cathedral",'fact':'Its swirly domes look like colourful soft-serve ice cream.'},
+  'Greece':{name:'The Acropolis','fact':'The Parthenon has stood for nearly 2,500 years.'},
+  'Mexico':{name:'Chichén Itzá','fact':'A snake-shadow slithers down the pyramid at each equinox.'},
+  'Tanzania':{name:'Mount Kilimanjaro','fact':'Africa\'s tallest mountain — with a snowy top near the equator.'},
+  'Cambodia':{name:'Angkor Wat','fact':'The largest religious monument in the world.'},
+  'Spain':{name:'Sagrada Família','fact':'Started in 1882 and still not finished!'},
+  'Germany':{name:'Neuschwanstein Castle','fact':'Inspired the fairy-tale castle at Disneyland.'},
+  'United Arab Emirates':{name:'Burj Khalifa','fact':'The tallest building on Earth at 828 m.'},
+};
+
+// Rough UTC offsets (whole hours, no DST) for "what time is it right now in…".
+// tzOffsetFor() falls back to longitude/15 for anything not listed.
+const TZ_OFFSET = {
+  'United Kingdom':0,'Ireland':0,'Portugal':0,'Iceland':0,'Morocco':1,'Ghana':0,'Senegal':0,
+  'France':1,'Germany':1,'Spain':1,'Italy':1,'Netherlands':1,'Belgium':1,'Switzerland':1,'Austria':1,'Poland':1,'Norway':1,'Sweden':1,'Denmark':1,'Nigeria':1,'South Africa':2,
+  'Greece':2,'Finland':2,'Egypt':2,'Israel':2,'Ukraine':2,'Romania':2,'Kenya':3,'Saudi Arabia':3,'Turkey':3,'Russia':3,'Iraq':3,'Qatar':3,
+  'United Arab Emirates':4,'Azerbaijan':4,'Pakistan':5,'India':5.5,'Sri Lanka':5.5,'Nepal':5.75,'Bangladesh':6,'Bhutan':6,'Thailand':7,'Vietnam':7,'Indonesia':7,
+  'China':8,'Taiwan':8,'Singapore':8,'Malaysia':8,'Philippines':8,'Australia':10,'Japan':9,'South Korea':9,'North Korea':9,
+  'New Zealand':12,'Fiji':12,'United States':-5,'Canada':-5,'Mexico':-6,'Brazil':-3,'Argentina':-3,'Chile':-3,'Peru':-5,'Colombia':-5,'Venezuela':-4,'Bolivia':-4,
+};
+
+function primaryLang(c) { return (c.lang || '').split(/[,/]/)[0].trim(); }
+function helloFor(c) { return HELLO_BY_LANG[primaryLang(c)] || {hi:'Hello', phon:'heh-LOH'}; }
+function animalFor(c) { return ANIMALS[c.n] || null; }
+function landmarkFor(c) { return LANDMARKS[c.n] || null; }
+function wowFor(c) {
+  if (WOW[c.n]) return WOW[c.n];
+  // Safe fallbacks derived from real fields already on the country.
+  if (c.pop) return 'Around ' + c.pop.replace(/\s*\(\d{4}\)/, '') + ' people call ' + c.n + ' home.';
+  if (c.indep) return c.n + ' became a nation in ' + (c.indep.match(/\d{4}/) ? c.indep.match(/\d{4}/)[0] : c.indep) + '.';
+  return 'The capital of ' + c.n + ' is ' + c.cap + '.';
+}
+function tzOffsetFor(c) {
+  if (Object.prototype.hasOwnProperty.call(TZ_OFFSET, c.n)) return TZ_OFFSET[c.n];
+  return Math.round((c.lon || 0) / 15);
+}
+function localTimeFor(c) {
+  const now = new Date();
+  const utcMs = now.getTime() + now.getTimezoneOffset() * 60000;
+  const local = new Date(utcMs + tzOffsetFor(c) * 3600000);
+  let h = local.getHours();
+  const m = local.getMinutes();
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12; if (h === 0) h = 12;
+  return { text: h + ':' + (m < 10 ? '0' : '') + m + ' ' + ampm, hour24: local.getHours() };
+}
+
+/* ============================================================
+ * NATIONAL ANTHEMS — short opening phrases, synthesized ON DEVICE
+ * with the Web Audio API. We render the audio ourselves, so there is
+ * nothing to license; the underlying melodies here are all public
+ * domain (composers long deceased). Accuracy matters in a learning
+ * app, so this set only contains openings transcribed with confidence —
+ * the "Play anthem" button simply doesn't appear for countries not yet
+ * verified. To add one: transcribe the opening bars as [note, beats]
+ * pairs (note = scientific pitch, null = rest) against a trusted score.
+ * ============================================================ */
+const NOTE_FREQ = {
+  'C4':261.63,'C#4':277.18,'D4':293.66,'D#4':311.13,'E4':329.63,'F4':349.23,
+  'F#4':369.99,'G4':392.00,'G#4':415.30,'A4':440.00,'A#4':466.16,'B4':493.88,
+  'C5':523.25,'C#5':554.37,'D5':587.33,'D#5':622.25,'E5':659.25,'F5':698.46,
+  'F#5':739.99,'G5':783.99,'G#5':830.61,'A5':880.00,'B5':987.77,'C6':1046.50,
+};
+// God Save the King melody (also Liechtenstein's anthem — same tune).
+const GSTK = [['G4',1],['G4',1],['A4',1],['F#4',1.5],['G4',0.5],['A4',1],
+  ['B4',1],['B4',1],['C5',1],['B4',1.5],['A4',0.5],['G4',1],
+  ['A4',1],['G4',1],['F#4',1],['G4',2]];
+const ANTHEMS = {
+  'United Kingdom': { title: 'God Save the King', tempo: 112, notes: GSTK },
+  'Liechtenstein': { title: 'Oben am jungen Rhein', tempo: 112, notes: GSTK },
+  'United States': { title: 'The Star-Spangled Banner', tempo: 100, notes: [
+    ['G4',1.5],['E4',0.5],['C4',1],['E4',1],['G4',1],['C5',2],
+    ['E5',1.5],['D5',0.5],['C5',1],['A4',1],['F4',1],['G4',2]] },
+};
+
+let _anthemCtx = null, _anthemNodes = [], _anthemPlaying = false, _anthemTimer = null;
+function stopAnthem() {
+  _anthemNodes.forEach(n => { try { n.stop(); } catch (e) {} });
+  _anthemNodes = []; _anthemPlaying = false;
+  if (_anthemTimer) { clearTimeout(_anthemTimer); _anthemTimer = null; }
+  document.querySelectorAll('.anthem-btn.playing').forEach(b => b.classList.remove('playing'));
+}
+window.__myatlasticAnthem = (countryName) => {
+  const a = ANTHEMS[countryName];
+  if (!a) return;
+  if (_anthemPlaying) { stopAnthem(); return; } // tap again = stop
+  try {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    _anthemCtx = _anthemCtx || new AC();
+    if (_anthemCtx.state === 'suspended') _anthemCtx.resume(); // iOS needs the gesture
+  } catch (e) { return; }
+  const ctx = _anthemCtx;
+  const beat = 60 / (a.tempo || 100);
+  const master = ctx.createGain();
+  master.gain.value = 0.22;
+  master.connect(ctx.destination);
+  let t = ctx.currentTime + 0.06;
+  _anthemNodes = [];
+  a.notes.forEach(([note, dur]) => {
+    const len = dur * beat;
+    if (note && NOTE_FREQ[note]) {
+      const osc = ctx.createOscillator();
+      osc.type = 'triangle';
+      osc.frequency.value = NOTE_FREQ[note];
+      const g = ctx.createGain();
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.exponentialRampToValueAtTime(0.9, t + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + len * 0.92);
+      osc.connect(g); g.connect(master);
+      osc.start(t); osc.stop(t + len);
+      _anthemNodes.push(osc);
+    }
+    t += len;
+  });
+  _anthemPlaying = true;
+  document.querySelectorAll('.anthem-btn').forEach(b => { if (b.dataset.country === countryName) b.classList.add('playing'); });
+  _anthemTimer = setTimeout(stopAnthem, (t - ctx.currentTime + 0.2) * 1000);
+};
+
+/* ============================================================
  * STATE
  * ============================================================ */
 const state = {
@@ -1340,9 +1817,37 @@ const state = {
   compareA: null,
   compareB: null,
   quiz: { score: 0, total: 0, current: null },
+  // Pro preferences (persisted)
+  ageBand: 'all',        // 'young' (3-5) | 'mid' (6-8) | 'older' (9-12) | 'all'
+  difficulty: 'medium',  // 'easy' | 'medium' | 'hard'
+  dyslexia: false,
 };
 
 try { state.isPro = localStorage.getItem('myatlastic_pro') === '1'; } catch (e) {}
+try {
+  state.ageBand = localStorage.getItem('myatlastic_ageband') || 'all';
+  state.difficulty = localStorage.getItem('myatlastic_difficulty') || 'medium';
+  state.dyslexia = localStorage.getItem('myatlastic_dyslexia') === '1';
+} catch (e) {}
+
+// Age band drives reading level + quiz difficulty so the same child can be
+// challenged as they grow rather than ageing out of the app.
+const AGE_BANDS = {
+  young: { label: 'Ages 3–5', difficulty: 'easy', options: 3, clueStart: 3, hideHeavy: true },
+  mid:   { label: 'Ages 6–8', difficulty: 'easy', options: 4, clueStart: 2, hideHeavy: true },
+  older: { label: 'Ages 9–12', difficulty: 'medium', options: 4, clueStart: 1, hideHeavy: false },
+  all:   { label: 'No limit', difficulty: null, options: 4, clueStart: 1, hideHeavy: false },
+};
+function ageBand() { return AGE_BANDS[state.ageBand] || AGE_BANDS.all; }
+function effectiveDifficulty() {
+  const b = ageBand();
+  if (b.difficulty) return b.difficulty; // age band overrides when set
+  return state.difficulty;
+}
+function quizOptionCount() {
+  const d = effectiveDifficulty();
+  return d === 'easy' ? Math.min(3, ageBand().options) : 4;
+}
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
 const FREE_COUNTRIES = [...COUNTRIES].sort((a, b) => a.n.localeCompare(b.n)).slice(0, 10).map(c => c.n);
@@ -1524,6 +2029,45 @@ window.__myatlasticSpeak = (countryName) => {
   if (c) speakCountry(c);
 };
 
+// Speak arbitrary text. `locale` lets us greet in the country's own language
+// using whatever matching voice the device has; falls back to English narration.
+// AUDIO HOOK: real native-speaker / anthem recordings can be wired in here later
+// by checking an asset map before falling back to this synthesized voice.
+function speakInLocale(text, locale, btnSelector) {
+  if (!speech.available || !text) return;
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    document.querySelectorAll('.speaking').forEach(b => b.classList.remove('speaking'));
+    return;
+  }
+  const utt = new SpeechSynthesisUtterance(text);
+  utt.lang = locale || 'en-US';
+  const voice = findVoice(locale || 'en-US');
+  if (voice) utt.voice = voice;
+  utt.rate = 0.9; utt.pitch = 1.0;
+  const btns = btnSelector ? Array.from(document.querySelectorAll(btnSelector)) : [];
+  btns.forEach(b => b.classList.add('speaking'));
+  utt.onend = utt.onerror = () => btns.forEach(b => b.classList.remove('speaking'));
+  window.speechSynthesis.speak(utt);
+}
+
+// "Say hello" in the local language, recorded-speaker style via on-device TTS.
+window.__myatlasticSayHello = (countryName) => {
+  const c = COUNTRIES.find(x => x.n === countryName);
+  if (!c) return;
+  const greeting = helloFor(c);
+  const locale = SPEECH_LOCALE[c.n] || 'en-US';
+  speakInLocale(greeting.hi, locale, '.hello-speak');
+};
+
+// Read-aloud of the country's detail text, so pre-readers get the same content.
+window.__myatlasticReadAloud = (countryName) => {
+  const c = COUNTRIES.find(x => x.n === countryName);
+  if (!c) return;
+  const parts = [c.n + '.', wowFor(c), 'Capital: ' + c.cap + '.', c.h];
+  speakInLocale(parts.filter(Boolean).join(' '), 'en-US', '.read-aloud-btn');
+};
+
 function $(id) { return document.getElementById(id); }
 function escapeHtml(s) {
   if (s == null) return '';
@@ -1553,6 +2097,8 @@ function setMode(newMode) {
   else if (newMode === 'compare') renderCompare();
   else if (newMode === 'currency') renderCurrency();
   else if (newMode === 'game') renderGame();
+  else if (newMode === 'mystery') renderMystery();
+  else if (newMode === 'passport') renderPassport();
   else if (newMode === 'paywall') renderPaywall();
   else if (newMode === 'explore' && window.innerWidth <= 900) {
     // Globe may have been hidden — resize it
@@ -1694,9 +2240,38 @@ function renderDetails() {
     '<button class="fav-btn' + (isFav(c.n) ? ' active' : '') + '" onclick="window.__myatlasticToggleFav(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" title="' + (isFav(c.n) ? 'Remove favourite' : 'Add to favourites') + '">' + (isFav(c.n) ? '★' : '☆') + '</button>' +
     '<button class="share-btn" onclick="window.__myatlasticShare(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" title="Share">Share</button>' +
     '</div></div>';
+  const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
   html += '<div class="detail-name"><span class="detail-flag">' + (c.flag || '🌐') + '</span><span>' + escapeHtml(c.n) + '</span>' +
-    (speech.available ? '<button class="speak-btn" onclick="window.__myatlasticSpeak(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>' : '') +
+    (speech.available ? '<button class="speak-btn" onclick="window.__myatlasticSpeak(' + cq + ')" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>' : '') +
+    (speech.available ? '<button class="speak-btn read-aloud-btn" onclick="window.__myatlasticReadAloud(' + cq + ')" aria-label="Read this country aloud" title="Read aloud">📖</button>' : '') +
     '</div>';
+
+  // WOW FACT — surfaced first, before the heavier detail. Free for everyone:
+  // it is the hook that makes a child want to dig in (and unlock Pro).
+  html += '<div class="wow-fact"><span class="wow-spark">✨</span><span><span class="wow-label">Wow fact</span>' + escapeHtml(wowFor(c)) + '</span></div>';
+
+  // SAY HELLO in the local language, with a phonetic spell-out + spoken playback.
+  const greet = helloFor(c);
+  html += '<div class="hello-card">' +
+    '<div class="hello-head">👋 Say hello in ' + escapeHtml(primaryLang(c) || c.lang) + '</div>' +
+    '<div class="hello-row">' +
+    '<span class="hello-word">' + escapeHtml(greet.hi) + '</span>' +
+    (speech.available ? '<button class="hello-speak" onclick="window.__myatlasticSayHello(' + cq + ')" aria-label="Hear the greeting" title="Hear it">🔊</button>' : '') +
+    '</div>' +
+    '<div class="hello-phon">say it: <b>' + escapeHtml(greet.phon) + '</b></div>' +
+    '</div>';
+
+  // NATIONAL ANTHEM (opening) — synthesized on-device; only shown where we have
+  // a verified public-domain melody.
+  if (ANTHEMS[c.n]) {
+    html += '<div class="anthem-card">' +
+      '<div class="anthem-head">🎵 National anthem · opening</div>' +
+      '<button class="anthem-btn" data-country="' + escapeHtml(c.n) + '" onclick="window.__myatlasticAnthem(' + cq + ')">' +
+        '<span class="anthem-play">▶</span> ' + escapeHtml(ANTHEMS[c.n].title) +
+      '</button>' +
+      '<div class="anthem-note">A short rendition of the opening bars, played on your device.</div>' +
+      '</div>';
+  }
 
   if (free && imgUrl) {
     html += '<div class="detail-image"><img src="' + imgUrl + '" alt="" loading="lazy" data-flag="' + (c.flag || '🌐') + '" onerror="window.__myatlasticImgFallback(this)"></div>';
@@ -1718,15 +2293,29 @@ function renderDetails() {
     html += '<div class="fact-label">Sovereign</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
   }
   html += '<div class="fact-label">Coords</div><div class="fact-value" style="font-family:monospace;font-size:12px">' + c.lat.toFixed(2) + '°, ' + c.lon.toFixed(2) + '°</div>';
+  const lt = localTimeFor(c);
+  html += '<div class="fact-label">Time now</div><div class="fact-value">' + (lt.hour24 >= 6 && lt.hour24 < 19 ? '☀️ ' : '🌙 ') + escapeHtml(lt.text) + ' <span style="color:var(--ink-dim);font-size:11px">(approx)</span></div>';
   html += '</div>';
 
-  // Quick-look chips: food, sport, attire (free for all)
-  if (c.food || c.sport || c.attire) {
+  // Quick-look chips: dish, wildlife, sport, attire (free for all)
+  const animal = animalFor(c);
+  if (c.food || animal || c.sport || c.attire) {
     html += '<div class="quick-facts">';
-    if (c.food) html += '<div class="qf-item"><div class="qf-label">🍽 Food</div><div class="qf-body">' + escapeHtml(c.food) + '</div></div>';
+    if (c.food) html += '<div class="qf-item"><div class="qf-label">🍽 Iconic dish</div><div class="qf-body">' + escapeHtml(c.food) + '</div></div>';
+    if (animal) html += '<div class="qf-item"><div class="qf-label">' + animal[1] + ' Wildlife</div><div class="qf-body"><b>' + escapeHtml(animal[0]) + '</b></div></div>';
     if (c.sport) html += '<div class="qf-item"><div class="qf-label">⚽ Sport</div><div class="qf-body">' + escapeHtml(c.sport) + '</div></div>';
     if (c.attire) html += '<div class="qf-item"><div class="qf-label">👘 Attire</div><div class="qf-body">' + escapeHtml(c.attire) + '</div></div>';
     html += '</div>';
+  }
+
+  // FAMOUS LANDMARK — tappable to fly the globe there, with one fun fact.
+  const lm = landmarkFor(c);
+  if (lm) {
+    html += '<div class="landmark-card" onclick="window.__myatlasticShowOnGlobe(' + cq + ')" title="Show on globe">' +
+      '<div class="landmark-head">📍 ' + escapeHtml(lm.name) + '</div>' +
+      '<div class="landmark-fact">' + escapeHtml(lm.fact) + '</div>' +
+      '<div class="landmark-cta">🌍 Show me on the globe →</div>' +
+      '</div>';
   }
 
   const sections = [
@@ -1766,6 +2355,14 @@ function renderDetails() {
 window.__myatlasticOpenPaywall = () => setMode('paywall');
 window.__myatlasticPaywallBack = () => setMode(state.returnMode || 'explore');
 window.__myatlasticExitGame = () => { gameState = null; setMode('explore'); };
+window.__myatlasticShowOnGlobe = (countryName) => {
+  const c = COUNTRIES.find(x => x.n === countryName);
+  if (!c) return;
+  state.activeCountry = c;
+  if (state.mode !== 'explore') setMode('explore');
+  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (globeAPI) globeAPI.focus(c);
+};
 
 /* ============================================================
  * FAVOURITES
@@ -1813,6 +2410,50 @@ window.__myatlasticShare = (name) => {
 /* ============================================================
  * ACHIEVEMENTS
  * ============================================================ */
+/* Passport stamps — countries a child has "visited" (viewed) or answered
+ * correctly about. Visited = browsed the detail; stamped = got it right. */
+function getViewedSet() {
+  try { return new Set(JSON.parse(localStorage.getItem('myatlastic_viewed') || '[]')); } catch (e) { return new Set(); }
+}
+function getStampedSet() {
+  try { return new Set(JSON.parse(localStorage.getItem('myatlastic_stamped') || '[]')); } catch (e) { return new Set(); }
+}
+function stampCountry(name) {
+  try {
+    const set = getStampedSet();
+    if (!set.has(name)) {
+      set.add(name);
+      localStorage.setItem('myatlastic_stamped', JSON.stringify([...set]));
+      checkAchievements();
+    }
+  } catch (e) {}
+}
+// Continents that have been fully visited (every sovereign country browsed).
+function completedContinents() {
+  const viewed = getViewedSet();
+  const out = [];
+  CONTINENTS.filter(x => x !== 'All').forEach(cont => {
+    const inCont = SOVEREIGN_COUNTRIES.filter(c => c.c.split(' / ')[0] === cont);
+    if (inCont.length && inCont.every(c => viewed.has(c.n))) out.push(cont);
+  });
+  return out;
+}
+// Explorer avatar — levels up as more of the world is unlocked.
+const EXPLORER_LEVELS = [
+  { at: 0, icon: '🧭', title: 'Rookie Explorer' },
+  { at: 5, icon: '🗺️', title: 'Trail Finder' },
+  { at: 15, icon: '🎒', title: 'Globe Wanderer' },
+  { at: 40, icon: '🌍', title: 'World Traveller' },
+  { at: 90, icon: '🚀', title: 'Master Explorer' },
+  { at: 195, icon: '👑', title: 'World Champion' },
+];
+function explorerLevel() {
+  const n = getViewedSet().size;
+  let lvl = EXPLORER_LEVELS[0];
+  for (const l of EXPLORER_LEVELS) if (n >= l.at) lvl = l;
+  return lvl;
+}
+
 const ACHIEVEMENTS = [
   { id: 'first_fav', icon: '⭐', name: 'First Favourite', desc: 'Saved your first country', check: () => getFavs().length >= 1 },
   { id: 'five_favs', icon: '🌟', name: 'Five Stars', desc: 'Saved 5 favourite countries', check: () => getFavs().length >= 5 },
@@ -1820,6 +2461,12 @@ const ACHIEVEMENTS = [
   { id: 'streak_7', icon: '🏆', name: 'Week Champion', desc: 'Built a 7-day daily streak', check: () => getStreak() >= 7 },
   { id: 'quiz_10', icon: '🧠', name: 'Quiz Buff', desc: 'Answered 10 quiz questions', check: () => state.quiz.total >= 10 },
   { id: 'quiz_50', icon: '🎓', name: 'Geography Master', desc: 'Answered 50 quiz questions', check: () => state.quiz.total >= 50 },
+  // Goal badges tied to real progress
+  { id: 'flags_20', icon: '🏁', name: 'Flag Collector', desc: 'Learned 20 flags', check: () => getViewedSet().size >= 20 },
+  { id: 'stamps_10', icon: '🛂', name: 'Passport Holder', desc: 'Earned 10 passport stamps', check: () => getStampedSet().size >= 10 },
+  { id: 'continent_done', icon: '🗺️', name: 'Continent Complete', desc: 'Visited a whole continent', check: () => completedContinents().length >= 1 },
+  { id: 'globetrotter', icon: '🌍', name: 'Globetrotter', desc: 'Visited 50 countries', check: () => getViewedSet().size >= 50 },
+  { id: 'world_citizen', icon: '👑', name: 'World Citizen', desc: 'Visited all 195 countries', check: () => SOVEREIGN_COUNTRIES.every(c => getViewedSet().has(c.n)) },
 ];
 
 function getUnlockedAchievements() {
@@ -1848,6 +2495,584 @@ function showAchievementToast(a) {
   clearTimeout(toast._timer);
   toast._timer = setTimeout(() => toast.classList.remove('visible'), 3000);
 }
+
+/* ============================================================
+ * PASSPORT — stamps, streak rewards, explorer avatar, badges
+ * ============================================================ */
+function renderPassport() {
+  const root = $('view-passport');
+  const viewed = getViewedSet();
+  const stamped = getStampedSet();
+  const lvl = explorerLevel();
+  const total = SOVEREIGN_COUNTRIES.length;
+  const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
+  const pct = Math.round((visitedCount / total) * 100);
+  const streak = getStreak();
+  const done = completedContinents();
+
+  // Next explorer level for the progress hint
+  const next = EXPLORER_LEVELS.find(l => l.at > viewed.size);
+  const nextHint = next ? ('Visit ' + (next.at - viewed.size) + ' more to become ' + next.title + ' ' + next.icon) : 'You have reached the top rank!';
+
+  // Streak reward tiers
+  const rewards = [
+    { at: 3, icon: '🔥', label: '3-day streak' },
+    { at: 7, icon: '🏅', label: '1 week' },
+    { at: 14, icon: '💎', label: '2 weeks' },
+    { at: 30, icon: '👑', label: '1 month' },
+  ];
+
+  let html = '<div class="passport-wrap">';
+
+  // Explorer avatar header
+  html += '<div class="explorer-card">' +
+    '<div class="explorer-avatar">' + lvl.icon + '</div>' +
+    '<div class="explorer-meta">' +
+    '<div class="explorer-title">' + lvl.title + '</div>' +
+    '<div class="explorer-bar"><div class="explorer-fill" style="width:' + pct + '%"></div></div>' +
+    '<div class="explorer-sub">' + visitedCount + ' / ' + total + ' countries · ' + stamped.size + ' stamps</div>' +
+    '<div class="explorer-next">' + escapeHtml(nextHint) + '</div>' +
+    '</div></div>';
+
+  // Streak + rewards
+  html += '<div class="passport-section"><h3>🔥 Daily streak</h3>' +
+    '<div class="streak-big">' + (streak > 0 ? streak + (streak === 1 ? ' day' : ' days') : 'No streak yet') + '</div>' +
+    '<div class="reward-row">';
+  rewards.forEach(r => {
+    const got = streak >= r.at;
+    html += '<div class="reward' + (got ? ' got' : '') + '"><div class="reward-ic">' + r.icon + '</div><div class="reward-lb">' + r.label + '</div></div>';
+  });
+  html += '</div>';
+  if (streak === 0) html += '<p class="passport-hint">Answer the Daily challenge each day to build a streak and unlock rewards.</p>';
+  html += '</div>';
+
+  // Badges
+  const unlocked = getUnlockedAchievements();
+  html += '<div class="passport-section"><h3>🏅 Badges <span class="count-pill">' + unlocked.length + '/' + ACHIEVEMENTS.length + '</span></h3>' +
+    '<div class="badge-grid">';
+  ACHIEVEMENTS.forEach(a => {
+    const got = unlocked.includes(a.id) || a.check();
+    html += '<div class="badge-cell' + (got ? ' got' : '') + '" title="' + escapeHtml(a.desc) + '">' +
+      '<div class="badge-ic">' + (got ? a.icon : '🔒') + '</div>' +
+      '<div class="badge-nm">' + escapeHtml(a.name) + '</div>' +
+      '<div class="badge-ds">' + escapeHtml(a.desc) + '</div>' +
+      '</div>';
+  });
+  html += '</div></div>';
+
+  // Continents completed
+  html += '<div class="passport-section"><h3>🗺️ Continents</h3><div class="cont-row">';
+  CONTINENTS.filter(x => x !== 'All').forEach(cont => {
+    const inCont = SOVEREIGN_COUNTRIES.filter(c => c.c.split(' / ')[0] === cont);
+    const v = inCont.filter(c => viewed.has(c.n)).length;
+    const full = done.includes(cont);
+    html += '<div class="cont-chip' + (full ? ' full' : '') + '">' + (full ? '✅ ' : '') + escapeHtml(cont) + ' <b>' + v + '/' + inCont.length + '</b></div>';
+  });
+  html += '</div></div>';
+
+  // Stamp wall — ALL 195 sovereign countries as collectible slots. Visited ones
+  // are filled (gold ⭐ if answered correctly); the rest are greyed "to collect".
+  // For free users, Pro-locked countries show a 🔒 and tap through to the paywall —
+  // the empty slots themselves merchandise Pro (this is the parent-facing trigger).
+  const lockedRemaining = SOVEREIGN_COUNTRIES.filter(c => !state.isPro && !isFree(c) && !viewed.has(c.n)).length;
+  html += '<div class="passport-section"><h3>🛂 Stamp wall <span class="count-pill">' + visitedCount + ' / ' + total + '</span></h3>';
+  html += '<p class="passport-hint">Tap a greyed country to go collect its stamp. Answer it right in a quiz for a gold stamp ⭐' +
+    (lockedRemaining > 0 ? ' &nbsp;·&nbsp; <span class="lock-tease" onclick="window.__myatlasticOpenPaywall()">🔒 ' + lockedRemaining + ' unlock with Pro</span>' : '') + '</p>';
+  html += '<div class="stamp-grid">';
+  SOVEREIGN_COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n)).forEach(c => {
+    const isViewed = viewed.has(c.n);
+    const gold = stamped.has(c.n);
+    const locked = !state.isPro && !isFree(c) && !isViewed;
+    const cls = 'stamp' + (gold ? ' gold' : '') + (isViewed ? ' got' : '') + (locked ? ' locked' : '');
+    const action = locked ? 'window.__myatlasticOpenPaywall()' : 'window.__myatlasticShowOnGlobe(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')';
+    html += '<button class="' + cls + '" onclick="' + action + '" title="' + escapeHtml(c.n) + (locked ? ' · Pro' : '') + '">' +
+      '<span class="stamp-flag">' + (c.flag || '🌐') + '</span>' +
+      (gold ? '<span class="stamp-star">⭐</span>' : (locked ? '<span class="stamp-lock">🔒</span>' : '')) +
+      '<span class="stamp-nm">' + escapeHtml(c.n) + '</span></button>';
+  });
+  html += '</div>';
+  html += '</div>';
+
+  html += '</div>';
+  root.innerHTML = html;
+}
+
+/* ============================================================
+ * MYSTERY COUNTRY — Carmen Sandiego-style guessing loop.
+ * Clues reveal one at a time; fewer clues used = more points.
+ * Free for everyone — it's the replay loop kids show their friends.
+ * ============================================================ */
+let mysteryState = null;
+
+// Countries rich enough to make good mysteries (have wildlife + food).
+function mysteryPool() {
+  return SOVEREIGN_COUNTRIES.filter(c => animalFor(c) && c.food && c.cap);
+}
+
+function buildClues(c) {
+  const greet = helloFor(c);
+  const animal = animalFor(c);
+  const lm = landmarkFor(c);
+  const clues = [
+    { icon: '🧭', text: 'This country is in ' + c.c.split(' / ')[0] + '.' },
+    { icon: animal[1], text: 'You might spot a ' + animal[0].toLowerCase() + ' here.' },
+    { icon: '🍽', text: 'People here love to eat ' + c.food.split(',')[0].trim() + '.' },
+    { icon: '👋', text: 'To say hello, you say "' + greet.hi + '".' },
+    { icon: '💰', text: 'They pay with the ' + c.cur.replace(/\s*\([^)]*\)/, '') + '.' },
+    { icon: '🏙', text: 'The capital city starts with the letter "' + c.cap[0] + '".' },
+  ];
+  if (lm) clues.push({ icon: '📍', text: 'A famous sight here is ' + lm.name + '.' });
+  return clues;
+}
+
+function startMystery() {
+  const pool = mysteryPool();
+  const target = pool[Math.floor(Math.random() * pool.length)];
+  // 5 distractors, preferring the same continent for a real challenge.
+  const cont = target.c.split(' / ')[0];
+  const sameCont = pool.filter(c => c !== target && c.c.split(' / ')[0] === cont);
+  const others = pool.filter(c => c !== target && c.c.split(' / ')[0] !== cont);
+  const distractors = gameShuffle([...sameCont]).slice(0, 4)
+    .concat(gameShuffle([...others])).slice(0, 5);
+  const options = gameShuffle([target, ...distractors.slice(0, 5)]);
+  mysteryState = {
+    target, options,
+    clues: buildClues(target),
+    revealed: Math.max(1, ageBand().clueStart), // younger kids start with more clues
+    status: 'playing', // playing | won | lost
+    wrong: [],         // names guessed wrong
+  };
+  renderMystery();
+}
+
+function renderMystery() {
+  const root = $('view-mystery');
+  if (!mysteryState) {
+    root.innerHTML =
+      '<div class="center-card" style="max-width:480px;text-align:center">' +
+        '<div style="font-size:60px;margin:6px 0">🕵️</div>' +
+        '<h2 style="color:var(--accent);font-size:28px;margin:8px 0 6px">Mystery Country</h2>' +
+        '<p style="color:var(--ink-dim);margin-bottom:24px;font-size:14px">Read the clues about a hidden country — its animals, food, language and more — then guess which one it is. Use fewer clues to score more!</p>' +
+        '<button class="btn-primary" id="mystery-start" style="width:100%;padding:14px">Start the hunt 🔍</button>' +
+      '</div>';
+    $('mystery-start').onclick = startMystery;
+    return;
+  }
+  const m = mysteryState;
+  const maxClues = m.clues.length;
+  const points = Math.max(1, (maxClues - m.revealed + 1) * 10);
+
+  let html = '<div class="center-card" style="max-width:520px">';
+  html += '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticExitMystery()">← Quit</button></div>';
+  html += '<div class="quiz-eyebrow" style="text-align:center">🕵️ Who am I?</div>';
+
+  // Clue list
+  html += '<div class="clue-list">';
+  for (let i = 0; i < m.revealed; i++) {
+    html += '<div class="clue"><span class="clue-ic">' + m.clues[i].icon + '</span><span>' + escapeHtml(m.clues[i].text) + '</span></div>';
+  }
+  html += '</div>';
+
+  if (m.status === 'playing') {
+    html += '<div class="mystery-score">Guess now for <b>' + points + '</b> points' +
+      (m.revealed < maxClues ? ' &middot; or get another clue' : '') + '</div>';
+    if (m.revealed < maxClues) {
+      html += '<button id="mystery-clue" class="clue-btn">🔎 Reveal another clue</button>';
+    }
+    html += '<div class="mystery-options">';
+    m.options.forEach(o => {
+      const wrong = m.wrong.includes(o.n);
+      html += '<button class="mystery-opt' + (wrong ? ' wrong' : '') + '" data-name="' + escapeHtml(o.n) + '"' + (wrong ? ' disabled' : '') + '>' +
+        '<span style="font-size:22px">' + (o.flag || '🌐') + '</span> ' + escapeHtml(o.n) + '</button>';
+    });
+    html += '</div>';
+  } else {
+    const won = m.status === 'won';
+    html += '<div style="text-align:center;margin:18px 0">' +
+      '<div style="font-size:56px">' + (won ? '🎉' : '🌍') + '</div>' +
+      '<div style="font-size:64px;margin:6px 0">' + m.target.flag + '</div>' +
+      '<h2 style="color:' + (won ? 'var(--success)' : 'var(--accent)') + ';font-size:24px;margin:6px 0">' +
+        (won ? 'Correct! +' + m.lastPoints + ' points' : 'It was ' + escapeHtml(m.target.n)) + '</h2>' +
+      '<p style="color:var(--ink-dim)">It was <b style="color:var(--ink)">' + escapeHtml(m.target.n) + '</b> — ' + escapeHtml(wowFor(m.target)) + '</p>' +
+      '<button class="btn-primary" id="mystery-again" style="width:100%;padding:14px;margin-top:14px">Play again</button>' +
+      '<button id="mystery-explore" style="width:100%;padding:12px;margin-top:10px;background:none;border:1px solid var(--line);color:var(--ink-dim);border-radius:10px;cursor:pointer">See this country</button>' +
+      '</div>';
+  }
+  html += '</div>';
+  root.innerHTML = html;
+
+  if (m.status === 'playing') {
+    const cb = $('mystery-clue');
+    if (cb) cb.onclick = () => { m.revealed = Math.min(maxClues, m.revealed + 1); renderMystery(); };
+    root.querySelectorAll('.mystery-opt').forEach(btn => {
+      if (btn.disabled) return;
+      btn.onclick = () => {
+        const name = btn.dataset.name;
+        if (name === m.target.n) {
+          m.lastPoints = points;
+          m.status = 'won';
+          stampCountry(m.target.n);
+          checkAchievements();
+        } else {
+          m.wrong.push(name);
+          btn.classList.add('wrong'); btn.disabled = true;
+          // Reveal a clue as a hint; lose if all clues used and still wrong.
+          if (m.revealed < maxClues) m.revealed++;
+          else if (m.wrong.length >= m.options.length - 1) m.status = 'lost';
+          renderMystery();
+        }
+        if (m.status === 'won') renderMystery();
+      };
+    });
+  } else {
+    $('mystery-again').onclick = startMystery;
+    $('mystery-explore').onclick = () => { const t = m.target; mysteryState = null; window.__myatlasticShowOnGlobe(t.n); renderDetails(); };
+  }
+}
+window.__myatlasticExitMystery = () => { mysteryState = null; setMode('explore'); };
+
+/* ============================================================
+ * TRUE SIZE — drag/pick two countries to see their real relative
+ * size, plus the famous Mercator-map distortion reveal.
+ * ============================================================ */
+const AREA_KM2 = {
+  'Afghanistan':652230,'Albania':28748,'Algeria':2381741,'Andorra':468,'Angola':1246700,'Antigua and Barbuda':442,'Argentina':2780400,'Armenia':29743,'Australia':7692024,'Austria':83879,'Azerbaijan':86600,'Bahamas':13943,'Bahrain':765,'Bangladesh':147570,'Barbados':430,'Belarus':207600,'Belgium':30528,'Belize':22966,'Benin':114763,'Bhutan':38394,'Bolivia':1098581,'Bosnia and Herzegovina':51197,'Botswana':581730,'Brazil':8515767,'Brunei':5765,'Bulgaria':110879,'Burkina Faso':272967,'Burundi':27834,'Cambodia':181035,'Cameroon':475442,'Canada':9984670,'Cape Verde':4033,'Central African Republic':622984,'Chad':1284000,'Chile':756102,'China':9596961,'Colombia':1141748,'Comoros':1862,'Congo (DRC)':2344858,'Congo (Republic)':342000,'Costa Rica':51100,'Côte d\'Ivoire':322463,'Croatia':56594,'Cuba':109884,'Cyprus':9251,'Czech Republic':78867,'Denmark':43094,'Djibouti':23200,'Dominica':751,'Dominican Republic':48671,'Ecuador':283561,'Egypt':1001450,'El Salvador':21041,'Equatorial Guinea':28051,'Eritrea':117600,'Estonia':45227,'Eswatini':17364,'Ethiopia':1104300,'Fiji':18272,'Finland':338424,'France':551695,'Gabon':267668,'Gambia':11295,'Georgia':69700,'Germany':357114,'Ghana':238533,'Greece':131957,'Grenada':344,'Guatemala':108889,'Guinea':245857,'Guinea-Bissau':36125,'Guyana':214969,'Haiti':27750,'Honduras':112492,'Hungary':93028,'Iceland':103000,'India':3287263,'Indonesia':1904569,'Iran':1648195,'Iraq':438317,'Ireland':70273,'Israel':20770,'Italy':301340,'Jamaica':10991,'Japan':377975,'Jordan':89342,'Kazakhstan':2724900,'Kenya':580367,'Kiribati':811,'Kosovo':10887,'Kuwait':17818,'Kyrgyzstan':199951,'Laos':236800,'Latvia':64589,'Lebanon':10452,'Lesotho':30355,'Liberia':111369,'Libya':1759540,'Liechtenstein':160,'Lithuania':65300,'Luxembourg':2586,'Madagascar':587041,'Malawi':118484,'Malaysia':330803,'Maldives':300,'Mali':1240192,'Malta':316,'Marshall Islands':181,'Mauritania':1030700,'Mauritius':2040,'Mexico':1964375,'Micronesia':702,'Moldova':33846,'Monaco':2,'Mongolia':1564110,'Montenegro':13812,'Morocco':446550,'Mozambique':801590,'Myanmar':676578,'Namibia':825615,'Nauru':21,'Nepal':147181,'Netherlands':41850,'New Zealand':270467,'Nicaragua':130373,'Niger':1267000,'Nigeria':923768,'North Korea':120538,'North Macedonia':25713,'Norway':385207,'Oman':309500,'Pakistan':881913,'Palau':459,'Palestine':6020,'Panama':75417,'Papua New Guinea':462840,'Paraguay':406752,'Peru':1285216,'Philippines':300000,'Poland':312696,'Portugal':92090,'Qatar':11586,'Romania':238397,'Russia':17098242,'Rwanda':26338,'Saint Kitts and Nevis':261,'Saint Lucia':616,'Saint Vincent and the Grenadines':389,'Samoa':2842,'San Marino':61,'São Tomé and Príncipe':964,'Saudi Arabia':2149690,'Senegal':196722,'Serbia':88361,'Seychelles':452,'Sierra Leone':71740,'Singapore':728,'Slovakia':49035,'Slovenia':20273,'Solomon Islands':28896,'Somalia':637657,'South Africa':1221037,'South Korea':100210,'South Sudan':619745,'Spain':505992,'Sri Lanka':65610,'Sudan':1861484,'Suriname':163820,'Sweden':450295,'Switzerland':41285,'Syria':185180,'Taiwan':36193,'Tajikistan':143100,'Tanzania':945087,'Thailand':513120,'Timor-Leste':14874,'Togo':56785,'Tonga':747,'Trinidad and Tobago':5130,'Tunisia':163610,'Turkey':783562,'Turkmenistan':488100,'Tuvalu':26,'Uganda':241550,'Ukraine':603500,'United Arab Emirates':83600,'United Kingdom':243610,'United States':9833517,'Uruguay':176215,'Uzbekistan':447400,'Vanuatu':12189,'Vatican City':0.5,'Venezuela':916445,'Vietnam':331212,'Yemen':527968,'Zambia':752618,'Zimbabwe':390757,
+};
+
+function trueSizeCountries() {
+  return SOVEREIGN_COUNTRIES.filter(c => AREA_KM2[c.n]).sort((a, b) => a.n.localeCompare(b.n));
+}
+function fmtArea(km2) {
+  if (km2 >= 1000) return Math.round(km2).toLocaleString() + ' km²';
+  return km2 + ' km²';
+}
+
+function renderTrueSize(aName, bName) {
+  const list = trueSizeCountries();
+  const a = COUNTRIES.find(c => c.n === aName) || list[0];
+  const b = COUNTRIES.find(c => c.n === bName) || list.find(c => c.n !== a.n);
+  const areaA = AREA_KM2[a.n], areaB = AREA_KM2[b.n];
+  const big = Math.max(areaA, areaB);
+  // Square side ∝ sqrt(area) so the *area* (not the side) is to scale.
+  const MAX = 170;
+  const sideA = MAX * Math.sqrt(areaA / big);
+  const sideB = MAX * Math.sqrt(areaB / big);
+  const ratio = areaA >= areaB ? (areaA / areaB) : (areaB / areaA);
+  const bigger = areaA >= areaB ? a : b, smaller = areaA >= areaB ? b : a;
+  // Mercator illusion: a country's area looks 1/cos²(lat) bigger on a flat map.
+  const inflate = c => Math.min(99, 1 / Math.pow(Math.cos(c.lat * Math.PI / 180), 2));
+
+  const opts = sel => list.map(c => '<option value="' + escapeHtml(c.n) + '"' + (c.n === sel ? ' selected' : '') + '>' + escapeHtml(c.n) + '</option>').join('');
+
+  return '<div class="ts-pickers">' +
+      '<select id="ts-a" class="ts-select">' + opts(a.n) + '</select>' +
+      '<span class="ts-vs">vs</span>' +
+      '<select id="ts-b" class="ts-select">' + opts(b.n) + '</select>' +
+    '</div>' +
+    '<div class="ts-stage">' +
+      '<div class="ts-sq" style="width:' + sideA.toFixed(0) + 'px;height:' + sideA.toFixed(0) + 'px;background:rgba(212,160,86,0.30);border-color:var(--accent)"><span>' + a.flag + '</span></div>' +
+      '<div class="ts-sq" style="width:' + sideB.toFixed(0) + 'px;height:' + sideB.toFixed(0) + 'px;background:rgba(110,168,196,0.30);border-color:var(--accent-2)"><span>' + b.flag + '</span></div>' +
+    '</div>' +
+    '<div class="ts-verdict"><b>' + escapeHtml(bigger.n) + '</b> is about <b>' + (ratio >= 10 ? Math.round(ratio) : ratio.toFixed(1)) + '×</b> the size of <b>' + escapeHtml(smaller.n) + '</b>.</div>' +
+    '<div class="ts-areas">' +
+      '<span>' + a.flag + ' ' + escapeHtml(a.n) + ': ' + fmtArea(areaA) + '</span>' +
+      '<span>' + b.flag + ' ' + escapeHtml(b.n) + ': ' + fmtArea(areaB) + '</span>' +
+    '</div>' +
+    '<div class="ts-illusion">🗺️ Map trick: on a flat world map, <b>' + escapeHtml(a.n) + '</b> looks about <b>' + inflate(a).toFixed(1) + '×</b> bigger than it really is, and <b>' + escapeHtml(b.n) + '</b> about <b>' + inflate(b).toFixed(1) + '×</b>. The further from the equator, the more a country gets stretched!</div>';
+}
+
+function openTrueSize() {
+  let modal = document.getElementById('truesize-modal');
+  if (modal) modal.remove();
+  modal = document.createElement('div');
+  modal.id = 'truesize-modal';
+  modal.className = 'ts-modal';
+  const startA = (state.activeCountry && AREA_KM2[state.activeCountry.n]) ? state.activeCountry.n : 'Greenland';
+  const aName = AREA_KM2[startA] ? startA : 'France';
+  modal.innerHTML = '<div class="ts-box">' +
+    '<button class="ts-close" aria-label="Close">✕</button>' +
+    '<h2 class="ts-title">📐 True Size</h2>' +
+    '<p class="ts-intro">Maps stretch countries near the poles. Pick two and see how big they <i>really</i> are.</p>' +
+    '<div id="ts-body">' + renderTrueSize(aName, aName === 'Russia' ? 'India' : 'Russia') + '</div>' +
+    '</div>';
+  document.body.appendChild(modal);
+  const rewire = () => {
+    const av = $('ts-a').value, bv = $('ts-b').value;
+    $('ts-body').innerHTML = renderTrueSize(av, bv);
+    wire();
+  };
+  const wire = () => {
+    $('ts-a').onchange = rewire;
+    $('ts-b').onchange = rewire;
+  };
+  wire();
+  modal.querySelector('.ts-close').onclick = () => modal.remove();
+  modal.onclick = e => { if (e.target === modal) modal.remove(); };
+}
+
+/* ============================================================
+ * SETTINGS + PRO TOOLS — age bands, reading help (dyslexia font),
+ * adjustable difficulty, 2-player pass-and-play, teacher challenges.
+ * ============================================================ */
+function applySettings() {
+  document.body.classList.toggle('dyslexia', !!state.dyslexia);
+}
+
+function saveSetting(key, val) {
+  try { localStorage.setItem(key, val); } catch (e) {}
+}
+
+function openSettings() {
+  let modal = document.getElementById('settings-modal');
+  if (modal) modal.remove();
+  modal = document.createElement('div');
+  modal.id = 'settings-modal';
+  modal.className = 'ts-modal';
+  const proTag = state.isPro ? '' : ' <span class="pro-tag">PRO</span>';
+  const lockNote = state.isPro ? '' : '<div class="set-locked-note">🔒 These are Pro features. <button class="link-btn" id="set-upgrade">Upgrade to unlock</button></div>';
+
+  const bandBtns = Object.keys(AGE_BANDS).map(k =>
+    '<button class="seg' + (state.ageBand === k ? ' on' : '') + '" data-band="' + k + '">' + AGE_BANDS[k].label + '</button>').join('');
+  const diffBtns = ['easy', 'medium', 'hard'].map(d =>
+    '<button class="seg' + (state.difficulty === d ? ' on' : '') + '" data-diff="' + d + '">' + d.charAt(0).toUpperCase() + d.slice(1) + '</button>').join('');
+
+  modal.innerHTML = '<div class="ts-box">' +
+    '<button class="ts-close" aria-label="Close">✕</button>' +
+    '<h2 class="ts-title">⚙️ Settings</h2>' +
+    lockNote +
+    '<div class="set-group"><div class="set-label">👶 Age band' + proTag + '</div>' +
+      '<div class="set-hint">Scales reading level and question difficulty.</div>' +
+      '<div class="seg-row" id="seg-band">' + bandBtns + '</div></div>' +
+    '<div class="set-group"><div class="set-label">🎯 Quiz difficulty' + proTag + '</div>' +
+      '<div class="set-hint">Used when no age band is set. Hard uses same-continent decoys.</div>' +
+      '<div class="seg-row" id="seg-diff">' + diffBtns + '</div></div>' +
+    '<div class="set-group"><div class="set-label">📖 Reading help' + proTag + '</div>' +
+      '<label class="set-toggle"><input type="checkbox" id="set-dyslexia"' + (state.dyslexia ? ' checked' : '') + '> Dyslexia-friendly font &amp; spacing</label></div>' +
+    '<div class="set-group"><div class="set-label">👨‍👩‍👧 Family &amp; school' + proTag + '</div>' +
+      '<button class="set-action" id="set-2player">🎮 Two-player pass &amp; play quiz</button>' +
+      '<button class="set-action" id="set-teacher">🍎 Create a class challenge link</button></div>' +
+    '</div>';
+  document.body.appendChild(modal);
+  modal.querySelector('.ts-close').onclick = () => modal.remove();
+  modal.onclick = e => { if (e.target === modal) modal.remove(); };
+
+  const gate = () => { if (!state.isPro) { modal.remove(); setMode('paywall'); return false; } return true; };
+  const up = $('set-upgrade'); if (up) up.onclick = () => { modal.remove(); setMode('paywall'); };
+
+  modal.querySelectorAll('#seg-band .seg').forEach(b => b.onclick = () => {
+    if (!gate()) return;
+    state.ageBand = b.dataset.band; saveSetting('myatlastic_ageband', state.ageBand);
+    state.quiz.current = null; openSettings();
+  });
+  modal.querySelectorAll('#seg-diff .seg').forEach(b => b.onclick = () => {
+    if (!gate()) return;
+    state.difficulty = b.dataset.diff; saveSetting('myatlastic_difficulty', state.difficulty);
+    state.quiz.current = null; openSettings();
+  });
+  $('set-dyslexia').onchange = e => {
+    if (!gate()) { e.target.checked = false; return; }
+    state.dyslexia = e.target.checked; saveSetting('myatlastic_dyslexia', state.dyslexia ? '1' : '0');
+    applySettings();
+  };
+  $('set-2player').onclick = () => { if (!gate()) return; modal.remove(); startTwoPlayer(); };
+  $('set-teacher').onclick = () => { if (!gate()) return; modal.remove(); openTeacher(); };
+}
+
+/* ---- Two-player pass-and-play quiz ---- */
+let twoP = null;
+function startTwoPlayer() {
+  twoP = { round: 0, total: 8, scores: [0, 0], turn: 0, current: null, phase: 'play' };
+  twoPNext();
+}
+function twoPNext() {
+  twoP.round++;
+  if (twoP.round > twoP.total) { renderTwoPlayer(); return; }
+  twoP.current = newQuizQuestion();
+  twoP.phase = 'play';
+  renderTwoPlayer();
+}
+function renderTwoPlayer() {
+  let modal = document.getElementById('twop-modal');
+  if (!modal) { modal = document.createElement('div'); modal.id = 'twop-modal'; modal.className = 'ts-modal'; document.body.appendChild(modal); }
+
+  if (twoP.round > twoP.total) {
+    const [a, b] = twoP.scores;
+    const result = a === b ? "It's a tie! 🤝" : (a > b ? 'Player 1 wins! 🏆' : 'Player 2 wins! 🏆');
+    modal.innerHTML = '<div class="ts-box" style="text-align:center">' +
+      '<div style="font-size:54px;margin:6px">🎉</div>' +
+      '<h2 class="ts-title" style="text-align:center">' + result + '</h2>' +
+      '<p style="font-size:18px;margin:14px 0">Player 1: <b style="color:var(--accent)">' + a + '</b> &nbsp;·&nbsp; Player 2: <b style="color:var(--accent-2)">' + b + '</b></p>' +
+      '<button class="btn-primary" id="twop-again" style="width:100%;padding:13px;margin-top:8px">Play again</button>' +
+      '<button class="set-action" id="twop-close" style="margin-top:10px">Close</button>' +
+      '</div>';
+    $('twop-again').onclick = startTwoPlayer;
+    $('twop-close').onclick = () => modal.remove();
+    return;
+  }
+
+  const q = twoP.current;
+  const player = twoP.turn; // 0 or 1
+  const pColor = player === 0 ? 'var(--accent)' : 'var(--accent-2)';
+  const { type, correct, options } = q;
+  let eyebrow = '', promptHtml = '', textFn = c => c.n;
+  switch (type) {
+    case 'flag-to-country': eyebrow = 'Which country owns this flag?'; promptHtml = '<div style="font-size:70px;text-align:center">' + correct.flag + '</div>'; textFn = c => c.n; break;
+    case 'country-to-capital': eyebrow = 'Capital of ' + correct.n + '?'; promptHtml = '<div class="quiz-prompt">' + correct.flag + ' ' + escapeHtml(correct.n) + '</div>'; textFn = c => c.cap; break;
+    case 'capital-to-country': eyebrow = 'Which country has this capital?'; promptHtml = '<div class="quiz-prompt">' + escapeHtml(correct.cap) + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
+    case 'culture-hint': eyebrow = 'Which country fits?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px;font-style:italic">' + escapeHtml(correct.cul || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
+    case 'food-to-country': eyebrow = 'Whose dishes are these?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px">🍽 ' + escapeHtml(correct.food || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
+    case 'sport-to-country': eyebrow = 'Whose sports?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px">⚽ ' + escapeHtml(correct.sport || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
+  }
+
+  if (twoP.phase === 'handoff') {
+    modal.innerHTML = '<div class="ts-box" style="text-align:center">' +
+      '<h2 class="ts-title" style="text-align:center;color:' + pColor + '">Pass to Player ' + (player + 1) + '</h2>' +
+      '<p style="color:var(--ink-dim);margin:12px 0 20px">Hand the device over, then tap when ready.</p>' +
+      '<button class="btn-primary" id="twop-ready" style="width:100%;padding:14px">Player ' + (player + 1) + " — I'm ready</button>" +
+      '</div>';
+    $('twop-ready').onclick = () => { twoP.phase = 'play'; renderTwoPlayer(); };
+    return;
+  }
+
+  modal.innerHTML = '<div class="ts-box">' +
+    '<div style="display:flex;justify-content:space-between;font-size:12px;color:var(--ink-dim);margin-bottom:6px">' +
+      '<span style="color:var(--accent)">P1: ' + twoP.scores[0] + '</span>' +
+      '<span>Round ' + twoP.round + '/' + twoP.total + '</span>' +
+      '<span style="color:var(--accent-2)">P2: ' + twoP.scores[1] + '</span></div>' +
+    '<div style="text-align:center;font-weight:700;color:' + pColor + ';margin-bottom:10px">Player ' + (player + 1) + "'s turn</div>" +
+    '<div class="quiz-eyebrow" style="text-align:center">' + eyebrow + '</div>' + promptHtml +
+    '<div class="quiz-options" id="twop-opts">' +
+      options.map((o, i) => '<button class="quiz-option" data-idx="' + i + '">' + escapeHtml(textFn(o)) + '</button>').join('') +
+    '</div></div>';
+
+  modal.querySelectorAll('#twop-opts .quiz-option').forEach(btn => {
+    btn.onclick = () => {
+      const picked = options[parseInt(btn.dataset.idx, 10)];
+      const right = picked === correct;
+      if (right) twoP.scores[player]++;
+      modal.querySelectorAll('#twop-opts .quiz-option').forEach((b, i) => {
+        b.disabled = true;
+        if (options[i] === correct) b.classList.add('correct');
+        else if (b === btn) b.classList.add('wrong');
+      });
+      const next = document.createElement('button');
+      next.className = 'btn-primary'; next.style.cssText = 'width:100%;padding:13px;margin-top:14px';
+      next.textContent = right ? '✓ Correct! Next player →' : 'Next player →';
+      next.onclick = () => { twoP.turn = 1 - twoP.turn; if (twoP.turn === 0) twoPNext(); else { twoP.phase = 'handoff'; renderTwoPlayer(); } };
+      // After both players answer the same round we advance; alternate turns.
+      modal.querySelector('.ts-box').appendChild(next);
+    };
+  });
+}
+
+/* ---- Teacher: shareable challenge links ---- */
+function openTeacher() {
+  let modal = document.getElementById('teacher-modal');
+  if (modal) modal.remove();
+  modal = document.createElement('div');
+  modal.id = 'teacher-modal';
+  modal.className = 'ts-modal';
+  modal.innerHTML = '<div class="ts-box">' +
+    '<button class="ts-close" aria-label="Close">✕</button>' +
+    '<h2 class="ts-title">🍎 Class challenge</h2>' +
+    '<p class="ts-intro">Pick a focus and a length, then share the link. Anyone who opens it gets the same flag challenge — no logins. A simple way to test demand before a full teacher dashboard.</p>' +
+    '<div class="set-group"><div class="set-label">Focus</div>' +
+      '<select id="tc-focus" class="ts-select" style="width:100%">' +
+        '<option value="All">Whole world</option>' +
+        CONTINENTS.filter(x => x !== 'All').map(c => '<option value="' + escapeHtml(c) + '">' + escapeHtml(c) + '</option>').join('') +
+      '</select></div>' +
+    '<div class="set-group"><div class="set-label">Questions</div>' +
+      '<div class="seg-row" id="tc-len">' +
+        ['5', '10', '15'].map((n, i) => '<button class="seg' + (i === 1 ? ' on' : '') + '" data-n="' + n + '">' + n + '</button>').join('') +
+      '</div></div>' +
+    '<button class="btn-primary" id="tc-make" style="width:100%;padding:13px">Create link</button>' +
+    '<div id="tc-out" style="margin-top:14px"></div>' +
+    '</div>';
+  document.body.appendChild(modal);
+  modal.querySelector('.ts-close').onclick = () => modal.remove();
+  modal.onclick = e => { if (e.target === modal) modal.remove(); };
+  let len = 10;
+  modal.querySelectorAll('#tc-len .seg').forEach(b => b.onclick = () => {
+    modal.querySelectorAll('#tc-len .seg').forEach(x => x.classList.remove('on'));
+    b.classList.add('on'); len = parseInt(b.dataset.n, 10);
+  });
+  $('tc-make').onclick = () => {
+    const focus = $('tc-focus').value;
+    const payload = btoa(JSON.stringify({ f: focus, n: len, v: 1 }));
+    const url = window.location.href.split('#')[0].split('?')[0] + '?challenge=' + encodeURIComponent(payload);
+    $('tc-out').innerHTML = '<div class="set-label" style="margin-bottom:6px">Shareable link</div>' +
+      '<input class="ts-select" id="tc-url" style="width:100%" readonly value="' + escapeHtml(url) + '">' +
+      '<div style="display:flex;gap:8px;margin-top:8px">' +
+        '<button class="btn-primary" id="tc-copy" style="flex:1;padding:11px">Copy link</button>' +
+        (navigator.share ? '<button class="set-action" id="tc-share" style="flex:1;margin:0">Share…</button>' : '') +
+      '</div>';
+    $('tc-copy').onclick = () => { try { navigator.clipboard.writeText(url); $('tc-copy').textContent = '✓ Copied!'; } catch (e) {} };
+    const sh = $('tc-share'); if (sh) sh.onclick = () => navigator.share({ title: 'Myatlastic class challenge', url }).catch(() => {});
+  };
+}
+
+// Challenge mode — a child opens a ?challenge=… link and plays a fixed flag quiz.
+let challengeState = null;
+function startChallenge(cfg) {
+  let pool = SOVEREIGN_COUNTRIES;
+  if (cfg.f && cfg.f !== 'All') pool = pool.filter(c => c.c.split(' / ')[0] === cfg.f);
+  if (pool.length < 4) pool = SOVEREIGN_COUNTRIES;
+  challengeState = { cfg, pool, round: 0, total: cfg.n || 10, score: 0, current: null };
+  setMode('quiz');
+  challengeNext();
+}
+function challengeNext() {
+  const cs = challengeState;
+  cs.round++;
+  if (cs.round > cs.total) { renderChallengeOver(); return; }
+  const correct = cs.pool[Math.floor(Math.random() * cs.pool.length)];
+  const distractors = pickN(cs.pool.length >= 4 ? cs.pool : SOVEREIGN_COUNTRIES, 3, correct);
+  cs.current = { correct, options: gameShuffle([correct, ...distractors]) };
+  renderChallenge();
+}
+function renderChallenge() {
+  const root = $('view-quiz');
+  const cs = challengeState, { correct, options } = cs.current;
+  root.innerHTML = '<div class="center-card quiz-card">' +
+    '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticExitChallenge()">← Exit challenge</button></div>' +
+    '<div class="quiz-eyebrow">🍎 Class challenge · ' + escapeHtml(cs.cfg.f || 'World') + '</div>' +
+    '<div class="quiz-prompt-flag">' + correct.flag + '</div>' +
+    '<div class="quiz-options">' +
+      options.map((o, i) => '<button class="quiz-option" data-idx="' + i + '">' + escapeHtml(o.n) + '</button>').join('') +
+    '</div>' +
+    '<div class="quiz-score">Round ' + cs.round + ' / ' + cs.total + ' · Score: ' + cs.score + '</div>' +
+    '</div>';
+  root.querySelectorAll('.quiz-option').forEach(btn => {
+    btn.onclick = () => {
+      const picked = options[parseInt(btn.dataset.idx, 10)];
+      if (picked === correct) { cs.score++; stampCountry(correct.n); }
+      root.querySelectorAll('.quiz-option').forEach((b, i) => {
+        b.disabled = true;
+        if (options[i] === correct) b.classList.add('correct');
+        else if (b === btn) b.classList.add('wrong');
+      });
+      const next = document.createElement('button');
+      next.className = 'btn-primary next-btn'; next.textContent = cs.round >= cs.total ? 'See result →' : 'Next →';
+      next.onclick = challengeNext;
+      root.querySelector('.quiz-card').appendChild(next);
+    };
+  });
+}
+function renderChallengeOver() {
+  const root = $('view-quiz');
+  const cs = challengeState;
+  const pct = Math.round((cs.score / cs.total) * 100);
+  root.innerHTML = '<div class="center-card quiz-card" style="text-align:center">' +
+    '<div style="font-size:54px">' + (pct >= 80 ? '🏆' : pct >= 50 ? '🌟' : '🌍') + '</div>' +
+    '<h2 style="color:var(--accent);font-size:26px;margin:8px 0">' + cs.score + ' / ' + cs.total + '</h2>' +
+    '<p style="color:var(--ink-dim);margin-bottom:20px">' + pct + '% on the ' + escapeHtml(cs.cfg.f || 'world') + ' challenge</p>' +
+    '<button class="btn-primary" id="ch-again" style="width:100%;padding:13px">Try again</button>' +
+    '<button class="set-action" id="ch-done" style="margin-top:10px">Done</button>' +
+    '</div>';
+  $('ch-again').onclick = () => startChallenge(cs.cfg);
+  $('ch-done').onclick = () => { challengeState = null; setMode('explore'); };
+}
+window.__myatlasticExitChallenge = () => { challengeState = null; setMode('explore'); };
 
 /* ============================================================
  * EXPLORE PROGRESS BAR
@@ -1880,6 +3105,14 @@ function recordCountryView(name) {
 function handleDeepLink() {
   try {
     const params = new URLSearchParams(window.location.search);
+    // Teacher / class challenge link: ?challenge=<base64 config>
+    const ch = params.get('challenge');
+    if (ch) {
+      try {
+        const cfg = JSON.parse(atob(decodeURIComponent(ch)));
+        if (cfg && cfg.v === 1) { startChallenge(cfg); return; }
+      } catch (e) {}
+    }
     const cName = params.get('c');
     if (cName) {
       const c = COUNTRIES.find(x => x.n.toLowerCase() === cName.toLowerCase());
@@ -1908,14 +3141,25 @@ function pickN(pool, n, exclude) {
 }
 
 function newQuizQuestion() {
-  const type = QUIZ_TYPES[Math.floor(Math.random() * QUIZ_TYPES.length)];
-  // Pick a country that actually has the required field populated
+  // Difficulty / age band shape the question pool, option count, and how close
+  // the wrong answers are (harder = same-continent distractors).
+  const diff = effectiveDifficulty();
+  const easyTypes = ['flag-to-country', 'country-to-capital', 'capital-to-country'];
+  const typePool = diff === 'easy' ? easyTypes : QUIZ_TYPES;
+  const type = typePool[Math.floor(Math.random() * typePool.length)];
   const fieldMap = { 'culture-hint': 'cul', 'food-to-country': 'food', 'sport-to-country': 'sport' };
   const required = fieldMap[type];
   let candidates = SOVEREIGN_COUNTRIES;
   if (required) candidates = SOVEREIGN_COUNTRIES.filter(c => c[required] && c[required] !== '—');
   const correct = candidates[Math.floor(Math.random() * candidates.length)];
-  const distractors = pickN(SOVEREIGN_COUNTRIES, 3, correct);
+  const nOpts = quizOptionCount();
+  let pool = SOVEREIGN_COUNTRIES;
+  if (diff === 'hard') {
+    const cont = correct.c.split(' / ')[0];
+    const same = SOVEREIGN_COUNTRIES.filter(c => c.c.split(' / ')[0] === cont && c !== correct);
+    if (same.length >= nOpts - 1) pool = same; // trickier: neighbours as decoys
+  }
+  const distractors = pickN(pool, nOpts - 1, correct);
   const options = [correct, ...distractors].sort(() => Math.random() - 0.5);
   return { type, correct, options };
 }
@@ -1975,7 +3219,7 @@ function renderQuiz() {
       const idx = parseInt(btn.dataset.idx, 10);
       const picked = options[idx];
       state.quiz.total++;
-      if (picked === correct) state.quiz.score++;
+      if (picked === correct) { state.quiz.score++; stampCountry(correct.n); }
       recordQuiz();
       checkAchievements();
       card.querySelectorAll('.quiz-option').forEach((b, i) => {
@@ -2068,6 +3312,8 @@ function renderDailyQuiz(c, completedToday, streak) {
         const newStreak = streak + 1;
         setStreak(newStreak);
         setLastDailyDay(todaySeed());
+        stampCountry(c.n);
+        checkAchievements();
         updateStreakDisplay();
         msg.style.color = 'var(--success)';
         msg.textContent = '✓ Correct. Streak: ' + newStreak + ' 🔥';
@@ -2353,7 +3599,7 @@ function renderCompareResult(root) {
  * Until then the paywall runs in demo mode (unlocks locally, no charge).
  * ============================================================ */
 const BILLING_CONFIG = {
-  revenueCatApiKey: '',                 // e.g. 'appl_xxxxxxxxxxxx' — leave '' for demo mode
+  revenueCatApiKey: 'appl_BBgGwCAFEEOZYRRZWQPcdVCYVCu',
   entitlementId: 'pro',                 // must match the entitlement configured in RevenueCat
   products: {
     monthly:  'io.vertotech.atlastic.pro.monthly',
@@ -2473,6 +3719,9 @@ function renderPaywall() {
     '<li>Currency converter with live exchange rates</li>' +
     '<li>Unlimited quizzes (free: 3 per day)</li>' +
     '<li>Full Daily Challenge with streak history</li>' +
+    '<li>Two-player pass &amp; play quiz for families</li>' +
+    '<li>Teacher / class challenge links</li>' +
+    '<li>Age bands, adjustable difficulty &amp; dyslexia-friendly reading mode</li>' +
     '<li>Family Sharing — one purchase covers your Apple Family</li>' +
     '</ul>' +
     '<div class="plan-grid">' +
@@ -2918,7 +4167,8 @@ function setupGlobe(THREE) {
   );
   globeGroup.add(glow);
 
-  scene.add(new THREE.AmbientLight(0xffffff, 0.65));
+  const ambient = new THREE.AmbientLight(0xffffff, 0.65);
+  scene.add(ambient);
   const sun = new THREE.DirectionalLight(0xfff1d0, 1.1);
   sun.position.set(5, 3, 5);
   scene.add(sun);
@@ -2942,6 +4192,60 @@ function setupGlobe(THREE) {
   );
   ring.visible = false;
   scene.add(ring);
+
+  // DAY / NIGHT — point the sun at the real subsolar point so the lit and dark
+  // hemispheres match the actual time right now. Toggled off by default.
+  let dayNight = false;
+  function subsolarLocalDir() {
+    const now = new Date();
+    const start = new Date(Date.UTC(now.getUTCFullYear(), 0, 0));
+    const dayOfYear = Math.floor((now - start) / 86400000);
+    // Solar declination (deg), simple but good-enough approximation.
+    const decl = -23.44 * Math.cos((2 * Math.PI / 365) * (dayOfYear + 10));
+    const utcHours = now.getUTCHours() + now.getUTCMinutes() / 60;
+    const subLon = -15 * (utcHours - 12); // longitude where it's local noon
+    return latLonToVec3(decl, subLon, 1, THREE).normalize();
+  }
+
+  // EXPLORER AVATAR — an emoji sprite that rides to the active country and bobs.
+  // Levels up (icon changes) as the child unlocks more of the world.
+  function makeEmojiSprite(emoji, depthTest) {
+    const cv = document.createElement('canvas');
+    cv.width = cv.height = 128;
+    const ctx = cv.getContext('2d');
+    ctx.font = '96px serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(emoji, 64, 72);
+    const tex = new THREE.CanvasTexture(cv);
+    if ('colorSpace' in tex) tex.colorSpace = THREE.SRGBColorSpace;
+    const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: depthTest !== false });
+    const sp = new THREE.Sprite(mat);
+    sp.scale.set(0.32, 0.32, 0.32);
+    return sp;
+  }
+  const avatar = makeEmojiSprite(explorerLevel().icon, false);
+  avatar.visible = false;
+  avatar.renderOrder = 999;
+  scene.add(avatar);
+  let avatarIcon = explorerLevel().icon;
+
+  // ALL-FLAGS layer — a flag sprite at every country, built lazily. Depth-tested
+  // so the Earth occludes flags on the far side as the globe spins.
+  let flagsGroup = null;
+  function buildFlags() {
+    if (flagsGroup) return;
+    flagsGroup = new THREE.Group();
+    globeGroup.add(flagsGroup);
+    COUNTRIES.forEach(c => {
+      if (!c.flag || typeof c.lat !== 'number') return;
+      const sp = makeEmojiSprite(c.flag, true);
+      sp.scale.set(0.17, 0.17, 0.17);
+      sp.position.copy(latLonToVec3(c.lat, c.lon, 1.525, THREE));
+      flagsGroup.add(sp);
+    });
+    flagsGroup.visible = false;
+  }
 
   let isDragging = false, prevX = 0, prevY = 0, dragStartX = 0, dragStartY = 0;
   let targetRotY = 0, targetRotX = 0, currentRotY = 0, currentRotX = 0;
@@ -3054,6 +4358,7 @@ function setupGlobe(THREE) {
     targetZoom = Math.max(2.5, Math.min(7, targetZoom + e.deltaY * 0.003));
   }, { passive: false });
 
+  let avatarT = 0;
   function animate() {
     requestAnimationFrame(animate);
     if (autoSpin && !isDragging) targetRotY += 0.0015;
@@ -3062,11 +4367,27 @@ function setupGlobe(THREE) {
     globeGroup.rotation.y = currentRotY;
     globeGroup.rotation.x = currentRotX;
     camera.position.z += (targetZoom - camera.position.z) * 0.08;
+    if (dayNight) {
+      // Rotate the real sun direction into scene space so it tracks geography
+      // as the user spins the globe.
+      const dir = subsolarLocalDir().applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
+      sun.position.copy(dir.multiplyScalar(6));
+      sun.intensity = 1.5;
+      ambient.intensity = 0.12;
+    }
     if (ring.visible && state.activeCountry) {
       const p = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, 1.55, THREE);
       p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
       ring.position.copy(p);
       ring.lookAt(camera.position);
+      // Avatar bobs just above the active country and faces the camera.
+      avatarT += 0.05;
+      const bob = 1.62 + Math.sin(avatarT) * 0.03;
+      const ap = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, bob, THREE);
+      ap.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
+      avatar.position.copy(ap);
+      // Hide the avatar when it's on the far side of the globe.
+      avatar.visible = ap.z > -0.2;
     }
     renderer.render(scene, camera);
   }
@@ -3078,6 +4399,24 @@ function setupGlobe(THREE) {
       targetRotY = -c.lon * (Math.PI / 180) - Math.PI / 2;
       targetRotX = c.lat * (Math.PI / 180) * 0.6;
       ring.visible = true;
+      avatar.visible = true;
+      // Refresh the avatar icon in case the explorer levelled up.
+      const ic = explorerLevel().icon;
+      if (ic !== avatarIcon) {
+        avatarIcon = ic;
+        avatar.material.map = makeEmojiSprite(ic).material.map;
+        avatar.material.needsUpdate = true;
+      }
+    },
+    setDayNight(on) {
+      dayNight = on;
+      if (!on) { sun.position.set(5, 3, 5); sun.intensity = 1.1; ambient.intensity = 0.65; }
+    },
+    setFlags(on) {
+      if (on) buildFlags();
+      if (flagsGroup) flagsGroup.visible = on;
+      pinsGroup.visible = !on;        // swap dots for flags to avoid clutter
+      if (on) autoSpin = true;        // let it spin so you see them all go by
     },
     resize
   };
@@ -3157,10 +4496,34 @@ $('kids-toggle').onclick = () => {
 };
 $('search').addEventListener('input', e => { state.search = e.target.value; renderList(); });
 
+// Globe: day/night terminator toggle
+const dnBtn = $('daynight-toggle');
+if (dnBtn) dnBtn.onclick = () => {
+  const on = !dnBtn.classList.contains('on');
+  dnBtn.classList.toggle('on', on);
+  $('globe-hint').textContent = on ? 'Lit side = daytime now · dark side = night' : 'Drag to spin · tap a pin to select';
+  if (globeAPI && globeAPI.setDayNight) globeAPI.setDayNight(on);
+};
+// Globe: all-flags layer toggle
+const flagsBtn = $('flags-toggle');
+if (flagsBtn) flagsBtn.onclick = () => {
+  const on = !flagsBtn.classList.contains('on');
+  flagsBtn.classList.toggle('on', on);
+  $('globe-hint').textContent = on ? 'All 195 flags · drag to spin the world' : 'Drag to spin · tap a pin to select';
+  if (globeAPI && globeAPI.setFlags) globeAPI.setFlags(on);
+};
+// Globe: true-size comparison opener
+const tsBtn = $('truesize-btn');
+if (tsBtn) tsBtn.onclick = () => openTrueSize();
+// Settings / Pro tools
+const setBtn = $('settings-btn');
+if (setBtn) setBtn.onclick = () => openSettings();
+
 // Init — with diagnostic fallback so we never end up with "header only, nothing else"
 try {
   updateStreakDisplay();
   updateProBadge();
+  applySettings();
   updateExploreProgress();
   renderFilters();
   renderList();
