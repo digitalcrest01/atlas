@@ -1,0 +1,94 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [ ]
+  },
+  "identifier" : "5E756AC0-46E2-4CE0-82DE-AAE9BC76E629",
+  "nonRenewingSubscriptions" : [ ],
+  "products" : [
+    {
+      "displayPrice" : "149.00",
+      "familyShareable" : true,
+      "internalID" : "C8DEBCE1-709C-49DA-8850-49116C1822EB",
+      "localizations" : [
+        {
+          "description" : "One-time buy. Lifetime Pro access.",
+          "displayName" : "Myatlastic Pro Lifetime",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "io.vertotech.atlastic.pro.lifetime",
+      "referenceName" : "Myatlastic Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [ ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "4139CAF2-6F09-4799-90E3-18F999435C20",
+      "localizations" : [ ],
+      "name" : "Myatlastic Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [ ],
+          "codeOffers" : [ ],
+          "displayPrice" : "9.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "95A678F7-A0C8-4A2D-B909-ACD6C4170DA0",
+          "introductoryOffer" : {
+            "internalID" : "F47A2AE9-57E2-45CE-818C-B3E6CB60C5AE",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "All Pro features, billed monthly. 1-week free trial.",
+              "displayName" : "Atlastic Pro — Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "io.vertotech.atlastic.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "4139CAF2-6F09-4799-90E3-18F999435C20",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [ ],
+          "codeOffers" : [ ],
+          "displayPrice" : "69.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "46D65DA2-C3C8-4FBE-B78A-1C88AF1A2C40",
+          "introductoryOffer" : {
+            "internalID" : "BACB05FB-30AD-4B60-AD2B-761FD9588E76",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "All Pro features, billed yearly. Save 42%. 1-week free trial.",
+              "displayName" : "Atlastic Pro — Annual",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "io.vertotech.atlastic.pro.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Annual",
+          "subscriptionGroupID" : "4139CAF2-6F09-4799-90E3-18F999435C20",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

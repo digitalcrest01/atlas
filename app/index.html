@@ -391,7 +391,7 @@
   .globe-btn-3 { top: 88px; }
   .globe-btn:hover { border-color: var(--accent); }
   .globe-btn.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
-  /* Explorer rank badge — explains the avatar (compass) bobbing on the globe */
+  /* Explorer rank badge — small corner label showing the player's rank + progress */
   .globe-explorer {
     position: absolute; bottom: 12px; left: 12px; z-index: 3;
     background: rgba(17,21,28,0.82); border: 1px solid var(--line);
@@ -4626,12 +4626,6 @@ function setupGlobe(THREE) {
     sp.scale.set(0.32, 0.32, 0.32);
     return sp;
   }
-  const avatar = makeEmojiSprite(explorerLevel().icon, false);
-  avatar.visible = false;
-  avatar.renderOrder = 999;
-  scene.add(avatar);
-  let avatarIcon = explorerLevel().icon;
-
   // ALL-FLAGS layer — a flag sprite at every country, built lazily. Depth-tested
   // so the Earth occludes flags on the far side as the globe spins.
   let flagsGroup = null;
@@ -4794,7 +4788,6 @@ function setupGlobe(THREE) {
     targetZoom = Math.max(2.5, Math.min(7, targetZoom + e.deltaY * 0.003));
   }, { passive: false });
 
-  let avatarT = 0;
   function animate() {
     requestAnimationFrame(animate);
     if (autoSpin && !isDragging) targetRotY += 0.0015;
@@ -4816,14 +4809,6 @@ function setupGlobe(THREE) {
       p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
       ring.position.copy(p);
       ring.lookAt(camera.position);
-      // Avatar bobs just above the active country and faces the camera.
-      avatarT += 0.05;
-      const bob = 1.62 + Math.sin(avatarT) * 0.03;
-      const ap = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, bob, THREE);
-      ap.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
-      avatar.position.copy(ap);
-      // Hide the avatar when it's on the far side of the globe.
-      avatar.visible = ap.z > -0.2;
     }
     renderer.render(scene, camera);
   }
@@ -4835,14 +4820,6 @@ function setupGlobe(THREE) {
       targetRotY = -c.lon * (Math.PI / 180) - Math.PI / 2;
       targetRotX = c.lat * (Math.PI / 180) * 0.6;
       ring.visible = true;
-      avatar.visible = true;
-      // Refresh the avatar icon in case the explorer levelled up.
-      const ic = explorerLevel().icon;
-      if (ic !== avatarIcon) {
-        avatarIcon = ic;
-        avatar.material.map = makeEmojiSprite(ic).material.map;
-        avatar.material.needsUpdate = true;
-      }
     },
     setDayNight(on) {
       dayNight = on;
