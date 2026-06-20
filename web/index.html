@@ -924,7 +924,14 @@
     gap: 14px;
   }
   @media (max-width: 800px) {
-    #view-compare { flex-direction: column; }
+    /* Stack everything in one scrolling column. nowrap stops column+wrap from
+       splitting content into tall narrow sub-columns. The #view-compare prefix
+       raises specificity so these beat the base .compare-col/.compare-topbar
+       rules that appear later in the stylesheet. */
+    #view-compare { flex-direction: column; flex-wrap: nowrap; align-items: stretch; }
+    #view-compare .compare-topbar { flex: 0 0 auto; }
+    #view-compare .compare-col { flex: 0 0 auto; overflow-y: visible; }
+    #view-compare .compare-col.empty { min-height: 0; }
   }
   .center-card {
     max-width: 700px;
