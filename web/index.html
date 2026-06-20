@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#0b0e13" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' fill='%230b0e13' rx='6'/&gt;&lt;g transform='translate(16 16)'&gt;&lt;path d='M0 -11 L2.5 -2.5 L11 0 L2.5 2.5 L0 11 L-2.5 2.5 L-11 0 L-2.5 -2.5 Z' fill='%23d4a056'/&gt;&lt;/g&gt;&lt;/svg&gt;" />
 <title>Myatlastic &middot; Explore Every Country</title>
-<meta name="description" content="Explore all 195 countries with a photorealistic 3D globe. Capitals, currencies, cultures, history, daily challenges and quizzes." />
+<meta name="description" content="Explore every country in the world with a photorealistic 3D globe. Capitals, currencies, cultures, history, daily challenges and quizzes." />
 <meta property="og:title" content="Myatlastic · Explore Every Country" />
 <meta property="og:description" content="Interactive world geography for kids and curious minds of all ages. 3D globe, daily challenges, quizzes, side-by-side comparisons." />
 <meta property="og:type" content="website" />
@@ -734,6 +734,25 @@
   .mystery-opt:hover { border-color: var(--accent); }
   .mystery-opt:active { transform: scale(0.97); }
   .mystery-opt.wrong { opacity: 0.4; border-color: var(--danger); text-decoration: line-through; cursor: default; }
+  /* WEB DEMO — download bar + feature walls */
+  .web-getapp-bar {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    background: linear-gradient(90deg, rgba(212,160,86,0.18), rgba(110,168,196,0.14));
+    border-bottom: 1px solid var(--accent);
+    padding: 8px 14px; font-size: 13px; color: var(--ink); flex: 0 0 auto;
+  }
+  .web-getapp-bar b { color: var(--accent); }
+  .web-getapp-bar button {
+    background: var(--accent); color: var(--bg); border: none; border-radius: 18px;
+    padding: 6px 14px; font-weight: 700; font-size: 12px; cursor: pointer; white-space: nowrap;
+  }
+  @media (max-width: 560px) { .web-getapp-bar { font-size: 12px; gap: 8px; } .web-getapp-bar .wb-msg { display: none; } }
+  .webwall { max-width: 460px; text-align: center; }
+  .webwall-badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .webwall-title { font-size: 24px; color: var(--ink); margin-bottom: 10px; }
+  .webwall-blurb { font-size: 14px; color: var(--ink-dim); line-height: 1.55; margin-bottom: 22px; }
+  .webwall-cta { width: 100%; padding: 14px; }
+  .webwall-back { display: block; width: 100%; margin-top: 12px; background: none; border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 11px; cursor: pointer; }
   /* TRUE SIZE modal */
   .ts-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 9000; display: flex; align-items: center; justify-content: center; padding: 16px; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
   .ts-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; max-width: 460px; width: 100%; max-height: 92vh; overflow: auto; position: relative; }
@@ -1964,6 +1983,31 @@ function quizOptionCount() {
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
 const FREE_COUNTRIES = [...COUNTRIES].sort((a, b) => a.n.localeCompare(b.n)).slice(0, 10).map(c => c.n);
 
+/* ============================================================
+ * PLATFORM — the iPhone/iPad app is the real product; the web is a
+ * limited demo that funnels people to the App Store. On the web we
+ * give a taste (globe, a few countries, the Mystery game) and wall
+ * the deeper features behind a "Get the app" prompt.
+ * ============================================================ */
+const IS_NATIVE = !!(window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform());
+const IS_WEB = !IS_NATIVE;
+const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
+let APP_LIVE = false; // flip to true once the app is approved on the App Store
+// Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
+const WEB_APP_ONLY = ['quiz', 'game', 'compare', 'currency'];
+function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
+window.__getApp = () => { try { window.open(APP_STORE_URL, '_blank', 'noopener'); } catch (e) {} };
+// Friendly "this lives in the app" wall shown for web-gated features.
+function webWallHtml(title, blurb) {
+  return '<div class="center-card webwall">' +
+    '<div class="webwall-badge">📱 In the app</div>' +
+    '<h2 class="webwall-title">' + escapeHtml(title) + '</h2>' +
+    '<p class="webwall-blurb">' + escapeHtml(blurb || 'This is part of the full Atlastic experience on iPhone & iPad.') + '</p>' +
+    '<button class="btn-primary webwall-cta" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
+    '<button class="webwall-back" onclick="setMode(\'explore\')">← Keep exploring the preview</button>' +
+    '</div>';
+}
+
 function isFree(c) { return FREE_COUNTRIES.includes(c.n); }
 // Sovereign = the 195 (193 UN members + Vatican + Palestine). Kosovo & Taiwan are tagged isCountry:false.
 function isSovereign(c) { return c.isCountry !== false; }
@@ -2213,6 +2257,13 @@ function setMode(newMode) {
   document.querySelectorAll('.view').forEach(v => {
     v.classList.toggle('active', v.id === 'view-' + newMode);
   });
+
+  // On the web, the deeper features are app-only — show a download wall.
+  if (IS_WEB && WEB_APP_ONLY.indexOf(newMode) !== -1) {
+    const titles = { quiz: 'Quizzes live in the app', game: 'Spell-the-Country is in the app', compare: 'Compare countries in the app', currency: 'The currency converter is in the app' };
+    $('view-' + newMode).innerHTML = webWallHtml(titles[newMode] || 'Get the full app', 'Play this and a lot more — passport, anthems, all quizzes and games — in the full Atlastic on iPhone & iPad.');
+    return;
+  }
 
   if (newMode === 'quiz') renderQuiz();
   else if (newMode === 'daily') renderDaily();
@@ -2470,9 +2521,11 @@ function renderDetails() {
 
   if (!free) {
     html += '<div class="upgrade-cta">';
-    html += '<h3>🔓 Unlock all 195 countries</h3>';
-    html += '<p>Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and full Daily streak.</p>';
-    html += '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>';
+    html += '<h3>🔓 Unlock every country in the world</h3>';
+    html += '<p>' + (IS_WEB ? 'The full Atlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and full Daily streak.') + '</p>';
+    html += IS_WEB
+      ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>'
+      : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>';
     html += '</div>';
   }
 
@@ -2594,7 +2647,7 @@ const ACHIEVEMENTS = [
   { id: 'stamps_10', icon: '🛂', name: 'Passport Holder', desc: 'Earned 10 passport stamps', check: () => getStampedSet().size >= 10 },
   { id: 'continent_done', icon: '🗺️', name: 'Continent Complete', desc: 'Visited a whole continent', check: () => completedContinents().length >= 1 },
   { id: 'globetrotter', icon: '🌍', name: 'Globetrotter', desc: 'Visited 50 countries', check: () => getViewedSet().size >= 50 },
-  { id: 'world_citizen', icon: '👑', name: 'World Citizen', desc: 'Visited all 195 countries', check: () => SOVEREIGN_COUNTRIES.every(c => getViewedSet().has(c.n)) },
+  { id: 'world_citizen', icon: '👑', name: 'World Citizen', desc: 'Visited every country in the world', check: () => SOVEREIGN_COUNTRIES.every(c => getViewedSet().has(c.n)) },
 ];
 
 function getUnlockedAchievements() {
@@ -4112,13 +4165,30 @@ const Account = {
 
 function renderPaywall() {
   const root = $('view-paywall');
+  // On the web, Pro is purchased in the app — show a download screen, not plans.
+  if (IS_WEB) {
+    root.innerHTML = '<div class="center-card paywall-card webwall">' +
+      '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
+      '<div class="webwall-badge">📱 In the app</div>' +
+      '<h2 class="webwall-title">Get Atlastic Pro on iPhone &amp; iPad</h2>' +
+      '<p class="webwall-blurb">Every country in the world in full depth, all quizzes &amp; games, the passport, compare, currency converter and more — in the full app.</p>' +
+      '<ul class="feature-list" style="text-align:left">' +
+        '<li>Every country in the world — full depth</li>' +
+        '<li>All quizzes, the Spell &amp; Flag-Hunt games</li>' +
+        '<li>Compare countries + live currency converter</li>' +
+        '<li>Family Sharing — one purchase for the whole family</li>' +
+      '</ul>' +
+      '<button class="btn-primary webwall-cta" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
+      '</div>';
+    return;
+  }
   let selectedPlan = 'annual';
   root.innerHTML = '<div class="center-card paywall-card">' +
     '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
     '<h2>Myatlastic Pro</h2>' +
     '<p>Unlock every country, every feature, every day.</p>' +
     '<ul class="feature-list">' +
-    '<li>All 195 countries — full depth (history, culture, religion, notable figures)</li>' +
+    '<li>Every country in the world — full depth (history, culture, religion, notable figures)</li>' +
     '<li>Landmark photo for every country</li>' +
     '<li>Spell-the-Country spelling game</li>' +
     '<li>Compare any two countries side by side</li>' +
@@ -4900,6 +4970,18 @@ function updateProBadge() {
   $('pro-badge').classList.toggle('hidden', state.isPro);
 }
 
+// Web only: a persistent "get the app" bar funnelling to the App Store.
+if (IS_WEB) {
+  try {
+    const bar = document.createElement('div');
+    bar.className = 'web-getapp-bar';
+    bar.innerHTML = '<span class="wb-msg">You\'re exploring the <b>web preview</b> — the full Atlastic is on iPhone &amp; iPad.</span>' +
+      '<button onclick="window.__getApp()">' + (APP_LIVE ? '📱 Get the app' : '📱 Coming soon') + '</button>';
+    const tabs = document.getElementById('mode-tabs');
+    if (tabs && tabs.parentNode) tabs.parentNode.insertBefore(bar, tabs);
+  } catch (e) {}
+}
+
 document.querySelectorAll('#mode-tabs button').forEach(b => {
   b.onclick = () => setMode(b.dataset.mode);
 });
@@ -4929,7 +5011,7 @@ const flagsBtn = $('flags-toggle');
 if (flagsBtn) flagsBtn.onclick = () => {
   const on = !flagsBtn.classList.contains('on');
   flagsBtn.classList.toggle('on', on);
-  $('globe-hint').textContent = on ? 'All 195 flags · drag to spin the world' : 'Drag to spin · tap a pin to select';
+  $('globe-hint').textContent = on ? 'Every country\'s flag · drag to spin the world' : 'Drag to spin · tap a pin to select';
   if (globeAPI && globeAPI.setFlags) globeAPI.setFlags(on);
 };
 // Globe: true-size comparison opener
