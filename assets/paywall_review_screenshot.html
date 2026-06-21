@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Myatlastic Pro — Review Screenshot</title>
+<style>
+  :root {
+    --bg: #0b0e13;
+    --card: #141923;
+    --gold: #d4a056;
+    --gold-2: #e6b770;
+    --text: #f5f1e8;
+    --muted: #9ca3af;
+    --green: #34d399;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 414px;
+    height: 736px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* iPhone 14 Pro Max safe-area canvas: 1284 x 2778 @ 3x, but easier to author at 428 x 926 logical */
+  .phone {
+    width: 414px;
+    height: 736px;
+    padding: 36px 20px 24px;
+    background: linear-gradient(180deg, #0b0e13 0%, #11151d 100%);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .topbar { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+  .logo { width: 32px; height: 32px; border-radius: 7px; background: #0b0e13; display: grid; place-items: center; overflow: hidden; }
+  .logo svg { width: 28px; height: 28px; display: block; }
+  .brand { font-size: 17px; font-weight: 700; }
+  h1 { font-size: 24px; font-weight: 800; line-height: 1.15; margin-bottom: 6px; letter-spacing: -0.4px; }
+  h1 span { color: var(--gold); }
+  .sub { color: var(--muted); font-size: 12.5px; margin-bottom: 16px; }
+  .features { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; }
+  .feature { display: flex; gap: 10px; padding: 4px 0; font-size: 12px; }
+  .feature .ck { color: var(--green); font-weight: 800; flex-shrink: 0; width: 14px; }
+  .tier {
+    background: var(--card);
+    border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .tier.selected {
+    border-color: var(--gold);
+    background: linear-gradient(180deg, rgba(212,160,86,0.10) 0%, var(--card) 100%);
+    box-shadow: 0 0 0 1px var(--gold) inset;
+  }
+  .tier-left .name { font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+  .tier-left .meta { color: var(--muted); font-size: 11px; }
+  .tier-right .price { font-weight: 800; font-size: 15px; text-align: right; }
+  .tier-right .per { color: var(--muted); font-size: 10.5px; text-align: right; }
+  .badge {
+    display: inline-block; background: var(--gold); color: #0b0e13;
+    font-size: 9px; font-weight: 800; padding: 2px 6px; border-radius: 99px;
+    margin-left: 6px; vertical-align: middle;
+  }
+  .cta {
+    width: 100%; padding: 12px;
+    background: var(--gold); color: #0b0e13;
+    border: none; border-radius: 12px;
+    font-size: 15px; font-weight: 800;
+    margin-top: 10px;
+  }
+  .restore { text-align: center; color: var(--muted); font-size: 11.5px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="topbar">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+        <rect width="1024" height="1024" fill="#0b0e13"/>
+        <g transform="translate(512 512)">
+          <path d="M0 -340 L80 -80 L340 0 L80 80 L0 340 L-80 80 L-340 0 L-80 -80 Z" fill="#d4a056"/>
+          <path d="M0 -160 L40 -40 L160 0 L40 40 L0 160 L-40 40 L-160 0 L-40 -40 Z" fill="#0b0e13"/>
+          <circle r="30" fill="#d4a056"/>
+        </g>
+      </svg>
+    </div>
+    <div class="brand">Myatlastic Pro</div>
+  </div>
+
+  <h1>Explore every country, <span>unlocked.</span></h1>
+  <div class="sub">All 197 countries, the word game, live currency tool, and offline access.</div>
+
+  <div class="features">
+    <div class="feature"><span class="ck">✓</span><span>All 197 countries — flags, food, sport, attire, language</span></div>
+    <div class="feature"><span class="ck">✓</span><span>Spell-the-Country word game</span></div>
+    <div class="feature"><span class="ck">✓</span><span>Live currency converter (160+ currencies)</span></div>
+    <div class="feature"><span class="ck">✓</span><span>Compare any two countries side-by-side</span></div>
+    <div class="feature"><span class="ck">✓</span><span>Works offline — no internet needed</span></div>
+    <div class="feature"><span class="ck">✓</span><span>Family Sharing — one purchase, whole family</span></div>
+  </div>
+
+  <div class="tier">
+    <div class="tier-left">
+      <div class="name">Monthly</div>
+      <div class="meta">1-week free trial, then renews</div>
+    </div>
+    <div class="tier-right">
+      <div class="price">$9.99</div>
+      <div class="per">per month</div>
+    </div>
+  </div>
+
+  <div class="tier">
+    <div class="tier-left">
+      <div class="name">Annual <span class="badge">SAVE 42%</span></div>
+      <div class="meta">1-week free trial, then renews</div>
+    </div>
+    <div class="tier-right">
+      <div class="price">$69.99</div>
+      <div class="per">per year</div>
+    </div>
+  </div>
+
+  <div class="tier selected">
+    <div class="tier-left">
+      <div class="name">Lifetime <span class="badge">BEST VALUE</span></div>
+      <div class="meta">One-time purchase, all future updates</div>
+    </div>
+    <div class="tier-right">
+      <div class="price">$149</div>
+      <div class="per">forever</div>
+    </div>
+  </div>
+
+  <button class="cta">Start Free Trial</button>
+  <div class="restore">Already subscribed? Restore Purchases</div>
+</div>
+</body>
+</html>
