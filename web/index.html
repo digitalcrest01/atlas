@@ -5088,7 +5088,7 @@ try {
 } catch (initErr) {
   console.error('Init failed:', initErr);
   document.body.innerHTML = '<div style="padding:30px;color:#e8e4d8;background:#0b0e13;height:100vh;font-family:monospace;font-size:13px;line-height:1.6;overflow:auto">' +
-    '<h2 style="color:#d4a056;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif;font-size:24px;margin-bottom:16px">Myatlastic init error</h2>' +
+    '<h2 style="color:#d4a056;font-family:-apple-system,BlinkMacSystemFont,\'SF Pro Display\',\'Helvetica Neue\',Arial,sans-serif;font-size:24px;margin-bottom:16px">Myatlastic init error</h2>' +
     '<p style="margin-bottom:12px">Something went wrong starting the app. Please send this to the developer:</p>' +
     '<pre style="background:#11151c;padding:12px;border-radius:6px;border:1px solid #232a36;overflow:auto;white-space:pre-wrap;word-break:break-word">' +
     String(initErr.stack || initErr).replace(/[<>&]/g, ch => ({'<':'&lt;','>':'&gt;','&':'&amp;'})[ch]) +
