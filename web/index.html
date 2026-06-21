@@ -15,9 +15,6 @@
 <meta name="apple-mobile-web-app-title" content="Myatlastic" />
 <link rel="apple-touch-icon" href="/assets/icon.svg" />
 <link rel="manifest" href="/manifest.json" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0b0e13;
@@ -45,7 +42,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
   html { height: 100%; }
   body {
-    font-family: 'Fraunces', Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
     background: var(--bg);
     color: var(--ink);
     font-size: 15px;
@@ -86,7 +83,7 @@
   .header-right { display: flex; gap: 8px; align-items: center; }
   .badge {
     background: var(--accent); color: var(--bg);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px; font-weight: 600;
     text-transform: uppercase; letter-spacing: 0.1em;
     padding: 6px 10px;
@@ -94,13 +91,13 @@
     border: none;
   }
   .streak {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     color: var(--accent);
     white-space: nowrap;
   }
   .kids-toggle {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px; color: var(--ink-dim);
     padding: 6px 10px;
     border: 1px solid var(--line);
@@ -127,7 +124,7 @@
     background: transparent;
     border: none;
     color: var(--ink-dim);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -203,7 +200,7 @@
     background: transparent;
     border: none;
     color: var(--ink-dim);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -255,7 +252,7 @@
     background: transparent;
     border: 1px solid var(--line);
     color: var(--ink-dim);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -272,7 +269,7 @@
   }
   .letter-group {
     padding: 10px 16px 4px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -305,7 +302,7 @@
     white-space: nowrap;
   }
   .country-item .meta {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 9px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -317,7 +314,7 @@
     background: var(--bg);
     border: 1px solid var(--line);
     color: var(--accent-2);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     font-weight: 600;
     padding: 5px 10px;
@@ -355,7 +352,7 @@
   body.flat-mode #flat-map { display: block; }
   .globe-label, .globe-hint {
     position: absolute;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -440,7 +437,7 @@
     font-size: 10px;
     color: var(--ink-dim);
     margin-top: 2px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
@@ -458,7 +455,7 @@
     font-style: italic;
   }
   .detail-eyebrow {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--accent);
     text-transform: uppercase;
@@ -509,7 +506,7 @@
   }
   .img-locked .lock-icon { font-size: 28px; }
   .img-locked .lock-label {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -524,7 +521,7 @@
     margin-bottom: 16px;
   }
   .fact-label {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -548,7 +545,7 @@
     padding: 10px 12px;
   }
   .qf-label {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--accent);
     text-transform: uppercase;
@@ -576,7 +573,7 @@
   .wow-spark { font-size: 18px; line-height: 1.3; }
   .wow-label {
     display: block;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -592,7 +589,7 @@
     margin-bottom: 16px;
   }
   .hello-head {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -619,7 +616,7 @@
   .phrase-row { padding: 10px 0; border-top: 1px solid var(--line); }
   .phrase-row.first { border-top: none; padding-top: 2px; }
   .phrase-en {
-    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px;
     letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 3px;
   }
   .phrase-main { display: flex; align-items: center; gap: 10px; }
@@ -630,7 +627,7 @@
   .phrase-phon b { color: var(--accent-2); font-style: italic; }
   /* NATIONAL ANTHEM card */
   .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
-  .anthem-head { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .anthem-head { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
   .anthem-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); border: none; color: var(--bg); font-weight: 700; font-size: 14px; border-radius: 22px; padding: 9px 16px; cursor: pointer; transition: transform 0.1s, opacity 0.1s; }
   .anthem-btn:active { transform: scale(0.96); }
   .anthem-play { font-size: 12px; }
@@ -739,7 +736,7 @@
   }
   @media (max-width: 560px) { .web-getapp-bar { font-size: 12px; gap: 8px; } .web-getapp-bar .wb-msg { display: none; } }
   .webwall { max-width: 460px; text-align: center; }
-  .webwall-badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .webwall-badge { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
   .webwall-title { font-size: 24px; color: var(--ink); margin-bottom: 10px; }
   .webwall-blurb { font-size: 14px; color: var(--ink-dim); line-height: 1.55; margin-bottom: 22px; }
   .webwall-cta { width: 100%; padding: 14px; }
@@ -827,7 +824,7 @@
     position: relative;
   }
   .section h4 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -846,7 +843,7 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     color: var(--lock);
     background: var(--panel);
@@ -871,7 +868,7 @@
     background: var(--accent);
     color: var(--bg);
     border: none;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
@@ -882,7 +879,7 @@
   }
   .states { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
   .states h4 {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -905,7 +902,7 @@
   }
   .state-cap {
     color: var(--ink-dim);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
   }
   .footer-note {
@@ -957,7 +954,7 @@
   /* Quiz */
   .quiz-card { text-align: center; }
   .quiz-eyebrow {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     color: var(--ink-dim);
     text-transform: uppercase;
@@ -987,7 +984,7 @@
   .quiz-option.correct { background: rgba(111, 184, 122, 0.2); border-color: var(--success); }
   .quiz-option.wrong { background: rgba(201, 112, 100, 0.2); border-color: var(--danger); }
   .quiz-score {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 12px;
     color: var(--ink-dim);
     margin-top: 18px;
@@ -1017,7 +1014,7 @@
     min-height: 320px;
   }
   .empty-label {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     color: var(--accent);
     text-transform: uppercase;
@@ -1081,7 +1078,7 @@
   }
   .cr-flag { font-size: 18px; flex-shrink: 0; }
   .cr-name { flex: 1; font-weight: 500; }
-  .cr-cap { color: var(--ink-dim); font-size: 12px; font-family: 'JetBrains Mono', monospace; }
+  .cr-cap { color: var(--ink-dim); font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; }
   /* Compare drag tray */
   .compare-tray {
     flex: 1 1 100%;
@@ -1138,7 +1135,7 @@
     background: transparent;
     border: 1px solid var(--line);
     color: var(--ink-dim);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -1181,14 +1178,14 @@
     transform: translateX(-50%);
     background: var(--accent);
     color: var(--bg);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 9px;
     padding: 3px 8px;
     border-radius: 3px;
     letter-spacing: 0.15em;
   }
   .plan-name {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -1208,7 +1205,7 @@
     margin-top: 16px;
     font-size: 10px;
     color: var(--ink-dim);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 0.05em;
     line-height: 1.5;
   }
@@ -1246,7 +1243,7 @@
     display: inline-flex; align-items: center; gap: 4px;
     background: rgba(212,160,86,0.12); color: var(--accent);
     border: 1px solid rgba(212,160,86,0.3);
-    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px;
     text-transform: uppercase; letter-spacing: 0.08em;
     padding: 3px 7px; border-radius: 3px; margin-right: 4px; margin-bottom: 4px;
     cursor: pointer;
@@ -1258,7 +1255,7 @@
     background: transparent;
     border: 1px solid var(--line);
     color: var(--accent-2);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
     padding: 6px 10px; border-radius: 4px; cursor: pointer;
     transition: border-color 0.1s, color 0.1s;
@@ -1306,7 +1303,7 @@
     position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
     background: var(--accent); color: var(--bg);
     border-radius: 8px; padding: 10px 18px; z-index: 8000;
-    font-size: 13px; font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 0.05em; text-align: center;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     animation: tipFade 4s ease forwards;
@@ -5091,7 +5088,7 @@ try {
 } catch (initErr) {
   console.error('Init failed:', initErr);
   document.body.innerHTML = '<div style="padding:30px;color:#e8e4d8;background:#0b0e13;height:100vh;font-family:monospace;font-size:13px;line-height:1.6;overflow:auto">' +
-    '<h2 style="color:#d4a056;font-family:Fraunces,serif;font-size:24px;margin-bottom:16px">Myatlastic init error</h2>' +
+    '<h2 style="color:#d4a056;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif;font-size:24px;margin-bottom:16px">Myatlastic init error</h2>' +
     '<p style="margin-bottom:12px">Something went wrong starting the app. Please send this to the developer:</p>' +
     '<pre style="background:#11151c;padding:12px;border-radius:6px;border:1px solid #232a36;overflow:auto;white-space:pre-wrap;word-break:break-word">' +
     String(initErr.stack || initErr).replace(/[<>&]/g, ch => ({'<':'&lt;','>':'&gt;','&':'&amp;'})[ch]) +
