@@ -187,8 +187,8 @@
   .mobile-bar {
     display: none;
     flex: 0 0 auto;
-    height: 56px;
-    padding-bottom: env(safe-area-inset-bottom, 0);
+    height: calc(56px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
     background: var(--panel);
     border-top: 1px solid var(--line);
   }
@@ -1979,7 +1979,7 @@ const FREE_COUNTRIES = [...COUNTRIES].sort((a, b) => a.n.localeCompare(b.n)).sli
 const IS_NATIVE = !!(window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform());
 const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
-let APP_LIVE = false; // flip to true once the app is approved on the App Store
+let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
 const WEB_APP_ONLY = ['quiz', 'game', 'compare', 'currency'];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
@@ -3014,8 +3014,11 @@ function openSettings() {
     accountHtml += '<div class="set-hint">Sign in so a purchase on any device unlocks Pro everywhere.</div>';
     if (BILLING_CONFIG.auth.googleClientId) accountHtml += '<button class="set-action" id="set-google">Continue with Google</button>';
     if (BILLING_CONFIG.auth.appleEnabled) accountHtml += '<button class="set-action" id="set-apple"> Sign in with Apple</button>';
+  } else if (Billing.isNative()) {
+    accountHtml += '<div class="set-hint">Your Pro unlock is tied to your Apple ID. Reinstalled or on a new device? Restore it here.</div>' +
+      '<button class="set-action" id="set-restore">Restore purchases</button>';
   } else {
-    accountHtml += '<div class="set-hint">Accounts are coming soon — signing in will let your purchases follow you across phone, tablet and web.</div>';
+    accountHtml += '<div class="set-hint">Your progress and Pro unlock are saved on this device.</div>';
   }
   accountHtml += '</div>';
 
@@ -3077,6 +3080,13 @@ function openSettings() {
   };
   const so = $('set-signout');
   if (so) so.onclick = async () => { await Account.signOut(); updateProBadge(); renderList(); openSettings(); };
+  const sr = $('set-restore');
+  if (sr) sr.onclick = async () => {
+    sr.disabled = true; sr.textContent = 'Restoring…';
+    const res = await Billing.restore();
+    if (res.ok) { alert(res.demo ? 'Dev unlock restored.' : '✓ Purchases restored.'); updateProBadge(); renderList(); openSettings(); }
+    else { alert('No active purchases to restore' + (res.error ? ' (' + res.error + ')' : '') + '.'); sr.disabled = false; sr.textContent = 'Restore purchases'; }
+  };
 }
 
 /* ---- Two-player pass-and-play quiz ---- */

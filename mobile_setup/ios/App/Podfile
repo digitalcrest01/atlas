@@ -25,4 +25,12 @@ end
 
 post_install do |installer|
   assertDeploymentTarget(installer)
+  # Pods (incl. resource bundles) are signed as part of the host app's embed
+  # phase, so they don't need their own signing — disabling it avoids the
+  # "requires a development team" archive error on machines with no device.
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+    end
+  end
 end
