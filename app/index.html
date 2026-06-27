@@ -1980,6 +1980,24 @@ const IS_NATIVE = !!(window.Capacitor && typeof window.Capacitor.isNativePlatfor
 const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
+
+/* In-app review prompt (native only). Uses Apple's SKStoreReviewController via
+ * @capacitor-community/in-app-review. Apple itself rate-limits the system dialog
+ * (~3 times / 365 days, and may show nothing); on top of that we ask at most once
+ * ever, and only after a genuine positive moment (a 3+ day daily streak). */
+const AppReview = {
+  _plugin() { return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.InAppReview) || null; },
+  _asked() { try { return localStorage.getItem('myatlastic_review_asked') === '1'; } catch (e) { return false; } },
+  _markAsked() { try { localStorage.setItem('myatlastic_review_asked', '1'); } catch (e) {} },
+  async maybePrompt() {
+    if (!IS_NATIVE) return;          // native app only
+    if (this._asked()) return;       // ask at most once, ever
+    const p = this._plugin();
+    if (!p || typeof p.requestReview !== 'function') return;
+    this._markAsked();               // mark before calling so a failure never re-loops
+    try { await p.requestReview(); } catch (e) { /* non-fatal */ }
+  }
+};
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
 const WEB_APP_ONLY = ['quiz', 'game', 'compare', 'currency'];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
@@ -3610,6 +3628,8 @@ function renderDailyQuiz(c, completedToday, streak) {
         updateStreakDisplay();
         msg.style.color = 'var(--success)';
         msg.textContent = '✓ Correct. Streak: ' + newStreak + ' 🔥';
+        // After a genuine win streak, gently ask for an App Store review (native, once ever).
+        if (newStreak >= 3) setTimeout(() => AppReview.maybePrompt(), 1400);
       } else {
         setStreak(0);
         updateStreakDisplay();
