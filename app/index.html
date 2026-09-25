@@ -4093,7 +4093,7 @@ function renderCompareResult(root) {
  * ============================================================ */
 const BILLING_CONFIG = {
   revenueCatApiKey: 'appl_CBhapcCFNizVrblMFZzjoRYFHgg',
-  entitlementId: 'Myatlastic Pro',      // must match the entitlement IDENTIFIER in RevenueCat (not its display name)
+  entitlementId: 'Myatlastic Pro',      // also accepts "pro" — either identifier keeps a purchase unlocked
   products: {
     monthly:  'io.vertotech.atlastic.pro.monthly',
     annual:   'io.vertotech.atlastic.pro.annual',
@@ -4167,7 +4167,7 @@ const Billing = {
       const acc = getAccount();
       if (acc && acc.id) { try { await this._rc().logIn({ appUserID: acc.id }); } catch (e) {} }
       // Real-time entitlement updates (renewals, family-shared access, restores elsewhere)
-      try { this._rc().addCustomerInfoUpdateListener((customerInfo) => setProState(this._hasPro(customerInfo))); } catch (e) {}
+      try { this._rc().addCustomerInfoUpdateListener((customerInfo) => this._applyCustomerInfo(customerInfo)); } catch (e) {}
       await this.refresh();
     } catch (e) { console.warn('[Billing] configure failed', e); }
   },
@@ -4196,14 +4196,49 @@ const Billing = {
   async refresh() {
     if (!this.live() || !this.configured) return;
     try {
-      const { customerInfo } = await this._rc().getCustomerInfo();
-      setProState(this._hasPro(customerInfo));
+      const result = await this._rc().getCustomerInfo();
+      this._applyCustomerInfo(result);
     } catch (e) { console.warn('[Billing] getCustomerInfo failed', e); }
   },
 
-  _hasPro(ci) {
-    const active = ci && ci.entitlements && ci.entitlements.active;
-    return !!(active && active[BILLING_CONFIG.entitlementId]);
+  // null = the record could not be read. Callers must not clear Pro in that case.
+  _hasPro(raw) {
+    const ci = this._customerInfo(raw);
+    if (!ci) return null;
+    const products = BILLING_CONFIG.products || {};
+    const active = (ci.entitlements && ci.entitlements.active) || null;
+    if (active) {
+      const ids = ['pro', 'Myatlastic Pro', BILLING_CONFIG.entitlementId];
+      for (let i = 0; i < ids.length; i++) {
+        if (ids[i] && active[ids[i]]) return true;
+      }
+      if (Object.keys(active).length) return true;
+    }
+    const subs = Array.isArray(ci.activeSubscriptions) ? ci.activeSubscriptions : [];
+    if (subs.indexOf(products.monthly) !== -1 || subs.indexOf(products.annual) !== -1) return true;
+    const txs = Array.isArray(ci.nonSubscriptionTransactions) ? ci.nonSubscriptionTransactions : [];
+    for (let i = 0; i < txs.length; i++) {
+      const pid = txs[i] && (txs[i].productIdentifier || txs[i].productId);
+      if (pid === products.lifetime) return true;
+    }
+    // A complete record with nothing active is a real expiry (trial ended, or a
+    // subscription was not renewed). A lifetime purchase is in the list above
+    // and never takes this path.
+    if (ci.entitlements) return false;
+    return null;
+  },
+
+  _customerInfo(raw) {
+    if (!raw || typeof raw !== 'object') return null;
+    if (raw.entitlements || raw.activeSubscriptions || raw.nonSubscriptionTransactions) return raw;
+    if (raw.customerInfo) return this._customerInfo(raw.customerInfo);
+    return null;
+  },
+
+  _applyCustomerInfo(raw) {
+    const pro = this._hasPro(raw);
+    if (pro === null) return;
+    setProState(pro);
   },
 
   async _packageFor(plan) {
@@ -4253,7 +4288,9 @@ const Billing = {
         if (!products || !products.length) throw new Error('Product unavailable: ' + id);
         result = await rc.purchaseStoreProduct({ product: products[0] });
       }
-      const ok = this._hasPro(result && result.customerInfo);
+      const pro = this._hasPro(result);
+      // The purchase call only returns here when Apple completed it.
+      const ok = pro === null ? true : pro;
       setProState(ok);
       return { ok: ok };
     } catch (e) {
@@ -4270,10 +4307,11 @@ const Billing = {
     }
     try {
       if (!this.configured) await this.init();
-      const { customerInfo } = await this._rc().restorePurchases();
-      const ok = this._hasPro(customerInfo);
-      setProState(ok);
-      return { ok: ok };
+      const result = await this._rc().restorePurchases();
+      const pro = this._hasPro(result);
+      if (pro === null) return { ok: false, error: 'Could not read purchases. Try again.' };
+      setProState(pro);
+      return { ok: pro };
     } catch (e) { return { ok: false, error: (e && e.message) || 'Restore failed' }; }
   },
 };

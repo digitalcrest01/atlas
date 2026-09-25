@@ -12,7 +12,7 @@ RevenueCat, and `BILLING_CONFIG`.
 | Annual | `io.vertotech.atlastic.pro.annual` | Auto-renewable sub | $29.99 / year | 1-week free |
 | Lifetime | `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $59.99 one-time | — |
 
-Entitlement id: **`pro`**
+Entitlement id: **`pro`** or **`Myatlastic Pro`**. The app treats either as Pro, and a lifetime purchase stays unlocked even if the name does not match. A monthly or annual plan locks only when Apple says that subscription has ended.
 
 > Note: Apple does not offer a 5-day free-trial duration. Valid options are 3 days or 1 week —
 > we use **1 week**. Change in App Store Connect + the StoreKit file + paywall copy if you prefer 3 days.
