@@ -698,6 +698,56 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
+  .puzzle-wrap { max-width: 720px; margin: 0 auto; width: 100%; }
+  .puzzle-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .puzzle-top h2 { margin: 0; font-size: 22px; }
+  .puzzle-count { color: var(--ink-dim); font-size: 13px; }
+  .puzzle-board {
+    width: min(100%, 640px);
+    aspect-ratio: 1;
+    margin: 0 auto;
+    background: #0c1c2e;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .puzzle-board svg { width: 100%; height: 100%; display: block; }
+  .puzzle-land { fill: rgba(255,255,255,0.05); stroke: rgba(255,255,255,0.22); stroke-width: 0.25; cursor: pointer; }
+  .puzzle-land.is-in { fill: #d4a056; stroke: #f3e2bf; }
+  .puzzle-land.is-hint { fill: rgba(212,160,86,0.35); stroke: #f3d48a; stroke-width: 1.1; animation: puzzlePulse 0.8s ease-in-out infinite; }
+  .puzzle-msg { min-height: 22px; text-align: center; color: var(--ink-dim); margin: 10px 0; }
+  .puzzle-msg.ok { color: var(--success, #7dcea0); }
+  .puzzle-msg.no { color: #e07a5f; }
+  .puzzle-tray {
+    position: relative;
+    height: 180px;
+    margin-top: 4px;
+    border: 1px dashed var(--line);
+    border-radius: 14px;
+    background: rgba(0,0,0,0.15);
+  }
+  .puzzle-piece {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    padding: 6px;
+    border-radius: 12px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    cursor: grab;
+    touch-action: none;
+  }
+  .puzzle-piece.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+  .puzzle-piece.bad { animation: puzzleShake 0.35s ease; }
+  .puzzle-piece svg { width: 100%; height: 100%; }
+  .puzzle-piece path { fill: #e7c27a; stroke: #3a2a12; stroke-width: 0.4; }
+  .puzzle-float {
+    position: fixed; z-index: 40; width: 76px; height: 76px; pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  .puzzle-float path { fill: #f0d7a0; }
+  @keyframes puzzlePulse { 50% { stroke-width: 1.8; } }
+  @keyframes puzzleShake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
   @keyframes tourIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
   @keyframes tourFade { from { opacity: 0; } to { opacity: 1; } }
   @keyframes tourKenA { from { transform: scale(1) translate3d(0,0,0); } to { transform: scale(1.16) translate3d(-3%, -2%, 0); } }
@@ -966,7 +1016,7 @@
   }
 
   /* ===== QUIZ / DAILY / COMPARE / PAYWALL VIEWS ===== */
-  #view-today, #view-quiz, #view-daily, #view-paywall, #view-mystery, #view-passport, #view-game, #view-currency {
+  #view-today, #view-quiz, #view-daily, #view-paywall, #view-mystery, #view-passport, #view-game, #view-currency, #view-puzzle {
     flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -1422,6 +1472,7 @@
   <button data-mode="today">Today</button>
   <button data-mode="explore" class="active">Explore</button>
   <button data-mode="quiz">Quiz</button>
+  <button data-mode="puzzle">Puzzle</button>
   <button data-mode="passport">Passport</button>
 </nav>
 
@@ -1470,6 +1521,7 @@
   <section class="view" id="view-currency"></section>
   <section class="view" id="view-game"></section>
   <section class="view" id="view-mystery"></section>
+  <section class="view" id="view-puzzle"></section>
   <section class="view" id="view-passport"></section>
   <section class="view" id="view-paywall"></section>
 
@@ -1494,6 +1546,7 @@
 <noscript><div style="padding:40px;color:#fff;background:#0b0e13;text-align:center;">This app requires JavaScript. Please enable it.</div></noscript>
 
 <script src="attractions.js"></script>
+<script src="puzzle-shapes.js"></script>
 <script>
 'use strict';
 
@@ -2642,6 +2695,7 @@ function setMode(newMode) {
   else if (newMode === 'currency') renderCurrency();
   else if (newMode === 'game') renderGame();
   else if (newMode === 'mystery') renderMystery();
+  else if (newMode === 'puzzle') renderPuzzle();
   else if (newMode === 'passport') renderPassport();
   else if (newMode === 'paywall') renderPaywall();
   else if (newMode === 'explore' && window.innerWidth <= 900) {
@@ -3915,6 +3969,206 @@ function renderHuntOverlay() {
 }
 
 /* ============================================================
+ * WORLD PUZZLE — scattered country shapes, fitted onto one map
+ * ============================================================ */
+function puzzlePlacedSet() {
+  try { return new Set(JSON.parse(localStorage.getItem('myatlastic_puzzle') || '[]')); }
+  catch (e) { return new Set(); }
+}
+function puzzlePlacedCount() { return puzzlePlacedSet().size; }
+function savePuzzlePlaced(set) {
+  try { localStorage.setItem('myatlastic_puzzle', JSON.stringify(Array.from(set))); } catch (e) {}
+}
+
+let puzzleState = null;
+
+function puzzleBlob(c) {
+  const pts = [];
+  for (let i = 0; i < 8; i++) {
+    const a = Math.PI * 2 * i / 8;
+    pts.push([
+      Math.round((c.lon + Math.cos(a) * 3) * 100) / 100,
+      Math.round((c.lat + Math.sin(a) * 2.2) * 100) / 100
+    ]);
+  }
+  return [pts];
+}
+function puzzleRings(c) {
+  const table = window.PUZZLE_RINGS || {};
+  if (table[c.n] && table[c.n].length) return table[c.n];
+  return puzzleBlob(c);
+}
+function puzzlePath(rings) {
+  return rings.map(ring => ring.map((p, i) => (i ? 'L' : 'M') + p[0] + ',' + (-p[1])).join('') + 'Z').join('');
+}
+function puzzlePieceSvg(rings) {
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  rings.forEach(ring => ring.forEach(p => {
+    const x = p[0], y = -p[1];
+    if (x < minX) minX = x;
+    if (y < minY) minY = y;
+    if (x > maxX) maxX = x;
+    if (y > maxY) maxY = y;
+  }));
+  const w = Math.max(0.4, maxX - minX);
+  const h = Math.max(0.4, maxY - minY);
+  const pad = Math.max(w, h) * 0.14;
+  const vb = (minX - pad) + ' ' + (minY - pad) + ' ' + (w + pad * 2) + ' ' + (h + pad * 2);
+  return '<svg viewBox="' + vb + '" aria-hidden="true"><path d="' + puzzlePath(rings) + '"></path></svg>';
+}
+function shuffleNames(list) {
+  const a = list.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function ensurePuzzle() {
+  if (puzzleState) return puzzleState;
+  const placed = puzzlePlacedSet();
+  const names = SOVEREIGN_COUNTRIES.map(c => c.n).filter(n => !placed.has(n));
+  const order = shuffleNames(names);
+  puzzleState = {
+    placed: placed,
+    tray: order.slice(0, 6),
+    pool: order.slice(6),
+    selected: null,
+    hint: null,
+    message: '',
+    tone: ''
+  };
+  return puzzleState;
+}
+function scatterStyle(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 33 + name.charCodeAt(i)) >>> 0;
+  return 'left:' + (4 + (h % 68)) + '%;top:' + (6 + ((h >>> 8) % 48)) + '%';
+}
+function renderPuzzle() {
+  const root = $('view-puzzle');
+  const pz = ensurePuzzle();
+  const all = SOVEREIGN_COUNTRIES;
+  const byName = {};
+  all.forEach(c => { byName[c.n] = c; });
+  const total = all.length;
+  if (pz.placed.size >= total) {
+    root.innerHTML = '<div class="puzzle-wrap"><div class="center-card quiz-card">' +
+      '<h2>You built the world.</h2>' +
+      '<p>Every country shape is on the map.</p>' +
+      '<button class="btn-primary" id="puzzle-again">Play again</button></div></div>';
+    $('puzzle-again').onclick = () => {
+      try { localStorage.removeItem('myatlastic_puzzle'); } catch (e) {}
+      puzzleState = null;
+      renderPuzzle();
+    };
+    return;
+  }
+  let lands = '';
+  all.forEach(c => {
+    const cls = 'puzzle-land' + (pz.placed.has(c.n) ? ' is-in' : '') + (pz.hint === c.n ? ' is-hint' : '');
+    lands += '<path class="' + cls + '" data-puzzle="' + escapeHtml(c.n) + '" d="' + puzzlePath(puzzleRings(c)) + '"></path>';
+  });
+  let tray = '';
+  pz.tray.forEach(name => {
+    const c = byName[name];
+    if (!c) return;
+    tray += '<button type="button" class="puzzle-piece' + (pz.selected === name ? ' on' : '') + '" data-piece="' + escapeHtml(name) + '" style="' + scatterStyle(name) + '">' +
+      puzzlePieceSvg(puzzleRings(c)) + '</button>';
+  });
+  root.innerHTML =
+    '<div class="puzzle-wrap">' +
+      '<div class="puzzle-top"><div><h2>World puzzle</h2><div class="puzzle-count">' + pz.placed.size + ' of ' + total + ' shapes fitted</div></div>' +
+      '<button type="button" class="btn-primary" id="puzzle-hint">Hint</button></div>' +
+      '<div class="puzzle-board"><svg viewBox="-180 -90 360 180" preserveAspectRatio="xMidYMid meet">' + lands + '</svg></div>' +
+      '<p class="puzzle-msg ' + (pz.tone || '') + '">' + escapeHtml(pz.message || 'Drag a piece onto its place on the map.') + '</p>' +
+      '<div class="puzzle-tray">' + tray + '</div>' +
+    '</div>';
+  $('puzzle-hint').onclick = () => {
+    const name = pz.selected || pz.tray[0];
+    if (!name) return;
+    pz.selected = name;
+    pz.hint = name;
+    pz.message = name + ' fits in the glowing shape.';
+    pz.tone = '';
+    if (speech.available) speakLines(['This piece is ' + name + '. It goes where the map is glowing.'], narrationLocale(), [], 0.93, true);
+    renderPuzzle();
+  };
+  root.querySelectorAll('.puzzle-piece').forEach(btn => {
+    btn.onpointerdown = (ev) => startPuzzleDrag(ev, btn.getAttribute('data-piece'));
+  });
+  root.querySelectorAll('.puzzle-land').forEach(path => {
+    path.onclick = () => {
+      if (puzzleDidDrag) return;
+      tryPlacePuzzle(pz.selected, path.getAttribute('data-puzzle'));
+    };
+  });
+}
+
+let puzzleDidDrag = false;
+function tryPlacePuzzle(piece, target) {
+  const pz = ensurePuzzle();
+  if (!piece || !target || pz.placed.has(piece)) return;
+  if (piece === target) {
+    pz.placed.add(piece);
+    savePuzzlePlaced(pz.placed);
+    pz.tray = pz.tray.filter(n => n !== piece);
+    if (pz.pool.length) pz.tray.push(pz.pool.shift());
+    if (pz.hint === piece) pz.hint = null;
+    pz.selected = null;
+    pz.message = 'Yes. That is ' + piece + '.';
+    pz.tone = 'ok';
+    if (speech.available) speakLines(['Yes. That is ' + piece + '.'], narrationLocale(), [], 0.93, true);
+  } else {
+    pz.message = 'That shape does not fit there.';
+    pz.tone = 'no';
+    pz.selected = piece;
+  }
+  renderPuzzle();
+}
+function startPuzzleDrag(ev, name) {
+  if (ev.button != null && ev.button !== 0) return;
+  ev.preventDefault();
+  const pz = ensurePuzzle();
+  pz.selected = name;
+  const c = SOVEREIGN_COUNTRIES.find(x => x.n === name);
+  if (!c) return;
+  const ghost = document.createElement('div');
+  ghost.className = 'puzzle-float';
+  ghost.innerHTML = puzzlePieceSvg(puzzleRings(c));
+  document.body.appendChild(ghost);
+  let moved = false;
+  const sx = ev.clientX, sy = ev.clientY;
+  const move = (e) => {
+    if (Math.abs(e.clientX - sx) + Math.abs(e.clientY - sy) > 8) moved = true;
+    ghost.style.left = e.clientX + 'px';
+    ghost.style.top = e.clientY + 'px';
+  };
+  ghost.style.left = sx + 'px';
+  ghost.style.top = sy + 'px';
+  const up = (e) => {
+    ghost.remove();
+    window.removeEventListener('pointermove', move);
+    window.removeEventListener('pointerup', up);
+    if (!moved) { renderPuzzle(); return; }
+    puzzleDidDrag = true;
+    setTimeout(() => { puzzleDidDrag = false; }, 0);
+    const stack = document.elementsFromPoint(e.clientX, e.clientY);
+    let target = null;
+    for (let i = 0; i < stack.length; i++) {
+      if (stack[i].getAttribute && stack[i].getAttribute('data-puzzle')) {
+        target = stack[i].getAttribute('data-puzzle');
+        break;
+      }
+    }
+    if (target) tryPlacePuzzle(name, target);
+    else renderPuzzle();
+  };
+  window.addEventListener('pointermove', move);
+  window.addEventListener('pointerup', up);
+}
+
+/* ============================================================
  * TODAY — daily country, Mystery, and passport progress
  * ============================================================ */
 function renderToday() {
@@ -3932,6 +4186,13 @@ function renderToday() {
     '<h3>' + (daily.flag || '') + ' ' + escapeHtml(daily.n) + '</h3>' +
     '<p>' + escapeHtml(wowFor(daily)) + '</p>' +
     '<span class="today-go">' + (done ? 'Streak ' + streak + ' · see it again' : 'Answer today\'s question') + '</span>' +
+    '</button>';
+  const puzzleDone = puzzlePlacedCount();
+  html += '<button type="button" class="today-card" id="today-puzzle">' +
+    '<div class="today-kicker">Puzzle</div>' +
+    '<h3>🧩 World map</h3>' +
+    '<p>' + puzzleDone + ' of ' + SOVEREIGN_COUNTRIES.length + ' country shapes fitted. Scattered pieces, one map.</p>' +
+    '<span class="today-go">' + (puzzleDone >= SOVEREIGN_COUNTRIES.length ? 'You finished the world' : 'Keep fitting pieces') + '</span>' +
     '</button>';
   html += '<button type="button" class="today-card" id="today-mystery">' +
     '<div class="today-kicker">Game</div>' +
@@ -3960,6 +4221,7 @@ function renderToday() {
   html += '</div>';
   root.innerHTML = html;
   $('today-daily').onclick = () => setMode('daily');
+  $('today-puzzle').onclick = () => setMode('puzzle');
   $('today-mystery').onclick = () => setMode('mystery');
   $('today-passport').onclick = () => setMode('passport');
   const homeBtn = $('today-home');
