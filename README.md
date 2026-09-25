@@ -100,7 +100,7 @@ Tight-free model: 10 countries fully unlocked, hard paywall on the other 187.
 | Free | $0 — 10 countries, 3 quizzes/day, 1 daily challenge |
 | Pro Monthly | $4.99/mo · 1-week trial |
 | Pro Annual | $29.99/yr (saves 50%) · 1-week trial |
-| Lifetime | $59 once |
+| Lifetime | $59.99 once |
 | Family Sharing | Included with every paid plan |
 | School Classroom | $199/yr |
 

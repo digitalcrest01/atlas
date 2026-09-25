@@ -10,7 +10,7 @@ RevenueCat, and `BILLING_CONFIG`.
 |---|---|---|---|---|
 | Monthly | `io.vertotech.atlastic.pro.monthly` | Auto-renewable sub | $4.99 / month | 1-week free |
 | Annual | `io.vertotech.atlastic.pro.annual` | Auto-renewable sub | $29.99 / year | 1-week free |
-| Lifetime | `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $59 one-time | — |
+| Lifetime | `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $59.99 one-time | — |
 
 Entitlement id: **`pro`**
 

@@ -13,7 +13,7 @@ is the dashboard/account work. Values below are pulled from the actual project.
 | Entitlement id (RevenueCat) | `pro` |
 | Monthly product id | `io.vertotech.atlastic.pro.monthly` ($4.99/mo, 1-wk free trial) |
 | Annual product id | `io.vertotech.atlastic.pro.annual` ($29.99/yr, 1-wk free trial) |
-| Lifetime product id | `io.vertotech.atlastic.pro.lifetime` ($59 one-time) |
+| Lifetime product id | `io.vertotech.atlastic.pro.lifetime` ($59.99 one-time) |
 | RevenueCat iOS public key (in `BILLING_CONFIG`) | `appl_BBgGwCAFEEOZYRRZWQPcdVCYVCu` — verify it matches your RC project |
 | Plugin (already installed) | `@revenuecat/purchases-capacitor` ^8 |
 
@@ -37,7 +37,7 @@ In the app → *Monetization* → In-App Purchases / Subscriptions:
 1. **Subscription group** named e.g. `Atlastic Pro`. Add two auto-renewables:
    - `io.vertotech.atlastic.pro.monthly` — price $4.99/month, **Introductory Offer: 1 week free trial**.
    - `io.vertotech.atlastic.pro.annual` — price $29.99/year, **Introductory Offer: 1 week free trial**.
-2. **Non-consumable**: `io.vertotech.atlastic.pro.lifetime` — price $59.
+2. **Non-consumable**: `io.vertotech.atlastic.pro.lifetime` — price $59.99.
 3. For each: add a localized **display name + description**, a **review screenshot** (a paywall screenshot — `assets/paywall_review_screenshot.png` exists), and enable **Family Sharing**.
 4. Leave them in "Ready to Submit" — they're submitted *with* the app's first version.
 

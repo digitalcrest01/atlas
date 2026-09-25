@@ -35,7 +35,7 @@ Apple App Store review averages 24-48 hours but can take up to 7 days for new ap
 - [ ] Create products in App Store Connect:
   - `myatlastic_pro_monthly` — $4.99/month auto-renewing, 1-week free trial
   - `myatlastic_pro_annual` — $29.99/year auto-renewing, 1-week free trial
-  - `myatlastic_pro_lifetime` — $59 one-time
+  - `myatlastic_pro_lifetime` — $59.99 one-time
   - Family Sharing included on each product
 - [ ] Same in Google Play Console
 - [ ] Generate app icons: square 1024x1024 + adaptive Android icon. Tools: `npx capacitor-assets generate` once you have a square PNG

@@ -3,7 +3,7 @@
   "nonRenewingSubscriptions" : [],
   "products" : [
     {
-      "displayPrice" : "149.00",
+      "displayPrice" : "59.99",
       "familyShareable" : true,
       "internalID" : "C47ED134-2FA4-4C2A-AAEE-A4ABF4E113AB",
       "localizations" : [
@@ -35,7 +35,7 @@
         {
           "adHocOffers" : [],
           "codeOffers" : [],
-          "displayPrice" : "9.99",
+          "displayPrice" : "4.99",
           "familyShareable" : true,
           "groupNumber" : 1,
           "internalID" : "4AA76CD2-E9F8-4A1B-8AE6-7AFC4D9E33E2",
@@ -60,7 +60,7 @@
         {
           "adHocOffers" : [],
           "codeOffers" : [],
-          "displayPrice" : "69.99",
+          "displayPrice" : "29.99",
           "familyShareable" : true,
           "groupNumber" : 1,
           "internalID" : "A6B147D6-4D55-4C77-A1AE-D6205FB7C99C",
@@ -71,7 +71,7 @@
           },
           "localizations" : [
             {
-              "description" : "Myatlastic Pro, billed yearly (save 42%). Starts with a 1-week free trial.",
+              "description" : "Myatlastic Pro, billed yearly (save 50%). Starts with a 1-week free trial.",
               "displayName" : "Pro Annual",
               "locale" : "en_US"
             }
