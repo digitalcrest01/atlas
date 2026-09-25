@@ -2419,7 +2419,7 @@ function quizOptionCount() {
 }
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
-// These countries open in full. Every other country stays locked.
+// Countries already opened. They stay open.
 const FREE_COUNTRIES = [
   'Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco',
   'Japan', 'China', 'India', 'Thailand', 'United Arab Emirates', 'South Korea',
@@ -2428,6 +2428,18 @@ const FREE_COUNTRIES = [
   'Brazil', 'Argentina', 'Peru', 'Ecuador',
   'Australia', 'New Zealand',
   'Jamaica'
+];
+// Small countries, island nations, and microstates. All of these are open.
+const SMALL_OR_ISLAND = [
+  'Antigua and Barbuda', 'Bahamas', 'Bahrain', 'Barbados', 'Brunei', 'Cape Verde',
+  'Comoros', 'Cuba', 'Cyprus', 'Dominica', 'Dominican Republic', 'Fiji', 'Grenada',
+  'Haiti', 'Iceland', 'Ireland', 'Kiribati', 'Madagascar', 'Maldives', 'Malta',
+  'Marshall Islands', 'Mauritius', 'Micronesia', 'Nauru', 'Palau',
+  'Papua New Guinea', 'Saint Kitts and Nevis', 'Saint Lucia',
+  'Saint Vincent and the Grenadines', 'Samoa', 'São Tomé and Príncipe', 'Seychelles',
+  'Singapore', 'Solomon Islands', 'Sri Lanka', 'Timor-Leste', 'Tonga',
+  'Trinidad and Tobago', 'Tuvalu', 'Vanuatu',
+  'Andorra', 'Liechtenstein', 'Luxembourg', 'Monaco', 'San Marino', 'Vatican City'
 ];
 
 /* ============================================================
@@ -2462,7 +2474,15 @@ function homeCountry() {
   } catch (e) { return null; }
 }
 function isFree(c) {
-  return FREE_COUNTRIES.indexOf(c.n) !== -1;
+  if (!c) return false;
+  if (FREE_COUNTRIES.indexOf(c.n) !== -1) return true;
+  if (SMALL_OR_ISLAND.indexOf(c.n) !== -1) return true;
+  const cont = (c.c || '').split(' / ')[0];
+  if (cont === 'Caribbean' || cont === 'Oceania') return true;
+  const peers = COUNTRIES.filter(x => x.isCountry !== false && (x.c || '').split(' / ')[0] === cont)
+    .map(x => x.n)
+    .sort((a, b) => a.localeCompare(b));
+  return peers.slice(0, 7).indexOf(c.n) !== -1;
 }
 // Sovereign = the 195 (193 UN members + Vatican + Palestine). Kosovo & Taiwan are tagged isCountry:false.
 function isSovereign(c) { return c.isCountry !== false; }
