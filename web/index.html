@@ -2062,14 +2062,13 @@ function quizOptionCount() {
 }
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
-// Familiar places, not the first 10 names in the alphabet. The child's home country is added in isFree().
-// Exactly 26 countries open in full. Every other country stays locked.
+// These countries open in full. Every other country stays locked.
 const FREE_COUNTRIES = [
   'Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco',
   'Japan', 'China', 'India', 'Thailand', 'United Arab Emirates', 'South Korea',
   'United Kingdom', 'France', 'Italy', 'Germany', 'Spain', 'Greece',
   'United States', 'Canada', 'Mexico',
-  'Brazil', 'Argentina', 'Peru',
+  'Brazil', 'Argentina', 'Peru', 'Ecuador',
   'Australia', 'New Zealand',
   'Jamaica'
 ];
