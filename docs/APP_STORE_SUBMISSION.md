@@ -137,9 +137,9 @@ MYATLASTIC PRO — unlock everything
 • Full Daily Challenge with streak history
 
 PRICING
-• Monthly — $9.99 / month
-• Annual — $69.99 / year (save 42%)
-• Lifetime — $149 one-time, includes all future updates
+• Annual — $29.99 / year (save 50%)
+• Monthly — $4.99 / month
+• Lifetime — $59 one-time, includes all future updates
 Subscriptions start with a 1-week free trial.
 
 Payment is charged to your Apple ID. Subscriptions auto-renew unless turned off at least 24 hours before the end of the period; manage or cancel anytime in Settings. The Lifetime option is a one-time purchase and does not renew.
@@ -192,9 +192,9 @@ In App Store Connect → My Apps → Myatlastic → create these (IDs **must mat
 
 | Product ID | Type | Price | Free trial |
 |---|---|---|---|
-| `io.vertotech.atlastic.pro.monthly` | Auto-renewable subscription | $9.99 / month | 1 week |
-| `io.vertotech.atlastic.pro.annual` | Auto-renewable subscription | $69.99 / year | 1 week |
-| `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $149 one-time | — |
+| `io.vertotech.atlastic.pro.monthly` | Auto-renewable subscription | $4.99 / month | 1 week |
+| `io.vertotech.atlastic.pro.annual` | Auto-renewable subscription | $29.99 / year | 1 week |
+| `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $59 one-time | — |
 
 - Put the two subscriptions in one **Subscription Group** ("Myatlastic Pro"); add a **1-week free Introductory Offer** to each.
 - The Lifetime tier is a **Non-consumable** (not in the group).
@@ -312,9 +312,9 @@ Play Console → Myatlastic → Monetise → In-app products → Subscriptions �
 
 | Product ID | Name | Price |
 |---|---|---|
-| `io.vertotech.atlastic.pro.monthly` | Myatlastic Pro Monthly | $9.99/month |
-| `io.vertotech.atlastic.pro.annual` | Myatlastic Pro Annual | $69.99/year |
-| `io.vertotech.atlastic.pro.lifetime` | Myatlastic Pro Lifetime | $149 one-time |
+| `io.vertotech.atlastic.pro.monthly` | Myatlastic Pro Monthly | $4.99/month |
+| `io.vertotech.atlastic.pro.annual` | Myatlastic Pro Annual | $29.99/year |
+| `io.vertotech.atlastic.pro.lifetime` | Myatlastic Pro Lifetime | $59 one-time |
 
 ---
 
