@@ -652,6 +652,41 @@
   .landmark-head { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
   .landmark-fact { font-size: 13px; line-height: 1.45; color: var(--ink-dim); }
   .landmark-cta { font-size: 12px; color: var(--accent); margin-top: 8px; font-weight: 600; }
+  .tour-launch { width: 100%; margin-top: 12px; }
+  .tour-overlay {
+    position: fixed; inset: 0; z-index: 9500;
+    background: rgba(6, 8, 12, 0.55);
+    display: flex; align-items: flex-end; justify-content: center;
+    padding: 16px 16px 28px;
+  }
+  .tour-card {
+    width: min(520px, 100%);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 18px 14px;
+    box-shadow: 0 16px 50px rgba(0,0,0,0.45);
+    animation: tourIn 0.45s ease;
+  }
+  .tour-kicker { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  .tour-card h2 { margin: 6px 0 8px; font-size: 26px; }
+  .tour-card p { margin: 0; color: var(--ink-dim); line-height: 1.45; }
+  .tour-photo {
+    width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin: 12px 0;
+    animation: tourZoom 7s ease-out forwards;
+  }
+  .tour-route { height: 8px; margin: 14px 0 8px; display: flex; gap: 6px; align-items: center; }
+  .tour-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+  .tour-dot.on { background: var(--accent); transform: scale(1.3); }
+  .tour-pin {
+    width: 14px; height: 14px; border-radius: 50% 50% 50% 0; background: var(--accent);
+    transform: rotate(-45deg); animation: pinDrop 0.6s ease;
+  }
+  .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
+  .tour-actions button { flex: 1; }
+  @keyframes tourIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes tourZoom { from { transform: scale(1); } to { transform: scale(1.12); } }
+  @keyframes pinDrop { from { opacity: 0; transform: rotate(-45deg) translateY(-16px); } to { opacity: 1; transform: rotate(-45deg); } }
   /* PASSPORT */
   .passport-wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 60px; }
   .explorer-card {
@@ -1442,6 +1477,7 @@
 <!-- explicit page-loaded marker for debugging -->
 <noscript><div style="padding:40px;color:#fff;background:#0b0e13;text-align:center;">This app requires JavaScript. Please enable it.</div></noscript>
 
+<script src="attractions.js"></script>
 <script>
 'use strict';
 
@@ -1843,6 +1879,11 @@ const LANDMARKS = {
   'Germany':{name:'Neuschwanstein Castle','fact':'Inspired the fairy-tale castle at Disneyland.'},
   'United Arab Emirates':{name:'Burj Khalifa','fact':'The tallest building on Earth at 828 m.'},
 };
+if (window.EXTRA_LANDMARKS) {
+  Object.keys(window.EXTRA_LANDMARKS).forEach(function (k) {
+    if (!LANDMARKS[k]) LANDMARKS[k] = window.EXTRA_LANDMARKS[k];
+  });
+}
 
 // Rough UTC offsets (whole hours, no DST) for "what time is it right now in…".
 // tzOffsetFor() falls back to longitude/15 for anything not listed.
@@ -1858,7 +1899,11 @@ const TZ_OFFSET = {
 function primaryLang(c) { return (c.lang || '').split(/[,/]/)[0].trim(); }
 function helloFor(c) { return HELLO_BY_LANG[primaryLang(c)] || {hi:'Hello', phon:'heh-LOH'}; }
 function animalFor(c) { return ANIMALS[c.n] || null; }
-function landmarkFor(c) { return LANDMARKS[c.n] || null; }
+function landmarkFor(c) {
+  if (!c) return null;
+  if (LANDMARKS[c.n]) return LANDMARKS[c.n];
+  return { name: c.cap, fact: 'Most journeys through ' + c.n + ' begin in ' + c.cap + '.' };
+}
 function wowFor(c) {
   if (WOW[c.n]) return WOW[c.n];
   // Safe fallbacks derived from real fields already on the country.
@@ -2002,7 +2047,12 @@ function quizOptionCount() {
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
 // Familiar places, not the first 10 names in the alphabet. The child's home country is added in isFree().
-const STARTER_ATLAS = ['Japan', 'Brazil', 'Egypt', 'Kenya', 'France', 'United States', 'United Kingdom', 'India', 'Mexico', 'Australia'];
+// Fifteen familiar countries on each large continent. Smaller regions are opened in full below.
+const FREE_PICKS = {
+  'Africa': ['Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco', 'Ghana', 'Tanzania', 'Ethiopia', 'Tunisia', 'Senegal', 'Rwanda', 'Madagascar', 'Namibia', 'Uganda', 'Algeria'],
+  'Asia': ['Japan', 'India', 'China', 'Thailand', 'South Korea', 'United Arab Emirates', 'Indonesia', 'Vietnam', 'Jordan', 'Nepal', 'Malaysia', 'Singapore', 'Turkey', 'Cambodia', 'Saudi Arabia'],
+  'Europe': ['France', 'United Kingdom', 'Italy', 'Germany', 'Spain', 'Greece', 'Netherlands', 'Portugal', 'Ireland', 'Switzerland', 'Norway', 'Sweden', 'Iceland', 'Austria', 'Poland']
+};
 
 /* ============================================================
  * PLATFORM — the iPhone/iPad app is the real product; the web is a
@@ -2036,7 +2086,10 @@ function homeCountry() {
   } catch (e) { return null; }
 }
 function isFree(c) {
-  if (STARTER_ATLAS.indexOf(c.n) !== -1) return true;
+  const cont = (c.c || '').split(' / ')[0];
+  const picks = FREE_PICKS[cont];
+  if (!picks) return true;
+  if (picks.indexOf(c.n) !== -1) return true;
   const home = homeCountry();
   return !!(home && home.n === c.n);
 }
@@ -2212,11 +2265,14 @@ function stopSpeaking() {
 }
 
 // Short lines, queued, so the voice can pause the way a person does.
-function speakLines(lines, locale, buttons, rate) {
+function speakLines(lines, locale, buttons, rate, force) {
   if (!speech.available) return;
   const clean = (lines || []).map(s => String(s || '').trim()).filter(Boolean);
   if (!clean.length) return;
-  if (window.speechSynthesis.speaking) {
+  if (force) {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    speakToken++;
+  } else if (window.speechSynthesis.speaking) {
     stopSpeaking();
     return;
   }
@@ -2354,6 +2410,80 @@ window.__myatlasticReadAloud = (countryName) => {
   if (!c) return;
   const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
   speakLines(spokenTour(c), narrationLocale(), buttons, 0.96);
+};
+
+let tourTimer = null;
+function tourStops(c) {
+  const place = landmarkFor(c);
+  const stops = [
+    { kicker: 'Arriving', title: c.n, body: wowFor(c), line: c.n + '. ' + sayWow(wowFor(c)) },
+    { kicker: 'Famous place', title: place.name, body: place.fact, line: place.name + '. ' + place.fact }
+  ];
+  if (c.food) {
+    const dish = c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim();
+    stops.push({ kicker: 'A taste', title: dish, body: 'A dish people love in ' + c.n + '.', line: 'A dish to try: ' + dish + '.' });
+  }
+  return stops;
+}
+
+window.__myatlasticTour = (countryName) => {
+  const c = COUNTRIES.find(x => x.n === countryName);
+  if (!c) return;
+  setMode('explore');
+  if (window.innerWidth <= 900) setMobilePane('globe');
+  state.activeCountry = c;
+  renderList();
+  renderDetails();
+  if (globeAPI) globeAPI.focus(c);
+  const stops = tourStops(c);
+  let step = 0;
+  const old = document.getElementById('tour-overlay');
+  if (old) old.remove();
+  const overlay = document.createElement('div');
+  overlay.id = 'tour-overlay';
+  overlay.className = 'tour-overlay';
+  document.body.appendChild(overlay);
+  const close = () => {
+    if (tourTimer) clearInterval(tourTimer);
+    tourTimer = null;
+    stopSpeaking();
+    if (overlay.parentNode) overlay.remove();
+  };
+  const show = () => {
+    const s = stops[step];
+    const photo = c.img ? '<img class="tour-photo" alt="" src="' + wikiImage(c.img) + '" onerror="this.remove()">' : '';
+    overlay.innerHTML =
+      '<div class="tour-card" role="dialog" aria-label="Tour of ' + escapeHtml(c.n) + '">' +
+        '<div style="display:flex;justify-content:space-between;align-items:center">' +
+          '<div class="tour-kicker">' + escapeHtml(s.kicker) + ' · ' + (step + 1) + ' of ' + stops.length + '</div>' +
+          '<span class="tour-pin" aria-hidden="true"></span>' +
+        '</div>' +
+        '<h2>' + escapeHtml(s.title) + '</h2>' +
+        '<p>' + escapeHtml(s.body) + '</p>' +
+        photo +
+        '<div class="tour-route">' + stops.map((_, n) => '<span class="tour-dot' + (n === step ? ' on' : '') + '"></span>').join('') + '</div>' +
+        '<div class="tour-actions">' +
+          '<button type="button" class="back-btn" id="tour-back"' + (step === 0 ? ' disabled' : '') + '>Back</button>' +
+          '<button type="button" class="btn-primary" id="tour-next">' + (step === stops.length - 1 ? 'Finish' : 'Next') + '</button>' +
+          '<button type="button" class="back-btn" id="tour-close">Close</button>' +
+        '</div>' +
+      '</div>';
+    $('tour-close').onclick = close;
+    $('tour-back').onclick = () => { if (step > 0) { step--; show(); } };
+    $('tour-next').onclick = () => {
+      if (step < stops.length - 1) { step++; show(); }
+      else close();
+    };
+    overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
+    if (speech.available && s.line) speakLines([s.line], narrationLocale(), [], 0.96, true);
+    if (tourTimer) clearInterval(tourTimer);
+    tourTimer = setInterval(() => {
+      if (!document.getElementById('tour-overlay')) { clearInterval(tourTimer); return; }
+      if (step < stops.length - 1) { step++; show(); }
+      else close();
+    }, 7000);
+  };
+  show();
 };
 
 function $(id) { return document.getElementById(id); }
@@ -2582,10 +2712,10 @@ function renderDetails() {
 
   const lm = landmarkFor(c);
   if (lm) {
-    html += '<div class="landmark-card" onclick="window.__myatlasticShowOnGlobe(' + cq + ')" title="Show on globe">' +
+    html += '<div class="landmark-card">' +
       '<div class="landmark-head">📍 ' + escapeHtml(lm.name) + '</div>' +
       '<div class="landmark-fact">' + escapeHtml(lm.fact) + '</div>' +
-      '<div class="landmark-cta">🌍 Show me on the globe →</div>' +
+      '<button type="button" class="btn-primary tour-launch" onclick="window.__myatlasticTour(' + cq + ')">Play the tour</button>' +
       '</div>';
   }
 
