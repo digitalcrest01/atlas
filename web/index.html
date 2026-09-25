@@ -710,36 +710,35 @@
   .puzzle-top h2 { margin: 0; font-size: 22px; }
   .puzzle-count { color: var(--ink-dim); font-size: 13px; }
   .puzzle-board {
-    width: min(100%, 640px);
-    aspect-ratio: 1;
+    width: min(100%, 720px);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+    gap: 12px;
+    padding: 12px;
     background: #0c1c2e;
     border: 1px solid var(--line);
     border-radius: 16px;
-    overflow: hidden;
   }
-  .puzzle-board { position: relative; }
-  .puzzle-board svg { width: 100%; height: 100%; display: block; }
-  .puzzle-land { fill: rgba(255,255,255,0.05); stroke: rgba(255,255,255,0.22); stroke-width: 0.25; }
-  .puzzle-land.is-in { fill: rgba(212,160,86,0.45); stroke: #f3e2bf; }
   .puzzle-flag {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2px;
-    min-width: 72px;
-    min-height: 64px;
-    padding: 6px 8px;
+    gap: 6px;
+    width: 100%;
+    min-height: 124px;
+    padding: 10px 8px;
     border-radius: 14px;
     border: 2px solid #f6e7c8;
     background: rgba(8, 16, 28, 0.92);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     touch-action: none;
   }
+  .puzzle-shape { width: 78px; height: 56px; }
+  .puzzle-shape svg { width: 100%; height: 100%; display: block; }
+  .puzzle-shape path { fill: #e7c27a; stroke: #3a2a12; stroke-width: 0.6; }
   .puzzle-flag-emoji { font-size: 40px; line-height: 1; }
   .puzzle-flag-name {
     font-size: 13px;
@@ -749,27 +748,29 @@
     text-align: center;
     max-width: 110px;
   }
-  .puzzle-flag.done { min-width: 0; min-height: 0; z-index: 1; padding: 3px 6px; }
-  .puzzle-flag.done .puzzle-flag-emoji { font-size: 26px; }
+  .puzzle-flag.done { min-height: 108px; border-color: #d4a056; }
+  .puzzle-flag.done .puzzle-flag-emoji { font-size: 32px; }
+  .puzzle-flag.done .puzzle-shape { height: 40px; }
   .puzzle-flag.is-hint {
-    z-index: 4;
     border-color: #ffd56a;
-    box-shadow: 0 0 0 5px rgba(255, 196, 70, 0.55);
+    box-shadow: 0 0 0 4px rgba(255, 196, 70, 0.55);
     animation: puzzlePulse 0.8s ease-in-out infinite;
   }
   .puzzle-msg { min-height: 22px; text-align: center; color: var(--ink-dim); margin: 10px 0; }
   .puzzle-msg.ok { color: var(--success, #7dcea0); }
   .puzzle-msg.no { color: #e07a5f; }
   .puzzle-tray {
-    position: relative;
-    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 4px;
+    padding: 12px;
     border: 1px dashed var(--line);
     border-radius: 14px;
     background: rgba(0,0,0,0.15);
   }
   .puzzle-piece {
-    position: absolute;
+    position: relative;
     width: auto;
     min-width: 108px;
     height: auto;
@@ -797,7 +798,7 @@
     font-weight: 800;
     box-shadow: 0 8px 24px rgba(0,0,0,0.4);
   }
-  @keyframes puzzlePulse { 50% { transform: translate(-50%, -50%) scale(1.08); } }
+  @keyframes puzzlePulse { 50% { transform: scale(1.04); } }
   @keyframes puzzleShake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
   @keyframes tourIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
   @keyframes tourFade { from { opacity: 0; } to { opacity: 1; } }
@@ -4531,31 +4532,29 @@ function renderPuzzle() {
     };
     return;
   }
-  let lands = '';
+  const shown = [];
+  pz.tray.forEach(name => { if (byName[name]) shown.push(byName[name]); });
+  all.forEach(c => { if (pz.placed.has(c.n)) shown.push(c); });
   let flags = '';
-  all.forEach(c => {
+  shown.forEach(c => {
     const placed = pz.placed.has(c.n);
-    const live = pz.tray.indexOf(c.n) !== -1;
-    lands += '<path class="puzzle-land' + (placed ? ' is-in' : '') + '" d="' + puzzlePath(puzzleRings(c)) + '"></path>';
-    if (!placed && !live) return;
-    const spot = puzzleFlagSpot(c);
     const hinted = pz.hint === c.n;
-    const showName = placed || hinted;
-    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '" style="left:' + spot.left + '%;top:' + spot.top + '%">' +
+    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '">' +
+      '<span class="puzzle-shape">' + puzzlePieceSvg(puzzleRings(c)) + '</span>' +
       '<span class="puzzle-flag-emoji">' + (c.flag || '🏳️') + '</span>' +
-      (showName ? '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>' : '') +
+      (placed || hinted ? '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>' : '') +
       '</button>';
   });
   let tray = '';
   pz.tray.forEach(name => {
-    tray += '<button type="button" class="puzzle-piece' + (pz.selected === name ? ' on' : '') + '" data-piece="' + escapeHtml(name) + '" style="' + scatterStyle(name) + '">' +
+    tray += '<button type="button" class="puzzle-piece' + (pz.selected === name ? ' on' : '') + '" data-piece="' + escapeHtml(name) + '">' +
       escapeHtml(name) + '</button>';
   });
   root.innerHTML =
     '<div class="puzzle-wrap">' +
       '<div class="puzzle-top"><div><h2>World puzzle</h2><div class="puzzle-count">' + pz.placed.size + ' of ' + total + ' names matched</div></div>' +
       '<button type="button" class="btn-primary" id="puzzle-hint">Hint</button></div>' +
-      '<div class="puzzle-board"><svg viewBox="-180 -90 360 180" preserveAspectRatio="xMidYMid meet">' + lands + '</svg>' + flags + '</div>' +
+      '<div class="puzzle-board">' + flags + '</div>' +
       '<p class="puzzle-msg ' + (pz.tone || '') + '">' + escapeHtml(pz.message || 'Drag each name onto its flag.') + '</p>' +
       '<div class="puzzle-tray">' + tray + '</div>' +
     '</div>';
@@ -4579,15 +4578,6 @@ function renderPuzzle() {
       tryPlacePuzzle(pz.selected, flag.getAttribute('data-puzzle'));
     };
   });
-}
-
-function puzzleFlagSpot(c) {
-  const left = ((c.lon + 180) / 360) * 100;
-  const top = 25 + ((90 - c.lat) / 180) * 50;
-  return {
-    left: Math.max(8, Math.min(92, left)),
-    top: Math.max(12, Math.min(88, top))
-  };
 }
 
 let puzzleDidDrag = false;
