@@ -2264,7 +2264,7 @@ function stopSpeaking() {
 }
 
 // Short lines, queued, so the voice can pause the way a person does.
-function speakLines(lines, locale, buttons, rate, force) {
+function speakLines(lines, locale, buttons, rate, force, ondone) {
   if (!speech.available) return;
   const clean = (lines || []).map(s => String(s || '').trim()).filter(Boolean);
   if (!clean.length) return;
@@ -2284,6 +2284,7 @@ function speakLines(lines, locale, buttons, rate, force) {
     if (token !== speakToken) return;
     if (i >= clean.length) {
       btns.forEach(b => b.classList.remove('speaking'));
+      if (ondone) ondone();
       return;
     }
     const utt = new SpeechSynthesisUtterance(clean[i++]);
@@ -2381,26 +2382,50 @@ function sayWow(wow) {
   return s;
 }
 
-function spokenTour(c) {
-  const lines = [c.n + '.'];
+function guideLine(s) {
+  s = String(s || '').trim().replace(/~/g, 'about ');
+  if (s && !/[.!?]$/.test(s)) s += '.';
+  return s;
+}
+
+function tourStops(c) {
+  const place = landmarkFor(c);
   const wow = sayWow(wowFor(c));
-  if (wow) lines.push(wow);
-  lines.push('The capital is ' + c.cap + '.');
-  const animal = animalFor(c);
-  if (animal) {
-    const name = String(animal[0]).replace(/\s*\([^)]*\)/g, '').trim();
-    if (name) lines.push('You might spot a ' + name.charAt(0).toLowerCase() + name.slice(1) + '.');
-  }
+  const hello = [
+    'Here we are. Welcome to ' + c.n + '.',
+    'Stay close. We just arrived in ' + c.n + '.',
+    'Look down. That is ' + c.n + '.'
+  ][c.n.length % 3];
+  const arrive = [hello];
+  if (wow) arrive.push(guideLine(wow));
+  if (c.cap) arrive.push('If you need a place to start, the capital is ' + c.cap + '.');
+  const placeLines = ['Come a little closer.', place.name + '.'];
+  if (place.fact) placeLines.push(guideLine(place.fact));
+  const stops = [
+    { kicker: 'Arriving', title: c.n, lines: arrive },
+    { kicker: 'A famous place', title: place.name, lines: placeLines }
+  ];
   if (c.food) {
     const dish = c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim();
-    if (dish) lines.push('A dish to try: ' + dish + '.');
+    if (dish) {
+      stops.push({
+        kicker: 'One last stop',
+        title: dish,
+        lines: [
+          'Before we go, there is something people here love.',
+          dish + '.',
+          'If you visit, try it.'
+        ]
+      });
+    }
   }
-  const lm = landmarkFor(c);
-  const said = lines.join(' ').toLowerCase();
-  if (lm && lm.fact && said.indexOf(lm.name.toLowerCase()) === -1) {
-    const fact = /[.!?]$/.test(lm.fact) ? lm.fact : lm.fact + '.';
-    lines.push(lm.name + '. ' + fact);
-  }
+  stops.forEach(s => { s.body = s.lines.join(' '); });
+  return stops;
+}
+
+function spokenTour(c) {
+  const lines = [];
+  tourStops(c).forEach(s => s.lines.forEach(line => lines.push(line)));
   return lines;
 }
 
@@ -2412,19 +2437,6 @@ window.__myatlasticReadAloud = (countryName) => {
 };
 
 let tourTimer = null;
-function tourStops(c) {
-  const place = landmarkFor(c);
-  const stops = [
-    { kicker: 'Arriving', title: c.n, body: wowFor(c), line: c.n + '. ' + sayWow(wowFor(c)) },
-    { kicker: 'Famous place', title: place.name, body: place.fact, line: place.name + '. ' + place.fact }
-  ];
-  if (c.food) {
-    const dish = c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim();
-    stops.push({ kicker: 'A taste', title: dish, body: 'A dish people love in ' + c.n + '.', line: 'A dish to try: ' + dish + '.' });
-  }
-  return stops;
-}
-
 window.__myatlasticTour = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c) return;
@@ -2449,6 +2461,7 @@ window.__myatlasticTour = (countryName) => {
     if (overlay.parentNode) overlay.remove();
   };
   const show = () => {
+    if (tourTimer) { clearTimeout(tourTimer); tourTimer = null; }
     const s = stops[step];
     const photo = c.img ? '<img class="tour-photo" alt="" src="' + wikiImage(c.img) + '" onerror="this.remove()">' : '';
     overlay.innerHTML =
@@ -2474,13 +2487,20 @@ window.__myatlasticTour = (countryName) => {
       else close();
     };
     overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
-    if (speech.available && s.line) speakLines([s.line], narrationLocale(), [], 0.96, true);
-    if (tourTimer) clearInterval(tourTimer);
-    tourTimer = setInterval(() => {
-      if (!document.getElementById('tour-overlay')) { clearInterval(tourTimer); return; }
-      if (step < stops.length - 1) { step++; show(); }
-      else close();
-    }, 7000);
+    let moved = false;
+    const goOn = () => {
+      if (moved || !document.getElementById('tour-overlay')) return;
+      moved = true;
+      tourTimer = setTimeout(() => {
+        if (!document.getElementById('tour-overlay')) return;
+        if (step < stops.length - 1) { step++; show(); }
+        else close();
+      }, speech.available ? 1400 : 6500);
+    };
+    if (speech.available && s.lines && s.lines.length) {
+      const safety = setTimeout(goOn, 20000);
+      speakLines(s.lines, narrationLocale(), [], 0.93, true, () => { clearTimeout(safety); goOn(); });
+    } else goOn();
   };
   show();
 };
