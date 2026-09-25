@@ -2047,12 +2047,16 @@ function quizOptionCount() {
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
 // Familiar places, not the first 10 names in the alphabet. The child's home country is added in isFree().
-// Fifteen familiar countries on each large continent. Smaller regions are opened in full below.
-const FREE_PICKS = {
-  'Africa': ['Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco', 'Ghana', 'Tanzania', 'Ethiopia', 'Tunisia', 'Senegal', 'Rwanda', 'Madagascar', 'Namibia', 'Uganda', 'Algeria'],
-  'Asia': ['Japan', 'India', 'China', 'Thailand', 'South Korea', 'United Arab Emirates', 'Indonesia', 'Vietnam', 'Jordan', 'Nepal', 'Malaysia', 'Singapore', 'Turkey', 'Cambodia', 'Saudi Arabia'],
-  'Europe': ['France', 'United Kingdom', 'Italy', 'Germany', 'Spain', 'Greece', 'Netherlands', 'Portugal', 'Ireland', 'Switzerland', 'Norway', 'Sweden', 'Iceland', 'Austria', 'Poland']
-};
+// Exactly 26 countries open in full. Every other country stays locked.
+const FREE_COUNTRIES = [
+  'Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco',
+  'Japan', 'China', 'India', 'Thailand', 'United Arab Emirates', 'South Korea',
+  'United Kingdom', 'France', 'Italy', 'Germany', 'Spain', 'Greece',
+  'United States', 'Canada', 'Mexico',
+  'Brazil', 'Argentina', 'Peru',
+  'Australia', 'New Zealand',
+  'Jamaica'
+];
 
 /* ============================================================
  * PLATFORM — the iPhone/iPad app is the real product; the web is a
@@ -2086,12 +2090,7 @@ function homeCountry() {
   } catch (e) { return null; }
 }
 function isFree(c) {
-  const cont = (c.c || '').split(' / ')[0];
-  const picks = FREE_PICKS[cont];
-  if (!picks) return true;
-  if (picks.indexOf(c.n) !== -1) return true;
-  const home = homeCountry();
-  return !!(home && home.n === c.n);
+  return FREE_COUNTRIES.indexOf(c.n) !== -1;
 }
 // Sovereign = the 195 (193 UN members + Vatican + Palestine). Kosovo & Taiwan are tagged isCountry:false.
 function isSovereign(c) { return c.isCountry !== false; }
@@ -5456,7 +5455,7 @@ function openWelcome() {
   function showHome() {
     modal.innerHTML = '<div class="ts-box" role="dialog" aria-labelledby="welcome-title">' +
       '<h2 class="ts-title" id="welcome-title">Where do you live?</h2>' +
-      '<p class="ts-intro">The globe opens there, and that country stays free.</p>' +
+      '<p class="ts-intro">The globe opens there.</p>' +
       '<input type="text" class="search-input" id="welcome-search" placeholder="Search for your country" autocomplete="off">' +
       '<div class="welcome-results" id="welcome-results"></div>' +
       '<button class="btn-primary" id="welcome-go" style="width:100%">This is home</button>' +
