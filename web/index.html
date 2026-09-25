@@ -1992,7 +1992,7 @@ const WOW = {
 
 // Famous landmark with one fun fact, tappable to fly the globe there.
 const LANDMARKS = {
-  'France':{name:'Eiffel Tower','fact':'It grows about 15 cm taller in summer as the metal heats up.'},
+  'France':{name:'Eiffel Tower','fact':'In Paris it stands over the Seine, and a short walk away the Louvre keeps the Mona Lisa behind a glass pyramid.'},
   'China':{name:'Great Wall of China','fact':'It would stretch halfway around the planet if laid in a line.'},
   'Egypt':{name:'Pyramids of Giza','fact':'Built over 4,500 years ago from 2.3 million stone blocks.'},
   'India':{name:'Taj Mahal','fact':'It changes colour through the day as the light shifts.'},
@@ -3397,12 +3397,32 @@ function longTour(c) {
   };
   const talk = TOUR_TALK[useLang];
   const again = TOUR_AGAIN[useLang] || TOUR_AGAIN.en;
+  const paris = c.n === 'France' ? [
+    'Nous sommes à Paris. Deux noms comptent. La tour Eiffel. Et le Louvre.',
+    'La tour Eiffel est en fer. Elle monte au-dessus de la Seine. En été, le métal chauffe et la tour grandit un peu.',
+    'Regarde la tour Eiffel. Elle est ajourée, légère, et elle veille sur la ville.',
+    'Maintenant, le Louvre. C’est un ancien palais, devenu un immense musée.',
+    'Devant le Louvre, une pyramide de verre marque l’entrée. On descend, et les salles commencent.',
+    'Au Louvre, la Joconde regarde les visiteurs. On s’approche, et on parle tout bas.',
+    'De la tour Eiffel, tu vois les toits de Paris. Au Louvre, tu vois des siècles de peinture.',
+    'Dis les deux noms. Tour Eiffel. Louvre. Encore. Tour Eiffel. Louvre.',
+    'Si tu n’as qu’une journée, commence par la tour Eiffel, puis marche vers le Louvre.',
+    'Paris sans la tour Eiffel n’est pas complet. Paris sans le Louvre non plus.',
+    'Sous la tour Eiffel, les gens s’arrêtent, lèvent la tête, et comptent les étages.',
+    'Dans le Louvre, on se perd un peu. C’est normal. Chaque couloir ouvre une autre époque.',
+    'La tour Eiffel brille le soir. Le Louvre, lui, garde sa lumière dans les tableaux.',
+    'Souviens-toi de Paris ainsi. Une tour de fer. Un palais de tableaux. La tour Eiffel et le Louvre.'
+  ] : null;
   const lines = [];
   let guard = 0;
   let cycle = 0;
   while (tourSpeechSeconds(lines, useLang) < 300 && guard < 800) {
-    const tpl = talk[guard % talk.length];
-    const filled = fillTourLine(tpl, Object.assign({}, vars, { fact: facts.length ? facts[guard % facts.length] : '' }));
+    let filled = '';
+    if (paris && guard % 2 === 0) filled = paris[Math.floor(guard / 2) % paris.length];
+    else {
+      const tpl = talk[guard % talk.length];
+      filled = fillTourLine(tpl, Object.assign({}, vars, { fact: facts.length ? facts[guard % facts.length] : '' }));
+    }
     if (filled) lines.push(cycle ? (again + ' ' + filled) : filled);
     guard++;
     if (guard % talk.length === 0) cycle++;
@@ -3543,7 +3563,7 @@ window.__myatlasticTour = (countryName) => {
     lines: visit.lines,
     locale: visit.locale,
     body: visit.lines[0] || '',
-    look: [c.n, (landmarkFor(c) || {}).name, c.cap].filter(Boolean),
+    look: [c.n, (landmarkFor(c) || {}).name, c.n === 'France' ? 'Louvre Museum' : '', c.cap].filter(Boolean),
     frames: []
   }];
   loadStoryFrames(c, stops).then(() => {
