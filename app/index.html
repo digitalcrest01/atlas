@@ -2584,6 +2584,18 @@ const ROBOT_VOICE = /compact|eloquence|novelty|grandma|grandpa|whisper|bells|bad
 
 function tourLocale(c) {
   if (c && SPEECH_LOCALE[c.n]) return SPEECH_LOCALE[c.n];
+  const name = (c && primaryLang(c) || '').toLowerCase();
+  const guess = [
+    ['french', 'fr-FR'], ['spanish', 'es-ES'], ['arabic', 'ar-SA'], ['german', 'de-DE'],
+    ['italian', 'it-IT'], ['portuguese', 'pt-PT'], ['russian', 'ru-RU'], ['dutch', 'nl-NL'],
+    ['greek', 'el-GR'], ['turkish', 'tr-TR'], ['polish', 'pl-PL'], ['swedish', 'sv-SE'],
+    ['hindi', 'hi-IN'], ['swahili', 'sw-KE'], ['mandarin', 'zh-CN'], ['chinese', 'zh-CN'],
+    ['japanese', 'ja-JP'], ['korean', 'ko-KR'], ['thai', 'th-TH'], ['vietnamese', 'vi-VN'],
+    ['indonesian', 'id-ID'], ['english', 'en-US']
+  ];
+  for (let i = 0; i < guess.length; i++) {
+    if (name.indexOf(guess[i][0]) !== -1) return guess[i][1];
+  }
   return 'en-US';
 }
 
@@ -2932,6 +2944,452 @@ function guideLine(s) {
   return s;
 }
 
+const TOUR_AGAIN = {
+  en: 'Once more, slowly.',
+  fr: 'Encore une fois, lentement.',
+  es: 'Otra vez, despacio.',
+  de: 'Noch einmal, langsam.',
+  it: 'Ancora una volta, lentamente.',
+  pt: 'Outra vez, devagar.',
+  ar: 'مرة أخرى، ببطء.',
+  zh: '再来一次，慢慢说。',
+  ja: 'もう一度、ゆっくり。',
+  ko: '한 번 더, 천천히.',
+  hi: 'एक बार और, धीरे से।',
+  ru: 'Ещё раз, медленно.',
+  nl: 'Nog een keer, langzaam.',
+  tr: 'Bir kez daha, yavaşça.',
+  el: 'Άλλη μια φορά, αργά.',
+  pl: 'Jeszcze raz, powoli.',
+  sv: 'En gång till, långsamt.',
+  th: 'อีกครั้ง ช้าๆ.',
+  vi: 'Một lần nữa, chậm thôi.',
+  id: 'Sekali lagi, pelan-pelan.',
+  sw: 'Tena, polepole.'
+};
+
+const TOUR_TALK = {
+  en: [
+    'Here we are together in {country}. Stay with me. I will walk you through this place, one small step at a time.',
+    'The capital is {capital}. Say it with me. {capital}. That is the city we start from.',
+    'A famous place here is {place}. Look at it, and remember how it sits in the land.',
+    'People here love {dish}. It is a taste of {country}, the kind of food you remember.',
+    'You might see {animal}. Picture it living here, in the fields, the forest, or the water.',
+    'A sport people play is {sport}. Imagine a game on a warm afternoon.',
+    'Here is how to say hello. {hello}. Say it slowly. {hello}.',
+    'Let me tell you something true. {fact}',
+    'If you remember only three things, remember {capital}, {place}, and {dish}.',
+    'Imagine you land in {capital}. You walk toward {place}. Someone offers you {dish}.',
+    'We are still in {country}. The capital is still {capital}. Do not rush.',
+    'I will ask you. What is the capital? It is {capital}. Say it again. {capital}.',
+    'What should you visit? {place}. Stay there in your mind for a moment.',
+    'What should you taste? {dish}. Say the name. {dish}.',
+    'Hello, one more time. {hello}. A greeting opens a country.',
+    '{country} is worth a long visit. We have time. Let us keep talking about {capital} and {place}.'
+  ],
+  fr: [
+    'Nous sommes ensemble. {country}. Reste avec moi. Je vais te promener ici, tout doucement.',
+    'La capitale est {capital}. Répète avec moi. {capital}. C’est là que l’on commence.',
+    'Un lieu célèbre, c’est {place}. Regarde-le bien. Garde cette image.',
+    'Les gens aiment {dish}. C’est un goût de ce pays. Dis le nom. {dish}.',
+    'Tu peux voir {animal}. Imagine-le ici, dans le paysage.',
+    'Un sport d’ici, c’est {sport}. Imagine une partie, dehors.',
+    'Voici bonjour. {hello}. Dis-le lentement. {hello}.',
+    'Si tu ne retiens que trois choses, retiens {capital}, {place}, et {dish}.',
+    'Imagine. Tu arrives à {capital}. Tu marches vers {place}. On t’offre {dish}.',
+    'Nous sommes toujours ici. La capitale reste {capital}. Ne te presse pas.',
+    'Je te demande. Quelle est la capitale ? {capital}. Encore. {capital}.',
+    'Que faut-il visiter ? {place}. Reste un instant avec ce lieu.',
+    'Que faut-il goûter ? {dish}. Répète. {dish}.',
+    'Bonjour, encore une fois. {hello}. Une salutation ouvre un pays.',
+    '{country} mérite une longue visite. Nous avons le temps. Parlons encore de {capital} et de {place}.'
+  ],
+  es: [
+    'Estamos juntos. {country}. Quédate conmigo. Te voy a pasear por aquí, despacito.',
+    'La capital es {capital}. Repite conmigo. {capital}. Ahí empezamos.',
+    'Un lugar famoso es {place}. Míralo bien. Guarda esa imagen.',
+    'A la gente le gusta {dish}. Es un sabor de este país. Di el nombre. {dish}.',
+    'Puedes ver {animal}. Imagínalo aquí, en el paisaje.',
+    'Un deporte de aquí es {sport}. Imagina un partido al aire libre.',
+    'Así se dice hola. {hello}. Dílo despacio. {hello}.',
+    'Si solo recuerdas tres cosas, recuerda {capital}, {place} y {dish}.',
+    'Imagina. Llegas a {capital}. Caminas hacia {place}. Alguien te ofrece {dish}.',
+    'Seguimos aquí. La capital sigue siendo {capital}. No tengas prisa.',
+    'Te pregunto. ¿Cuál es la capital? {capital}. Otra vez. {capital}.',
+    '¿Qué hay que visitar? {place}. Quédate un momento con ese lugar.',
+    '¿Qué hay que probar? {dish}. Repite. {dish}.',
+    'Hola, una vez más. {hello}. Un saludo abre un país.',
+    '{country} merece una visita larga. Tenemos tiempo. Hablemos otra vez de {capital} y de {place}.'
+  ],
+  de: [
+    'Wir sind zusammen hier. {country}. Bleib bei mir. Ich führe dich ganz langsam herum.',
+    'Die Hauptstadt ist {capital}. Sprich mit mir. {capital}. Dort fangen wir an.',
+    'Ein berühmter Ort ist {place}. Schau ihn dir an. Behalte das Bild.',
+    'Die Menschen mögen {dish}. Das ist ein Geschmack dieses Landes. Sag den Namen. {dish}.',
+    'Du kannst {animal} sehen. Stell es dir hier in der Landschaft vor.',
+    'Eine Sportart hier ist {sport}. Stell dir ein Spiel im Freien vor.',
+    'So sagt man hallo. {hello}. Sag es langsam. {hello}.',
+    'Wenn du nur drei Dinge behältst, dann {capital}, {place} und {dish}.',
+    'Stell dir vor. Du kommst in {capital} an. Du gehst zu {place}. Jemand bietet dir {dish} an.',
+    'Wir sind immer noch hier. Die Hauptstadt bleibt {capital}. Keine Eile.',
+    'Ich frage dich. Was ist die Hauptstadt? {capital}. Noch einmal. {capital}.',
+    'Was solltest du besuchen? {place}. Bleib einen Moment bei diesem Ort.',
+    'Was solltest du probieren? {dish}. Wiederhole. {dish}.',
+    'Hallo, noch einmal. {hello}. Ein Gruß öffnet ein Land.',
+    '{country} verdient einen langen Besuch. Wir haben Zeit. Wir reden weiter über {capital} und {place}.'
+  ],
+  it: [
+    'Siamo qui insieme. {country}. Resta con me. Ti accompagno piano piano.',
+    'La capitale è {capital}. Ripeti con me. {capital}. È da lì che partiamo.',
+    'Un luogo famoso è {place}. Guardalo bene. Tieni questa immagine.',
+    'Alla gente piace {dish}. È un sapore di questo paese. Di’ il nome. {dish}.',
+    'Puoi vedere {animal}. Immaginalo qui, nel paesaggio.',
+    'Uno sport di qui è {sport}. Immagina una partita all’aperto.',
+    'Così si dice ciao. {hello}. Dillo lentamente. {hello}.',
+    'Se ricordi solo tre cose, ricorda {capital}, {place} e {dish}.',
+    'Immagina. Arrivi a {capital}. Cammini verso {place}. Qualcuno ti offre {dish}.',
+    'Siamo ancora qui. La capitale è sempre {capital}. Non avere fretta.',
+    'Ti chiedo. Qual è la capitale? {capital}. Di nuovo. {capital}.',
+    'Cosa devi visitare? {place}. Resta un momento con questo luogo.',
+    'Cosa devi assaggiare? {dish}. Ripeti. {dish}.',
+    'Ciao, un’altra volta. {hello}. Un saluto apre un paese.',
+    '{country} merita una visita lunga. Abbiamo tempo. Parliamo ancora di {capital} e di {place}.'
+  ],
+  pt: [
+    'Estamos juntos. {country}. Fica comigo. Vou passear contigo, bem devagar.',
+    'A capital é {capital}. Repete comigo. {capital}. É aí que começamos.',
+    'Um lugar famoso é {place}. Olha bem. Guarda esta imagem.',
+    'As pessoas gostam de {dish}. É um sabor deste país. Diz o nome. {dish}.',
+    'Podes ver {animal}. Imagina-o aqui, na paisagem.',
+    'Um desporto daqui é {sport}. Imagina um jogo ao ar livre.',
+    'É assim que se diz olá. {hello}. Diz devagar. {hello}.',
+    'Se só lembrares três coisas, lembra {capital}, {place} e {dish}.',
+    'Imagina. Chegas a {capital}. Caminhas até {place}. Alguém te oferece {dish}.',
+    'Continuamos aqui. A capital continua a ser {capital}. Sem pressa.',
+    'Pergunto-te. Qual é a capital? {capital}. Outra vez. {capital}.',
+    'O que deves visitar? {place}. Fica um momento com esse lugar.',
+    'O que deves provar? {dish}. Repete. {dish}.',
+    'Olá, mais uma vez. {hello}. Uma saudação abre um país.',
+    '{country} merece uma visita longa. Temos tempo. Falamos outra vez de {capital} e de {place}.'
+  ],
+  ar: [
+    'نحن هنا معًا. {country}. ابقَ معي. سأمشي معك بهدوء.',
+    'العاصمة هي {capital}. كرّر معي. {capital}. من هنا نبدأ.',
+    'مكان مشهور هو {place}. انظر إليه جيدًا. احفظ الصورة.',
+    'الناس يحبون {dish}. هذا طعم البلد. قل الاسم. {dish}.',
+    'قد ترى {animal}. تخيّله هنا في الطبيعة.',
+    'رياضة من هنا هي {sport}. تخيّل مباراة في الخارج.',
+    'هكذا نقول مرحبًا. {hello}. قُلها ببطء. {hello}.',
+    'إذا تذكرت ثلاثة أشياء فقط، فلتكن {capital} و{place} و{dish}.',
+    'تخيّل. تصل إلى {capital}. تمشي نحو {place}. أحدهم يقدّم لك {dish}.',
+    'ما زلنا هنا. العاصمة ما زالت {capital}. لا تستعجل.',
+    'أسألك. ما العاصمة؟ {capital}. مرة أخرى. {capital}.',
+    'ماذا تزور؟ {place}. ابقَ لحظة مع هذا المكان.',
+    'ماذا تتذوّق؟ {dish}. كرّر. {dish}.',
+    'مرحبًا مرة أخرى. {hello}. التحية تفتح بلدًا.',
+    '{country} تستحق زيارة طويلة. لدينا وقت. لنتحدث مجددًا عن {capital} و{place}.'
+  ],
+  zh: [
+    '我们在一起。{country}。跟着我。我会慢慢带你看这个地方。',
+    '首都是{capital}。跟我说。{capital}。我们从这里开始。',
+    '一个有名的地方是{place}。好好看。记住这幅画面。',
+    '人们喜欢{dish}。这是这里的味道。说一遍。{dish}。',
+    '你可能会看见{animal}。想象它就在这片土地上。',
+    '这里的一项运动是{sport}。想象一场户外的比赛。',
+    '你好是这样说的。{hello}。慢慢说。{hello}。',
+    '如果只记得三件事，就记得{capital}、{place}和{dish}。',
+    '想象一下。你到达{capital}。你走向{place}。有人递给你{dish}。',
+    '我们还在这里。首都还是{capital}。不要着急。',
+    '我问你。首都是哪里？{capital}。再说一次。{capital}。',
+    '该去看什么？{place}。在这个地方停一会儿。',
+    '该尝什么？{dish}。重复。{dish}。',
+    '你好，再来一次。{hello}。一句问候打开一个国家。',
+    '{country}值得慢慢看。我们有时间。再谈谈{capital}和{place}。'
+  ],
+  ja: [
+    'いっしょにいます。{country}。そばにいて。ゆっくり案内するよ。',
+    '首都は{capital}です。いっしょに言って。{capital}。ここから始めます。',
+    '有名な場所は{place}です。よく見て。この景色を覚えて。',
+    '人々は{dish}が好きです。この国の味です。名前を言って。{dish}。',
+    '{animal}に会えるかもしれません。この土地にいるところを想像して。',
+    'ここでのスポーツは{sport}です。外で試合をするところを想像して。',
+    'こんにちははこう言います。{hello}。ゆっくり。{hello}。',
+    '三つだけ覚えるなら、{capital}と{place}と{dish}です。',
+    '想像して。{capital}に着く。{place}へ歩く。誰かが{dish}をくれる。',
+    'まだここにいます。首都は今も{capital}。急がなくていい。',
+    '質問です。首都は？ {capital}。もう一度。{capital}。',
+    '何を見る？ {place}。その場所に少し留まって。',
+    '何を味わう？ {dish}。繰り返して。{dish}。',
+    'こんにちは、もう一度。{hello}。あいさつが国を開く。',
+    '{country}は長く訪ねる価値がある。時間はある。{capital}と{place}の話を続けよう。'
+  ],
+  ko: [
+    '함께 있어요. {country}. 내 옆에 있어요. 천천히 안내할게요.',
+    '수도는 {capital}입니다. 따라 말해 보세요. {capital}. 여기서 시작해요.',
+    '유명한 곳은 {place}입니다. 잘 보세요. 이 모습을 기억하세요.',
+    '사람들은 {dish}를 좋아합니다. 이 나라의 맛이에요. 이름을 말해 보세요. {dish}.',
+    '{animal}을 볼 수도 있어요. 이 땅에 있는 모습을 상상해 보세요.',
+    '여기서의 운동은 {sport}입니다. 바깥에서 경기하는 모습을 상상해 보세요.',
+    '인사는 이렇게 해요. {hello}. 천천히. {hello}.',
+    '세 가지만 기억한다면 {capital}, {place}, {dish}입니다.',
+    '상상해 보세요. {capital}에 도착해요. {place}로 걸어요. 누군가 {dish}를 건넵니다.',
+    '아직 여기 있어요. 수도는 여전히 {capital}. 서두르지 마세요.',
+    '물어볼게요. 수도는? {capital}. 한 번 더. {capital}.',
+    '무엇을 보러 갈까요? {place}. 그 장소에 잠시 머무르세요.',
+    '무엇을 맛볼까요? {dish}. 반복하세요. {dish}.',
+    '안녕하세요, 한 번 더. {hello}. 인사가 나라를 열어요.',
+    '{country}는 오래 머물 만해요. 시간이 있어요. {capital}와 {place} 이야기를 계속해요.'
+  ],
+  hi: [
+    'हम साथ हैं। {country}। मेरे साथ रहो। मैं धीरे-धीरे घुमाऊँगा।',
+    'राजधानी {capital} है। मेरे साथ कहो। {capital}। यहीं से शुरू करते हैं।',
+    'एक प्रसिद्ध जगह {place} है। ध्यान से देखो। यह दृश्य याद रखो।',
+    'लोगों को {dish} पसंद है। यह इस देश का स्वाद है। नाम कहो। {dish}।',
+    'तुम {animal} देख सकते हो। उसे यहाँ की धरती पर सोचो।',
+    'यहाँ का एक खेल {sport} है। बाहर खेलते हुए सोचो।',
+    'नमस्ते ऐसे कहते हैं। {hello}। धीरे बोलो। {hello}।',
+    'अगर सिर्फ तीन बातें याद रखो, तो {capital}, {place}, और {dish}।',
+    'कल्पना करो। तुम {capital} पहुँचते हो। {place} की ओर चलते हो। कोई {dish} देता है।',
+    'हम अभी भी यहीं हैं। राजधानी अब भी {capital} है। जल्दी नहीं।',
+    'मैं पूछता हूँ। राजधानी क्या है? {capital}। फिर से। {capital}।',
+    'क्या देखना चाहिए? {place}। इस जगह पर थोड़ी देर रुको।',
+    'क्या चखना चाहिए? {dish}। दोहराओ। {dish}।',
+    'नमस्ते, एक बार और। {hello}। अभिवादन देश खोलता है।',
+    '{country} लंबी यात्रा के लायक है। समय है। {capital} और {place} की बात जारी रखें।'
+  ],
+  ru: [
+    'Мы здесь вместе. {country}. Останься со мной. Я проведу тебя медленно.',
+    'Столица — {capital}. Повтори со мной. {capital}. Отсюда мы начинаем.',
+    'Знаменитое место — {place}. Посмотри внимательно. Запомни этот вид.',
+    'Людям нравится {dish}. Это вкус страны. Скажи название. {dish}.',
+    'Можно увидеть {animal}. Представь его здесь, на этой земле.',
+    'Спорт здесь — {sport}. Представь игру на улице.',
+    'Здравствуйте говорят так. {hello}. Скажи медленно. {hello}.',
+    'Если запомнить только три вещи, то это {capital}, {place} и {dish}.',
+    'Представь. Ты приезжаешь в {capital}. Идёшь к {place}. Тебе предлагают {dish}.',
+    'Мы всё ещё здесь. Столица всё ещё {capital}. Не спеши.',
+    'Я спрошу. Какая столица? {capital}. Ещё раз. {capital}.',
+    'Что стоит увидеть? {place}. Побудь мысленно в этом месте.',
+    'Что стоит попробовать? {dish}. Повтори. {dish}.',
+    'Здравствуйте, ещё раз. {hello}. Приветствие открывает страну.',
+    '{country} стоит долгого визита. У нас есть время. Поговорим снова о {capital} и {place}.'
+  ],
+  nl: [
+    'We zijn samen hier. {country}. Blijf bij me. Ik leid je langzaam rond.',
+    'De hoofdstad is {capital}. Zeg het met me mee. {capital}. Daar beginnen we.',
+    'Een beroemde plek is {place}. Kijk goed. Onthoud dit beeld.',
+    'Mensen houden van {dish}. Dat is een smaak van dit land. Zeg de naam. {dish}.',
+    'Je kunt {animal} zien. Stel het je hier voor, in het landschap.',
+    'Een sport hier is {sport}. Stel je een wedstrijd buiten voor.',
+    'Zo zeg je hallo. {hello}. Zeg het langzaam. {hello}.',
+    'Als je maar drie dingen onthoudt, onthoud {capital}, {place} en {dish}.',
+    'Stel je voor. Je komt aan in {capital}. Je loopt naar {place}. Iemand geeft je {dish}.',
+    'We zijn er nog. De hoofdstad is nog steeds {capital}. Geen haast.',
+    'Ik vraag je. Wat is de hoofdstad? {capital}. Nog eens. {capital}.',
+    'Wat moet je bezoeken? {place}. Blijf even bij die plek.',
+    'Wat moet je proeven? {dish}. Herhaal. {dish}.',
+    'Hallo, nog een keer. {hello}. Een groet opent een land.',
+    '{country} is een lang bezoek waard. We hebben tijd. We praten verder over {capital} en {place}.'
+  ],
+  tr: [
+    'Birlikte buradayız. {country}. Yanımda kal. Seni yavaş yavaş gezdireceğim.',
+    'Başkent {capital}. Benimle söyle. {capital}. Buradan başlarız.',
+    'Ünlü bir yer {place}. İyi bak. Bu görüntüyü aklında tut.',
+    'İnsanlar {dish} sever. Bu, ülkenin tadıdır. Adını söyle. {dish}.',
+    '{animal} görebilirsin. Onu bu topraklarda hayal et.',
+    'Buradaki bir spor {sport}. Dışarıda bir maç hayal et.',
+    'Merhaba böyle denir. {hello}. Yavaş söyle. {hello}.',
+    'Yalnızca üç şey hatırlayacaksan, {capital}, {place} ve {dish}.',
+    'Hayal et. {capital} şehrine varırsın. {place} yönüne yürürsün. Biri sana {dish} uzatır.',
+    'Hâlâ buradayız. Başkent hâlâ {capital}. Acele etme.',
+    'Sorarım. Başkent neresi? {capital}. Bir daha. {capital}.',
+    'Neyi gezmelisin? {place}. Bu yerde bir an kal.',
+    'Neyi tatmalısın? {dish}. Tekrarla. {dish}.',
+    'Merhaba, bir kez daha. {hello}. Bir selam bir ülkeyi açar.',
+    '{country} uzun bir gezmeyi hak eder. Zamanımız var. {capital} ve {place} hakkında konuşmaya devam edelim.'
+  ],
+  el: [
+    'Είμαστε μαζί εδώ. {country}. Μείνε μαζί μου. Θα σε πάω αργά.',
+    'Η πρωτεύουσα είναι η {capital}. Πες το μαζί μου. {capital}. Από εκεί ξεκινάμε.',
+    'Ένα διάσημο μέρος είναι το {place}. Κοίτα το καλά. Κράτα την εικόνα.',
+    'Στους ανθρώπους αρέσει το {dish}. Είναι μια γεύση της χώρας. Πες το όνομα. {dish}.',
+    'Μπορεί να δεις {animal}. Φαντάσου το εδώ, στο τοπίο.',
+    'Ένα άθλημα εδώ είναι το {sport}. Φαντάσου ένα παιχνίδι έξω.',
+    'Έτσι λένε γεια. {hello}. Πες το αργά. {hello}.',
+    'Αν θυμάσαι μόνο τρία πράγματα, θυμήσου {capital}, {place} και {dish}.',
+    'Φαντάσου. Φτάνεις στην {capital}. Περπατάς προς το {place}. Κάποιος σου δίνει {dish}.',
+    'Είμαστε ακόμη εδώ. Η πρωτεύουσα είναι ακόμη η {capital}. Χωρίς βιασύνη.',
+    'Σε ρωτώ. Ποια είναι η πρωτεύουσα; {capital}. Ξανά. {capital}.',
+    'Τι να επισκεφτείς; {place}. Μείνε μια στιγμή σε αυτό το μέρος.',
+    'Τι να δοκιμάσεις; {dish}. Επανάλαβε. {dish}.',
+    'Γεια, άλλη μια φορά. {hello}. Ένας χαιρετισμός ανοίγει μια χώρα.',
+    'Η {country} αξίζει μια μεγάλη επίσκεψη. Έχουμε χρόνο. Μιλάμε ξανά για {capital} και {place}.'
+  ],
+  pl: [
+    'Jesteśmy tu razem. {country}. Zostań ze mną. Oprowadzę cię powoli.',
+    'Stolica to {capital}. Powtórz ze mną. {capital}. Stąd zaczynamy.',
+    'Znane miejsce to {place}. Popatrz uważnie. Zapamiętaj ten widok.',
+    'Ludzie lubią {dish}. To smak tego kraju. Powiedz nazwę. {dish}.',
+    'Możesz zobaczyć {animal}. Wyobraź je sobie tutaj, w krajobrazie.',
+    'Sportem tutaj jest {sport}. Wyobraź sobie mecz na dworze.',
+    'Tak mówi się cześć. {hello}. Powiedz powoli. {hello}.',
+    'Jeśli zapamiętasz tylko trzy rzeczy, niech to będą {capital}, {place} i {dish}.',
+    'Wyobraź sobie. Przyjeżdżasz do {capital}. Idziesz w stronę {place}. Ktoś podaje ci {dish}.',
+    'Nadal tu jesteśmy. Stolica nadal to {capital}. Bez pośpiechu.',
+    'Pytam. Jaka jest stolica? {capital}. Jeszcze raz. {capital}.',
+    'Co warto zobaczyć? {place}. Zostań chwilę przy tym miejscu.',
+    'Czego warto spróbować? {dish}. Powtórz. {dish}.',
+    'Cześć, jeszcze raz. {hello}. Powitanie otwiera kraj.',
+    '{country} jest warta długiej wizyty. Mamy czas. Mówimy dalej o {capital} i {place}.'
+  ],
+  sv: [
+    'Vi är här tillsammans. {country}. Stanna hos mig. Jag visar dig runt, långsamt.',
+    'Huvudstaden är {capital}. Säg det med mig. {capital}. Där börjar vi.',
+    'En berömd plats är {place}. Titta noga. Behåll bilden.',
+    'Folk gillar {dish}. Det är en smak av landet. Säg namnet. {dish}.',
+    'Du kan se {animal}. Föreställ dig det här, i landskapet.',
+    'En sport här är {sport}. Föreställ dig en match utomhus.',
+    'Så säger man hej. {hello}. Säg det långsamt. {hello}.',
+    'Om du bara minns tre saker, minns {capital}, {place} och {dish}.',
+    'Föreställ dig. Du kommer till {capital}. Du går mot {place}. Någon räcker dig {dish}.',
+    'Vi är kvar. Huvudstaden är fortfarande {capital}. Ingen brådska.',
+    'Jag frågar. Vad är huvudstaden? {capital}. Igen. {capital}.',
+    'Vad ska du besöka? {place}. Stanna en stund vid den platsen.',
+    'Vad ska du smaka? {dish}. Upprepa. {dish}.',
+    'Hej, en gång till. {hello}. En hälsning öppnar ett land.',
+    '{country} är värt ett långt besök. Vi har tid. Vi pratar vidare om {capital} och {place}.'
+  ],
+  th: [
+    'เราอยู่ด้วยกันที่นี่. {country}. อยู่กับฉัน. ฉันจะพาไปช้าๆ.',
+    'เมืองหลวงคือ {capital}. พูดตามฉัน. {capital}. เราเริ่มจากที่นี่.',
+    'สถานที่ที่มีชื่อเสียงคือ {place}. มองให้ดี. จำภาพนี้ไว้.',
+    'ผู้คนชอบ {dish}. นี่คือรสชาติของประเทศ. พูดชื่อ. {dish}.',
+    'เธออาจเห็น {animal}. นึกภาพมันอยู่ในแผ่นดินนี้.',
+    'กีฬาที่นี่คือ {sport}. นึกภาพการแข่งขันกลางแจ้ง.',
+    'สวัสดีพูดอย่างนี้. {hello}. พูดช้าๆ. {hello}.',
+    'ถ้าจำได้แค่สามอย่าง ให้จำ {capital}, {place}, และ {dish}.',
+    'ลองนึก. เธอมาถึง {capital}. เดินไปที่ {place}. มีคนยื่น {dish} ให้.',
+    'เรายังอยู่ที่นี่. เมืองหลวงยังเป็น {capital}. ไม่ต้องรีบ.',
+    'ฉันถาม. เมืองหลวงคืออะไร? {capital}. อีกครั้ง. {capital}.',
+    'ควรไปดูอะไร? {place}. อยู่กับที่นี่สักครู่.',
+    'ควรชิมอะไร? {dish}. พูดซ้ำ. {dish}.',
+    'สวัสดี อีกครั้ง. {hello}. คำทักทายเปิดประเทศ.',
+    '{country} คู่ควรกับการเยือนนานๆ. เรามีเวลา. พูดต่อเรื่อง {capital} และ {place}.'
+  ],
+  vi: [
+    'Chúng ta ở đây cùng nhau. {country}. Ở bên tôi. Tôi sẽ dẫn bạn đi chậm rãi.',
+    'Thủ đô là {capital}. Nói cùng tôi. {capital}. Chúng ta bắt đầu từ đó.',
+    'Một nơi nổi tiếng là {place}. Hãy nhìn kỹ. Giữ hình ảnh này.',
+    'Mọi người thích {dish}. Đó là hương vị của đất nước. Nói tên. {dish}.',
+    'Bạn có thể thấy {animal}. Hãy tưởng tượng nó trên vùng đất này.',
+    'Một môn thể thao ở đây là {sport}. Hãy tưởng tượng một trận đấu ngoài trời.',
+    'Xin chào nói như thế này. {hello}. Nói chậm. {hello}.',
+    'Nếu chỉ nhớ ba điều, hãy nhớ {capital}, {place}, và {dish}.',
+    'Hãy tưởng tượng. Bạn đến {capital}. Bạn đi về phía {place}. Ai đó đưa bạn {dish}.',
+    'Chúng ta vẫn ở đây. Thủ đô vẫn là {capital}. Đừng vội.',
+    'Tôi hỏi. Thủ đô là gì? {capital}. Lần nữa. {capital}.',
+    'Nên đi xem gì? {place}. Hãy dừng một lát ở nơi đó.',
+    'Nên nếm gì? {dish}. Lặp lại. {dish}.',
+    'Xin chào, một lần nữa. {hello}. Lời chào mở ra một đất nước.',
+    '{country} đáng để ở lại lâu. Chúng ta có thời gian. Hãy nói tiếp về {capital} và {place}.'
+  ],
+  id: [
+    'Kita di sini bersama. {country}. Tetaplah bersamaku. Aku akan mengajakmu pelan-pelan.',
+    'Ibu kotanya {capital}. Ucapkan bersamaku. {capital}. Dari situ kita mulai.',
+    'Tempat yang terkenal adalah {place}. Lihat baik-baik. Simpan gambar ini.',
+    'Orang-orang menyukai {dish}. Itu rasa negeri ini. Ucapkan namanya. {dish}.',
+    'Kamu mungkin melihat {animal}. Bayangkan ia ada di tanah ini.',
+    'Olahraga di sini adalah {sport}. Bayangkan pertandingan di luar.',
+    'Halo diucapkan begini. {hello}. Ucapkan pelan. {hello}.',
+    'Jika hanya mengingat tiga hal, ingat {capital}, {place}, dan {dish}.',
+    'Bayangkan. Kamu tiba di {capital}. Kamu berjalan ke {place}. Seseorang memberimu {dish}.',
+    'Kita masih di sini. Ibu kota masih {capital}. Jangan terburu.',
+    'Aku bertanya. Apa ibu kotanya? {capital}. Sekali lagi. {capital}.',
+    'Apa yang harus dikunjungi? {place}. Tinggallah sejenak di tempat itu.',
+    'Apa yang harus dicicipi? {dish}. Ulangi. {dish}.',
+    'Halo, sekali lagi. {hello}. Sebuah sapaan membuka negeri.',
+    '{country} layak dikunjungi lama. Kita punya waktu. Kita bicara lagi tentang {capital} dan {place}.'
+  ],
+  sw: [
+    'Tuko hapa pamoja. {country}. Kaa nami. Nitakutembeza polepole.',
+    'Mji mkuu ni {capital}. Sema nami. {capital}. Hapo ndipo tunaanzia.',
+    'Mahali maarufu ni {place}. Angalia vizuri. Hifadhi picha hii.',
+    'Watu wanapenda {dish}. Huo ni ladha ya nchi. Sema jina. {dish}.',
+    'Unaweza kuona {animal}. Fikiria yuko hapa katika nchi hii.',
+    'Michezo hapa ni {sport}. Fikiria mchezo wa nje.',
+    'Habari husemwa hivi. {hello}. Sema polepole. {hello}.',
+    'Ukikumbuka mambo matatu tu, kumbuka {capital}, {place}, na {dish}.',
+    'Fikiria. Unafika {capital}. Unatembea kuelekea {place}. Mtu anakupa {dish}.',
+    'Bado tuko hapa. Mji mkuu bado ni {capital}. Usifanye haraka.',
+    'Nakuuliza. Mji mkuu ni upi? {capital}. Tena. {capital}.',
+    'Uone nini? {place}. Kaa kidogo na mahali hapa.',
+    'Uonje nini? {dish}. Rudia. {dish}.',
+    'Habari, tena. {hello}. Salamu hufungua nchi.',
+    '{country} inastahili kukaa kwa muda mrefu. Tuna muda. Tuendelee kuzungumzia {capital} na {place}.'
+  ]
+};
+
+function tourSpeechSeconds(lines, lang) {
+  const text = lines.join('\n');
+  if (['zh', 'ja', 'ko', 'th'].indexOf(lang) !== -1) {
+    return text.replace(/\s+/g, '').length / 4.2;
+  }
+  const words = text.split(/\s+/).filter(Boolean).length;
+  return words / 2.15;
+}
+
+function fillTourLine(tpl, vars) {
+  const keys = tpl.match(/\{(\w+)\}/g) || [];
+  for (let i = 0; i < keys.length; i++) {
+    const k = keys[i].slice(1, -1);
+    if (!vars[k]) return '';
+  }
+  return tpl.replace(/\{(\w+)\}/g, function (_, k) { return vars[k]; });
+}
+
+function longTour(c) {
+  const place = landmarkFor(c);
+  const locale = tourLocale(c);
+  const lang = locale.split('-')[0];
+  const useLang = TOUR_TALK[lang] ? lang : 'en';
+  const speakAs = useLang === 'en' && lang !== 'en' ? 'en-US' : (TOUR_SAY[lang] ? locale : 'en-US');
+  const dish = c.food ? c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim() : '';
+  const animal = animalFor(c);
+  const hello = (phrasesFor(c)[0] && phrasesFor(c)[0].t) || '';
+  const facts = [];
+  if (useLang === 'en') {
+    [wowFor(c), place && place.fact, c.h, c.cul, c.rel, c.fig].forEach(block => {
+      String(block || '').split(/(?<=[.!?])\s+/).forEach(sentence => {
+        const t = sentence.trim();
+        if (t.length > 24) facts.push(t);
+      });
+    });
+  }
+  const vars = {
+    country: c.n,
+    capital: c.cap || '',
+    place: (place && place.name) || '',
+    dish: dish,
+    animal: animal ? String(animal[0]).replace(/\s*\([^)]*\)/g, '').trim() : '',
+    sport: (c.sport || '').split(',')[0].trim(),
+    hello: hello,
+    fact: ''
+  };
+  const talk = TOUR_TALK[useLang];
+  const again = TOUR_AGAIN[useLang] || TOUR_AGAIN.en;
+  const lines = [];
+  let guard = 0;
+  let cycle = 0;
+  while (tourSpeechSeconds(lines, useLang) < 300 && guard < 800) {
+    const tpl = talk[guard % talk.length];
+    const filled = fillTourLine(tpl, Object.assign({}, vars, { fact: facts.length ? facts[guard % facts.length] : '' }));
+    if (filled) lines.push(cycle ? (again + ' ' + filled) : filled);
+    guard++;
+    if (guard % talk.length === 0) cycle++;
+  }
+  return { locale: useLang === 'en' ? speakAs : locale, lines: lines };
+}
+
 function tourStops(c) {
   const place = landmarkFor(c);
   const wow = sayWow(wowFor(c));
@@ -3058,7 +3516,16 @@ window.__myatlasticTour = (countryName) => {
   renderList();
   renderDetails();
   if (globeAPI) globeAPI.focus(c);
-  const stops = tourStops(c);
+  const visit = longTour(c);
+  const stops = [{
+    kicker: 'Five minute visit',
+    title: c.n,
+    lines: visit.lines,
+    locale: visit.locale,
+    body: visit.lines[0] || '',
+    look: [c.n, (landmarkFor(c) || {}).name, c.cap].filter(Boolean),
+    frames: []
+  }];
   loadStoryFrames(c, stops).then(() => {
     if (!overlay.isConnected) return;
     const sNow = stops[step];
@@ -3090,7 +3557,7 @@ window.__myatlasticTour = (countryName) => {
         '</div>' +
         '<div class="tour-stage" id="tour-stage"></div>' +
         '<h2>' + escapeHtml(s.title) + '</h2>' +
-        '<p>' + escapeHtml(s.body) + '</p>' +
+        '<p class="tour-story">' + escapeHtml(s.lines[0] || '') + '</p>' +
         '<div class="tour-route">' + stops.map((_, n) => '<span class="tour-dot' + (n === step ? ' on' : '') + '"></span>').join('') + '</div>' +
         '<div class="tour-actions">' +
           '<button type="button" class="back-btn" id="tour-back"' + (step === 0 ? ' disabled' : '') + '>Back</button>' +
@@ -3099,9 +3566,13 @@ window.__myatlasticTour = (countryName) => {
         '</div>' +
       '</div>';
     $('tour-close').onclick = close;
-    $('tour-back').onclick = () => { if (step > 0) { step--; show(); } };
+    $('tour-back').onclick = () => {
+      const n = Number(overlay.dataset.line || 0);
+      if (n > 0) sayLine(n - 1);
+    };
     $('tour-next').onclick = () => {
-      if (step < stops.length - 1) { step++; show(); }
+      const n = Number(overlay.dataset.line || 0);
+      if (s.lines && n + 1 < s.lines.length) sayLine(n + 1);
       else close();
     };
     overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
@@ -3120,9 +3591,17 @@ window.__myatlasticTour = (countryName) => {
       if (!document.getElementById('tour-overlay')) return;
       overlay.dataset.line = String(n);
       const pics = frames();
-      if (pics.length) paintStoryFrame(pics[n % pics.length], n);
-      if (!speech.available || !s.lines || n >= s.lines.length) { goOn(); return; }
-      const safety = setTimeout(() => sayLine(n + 1), 12000);
+      if (pics.length) paintStoryFrame(pics[Math.min(n, pics.length - 1)], n);
+      const story = overlay.querySelector('.tour-story');
+      if (story && s.lines && s.lines[n]) story.textContent = s.lines[n];
+      const kick = overlay.querySelector('.tour-kicker');
+      if (kick && s.lines) kick.textContent = 'Five minute visit · ' + (n + 1) + ' of ' + s.lines.length;
+      if (!s.lines || n >= s.lines.length) { goOn(); return; }
+      if (!speech.available) {
+        tourTimer = setTimeout(() => sayLine(n + 1), 4000);
+        return;
+      }
+      const safety = setTimeout(() => sayLine(n + 1), 22000);
       speakLines([s.lines[n]], s.locale || tourLocale(c), [], 0.93, true, () => {
         clearTimeout(safety);
         if (n + 1 < s.lines.length) sayLine(n + 1);
