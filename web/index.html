@@ -711,10 +711,45 @@
     border-radius: 16px;
     overflow: hidden;
   }
+  .puzzle-board { position: relative; }
   .puzzle-board svg { width: 100%; height: 100%; display: block; }
-  .puzzle-land { fill: rgba(255,255,255,0.05); stroke: rgba(255,255,255,0.22); stroke-width: 0.25; cursor: pointer; }
-  .puzzle-land.is-in { fill: #d4a056; stroke: #f3e2bf; }
-  .puzzle-land.is-hint { fill: rgba(212,160,86,0.35); stroke: #f3d48a; stroke-width: 1.1; animation: puzzlePulse 0.8s ease-in-out infinite; }
+  .puzzle-land { fill: rgba(255,255,255,0.05); stroke: rgba(255,255,255,0.22); stroke-width: 0.25; }
+  .puzzle-land.is-in { fill: rgba(212,160,86,0.45); stroke: #f3e2bf; }
+  .puzzle-flag {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 72px;
+    min-height: 64px;
+    padding: 6px 8px;
+    border-radius: 14px;
+    border: 2px solid #f6e7c8;
+    background: rgba(8, 16, 28, 0.92);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    touch-action: none;
+  }
+  .puzzle-flag-emoji { font-size: 40px; line-height: 1; }
+  .puzzle-flag-name {
+    font-size: 13px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+    text-align: center;
+    max-width: 110px;
+  }
+  .puzzle-flag.done { min-width: 0; min-height: 0; z-index: 1; padding: 3px 6px; }
+  .puzzle-flag.done .puzzle-flag-emoji { font-size: 26px; }
+  .puzzle-flag.is-hint {
+    z-index: 4;
+    border-color: #ffd56a;
+    box-shadow: 0 0 0 5px rgba(255, 196, 70, 0.55);
+    animation: puzzlePulse 0.8s ease-in-out infinite;
+  }
   .puzzle-msg { min-height: 22px; text-align: center; color: var(--ink-dim); margin: 10px 0; }
   .puzzle-msg.ok { color: var(--success, #7dcea0); }
   .puzzle-msg.no { color: #e07a5f; }
@@ -728,25 +763,34 @@
   }
   .puzzle-piece {
     position: absolute;
-    width: 76px;
-    height: 76px;
-    padding: 6px;
+    width: auto;
+    min-width: 108px;
+    height: auto;
+    padding: 12px 14px;
     border-radius: 12px;
     background: var(--panel);
     border: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 800;
     cursor: grab;
     touch-action: none;
   }
   .puzzle-piece.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
   .puzzle-piece.bad { animation: puzzleShake 0.35s ease; }
-  .puzzle-piece svg { width: 100%; height: 100%; }
-  .puzzle-piece path { fill: #e7c27a; stroke: #3a2a12; stroke-width: 0.4; }
   .puzzle-float {
-    position: fixed; z-index: 40; width: 76px; height: 76px; pointer-events: none;
+    position: fixed; z-index: 40; pointer-events: none;
     transform: translate(-50%, -50%);
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--panel);
+    border: 2px solid var(--accent);
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 800;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
   }
-  .puzzle-float path { fill: #f0d7a0; }
-  @keyframes puzzlePulse { 50% { stroke-width: 1.8; } }
+  @keyframes puzzlePulse { 50% { transform: translate(-50%, -50%) scale(1.08); } }
   @keyframes puzzleShake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
   @keyframes tourIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
   @keyframes tourFade { from { opacity: 0; } to { opacity: 1; } }
@@ -4065,44 +4109,62 @@ function renderPuzzle() {
     return;
   }
   let lands = '';
+  let flags = '';
   all.forEach(c => {
-    const cls = 'puzzle-land' + (pz.placed.has(c.n) ? ' is-in' : '') + (pz.hint === c.n ? ' is-hint' : '');
-    lands += '<path class="' + cls + '" data-puzzle="' + escapeHtml(c.n) + '" d="' + puzzlePath(puzzleRings(c)) + '"></path>';
+    const placed = pz.placed.has(c.n);
+    const live = pz.tray.indexOf(c.n) !== -1;
+    lands += '<path class="puzzle-land' + (placed ? ' is-in' : '') + '" d="' + puzzlePath(puzzleRings(c)) + '"></path>';
+    if (!placed && !live) return;
+    const spot = puzzleFlagSpot(c);
+    const hinted = pz.hint === c.n;
+    const showName = placed || hinted;
+    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '" style="left:' + spot.left + '%;top:' + spot.top + '%">' +
+      '<span class="puzzle-flag-emoji">' + (c.flag || '🏳️') + '</span>' +
+      (showName ? '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>' : '') +
+      '</button>';
   });
   let tray = '';
   pz.tray.forEach(name => {
-    const c = byName[name];
-    if (!c) return;
     tray += '<button type="button" class="puzzle-piece' + (pz.selected === name ? ' on' : '') + '" data-piece="' + escapeHtml(name) + '" style="' + scatterStyle(name) + '">' +
-      puzzlePieceSvg(puzzleRings(c)) + '</button>';
+      escapeHtml(name) + '</button>';
   });
   root.innerHTML =
     '<div class="puzzle-wrap">' +
-      '<div class="puzzle-top"><div><h2>World puzzle</h2><div class="puzzle-count">' + pz.placed.size + ' of ' + total + ' shapes fitted</div></div>' +
+      '<div class="puzzle-top"><div><h2>World puzzle</h2><div class="puzzle-count">' + pz.placed.size + ' of ' + total + ' names matched</div></div>' +
       '<button type="button" class="btn-primary" id="puzzle-hint">Hint</button></div>' +
-      '<div class="puzzle-board"><svg viewBox="-180 -90 360 180" preserveAspectRatio="xMidYMid meet">' + lands + '</svg></div>' +
-      '<p class="puzzle-msg ' + (pz.tone || '') + '">' + escapeHtml(pz.message || 'Drag a piece onto its place on the map.') + '</p>' +
+      '<div class="puzzle-board"><svg viewBox="-180 -90 360 180" preserveAspectRatio="xMidYMid meet">' + lands + '</svg>' + flags + '</div>' +
+      '<p class="puzzle-msg ' + (pz.tone || '') + '">' + escapeHtml(pz.message || 'Drag each name onto its flag.') + '</p>' +
       '<div class="puzzle-tray">' + tray + '</div>' +
     '</div>';
   $('puzzle-hint').onclick = () => {
     const name = pz.selected || pz.tray[0];
     if (!name) return;
+    const c = byName[name];
     pz.selected = name;
     pz.hint = name;
-    pz.message = name + ' fits in the glowing shape.';
+    pz.message = name + ' matches ' + ((c && c.flag) || 'this flag') + '.';
     pz.tone = '';
-    if (speech.available) speakLines(['This piece is ' + name + '. It goes where the map is glowing.'], narrationLocale(), [], 0.93, true);
+    if (speech.available) speakLines([name + ' matches the glowing flag.'], narrationLocale(), [], 0.93, true);
     renderPuzzle();
   };
   root.querySelectorAll('.puzzle-piece').forEach(btn => {
     btn.onpointerdown = (ev) => startPuzzleDrag(ev, btn.getAttribute('data-piece'));
   });
-  root.querySelectorAll('.puzzle-land').forEach(path => {
-    path.onclick = () => {
+  root.querySelectorAll('.puzzle-flag').forEach(flag => {
+    flag.onclick = () => {
       if (puzzleDidDrag) return;
-      tryPlacePuzzle(pz.selected, path.getAttribute('data-puzzle'));
+      tryPlacePuzzle(pz.selected, flag.getAttribute('data-puzzle'));
     };
   });
+}
+
+function puzzleFlagSpot(c) {
+  const left = ((c.lon + 180) / 360) * 100;
+  const top = 25 + ((90 - c.lat) / 180) * 50;
+  return {
+    left: Math.max(8, Math.min(92, left)),
+    top: Math.max(12, Math.min(88, top))
+  };
 }
 
 let puzzleDidDrag = false;
@@ -4120,7 +4182,7 @@ function tryPlacePuzzle(piece, target) {
     pz.tone = 'ok';
     if (speech.available) speakLines(['Yes. That is ' + piece + '.'], narrationLocale(), [], 0.93, true);
   } else {
-    pz.message = 'That shape does not fit there.';
+    pz.message = 'That name does not match this flag.';
     pz.tone = 'no';
     pz.selected = piece;
   }
@@ -4135,7 +4197,7 @@ function startPuzzleDrag(ev, name) {
   if (!c) return;
   const ghost = document.createElement('div');
   ghost.className = 'puzzle-float';
-  ghost.innerHTML = puzzlePieceSvg(puzzleRings(c));
+  ghost.textContent = c.n;
   document.body.appendChild(ghost);
   let moved = false;
   const sx = ev.clientX, sy = ev.clientY;
@@ -4191,7 +4253,7 @@ function renderToday() {
   html += '<button type="button" class="today-card" id="today-puzzle">' +
     '<div class="today-kicker">Puzzle</div>' +
     '<h3>🧩 World map</h3>' +
-    '<p>' + puzzleDone + ' of ' + SOVEREIGN_COUNTRIES.length + ' country shapes fitted. Scattered pieces, one map.</p>' +
+    '<p>' + puzzleDone + ' of ' + SOVEREIGN_COUNTRIES.length + ' names matched to their flags.</p>' +
     '<span class="today-go">' + (puzzleDone >= SOVEREIGN_COUNTRIES.length ? 'You finished the world' : 'Keep fitting pieces') + '</span>' +
     '</button>';
   html += '<button type="button" class="today-card" id="today-mystery">' +
