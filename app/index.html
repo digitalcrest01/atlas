@@ -2291,6 +2291,16 @@ const SPEECH_LOCALE = {
   'Qatar': 'ar-QA', 'Bahrain': 'ar-BH', 'Palestine': 'ar-PS',
   'Iran': 'fa-IR',
   'Ukraine': 'uk-UA',
+  'United Kingdom': 'en-GB', 'Ireland': 'en-IE', 'United States': 'en-US',
+  'Canada': 'en-CA', 'Australia': 'en-AU', 'New Zealand': 'en-NZ', 'Jamaica': 'en-JM',
+  'Nigeria': 'en-NG', 'Ghana': 'en-GH', 'South Africa': 'en-ZA',
+  'Kenya': 'sw-KE', 'Tanzania': 'sw-TZ', 'Uganda': 'sw-UG',
+  'Benin': 'fr-FR', 'Burkina Faso': 'fr-FR', 'Cameroon': 'fr-FR',
+  'Central African Republic': 'fr-FR', 'Chad': 'fr-FR', 'Comoros': 'fr-FR',
+  'Congo (DRC)': 'fr-FR', 'Congo (Republic)': 'fr-FR', "Côte d'Ivoire": 'fr-FR',
+  'Djibouti': 'fr-FR', 'Gabon': 'fr-FR', 'Guinea': 'fr-FR', 'Haiti': 'fr-FR',
+  'Madagascar': 'fr-FR', 'Mali': 'fr-FR', 'Niger': 'fr-FR', 'Rwanda': 'fr-FR',
+  'Senegal': 'fr-FR', 'Seychelles': 'fr-FR', 'Togo': 'fr-FR', 'Burundi': 'fr-FR'
 };
 
 const speech = {
@@ -2311,6 +2321,168 @@ if (speech.available) {
 }
 
 const ROBOT_VOICE = /compact|eloquence|novelty|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing|albert|bahh|deranged|hysterical|superstar/i;
+
+function tourLocale(c) {
+  if (c && SPEECH_LOCALE[c.n]) return SPEECH_LOCALE[c.n];
+  return 'en-US';
+}
+
+const TOUR_SAY = {
+  en: {
+    arrive: ['Here we are. Welcome to {country}.', 'Stay close. We just arrived in {country}.', 'Look down. That is {country}.'],
+    capital: 'If you need a place to start, the capital is {capital}.',
+    closer: 'Come a little closer.',
+    before: 'Before we go, there is something people here love.',
+    taste: 'If you visit, try it.'
+  },
+  fr: {
+    arrive: ['Nous y sommes. Bienvenue. {country}.', 'Reste près de moi. Nous arrivons. {country}.', 'Regarde. {country}.'],
+    capital: 'Pour commencer, la capitale est {capital}.',
+    closer: 'Approche-toi un peu.',
+    before: 'Avant de partir, voici ce que les gens d’ici aiment.',
+    taste: 'Si tu viens, goûte.'
+  },
+  es: {
+    arrive: ['Ya llegamos. Bienvenido. {country}.', 'Quédate cerca. Acabamos de llegar. {country}.', 'Mira. {country}.'],
+    capital: 'Para empezar, la capital es {capital}.',
+    closer: 'Acércate un poco.',
+    before: 'Antes de irnos, esto es lo que la gente de aquí ama.',
+    taste: 'Si vienes, pruébalo.'
+  },
+  de: {
+    arrive: ['Hier sind wir. Willkommen. {country}.', 'Bleib nah. Wir sind gerade angekommen. {country}.', 'Schau. {country}.'],
+    capital: 'Zum Start: die Hauptstadt ist {capital}.',
+    closer: 'Komm ein Stück näher.',
+    before: 'Bevor wir gehen: das lieben die Menschen hier.',
+    taste: 'Wenn du herkommst, probier es.'
+  },
+  it: {
+    arrive: ['Eccoci. Benvenuto. {country}.', 'Resta vicino. Siamo appena arrivati. {country}.', 'Guarda. {country}.'],
+    capital: 'Per iniziare, la capitale è {capital}.',
+    closer: 'Avvicinati un po’.',
+    before: 'Prima di andare, ecco cosa amano le persone qui.',
+    taste: 'Se vieni, assaggialo.'
+  },
+  pt: {
+    arrive: ['Chegámos. Bem-vindo. {country}.', 'Fica perto. Acabámos de chegar. {country}.', 'Olha. {country}.'],
+    capital: 'Para começar, a capital é {capital}.',
+    closer: 'Chega um pouco mais perto.',
+    before: 'Antes de irmos, eis o que as pessoas daqui adoram.',
+    taste: 'Se vieres, prova.'
+  },
+  ar: {
+    arrive: ['ها نحن. أهلًا. {country}.', 'ابقَ قريبًا. وصلنا الآن. {country}.', 'انظر. {country}.'],
+    capital: 'للبداية، العاصمة هي {capital}.',
+    closer: 'اقترب قليلًا.',
+    before: 'قبل أن نذهب، هذا ما يحبه الناس هنا.',
+    taste: 'إذا زرت، ذقه.'
+  },
+  zh: {
+    arrive: ['我们到了。欢迎。{country}。', '靠近一点。我们刚到。{country}。', '看。{country}。'],
+    capital: '先从首都开始。首都是{capital}。',
+    closer: '再靠近一点。',
+    before: '离开之前，这是这里的人喜欢的。',
+    taste: '如果你来，尝一尝。'
+  },
+  ja: {
+    arrive: ['着きました。ようこそ。{country}。', 'そばにいて。今着いたよ。{country}。', '見て。{country}。'],
+    capital: 'まずは首都。首都は{capital}です。',
+    closer: 'もう少し近くへ。',
+    before: '行く前に、ここの人が好きなものです。',
+    taste: '来たら、食べてみて。'
+  },
+  ko: {
+    arrive: ['도착했어요. 환영합니다. {country}.', '가까이 있어요. 방금 도착했어요. {country}.', '보세요. {country}.'],
+    capital: '시작은 수도예요. 수도는 {capital}입니다.',
+    closer: '조금 더 가까이.',
+    before: '가기 전에, 여기 사람들이 좋아하는 것이에요.',
+    taste: '오면, 맛보세요.'
+  },
+  hi: {
+    arrive: ['हम आ गए। स्वागत है। {country}।', 'पास रहो। हम अभी पहुँचे। {country}।', 'देखो। {country}।'],
+    capital: 'शुरुआत के लिए, राजधानी {capital} है।',
+    closer: 'थोड़ा और पास आओ।',
+    before: 'जाने से पहले, यह यहाँ के लोग पसंद करते हैं।',
+    taste: 'आओ, तो चखो।'
+  },
+  ru: {
+    arrive: ['Вот мы и здесь. Добро пожаловать. {country}.', 'Будь рядом. Мы только что прибыли. {country}.', 'Смотри. {country}.'],
+    capital: 'Для начала: столица — {capital}.',
+    closer: 'Подойди чуть ближе.',
+    before: 'Перед уходом: вот что здесь любят.',
+    taste: 'Если приедешь, попробуй.'
+  },
+  nl: {
+    arrive: ['Hier zijn we. Welkom. {country}.', 'Blijf dichtbij. We zijn net aangekomen. {country}.', 'Kijk. {country}.'],
+    capital: 'Om te beginnen: de hoofdstad is {capital}.',
+    closer: 'Kom een stukje dichterbij.',
+    before: 'Voor we gaan: dit houden de mensen hier van.',
+    taste: 'Als je komt, proef het.'
+  },
+  tr: {
+    arrive: ['İşte geldik. Hoş geldin. {country}.', 'Yakın dur. Yeni vardık. {country}.', 'Bak. {country}.'],
+    capital: 'Başlamak için: başkent {capital}.',
+    closer: 'Biraz daha yaklaş.',
+    before: 'Gitmeden önce: burada insanlar bunu sever.',
+    taste: 'Gelirsen, tadına bak.'
+  },
+  el: {
+    arrive: ['Φτάσαμε. Καλώς ήρθες. {country}.', 'Μείνε κοντά. Μόλις φτάσαμε. {country}.', 'Κοίτα. {country}.'],
+    capital: 'Για αρχή, η πρωτεύουσα είναι η {capital}.',
+    closer: 'Έλα λίγο πιο κοντά.',
+    before: 'Πριν φύγουμε, αυτό αγαπούν οι άνθρωποι εδώ.',
+    taste: 'Αν έρθεις, δοκίμασέ το.'
+  },
+  pl: {
+    arrive: ['Jesteśmy. Witaj. {country}.', 'Bądź blisko. Właśnie przyjechaliśmy. {country}.', 'Patrz. {country}.'],
+    capital: 'Na początek: stolica to {capital}.',
+    closer: 'Podejdź trochę bliżej.',
+    before: 'Zanim pójdziemy: to lubią tu ludzie.',
+    taste: 'Jeśli przyjedziesz, spróbuj.'
+  },
+  sv: {
+    arrive: ['Här är vi. Välkommen. {country}.', 'Stanna nära. Vi kom just fram. {country}.', 'Titta. {country}.'],
+    capital: 'Till att börja med: huvudstaden är {capital}.',
+    closer: 'Kom lite närmare.',
+    before: 'Innan vi går: det här älskar folk här.',
+    taste: 'Om du kommer, smaka.'
+  },
+  th: {
+    arrive: ['มาถึงแล้ว. ยินดีต้อนรับ. {country}.', 'อยู่ใกล้ ๆ. เราเพิ่งมาถึง. {country}.', 'ดูสิ. {country}.'],
+    capital: 'เริ่มที่เมืองหลวง. เมืองหลวงคือ {capital}.',
+    closer: 'เข้ามาใกล้อีกนิด.',
+    before: 'ก่อนไป นี่คือสิ่งที่คนที่นี่ชอบ.',
+    taste: 'ถ้ามา ลองชิมดู.'
+  },
+  vi: {
+    arrive: ['Chúng ta tới rồi. Chào mừng. {country}.', 'Đứng gần nhé. Chúng ta vừa tới. {country}.', 'Nhìn này. {country}.'],
+    capital: 'Để bắt đầu, thủ đô là {capital}.',
+    closer: 'Lại gần thêm một chút.',
+    before: 'Trước khi đi, đây là thứ người ở đây yêu thích.',
+    taste: 'Nếu đến, hãy nếm thử.'
+  },
+  id: {
+    arrive: ['Kita sampai. Selamat datang. {country}.', 'Tetap dekat. Kita baru sampai. {country}.', 'Lihat. {country}.'],
+    capital: 'Untuk mulai, ibu kotanya {capital}.',
+    closer: 'Mendekat sedikit.',
+    before: 'Sebelum pergi, ini yang disukai orang di sini.',
+    taste: 'Kalau datang, cobalah.'
+  },
+  sw: {
+    arrive: ['Tumefika. Karibu. {country}.', 'Kaa karibu. Tumefika sasa. {country}.', 'Angalia. {country}.'],
+    capital: 'Kuanza, mji mkuu ni {capital}.',
+    closer: 'Sogeza karibu kidogo.',
+    before: 'Kabla hatujaondoka, hili ndilo watu hapa wanapenda.',
+    taste: 'Ukija, onja.'
+  }
+};
+
+function sayTour(lang, key, vars, index) {
+  const pack = TOUR_SAY[lang] || TOUR_SAY.en;
+  let line = pack[key];
+  if (Array.isArray(line)) line = line[(index || 0) % line.length];
+  return String(line || '').replace(/\{(\w+)\}/g, function (_, k) { return vars[k] || ''; });
+}
 
 function narrationLocale() {
   const lang = (navigator.language || 'en-US').toLowerCase();
@@ -2503,30 +2675,32 @@ function guideLine(s) {
 function tourStops(c) {
   const place = landmarkFor(c);
   const wow = sayWow(wowFor(c));
-  const hello = [
-    'Here we are. Welcome to ' + c.n + '.',
-    'Stay close. We just arrived in ' + c.n + '.',
-    'Look down. That is ' + c.n + '.'
-  ][c.n.length % 3];
+  const locale = tourLocale(c);
+  const lang = locale.split('-')[0];
+  const speakAs = TOUR_SAY[lang] ? locale : 'en-US';
+  const vars = { country: c.n, capital: c.cap || '', place: place.name, dish: '' };
+  const hello = sayTour(lang, 'arrive', vars, c.n.length);
   const arrive = [hello];
-  if (wow) arrive.push(guideLine(wow));
-  if (c.cap) arrive.push('If you need a place to start, the capital is ' + c.cap + '.');
-  const placeLines = ['Come a little closer.', place.name + '.'];
-  if (place.fact) placeLines.push(guideLine(place.fact));
+  if (lang === 'en' && wow) arrive.push(guideLine(wow));
+  if (c.cap) arrive.push(sayTour(lang, 'capital', vars));
+  const placeLines = [sayTour(lang, 'closer', vars), place.name + '.'];
+  if (lang === 'en' && place.fact) placeLines.push(guideLine(place.fact));
   const stops = [
-    { kicker: 'Arriving', title: c.n, lines: arrive },
-    { kicker: 'A famous place', title: place.name, lines: placeLines }
+    { kicker: 'Arriving', title: c.n, lines: arrive, locale: speakAs },
+    { kicker: 'A famous place', title: place.name, lines: placeLines, locale: speakAs }
   ];
   if (c.food) {
     const dish = c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim();
     if (dish) {
+      vars.dish = dish;
       stops.push({
         kicker: 'One last stop',
         title: dish,
+        locale: speakAs,
         lines: [
-          'Before we go, there is something people here love.',
+          sayTour(lang, 'before', vars),
           dish + '.',
-          'If you visit, try it.'
+          sayTour(lang, 'taste', vars)
         ]
       });
     }
@@ -2610,7 +2784,8 @@ window.__myatlasticReadAloud = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c) return;
   const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
-  speakLines(spokenTour(c), narrationLocale(), buttons, 0.96);
+  const stops = tourStops(c);
+  speakLines(spokenTour(c), (stops[0] && stops[0].locale) || tourLocale(c), buttons, 0.96);
 };
 
 let tourTimer = null;
@@ -2688,7 +2863,7 @@ window.__myatlasticTour = (countryName) => {
       if (pics.length) paintStoryFrame(pics[n % pics.length], n);
       if (!speech.available || !s.lines || n >= s.lines.length) { goOn(); return; }
       const safety = setTimeout(() => sayLine(n + 1), 12000);
-      speakLines([s.lines[n]], narrationLocale(), [], 0.93, true, () => {
+      speakLines([s.lines[n]], s.locale || tourLocale(c), [], 0.93, true, () => {
         clearTimeout(safety);
         if (n + 1 < s.lines.length) sayLine(n + 1);
         else goOn();
