@@ -98,9 +98,10 @@ Tight-free model: 10 countries fully unlocked, hard paywall on the other 187.
 | Plan | Price (USD) |
 |---|---|
 | Free | $0 — 10 countries, 3 quizzes/day, 1 daily challenge |
-| Pro Monthly | $3.99/mo |
-| Pro Annual | $24.99/yr (saves 48%) |
-| Family Annual | $39.99/yr — 6 profiles |
+| Pro Monthly | $4.99/mo · 1-week trial |
+| Pro Annual | $29.99/yr (saves 50%) · 1-week trial |
+| Lifetime | $59 once |
+| Family Sharing | Included with every paid plan |
 | School Classroom | $199/yr |
 
 See `docs/BUSINESS_PLAN.md` §1 for pricing rationale and §8 for the strategy risk analysis. The financial model on the `Cover` sheet has a Bear/Base/Bull selector that recalculates the full forecast.

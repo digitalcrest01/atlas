@@ -120,15 +120,15 @@
   nav.tabs::-webkit-scrollbar { display: none; }
   nav.tabs button {
     flex: 1;
-    min-width: 80px;
+    min-width: 0;
     background: transparent;
     border: none;
     color: var(--ink-dim);
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 0 12px;
+    letter-spacing: 0.04em;
+    padding: 0 4px;
     border-bottom: 2px solid transparent;
     white-space: nowrap;
   }
@@ -915,12 +915,33 @@
   }
 
   /* ===== QUIZ / DAILY / COMPARE / PAYWALL VIEWS ===== */
-  #view-quiz, #view-daily, #view-paywall {
+  #view-today, #view-quiz, #view-daily, #view-paywall, #view-mystery, #view-passport, #view-game, #view-currency {
     flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 24px 16px;
   }
+  .today-wrap { max-width: 640px; margin: 0 auto; width: 100%; display: flex; flex-direction: column; gap: 12px; }
+  .today-card {
+    display: block; width: 100%; text-align: left;
+    background: var(--panel); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 12px; padding: 16px;
+  }
+  .today-kicker {
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 6px;
+  }
+  .today-card h3 { font-size: 20px; margin: 0 0 6px; }
+  .today-card p { color: var(--ink-dim); font-size: 14px; line-height: 1.45; margin: 0; }
+  .today-go { display: block; margin-top: 10px; color: var(--accent); font-size: 14px; font-weight: 600; }
+  .today-more, .explore-more { display: flex; gap: 8px; }
+  .today-more button, .explore-more button {
+    flex: 1; min-width: 0;
+    background: transparent; color: var(--ink-dim);
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: 10px 8px; font-size: 13px;
+  }
+  .explore-more { margin-top: 8px; }
   #view-compare {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1298,29 +1319,39 @@
   .quiz-streak-dot.correct { background: var(--success); }
   .quiz-streak-dot.wrong { background: var(--danger); }
 
-  /* ===== ONBOARDING TOOLTIP ===== */
-  .onboard-tip {
-    position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
-    background: var(--accent); color: var(--bg);
-    border-radius: 8px; padding: 10px 18px; z-index: 8000;
-    font-size: 13px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    letter-spacing: 0.05em; text-align: center;
+  /* ===== FIRST-RUN COACH MARK (sits on the home-country pin) ===== */
+  .coach-mark {
+    position: absolute;
+    z-index: 5;
+    transform: translate(-50%, -100%);
+    background: var(--accent);
+    color: var(--bg);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: center;
+    max-width: 210px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    animation: tipFade 4s ease forwards;
-    pointer-events: none;
   }
-  .onboard-tip::before {
+  .coach-mark b { font-weight: 700; }
+  .coach-mark::after {
     content: '';
-    position: absolute; bottom: -7px; left: 50%; transform: translateX(-50%);
-    border: 7px solid transparent; border-top-color: var(--accent);
-    border-bottom: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: var(--accent);
   }
-  @keyframes tipFade {
-    0% { opacity: 0; transform: translateX(-50%) translateY(8px); }
-    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
-    80% { opacity: 1; }
-    100% { opacity: 0; transform: translateX(-50%) translateY(-4px); }
+  .welcome-results { max-height: 240px; overflow: auto; margin: 12px 0; }
+  .welcome-hit {
+    display: flex; width: 100%; text-align: left; align-items: center; gap: 8px;
+    padding: 10px 12px; margin-bottom: 6px;
+    background: var(--panel-2); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; font-size: 15px;
   }
+  .welcome-hit.on { border-color: var(--accent); }
 </style>
 </head>
 <body class="mode-explore">
@@ -1337,13 +1368,9 @@
 <div class="explore-progress" id="explore-progress" style="display:none"><div class="explore-progress-fill" id="explore-progress-fill"></div></div>
 
 <nav class="tabs" id="mode-tabs">
+  <button data-mode="today">Today</button>
   <button data-mode="explore" class="active">Explore</button>
   <button data-mode="quiz">Quiz</button>
-  <button data-mode="daily">Daily</button>
-  <button data-mode="compare">Compare</button>
-  <button data-mode="currency">Currency</button>
-  <button data-mode="game">Game</button>
-  <button data-mode="mystery">Mystery</button>
   <button data-mode="passport">Passport</button>
 </nav>
 
@@ -1353,6 +1380,11 @@
     <aside class="pane list mobile-active">
       <div class="list-controls">
         <input type="text" class="search-input" id="search" placeholder="Search country or capital..." />
+        <div class="explore-more">
+          <button type="button" data-mode="compare">Compare</button>
+          <button type="button" data-mode="currency">Currency</button>
+          <button type="button" data-mode="game">Spell</button>
+        </div>
         <div class="filter-chips" id="filter-chips"></div>
       </div>
       <div class="country-list" id="country-list"></div>
@@ -1375,11 +1407,12 @@
 
     <aside class="pane details" id="details-pane">
       <div class="placeholder">
-        Click a country in the list or on the globe to see capital, flag, currency, language, religion, culture, history and notable figures.
+        Tap a country on the globe or in the list.
       </div>
     </aside>
   </section>
 
+  <section class="view" id="view-today"></section>
   <section class="view" id="view-quiz"></section>
   <section class="view" id="view-daily"></section>
   <section class="view" id="view-compare"></section>
@@ -1968,7 +2001,8 @@ function quizOptionCount() {
 }
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
-const FREE_COUNTRIES = [...COUNTRIES].sort((a, b) => a.n.localeCompare(b.n)).slice(0, 10).map(c => c.n);
+// Familiar places, not the first 10 names in the alphabet. The child's home country is added in isFree().
+const STARTER_ATLAS = ['Japan', 'Brazil', 'Egypt', 'Kenya', 'France', 'United States', 'United Kingdom', 'India', 'Mexico', 'Australia'];
 
 /* ============================================================
  * PLATFORM — the iPhone/iPad app is the real product; the web is a
@@ -1981,7 +2015,7 @@ const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
-const WEB_APP_ONLY = ['quiz', 'game', 'compare', 'currency'];
+const WEB_APP_ONLY = ['game', 'compare', 'currency'];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
 window.__getApp = () => { try { window.open(APP_STORE_URL, '_blank', 'noopener'); } catch (e) {} };
 // Friendly "this lives in the app" wall shown for web-gated features.
@@ -1989,13 +2023,23 @@ function webWallHtml(title, blurb) {
   return '<div class="center-card webwall">' +
     '<div class="webwall-badge">📱 In the app</div>' +
     '<h2 class="webwall-title">' + escapeHtml(title) + '</h2>' +
-    '<p class="webwall-blurb">' + escapeHtml(blurb || 'This is part of the full Atlastic experience on iPhone & iPad.') + '</p>' +
+    '<p class="webwall-blurb">' + escapeHtml(blurb || 'This is part of the full Myatlastic experience on iPhone & iPad.') + '</p>' +
     '<button class="btn-primary webwall-cta" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
     '<button class="webwall-back" onclick="setMode(\'explore\')">← Keep exploring the preview</button>' +
     '</div>';
 }
 
-function isFree(c) { return FREE_COUNTRIES.includes(c.n); }
+function homeCountry() {
+  try {
+    const name = localStorage.getItem('myatlastic_home') || '';
+    return COUNTRIES.find(c => c.n === name) || null;
+  } catch (e) { return null; }
+}
+function isFree(c) {
+  if (STARTER_ATLAS.indexOf(c.n) !== -1) return true;
+  const home = homeCountry();
+  return !!(home && home.n === c.n);
+}
 // Sovereign = the 195 (193 UN members + Vatican + Palestine). Kosovo & Taiwan are tagged isCountry:false.
 function isSovereign(c) { return c.isCountry !== false; }
 const SOVEREIGN_COUNTRIES = COUNTRIES.filter(isSovereign);
@@ -2102,57 +2146,111 @@ if (speech.available) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
 }
 
+const ROBOT_VOICE = /compact|eloquence|novelty|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing|albert|bahh|deranged|hysterical|superstar/i;
+
+function narrationLocale() {
+  const lang = (navigator.language || 'en-US').toLowerCase();
+  if (lang.startsWith('en-gb') || lang === 'en-uk') return 'en-GB';
+  if (lang.startsWith('en-au')) return 'en-AU';
+  if (lang.startsWith('en-ie')) return 'en-IE';
+  return 'en-US';
+}
+
 function findVoice(locale) {
+  if (!speech.voices.length) loadVoices();
   if (!speech.voices.length) return null;
-  const lc = (locale || 'en-US').toLowerCase();
-  const bad = /compact|eloquence|novelty|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing/i;
-  // English narration: pick the most natural-sounding voice, never a low-quality "compact" one
-  if (lc.startsWith('en')) {
-    const en = speech.voices.filter(x => x.lang && x.lang.toLowerCase().replace('_', '-').startsWith('en'));
-    const usable = en.filter(x => !bad.test(x.name || ''));
-    const prefer = ['google us english', 'samantha', 'ava', 'allison', 'susan', 'aaron', 'nicky',
-      'microsoft aria', 'microsoft jenny', 'microsoft michelle', 'microsoft guy', 'microsoft zira'];
-    for (const name of prefer) {
-      const v = usable.find(x => (x.name || '').toLowerCase().includes(name));
-      if (v) return v;
-    }
-    // Prefer a US English voice, then any usable English voice
-    return usable.find(x => x.lang.toLowerCase().replace('_', '-') === 'en-us')
-      || usable[0] || en[0] || speech.voices[0] || null;
+  const want = (locale || 'en-US').toLowerCase().replace('_', '-');
+  const lang = want.split('-')[0];
+  const region = want.split('-')[1] || '';
+  const sameLang = speech.voices.filter(v => {
+    const l = (v.lang || '').toLowerCase().replace('_', '-');
+    return l === want || l.startsWith(lang + '-') || l === lang;
+  });
+  const pool = sameLang.length ? sameLang : [];
+  const usable = pool.filter(v => !ROBOT_VOICE.test(v.name || ''));
+  const list = usable.length ? usable : pool;
+  const named = {
+    'en-us': ['ava', 'allison', 'zoe', 'evan', 'nicky', 'aaron', 'samantha', 'google us english'],
+    'en-gb': ['daniel', 'kate', 'serena', 'martha', 'google uk english'],
+    'en-au': ['karen', 'lee', 'google australian'],
+    'en-ie': ['moira']
+  };
+  let best = null;
+  let bestScore = -1;
+  list.forEach(v => {
+    const n = (v.name || '').toLowerCase();
+    const l = (v.lang || '').toLowerCase().replace('_', '-');
+    let score = 0;
+    if (l === want) score += 30;
+    else if (region && l.endsWith('-' + region)) score += 18;
+    else if (l.startsWith(lang)) score += 8;
+    if (/premium|enhanced|natural|neural|siri/.test(n)) score += 40;
+    if (/google/.test(n)) score += 22;
+    if (/microsoft (aria|jenny|guy|michelle|sonia|ryan|libby)/.test(n)) score += 26;
+    (named[want] || []).forEach((name, i) => {
+      if (n.includes(name)) score += 20 - i;
+    });
+    if (score > bestScore) { bestScore = score; best = v; }
+  });
+  return best;
+}
+
+function voiceSpeaks(locale, voice) {
+  if (!voice) return false;
+  const want = (locale || '').toLowerCase().split('-')[0];
+  const got = (voice.lang || '').toLowerCase().replace('_', '-').split('-')[0];
+  return !!want && want === got;
+}
+
+let speakToken = 0;
+function stopSpeaking() {
+  speakToken++;
+  if (speech.available) {
+    window.speechSynthesis.cancel();
   }
-  // Non-English (kept for safety; narration currently forces en-US)
-  let v = speech.voices.find(x => x.lang === locale);
-  if (v) return v;
-  const prefix = locale.split('-')[0];
-  v = speech.voices.find(x => x.lang.startsWith(prefix + '-') || x.lang === prefix);
-  return v || speech.voices.find(x => x.lang.startsWith('en')) || speech.voices[0] || null;
+  document.querySelectorAll('.speaking').forEach(b => b.classList.remove('speaking'));
+}
+
+// Short lines, queued, so the voice can pause the way a person does.
+function speakLines(lines, locale, buttons, rate) {
+  if (!speech.available) return;
+  const clean = (lines || []).map(s => String(s || '').trim()).filter(Boolean);
+  if (!clean.length) return;
+  if (window.speechSynthesis.speaking) {
+    stopSpeaking();
+    return;
+  }
+  const token = ++speakToken;
+  const voice = findVoice(locale);
+  const btns = buttons || [];
+  btns.forEach(b => b.classList.add('speaking'));
+  let i = 0;
+  const step = () => {
+    if (token !== speakToken) return;
+    if (i >= clean.length) {
+      btns.forEach(b => b.classList.remove('speaking'));
+      return;
+    }
+    const utt = new SpeechSynthesisUtterance(clean[i++]);
+    utt.lang = locale || narrationLocale();
+    if (voice) utt.voice = voice;
+    utt.rate = rate || 0.96;
+    utt.pitch = 1;
+    utt.onend = step;
+    utt.onerror = step;
+    window.speechSynthesis.speak(utt);
+    window.speechSynthesis.resume();
+  };
+  step();
 }
 
 function speakCountry(country) {
   if (!speech.available) return;
-  // If currently speaking, cancel — second tap = stop
-  if (window.speechSynthesis.speaking) {
-    window.speechSynthesis.cancel();
-    document.querySelectorAll('.speak-btn.speaking').forEach(b => b.classList.remove('speaking'));
-    return;
-  }
-  const locale = 'en-US'; // force consistent American-English narration
-  const text = country.n + '. Capital: ' + country.cap + '.';
-  const utt = new SpeechSynthesisUtterance(text);
-  utt.lang = locale;
-  const voice = findVoice(locale);
-  if (voice) utt.voice = voice;
-  utt.rate = 0.95; // natural pace
-  utt.pitch = 1.0;
-  // Visual feedback: pulse the buttons for this country
   const buttons = Array.from(document.querySelectorAll('.speak-btn')).filter(b =>
     b.getAttribute('onclick') && b.getAttribute('onclick').indexOf(JSON.stringify(country.n)) !== -1
   );
-  buttons.forEach(b => b.classList.add('speaking'));
-  utt.onend = utt.onerror = () => {
-    buttons.forEach(b => b.classList.remove('speaking'));
-  };
-  window.speechSynthesis.speak(utt);
+  // The name, said once, a little slower. That is the pronunciation.
+  speakLines([country.n + '.'], narrationLocale(), buttons, 0.88);
 }
 
 // iOS workaround: must "warm up" speech synthesis on first user interaction
@@ -2176,22 +2274,16 @@ window.__myatlasticSpeak = (countryName) => {
 // using whatever matching voice the device has; falls back to English narration.
 // AUDIO HOOK: real native-speaker / anthem recordings can be wired in here later
 // by checking an asset map before falling back to this synthesized voice.
-function speakInLocale(text, locale, btnSelector) {
-  if (!speech.available || !text) return;
-  if (window.speechSynthesis.speaking) {
-    window.speechSynthesis.cancel();
-    document.querySelectorAll('.speaking').forEach(b => b.classList.remove('speaking'));
+function speakPhraseLine(text, phonetic, locale, btnSelector) {
+  const buttons = btnSelector ? Array.from(document.querySelectorAll(btnSelector)) : [];
+  const voice = findVoice(locale);
+  if (voiceSpeaks(locale, voice)) {
+    speakLines([text], locale, buttons, 0.9);
     return;
   }
-  const utt = new SpeechSynthesisUtterance(text);
-  utt.lang = locale || 'en-US';
-  const voice = findVoice(locale || 'en-US');
-  if (voice) utt.voice = voice;
-  utt.rate = 0.9; utt.pitch = 1.0;
-  const btns = btnSelector ? Array.from(document.querySelectorAll(btnSelector)) : [];
-  btns.forEach(b => b.classList.add('speaking'));
-  utt.onend = utt.onerror = () => btns.forEach(b => b.classList.remove('speaking'));
-  window.speechSynthesis.speak(utt);
+  // No voice for that language: say the phonetic slowly, the way a person would coach it.
+  const coach = (phonetic || text || '').replace(/[-–]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (coach) speakLines([coach], narrationLocale(), buttons, 0.78);
 }
 
 // "Say hello" in the local language, recorded-speaker style via on-device TTS.
@@ -2199,8 +2291,8 @@ window.__myatlasticSayHello = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c) return;
   const greeting = helloFor(c);
-  const locale = SPEECH_LOCALE[c.n] || 'en-US';
-  speakInLocale(greeting.hi, locale, '.hello-speak');
+  const locale = SPEECH_LOCALE[c.n] || narrationLocale();
+  speakPhraseLine(greeting.hi, greeting.phon, locale, '.hello-speak');
 };
 
 // Speak any phrasebook line (hello / nice to meet you / thank you / goodbye).
@@ -2209,16 +2301,59 @@ window.__myatlasticSpeakPhrase = (countryName, key) => {
   if (!c) return;
   const p = phrasesFor(c).find(x => x.key === key);
   if (!p) return;
-  const locale = SPEECH_LOCALE[c.n] || 'en-US';
-  speakInLocale(p.t, locale, '.phrase-speak.k-' + key);
+  const locale = SPEECH_LOCALE[c.n] || narrationLocale();
+  speakPhraseLine(p.t, p.p, locale, '.phrase-speak.k-' + key);
 };
 
-// Read-aloud of the country's detail text, so pre-readers get the same content.
+// A short spoken tour: the surprise, the capital, one animal, one dish, one place.
+// Not the encyclopedia paragraph.
+function sayWow(wow) {
+  let s = String(wow || '').trim();
+  const fixes = [
+    [/^Has\b/, 'It has'],
+    [/^Runs\b/, 'It runs'],
+    [/^Gave\b/, 'It gave'],
+    [/^Made\b/, "It's made"],
+    [/^Home to\b/, "It's home to"],
+    [/^Invented\b/, 'It invented'],
+    [/^So big\b/, "It's so big"],
+    [/^Measures\b/, 'It measures'],
+  ];
+  for (let i = 0; i < fixes.length; i++) {
+    if (fixes[i][0].test(s)) { s = s.replace(fixes[i][0], fixes[i][1]); break; }
+  }
+  if (s && !/[.!?]$/.test(s)) s += '.';
+  return s;
+}
+
+function spokenTour(c) {
+  const lines = [c.n + '.'];
+  const wow = sayWow(wowFor(c));
+  if (wow) lines.push(wow);
+  lines.push('The capital is ' + c.cap + '.');
+  const animal = animalFor(c);
+  if (animal) {
+    const name = String(animal[0]).replace(/\s*\([^)]*\)/g, '').trim();
+    if (name) lines.push('You might spot a ' + name.charAt(0).toLowerCase() + name.slice(1) + '.');
+  }
+  if (c.food) {
+    const dish = c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim();
+    if (dish) lines.push('A dish to try: ' + dish + '.');
+  }
+  const lm = landmarkFor(c);
+  const said = lines.join(' ').toLowerCase();
+  if (lm && lm.fact && said.indexOf(lm.name.toLowerCase()) === -1) {
+    const fact = /[.!?]$/.test(lm.fact) ? lm.fact : lm.fact + '.';
+    lines.push(lm.name + '. ' + fact);
+  }
+  return lines;
+}
+
 window.__myatlasticReadAloud = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c) return;
-  const parts = [c.n + '.', wowFor(c), 'Capital: ' + c.cap + '.', c.h];
-  speakInLocale(parts.filter(Boolean).join(' '), 'en-US', '.read-aloud-btn');
+  const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
+  speakLines(spokenTour(c), narrationLocale(), buttons, 0.96);
 };
 
 function $(id) { return document.getElementById(id); }
@@ -2238,8 +2373,10 @@ function setMode(newMode) {
   document.body.classList.add('mode-' + newMode);
   if (state.kidsMode) document.body.classList.add('kids');
 
+  const tabFor = { daily: 'today', mystery: 'today', compare: 'explore', currency: 'explore', game: 'explore' };
+  const tab = tabFor[newMode] || newMode;
   document.querySelectorAll('#mode-tabs button').forEach(b => {
-    b.classList.toggle('active', b.dataset.mode === newMode);
+    b.classList.toggle('active', b.dataset.mode === tab);
   });
   document.querySelectorAll('.view').forEach(v => {
     v.classList.toggle('active', v.id === 'view-' + newMode);
@@ -2248,11 +2385,12 @@ function setMode(newMode) {
   // On the web, the deeper features are app-only — show a download wall.
   if (IS_WEB && WEB_APP_ONLY.indexOf(newMode) !== -1) {
     const titles = { quiz: 'Quizzes live in the app', game: 'Spell-the-Country is in the app', compare: 'Compare countries in the app', currency: 'The currency converter is in the app' };
-    $('view-' + newMode).innerHTML = webWallHtml(titles[newMode] || 'Get the full app', 'Play this and a lot more — passport, anthems, all quizzes and games — in the full Atlastic on iPhone & iPad.');
+    $('view-' + newMode).innerHTML = webWallHtml(titles[newMode] || 'Get the full app', 'Play this and a lot more — passport, anthems, all quizzes and games — in the full Myatlastic on iPhone & iPad.');
     return;
   }
 
-  if (newMode === 'quiz') renderQuiz();
+  if (newMode === 'today') renderToday();
+  else if (newMode === 'quiz') renderQuiz();
   else if (newMode === 'daily') renderDaily();
   else if (newMode === 'compare') renderCompare();
   else if (newMode === 'currency') renderCurrency();
@@ -2384,7 +2522,7 @@ function renderDetails() {
   const root = $('details-pane');
   const c = state.activeCountry;
   if (!c) {
-    root.innerHTML = '<div class="placeholder">Click a country in the list or on the globe to see capital, flag, currency, language, religion, culture, history and notable figures.</div>';
+    root.innerHTML = '<div class="placeholder">Tap a country on the globe or in the list.</div>';
     return;
   }
 
@@ -2427,6 +2565,30 @@ function renderDetails() {
   });
   html += '</div>';
 
+  const animal = animalFor(c);
+  if (c.food || animal || c.sport || c.attire) {
+    html += '<div class="quick-facts">';
+    if (c.food) html += '<div class="qf-item"><div class="qf-label">🍽 Iconic dish</div><div class="qf-body">' + escapeHtml(c.food) + '</div></div>';
+    if (animal) html += '<div class="qf-item"><div class="qf-label">' + animal[1] + ' Wildlife</div><div class="qf-body"><b>' + escapeHtml(animal[0]) + '</b></div></div>';
+    if (c.sport) html += '<div class="qf-item"><div class="qf-label">⚽ Sport</div><div class="qf-body">' + escapeHtml(c.sport) + '</div></div>';
+    if (c.attire) html += '<div class="qf-item"><div class="qf-label">👘 Attire</div><div class="qf-body">' + escapeHtml(c.attire) + '</div></div>';
+    html += '</div>';
+  }
+
+  html += '<div class="fact-grid">';
+  html += '<div class="fact-label">Capital</div><div class="fact-value">' + escapeHtml(c.cap) + '</div>';
+  html += '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang) + '</div>';
+  html += '</div>';
+
+  const lm = landmarkFor(c);
+  if (lm) {
+    html += '<div class="landmark-card" onclick="window.__myatlasticShowOnGlobe(' + cq + ')" title="Show on globe">' +
+      '<div class="landmark-head">📍 ' + escapeHtml(lm.name) + '</div>' +
+      '<div class="landmark-fact">' + escapeHtml(lm.fact) + '</div>' +
+      '<div class="landmark-cta">🌍 Show me on the globe →</div>' +
+      '</div>';
+  }
+
   // NATIONAL ANTHEM (opening) — synthesized on-device; only shown where we have
   // a verified public-domain melody.
   if (ANTHEMS[c.n]) {
@@ -2445,8 +2607,8 @@ function renderDetails() {
     html += '<div class="detail-image"><div class="img-locked" onclick="window.__myatlasticOpenPaywall()"><div class="lock-icon">🔒</div><div class="lock-label">Pro · tap to unlock</div></div></div>';
   }
 
+  const lt = localTimeFor(c);
   html += '<div class="fact-grid">';
-  html += '<div class="fact-label">Capital</div><div class="fact-value">' + escapeHtml(c.cap) + '</div>';
   if (c.pron) {
     html += '<div class="fact-label">Pronounced</div><div class="fact-value" style="font-style:italic;color:var(--accent-2)">' + escapeHtml(c.pron) + '</div>';
   }
@@ -2454,35 +2616,11 @@ function renderDetails() {
     html += '<div class="fact-label">Population</div><div class="fact-value">' + escapeHtml(c.pop) + '</div>';
   }
   html += '<div class="fact-label">Currency</div><div class="fact-value">' + escapeHtml(c.cur) + '</div>';
-  html += '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang) + '</div>';
   if (c.indep) {
-    html += '<div class="fact-label">Sovereign</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
+    html += '<div class="fact-label">Independence</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
   }
-  html += '<div class="fact-label">Coords</div><div class="fact-value" style="font-family:monospace;font-size:12px">' + c.lat.toFixed(2) + '°, ' + c.lon.toFixed(2) + '°</div>';
-  const lt = localTimeFor(c);
-  html += '<div class="fact-label">Time now</div><div class="fact-value">' + (lt.hour24 >= 6 && lt.hour24 < 19 ? '☀️ ' : '🌙 ') + escapeHtml(lt.text) + ' <span style="color:var(--ink-dim);font-size:11px">(approx)</span></div>';
+  html += '<div class="fact-label">Time now</div><div class="fact-value">' + (lt.hour24 >= 6 && lt.hour24 < 19 ? '☀️ ' : '🌙 ') + escapeHtml(lt.text) + '</div>';
   html += '</div>';
-
-  // Quick-look chips: dish, wildlife, sport, attire (free for all)
-  const animal = animalFor(c);
-  if (c.food || animal || c.sport || c.attire) {
-    html += '<div class="quick-facts">';
-    if (c.food) html += '<div class="qf-item"><div class="qf-label">🍽 Iconic dish</div><div class="qf-body">' + escapeHtml(c.food) + '</div></div>';
-    if (animal) html += '<div class="qf-item"><div class="qf-label">' + animal[1] + ' Wildlife</div><div class="qf-body"><b>' + escapeHtml(animal[0]) + '</b></div></div>';
-    if (c.sport) html += '<div class="qf-item"><div class="qf-label">⚽ Sport</div><div class="qf-body">' + escapeHtml(c.sport) + '</div></div>';
-    if (c.attire) html += '<div class="qf-item"><div class="qf-label">👘 Attire</div><div class="qf-body">' + escapeHtml(c.attire) + '</div></div>';
-    html += '</div>';
-  }
-
-  // FAMOUS LANDMARK — tappable to fly the globe there, with one fun fact.
-  const lm = landmarkFor(c);
-  if (lm) {
-    html += '<div class="landmark-card" onclick="window.__myatlasticShowOnGlobe(' + cq + ')" title="Show on globe">' +
-      '<div class="landmark-head">📍 ' + escapeHtml(lm.name) + '</div>' +
-      '<div class="landmark-fact">' + escapeHtml(lm.fact) + '</div>' +
-      '<div class="landmark-cta">🌍 Show me on the globe →</div>' +
-      '</div>';
-  }
 
   const sections = [
     ['Short History', c.h],
@@ -2509,14 +2647,14 @@ function renderDetails() {
   if (!free) {
     html += '<div class="upgrade-cta">';
     html += '<h3>🔓 Unlock every country in the world</h3>';
-    html += '<p>' + (IS_WEB ? 'The full Atlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and full Daily streak.') + '</p>';
+    html += '<p>' + (IS_WEB ? 'The full Myatlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and full Daily streak.') + '</p>';
     html += IS_WEB
       ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>'
       : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>';
     html += '</div>';
   }
 
-  html += '<div class="footer-note">Static reference data. Histories are deliberately brief. Image: Wikimedia Commons.</div>';
+  html += '<div class="footer-note">On the map: ' + c.lat.toFixed(1) + '°, ' + c.lon.toFixed(1) + '°. Photos from Wikimedia Commons.</div>';
   root.innerHTML = html;
 }
 
@@ -3531,6 +3669,68 @@ function renderHuntOverlay() {
 }
 
 /* ============================================================
+ * TODAY — daily country, Mystery, and passport progress
+ * ============================================================ */
+function renderToday() {
+  const root = $('view-today');
+  const daily = getDaily();
+  const done = getLastDailyDay() === todaySeed();
+  const streak = getStreak();
+  const viewed = getViewedSet();
+  const total = SOVEREIGN_COUNTRIES.length;
+  const visited = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
+  const home = homeCountry();
+  let html = '<div class="today-wrap">';
+  html += '<button type="button" class="today-card" id="today-daily">' +
+    '<div class="today-kicker">Today\'s country' + (done ? ' · done' : '') + '</div>' +
+    '<h3>' + (daily.flag || '') + ' ' + escapeHtml(daily.n) + '</h3>' +
+    '<p>' + escapeHtml(wowFor(daily)) + '</p>' +
+    '<span class="today-go">' + (done ? 'Streak ' + streak + ' · see it again' : 'Answer today\'s question') + '</span>' +
+    '</button>';
+  html += '<button type="button" class="today-card" id="today-mystery">' +
+    '<div class="today-kicker">Game</div>' +
+    '<h3>🕵️ Mystery Country</h3>' +
+    '<p>Clues about animals, food, and language. Guess the country.</p>' +
+    '<span class="today-go">Play</span>' +
+    '</button>';
+  html += '<button type="button" class="today-card" id="today-passport">' +
+    '<div class="today-kicker">Passport</div>' +
+    '<h3>' + visited + ' / ' + total + ' countries</h3>' +
+    '<p>' + (streak > 0 ? streak + '-day streak. ' : '') + 'Stamps, badges, and the countries still to visit.</p>' +
+    '<span class="today-go">Open passport</span>' +
+    '</button>';
+  if (home) {
+    html += '<button type="button" class="today-card" id="today-home">' +
+      '<div class="today-kicker">Your country</div>' +
+      '<h3>' + (home.flag || '') + ' ' + escapeHtml(home.n) + '</h3>' +
+      '<span class="today-go">Show it on the globe</span>' +
+      '</button>';
+  }
+  html += '<div class="today-more">' +
+    '<button type="button" data-mode="compare">Compare</button>' +
+    '<button type="button" data-mode="currency">Currency</button>' +
+    '<button type="button" data-mode="game">Spell</button>' +
+    '</div>';
+  html += '</div>';
+  root.innerHTML = html;
+  $('today-daily').onclick = () => setMode('daily');
+  $('today-mystery').onclick = () => setMode('mystery');
+  $('today-passport').onclick = () => setMode('passport');
+  const homeBtn = $('today-home');
+  if (homeBtn) homeBtn.onclick = () => {
+    state.activeCountry = home;
+    renderList();
+    renderDetails();
+    setMode('explore');
+    if (window.innerWidth <= 900) setMobilePane('globe');
+    if (globeAPI) globeAPI.focus(home);
+  };
+  root.querySelectorAll('.today-more button').forEach(b => {
+    b.onclick = () => setMode(b.dataset.mode);
+  });
+}
+
+/* ============================================================
  * DAILY
  * ============================================================ */
 function renderDaily() {
@@ -3557,7 +3757,7 @@ function renderDaily() {
   if (c.pop) html += '<div class="fact-label">Population</div><div class="fact-value">' + escapeHtml(c.pop) + '</div>';
   html += '<div class="fact-label">Currency</div><div class="fact-value">' + escapeHtml(c.cur) + '</div>';
   html += '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang) + '</div>';
-  if (c.indep) html += '<div class="fact-label">Sovereign</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
+  if (c.indep) html += '<div class="fact-label">Independence</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
   html += '</div>';
   if (c.food || c.sport || c.attire) {
     html += '<div class="quick-facts">';
@@ -3652,7 +3852,7 @@ function renderCompareCol(c, label) {
   if (c.pop) html += '<div class="fact-label">Population</div><div class="fact-value">' + escapeHtml(c.pop) + '</div>';
   html += '<div class="fact-label">Currency</div><div class="fact-value">' + escapeHtml(c.cur) + '</div>';
   html += '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang) + '</div>';
-  if (c.indep) html += '<div class="fact-label">Sovereign</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
+  if (c.indep) html += '<div class="fact-label">Independence</div><div class="fact-value">' + escapeHtml(c.indep) + '</div>';
   if (c.sport) html += '<div class="fact-label">Sport</div><div class="fact-value">' + escapeHtml(c.sport) + '</div>';
   if (c.food) html += '<div class="fact-label">Food</div><div class="fact-value">' + escapeHtml(c.food) + '</div>';
   if (c.attire) html += '<div class="fact-label">Attire</div><div class="fact-value">' + escapeHtml(c.attire) + '</div>';
@@ -4157,7 +4357,7 @@ function renderPaywall() {
     root.innerHTML = '<div class="center-card paywall-card webwall">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
       '<div class="webwall-badge">📱 In the app</div>' +
-      '<h2 class="webwall-title">Get Atlastic Pro on iPhone &amp; iPad</h2>' +
+      '<h2 class="webwall-title">Get Myatlastic Pro on iPhone &amp; iPad</h2>' +
       '<p class="webwall-blurb">Every country in the world in full depth, all quizzes &amp; games, the passport, compare, currency converter and more — in the full app.</p>' +
       '<ul class="feature-list" style="text-align:left">' +
         '<li>Every country in the world — full depth</li>' +
@@ -4188,9 +4388,9 @@ function renderPaywall() {
     '<li>Family Sharing — one purchase covers your Apple Family</li>' +
     '</ul>' +
     '<div class="plan-grid">' +
-    '<div class="plan" data-plan="monthly"><div class="plan-name">Monthly</div><div class="plan-price">$9.99</div><div class="plan-detail">/month · 1-week trial</div></div>' +
-    '<div class="plan recommended selected" data-plan="annual"><div class="plan-name">Annual</div><div class="plan-price">$69.99</div><div class="plan-detail">/year · save 42% · 1-week trial</div></div>' +
-    '<div class="plan" data-plan="lifetime"><div class="plan-name">Lifetime</div><div class="plan-price">$149</div><div class="plan-detail">pay once · all future updates</div></div>' +
+    '<div class="plan recommended selected" data-plan="annual"><div class="plan-name">Annual</div><div class="plan-price">$29.99</div><div class="plan-detail">/year · save 50% · 1-week trial</div></div>' +
+    '<div class="plan" data-plan="monthly"><div class="plan-name">Monthly</div><div class="plan-price">$4.99</div><div class="plan-detail">/month · 1-week trial</div></div>' +
+    '<div class="plan" data-plan="lifetime"><div class="plan-name">Lifetime</div><div class="plan-price">$59</div><div class="plan-detail">pay once · all future updates</div></div>' +
     '</div>' +
     '<div style="font-size:13px;color:var(--accent);margin:14px 0;padding:10px 12px;border:1px solid var(--accent);border-radius:10px">▶ Monthly &amp; Annual start with a 1-week free trial — cancel anytime before it ends and you won\'t be charged. Lifetime is a one-time purchase with all future updates included.</div>' +
     '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:13px">Upgrade to Pro</button>' +
@@ -4219,7 +4419,7 @@ function renderPaywall() {
       // Redirect to the hosted checkout (cards, Apple Pay, Google Pay, PayPal).
       window.location.href = res.url;
     } else if (res.webUnconfigured) {
-      alert('Web checkout is launching soon. For now you can subscribe to Atlastic Pro in the iOS app — one tap, secure Apple payment.');
+      alert('Web checkout is launching soon. For now you can subscribe to Myatlastic Pro in the iOS app — one tap, secure Apple payment.');
     } else if (res.cancelled) {
       /* user dismissed the purchase sheet — no-op */
     } else {
@@ -4895,7 +5095,18 @@ function setupGlobe(THREE) {
       pinsGroup.visible = !on;        // swap dots for flags to avoid clutter
       if (on) autoSpin = true;        // let it spin so you see them all go by
     },
-    resize
+    resize,
+    project(c) {
+      try {
+        const p = latLonToVec3(c.lat, c.lon, 1.55, THREE);
+        p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
+        const ndc = p.project(camera);
+        return {
+          x: (ndc.x * 0.5 + 0.5) * wrap.clientWidth,
+          y: (-ndc.y * 0.5 + 0.5) * wrap.clientHeight
+        };
+      } catch (e) { return null; }
+    }
   };
 }
 
@@ -4947,6 +5158,175 @@ function renderFlatMap() {
 }
 
 /* ============================================================
+ * FIRST RUN — age, home country, then the globe opens on that pin
+ * ============================================================ */
+const REGION_TO_COUNTRY = {
+  US: 'United States', GB: 'United Kingdom', UK: 'United Kingdom',
+  FR: 'France', JP: 'Japan', BR: 'Brazil', EG: 'Egypt', KE: 'Kenya',
+  IN: 'India', MX: 'Mexico', AU: 'Australia', CA: 'Canada', DE: 'Germany',
+  NG: 'Nigeria', ZA: 'South Africa', ES: 'Spain', IT: 'Italy', CN: 'China',
+  KR: 'South Korea', KP: 'North Korea', IE: 'Ireland', NL: 'Netherlands',
+  NZ: 'New Zealand', SE: 'Sweden', NO: 'Norway', DK: 'Denmark', FI: 'Finland',
+  PL: 'Poland', PT: 'Portugal', GR: 'Greece', TR: 'Turkey', AE: 'United Arab Emirates',
+  SA: 'Saudi Arabia', AR: 'Argentina', CL: 'Chile', CO: 'Colombia', PE: 'Peru',
+  GH: 'Ghana', TZ: 'Tanzania', ET: 'Ethiopia', MA: 'Morocco', TH: 'Thailand',
+  VN: 'Vietnam', PH: 'Philippines', ID: 'Indonesia', MY: 'Malaysia', SG: 'Singapore',
+  PK: 'Pakistan', BD: 'Bangladesh', JM: 'Jamaica', CU: 'Cuba', CZ: 'Czech Republic',
+  AT: 'Austria', CH: 'Switzerland', BE: 'Belgium', UA: 'Ukraine', RU: 'Russia',
+  IL: 'Israel', QA: 'Qatar', KW: 'Kuwait', TW: 'Taiwan', CI: "Côte d'Ivoire"
+};
+
+function guessHomeCountry() {
+  let region = '';
+  try {
+    region = (new Intl.Locale(navigator.language || 'en').region || '').toUpperCase();
+  } catch (e) {
+    const parts = String(navigator.language || '').split('-');
+    region = (parts[1] || '').toUpperCase();
+  }
+  const name = REGION_TO_COUNTRY[region];
+  return (name && COUNTRIES.find(c => c.n === name)) || null;
+}
+
+function flatProject(c) {
+  const pane = document.querySelector('.pane.globe');
+  if (!pane) return null;
+  // The flat map is a 2:1 viewBox, letterboxed inside the pane (xMidYMid meet).
+  const w = pane.clientWidth, h = pane.clientHeight;
+  const vbAspect = 2;
+  let mapW, mapH, offX, offY;
+  if (w / h > vbAspect) {
+    mapH = h; mapW = h * vbAspect; offX = (w - mapW) / 2; offY = 0;
+  } else {
+    mapW = w; mapH = w / vbAspect; offX = 0; offY = (h - mapH) / 2;
+  }
+  return {
+    x: offX + ((c.lon + 180) / 360) * mapW,
+    y: offY + ((90 - c.lat) / 180) * mapH
+  };
+}
+
+function whenGlobeReady(fn, tries) {
+  if (globeAPI || document.body.classList.contains('flat-mode')) { fn(); return; }
+  if ((tries || 0) > 50) { fn(); return; }
+  setTimeout(() => whenGlobeReady(fn, (tries || 0) + 1), 200);
+}
+
+function showCoach(c) {
+  const pane = document.querySelector('.pane.globe');
+  if (!pane || !c) return;
+  const old = document.getElementById('coach-mark');
+  if (old) old.remove();
+  const tip = document.createElement('button');
+  tip.id = 'coach-mark';
+  tip.className = 'coach-mark';
+  tip.type = 'button';
+  tip.innerHTML = '<b>' + escapeHtml(c.n) + '</b><br>Drag to spin · tap a pin';
+  pane.appendChild(tip);
+  let frames = 0;
+  const place = () => {
+    if (!tip.isConnected) return;
+    const pt = (globeAPI && globeAPI.project && globeAPI.project(c)) || flatProject(c);
+    if (pt) {
+      const x = Math.max(16, Math.min(pt.x, pane.clientWidth - 16));
+      const y = Math.max(28, Math.min(pt.y, pane.clientHeight - 8));
+      tip.style.left = x + 'px';
+      tip.style.top = y + 'px';
+    }
+    if (frames++ < 180) requestAnimationFrame(place);
+  };
+  place();
+  const dismiss = () => { if (tip.isConnected) tip.remove(); };
+  tip.onclick = (ev) => { ev.stopPropagation(); dismiss(); };
+  pane.addEventListener('pointerdown', dismiss, { once: true });
+  setTimeout(dismiss, 7000);
+  try { localStorage.setItem('myatlastic_coach', '1'); } catch (e) {}
+}
+
+function showHomeOnGlobe(c, coach) {
+  if (!c) return;
+  state.activeCountry = c;
+  renderList();
+  renderDetails();
+  const active = document.querySelector('.country-item.active');
+  if (active && active.scrollIntoView) active.scrollIntoView({ block: 'center' });
+  if (window.innerWidth <= 900) setMobilePane('globe');
+  whenGlobeReady(() => {
+    if (globeAPI) globeAPI.focus(c);
+    else if (document.body.classList.contains('flat-mode')) renderFlatMap();
+    if (coach) showCoach(c);
+  });
+}
+
+function openWelcome() {
+  if (document.getElementById('welcome-modal')) return;
+  let params;
+  try { params = new URLSearchParams(window.location.search); } catch (e) { params = new URLSearchParams(); }
+  if (params.get('challenge') || params.get('c')) return;
+  if (homeCountry()) return;
+
+  const modal = document.createElement('div');
+  modal.id = 'welcome-modal';
+  modal.className = 'ts-modal';
+  document.body.appendChild(modal);
+
+  const guess = guessHomeCountry();
+  let picked = guess;
+
+  function finish() {
+    const country = picked || homeCountry() || guess || COUNTRIES.find(c => c.n === 'Japan');
+    if (country) {
+      try { localStorage.setItem('myatlastic_home', country.n); } catch (e) {}
+    }
+    modal.remove();
+    applySettings();
+    let coach = true;
+    try { coach = localStorage.getItem('myatlastic_coach') !== '1'; } catch (e) {}
+    showHomeOnGlobe(country, coach);
+  }
+
+  function showHome() {
+    modal.innerHTML = '<div class="ts-box" role="dialog" aria-labelledby="welcome-title">' +
+      '<h2 class="ts-title" id="welcome-title">Where do you live?</h2>' +
+      '<p class="ts-intro">The globe opens there, and that country stays free.</p>' +
+      '<input type="text" class="search-input" id="welcome-search" placeholder="Search for your country" autocomplete="off">' +
+      '<div class="welcome-results" id="welcome-results"></div>' +
+      '<button class="btn-primary" id="welcome-go" style="width:100%">This is home</button>' +
+      '</div>';
+    const search = $('welcome-search');
+    const results = $('welcome-results');
+    const go = $('welcome-go');
+    function paint(q) {
+      const query = (q || '').trim().toLowerCase();
+      let list = COUNTRIES.filter(c => !query || c.n.toLowerCase().includes(query) || c.cap.toLowerCase().includes(query));
+      if (!query && picked) {
+        list = [picked].concat(list.filter(c => c !== picked));
+      }
+      list = list.slice(0, 12);
+      results.innerHTML = list.map(c =>
+        '<button type="button" class="welcome-hit' + (picked && picked.n === c.n ? ' on' : '') + '" data-name="' + escapeHtml(c.n) + '">' +
+        '<span>' + (c.flag || '') + '</span><span>' + escapeHtml(c.n) + '</span></button>'
+      ).join('') || '<div class="set-hint">No countries match.</div>';
+      results.querySelectorAll('[data-name]').forEach(b => {
+        b.onclick = () => {
+          picked = COUNTRIES.find(c => c.n === b.dataset.name);
+          paint(search.value);
+        };
+      });
+      go.disabled = !picked;
+      go.textContent = picked ? 'I live in ' + picked.n : 'This is home';
+    }
+    search.addEventListener('input', () => paint(search.value));
+    search.addEventListener('keydown', e => { if (e.key === 'Enter' && picked) finish(); });
+    paint('');
+    search.focus();
+    go.onclick = finish;
+  }
+
+  showHome();
+}
+
+/* ============================================================
  * UI HOOKUP
  * ============================================================ */
 function updateStreakDisplay() {
@@ -4962,14 +5342,14 @@ if (IS_WEB) {
   try {
     const bar = document.createElement('div');
     bar.className = 'web-getapp-bar';
-    bar.innerHTML = '<span class="wb-msg">You\'re exploring the <b>web preview</b> — the full Atlastic is on iPhone &amp; iPad.</span>' +
+    bar.innerHTML = '<span class="wb-msg">You\'re exploring the <b>web preview</b> — the full Myatlastic is on iPhone &amp; iPad.</span>' +
       '<button onclick="window.__getApp()">' + (APP_LIVE ? '📱 Get the app' : '📱 Coming soon') + '</button>';
     const tabs = document.getElementById('mode-tabs');
     if (tabs && tabs.parentNode) tabs.parentNode.insertBefore(bar, tabs);
   } catch (e) {}
 }
 
-document.querySelectorAll('#mode-tabs button').forEach(b => {
+document.querySelectorAll('#mode-tabs button, .explore-more button').forEach(b => {
   b.onclick = () => setMode(b.dataset.mode);
 });
 document.querySelectorAll('.mobile-bar button').forEach(b => {
@@ -5018,26 +5398,21 @@ try {
   renderList();
   renderDetails();
   setMode('explore');
-  if (window.innerWidth <= 900) setMobilePane('list');
+  if (window.innerWidth <= 900) setMobilePane('globe');
   initGlobe();
   Billing.init();
   handleDeepLink();
 
-  // Show onboarding tip for brand new visitors
+  let linked = false;
   try {
-    if (!localStorage.getItem('myatlastic_visited')) {
-      localStorage.setItem('myatlastic_visited', '1');
-      setTimeout(() => {
-        if (window.innerWidth <= 900) {
-          const tip = document.createElement('div');
-          tip.className = 'onboard-tip';
-          tip.textContent = 'Tap any country to explore it';
-          document.body.appendChild(tip);
-          setTimeout(() => tip.remove(), 4500);
-        }
-      }, 1500);
-    }
+    const params = new URLSearchParams(window.location.search);
+    linked = !!(params.get('challenge') || params.get('c'));
   } catch (e) {}
+  const home = homeCountry();
+  if (linked) {
+    whenGlobeReady(() => { if (state.activeCountry && globeAPI) globeAPI.focus(state.activeCountry); });
+  } else if (!home) openWelcome();
+  else setMode('today');
 
   console.log('Myatlastic v7 ready · ' + COUNTRIES.length + ' countries · viewport ' + window.innerWidth + 'x' + window.innerHeight);
 
