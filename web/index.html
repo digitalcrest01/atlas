@@ -485,13 +485,8 @@
     flex-wrap: wrap;
   }
   .detail-flag { font-size: 34px; }
-  .local-time {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    margin: 4px 0 14px; padding: 12px 14px; border-radius: 12px;
-    background: var(--panel); border: 1px solid var(--line);
-  }
-  .local-time-label { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
-  .local-time-clock { font-size: 28px; font-weight: 800; }
+  .local-time { font-size: 12px; color: var(--ink-dim); white-space: nowrap; margin-right: 4px; font-variant-numeric: tabular-nums; }
+  .local-time-clock { font-weight: 600; }
   .detail-image {
     margin: 14px 0;
     border-radius: 6px;
@@ -644,8 +639,8 @@
     position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
   }
-  /* LISTEN card — the spoken visit */
-  .listen-card, .phrasebook {
+  /* TOUR card and PHRASEBOOK */
+  .tour-cta, .phrasebook {
     background: var(--panel-2);
     border: 1px solid var(--line);
     border-radius: 12px;
@@ -659,16 +654,9 @@
     font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-2); font-weight: 700;
   }
   .lc-len, .pb-hint { font-size: 11px; color: var(--ink-dim); white-space: nowrap; }
-  .lc-controls { display: flex; align-items: center; gap: 8px; margin: 4px 0 10px; }
-  .lc-controls .btn-primary { flex: 0 0 auto; min-width: 118px; min-height: 44px; }
-  .lc-controls .back-btn { min-height: 44px; }
-  .lc-controls .back-btn[disabled], .lc-controls .btn-primary[disabled] { opacity: 0.45; cursor: default; }
-  .lc-progress { margin-left: auto; font-size: 12px; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
-  .lc-line { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; }
-  .lc-sub { margin: 6px 0 0; font-size: 13px; line-height: 1.45; color: var(--ink-dim); overflow-wrap: anywhere; }
-  .lc-next { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
-  .lc-next .chip { min-height: 36px; }
-  .lc-langs, .pb-langs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .tour-cta-sub { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-dim); }
+  .tour-cta .tour-launch { min-height: 44px; }
+  .pb-langs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
   .pb-lang {
     display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;
     min-height: 40px; padding: 5px 12px;
@@ -730,18 +718,20 @@
   .landmark-card:active { transform: scale(0.99); }
   .landmark-head { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
   .landmark-fact { font-size: 13px; line-height: 1.45; color: var(--ink-dim); }
-  .landmark-cta { font-size: 12px; color: var(--accent); margin-top: 8px; font-weight: 600; }
   .tour-launch { width: 100%; margin-top: 12px; }
   .tour-overlay {
     position: fixed; inset: 0; z-index: 9500;
-    background: rgba(6, 8, 12, 0.55);
+    background: transparent;
+    pointer-events: none;
     display: flex; align-items: flex-end; justify-content: center;
-    padding: 16px 16px 28px;
+    padding: 16px 16px max(16px, env(safe-area-inset-bottom, 0px));
   }
+  .tour-overlay .tour-card { pointer-events: auto; }
   .tour-card {
     width: min(520px, 100%);
-    max-height: min(92vh, 820px);
+    max-height: min(62vh, 640px);
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -766,7 +756,7 @@
   .tour-next-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
   .tour-next-row[hidden], .tour-card .tour-note[hidden] { display: none; }
   .tour-card .tour-note { margin-top: 8px; font-size: 12px; color: var(--ink-dim); }
-  .tour-actions button, .tour-talk button, .tour-talk input { min-height: 44px; }
+  .tour-actions button { min-height: 44px; }
   .tour-stage {
     position: relative;
     height: 220px;
@@ -783,8 +773,13 @@
     object-fit: cover;
     opacity: 0;
   }
-  .tour-frame.pan-a { animation: tourFade 0.55s ease forwards, tourKenA 8s ease-out forwards; }
-  .tour-frame.pan-b { animation: tourFade 0.55s ease forwards, tourKenB 8s ease-out forwards; }
+  .tour-frame.ken-in { animation: tourFade 0.7s ease forwards, tourKenIn 14s ease-in-out forwards; }
+  .tour-frame.ken-out { animation: tourFade 0.7s ease forwards, tourKenOut 14s ease-in-out forwards; }
+  .tour-frame.pan-left { animation: tourFade 0.7s ease forwards, tourPanLeft 14s ease-in-out forwards; }
+  .tour-frame.pan-right { animation: tourFade 0.7s ease forwards, tourPanRight 14s ease-in-out forwards; }
+  .tour-frame.pan-up { animation: tourFade 0.7s ease forwards, tourPanUp 14s ease-in-out forwards; }
+  .tour-frame.pan-down { animation: tourFade 0.7s ease forwards, tourPanDown 14s ease-in-out forwards; }
+  @media (prefers-reduced-motion: reduce) { .tour-frame { animation: tourFade 0.7s ease forwards; } }
   .tour-route { height: 8px; margin: 14px 0 8px; display: flex; gap: 6px; align-items: center; }
   .tour-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
   .tour-dot.on { background: var(--accent); transform: scale(1.3); }
@@ -794,17 +789,33 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
-  .tour-talk { display: flex; gap: 8px; margin-top: 10px; }
+  .tour-talk { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+  .tour-ask {
+    min-height: 48px; width: 100%; border-radius: 999px; cursor: pointer;
+    background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); font: inherit; font-size: 15px; font-weight: 700;
+  }
+  .tour-ask.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  .tour-ask:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tour-ask-hint { margin: 0; font-size: 12px; color: var(--ink-dim); text-align: center; overflow-wrap: anywhere; }
   .tour-talk input {
-    flex: 1; min-width: 0;
+    min-height: 44px; min-width: 0;
     background: var(--panel-2); color: var(--ink);
     border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
-    font: inherit; font-size: 15px;
+    font: inherit; font-size: 16px;
   }
-  .tour-mic.on { color: var(--accent); border-color: var(--accent); }
+  .tour-talk input[hidden], .tour-ask[hidden] { display: none; }
+  .tour-sub-label { display: inline-block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); margin-right: 4px; font-weight: 700; }
+  #globe-canvas { transition: transform 0.6s ease; }
+  @media (max-width: 900px) {
+    /* During a tour the card fills the bottom; lift the globe so the country shows above it. */
+    body.touring #globe-canvas { transform: translateY(-9%); }
+  }
   @media (max-width: 700px) {
-    .tour-stage { height: 140px; }
-    .tour-animal { font-size: 40px; }
+    .tour-stage { height: 120px; }
+    .tour-animal { font-size: 34px; }
+    .tour-card { max-height: 56vh; padding: 14px 14px 10px; }
+    .tour-card h2 { font-size: 20px; margin: 4px 0 6px; }
+    .tour-overlay { padding: 8px 8px max(8px, env(safe-area-inset-bottom, 0px)); }
   }
   .puzzle-wrap {
     max-width: 1100px;
@@ -820,15 +831,14 @@
   .puzzle-top h2 { margin: 0; font-size: 22px; }
   .puzzle-count { color: var(--ink-dim); font-size: 13px; }
   .puzzle-board {
-    flex: 1 1 auto;
-    min-height: 0;
+    flex: 0 0 auto;
     width: 100%;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(var(--pz-cols, 3), minmax(0, 1fr));
-    grid-template-rows: repeat(var(--pz-rows, 2), minmax(0, 1fr));
-    gap: 8px;
-    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
     background: #0c1c2e;
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -839,42 +849,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    min-width: 0;
+    gap: 2px;
+    width: 76px;
+    height: 76px;
     padding: 4px;
     border-radius: 12px;
     border: 2px solid #f6e7c8;
     background: rgba(8, 16, 28, 0.92);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.28);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.28);
     touch-action: none;
-    overflow: hidden;
-    container-type: size;
+    cursor: pointer;
   }
-  .puzzle-shape { width: 86%; height: 42%; min-height: 0; }
-  .puzzle-shape svg { width: 100%; height: 100%; display: block; }
-  .puzzle-shape path { fill: #e7c27a; stroke: #3a2a12; stroke-width: 0.6; }
-  .puzzle-flag-emoji { font-size: 28px; font-size: 38cqmin; line-height: 1; }
-  .puzzle-flag-name {
-    font-size: 14cqmin;
-    font-weight: 800;
-    color: #fff;
-    line-height: 1.1;
-    text-align: center;
-    max-width: 100%;
-  }
-  .puzzle-flag.done {
-    border-color: #d4a056;
-    padding: 2px;
-  }
-  .puzzle-flag.done .puzzle-flag-emoji { font-size: 42px; font-size: 74cqmin; }
+  .puzzle-flag-emoji { font-size: 42px; line-height: 1; }
+  .puzzle-flag-name { font-size: 10px; font-weight: 800; color: #fff; line-height: 1.1; text-align: center; max-width: 100%; overflow-wrap: anywhere; }
   .puzzle-flag.is-hint {
     border-color: #ffd56a;
     box-shadow: 0 0 0 4px rgba(255, 196, 70, 0.55);
     animation: puzzlePulse 0.8s ease-in-out infinite;
   }
+  @media (max-width: 420px) { .puzzle-flag { width: 64px; height: 64px; } .puzzle-flag-emoji { font-size: 36px; } }
   .puzzle-msg { min-height: 18px; text-align: center; color: var(--ink-dim); margin: 0; flex: 0 0 auto; font-size: 14px; }
   .puzzle-msg.ok { color: var(--success, #7dcea0); }
   .puzzle-msg.no { color: #e07a5f; }
@@ -924,11 +917,38 @@
   @keyframes puzzleShake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
   @keyframes tourIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
   @keyframes tourFade { from { opacity: 0; } to { opacity: 1; } }
-  @keyframes tourKenA { from { transform: scale(1) translate3d(0,0,0); } to { transform: scale(1.16) translate3d(-3%, -2%, 0); } }
-  @keyframes tourKenB { from { transform: scale(1.08) translate3d(-2%, 0, 0); } to { transform: scale(1.18) translate3d(3%, 2%, 0); } }
+  @keyframes tourKenIn { from { transform: scale(1.02); } to { transform: scale(1.18); } }
+  @keyframes tourKenOut { from { transform: scale(1.2); } to { transform: scale(1.03); } }
+  @keyframes tourPanLeft { from { transform: scale(1.14) translate3d(4%, 0, 0); } to { transform: scale(1.14) translate3d(-4%, 0, 0); } }
+  @keyframes tourPanRight { from { transform: scale(1.14) translate3d(-4%, 0, 0); } to { transform: scale(1.14) translate3d(4%, 0, 0); } }
+  @keyframes tourPanUp { from { transform: scale(1.16) translate3d(0, 4%, 0); } to { transform: scale(1.16) translate3d(0, -4%, 0); } }
+  @keyframes tourPanDown { from { transform: scale(1.16) translate3d(0, -4%, 0); } to { transform: scale(1.16) translate3d(0, 4%, 0); } }
   @keyframes pinDrop { from { opacity: 0; transform: rotate(-45deg) translateY(-16px); } to { opacity: 1; transform: rotate(-45deg); } }
   /* PASSPORT */
-  .passport-wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 60px; }
+  .passport-wrap { max-width: 1000px; margin: 0 auto; padding: 18px 16px 60px; }
+  .pp-head h2 { margin: 0 0 4px; font-size: 22px; }
+  .pp-tools { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+  .pp-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 12px; margin-bottom: 28px; }
+  .pp-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; background: none; border: none; color: var(--ink); cursor: pointer; text-align: center; }
+  .pp-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 8px; }
+  .pp-cover { position: relative; width: 100%; aspect-ratio: 5 / 7; border-radius: 6px 10px 10px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 6px 14px rgba(0,0,0,0.35); transition: transform 0.15s ease; }
+  .pp-card:hover .pp-cover { transform: translateY(-3px) rotate(-1deg); }
+  .pp-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+  .pp-drawn { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 8px;
+    background: linear-gradient(160deg, #1f3a5f, #12233b); color: #e8d9a8; border-left: 5px solid rgba(0,0,0,0.25); }
+  .pp-drawn-flag { font-size: 34px; line-height: 1; }
+  .pp-drawn-name { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.2; }
+  .pp-drawn-word { font-size: 9px; letter-spacing: 0.24em; opacity: 0.8; }
+  .pp-stamp { position: absolute; z-index: 2; right: 6px; bottom: 6px; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    border: 2px solid #c0392b; color: #c0392b; background: rgba(255,255,255,0.85); font-weight: 900; font-size: 15px; transform: rotate(-12deg); }
+  .pp-stamp.gold { border-color: #b8860b; color: #b8860b; }
+  .pp-card:not(.got) .pp-cover { filter: saturate(0.75); }
+  .pp-name { font-size: 12px; line-height: 1.25; overflow-wrap: anywhere; }
+  .pp-open { max-width: 420px; }
+  .pp-open-cover { position: relative; width: 58%; margin: 4px auto 14px; aspect-ratio: 5 / 7; border-radius: 6px 12px 12px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 10px 24px rgba(0,0,0,0.45); }
+  .pp-your-stamp { margin: 14px 0 4px; padding: 10px 12px; border-radius: 10px; border: 1px dashed var(--line); color: var(--ink-dim); font-size: 13px; }
+  .pp-your-stamp.got { border-style: solid; border-color: #c0392b; color: var(--ink); }
   .explorer-card {
     display: flex; align-items: center; gap: 16px;
     background: linear-gradient(135deg, rgba(212,160,86,0.18), rgba(110,168,196,0.10));
@@ -945,12 +965,6 @@
   .passport-section h3 { font-size: 16px; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
   .count-pill { font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 2px 8px; font-weight: 600; }
   .passport-hint { font-size: 13px; color: var(--ink-dim); line-height: 1.5; }
-  .streak-big { font-size: 30px; font-weight: 800; color: var(--accent); margin-bottom: 14px; }
-  .reward-row { display: flex; gap: 10px; flex-wrap: wrap; }
-  .reward { flex: 1; min-width: 64px; text-align: center; padding: 12px 6px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--line); opacity: 0.45; }
-  .reward.got { opacity: 1; border-color: var(--accent); background: rgba(212,160,86,0.12); }
-  .reward-ic { font-size: 26px; }
-  .reward-lb { font-size: 11px; color: var(--ink-dim); margin-top: 4px; }
   .badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
   .badge-cell { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 12px; text-align: center; opacity: 0.5; }
   .badge-cell.got { opacity: 1; border-color: var(--accent); }
@@ -1679,7 +1693,6 @@
 <noscript><div style="padding:40px;color:#fff;background:#0b0e13;text-align:center;">This app requires JavaScript. Please enable it.</div></noscript>
 
 <script src="attractions.js"></script>
-<script src="puzzle-shapes.js"></script>
 <script src="voice/locales.js"></script>
 <script src="voice/phrases.js"></script>
 <script src="voice/voice.js"></script>
@@ -2762,172 +2775,43 @@ function paintPhrasebook(root, c, langs, lang, book) {
   });
 }
 
-/* ---------- Country narration: a short spoken visit ---------- */
-let narrationPref = 'local';  // 'local' | 'en'
-try { narrationPref = localStorage.getItem('myatlastic_narration_lang') || 'local'; } catch (e) {}
-
-// The books this device can actually hear for a narration, English first.
-function narrationChoices(c, data) {
-  return (data.languages || ['en']).filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
-}
-
-function pickNarrationBook(c, data, choices) {
-  const local = choices.filter(b => b !== 'en');
-  if (narrationPref !== 'en' && local.length) return local[0];
-  return choices.indexOf('en') !== -1 ? 'en' : (choices[0] || 'en');
-}
-
+/* ---------- The tour: one spoken visit per country ---------- */
 function narrationParts(c, data, book) {
   const locale = localeForBook(c, book);
   return (data.segments || []).map(s => ({ text: s[book] || s.en, locale: book === 'en' ? englishLocaleFor(c) : locale }));
 }
 
-function listenCardHtml(c) {
-  return '<section class="listen-card" id="listen-card" data-country="' + escapeHtml(c.n) + '" aria-labelledby="lc-title">' +
-    '<div class="lc-top"><h3 id="lc-title">Listen: a visit to ' + escapeHtml(c.n) + '</h3><span class="lc-len">2–3 min</span></div>' +
-    '<div class="lc-body"><div class="pb-note">Loading…</div></div>' +
+// The tour speaks the country's own language wherever a voice can say it.
+// missing: the local book that has no voice yet (so the visit is in English).
+function tourBook(c, data) {
+  const localBooks = (data.languages || []).filter(b => b !== 'en');
+  const voiced = localBooks.filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
+  return { book: voiced[0] || 'en', missing: localBooks.length && !voiced.length ? localBooks[0] : '' };
+}
+
+function tourCardHtml(c) {
+  const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
+  return '<section class="tour-cta" id="tour-cta" data-country="' + escapeHtml(c.n) + '" aria-labelledby="tc-title">' +
+    '<div class="lc-top"><h3 id="tc-title">A spoken visit to ' + escapeHtml(c.n) + '</h3><span class="lc-len">2–3 min</span></div>' +
+    '<p class="tour-cta-sub">A local guide shows you around. Pictures follow the story, and you can stop to ask a question.</p>' +
+    '<button type="button" class="btn-primary tour-launch" onclick="window.__myatlasticTour(' + cq + ')">▶ Play the tour</button>' +
     '</section>';
 }
 
-const narration = { country: null, book: null, data: null, index: 0, state: 'idle' };
-
-function mountListen(c) {
-  const card = $('listen-card');
-  if (!card || card.dataset.country !== c.n) return;
-  Content.narration(c.n).then(data => {
-    const live = $('listen-card');
-    if (!live || live.dataset.country !== c.n) return;
-    if (!data) { live.querySelector('.lc-body').innerHTML = '<div class="pb-note">This narration couldn\'t load. Check your connection.</div>'; return; }
-    if (narration.country !== c.n) {
-      narration.country = c.n; narration.data = data; narration.index = 0; narration.state = 'idle';
-      narration.book = null;
-    }
-    paintListen(live, c, data);
-    // Have the opening line ready, so Listen or the tour starts at once.
-    Voice.status().then(() => {
-      if (narration.country === c.n && !Voice.playing()) Voice.prefetch(narrationParts(c, data, narration.book).slice(0, 1));
-    });
+// Say which language the tour speaks, and have its first line ready.
+function mountTourCard(c) {
+  Promise.all([Content.narration(c.n), Voice.status()]).then(([data]) => {
+    const card = $('tour-cta');
+    if (!data || !card || card.dataset.country !== c.n) return;
+    const t = tourBook(c, data);
+    const sub = card.querySelector('.tour-cta-sub');
+    const said = t.book === 'en'
+      ? (t.missing ? 'In English for now: ' + languageLabel(localeForBook(c, t.missing)) + ' audio is coming.' : 'In English.')
+      : 'In ' + languageLabel(localeForBook(c, t.book)) + ', with English subtitles.';
+    if (sub) sub.textContent = said + ' A local guide shows you around, pictures follow the story, and you can stop to ask a question.';
+    if (!Voice.playing()) Voice.prefetch(narrationParts(c, data, t.book).slice(0, 1));
   });
 }
-
-function paintListen(card, c, data) {
-  const choices = narrationChoices(c, data);
-  if (!narration.book || choices.indexOf(narration.book) === -1) narration.book = pickNarrationBook(c, data, choices);
-  const book = narration.book;
-  const seg = (data.segments || [])[narration.index] || data.segments[0] || {};
-  const active = narration.state === 'playing' || narration.state === 'loading';
-  let html = '';
-  if (choices.length > 1) {
-    html += '<div class="lc-langs" role="radiogroup" aria-label="Narration language">' +
-      choices.map(b => {
-        const loc = localeForBook(c, b);
-        const n = Locales.nameOf(loc);
-        return '<button type="button" role="radio" class="pb-lang' + (b === book ? ' on' : '') + '" aria-checked="' + (b === book) + '" data-book="' + escapeHtml(b) + '">' +
-          '<span lang="' + escapeHtml(loc) + '">' + escapeHtml(b === 'en' ? 'English' : n.native) + '</span></button>';
-      }).join('') + '</div>';
-  }
-  if (!choices.length) {
-    html += '<div class="pb-note">' + voiceProblem({}) + '</div>';
-  }
-  html += '<div class="lc-controls">' +
-    '<button type="button" class="btn-primary lc-play" aria-label="' + (active ? 'Pause narration' : (narration.state === 'paused' ? 'Resume narration' : 'Play narration')) + '"' + (choices.length ? '' : ' disabled') + '>' +
-      (narration.state === 'loading' ? '<span class="vb-spin on" aria-hidden="true"></span> Starting…' : active ? '❚❚ Pause' : narration.state === 'paused' ? '▶ Resume' : '▶ Listen') + '</button>' +
-    '<button type="button" class="back-btn lc-stop" aria-label="Stop narration"' + (narration.state === 'idle' || narration.state === 'ended' ? ' disabled' : '') + '>Stop</button>' +
-    '<span class="lc-progress" aria-hidden="true">' + (narration.index + 1) + ' / ' + (data.segments || []).length + '</span>' +
-    '</div>';
-  html += '<p class="lc-line" lang="' + escapeHtml(localeForBook(c, book)) + '" dir="auto">' + escapeHtml(seg[book] || seg.en || '') + '</p>';
-  if (book !== 'en' && seg.en) html += '<p class="lc-sub">' + escapeHtml(seg.en) + '</p>';
-  if (narration.state === 'ended' && (data.next || []).length) {
-    html += '<div class="lc-next"><span>Where next?</span>' + data.next.map(n => {
-      const nc = COUNTRIES.find(x => x.n === n);
-      return nc ? '<button type="button" class="chip lc-go" data-go="' + escapeHtml(n) + '">' + (nc.flag || '') + ' ' + escapeHtml(n) + '</button>' : '';
-    }).join('') + '</div>';
-  }
-  card.querySelector('.lc-body').innerHTML = html;
-  card.querySelectorAll('.lc-langs .pb-lang').forEach(b => {
-    b.onclick = () => {
-      narration.book = b.dataset.book;
-      narrationPref = narration.book === 'en' ? 'en' : 'local';
-      try { localStorage.setItem('myatlastic_narration_lang', narrationPref); } catch (e) {}
-      const wasPlaying = narration.state === 'playing' || narration.state === 'loading' || narration.state === 'paused';
-      if (wasPlaying) startNarration(c, data, narration.index);
-      else paintListen(card, c, data);
-    };
-  });
-  const play = card.querySelector('.lc-play');
-  if (play) play.onclick = () => {
-    if (narration.state === 'playing') { Voice.pause(); return; }
-    if (narration.state === 'loading') { Voice.stop(); return; }
-    if (narration.state === 'paused' && Voice.playing('narration:' + c.n)) { Voice.resume(); return; }
-    startNarration(c, data, narration.state === 'ended' ? 0 : narration.index);
-  };
-  const stopBtn = card.querySelector('.lc-stop');
-  if (stopBtn) stopBtn.onclick = () => { Voice.stop(); narration.index = 0; narration.state = 'idle'; paintListen(card, c, data); };
-  card.querySelectorAll('.lc-go').forEach(b => { b.onclick = () => goToCountry(b.dataset.go); });
-}
-
-function startNarration(c, data, from) {
-  const owner = 'narration:' + c.n;
-  narration.country = c.n;
-  narration.data = data;
-  narration.index = from || 0;
-  const parts = narrationParts(c, data, narration.book);
-  Voice.play(parts, {
-    owner: owner,
-    startAt: narration.index,
-    onPart: (i) => {
-      narration.index = i;
-      const card = $('listen-card');
-      if (card && card.dataset.country === c.n) {
-        const seg = data.segments[i] || {};
-        const line = card.querySelector('.lc-line');
-        const sub = card.querySelector('.lc-sub');
-        const prog = card.querySelector('.lc-progress');
-        if (line) line.textContent = seg[narration.book] || seg.en || '';
-        if (sub) sub.textContent = seg.en || '';
-        if (prog) prog.textContent = (i + 1) + ' / ' + data.segments.length;
-      }
-    },
-    onState: (s, info) => {
-      if (narration.country !== c.n) return;
-      if (s === 'stopped' && Voice.playing(owner)) return;
-      narration.state = s === 'stopped' ? (narration.index ? 'paused-stopped' : 'idle') : s;
-      if (narration.state === 'paused-stopped') narration.state = 'idle';
-      if (s === 'ended') narration.index = data.segments.length - 1;
-      if (s === 'error') voiceLive(voiceProblem(info));
-      if (s === 'ended') voiceLive('Narration finished. Pick where to go next.');
-      const card = $('listen-card');
-      if (card && card.dataset.country === c.n) {
-        const focusPlay = document.activeElement && document.activeElement.classList.contains('lc-play');
-        paintListen(card, c, data);
-        if (focusPlay) { const p = card.querySelector('.lc-play'); if (p) p.focus(); }
-      }
-    }
-  });
-}
-
-// Open another country from a "where next" suggestion.
-function goToCountry(name) {
-  const c = COUNTRIES.find(x => x.n === name);
-  if (!c) return;
-  Voice.stop();
-  if (state.mode !== 'explore') setMode('explore');
-  state.activeCountry = c;
-  renderList();
-  renderDetails();
-  if (globeAPI) globeAPI.focus(c);
-  if (window.innerWidth <= 900) setMobilePane('details');
-}
-
-window.__myatlasticReadAloud = (countryName) => {
-  const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
-  Content.narration(c.n).then(data => {
-    if (!data) return;
-    if (!narration.book || narration.country !== c.n) narration.book = pickNarrationBook(c, data, narrationChoices(c, data));
-    startNarration(c, data, 0);
-  });
-};
 
 function fillTourLine(tpl, vars) {
   const keys = tpl.match(/\{(\w+)\}/g) || [];
@@ -2973,58 +2857,52 @@ function isPhotoUrl(url) {
   return /\.(jpe?g|png|webp)$/.test(path) || /\/\d+px-/.test(path);
 }
 
-function wikiPicture(title) {
-  const q = String(title || '').trim();
-  if (!q) return Promise.resolve(null);
-  const page = encodeURIComponent(q);
-  return fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/' + page)
-    .then(r => r.ok ? r.json() : null)
-    .then(j => {
-      const items = (j && j.items) || [];
-      for (let i = 0; i < items.length; i++) {
-        const it = items[i];
-        const name = ((it && it.title) || '').toLowerCase();
-        if (/logo|icon|flag|coat|locator|map|emblem|seal/.test(name)) continue;
-        const set = it && it.srcset;
-        const raw = (set && set.length && set[set.length - 1].src) || '';
-        const src = raw.indexOf('//') === 0 ? 'https:' + raw : raw;
-        if (isPhotoUrl(src)) return biggerWikiThumb(src);
-      }
-      return null;
-    })
-    .catch(() => null);
+/* ---------- Tour pictures: one chosen photo per narration line ----------
+   Each line's photo is picked in advance and stored with the narration
+   ("img": a Wikimedia Commons file), reviewed for children. Nothing is
+   searched while the tour plays. */
+function tourPhotoUrl(file) {
+  return 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(file) + '?width=1280';
 }
 
-function loadStoryFrames(c, stops) {
-  return Promise.all(stops.map(s => {
-    const jobs = [];
-    if (s.kicker === 'Arriving' && c.img) jobs.push(Promise.resolve(wikiImage(c.img)));
-    (s.look || []).forEach(title => jobs.push(wikiPicture(title)));
-    return Promise.all(jobs).then(urls => {
-      const seen = {};
-      s.frames = urls.filter(u => {
-        if (!u || seen[u]) return false;
-        seen[u] = true;
-        return true;
-      });
-    });
-  }));
-}
+const TOUR_MOTIONS = ['ken-in', 'pan-left', 'ken-out', 'pan-up', 'pan-right', 'pan-down'];
 
-function paintStoryFrame(url, n) {
+// Crossfade to a new photo, or give the current one a new movement.
+function paintTourPicture(url, n) {
   const stage = document.getElementById('tour-stage');
-  if (!stage || !url) return;
+  if (!stage) return;
+  const motion = TOUR_MOTIONS[n % TOUR_MOTIONS.length];
+  const src = url || (stage.lastElementChild && stage.lastElementChild.src);
+  if (!src) return;
   const img = document.createElement('img');
-  img.className = 'tour-frame ' + (n % 2 ? 'pan-b' : 'pan-a');
+  img.className = 'tour-frame ' + motion;
   img.alt = '';
-  img.src = url;
+  img.src = src;
   img.onerror = () => img.remove();
   stage.appendChild(img);
   while (stage.children.length > 2) stage.removeChild(stage.firstChild);
 }
 
-/* ---------- Tour: the narration with pictures; interrupt any time ---------- */
-let tourTimer = null;
+// Shows each line's photo as the voice reaches it; a line without one keeps
+// the last photo but gives it a new movement.
+function tourPictures(c) {
+  let data = null;
+  let shown = 0;
+  const urlFor = i => {
+    const seg = data && data.segments && data.segments[i];
+    return seg && seg.img ? tourPhotoUrl(seg.img) : null;
+  };
+  const warm = i => { const u = urlFor(i); if (u) { const im = new Image(); im.src = u; } };
+  return {
+    start(d) { data = d; warm(0); warm(1); },
+    show(i, stillCurrent) {
+      if (!data) return;
+      warm(i + 1);
+      if (!stillCurrent || stillCurrent()) paintTourPicture(urlFor(i), shown++);
+    }
+  };
+}
+
 let roomMemory = { name: '', pattern: '' };
 const roomSessions = {};
 let roomEarGen = 0;
@@ -3120,81 +2998,69 @@ function talkParts(line, session) {
   return out;
 }
 
-function tourRecognizer() {
+// Asking the guide out loud. The app uses the phone's own speech recognition
+// (Capacitor plugin); the website uses the browser's. Either way, one question.
+function nativeSpeech() {
+  return IS_NATIVE && window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.SpeechRecognition || null;
+}
+function webSpeech() {
   return window.SpeechRecognition || window.webkitSpeechRecognition || null;
 }
-
-function askMicPermission() {
-  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-    return Promise.resolve(!!tourRecognizer());
-  }
-  return navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-    stream.getTracks().forEach(track => track.stop());
-    return true;
-  }).catch(() => false);
+function canListen() {
+  const n = nativeSpeech();
+  if (n) return n.available().then(r => !!(r && r.available)).catch(() => false);
+  return Promise.resolve(!!webSpeech());
 }
 
-function listenTourMic(onText, mic, sayBox, session, beforeListen) {
-  const SR = tourRecognizer();
-  if (!SR) {
-    sayBox.placeholder = 'Type a question, then press Enter';
-    sayBox.focus();
-    return;
+// Resolves with what was said ('' if nothing). onHeard(text) shows it live.
+function listenOnce(onHeard) {
+  stopRoomEar();
+  const gen = roomEarGen;
+  const lang = Voice.englishLocale();
+  const n = nativeSpeech();
+  if (n) {
+    return n.checkPermissions().then(p => (p && p.speechRecognition === 'granted') ? p : n.requestPermissions()).then(p => {
+      if (!p || p.speechRecognition !== 'granted') throw new Error('denied');
+      let heard = '';
+      return new Promise(resolve => {
+        const handles = [];
+        const finish = () => { handles.forEach(h => h && h.remove && h.remove()); roomRec = null; resolve(heard.trim()); };
+        roomRec = { stop: () => n.stop().catch(() => {}), abort: () => { n.stop().catch(() => {}); } };
+        Promise.all([
+          n.addListener('partialResults', d => { if (gen !== roomEarGen) return; heard = (d && d.matches && d.matches[0]) || heard; onHeard(heard); }),
+          n.addListener('listeningState', d => { if (d && d.status === 'stopped') finish(); })
+        ]).then(h => handles.push.apply(handles, h));
+        n.start({ language: lang, maxResults: 1, partialResults: true, popup: false }).catch(finish);
+      });
+    });
   }
-  if (roomRec) {
-    stopRoomEar();
-    mic.classList.remove('on');
-    mic.setAttribute('aria-pressed', 'false');
-    sayBox.placeholder = 'Ask, or name a country';
-    return;
-  }
-  beforeListen();
-  sayBox.placeholder = 'Listening…';
-  mic.classList.add('on');
-  mic.setAttribute('aria-pressed', 'true');
-  const done = (hint) => {
-    mic.classList.remove('on');
-    mic.setAttribute('aria-pressed', 'false');
-    sayBox.placeholder = hint;
-  };
-  const start = () => {
-    if (!document.getElementById('tour-overlay')) return;
-    stopRoomEar();
-    const gen = roomEarGen;
+  const SR = webSpeech();
+  if (!SR) return Promise.reject(new Error('unsupported'));
+  return new Promise((resolve, reject) => {
     const rec = new SR();
     roomRec = rec;
     rec.continuous = false;
     rec.interimResults = true;
-    rec.lang = Voice.englishLocale();
+    rec.lang = lang;
     let heard = '';
     rec.onresult = (ev) => {
       if (gen !== roomEarGen) return;
       let next = '';
       for (let i = ev.resultIndex; i < ev.results.length; i++) next += ev.results[i][0].transcript || '';
       heard = next.trim();
-      if (heard) sayBox.value = heard;
+      onHeard(heard);
     };
-    rec.onerror = () => { if (gen === roomEarGen) done('Try the mic again, or type a question'); };
-    rec.onend = () => {
-      if (gen !== roomEarGen) return;
-      roomRec = null;
-      done('Ask, or name a country');
-      const said = (sayBox.value || heard).trim();
-      if (!said || roomEcho(said, session)) return;
-      sayBox.value = '';
-      onText(said);
-    };
-    try { rec.start(); } catch (e) { roomRec = null; done('Type a question, then press Enter'); sayBox.focus(); }
-  };
-  askMicPermission().then(ok => {
-    if (!ok) { done('Allow the microphone, or type a question'); sayBox.focus(); return; }
-    start();
+    rec.onerror = (ev) => { if (ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')) reject(new Error('denied')); };
+    rec.onend = () => { if (roomRec === rec) roomRec = null; resolve(gen === roomEarGen ? heard : ''); };
+    try { rec.start(); } catch (e) { roomRec = null; reject(e); }
   });
 }
 
 window.__myatlasticTour = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c || !window.RoomTalk) return;
+  const previous = document.getElementById('tour-overlay');
+  if (previous && previous.__close) previous.__close(true);
   stopRoomEar();
   Voice.stop();
   setMode('explore');
@@ -3202,19 +3068,18 @@ window.__myatlasticTour = (countryName) => {
   state.activeCountry = c;
   renderList();
   renderDetails();
-  if (globeAPI) globeAPI.focus(c);
+  document.body.classList.add('touring');
+  if (globeAPI) (globeAPI.tourFocus ? globeAPI.tourFocus(c) : globeAPI.focus(c));
 
   const animal = animalFor(c) || ['guide', '🐾'];
   const placeNow = landmarkFor(c) || {};
   const local = languagesOf(c).find(l => l.lang !== 'en');
-  const hostLang = local && ANIMAL_HOST[local.lang] ? local.lang : 'en';
+  // Animal and place names only exist in English, so the host line stays in
+  // English rather than mixing them into another language's sentence.
+  const hostLang = 'en';
   const animalName = String(animal[0] || 'guide').replace(/\s*\([^)]*\)/g, '').trim();
   const host = fillTourLine(ANIMAL_HOST[hostLang] || ANIMAL_HOST.en, { animal: animalName, place: placeNow.name || c.n });
-  const stop = {
-    kicker: c.n,
-    look: [placeNow.name, c.n, animal[0], c.cap].filter(Boolean),
-    frames: []
-  };
+  const pictures = tourPictures(c);
 
   const old = document.getElementById('tour-overlay');
   if (old) old.remove();
@@ -3223,18 +3088,6 @@ window.__myatlasticTour = (countryName) => {
   overlay.className = 'tour-overlay';
   document.body.appendChild(overlay);
   const opener = document.activeElement;
-
-  loadStoryFrames(c, [stop]).then(() => {
-    if (!overlay.isConnected) return;
-    let frameN = 0;
-    const spin = () => {
-      if (!overlay.isConnected) return;
-      if (stop.frames.length) paintStoryFrame(stop.frames[frameN % stop.frames.length], frameN);
-      frameN++;
-      tourTimer = setTimeout(spin, 8000);
-    };
-    spin();
-  });
 
   overlay.innerHTML =
     '<div class="tour-card" role="dialog" aria-modal="true" aria-label="A visit to ' + escapeHtml(c.n) + '">' +
@@ -3250,8 +3103,9 @@ window.__myatlasticTour = (countryName) => {
       '<p class="tour-note" hidden></p>' +
       '<div class="tour-next-row" hidden></div>' +
       '<div class="tour-talk">' +
-        '<input id="tour-say" type="text" placeholder="Ask, or name a country" aria-label="Ask the guide, or name a country" autocomplete="off" enterkeyhint="send" />' +
-        '<button type="button" class="back-btn tour-mic" id="tour-mic" aria-pressed="false">Mic</button>' +
+        '<button type="button" class="tour-ask" id="tour-mic" aria-pressed="false">🎤 Ask the guide</button>' +
+        '<p class="tour-ask-hint" id="tour-ask-hint">Tap, then ask. Try “How do I say thank you?” or “Take me to Japan”.</p>' +
+        '<input id="tour-say" type="text" hidden placeholder="Type a question, then press Enter" aria-label="Type a question for the guide" autocomplete="off" enterkeyhint="send" />' +
       '</div>' +
       '<div class="tour-actions">' +
         '<button type="button" class="back-btn" id="tour-again">Again</button>' +
@@ -3272,10 +3126,14 @@ window.__myatlasticTour = (countryName) => {
     mainBtn.textContent = label;
     mainBtn.setAttribute('aria-label', label + ' the visit');
   };
+  // Small English translation under anything said in another language.
+  const setSub = (english) => {
+    subEl.innerHTML = english ? '<span class="tour-sub-label">English</span> ' + escapeHtml(english) : '';
+  };
   const caption = (seg) => {
     storyEl.textContent = (seg && (seg[tour.book] || seg.en)) || '';
     storyEl.setAttribute('lang', localeForBook(c, tour.book));
-    subEl.textContent = tour.book !== 'en' && seg && seg.en ? seg.en : '';
+    setSub(tour.book !== 'en' && seg && seg.en ? seg.en : '');
   };
   const showNext = () => {
     const next = (tour.data && tour.data.next) || [];
@@ -3299,6 +3157,7 @@ window.__myatlasticTour = (countryName) => {
         tour.index = i;
         tour.session.narrIndex = i;
         caption(tour.data.segments[i]);
+        pictures.show(i, () => overlay.isConnected && tour.index === i);
         tour.session.spoken.push(tour.data.segments[i][tour.book] || '');
       },
       onState: (s, info) => {
@@ -3306,7 +3165,7 @@ window.__myatlasticTour = (countryName) => {
         if (s === 'stopped' && Voice.playing()) return;
         tour.mode = s === 'ended' || s === 'stopped' || s === 'error' ? 'idle' : s;
         if (s === 'ended') { tour.session.narrIndex = 0; showNext(); }
-        if (s === 'error') { storyEl.textContent = voiceProblem(info); subEl.textContent = ''; }
+        if (s === 'error') { storyEl.textContent = voiceProblem(info); setSub(''); }
         setMain();
       }
     });
@@ -3325,7 +3184,9 @@ window.__myatlasticTour = (countryName) => {
     });
     storyEl.textContent = lineForScreen(clean[0]);
     storyEl.removeAttribute('lang');
-    subEl.textContent = '';
+    const lp = tour.session.lastPhrase;
+    const teaches = lp && lp.native && lp.en && lp.native !== lp.en && clean.some(l => l.indexOf('{{p:' + lp.native + '}}') !== -1);
+    setSub(teaches ? '“' + lp.native + '” means “' + lp.en.replace(/[.]$/, '') + '”' : '');
     Voice.play(parts, {
       owner: 'talk:' + c.n,
       onPart: (i) => { storyEl.textContent = screens[i] || storyEl.textContent; },
@@ -3339,15 +3200,16 @@ window.__myatlasticTour = (countryName) => {
     });
   };
 
-  const close = () => {
-    if (tourTimer) clearTimeout(tourTimer);
-    tourTimer = null;
+  const close = (switching) => {
     stopRoomEar();
     Voice.stop();
+    if (globeAPI && globeAPI.clearTourFocus) globeAPI.clearTourFocus();
+    if (!switching) document.body.classList.remove('touring');
     document.removeEventListener('keydown', onKey);
     if (overlay.parentNode) overlay.remove();
-    if (opener && opener.focus) opener.focus();
+    if (!switching && opener && opener.focus) opener.focus();
   };
+  overlay.__close = close;
   const onKey = (ev) => { if (ev.key === 'Escape') close(); };
   document.addEventListener('keydown', onKey);
 
@@ -3373,6 +3235,13 @@ window.__myatlasticTour = (countryName) => {
     playNarration(tour.index);
   };
   const sayBox = $('tour-say');
+  const mic = $('tour-mic');
+  const hint = $('tour-ask-hint');
+  const typeInstead = (why) => {
+    sayBox.hidden = false;
+    hint.textContent = why;
+    sayBox.focus();
+  };
   sayBox.addEventListener('keydown', (ev) => {
     if (ev.key !== 'Enter') return;
     ev.preventDefault();
@@ -3381,8 +3250,33 @@ window.__myatlasticTour = (countryName) => {
     sayBox.value = '';
     onUser(text);
   });
-  const mic = $('tour-mic');
-  mic.onclick = () => listenTourMic(onUser, mic, sayBox, tour.session || { spoken: [] }, () => Voice.stop());
+  canListen().then(ok => { if (!ok && overlay.isConnected) { mic.hidden = true; typeInstead('Type a question for the guide, or name a country.'); } });
+  mic.onclick = () => {
+    if (roomRec) { const r = roomRec; try { r.stop(); } catch (e) {} return; }
+    Voice.stop();
+    mic.classList.add('on');
+    mic.setAttribute('aria-pressed', 'true');
+    mic.textContent = '● Listening… tap when done';
+    hint.textContent = 'Listening…';
+    const reset = () => {
+      mic.classList.remove('on');
+      mic.setAttribute('aria-pressed', 'false');
+      mic.textContent = '🎤 Ask the guide';
+    };
+    listenOnce(heard => { hint.textContent = '“' + heard + '”'; }).then(said => {
+      reset();
+      if (!overlay.isConnected) return;
+      if (!said || roomEcho(said, tour.session || { spoken: [] })) { hint.textContent = 'I didn’t catch that. Tap and try again.'; return; }
+      hint.textContent = 'You asked: “' + said + '”';
+      onUser(said);
+    }, err => {
+      reset();
+      if (!overlay.isConnected) return;
+      typeInstead(err && err.message === 'denied'
+        ? 'Microphone access is off. Turn it on in Settings, or type your question.'
+        : 'The microphone isn’t available here. Type your question instead.');
+    });
+  };
   overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
   mainBtn.focus();
 
@@ -3391,18 +3285,16 @@ window.__myatlasticTour = (countryName) => {
     tour.session = bootRoom(c, book);
     if (!data) { storyEl.textContent = "This visit couldn't load. Check your connection."; return; }
     tour.data = data;
-    // The tour always speaks the country's own language. English only where
-    // English is the local language, or no voice can say the local one yet.
-    const localBooks = (data.languages || []).filter(b => b !== 'en');
-    const voiced = localBooks.filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
-    tour.book = voiced[0] || 'en';
-    if (localBooks.length && !voiced.length) {
+    const chosen = tourBook(c, data);
+    tour.book = chosen.book;
+    if (chosen.missing) {
       const note = overlay.querySelector('.tour-note');
       note.hidden = false;
-      note.textContent = languageLabel(localeForBook(c, localBooks[0])) + " audio isn't available yet, so this visit is in English.";
+      note.textContent = languageLabel(localeForBook(c, chosen.missing)) + " audio isn't available yet, so this visit is in English.";
     }
     tour.index = tour.session.narrIndex || 0;
     caption(data.segments[tour.index]);
+    pictures.start(data);
     playNarration(tour.index);
   });
 };
@@ -3590,7 +3482,9 @@ function renderDetails() {
   html += '<button class="back-btn detail-back" onclick="setMobilePane(\'list\')">← Back to list</button>';
   html += '<div class="detail-eyebrow" style="display:flex;justify-content:space-between;align-items:center">' +
     '<span>' + escapeHtml(c.c) + (free ? '' : ' · Pro preview') + '</span>' +
-    '<div style="display:flex;gap:6px">' +
+    '<div style="display:flex;gap:6px;align-items:center">' +
+    '<span class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '" title="Local time in ' + escapeHtml(c.n) + '">' +
+      '<span class="sr-only">Local time </span><span class="local-time-clock"></span></span>' +
     '<button class="fav-btn' + (isFav(c.n) ? ' active' : '') + '" onclick="window.__myatlasticToggleFav(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" title="' + (isFav(c.n) ? 'Remove favourite' : 'Add to favourites') + '">' + (isFav(c.n) ? '★' : '☆') + '</button>' +
     '<button class="share-btn" onclick="window.__myatlasticShare(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" title="Share">Share</button>' +
     '</div></div>';
@@ -3598,16 +3492,13 @@ function renderDetails() {
   html += '<div class="detail-name"><span class="detail-flag">' + (c.flag || '🌐') + '</span><span>' + escapeHtml(c.n) + '</span>' +
     voiceButton(c.n, englishLocaleFor(c), 'Hear how to say ' + c.n, 'vbtn-inline') +
     '</div>';
-  html += '<div class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '">' +
-    '<span class="local-time-label">Local time</span>' +
-    '<span class="local-time-clock"></span></div>';
 
   // WOW FACT — surfaced first, before the heavier detail. Free for everyone:
   // it is the hook that makes a child want to dig in (and unlock Pro).
   html += '<div class="wow-fact"><span class="wow-spark">✨</span><span><span class="wow-label">Wow fact</span>' + escapeHtml(wowFor(c)) + '</span></div>';
 
-  // LISTEN — a short spoken visit, then the PHRASEBOOK.
-  html += listenCardHtml(c);
+  // THE TOUR — the spoken visit, then the PHRASEBOOK.
+  html += tourCardHtml(c);
   html += phrasebookHtml(c);
 
   const animal = animalFor(c);
@@ -3630,7 +3521,6 @@ function renderDetails() {
     html += '<div class="landmark-card">' +
       '<div class="landmark-head">📍 ' + escapeHtml(lm.name) + '</div>' +
       '<div class="landmark-fact">' + escapeHtml(lm.fact) + '</div>' +
-      '<button type="button" class="btn-primary tour-launch" onclick="window.__myatlasticTour(' + cq + ')">Play the tour</button>' +
       '</div>';
   }
 
@@ -3700,7 +3590,7 @@ function renderDetails() {
   html += '<div class="footer-note">On the map: ' + c.lat.toFixed(1) + '°, ' + c.lon.toFixed(1) + '°. Photos from Wikimedia Commons.</div>';
   root.innerHTML = html;
   watchCountryClock(c.n);
-  mountListen(c);
+  mountTourCard(c);
   mountPhrasebook(c);
 }
 
@@ -3851,102 +3741,129 @@ function showAchievementToast(a) {
 /* ============================================================
  * PASSPORT — stamps, streak rewards, explorer avatar, badges
  * ============================================================ */
+/* ---------- Passport: the real passport of every country ---------- */
+let passportCovers = null;
+let passportFilter = 'All';
+let passportQuery = '';
+function loadPassportCovers() {
+  if (passportCovers) return Promise.resolve(passportCovers);
+  return fetch('passports.json').then(r => (r.ok ? r.json() : {})).catch(() => ({})).then(j => (passportCovers = j || {}));
+}
+function passportCoverUrl(file, width) {
+  return 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(file) + '?width=' + (width || 240);
+}
+// A real cover where Wikimedia Commons has one; otherwise a drawn booklet.
+function passportCoverHtml(c, width) {
+  const file = passportCovers && passportCovers[c.n];
+  const drawn = '<span class="pp-drawn"><span class="pp-drawn-flag">' + (c.flag || '🌐') + '</span>' +
+    '<span class="pp-drawn-name">' + escapeHtml(c.n) + '</span><span class="pp-drawn-word">PASSPORT</span></span>';
+  if (!file) return drawn;
+  return '<img class="pp-img" loading="lazy" alt="Passport of ' + escapeHtml(c.n) + '" src="' + passportCoverUrl(file, width) + '"' +
+    ' onerror="this.remove()">' + drawn.replace('pp-drawn"', 'pp-drawn pp-under"');
+}
+
 function renderPassport() {
   const root = $('view-passport');
   const viewed = getViewedSet();
   const stamped = getStampedSet();
-  const lvl = explorerLevel();
+  const all = COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n));
   const total = SOVEREIGN_COUNTRIES.length;
   const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
-  const pct = Math.round((visitedCount / total) * 100);
-  const streak = getStreak();
-  const done = completedContinents();
+  if (!passportCovers) {
+    root.innerHTML = '<div class="passport-wrap"><p class="passport-hint">Opening the passport office…</p></div>';
+    loadPassportCovers().then(() => { if (state.mode === 'passport') renderPassport(); });
+    return;
+  }
+  const conts = CONTINENTS.filter(x => x !== 'All');
+  const q = passportQuery.trim().toLowerCase();
+  const list = all.filter(c => (passportFilter === 'All' || c.c.split(' / ')[0] === passportFilter) && (!q || c.n.toLowerCase().indexOf(q) !== -1));
 
-  // Next explorer level for the progress hint
-  const next = EXPLORER_LEVELS.find(l => l.at > viewed.size);
-  const nextHint = next ? ('Visit ' + (next.at - viewed.size) + ' more to become ' + next.title + ' ' + next.icon) : 'You have reached the top rank!';
-
-  // Streak reward tiers
-  const rewards = [
-    { at: 3, icon: '🔥', label: '3-day streak' },
-    { at: 7, icon: '🏅', label: '1 week' },
-    { at: 14, icon: '💎', label: '2 weeks' },
-    { at: 30, icon: '👑', label: '1 month' },
-  ];
-
-  let html = '<div class="passport-wrap">';
-
-  // Explorer avatar header
-  html += '<div class="explorer-card">' +
-    '<div class="explorer-avatar">' + lvl.icon + '</div>' +
-    '<div class="explorer-meta">' +
-    '<div class="explorer-title">' + lvl.title + '</div>' +
-    '<div class="explorer-bar"><div class="explorer-fill" style="width:' + pct + '%"></div></div>' +
-    '<div class="explorer-sub">' + visitedCount + ' / ' + total + ' countries · ' + stamped.size + ' stamps</div>' +
-    '<div class="explorer-next">' + escapeHtml(nextHint) + '</div>' +
-    '</div></div>';
-
-  // Streak + rewards
-  html += '<div class="passport-section"><h3>🔥 Daily streak</h3>' +
-    '<div class="streak-big">' + (streak > 0 ? streak + (streak === 1 ? ' day' : ' days') : 'No streak yet') + '</div>' +
-    '<div class="reward-row">';
-  rewards.forEach(r => {
-    const got = streak >= r.at;
-    html += '<div class="reward' + (got ? ' got' : '') + '"><div class="reward-ic">' + r.icon + '</div><div class="reward-lb">' + r.label + '</div></div>';
-  });
-  html += '</div>';
-  if (streak === 0) html += '<p class="passport-hint">Answer the Daily challenge each day to build a streak and unlock rewards.</p>';
-  html += '</div>';
-
-  // Badges
-  const unlocked = getUnlockedAchievements();
-  html += '<div class="passport-section"><h3>🏅 Badges <span class="count-pill">' + unlocked.length + '/' + ACHIEVEMENTS.length + '</span></h3>' +
-    '<div class="badge-grid">';
-  ACHIEVEMENTS.forEach(a => {
-    const got = unlocked.includes(a.id) || a.check();
-    html += '<div class="badge-cell' + (got ? ' got' : '') + '" title="' + escapeHtml(a.desc) + '">' +
-      '<div class="badge-ic">' + (got ? a.icon : '🔒') + '</div>' +
-      '<div class="badge-nm">' + escapeHtml(a.name) + '</div>' +
-      '<div class="badge-ds">' + escapeHtml(a.desc) + '</div>' +
-      '</div>';
-  });
-  html += '</div></div>';
-
-  // Continents completed
-  html += '<div class="passport-section"><h3>🗺️ Continents</h3><div class="cont-row">';
-  CONTINENTS.filter(x => x !== 'All').forEach(cont => {
-    const inCont = SOVEREIGN_COUNTRIES.filter(c => c.c.split(' / ')[0] === cont);
-    const v = inCont.filter(c => viewed.has(c.n)).length;
-    const full = done.includes(cont);
-    html += '<div class="cont-chip' + (full ? ' full' : '') + '">' + (full ? '✅ ' : '') + escapeHtml(cont) + ' <b>' + v + '/' + inCont.length + '</b></div>';
-  });
-  html += '</div></div>';
-
-  // Stamp wall — ALL 195 sovereign countries as collectible slots. Visited ones
-  // are filled (gold ⭐ if answered correctly); the rest are greyed "to collect".
-  // For free users, Pro-locked countries show a 🔒 and tap through to the paywall —
-  // the empty slots themselves merchandise Pro (this is the parent-facing trigger).
-  const lockedRemaining = SOVEREIGN_COUNTRIES.filter(c => !state.isPro && !isFree(c) && !viewed.has(c.n)).length;
-  html += '<div class="passport-section"><h3>🛂 Stamp wall <span class="count-pill">' + visitedCount + ' / ' + total + '</span></h3>';
-  html += '<p class="passport-hint">Tap a greyed country to go collect its stamp. Answer it right in a quiz for a gold stamp ⭐' +
-    (lockedRemaining > 0 ? ' &nbsp;·&nbsp; <span class="lock-tease" onclick="window.__myatlasticOpenPaywall()">🔒 ' + lockedRemaining + ' unlock with Pro</span>' : '') + '</p>';
-  html += '<div class="stamp-grid">';
-  SOVEREIGN_COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n)).forEach(c => {
-    const isViewed = viewed.has(c.n);
+  let html = '<div class="passport-wrap">' +
+    '<div class="pp-head"><div><h2>Passports of the world</h2>' +
+    '<div class="passport-hint">Every country\'s passport. Visit a country to get its stamp: ' + visitedCount + ' of ' + total + ' stamped.</div></div></div>' +
+    '<div class="pp-tools">' +
+      '<input id="pp-search" class="search-input" type="search" placeholder="Find a country" aria-label="Find a country\'s passport" value="' + escapeHtml(passportQuery) + '">' +
+      '<div class="pp-chips" role="tablist" aria-label="Continent">' +
+        ['All'].concat(conts).map(x => '<button type="button" role="tab" class="chip' + (x === passportFilter ? ' active' : '') + '" aria-selected="' + (x === passportFilter) + '" data-cont="' + escapeHtml(x) + '">' + escapeHtml(x) + '</button>').join('') +
+      '</div>' +
+    '</div>' +
+    '<div class="pp-grid">';
+  list.forEach(c => {
+    const got = viewed.has(c.n);
     const gold = stamped.has(c.n);
-    const locked = !state.isPro && !isFree(c) && !isViewed;
-    const cls = 'stamp' + (gold ? ' gold' : '') + (isViewed ? ' got' : '') + (locked ? ' locked' : '');
-    const action = locked ? 'window.__myatlasticOpenPaywall()' : 'window.__myatlasticShowOnGlobe(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')';
-    html += '<button class="' + cls + '" onclick="' + action + '" title="' + escapeHtml(c.n) + (locked ? ' · Pro' : '') + '">' +
-      '<span class="stamp-flag">' + (c.flag || '🌐') + '</span>' +
-      (gold ? '<span class="stamp-star">⭐</span>' : (locked ? '<span class="stamp-lock">🔒</span>' : '')) +
-      '<span class="stamp-nm">' + escapeHtml(c.n) + '</span></button>';
+    html += '<button type="button" class="pp-card' + (got ? ' got' : '') + '" data-pp="' + escapeHtml(c.n) + '" aria-label="' + escapeHtml(c.n) + ' passport' + (got ? ', stamped' : '') + '">' +
+      '<span class="pp-cover">' + passportCoverHtml(c, 240) +
+        (got ? '<span class="pp-stamp' + (gold ? ' gold' : '') + '" aria-hidden="true">' + (gold ? '★' : '✓') + '</span>' : '') +
+      '</span>' +
+      '<span class="pp-name">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</span>' +
+      '</button>';
   });
-  html += '</div>';
+  if (!list.length) html += '<p class="passport-hint">No country matches that.</p>';
   html += '</div>';
 
-  html += '</div>';
+  // Badges stay: they reward exploring, not coming back every day.
+  const badges = ACHIEVEMENTS.filter(a => a.id.indexOf('streak') !== 0);
+  const unlocked = getUnlockedAchievements().filter(id => badges.some(a => a.id === id));
+  html += '<div class="passport-section"><h3>🏅 Badges <span class="count-pill">' + unlocked.length + '/' + badges.length + '</span></h3><div class="badge-grid">';
+  badges.forEach(a => {
+    const gotB = unlocked.includes(a.id) || a.check();
+    html += '<div class="badge-cell' + (gotB ? ' got' : '') + '" title="' + escapeHtml(a.desc) + '">' +
+      '<div class="badge-ic">' + (gotB ? a.icon : '🔒') + '</div><div class="badge-nm">' + escapeHtml(a.name) + '</div>' +
+      '<div class="badge-ds">' + escapeHtml(a.desc) + '</div></div>';
+  });
+  html += '</div></div>';
+  html += '<p class="footer-note">Passport images from Wikimedia Commons. Drawn covers are illustrations.</p></div>';
   root.innerHTML = html;
+
+  const search = $('pp-search');
+  search.oninput = () => {
+    passportQuery = search.value;
+    const pos = search.selectionStart;
+    renderPassport();
+    const again = $('pp-search');
+    again.focus();
+    try { again.setSelectionRange(pos, pos); } catch (e) {}
+  };
+  root.querySelectorAll('.pp-chips .chip').forEach(b => { b.onclick = () => { passportFilter = b.dataset.cont; renderPassport(); }; });
+  root.querySelectorAll('.pp-card').forEach(b => { b.onclick = () => openPassport(b.dataset.pp, b); });
+}
+
+// One passport, opened: the cover, the country, and your stamp.
+function openPassport(name, opener) {
+  const c = COUNTRIES.find(x => x.n === name);
+  if (!c) return;
+  const viewed = getViewedSet().has(c.n);
+  const gold = getStampedSet().has(c.n);
+  const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
+  const modal = document.createElement('div');
+  modal.className = 'ts-modal';
+  modal.innerHTML = '<div class="ts-box pp-open" role="dialog" aria-modal="true" aria-label="Passport of ' + escapeHtml(c.n) + '">' +
+    '<button class="ts-close" aria-label="Close">✕</button>' +
+    '<div class="pp-open-cover">' + passportCoverHtml(c, 480) + '</div>' +
+    '<h2 class="ts-title">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</h2>' +
+    '<div class="fact-grid">' +
+      '<div class="fact-label">Capital</div><div class="fact-value">' + escapeHtml(c.cap || '—') + '</div>' +
+      '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang || '—') + '</div>' +
+      '<div class="fact-label">Currency</div><div class="fact-value">' + escapeHtml(c.cur || '—') + '</div>' +
+    '</div>' +
+    '<div class="pp-your-stamp' + (viewed ? ' got' : '') + '">' +
+      (viewed ? (gold ? '★ Gold stamp: you answered a question about ' + escapeHtml(c.n) + ' correctly.' : '✓ Stamped: you have visited ' + escapeHtml(c.n) + '.')
+              : 'No stamp yet. Visit ' + escapeHtml(c.n) + ' to get one.') +
+    '</div>' +
+    '<div class="tour-actions">' +
+      '<button type="button" class="back-btn" id="pp-globe">Show on globe</button>' +
+      '<button type="button" class="btn-primary" id="pp-tour">▶ Play the tour</button>' +
+    '</div>' +
+    '</div>';
+  document.body.appendChild(modal);
+  const close = () => { modal.remove(); document.removeEventListener('keydown', onKey); if (opener && opener.focus) opener.focus(); };
+  const onKey = (ev) => { if (ev.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  modal.onclick = (ev) => { if (ev.target === modal) close(); };
+  modal.querySelector('.ts-close').onclick = close;
+  $('pp-globe').onclick = () => { close(); window.__myatlasticShowOnGlobe(c.n); };
+  $('pp-tour').onclick = () => { close(); window.__myatlasticTour(c.n); };
+  modal.querySelector('.ts-close').focus();
 }
 
 /* ============================================================
@@ -4637,40 +4554,6 @@ function savePuzzlePlaced(set) {
 
 let puzzleState = null;
 
-function puzzleBlob(c) {
-  const pts = [];
-  for (let i = 0; i < 8; i++) {
-    const a = Math.PI * 2 * i / 8;
-    pts.push([
-      Math.round((c.lon + Math.cos(a) * 3) * 100) / 100,
-      Math.round((c.lat + Math.sin(a) * 2.2) * 100) / 100
-    ]);
-  }
-  return [pts];
-}
-function puzzleRings(c) {
-  const table = window.PUZZLE_RINGS || {};
-  if (table[c.n] && table[c.n].length) return table[c.n];
-  return puzzleBlob(c);
-}
-function puzzlePath(rings) {
-  return rings.map(ring => ring.map((p, i) => (i ? 'L' : 'M') + p[0] + ',' + (-p[1])).join('') + 'Z').join('');
-}
-function puzzlePieceSvg(rings) {
-  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-  rings.forEach(ring => ring.forEach(p => {
-    const x = p[0], y = -p[1];
-    if (x < minX) minX = x;
-    if (y < minY) minY = y;
-    if (x > maxX) maxX = x;
-    if (y > maxY) maxY = y;
-  }));
-  const w = Math.max(0.4, maxX - minX);
-  const h = Math.max(0.4, maxY - minY);
-  const pad = Math.max(w, h) * 0.14;
-  const vb = (minX - pad) + ' ' + (minY - pad) + ' ' + (w + pad * 2) + ' ' + (h + pad * 2);
-  return '<svg viewBox="' + vb + '" aria-hidden="true"><path d="' + puzzlePath(rings) + '"></path></svg>';
-}
 function shuffleNames(list) {
   const a = list.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -4719,20 +4602,16 @@ function renderPuzzle() {
     };
     return;
   }
-  const shown = [];
-  pz.tray.forEach(name => { if (byName[name]) shown.push(byName[name]); });
-  all.forEach(c => { if (pz.placed.has(c.n)) shown.push(c); });
+  // Only this round's flags, in a different order from the names below.
+  const mix = n => { let h = 7; for (let i = 0; i < n.length; i++) h = (h * 31 + n.charCodeAt(i)) >>> 0; return h; };
+  const shown = pz.tray.filter(name => byName[name]).sort((a, b) => mix(a) - mix(b)).map(name => byName[name]);
   let flags = '';
   shown.forEach(c => {
-    const placed = pz.placed.has(c.n);
     const hinted = pz.hint === c.n;
-    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '">';
-    if (!placed) {
-      flags += '<span class="puzzle-shape">' + puzzlePieceSvg(puzzleRings(c)) + '</span>';
-    }
-    flags += '<span class="puzzle-flag-emoji">' + (c.flag || '🏳️') + '</span>';
-    if (!placed && hinted) flags += '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>';
-    flags += '</button>';
+    flags += '<button type="button" class="puzzle-flag' + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '" aria-label="Flag ' + (hinted ? 'of ' + escapeHtml(c.n) : 'to match') + '">' +
+      '<span class="puzzle-flag-emoji" aria-hidden="true">' + (c.flag || '🏳️') + '</span>' +
+      (hinted ? '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>' : '') +
+      '</button>';
   });
   let tray = '';
   pz.tray.forEach(name => {
@@ -4766,35 +4645,6 @@ function renderPuzzle() {
       if (puzzleDidDrag) return;
       tryPlacePuzzle(pz.selected, flag.getAttribute('data-puzzle'));
     };
-  });
-  requestAnimationFrame(fitPuzzleBoard);
-}
-
-function fitPuzzleBoard() {
-  const board = document.querySelector('#view-puzzle .puzzle-board');
-  if (!board) return;
-  const n = board.children.length;
-  if (!n) return;
-  const gap = 8;
-  const w = Math.max(0, board.clientWidth - 16);
-  const h = Math.max(0, board.clientHeight - 16);
-  if (w < 20 || h < 20) return;
-  let cols = 1;
-  let best = -1;
-  for (let c = 1; c <= n; c++) {
-    const rows = Math.ceil(n / c);
-    const cw = (w - gap * (c - 1)) / c;
-    const ch = (h - gap * (rows - 1)) / rows;
-    const side = Math.min(cw, ch);
-    if (side > best) { best = side; cols = c; }
-  }
-  board.style.setProperty('--pz-cols', String(cols));
-  board.style.setProperty('--pz-rows', String(Math.ceil(n / cols)));
-}
-if (!window.__puzzleFitBound) {
-  window.__puzzleFitBound = true;
-  window.addEventListener('resize', () => {
-    if (document.body.classList.contains('mode-puzzle')) fitPuzzleBoard();
   });
 }
 
@@ -6113,6 +5963,7 @@ function setupGlobe(THREE) {
     COUNTRIES.forEach(c => {
       if (!c.flag || typeof c.lat !== 'number') return;
       const sp = makeEmojiSprite(c.flag, true);
+      sp.userData.n = c.n;
       sp.scale.set(0.17, 0.17, 0.17);
       sp.position.copy(latLonToVec3(c.lat, c.lon, 1.525, THREE));
       flagsGroup.add(sp);
@@ -6122,7 +5973,9 @@ function setupGlobe(THREE) {
 
   let isDragging = false, prevX = 0, prevY = 0, dragStartX = 0, dragStartY = 0;
   let targetRotY = 0, targetRotX = 0, currentRotY = 0, currentRotX = 0;
-  let targetZoom = 4, autoSpin = true, lastTouchDist = 0;
+  // The globe always revolves; touching it or focusing a country only pauses it.
+  let targetZoom = 4, spinPausedUntil = 0, lastTouchDist = 0;
+  const pauseSpin = ms => { spinPausedUntil = Math.max(spinPausedUntil, performance.now() + ms); };
 
   const raycaster = new THREE.Raycaster();
   raycaster.params.Mesh.threshold = 0.05;
@@ -6163,7 +6016,7 @@ function setupGlobe(THREE) {
   canvas.addEventListener('mousedown', e => {
     isDragging = true; prevX = e.clientX; prevY = e.clientY;
     dragStartX = e.clientX; dragStartY = e.clientY;
-    autoSpin = false;
+    pauseSpin(3500);
   });
   window.addEventListener('mouseup', e => {
     if (isDragging) {
@@ -6217,7 +6070,7 @@ function setupGlobe(THREE) {
       isDragging = true;
       prevX = e.touches[0].clientX; prevY = e.touches[0].clientY;
       dragStartX = prevX; dragStartY = prevY;
-      autoSpin = false;
+      pauseSpin(3500);
     } else if (e.touches.length === 2) {
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
@@ -6265,14 +6118,38 @@ function setupGlobe(THREE) {
     targetZoom = Math.max(2.5, Math.min(7, targetZoom + e.deltaY * 0.003));
   }, { passive: false });
 
+  // Tour focus: the country's flag comes forward, the rest of the world greys out.
+  let tourFlag = null;
+  let tourZoomBefore = null;
+  const pinGrey = new THREE.MeshBasicMaterial({ color: 0x5b6270 });
+  function greyOthers(c) {
+    pinsGroup.children.forEach(pin => {
+      if (!pin.userData.__mat) pin.userData.__mat = pin.material;
+      pin.material = (c && pin.userData.n === c.n) ? pin.userData.__mat : pinGrey;
+    });
+    if (flagsGroup) flagsGroup.children.forEach(sp => {
+      const mine = c && sp.userData.n === c.n;
+      sp.material.color.setHex(c && !mine ? 0x4a4f58 : 0xffffff);
+      sp.material.opacity = c && !mine ? 0.45 : 1;
+    });
+    if (earth && earth.material && earth.material.color) earth.material.color.setHex(c ? 0x8a8a8a : 0xffffff);
+  }
+
   function animate() {
     requestAnimationFrame(animate);
-    if (autoSpin && !isDragging) targetRotY += 0.0015;
+    if (!isDragging && performance.now() > spinPausedUntil) targetRotY += 0.0015;
     currentRotY += (targetRotY - currentRotY) * 0.08;
     currentRotX += (targetRotX - currentRotX) * 0.08;
     globeGroup.rotation.y = currentRotY;
     globeGroup.rotation.x = currentRotX;
     camera.position.z += (targetZoom - camera.position.z) * 0.08;
+    if (tourFlag) {
+      const t = Math.min(1, (performance.now() - tourFlag.userData.born) / 900);
+      const grow = 1 - Math.pow(1 - t, 3);
+      const pulse = 1 + Math.sin(performance.now() / 420) * 0.04 * grow;
+      const k = (0.12 + 0.46 * grow) * pulse;
+      tourFlag.scale.set(k, k, k);
+    }
     if (ring.visible && state.activeCountry) {
       const p = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, 1.55, THREE);
       p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
@@ -6284,8 +6161,31 @@ function setupGlobe(THREE) {
   animate();
 
   globeAPI = {
+    tourFocus(c) {
+      if (!c) return;
+      if (tourFlag) { globeGroup.remove(tourFlag); tourFlag = null; }
+      if (c.flag) {
+        tourFlag = makeEmojiSprite(c.flag, false);
+        tourFlag.renderOrder = 10;
+        tourFlag.position.copy(latLonToVec3(c.lat, c.lon, 1.62, THREE));
+        tourFlag.userData.born = performance.now();
+        tourFlag.scale.set(0.12, 0.12, 0.12);
+        globeGroup.add(tourFlag);
+      }
+      greyOthers(c);
+      if (tourZoomBefore === null) tourZoomBefore = targetZoom;
+      targetZoom = 3.3;
+      this.focus(c);
+      // On a phone the tour card covers the lower half: tip the country up into view.
+      if (window.innerWidth <= 900) targetRotX -= 0.42;
+    },
+    clearTourFocus() {
+      if (tourFlag) { globeGroup.remove(tourFlag); tourFlag = null; }
+      greyOthers(null);
+      if (tourZoomBefore !== null) { targetZoom = tourZoomBefore; tourZoomBefore = null; }
+    },
     focus(c) {
-      autoSpin = false;
+      pauseSpin(5000);
       targetRotY = -c.lon * (Math.PI / 180) - Math.PI / 2;
       targetRotX = c.lat * (Math.PI / 180) * 0.6;
       ring.visible = true;
@@ -6294,7 +6194,7 @@ function setupGlobe(THREE) {
       if (on) buildFlags();
       if (flagsGroup) flagsGroup.visible = on;
       pinsGroup.visible = !on;        // swap dots for flags to avoid clutter
-      if (on) autoSpin = true;        // let it spin so you see them all go by
+      if (on) spinPausedUntil = 0;    // spin now so you see them all go by
     },
     resize,
     project(c) {
@@ -6308,7 +6208,13 @@ function setupGlobe(THREE) {
         };
       } catch (e) { return null; }
     }
-  };
+  };  // Every country's flag is on the globe from the start.
+  globeAPI.setFlags(true);
+  const flagsOn = document.getElementById('flags-toggle');
+  if (flagsOn) flagsOn.classList.add('on');
+  const hintEl = document.getElementById('globe-hint');
+  if (hintEl) hintEl.textContent = 'Every country\'s flag · drag to spin the world';
+
 }
 
 /* ============================================================

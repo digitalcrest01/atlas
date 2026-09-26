@@ -6,7 +6,7 @@
 # /app/voice/* and /app/vendor/* to /web/.
 set -e
 cd "$(dirname "$0")/.."
-cp web/room-talk.js web/attractions.js web/puzzle-shapes.js app/
+cp web/room-talk.js web/attractions.js web/passports.json app/
 sed 's#^<head>$#<head>\
 <base href="/app/" />#' web/index.html > app/index.html
 grep -q '<base href="/app/" />' app/index.html || { echo "base tag not added" >&2; exit 1; }
