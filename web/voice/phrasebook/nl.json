@@ -1,0 +1,183 @@
+{
+  "book": "nl",
+  "name": "Dutch",
+  "native": "Nederlands",
+  "phrases": {
+    "hello": {
+      "text": "Hallo",
+      "say": "HAH-loh"
+    },
+    "good_morning": {
+      "text": "Goedemorgen",
+      "say": "khoo-duh-MOR-khun"
+    },
+    "good_evening": {
+      "text": "Goedenavond",
+      "say": "khoo-duh-NAH-vont"
+    },
+    "goodbye": {
+      "text": "Tot ziens",
+      "say": "tot ZEENS"
+    },
+    "how_are_you": {
+      "text": "Hoe gaat het?",
+      "say": "hoo KHAHT ut"
+    },
+    "nice_to_meet": {
+      "text": "Aangenaam kennis te maken",
+      "say": "AHN-khuh-nahm KEN-nis tuh MAH-kuh"
+    },
+    "please": {
+      "text": "Alstublieft",
+      "say": "als-tuu-BLEEFT"
+    },
+    "thank_you": {
+      "text": "Dank u wel",
+      "say": "DAHNK uu vel"
+    },
+    "youre_welcome": {
+      "text": "Graag gedaan",
+      "say": "KHRAHKH khuh-DAHN"
+    },
+    "excuse_me": {
+      "text": "Pardon",
+      "say": "par-DON"
+    },
+    "sorry": {
+      "text": "Sorry",
+      "say": "SOR-ree"
+    },
+    "yes": {
+      "text": "Ja",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Nee",
+      "say": "NAY"
+    },
+    "speak_english": {
+      "text": "Spreekt u Engels?",
+      "say": "SPRAYKT uu ENG-uls"
+    },
+    "dont_understand": {
+      "text": "Ik begrijp het niet",
+      "say": "ik buh-KHRAIP ut NEET"
+    },
+    "slowly": {
+      "text": "Kunt u wat langzamer praten?",
+      "say": "kunt uu vat LAHNG-zah-mer PRAH-tuh"
+    },
+    "repeat": {
+      "text": "Kunt u dat herhalen?",
+      "say": "kunt uu dat her-HAH-luh"
+    },
+    "where_station": {
+      "text": "Waar is het station?",
+      "say": "vahr is ut stah-SHON"
+    },
+    "where_toilet": {
+      "text": "Waar is het toilet?",
+      "say": "vahr is ut twah-LET"
+    },
+    "is_it_far": {
+      "text": "Is het ver?",
+      "say": "is ut VEHR"
+    },
+    "left": {
+      "text": "Links",
+      "say": "LINKS"
+    },
+    "right": {
+      "text": "Rechts",
+      "say": "REKHTS"
+    },
+    "straight": {
+      "text": "Rechtdoor",
+      "say": "rekht-DOHR"
+    },
+    "menu": {
+      "text": "De menukaart, alstublieft",
+      "say": "duh muh-NUU-kahrt als-tuu-BLEEFT"
+    },
+    "water": {
+      "text": "Een glas water, alstublieft",
+      "say": "un KHLAS VAH-ter als-tuu-BLEEFT"
+    },
+    "bill": {
+      "text": "De rekening, alstublieft",
+      "say": "duh RAY-kuh-ning als-tuu-BLEEFT"
+    },
+    "delicious": {
+      "text": "Heerlijk!",
+      "say": "HEHR-luk"
+    },
+    "vegetarian": {
+      "text": "Ik ben vegetariër",
+      "say": "ik ben vay-khuh-TAH-ree-er"
+    },
+    "how_much": {
+      "text": "Hoeveel kost het?",
+      "say": "hoo-VAYL KOST ut"
+    },
+    "too_expensive": {
+      "text": "Dat is te duur",
+      "say": "dat is tuh DUUR"
+    },
+    "pay_card": {
+      "text": "Kan ik met de kaart betalen?",
+      "say": "kahn ik met duh KAHRT buh-TAH-luh"
+    },
+    "help": {
+      "text": "Help!",
+      "say": "HELP"
+    },
+    "need_doctor": {
+      "text": "Ik heb een dokter nodig",
+      "say": "ik hep un DOK-ter NOH-dukh"
+    },
+    "lost": {
+      "text": "Ik ben verdwaald",
+      "say": "ik ben ver-DVAHLT"
+    },
+    "n1": {
+      "text": "een",
+      "say": "AYN"
+    },
+    "n2": {
+      "text": "twee",
+      "say": "TVAY"
+    },
+    "n3": {
+      "text": "drie",
+      "say": "DREE"
+    },
+    "n4": {
+      "text": "vier",
+      "say": "VEER"
+    },
+    "n5": {
+      "text": "vijf",
+      "say": "VAIF"
+    },
+    "n6": {
+      "text": "zes",
+      "say": "ZES"
+    },
+    "n7": {
+      "text": "zeven",
+      "say": "ZAY-vuh"
+    },
+    "n8": {
+      "text": "acht",
+      "say": "AHKHT"
+    },
+    "n9": {
+      "text": "negen",
+      "say": "NAY-khuh"
+    },
+    "n10": {
+      "text": "tien",
+      "say": "TEEN"
+    }
+  }
+}

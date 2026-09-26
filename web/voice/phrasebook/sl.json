@@ -1,0 +1,183 @@
+{
+  "book": "sl",
+  "name": "Slovene",
+  "native": "slovenščina",
+  "phrases": {
+    "hello": {
+      "text": "Pozdravljeni",
+      "say": "poz-DRAHV-lyeh-nee"
+    },
+    "good_morning": {
+      "text": "Dobro jutro",
+      "say": "DOH-broh YOO-troh"
+    },
+    "good_evening": {
+      "text": "Dober večer",
+      "say": "DOH-ber veh-CHEHR"
+    },
+    "goodbye": {
+      "text": "Nasvidenje",
+      "say": "nahs-VEE-deh-nyeh"
+    },
+    "how_are_you": {
+      "text": "Kako ste?",
+      "say": "KAH-koh steh"
+    },
+    "nice_to_meet": {
+      "text": "Me veseli",
+      "say": "meh veh-SEH-lee"
+    },
+    "please": {
+      "text": "Prosim",
+      "say": "PROH-seem"
+    },
+    "thank_you": {
+      "text": "Hvala",
+      "say": "HVAH-lah"
+    },
+    "youre_welcome": {
+      "text": "Ni za kaj",
+      "say": "nee ZAH kai"
+    },
+    "excuse_me": {
+      "text": "Oprostite",
+      "say": "oh-PROS-tee-teh"
+    },
+    "sorry": {
+      "text": "Žal mi je",
+      "say": "ZHAHL mee yeh"
+    },
+    "yes": {
+      "text": "Da",
+      "say": "DAH"
+    },
+    "no": {
+      "text": "Ne",
+      "say": "NEH"
+    },
+    "speak_english": {
+      "text": "Govorite angleško?",
+      "say": "goh-VOH-ree-teh ahn-GLESH-koh"
+    },
+    "dont_understand": {
+      "text": "Ne razumem",
+      "say": "neh rah-ZOO-mem"
+    },
+    "slowly": {
+      "text": "Prosim, govorite počasneje",
+      "say": "PROH-seem, goh-VOH-ree-teh poh-chahs-NEH-yeh"
+    },
+    "repeat": {
+      "text": "Lahko ponovite?",
+      "say": "lah-KOH poh-NOH-vee-teh"
+    },
+    "where_station": {
+      "text": "Kje je železniška postaja?",
+      "say": "KYEH yeh zheh-LEZ-neesh-kah pos-TAH-yah"
+    },
+    "where_toilet": {
+      "text": "Kje je stranišče?",
+      "say": "KYEH yeh strah-NEESH-cheh"
+    },
+    "is_it_far": {
+      "text": "Je daleč?",
+      "say": "yeh DAH-lech"
+    },
+    "left": {
+      "text": "Levo",
+      "say": "LEH-voh"
+    },
+    "right": {
+      "text": "Desno",
+      "say": "DES-noh"
+    },
+    "straight": {
+      "text": "Naravnost",
+      "say": "NAH-rahv-nost"
+    },
+    "menu": {
+      "text": "Jedilni list, prosim",
+      "say": "yeh-DEEL-nee LEEST, PROH-seem"
+    },
+    "water": {
+      "text": "Vodo, prosim",
+      "say": "VOH-doh, PROH-seem"
+    },
+    "bill": {
+      "text": "Račun, prosim",
+      "say": "rah-CHOON, PROH-seem"
+    },
+    "delicious": {
+      "text": "Zelo okusno!",
+      "say": "zeh-LOH oh-KOOS-noh"
+    },
+    "vegetarian": {
+      "text": "Sem vegetarijanka",
+      "say": "sem veh-geh-tah-ree-YAHN-kah"
+    },
+    "how_much": {
+      "text": "Koliko stane?",
+      "say": "KOH-lee-koh STAH-neh"
+    },
+    "too_expensive": {
+      "text": "Predrago je",
+      "say": "preh-DRAH-goh yeh"
+    },
+    "pay_card": {
+      "text": "Lahko plačam s kartico?",
+      "say": "lah-KOH PLAH-chahm s KAR-tee-tsoh"
+    },
+    "help": {
+      "text": "Na pomoč!",
+      "say": "nah poh-MOCH"
+    },
+    "need_doctor": {
+      "text": "Potrebujem zdravnika",
+      "say": "poh-treh-BOO-yem zdrahv-NEE-kah"
+    },
+    "lost": {
+      "text": "Izgubila sem se",
+      "say": "eez-GOO-bee-lah sem seh"
+    },
+    "n1": {
+      "text": "ena",
+      "say": "EH-nah"
+    },
+    "n2": {
+      "text": "dva",
+      "say": "DVAH"
+    },
+    "n3": {
+      "text": "tri",
+      "say": "TREE"
+    },
+    "n4": {
+      "text": "štiri",
+      "say": "SHTEE-ree"
+    },
+    "n5": {
+      "text": "pet",
+      "say": "PET"
+    },
+    "n6": {
+      "text": "šest",
+      "say": "SHEST"
+    },
+    "n7": {
+      "text": "sedem",
+      "say": "SEH-dem"
+    },
+    "n8": {
+      "text": "osem",
+      "say": "OH-sem"
+    },
+    "n9": {
+      "text": "devet",
+      "say": "DEH-vet"
+    },
+    "n10": {
+      "text": "deset",
+      "say": "DEH-set"
+    }
+  }
+}

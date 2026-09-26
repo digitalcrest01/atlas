@@ -1,0 +1,183 @@
+{
+  "book": "cs",
+  "name": "Czech",
+  "native": "čeština",
+  "phrases": {
+    "hello": {
+      "text": "Dobrý den",
+      "say": "DOB-ree den"
+    },
+    "good_morning": {
+      "text": "Dobré ráno",
+      "say": "DOB-reh RAH-no"
+    },
+    "good_evening": {
+      "text": "Dobrý večer",
+      "say": "DOB-ree VEH-cher"
+    },
+    "goodbye": {
+      "text": "Na shledanou",
+      "say": "NA-skhleh-da-noh"
+    },
+    "how_are_you": {
+      "text": "Jak se máte?",
+      "say": "YAK seh MAH-teh"
+    },
+    "nice_to_meet": {
+      "text": "Těší mě",
+      "say": "TYEH-shee myeh"
+    },
+    "please": {
+      "text": "Prosím",
+      "say": "PRO-seem"
+    },
+    "thank_you": {
+      "text": "Děkuji",
+      "say": "DYEH-koo-yi"
+    },
+    "youre_welcome": {
+      "text": "Není zač",
+      "say": "NEH-nyee zach"
+    },
+    "excuse_me": {
+      "text": "Promiňte",
+      "say": "PRO-meen-teh"
+    },
+    "sorry": {
+      "text": "Omlouvám se",
+      "say": "OM-loh-vahm seh"
+    },
+    "yes": {
+      "text": "Ano",
+      "say": "AH-no"
+    },
+    "no": {
+      "text": "Ne",
+      "say": "neh"
+    },
+    "speak_english": {
+      "text": "Mluvíte anglicky?",
+      "say": "MLOO-vee-teh AN-glits-ki"
+    },
+    "dont_understand": {
+      "text": "Nerozumím",
+      "say": "NEH-ro-zoo-meem"
+    },
+    "slowly": {
+      "text": "Mluvte prosím pomaleji",
+      "say": "MLOOV-teh PRO-seem PO-ma-leh-yi"
+    },
+    "repeat": {
+      "text": "Můžete to zopakovat?",
+      "say": "MOO-zheh-teh to ZO-pa-ko-vat"
+    },
+    "where_station": {
+      "text": "Kde je nádraží?",
+      "say": "GDEH yeh NAH-dra-zhee"
+    },
+    "where_toilet": {
+      "text": "Kde jsou toalety?",
+      "say": "GDEH soh TO-a-leh-ti"
+    },
+    "is_it_far": {
+      "text": "Je to daleko?",
+      "say": "YEH to DA-leh-ko"
+    },
+    "left": {
+      "text": "Doleva",
+      "say": "DO-leh-va"
+    },
+    "right": {
+      "text": "Doprava",
+      "say": "DO-pra-va"
+    },
+    "straight": {
+      "text": "Rovně",
+      "say": "ROV-nyeh"
+    },
+    "menu": {
+      "text": "Jídelní lístek, prosím",
+      "say": "YEE-del-nyee LEES-tek PRO-seem"
+    },
+    "water": {
+      "text": "Vodu, prosím",
+      "say": "VO-doo PRO-seem"
+    },
+    "bill": {
+      "text": "Účet, prosím",
+      "say": "OO-chet PRO-seem"
+    },
+    "delicious": {
+      "text": "Výborné!",
+      "say": "VEE-bor-neh"
+    },
+    "vegetarian": {
+      "text": "Jsem vegetariánka",
+      "say": "sem VEH-geh-ta-ri-ahn-ka"
+    },
+    "how_much": {
+      "text": "Kolik to stojí?",
+      "say": "KO-lik to STO-yee"
+    },
+    "too_expensive": {
+      "text": "To je moc drahé",
+      "say": "TO yeh mots DRA-heh"
+    },
+    "pay_card": {
+      "text": "Můžu platit kartou?",
+      "say": "MOO-zhoo PLA-tyit KAR-toh"
+    },
+    "help": {
+      "text": "Pomoc!",
+      "say": "PO-mots"
+    },
+    "need_doctor": {
+      "text": "Potřebuji lékaře",
+      "say": "PO-trzheh-boo-yi LEH-ka-rzheh"
+    },
+    "lost": {
+      "text": "Ztratila jsem se",
+      "say": "STRA-tyi-la sem seh"
+    },
+    "n1": {
+      "text": "jedna",
+      "say": "YED-na"
+    },
+    "n2": {
+      "text": "dva",
+      "say": "DVAH"
+    },
+    "n3": {
+      "text": "tři",
+      "say": "TRZHI"
+    },
+    "n4": {
+      "text": "čtyři",
+      "say": "CHTI-rzhi"
+    },
+    "n5": {
+      "text": "pět",
+      "say": "PYET"
+    },
+    "n6": {
+      "text": "šest",
+      "say": "SHEST"
+    },
+    "n7": {
+      "text": "sedm",
+      "say": "SEH-dum"
+    },
+    "n8": {
+      "text": "osm",
+      "say": "O-sum"
+    },
+    "n9": {
+      "text": "devět",
+      "say": "DEH-vyet"
+    },
+    "n10": {
+      "text": "deset",
+      "say": "DEH-set"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "book": "da",
+  "name": "Danish",
+  "native": "Dansk",
+  "phrases": {
+    "hello": {
+      "text": "Hej",
+      "say": "HY"
+    },
+    "good_morning": {
+      "text": "Godmorgen",
+      "say": "goh-MORN"
+    },
+    "good_evening": {
+      "text": "Godaften",
+      "say": "goh-AF-ten"
+    },
+    "goodbye": {
+      "text": "Farvel",
+      "say": "fah-VEL"
+    },
+    "how_are_you": {
+      "text": "Hvordan har du det?",
+      "say": "vor-DAN har doo DEH"
+    },
+    "nice_to_meet": {
+      "text": "Hyggeligt at møde dig",
+      "say": "HUE-geh-leet at MUR-eh dy"
+    },
+    "please": {
+      "text": "Vær så venlig",
+      "say": "vair saw VEN-lee"
+    },
+    "thank_you": {
+      "text": "Tak",
+      "say": "TAHK"
+    },
+    "youre_welcome": {
+      "text": "Selv tak",
+      "say": "sel TAHK"
+    },
+    "excuse_me": {
+      "text": "Undskyld mig",
+      "say": "OON-skul my"
+    },
+    "sorry": {
+      "text": "Undskyld",
+      "say": "OON-skul"
+    },
+    "yes": {
+      "text": "Ja",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Nej",
+      "say": "NY"
+    },
+    "speak_english": {
+      "text": "Taler du engelsk?",
+      "say": "TAY-ler doo ENG-elsk"
+    },
+    "dont_understand": {
+      "text": "Jeg forstår det ikke",
+      "say": "yai for-STOR deh IG-geh"
+    },
+    "slowly": {
+      "text": "Vil du tale lidt langsommere?",
+      "say": "vil doo TAY-leh lit LANG-som-mer-eh"
+    },
+    "repeat": {
+      "text": "Kan du sige det igen?",
+      "say": "kan doo SEE-eh deh ee-GEN"
+    },
+    "where_station": {
+      "text": "Hvor er togstationen?",
+      "say": "vor air TOW-sta-shoh-nen"
+    },
+    "where_toilet": {
+      "text": "Hvor er toilettet?",
+      "say": "vor air toy-LET-tet"
+    },
+    "is_it_far": {
+      "text": "Er det langt væk?",
+      "say": "air deh langt VEK"
+    },
+    "left": {
+      "text": "Til venstre",
+      "say": "til VEN-streh"
+    },
+    "right": {
+      "text": "Til højre",
+      "say": "til HOY-reh"
+    },
+    "straight": {
+      "text": "Ligeud",
+      "say": "LEE-eh-ooth"
+    },
+    "menu": {
+      "text": "Menukortet, tak",
+      "say": "meh-NU-kor-tet, TAHK"
+    },
+    "water": {
+      "text": "Vand, tak",
+      "say": "VAN, TAHK"
+    },
+    "bill": {
+      "text": "Regningen, tak",
+      "say": "RYE-ning-en, TAHK"
+    },
+    "delicious": {
+      "text": "Lækkert!",
+      "say": "LEK-kert"
+    },
+    "vegetarian": {
+      "text": "Jeg er vegetar",
+      "say": "yai air veh-geh-TAR"
+    },
+    "how_much": {
+      "text": "Hvad koster det?",
+      "say": "vath KOS-ter deh"
+    },
+    "too_expensive": {
+      "text": "Det er for dyrt",
+      "say": "deh air for DEERT"
+    },
+    "pay_card": {
+      "text": "Kan jeg betale med kort?",
+      "say": "kan yai beh-TAH-leh meth KORT"
+    },
+    "help": {
+      "text": "Hjælp!",
+      "say": "YELP"
+    },
+    "need_doctor": {
+      "text": "Jeg har brug for en læge",
+      "say": "yai har BROO for en LAY-eh"
+    },
+    "lost": {
+      "text": "Jeg er faret vild",
+      "say": "yai air FAR-et VEEL"
+    },
+    "n1": {
+      "text": "en",
+      "say": "EHN"
+    },
+    "n2": {
+      "text": "to",
+      "say": "TOH"
+    },
+    "n3": {
+      "text": "tre",
+      "say": "TREH"
+    },
+    "n4": {
+      "text": "fire",
+      "say": "FEE-er"
+    },
+    "n5": {
+      "text": "fem",
+      "say": "FEM"
+    },
+    "n6": {
+      "text": "seks",
+      "say": "SEKS"
+    },
+    "n7": {
+      "text": "syv",
+      "say": "SYOO"
+    },
+    "n8": {
+      "text": "otte",
+      "say": "OH-deh"
+    },
+    "n9": {
+      "text": "ni",
+      "say": "NEE"
+    },
+    "n10": {
+      "text": "ti",
+      "say": "TEE"
+    }
+  }
+}

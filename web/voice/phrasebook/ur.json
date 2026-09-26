@@ -1,0 +1,227 @@
+{
+  "book": "ur",
+  "name": "Urdu",
+  "native": "اردو",
+  "phrases": {
+    "hello": {
+      "text": "السلام علیکم",
+      "roman": "assalaam-o-alaikum",
+      "say": "as-sa-LAAM-o a-LAI-kum"
+    },
+    "good_morning": {
+      "text": "صبح بخیر",
+      "roman": "subah bakhair",
+      "say": "SU-bah ba-KHAIR"
+    },
+    "good_evening": {
+      "text": "شام بخیر",
+      "roman": "shaam bakhair",
+      "say": "SHAAM ba-KHAIR"
+    },
+    "goodbye": {
+      "text": "خدا حافظ",
+      "roman": "khuda haafiz",
+      "say": "khu-DAA HAA-fiz"
+    },
+    "how_are_you": {
+      "text": "آپ کیسے ہیں؟",
+      "roman": "aap kaise hain?",
+      "say": "aap KAI-say hain"
+    },
+    "nice_to_meet": {
+      "text": "آپ سے مل کر خوشی ہوئی",
+      "roman": "aap se mil kar khushi hui",
+      "say": "AAP say mil kar khu-SHEE HOO-ee"
+    },
+    "please": {
+      "text": "براہ کرم",
+      "roman": "baraa-e-karam",
+      "say": "ba-RAA-e ka-RAM"
+    },
+    "thank_you": {
+      "text": "شکریہ",
+      "roman": "shukriya",
+      "say": "SHUK-ree-yah"
+    },
+    "youre_welcome": {
+      "text": "کوئی بات نہیں",
+      "roman": "koi baat nahin",
+      "say": "KOY baat na-HEEN"
+    },
+    "excuse_me": {
+      "text": "ذرا سنیے",
+      "roman": "zara suniye",
+      "say": "za-RAA SU-nee-ay"
+    },
+    "sorry": {
+      "text": "معاف کیجیے",
+      "roman": "maaf kijiye",
+      "say": "MAAF KEE-jee-ay"
+    },
+    "yes": {
+      "text": "جی ہاں",
+      "roman": "ji haan",
+      "say": "jee HAAN"
+    },
+    "no": {
+      "text": "جی نہیں",
+      "roman": "ji nahin",
+      "say": "jee na-HEEN"
+    },
+    "speak_english": {
+      "text": "کیا آپ انگریزی بولتے ہیں؟",
+      "roman": "kya aap angrezi bolte hain?",
+      "say": "kyaa aap an-GRAY-zee BOL-tay hain"
+    },
+    "dont_understand": {
+      "text": "مجھے سمجھ نہیں آئی",
+      "roman": "mujhe samajh nahin aayi",
+      "say": "mu-JHAY sa-MAJH na-HEEN AA-ee"
+    },
+    "slowly": {
+      "text": "براہ کرم تھوڑا آہستہ بولیے",
+      "roman": "baraa-e-karam thora aahista boliye",
+      "say": "ba-RAA-e ka-RAM THO-raa AA-his-taa BO-lee-ay"
+    },
+    "repeat": {
+      "text": "کیا آپ دوبارہ کہہ سکتے ہیں؟",
+      "roman": "kya aap dobaara keh sakte hain?",
+      "say": "kyaa aap do-BAA-raa keh SAK-tay hain"
+    },
+    "where_station": {
+      "text": "ریلوے اسٹیشن کہاں ہے؟",
+      "roman": "railway station kahaan hai?",
+      "say": "RAIL-way STAY-shun ka-HAAN hai"
+    },
+    "where_toilet": {
+      "text": "واش روم کہاں ہے؟",
+      "roman": "washroom kahaan hai?",
+      "say": "WASH-room ka-HAAN hai"
+    },
+    "is_it_far": {
+      "text": "کیا یہ دور ہے؟",
+      "roman": "kya yeh door hai?",
+      "say": "kyaa yeh DOOR hai"
+    },
+    "left": {
+      "text": "بائیں",
+      "roman": "baayen",
+      "say": "BAA-yen"
+    },
+    "right": {
+      "text": "دائیں",
+      "roman": "daayen",
+      "say": "DAA-yen"
+    },
+    "straight": {
+      "text": "سیدھا",
+      "roman": "seedha",
+      "say": "SEE-dhaa"
+    },
+    "menu": {
+      "text": "براہ کرم مینو دیجیے",
+      "roman": "baraa-e-karam menu dijiye",
+      "say": "ba-RAA-e ka-RAM MAY-noo DEE-jee-ay"
+    },
+    "water": {
+      "text": "براہ کرم پانی دیجیے",
+      "roman": "baraa-e-karam paani dijiye",
+      "say": "ba-RAA-e ka-RAM PAA-nee DEE-jee-ay"
+    },
+    "bill": {
+      "text": "براہ کرم بل دیجیے",
+      "roman": "baraa-e-karam bill dijiye",
+      "say": "ba-RAA-e ka-RAM BILL DEE-jee-ay"
+    },
+    "delicious": {
+      "text": "بہت مزیدار ہے!",
+      "roman": "bahut mazedaar hai!",
+      "say": "ba-HUT ma-zay-DAAR hai"
+    },
+    "vegetarian": {
+      "text": "میں سبزی خور ہوں",
+      "roman": "main sabzi khor hoon",
+      "say": "main SAB-zee khor hoon"
+    },
+    "how_much": {
+      "text": "یہ کتنے کا ہے؟",
+      "roman": "yeh kitne ka hai?",
+      "say": "yeh KIT-nay kaa hai"
+    },
+    "too_expensive": {
+      "text": "یہ بہت مہنگا ہے",
+      "roman": "yeh bahut mehnga hai",
+      "say": "yeh ba-HUT MEHN-gaa hai"
+    },
+    "pay_card": {
+      "text": "کیا میں کارڈ سے ادائیگی کر سکتی ہوں؟",
+      "roman": "kya main card se adaaegi kar sakti hoon?",
+      "say": "kyaa main KARD say a-DAA-e-gee kar SAK-tee hoon"
+    },
+    "help": {
+      "text": "بچاؤ!",
+      "roman": "bachaao!",
+      "say": "ba-CHAA-o"
+    },
+    "need_doctor": {
+      "text": "مجھے ڈاکٹر کی ضرورت ہے",
+      "roman": "mujhe doctor ki zaroorat hai",
+      "say": "mu-JHAY DOK-tar kee za-ROO-rat hai"
+    },
+    "lost": {
+      "text": "میں راستہ بھول گئی ہوں",
+      "roman": "main raasta bhool gayi hoon",
+      "say": "main RAAS-taa BHOOL ga-YEE hoon"
+    },
+    "n1": {
+      "text": "ایک",
+      "roman": "ek",
+      "say": "AYK"
+    },
+    "n2": {
+      "text": "دو",
+      "roman": "do",
+      "say": "DOH"
+    },
+    "n3": {
+      "text": "تین",
+      "roman": "teen",
+      "say": "TEEN"
+    },
+    "n4": {
+      "text": "چار",
+      "roman": "chaar",
+      "say": "CHAAR"
+    },
+    "n5": {
+      "text": "پانچ",
+      "roman": "paanch",
+      "say": "PAANCH"
+    },
+    "n6": {
+      "text": "چھ",
+      "roman": "chhe",
+      "say": "CHHAY"
+    },
+    "n7": {
+      "text": "سات",
+      "roman": "saat",
+      "say": "SAAT"
+    },
+    "n8": {
+      "text": "آٹھ",
+      "roman": "aath",
+      "say": "AATH"
+    },
+    "n9": {
+      "text": "نو",
+      "roman": "nau",
+      "say": "NOW"
+    },
+    "n10": {
+      "text": "دس",
+      "roman": "das",
+      "say": "DUS"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "book": "sv",
+  "name": "Swedish",
+  "native": "Svenska",
+  "phrases": {
+    "hello": {
+      "text": "Hej",
+      "say": "HAY"
+    },
+    "good_morning": {
+      "text": "God morgon",
+      "say": "goo MOR-ron"
+    },
+    "good_evening": {
+      "text": "God kväll",
+      "say": "goo KVELL"
+    },
+    "goodbye": {
+      "text": "Hej då",
+      "say": "hay DOH"
+    },
+    "how_are_you": {
+      "text": "Hur mår du?",
+      "say": "hoor MOR doo"
+    },
+    "nice_to_meet": {
+      "text": "Trevligt att träffas",
+      "say": "TREHV-leet at TREF-fas"
+    },
+    "please": {
+      "text": "Snälla",
+      "say": "SNEL-la"
+    },
+    "thank_you": {
+      "text": "Tack",
+      "say": "TAHK"
+    },
+    "youre_welcome": {
+      "text": "Ingen orsak",
+      "say": "ING-en OO-shak"
+    },
+    "excuse_me": {
+      "text": "Ursäkta",
+      "say": "oor-SHEK-ta"
+    },
+    "sorry": {
+      "text": "Förlåt",
+      "say": "fur-LOHT"
+    },
+    "yes": {
+      "text": "Ja",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Nej",
+      "say": "NAY"
+    },
+    "speak_english": {
+      "text": "Pratar du engelska?",
+      "say": "PRAH-tar doo ENG-el-ska"
+    },
+    "dont_understand": {
+      "text": "Jag förstår inte",
+      "say": "yah fur-STOHR IN-teh"
+    },
+    "slowly": {
+      "text": "Kan du prata lite långsammare?",
+      "say": "kan doo PRAH-ta LEE-teh LONG-sam-ma-reh"
+    },
+    "repeat": {
+      "text": "Kan du säga det igen?",
+      "say": "kan doo SAY-ya deh ee-YEN"
+    },
+    "where_station": {
+      "text": "Var ligger tågstationen?",
+      "say": "var LIG-ger TOHG-sta-shoo-nen"
+    },
+    "where_toilet": {
+      "text": "Var är toaletten?",
+      "say": "var air too-a-LET-ten"
+    },
+    "is_it_far": {
+      "text": "Är det långt?",
+      "say": "air deh LONGT"
+    },
+    "left": {
+      "text": "Till vänster",
+      "say": "til VEN-ster"
+    },
+    "right": {
+      "text": "Till höger",
+      "say": "til HUR-ger"
+    },
+    "straight": {
+      "text": "Rakt fram",
+      "say": "rahkt FRAHM"
+    },
+    "menu": {
+      "text": "Menyn, tack",
+      "say": "meh-NEWN, TAHK"
+    },
+    "water": {
+      "text": "Vatten, tack",
+      "say": "VAT-ten, TAHK"
+    },
+    "bill": {
+      "text": "Notan, tack",
+      "say": "NOO-tan, TAHK"
+    },
+    "delicious": {
+      "text": "Jättegott!",
+      "say": "YET-teh-got"
+    },
+    "vegetarian": {
+      "text": "Jag är vegetarian",
+      "say": "yah air veh-geh-tah-ree-AHN"
+    },
+    "how_much": {
+      "text": "Vad kostar det?",
+      "say": "vah KOS-tar deh"
+    },
+    "too_expensive": {
+      "text": "Det är för dyrt",
+      "say": "deh air fur DEERT"
+    },
+    "pay_card": {
+      "text": "Kan jag betala med kort?",
+      "say": "kan yah beh-TAH-la meh KOORT"
+    },
+    "help": {
+      "text": "Hjälp!",
+      "say": "YELP"
+    },
+    "need_doctor": {
+      "text": "Jag behöver en läkare",
+      "say": "yah beh-HUR-ver en LAIR-ka-reh"
+    },
+    "lost": {
+      "text": "Jag har gått vilse",
+      "say": "yah har got VIL-seh"
+    },
+    "n1": {
+      "text": "ett",
+      "say": "ET"
+    },
+    "n2": {
+      "text": "två",
+      "say": "TVOH"
+    },
+    "n3": {
+      "text": "tre",
+      "say": "TREH"
+    },
+    "n4": {
+      "text": "fyra",
+      "say": "FEE-ra"
+    },
+    "n5": {
+      "text": "fem",
+      "say": "FEM"
+    },
+    "n6": {
+      "text": "sex",
+      "say": "SEKS"
+    },
+    "n7": {
+      "text": "sju",
+      "say": "HWOO"
+    },
+    "n8": {
+      "text": "åtta",
+      "say": "OT-ta"
+    },
+    "n9": {
+      "text": "nio",
+      "say": "NEE-oo"
+    },
+    "n10": {
+      "text": "tio",
+      "say": "TEE-oo"
+    }
+  }
+}

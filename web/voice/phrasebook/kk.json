@@ -1,0 +1,227 @@
+{
+  "book": "kk",
+  "name": "Kazakh",
+  "native": "Қазақша",
+  "phrases": {
+    "hello": {
+      "text": "Сәлеметсіз бе",
+      "roman": "Sälemetsiz be",
+      "say": "sah-leh-met-SIZ beh"
+    },
+    "good_morning": {
+      "text": "Қайырлы таң",
+      "roman": "Qayyrly tang",
+      "say": "kai-uhr-LUH TAHNG"
+    },
+    "good_evening": {
+      "text": "Қайырлы кеш",
+      "roman": "Qayyrly kesh",
+      "say": "kai-uhr-LUH KESH"
+    },
+    "goodbye": {
+      "text": "Сау болыңыз",
+      "roman": "Sau bolyngyz",
+      "say": "sah-oo boh-luh-NGUHZ"
+    },
+    "how_are_you": {
+      "text": "Қалыңыз қалай?",
+      "roman": "Qalyngyz qalay?",
+      "say": "kah-luh-NGUHZ kah-LAI"
+    },
+    "nice_to_meet": {
+      "text": "Танысқаныма қуаныштымын",
+      "roman": "Tanysqanyma quanyshtymyn",
+      "say": "tah-nuhs-kah-nuh-MAH koo-ah-nuhsh-tuh-MUHN"
+    },
+    "please": {
+      "text": "Өтінемін",
+      "roman": "Ötinemin",
+      "say": "uh-tee-neh-MEEN"
+    },
+    "thank_you": {
+      "text": "Рақмет",
+      "roman": "Raqmet",
+      "say": "rahk-MET"
+    },
+    "youre_welcome": {
+      "text": "Оқасы жоқ",
+      "roman": "Oqasy zhoq",
+      "say": "oh-kah-SUH ZHOHK"
+    },
+    "excuse_me": {
+      "text": "Кешіріңіз",
+      "roman": "Keshiringiz",
+      "say": "keh-shee-ree-NGEEZ"
+    },
+    "sorry": {
+      "text": "Кешіріңіз",
+      "roman": "Keshiringiz",
+      "say": "keh-shee-ree-NGEEZ"
+    },
+    "yes": {
+      "text": "Иә",
+      "roman": "Iä",
+      "say": "ee-AH"
+    },
+    "no": {
+      "text": "Жоқ",
+      "roman": "Zhoq",
+      "say": "ZHOHK"
+    },
+    "speak_english": {
+      "text": "Сіз ағылшынша сөйлейсіз бе?",
+      "roman": "Siz aghylshynsha söyleysiz be?",
+      "say": "siz ah-guhl-shuhn-SHAH suh-lay-SIZ beh"
+    },
+    "dont_understand": {
+      "text": "Мен түсінбеймін",
+      "roman": "Men tüsinbeymin",
+      "say": "men too-sin-bay-MIN"
+    },
+    "slowly": {
+      "text": "Баяуырақ сөйлеңізші",
+      "roman": "Bayauyraq söylengizshi",
+      "say": "bah-yah-oo-uh-RAHK suh-leh-ngeez-SHEE"
+    },
+    "repeat": {
+      "text": "Қайталап жіберіңізші",
+      "roman": "Qaytalap zhiberingizshi",
+      "say": "kai-tah-LAHP zhee-beh-ree-ngeez-SHEE"
+    },
+    "where_station": {
+      "text": "Теміржол вокзалы қайда?",
+      "roman": "Temirzhol vokzaly qayda?",
+      "say": "teh-meer-ZHOL vok-zah-LUH kai-DAH"
+    },
+    "where_toilet": {
+      "text": "Әжетхана қайда?",
+      "roman": "Äzhetkhana qayda?",
+      "say": "ah-zhet-khah-NAH kai-DAH"
+    },
+    "is_it_far": {
+      "text": "Алыс па?",
+      "roman": "Alys pa?",
+      "say": "ah-LUHS pah"
+    },
+    "left": {
+      "text": "Солға",
+      "roman": "Solgha",
+      "say": "sol-GAH"
+    },
+    "right": {
+      "text": "Оңға",
+      "roman": "Ongha",
+      "say": "ong-GAH"
+    },
+    "straight": {
+      "text": "Тура",
+      "roman": "Tura",
+      "say": "too-RAH"
+    },
+    "menu": {
+      "text": "Мәзірді беріңізші",
+      "roman": "Mäzirdi beringizshi",
+      "say": "mah-zeer-DEE beh-ree-ngeez-SHEE"
+    },
+    "water": {
+      "text": "Су беріңізші",
+      "roman": "Su beringizshi",
+      "say": "SOO beh-ree-ngeez-SHEE"
+    },
+    "bill": {
+      "text": "Есепшотты әкеліңізші",
+      "roman": "Esepshotty äkelingizshi",
+      "say": "yeh-sep-shot-TUH ah-keh-lee-ngeez-SHEE"
+    },
+    "delicious": {
+      "text": "Өте дәмді!",
+      "roman": "Öte dämdi!",
+      "say": "uh-TEH dahm-DEE"
+    },
+    "vegetarian": {
+      "text": "Мен вегетарианмын",
+      "roman": "Men vegetarianmyn",
+      "say": "men veh-geh-tah-ree-ahn-MUHN"
+    },
+    "how_much": {
+      "text": "Бұл қанша тұрады?",
+      "roman": "Bul qansha turady?",
+      "say": "bool kahn-SHAH too-rah-DUH"
+    },
+    "too_expensive": {
+      "text": "Тым қымбат",
+      "roman": "Tym qymbat",
+      "say": "tuhm kuhm-BAHT"
+    },
+    "pay_card": {
+      "text": "Картамен төлеуге бола ма?",
+      "roman": "Kartamen töleuge bola ma?",
+      "say": "kar-tah-MEN tuh-leh-oo-GEH boh-LAH mah"
+    },
+    "help": {
+      "text": "Көмектесіңдер!",
+      "roman": "Kömektesingder!",
+      "say": "kuh-mek-teh-sing-DER"
+    },
+    "need_doctor": {
+      "text": "Маған дәрігер керек",
+      "roman": "Maghan däriger kerek",
+      "say": "mah-GAHN dah-ree-GER keh-REK"
+    },
+    "lost": {
+      "text": "Мен адасып қалдым",
+      "roman": "Men adasyp qaldym",
+      "say": "men ah-dah-SUHP kahl-DUHM"
+    },
+    "n1": {
+      "text": "бір",
+      "roman": "bir",
+      "say": "BEER"
+    },
+    "n2": {
+      "text": "екі",
+      "roman": "eki",
+      "say": "yeh-KEE"
+    },
+    "n3": {
+      "text": "үш",
+      "roman": "üsh",
+      "say": "OOSH"
+    },
+    "n4": {
+      "text": "төрт",
+      "roman": "tört",
+      "say": "TURT"
+    },
+    "n5": {
+      "text": "бес",
+      "roman": "bes",
+      "say": "BES"
+    },
+    "n6": {
+      "text": "алты",
+      "roman": "alty",
+      "say": "ahl-TUH"
+    },
+    "n7": {
+      "text": "жеті",
+      "roman": "zheti",
+      "say": "zheh-TEE"
+    },
+    "n8": {
+      "text": "сегіз",
+      "roman": "segiz",
+      "say": "seh-GEEZ"
+    },
+    "n9": {
+      "text": "тоғыз",
+      "roman": "toghyz",
+      "say": "toh-GUHZ"
+    },
+    "n10": {
+      "text": "он",
+      "roman": "on",
+      "say": "ON"
+    }
+  }
+}

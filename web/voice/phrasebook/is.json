@@ -1,0 +1,183 @@
+{
+  "book": "is",
+  "name": "Icelandic",
+  "native": "íslenska",
+  "phrases": {
+    "hello": {
+      "text": "Halló",
+      "say": "HAL-loh"
+    },
+    "good_morning": {
+      "text": "Góðan daginn",
+      "say": "GOH-than DAI-in"
+    },
+    "good_evening": {
+      "text": "Gott kvöld",
+      "say": "GOTT KVULD"
+    },
+    "goodbye": {
+      "text": "Bless",
+      "say": "BLESS"
+    },
+    "how_are_you": {
+      "text": "Hvernig hefur þú það?",
+      "say": "KVER-nig HEH-vur thoo THATH"
+    },
+    "nice_to_meet": {
+      "text": "Gaman að kynnast þér",
+      "say": "GA-man ath KIN-nast THYER"
+    },
+    "please": {
+      "text": "Vinsamlegast",
+      "say": "VIN-sam-leh-gast"
+    },
+    "thank_you": {
+      "text": "Takk fyrir",
+      "say": "TAHK fi-rir"
+    },
+    "youre_welcome": {
+      "text": "Ekkert að þakka",
+      "say": "EHK-kert ath THAHK-ka"
+    },
+    "excuse_me": {
+      "text": "Afsakið",
+      "say": "AF-sa-kith"
+    },
+    "sorry": {
+      "text": "Fyrirgefðu",
+      "say": "FI-rir-gev-thu"
+    },
+    "yes": {
+      "text": "Já",
+      "say": "YOW"
+    },
+    "no": {
+      "text": "Nei",
+      "say": "NAY"
+    },
+    "speak_english": {
+      "text": "Talar þú ensku?",
+      "say": "TA-lar thoo ENS-ku"
+    },
+    "dont_understand": {
+      "text": "Ég skil ekki",
+      "say": "yeh SKIL ehk-ki"
+    },
+    "slowly": {
+      "text": "Gætirðu talað hægar?",
+      "say": "GAI-tir-thu TA-lath HAI-gar"
+    },
+    "repeat": {
+      "text": "Gætirðu endurtekið þetta?",
+      "say": "GAI-tir-thu EN-dur-teh-kith THET-ta"
+    },
+    "where_station": {
+      "text": "Hvar er lestarstöðin?",
+      "say": "kvar er LES-tar-stu-thin"
+    },
+    "where_toilet": {
+      "text": "Hvar er klósettið?",
+      "say": "kvar er KLOH-set-tith"
+    },
+    "is_it_far": {
+      "text": "Er það langt?",
+      "say": "er thath LOWNT"
+    },
+    "left": {
+      "text": "Til vinstri",
+      "say": "til VIN-stri"
+    },
+    "right": {
+      "text": "Til hægri",
+      "say": "til HAI-gri"
+    },
+    "straight": {
+      "text": "Beint áfram",
+      "say": "BAYNT ow-fram"
+    },
+    "menu": {
+      "text": "Matseðilinn, takk",
+      "say": "MAT-seh-thi-lin TAHK"
+    },
+    "water": {
+      "text": "Vatn, takk",
+      "say": "VAHTN TAHK"
+    },
+    "bill": {
+      "text": "Reikninginn, takk",
+      "say": "RAYK-nin-gin TAHK"
+    },
+    "delicious": {
+      "text": "Ljúffengt!",
+      "say": "LYOOF-fengt"
+    },
+    "vegetarian": {
+      "text": "Ég er grænmetisæta",
+      "say": "yeh er GRAIN-meh-tis-ai-ta"
+    },
+    "how_much": {
+      "text": "Hvað kostar þetta?",
+      "say": "kvath KOS-tar thet-ta"
+    },
+    "too_expensive": {
+      "text": "Þetta er of dýrt",
+      "say": "THET-ta er of DEERT"
+    },
+    "pay_card": {
+      "text": "Get ég borgað með korti?",
+      "say": "get yeh BOR-gath meth KOR-ti"
+    },
+    "help": {
+      "text": "Hjálp!",
+      "say": "HYOWLP"
+    },
+    "need_doctor": {
+      "text": "Ég þarf lækni",
+      "say": "yeh tharf LAIK-ni"
+    },
+    "lost": {
+      "text": "Ég er villt",
+      "say": "yeh er VILT"
+    },
+    "n1": {
+      "text": "einn",
+      "say": "AYDN"
+    },
+    "n2": {
+      "text": "tveir",
+      "say": "TVAYR"
+    },
+    "n3": {
+      "text": "þrír",
+      "say": "THREER"
+    },
+    "n4": {
+      "text": "fjórir",
+      "say": "FYOH-rir"
+    },
+    "n5": {
+      "text": "fimm",
+      "say": "FIM"
+    },
+    "n6": {
+      "text": "sex",
+      "say": "SEKS"
+    },
+    "n7": {
+      "text": "sjö",
+      "say": "SYUR"
+    },
+    "n8": {
+      "text": "átta",
+      "say": "OW-ta"
+    },
+    "n9": {
+      "text": "níu",
+      "say": "NEE-u"
+    },
+    "n10": {
+      "text": "tíu",
+      "say": "TEE-u"
+    }
+  }
+}

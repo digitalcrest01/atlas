@@ -1,0 +1,227 @@
+{
+  "book": "ne",
+  "name": "Nepali",
+  "native": "नेपाली",
+  "phrases": {
+    "hello": {
+      "text": "नमस्ते",
+      "roman": "namaste",
+      "say": "nuh-MUHS-tay"
+    },
+    "good_morning": {
+      "text": "शुभ प्रभात",
+      "roman": "shubha prabhat",
+      "say": "SHOO-bhuh pruh-BHAHT"
+    },
+    "good_evening": {
+      "text": "शुभ सन्ध्या",
+      "roman": "shubha sandhya",
+      "say": "SHOO-bhuh SUHN-dhyah"
+    },
+    "goodbye": {
+      "text": "फेरि भेटौँला",
+      "roman": "pheri bhetaunla",
+      "say": "PHAY-ree BHAY-taun-lah"
+    },
+    "how_are_you": {
+      "text": "तपाईंलाई कस्तो छ?",
+      "roman": "tapainlai kasto chha?",
+      "say": "tuh-PAAI-lai KUHS-toh chhuh"
+    },
+    "nice_to_meet": {
+      "text": "तपाईंलाई भेटेर खुसी लाग्यो",
+      "roman": "tapainlai bhetera khusi lagyo",
+      "say": "tuh-PAAI-lai BHAY-tay-ruh KHOO-see LAHG-yoh"
+    },
+    "please": {
+      "text": "कृपया",
+      "roman": "kripaya",
+      "say": "KRI-puh-yah"
+    },
+    "thank_you": {
+      "text": "धन्यवाद",
+      "roman": "dhanyabad",
+      "say": "DHUHN-yuh-baad"
+    },
+    "youre_welcome": {
+      "text": "केही छैन",
+      "roman": "kehi chhaina",
+      "say": "KAY-hee CHHAI-nuh"
+    },
+    "excuse_me": {
+      "text": "माफ गर्नुहोस्",
+      "roman": "maaf garnuhos",
+      "say": "MAHF guhr-noo-HOHS"
+    },
+    "sorry": {
+      "text": "माफ गर्नुहोस्",
+      "roman": "maaf garnuhos",
+      "say": "MAHF guhr-noo-HOHS"
+    },
+    "yes": {
+      "text": "हो",
+      "roman": "ho",
+      "say": "HOH"
+    },
+    "no": {
+      "text": "होइन",
+      "roman": "hoina",
+      "say": "HOY-nuh"
+    },
+    "speak_english": {
+      "text": "तपाईं अंग्रेजी बोल्नुहुन्छ?",
+      "roman": "tapain angreji bolnuhunchha?",
+      "say": "tuh-PAAI uhn-GRAY-jee BOHL-noo-hoon-chhuh"
+    },
+    "dont_understand": {
+      "text": "मैले बुझिनँ",
+      "roman": "maile bujhina",
+      "say": "MAI-lay BOO-jhi-nuh"
+    },
+    "slowly": {
+      "text": "कृपया अलि बिस्तारै बोल्नुहोस्",
+      "roman": "kripaya ali bistarai bolnuhos",
+      "say": "KRI-puh-yah UH-lee bis-TAH-rai BOHL-noo-hohs"
+    },
+    "repeat": {
+      "text": "फेरि भन्नुहोस् न",
+      "roman": "pheri bhannuhos na",
+      "say": "PHAY-ree BHUHN-noo-hohs nuh"
+    },
+    "where_station": {
+      "text": "रेल स्टेसन कहाँ छ?",
+      "roman": "rel stesan kahan chha?",
+      "say": "REL STAY-suhn kuh-HAAN chhuh"
+    },
+    "where_toilet": {
+      "text": "शौचालय कहाँ छ?",
+      "roman": "shauchalaya kahan chha?",
+      "say": "SHAU-chah-luh-yuh kuh-HAAN chhuh"
+    },
+    "is_it_far": {
+      "text": "टाढा छ?",
+      "roman": "tadha chha?",
+      "say": "TAH-dhah chhuh"
+    },
+    "left": {
+      "text": "बायाँ",
+      "roman": "bayan",
+      "say": "BAH-yaan"
+    },
+    "right": {
+      "text": "दायाँ",
+      "roman": "dayan",
+      "say": "DAH-yaan"
+    },
+    "straight": {
+      "text": "सिधा",
+      "roman": "sidha",
+      "say": "SEE-dhah"
+    },
+    "menu": {
+      "text": "मेनु दिनुहोस् न",
+      "roman": "menu dinuhos na",
+      "say": "MAY-noo DI-noo-hohs nuh"
+    },
+    "water": {
+      "text": "पानी दिनुहोस् न",
+      "roman": "pani dinuhos na",
+      "say": "PAH-nee DI-noo-hohs nuh"
+    },
+    "bill": {
+      "text": "बिल दिनुहोस् न",
+      "roman": "bil dinuhos na",
+      "say": "BIL DI-noo-hohs nuh"
+    },
+    "delicious": {
+      "text": "मीठो छ!",
+      "roman": "mitho chha!",
+      "say": "MEE-thoh chhuh"
+    },
+    "vegetarian": {
+      "text": "म शाकाहारी हुँ",
+      "roman": "ma shakahari hun",
+      "say": "muh SHAH-kah-hah-ree hoon"
+    },
+    "how_much": {
+      "text": "कति पर्छ?",
+      "roman": "kati parchha?",
+      "say": "KUH-ti PUHR-chhuh"
+    },
+    "too_expensive": {
+      "text": "धेरै महँगो भयो",
+      "roman": "dherai mahango bhayo",
+      "say": "DHAY-rai muh-HUHN-goh BHUH-yoh"
+    },
+    "pay_card": {
+      "text": "कार्डबाट तिर्न मिल्छ?",
+      "roman": "kardbata tirna milchha?",
+      "say": "KAHRD-bah-tah TIR-nuh MIL-chhuh"
+    },
+    "help": {
+      "text": "बचाउ!",
+      "roman": "bachau!",
+      "say": "buh-CHAU"
+    },
+    "need_doctor": {
+      "text": "मलाई डाक्टर चाहियो",
+      "roman": "malai daktar chahiyo",
+      "say": "muh-LAI DAHK-tuhr CHAH-hee-yoh"
+    },
+    "lost": {
+      "text": "म बाटो बिराएँ",
+      "roman": "ma bato biraen",
+      "say": "muh BAH-toh bi-RAH-ayn"
+    },
+    "n1": {
+      "text": "एक",
+      "roman": "ek",
+      "say": "AYK"
+    },
+    "n2": {
+      "text": "दुई",
+      "roman": "dui",
+      "say": "DOO-ee"
+    },
+    "n3": {
+      "text": "तीन",
+      "roman": "tin",
+      "say": "TEEN"
+    },
+    "n4": {
+      "text": "चार",
+      "roman": "char",
+      "say": "CHAHR"
+    },
+    "n5": {
+      "text": "पाँच",
+      "roman": "panch",
+      "say": "PAANCH"
+    },
+    "n6": {
+      "text": "छ",
+      "roman": "chha",
+      "say": "CHHUH"
+    },
+    "n7": {
+      "text": "सात",
+      "roman": "sat",
+      "say": "SAHT"
+    },
+    "n8": {
+      "text": "आठ",
+      "roman": "ath",
+      "say": "AHT"
+    },
+    "n9": {
+      "text": "नौ",
+      "roman": "nau",
+      "say": "NAU"
+    },
+    "n10": {
+      "text": "दस",
+      "roman": "das",
+      "say": "DUHS"
+    }
+  }
+}

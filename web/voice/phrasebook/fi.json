@@ -1,0 +1,183 @@
+{
+  "book": "fi",
+  "name": "Finnish",
+  "native": "suomi",
+  "phrases": {
+    "hello": {
+      "text": "Hei",
+      "say": "HAY"
+    },
+    "good_morning": {
+      "text": "Hyvää huomenta",
+      "say": "HUE-vaa HWOH-men-tah"
+    },
+    "good_evening": {
+      "text": "Hyvää iltaa",
+      "say": "HUE-vaa IL-taa"
+    },
+    "goodbye": {
+      "text": "Näkemiin",
+      "say": "NA-keh-meen"
+    },
+    "how_are_you": {
+      "text": "Mitä kuuluu?",
+      "say": "MI-ta KOO-loo"
+    },
+    "nice_to_meet": {
+      "text": "Hauska tutustua",
+      "say": "HOWS-kah TOO-toos-too-ah"
+    },
+    "please": {
+      "text": "Ole kiltti",
+      "say": "OH-leh KILT-tee"
+    },
+    "thank_you": {
+      "text": "Kiitos",
+      "say": "KEE-tohs"
+    },
+    "youre_welcome": {
+      "text": "Ei kestä",
+      "say": "AY KES-ta"
+    },
+    "excuse_me": {
+      "text": "Anteeksi",
+      "say": "AHN-teek-see"
+    },
+    "sorry": {
+      "text": "Olen pahoillani",
+      "say": "OH-len PAH-hoil-lah-nee"
+    },
+    "yes": {
+      "text": "Kyllä",
+      "say": "KUEL-la"
+    },
+    "no": {
+      "text": "Ei",
+      "say": "AY"
+    },
+    "speak_english": {
+      "text": "Puhutteko englantia?",
+      "say": "POO-hoot-teh-koh EN-glahn-tee-ah"
+    },
+    "dont_understand": {
+      "text": "En ymmärrä",
+      "say": "en UEM-mar-ra"
+    },
+    "slowly": {
+      "text": "Voisitteko puhua hitaammin?",
+      "say": "VOY-sit-teh-koh POO-hoo-ah HEE-taam-meen"
+    },
+    "repeat": {
+      "text": "Voisitteko toistaa?",
+      "say": "VOY-sit-teh-koh TOYS-taa"
+    },
+    "where_station": {
+      "text": "Missä on rautatieasema?",
+      "say": "MIS-sa on ROW-tah-tee-ah-seh-mah"
+    },
+    "where_toilet": {
+      "text": "Missä on vessa?",
+      "say": "MIS-sa on VES-sah"
+    },
+    "is_it_far": {
+      "text": "Onko se kaukana?",
+      "say": "ON-koh seh KOW-kah-nah"
+    },
+    "left": {
+      "text": "Vasemmalle",
+      "say": "VAH-sem-mahl-leh"
+    },
+    "right": {
+      "text": "Oikealle",
+      "say": "OY-keh-ahl-leh"
+    },
+    "straight": {
+      "text": "Suoraan",
+      "say": "SWOH-raan"
+    },
+    "menu": {
+      "text": "Ruokalista, kiitos",
+      "say": "RWOH-kah-lis-tah, KEE-tohs"
+    },
+    "water": {
+      "text": "Vettä, kiitos",
+      "say": "VET-ta, KEE-tohs"
+    },
+    "bill": {
+      "text": "Lasku, kiitos",
+      "say": "LAHS-koo, KEE-tohs"
+    },
+    "delicious": {
+      "text": "Herkullista!",
+      "say": "HER-kool-lis-tah"
+    },
+    "vegetarian": {
+      "text": "Olen kasvissyöjä",
+      "say": "OH-len KAHS-vis-sue-uh-ya"
+    },
+    "how_much": {
+      "text": "Paljonko se maksaa?",
+      "say": "PAHL-yon-koh seh MAHK-saa"
+    },
+    "too_expensive": {
+      "text": "Se on liian kallis",
+      "say": "seh on LEE-ahn KAHL-lis"
+    },
+    "pay_card": {
+      "text": "Voinko maksaa kortilla?",
+      "say": "VOYN-koh MAHK-saa KOR-til-lah"
+    },
+    "help": {
+      "text": "Apua!",
+      "say": "AH-poo-ah"
+    },
+    "need_doctor": {
+      "text": "Tarvitsen lääkärin",
+      "say": "TAR-vit-sen LAA-ka-rin"
+    },
+    "lost": {
+      "text": "Olen eksynyt",
+      "say": "OH-len EK-sue-nuet"
+    },
+    "n1": {
+      "text": "yksi",
+      "say": "UEK-see"
+    },
+    "n2": {
+      "text": "kaksi",
+      "say": "KAHK-see"
+    },
+    "n3": {
+      "text": "kolme",
+      "say": "KOL-meh"
+    },
+    "n4": {
+      "text": "neljä",
+      "say": "NEL-ya"
+    },
+    "n5": {
+      "text": "viisi",
+      "say": "VEE-see"
+    },
+    "n6": {
+      "text": "kuusi",
+      "say": "KOO-see"
+    },
+    "n7": {
+      "text": "seitsemän",
+      "say": "SAYT-seh-man"
+    },
+    "n8": {
+      "text": "kahdeksan",
+      "say": "KAH-dek-sahn"
+    },
+    "n9": {
+      "text": "yhdeksän",
+      "say": "UEH-dek-san"
+    },
+    "n10": {
+      "text": "kymmenen",
+      "say": "KUEM-meh-nen"
+    }
+  }
+}

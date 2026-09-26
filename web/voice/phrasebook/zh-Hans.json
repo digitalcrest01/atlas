@@ -1,0 +1,227 @@
+{
+  "book": "zh-Hans",
+  "name": "Mandarin Chinese",
+  "native": "中文",
+  "phrases": {
+    "hello": {
+      "text": "你好",
+      "roman": "nǐ hǎo",
+      "say": "nee HOW"
+    },
+    "good_morning": {
+      "text": "早上好",
+      "roman": "zǎoshang hǎo",
+      "say": "DZOW-shahng HOW"
+    },
+    "good_evening": {
+      "text": "晚上好",
+      "roman": "wǎnshang hǎo",
+      "say": "WAHN-shahng HOW"
+    },
+    "goodbye": {
+      "text": "再见",
+      "roman": "zàijiàn",
+      "say": "dzai-JYEN"
+    },
+    "how_are_you": {
+      "text": "你好吗？",
+      "roman": "nǐ hǎo ma?",
+      "say": "nee HOW mah"
+    },
+    "nice_to_meet": {
+      "text": "很高兴认识你",
+      "roman": "hěn gāoxìng rènshi nǐ",
+      "say": "hun gow-SHING REN-shr nee"
+    },
+    "please": {
+      "text": "请",
+      "roman": "qǐng",
+      "say": "CHING"
+    },
+    "thank_you": {
+      "text": "谢谢",
+      "roman": "xièxie",
+      "say": "SHYEH-shyeh"
+    },
+    "youre_welcome": {
+      "text": "不客气",
+      "roman": "bú kèqi",
+      "say": "boo KUH-chee"
+    },
+    "excuse_me": {
+      "text": "不好意思",
+      "roman": "bù hǎoyìsi",
+      "say": "boo how-EE-sz"
+    },
+    "sorry": {
+      "text": "对不起",
+      "roman": "duìbuqǐ",
+      "say": "dway-boo-CHEE"
+    },
+    "yes": {
+      "text": "是的",
+      "roman": "shì de",
+      "say": "SHR duh"
+    },
+    "no": {
+      "text": "不是",
+      "roman": "bú shì",
+      "say": "boo SHR"
+    },
+    "speak_english": {
+      "text": "你会说英语吗？",
+      "roman": "nǐ huì shuō Yīngyǔ ma?",
+      "say": "nee hway shwaw ying-YOO mah"
+    },
+    "dont_understand": {
+      "text": "我听不懂",
+      "roman": "wǒ tīng bu dǒng",
+      "say": "waw ting boo DONG"
+    },
+    "slowly": {
+      "text": "请说慢一点",
+      "roman": "qǐng shuō màn yìdiǎn",
+      "say": "ching shwaw MAHN ee-dyen"
+    },
+    "repeat": {
+      "text": "可以再说一遍吗？",
+      "roman": "kěyǐ zài shuō yí biàn ma?",
+      "say": "kuh-yee dzai shwaw ee-BYEN mah"
+    },
+    "where_station": {
+      "text": "火车站在哪里？",
+      "roman": "huǒchēzhàn zài nǎlǐ?",
+      "say": "hwaw-chuh-JAHN dzai NAH-lee"
+    },
+    "where_toilet": {
+      "text": "洗手间在哪里？",
+      "roman": "xǐshǒujiān zài nǎlǐ?",
+      "say": "shee-show-JYEN dzai NAH-lee"
+    },
+    "is_it_far": {
+      "text": "远吗？",
+      "roman": "yuǎn ma?",
+      "say": "YWEN mah"
+    },
+    "left": {
+      "text": "左边",
+      "roman": "zuǒbian",
+      "say": "DZWAW-byen"
+    },
+    "right": {
+      "text": "右边",
+      "roman": "yòubian",
+      "say": "YOH-byen"
+    },
+    "straight": {
+      "text": "一直往前走",
+      "roman": "yìzhí wǎng qián zǒu",
+      "say": "ee-JR wahng CHYEN dzoh"
+    },
+    "menu": {
+      "text": "请给我菜单",
+      "roman": "qǐng gěi wǒ càidān",
+      "say": "ching gay waw TSAI-dahn"
+    },
+    "water": {
+      "text": "请给我一杯水",
+      "roman": "qǐng gěi wǒ yì bēi shuǐ",
+      "say": "ching gay waw ee bay SHWAY"
+    },
+    "bill": {
+      "text": "买单，谢谢",
+      "roman": "mǎidān, xièxie",
+      "say": "MY-dahn SHYEH-shyeh"
+    },
+    "delicious": {
+      "text": "真好吃！",
+      "roman": "zhēn hǎochī!",
+      "say": "jun how-CHR"
+    },
+    "vegetarian": {
+      "text": "我吃素",
+      "roman": "wǒ chī sù",
+      "say": "waw chr SOO"
+    },
+    "how_much": {
+      "text": "多少钱？",
+      "roman": "duōshao qián?",
+      "say": "DWAW-shaow CHYEN"
+    },
+    "too_expensive": {
+      "text": "太贵了",
+      "roman": "tài guì le",
+      "say": "tai GWAY luh"
+    },
+    "pay_card": {
+      "text": "可以刷卡吗？",
+      "roman": "kěyǐ shuākǎ ma?",
+      "say": "kuh-yee shwah-KAH mah"
+    },
+    "help": {
+      "text": "救命啊！",
+      "roman": "jiùmìng a!",
+      "say": "jyoh-MING ah"
+    },
+    "need_doctor": {
+      "text": "我需要看医生",
+      "roman": "wǒ xūyào kàn yīshēng",
+      "say": "waw shoo-YOW kahn ee-SHUNG"
+    },
+    "lost": {
+      "text": "我迷路了",
+      "roman": "wǒ mílù le",
+      "say": "waw mee-LOO luh"
+    },
+    "n1": {
+      "text": "一",
+      "roman": "yī",
+      "say": "EE"
+    },
+    "n2": {
+      "text": "二",
+      "roman": "èr",
+      "say": "ARR"
+    },
+    "n3": {
+      "text": "三",
+      "roman": "sān",
+      "say": "SAHN"
+    },
+    "n4": {
+      "text": "四",
+      "roman": "sì",
+      "say": "SZ"
+    },
+    "n5": {
+      "text": "五",
+      "roman": "wǔ",
+      "say": "WOO"
+    },
+    "n6": {
+      "text": "六",
+      "roman": "liù",
+      "say": "LYOH"
+    },
+    "n7": {
+      "text": "七",
+      "roman": "qī",
+      "say": "CHEE"
+    },
+    "n8": {
+      "text": "八",
+      "roman": "bā",
+      "say": "BAH"
+    },
+    "n9": {
+      "text": "九",
+      "roman": "jiǔ",
+      "say": "JYOH"
+    },
+    "n10": {
+      "text": "十",
+      "roman": "shí",
+      "say": "SHR"
+    }
+  }
+}

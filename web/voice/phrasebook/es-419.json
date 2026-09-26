@@ -1,0 +1,183 @@
+{
+  "book": "es-419",
+  "name": "Spanish (Latin America)",
+  "native": "Español",
+  "phrases": {
+    "hello": {
+      "text": "Hola",
+      "say": "OH-lah"
+    },
+    "good_morning": {
+      "text": "Buenos días",
+      "say": "BWEH-nohs DEE-ahs"
+    },
+    "good_evening": {
+      "text": "Buenas noches",
+      "say": "BWEH-nahs NOH-chehs"
+    },
+    "goodbye": {
+      "text": "Adiós",
+      "say": "ah-DYOHS"
+    },
+    "how_are_you": {
+      "text": "¿Cómo está?",
+      "say": "KOH-moh ehs-TAH"
+    },
+    "nice_to_meet": {
+      "text": "Mucho gusto",
+      "say": "MOO-choh GOOS-toh"
+    },
+    "please": {
+      "text": "Por favor",
+      "say": "por fah-VOR"
+    },
+    "thank_you": {
+      "text": "Gracias",
+      "say": "GRAH-syahs"
+    },
+    "youre_welcome": {
+      "text": "De nada",
+      "say": "deh NAH-dah"
+    },
+    "excuse_me": {
+      "text": "Disculpe",
+      "say": "dees-KOOL-peh"
+    },
+    "sorry": {
+      "text": "Perdón",
+      "say": "per-DOHN"
+    },
+    "yes": {
+      "text": "Sí",
+      "say": "SEE"
+    },
+    "no": {
+      "text": "No",
+      "say": "NOH"
+    },
+    "speak_english": {
+      "text": "¿Habla inglés?",
+      "say": "AH-blah een-GLEHS"
+    },
+    "dont_understand": {
+      "text": "No entiendo",
+      "say": "noh en-TYEN-doh"
+    },
+    "slowly": {
+      "text": "Más despacio, por favor",
+      "say": "mahs dehs-PAH-syoh por fah-VOR"
+    },
+    "repeat": {
+      "text": "¿Me lo puede repetir?",
+      "say": "meh loh PWEH-deh reh-peh-TEER"
+    },
+    "where_station": {
+      "text": "¿Dónde está la estación de tren?",
+      "say": "DOHN-deh ehs-TAH lah ehs-tah-SYOHN deh TREN"
+    },
+    "where_toilet": {
+      "text": "¿Dónde está el baño?",
+      "say": "DOHN-deh ehs-TAH el BAH-nyoh"
+    },
+    "is_it_far": {
+      "text": "¿Está lejos?",
+      "say": "ehs-TAH LEH-hohs"
+    },
+    "left": {
+      "text": "Izquierda",
+      "say": "ees-KYER-dah"
+    },
+    "right": {
+      "text": "Derecha",
+      "say": "deh-REH-chah"
+    },
+    "straight": {
+      "text": "Todo derecho",
+      "say": "TOH-doh deh-REH-choh"
+    },
+    "menu": {
+      "text": "El menú, por favor",
+      "say": "el meh-NOO por fah-VOR"
+    },
+    "water": {
+      "text": "Agua, por favor",
+      "say": "AH-gwah por fah-VOR"
+    },
+    "bill": {
+      "text": "La cuenta, por favor",
+      "say": "lah KWEN-tah por fah-VOR"
+    },
+    "delicious": {
+      "text": "¡Delicioso!",
+      "say": "deh-lee-SYOH-soh"
+    },
+    "vegetarian": {
+      "text": "Soy vegetariana",
+      "say": "soy veh-heh-tah-RYAH-nah"
+    },
+    "how_much": {
+      "text": "¿Cuánto cuesta?",
+      "say": "KWAN-toh KWES-tah"
+    },
+    "too_expensive": {
+      "text": "Es muy caro",
+      "say": "es mooy KAH-roh"
+    },
+    "pay_card": {
+      "text": "¿Puedo pagar con tarjeta?",
+      "say": "PWEH-doh pah-GAR kohn tar-HEH-tah"
+    },
+    "help": {
+      "text": "¡Ayuda!",
+      "say": "ah-YOO-dah"
+    },
+    "need_doctor": {
+      "text": "Necesito un médico",
+      "say": "neh-seh-SEE-toh oon MEH-dee-koh"
+    },
+    "lost": {
+      "text": "Estoy perdida",
+      "say": "ehs-TOY per-DEE-dah"
+    },
+    "n1": {
+      "text": "uno",
+      "say": "OO-noh"
+    },
+    "n2": {
+      "text": "dos",
+      "say": "DOHS"
+    },
+    "n3": {
+      "text": "tres",
+      "say": "TRES"
+    },
+    "n4": {
+      "text": "cuatro",
+      "say": "KWAH-troh"
+    },
+    "n5": {
+      "text": "cinco",
+      "say": "SEEN-koh"
+    },
+    "n6": {
+      "text": "seis",
+      "say": "SAYS"
+    },
+    "n7": {
+      "text": "siete",
+      "say": "SYEH-teh"
+    },
+    "n8": {
+      "text": "ocho",
+      "say": "OH-choh"
+    },
+    "n9": {
+      "text": "nueve",
+      "say": "NWEH-veh"
+    },
+    "n10": {
+      "text": "diez",
+      "say": "DYES"
+    }
+  }
+}

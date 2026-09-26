@@ -1,0 +1,227 @@
+{
+  "book": "ka",
+  "name": "Georgian",
+  "native": "ქართული",
+  "phrases": {
+    "hello": {
+      "text": "გამარჯობა",
+      "roman": "gamarjoba",
+      "say": "GA-mar-jo-ba"
+    },
+    "good_morning": {
+      "text": "დილა მშვიდობისა",
+      "roman": "dila mshvidobisa",
+      "say": "DEE-la mshvee-DO-bee-sa"
+    },
+    "good_evening": {
+      "text": "საღამო მშვიდობისა",
+      "roman": "saghamo mshvidobisa",
+      "say": "SA-gha-mo mshvee-DO-bee-sa"
+    },
+    "goodbye": {
+      "text": "ნახვამდის",
+      "roman": "nakhvamdis",
+      "say": "NAKH-vam-dees"
+    },
+    "how_are_you": {
+      "text": "როგორ ხართ?",
+      "roman": "rogor khart?",
+      "say": "RO-gor KHART"
+    },
+    "nice_to_meet": {
+      "text": "სასიამოვნოა თქვენი გაცნობა",
+      "roman": "sasiamovnoa tkveni gatsnoba",
+      "say": "sa-see-a-MOV-no-a TKVEH-nee GATS-no-ba"
+    },
+    "please": {
+      "text": "გთხოვთ",
+      "roman": "gtkhovt",
+      "say": "GTKHOVT"
+    },
+    "thank_you": {
+      "text": "გმადლობთ",
+      "roman": "gmadlobt",
+      "say": "GMAD-lobt"
+    },
+    "youre_welcome": {
+      "text": "არაფრის",
+      "roman": "arapris",
+      "say": "A-rap-rees"
+    },
+    "excuse_me": {
+      "text": "უკაცრავად",
+      "roman": "ukatsravad",
+      "say": "oo-KATS-ra-vad"
+    },
+    "sorry": {
+      "text": "ბოდიში",
+      "roman": "bodishi",
+      "say": "BO-dee-shee"
+    },
+    "yes": {
+      "text": "დიახ",
+      "roman": "diakh",
+      "say": "DEE-akh"
+    },
+    "no": {
+      "text": "არა",
+      "roman": "ara",
+      "say": "A-ra"
+    },
+    "speak_english": {
+      "text": "ინგლისური იცით?",
+      "roman": "inglisuri itsit?",
+      "say": "een-GLEE-soo-ree EE-tseet"
+    },
+    "dont_understand": {
+      "text": "არ მესმის",
+      "roman": "ar mesmis",
+      "say": "AR MES-mees"
+    },
+    "slowly": {
+      "text": "უფრო ნელა ილაპარაკეთ, თუ შეიძლება",
+      "roman": "upro nela ilaparaket, tu sheidzleba",
+      "say": "OOP-ro NEH-la ee-la-pa-RA-ket, too sheh-EEDZ-leh-ba"
+    },
+    "repeat": {
+      "text": "გაიმეორეთ, თუ შეიძლება",
+      "roman": "gaimeoret, tu sheidzleba",
+      "say": "ga-ee-meh-O-ret, too sheh-EEDZ-leh-ba"
+    },
+    "where_station": {
+      "text": "სად არის რკინიგზის სადგური?",
+      "roman": "sad aris rkinigzis sadguri?",
+      "say": "SAD A-rees RKEE-neeg-zees SAD-goo-ree"
+    },
+    "where_toilet": {
+      "text": "სად არის ტუალეტი?",
+      "roman": "sad aris tualeti?",
+      "say": "SAD A-rees too-a-LEH-tee"
+    },
+    "is_it_far": {
+      "text": "შორსაა?",
+      "roman": "shorsaa?",
+      "say": "SHOR-sa-a"
+    },
+    "left": {
+      "text": "მარცხნივ",
+      "roman": "martskhniv",
+      "say": "MARTSKH-neev"
+    },
+    "right": {
+      "text": "მარჯვნივ",
+      "roman": "marjvniv",
+      "say": "MARJV-neev"
+    },
+    "straight": {
+      "text": "პირდაპირ",
+      "roman": "pirdapir",
+      "say": "PEER-da-peer"
+    },
+    "menu": {
+      "text": "მენიუ, თუ შეიძლება",
+      "roman": "meniu, tu sheidzleba",
+      "say": "MEH-nee-oo, too sheh-EEDZ-leh-ba"
+    },
+    "water": {
+      "text": "წყალი, თუ შეიძლება",
+      "roman": "tsqali, tu sheidzleba",
+      "say": "TSKHA-lee, too sheh-EEDZ-leh-ba"
+    },
+    "bill": {
+      "text": "ანგარიში, თუ შეიძლება",
+      "roman": "angarishi, tu sheidzleba",
+      "say": "AN-ga-ree-shee, too sheh-EEDZ-leh-ba"
+    },
+    "delicious": {
+      "text": "ძალიან გემრიელია!",
+      "roman": "dzalian gemrielia!",
+      "say": "DZA-lee-an gem-ree-EH-lee-a"
+    },
+    "vegetarian": {
+      "text": "ვეგეტარიანელი ვარ",
+      "roman": "vegetarianeli var",
+      "say": "veh-geh-ta-ree-a-NEH-lee VAR"
+    },
+    "how_much": {
+      "text": "რა ღირს?",
+      "roman": "ra ghirs?",
+      "say": "RA GHEERS"
+    },
+    "too_expensive": {
+      "text": "ძალიან ძვირია",
+      "roman": "dzalian dzviria",
+      "say": "DZA-lee-an DZVEE-ree-a"
+    },
+    "pay_card": {
+      "text": "ბარათით გადახდა შეიძლება?",
+      "roman": "baratit gadakhda sheidzleba?",
+      "say": "BA-ra-teet ga-DAKH-da sheh-EEDZ-leh-ba"
+    },
+    "help": {
+      "text": "მიშველეთ!",
+      "roman": "mishvelet!",
+      "say": "MEESH-veh-let"
+    },
+    "need_doctor": {
+      "text": "ექიმი მჭირდება",
+      "roman": "ekimi mchirdeba",
+      "say": "EH-kee-mee MCHEER-deh-ba"
+    },
+    "lost": {
+      "text": "გზა დავკარგე",
+      "roman": "gza davkarge",
+      "say": "GZA DAV-kar-geh"
+    },
+    "n1": {
+      "text": "ერთი",
+      "roman": "erti",
+      "say": "ER-tee"
+    },
+    "n2": {
+      "text": "ორი",
+      "roman": "ori",
+      "say": "O-ree"
+    },
+    "n3": {
+      "text": "სამი",
+      "roman": "sami",
+      "say": "SA-mee"
+    },
+    "n4": {
+      "text": "ოთხი",
+      "roman": "otkhi",
+      "say": "OT-khee"
+    },
+    "n5": {
+      "text": "ხუთი",
+      "roman": "khuti",
+      "say": "KHOO-tee"
+    },
+    "n6": {
+      "text": "ექვსი",
+      "roman": "ekvsi",
+      "say": "EKV-see"
+    },
+    "n7": {
+      "text": "შვიდი",
+      "roman": "shvidi",
+      "say": "SHVEE-dee"
+    },
+    "n8": {
+      "text": "რვა",
+      "roman": "rva",
+      "say": "RVA"
+    },
+    "n9": {
+      "text": "ცხრა",
+      "roman": "tskhra",
+      "say": "TSKHRA"
+    },
+    "n10": {
+      "text": "ათი",
+      "roman": "ati",
+      "say": "A-tee"
+    }
+  }
+}

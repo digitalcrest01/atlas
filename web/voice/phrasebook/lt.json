@@ -1,0 +1,183 @@
+{
+  "book": "lt",
+  "name": "Lithuanian",
+  "native": "lietuvių",
+  "phrases": {
+    "hello": {
+      "text": "Sveiki",
+      "say": "svay-KEE"
+    },
+    "good_morning": {
+      "text": "Labas rytas",
+      "say": "LAH-bahs REE-tahs"
+    },
+    "good_evening": {
+      "text": "Labas vakaras",
+      "say": "LAH-bahs VAH-kah-rahs"
+    },
+    "goodbye": {
+      "text": "Viso gero",
+      "say": "VEE-soh GEH-roh"
+    },
+    "how_are_you": {
+      "text": "Kaip sekasi?",
+      "say": "KAYP SEH-kah-see"
+    },
+    "nice_to_meet": {
+      "text": "Malonu susipažinti",
+      "say": "mah-loh-NOO soo-see-pah-ZHIN-tee"
+    },
+    "please": {
+      "text": "Prašau",
+      "say": "prah-SHOW"
+    },
+    "thank_you": {
+      "text": "Ačiū",
+      "say": "AH-choo"
+    },
+    "youre_welcome": {
+      "text": "Nėra už ką",
+      "say": "NAY-rah OOZH kah"
+    },
+    "excuse_me": {
+      "text": "Atsiprašau",
+      "say": "aht-see-prah-SHOW"
+    },
+    "sorry": {
+      "text": "Atleiskite",
+      "say": "aht-LAYS-kee-teh"
+    },
+    "yes": {
+      "text": "Taip",
+      "say": "TAYP"
+    },
+    "no": {
+      "text": "Ne",
+      "say": "NEH"
+    },
+    "speak_english": {
+      "text": "Ar kalbate angliškai?",
+      "say": "ahr KAHL-bah-teh AHN-gleesh-kai"
+    },
+    "dont_understand": {
+      "text": "Nesuprantu",
+      "say": "neh-soo-prahn-TOO"
+    },
+    "slowly": {
+      "text": "Prašau kalbėti lėčiau",
+      "say": "prah-SHOW kahl-BAY-tee lay-CHOW"
+    },
+    "repeat": {
+      "text": "Ar galite pakartoti?",
+      "say": "ahr GAH-lee-teh pah-kar-TOH-tee"
+    },
+    "where_station": {
+      "text": "Kur yra geležinkelio stotis?",
+      "say": "KOOR ee-RAH geh-leh-ZHIN-keh-lyoh stoh-TIS"
+    },
+    "where_toilet": {
+      "text": "Kur yra tualetas?",
+      "say": "KOOR ee-RAH too-ah-LEH-tahs"
+    },
+    "is_it_far": {
+      "text": "Ar toli?",
+      "say": "ahr toh-LEE"
+    },
+    "left": {
+      "text": "Kairėn",
+      "say": "kai-RAYN"
+    },
+    "right": {
+      "text": "Dešinėn",
+      "say": "deh-shee-NAYN"
+    },
+    "straight": {
+      "text": "Tiesiai",
+      "say": "TYEH-sei"
+    },
+    "menu": {
+      "text": "Meniu, prašau",
+      "say": "meh-NYOO, prah-SHOW"
+    },
+    "water": {
+      "text": "Vandens, prašau",
+      "say": "vahn-DENS, prah-SHOW"
+    },
+    "bill": {
+      "text": "Sąskaitą, prašau",
+      "say": "SAHS-kai-tah, prah-SHOW"
+    },
+    "delicious": {
+      "text": "Skanu!",
+      "say": "skah-NOO"
+    },
+    "vegetarian": {
+      "text": "Aš esu vegetarė",
+      "say": "AHSH eh-SOO veh-geh-TAH-ray"
+    },
+    "how_much": {
+      "text": "Kiek kainuoja?",
+      "say": "KYEK kai-NWOH-yah"
+    },
+    "too_expensive": {
+      "text": "Per brangu",
+      "say": "per brahn-GOO"
+    },
+    "pay_card": {
+      "text": "Ar galiu mokėti kortele?",
+      "say": "ahr gah-LYOO moh-KAY-tee kor-teh-LEH"
+    },
+    "help": {
+      "text": "Padėkite!",
+      "say": "pah-DAY-kee-teh"
+    },
+    "need_doctor": {
+      "text": "Man reikia gydytojo",
+      "say": "mahn RAY-kyah GEE-dee-toh-yoh"
+    },
+    "lost": {
+      "text": "Aš pasiklydau",
+      "say": "AHSH pah-see-KLEE-dow"
+    },
+    "n1": {
+      "text": "vienas",
+      "say": "VYEH-nahs"
+    },
+    "n2": {
+      "text": "du",
+      "say": "DOO"
+    },
+    "n3": {
+      "text": "trys",
+      "say": "TREES"
+    },
+    "n4": {
+      "text": "keturi",
+      "say": "keh-too-RI"
+    },
+    "n5": {
+      "text": "penki",
+      "say": "pen-KEE"
+    },
+    "n6": {
+      "text": "šeši",
+      "say": "sheh-SHEE"
+    },
+    "n7": {
+      "text": "septyni",
+      "say": "sep-tee-NEE"
+    },
+    "n8": {
+      "text": "aštuoni",
+      "say": "ahsh-twoh-NEE"
+    },
+    "n9": {
+      "text": "devyni",
+      "say": "deh-vee-NEE"
+    },
+    "n10": {
+      "text": "dešimt",
+      "say": "DEH-shimt"
+    }
+  }
+}

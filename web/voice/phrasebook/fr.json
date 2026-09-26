@@ -1,0 +1,183 @@
+{
+  "book": "fr",
+  "name": "French",
+  "native": "Français",
+  "phrases": {
+    "hello": {
+      "text": "Bonjour",
+      "say": "bon-ZHOOR"
+    },
+    "good_morning": {
+      "text": "Bonjour",
+      "say": "bon-ZHOOR"
+    },
+    "good_evening": {
+      "text": "Bonsoir",
+      "say": "bon-SWAHR"
+    },
+    "goodbye": {
+      "text": "Au revoir",
+      "say": "oh ruh-VWAHR"
+    },
+    "how_are_you": {
+      "text": "Comment allez-vous ?",
+      "say": "koh-mahn tah-lay VOO"
+    },
+    "nice_to_meet": {
+      "text": "Enchantée",
+      "say": "ahn-shahn-TAY"
+    },
+    "please": {
+      "text": "S'il vous plaît",
+      "say": "seel voo PLEH"
+    },
+    "thank_you": {
+      "text": "Merci",
+      "say": "mair-SEE"
+    },
+    "youre_welcome": {
+      "text": "De rien",
+      "say": "duh RYAN"
+    },
+    "excuse_me": {
+      "text": "Excusez-moi",
+      "say": "ex-kew-zay-MWAH"
+    },
+    "sorry": {
+      "text": "Pardon",
+      "say": "par-DOHN"
+    },
+    "yes": {
+      "text": "Oui",
+      "say": "WEE"
+    },
+    "no": {
+      "text": "Non",
+      "say": "NOHN"
+    },
+    "speak_english": {
+      "text": "Vous parlez anglais ?",
+      "say": "voo par-lay ahn-GLEH"
+    },
+    "dont_understand": {
+      "text": "Je ne comprends pas",
+      "say": "zhuh nuh kohm-prahn PAH"
+    },
+    "slowly": {
+      "text": "Pouvez-vous parler plus lentement, s'il vous plaît ?",
+      "say": "poo-vay-VOO par-LAY plew lahnt-MAHN seel voo PLEH"
+    },
+    "repeat": {
+      "text": "Vous pouvez répéter, s'il vous plaît ?",
+      "say": "voo poo-vay ray-pay-TAY seel voo PLEH"
+    },
+    "where_station": {
+      "text": "Où est la gare ?",
+      "say": "oo eh lah GAR"
+    },
+    "where_toilet": {
+      "text": "Où sont les toilettes ?",
+      "say": "oo sohn lay twah-LET"
+    },
+    "is_it_far": {
+      "text": "C'est loin ?",
+      "say": "seh LWAN"
+    },
+    "left": {
+      "text": "À gauche",
+      "say": "ah GOHSH"
+    },
+    "right": {
+      "text": "À droite",
+      "say": "ah DRWAHT"
+    },
+    "straight": {
+      "text": "Tout droit",
+      "say": "too DRWAH"
+    },
+    "menu": {
+      "text": "La carte, s'il vous plaît",
+      "say": "lah KART seel voo PLEH"
+    },
+    "water": {
+      "text": "De l'eau, s'il vous plaît",
+      "say": "duh LOH seel voo PLEH"
+    },
+    "bill": {
+      "text": "L'addition, s'il vous plaît",
+      "say": "lah-dee-SYOHN seel voo PLEH"
+    },
+    "delicious": {
+      "text": "C'est délicieux !",
+      "say": "seh day-lee-SYUH"
+    },
+    "vegetarian": {
+      "text": "Je suis végétarienne",
+      "say": "zhuh swee vay-zhay-tah-RYEN"
+    },
+    "how_much": {
+      "text": "C'est combien ?",
+      "say": "seh kohm-BYAN"
+    },
+    "too_expensive": {
+      "text": "C'est trop cher",
+      "say": "seh troh SHAIR"
+    },
+    "pay_card": {
+      "text": "Je peux payer par carte ?",
+      "say": "zhuh puh pay-YAY par KART"
+    },
+    "help": {
+      "text": "Au secours !",
+      "say": "oh suh-KOOR"
+    },
+    "need_doctor": {
+      "text": "J'ai besoin d'un médecin",
+      "say": "zhay buh-ZWAN dun mayd-SAN"
+    },
+    "lost": {
+      "text": "Je suis perdue",
+      "say": "zhuh swee pair-DEW"
+    },
+    "n1": {
+      "text": "un",
+      "say": "UHN"
+    },
+    "n2": {
+      "text": "deux",
+      "say": "DUH"
+    },
+    "n3": {
+      "text": "trois",
+      "say": "TRWAH"
+    },
+    "n4": {
+      "text": "quatre",
+      "say": "KAT-ruh"
+    },
+    "n5": {
+      "text": "cinq",
+      "say": "SANK"
+    },
+    "n6": {
+      "text": "six",
+      "say": "SEES"
+    },
+    "n7": {
+      "text": "sept",
+      "say": "SET"
+    },
+    "n8": {
+      "text": "huit",
+      "say": "WEET"
+    },
+    "n9": {
+      "text": "neuf",
+      "say": "NUHF"
+    },
+    "n10": {
+      "text": "dix",
+      "say": "DEES"
+    }
+  }
+}

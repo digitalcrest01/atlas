@@ -1,0 +1,183 @@
+{
+  "book": "hu",
+  "name": "Hungarian",
+  "native": "Magyar",
+  "phrases": {
+    "hello": {
+      "text": "Jó napot!",
+      "say": "YOH NAH-pot"
+    },
+    "good_morning": {
+      "text": "Jó reggelt!",
+      "say": "YOH REG-gelt"
+    },
+    "good_evening": {
+      "text": "Jó estét!",
+      "say": "YOH ESH-tayt"
+    },
+    "goodbye": {
+      "text": "Viszontlátásra!",
+      "say": "VEE-sont-laa-taash-ra"
+    },
+    "how_are_you": {
+      "text": "Hogy van?",
+      "say": "HOJ von"
+    },
+    "nice_to_meet": {
+      "text": "Örülök, hogy megismerhetem",
+      "say": "UR-ru-luk hoj MEG-ish-mer-heh-tem"
+    },
+    "please": {
+      "text": "Kérem",
+      "say": "KAY-rem"
+    },
+    "thank_you": {
+      "text": "Köszönöm",
+      "say": "KUH-suh-nuhm"
+    },
+    "youre_welcome": {
+      "text": "Szívesen",
+      "say": "SEE-veh-shen"
+    },
+    "excuse_me": {
+      "text": "Elnézést",
+      "say": "EL-nay-zaysht"
+    },
+    "sorry": {
+      "text": "Bocsánat",
+      "say": "BO-chaa-not"
+    },
+    "yes": {
+      "text": "Igen",
+      "say": "EE-gen"
+    },
+    "no": {
+      "text": "Nem",
+      "say": "NEM"
+    },
+    "speak_english": {
+      "text": "Beszél angolul?",
+      "say": "BES-ayl ON-go-lool"
+    },
+    "dont_understand": {
+      "text": "Nem értem",
+      "say": "NEM AYR-tem"
+    },
+    "slowly": {
+      "text": "Kérem, beszéljen lassabban",
+      "say": "KAY-rem, BES-ayl-yen LOSH-shob-bon"
+    },
+    "repeat": {
+      "text": "Meg tudná ismételni?",
+      "say": "MEG tood-naa ISH-may-tel-nee"
+    },
+    "where_station": {
+      "text": "Hol van a vasútállomás?",
+      "say": "HOL von o VO-shoot-aal-lo-maash"
+    },
+    "where_toilet": {
+      "text": "Hol van a mosdó?",
+      "say": "HOL von o MOZH-doh"
+    },
+    "is_it_far": {
+      "text": "Messze van?",
+      "say": "MES-seh von"
+    },
+    "left": {
+      "text": "Balra",
+      "say": "BOL-ro"
+    },
+    "right": {
+      "text": "Jobbra",
+      "say": "YOB-bro"
+    },
+    "straight": {
+      "text": "Egyenesen",
+      "say": "EJ-eh-neh-shen"
+    },
+    "menu": {
+      "text": "Az étlapot, kérem",
+      "say": "oz AYT-lo-pot, KAY-rem"
+    },
+    "water": {
+      "text": "Vizet kérek",
+      "say": "VEE-zet KAY-rek"
+    },
+    "bill": {
+      "text": "A számlát, kérem",
+      "say": "o SAAM-laat, KAY-rem"
+    },
+    "delicious": {
+      "text": "Nagyon finom!",
+      "say": "NO-dyon FEE-nom"
+    },
+    "vegetarian": {
+      "text": "Vegetáriánus vagyok",
+      "say": "VEH-geh-taa-ree-aa-noosh VO-dyok"
+    },
+    "how_much": {
+      "text": "Mennyibe kerül?",
+      "say": "MEN-nyee-beh KEH-rul"
+    },
+    "too_expensive": {
+      "text": "Ez túl drága",
+      "say": "EZ tool DRAA-go"
+    },
+    "pay_card": {
+      "text": "Fizethetek kártyával?",
+      "say": "FEE-zet-heh-tek KAAR-tyaa-vol"
+    },
+    "help": {
+      "text": "Segítség!",
+      "say": "SHEH-geet-shayg"
+    },
+    "need_doctor": {
+      "text": "Orvosra van szükségem",
+      "say": "OR-vosh-ro von SUEK-shay-gem"
+    },
+    "lost": {
+      "text": "Eltévedtem",
+      "say": "EL-tay-ved-tem"
+    },
+    "n1": {
+      "text": "egy",
+      "say": "EJ"
+    },
+    "n2": {
+      "text": "kettő",
+      "say": "KET-tuh"
+    },
+    "n3": {
+      "text": "három",
+      "say": "HAA-rom"
+    },
+    "n4": {
+      "text": "négy",
+      "say": "NAYJ"
+    },
+    "n5": {
+      "text": "öt",
+      "say": "UHT"
+    },
+    "n6": {
+      "text": "hat",
+      "say": "HOT"
+    },
+    "n7": {
+      "text": "hét",
+      "say": "HAYT"
+    },
+    "n8": {
+      "text": "nyolc",
+      "say": "NYOLTS"
+    },
+    "n9": {
+      "text": "kilenc",
+      "say": "KEE-lents"
+    },
+    "n10": {
+      "text": "tíz",
+      "say": "TEEZ"
+    }
+  }
+}

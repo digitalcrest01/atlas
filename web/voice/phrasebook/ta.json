@@ -1,0 +1,227 @@
+{
+  "book": "ta",
+  "name": "Tamil",
+  "native": "தமிழ்",
+  "phrases": {
+    "hello": {
+      "text": "வணக்கம்",
+      "roman": "vanakkam",
+      "say": "va-NAK-kam"
+    },
+    "good_morning": {
+      "text": "காலை வணக்கம்",
+      "roman": "kaalai vanakkam",
+      "say": "KAA-lai va-NAK-kam"
+    },
+    "good_evening": {
+      "text": "மாலை வணக்கம்",
+      "roman": "maalai vanakkam",
+      "say": "MAA-lai va-NAK-kam"
+    },
+    "goodbye": {
+      "text": "போய் வருகிறேன்",
+      "roman": "poi varugiren",
+      "say": "POY va-ru-gi-RAYN"
+    },
+    "how_are_you": {
+      "text": "நீங்கள் எப்படி இருக்கிறீர்கள்?",
+      "roman": "neengal eppadi irukkireergal?",
+      "say": "NEEN-gal EP-pa-di i-ruk-ki-REER-gal"
+    },
+    "nice_to_meet": {
+      "text": "உங்களைச் சந்தித்ததில் மகிழ்ச்சி",
+      "roman": "ungalai sandhithathil magizhchi",
+      "say": "un-ga-LAI san-THIT-ta-thil ma-GIZH-chi"
+    },
+    "please": {
+      "text": "தயவுசெய்து",
+      "roman": "thayavuseythu",
+      "say": "THA-ya-vu-SEY-thu"
+    },
+    "thank_you": {
+      "text": "நன்றி",
+      "roman": "nanri",
+      "say": "NAN-dri"
+    },
+    "youre_welcome": {
+      "text": "பரவாயில்லை",
+      "roman": "paravaayillai",
+      "say": "pa-ra-VAA-yil-lai"
+    },
+    "excuse_me": {
+      "text": "மன்னிக்கவும்",
+      "roman": "mannikkavum",
+      "say": "MAN-nik-ka-vum"
+    },
+    "sorry": {
+      "text": "மன்னித்துவிடுங்கள்",
+      "roman": "mannithuvidungal",
+      "say": "MAN-nit-thu-vi-dun-gal"
+    },
+    "yes": {
+      "text": "ஆமாம்",
+      "roman": "aamaam",
+      "say": "AA-maam"
+    },
+    "no": {
+      "text": "இல்லை",
+      "roman": "illai",
+      "say": "IL-lai"
+    },
+    "speak_english": {
+      "text": "உங்களுக்கு ஆங்கிலம் பேசத் தெரியுமா?",
+      "roman": "ungalukku aangilam pesa theriyumaa?",
+      "say": "un-ga-LUK-ku AAN-gi-lam PAY-sa the-ri-yu-MAA"
+    },
+    "dont_understand": {
+      "text": "எனக்குப் புரியவில்லை",
+      "roman": "enakku puriyavillai",
+      "say": "e-NAK-ku pu-ri-ya-VIL-lai"
+    },
+    "slowly": {
+      "text": "தயவுசெய்து மெதுவாகப் பேசுங்கள்",
+      "roman": "thayavuseythu methuvaaga pesungal",
+      "say": "THA-ya-vu-sey-thu me-thu-VAA-ga PAY-sun-gal"
+    },
+    "repeat": {
+      "text": "மீண்டும் சொல்ல முடியுமா?",
+      "roman": "meendum solla mudiyumaa?",
+      "say": "MEEN-dum SOL-la mu-di-yu-MAA"
+    },
+    "where_station": {
+      "text": "ரயில் நிலையம் எங்கே இருக்கிறது?",
+      "roman": "rayil nilaiyam enge irukkirathu?",
+      "say": "RA-yil ni-LAI-yam EN-gay i-ruk-ki-RA-thu"
+    },
+    "where_toilet": {
+      "text": "கழிப்பறை எங்கே இருக்கிறது?",
+      "roman": "kazhipparai enge irukkirathu?",
+      "say": "ka-ZHIP-pa-rai EN-gay i-ruk-ki-RA-thu"
+    },
+    "is_it_far": {
+      "text": "அது தூரமா?",
+      "roman": "athu thooramaa?",
+      "say": "A-thu THOO-ra-maa"
+    },
+    "left": {
+      "text": "இடது பக்கம்",
+      "roman": "idathu pakkam",
+      "say": "i-DA-thu PAK-kam"
+    },
+    "right": {
+      "text": "வலது பக்கம்",
+      "roman": "valathu pakkam",
+      "say": "va-LA-thu PAK-kam"
+    },
+    "straight": {
+      "text": "நேராக",
+      "roman": "neraaga",
+      "say": "NAY-raa-ga"
+    },
+    "menu": {
+      "text": "மெனுவைக் கொடுங்கள்",
+      "roman": "menuvai kodungal",
+      "say": "ME-nu-vai KO-dun-gal"
+    },
+    "water": {
+      "text": "கொஞ்சம் தண்ணீர் கொடுங்கள்",
+      "roman": "konjam thanneer kodungal",
+      "say": "KON-jam THAN-neer KO-dun-gal"
+    },
+    "bill": {
+      "text": "பில் கொடுங்கள்",
+      "roman": "bil kodungal",
+      "say": "BIL KO-dun-gal"
+    },
+    "delicious": {
+      "text": "மிகவும் சுவையாக இருக்கிறது!",
+      "roman": "migavum suvaiyaaga irukkirathu!",
+      "say": "mi-GA-vum su-VAI-yaa-ga i-ruk-ki-RA-thu"
+    },
+    "vegetarian": {
+      "text": "நான் சைவம்",
+      "roman": "naan saivam",
+      "say": "NAAN SAI-vam"
+    },
+    "how_much": {
+      "text": "இது என்ன விலை?",
+      "roman": "ithu enna vilai?",
+      "say": "I-thu EN-na VI-lai"
+    },
+    "too_expensive": {
+      "text": "விலை மிகவும் அதிகம்",
+      "roman": "vilai migavum athigam",
+      "say": "VI-lai mi-GA-vum A-thi-gam"
+    },
+    "pay_card": {
+      "text": "கார்டில் பணம் செலுத்தலாமா?",
+      "roman": "kaardil panam seluthalaamaa?",
+      "say": "KAAR-dil PA-nam se-luth-tha-LAA-maa"
+    },
+    "help": {
+      "text": "காப்பாற்றுங்கள்!",
+      "roman": "kaappaatrungal!",
+      "say": "kaap-PAAT-trun-gal"
+    },
+    "need_doctor": {
+      "text": "எனக்கு ஒரு மருத்துவர் வேண்டும்",
+      "roman": "enakku oru maruthuvar vendum",
+      "say": "e-NAK-ku O-ru ma-RUTH-thu-var VAYN-dum"
+    },
+    "lost": {
+      "text": "நான் வழி தவறிவிட்டேன்",
+      "roman": "naan vazhi thavarivitten",
+      "say": "NAAN VA-zhi tha-VA-ri-vit-tayn"
+    },
+    "n1": {
+      "text": "ஒன்று",
+      "roman": "onru",
+      "say": "ON-dru"
+    },
+    "n2": {
+      "text": "இரண்டு",
+      "roman": "irandu",
+      "say": "i-RAN-du"
+    },
+    "n3": {
+      "text": "மூன்று",
+      "roman": "moonru",
+      "say": "MOON-dru"
+    },
+    "n4": {
+      "text": "நான்கு",
+      "roman": "naangu",
+      "say": "NAAN-gu"
+    },
+    "n5": {
+      "text": "ஐந்து",
+      "roman": "ainthu",
+      "say": "AIN-thu"
+    },
+    "n6": {
+      "text": "ஆறு",
+      "roman": "aaru",
+      "say": "AA-ru"
+    },
+    "n7": {
+      "text": "ஏழு",
+      "roman": "ezhu",
+      "say": "AY-zhu"
+    },
+    "n8": {
+      "text": "எட்டு",
+      "roman": "ettu",
+      "say": "ET-tu"
+    },
+    "n9": {
+      "text": "ஒன்பது",
+      "roman": "onbathu",
+      "say": "ON-ba-thu"
+    },
+    "n10": {
+      "text": "பத்து",
+      "roman": "pathu",
+      "say": "PATH-thu"
+    }
+  }
+}

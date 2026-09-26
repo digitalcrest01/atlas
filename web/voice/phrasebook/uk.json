@@ -1,0 +1,227 @@
+{
+  "book": "uk",
+  "name": "Ukrainian",
+  "native": "українська",
+  "phrases": {
+    "hello": {
+      "text": "Вітаю",
+      "roman": "Vitaiu",
+      "say": "vee-TA-yu"
+    },
+    "good_morning": {
+      "text": "Доброго ранку",
+      "roman": "Dobroho ranku",
+      "say": "DOB-ro-ho RAN-ku"
+    },
+    "good_evening": {
+      "text": "Добрий вечір",
+      "roman": "Dobryi vechir",
+      "say": "DOB-riy VEH-cheer"
+    },
+    "goodbye": {
+      "text": "До побачення",
+      "roman": "Do pobachennia",
+      "say": "do po-BA-chen-nya"
+    },
+    "how_are_you": {
+      "text": "Як справи?",
+      "roman": "Yak spravy?",
+      "say": "yak SPRA-vy"
+    },
+    "nice_to_meet": {
+      "text": "Приємно познайомитися",
+      "roman": "Pryiemno poznaiomytysia",
+      "say": "pry-YEM-no poz-na-YO-my-ty-sya"
+    },
+    "please": {
+      "text": "Будь ласка",
+      "roman": "Bud laska",
+      "say": "BOOD LAS-ka"
+    },
+    "thank_you": {
+      "text": "Дякую",
+      "roman": "Diakuiu",
+      "say": "DYA-ku-yu"
+    },
+    "youre_welcome": {
+      "text": "Нема за що",
+      "roman": "Nema za shcho",
+      "say": "ne-MA za SHCHO"
+    },
+    "excuse_me": {
+      "text": "Перепрошую",
+      "roman": "Pereproshuiu",
+      "say": "pe-re-PRO-shu-yu"
+    },
+    "sorry": {
+      "text": "Вибачте",
+      "roman": "Vybachte",
+      "say": "VY-bach-te"
+    },
+    "yes": {
+      "text": "Так",
+      "roman": "Tak",
+      "say": "TAK"
+    },
+    "no": {
+      "text": "Ні",
+      "roman": "Ni",
+      "say": "NEE"
+    },
+    "speak_english": {
+      "text": "Ви розмовляєте англійською?",
+      "roman": "Vy rozmovliaiete anhliiskoiu?",
+      "say": "vy roz-mov-LYA-ye-te an-HLIY-sko-yu"
+    },
+    "dont_understand": {
+      "text": "Я не розумію",
+      "roman": "Ya ne rozumiiu",
+      "say": "ya ne ro-zu-MEE-yu"
+    },
+    "slowly": {
+      "text": "Говоріть повільніше, будь ласка",
+      "roman": "Hovorit povilnishe, bud laska",
+      "say": "ho-vo-REET po-VEEL-nee-she BOOD LAS-ka"
+    },
+    "repeat": {
+      "text": "Можете повторити?",
+      "roman": "Mozhete povtoryty?",
+      "say": "MO-zhe-te pov-to-RY-ty"
+    },
+    "where_station": {
+      "text": "Де залізничний вокзал?",
+      "roman": "De zaliznychnyi vokzal?",
+      "say": "de za-leez-NYCH-nyy vok-ZAL"
+    },
+    "where_toilet": {
+      "text": "Де туалет?",
+      "roman": "De tualet?",
+      "say": "de tu-a-LET"
+    },
+    "is_it_far": {
+      "text": "Це далеко?",
+      "roman": "Tse daleko?",
+      "say": "tse da-LE-ko"
+    },
+    "left": {
+      "text": "Ліворуч",
+      "roman": "Livoruch",
+      "say": "lee-VO-ruch"
+    },
+    "right": {
+      "text": "Праворуч",
+      "roman": "Pravoruch",
+      "say": "pra-VO-ruch"
+    },
+    "straight": {
+      "text": "Прямо",
+      "roman": "Priamo",
+      "say": "PRYA-mo"
+    },
+    "menu": {
+      "text": "Меню, будь ласка",
+      "roman": "Meniu, bud laska",
+      "say": "me-NYU BOOD LAS-ka"
+    },
+    "water": {
+      "text": "Воду, будь ласка",
+      "roman": "Vodu, bud laska",
+      "say": "VO-du BOOD LAS-ka"
+    },
+    "bill": {
+      "text": "Рахунок, будь ласка",
+      "roman": "Rakhunok, bud laska",
+      "say": "ra-HU-nok BOOD LAS-ka"
+    },
+    "delicious": {
+      "text": "Смачно!",
+      "roman": "Smachno!",
+      "say": "SMACH-no"
+    },
+    "vegetarian": {
+      "text": "Я вегетаріанка",
+      "roman": "Ya vehetarianka",
+      "say": "ya ve-he-ta-ri-AN-ka"
+    },
+    "how_much": {
+      "text": "Скільки це коштує?",
+      "roman": "Skilky tse koshtuie?",
+      "say": "SKEEL-ky tse KOSH-tu-ye"
+    },
+    "too_expensive": {
+      "text": "Це занадто дорого",
+      "roman": "Tse zanadto doroho",
+      "say": "tse za-NAD-to DO-ro-ho"
+    },
+    "pay_card": {
+      "text": "Можна заплатити карткою?",
+      "roman": "Mozhna zaplatyty kartkoiu?",
+      "say": "MOZH-na za-pla-TY-ty KART-ko-yu"
+    },
+    "help": {
+      "text": "Допоможіть!",
+      "roman": "Dopomozhit!",
+      "say": "do-po-mo-ZHEET"
+    },
+    "need_doctor": {
+      "text": "Мені потрібен лікар",
+      "roman": "Meni potriben likar",
+      "say": "me-NEE po-TREE-ben LEE-kar"
+    },
+    "lost": {
+      "text": "Я заблукала",
+      "roman": "Ya zablukala",
+      "say": "ya za-blu-KA-la"
+    },
+    "n1": {
+      "text": "один",
+      "roman": "odyn",
+      "say": "o-DYN"
+    },
+    "n2": {
+      "text": "два",
+      "roman": "dva",
+      "say": "DVA"
+    },
+    "n3": {
+      "text": "три",
+      "roman": "try",
+      "say": "TRY"
+    },
+    "n4": {
+      "text": "чотири",
+      "roman": "chotyry",
+      "say": "cho-TY-ry"
+    },
+    "n5": {
+      "text": "п’ять",
+      "roman": "piat",
+      "say": "PYAT"
+    },
+    "n6": {
+      "text": "шість",
+      "roman": "shist",
+      "say": "SHEEST"
+    },
+    "n7": {
+      "text": "сім",
+      "roman": "sim",
+      "say": "SEEM"
+    },
+    "n8": {
+      "text": "вісім",
+      "roman": "visim",
+      "say": "VEE-seem"
+    },
+    "n9": {
+      "text": "дев’ять",
+      "roman": "deviat",
+      "say": "DE-vyat"
+    },
+    "n10": {
+      "text": "десять",
+      "roman": "desiat",
+      "say": "DE-syat"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "book": "it",
+  "name": "Italian",
+  "native": "Italiano",
+  "phrases": {
+    "hello": {
+      "text": "Ciao",
+      "say": "CHOW"
+    },
+    "good_morning": {
+      "text": "Buongiorno",
+      "say": "bwon-JOR-noh"
+    },
+    "good_evening": {
+      "text": "Buonasera",
+      "say": "bwoh-nah-SEH-rah"
+    },
+    "goodbye": {
+      "text": "Arrivederci",
+      "say": "ah-ree-veh-DEHR-chee"
+    },
+    "how_are_you": {
+      "text": "Come sta?",
+      "say": "KOH-meh STAH"
+    },
+    "nice_to_meet": {
+      "text": "Piacere di conoscerla",
+      "say": "pyah-CHEH-reh dee koh-NOH-shehr-lah"
+    },
+    "please": {
+      "text": "Per favore",
+      "say": "pehr fah-VOH-reh"
+    },
+    "thank_you": {
+      "text": "Grazie",
+      "say": "GRAHT-see-eh"
+    },
+    "youre_welcome": {
+      "text": "Prego",
+      "say": "PREH-goh"
+    },
+    "excuse_me": {
+      "text": "Mi scusi",
+      "say": "mee SKOO-zee"
+    },
+    "sorry": {
+      "text": "Mi dispiace",
+      "say": "mee dee-SPYAH-cheh"
+    },
+    "yes": {
+      "text": "Sì",
+      "say": "SEE"
+    },
+    "no": {
+      "text": "No",
+      "say": "NOH"
+    },
+    "speak_english": {
+      "text": "Parla inglese?",
+      "say": "PAHR-lah een-GLEH-zeh"
+    },
+    "dont_understand": {
+      "text": "Non capisco",
+      "say": "non kah-PEES-koh"
+    },
+    "slowly": {
+      "text": "Può parlare più lentamente, per favore?",
+      "say": "PWOH pahr-LAH-reh PYOO len-tah-MEN-teh, pehr fah-VOH-reh"
+    },
+    "repeat": {
+      "text": "Può ripetere, per favore?",
+      "say": "PWOH ree-PEH-teh-reh, pehr fah-VOH-reh"
+    },
+    "where_station": {
+      "text": "Dov'è la stazione?",
+      "say": "doh-VEH lah staht-SYOH-neh"
+    },
+    "where_toilet": {
+      "text": "Dov'è il bagno?",
+      "say": "doh-VEH eel BAHN-yoh"
+    },
+    "is_it_far": {
+      "text": "È lontano?",
+      "say": "EH lon-TAH-noh"
+    },
+    "left": {
+      "text": "A sinistra",
+      "say": "ah see-NEES-trah"
+    },
+    "right": {
+      "text": "A destra",
+      "say": "ah DEHS-trah"
+    },
+    "straight": {
+      "text": "Sempre dritto",
+      "say": "SEM-preh DREET-toh"
+    },
+    "menu": {
+      "text": "Il menù, per favore",
+      "say": "eel meh-NOO, pehr fah-VOH-reh"
+    },
+    "water": {
+      "text": "Dell'acqua, per favore",
+      "say": "del-LAHK-kwah, pehr fah-VOH-reh"
+    },
+    "bill": {
+      "text": "Il conto, per favore",
+      "say": "eel KON-toh, pehr fah-VOH-reh"
+    },
+    "delicious": {
+      "text": "Buonissimo!",
+      "say": "bwoh-NEES-see-moh"
+    },
+    "vegetarian": {
+      "text": "Sono vegetariana",
+      "say": "SOH-noh veh-jeh-tah-RYAH-nah"
+    },
+    "how_much": {
+      "text": "Quanto costa?",
+      "say": "KWAHN-toh KOS-tah"
+    },
+    "too_expensive": {
+      "text": "È troppo caro",
+      "say": "EH TROP-poh KAH-roh"
+    },
+    "pay_card": {
+      "text": "Posso pagare con la carta?",
+      "say": "POS-soh pah-GAH-reh kon lah KAHR-tah"
+    },
+    "help": {
+      "text": "Aiuto!",
+      "say": "ah-YOO-toh"
+    },
+    "need_doctor": {
+      "text": "Ho bisogno di un medico",
+      "say": "oh bee-ZOHN-yoh dee oon MEH-dee-koh"
+    },
+    "lost": {
+      "text": "Mi sono persa",
+      "say": "mee SOH-noh PEHR-sah"
+    },
+    "n1": {
+      "text": "uno",
+      "say": "OO-noh"
+    },
+    "n2": {
+      "text": "due",
+      "say": "DOO-eh"
+    },
+    "n3": {
+      "text": "tre",
+      "say": "TREH"
+    },
+    "n4": {
+      "text": "quattro",
+      "say": "KWAHT-troh"
+    },
+    "n5": {
+      "text": "cinque",
+      "say": "CHEEN-kweh"
+    },
+    "n6": {
+      "text": "sei",
+      "say": "SEH-ee"
+    },
+    "n7": {
+      "text": "sette",
+      "say": "SET-teh"
+    },
+    "n8": {
+      "text": "otto",
+      "say": "OT-toh"
+    },
+    "n9": {
+      "text": "nove",
+      "say": "NOH-veh"
+    },
+    "n10": {
+      "text": "dieci",
+      "say": "DYEH-chee"
+    }
+  }
+}

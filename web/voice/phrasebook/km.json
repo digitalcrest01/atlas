@@ -1,0 +1,227 @@
+{
+  "book": "km",
+  "name": "Khmer",
+  "native": "ភាសាខ្មែរ",
+  "phrases": {
+    "hello": {
+      "text": "ជំរាបសួរ",
+      "roman": "chumreap suor",
+      "say": "chum-REEP SOO-uh"
+    },
+    "good_morning": {
+      "text": "អរុណសួស្ដី",
+      "roman": "arun suosdei",
+      "say": "ah-ROON soo-uh-S'DAY"
+    },
+    "good_evening": {
+      "text": "សាយ័ណ្ហសួស្ដី",
+      "roman": "sayoan suosdei",
+      "say": "sah-YOHN soo-uh-S'DAY"
+    },
+    "goodbye": {
+      "text": "ជំរាបលា",
+      "roman": "chumreap lea",
+      "say": "chum-REEP LEE-uh"
+    },
+    "how_are_you": {
+      "text": "សុខសប្បាយជាទេ?",
+      "roman": "sok sabbay chea te?",
+      "say": "sok sa-BAI chee-uh TAY"
+    },
+    "nice_to_meet": {
+      "text": "រីករាយដែលបានជួបអ្នក",
+      "roman": "rik reay del ban chuob neak",
+      "say": "rik-RIE dail bahn CHOO-up NEAK"
+    },
+    "please": {
+      "text": "សូម",
+      "roman": "som",
+      "say": "SOHM"
+    },
+    "thank_you": {
+      "text": "អរគុណ",
+      "roman": "arkun",
+      "say": "aw-KOON"
+    },
+    "youre_welcome": {
+      "text": "មិនអីទេ",
+      "roman": "min ei te",
+      "say": "mun EI tay"
+    },
+    "excuse_me": {
+      "text": "សុំទោស",
+      "roman": "som tos",
+      "say": "sohm TOHS"
+    },
+    "sorry": {
+      "text": "សុំទោស",
+      "roman": "som tos",
+      "say": "sohm TOHS"
+    },
+    "yes": {
+      "text": "ចាស",
+      "roman": "chas",
+      "say": "CHAHS"
+    },
+    "no": {
+      "text": "ទេ",
+      "roman": "te",
+      "say": "TAY"
+    },
+    "speak_english": {
+      "text": "តើអ្នកនិយាយភាសាអង់គ្លេសបានទេ?",
+      "roman": "tae neak niyeay phieasa angkles ban te?",
+      "say": "tay NEAK nee-YEAY pee-uh-SAH ahng-KLAY BAHN tay"
+    },
+    "dont_understand": {
+      "text": "ខ្ញុំមិនយល់ទេ",
+      "roman": "khnhom min yol te",
+      "say": "k'NYOM mun YOHL tay"
+    },
+    "slowly": {
+      "text": "សូមនិយាយយឺតៗ",
+      "roman": "som niyeay yuet yuet",
+      "say": "sohm nee-YEAY YUHT YUHT"
+    },
+    "repeat": {
+      "text": "សូមនិយាយម្ដងទៀតបានទេ?",
+      "roman": "som niyeay mdong tiet ban te?",
+      "say": "sohm nee-YEAY m'DONG TEE-ut BAHN tay"
+    },
+    "where_station": {
+      "text": "ស្ថានីយ៍រថភ្លើងនៅឯណា?",
+      "roman": "sthanii rotphleung nov ae na?",
+      "say": "s'tah-NEE rot-P'LUNG nuh ay NAH"
+    },
+    "where_toilet": {
+      "text": "បន្ទប់ទឹកនៅឯណា?",
+      "roman": "bantob tuek nov ae na?",
+      "say": "bahn-TUP TUK nuh ay NAH"
+    },
+    "is_it_far": {
+      "text": "ឆ្ងាយទេ?",
+      "roman": "chhngay te?",
+      "say": "ch'NGAI tay"
+    },
+    "left": {
+      "text": "ឆ្វេង",
+      "roman": "chhveng",
+      "say": "ch'VENG"
+    },
+    "right": {
+      "text": "ស្ដាំ",
+      "roman": "sdam",
+      "say": "s'DAHM"
+    },
+    "straight": {
+      "text": "ទៅត្រង់",
+      "roman": "tov trong",
+      "say": "tuh TRONG"
+    },
+    "menu": {
+      "text": "សូមមើលម៉ឺនុយ",
+      "roman": "som meul menuy",
+      "say": "sohm MUHL muh-NUY"
+    },
+    "water": {
+      "text": "សូមទឹក",
+      "roman": "som tuek",
+      "say": "sohm TUK"
+    },
+    "bill": {
+      "text": "សូមគិតលុយ",
+      "roman": "som kit luy",
+      "say": "sohm KIT LUY"
+    },
+    "delicious": {
+      "text": "ឆ្ងាញ់ណាស់!",
+      "roman": "chhnganh nas!",
+      "say": "ch'NGAN NAH"
+    },
+    "vegetarian": {
+      "text": "ខ្ញុំតមសាច់",
+      "roman": "khnhom tam sach",
+      "say": "k'NYOM TAHM SAIT"
+    },
+    "how_much": {
+      "text": "ថ្លៃប៉ុន្មាន?",
+      "roman": "thlai ponman?",
+      "say": "t'LAI pon-MAHN"
+    },
+    "too_expensive": {
+      "text": "ថ្លៃពេក",
+      "roman": "thlai pek",
+      "say": "t'LAI PAYK"
+    },
+    "pay_card": {
+      "text": "ខ្ញុំអាចបង់ជាកាតបានទេ?",
+      "roman": "khnhom ach bang chea kat ban te?",
+      "say": "k'NYOM AHCH BAHNG chee-uh KAHT BAHN tay"
+    },
+    "help": {
+      "text": "ជួយផង!",
+      "roman": "chuoy phong!",
+      "say": "CHOO-ee PONG"
+    },
+    "need_doctor": {
+      "text": "ខ្ញុំត្រូវការគ្រូពេទ្យ",
+      "roman": "khnhom trauv ka kru pet",
+      "say": "k'NYOM trov-KAH kroo PAIT"
+    },
+    "lost": {
+      "text": "ខ្ញុំវង្វេងផ្លូវ",
+      "roman": "khnhom vungveng phlauv",
+      "say": "k'NYOM vung-VAYNG p'LOHV"
+    },
+    "n1": {
+      "text": "មួយ",
+      "roman": "muoy",
+      "say": "MOO-ee"
+    },
+    "n2": {
+      "text": "ពីរ",
+      "roman": "pir",
+      "say": "PEE"
+    },
+    "n3": {
+      "text": "បី",
+      "roman": "bei",
+      "say": "BUY"
+    },
+    "n4": {
+      "text": "បួន",
+      "roman": "buon",
+      "say": "BOO-un"
+    },
+    "n5": {
+      "text": "ប្រាំ",
+      "roman": "pram",
+      "say": "PRAHM"
+    },
+    "n6": {
+      "text": "ប្រាំមួយ",
+      "roman": "pram muoy",
+      "say": "prahm MOO-ee"
+    },
+    "n7": {
+      "text": "ប្រាំពីរ",
+      "roman": "pram pir",
+      "say": "prahm PEE"
+    },
+    "n8": {
+      "text": "ប្រាំបី",
+      "roman": "pram bei",
+      "say": "prahm BUY"
+    },
+    "n9": {
+      "text": "ប្រាំបួន",
+      "roman": "pram buon",
+      "say": "prahm BOO-un"
+    },
+    "n10": {
+      "text": "ដប់",
+      "roman": "dab",
+      "say": "DUP"
+    }
+  }
+}

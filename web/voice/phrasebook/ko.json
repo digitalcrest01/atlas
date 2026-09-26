@@ -1,0 +1,227 @@
+{
+  "book": "ko",
+  "name": "Korean",
+  "native": "한국어",
+  "phrases": {
+    "hello": {
+      "text": "안녕하세요",
+      "roman": "annyeonghaseyo",
+      "say": "an-nyong-ha-SEH-yo"
+    },
+    "good_morning": {
+      "text": "좋은 아침이에요",
+      "roman": "joeun achimieyo",
+      "say": "JO-eun a-chi-mi-EH-yo"
+    },
+    "good_evening": {
+      "text": "좋은 저녁 되세요",
+      "roman": "joeun jeonyeok doeseyo",
+      "say": "JO-eun JUH-nyuk dweh-SEH-yo"
+    },
+    "goodbye": {
+      "text": "안녕히 계세요",
+      "roman": "annyeonghi gyeseyo",
+      "say": "an-nyong-hee gyeh-SEH-yo"
+    },
+    "how_are_you": {
+      "text": "잘 지내세요?",
+      "roman": "jal jinaeseyo?",
+      "say": "jal jee-neh-SEH-yo"
+    },
+    "nice_to_meet": {
+      "text": "만나서 반갑습니다",
+      "roman": "mannaseo bangapseumnida",
+      "say": "man-na-suh ban-gap-SEUM-nee-da"
+    },
+    "please": {
+      "text": "부탁합니다",
+      "roman": "butakamnida",
+      "say": "boo-ta-KAM-nee-da"
+    },
+    "thank_you": {
+      "text": "감사합니다",
+      "roman": "gamsahamnida",
+      "say": "kahm-sah-HAHM-nee-dah"
+    },
+    "youre_welcome": {
+      "text": "천만에요",
+      "roman": "cheonmaneyo",
+      "say": "chun-man-EH-yo"
+    },
+    "excuse_me": {
+      "text": "실례합니다",
+      "roman": "sillyehamnida",
+      "say": "shil-leh-HAM-nee-da"
+    },
+    "sorry": {
+      "text": "죄송합니다",
+      "roman": "joesonghamnida",
+      "say": "jweh-song-HAM-nee-da"
+    },
+    "yes": {
+      "text": "네",
+      "roman": "ne",
+      "say": "NEH"
+    },
+    "no": {
+      "text": "아니요",
+      "roman": "aniyo",
+      "say": "a-NEE-yo"
+    },
+    "speak_english": {
+      "text": "영어 하실 수 있어요?",
+      "roman": "yeongeo hasil su isseoyo?",
+      "say": "YUNG-uh ha-SHIL su it-SUH-yo"
+    },
+    "dont_understand": {
+      "text": "이해가 안 돼요",
+      "roman": "ihaega an dwaeyo",
+      "say": "ee-HEH-ga an DWEH-yo"
+    },
+    "slowly": {
+      "text": "천천히 말해 주세요",
+      "roman": "cheoncheonhi malhae juseyo",
+      "say": "CHUN-chun-hee mal-heh ju-SEH-yo"
+    },
+    "repeat": {
+      "text": "다시 한 번 말해 주시겠어요?",
+      "roman": "dasi han beon malhae jusigesseoyo?",
+      "say": "da-shi han bun mal-heh ju-shi-GET-suh-yo"
+    },
+    "where_station": {
+      "text": "기차역이 어디예요?",
+      "roman": "gichayeogi eodiyeyo?",
+      "say": "gi-cha-YUH-gi uh-di-YEH-yo"
+    },
+    "where_toilet": {
+      "text": "화장실이 어디예요?",
+      "roman": "hwajangsiri eodiyeyo?",
+      "say": "hwa-jang-SHI-ri uh-di-YEH-yo"
+    },
+    "is_it_far": {
+      "text": "멀어요?",
+      "roman": "meoreoyo?",
+      "say": "muh-RUH-yo"
+    },
+    "left": {
+      "text": "왼쪽",
+      "roman": "oenjjok",
+      "say": "WEN-jjok"
+    },
+    "right": {
+      "text": "오른쪽",
+      "roman": "oreunjjok",
+      "say": "o-REUN-jjok"
+    },
+    "straight": {
+      "text": "쭉 가세요",
+      "roman": "jjuk gaseyo",
+      "say": "JJUK ga-SEH-yo"
+    },
+    "menu": {
+      "text": "메뉴판 주세요",
+      "roman": "menyupan juseyo",
+      "say": "MEH-nyu-pan ju-SEH-yo"
+    },
+    "water": {
+      "text": "물 좀 주세요",
+      "roman": "mul jom juseyo",
+      "say": "MOOL jom ju-SEH-yo"
+    },
+    "bill": {
+      "text": "계산해 주세요",
+      "roman": "gyesanhae juseyo",
+      "say": "GYEH-san-heh ju-SEH-yo"
+    },
+    "delicious": {
+      "text": "맛있어요!",
+      "roman": "masisseoyo!",
+      "say": "ma-SHIT-suh-yo"
+    },
+    "vegetarian": {
+      "text": "저는 채식주의자예요",
+      "roman": "jeoneun chaesikjuuijayeyo",
+      "say": "juh-neun CHEH-shik-ju-ee-ja-yeh-yo"
+    },
+    "how_much": {
+      "text": "얼마예요?",
+      "roman": "eolmayeyo?",
+      "say": "UL-ma-yeh-yo"
+    },
+    "too_expensive": {
+      "text": "너무 비싸요",
+      "roman": "neomu bissayo",
+      "say": "nuh-mu BIS-sa-yo"
+    },
+    "pay_card": {
+      "text": "카드로 계산할 수 있어요?",
+      "roman": "kadeuro gyesanhal su isseoyo?",
+      "say": "KA-deu-ro gyeh-san-HAL su it-SUH-yo"
+    },
+    "help": {
+      "text": "도와주세요!",
+      "roman": "dowajuseyo!",
+      "say": "do-wa-ju-SEH-yo"
+    },
+    "need_doctor": {
+      "text": "의사가 필요해요",
+      "roman": "uisaga piryohaeyo",
+      "say": "eui-sa-ga pi-RYO-heh-yo"
+    },
+    "lost": {
+      "text": "길을 잃었어요",
+      "roman": "gireul ireosseoyo",
+      "say": "gi-reul i-RUT-suh-yo"
+    },
+    "n1": {
+      "text": "하나",
+      "roman": "hana",
+      "say": "HA-na"
+    },
+    "n2": {
+      "text": "둘",
+      "roman": "dul",
+      "say": "DOOL"
+    },
+    "n3": {
+      "text": "셋",
+      "roman": "set",
+      "say": "SET"
+    },
+    "n4": {
+      "text": "넷",
+      "roman": "net",
+      "say": "NET"
+    },
+    "n5": {
+      "text": "다섯",
+      "roman": "daseot",
+      "say": "da-SUT"
+    },
+    "n6": {
+      "text": "여섯",
+      "roman": "yeoseot",
+      "say": "yuh-SUT"
+    },
+    "n7": {
+      "text": "일곱",
+      "roman": "ilgop",
+      "say": "IL-gop"
+    },
+    "n8": {
+      "text": "여덟",
+      "roman": "yeodeol",
+      "say": "yuh-DUL"
+    },
+    "n9": {
+      "text": "아홉",
+      "roman": "ahop",
+      "say": "a-HOP"
+    },
+    "n10": {
+      "text": "열",
+      "roman": "yeol",
+      "say": "YUL"
+    }
+  }
+}

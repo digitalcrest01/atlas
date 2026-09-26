@@ -1,0 +1,227 @@
+{
+  "book": "ps",
+  "name": "Pashto",
+  "native": "پښتو",
+  "phrases": {
+    "hello": {
+      "text": "سلام",
+      "roman": "salaam",
+      "say": "sa-LAAM"
+    },
+    "good_morning": {
+      "text": "سهار مو پخیر",
+      "roman": "sahaar mo pa khair",
+      "say": "sa-HAAR mo pa KHAIR"
+    },
+    "good_evening": {
+      "text": "ماښام مو پخیر",
+      "roman": "maakhaam mo pa khair",
+      "say": "maa-KHAAM mo pa KHAIR"
+    },
+    "goodbye": {
+      "text": "د خدای په امان",
+      "roman": "da khudaay pa amaan",
+      "say": "da khu-DAAY pa a-MAAN"
+    },
+    "how_are_you": {
+      "text": "تاسو څنګه یاست؟",
+      "roman": "taaso tsanga yaast?",
+      "say": "TAA-so TSAN-ga YAAST"
+    },
+    "nice_to_meet": {
+      "text": "ستاسو په لیدو خوشحاله شوم",
+      "roman": "staaso pa lido khoshaala shwam",
+      "say": "staa-SO pa lee-DO khosh-HAA-la SHWAM"
+    },
+    "please": {
+      "text": "مهرباني وکړئ",
+      "roman": "mehrabaani wukrey",
+      "say": "meh-ra-baa-NEE wuk-RAY"
+    },
+    "thank_you": {
+      "text": "مننه",
+      "roman": "manana",
+      "say": "ma-NA-na"
+    },
+    "youre_welcome": {
+      "text": "هیڅ خبره نه ده",
+      "roman": "hets khabara na da",
+      "say": "HEETS kha-ba-RA na da"
+    },
+    "excuse_me": {
+      "text": "بښنه غواړم",
+      "roman": "bakhana ghwaaram",
+      "say": "ba-KHA-na GHWAA-ram"
+    },
+    "sorry": {
+      "text": "بښنه غواړم",
+      "roman": "bakhana ghwaaram",
+      "say": "ba-KHA-na GHWAA-ram"
+    },
+    "yes": {
+      "text": "هو",
+      "roman": "ho",
+      "say": "HO"
+    },
+    "no": {
+      "text": "نه",
+      "roman": "na",
+      "say": "NA"
+    },
+    "speak_english": {
+      "text": "تاسو انګلیسي خبرې کوئ؟",
+      "roman": "taaso angleesi khabare kawey?",
+      "say": "TAA-so an-glee-SEE kha-ba-RAY ka-WAY"
+    },
+    "dont_understand": {
+      "text": "زه نه پوهېږم",
+      "roman": "za na pohegam",
+      "say": "za na po-HE-gam"
+    },
+    "slowly": {
+      "text": "مهرباني وکړئ ورو خبرې وکړئ",
+      "roman": "mehrabaani wukrey, wro khabare wukrey",
+      "say": "meh-ra-baa-NEE wuk-RAY, WRO kha-ba-RAY wuk-RAY"
+    },
+    "repeat": {
+      "text": "یو ځل بیا یې ووایئ؟",
+      "roman": "yaw dzal bya ye wowaayey?",
+      "say": "yow DZAL byaa ye wo-waa-YAY"
+    },
+    "where_station": {
+      "text": "د اورګاډي سټېشن چېرته دی؟",
+      "roman": "da orgaadi steshan cherta dey?",
+      "say": "da or-gaa-DEE STAY-shan CHAIR-ta day"
+    },
+    "where_toilet": {
+      "text": "تشناب چېرته دی؟",
+      "roman": "tashnaab cherta dey?",
+      "say": "tash-NAAB CHAIR-ta day"
+    },
+    "is_it_far": {
+      "text": "لرې دی؟",
+      "roman": "lire dey?",
+      "say": "LI-ray day"
+    },
+    "left": {
+      "text": "کیڼ لاس ته",
+      "roman": "keen laas ta",
+      "say": "KEEN laas ta"
+    },
+    "right": {
+      "text": "ښي لاس ته",
+      "roman": "khee laas ta",
+      "say": "KHEE laas ta"
+    },
+    "straight": {
+      "text": "سیده",
+      "roman": "seeda",
+      "say": "SEE-da"
+    },
+    "menu": {
+      "text": "مهرباني وکړئ، مینو راکړئ",
+      "roman": "mehrabaani wukrey, meenu raakrey",
+      "say": "meh-ra-baa-NEE wuk-RAY, MEE-noo raa-KRAY"
+    },
+    "water": {
+      "text": "مهرباني وکړئ، اوبه راکړئ",
+      "roman": "mehrabaani wukrey, oba raakrey",
+      "say": "meh-ra-baa-NEE wuk-RAY, o-BA raa-KRAY"
+    },
+    "bill": {
+      "text": "مهرباني وکړئ، حساب راکړئ",
+      "roman": "mehrabaani wukrey, hisaab raakrey",
+      "say": "meh-ra-baa-NEE wuk-RAY, hi-SAAB raa-KRAY"
+    },
+    "delicious": {
+      "text": "ډېر خوندور دی!",
+      "roman": "der khwandawar dey!",
+      "say": "DAIR khwan-da-WAR day"
+    },
+    "vegetarian": {
+      "text": "زه غوښه نه خورم",
+      "roman": "za ghwakha na khoram",
+      "say": "za GHWA-kha na KHO-ram"
+    },
+    "how_much": {
+      "text": "دا په څو دی؟",
+      "roman": "daa pa tso dey?",
+      "say": "daa pa TSO day"
+    },
+    "too_expensive": {
+      "text": "ډېر ګران دی",
+      "roman": "der graan dey",
+      "say": "dair GRAAN day"
+    },
+    "pay_card": {
+      "text": "په کارت پیسې ورکولی شم؟",
+      "roman": "pa kaart paise warkawalay sham?",
+      "say": "pa KAART pai-SAY war-ka-wa-LAY SHAM"
+    },
+    "help": {
+      "text": "مرسته وکړئ!",
+      "roman": "marasta wukrey!",
+      "say": "ma-RAS-ta wuk-RAY"
+    },
+    "need_doctor": {
+      "text": "ډاکټر ته اړتیا لرم",
+      "roman": "daaktar ta artiyaa laram",
+      "say": "DAAK-tar ta ar-ti-YAA la-RAM"
+    },
+    "lost": {
+      "text": "زه ورکه شوې یم",
+      "roman": "za wraka shwe yam",
+      "say": "za WRA-ka SHWAY yam"
+    },
+    "n1": {
+      "text": "یو",
+      "roman": "yaw",
+      "say": "YOW"
+    },
+    "n2": {
+      "text": "دوه",
+      "roman": "dwa",
+      "say": "DWAH"
+    },
+    "n3": {
+      "text": "درې",
+      "roman": "dre",
+      "say": "DRAY"
+    },
+    "n4": {
+      "text": "څلور",
+      "roman": "tsalor",
+      "say": "tsa-LOR"
+    },
+    "n5": {
+      "text": "پنځه",
+      "roman": "pindza",
+      "say": "pin-DZA"
+    },
+    "n6": {
+      "text": "شپږ",
+      "roman": "shpag",
+      "say": "SHPAZH"
+    },
+    "n7": {
+      "text": "اووه",
+      "roman": "owa",
+      "say": "O-wa"
+    },
+    "n8": {
+      "text": "اته",
+      "roman": "ata",
+      "say": "a-TA"
+    },
+    "n9": {
+      "text": "نهه",
+      "roman": "naha",
+      "say": "NA-ha"
+    },
+    "n10": {
+      "text": "لس",
+      "roman": "las",
+      "say": "LAS"
+    }
+  }
+}

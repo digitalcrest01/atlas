@@ -1,0 +1,183 @@
+{
+  "book": "fil",
+  "name": "Filipino",
+  "native": "Filipino",
+  "phrases": {
+    "hello": {
+      "text": "Magandang araw po",
+      "say": "ma-gan-DANG A-raw po"
+    },
+    "good_morning": {
+      "text": "Magandang umaga po",
+      "say": "ma-gan-DANG oo-MA-ga po"
+    },
+    "good_evening": {
+      "text": "Magandang gabi po",
+      "say": "ma-gan-DANG ga-BEE po"
+    },
+    "goodbye": {
+      "text": "Paalam po",
+      "say": "pa-A-lam po"
+    },
+    "how_are_you": {
+      "text": "Kumusta po kayo?",
+      "say": "koo-moos-TA po ka-YO"
+    },
+    "nice_to_meet": {
+      "text": "Ikinagagalak ko pong makilala kayo",
+      "say": "ee-kee-na-ga-ga-LAK ko pong ma-kee-LA-la ka-YO"
+    },
+    "please": {
+      "text": "Pakiusap po",
+      "say": "pa-kee-OO-sap po"
+    },
+    "thank_you": {
+      "text": "Salamat po",
+      "say": "sa-LA-mat po"
+    },
+    "youre_welcome": {
+      "text": "Walang anuman po",
+      "say": "wa-LANG a-noo-MAN po"
+    },
+    "excuse_me": {
+      "text": "Mawalang-galang na po",
+      "say": "ma-wa-LANG ga-LANG na po"
+    },
+    "sorry": {
+      "text": "Pasensya na po",
+      "say": "pa-SEN-sha na po"
+    },
+    "yes": {
+      "text": "Opo",
+      "say": "O-po"
+    },
+    "no": {
+      "text": "Hindi po",
+      "say": "hin-DEE po"
+    },
+    "speak_english": {
+      "text": "Marunong po ba kayong mag-Ingles?",
+      "say": "ma-ROO-nong po ba ka-YONG mag-ING-gles"
+    },
+    "dont_understand": {
+      "text": "Hindi ko po naiintindihan",
+      "say": "hin-DEE ko po na-ee-in-tin-DEE-han"
+    },
+    "slowly": {
+      "text": "Pakibagalan po ang pagsasalita",
+      "say": "pa-kee-ba-GA-lan po ang pag-sa-sa-lee-TA"
+    },
+    "repeat": {
+      "text": "Pakiulit po?",
+      "say": "pa-kee-OO-lit po"
+    },
+    "where_station": {
+      "text": "Nasaan po ang istasyon ng tren?",
+      "say": "na-sa-AN po ang is-TA-shon nang TREN"
+    },
+    "where_toilet": {
+      "text": "Nasaan po ang banyo?",
+      "say": "na-sa-AN po ang BAN-yo"
+    },
+    "is_it_far": {
+      "text": "Malayo po ba?",
+      "say": "ma-LA-yo po ba"
+    },
+    "left": {
+      "text": "Kaliwa",
+      "say": "ka-lee-WA"
+    },
+    "right": {
+      "text": "Kanan",
+      "say": "KA-nan"
+    },
+    "straight": {
+      "text": "Diretso",
+      "say": "dee-RET-so"
+    },
+    "menu": {
+      "text": "Pahingi po ng menu",
+      "say": "pa-hee-NGEE po nang ME-noo"
+    },
+    "water": {
+      "text": "Pahingi po ng tubig",
+      "say": "pa-hee-NGEE po nang TOO-big"
+    },
+    "bill": {
+      "text": "Pahingi po ng bill",
+      "say": "pa-hee-NGEE po nang BIL"
+    },
+    "delicious": {
+      "text": "Ang sarap!",
+      "say": "ang sa-RAP"
+    },
+    "vegetarian": {
+      "text": "Vegetarian po ako",
+      "say": "ve-je-TA-ree-an po a-KO"
+    },
+    "how_much": {
+      "text": "Magkano po ito?",
+      "say": "mag-KA-no po ee-TO"
+    },
+    "too_expensive": {
+      "text": "Ang mahal naman po",
+      "say": "ang ma-HAL na-MAN po"
+    },
+    "pay_card": {
+      "text": "Puwede po bang magbayad gamit ang card?",
+      "say": "pwe-DEH po bang mag-BA-yad GA-mit ang KARD"
+    },
+    "help": {
+      "text": "Tulong!",
+      "say": "TOO-long"
+    },
+    "need_doctor": {
+      "text": "Kailangan ko po ng doktor",
+      "say": "kai-LA-ngan ko po nang dok-TOR"
+    },
+    "lost": {
+      "text": "Naliligaw po ako",
+      "say": "na-lee-LEE-gaw po a-KO"
+    },
+    "n1": {
+      "text": "isa",
+      "say": "ee-SA"
+    },
+    "n2": {
+      "text": "dalawa",
+      "say": "da-la-WA"
+    },
+    "n3": {
+      "text": "tatlo",
+      "say": "tat-LO"
+    },
+    "n4": {
+      "text": "apat",
+      "say": "A-pat"
+    },
+    "n5": {
+      "text": "lima",
+      "say": "lee-MA"
+    },
+    "n6": {
+      "text": "anim",
+      "say": "A-nim"
+    },
+    "n7": {
+      "text": "pito",
+      "say": "pee-TO"
+    },
+    "n8": {
+      "text": "walo",
+      "say": "wa-LO"
+    },
+    "n9": {
+      "text": "siyam",
+      "say": "SHAM"
+    },
+    "n10": {
+      "text": "sampu",
+      "say": "sam-POO"
+    }
+  }
+}

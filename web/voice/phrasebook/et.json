@@ -1,0 +1,183 @@
+{
+  "book": "et",
+  "name": "Estonian",
+  "native": "eesti keel",
+  "phrases": {
+    "hello": {
+      "text": "Tere",
+      "say": "TEH-reh"
+    },
+    "good_morning": {
+      "text": "Tere hommikust",
+      "say": "TEH-reh HOM-mi-koost"
+    },
+    "good_evening": {
+      "text": "Tere õhtust",
+      "say": "TEH-reh UH-toost"
+    },
+    "goodbye": {
+      "text": "Head aega",
+      "say": "HEH-ad AH-eh-ga"
+    },
+    "how_are_you": {
+      "text": "Kuidas läheb?",
+      "say": "KWEE-das LA-heb"
+    },
+    "nice_to_meet": {
+      "text": "Meeldiv tutvuda",
+      "say": "MEHL-div TOOT-voo-da"
+    },
+    "please": {
+      "text": "Palun",
+      "say": "PAH-loon"
+    },
+    "thank_you": {
+      "text": "Aitäh",
+      "say": "AI-tah"
+    },
+    "youre_welcome": {
+      "text": "Pole tänu väärt",
+      "say": "PO-leh TA-noo VAART"
+    },
+    "excuse_me": {
+      "text": "Vabandage",
+      "say": "VA-ban-da-geh"
+    },
+    "sorry": {
+      "text": "Vabandust",
+      "say": "VA-ban-doost"
+    },
+    "yes": {
+      "text": "Jah",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Ei",
+      "say": "AY"
+    },
+    "speak_english": {
+      "text": "Kas te räägite inglise keelt?",
+      "say": "kas teh RAA-gi-teh ING-li-seh KEHLT"
+    },
+    "dont_understand": {
+      "text": "Ma ei saa aru",
+      "say": "ma ay saa AH-roo"
+    },
+    "slowly": {
+      "text": "Palun rääkige aeglasemalt",
+      "say": "PAH-loon RAA-ki-geh AEG-la-seh-malt"
+    },
+    "repeat": {
+      "text": "Kas te saaksite seda korrata?",
+      "say": "kas teh SAAK-si-teh SEH-da KOR-ra-ta"
+    },
+    "where_station": {
+      "text": "Kus on rongijaam?",
+      "say": "koos on RON-gi-yahm"
+    },
+    "where_toilet": {
+      "text": "Kus on tualett?",
+      "say": "koos on TWA-lett"
+    },
+    "is_it_far": {
+      "text": "Kas see on kaugel?",
+      "say": "kas seh on KOW-gel"
+    },
+    "left": {
+      "text": "Vasakule",
+      "say": "VA-sa-koo-leh"
+    },
+    "right": {
+      "text": "Paremale",
+      "say": "PA-reh-ma-leh"
+    },
+    "straight": {
+      "text": "Otse",
+      "say": "OT-seh"
+    },
+    "menu": {
+      "text": "Menüü, palun",
+      "say": "MEH-nuu PAH-loon"
+    },
+    "water": {
+      "text": "Vett, palun",
+      "say": "VETT PAH-loon"
+    },
+    "bill": {
+      "text": "Arve, palun",
+      "say": "AR-veh PAH-loon"
+    },
+    "delicious": {
+      "text": "Väga maitsev!",
+      "say": "VA-ga MAIT-sev"
+    },
+    "vegetarian": {
+      "text": "Ma olen taimetoitlane",
+      "say": "ma O-len TAI-meh-toit-la-neh"
+    },
+    "how_much": {
+      "text": "Kui palju see maksab?",
+      "say": "kwee PAL-yoo seh MAK-sab"
+    },
+    "too_expensive": {
+      "text": "See on liiga kallis",
+      "say": "seh on LEE-ga KAL-lis"
+    },
+    "pay_card": {
+      "text": "Kas ma saan kaardiga maksta?",
+      "say": "kas ma saan KAAR-di-ga MAKS-ta"
+    },
+    "help": {
+      "text": "Appi!",
+      "say": "AP-pi"
+    },
+    "need_doctor": {
+      "text": "Mul on vaja arsti",
+      "say": "mool on VA-ya ARS-ti"
+    },
+    "lost": {
+      "text": "Ma olen eksinud",
+      "say": "ma O-len EK-si-nood"
+    },
+    "n1": {
+      "text": "üks",
+      "say": "UUKS"
+    },
+    "n2": {
+      "text": "kaks",
+      "say": "KAHKS"
+    },
+    "n3": {
+      "text": "kolm",
+      "say": "KOLM"
+    },
+    "n4": {
+      "text": "neli",
+      "say": "NEH-li"
+    },
+    "n5": {
+      "text": "viis",
+      "say": "VEES"
+    },
+    "n6": {
+      "text": "kuus",
+      "say": "KOOS"
+    },
+    "n7": {
+      "text": "seitse",
+      "say": "SAYT-seh"
+    },
+    "n8": {
+      "text": "kaheksa",
+      "say": "KA-hek-sa"
+    },
+    "n9": {
+      "text": "üheksa",
+      "say": "UU-hek-sa"
+    },
+    "n10": {
+      "text": "kümme",
+      "say": "KUUM-meh"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "book": "id",
+  "name": "Indonesian",
+  "native": "Bahasa Indonesia",
+  "phrases": {
+    "hello": {
+      "text": "Halo",
+      "say": "HAH-loh"
+    },
+    "good_morning": {
+      "text": "Selamat pagi",
+      "say": "seh-LAH-mat PAH-gee"
+    },
+    "good_evening": {
+      "text": "Selamat malam",
+      "say": "seh-LAH-mat MAH-lahm"
+    },
+    "goodbye": {
+      "text": "Sampai jumpa",
+      "say": "SAHM-pai JOOM-pah"
+    },
+    "how_are_you": {
+      "text": "Apa kabar?",
+      "say": "AH-pah KAH-bar"
+    },
+    "nice_to_meet": {
+      "text": "Senang bertemu dengan Anda",
+      "say": "seh-NAHNG ber-TEH-moo DEH-ngahn AHN-dah"
+    },
+    "please": {
+      "text": "Tolong",
+      "say": "TOH-lohng"
+    },
+    "thank_you": {
+      "text": "Terima kasih",
+      "say": "teh-REE-mah KAH-see"
+    },
+    "youre_welcome": {
+      "text": "Sama-sama",
+      "say": "SAH-mah SAH-mah"
+    },
+    "excuse_me": {
+      "text": "Permisi",
+      "say": "per-MEE-see"
+    },
+    "sorry": {
+      "text": "Maaf",
+      "say": "MAH-ahf"
+    },
+    "yes": {
+      "text": "Ya",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Tidak",
+      "say": "TEE-dahk"
+    },
+    "speak_english": {
+      "text": "Bisa berbahasa Inggris?",
+      "say": "BEE-sah ber-bah-HAH-sah ING-grees"
+    },
+    "dont_understand": {
+      "text": "Saya tidak mengerti",
+      "say": "SAH-yah TEE-dahk meng-ER-tee"
+    },
+    "slowly": {
+      "text": "Tolong bicara lebih pelan",
+      "say": "TOH-lohng bee-CHAH-rah leh-BEE peh-LAHN"
+    },
+    "repeat": {
+      "text": "Bisa diulang?",
+      "say": "BEE-sah dee-OO-lahng"
+    },
+    "where_station": {
+      "text": "Di mana stasiun kereta?",
+      "say": "dee MAH-nah STAH-see-oon keh-REH-tah"
+    },
+    "where_toilet": {
+      "text": "Di mana toiletnya?",
+      "say": "dee MAH-nah toy-LET-nyah"
+    },
+    "is_it_far": {
+      "text": "Jauh tidak?",
+      "say": "JAH-oo TEE-dahk"
+    },
+    "left": {
+      "text": "Kiri",
+      "say": "KEE-ree"
+    },
+    "right": {
+      "text": "Kanan",
+      "say": "KAH-nahn"
+    },
+    "straight": {
+      "text": "Lurus",
+      "say": "LOO-roos"
+    },
+    "menu": {
+      "text": "Minta menunya",
+      "say": "MIN-tah meh-NOO-nyah"
+    },
+    "water": {
+      "text": "Minta air putih",
+      "say": "MIN-tah AH-eer POO-tee"
+    },
+    "bill": {
+      "text": "Minta bonnya",
+      "say": "MIN-tah BON-nyah"
+    },
+    "delicious": {
+      "text": "Enak sekali!",
+      "say": "EH-nahk seh-KAH-lee"
+    },
+    "vegetarian": {
+      "text": "Saya vegetarian",
+      "say": "SAH-yah veh-geh-TAH-ree-ahn"
+    },
+    "how_much": {
+      "text": "Berapa harganya?",
+      "say": "beh-RAH-pah har-GAH-nyah"
+    },
+    "too_expensive": {
+      "text": "Terlalu mahal",
+      "say": "ter-LAH-loo MAH-hahl"
+    },
+    "pay_card": {
+      "text": "Bisa bayar pakai kartu?",
+      "say": "BEE-sah BAH-yar PAH-kai KAR-too"
+    },
+    "help": {
+      "text": "Tolong!",
+      "say": "TOH-lohng"
+    },
+    "need_doctor": {
+      "text": "Saya perlu dokter",
+      "say": "SAH-yah per-LOO DOK-ter"
+    },
+    "lost": {
+      "text": "Saya tersesat",
+      "say": "SAH-yah ter-SEH-saht"
+    },
+    "n1": {
+      "text": "satu",
+      "say": "SAH-too"
+    },
+    "n2": {
+      "text": "dua",
+      "say": "DOO-ah"
+    },
+    "n3": {
+      "text": "tiga",
+      "say": "TEE-gah"
+    },
+    "n4": {
+      "text": "empat",
+      "say": "em-PAHT"
+    },
+    "n5": {
+      "text": "lima",
+      "say": "LEE-mah"
+    },
+    "n6": {
+      "text": "enam",
+      "say": "eh-NAHM"
+    },
+    "n7": {
+      "text": "tujuh",
+      "say": "TOO-jooh"
+    },
+    "n8": {
+      "text": "delapan",
+      "say": "deh-LAH-pahn"
+    },
+    "n9": {
+      "text": "sembilan",
+      "say": "sem-BEE-lahn"
+    },
+    "n10": {
+      "text": "sepuluh",
+      "say": "seh-POO-looh"
+    }
+  }
+}

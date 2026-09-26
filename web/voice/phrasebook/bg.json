@@ -1,0 +1,227 @@
+{
+  "book": "bg",
+  "name": "Bulgarian",
+  "native": "български",
+  "phrases": {
+    "hello": {
+      "text": "Здравейте",
+      "roman": "Zdraveyte",
+      "say": "ZDRAH-vey-teh"
+    },
+    "good_morning": {
+      "text": "Добро утро",
+      "roman": "Dobro utro",
+      "say": "doh-BRAW OO-troh"
+    },
+    "good_evening": {
+      "text": "Добър вечер",
+      "roman": "Dobar vecher",
+      "say": "DOH-bur VEH-cher"
+    },
+    "goodbye": {
+      "text": "Довиждане",
+      "roman": "Dovizhdane",
+      "say": "doh-VEEZH-dah-neh"
+    },
+    "how_are_you": {
+      "text": "Как сте?",
+      "roman": "Kak ste?",
+      "say": "KAHK steh"
+    },
+    "nice_to_meet": {
+      "text": "Приятно ми е",
+      "roman": "Priyatno mi e",
+      "say": "pree-YAHT-noh mee eh"
+    },
+    "please": {
+      "text": "Моля",
+      "roman": "Molya",
+      "say": "MOH-lyah"
+    },
+    "thank_you": {
+      "text": "Благодаря",
+      "roman": "Blagodarya",
+      "say": "blah-goh-dah-RYAH"
+    },
+    "youre_welcome": {
+      "text": "Няма защо",
+      "roman": "Nyama zashto",
+      "say": "NYAH-mah zahsh-TOH"
+    },
+    "excuse_me": {
+      "text": "Извинете",
+      "roman": "Izvinete",
+      "say": "eez-vee-NEH-teh"
+    },
+    "sorry": {
+      "text": "Съжалявам",
+      "roman": "Sazhalyavam",
+      "say": "suh-zhah-LYAH-vahm"
+    },
+    "yes": {
+      "text": "Да",
+      "roman": "Da",
+      "say": "DAH"
+    },
+    "no": {
+      "text": "Не",
+      "roman": "Ne",
+      "say": "NEH"
+    },
+    "speak_english": {
+      "text": "Говорите ли английски?",
+      "roman": "Govorite li angliyski?",
+      "say": "goh-VOH-ree-teh lee ahn-GLEEY-skee"
+    },
+    "dont_understand": {
+      "text": "Не разбирам",
+      "roman": "Ne razbiram",
+      "say": "neh rahz-BEE-rahm"
+    },
+    "slowly": {
+      "text": "Моля, говорете по-бавно",
+      "roman": "Molya, govorete po-bavno",
+      "say": "MOH-lyah, goh-voh-REH-teh poh-BAHV-noh"
+    },
+    "repeat": {
+      "text": "Можете ли да повторите?",
+      "roman": "Mozhete li da povtorite?",
+      "say": "MOH-zheh-teh lee dah pohf-TOH-ree-teh"
+    },
+    "where_station": {
+      "text": "Къде е гарата?",
+      "roman": "Kade e garata?",
+      "say": "kuh-DEH eh GAH-rah-tah"
+    },
+    "where_toilet": {
+      "text": "Къде е тоалетната?",
+      "roman": "Kade e toaletnata?",
+      "say": "kuh-DEH eh toh-ah-LET-nah-tah"
+    },
+    "is_it_far": {
+      "text": "Далече ли е?",
+      "roman": "Daleche li e?",
+      "say": "dah-LEH-cheh lee eh"
+    },
+    "left": {
+      "text": "Наляво",
+      "roman": "Nalyavo",
+      "say": "nah-LYAH-voh"
+    },
+    "right": {
+      "text": "Надясно",
+      "roman": "Nadyasno",
+      "say": "nah-DYAHS-noh"
+    },
+    "straight": {
+      "text": "Направо",
+      "roman": "Napravo",
+      "say": "nah-PRAH-voh"
+    },
+    "menu": {
+      "text": "Менюто, моля",
+      "roman": "Menyuto, molya",
+      "say": "meh-NYOO-toh, MOH-lyah"
+    },
+    "water": {
+      "text": "Вода, моля",
+      "roman": "Voda, molya",
+      "say": "voh-DAH, MOH-lyah"
+    },
+    "bill": {
+      "text": "Сметката, моля",
+      "roman": "Smetkata, molya",
+      "say": "SMET-kah-tah, MOH-lyah"
+    },
+    "delicious": {
+      "text": "Много е вкусно!",
+      "roman": "Mnogo e vkusno!",
+      "say": "MNOH-goh eh FKOOS-noh"
+    },
+    "vegetarian": {
+      "text": "Аз съм вегетарианка",
+      "roman": "Az sam vegetarianka",
+      "say": "ahz suhm veh-geh-tah-ree-AHN-kah"
+    },
+    "how_much": {
+      "text": "Колко струва?",
+      "roman": "Kolko struva?",
+      "say": "KOHL-koh STROO-vah"
+    },
+    "too_expensive": {
+      "text": "Много е скъпо",
+      "roman": "Mnogo e skapo",
+      "say": "MNOH-goh eh SKUH-poh"
+    },
+    "pay_card": {
+      "text": "Може ли да платя с карта?",
+      "roman": "Mozhe li da platya s karta?",
+      "say": "MOH-zheh lee dah plah-TYAH s KAR-tah"
+    },
+    "help": {
+      "text": "Помощ!",
+      "roman": "Pomosht!",
+      "say": "POH-mohsht"
+    },
+    "need_doctor": {
+      "text": "Трябва ми лекар",
+      "roman": "Tryabva mi lekar",
+      "say": "TRYAHB-vah mee LEH-kar"
+    },
+    "lost": {
+      "text": "Изгубих се",
+      "roman": "Izgubih se",
+      "say": "eez-GOO-beekh seh"
+    },
+    "n1": {
+      "text": "едно",
+      "roman": "edno",
+      "say": "ed-NOH"
+    },
+    "n2": {
+      "text": "две",
+      "roman": "dve",
+      "say": "DVEH"
+    },
+    "n3": {
+      "text": "три",
+      "roman": "tri",
+      "say": "TREE"
+    },
+    "n4": {
+      "text": "четири",
+      "roman": "chetiri",
+      "say": "CHEH-tee-ree"
+    },
+    "n5": {
+      "text": "пет",
+      "roman": "pet",
+      "say": "PET"
+    },
+    "n6": {
+      "text": "шест",
+      "roman": "shest",
+      "say": "SHEST"
+    },
+    "n7": {
+      "text": "седем",
+      "roman": "sedem",
+      "say": "SEH-dem"
+    },
+    "n8": {
+      "text": "осем",
+      "roman": "osem",
+      "say": "OH-sem"
+    },
+    "n9": {
+      "text": "девет",
+      "roman": "devet",
+      "say": "DEH-vet"
+    },
+    "n10": {
+      "text": "десет",
+      "roman": "deset",
+      "say": "DEH-set"
+    }
+  }
+}

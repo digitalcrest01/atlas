@@ -1,0 +1,227 @@
+{
+  "book": "am",
+  "name": "Amharic",
+  "native": "አማርኛ",
+  "phrases": {
+    "hello": {
+      "text": "ሰላም",
+      "roman": "selam",
+      "say": "seh-LAHM"
+    },
+    "good_morning": {
+      "text": "እንደምን አደሩ",
+      "roman": "indemin aderu",
+      "say": "in-deh-MIN ah-deh-ROO"
+    },
+    "good_evening": {
+      "text": "እንደምን አመሹ",
+      "roman": "indemin ameshu",
+      "say": "in-deh-MIN ah-meh-SHOO"
+    },
+    "goodbye": {
+      "text": "ደህና ሁኑ",
+      "roman": "dehna hunu",
+      "say": "DEH-nah hoo-NOO"
+    },
+    "how_are_you": {
+      "text": "እንደምን ነዎት?",
+      "roman": "indemin newot?",
+      "say": "in-deh-MIN neh-WOHT"
+    },
+    "nice_to_meet": {
+      "text": "ስለተዋወቅን ደስ ብሎኛል",
+      "roman": "siletewawekin des bilognal",
+      "say": "sih-leh-teh-wah-WEH-kin DES bih-LOH-nyahl"
+    },
+    "please": {
+      "text": "እባክዎ",
+      "roman": "ibakwo",
+      "say": "ih-BAHK-woh"
+    },
+    "thank_you": {
+      "text": "አመሰግናለሁ",
+      "roman": "ameseginalehu",
+      "say": "ah-meh-seh-gih-nah-LEH-hoo"
+    },
+    "youre_welcome": {
+      "text": "ምንም አይደል",
+      "roman": "minim aydel",
+      "say": "MIH-nim ay-DEL"
+    },
+    "excuse_me": {
+      "text": "ይቅርታ",
+      "roman": "yiqirta",
+      "say": "yih-kir-TAH"
+    },
+    "sorry": {
+      "text": "ይቅርታ",
+      "roman": "yiqirta",
+      "say": "yih-kir-TAH"
+    },
+    "yes": {
+      "text": "አዎ",
+      "roman": "awo",
+      "say": "AH-woh"
+    },
+    "no": {
+      "text": "አይ",
+      "roman": "ay",
+      "say": "AY"
+    },
+    "speak_english": {
+      "text": "እንግሊዝኛ ይናገራሉ?",
+      "roman": "inglizinya yinageralu?",
+      "say": "in-glee-ZIN-yah yih-nah-geh-RAH-loo"
+    },
+    "dont_understand": {
+      "text": "አልገባኝም",
+      "roman": "algebanyim",
+      "say": "al-geh-BAHN-yim"
+    },
+    "slowly": {
+      "text": "እባክዎ ቀስ ብለው ይናገሩ",
+      "roman": "ibakwo qes bilew yinageru",
+      "say": "ih-BAHK-woh KES bih-LEW yih-nah-geh-ROO"
+    },
+    "repeat": {
+      "text": "እባክዎ ይድገሙት?",
+      "roman": "ibakwo yidgemut?",
+      "say": "ih-BAHK-woh yid-geh-MOOT"
+    },
+    "where_station": {
+      "text": "ባቡር ጣቢያ የት ነው?",
+      "roman": "babur tabiya yet new?",
+      "say": "bah-BOOR tah-BEE-yah YET neh-woo"
+    },
+    "where_toilet": {
+      "text": "መጸዳጃ ቤት የት ነው?",
+      "roman": "metsedaja bet yet new?",
+      "say": "meh-tseh-dah-JAH BET YET neh-woo"
+    },
+    "is_it_far": {
+      "text": "ሩቅ ነው?",
+      "roman": "ruq new?",
+      "say": "ROOK neh-woo"
+    },
+    "left": {
+      "text": "ግራ",
+      "roman": "gira",
+      "say": "gih-RAH"
+    },
+    "right": {
+      "text": "ቀኝ",
+      "roman": "qeny",
+      "say": "KENY"
+    },
+    "straight": {
+      "text": "ቀጥታ",
+      "roman": "qetita",
+      "say": "keh-tih-TAH"
+    },
+    "menu": {
+      "text": "ሜኑ እባክዎ",
+      "roman": "menu ibakwo",
+      "say": "MEH-noo ih-BAHK-woh"
+    },
+    "water": {
+      "text": "ውሃ እባክዎ",
+      "roman": "wiha ibakwo",
+      "say": "wih-HAH ih-BAHK-woh"
+    },
+    "bill": {
+      "text": "ሂሳብ እባክዎ",
+      "roman": "hisab ibakwo",
+      "say": "hih-SAHB ih-BAHK-woh"
+    },
+    "delicious": {
+      "text": "በጣም ይጣፍጣል!",
+      "roman": "betam yitafital!",
+      "say": "beh-TAHM yih-tah-FIH-tahl"
+    },
+    "vegetarian": {
+      "text": "ሥጋ አልበላም",
+      "roman": "siga albelam",
+      "say": "SIH-gah al-beh-LAHM"
+    },
+    "how_much": {
+      "text": "ስንት ነው?",
+      "roman": "sint new?",
+      "say": "SINT neh-woo"
+    },
+    "too_expensive": {
+      "text": "በጣም ውድ ነው",
+      "roman": "betam wid new",
+      "say": "beh-TAHM WID neh-woo"
+    },
+    "pay_card": {
+      "text": "በካርድ መክፈል እችላለሁ?",
+      "roman": "bekard mekfel ichilalehu?",
+      "say": "beh-KARD mek-FEL ih-chih-lah-LEH-hoo"
+    },
+    "help": {
+      "text": "ድረሱልኝ!",
+      "roman": "dirresulign!",
+      "say": "dih-reh-SOO-liny"
+    },
+    "need_doctor": {
+      "text": "ሐኪም ያስፈልገኛል",
+      "roman": "hakim yasfeligenyal",
+      "say": "hah-KEEM yahs-feh-lih-GEH-nyahl"
+    },
+    "lost": {
+      "text": "መንገድ ጠፋብኝ",
+      "roman": "menged tefabign",
+      "say": "men-GED teh-fah-BINY"
+    },
+    "n1": {
+      "text": "አንድ",
+      "roman": "and",
+      "say": "AHND"
+    },
+    "n2": {
+      "text": "ሁለት",
+      "roman": "hulet",
+      "say": "hoo-LET"
+    },
+    "n3": {
+      "text": "ሦስት",
+      "roman": "sost",
+      "say": "SOHST"
+    },
+    "n4": {
+      "text": "አራት",
+      "roman": "arat",
+      "say": "ah-RAHT"
+    },
+    "n5": {
+      "text": "አምስት",
+      "roman": "amist",
+      "say": "AH-mist"
+    },
+    "n6": {
+      "text": "ስድስት",
+      "roman": "sidist",
+      "say": "SID-ist"
+    },
+    "n7": {
+      "text": "ሰባት",
+      "roman": "sebat",
+      "say": "seh-BAHT"
+    },
+    "n8": {
+      "text": "ስምንት",
+      "roman": "siminit",
+      "say": "SIM-int"
+    },
+    "n9": {
+      "text": "ዘጠኝ",
+      "roman": "zetegn",
+      "say": "zeh-TENY"
+    },
+    "n10": {
+      "text": "አስር",
+      "roman": "asir",
+      "say": "AH-sir"
+    }
+  }
+}

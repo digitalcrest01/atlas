@@ -1,0 +1,183 @@
+{
+  "book": "pl",
+  "name": "Polish",
+  "native": "polski",
+  "phrases": {
+    "hello": {
+      "text": "Dzień dobry",
+      "say": "jen DOB-ri"
+    },
+    "good_morning": {
+      "text": "Dzień dobry",
+      "say": "jen DOB-ri"
+    },
+    "good_evening": {
+      "text": "Dobry wieczór",
+      "say": "DOB-ri VYEH-choor"
+    },
+    "goodbye": {
+      "text": "Do widzenia",
+      "say": "do vee-DZEN-ya"
+    },
+    "how_are_you": {
+      "text": "Jak się masz?",
+      "say": "yak sheh MASH"
+    },
+    "nice_to_meet": {
+      "text": "Miło mi",
+      "say": "MEE-wo mee"
+    },
+    "please": {
+      "text": "Proszę",
+      "say": "PRO-sheh"
+    },
+    "thank_you": {
+      "text": "Dziękuję",
+      "say": "jen-KOO-yeh"
+    },
+    "youre_welcome": {
+      "text": "Nie ma za co",
+      "say": "nyeh ma ZA tso"
+    },
+    "excuse_me": {
+      "text": "Przepraszam",
+      "say": "psheh-PRA-sham"
+    },
+    "sorry": {
+      "text": "Przepraszam",
+      "say": "psheh-PRA-sham"
+    },
+    "yes": {
+      "text": "Tak",
+      "say": "TAK"
+    },
+    "no": {
+      "text": "Nie",
+      "say": "NYEH"
+    },
+    "speak_english": {
+      "text": "Czy mówisz po angielsku?",
+      "say": "chi MOO-veesh po an-GYEL-skoo"
+    },
+    "dont_understand": {
+      "text": "Nie rozumiem",
+      "say": "nyeh ro-ZOO-myem"
+    },
+    "slowly": {
+      "text": "Proszę mówić wolniej",
+      "say": "PRO-sheh MOO-veech VOL-nyey"
+    },
+    "repeat": {
+      "text": "Proszę powtórzyć",
+      "say": "PRO-sheh pof-TOO-zhich"
+    },
+    "where_station": {
+      "text": "Gdzie jest dworzec kolejowy?",
+      "say": "gjeh yest DVO-zhets ko-leh-YO-vi"
+    },
+    "where_toilet": {
+      "text": "Gdzie jest toaleta?",
+      "say": "gjeh yest to-a-LEH-ta"
+    },
+    "is_it_far": {
+      "text": "Czy to daleko?",
+      "say": "chi to da-LEH-ko"
+    },
+    "left": {
+      "text": "W lewo",
+      "say": "v LEH-vo"
+    },
+    "right": {
+      "text": "W prawo",
+      "say": "f PRA-vo"
+    },
+    "straight": {
+      "text": "Prosto",
+      "say": "PROS-to"
+    },
+    "menu": {
+      "text": "Poproszę menu",
+      "say": "po-PRO-sheh MEH-noo"
+    },
+    "water": {
+      "text": "Poproszę wodę",
+      "say": "po-PRO-sheh VO-deh"
+    },
+    "bill": {
+      "text": "Poproszę rachunek",
+      "say": "po-PRO-sheh ra-HOO-nek"
+    },
+    "delicious": {
+      "text": "Pyszne!",
+      "say": "PISH-neh"
+    },
+    "vegetarian": {
+      "text": "Jestem wegetarianką",
+      "say": "YES-tem veh-geh-ta-RYAN-kom"
+    },
+    "how_much": {
+      "text": "Ile to kosztuje?",
+      "say": "EE-leh to kosh-TOO-yeh"
+    },
+    "too_expensive": {
+      "text": "To za drogo",
+      "say": "to za DRO-go"
+    },
+    "pay_card": {
+      "text": "Czy mogę zapłacić kartą?",
+      "say": "chi MO-geh za-PWA-cheech KAR-tom"
+    },
+    "help": {
+      "text": "Pomocy!",
+      "say": "po-MO-tsi"
+    },
+    "need_doctor": {
+      "text": "Potrzebuję lekarza",
+      "say": "pot-sheh-BOO-yeh leh-KA-zha"
+    },
+    "lost": {
+      "text": "Zgubiłam się",
+      "say": "zgoo-BEE-wam sheh"
+    },
+    "n1": {
+      "text": "jeden",
+      "say": "YEH-den"
+    },
+    "n2": {
+      "text": "dwa",
+      "say": "DVA"
+    },
+    "n3": {
+      "text": "trzy",
+      "say": "TSHI"
+    },
+    "n4": {
+      "text": "cztery",
+      "say": "CHTEH-ri"
+    },
+    "n5": {
+      "text": "pięć",
+      "say": "PYENCH"
+    },
+    "n6": {
+      "text": "sześć",
+      "say": "SHESHCH"
+    },
+    "n7": {
+      "text": "siedem",
+      "say": "SHEH-dem"
+    },
+    "n8": {
+      "text": "osiem",
+      "say": "O-shem"
+    },
+    "n9": {
+      "text": "dziewięć",
+      "say": "JEH-vyench"
+    },
+    "n10": {
+      "text": "dziesięć",
+      "say": "JEH-shench"
+    }
+  }
+}

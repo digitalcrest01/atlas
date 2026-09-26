@@ -1,0 +1,183 @@
+{
+  "book": "ro",
+  "name": "Romanian",
+  "native": "Română",
+  "phrases": {
+    "hello": {
+      "text": "Bună ziua",
+      "say": "BOO-nuh ZEE-wah"
+    },
+    "good_morning": {
+      "text": "Bună dimineața",
+      "say": "BOO-nuh dee-mee-NYAH-tsah"
+    },
+    "good_evening": {
+      "text": "Bună seara",
+      "say": "BOO-nuh SYAH-rah"
+    },
+    "goodbye": {
+      "text": "La revedere",
+      "say": "lah reh-veh-DEH-reh"
+    },
+    "how_are_you": {
+      "text": "Ce mai faceți?",
+      "say": "cheh mai FAH-chets"
+    },
+    "nice_to_meet": {
+      "text": "Îmi pare bine de cunoștință",
+      "say": "uhm PAH-reh BEE-neh deh koo-nohsh-TEEN-tsuh"
+    },
+    "please": {
+      "text": "Vă rog",
+      "say": "vuh ROHG"
+    },
+    "thank_you": {
+      "text": "Mulțumesc",
+      "say": "mool-tsoo-MESK"
+    },
+    "youre_welcome": {
+      "text": "Cu plăcere",
+      "say": "koo pluh-CHEH-reh"
+    },
+    "excuse_me": {
+      "text": "Scuzați-mă",
+      "say": "skoo-ZAHTS-muh"
+    },
+    "sorry": {
+      "text": "Îmi pare rău",
+      "say": "uhm PAH-reh RUH-oo"
+    },
+    "yes": {
+      "text": "Da",
+      "say": "DAH"
+    },
+    "no": {
+      "text": "Nu",
+      "say": "NOO"
+    },
+    "speak_english": {
+      "text": "Vorbiți engleză?",
+      "say": "vor-BEETS en-GLEH-zuh"
+    },
+    "dont_understand": {
+      "text": "Nu înțeleg",
+      "say": "noo uhn-tseh-LEG"
+    },
+    "slowly": {
+      "text": "Vorbiți mai rar, vă rog",
+      "say": "vor-BEETS mai RAHR vuh ROHG"
+    },
+    "repeat": {
+      "text": "Puteți repeta, vă rog?",
+      "say": "poo-TETS reh-peh-TAH vuh ROHG"
+    },
+    "where_station": {
+      "text": "Unde este gara?",
+      "say": "OON-deh YES-teh GAH-rah"
+    },
+    "where_toilet": {
+      "text": "Unde este toaleta?",
+      "say": "OON-deh YES-teh twah-LEH-tah"
+    },
+    "is_it_far": {
+      "text": "Este departe?",
+      "say": "YES-teh deh-PAR-teh"
+    },
+    "left": {
+      "text": "La stânga",
+      "say": "lah STUHN-gah"
+    },
+    "right": {
+      "text": "La dreapta",
+      "say": "lah DRYAHP-tah"
+    },
+    "straight": {
+      "text": "Drept înainte",
+      "say": "drept uh-nah-EEN-teh"
+    },
+    "menu": {
+      "text": "Meniul, vă rog",
+      "say": "meh-NEE-ool vuh ROHG"
+    },
+    "water": {
+      "text": "Apă, vă rog",
+      "say": "AH-puh vuh ROHG"
+    },
+    "bill": {
+      "text": "Nota, vă rog",
+      "say": "NOH-tah vuh ROHG"
+    },
+    "delicious": {
+      "text": "Delicios!",
+      "say": "deh-lee-CHOHS"
+    },
+    "vegetarian": {
+      "text": "Sunt vegetariană",
+      "say": "soont veh-jeh-tah-ree-AH-nuh"
+    },
+    "how_much": {
+      "text": "Cât costă?",
+      "say": "kuht KOHS-tuh"
+    },
+    "too_expensive": {
+      "text": "E prea scump",
+      "say": "yeh pryah SKOOMP"
+    },
+    "pay_card": {
+      "text": "Pot plăti cu cardul?",
+      "say": "poht pluh-TEE koo KAR-dool"
+    },
+    "help": {
+      "text": "Ajutor!",
+      "say": "ah-zhoo-TOR"
+    },
+    "need_doctor": {
+      "text": "Am nevoie de un doctor",
+      "say": "ahm neh-VOH-yeh deh oon DOK-tor"
+    },
+    "lost": {
+      "text": "M-am rătăcit",
+      "say": "mahm ruh-tuh-CHEET"
+    },
+    "n1": {
+      "text": "unu",
+      "say": "OO-noo"
+    },
+    "n2": {
+      "text": "doi",
+      "say": "DOY"
+    },
+    "n3": {
+      "text": "trei",
+      "say": "TRAY"
+    },
+    "n4": {
+      "text": "patru",
+      "say": "PAH-troo"
+    },
+    "n5": {
+      "text": "cinci",
+      "say": "CHEENCH"
+    },
+    "n6": {
+      "text": "șase",
+      "say": "SHAH-seh"
+    },
+    "n7": {
+      "text": "șapte",
+      "say": "SHAHP-teh"
+    },
+    "n8": {
+      "text": "opt",
+      "say": "OPT"
+    },
+    "n9": {
+      "text": "nouă",
+      "say": "NOH-wuh"
+    },
+    "n10": {
+      "text": "zece",
+      "say": "ZEH-cheh"
+    }
+  }
+}

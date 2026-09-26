@@ -1,0 +1,183 @@
+{
+  "book": "az",
+  "name": "Azerbaijani",
+  "native": "Azərbaycanca",
+  "phrases": {
+    "hello": {
+      "text": "Salam",
+      "say": "sah-LAHM"
+    },
+    "good_morning": {
+      "text": "Sabahınız xeyir",
+      "say": "sah-bah-huh-NUHZ kheh-YEER"
+    },
+    "good_evening": {
+      "text": "Axşamınız xeyir",
+      "say": "akh-shah-muh-NUHZ kheh-YEER"
+    },
+    "goodbye": {
+      "text": "Sağ olun",
+      "say": "SAH oh-loon"
+    },
+    "how_are_you": {
+      "text": "Necəsiniz?",
+      "say": "neh-JEH-see-neez"
+    },
+    "nice_to_meet": {
+      "text": "Tanış olduğuma şadam",
+      "say": "tah-NUSH ohl-doo-oo-MAH shah-DAHM"
+    },
+    "please": {
+      "text": "Zəhmət olmasa",
+      "say": "zah-MAT ohl-mah-SAH"
+    },
+    "thank_you": {
+      "text": "Təşəkkür edirəm",
+      "say": "tah-shak-KYUR eh-dee-RAM"
+    },
+    "youre_welcome": {
+      "text": "Dəyməz",
+      "say": "day-MAZ"
+    },
+    "excuse_me": {
+      "text": "Bağışlayın",
+      "say": "bah-ghush-LAH-yun"
+    },
+    "sorry": {
+      "text": "Üzr istəyirəm",
+      "say": "YOOZR ees-teh-yee-RAM"
+    },
+    "yes": {
+      "text": "Bəli",
+      "say": "BAH-lee"
+    },
+    "no": {
+      "text": "Xeyr",
+      "say": "KHAYR"
+    },
+    "speak_english": {
+      "text": "İngiliscə danışırsınız?",
+      "say": "een-gee-lees-JEH dah-nuh-shur-suh-NUHZ"
+    },
+    "dont_understand": {
+      "text": "Başa düşmürəm",
+      "say": "bah-SHAH dyush-MYU-ram"
+    },
+    "slowly": {
+      "text": "Zəhmət olmasa, yavaş danışın",
+      "say": "zah-MAT ohl-mah-SAH, yah-VAHSH dah-NUH-shun"
+    },
+    "repeat": {
+      "text": "Təkrar edə bilərsiniz?",
+      "say": "tak-RAHR eh-DEH bee-lar-see-NEEZ"
+    },
+    "where_station": {
+      "text": "Dəmir yolu vağzalı haradadır?",
+      "say": "deh-MEER yoh-LOO vahgh-zah-LUH hah-RAH-dah-dur"
+    },
+    "where_toilet": {
+      "text": "Tualet haradadır?",
+      "say": "too-ah-LET hah-RAH-dah-dur"
+    },
+    "is_it_far": {
+      "text": "Uzaqdır?",
+      "say": "oo-ZAHG-dur"
+    },
+    "left": {
+      "text": "Sola",
+      "say": "soh-LAH"
+    },
+    "right": {
+      "text": "Sağa",
+      "say": "sah-AH"
+    },
+    "straight": {
+      "text": "Düz",
+      "say": "DYUZ"
+    },
+    "menu": {
+      "text": "Menyu, zəhmət olmasa",
+      "say": "men-YOO, zah-MAT ohl-mah-SAH"
+    },
+    "water": {
+      "text": "Su, zəhmət olmasa",
+      "say": "SOO, zah-MAT ohl-mah-SAH"
+    },
+    "bill": {
+      "text": "Hesab, zəhmət olmasa",
+      "say": "heh-SAHB, zah-MAT ohl-mah-SAH"
+    },
+    "delicious": {
+      "text": "Çox dadlıdır!",
+      "say": "CHOKH DAHD-luh-dur"
+    },
+    "vegetarian": {
+      "text": "Mən vegetarianam",
+      "say": "man veh-geh-tah-ree-AH-nahm"
+    },
+    "how_much": {
+      "text": "Neçəyədir?",
+      "say": "neh-cheh-YEH-deer"
+    },
+    "too_expensive": {
+      "text": "Çox bahadır",
+      "say": "CHOKH bah-HAH-dur"
+    },
+    "pay_card": {
+      "text": "Kartla ödəyə bilərəm?",
+      "say": "KAHRT-lah yo-deh-YEH bee-LAH-ram"
+    },
+    "help": {
+      "text": "Kömək edin!",
+      "say": "kyo-MAK eh-DEEN"
+    },
+    "need_doctor": {
+      "text": "Mənə həkim lazımdır",
+      "say": "mah-NAH hah-KEEM lah-ZUM-dur"
+    },
+    "lost": {
+      "text": "Mən azmışam",
+      "say": "man AHZ-muh-shahm"
+    },
+    "n1": {
+      "text": "bir",
+      "say": "BEER"
+    },
+    "n2": {
+      "text": "iki",
+      "say": "ee-KEE"
+    },
+    "n3": {
+      "text": "üç",
+      "say": "YOOCH"
+    },
+    "n4": {
+      "text": "dörd",
+      "say": "DYORD"
+    },
+    "n5": {
+      "text": "beş",
+      "say": "BESH"
+    },
+    "n6": {
+      "text": "altı",
+      "say": "ahl-TUH"
+    },
+    "n7": {
+      "text": "yeddi",
+      "say": "yed-DEE"
+    },
+    "n8": {
+      "text": "səkkiz",
+      "say": "sak-KEEZ"
+    },
+    "n9": {
+      "text": "doqquz",
+      "say": "dohg-GOOZ"
+    },
+    "n10": {
+      "text": "on",
+      "say": "OHN"
+    }
+  }
+}

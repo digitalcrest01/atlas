@@ -1,0 +1,183 @@
+{
+  "book": "uz",
+  "name": "Uzbek",
+  "native": "oʻzbekcha",
+  "phrases": {
+    "hello": {
+      "text": "Assalomu alaykum",
+      "say": "ahs-sah-LOH-moo ah-LAI-koom"
+    },
+    "good_morning": {
+      "text": "Xayrli tong",
+      "say": "khair-LEE TONG"
+    },
+    "good_evening": {
+      "text": "Xayrli kech",
+      "say": "khair-LEE KECH"
+    },
+    "goodbye": {
+      "text": "Xayr",
+      "say": "KHAIR"
+    },
+    "how_are_you": {
+      "text": "Qalaysiz?",
+      "say": "kah-LAI-seez"
+    },
+    "nice_to_meet": {
+      "text": "Tanishganimdan xursandman",
+      "say": "tah-neesh-gah-neem-DAHN khoor-SAHND-mahn"
+    },
+    "please": {
+      "text": "Iltimos",
+      "say": "eel-tee-MOHS"
+    },
+    "thank_you": {
+      "text": "Rahmat",
+      "say": "rakh-MAHT"
+    },
+    "youre_welcome": {
+      "text": "Arzimaydi",
+      "say": "ahr-zee-MAI-dee"
+    },
+    "excuse_me": {
+      "text": "Kechirasiz",
+      "say": "keh-chee-rah-SEEZ"
+    },
+    "sorry": {
+      "text": "Uzr soʻrayman",
+      "say": "OOZR soh-RAI-mahn"
+    },
+    "yes": {
+      "text": "Ha",
+      "say": "HAH"
+    },
+    "no": {
+      "text": "Yoʻq",
+      "say": "YOHK"
+    },
+    "speak_english": {
+      "text": "Inglizcha gapirasizmi?",
+      "say": "een-gleez-CHAH gah-pee-rah-seez-MEE"
+    },
+    "dont_understand": {
+      "text": "Tushunmadim",
+      "say": "too-shoon-mah-DEEM"
+    },
+    "slowly": {
+      "text": "Iltimos, sekinroq gapiring",
+      "say": "eel-tee-MOHS, seh-keen-ROHK gah-pee-REENG"
+    },
+    "repeat": {
+      "text": "Qaytadan ayta olasizmi?",
+      "say": "kai-tah-DAHN ai-TAH oh-lah-seez-MEE"
+    },
+    "where_station": {
+      "text": "Vokzal qayerda?",
+      "say": "vok-ZAHL kah-yehr-DAH"
+    },
+    "where_toilet": {
+      "text": "Hojatxona qayerda?",
+      "say": "hoh-jaht-khoh-NAH kah-yehr-DAH"
+    },
+    "is_it_far": {
+      "text": "Uzoqmi?",
+      "say": "oo-zohk-MEE"
+    },
+    "left": {
+      "text": "Chapga",
+      "say": "chahp-GAH"
+    },
+    "right": {
+      "text": "Oʻngga",
+      "say": "ohng-GAH"
+    },
+    "straight": {
+      "text": "Toʻgʻriga",
+      "say": "toh-ree-GAH"
+    },
+    "menu": {
+      "text": "Menyuni bering, iltimos",
+      "say": "meh-nyoo-NEE beh-REENG, eel-tee-MOHS"
+    },
+    "water": {
+      "text": "Suv bering, iltimos",
+      "say": "SOOV beh-REENG, eel-tee-MOHS"
+    },
+    "bill": {
+      "text": "Hisobni bering, iltimos",
+      "say": "hee-sohb-NEE beh-REENG, eel-tee-MOHS"
+    },
+    "delicious": {
+      "text": "Juda mazali!",
+      "say": "joo-DAH mah-zah-LEE"
+    },
+    "vegetarian": {
+      "text": "Men vegetarianman",
+      "say": "men veh-geh-tah-ree-AHN-mahn"
+    },
+    "how_much": {
+      "text": "Bu qancha turadi?",
+      "say": "boo kahn-CHAH too-rah-DEE"
+    },
+    "too_expensive": {
+      "text": "Juda qimmat",
+      "say": "joo-DAH keem-MAHT"
+    },
+    "pay_card": {
+      "text": "Karta bilan toʻlasam boʻladimi?",
+      "say": "KAR-tah bee-LAHN toh-lah-SAHM boh-lah-dee-MEE"
+    },
+    "help": {
+      "text": "Yordam bering!",
+      "say": "yor-DAHM beh-REENG"
+    },
+    "need_doctor": {
+      "text": "Menga shifokor kerak",
+      "say": "men-GAH shee-foh-KOR keh-RAHK"
+    },
+    "lost": {
+      "text": "Men adashib qoldim",
+      "say": "men ah-dah-SHEEB kohl-DEEM"
+    },
+    "n1": {
+      "text": "bir",
+      "say": "BEER"
+    },
+    "n2": {
+      "text": "ikki",
+      "say": "eek-KEE"
+    },
+    "n3": {
+      "text": "uch",
+      "say": "OOCH"
+    },
+    "n4": {
+      "text": "toʻrt",
+      "say": "TOHRT"
+    },
+    "n5": {
+      "text": "besh",
+      "say": "BESH"
+    },
+    "n6": {
+      "text": "olti",
+      "say": "ohl-TEE"
+    },
+    "n7": {
+      "text": "yetti",
+      "say": "yet-TEE"
+    },
+    "n8": {
+      "text": "sakkiz",
+      "say": "sahk-KEEZ"
+    },
+    "n9": {
+      "text": "toʻqqiz",
+      "say": "tohk-KEEZ"
+    },
+    "n10": {
+      "text": "oʻn",
+      "say": "OHN"
+    }
+  }
+}

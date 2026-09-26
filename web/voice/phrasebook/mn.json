@@ -1,0 +1,227 @@
+{
+  "book": "mn",
+  "name": "Mongolian",
+  "native": "монгол хэл",
+  "phrases": {
+    "hello": {
+      "text": "Сайн байна уу",
+      "roman": "Sain baina uu",
+      "say": "SAIN bain-OO"
+    },
+    "good_morning": {
+      "text": "Өглөөний мэнд",
+      "roman": "Öglöönii mend",
+      "say": "UHG-luh-nee MEND"
+    },
+    "good_evening": {
+      "text": "Оройн мэнд",
+      "roman": "Oroin mend",
+      "say": "o-ROIN MEND"
+    },
+    "goodbye": {
+      "text": "Баяртай",
+      "roman": "Bayartai",
+      "say": "BA-yar-tai"
+    },
+    "how_are_you": {
+      "text": "Та сайн байна уу?",
+      "roman": "Ta sain baina uu?",
+      "say": "tah SAIN bain-OO"
+    },
+    "nice_to_meet": {
+      "text": "Танилцсандаа баяртай байна",
+      "roman": "Taniltssandaa bayartai baina",
+      "say": "tah-nilts-SAN-dah BA-yar-tai BAIN"
+    },
+    "please": {
+      "text": "Гуйя",
+      "roman": "Guiya",
+      "say": "GOO-ee-yah"
+    },
+    "thank_you": {
+      "text": "Баярлалаа",
+      "roman": "Bayarlalaa",
+      "say": "BA-yar-la-lah"
+    },
+    "youre_welcome": {
+      "text": "Зүгээр",
+      "roman": "Zügeer",
+      "say": "ZOO-gair"
+    },
+    "excuse_me": {
+      "text": "Уучлаарай",
+      "roman": "Uuchlaarai",
+      "say": "OOCH-lah-rai"
+    },
+    "sorry": {
+      "text": "Уучлаарай",
+      "roman": "Uuchlaarai",
+      "say": "OOCH-lah-rai"
+    },
+    "yes": {
+      "text": "Тийм",
+      "roman": "Tiim",
+      "say": "TEEM"
+    },
+    "no": {
+      "text": "Үгүй",
+      "roman": "Ügüi",
+      "say": "UU-gwee"
+    },
+    "speak_english": {
+      "text": "Та англиар ярьдаг уу?",
+      "roman": "Ta angliar yaridag uu?",
+      "say": "tah ANG-lee-ar YAR-dag oo"
+    },
+    "dont_understand": {
+      "text": "Би ойлгохгүй байна",
+      "roman": "Bi oilgokhgüi baina",
+      "say": "bee oil-GOKH-gwee BAIN"
+    },
+    "slowly": {
+      "text": "Арай удаан ярина уу",
+      "roman": "Arai udaan yarina uu",
+      "say": "a-RAI oo-DAHN YAR-in-oo"
+    },
+    "repeat": {
+      "text": "Дахиад хэлнэ үү?",
+      "roman": "Dakhiad khelne üü?",
+      "say": "DA-khyad KHEL-noo"
+    },
+    "where_station": {
+      "text": "Галт тэрэгний буудал хаана байна вэ?",
+      "roman": "Galt teregnii buudal khaana baina ve?",
+      "say": "GALT te-reg-NEE BOO-dal KHAHN BAIN vay"
+    },
+    "where_toilet": {
+      "text": "Бие засах газар хаана байна вэ?",
+      "roman": "Biye zasakh gazar khaana baina ve?",
+      "say": "BEE-yeh ZA-sakh GA-zar KHAHN BAIN vay"
+    },
+    "is_it_far": {
+      "text": "Хол уу?",
+      "roman": "Khol uu?",
+      "say": "KHOL oo"
+    },
+    "left": {
+      "text": "Зүүн",
+      "roman": "Züün",
+      "say": "ZOON"
+    },
+    "right": {
+      "text": "Баруун",
+      "roman": "Baruun",
+      "say": "ba-ROON"
+    },
+    "straight": {
+      "text": "Чигээрээ",
+      "roman": "Chigeeree",
+      "say": "chi-GAY-ray"
+    },
+    "menu": {
+      "text": "Цэс өгнө үү",
+      "roman": "Tses ögnö üü",
+      "say": "TSES UHG-noo"
+    },
+    "water": {
+      "text": "Ус өгнө үү",
+      "roman": "Us ögnö üü",
+      "say": "OOS UHG-noo"
+    },
+    "bill": {
+      "text": "Тооцоо бодно уу",
+      "roman": "Tootsoo bodno uu",
+      "say": "TOH-tsoh BOD-noo"
+    },
+    "delicious": {
+      "text": "Амттай байна!",
+      "roman": "Amttai baina!",
+      "say": "AMT-tai BAIN"
+    },
+    "vegetarian": {
+      "text": "Би цагаан хоолтон",
+      "roman": "Bi tsagaan khoolton",
+      "say": "bee tsa-GAHN KHOL-ton"
+    },
+    "how_much": {
+      "text": "Үнэ нь хэд вэ?",
+      "roman": "Üne ni khed ve?",
+      "say": "UU-neh ni KHED vay"
+    },
+    "too_expensive": {
+      "text": "Хэтэрхий үнэтэй байна",
+      "roman": "Kheterkhii ünetei baina",
+      "say": "KHE-ter-khee UU-neh-tei BAIN"
+    },
+    "pay_card": {
+      "text": "Картаар төлж болох уу?",
+      "roman": "Kartaar tölj bolokh uu?",
+      "say": "KAR-tahr TULJ BO-lokh oo"
+    },
+    "help": {
+      "text": "Туслаарай!",
+      "roman": "Tuslaarai!",
+      "say": "TOOS-lah-rai"
+    },
+    "need_doctor": {
+      "text": "Надад эмч хэрэгтэй байна",
+      "roman": "Nadad emch kheregtei baina",
+      "say": "NA-dad EMCH KHE-reg-tei BAIN"
+    },
+    "lost": {
+      "text": "Би төөрчихлөө",
+      "roman": "Bi töörchikhlöö",
+      "say": "bee TUR-chikh-luh"
+    },
+    "n1": {
+      "text": "нэг",
+      "roman": "neg",
+      "say": "NEG"
+    },
+    "n2": {
+      "text": "хоёр",
+      "roman": "khoyor",
+      "say": "KHOY-or"
+    },
+    "n3": {
+      "text": "гурав",
+      "roman": "gurav",
+      "say": "GOO-rav"
+    },
+    "n4": {
+      "text": "дөрөв",
+      "roman": "döröv",
+      "say": "DUR-uv"
+    },
+    "n5": {
+      "text": "тав",
+      "roman": "tav",
+      "say": "TAV"
+    },
+    "n6": {
+      "text": "зургаа",
+      "roman": "zurgaa",
+      "say": "ZOOR-gah"
+    },
+    "n7": {
+      "text": "долоо",
+      "roman": "doloo",
+      "say": "DOL-oh"
+    },
+    "n8": {
+      "text": "найм",
+      "roman": "naim",
+      "say": "NAIM"
+    },
+    "n9": {
+      "text": "ес",
+      "roman": "yes",
+      "say": "YES"
+    },
+    "n10": {
+      "text": "арав",
+      "roman": "arav",
+      "say": "AR-av"
+    }
+  }
+}

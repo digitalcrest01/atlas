@@ -1,0 +1,227 @@
+{
+  "book": "el",
+  "name": "Greek",
+  "native": "Ελληνικά",
+  "phrases": {
+    "hello": {
+      "text": "Γεια σας",
+      "roman": "yia sas",
+      "say": "YAH sahs"
+    },
+    "good_morning": {
+      "text": "Καλημέρα",
+      "roman": "kaliméra",
+      "say": "ka-lee-MEH-ra"
+    },
+    "good_evening": {
+      "text": "Καλησπέρα",
+      "roman": "kalispéra",
+      "say": "ka-lee-SPEH-ra"
+    },
+    "goodbye": {
+      "text": "Αντίο",
+      "roman": "adío",
+      "say": "an-DEE-oh"
+    },
+    "how_are_you": {
+      "text": "Τι κάνετε;",
+      "roman": "ti kánete?",
+      "say": "tee KAH-neh-teh"
+    },
+    "nice_to_meet": {
+      "text": "Χάρηκα πολύ",
+      "roman": "chárika polý",
+      "say": "KHAH-ree-ka po-LEE"
+    },
+    "please": {
+      "text": "Παρακαλώ",
+      "roman": "parakaló",
+      "say": "pa-ra-ka-LOH"
+    },
+    "thank_you": {
+      "text": "Ευχαριστώ",
+      "roman": "efcharistó",
+      "say": "ef-kha-ree-STOH"
+    },
+    "youre_welcome": {
+      "text": "Παρακαλώ",
+      "roman": "parakaló",
+      "say": "pa-ra-ka-LOH"
+    },
+    "excuse_me": {
+      "text": "Με συγχωρείτε",
+      "roman": "me synchoríte",
+      "say": "meh seen-kho-REE-teh"
+    },
+    "sorry": {
+      "text": "Συγγνώμη",
+      "roman": "sygnómi",
+      "say": "seeg-NOH-mee"
+    },
+    "yes": {
+      "text": "Ναι",
+      "roman": "ne",
+      "say": "NEH"
+    },
+    "no": {
+      "text": "Όχι",
+      "roman": "óchi",
+      "say": "OH-khee"
+    },
+    "speak_english": {
+      "text": "Μιλάτε αγγλικά;",
+      "roman": "miláte angliká?",
+      "say": "mee-LAH-teh an-glee-KAH"
+    },
+    "dont_understand": {
+      "text": "Δεν καταλαβαίνω",
+      "roman": "den katalavéno",
+      "say": "then ka-ta-la-VEH-no"
+    },
+    "slowly": {
+      "text": "Πιο αργά, παρακαλώ",
+      "roman": "pio argá, parakaló",
+      "say": "PYOH ar-GAH, pa-ra-ka-LOH"
+    },
+    "repeat": {
+      "text": "Μπορείτε να το ξαναπείτε;",
+      "roman": "boríte na to xanapíte?",
+      "say": "bo-REE-teh na to ksa-na-PEE-teh"
+    },
+    "where_station": {
+      "text": "Πού είναι ο σιδηροδρομικός σταθμός;",
+      "roman": "poú íne o sidirodromikós stathmós?",
+      "say": "POO EE-neh o see-thee-ro-thro-mee-KOS stath-MOS"
+    },
+    "where_toilet": {
+      "text": "Πού είναι η τουαλέτα;",
+      "roman": "poú íne i toualéta?",
+      "say": "POO EE-neh ee too-a-LEH-ta"
+    },
+    "is_it_far": {
+      "text": "Είναι μακριά;",
+      "roman": "íne makriá?",
+      "say": "EE-neh ma-kree-AH"
+    },
+    "left": {
+      "text": "Αριστερά",
+      "roman": "aristerá",
+      "say": "a-ree-steh-RAH"
+    },
+    "right": {
+      "text": "Δεξιά",
+      "roman": "dexiá",
+      "say": "theh-ksee-AH"
+    },
+    "straight": {
+      "text": "Ευθεία",
+      "roman": "efthía",
+      "say": "ef-THEE-a"
+    },
+    "menu": {
+      "text": "Τον κατάλογο, παρακαλώ",
+      "roman": "ton katálogo, parakaló",
+      "say": "ton ka-TAH-lo-go, pa-ra-ka-LOH"
+    },
+    "water": {
+      "text": "Νερό, παρακαλώ",
+      "roman": "neró, parakaló",
+      "say": "neh-ROH, pa-ra-ka-LOH"
+    },
+    "bill": {
+      "text": "Τον λογαριασμό, παρακαλώ",
+      "roman": "ton logariasmó, parakaló",
+      "say": "ton lo-ghar-yaz-MOH, pa-ra-ka-LOH"
+    },
+    "delicious": {
+      "text": "Πολύ νόστιμο!",
+      "roman": "polý nóstimo!",
+      "say": "po-LEE NOS-tee-mo"
+    },
+    "vegetarian": {
+      "text": "Είμαι χορτοφάγος",
+      "roman": "íme chortofágos",
+      "say": "EE-meh khor-to-FAH-gos"
+    },
+    "how_much": {
+      "text": "Πόσο κάνει;",
+      "roman": "póso káni?",
+      "say": "PO-so KAH-nee"
+    },
+    "too_expensive": {
+      "text": "Είναι πολύ ακριβό",
+      "roman": "íne polý akrivó",
+      "say": "EE-neh po-LEE a-kree-VOH"
+    },
+    "pay_card": {
+      "text": "Μπορώ να πληρώσω με κάρτα;",
+      "roman": "boró na pliróso me kárta?",
+      "say": "bo-ROH na plee-ROH-so meh KAR-ta"
+    },
+    "help": {
+      "text": "Βοήθεια!",
+      "roman": "voítheia!",
+      "say": "vo-EE-thee-a"
+    },
+    "need_doctor": {
+      "text": "Χρειάζομαι γιατρό",
+      "roman": "chriázome yiatró",
+      "say": "khree-AH-zo-meh ya-TROH"
+    },
+    "lost": {
+      "text": "Έχω χαθεί",
+      "roman": "écho chathí",
+      "say": "EH-kho kha-THEE"
+    },
+    "n1": {
+      "text": "ένα",
+      "roman": "éna",
+      "say": "EH-na"
+    },
+    "n2": {
+      "text": "δύο",
+      "roman": "dýo",
+      "say": "THEE-o"
+    },
+    "n3": {
+      "text": "τρία",
+      "roman": "tría",
+      "say": "TREE-a"
+    },
+    "n4": {
+      "text": "τέσσερα",
+      "roman": "téssera",
+      "say": "TEH-seh-ra"
+    },
+    "n5": {
+      "text": "πέντε",
+      "roman": "pénde",
+      "say": "PEN-deh"
+    },
+    "n6": {
+      "text": "έξι",
+      "roman": "éxi",
+      "say": "EK-see"
+    },
+    "n7": {
+      "text": "επτά",
+      "roman": "eptá",
+      "say": "ep-TAH"
+    },
+    "n8": {
+      "text": "οκτώ",
+      "roman": "októ",
+      "say": "ok-TOH"
+    },
+    "n9": {
+      "text": "εννέα",
+      "roman": "ennéa",
+      "say": "eh-NEH-a"
+    },
+    "n10": {
+      "text": "δέκα",
+      "roman": "déka",
+      "say": "THEH-ka"
+    }
+  }
+}
