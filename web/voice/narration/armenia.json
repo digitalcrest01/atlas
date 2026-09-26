@@ -1,59 +1,79 @@
 {
   "country": "Armenia",
-  "languages": ["en", "hy"],
+  "languages": [
+    "en",
+    "hy"
+  ],
   "segments": [
     {
       "en": "In Armenia, bread is shaped by hand and slapped onto the hot walls of a clay oven sunk into the ground. Out comes lavash, thin and soft, and it is on every table, from breakfast to wedding feasts.",
-      "hy": "Հայաստանում հացը ձեռքով են բացում և զարկում գետնի մեջ փորված կավե թոնրի շիկացած պատերին։ Այդպես ստացվում է լավաշը՝ բարակ ու փափուկ, և այն կա ամեն սեղանին՝ նախաճաշից մինչև հարսանեկան խնջույք։"
+      "hy": "Հայաստանում հացը ձեռքով են բացում և զարկում գետնի մեջ փորված կավե թոնրի շիկացած պատերին։ Այդպես ստացվում է լավաշը՝ բարակ ու փափուկ, և այն կա ամեն սեղանին՝ նախաճաշից մինչև հարսանեկան խնջույք։",
+      "img": "Matnakash.JPG"
     },
     {
       "en": "Baking lavash is often a shared job. Women sit together, stretching the dough over a cushion, chatting and laughing while the bread piles up beside them.",
-      "hy": "Լավաշ թխելը հաճախ համատեղ գործ է։ Կանայք նստում են միասին, խմորը բարակ փռում բարձիկի վրա, զրուցում ու ծիծաղում, մինչ կողքին հացի դարսը բարձրանում է։"
+      "hy": "Լավաշ թխելը հաճախ համատեղ գործ է։ Կանայք նստում են միասին, խմորը բարակ փռում բարձիկի վրա, զրուցում ու ծիծաղում, մինչ կողքին հացի դարսը բարձրանում է։",
+      "img": "Suikerbrood_van_Geghard._-_Armenia_(2910350766).jpg"
     },
     {
       "en": "This is a small, mountainous land in the South Caucasus. On clear days in Yerevan, the capital, snowy Mount Ararat seems to float above the city, a sacred symbol for Armenians, though it stands just across the border.",
-      "hy": "Սա փոքր, լեռնային երկիր է Հարավային Կովկասում։ Պարզ օրերին մայրաքաղաք Երևանից ձյունապատ Արարատը կարծես լողում է քաղաքի վերևում. այն հայերի սրբազան խորհրդանիշն է, թեև կանգնած է սահմանից այն կողմ։"
+      "hy": "Սա փոքր, լեռնային երկիր է Հարավային Կովկասում։ Պարզ օրերին մայրաքաղաք Երևանից ձյունապատ Արարատը կարծես լողում է քաղաքի վերևում. այն հայերի սրբազան խորհրդանիշն է, թեև կանգնած է սահմանից այն կողմ։",
+      "img": "Mount_Ararat_and_the_Yerevan_skyline_in_spring_(50mm).jpg"
     },
     {
       "en": "Yerevan is sometimes called the pink city, because so many buildings are made of rosy volcanic stone called tuff. In the evening it glows softly, and families stroll out to watch the dancing fountains.",
-      "hy": "Երևանին երբեմն անվանում են վարդագույն քաղաք, որովհետև շատ շենքեր կառուցված են վարդագույն հրաբխային տուֆից։ Երեկոյան այն մեղմ փայլում է, և ընտանիքները զբոսնում են՝ պարող շատրվանները դիտելու։"
+      "hy": "Երևանին երբեմն անվանում են վարդագույն քաղաք, որովհետև շատ շենքեր կառուցված են վարդագույն հրաբխային տուֆից։ Երեկոյան այն մեղմ փայլում է, և ընտանիքները զբոսնում են՝ պարող շատրվանները դիտելու։",
+      "img": "Հանրապետության_Հրապարակ.jpg"
     },
     {
       "en": "Armenia was the first country to adopt Christianity as its state religion, more than seventeen hundred years ago. Ancient monasteries perch on cliffs and in gorges, like Geghard, partly carved straight into the mountain.",
-      "hy": "Հայաստանն առաջին երկիրն էր, որ քրիստոնեությունն ընդունեց որպես պետական կրոն՝ ավելի քան տասնյոթ դար առաջ։ Հնագույն վանքերը թառել են ժայռերին ու կիրճերում, ինչպես Գեղարդը, որը մասամբ փորված է հենց լեռան մեջ։"
+      "hy": "Հայաստանն առաջին երկիրն էր, որ քրիստոնեությունն ընդունեց որպես պետական կրոն՝ ավելի քան տասնյոթ դար առաջ։ Հնագույն վանքերը թառել են ժայռերին ու կիրճերում, ինչպես Գեղարդը, որը մասամբ փորված է հենց լեռան մեջ։",
+      "img": "Monasterio_de_Geghard,_Armenia,_2016-10-02,_DD_63.jpg"
     },
     {
       "en": "Everywhere you will see khachkars, cross-stones carved with patterns as delicate as lace. No two are exactly alike.",
-      "hy": "Ամենուր կտեսնեք խաչքարեր՝ ժանյակի պես նուրբ զարդանախշերով փորագրված։ Երկու խաչքար իրար նման չեն։"
+      "hy": "Ամենուր կտեսնեք խաչքարեր՝ ժանյակի պես նուրբ զարդանախշերով փորագրված։ Երկու խաչքար իրար նման չեն։",
+      "img": "Noravank.JPG"
     },
     {
       "en": "Armenian has its own alphabet, created in the fifth century by a monk named Mesrop Mashtots. Its rounded letters appear on everything from ancient manuscripts to shop signs.",
-      "hy": "Հայերենն ունի իր այբուբենը, որը հինգերորդ դարում ստեղծել է Մեսրոպ Մաշտոցը։ Նրա կլորավուն տառերը տեսնում ես ամենուր՝ հնագույն ձեռագրերից մինչև խանութների ցուցանակներ։"
+      "hy": "Հայերենն ունի իր այբուբենը, որը հինգերորդ դարում ստեղծել է Մեսրոպ Մաշտոցը։ Նրա կլորավուն տառերը տեսնում ես ամենուր՝ հնագույն ձեռագրերից մինչև խանութների ցուցանակներ։",
+      "img": "Մատենադարան_04_(Gor_Navoyan).jpg"
     },
     {
       "en": "Listen now to the duduk, a woodwind instrument made from apricot wood. Its low, breathy voice sounds almost like someone singing softly, and it can make a whole room fall silent.",
-      "hy": "Հիմա ականջ դրեք դուդուկին՝ ծիրանի փայտից պատրաստված փողային գործիքին։ Նրա խուլ, թավշյա ձայնը կարծես մեկի մեղմ երգը լինի, և այն կարող է լռեցնել մի ամբողջ սենյակ։"
+      "hy": "Հիմա ականջ դրեք դուդուկին՝ ծիրանի փայտից պատրաստված փողային գործիքին։ Նրա խուլ, թավշյա ձայնը կարծես մեկի մեղմ երգը լինի, և այն կարող է լռեցնել մի ամբողջ սենյակ։",
+      "img": "Duduk-view.jpg"
     },
     {
       "en": "The apricot itself is a national treasure, golden and sweet in summer. At the table you will also find khorovats, meat grilled over fire, dolma wrapped in vine leaves, and bunches of fresh herbs.",
-      "hy": "Ծիրանն ինքնին ազգային գանձ է՝ ամռանը ոսկեգույն ու քաղցր։ Սեղանին կգտնեք նաև խորոված, խաղողի տերևով փաթաթված տոլմա և թարմ կանաչու փնջեր։"
+      "hy": "Ծիրանն ինքնին ազգային գանձ է՝ ամռանը ոսկեգույն ու քաղցր։ Սեղանին կգտնեք նաև խորոված, խաղողի տերևով փաթաթված տոլմա և թարմ կանաչու փնջեր։",
+      "img": "Apricots.jpg"
     },
     {
       "en": "Meals come with toasts, and they can be long and heartfelt, to parents, to friends, to peace. Guests are honoured, and you will be offered more food than seems possible.",
-      "hy": "Սեղաններն անցնում են կենացներով, որոնք կարող են երկար ու սրտանց լինել՝ ծնողների, ընկերների, խաղաղության կենացը։ Հյուրը պատվավոր է, և ձեզ ավելի շատ ուտելիք կհրամցնեն, քան թվում է հնարավոր։"
+      "hy": "Սեղաններն անցնում են կենացներով, որոնք կարող են երկար ու սրտանց լինել՝ ծնողների, ընկերների, խաղաղության կենացը։ Հյուրը պատվավոր է, և ձեզ ավելի շատ ուտելիք կհրամցնեն, քան թվում է հնարավոր։",
+      "img": "Barbecue_Armenian.jpg"
     },
     {
       "en": "In summer comes Vardavar, a festival when everyone, young and old, splashes water on each other in the streets. On a hot day, getting soaked is a blessing.",
-      "hy": "Ամռանը գալիս է Վարդավառը, երբ բոլորը՝ մեծ թե փոքր, փողոցներում ջուր են լցնում իրար վրա։ Շոգ օրը թրջվելն իսկական օրհնություն է։"
+      "hy": "Ամռանը գալիս է Վարդավառը, երբ բոլորը՝ մեծ թե փոքր, փողոցներում ջուր են լցնում իրար վրա։ Շոգ օրը թրջվելն իսկական օրհնություն է։",
+      "img": "Garni_temple_2021_drone.jpg"
     },
     {
       "en": "High in the mountains lies Lake Sevan, wide and blue, with a little monastery on its peninsula. In the south, a long cable car glides over a deep gorge to the monastery of Tatev.",
-      "hy": "Բարձր լեռներում փռված է Սևանա լիճը՝ կապույտ ու ընդարձակ, իր թերակղզու վրա կանգնած փոքրիկ վանքով։ Հարավում երկար ճոպանուղին սահում է խոր կիրճի վրայով՝ դեպի Տաթևի վանք։"
+      "hy": "Բարձր լեռներում փռված է Սևանա լիճը՝ կապույտ ու ընդարձակ, իր թերակղզու վրա կանգնած փոքրիկ վանքով։ Հարավում երկար ճոպանուղին սահում է խոր կիրճի վրայով՝ դեպի Տաթևի վանք։",
+      "img": "Սևանի_վանական_համալիր_ՄԲ_29.jpg"
     },
     {
       "en": "Before you go, someone may say gnas barov, go well. Head north through green forests and hills, and Georgia is waiting just across the border.",
-      "hy": "Մինչ կմեկնեք, ինչ-որ մեկը կասի՝ գնաս բարով։ Ուղևորվեք հյուսիս՝ կանաչ անտառների ու բլուրների միջով, և Վրաստանը ձեզ սպասում է հենց սահմանից այն կողմ։"
+      "hy": "Մինչ կմեկնեք, ինչ-որ մեկը կասի՝ գնաս բարով։ Ուղևորվեք հյուսիս՝ կանաչ անտառների ու բլուրների միջով, և Վրաստանը ձեզ սպասում է հենց սահմանից այն կողմ։",
+      "img": "\"Dilijan\"_national_park.jpg"
     }
   ],
-  "next": ["Georgia", "Iran", "Turkey"]
+  "next": [
+    "Georgia",
+    "Iran",
+    "Turkey"
+  ]
 }

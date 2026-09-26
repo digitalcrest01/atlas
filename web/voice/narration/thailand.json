@@ -1,59 +1,79 @@
 {
   "country": "Thailand",
-  "languages": ["en", "th"],
+  "languages": [
+    "en",
+    "th"
+  ],
   "segments": [
     {
       "en": "Sawasdee! In Thailand, a greeting comes with a wai, palms pressed together and a small bow of the head. The higher the hands, the more respect you show.",
-      "th": "สวัสดี! ในประเทศไทย การทักทายมาพร้อมกับการไหว้ คือพนมมือแล้วก้มศีรษะเล็กน้อย ยิ่งยกมือสูงเท่าไร ก็ยิ่งแสดงความเคารพมากขึ้นเท่านั้น"
+      "th": "สวัสดี! ในประเทศไทย การทักทายมาพร้อมกับการไหว้ คือพนมมือแล้วก้มศีรษะเล็กน้อย ยิ่งยกมือสูงเท่าไร ก็ยิ่งแสดงความเคารพมากขึ้นเท่านั้น",
+      "img": "Wat_Phra_Kaew_by_Ninara_TSP_edit_crop.jpg"
     },
     {
       "en": "In Bangkok, long-tail boats roar along the Chao Phraya River, past golden temples and glass towers. Tuk-tuks weave through the traffic, and the smell of grilled pork skewers fills the air.",
-      "th": "ในกรุงเทพฯ เรือหางยาวแล่นเสียงดังไปตามแม่น้ำเจ้าพระยา ผ่านวัดสีทองและตึกกระจกสูง รถตุ๊กตุ๊กลัดเลาะไปตามการจราจร และกลิ่นหมูปิ้งก็หอมฟุ้งไปทั่ว"
+      "th": "ในกรุงเทพฯ เรือหางยาวแล่นเสียงดังไปตามแม่น้ำเจ้าพระยา ผ่านวัดสีทองและตึกกระจกสูง รถตุ๊กตุ๊กลัดเลาะไปตามการจราจร และกลิ่นหมูปิ้งก็หอมฟุ้งไปทั่ว",
+      "img": "4Y1A1159_Bangkok_(33536795515).jpg"
     },
     {
       "en": "Thai food balances sweet, sour, salty and spicy. Try a fragrant green curry, tom yum soup with lemongrass, or som tam, a crunchy green papaya salad pounded in a mortar.",
-      "th": "อาหารไทยเป็นการผสมผสานรสหวาน เปรี้ยว เค็ม และเผ็ดอย่างลงตัว ลองแกงเขียวหวานหอม ๆ ต้มยำใส่ตะไคร้ หรือส้มตำมะละกอกรอบ ๆ ที่ตำในครก"
+      "th": "อาหารไทยเป็นการผสมผสานรสหวาน เปรี้ยว เค็ม และเผ็ดอย่างลงตัว ลองแกงเขียวหวานหอม ๆ ต้มยำใส่ตะไคร้ หรือส้มตำมะละกอกรอบ ๆ ที่ตำในครก",
+      "img": "Tom_yam_kung_maenam.jpg"
     },
     {
       "en": "Buddhism shapes daily life. At dawn, monks in saffron robes walk barefoot through the streets collecting offerings of food, and families make merit by giving.",
-      "th": "พระพุทธศาสนาหล่อหลอมชีวิตประจำวัน ยามเช้าตรู่ พระสงฆ์ห่มจีวรสีเหลืองส้มเดินเท้าเปล่าออกบิณฑบาต และครอบครัวต่าง ๆ ก็ทำบุญตักบาตร"
+      "th": "พระพุทธศาสนาหล่อหลอมชีวิตประจำวัน ยามเช้าตรู่ พระสงฆ์ห่มจีวรสีเหลืองส้มเดินเท้าเปล่าออกบิณฑบาต และครอบครัวต่าง ๆ ก็ทำบุญตักบาตร",
+      "img": "Wat_Benjamabophit1.jpg"
     },
     {
       "en": "At Wat Pho, a giant reclining Buddha shines with gold leaf, while across the river, Wat Arun sparkles with thousands of pieces of coloured porcelain.",
-      "th": "ที่วัดโพธิ์ มีพระพุทธไสยาสน์องค์ใหญ่ปิดทองอร่าม ส่วนฝั่งตรงข้ามแม่น้ำ วัดอรุณก็ระยิบระยับด้วยกระเบื้องเคลือบหลากสีนับพันชิ้น"
+      "th": "ที่วัดโพธิ์ มีพระพุทธไสยาสน์องค์ใหญ่ปิดทองอร่าม ส่วนฝั่งตรงข้ามแม่น้ำ วัดอรุณก็ระยิบระยับด้วยกระเบื้องเคลือบหลากสีนับพันชิ้น",
+      "img": "พระพุทธไสยาสวัดพระเชตุพน.jpg"
     },
     {
       "en": "In April, Songkran, the Thai New Year, turns the streets into a joyful water fight. Younger people also gently pour scented water over their elders' hands to ask for a blessing.",
-      "th": "เดือนเมษายน สงกรานต์หรือปีใหม่ไทย เปลี่ยนท้องถนนให้กลายเป็นการเล่นสาดน้ำอย่างสนุกสนาน ลูกหลานยังรดน้ำอบลงบนมือผู้ใหญ่อย่างนุ่มนวลเพื่อขอพรด้วย"
+      "th": "เดือนเมษายน สงกรานต์หรือปีใหม่ไทย เปลี่ยนท้องถนนให้กลายเป็นการเล่นสาดน้ำอย่างสนุกสนาน ลูกหลานยังรดน้ำอบลงบนมือผู้ใหญ่อย่างนุ่มนวลเพื่อขอพรด้วย",
+      "img": "Songkran_Day_@_Chiangmai_Wall.jpg"
     },
     {
       "en": "At Loy Krathong, people float little baskets made of banana leaves and flowers on rivers and lakes, with candles glowing, to let go of their worries.",
-      "th": "ในวันลอยกระทง ผู้คนลอยกระทงที่ทำจากใบตองและดอกไม้ พร้อมเทียนที่ส่องแสง ลงในแม่น้ำและบึง เพื่อปล่อยความทุกข์ให้ลอยไป"
+      "th": "ในวันลอยกระทง ผู้คนลอยกระทงที่ทำจากใบตองและดอกไม้ พร้อมเทียนที่ส่องแสง ลงในแม่น้ำและบึง เพื่อปล่อยความทุกข์ให้ลอยไป",
+      "img": "LK_03_loy_krathong_yi_peng_san_sai.jpg"
     },
     {
       "en": "In the north, Chiang Mai is surrounded by misty mountains, old temples and lively night markets, and elephants have long been part of Thai history and culture.",
-      "th": "ทางภาคเหนือ เชียงใหม่รายล้อมด้วยภูเขาที่ปกคลุมด้วยสายหมอก วัดเก่าแก่ และตลาดกลางคืนที่คึกคัก ส่วนช้างก็เป็นส่วนหนึ่งของประวัติศาสตร์และวัฒนธรรมไทยมาช้านาน"
+      "th": "ทางภาคเหนือ เชียงใหม่รายล้อมด้วยภูเขาที่ปกคลุมด้วยสายหมอก วัดเก่าแก่ และตลาดกลางคืนที่คึกคัก ส่วนช้างก็เป็นส่วนหนึ่งของประวัติศาสตร์และวัฒนธรรมไทยมาช้านาน",
+      "img": "0020-วัดพระสิงห์วรมหาวิหาร.jpg"
     },
     {
       "en": "In the south, limestone cliffs rise from turquoise seas around Phang Nga Bay, Krabi and islands like Phuket and Ko Samui.",
-      "th": "ทางภาคใต้ หน้าผาหินปูนตั้งตระหง่านขึ้นจากทะเลสีฟ้าครามรอบอ่าวพังงา กระบี่ และเกาะต่าง ๆ อย่างภูเก็ตและเกาะสมุย"
+      "th": "ทางภาคใต้ หน้าผาหินปูนตั้งตระหง่านขึ้นจากทะเลสีฟ้าครามรอบอ่าวพังงา กระบี่ และเกาะต่าง ๆ อย่างภูเก็ตและเกาะสมุย",
+      "img": "Dramatic_karst_landscape_of_Phang_Nga_Bay,_Thailand.jpg"
     },
     {
       "en": "A few customs help. Don't touch anyone's head, don't point your feet at people or at images of the Buddha, and take off your shoes before entering a home or temple.",
-      "th": "มีธรรมเนียมบางอย่างที่ควรรู้ อย่าแตะศีรษะของใคร อย่าชี้เท้าไปทางผู้คนหรือพระพุทธรูป และถอดรองเท้าก่อนเข้าบ้านหรือเข้าวัด"
+      "th": "มีธรรมเนียมบางอย่างที่ควรรู้ อย่าแตะศีรษะของใคร อย่าชี้เท้าไปทางผู้คนหรือพระพุทธรูป และถอดรองเท้าก่อนเข้าบ้านหรือเข้าวัด",
+      "img": "Wat_Rong_Khun_-_Chiang_Rai.jpg"
     },
     {
       "en": "Muay Thai is the national sport. Before a bout, fighters perform the wai khru, a slow, graceful dance to honour their teachers.",
-      "th": "มวยไทยเป็นกีฬาประจำชาติ ก่อนขึ้นชก นักมวยจะร่ายรำไหว้ครูอย่างช้า ๆ และงดงาม เพื่อแสดงความเคารพต่อครูบาอาจารย์"
+      "th": "มวยไทยเป็นกีฬาประจำชาติ ก่อนขึ้นชก นักมวยจะร่ายรำไหว้ครูอย่างช้า ๆ และงดงาม เพื่อแสดงความเคารพต่อครูบาอาจารย์",
+      "img": "Railay_Beach_5.jpg"
     },
     {
       "en": "Thais value sanuk, having fun, and jai yen, a cool heart, which means staying calm and friendly even when things go wrong.",
-      "th": "คนไทยให้คุณค่ากับความสนุก และการมีใจเย็น คือการสงบและเป็นมิตรแม้ในยามที่มีเรื่องผิดพลาด"
+      "th": "คนไทยให้คุณค่ากับความสนุก และการมีใจเย็น คือการสงบและเป็นมิตรแม้ในยามที่มีเรื่องผิดพลาด",
+      "img": "Amphawa1.jpg"
     },
     {
       "en": "End the day with sticky rice and sweet ripe mango. Then head east, where Cambodia and the temples of Angkor are waiting for you.",
-      "th": "ปิดท้ายวันด้วยข้าวเหนียวมะม่วงสุกหวานฉ่ำ แล้วมุ่งหน้าไปทางตะวันออก ที่ซึ่งกัมพูชาและปราสาทนครวัดกำลังรอคุณอยู่"
+      "th": "ปิดท้ายวันด้วยข้าวเหนียวมะม่วงสุกหวานฉ่ำ แล้วมุ่งหน้าไปทางตะวันออก ที่ซึ่งกัมพูชาและปราสาทนครวัดกำลังรอคุณอยู่",
+      "img": "Mango_sticy_rice_(3859549574).jpg"
     }
   ],
-  "next": ["Cambodia", "Laos", "Malaysia"]
+  "next": [
+    "Cambodia",
+    "Laos",
+    "Malaysia"
+  ]
 }

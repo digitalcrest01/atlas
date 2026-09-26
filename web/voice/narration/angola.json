@@ -1,55 +1,74 @@
 {
   "country": "Angola",
-  "languages": ["en", "pt-PT"],
+  "languages": [
+    "en",
+    "pt-PT"
+  ],
   "segments": [
     {
       "en": "A slow, warm beat begins, a couple steps close together, and slowly the whole room begins to sway. That is kizomba, a dance born in Angola, and a good place to begin getting to know this country.",
-      "pt-PT": "Começa uma batida lenta e quente, um par aproxima-se e, devagarinho, a sala inteira começa a balançar. É a kizomba, uma dança nascida em Angola, e um bom ponto de partida para conhecer este país."
+      "pt-PT": "Começa uma batida lenta e quente, um par aproxima-se e, devagarinho, a sala inteira começa a balançar. É a kizomba, uma dança nascida em Angola, e um bom ponto de partida para conhecer este país.",
+      "img": "Baia_azul_Benguela.JPG"
     },
     {
       "en": "Before kizomba there was semba, older and livelier, with lyrics full of humour and everyday stories. Angolans say semba is the heartbeat of their music, and at parties it still fills the dance floor.",
-      "pt-PT": "Antes da kizomba havia o semba, mais antigo e mais animado, com letras cheias de humor e de histórias do dia a dia. Os angolanos dizem que o semba é o coração da sua música, e nas festas ainda enche a pista."
+      "pt-PT": "Antes da kizomba havia o semba, mais antigo e mais animado, com letras cheias de humor e de histórias do dia a dia. Os angolanos dizem que o semba é o coração da sua música, e nas festas ainda enche a pista.",
+      "img": "Canyon_in_the_Huila_Plateau.jpg"
     },
     {
       "en": "Angola stretches along the Atlantic in southwestern Africa. Portuguese is the national language, and alongside it you will hear Umbundu, Kimbundu, Kikongo and many other African languages.",
-      "pt-PT": "Angola estende-se ao longo do Atlântico, no sudoeste de África. O português é a língua nacional e, a seu lado, ouve-se umbundu, quimbundo, quicongo e muitas outras línguas africanas."
+      "pt-PT": "Angola estende-se ao longo do Atlântico, no sudoeste de África. O português é a língua nacional e, a seu lado, ouve-se umbundu, quimbundo, quicongo e muitas outras línguas africanas.",
+      "img": "Camara_Municipal_Lobito_(19626476942)_(cropped).jpg"
     },
     {
       "en": "The capital, Luanda, curves around a wide bay. In the evening, people stroll along the seafront road called the Marginal, and at weekends families head to the long sandy strip of the Ilha for grilled fish and music.",
-      "pt-PT": "A capital, Luanda, curva-se à volta de uma baía larga. Ao fim da tarde, as pessoas passeiam pela Marginal e, aos fins de semana, as famílias vão para a Ilha, uma longa língua de areia, comer peixe grelhado e ouvir música."
+      "pt-PT": "A capital, Luanda, curva-se à volta de uma baía larga. Ao fim da tarde, as pessoas passeiam pela Marginal e, aos fins de semana, as famílias vão para a Ilha, uma longa língua de areia, comer peixe grelhado e ouvir música.",
+      "img": "Luanda_2025_focused_(cropped).jpg"
     },
     {
       "en": "Greetings matter here. Take time to say bom dia and ask how the family is before getting down to business, and always greet older people with extra respect.",
-      "pt-PT": "Os cumprimentos contam muito. Dê tempo para um bom dia e pergunte pela família antes de tratar de assuntos, e cumprimente sempre os mais velhos com um respeito especial."
+      "pt-PT": "Os cumprimentos contam muito. Dê tempo para um bom dia e pergunte pela família antes de tratar de assuntos, e cumprimente sempre os mais velhos com um respeito especial.",
+      "img": "Palacio_das_Bolas_(19819765355).jpg"
     },
     {
       "en": "Inland, the land rises into green highlands. At Kalandula, a river pours over a wide horseshoe of rock in a thunder of spray, one of the most powerful waterfalls in Africa.",
-      "pt-PT": "Para o interior, a terra sobe até planaltos verdes. Em Kalandula, um rio despenha-se por uma larga ferradura de rocha num trovão de espuma, uma das quedas de água mais impressionantes de África."
+      "pt-PT": "Para o interior, a terra sobe até planaltos verdes. Em Kalandula, um rio despenha-se por uma larga ferradura de rocha num trovão de espuma, uma das quedas de água mais impressionantes de África.",
+      "img": "Kalandula_waterfalls_of_the_Lucala-River_in_Malange,_Angola.JPG"
     },
     {
       "en": "Near Lubango, the Serra da Leba road zigzags down a cliff in tight hairpin bends, and at Tundavala the plateau ends suddenly in a dizzying drop with views across the plains far below.",
-      "pt-PT": "Perto do Lubango, a estrada da Serra da Leba desce a encosta em curvas apertadas, e na Tundavala o planalto acaba de repente numa fenda vertiginosa, com vista para as planícies lá muito em baixo."
+      "pt-PT": "Perto do Lubango, a estrada da Serra da Leba desce a encosta em curvas apertadas, e na Tundavala o planalto acaba de repente numa fenda vertiginosa, com vista para as planícies lá muito em baixo.",
+      "img": "Lubango-Namibe_landscape.jpg"
     },
     {
       "en": "In the far southwest, the Namib desert meets the ocean. Here grows the welwitschia, a strange plant with just two long leaves that can live for many hundreds of years.",
-      "pt-PT": "No extremo sudoeste, o deserto do Namibe encontra o oceano. Aqui cresce a welwitschia, uma planta estranha com apenas duas folhas compridas, que pode viver muitas centenas de anos."
+      "pt-PT": "No extremo sudoeste, o deserto do Namibe encontra o oceano. Aqui cresce a welwitschia, uma planta estranha com apenas duas folhas compridas, que pode viver muitas centenas de anos.",
+      "img": "Imbondeiro_Tree.jpg"
     },
     {
       "en": "Angola's national symbol is the giant sable antelope, the palanca negra, a proud animal with long curved horns found nowhere else on Earth.",
-      "pt-PT": "O símbolo nacional de Angola é a palanca negra gigante, um animal altivo de chifres longos e curvos que não existe em mais nenhum lugar da Terra."
+      "pt-PT": "O símbolo nacional de Angola é a palanca negra gigante, um animal altivo de chifres longos e curvos que não existe em mais nenhum lugar da Terra.",
+      "img": "Giant_sable_bull_in_Luando.jpg"
     },
     {
       "en": "At the table, look for muamba de galinha, chicken stewed in rich red palm oil with okra and squash. It is served with funje, a smooth, stretchy porridge of cassava flour that you scoop up with your fingers.",
-      "pt-PT": "À mesa, procure a muamba de galinha, frango estufado em óleo de palma vermelho com quiabos e abóbora. Serve-se com funje, uma papa lisa e elástica de farinha de mandioca que se come com os dedos."
+      "pt-PT": "À mesa, procure a muamba de galinha, frango estufado em óleo de palma vermelho com quiabos e abóbora. Serve-se com funje, uma papa lisa e elástica de farinha de mandioca que se come com os dedos.",
+      "img": "Moamba_traditional_dish_in_Luanda.JPG"
     },
     {
       "en": "Before Lent, Luanda bursts into Carnival, with neighbourhood groups parading in bright costumes, dancing to drums and competing to be the best in the city.",
-      "pt-PT": "Antes da Quaresma, Luanda explode no Carnaval, com grupos dos bairros a desfilar em trajes coloridos, a dançar ao som dos tambores e a disputar o título de melhor da cidade."
+      "pt-PT": "Antes da Quaresma, Luanda explode no Carnaval, com grupos dos bairros a desfilar em trajes coloridos, a dançar ao som dos tambores e a disputar o título de melhor da cidade.",
+      "img": "Talatona_-_panoramio_-_Rogério_Melo.jpg"
     },
     {
       "en": "When the music finally slows, it is time to travel on. Head south across the Cunene River, and Namibia is waiting, with its red dunes and wide open skies.",
-      "pt-PT": "Quando a música finalmente abranda, está na hora de seguir viagem. Atravesse o rio Cunene para sul, e a Namíbia espera por si, com as suas dunas vermelhas e céus sem fim."
+      "pt-PT": "Quando a música finalmente abranda, está na hora de seguir viagem. Atravesse o rio Cunene para sul, e a Namíbia espera por si, com as suas dunas vermelhas e céus sem fim.",
+      "img": "Řeka_Kunene_River,_vodopády_Epupa_Falls_-_Namibie,_Angola_-_panoramio.jpg"
     }
   ],
-  "next": ["Namibia", "Congo (DRC)", "Zambia"]
+  "next": [
+    "Namibia",
+    "Congo (DRC)",
+    "Zambia"
+  ]
 }

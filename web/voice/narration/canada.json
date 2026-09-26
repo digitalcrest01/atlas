@@ -1,59 +1,79 @@
 {
   "country": "Canada",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Dusk on a still lake. A campfire crackles, a canoe rests on the shore, and across the water drifts the haunting call of a loon. Few sounds are more Canadian than that.",
-      "fr": "Le crépuscule sur un lac immobile. Un feu de camp crépite, un canot repose sur la rive, et de l'autre côté de l'eau s'élève le cri envoûtant du huard. Peu de sons sont plus canadiens que celui-là."
+      "fr": "Le crépuscule sur un lac immobile. Un feu de camp crépite, un canot repose sur la rive, et de l'autre côté de l'eau s'élève le cri envoûtant du huard. Peu de sons sont plus canadiens que celui-là.",
+      "img": "Gavia_immer_-Minocqua,_Wisconsin,_USA_-swimming-8.jpg"
     },
     {
       "en": "Canada is vast, reaching from the Atlantic to the Pacific and north to the Arctic Ocean. Most people live in the south, near the border, while the north stays wild and wide open.",
-      "fr": "Le Canada est immense, de l'Atlantique au Pacifique et jusqu'à l'océan Arctique. La plupart des gens vivent au sud, près de la frontière, tandis que le Nord reste sauvage et grand ouvert."
+      "fr": "Le Canada est immense, de l'Atlantique au Pacifique et jusqu'à l'océan Arctique. La plupart des gens vivent au sud, près de la frontière, tandis que le Nord reste sauvage et grand ouvert.",
+      "img": "Nunavut_tundra_-c.jpg"
     },
     {
       "en": "First Nations, Inuit and Métis peoples have lived on this land for thousands of years, and many place names come from their languages. Even the word Canada likely comes from kanata, an Iroquoian word for a village.",
-      "fr": "Les Premières Nations, les Inuits et les Métis vivent sur ces terres depuis des milliers d'années, et beaucoup de noms de lieux viennent de leurs langues. Le mot Canada lui-même viendrait de kanata, un mot iroquoien qui désigne un village."
+      "fr": "Les Premières Nations, les Inuits et les Métis vivent sur ces terres depuis des milliers d'années, et beaucoup de noms de lieux viennent de leurs langues. Le mot Canada lui-même viendrait de kanata, un mot iroquoien qui désigne un village.",
+      "img": "Gwaii_Haanas_(28832822035).jpg"
     },
     {
       "en": "The country has two official languages, English and French. In Quebec, French is the language of daily life, and in Montreal people often slip between the two in a single conversation.",
-      "fr": "Le pays a deux langues officielles, le français et l'anglais. Au Québec, le français est la langue de tous les jours, et à Montréal, on passe souvent de l'une à l'autre dans une même conversation."
+      "fr": "Le pays a deux langues officielles, le français et l'anglais. Au Québec, le français est la langue de tous les jours, et à Montréal, on passe souvent de l'une à l'autre dans une même conversation.",
+      "img": "Montreal,_Quebec_skyline.jpg"
     },
     {
       "en": "In early spring, families head to the sugar shack, where maple sap is boiled into syrup. The sweetest treat is maple taffy, hot syrup poured onto clean snow and rolled up on a stick.",
-      "fr": "Au début du printemps, les familles se rendent à la cabane à sucre, où l'on fait bouillir l'eau d'érable pour en faire du sirop. La gâterie la plus sucrée, c'est la tire sur la neige, du sirop chaud versé sur de la neige propre et enroulé sur un bâtonnet."
+      "fr": "Au début du printemps, les familles se rendent à la cabane à sucre, où l'on fait bouillir l'eau d'érable pour en faire du sirop. La gâterie la plus sucrée, c'est la tire sur la neige, du sirop chaud versé sur de la neige propre et enroulé sur un bâtonnet.",
+      "img": "Une_érablière_(1872)_par_Allan_Edson.jpg"
     },
     {
       "en": "Hungry? Try poutine, crispy fries topped with squeaky cheese curds and hot gravy, born in rural Quebec. Or a butter tart, a little pastry filled with sweet, gooey syrup.",
-      "fr": "Un petit creux ? Goûtez à la poutine, des frites croustillantes garnies de fromage en grains qui couine sous la dent et de sauce brune bien chaude, née dans les campagnes du Québec. Ou encore une tartelette au beurre, fourrée d'un sirop doux et fondant."
+      "fr": "Un petit creux ? Goûtez à la poutine, des frites croustillantes garnies de fromage en grains qui couine sous la dent et de sauce brune bien chaude, née dans les campagnes du Québec. Ou encore une tartelette au beurre, fourrée d'un sirop doux et fondant.",
+      "img": "Food_at_WIkimanian_2017_02.jpg"
     },
     {
       "en": "Winters are long and cold, so Canadians embrace them. Children learn to skate almost as soon as they can walk, and hockey is played everywhere, from big arenas to frozen backyard rinks.",
-      "fr": "Les hivers sont longs et froids, alors les Canadiens les accueillent à bras ouverts. Les enfants apprennent à patiner presque en même temps qu'à marcher, et on joue au hockey partout, des grands arénas aux patinoires de cour arrière."
+      "fr": "Les hivers sont longs et froids, alors les Canadiens les accueillent à bras ouverts. Les enfants apprennent à patiner presque en même temps qu'à marcher, et on joue au hockey partout, des grands arénas aux patinoires de cour arrière.",
+      "img": "Winterlude-Bal_de_neige_(387479407).jpg"
     },
     {
       "en": "On the east coast, the Bay of Fundy has some of the highest tides on Earth, and fishing villages serve lobster fresh from the sea. Newfoundland even keeps its own time zone, half an hour off from its neighbours.",
-      "fr": "Sur la côte est, la baie de Fundy connaît certaines des plus hautes marées du monde, et les villages de pêcheurs servent le homard tout juste sorti de la mer. Terre-Neuve a même son propre fuseau horaire, décalé d'une demi-heure par rapport à ses voisins."
+      "fr": "Sur la côte est, la baie de Fundy connaît certaines des plus hautes marées du monde, et les villages de pêcheurs servent le homard tout juste sorti de la mer. Terre-Neuve a même son propre fuseau horaire, décalé d'une demi-heure par rapport à ses voisins.",
+      "img": "NB_-_Hopewell_Rocks1.jpg"
     },
     {
       "en": "Toronto is a city of neighbourhoods, where you can hear dozens of languages on a single streetcar ride. Not far away, Niagara Falls thunders on the border with the United States.",
-      "fr": "Toronto est une ville de quartiers où l'on peut entendre des dizaines de langues en un seul trajet de tramway. Pas très loin, les chutes du Niagara grondent à la frontière des États-Unis."
+      "fr": "Toronto est une ville de quartiers où l'on peut entendre des dizaines de langues en un seul trajet de tramway. Pas très loin, les chutes du Niagara grondent à la frontière des États-Unis.",
+      "img": "Toronto_Skyline_from_Snake_Island,_September_11_2026_(01).jpg"
     },
     {
       "en": "Out west, the prairies roll with wheat beneath huge skies, then the Rocky Mountains rise, cradling turquoise lakes like Lake Louise. On the Pacific coast, Vancouver sits between ocean and forest.",
-      "fr": "À l'ouest, les Prairies ondulent de blé sous un ciel immense, puis se dressent les Rocheuses, avec leurs lacs turquoise comme le lac Louise. Sur la côte du Pacifique, Vancouver s'étend entre l'océan et la forêt."
+      "fr": "À l'ouest, les Prairies ondulent de blé sous un ciel immense, puis se dressent les Rocheuses, avec leurs lacs turquoise comme le lac Louise. Sur la côte du Pacifique, Vancouver s'étend entre l'océan et la forêt.",
+      "img": "1_lake_louise_pano_2019.jpg"
     },
     {
       "en": "In the far north, Inuit build stone markers called inuksuit to guide travellers, and on clear winter nights the northern lights ripple green across the sky.",
-      "fr": "Dans le Grand Nord, les Inuits érigent des repères de pierre appelés inuksuit pour guider les voyageurs, et par les nuits claires d'hiver, les aurores boréales ondulent en vert dans le ciel."
+      "fr": "Dans le Grand Nord, les Inuits érigent des repères de pierre appelés inuksuit pour guider les voyageurs, et par les nuits claires d'hiver, les aurores boréales ondulent en vert dans le ciel.",
+      "img": "Inuksukjuaq_Foxe-PI_2002-07-26.jpg"
     },
     {
       "en": "Canadians are known for being polite and friendly, so expect to hear sorry and thank you many times a day. On the first of July, Canada Day, the red maple leaf is everywhere.",
-      "fr": "Les Canadiens sont réputés polis et chaleureux, alors attendez-vous à entendre pardon et merci à longueur de journée. Le premier juillet, jour de la fête du Canada, la feuille d'érable rouge est partout."
+      "fr": "Les Canadiens sont réputés polis et chaleureux, alors attendez-vous à entendre pardon et merci à longueur de journée. Le premier juillet, jour de la fête du Canada, la feuille d'érable rouge est partout.",
+      "img": "Parliament-Ottawa.jpg"
     },
     {
       "en": "When you are ready, head south across that long border. The United States is waiting.",
-      "fr": "Quand vous serez prêts, filez vers le sud, de l'autre côté de cette longue frontière. Les États-Unis vous attendent."
+      "fr": "Quand vous serez prêts, filez vers le sud, de l'autre côté de cette longue frontière. Les États-Unis vous attendent.",
+      "img": "Thousand_Islands_2.JPG"
     }
   ],
-  "next": ["United States", "France", "United Kingdom"]
+  "next": [
+    "United States",
+    "France",
+    "United Kingdom"
+  ]
 }

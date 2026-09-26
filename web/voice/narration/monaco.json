@@ -1,6 +1,9 @@
 {
   "country": "Monaco",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Just before noon on the Rock of Monaco, a crowd gathers outside the Prince's Palace to watch the guards change, marching in step to the sound of drums.",
@@ -8,27 +11,33 @@
     },
     {
       "en": "Monaco is the second smallest country in the world, a sliver of coast squeezed between the mountains of France and the Mediterranean Sea. You can walk from one end to the other in about an hour.",
-      "fr": "Monaco est le deuxième plus petit pays du monde, une mince bande de côte serrée entre les montagnes françaises et la Méditerranée. On peut le traverser à pied d'un bout à l'autre en une heure environ."
+      "fr": "Monaco est le deuxième plus petit pays du monde, une mince bande de côte serrée entre les montagnes françaises et la Méditerranée. On peut le traverser à pied d'un bout à l'autre en une heure environ.",
+      "img": "Port_Hercules,_Monaco.jpg"
     },
     {
       "en": "The Grimaldi family has ruled here for more than seven hundred years. Legend says that in 1297 a Grimaldi and his men captured the fortress disguised as monks, which is why monks holding swords appear on the coat of arms.",
-      "fr": "La famille Grimaldi règne ici depuis plus de sept cents ans. La légende raconte qu'en 1297, un Grimaldi et ses hommes s'emparèrent de la forteresse déguisés en moines, et c'est pourquoi des moines armés d'épées figurent sur les armoiries."
+      "fr": "La famille Grimaldi règne ici depuis plus de sept cents ans. La légende raconte qu'en 1297, un Grimaldi et ses hommes s'emparèrent de la forteresse déguisés en moines, et c'est pourquoi des moines armés d'épées figurent sur les armoiries.",
+      "img": "Monaco_Ville_from_Tête_de_Chien_-_panoramio.jpg"
     },
     {
       "en": "French is the everyday language, but children also learn Monégasque, the old local language, at school, and in the old town the street signs are written in both.",
-      "fr": "Le français est la langue de tous les jours, mais les enfants apprennent aussi le monégasque, l'ancienne langue locale, à l'école, et dans la vieille ville les plaques de rue sont écrites dans les deux langues."
+      "fr": "Le français est la langue de tous les jours, mais les enfants apprennent aussi le monégasque, l'ancienne langue locale, à l'école, et dans la vieille ville les plaques de rue sont écrites dans les deux langues.",
+      "img": "Chapelle_de_la_Miséricorde_de_Monaco_en_2011.jpg"
     },
     {
       "en": "In those narrow lanes stands the cathedral where Princess Grace is buried. She was an American film star who married Prince Rainier and became one of Monaco's best-loved figures.",
-      "fr": "Dans ces ruelles étroites se trouve la cathédrale où repose la princesse Grace, une star de cinéma américaine qui épousa le prince Rainier et devint l'une des figures les plus aimées de Monaco."
+      "fr": "Dans ces ruelles étroites se trouve la cathédrale où repose la princesse Grace, une star de cinéma américaine qui épousa le prince Rainier et devint l'une des figures les plus aimées de Monaco.",
+      "img": "Monaco_BW_2011-06-07_16-07-20.jpg"
     },
     {
       "en": "Perched on the cliff, the Oceanographic Museum was founded by Prince Albert the First, an explorer of the seas, and was later directed by Jacques Cousteau. Its aquariums glow with Mediterranean and tropical life.",
-      "fr": "Perché sur la falaise, le Musée océanographique a été fondé par le prince Albert Ier, explorateur des mers, puis dirigé plus tard par Jacques-Yves Cousteau. Ses aquariums scintillent de vie méditerranéenne et tropicale."
+      "fr": "Perché sur la falaise, le Musée océanographique a été fondé par le prince Albert Ier, explorateur des mers, puis dirigé plus tard par Jacques-Yves Cousteau. Ses aquariums scintillent de vie méditerranéenne et tropicale.",
+      "img": "Monaco_BW_2011-06-07_17-50-43.jpg"
     },
     {
       "en": "Across the harbour, Monte Carlo glitters with its grand casino and opera house from the nineteenth century, and elegant cars glide past the palm trees.",
-      "fr": "De l'autre côté du port, Monte-Carlo scintille avec son grand casino et son opéra du dix-neuvième siècle, tandis que des voitures élégantes glissent le long des palmiers."
+      "fr": "De l'autre côté du port, Monte-Carlo scintille avec son grand casino et son opéra du dix-neuvième siècle, tandis que des voitures élégantes glissent le long des palmiers.",
+      "img": "Panorama_von_Monaco-La_Turbie.jpg"
     },
     {
       "en": "Each spring, those same streets become a racetrack for the Monaco Grand Prix, and Formula One cars roar through hairpin bends, a tunnel and along the harbour.",
@@ -36,7 +45,8 @@
     },
     {
       "en": "Try barbagiuan, little fried pastries filled with Swiss chard and ricotta, the national snack. At Christmas, families share a sweet fougasse sprinkled with coloured aniseed.",
-      "fr": "Goûtez les barbagiuans, de petits beignets farcis de blettes et de ricotta, la spécialité nationale. À Noël, les familles partagent une fougasse sucrée parsemée d'anis de couleur."
+      "fr": "Goûtez les barbagiuans, de petits beignets farcis de blettes et de ricotta, la spécialité nationale. À Noël, les familles partagent une fougasse sucrée parsemée d'anis de couleur.",
+      "img": "Fougasse_1.jpg"
     },
     {
       "en": "On the evening of the twenty-sixth of January, a small boat is set alight by the harbour to honour Saint Devota, the patron saint, remembering the legend of her arrival by sea.",
@@ -44,16 +54,23 @@
     },
     {
       "en": "High on the hillside, the Exotic Garden grows giant cacti clinging to the cliff, with views over the whole principality and far out to sea.",
-      "fr": "Tout en haut de la colline, le Jardin exotique abrite des cactus géants accrochés à la falaise, avec une vue sur toute la principauté et loin sur la mer."
+      "fr": "Tout en haut de la colline, le Jardin exotique abrite des cactus géants accrochés à la falaise, avec une vue sur toute la principauté et loin sur la mer.",
+      "img": "Monaco_and_Monte-Carlo_as_seen_from_the_Jardin_Exotique_2009.jpg"
     },
     {
       "en": "Only a small share of the people who live here are Monégasque citizens. The rest come from all over the world, making this tiny place surprisingly international.",
-      "fr": "Seule une petite partie des habitants sont de nationalité monégasque. Les autres viennent du monde entier, ce qui rend ce minuscule pays étonnamment international."
+      "fr": "Seule une petite partie des habitants sont de nationalité monégasque. Les autres viennent du monde entier, ce qui rend ce minuscule pays étonnamment international.",
+      "img": "Jardinmonaco3bis.jpg"
     },
     {
       "en": "À bientôt! Cross a single street at the border, and France is waiting.",
-      "fr": "À bientôt ! Il suffit de traverser une rue à la frontière, et la France vous attend."
+      "fr": "À bientôt ! Il suffit de traverser une rue à la frontière, et la France vous attend.",
+      "img": "Èze_und_Cap_Ferrat-Grande_Corniche.jpg"
     }
   ],
-  "next": ["France", "Italy", "San Marino"]
+  "next": [
+    "France",
+    "Italy",
+    "San Marino"
+  ]
 }

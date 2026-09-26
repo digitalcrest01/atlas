@@ -1,55 +1,74 @@
 {
   "country": "Rwanda",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Muraho! That's hello in Kinyarwanda. Look out across the land and you'll see hill after green hill, terraced with fields of beans and bananas, stretching to misty volcanoes on the horizon. No wonder Rwanda is called the land of a thousand hills.",
-      "fr": "Muraho ! C'est bonjour en kinyarwanda. Regardez le paysage : colline après colline, toutes vertes, couvertes de terrasses de haricots et de bananiers, jusqu'aux volcans brumeux à l'horizon. Pas étonnant qu'on appelle le Rwanda le pays des mille collines."
+      "fr": "Muraho ! C'est bonjour en kinyarwanda. Regardez le paysage : colline après colline, toutes vertes, couvertes de terrasses de haricots et de bananiers, jusqu'aux volcans brumeux à l'horizon. Pas étonnant qu'on appelle le Rwanda le pays des mille collines.",
+      "img": "Lac_Burera.jpg"
     },
     {
       "en": "Rwanda is a small country in the heart of Africa, just south of the equator. Because the land is high, the air stays mild all year, and the rain keeps everything wonderfully green.",
-      "fr": "Le Rwanda est un petit pays au cœur de l'Afrique, juste au sud de l'équateur. Comme il est en altitude, l'air y reste doux toute l'année, et la pluie garde tout d'un vert magnifique."
+      "fr": "Le Rwanda est un petit pays au cœur de l'Afrique, juste au sud de l'équateur. Comme il est en altitude, l'air y reste doux toute l'année, et la pluie garde tout d'un vert magnifique.",
+      "img": "MountHuye.jpg"
     },
     {
       "en": "Almost everyone shares one language, Kinyarwanda, and you'll also hear English, French and Swahili. Kigali, the capital, spreads over its own hills, famously clean and tidy, with motorbike taxis zipping up and down the slopes.",
-      "fr": "Presque tout le monde parle la même langue, le kinyarwanda, et l'on entend aussi l'anglais, le français et le swahili. Kigali, la capitale, s'étend sur ses propres collines ; elle est réputée pour sa propreté, et les motos-taxis y montent et descendent les pentes à toute allure."
+      "fr": "Presque tout le monde parle la même langue, le kinyarwanda, et l'on entend aussi l'anglais, le français et le swahili. Kigali, la capitale, s'étend sur ses propres collines ; elle est réputée pour sa propreté, et les motos-taxis y montent et descendent les pentes à toute allure.",
+      "img": "High_Angle_View_Of_Kigali_City_Street_on_November_29,_2018._Emmanuel_Kwizera.jpg"
     },
     {
       "en": "Part of that tidiness comes from Umuganda. On the last Saturday morning of each month, neighbours come together to sweep streets, plant trees and fix things for their community, and then sit down to talk.",
-      "fr": "Cette propreté vient en partie de l'Umuganda. Le dernier samedi matin de chaque mois, les voisins se retrouvent pour balayer les rues, planter des arbres et réparer ce qui doit l'être dans leur quartier, puis ils s'assoient pour discuter."
+      "fr": "Cette propreté vient en partie de l'Umuganda. Le dernier samedi matin de chaque mois, les voisins se retrouvent pour balayer les rues, planter des arbres et réparer ce qui doit l'être dans leur quartier, puis ils s'assoient pour discuter.",
+      "img": "Mount_Kigali.jpg"
     },
     {
       "en": "Rwandans have come a long way since the terrible events of nineteen ninety-four. Today there's a strong spirit of unity and looking forward together, and people speak of being, simply, Rwandan.",
-      "fr": "Les Rwandais ont parcouru un long chemin depuis les événements terribles de mille neuf cent quatre-vingt-quatorze. Aujourd'hui règne un fort esprit d'unité et d'avenir partagé, et les gens se disent tout simplement rwandais."
+      "fr": "Les Rwandais ont parcouru un long chemin depuis les événements terribles de mille neuf cent quatre-vingt-quatorze. Aujourd'hui règne un fort esprit d'unité et d'avenir partagé, et les gens se disent tout simplement rwandais.",
+      "img": "National_Museum_of_Rwanda_-_Butare_-_Flickr_-_Dave_Proffer_(4).jpg"
     },
     {
       "en": "High in the Virunga volcanoes, in the rainforest, live mountain gorillas. Visitors hike through bamboo and nettles to spend one quiet hour watching a gorilla family eat, play and rest.",
-      "fr": "Tout là-haut, dans la forêt des volcans des Virunga, vivent les gorilles de montagne. Les visiteurs marchent à travers les bambous et les orties pour passer une heure paisible à regarder une famille de gorilles manger, jouer et se reposer."
+      "fr": "Tout là-haut, dans la forêt des volcans des Virunga, vivent les gorilles de montagne. Les visiteurs marchent à travers les bambous et les orties pour passer une heure paisible à regarder une famille de gorilles manger, jouer et se reposer.",
+      "img": "Male_Gorilla_(181091305).jpg"
     },
     {
       "en": "Each year, the new baby gorillas are given names in a joyful ceremony called Kwita Izina, borrowed from the tradition of naming a newborn child.",
-      "fr": "Chaque année, les bébés gorilles reçoivent un nom lors d'une joyeuse cérémonie appelée Kwita Izina, inspirée de la tradition qui consiste à nommer un nouveau-né."
+      "fr": "Chaque année, les bébés gorilles reçoivent un nom lors d'une joyeuse cérémonie appelée Kwita Izina, inspirée de la tradition qui consiste à nommer un nouveau-né.",
+      "img": "Karisimbi2.jpg"
     },
     {
       "en": "In the west, Lake Kivu shimmers between the mountains, with fishermen singing as they row out at dusk. In the east, Akagera National Park has savannah with giraffes, zebras, elephants and lions.",
-      "fr": "À l'ouest, le lac Kivu scintille entre les montagnes, et les pêcheurs chantent en ramant au crépuscule. À l'est, le parc national de l'Akagera offre une savane avec girafes, zèbres, éléphants et lions."
+      "fr": "À l'ouest, le lac Kivu scintille entre les montagnes, et les pêcheurs chantent en ramant au crépuscule. À l'est, le parc national de l'Akagera offre une savane avec girafes, zèbres, éléphants et lions.",
+      "img": "GisenyiBeach.jpg"
     },
     {
       "en": "Listen for the drums. Rwandan drumming is powerful and thrilling, and in the traditional intore dance, performers leap with long flowing headdresses, while women's dances move gracefully, arms raised like the horns of cattle.",
-      "fr": "Écoutez les tambours. Les percussions rwandaises sont puissantes et saisissantes ; dans la danse traditionnelle intore, les danseurs bondissent avec de longues coiffes flottantes, tandis que les danses des femmes sont gracieuses, les bras levés comme les cornes des vaches."
+      "fr": "Écoutez les tambours. Les percussions rwandaises sont puissantes et saisissantes ; dans la danse traditionnelle intore, les danseurs bondissent avec de longues coiffes flottantes, tandis que les danses des femmes sont gracieuses, les bras levés comme les cornes des vaches.",
+      "img": "King's_palace_in_Nyanza.jpg"
     },
     {
       "en": "Cows are deeply respected here, and one of the kindest things you can wish someone is to have many cattle. Milk is a treasured drink, offered to guests as a sign of friendship.",
-      "fr": "Les vaches sont très respectées ici, et l'un des plus beaux souhaits que l'on puisse faire à quelqu'un est d'avoir beaucoup de bétail. Le lait est une boisson précieuse, offerte aux invités en signe d'amitié."
+      "fr": "Les vaches sont très respectées ici, et l'un des plus beaux souhaits que l'on puisse faire à quelqu'un est d'avoir beaucoup de bétail. Le lait est une boisson précieuse, offerte aux invités en signe d'amitié.",
+      "img": "Parc_National_d'Akagera.jpg"
     },
     {
       "en": "At mealtimes you might share isombe, mashed cassava leaves, with beans, plantains and brochettes of goat grilled over charcoal. And the hillsides grow excellent coffee and tea.",
-      "fr": "À table, on partage souvent l'isombe, des feuilles de manioc pilées, avec des haricots, des bananes plantains et des brochettes de chèvre grillées au charbon de bois. Et les collines produisent un excellent café et un très bon thé."
+      "fr": "À table, on partage souvent l'isombe, des feuilles de manioc pilées, avec des haricots, des bananes plantains et des brochettes de chèvre grillées au charbon de bois. Et les collines produisent un excellent café et un très bon thé.",
+      "img": "ISOMBE.jpg"
     },
     {
       "en": "Murakoze, thank you, for climbing our hills with us. The mountain gorillas roam across the border too, so follow them north into Uganda, which is waiting just over the volcanoes.",
-      "fr": "Murakoze, merci d'avoir gravi nos collines avec nous ! Les gorilles de montagne vivent aussi de l'autre côté de la frontière : suivez-les vers le nord jusqu'en Ouganda, qui vous attend juste derrière les volcans."
+      "fr": "Murakoze, merci d'avoir gravi nos collines avec nous ! Les gorilles de montagne vivent aussi de l'autre côté de la frontière : suivez-les vers le nord jusqu'en Ouganda, qui vous attend juste derrière les volcans.",
+      "img": "Visoke.jpg"
     }
   ],
-  "next": ["Uganda", "Burundi", "Congo (DRC)"]
+  "next": [
+    "Uganda",
+    "Burundi",
+    "Congo (DRC)"
+  ]
 }

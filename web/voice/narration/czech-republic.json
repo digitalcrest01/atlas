@@ -1,59 +1,79 @@
 {
   "country": "Czech Republic",
-  "languages": ["en", "cs"],
+  "languages": [
+    "en",
+    "cs"
+  ],
   "segments": [
     {
       "en": "Every hour in Prague's Old Town Square, a crowd looks up. A little skeleton rings a bell, wooden apostles parade past two tiny windows, and a golden rooster crows. The astronomical clock has been keeping time here for about six hundred years.",
-      "cs": "Každou celou hodinu se na Staroměstském náměstí v Praze dav lidí zadívá vzhůru. Kostlivec zazvoní zvoncem, v okénkách se ukážou dřevění apoštolové a zlatý kohout zakokrhá. Orloj tu odměřuje čas už zhruba šest set let."
+      "cs": "Každou celou hodinu se na Staroměstském náměstí v Praze dav lidí zadívá vzhůru. Kostlivec zazvoní zvoncem, v okénkách se ukážou dřevění apoštolové a zlatý kohout zakokrhá. Orloj tu odměřuje čas už zhruba šest set let.",
+      "img": "Prague_07-2016_View_from_Old_Town_Hall_Tower_img3.jpg"
     },
     {
       "en": "The Czech Republic, also called Czechia, sits right in the heart of Europe. It's made up mostly of two historic lands, Bohemia in the west and Moravia in the east, each with its own character.",
-      "cs": "Česká republika, zkráceně Česko, leží v samém srdci Evropy. Tvoří ji hlavně dvě historické země, Čechy na západě a Morava na východě, a každá má svou vlastní povahu."
+      "cs": "Česká republika, zkráceně Česko, leží v samém srdci Evropy. Tvoří ji hlavně dvě historické země, Čechy na západě a Morava na východě, a každá má svou vlastní povahu.",
+      "img": "Karlštejn_Castle,_Czech_Republic.JPG"
     },
     {
       "en": "Prague is often called the city of a hundred spires. Walk across the stone Charles Bridge, lined with statues, then climb to the castle on the hill, where the Gothic towers of Saint Vitus Cathedral rise above the rooftops.",
-      "cs": "Praze se často říká stověžatá. Přejděte kamenný Karlův most lemovaný sochami a pak vystoupejte na Pražský hrad, kde se nad střechami tyčí gotické věže katedrály svatého Víta."
+      "cs": "Praze se často říká stověžatá. Přejděte kamenný Karlův most lemovaný sochami a pak vystoupejte na Pražský hrad, kde se nad střechami tyčí gotické věže katedrály svatého Víta.",
+      "img": "Prague_07-2016_view_from_Lesser_Town_Tower_of_Charles_Bridge_img3.jpg"
     },
     {
       "en": "But Czechs love to escape the city. On Friday afternoons, families head off to their chata, a little country cottage, to tend the garden, fix the roof and sit by the fire.",
-      "cs": "Češi ale rádi utíkají z města. V pátek odpoledne vyrážejí rodiny na chatu nebo na chalupu, aby se postaraly o zahrádku, spravily střechu a poseděly u ohně."
+      "cs": "Češi ale rádi utíkají z města. V pátek odpoledne vyrážejí rodiny na chatu nebo na chalupu, aby se postaraly o zahrádku, spravily střechu a poseděly u ohně.",
+      "img": "Plešné_jezero.jpg"
     },
     {
       "en": "And in late summer, the forests fill with mushroom hunters carrying baskets and small knives. Almost every Czech has a secret spot, and they will never tell you where it is.",
-      "cs": "Koncem léta se lesy zaplní houbaři s košíky a nožíky. Skoro každý Čech má své tajné místo a nikdy vám neprozradí, kde je."
+      "cs": "Koncem léta se lesy zaplní houbaři s košíky a nožíky. Skoro každý Čech má své tajné místo a nikdy vám neprozradí, kde je.",
+      "img": "Boletus_edulis_IT.jpg"
     },
     {
       "en": "Dinner might be svíčková, tender beef in a creamy vegetable sauce, served with slices of bread dumpling, a spoonful of cranberries and a swirl of whipped cream. It sounds unusual, and it's delicious.",
-      "cs": "K večeři může být svíčková: jemné hovězí v krémové zeleninové omáčce s houskovým knedlíkem, lžičkou brusinek a kopečkem šlehačky. Zní to neobvykle, ale je to výborné."
+      "cs": "K večeři může být svíčková: jemné hovězí v krémové zeleninové omáčce s houskovým knedlíkem, lžičkou brusinek a kopečkem šlehačky. Zní to neobvykle, ale je to výborné.",
+      "img": "Svíčková_na_smetaně.JPG"
     },
     {
       "en": "For something sweet there are koláče, round little pastries filled with poppy seeds, sweet curd cheese or thick plum jam.",
-      "cs": "Na něco sladkého jsou tu koláče, kulaté pečivo plněné mákem, tvarohem nebo hustými povidly."
+      "cs": "Na něco sladkého jsou tu koláče, kulaté pečivo plněné mákem, tvarohem nebo hustými povidly.",
+      "img": "Makovy_frgal.jpg"
     },
     {
       "en": "Czech storytelling has long loved puppets. Marionette theatres still perform for children, and a gentle cartoon mole called Krtek has charmed families around the world.",
-      "cs": "Čeští vypravěči mají odedávna rádi loutky. Loutková divadla dodnes hrají pro děti a laskavý kreslený Krteček okouzlil rodiny po celém světě."
+      "cs": "Čeští vypravěči mají odedávna rádi loutky. Loutková divadla dodnes hrají pro děti a laskavý kreslený Krteček okouzlil rodiny po celém světě.",
+      "img": "Chrudim_Resselovo_náměstí_220.jpg"
     },
     {
       "en": "Here's a word you already know that was born in Czech: robot. It first appeared in a play by the writer Karel Čapek, and it comes from an old word for hard work.",
-      "cs": "A jedno slovo, které už znáte, se zrodilo v češtině: robot. Poprvé zaznělo ve hře spisovatele Karla Čapka a vychází ze starého slova robota, tedy těžká práce."
+      "cs": "A jedno slovo, které už znáte, se zrodilo v češtině: robot. Poprvé zaznělo ve hře spisovatele Karla Čapka a vychází ze starého slova robota, tedy těžká práce.",
+      "img": "Horní_náměstí_Olomouc,_letecká_fotografie_1.jpg"
     },
     {
       "en": "At Christmas, many families buy a live carp that swims in the bathtub for a day or two before the big Christmas Eve dinner. Children sometimes beg for it to be set free.",
-      "cs": "O Vánocích si mnoho rodin koupí živého kapra, který pak den nebo dva plave ve vaně až do štědrovečerní večeře. Děti někdy prosí, aby ho pustili zpátky do řeky."
+      "cs": "O Vánocích si mnoho rodin koupí živého kapra, který pak den nebo dva plave ve vaně až do štědrovečerní večeře. Děti někdy prosí, aby ho pustili zpátky do řeky.",
+      "img": "Cyprinus_carpio_2008_G1_(cropped).jpg"
     },
     {
       "en": "Travel east into Moravia and you'll find vineyards, folk songs and villages where, on festival days, people wear embroidered costumes bright with red and gold.",
-      "cs": "Vydejte se na východ na Moravu a najdete tam vinice, lidové písně a vesnice, kde lidé o slavnostech nosí vyšívané kroje zářící červenou a zlatou."
+      "cs": "Vydejte se na východ na Moravu a najdete tam vinice, lidové písně a vesnice, kde lidé o slavnostech nosí vyšívané kroje zářící červenou a zlatou.",
+      "img": "Mikulov_pohled_2.jpg"
     },
     {
       "en": "In the north, sandstone towers and arches rise out of the forest, including the great stone gateway called Pravčická brána. And in the south, the little town of Český Krumlov curls around a bend in the river beneath its castle.",
-      "cs": "Na severu se z lesů zvedají pískovcové věže a skalní brány, mezi nimi i mohutná Pravčická brána. A na jihu se městečko Český Krumlov vine kolem meandru řeky pod svým zámkem."
+      "cs": "Na severu se z lesů zvedají pískovcové věže a skalní brány, mezi nimi i mohutná Pravčická brána. A na jihu se městečko Český Krumlov vine kolem meandru řeky pod svým zámkem.",
+      "img": "Pravcicka_brana_001.jpg"
     },
     {
       "en": "Na shledanou, until we meet again. Just across the eastern border, Slovakia is waiting, a close neighbour that shared one country with the Czechs for much of the twentieth century.",
-      "cs": "Na shledanou! Hned za východní hranicí na vás čeká Slovensko, blízký soused, se kterým Češi po většinu dvacátého století sdíleli jeden stát."
+      "cs": "Na shledanou! Hned za východní hranicí na vás čeká Slovensko, blízký soused, se kterým Češi po většinu dvacátého století sdíleli jeden stát.",
+      "img": "Kutná_Hora_(003).jpg"
     }
   ],
-  "next": ["Slovakia", "Germany", "Austria"]
+  "next": [
+    "Slovakia",
+    "Germany",
+    "Austria"
+  ]
 }

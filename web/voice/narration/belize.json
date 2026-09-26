@@ -1,43 +1,61 @@
 {
   "country": "Belize",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Before sunrise, a deep roar rolls through the jungle. It sounds like a lion, but it is only a black howler monkey, calling from the treetops. Locals call them baboons, and in Belize they are the forest's alarm clock."
+      "en": "Before sunrise, a deep roar rolls through the jungle. It sounds like a lion, but it is only a black howler monkey, calling from the treetops. Locals call them baboons, and in Belize they are the forest's alarm clock.",
+      "img": "Yucatán_black_howler_(Alouatta_pigra)_Cayo.jpg"
     },
     {
-      "en": "Belize is a small country on the Caribbean coast of Central America, with rainforest on one side and a turquoise sea on the other. Its capital is Belmopan, a quiet inland city, while Belize City by the sea is the busy old port."
+      "en": "Belize is a small country on the Caribbean coast of Central America, with rainforest on one side and a turquoise sea on the other. Its capital is Belmopan, a quiet inland city, while Belize City by the sea is the busy old port.",
+      "img": "Belize_City_Montage.jpeg"
     },
     {
-      "en": "English is the official language, a legacy of British rule, but the language you hear most on the street is Kriol, warm and musical. Spanish is common too, along with Maya languages and Garifuna."
+      "en": "English is the official language, a legacy of British rule, but the language you hear most on the street is Kriol, warm and musical. Spanish is common too, along with Maya languages and Garifuna.",
+      "img": "San_Igancio_Belize_2016.jpg"
     },
     {
-      "en": "A friendly Kriol greeting is wah gwaan, what is going on? And on the little island of Caye Caulker, the local motto is simple: go slow."
+      "en": "A friendly Kriol greeting is wah gwaan, what is going on? And on the little island of Caye Caulker, the local motto is simple: go slow.",
+      "img": "Belize_Caye_Caulker-221.jpg"
     },
     {
-      "en": "Belize is a mix of many peoples: Kriol, Mestizo, Maya, Garifuna, Mennonite, East Indian and Chinese communities, among others. Each brings its own food, music and traditions, and most people move easily between them."
+      "en": "Belize is a mix of many peoples: Kriol, Mestizo, Maya, Garifuna, Mennonite, East Indian and Chinese communities, among others. Each brings its own food, music and traditions, and most people move easily between them.",
+      "img": "Hawkesworth_Bridge_2015_04.jpg"
     },
     {
-      "en": "The Garifuna, descendants of West African and Indigenous Caribbean people, arrived on this coast by boat in the nineteenth century. Every November, their arrival is re-enacted with drumming, singing and the fast, hip-shaking punta dance."
+      "en": "The Garifuna, descendants of West African and Indigenous Caribbean people, arrived on this coast by boat in the nineteenth century. Every November, their arrival is re-enacted with drumming, singing and the fast, hip-shaking punta dance.",
+      "img": "Maya_Beach,_Placencia,_Belize.jpg"
     },
     {
-      "en": "Long before that, this was the heart of the Maya world. Great stone temples rise out of the jungle at Caracol, Xunantunich and Altun Ha, and from the top you look out over an endless green canopy."
+      "en": "Long before that, this was the heart of the Maya world. Great stone temples rise out of the jungle at Caracol, Xunantunich and Altun Ha, and from the top you look out over an endless green canopy.",
+      "img": "Xunantunich_Belize_1_19.jpg"
     },
     {
-      "en": "Just offshore runs one of the longest barrier reefs in the world, bright with coral, turtles, rays and nurse sharks. Out at sea lies the Great Blue Hole, a perfectly round circle of deep dark blue."
+      "en": "Just offshore runs one of the longest barrier reefs in the world, bright with coral, turtles, rays and nurse sharks. Out at sea lies the Great Blue Hole, a perfectly round circle of deep dark blue.",
+      "img": "Great_Blue_Hole.jpg"
     },
     {
-      "en": "Inland, the Cockscomb Basin was set aside to protect the jaguar, and nearby rivers flow through caves that you can explore by canoe or inner tube, torch in hand."
+      "en": "Inland, the Cockscomb Basin was set aside to protect the jaguar, and nearby rivers flow through caves that you can explore by canoe or inner tube, torch in hand.",
+      "img": "Victoria-peak-2.jpg"
     },
     {
-      "en": "Food is filling and full of flavour. Sunday lunch is often rice and beans cooked in coconut milk, with stewed chicken and potato salad. For breakfast, try fry jacks, puffy fried dough, with beans and eggs."
+      "en": "Food is filling and full of flavour. Sunday lunch is often rice and beans cooked in coconut milk, with stewed chicken and potato salad. For breakfast, try fry jacks, puffy fried dough, with beans and eggs.",
+      "img": "Fry_jacks_with_eggs_and_salsa.jpg"
     },
     {
-      "en": "People are relaxed and friendly. Greet everyone with a good morning, and do not be surprised if a quick question turns into a long, happy chat."
+      "en": "People are relaxed and friendly. Greet everyone with a good morning, and do not be surprised if a quick question turns into a long, happy chat.",
+      "img": "Keel-billed_toucan_(Ramphastos_sulfuratus_sulfuratus)_on_foxtail_palm_(Wodyetia_bifurcata)_Cayo.jpg"
     },
     {
-      "en": "When you are ready, follow the Maya trail west into the hills. Guatemala is waiting just across the border, with even more ancient cities hidden in the forest."
+      "en": "When you are ready, follow the Maya trail west into the hills. Guatemala is waiting just across the border, with even more ancient cities hidden in the forest.",
+      "img": "MountainPineRidge.jpg"
     }
   ],
-  "next": ["Guatemala", "Mexico", "Honduras"]
+  "next": [
+    "Guatemala",
+    "Mexico",
+    "Honduras"
+  ]
 }

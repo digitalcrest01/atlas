@@ -1,55 +1,74 @@
 {
   "country": "Greece",
-  "languages": ["en", "el"],
+  "languages": [
+    "en",
+    "el"
+  ],
   "segments": [
     {
       "en": "White houses with blue doors, a church dome against a deep blue sky, and the sea sparkling below. Somewhere a cicada sings in the heat. This is a Greek island in summer.",
-      "el": "Λευκά σπίτια με μπλε πόρτες, ένας τρούλος εκκλησίας στον βαθυγάλανο ουρανό και η θάλασσα να λαμπυρίζει από κάτω. Κάπου ένα τζιτζίκι τραγουδά μέσα στη ζέστη. Αυτό είναι ένα ελληνικό νησί το καλοκαίρι."
+      "el": "Λευκά σπίτια με μπλε πόρτες, ένας τρούλος εκκλησίας στον βαθυγάλανο ουρανό και η θάλασσα να λαμπυρίζει από κάτω. Κάπου ένα τζιτζίκι τραγουδά μέσα στη ζέστη. Αυτό είναι ένα ελληνικό νησί το καλοκαίρι.",
+      "img": "Oia_sunset_-_panoramio_(2).jpg"
     },
     {
       "en": "Greece has thousands of islands scattered across the Aegean and Ionian seas, but most of the country is mountains. Almost nowhere is far from the sea, and fishing boats bob in harbours everywhere.",
-      "el": "Η Ελλάδα έχει χιλιάδες νησιά σκορπισμένα στο Αιγαίο και το Ιόνιο, όμως το μεγαλύτερο μέρος της χώρας είναι βουνά. Σχεδόν πουθενά δεν είσαι μακριά από τη θάλασσα, και τα ψαροκάικα λικνίζονται σε λιμανάκια παντού."
+      "el": "Η Ελλάδα έχει χιλιάδες νησιά σκορπισμένα στο Αιγαίο και το Ιόνιο, όμως το μεγαλύτερο μέρος της χώρας είναι βουνά. Σχεδόν πουθενά δεν είσαι μακριά από τη θάλασσα, και τα ψαροκάικα λικνίζονται σε λιμανάκια παντού.",
+      "img": "Navagio,_Zante_01.jpg"
     },
     {
       "en": "Greeks will greet you with Yia sou! And they have a special word, filoxenia, which means love for the stranger. Visit a family and you may be offered a spoonful of sweet preserved fruit and a glass of cold water.",
-      "el": "Οι Έλληνες θα σε χαιρετήσουν με ένα «Γεια σου!». Και έχουν μια ξεχωριστή λέξη, τη φιλοξενία, που σημαίνει αγάπη για τον ξένο. Αν επισκεφθείς ένα σπίτι, μπορεί να σου προσφέρουν ένα γλυκό του κουταλιού κι ένα ποτήρι κρύο νερό."
+      "el": "Οι Έλληνες θα σε χαιρετήσουν με ένα «Γεια σου!». Και έχουν μια ξεχωριστή λέξη, τη φιλοξενία, που σημαίνει αγάπη για τον ξένο. Αν επισκεφθείς ένα σπίτι, μπορεί να σου προσφέρουν ένα γλυκό του κουταλιού κι ένα ποτήρι κρύο νερό.",
+      "img": "Bourtzi_Nafplion.JPG"
     },
     {
       "en": "Athens, the capital, is watched over by the Acropolis, a rocky hill crowned with the marble Parthenon, built for the goddess Athena nearly two and a half thousand years ago.",
-      "el": "Την Αθήνα, την πρωτεύουσα, τη φυλάει η Ακρόπολη, ένας βράχος που τον στεφανώνει ο μαρμάρινος Παρθενώνας, χτισμένος για τη θεά Αθηνά πριν από σχεδόν δυόμισι χιλιάδες χρόνια."
+      "el": "Την Αθήνα, την πρωτεύουσα, τη φυλάει η Ακρόπολη, ένας βράχος που τον στεφανώνει ο μαρμάρινος Παρθενώνας, χτισμένος για τη θεά Αθηνά πριν από σχεδόν δυόμισι χιλιάδες χρόνια.",
+      "img": "The_Parthenon_in_Athens.jpg"
     },
     {
       "en": "Ancient Greece gave the world ideas that are still with us: democracy, theatre, philosophy and the Olympic Games, first held at Olympia in honour of Zeus.",
-      "el": "Η αρχαία Ελλάδα χάρισε στον κόσμο ιδέες που ζουν ακόμα: τη δημοκρατία, το θέατρο, τη φιλοσοφία και τους Ολυμπιακούς Αγώνες, που πρωτοέγιναν στην Ολυμπία προς τιμήν του Δία."
+      "el": "Η αρχαία Ελλάδα χάρισε στον κόσμο ιδέες που ζουν ακόμα: τη δημοκρατία, το θέατρο, τη φιλοσοφία και τους Ολυμπιακούς Αγώνες, που πρωτοέγιναν στην Ολυμπία προς τιμήν του Δία.",
+      "img": "Ancient_Olympia,_Greece2.jpg"
     },
     {
       "en": "And the myths! Zeus on Mount Olympus, the hero Odysseus sailing home for ten long years, and the labyrinth of the Minotaur on Crete. Children here grow up with these stories.",
-      "el": "Και οι μύθοι! Ο Δίας στον Όλυμπο, ο Οδυσσέας που ταξίδευε δέκα ολόκληρα χρόνια για να γυρίσει σπίτι του, και ο λαβύρινθος του Μινώταυρου στην Κρήτη. Τα παιδιά εδώ μεγαλώνουν με αυτές τις ιστορίες."
+      "el": "Και οι μύθοι! Ο Δίας στον Όλυμπο, ο Οδυσσέας που ταξίδευε δέκα ολόκληρα χρόνια για να γυρίσει σπίτι του, και ο λαβύρινθος του Μινώταυρου στην Κρήτη. Τα παιδιά εδώ μεγαλώνουν με αυτές τις ιστορίες.",
+      "img": "Olympus_National_Park_30.jpg"
     },
     {
       "en": "In central Greece, at Meteora, monasteries perch on top of giant pillars of rock. Long ago, monks were pulled up in baskets on ropes to reach them.",
-      "el": "Στην κεντρική Ελλάδα, στα Μετέωρα, μοναστήρια στέκονται πάνω σε γιγάντιους βράχους σαν κολόνες. Παλιά, οι μοναχοί ανέβαιναν εκεί μέσα σε καλάθια δεμένα με σχοινιά."
+      "el": "Στην κεντρική Ελλάδα, στα Μετέωρα, μοναστήρια στέκονται πάνω σε γιγάντιους βράχους σαν κολόνες. Παλιά, οι μοναχοί ανέβαιναν εκεί μέσα σε καλάθια δεμένα με σχοινιά.",
+      "img": "Meteora_Agios_Triadas_IMG_7632.jpg"
     },
     {
       "en": "Greek food is simple and full of sunshine: olive oil, tomatoes, feta cheese, lemon and oregano. Try a village salad, a flaky spinach pie, or moussaka, layered with aubergine and meat.",
-      "el": "Η ελληνική κουζίνα είναι απλή και γεμάτη ήλιο: ελαιόλαδο, ντομάτα, φέτα, λεμόνι και ρίγανη. Δοκίμασε μια χωριάτικη σαλάτα, μια τραγανή σπανακόπιτα ή έναν μουσακά με μελιτζάνες και κιμά."
+      "el": "Η ελληνική κουζίνα είναι απλή και γεμάτη ήλιο: ελαιόλαδο, ντομάτα, φέτα, λεμόνι και ρίγανη. Δοκίμασε μια χωριάτικη σαλάτα, μια τραγανή σπανακόπιτα ή έναν μουσακά με μελιτζάνες και κιμά.",
+      "img": "Spanakopita.jpg"
     },
     {
       "en": "Meals are shared, with many small plates in the middle of the table, and they can last for hours. Nobody hurries at a Greek table, and conversation is part of the meal.",
-      "el": "Τα γεύματα είναι μοιρασμένα, με πολλά πιατάκια στη μέση του τραπεζιού, και μπορεί να κρατήσουν ώρες. Κανείς δε βιάζεται σε ένα ελληνικό τραπέζι, και η κουβέντα είναι μέρος του φαγητού."
+      "el": "Τα γεύματα είναι μοιρασμένα, με πολλά πιατάκια στη μέση του τραπεζιού, και μπορεί να κρατήσουν ώρες. Κανείς δε βιάζεται σε ένα ελληνικό τραπέζι, και η κουβέντα είναι μέρος του φαγητού.",
+      "img": "Gigandes_plaki.jpg"
     },
     {
       "en": "Easter is the biggest celebration of the year. At midnight, candles are lit one from another until the whole church glows, people wish each other Christos Anesti, Christ is risen, and they crack bright red eggs together.",
-      "el": "Το Πάσχα είναι η μεγαλύτερη γιορτή της χρονιάς. Τα μεσάνυχτα, τα κεριά ανάβουν το ένα από το άλλο ώσπου φωτίζεται όλη η εκκλησία, ο κόσμος εύχεται «Χριστός Ανέστη» και τσουγκρίζει κόκκινα αυγά."
+      "el": "Το Πάσχα είναι η μεγαλύτερη γιορτή της χρονιάς. Τα μεσάνυχτα, τα κεριά ανάβουν το ένα από το άλλο ώσπου φωτίζεται όλη η εκκλησία, ο κόσμος εύχεται «Χριστός Ανέστη» και τσουγκρίζει κόκκινα αυγά.",
+      "img": "Christopsomo_-_Greek_Christmas_Bread_-_Flickr_-_pellaea.jpg"
     },
     {
       "en": "Music brings everyone to their feet. The bouzouki rings out, and friends join hands in a circle to dance the syrtaki or the kalamatianos, while someone shouts opa!",
-      "el": "Η μουσική σηκώνει όλους στο πόδι. Το μπουζούκι αντηχεί, και οι φίλοι πιάνονται χέρι χέρι σε κύκλο για να χορέψουν συρτάκι ή καλαματιανό, ενώ κάποιος φωνάζει «ώπα!»."
+      "el": "Η μουσική σηκώνει όλους στο πόδι. Το μπουζούκι αντηχεί, και οι φίλοι πιάνονται χέρι χέρι σε κύκλο για να χορέψουν συρτάκι ή καλαματιανό, ενώ κάποιος φωνάζει «ώπα!».",
+      "img": "Bouzouki_tetrachordo.jpg"
     },
     {
       "en": "As the sun sinks into the sea, the tavernas light up along the waterfront. When you're ready to sail on, Cyprus is waiting to the east, and Italy lies just across the Ionian Sea.",
-      "el": "Καθώς ο ήλιος βυθίζεται στη θάλασσα, οι ταβέρνες ανάβουν τα φώτα τους στην προκυμαία. Όταν θελήσεις να σαλπάρεις, η Κύπρος σε περιμένει ανατολικά, και η Ιταλία βρίσκεται ακριβώς απέναντι, πέρα από το Ιόνιο."
+      "el": "Καθώς ο ήλιος βυθίζεται στη θάλασσα, οι ταβέρνες ανάβουν τα φώτα τους στην προκυμαία. Όταν θελήσεις να σαλπάρεις, η Κύπρος σε περιμένει ανατολικά, και η Ιταλία βρίσκεται ακριβώς απέναντι, πέρα από το Ιόνιο.",
+      "img": "Pontikonisi.jpg"
     }
   ],
-  "next": ["Cyprus", "Italy", "Bulgaria"]
+  "next": [
+    "Cyprus",
+    "Italy",
+    "Bulgaria"
+  ]
 }

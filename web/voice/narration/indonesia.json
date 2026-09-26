@@ -1,55 +1,74 @@
 {
   "country": "Indonesia",
-  "languages": ["en", "id"],
+  "languages": [
+    "en",
+    "id"
+  ],
   "segments": [
     {
       "en": "Before sunrise, the call to prayer drifts over rice terraces, roosters answer from the villages, and somewhere a gamelan orchestra begins to practise, its bronze gongs shimmering in the morning air.",
-      "id": "Sebelum matahari terbit, azan mengalun di atas sawah bertingkat, ayam jago bersahutan dari desa-desa, dan di suatu tempat gamelan mulai berlatih, gong perunggunya bergetar di udara pagi."
+      "id": "Sebelum matahari terbit, azan mengalun di atas sawah bertingkat, ayam jago bersahutan dari desa-desa, dan di suatu tempat gamelan mulai berlatih, gong perunggunya bergetar di udara pagi.",
+      "img": "Ubud_(49818456887).jpg"
     },
     {
       "en": "Indonesia is the world's largest archipelago, a necklace of more than seventeen thousand islands strung along the equator between the Indian and Pacific Oceans.",
-      "id": "Indonesia adalah negara kepulauan terbesar di dunia, untaian lebih dari tujuh belas ribu pulau yang membentang di sepanjang khatulistiwa, di antara Samudra Hindia dan Samudra Pasifik."
+      "id": "Indonesia adalah negara kepulauan terbesar di dunia, untaian lebih dari tujuh belas ribu pulau yang membentang di sepanjang khatulistiwa, di antara Samudra Hindia dan Samudra Pasifik.",
+      "img": "Komodo_Island_north_aerial.jpg"
     },
     {
       "en": "The national motto is Bhinneka Tunggal Ika, unity in diversity. There are hundreds of ethnic groups and local languages, yet almost everyone can talk together in Bahasa Indonesia.",
-      "id": "Semboyan nasionalnya adalah Bhinneka Tunggal Ika, berbeda-beda tetapi tetap satu. Ada ratusan suku bangsa dan bahasa daerah, tetapi hampir semua orang bisa saling bicara dalam bahasa Indonesia."
+      "id": "Semboyan nasionalnya adalah Bhinneka Tunggal Ika, berbeda-beda tetapi tetap satu. Ada ratusan suku bangsa dan bahasa daerah, tetapi hampir semua orang bisa saling bicara dalam bahasa Indonesia.",
+      "img": "Lake_Toba_and_the_surrounding_hills.jpg"
     },
     {
       "en": "The islands sit on the Ring of Fire, so volcanoes are everywhere. At dawn on Java, people climb to watch the sun rise over Mount Bromo, smoking gently in a sea of sand.",
-      "id": "Kepulauan ini terletak di Cincin Api, jadi gunung berapi ada di mana-mana. Saat fajar di Jawa, orang mendaki untuk menyaksikan matahari terbit di atas Gunung Bromo, yang berasap pelan di tengah lautan pasir."
+      "id": "Kepulauan ini terletak di Cincin Api, jadi gunung berapi ada di mana-mana. Saat fajar di Jawa, orang mendaki untuk menyaksikan matahari terbit di atas Gunung Bromo, yang berasap pelan di tengah lautan pasir.",
+      "img": "Bromo-Semeru-Batok-Widodaren.jpg"
     },
     {
       "en": "Also on Java stands Borobudur, a huge Buddhist temple built more than a thousand years ago. Its terraces are carved with stories in stone, and bell-shaped stupas crown the top.",
-      "id": "Di Jawa juga berdiri Borobudur, candi Buddha raksasa yang dibangun lebih dari seribu tahun lalu. Teras-terasnya dipahat dengan kisah-kisah di batu, dan stupa berbentuk lonceng menghiasi puncaknya."
+      "id": "Di Jawa juga berdiri Borobudur, candi Buddha raksasa yang dibangun lebih dari seribu tahun lalu. Teras-terasnya dipahat dengan kisah-kisah di batu, dan stupa berbentuk lonceng menghiasi puncaknya.",
+      "img": "Pradaksina.jpg"
     },
     {
       "en": "On the island of Bali, Hindu families place small offerings of flowers, rice and incense in woven palm-leaf trays each morning, on doorsteps and at shrines, to give thanks and keep the world in balance.",
-      "id": "Di Pulau Bali, keluarga Hindu setiap pagi meletakkan canang, sesajen kecil berisi bunga, nasi, dan dupa dalam wadah anyaman janur, di depan pintu dan di pura, sebagai ungkapan syukur dan untuk menjaga keseimbangan alam."
+      "id": "Di Pulau Bali, keluarga Hindu setiap pagi meletakkan canang, sesajen kecil berisi bunga, nasi, dan dupa dalam wadah anyaman janur, di depan pintu dan di pura, sebagai ungkapan syukur dan untuk menjaga keseimbangan alam.",
+      "img": "Pura_Ulun_Danu_Bratan,_2022.jpg"
     },
     {
       "en": "Wildlife here is astonishing. Orangutans swing through the forests of Borneo and Sumatra, and on Komodo island live the largest lizards on Earth, the Komodo dragons.",
-      "id": "Satwa liarnya menakjubkan. Orangutan berayun di hutan Kalimantan dan Sumatra, dan di Pulau Komodo hidup kadal terbesar di dunia, komodo."
+      "id": "Satwa liarnya menakjubkan. Orangutan berayun di hutan Kalimantan dan Sumatra, dan di Pulau Komodo hidup kadal terbesar di dunia, komodo.",
+      "img": "Tanjung_Puting30477.jpg"
     },
     {
       "en": "Jakarta, the capital, is a huge, busy city. Motorbikes weave through traffic, and street vendors push carts selling snacks, calling out or tapping a spoon on a bowl to announce they've arrived.",
-      "id": "Jakarta, ibu kotanya, adalah kota besar yang sibuk. Sepeda motor menyelip di tengah lalu lintas, dan pedagang kaki lima mendorong gerobak jajanan sambil berseru atau mengetuk mangkuk dengan sendok untuk menandakan kedatangan mereka."
+      "id": "Jakarta, ibu kotanya, adalah kota besar yang sibuk. Sepeda motor menyelip di tengah lalu lintas, dan pedagang kaki lima mendorong gerobak jajanan sambil berseru atau mengetuk mangkuk dengan sendok untuk menandakan kedatangan mereka.",
+      "img": "Bundaran_Hotel_Indonesia_(2025)_(cropped).jpg"
     },
     {
       "en": "Food is a joy to explore. Nasi goreng, fried rice with a fried egg on top, is loved everywhere. Try satay skewers with peanut sauce, and from Sumatra, rendang, beef slowly cooked in coconut milk and spices.",
-      "id": "Kuliner Indonesia seru untuk dijelajahi. Nasi goreng dengan telur ceplok di atasnya disukai di mana-mana. Cobalah sate dengan bumbu kacang, dan dari Sumatra, rendang, daging sapi yang dimasak lama dengan santan dan rempah."
+      "id": "Kuliner Indonesia seru untuk dijelajahi. Nasi goreng dengan telur ceplok di atasnya disukai di mana-mana. Cobalah sate dengan bumbu kacang, dan dari Sumatra, rendang, daging sapi yang dimasak lama dengan santan dan rempah.",
+      "img": "Nasi_Goreng_Kampung_(11967588375).jpg"
     },
     {
       "en": "Indonesia was once famous as the Spice Islands. Nutmeg and cloves from the Moluccas were so valued that traders sailed across the world to find them.",
-      "id": "Indonesia dahulu terkenal sebagai Kepulauan Rempah. Pala dan cengkih dari Maluku begitu berharga sampai para pedagang berlayar melintasi dunia untuk mencarinya."
+      "id": "Indonesia dahulu terkenal sebagai Kepulauan Rempah. Pala dan cengkih dari Maluku begitu berharga sampai para pedagang berlayar melintasi dunia untuk mencarinya.",
+      "img": "BandaBesarIslandSeenFromFortBelgica.JPG"
     },
     {
       "en": "The arts are rich too: batik cloth, patterned with wax and dye, and wayang kulit, shadow puppet plays that can last all night, with a single puppeteer voicing every character.",
-      "id": "Seninya pun kaya: kain batik yang bermotif dengan lilin dan pewarna, serta wayang kulit, pertunjukan bayangan yang bisa berlangsung semalam suntuk, dengan satu dalang yang menyuarakan semua tokohnya."
+      "id": "Seninya pun kaya: kain batik yang bermotif dengan lilin dan pewarna, serta wayang kulit, pertunjukan bayangan yang bisa berlangsung semalam suntuk, dengan satu dalang yang menyuarakan semua tokohnya.",
+      "img": "COLLECTIE_TROPENMUSEUM_Katoenen_wikkelrok_met_geometrisch_patroon_TMnr_5713-2.jpg"
     },
     {
       "en": "Politeness matters. Use your right hand to give or receive, and a gentle smile goes a long way. Terima kasih for visiting! Now hop across the Strait of Malacca to Malaysia, your next neighbour.",
-      "id": "Sopan santun itu penting. Gunakan tangan kanan untuk memberi atau menerima, dan senyum yang ramah sangat berarti. Terima kasih sudah berkunjung! Sekarang seberangi Selat Malaka menuju Malaysia, tetangga berikutnya."
+      "id": "Sopan santun itu penting. Gunakan tangan kanan untuk memberi atau menerima, dan senyum yang ramah sangat berarti. Terima kasih sudah berkunjung! Sekarang seberangi Selat Malaka menuju Malaysia, tetangga berikutnya.",
+      "img": "Prambanan_Temple_Yogyakarta_Indonesia.jpg"
     }
   ],
-  "next": ["Malaysia", "Timor-Leste", "Papua New Guinea"]
+  "next": [
+    "Malaysia",
+    "Timor-Leste",
+    "Papua New Guinea"
+  ]
 }

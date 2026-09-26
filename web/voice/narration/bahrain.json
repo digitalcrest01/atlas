@@ -1,55 +1,74 @@
 {
   "country": "Bahrain",
-  "languages": ["en", "ar"],
+  "languages": [
+    "en",
+    "ar"
+  ],
   "segments": [
     {
       "en": "Imagine a diver taking one deep breath, clipping his nose shut and sinking to the seabed with a stone tied to his foot. For centuries, men from Bahrain did exactly this, searching the warm Gulf waters for pearls.",
-      "ar": "تخيّل غوّاصًا يأخذ نفسًا عميقًا، ويشدّ أنفه بمشبك، ويهبط إلى قاع البحر وحجر مربوط بقدمه. لقرون طويلة كان رجال البحرين يفعلون ذلك تمامًا، باحثين عن اللؤلؤ في مياه الخليج الدافئة."
+      "ar": "تخيّل غوّاصًا يأخذ نفسًا عميقًا، ويشدّ أنفه بمشبك، ويهبط إلى قاع البحر وحجر مربوط بقدمه. لقرون طويلة كان رجال البحرين يفعلون ذلك تمامًا، باحثين عن اللؤلؤ في مياه الخليج الدافئة.",
+      "img": "Muharraq_Bayt_Siyadi_1.jpg"
     },
     {
       "en": "Bahraini pearls were once famous across the world. In the old town of Muharraq, you can still follow a pearling trail past merchants' houses, and hear the songs sailors sang to keep time as they hauled the ropes.",
-      "ar": "اشتهر لؤلؤ البحرين يومًا في أنحاء العالم. وفي مدينة المحرّق القديمة ما زال بإمكانك أن تسلك طريق اللؤلؤ بين بيوت التجّار، وأن تسمع الأهازيج التي كان البحّارة يردّدونها ليضبطوا إيقاع سحب الحبال."
+      "ar": "اشتهر لؤلؤ البحرين يومًا في أنحاء العالم. وفي مدينة المحرّق القديمة ما زال بإمكانك أن تسلك طريق اللؤلؤ بين بيوت التجّار، وأن تسمع الأهازيج التي كان البحّارة يردّدونها ليضبطوا إيقاع سحب الحبال.",
+      "img": "Mosque_and_Bait_Siyadi,_Muharraq,_Bahrain.jpg"
     },
     {
       "en": "Bahrain is a small island nation, a cluster of islands in the Gulf. Its name means two seas, and one old explanation is that fresh springs once bubbled up through the salty water around it.",
-      "ar": "البحرين دولة جزرية صغيرة، مجموعة من الجزر في الخليج. ويشير اسمها إلى بحرين اثنين، ومن التفسيرات القديمة أن ينابيع عذبة كانت تتدفّق في الماضي وسط المياه المالحة من حولها."
+      "ar": "البحرين دولة جزرية صغيرة، مجموعة من الجزر في الخليج. ويشير اسمها إلى بحرين اثنين، ومن التفسيرات القديمة أن ينابيع عذبة كانت تتدفّق في الماضي وسط المياه المالحة من حولها.",
+      "img": "RAS_SANAD_MANGROVE_FOREST_(cropped).jpg"
     },
     {
       "en": "Those springs made the islands green and welcoming thousands of years ago, when this was Dilmun, a great trading centre linking Mesopotamia with the Indus Valley. Ancient burial mounds still dot the landscape.",
-      "ar": "جعلت تلك الينابيع الجزر خضراء مضيافة قبل آلاف السنين، حين كانت هذه أرض دلمون، المركز التجاري الكبير الذي ربط بلاد الرافدين بوادي السند. وما زالت تلال المدافن القديمة منتشرة في المكان."
+      "ar": "جعلت تلك الينابيع الجزر خضراء مضيافة قبل آلاف السنين، حين كانت هذه أرض دلمون، المركز التجاري الكبير الذي ربط بلاد الرافدين بوادي السند. وما زالت تلال المدافن القديمة منتشرة في المكان.",
+      "img": "Bahrain_National_Museum_Exterior.jpg"
     },
     {
       "en": "On the northern coast, Bahrain Fort stands on a mound built up from layer upon layer of ancient settlements. At sunset, its stone walls turn honey gold against the sea.",
-      "ar": "على الساحل الشمالي تقف قلعة البحرين فوق تلّ تكوّن من طبقات متراكمة من المستوطنات القديمة. وعند الغروب تتحوّل أسوارها الحجرية إلى لون العسل الذهبي أمام البحر."
+      "ar": "على الساحل الشمالي تقف قلعة البحرين فوق تلّ تكوّن من طبقات متراكمة من المستوطنات القديمة. وعند الغروب تتحوّل أسوارها الحجرية إلى لون العسل الذهبي أمام البحر.",
+      "img": "Bahrain_Fort_March_2015.JPG"
     },
     {
       "en": "In the desert stands a lone tree, hundreds of years old, green and alive with no obvious source of water. People call it the Tree of Life, and families love to visit it.",
-      "ar": "وفي الصحراء تقف شجرة وحيدة عمرها مئات السنين، خضراء حيّة من دون مصدر ماء ظاهر. يسمّيها الناس شجرة الحياة، وتحبّ العائلات زيارتها."
+      "ar": "وفي الصحراء تقف شجرة وحيدة عمرها مئات السنين، خضراء حيّة من دون مصدر ماء ظاهر. يسمّيها الناس شجرة الحياة، وتحبّ العائلات زيارتها.",
+      "img": "Arad_Fort_at_Noon.jpg"
     },
     {
       "en": "Manama, the capital, is a city of glass towers by the water. But step through the arch of Bab al-Bahrain and you enter the old souq, full of spices, gold, perfumes and fabric shops.",
-      "ar": "المنامة، العاصمة، مدينة أبراج زجاجية على الماء. لكن ما إن تعبر قوس باب البحرين حتى تدخل السوق القديم، المليء بالتوابل والذهب والعطور ومحالّ الأقمشة."
+      "ar": "المنامة، العاصمة، مدينة أبراج زجاجية على الماء. لكن ما إن تعبر قوس باب البحرين حتى تدخل السوق القديم، المليء بالتوابل والذهب والعطور ومحالّ الأقمشة.",
+      "img": "Bab_Al_Bahrain,_Manama,_Baréin,_2024-08-18,_DD_72.jpg"
     },
     {
       "en": "Hospitality begins with coffee. A host pours a little golden Arabic coffee, flavoured with cardamom, into a tiny cup, with dates on the side. When you have had enough, gently shake the cup from side to side.",
-      "ar": "تبدأ الضيافة بالقهوة. يسكب المضيف قليلًا من القهوة العربية الذهبية المنكّهة بالهيل في فنجان صغير، ومعها التمر. وحين تكتفي، هزّ الفنجان برفق يمينًا ويسارًا."
+      "ar": "تبدأ الضيافة بالقهوة. يسكب المضيف قليلًا من القهوة العربية الذهبية المنكّهة بالهيل في فنجان صغير، ومعها التمر. وحين تكتفي، هزّ الفنجان برفق يمينًا ويسارًا.",
+      "img": "A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg"
     },
     {
       "en": "Many families hold a majlis, a sitting room open to guests, where neighbours drop by in the evening to chat about everything from football to family news.",
-      "ar": "تحتفظ عائلات كثيرة بمجلس مفتوح للضيوف، يمرّ به الجيران في المساء ليتحدّثوا في كل شيء، من كرة القدم إلى أخبار العائلة."
+      "ar": "تحتفظ عائلات كثيرة بمجلس مفتوح للضيوف، يمرّ به الجيران في المساء ليتحدّثوا في كل شيء، من كرة القدم إلى أخبار العائلة.",
+      "img": "Manama,_Bahrain_Decembre_2014.jpg"
     },
     {
       "en": "The national dish is machboos, fragrant rice cooked with spices, dried lime and chicken or fish. For something sweet, try Bahraini halwa, a glossy, wobbly treat flavoured with saffron and rosewater.",
-      "ar": "الطبق الوطني هو المجبوس، أرز عطِر مطهوّ بالبهارات واللومي مع الدجاج أو السمك. وللحلوى جرّب الحلوى البحرينية، اللامعة المرتعشة، المنكّهة بالزعفران وماء الورد."
+      "ar": "الطبق الوطني هو المجبوس، أرز عطِر مطهوّ بالبهارات واللومي مع الدجاج أو السمك. وللحلوى جرّب الحلوى البحرينية، اللامعة المرتعشة، المنكّهة بالزعفران وماء الورد.",
+      "img": "Machboos_(cropped).JPG"
     },
     {
       "en": "Once a year, the calm of the desert is broken by the roar of engines, when the Bahrain Grand Prix brings Formula One racing to the island.",
-      "ar": "ومرّة في السنة يكسر هدير المحرّكات سكون الصحراء، حين يجلب سباق جائزة البحرين الكبرى سيارات الفورمولا واحد إلى الجزيرة."
+      "ar": "ومرّة في السنة يكسر هدير المحرّكات سكون الصحراء، حين يجلب سباق جائزة البحرين الكبرى سيارات الفورمولا واحد إلى الجزيرة.",
+      "img": "Bahrain_WTC.JPG"
     },
     {
       "en": "When you leave, a friendly voice will say ma'a as-salama, go in peace. Then drive west along the long causeway across the sea, and Saudi Arabia is waiting on the other shore.",
-      "ar": "وحين تغادر سيقول لك صوت ودود: مع السلامة. ثم اتّجه غربًا على الجسر الطويل الممتدّ فوق البحر، فالسعودية في انتظارك على الضفّة الأخرى."
+      "ar": "وحين تغادر سيقول لك صوت ودود: مع السلامة. ثم اتّجه غربًا على الجسر الطويل الممتدّ فوق البحر، فالسعودية في انتظارك على الضفّة الأخرى.",
+      "img": "Manama_Bahrain_Bay_01.jpg"
     }
   ],
-  "next": ["Saudi Arabia", "Qatar", "Kuwait"]
+  "next": [
+    "Saudi Arabia",
+    "Qatar",
+    "Kuwait"
+  ]
 }

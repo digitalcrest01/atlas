@@ -1,59 +1,79 @@
 {
   "country": "Chad",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "In the far northeast, the wind has carved the sandstone of the Ennedi into arches, pillars and towers that glow orange at sunset. Camels plod between them, and on the rock walls ancient paintings show cattle, riders and dancers.",
-      "fr": "Tout au nord-est, le vent a sculpté les grès de l'Ennedi en arches, en piliers et en tours qui rougeoient au coucher du soleil. Des dromadaires cheminent entre eux, et sur les parois, d'anciennes peintures montrent des troupeaux, des cavaliers et des danseurs."
+      "fr": "Tout au nord-est, le vent a sculpté les grès de l'Ennedi en arches, en piliers et en tours qui rougeoient au coucher du soleil. Des dromadaires cheminent entre eux, et sur les parois, d'anciennes peintures montrent des troupeaux, des cavaliers et des danseurs.",
+      "img": "Aloba_Arch_in_the_Ennedi_Mountains_-_northeastern_Chad_2015.jpg"
     },
     {
       "en": "This is Chad, a vast country in the middle of northern Africa, stretching from the Sahara in the north to green savanna and rivers in the south.",
-      "fr": "Nous sommes au Tchad, un vaste pays au centre du nord de l'Afrique, qui s'étend du Sahara au nord jusqu'aux savanes verdoyantes et aux rivières du sud."
+      "fr": "Nous sommes au Tchad, un vaste pays au centre du nord de l'Afrique, qui s'étend du Sahara au nord jusqu'aux savanes verdoyantes et aux rivières du sud.",
+      "img": "View_from_Abaike_(24029993520).jpg"
     },
     {
       "en": "Hidden in an Ennedi canyon is the Guelta d'Archei, a pool of dark water where herders bring hundreds of camels to drink. The walls echo with their grunts and the calls of the herders.",
-      "fr": "Cachée au fond d'un canyon de l'Ennedi, la guelta d'Archei est une mare d'eau sombre où les éleveurs mènent boire des centaines de dromadaires. Les parois résonnent de leurs grognements et des appels des bergers."
+      "fr": "Cachée au fond d'un canyon de l'Ennedi, la guelta d'Archei est une mare d'eau sombre où les éleveurs mènent boire des centaines de dromadaires. Les parois résonnent de leurs grognements et des appels des bergers.",
+      "img": "24_Kamele_ziehen_zur_Wasserstelle_im_Ennedi-Gebirge_im_Tschad.jpg"
     },
     {
       "en": "Further west rise the Tibesti Mountains, a wild land of volcanoes and craters, home to the Toubou people, who have crossed the desert for centuries.",
-      "fr": "Plus à l'ouest se dressent les montagnes du Tibesti, une terre sauvage de volcans et de cratères, où vivent les Toubous, qui sillonnent le désert depuis des siècles."
+      "fr": "Plus à l'ouest se dressent les montagnes du Tibesti, une terre sauvage de volcans et de cratères, où vivent les Toubous, qui sillonnent le désert depuis des siècles.",
+      "img": "Tibesti_east_of_bardai.jpg"
     },
     {
       "en": "The country takes its name from Lake Chad, in the southwest. It is shallow and changes greatly with the seasons, and people fish, farm and graze cattle on its islands and shores.",
-      "fr": "Le pays tire son nom du lac Tchad, au sud-ouest. Peu profond, il change beaucoup au fil des saisons, et l'on y pêche, cultive et fait paître le bétail sur ses îles et ses rives."
+      "fr": "Le pays tire son nom du lac Tchad, au sud-ouest. Peu profond, il change beaucoup au fil des saisons, et l'on y pêche, cultive et fait paître le bétail sur ses îles et ses rives.",
+      "img": "LakeChadBolaerialphoto.jpg"
     },
     {
       "en": "N'Djamena, the capital, sits where the Chari and Logone rivers meet. In the evening people stroll by the water, and the markets are full of spices, dates and dried fish.",
-      "fr": "N'Djamena, la capitale, se trouve au confluent du Chari et du Logone. Le soir, on se promène au bord de l'eau, et les marchés regorgent d'épices, de dattes et de poisson séché."
+      "fr": "N'Djamena, la capitale, se trouve au confluent du Chari et du Logone. Le soir, on se promène au bord de l'eau, et les marchés regorgent d'épices, de dattes et de poisson séché.",
+      "img": "Chari_River.jpg"
     },
     {
       "en": "French and Arabic are the official languages, and more than a hundred local languages are spoken. Chadian Arabic is heard in markets everywhere, so a friendly salam alaykum will take you far.",
-      "fr": "Le français et l'arabe sont les langues officielles, et on parle plus d'une centaine de langues locales. L'arabe tchadien s'entend sur tous les marchés, alors un chaleureux salam alaykoum vous ouvrira bien des portes."
+      "fr": "Le français et l'arabe sont les langues officielles, et on parle plus d'une centaine de langues locales. L'arabe tchadien s'entend sur tous les marchés, alors un chaleureux salam alaykoum vous ouvrira bien des portes.",
+      "img": "Abeché1.jpg"
     },
     {
       "en": "Hospitality is sacred. Guests are served sweet tea in small glasses, often several rounds, and it would be a shame to hurry away before the last one.",
-      "fr": "L'hospitalité est sacrée. On sert aux invités un thé bien sucré dans de petits verres, souvent en plusieurs tournées, et ce serait dommage de partir avant la dernière."
+      "fr": "L'hospitalité est sacrée. On sert aux invités un thé bien sucré dans de petits verres, souvent en plusieurs tournées, et ce serait dommage de partir avant la dernière.",
+      "img": "Tunisian_Tea_with_pine_nuts.jpg"
     },
     {
       "en": "The everyday meal is boule, a firm ball of millet or sorghum, eaten with the fingers and dipped in a sauce of okra, dried fish or meat. To drink, there is karkanji, a cool red hibiscus juice.",
-      "fr": "Le repas de tous les jours, c'est la boule, une pâte ferme de mil ou de sorgho qu'on mange avec les doigts en la trempant dans une sauce au gombo, au poisson séché ou à la viande. Pour boire, il y a le karkanji, un jus d'hibiscus rouge et frais."
+      "fr": "Le repas de tous les jours, c'est la boule, une pâte ferme de mil ou de sorgho qu'on mange avec les doigts en la trempant dans une sauce au gombo, au poisson séché ou à la viande. Pour boire, il y a le karkanji, un jus d'hibiscus rouge et frais.",
+      "img": "Sorghum_bicolor03.jpg"
     },
     {
       "en": "In the southeast, Zakouma National Park has become a place of hope. Herds of elephants that had grown few are increasing again, alongside giraffes, buffalo and lions.",
-      "fr": "Au sud-est, le parc national de Zakouma est devenu un lieu d'espoir. Les troupeaux d'éléphants, qui s'étaient réduits, s'agrandissent de nouveau, aux côtés des girafes, des buffles et des lions."
+      "fr": "Au sud-est, le parc national de Zakouma est devenu un lieu d'espoir. Les troupeaux d'éléphants, qui s'étaient réduits, s'agrandissent de nouveau, aux côtés des girafes, des buffles et des lions.",
+      "img": "Girafe_du_parc_national_de_Zakouma.jpg"
     },
     {
       "en": "At the end of the rainy season, Wodaabe herders gather for the Gerewol, where young men paint their faces, wear feathers and dance for hours to show off their beauty and charm.",
-      "fr": "À la fin de la saison des pluies, les éleveurs wodaabe se réunissent pour le Gerewol, où les jeunes hommes se maquillent le visage, se parent de plumes et dansent des heures pour montrer leur beauté et leur charme."
+      "fr": "À la fin de la saison des pluies, les éleveurs wodaabe se réunissent pour le Gerewol, où les jeunes hommes se maquillent le visage, se parent de plumes et dansent des heures pour montrer leur beauté et leur charme.",
+      "img": "Ennedi_Hoodoos_in_the_Ennedi_Mountains_-_northeastern_Chad_2015.jpg"
     },
     {
       "en": "In the green south, farmers grow cotton, millet and peanuts, and villages celebrate the harvest with drums, balafons and dancing late into the night.",
-      "fr": "Dans le sud verdoyant, les paysans cultivent le coton, le mil et l'arachide, et les villages fêtent la récolte avec des tambours, des balafons et des danses jusque tard dans la nuit."
+      "fr": "Dans le sud verdoyant, les paysans cultivent le coton, le mil et l'arachide, et les villages fêtent la récolte avec des tambours, des balafons et des danses jusque tard dans la nuit.",
+      "img": "La_ville_de_Moundou_4.jpg"
     },
     {
       "en": "Now look west across the waters of Lake Chad. Niger is waiting on the far shore.",
-      "fr": "Maintenant, regardez vers l'ouest, au-delà des eaux du lac Tchad. Le Niger vous attend sur l'autre rive."
+      "fr": "Maintenant, regardez vers l'ouest, au-delà des eaux du lac Tchad. Le Niger vous attend sur l'autre rive.",
+      "img": "Ounianga_Serir.jpg"
     }
   ],
-  "next": ["Niger", "Cameroon", "Sudan"]
+  "next": [
+    "Niger",
+    "Cameroon",
+    "Sudan"
+  ]
 }

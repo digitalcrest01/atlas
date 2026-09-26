@@ -1,59 +1,79 @@
 {
   "country": "Mexico",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "It is the Day of the Dead, and families are building altars heaped with orange marigolds, candles, sweet bread and photos of loved ones. In Mexico, this is a time to remember with love, music and a smile.",
-      "es-419": "Es Día de Muertos, y las familias levantan altares llenos de cempasúchil, velas, pan de muerto y fotos de sus seres queridos. En México, es un tiempo para recordar con cariño, con música y con una sonrisa."
+      "es-419": "Es Día de Muertos, y las familias levantan altares llenos de cempasúchil, velas, pan de muerto y fotos de sus seres queridos. En México, es un tiempo para recordar con cariño, con música y con una sonrisa.",
+      "img": "Tagetes_x_erecta1.jpg"
     },
     {
       "en": "Mexico stretches from dry deserts in the north to steamy jungles in the south, with snowy volcanoes and deep canyons in between, and long coastlines on the Pacific and the Caribbean.",
-      "es-419": "México se extiende desde los desiertos del norte hasta las selvas húmedas del sur, con volcanes nevados y barrancas profundas en medio, y largas costas en el Pacífico y en el Caribe."
+      "es-419": "México se extiende desde los desiertos del norte hasta las selvas húmedas del sur, con volcanes nevados y barrancas profundas en medio, y largas costas en el Pacífico y en el Caribe.",
+      "img": "Pico_de_Orizaba_desde_Hidalgo,_Puebla.jpg"
     },
     {
       "en": "Great civilisations flourished here long before Europeans arrived. Near the capital rise the Pyramids of the Sun and the Moon at Teotihuacan, and in the south the Maya built cities like Palenque and Chichén Itzá.",
-      "es-419": "Aquí florecieron grandes civilizaciones mucho antes de la llegada de los europeos. Cerca de la capital se alzan las pirámides del Sol y de la Luna en Teotihuacan, y en el sur los mayas construyeron ciudades como Palenque y Chichén Itzá."
+      "es-419": "Aquí florecieron grandes civilizaciones mucho antes de la llegada de los europeos. Cerca de la capital se alzan las pirámides del Sol y de la Luna en Teotihuacan, y en el sur los mayas construyeron ciudades como Palenque y Chichén Itzá.",
+      "img": "ZA77_Teotihuacán_edo_de_mex_Herberto_de_la_rosa.jpg"
     },
     {
       "en": "Mexico City stands where Tenochtitlan once did, the Aztec capital built on an island in a lake. Today it is an enormous, lively city of museums, murals, parks and markets.",
-      "es-419": "La Ciudad de México se levanta donde antes estuvo Tenochtitlan, la capital mexica construida sobre una isla en medio de un lago. Hoy es una ciudad enorme y llena de vida, con museos, murales, parques y mercados."
+      "es-419": "La Ciudad de México se levanta donde antes estuvo Tenochtitlan, la capital mexica construida sobre una isla en medio de un lago. Hoy es una ciudad enorme y llena de vida, con museos, murales, parques y mercados.",
+      "img": "Zócalo,_Ciudad_de_México_(32846556446)_(cropped).jpg"
     },
     {
       "en": "Spanish is spoken everywhere, but millions of people also speak Indigenous languages such as Nahuatl and Maya. Words like chocolate, tomato and avocado all come from Nahuatl.",
-      "es-419": "El español se habla en todas partes, pero millones de personas también hablan lenguas indígenas como el náhuatl y el maya. Palabras como chocolate, tomate y aguacate vienen del náhuatl."
+      "es-419": "El español se habla en todas partes, pero millones de personas también hablan lenguas indígenas como el náhuatl y el maya. Palabras como chocolate, tomate y aguacate vienen del náhuatl.",
+      "img": "MonteAlbanWest.jpg"
     },
     {
       "en": "Mexican cooking is honoured by UNESCO as a treasure of humanity. It begins with corn, ground into dough for warm tortillas, tamales and tacos, and reaches its height in mole, a rich sauce that can blend chillies, spices and chocolate.",
-      "es-419": "La cocina mexicana está reconocida por la UNESCO como patrimonio de la humanidad. Todo empieza con el maíz, convertido en masa para tortillas calientitas, tamales y tacos, y llega a su punto más alto en el mole, una salsa espesa que puede mezclar chiles, especias y chocolate."
+      "es-419": "La cocina mexicana está reconocida por la UNESCO como patrimonio de la humanidad. Todo empieza con el maíz, convertido en masa para tortillas calientitas, tamales y tacos, y llega a su punto más alto en el mole, una salsa espesa que puede mezclar chiles, especias y chocolate.",
+      "img": "Mole_du_marche_de_Oaxaca.JPG"
     },
     {
       "en": "In the market, people greet each other with a friendly buenos días, and it is polite to say provecho to anyone who is eating as you walk past.",
-      "es-419": "En el mercado, la gente se saluda con un amable buenos días, y es de buena educación decir provecho a quien está comiendo cuando pasas a su lado."
+      "es-419": "En el mercado, la gente se saluda con un amable buenos días, y es de buena educación decir provecho a quien está comiendo cuando pasas a su lado.",
+      "img": "Mercado_Municipal_José_María_Pino_Suárez,_Mazatlán,_3_de_marzo_de_2022.jpg"
     },
     {
       "en": "Music fills the plazas. Mariachi bands in suits trimmed with silver play violins, trumpets and guitars, a tradition born in the western state of Jalisco.",
-      "es-419": "La música llena las plazas. Los mariachis, con sus trajes adornados de plata, tocan violines, trompetas y guitarras, una tradición nacida en el estado de Jalisco, en el occidente del país."
+      "es-419": "La música llena las plazas. Los mariachis, con sus trajes adornados de plata, tocan violines, trompetas y guitarras, una tradición nacida en el estado de Jalisco, en el occidente del país.",
+      "img": "Panorámica_Guadalajara_desde_edificio_Bansi_hacia_norte_(cropped).jpg"
     },
     {
       "en": "Mexico is a land of bold colour, from the murals of Diego Rivera to the self-portraits of Frida Kahlo, and the fantastical painted creatures called alebrijes.",
-      "es-419": "México es tierra de colores intensos, desde los murales de Diego Rivera hasta los autorretratos de Frida Kahlo y las fantásticas criaturas pintadas que llamamos alebrijes."
+      "es-419": "México es tierra de colores intensos, desde los murales de Diego Rivera hasta los autorretratos de Frida Kahlo y las fantásticas criaturas pintadas que llamamos alebrijes.",
+      "img": "ALuchadorZocalo.JPG"
     },
     {
       "en": "Every winter, millions of monarch butterflies fly all the way from Canada and the United States to rest in the fir forests of central Mexico, covering the branches in orange.",
-      "es-419": "Cada invierno, millones de mariposas monarca vuelan desde Canadá y Estados Unidos para descansar en los bosques de oyamel del centro de México, y cubren las ramas de color naranja."
+      "es-419": "Cada invierno, millones de mariposas monarca vuelan desde Canadá y Estados Unidos para descansar en los bosques de oyamel del centro de México, y cubren las ramas de color naranja.",
+      "img": "Abies_religiosa_Chincua_5.jpg"
     },
     {
       "en": "In the Yucatán, you can swim in cenotes, natural pools of clear water hidden in caves, which the Maya once considered sacred.",
-      "es-419": "En Yucatán puedes nadar en cenotes, pozas naturales de agua cristalina escondidas en cuevas, que los mayas consideraban sagradas."
+      "es-419": "En Yucatán puedes nadar en cenotes, pozas naturales de agua cristalina escondidas en cuevas, que los mayas consideraban sagradas.",
+      "img": "Entrance_to_Dos_Ojos.JPG"
     },
     {
       "en": "Family comes first, and many birthday parties end with children taking turns to swing at a piñata. On weekends, fans cheer for masked wrestlers at lucha libre.",
-      "es-419": "La familia es lo primero, y muchas fiestas de cumpleaños terminan con los niños pegándole por turnos a la piñata. Los fines de semana, los aficionados le echan porras a los luchadores enmascarados de la lucha libre."
+      "es-419": "La familia es lo primero, y muchas fiestas de cumpleaños terminan con los niños pegándole por turnos a la piñata. Los fines de semana, los aficionados le echan porras a los luchadores enmascarados de la lucha libre.",
+      "img": "PIÑATA.jpg"
     },
     {
       "en": "¡Hasta luego! Head south, past the ancient Maya lands, and Guatemala is waiting.",
-      "es-419": "¡Hasta luego! Sigue hacia el sur, más allá de las antiguas tierras mayas, y Guatemala te está esperando."
+      "es-419": "¡Hasta luego! Sigue hacia el sur, más allá de las antiguas tierras mayas, y Guatemala te está esperando.",
+      "img": "Pirámides_de_Calakmul.JPG"
     }
   ],
-  "next": ["Guatemala", "Belize", "United States"]
+  "next": [
+    "Guatemala",
+    "Belize",
+    "United States"
+  ]
 }

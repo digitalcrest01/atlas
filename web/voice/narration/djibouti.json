@@ -1,55 +1,74 @@
 {
   "country": "Djibouti",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Blinding white, crunchy underfoot, and utterly silent. This is Lake Assal, a turquoise lake ringed by a crust of salt, lying far below the level of the sea. It's the lowest point in all of Africa.",
-      "fr": "D'un blanc éblouissant, craquant sous les pieds, et d'un silence absolu. Voici le lac Assal, un lac turquoise entouré d'une croûte de sel, bien en dessous du niveau de la mer. C'est le point le plus bas de toute l'Afrique."
+      "fr": "D'un blanc éblouissant, craquant sous les pieds, et d'un silence absolu. Voici le lac Assal, un lac turquoise entouré d'une croûte de sel, bien en dessous du niveau de la mer. C'est le point le plus bas de toute l'Afrique.",
+      "img": "Lake_Assal_3-Djibouti.jpg"
     },
     {
       "en": "For centuries, Afar camel caravans have cut blocks of salt here and carried them inland across the desert. Some still make the journey today.",
-      "fr": "Depuis des siècles, les caravanes de dromadaires des Afars viennent découper ici des blocs de sel pour les transporter à travers le désert, vers l'intérieur des terres. Certaines font encore le voyage aujourd'hui."
+      "fr": "Depuis des siècles, les caravanes de dromadaires des Afars viennent découper ici des blocs de sel pour les transporter à travers le désert, vers l'intérieur des terres. Certaines font encore le voyage aujourd'hui.",
+      "img": "Obock_Region_landscape.jpg"
     },
     {
       "en": "Djibouti is a small country on the Horn of Africa, watching over the narrow passage where the Red Sea meets the Gulf of Aden. Great ships pass by day and night, and its busy port links Africa with the rest of the world.",
-      "fr": "Djibouti est un petit pays de la Corne de l'Afrique, qui veille sur le passage étroit où la mer Rouge rejoint le golfe d'Aden. De grands navires y passent jour et nuit, et son port très actif relie l'Afrique au reste du monde."
+      "fr": "Djibouti est un petit pays de la Corne de l'Afrique, qui veille sur le passage étroit où la mer Rouge rejoint le golfe d'Aden. De grands navires y passent jour et nuit, et son port très actif relie l'Afrique au reste du monde.",
+      "img": "The_container_terminal_at_the_Port_of_Djibouti.jpg"
     },
     {
       "en": "Two main peoples share this land, the Afar and the Somali, each with their own language, poetry and traditions. French and Arabic are the official languages, so in the market you may hear all four.",
-      "fr": "Deux grands peuples partagent cette terre, les Afars et les Somalis, chacun avec sa langue, sa poésie et ses traditions. Le français et l'arabe sont les langues officielles, si bien qu'au marché on peut entendre les quatre."
+      "fr": "Deux grands peuples partagent cette terre, les Afars et les Somalis, chacun avec sa langue, sa poésie et ses traditions. Le français et l'arabe sont les langues officielles, si bien qu'au marché on peut entendre les quatre.",
+      "img": "Tagore.jpg"
     },
     {
       "en": "The land here is wild and volcanic, because the Earth's crust is slowly pulling apart. At Lake Abbe, tall limestone chimneys rise from the plain and puff out steam at dawn, while flamingos wade in the shallows.",
-      "fr": "Ici, la terre est sauvage et volcanique, car l'écorce terrestre s'écarte lentement. Au lac Abbé, de hautes cheminées de calcaire se dressent sur la plaine et crachent de la vapeur à l'aube, pendant que des flamants roses avancent dans l'eau peu profonde."
+      "fr": "Ici, la terre est sauvage et volcanique, car l'écorce terrestre s'écarte lentement. Au lac Abbé, de hautes cheminées de calcaire se dressent sur la plaine et crachent de la vapeur à l'aube, pendant que des flamants roses avancent dans l'eau peu profonde.",
+      "img": "Airolaf_mountains_view.jpg"
     },
     {
       "en": "Yet the sea is full of life. In the cooler months, whale sharks, gentle giants covered in white spots, glide through the Gulf of Tadjoura, and divers come to swim beside them.",
-      "fr": "Pourtant, la mer regorge de vie. Pendant les mois plus frais, les requins-baleines, ces géants paisibles couverts de taches blanches, glissent dans le golfe de Tadjourah, et les plongeurs viennent nager à leurs côtés."
+      "fr": "Pourtant, la mer regorge de vie. Pendant les mois plus frais, les requins-baleines, ces géants paisibles couverts de taches blanches, glissent dans le golfe de Tadjourah, et les plongeurs viennent nager à leurs côtés.",
+      "img": "Similan_Dive_Center_-_great_whale_shark.jpg"
     },
     {
       "en": "Djibouti City, the capital, is lively and hot. In the evening, when the air cools a little, families stroll by the sea and the cafés fill with conversation.",
-      "fr": "Djibouti, la capitale, est animée et brûlante. Le soir, quand l'air se rafraîchit un peu, les familles se promènent au bord de la mer et les cafés s'emplissent de conversations."
+      "fr": "Djibouti, la capitale, est animée et brûlante. Le soir, quand l'air se rafraîchit un peu, les familles se promènent au bord de la mer et les cafés s'emplissent de conversations.",
+      "img": "Djibcapital.jpg"
     },
     {
       "en": "Try skoudehkaris, the national dish, rice cooked with lamb, tomato and warm spices like cardamom and cinnamon. Breakfast might be a soft, spongy flatbread called lahoh, with honey or sugar and a cup of spiced tea.",
-      "fr": "Goûtez le skoudehkaris, le plat national : du riz cuit avec de l'agneau, de la tomate et des épices chaudes comme la cardamome et la cannelle. Au petit déjeuner, on mange souvent une galette moelleuse appelée lahoh, avec du miel ou du sucre et un thé épicé."
+      "fr": "Goûtez le skoudehkaris, le plat national : du riz cuit avec de l'agneau, de la tomate et des épices chaudes comme la cardamome et la cannelle. Au petit déjeuner, on mange souvent une galette moelleuse appelée lahoh, avec du miel ou du sucre et un thé épicé.",
+      "img": "LahohS.jpg"
     },
     {
       "en": "Hospitality comes first. A guest is offered tea straight away, and turning it down can seem unfriendly, so take a sip and settle in.",
-      "fr": "L'hospitalité passe avant tout. On offre tout de suite du thé à l'invité, et le refuser peut paraître peu aimable ; alors buvez une gorgée et installez-vous."
+      "fr": "L'hospitalité passe avant tout. On offre tout de suite du thé à l'invité, et le refuser peut paraître peu aimable ; alors buvez une gorgée et installez-vous.",
+      "img": "Fahfah.jpg"
     },
     {
       "en": "Look out for men wearing the macawiis, a colourful cloth wrapped around the waist, and women in the dirac, a long, flowing dress of light fabric that stays cool in the heat.",
-      "fr": "Remarquez les hommes vêtus du macawiis, un pagne coloré noué à la taille, et les femmes en dirac, une longue robe fluide en tissu léger qui garde au frais sous la chaleur."
+      "fr": "Remarquez les hommes vêtus du macawiis, un pagne coloré noué à la taille, et les femmes en dirac, une longue robe fluide en tissu léger qui garde au frais sous la chaleur.",
+      "img": "View_of_Ali_Sabieh.JPG"
     },
     {
       "en": "Up in the Goda Mountains, the Day Forest is a surprising patch of green, with old juniper trees and cool air, a world away from the salt flats below.",
-      "fr": "Dans les monts Goda, la forêt du Day est une surprenante tache de verdure, avec de vieux genévriers et un air frais, à mille lieues des étendues de sel en contrebas."
+      "fr": "Dans les monts Goda, la forêt du Day est une surprenante tache de verdure, avec de vieux genévriers et un air frais, à mille lieues des étendues de sel en contrebas.",
+      "img": "Goda_Mountains_-_National_Park_of_Forêt_du_Day.jpg"
     },
     {
       "en": "Thank you for braving the heat with me. Hop aboard the railway that runs inland from the coast, and you'll soon be climbing into the green highlands of Ethiopia.",
-      "fr": "Merci d'avoir bravé la chaleur avec moi. Montez à bord du train qui part de la côte vers l'intérieur, et vous grimperez bientôt vers les hauts plateaux verdoyants de l'Éthiopie."
+      "fr": "Merci d'avoir bravé la chaleur avec moi. Montez à bord du train qui part de la côte vers l'intérieur, et vous grimperez bientôt vers les hauts plateaux verdoyants de l'Éthiopie.",
+      "img": "MountainofAliSabieh.jpg"
     }
   ],
-  "next": ["Ethiopia", "Eritrea", "Somalia"]
+  "next": [
+    "Ethiopia",
+    "Eritrea",
+    "Somalia"
+  ]
 }

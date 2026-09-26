@@ -1,59 +1,79 @@
 {
   "country": "Mauritania",
-  "languages": ["en", "ar"],
+  "languages": [
+    "en",
+    "ar"
+  ],
   "segments": [
     {
       "en": "The wind hums across endless dunes, and a line of camels moves slowly along the horizon. Much of Mauritania lies in the Sahara, where the great desert runs all the way down to the Atlantic Ocean.",
-      "ar": "تهمس الريح فوق كثبان لا نهاية لها، وقافلة من الإبل تسير ببطء على خط الأفق. يقع معظم موريتانيا في الصحراء الكبرى، حيث تمتد الرمال حتى تلامس المحيط الأطلسي."
+      "ar": "تهمس الريح فوق كثبان لا نهاية لها، وقافلة من الإبل تسير ببطء على خط الأفق. يقع معظم موريتانيا في الصحراء الكبرى، حيث تمتد الرمال حتى تلامس المحيط الأطلسي.",
+      "img": "Passe_de_djouk.jpg"
     },
     {
       "en": "Mauritanians include Arabic-speaking Moors, who speak a dialect called Hassaniya, and communities who speak Pulaar, Soninke and Wolof, especially along the Senegal River in the south.",
-      "ar": "يضم الشعب الموريتاني البيضان والحراطين الناطقين بالعربية، ولهجتهم الحسانية، إلى جانب مجتمعات تتحدث البولارية والسوننكية والولفية، ولا سيما على ضفاف نهر السنغال في الجنوب."
+      "ar": "يضم الشعب الموريتاني البيضان والحراطين الناطقين بالعربية، ولهجتهم الحسانية، إلى جانب مجتمعات تتحدث البولارية والسوننكية والولفية، ولا سيما على ضفاف نهر السنغال في الجنوب.",
+      "img": "WL-Sénégal-Rosso-Traversée_du_fleuve_Sénégal.jpg"
     },
     {
       "en": "Hospitality is a point of honour. Guests are welcomed with three rounds of sweet green tea with mint, poured from high above to make a frothy top, and the ritual can happily last an hour.",
-      "ar": "الكرم هنا مسألة شرف. يُستقبل الضيف بثلاث جولات من الشاي الأخضر المحلى بالنعناع، يُصب من علو لتعلوه الرغوة، وقد تمتد هذه الجلسة الجميلة ساعة كاملة."
+      "ar": "الكرم هنا مسألة شرف. يُستقبل الضيف بثلاث جولات من الشاي الأخضر المحلى بالنعناع، يُصب من علو لتعلوه الرغوة، وقد تمتد هذه الجلسة الجميلة ساعة كاملة.",
+      "img": "Tunisian_Tea_with_pine_nuts.jpg"
     },
     {
       "en": "Many families have nomadic roots, and even in the city some people like to pitch a tent in the yard, to relax in the cool evening breeze.",
-      "ar": "تعود جذور كثير من العائلات إلى حياة البداوة، وحتى في المدينة يحب بعض الناس نصب خيمة في فناء البيت للاسترخاء في نسيم المساء العليل."
+      "ar": "تعود جذور كثير من العائلات إلى حياة البداوة، وحتى في المدينة يحب بعض الناس نصب خيمة في فناء البيت للاسترخاء في نسيم المساء العليل.",
+      "img": "Atar,market_street1.jpg"
     },
     {
       "en": "The capital, Nouakchott, was built near the coast around the time of independence in 1960 and has grown quickly since. At its fish market, painted wooden boats are hauled up the beach as the catch comes in.",
-      "ar": "بُنيت العاصمة نواكشوط قرب الساحل في زمن الاستقلال عام ألف وتسعمئة وستين، وقد نمت بسرعة منذ ذلك الحين. وفي سوق السمك تُسحب القوارب الخشبية الملونة إلى الشاطئ حين يصل الصيد."
+      "ar": "بُنيت العاصمة نواكشوط قرب الساحل في زمن الاستقلال عام ألف وتسعمئة وستين، وقد نمت بسرعة منذ ذلك الحين. وفي سوق السمك تُسحب القوارب الخشبية الملونة إلى الشاطئ حين يصل الصيد.",
+      "img": "Nouakchott.jpg"
     },
     {
       "en": "In the desert town of Chinguetti, stone houses and an old mosque recall the days when caravans crossed the Sahara and scholars gathered here. Families still guard libraries of centuries-old manuscripts.",
-      "ar": "في مدينة شنقيط الصحراوية، تذكّر البيوت الحجرية والمسجد العتيق بزمن كانت فيه القوافل تعبر الصحراء ويجتمع فيها العلماء. وما زالت عائلات تحرس مكتبات من المخطوطات التي يعود عمرها إلى قرون."
+      "ar": "في مدينة شنقيط الصحراوية، تذكّر البيوت الحجرية والمسجد العتيق بزمن كانت فيه القوافل تعبر الصحراء ويجتمع فيها العلماء. وما زالت عائلات تحرس مكتبات من المخطوطات التي يعود عمرها إلى قرون.",
+      "img": "Chinguetti-Vue_Goblale_Vieille_ville.jpg"
     },
     {
       "en": "Further east, in the old town of Oualata, women decorate the walls of houses with beautiful painted patterns in red and white.",
-      "ar": "وإلى الشرق، في مدينة ولاتة القديمة، تزين النساء جدران البيوت بنقوش جميلة مرسومة باللونين الأحمر والأبيض."
+      "ar": "وإلى الشرق، في مدينة ولاتة القديمة، تزين النساء جدران البيوت بنقوش جميلة مرسومة باللونين الأحمر والأبيض.",
+      "img": "Oualata_03.jpg"
     },
     {
       "en": "In the middle of the desert lies the Richat Structure, known as the Eye of the Sahara, a giant set of rocky rings so large that astronauts use it as a landmark from space.",
-      "ar": "وفي قلب الصحراء يقع قلب الريشات، المعروف بعين الصحراء، وهو حلقات صخرية عملاقة واسعة إلى حد أن رواد الفضاء يتخذونها علامة يهتدون بها من الفضاء."
+      "ar": "وفي قلب الصحراء يقع قلب الريشات، المعروف بعين الصحراء، وهو حلقات صخرية عملاقة واسعة إلى حد أن رواد الفضاء يتخذونها علامة يهتدون بها من الفضاء.",
+      "img": "OuadaneOldTown1.jpg"
     },
     {
       "en": "The iron ore train is one of the longest in the world, rumbling for hundreds of kilometres from the mines near Zouérat to the port of Nouadhibou.",
-      "ar": "ويُعد قطار خام الحديد من أطول القطارات في العالم، إذ يهدر لمئات الكيلومترات من المناجم قرب الزويرات حتى ميناء نواذيبو."
+      "ar": "ويُعد قطار خام الحديد من أطول القطارات في العالم، إذ يهدر لمئات الكيلومترات من المناجم قرب الزويرات حتى ميناء نواذيبو.",
+      "img": "Nouadhibou_port.jpg"
     },
     {
       "en": "On the coast, the Banc d'Arguin National Park is a paradise for birds, with flamingos, pelicans and huge flocks of migrating shorebirds, and Imraguen fishermen who have long fished alongside dolphins.",
-      "ar": "وعلى الساحل، تُعد الحظيرة الوطنية لحوض آرغين جنة للطيور، ففيها النحام والبجع وأسراب هائلة من الطيور المهاجرة، وفيها صيادو إمراغن الذين اعتادوا منذ زمن طويل الصيد بمساعدة الدلافين."
+      "ar": "وعلى الساحل، تُعد الحظيرة الوطنية لحوض آرغين جنة للطيور، ففيها النحام والبجع وأسراب هائلة من الطيور المهاجرة، وفيها صيادو إمراغن الذين اعتادوا منذ زمن طويل الصيد بمساعدة الدلافين.",
+      "img": "010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg"
     },
     {
       "en": "At mealtimes you might share rice with fish, couscous or roasted mutton, and fresh camel milk is a treasured drink.",
-      "ar": "وعلى المائدة قد تتقاسم الأرز بالسمك أو الكسكس أو لحم الضأن المشوي، ويبقى حليب الإبل الطازج شرابًا عزيزًا على القلوب."
+      "ar": "وعلى المائدة قد تتقاسم الأرز بالسمك أو الكسكس أو لحم الضأن المشوي، ويبقى حليب الإبل الطازج شرابًا عزيزًا على القلوب.",
+      "img": "Thieboudienne.JPG"
     },
     {
       "en": "Poetry is deeply loved here. Traditional musicians play the tidinit, a small lute, while women play the ardin, a harp with a round gourd for its body.",
-      "ar": "للشعر مكانة عظيمة هنا. يعزف الموسيقيون التقليديون على التيدينيت، وهو عود صغير، بينما تعزف النساء على الآردين، وهو قيثارة جسمها قرعة مستديرة."
+      "ar": "للشعر مكانة عظيمة هنا. يعزف الموسيقيون التقليديون على التيدينيت، وهو عود صغير، بينما تعزف النساء على الآردين، وهو قيثارة جسمها قرعة مستديرة.",
+      "img": "Tidjikja,marketstreet.jpg"
     },
     {
       "en": "Shukran, and safe travels. Cross the Senegal River to the south, and Senegal is waiting.",
-      "ar": "شكرًا لكم، ورحلة سعيدة. اعبروا نهر السنغال جنوبًا، فالسنغال في انتظاركم."
+      "ar": "شكرًا لكم، ورحلة سعيدة. اعبروا نهر السنغال جنوبًا، فالسنغال في انتظاركم.",
+      "img": "Kaedi,center.jpg"
     }
   ],
-  "next": ["Senegal", "Morocco", "Mali"]
+  "next": [
+    "Senegal",
+    "Morocco",
+    "Mali"
+  ]
 }

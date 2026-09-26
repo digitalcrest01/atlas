@@ -1,59 +1,79 @@
 {
   "country": "El Salvador",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "Sunday evening, and on street corners hot griddles are sizzling. Cooks pat balls of corn dough between their palms, stuff them with cheese, beans or pork, and flatten them into pupusas. The smell alone will make you hungry.",
-      "es-419": "Domingo por la tarde, y en las esquinas chisporrotean los comales. Las pupuseras palmean bolitas de masa de maíz, las rellenan de queso, frijoles o chicharrón y las aplastan hasta hacer pupusas. Solo el olor ya abre el apetito."
+      "es-419": "Domingo por la tarde, y en las esquinas chisporrotean los comales. Las pupuseras palmean bolitas de masa de maíz, las rellenan de queso, frijoles o chicharrón y las aplastan hasta hacer pupusas. Solo el olor ya abre el apetito.",
+      "img": "Pupusas_El_Salvador_Centro_America.JPG"
     },
     {
       "en": "Pupusas are El Salvador's national dish, eaten with curtido, a tangy pickled cabbage, and a light tomato sauce. There's even a National Pupusa Day every November.",
-      "es-419": "La pupusa es el plato nacional de El Salvador y se come con curtido, un repollo encurtido y picosito, y una salsa de tomate ligera. Hasta existe un Día Nacional de la Pupusa cada noviembre."
+      "es-419": "La pupusa es el plato nacional de El Salvador y se come con curtido, un repollo encurtido y picosito, y una salsa de tomate ligera. Hasta existe un Día Nacional de la Pupusa cada noviembre.",
+      "img": "Santa_Ana_Catedral_Nuestra_Señora_de_Santa_Ana_2.jpg"
     },
     {
       "en": "El Salvador is the smallest country on the Central American mainland, and the only one with no Caribbean coast. Its whole southern edge faces the Pacific Ocean.",
-      "es-419": "El Salvador es el país más pequeño de Centroamérica continental y el único sin costa en el Caribe. Todo su borde sur mira al océano Pacífico."
+      "es-419": "El Salvador es el país más pequeño de Centroamérica continental y el único sin costa en el Caribe. Todo su borde sur mira al océano Pacífico.",
+      "img": "GOF_Photo.jpg"
     },
     {
       "en": "It's often called the land of volcanoes. Cone after cone rises above coffee farms and forests, and Lake Coatepeque fills an ancient volcanic crater with brilliant blue water.",
-      "es-419": "Muchos lo llaman la tierra de los volcanes. Un cono tras otro se alza sobre cafetales y bosques, y el lago de Coatepeque llena un antiguo cráter volcánico con agua de un azul intenso."
+      "es-419": "Muchos lo llaman la tierra de los volcanes. Un cono tras otro se alza sobre cafetales y bosques, y el lago de Coatepeque llena un antiguo cráter volcánico con agua de un azul intenso.",
+      "img": "Santa_Ana_ES_Photomontage.jpg"
     },
     {
       "en": "About fourteen hundred years ago, a sudden eruption buried a small Maya farming village under ash. Today it's called Joya de Cerén, and archaeologists have found homes, gardens and even cooking pots just as people left them.",
-      "es-419": "Hace unos mil cuatrocientos años, una erupción repentina sepultó bajo la ceniza una pequeña aldea maya de agricultores. Hoy se llama Joya de Cerén, y los arqueólogos han encontrado casas, huertos y hasta ollas tal como la gente las dejó."
+      "es-419": "Hace unos mil cuatrocientos años, una erupción repentina sepultó bajo la ceniza una pequeña aldea maya de agricultores. Hoy se llama Joya de Cerén, y los arqueólogos han encontrado casas, huertos y hasta ollas tal como la gente las dejó.",
+      "img": "ES_Joya_Ceren_05_2012_Estructura_9_Area_2_Tamazcal_wide_angle_1479.JPG"
     },
     {
       "en": "Salvadorans often call themselves guanacos, and they're known for working hard and joking a lot. If someone says qué chivo, they mean how cool!",
-      "es-419": "Los salvadoreños se dicen a sí mismos guanacos, y tienen fama de trabajadores y bromistas. Si alguien dice «¡qué chivo!», quiere decir que algo está buenísimo."
+      "es-419": "Los salvadoreños se dicen a sí mismos guanacos, y tienen fama de trabajadores y bromistas. Si alguien dice «¡qué chivo!», quiere decir que algo está buenísimo.",
+      "img": "Monumento_al_Salvador_del_Mundo_1.jpg"
     },
     {
       "en": "Along the Ruta de las Flores, the road of flowers, mountain villages are painted with bright murals. In Juayúa, a weekend food fair fills the plaza with grills, soups and sweets.",
-      "es-419": "En la Ruta de las Flores, los pueblos de montaña están pintados con murales de colores. En Juayúa, una feria gastronómica de fin de semana llena la plaza de parrillas, sopas y dulces."
+      "es-419": "En la Ruta de las Flores, los pueblos de montaña están pintados con murales de colores. En Juayúa, una feria gastronómica de fin de semana llena la plaza de parrillas, sopas y dulces.",
+      "img": "Cordillera_de_Apaneca.jpg"
     },
     {
       "en": "In Suchitoto, a quiet colonial town of cobbled streets, workshops still dye cloth a deep blue with indigo, a plant once so valuable here that it was called blue gold.",
-      "es-419": "En Suchitoto, un tranquilo pueblo colonial de calles empedradas, algunos talleres todavía tiñen tela de azul profundo con añil, una planta que aquí llegó a valer tanto que la llamaban oro azul."
+      "es-419": "En Suchitoto, un tranquilo pueblo colonial de calles empedradas, algunos talleres todavía tiñen tela de azul profundo con añil, una planta que aquí llegó a valer tanto que la llamaban oro azul.",
+      "img": "Suchitoto.jpg"
     },
     {
       "en": "The Pacific coast has dark volcanic sand and long, rolling waves, and surfers from around the world come to beaches like El Tunco and El Zonte.",
-      "es-419": "La costa del Pacífico tiene arena volcánica oscura y olas largas, y surfistas de todo el mundo llegan a playas como El Tunco y El Zonte."
+      "es-419": "La costa del Pacífico tiene arena volcánica oscura y olas largas, y surfistas de todo el mundo llegan a playas como El Tunco y El Zonte.",
+      "img": "PuertoLaLibertad_SV.jpg"
     },
     {
       "en": "San Salvador, the capital, lies in a valley beneath its own volcano, with bustling markets, a lively old centre and families strolling through the plazas as the evening cools.",
-      "es-419": "San Salvador, la capital, está en un valle al pie de su propio volcán, con mercados llenos de gente, un centro histórico animado y familias que pasean por las plazas cuando refresca la tarde."
+      "es-419": "San Salvador, la capital, está en un valle al pie de su propio volcán, con mercados llenos de gente, un centro histórico animado y familias que pasean por las plazas cuando refresca la tarde.",
+      "img": "Santa_Tecla_y_volcán_de_San_Salvador_(6803608805).jpg"
     },
     {
       "en": "Some towns still cherish Nahuat, the language of the Pipil people, and children are learning its words again, like Cuzcatlán, the old name for this land, often translated as place of precious jewels.",
-      "es-419": "Algunos pueblos aún atesoran el náhuat, la lengua del pueblo pipil, y los niños vuelven a aprender sus palabras, como Cuscatlán, el antiguo nombre de esta tierra, que suele traducirse como lugar de joyas preciosas."
+      "es-419": "Algunos pueblos aún atesoran el náhuat, la lengua del pueblo pipil, y los niños vuelven a aprender sus palabras, como Cuscatlán, el antiguo nombre de esta tierra, que suele traducirse como lugar de joyas preciosas.",
+      "img": "ES_Tazumal_06_2011_2236.jpg"
     },
     {
       "en": "And don't leave without a cup of Salvadoran coffee, grown in the cool highlands, or a glass of horchata made with ground morro seeds.",
-      "es-419": "Y no te vayas sin una taza de café salvadoreño, cultivado en las tierras altas y frescas, o un vaso de horchata de morro."
+      "es-419": "Y no te vayas sin una taza de café salvadoreño, cultivado en las tierras altas y frescas, o un vaso de horchata de morro.",
+      "img": "Crescentia_alata_compose.jpg"
     },
     {
       "en": "Gracias for coming. Cross the border to the northwest, and Guatemala is waiting with its lakes, volcanoes and ancient Maya cities.",
-      "es-419": "¡Gracias por venir! Cruza la frontera hacia el noroeste y Guatemala te espera con sus lagos, sus volcanes y sus antiguas ciudades mayas."
+      "es-419": "¡Gracias por venir! Cruza la frontera hacia el noroeste y Guatemala te espera con sus lagos, sus volcanes y sus antiguas ciudades mayas.",
+      "img": "Iglesia_Colonial_Metapan.jpg"
     }
   ],
-  "next": ["Guatemala", "Honduras", "Nicaragua"]
+  "next": [
+    "Guatemala",
+    "Honduras",
+    "Nicaragua"
+  ]
 }

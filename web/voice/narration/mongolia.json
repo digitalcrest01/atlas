@@ -1,59 +1,79 @@
 {
   "country": "Mongolia",
-  "languages": ["en", "mn"],
+  "languages": [
+    "en",
+    "mn"
+  ],
   "segments": [
     {
       "en": "Under an enormous blue sky, a rider gallops across the grassland towards a round white tent. Mongolia is called the Land of the Eternal Blue Sky, and on most days the sun really does shine.",
-      "mn": "Уудам цэнхэр тэнгэрийн дор нэгэн морьтон тал нутгийг гатлан цагаан дугуй гэр рүү давхина. Монголыг Мөнх хөх тэнгэрийн орон гэдэг бөгөөд жилийн ихэнх өдөр нар гэрэлтэж байдаг."
+      "mn": "Уудам цэнхэр тэнгэрийн дор нэгэн морьтон тал нутгийг гатлан цагаан дугуй гэр рүү давхина. Монголыг Мөнх хөх тэнгэрийн орон гэдэг бөгөөд жилийн ихэнх өдөр нар гэрэлтэж байдаг.",
+      "img": "Orchon-mongolei.JPG"
     },
     {
       "en": "That tent is a ger, the traditional home of herding families. It is made of a wooden lattice wrapped in thick felt, and it can be taken down and moved in just a few hours.",
-      "mn": "Тэр бол гэр, малчин айлын уламжлалт орон байр юм. Модон хана, унь, тооноо зузаан эсгийгээр бүрсэн гэрийг хэдхэн цагийн дотор буулгаж, нүүж болдог."
+      "mn": "Тэр бол гэр, малчин айлын уламжлалт орон байр юм. Модон хана, унь, тооноо зузаан эсгийгээр бүрсэн гэрийг хэдхэн цагийн дотор буулгаж, нүүж болдог.",
+      "img": "YurtnederzettingUlaanbaator.jpg"
     },
     {
       "en": "If you are invited inside, step over the threshold, never on it, and move around clockwise. Your host will offer you salty milk tea, which you accept with your right hand.",
-      "mn": "Гэрт урилга авбал босгыг алхаж ор, хэзээ ч бүү гишгэ, нарны зөв эргэж яваарай. Гэрийн эзэн танд давстай сүүтэй цай барих бөгөөд та баруун гараараа тосон авна."
+      "mn": "Гэрт урилга авбал босгыг алхаж ор, хэзээ ч бүү гишгэ, нарны зөв эргэж яваарай. Гэрийн эзэн танд давстай сүүтэй цай барих бөгөөд та баруун гараараа тосон авна.",
+      "img": "Tsai.JPG"
     },
     {
       "en": "Many families still move with the seasons, herding five kinds of animals: horses, cattle, camels, sheep and goats.",
-      "mn": "Олон айл одоо ч улирал дагаж нүүдэллэн, таван хошуу мал буюу адуу, үхэр, тэмээ, хонь, ямаа маллаж амьдардаг."
+      "mn": "Олон айл одоо ч улирал дагаж нүүдэллэн, таван хошуу мал буюу адуу, үхэр, тэмээ, хонь, ямаа маллаж амьдардаг.",
+      "img": "Camelus_bactrianus_(55026866188).jpg"
     },
     {
       "en": "In July, the whole country celebrates Naadam, the festival of the three manly games: wrestling, horse racing and archery. Today women and girls compete in archery too, and young jockeys race across the steppe for many kilometres.",
-      "mn": "Долдугаар сард бүх ард түмэн эрийн гурван наадам болох бөх, морь, сурын наадмаа тэмдэглэдэг. Өнөөдөр эмэгтэйчүүд, охид ч сур харваж, бяцхан унаачид олон километр тал хээрээр морь уралдуулдаг."
+      "mn": "Долдугаар сард бүх ард түмэн эрийн гурван наадам болох бөх, морь, сурын наадмаа тэмдэглэдэг. Өнөөдөр эмэгтэйчүүд, охид ч сур харваж, бяцхан унаачид олон километр тал хээрээр морь уралдуулдаг.",
+      "img": "Przewalskis_horse_02.jpg"
     },
     {
       "en": "In the thirteenth century, Chinggis Khaan united the Mongol tribes and founded an empire that grew into the largest land empire the world has ever known.",
-      "mn": "Арван гуравдугаар зуунд Чингис хаан монгол аймгуудыг нэгтгэж, дэлхийн түүхэн дэх хамгийн том газар нутагтай эзэнт гүрнийг байгуулжээ."
+      "mn": "Арван гуравдугаар зуунд Чингис хаан монгол аймгуудыг нэгтгэж, дэлхийн түүхэн дэх хамгийн том газар нутагтай эзэнт гүрнийг байгуулжээ.",
+      "img": "Erdene_Zuu_Monastery_05.jpg"
     },
     {
       "en": "The capital, Ulaanbaatar, is home to a large share of all Mongolians. At Gandan Monastery, monks chant beneath a towering golden statue, and pigeons flutter across the courtyard.",
-      "mn": "Нийслэл Улаанбаатарт монголчуудын олонх нь амьдардаг. Гандан хийдэд лам нар өндөр алтан шүтээний дор ном уншиж, хашаан дээгүүр тагтаа нисэлдэнэ."
+      "mn": "Нийслэл Улаанбаатарт монголчуудын олонх нь амьдардаг. Гандан хийдэд лам нар өндөр алтан шүтээний дор ном уншиж, хашаан дээгүүр тагтаа нисэлдэнэ.",
+      "img": "Gandantegchinlen_Monastery_(2024).jpg"
     },
     {
       "en": "In the south lies the Gobi, where dinosaur eggs were discovered at the Flaming Cliffs, and the great dunes of Khongoryn Els are said to sing when the wind blows.",
-      "mn": "Өмнө зүгт Говь нутаг бий. Тэнд Баянзагаас үлэг гүрвэлийн өндөг олдсон бөгөөд Хонгорын элсний өндөр манхнууд салхинд дуулдаг гэдэг."
+      "mn": "Өмнө зүгт Говь нутаг бий. Тэнд Баянзагаас үлэг гүрвэлийн өндөг олдсон бөгөөд Хонгорын элсний өндөр манхнууд салхинд дуулдаг гэдэг.",
+      "img": "Flaming_cliffs_5.jpg"
     },
     {
       "en": "In the north, Lake Khövsgöl is so clear you can see deep into its blue water. Around it spread forests where reindeer herders still make their home.",
-      "mn": "Хойд зүгт Хөвсгөл нуур маш тунгалаг тул цэнхэр усных нь гүн рүү харж болно. Түүнийг тойрсон ойд цаа буга маллагчид одоо ч амьдарсаар байна."
+      "mn": "Хойд зүгт Хөвсгөл нуур маш тунгалаг тул цэнхэр усных нь гүн рүү харж болно. Түүнийг тойрсон ойд цаа буга маллагчид одоо ч амьдарсаар байна.",
+      "img": "BlueHovsgol.jpg"
     },
     {
       "en": "In the far west, Kazakh eagle hunters train golden eagles to hunt foxes in winter, and each autumn they gather to celebrate at an eagle festival.",
-      "mn": "Баруун хязгаарт казах бүргэдчид бүргэд сургаж, өвөл үнэг агнадаг бөгөөд намар бүр бүргэдийн баяр наадамд цуглардаг."
+      "mn": "Баруун хязгаарт казах бүргэдчид бүргэд сургаж, өвөл үнэг агнадаг бөгөөд намар бүр бүргэдийн баяр наадамд цуглардаг.",
+      "img": "Olgii_and_Khovd_River.jpg"
     },
     {
       "en": "Mongolian music will give you shivers. Throat singers make two notes at once, and the morin khuur, a fiddle topped with a carved horse's head, can sound like galloping hooves.",
-      "mn": "Монгол хөгжим хүний сэтгэлийг хөдөлгөнө. Хөөмийчид нэг дор хоёр дуу гаргадаг бөгөөд оройдоо сийлсэн морины толгойтой морин хуур давхиж буй туурайн чимээ шиг эгшиглэдэг."
+      "mn": "Монгол хөгжим хүний сэтгэлийг хөдөлгөнө. Хөөмийчид нэг дор хоёр дуу гаргадаг бөгөөд оройдоо сийлсэн морины толгойтой морин хуур давхиж буй туурайн чимээ шиг эгшиглэдэг.",
+      "img": "Morin_Khuur,_Today's_North_Mongolian_Style.jpg"
     },
     {
       "en": "At Tsagaan Sar, the lunar new year, families steam hundreds of buuz, juicy meat dumplings, and greet their elders with a special gesture of respect.",
-      "mn": "Цагаан сараар айл бүр зуу зуугаар нь шүүслэг бууз жигнэж, ахмадуудтайгаа хүндэтгэлтэйгээр золгодог."
+      "mn": "Цагаан сараар айл бүр зуу зуугаар нь шүүслэг бууз жигнэж, ахмадуудтайгаа хүндэтгэлтэйгээр золгодог.",
+      "img": "MongoliaLastDay_153.JPG"
     },
     {
       "en": "Bayartai, goodbye! Head west beyond the Altai mountains, and Kazakhstan is waiting.",
-      "mn": "Баяртай! Алтайн нурууг даван баруун тийш яваарай, Казахстан таныг хүлээж байна."
+      "mn": "Баяртай! Алтайн нурууг даван баруун тийш яваарай, Казахстан таныг хүлээж байна.",
+      "img": "Tavan_Bogd_Mountain.jpg"
     }
   ],
-  "next": ["Kazakhstan", "China", "Russia"]
+  "next": [
+    "Kazakhstan",
+    "China",
+    "Russia"
+  ]
 }

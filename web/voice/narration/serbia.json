@@ -1,59 +1,79 @@
 {
   "country": "Serbia",
-  "languages": ["en", "sr"],
+  "languages": [
+    "en",
+    "sr"
+  ],
   "segments": [
     {
       "en": "From the old walls of Kalemegdan fortress in Belgrade, you can watch two great rivers meet. The Sava flows in from the west, the Danube sweeps past from the north, and together they carry on towards the Black Sea.",
-      "sr": "Са старих зидина Калемегдана у Београду може се видети како се сусрећу две велике реке. Сава долази са запада, Дунав протиче са севера, и заједно настављају ка Црном мору."
+      "sr": "Са старих зидина Калемегдана у Београду може се видети како се сусрећу две велике реке. Сава долази са запада, Дунав протиче са севера, и заједно настављају ка Црном мору.",
+      "img": "Свјетлопис_дијела_Калемегдана_и_ријеке_Саве_зими.jpg"
     },
     {
       "en": "Belgrade, the capital, has been fought over, destroyed and rebuilt many times, yet it's full of energy, with lively cafés, river boats turned into restaurants, and people strolling along the pedestrian street, Knez Mihailova, late into the evening.",
-      "sr": "Београд, престоница, много пута је освајан, рушен и поново грађен, а ипак је пун живота: живахне кафане, сплавови на рекама претворени у ресторане, и шетачи у Кнез Михаиловој до касно у ноћ."
+      "sr": "Београд, престоница, много пута је освајан, рушен и поново грађен, а ипак је пун живота: живахне кафане, сплавови на рекама претворени у ресторане, и шетачи у Кнез Михаиловој до касно у ноћ.",
+      "img": "Knez_Mihailova_street_-_panoramio.jpg"
     },
     {
       "en": "Serbia is a landlocked country in the heart of the Balkans. In the north, the flat, fertile plains of Vojvodina are golden with wheat and sunflowers, while the south rises into forested hills and mountains.",
-      "sr": "Србија је земља без излаза на море, у срцу Балкана. На северу се простиру равна, плодна поља Војводине, златна од пшенице и сунцокрета, а југ се издиже у шумовита брда и планине."
+      "sr": "Србија је земља без излаза на море, у срцу Балкана. На северу се простиру равна, плодна поља Војводине, златна од пшенице и сунцокрета, а југ се издиже у шумовита брда и планине.",
+      "img": "20230429.Ansichten_in_Novi_Sad.-039.jpg"
     },
     {
       "en": "Serbian is one of the few languages written in two alphabets. You'll see Cyrillic on official signs, and the Latin alphabet on shop fronts and in adverts, and most people read both without thinking twice.",
-      "sr": "Српски је један од ретких језика који се пише двама писмима. Ћирилицу ћете видети на званичним натписима, латиницу на излозима и рекламама, а већина људи чита оба писма без размишљања."
+      "sr": "Српски је један од ретких језика који се пише двама писмима. Ћирилицу ћете видети на званичним натписима, латиницу на излозима и рекламама, а већина људи чита оба писма без размишљања.",
+      "img": "View_of_Subotica_(2024).jpg"
     },
     {
       "en": "The Serbian Orthodox faith has shaped the country's culture. Medieval monasteries like Studenica, hidden in green valleys, hold beautiful frescoes painted centuries ago.",
-      "sr": "Српска православна вера обликовала је културу ове земље. Средњовековни манастири попут Студенице, скривени у зеленим долинама, чувају прелепе фреске осликане пре много векова."
+      "sr": "Српска православна вера обликовала је културу ове земље. Средњовековни манастири попут Студенице, скривени у зеленим долинама, чувају прелепе фреске осликане пре много векова.",
+      "img": "Manastir_Studenica,_Bogorodičina_crkva_sa_ulaznim_portalom.jpg"
     },
     {
       "en": "One of the most special family days is the slava, when each family celebrates its own patron saint. The door is open to friends and relatives, a candle is lit, and there's a special wheat dish called žito and a decorated bread.",
-      "sr": "Један од најлепших породичних празника је слава, када свака породица слави свог свеца заштитника. Врата су отворена за пријатеље и родбину, пали се свећа, а на столу су жито и славски колач."
+      "sr": "Један од најлепших породичних празника је слава, када свака породица слави свог свеца заштитника. Врата су отворена за пријатеље и родбину, пали се свећа, а на столу су жито и славски колач.",
+      "img": "Sveti_Jovan.jpg"
     },
     {
       "en": "Hospitality is taken seriously. Guests are often welcomed with slatko, a spoonful of fruit preserve, and a glass of water, and then fed far more than they can eat.",
-      "sr": "Гостопримство се схвата веома озбиљно. Гостима се често прво послужи слатко и чаша воде, а затим их нуде храном много више него што могу да поједу."
+      "sr": "Гостопримство се схвата веома озбиљно. Гостима се често прво послужи слатко и чаша воде, а затим их нуде храном много више него што могу да поједу.",
+      "img": "Slatko_fragaria_vesca_sumske_jagode_woodland_strawberry_Vlasotince.jpg"
     },
     {
       "en": "Serbian food is hearty. Try ćevapi, little grilled sausages served in flatbread with onions, and kajmak, a rich, creamy spread. Ajvar, a relish of roasted red peppers, is often made at home in autumn.",
-      "sr": "Српска кухиња је обилна. Пробајте ћевапе у лепињи са луком и кајмаком. Ајвар, намаз од печених црвених паприка, често се спрема код куће у јесен."
+      "sr": "Српска кухиња је обилна. Пробајте ћевапе у лепињи са луком и кајмаком. Ајвар, намаз од печених црвених паприка, често се спрема код куће у јесен.",
+      "img": "Cevapi_s_kajmakom.jpg"
     },
     {
       "en": "Every summer, in the small town of Guča, brass bands gather for a famous trumpet festival, and the whole town dances to the blaring horns for days.",
-      "sr": "Сваког лета, у малом месту Гучи, окупљају се трубачки оркестри на чувеном сабору трубача, а цело место данима игра уз звуке труба."
+      "sr": "Сваког лета, у малом месту Гучи, окупљају се трубачки оркестри на чувеном сабору трубача, а цело место данима игра уз звуке труба.",
+      "img": "Gucastatue.JPG"
     },
     {
       "en": "The inventor Nikola Tesla, who helped bring electricity into homes around the world, was of Serbian heritage, and there's a museum dedicated to him in Belgrade.",
-      "sr": "Проналазач Никола Тесла, који је помогао да струја стигне у домове широм света, био је српског порекла, а у Београду постоји музеј посвећен њему."
+      "sr": "Проналазач Никола Тесла, који је помогао да струја стигне у домове широм света, био је српског порекла, а у Београду постоји музеј посвећен њему.",
+      "img": "Genčićeva_kuća_6.jpg"
     },
     {
       "en": "Serbians love sport, especially basketball, water polo, volleyball and tennis, and a big match can bring the whole country together in front of the television.",
-      "sr": "Срби воле спорт, нарочито кошарку, ватерполо, одбојку и тенис, а велика утакмица може окупити целу земљу испред телевизора."
+      "sr": "Срби воле спорт, нарочито кошарку, ватерполо, одбојку и тенис, а велика утакмица може окупити целу земљу испред телевизора.",
+      "img": "Panorama_Belgrad.jpg"
     },
     {
       "en": "In the east, the Danube squeezes through the dramatic Iron Gates gorge, where steep cliffs rise straight from the water.",
-      "sr": "На истоку се Дунав пробија кроз драматичну Ђердапску клисуру, где се стрме литице уздижу право из воде."
+      "sr": "На истоку се Дунав пробија кроз драматичну Ђердапску клисуру, где се стрме литице уздижу право из воде.",
+      "img": "Veliki_Kazan.jpg"
     },
     {
       "en": "Hvala, thank you, for your visit. Follow the Danube downstream through the Iron Gates, and Romania is waiting on the other bank.",
-      "sr": "Хвала на посети! Пратите Дунав низводно кроз Ђердап, и на другој обали чека вас Румунија."
+      "sr": "Хвала на посети! Пратите Дунав низводно кроз Ђердап, и на другој обали чека вас Румунија.",
+      "img": "Golubac_Fortress_01.jpg"
     }
   ],
-  "next": ["Romania", "Hungary", "Bosnia and Herzegovina"]
+  "next": [
+    "Romania",
+    "Hungary",
+    "Bosnia and Herzegovina"
+  ]
 }

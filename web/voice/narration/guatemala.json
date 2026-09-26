@@ -1,55 +1,74 @@
 {
   "country": "Guatemala",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "Dawn over Lake Atitlán. Mist lifts off the water, three volcanoes appear one by one, and small boats carry people between the villages along the shore. Few places on Earth wake up so beautifully.",
-      "es-419": "Amanece sobre el lago de Atitlán. La neblina se levanta del agua, tres volcanes aparecen uno tras otro y las lanchitas llevan a la gente entre los pueblos de la orilla. Pocos lugares en el mundo despiertan con tanta belleza."
+      "es-419": "Amanece sobre el lago de Atitlán. La neblina se levanta del agua, tres volcanes aparecen uno tras otro y las lanchitas llevan a la gente entre los pueblos de la orilla. Pocos lugares en el mundo despiertan con tanta belleza.",
+      "img": "Volcan-San-Pedro-Panorama.JPG"
     },
     {
       "en": "Guatemala lies in Central America, between Mexico and Honduras, with the Pacific on one side and a short stretch of Caribbean coast on the other. Its highlands are dotted with volcanoes, and some of them still smoke.",
-      "es-419": "Guatemala está en Centroamérica, entre México y Honduras, con el Pacífico de un lado y un pedacito de costa caribeña del otro. Su altiplano está salpicado de volcanes, y algunos todavía echan humo."
+      "es-419": "Guatemala está en Centroamérica, entre México y Honduras, con el Pacífico de un lado y un pedacito de costa caribeña del otro. Su altiplano está salpicado de volcanes, y algunos todavía echan humo.",
+      "img": "In_Antigua_Guatemala-Volcan_de_Fuego_(6849909334).jpg"
     },
     {
       "en": "This is the heartland of the Maya. Many Guatemalans are Maya today, and alongside Spanish you'll hear more than twenty Mayan languages, such as K'iche', Kaqchikel and Q'eqchi'.",
-      "es-419": "Esta es la tierra de los mayas. Muchos guatemaltecos son mayas hoy en día, y además del español se escuchan más de veinte idiomas mayas, como el k'iche', el kaqchikel y el q'eqchi'."
+      "es-419": "Esta es la tierra de los mayas. Muchos guatemaltecos son mayas hoy en día, y además del español se escuchan más de veinte idiomas mayas, como el k'iche', el kaqchikel y el q'eqchi'.",
+      "img": "Catedral_of_Quetzaltenango.jpg"
     },
     {
       "en": "Deep in the northern jungle of Petén stands Tikal, an ancient Maya city. Its stone temples rise above the treetops, and at sunrise you can hear howler monkeys roaring and toucans calling.",
-      "es-419": "En lo profundo de la selva de Petén, en el norte, está Tikal, una antigua ciudad maya. Sus templos de piedra se alzan por encima de los árboles, y al amanecer se oye rugir a los monos aulladores y cantar a los tucanes."
+      "es-419": "En lo profundo de la selva de Petén, en el norte, está Tikal, una antigua ciudad maya. Sus templos de piedra se alzan por encima de los árboles, y al amanecer se oye rugir a los monos aulladores y cantar a los tucanes.",
+      "img": "Tikal_3.jpg"
     },
     {
       "en": "Look at the clothes and you'll see living art. Maya women weave huipiles, colourful blouses on backstrap looms, and each town has its own patterns and colours, so a trained eye can tell where someone is from.",
-      "es-419": "Fíjate en la ropa y verás arte vivo. Las mujeres mayas tejen huipiles, blusas llenas de color, en telares de cintura, y cada pueblo tiene sus propios diseños y colores, así que un ojo entrenado sabe de dónde viene cada quien."
+      "es-419": "Fíjate en la ropa y verás arte vivo. Las mujeres mayas tejen huipiles, blusas llenas de color, en telares de cintura, y cada pueblo tiene sus propios diseños y colores, así que un ojo entrenado sabe de dónde viene cada quien.",
+      "img": "Huipil,_skirt,_belt_(c.1950),_shawl,_Ixil_Maya,_Nebaj,_mid_to_late_20th_century,_cotton_-_Textile_Museum_of_Canada_-_DSC01351.JPG"
     },
     {
       "en": "In the town of Chichicastenango, market days fill the streets with flowers, fruit, masks and textiles, while incense smoke curls up the steps of the old white church.",
-      "es-419": "En Chichicastenango, los días de mercado las calles se llenan de flores, frutas, máscaras y tejidos, mientras el humo del incienso sube por las gradas de la vieja iglesia blanca."
+      "es-419": "En Chichicastenango, los días de mercado las calles se llenan de flores, frutas, máscaras y tejidos, mientras el humo del incienso sube por las gradas de la vieja iglesia blanca.",
+      "img": "Santo_Tomas_Church,_Chichicastenango.jpg"
     },
     {
       "en": "Antigua, the old colonial capital, has cobbled streets, pastel-coloured houses and church ruins, all watched over by the Agua volcano. During Holy Week, people make carpets of coloured sawdust and flowers on the streets for processions to walk over.",
-      "es-419": "Antigua, la antigua capital colonial, tiene calles empedradas, casas de colores pastel y ruinas de iglesias, todo bajo la mirada del volcán de Agua. En Semana Santa, la gente hace alfombras de aserrín de colores y flores en las calles para que pasen las procesiones."
+      "es-419": "Antigua, la antigua capital colonial, tiene calles empedradas, casas de colores pastel y ruinas de iglesias, todo bajo la mirada del volcán de Agua. En Semana Santa, la gente hace alfombras de aserrín de colores y flores en las calles para que pasen las procesiones.",
+      "img": "Antigua_-_Arco.jpg"
     },
     {
       "en": "Corn is at the heart of life here. The Maya holy book, the Popol Vuh, tells that the first people were made from maize. Tortillas come with almost every meal.",
-      "es-419": "El maíz está en el corazón de la vida aquí. El libro sagrado de los mayas, el Popol Vuh, cuenta que los primeros seres humanos fueron hechos de maíz. Las tortillas acompañan casi todas las comidas."
+      "es-419": "El maíz está en el corazón de la vida aquí. El libro sagrado de los mayas, el Popol Vuh, cuenta que los primeros seres humanos fueron hechos de maíz. Las tortillas acompañan casi todas las comidas.",
+      "img": "Cocido,_o_caldo_de_res.jpg"
     },
     {
       "en": "Try pepián, a rich stew thickened with toasted seeds and chillies, and at Christmas, tamales wrapped in banana leaves. For something sweet, there's hot chocolate, made from cacao the Maya prized long ago.",
-      "es-419": "Prueba el pepián, un caldo espeso con semillas tostadas y chiles, y en Navidad, los tamales envueltos en hoja de plátano. Para algo dulce, hay chocolate caliente, hecho del cacao que los mayas ya apreciaban hace siglos."
+      "es-419": "Prueba el pepián, un caldo espeso con semillas tostadas y chiles, y en Navidad, los tamales envueltos en hoja de plátano. Para algo dulce, hay chocolate caliente, hecho del cacao que los mayas ya apreciaban hace siglos.",
+      "img": "Cocinando_El_Pepian.jpg"
     },
     {
       "en": "On the first of November, in Santiago Sacatepéquez and Sumpango, families fly giant round kites in the cemeteries, some many metres wide, to send messages to loved ones who have passed away.",
-      "es-419": "El primero de noviembre, en Santiago Sacatepéquez y en Sumpango, las familias elevan barriletes gigantes en los cementerios, algunos de muchos metros, para mandar mensajes a sus seres queridos que ya partieron."
+      "es-419": "El primero de noviembre, en Santiago Sacatepéquez y en Sumpango, las familias elevan barriletes gigantes en los cementerios, algunos de muchos metros, para mandar mensajes a sus seres queridos que ya partieron.",
+      "img": "Semuc_Champey,_Guatemala.jpg"
     },
     {
       "en": "Listen for the marimba, the national instrument, a big wooden xylophone played by several musicians at once. Its warm, rippling notes fill plazas and parties across the country.",
-      "es-419": "Escucha la marimba, el instrumento nacional, un gran xilófono de madera que tocan varios músicos a la vez. Sus notas cálidas llenan las plazas y las fiestas de todo el país."
+      "es-419": "Escucha la marimba, el instrumento nacional, un gran xilófono de madera que tocan varios músicos a la vez. Sus notas cálidas llenan las plazas y las fiestas de todo el país.",
+      "img": "Marimba_One_4000_Series.jpg"
     },
     {
       "en": "Before you go, look up for the quetzal, the shimmering green bird that gives the money its name. Then follow the jungle north into Mexico, where more Maya cities are waiting.",
-      "es-419": "Antes de irte, busca en lo alto al quetzal, el pájaro verde brillante que le da nombre a la moneda. Luego sigue la selva hacia el norte, hasta México, donde te esperan más ciudades mayas."
+      "es-419": "Antes de irte, busca en lo alto al quetzal, el pájaro verde brillante que le da nombre a la moneda. Luego sigue la selva hacia el norte, hasta México, donde te esperan más ciudades mayas.",
+      "img": "Flores_Island,_Guatemala_(29105873665).jpg"
     }
   ],
-  "next": ["Mexico", "Belize", "Honduras"]
+  "next": [
+    "Mexico",
+    "Belize",
+    "Honduras"
+  ]
 }

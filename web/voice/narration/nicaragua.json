@@ -7,55 +7,68 @@
   "segments": [
     {
       "en": "At dawn in Nicaragua, the first thing you might hear is the pat, pat, pat of hands shaping corn dough into tortillas, and the smell of coffee drifting out of a kitchen door.",
-      "es-419": "Al amanecer en Nicaragua, lo primero que quizás escuches es el palmoteo de unas manos dándole forma a la masa de maíz para las tortillas, y el olor a café que sale por la puerta de una cocina."
+      "es-419": "Al amanecer en Nicaragua, lo primero que quizás escuches es el palmoteo de unas manos dándole forma a la masa de maíz para las tortillas, y el olor a café que sale por la puerta de una cocina.",
+      "img": "Nicaraguan_Nacatamal.jpg"
     },
     {
       "en": "This is the largest country in Central America, stretching from the Pacific Ocean to the Caribbean Sea. People often call it the land of lakes and volcanoes, and you will soon see why.",
-      "es-419": "Es el país más grande de Centroamérica y se extiende desde el océano Pacífico hasta el mar Caribe. Muchos lo llaman la tierra de lagos y volcanes, y pronto vas a entender por qué."
+      "es-419": "Es el país más grande de Centroamérica y se extiende desde el océano Pacífico hasta el mar Caribe. Muchos lo llaman la tierra de lagos y volcanes, y pronto vas a entender por qué.",
+      "img": "Cerro_Negro_Volcano_Crater_Nicaragua_August_2011.jpg"
     },
     {
       "en": "Lake Nicaragua is so big it feels like an inland sea. In the middle rises Ometepe, an island made of two volcanoes joined together, with farms and villages on their green slopes.",
-      "es-419": "El lago de Nicaragua, al que los nicas llaman Cocibolca, es tan grande que parece un mar interior. En medio se levanta Ometepe, una isla formada por dos volcanes unidos, con fincas y pueblitos en sus faldas verdes."
+      "es-419": "El lago de Nicaragua, al que los nicas llaman Cocibolca, es tan grande que parece un mar interior. En medio se levanta Ometepe, una isla formada por dos volcanes unidos, con fincas y pueblitos en sus faldas verdes.",
+      "img": "Lake_Nicaragua.jpg"
     },
     {
       "en": "Along the Pacific side, a chain of volcanoes stands in a row. At Masaya you can peer into a crater that still breathes smoke.",
-      "es-419": "Por el lado del Pacífico hay una cadena de volcanes en fila. En Masaya puedes asomarte a un cráter que todavía echa humo."
+      "es-419": "Por el lado del Pacífico hay una cadena de volcanes en fila. En Masaya puedes asomarte a un cráter que todavía echa humo.",
+      "img": "Volcan_Masaya2.jpg"
     },
     {
       "en": "Nicaraguans are warm and quick to joke, and they proudly call themselves Nicas. Their Spanish has its own flavour. Instead of tú, people say vos, and a friend might greet you with a cheerful ¿Qué onda?",
-      "es-419": "Los nicaragüenses son cálidos y bromistas, y con orgullo se llaman a sí mismos nicas. Su español tiene su propio sabor. En vez de tú, la gente dice vos, y un amigo te puede saludar con un alegre ¿Qué onda?"
+      "es-419": "Los nicaragüenses son cálidos y bromistas, y con orgullo se llaman a sí mismos nicas. Su español tiene su propio sabor. En vez de tú, la gente dice vos, y un amigo te puede saludar con un alegre ¿Qué onda?",
+      "img": "Church_in_Jinotega,_Nicaragua_2.jpg"
     },
     {
       "en": "The colonial city of Granada sits on the shore of the great lake, with painted houses in yellow, blue and red, and horse-drawn carriages clattering past the cathedral.",
-      "es-419": "La ciudad colonial de Granada está a orillas del gran lago, con casas pintadas de amarillo, azul y rojo, y coches jalados por caballos que pasan traqueteando frente a la catedral."
+      "es-419": "La ciudad colonial de Granada está a orillas del gran lago, con casas pintadas de amarillo, azul y rojo, y coches jalados por caballos que pasan traqueteando frente a la catedral.",
+      "img": "Catedral_de_Granada,_Nicaragua.jpg"
     },
     {
       "en": "Managua, the capital, lies beside another lake and is the busy heart of the country, while León is a city of students, poets and grand old churches.",
-      "es-419": "Managua, la capital, está a la orilla de otro lago y es el corazón ajetreado del país, mientras que León es una ciudad de estudiantes, poetas e iglesias antiguas y majestuosas."
+      "es-419": "Managua, la capital, está a la orilla de otro lago y es el corazón ajetreado del país, mientras que León es una ciudad de estudiantes, poetas e iglesias antiguas y majestuosas.",
+      "img": "Кафедральный_собор_в_Манагуа_(cropped).jpg"
     },
     {
       "en": "Poetry matters here. The great poet Rubén Darío was born in Nicaragua, and he changed the way Spanish poems were written. Many children can recite his verses by heart.",
-      "es-419": "Aquí la poesía importa mucho. El gran poeta Rubén Darío nació en Nicaragua y cambió la manera de escribir poesía en español. Muchos niños se saben sus versos de memoria."
+      "es-419": "Aquí la poesía importa mucho. El gran poeta Rubén Darío nació en Nicaragua y cambió la manera de escribir poesía en español. Muchos niños se saben sus versos de memoria.",
+      "img": "Nicaragua_2017-03-13_(33663091692).jpg"
     },
     {
       "en": "The everyday favourite is gallo pinto, rice and red beans fried together, eaten with eggs, cheese and fried plantain. For a feast there is nacatamal, a big corn parcel wrapped in banana leaves.",
-      "es-419": "El plato de todos los días es el gallo pinto, arroz con frijoles rojos fritos juntos, que se come con huevo, queso y plátano frito. Para las ocasiones especiales está el nacatamal, un gran bulto de masa de maíz envuelto en hoja de plátano."
+      "es-419": "El plato de todos los días es el gallo pinto, arroz con frijoles rojos fritos juntos, que se come con huevo, queso y plátano frito. Para las ocasiones especiales está el nacatamal, un gran bulto de masa de maíz envuelto en hoja de plátano.",
+      "img": "Gallo_Pinto.jpg"
     },
     {
       "en": "On the Caribbean coast, life has a different rhythm. Here there are Miskito, Garifuna and Creole communities, English and native languages are spoken, and coconut finds its way into bread and rice.",
-      "es-419": "En la costa caribe la vida tiene otro ritmo. Allí viven comunidades miskitas, garífunas y creoles, se hablan inglés y lenguas indígenas, y el coco aparece en el pan y en el arroz."
+      "es-419": "En la costa caribe la vida tiene otro ritmo. Allí viven comunidades miskitas, garífunas y creoles, se hablan inglés y lenguas indígenas, y el coco aparece en el pan y en el arroz.",
+      "img": "CornIsland.JPG"
     },
     {
       "en": "Baseball is the great national sport, and on weekends every town field is full of families cheering. Nicaraguan players have gone on to play in the big leagues in the United States.",
-      "es-419": "El béisbol es el gran deporte nacional, y los fines de semana los campos de cada pueblo se llenan de familias echando porras. Varios peloteros nicas han llegado a jugar en las Grandes Ligas de Estados Unidos."
+      "es-419": "El béisbol es el gran deporte nacional, y los fines de semana los campos de cada pueblo se llenan de familias echando porras. Varios peloteros nicas han llegado a jugar en las Grandes Ligas de Estados Unidos.",
+      "img": "Cape_Gracias_a_Dios.jpg"
     },
     {
       "en": "In early December comes La Purísima, a joyful celebration of the Virgin Mary. Families build altars at home, and neighbours go door to door calling out, who brings us so much joy? They are rewarded with songs and sweets.",
-      "es-419": "A principios de diciembre llega La Purísima, una fiesta alegre en honor a la Virgen María. La gente arma altares en casa y los vecinos van de puerta en puerta gritando ¿Quién causa tanta alegría?, y reciben cantos y dulces."
+      "es-419": "A principios de diciembre llega La Purísima, una fiesta alegre en honor a la Virgen María. La gente arma altares en casa y los vecinos van de puerta en puerta gritando ¿Quién causa tanta alegría?, y reciben cantos y dulces.",
+      "img": "Collage_leon.jpg"
     },
     {
       "en": "Before you go, sit on a porch in a rocking chair as the evening cools, just as Nicas do. Then head south across the Río San Juan, where Costa Rica is waiting.",
-      "es-419": "Antes de irte, siéntate en una mecedora en el corredor mientras refresca la tarde, como hacen los nicas. Luego sigue hacia el sur cruzando el río San Juan, donde te espera Costa Rica."
+      "es-419": "Antes de irte, siéntate en una mecedora en el corredor mientras refresca la tarde, como hacen los nicas. Luego sigue hacia el sur cruzando el río San Juan, donde te espera Costa Rica.",
+      "img": "Riosanjuan.jpg"
     }
   ],
   "next": [

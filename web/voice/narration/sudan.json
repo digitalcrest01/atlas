@@ -1,34 +1,44 @@
 {
   "country": "Sudan",
-  "languages": ["en", "ar"],
+  "languages": [
+    "en",
+    "ar"
+  ],
   "segments": [
     {
       "en": "In Khartoum, two great rivers meet. The Blue Nile and the White Nile flow side by side for a while, each a different colour, before joining to become the mighty Nile on its long journey north.",
-      "ar": "في الخرطوم يلتقي نهران عظيمان. يجري النيل الأزرق والنيل الأبيض جنبًا إلى جنب لمسافة، لكلٍّ منهما لونه، ثم يتحدان ليصبحا نهر النيل العظيم في رحلته الطويلة نحو الشمال."
+      "ar": "في الخرطوم يلتقي نهران عظيمان. يجري النيل الأزرق والنيل الأبيض جنبًا إلى جنب لمسافة، لكلٍّ منهما لونه، ثم يتحدان ليصبحا نهر النيل العظيم في رحلته الطويلة نحو الشمال.",
+      "img": "©Nile-Project_-Sari_Omer_0025.jpg"
     },
     {
       "en": "Sudan has more pyramids than Egypt. At Meroë, dozens of steep, narrow pyramids rise from the desert sand, built by the rulers of the ancient Kingdom of Kush.",
-      "ar": "في السودان أهرامات أكثر مما في مصر. ففي مروي تنتصب عشرات الأهرامات الشاهقة النحيلة فوق رمال الصحراء، شيّدها ملوك مملكة كوش القديمة."
+      "ar": "في السودان أهرامات أكثر مما في مصر. ففي مروي تنتصب عشرات الأهرامات الشاهقة النحيلة فوق رمال الصحراء، شيّدها ملوك مملكة كوش القديمة.",
+      "img": "NubianMeroePyramids30sep2005(2).jpg"
     },
     {
       "en": "The kings of Kush once ruled Egypt too, and their temples at Jebel Barkal stand beside a flat-topped mountain that was considered sacred.",
-      "ar": "وقد حكم ملوك كوش مصر أيضًا في زمنٍ مضى، وتقوم معابدهم عند جبل البركل بجوار جبلٍ مسطّح القمة كان يُعدّ مقدسًا."
+      "ar": "وقد حكم ملوك كوش مصر أيضًا في زمنٍ مضى، وتقوم معابدهم عند جبل البركل بجوار جبلٍ مسطّح القمة كان يُعدّ مقدسًا.",
+      "img": "Gebel_Barkal.jpg"
     },
     {
       "en": "Sudanese hospitality is legendary. Guests are welcomed with cool water, then sweet tea or strong coffee from a jebena, a clay pot, often spiced with ginger.",
-      "ar": "كرم الضيافة السوداني مضرب المثل. يُستقبل الضيف بالماء البارد، ثم بالشاي المحلّى أو بالقهوة القوية من الجَبَنة، وهي إبريق من الفخار، وكثيرًا ما تُتبّل بالزنجبيل."
+      "ar": "كرم الضيافة السوداني مضرب المثل. يُستقبل الضيف بالماء البارد، ثم بالشاي المحلّى أو بالقهوة القوية من الجَبَنة، وهي إبريق من الفخار، وكثيرًا ما تُتبّل بالزنجبيل.",
+      "img": "Jebena_Ethiopian_coffee_pot.jpg"
     },
     {
       "en": "Many meals are shared from one large tray. Ful medames, slow-cooked fava beans with oil and spices, is a favourite breakfast, and kisra, a thin fermented flatbread, is eaten with stews called mullah.",
-      "ar": "تُتناول وجبات كثيرة من صينية كبيرة واحدة يلتفّ حولها الجميع. والفول المدمس بالزيت والتوابل فطورٌ محبوب، أما الكِسرة، وهي خبز رقيق مخمّر، فتؤكل مع أنواع من الملاح."
+      "ar": "تُتناول وجبات كثيرة من صينية كبيرة واحدة يلتفّ حولها الجميع. والفول المدمس بالزيت والتوابل فطورٌ محبوب، أما الكِسرة، وهي خبز رقيق مخمّر، فتؤكل مع أنواع من الملاح.",
+      "img": "ShahanFul.jpg"
     },
     {
       "en": "Many men wear the jalabiya, a long white robe, with a wrapped turban called an imma, while women drape themselves in the toob, a long, colourful cloth worn gracefully over the body and head.",
-      "ar": "يرتدي كثير من الرجال الجلابية البيضاء الطويلة مع العِمّة الملفوفة على الرأس، بينما تلتفّ النساء بالثوب، وهو قماش طويل ملوّن يُلبس برشاقة على الجسد والرأس."
+      "ar": "يرتدي كثير من الرجال الجلابية البيضاء الطويلة مع العِمّة الملفوفة على الرأس، بينما تلتفّ النساء بالثوب، وهو قماش طويل ملوّن يُلبس برشاقة على الجسد والرأس.",
+      "img": "Omdurman_Market.JPG"
     },
     {
       "en": "Arabic is the main language, and Sudanese Arabic has its own gentle rhythm. Many other languages are spoken too, among them Nubian, Beja and Fur.",
-      "ar": "العربية هي اللغة الرئيسية، وللعامية السودانية إيقاعها العذب الخاص. وتُتحدث لغات أخرى كثيرة أيضًا، من بينها النوبية والبجاوية والفوراوية."
+      "ar": "العربية هي اللغة الرئيسية، وللعامية السودانية إيقاعها العذب الخاص. وتُتحدث لغات أخرى كثيرة أيضًا، من بينها النوبية والبجاوية والفوراوية.",
+      "img": "Suakin,el-Geyf_mosque.jpg"
     },
     {
       "en": "The north is desert, where golden dunes meet the green ribbon of the Nile. Further south, the land turns to savanna, and in the west rise the volcanic peaks of Jebel Marra.",
@@ -36,15 +46,18 @@
     },
     {
       "en": "On the east coast, Port Sudan faces the Red Sea, where coral reefs shelter sharks, turtles and shoals of bright tropical fish.",
-      "ar": "وعلى الساحل الشرقي تطلّ بورتسودان على البحر الأحمر، حيث تؤوي الشعاب المرجانية أسماك القرش والسلاحف وأسراب الأسماك الاستوائية الزاهية."
+      "ar": "وعلى الساحل الشرقي تطلّ بورتسودان على البحر الأحمر، حيث تؤوي الشعاب المرجانية أسماك القرش والسلاحف وأسراب الأسماك الاستوائية الزاهية.",
+      "img": "PortSudan_center_harbour.jpg"
     },
     {
       "en": "On Friday afternoons in Omdurman, Sufi followers gather by a shrine and dance in circles, spinning in patchwork robes as the drums beat faster and faster.",
-      "ar": "في عصر كل جمعة في أم درمان، يجتمع أتباع الطرق الصوفية عند أحد الأضرحة ويرقصون في حلقات، يدورون بأثوابهم المرقّعة الملوّنة كلما تسارعت دقات الطبول."
+      "ar": "في عصر كل جمعة في أم درمان، يجتمع أتباع الطرق الصوفية عند أحد الأضرحة ويرقصون في حلقات، يدورون بأثوابهم المرقّعة الملوّنة كلما تسارعت دقات الطبول.",
+      "img": "Omdurman,old-bridge.jpg"
     },
     {
       "en": "Music fills weddings and gatherings. Many Sudanese songs are built on a five-note scale, giving them a sound that is instantly recognisable across the region.",
-      "ar": "تملأ الموسيقى الأعراس والمجالس. وتقوم كثير من الأغاني السودانية على السلّم الخماسي، مما يمنحها نغمة يعرفها الناس في المنطقة كلها من أول سماع."
+      "ar": "تملأ الموسيقى الأعراس والمجالس. وتقوم كثير من الأغاني السودانية على السلّم الخماسي، مما يمنحها نغمة يعرفها الناس في المنطقة كلها من أول سماع.",
+      "img": "Ūd_MET_DP340079.jpg"
     },
     {
       "en": "Weddings can last for days, and brides decorate their hands and feet with fine, swirling patterns of henna.",
@@ -52,8 +65,13 @@
     },
     {
       "en": "People here will tell you that a guest is a blessing. Follow the Nile north, and Egypt is waiting for you.",
-      "ar": "سيقول لك الناس هنا إن الضيف بركة. اتبع النيل شمالًا، وستجد مصر في انتظارك."
+      "ar": "سيقول لك الناس هنا إن الضيف بركة. اتبع النيل شمالًا، وستجد مصر في انتظارك.",
+      "img": "Beautiful_nature_along_Nile_River_01.jpg"
     }
   ],
-  "next": ["Egypt", "South Sudan", "Eritrea"]
+  "next": [
+    "Egypt",
+    "South Sudan",
+    "Eritrea"
+  ]
 }

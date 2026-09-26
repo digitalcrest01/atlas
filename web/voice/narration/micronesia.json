@@ -1,19 +1,59 @@
 {
   "country": "Micronesia",
-  "languages": ["en"],
-  "segments": [
-    { "en": "Rain drums on broad green leaves, and waterfalls tumble down the mountains of Pohnpei. This is the Federated States of Micronesia, a nation of hundreds of islands spread across the western Pacific." },
-    { "en": "It is made up of four states, Yap, Chuuk, Pohnpei and Kosrae. Each has its own languages and traditions, so travelling between them can feel like visiting four different countries, with English helping everyone understand each other." },
-    { "en": "Off the coast of Pohnpei lies Nan Madol, a city of stone built on small artificial islands in a lagoon. Its walls are made of huge basalt columns stacked like logs, and it was once the seat of powerful chiefs." },
-    { "en": "On Yap, you will find giant stone discs with a hole in the middle, called rai. Some are taller than a person. They were carried by canoe from Palau long ago and are still used in important exchanges, even though they are far too heavy to move." },
-    { "en": "Yapese traditions remain strong, with village meeting houses, colourful dances and deep respect for elders and chiefs. Visitors are expected to ask permission before walking through a village." },
-    { "en": "Chuuk Lagoon is famous for what lies beneath. Dozens of ships sunk during the Second World War now rest on the sea floor, covered in coral and home to fish, turtles and sharks." },
-    { "en": "Kosrae is known as the island of the sleeping lady, because the outline of its mountains looks like a woman lying on her back. It is quiet and green, with mangrove channels to paddle through." },
-    { "en": "On Pohnpei, the ceremonial drink sakau is made by pounding the roots of a pepper plant on a flat stone, and sharing it is a sign of respect and friendship." },
-    { "en": "The outer islands of Yap gave the Pacific some of its greatest navigators. Mau Piailug, from the tiny island of Satawal, helped revive long ocean voyages guided only by the stars, the waves and the birds." },
-    { "en": "Breadfruit, taro, bananas and reef fish are everyday foods. On Pohnpei, men proudly grow yams so enormous that it can take several people to carry one to a feast." },
-    { "en": "Life moves at island pace. Families gather in the evening, children play in the shallows, and a friendly greeting is never skipped." },
-    { "en": "Kalahngan, thank you, as they say on Pohnpei. Just to the west, the rock islands of Palau are waiting." }
+  "languages": [
+    "en"
   ],
-  "next": ["Palau", "Marshall Islands", "Papua New Guinea"]
+  "segments": [
+    {
+      "en": "Rain drums on broad green leaves, and waterfalls tumble down the mountains of Pohnpei. This is the Federated States of Micronesia, a nation of hundreds of islands spread across the western Pacific.",
+      "img": "Nan_Madol_5.jpg"
+    },
+    {
+      "en": "It is made up of four states, Yap, Chuuk, Pohnpei and Kosrae. Each has its own languages and traditions, so travelling between them can feel like visiting four different countries, with English helping everyone understand each other.",
+      "img": "Ducula_oceanica_townsendi_39750206.jpg"
+    },
+    {
+      "en": "Off the coast of Pohnpei lies Nan Madol, a city of stone built on small artificial islands in a lagoon. Its walls are made of huge basalt columns stacked like logs, and it was once the seat of powerful chiefs.",
+      "img": "Nan_madol.jpg"
+    },
+    {
+      "en": "On Yap, you will find giant stone discs with a hole in the middle, called rai. Some are taller than a person. They were carried by canoe from Palau long ago and are still used in important exchanges, even though they are far too heavy to move."
+    },
+    {
+      "en": "Yapese traditions remain strong, with village meeting houses, colourful dances and deep respect for elders and chiefs. Visitors are expected to ask permission before walking through a village.",
+      "img": "Monarcha_godeffroyi_33803351.jpg"
+    },
+    {
+      "en": "Chuuk Lagoon is famous for what lies beneath. Dozens of ships sunk during the Second World War now rest on the sea floor, covered in coral and home to fish, turtles and sharks.",
+      "img": "Weno_island_2.jpg"
+    },
+    {
+      "en": "Kosrae is known as the island of the sleeping lady, because the outline of its mountains looks like a woman lying on her back. It is quiet and green, with mangrove channels to paddle through.",
+      "img": "Ptilinopus_hernsheimi.jpg"
+    },
+    {
+      "en": "On Pohnpei, the ceremonial drink sakau is made by pounding the roots of a pepper plant on a flat stone, and sharing it is a sign of respect and friendship.",
+      "img": "Starr_070515-7054_Piper_methysticum.jpg"
+    },
+    {
+      "en": "The outer islands of Yap gave the Pacific some of its greatest navigators. Mau Piailug, from the tiny island of Satawal, helped revive long ocean voyages guided only by the stars, the waves and the birds."
+    },
+    {
+      "en": "Breadfruit, taro, bananas and reef fish are everyday foods. On Pohnpei, men proudly grow yams so enormous that it can take several people to carry one to a feast.",
+      "img": "Kambar_wh.jpg"
+    },
+    {
+      "en": "Life moves at island pace. Families gather in the evening, children play in the shallows, and a friendly greeting is never skipped.",
+      "img": "Inside_the_lagoon_of_Ant_Atoll,_southwest_of_Pohnpei_(Federated_States_of_Micronesia)_1.jpg"
+    },
+    {
+      "en": "Kalahngan, thank you, as they say on Pohnpei. Just to the west, the rock islands of Palau are waiting.",
+      "img": "Pohnpei_Lorikeet.jpg"
+    }
+  ],
+  "next": [
+    "Palau",
+    "Marshall Islands",
+    "Papua New Guinea"
+  ]
 }

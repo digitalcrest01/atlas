@@ -1,26 +1,34 @@
 {
   "country": "Taiwan",
-  "languages": ["en", "zh-Hant"],
+  "languages": [
+    "en",
+    "zh-Hant"
+  ],
   "segments": [
     {
       "en": "As evening falls in Taipei, the night markets light up. Steam rises from baskets of dumplings, oyster omelettes sizzle on hot griddles, and the famous smell of stinky tofu drifts through the crowd.",
-      "zh-Hant": "夜幕降臨台北，夜市一盞盞亮了起來。小籠包的蒸籠冒著熱氣，蚵仔煎在鐵板上滋滋作響，還有那出了名的臭豆腐味，在人群中飄散開來。"
+      "zh-Hant": "夜幕降臨台北，夜市一盞盞亮了起來。小籠包的蒸籠冒著熱氣，蚵仔煎在鐵板上滋滋作響，還有那出了名的臭豆腐味，在人群中飄散開來。",
+      "img": "Shilin_night_market_alley_2.jpg"
     },
     {
       "en": "Taiwan is an island off the coast of East Asia, and many people fondly say it's shaped like a sweet potato. High mountains run down its middle, with peaks rising close to four thousand metres.",
-      "zh-Hant": "台灣是東亞外海的一座島嶼，很多人親切地說它長得像一條番薯。高山縱貫島嶼中央，有些山峰高達將近四千公尺。"
+      "zh-Hant": "台灣是東亞外海的一座島嶼，很多人親切地說它長得像一條番薯。高山縱貫島嶼中央，有些山峰高達將近四千公尺。",
+      "img": "Central_Range.jpg"
     },
     {
       "en": "This is the birthplace of bubble tea, milky tea with chewy tapioca pearls, now sipped through fat straws all around the world.",
-      "zh-Hant": "這裡是珍珠奶茶的發源地。香濃的奶茶配上有嚼勁的粉圓，如今全世界的人都用粗吸管喝著它。"
+      "zh-Hant": "這裡是珍珠奶茶的發源地。香濃的奶茶配上有嚼勁的粉圓，如今全世界的人都用粗吸管喝著它。",
+      "img": "Tapioca_balls_(4507369304).jpg"
     },
     {
       "en": "In Taipei, the tall tower Taipei 101 looks like a stack of bamboo sections, and on New Year's Eve, fireworks burst from its sides.",
-      "zh-Hant": "在台北，台北101大樓看起來就像一節節堆疊的竹子，每到跨年夜，煙火就從大樓兩側綻放。"
+      "zh-Hant": "在台北，台北101大樓看起來就像一節節堆疊的竹子，每到跨年夜，煙火就從大樓兩側綻放。",
+      "img": "Taipei_Skyline_2022.06.29.jpg"
     },
     {
       "en": "Temples are everywhere, full of incense smoke and bright carved dragons. People come to pray and to toss moon blocks, curved red wooden pieces that answer questions with a yes or a no.",
-      "zh-Hant": "廟宇隨處可見，香煙裊裊，屋頂上雕著色彩鮮豔的龍。人們來這裡祈福，也來擲筊，用兩片紅色的彎月形木塊，向神明問出「是」或「不是」。"
+      "zh-Hant": "廟宇隨處可見，香煙裊裊，屋頂上雕著色彩鮮豔的龍。人們來這裡祈福，也來擲筊，用兩片紅色的彎月形木塊，向神明問出「是」或「不是」。",
+      "img": "Bangka_Lungshan_Temple_07.23.jpg"
     },
     {
       "en": "Taiwan's Indigenous peoples have lived here for thousands of years, in many distinct communities with their own languages. Their harvest festivals are full of song, dance and colourful costumes.",
@@ -28,32 +36,43 @@
     },
     {
       "en": "Mandarin is widely spoken and written in traditional characters. You'll also hear Taiwanese Hokkien and Hakka, and Indigenous languages in the mountain villages.",
-      "zh-Hant": "這裡普遍說華語，書寫用的是繁體字。你也會聽到台語和客語，而在山中的部落裡，還能聽到原住民族語。"
+      "zh-Hant": "這裡普遍說華語，書寫用的是繁體字。你也會聽到台語和客語，而在山中的部落裡，還能聽到原住民族語。",
+      "img": "Buildings_along_Dihua_Street_07.23_(6).jpg"
     },
     {
       "en": "On the east coast, Taroko Gorge cuts deep through marble cliffs, with a turquoise river rushing far below.",
-      "zh-Hant": "在東海岸，太魯閣峽谷深深切穿大理石峭壁，碧綠的溪水在谷底奔流。"
+      "zh-Hant": "在東海岸，太魯閣峽谷深深切穿大理石峭壁，碧綠的溪水在谷底奔流。",
+      "img": "Taroko_Gorge4.jpg"
     },
     {
       "en": "In the centre of the island, Sun Moon Lake mirrors the green hills, and in the Alishan mountains, people rise before dawn to watch the sun climb over a sea of clouds.",
-      "zh-Hant": "在島的中央，日月潭倒映著青翠的山巒；而在阿里山，人們天還沒亮就起床，等著看太陽從雲海中升起。"
+      "zh-Hant": "在島的中央，日月潭倒映著青翠的山巒；而在阿里山，人們天還沒亮就起床，等著看太陽從雲海中升起。",
+      "img": "Alishan,_Part_IV_-_Alishan5348.jpg"
     },
     {
       "en": "At the Lantern Festival, sky lanterns carrying people's wishes float up from the hills of Pingxi. At the Dragon Boat Festival, teams race along the rivers to the beat of drums.",
-      "zh-Hant": "元宵節時，寫滿心願的天燈從平溪的山間緩緩升空。端午節時，龍舟隊伍則隨著鼓聲在河上競渡。"
+      "zh-Hant": "元宵節時，寫滿心願的天燈從平溪的山間緩緩升空。端午節時，龍舟隊伍則隨著鼓聲在河上競渡。",
+      "img": "【新北景點】平溪。菁桐。十分一日遊_(32703564416).jpg"
     },
     {
       "en": "Beef noodle soup is a local passion, and on a hot summer day, nothing beats a mountain of shaved ice piled with fresh mango.",
-      "zh-Hant": "牛肉麵是大家的心頭好；炎炎夏日裡，最消暑的莫過於一大碗堆滿新鮮芒果的剉冰。"
+      "zh-Hant": "牛肉麵是大家的心頭好；炎炎夏日裡，最消暑的莫過於一大碗堆滿新鮮芒果的剉冰。",
+      "img": "Taipei_mangguobing.JPG"
     },
     {
       "en": "People here are known for their warmth and politeness. Use both hands to give or receive something, and you'll find a convenience store on almost every corner, open all night.",
-      "zh-Hant": "這裡的人以熱情有禮聞名。遞東西或接東西時要用雙手；而幾乎每個街角都有一家整夜營業的便利商店。"
+      "zh-Hant": "這裡的人以熱情有禮聞名。遞東西或接東西時要用雙手；而幾乎每個街角都有一家整夜營業的便利商店。",
+      "img": "Downtown_Tainan(2012)_(cropped).jpg"
     },
     {
       "en": "Before you leave, say 'xièxie', thank you. Across the sea to the northeast, Japan is waiting for you.",
-      "zh-Hant": "離開之前，說一聲「謝謝」吧。往東北方越過大海，日本正在等著你。"
+      "zh-Hant": "離開之前，說一聲「謝謝」吧。往東北方越過大海，日本正在等著你。",
+      "img": "Maobitou_Cape_01.jpg"
     }
   ],
-  "next": ["Japan", "Philippines", "South Korea"]
+  "next": [
+    "Japan",
+    "Philippines",
+    "South Korea"
+  ]
 }

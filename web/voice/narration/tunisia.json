@@ -1,6 +1,9 @@
 {
   "country": "Tunisia",
-  "languages": ["en", "ar"],
+  "languages": [
+    "en",
+    "ar"
+  ],
   "segments": [
     {
       "en": "Blue doors and whitewashed walls line the lanes of Sidi Bou Said, a village perched above the Gulf of Tunis, where you can sip mint tea with pine nuts while gazing out to sea.",
@@ -8,7 +11,8 @@
     },
     {
       "en": "Tunisia is home to the northernmost point of Africa. It has a long Mediterranean coast to the north and east, while in the south the land gives way to the Sahara.",
-      "ar": "في تونس تقع أقصى نقطة في شمال أفريقيا. ولها ساحل طويل على البحر المتوسط شمالًا وشرقًا، أما في الجنوب فتفسح الأرض المجال للصحراء الكبرى."
+      "ar": "في تونس تقع أقصى نقطة في شمال أفريقيا. ولها ساحل طويل على البحر المتوسط شمالًا وشرقًا، أما في الجنوب فتفسح الأرض المجال للصحراء الكبرى.",
+      "img": "Lac_de_Bizerte_3.jpg"
     },
     {
       "en": "Near Tunis lie the ruins of Carthage, a great city founded by Phoenician sailors long ago. Its general Hannibal famously marched elephants across the Alps.",
@@ -16,11 +20,13 @@
     },
     {
       "en": "In El Jem, a huge Roman amphitheatre towers over the town, and in the Bardo Museum, colourful Roman mosaics show everyday life from long ago.",
-      "ar": "وفي الجمّ يعلو مسرح روماني ضخم فوق المدينة، وفي متحف باردو تروي الفسيفساء الرومانية الملوّنة تفاصيل الحياة اليومية منذ قرون بعيدة."
+      "ar": "وفي الجمّ يعلو مسرح روماني ضخم فوق المدينة، وفي متحف باردو تروي الفسيفساء الرومانية الملوّنة تفاصيل الحياة اليومية منذ قرون بعيدة.",
+      "img": "Tunis,_musée_du_Bardo,_salle_de_Virgile_01.jpg"
     },
     {
       "en": "The medina of Tunis is a maze of souks, where craftsmen make red chechia caps, perfumes and copperware, and the call to prayer rings out from the Zitouna Mosque.",
-      "ar": "مدينة تونس العتيقة متاهة من الأسواق، يصنع فيها الحرفيون الشاشية الحمراء والعطور والأواني النحاسية، ويتردّد الأذان من جامع الزيتونة."
+      "ar": "مدينة تونس العتيقة متاهة من الأسواق، يصنع فيها الحرفيون الشاشية الحمراء والعطور والأواني النحاسية، ويتردّد الأذان من جامع الزيتونة.",
+      "img": "Medina_old_Town_of_Tunis.jpeg"
     },
     {
       "en": "Couscous is at the heart of Tunisian cooking, often shared on Fridays with lamb or fish and vegetables. Many dishes get their kick from harissa, a fiery red chilli paste.",
@@ -28,19 +34,23 @@
     },
     {
       "en": "Try brik, a crisp, thin pastry with a runny egg inside, eaten carefully so the yolk doesn't drip, or lablabi, a warming chickpea soup for cold mornings.",
-      "ar": "جرّب البريك، عجينة رقيقة مقرمشة في داخلها بيضة طريّة، تُؤكل بحذر حتى لا يسيل صفارها، أو اللبلابي، حساء الحمّص الذي يدفئ الصباحات الباردة."
+      "ar": "جرّب البريك، عجينة رقيقة مقرمشة في داخلها بيضة طريّة، تُؤكل بحذر حتى لا يسيل صفارها، أو اللبلابي، حساء الحمّص الذي يدفئ الصباحات الباردة.",
+      "img": "Brikdish.jpg"
     },
     {
       "en": "In the south, the Sahara begins. Around Douz, camels stride out into golden dunes, and in Matmata, families have long lived in homes carved into the ground around sunken courtyards.",
-      "ar": "في الجنوب تبدأ الصحراء الكبرى. حول دوز تخطو الجِمال نحو الكثبان الذهبية، وفي مطماطة سكنت العائلات منذ زمن طويل بيوتًا محفورة في باطن الأرض حول أفنية غائرة."
+      "ar": "في الجنوب تبدأ الصحراء الكبرى. حول دوز تخطو الجِمال نحو الكثبان الذهبية، وفي مطماطة سكنت العائلات منذ زمن طويل بيوتًا محفورة في باطن الأرض حول أفنية غائرة.",
+      "img": "Matmata,_Tunisia.JPG"
     },
     {
       "en": "The island of Djerba has white houses, olive groves and El Ghriba, a very old synagogue where Jewish pilgrims gather every spring.",
-      "ar": "وفي جزيرة جربة بيوت بيضاء وبساتين زيتون، وفيها كنيس الغريبة العريق الذي يقصده الحجّاج اليهود كل ربيع."
+      "ar": "وفي جزيرة جربة بيوت بيضاء وبساتين زيتون، وفيها كنيس الغريبة العريق الذي يقصده الحجّاج اليهود كل ربيع.",
+      "img": "Djerba_Island.jpeg"
     },
     {
       "en": "People speak Tunisian Arabic, known as Derja, and French is widely used too, while Amazigh heritage lives on in some southern villages.",
-      "ar": "يتحدث الناس العربية التونسية المعروفة بالدارجة، وتُستعمل الفرنسية على نطاق واسع، بينما يبقى التراث الأمازيغي حيًّا في بعض قرى الجنوب."
+      "ar": "يتحدث الناس العربية التونسية المعروفة بالدارجة، وتُستعمل الفرنسية على نطاق واسع، بينما يبقى التراث الأمازيغي حيًّا في بعض قرى الجنوب.",
+      "img": "Tataouine_by_night.jpg"
     },
     {
       "en": "If you're invited home, you'll likely be offered makroudh, semolina pastries filled with dates, and your host may insist you take just one more.",
@@ -48,12 +58,18 @@
     },
     {
       "en": "Olive groves stretch in neat rows across the plains around Sfax, and golden olive oil finds its way into nearly every dish.",
-      "ar": "تمتدّ بساتين الزيتون في صفوف منتظمة عبر السهول المحيطة بصفاقس، ويجد زيت الزيتون الذهبي طريقه إلى كل طبق تقريبًا."
+      "ar": "تمتدّ بساتين الزيتون في صفوف منتظمة عبر السهول المحيطة بصفاقس، ويجد زيت الزيتون الذهبي طريقه إلى كل طبق تقريبًا.",
+      "img": "Ksar_Berromdhan002.jpg"
     },
     {
       "en": "Tunisians say 'Marhba bik', you are welcome, and they truly mean it. To the west, beyond the mountains, Algeria is waiting for you.",
-      "ar": "يقول التونسيون «مرحبا بيك»، ويعنونها من القلب. وإلى الغرب، خلف الجبال، تنتظرك الجزائر."
+      "ar": "يقول التونسيون «مرحبا بيك»، ويعنونها من القلب. وإلى الغرب، خلف الجبال، تنتظرك الجزائر.",
+      "img": "Dougga,_Beja.jpg"
     }
   ],
-  "next": ["Algeria", "Libya", "Italy"]
+  "next": [
+    "Algeria",
+    "Libya",
+    "Italy"
+  ]
 }

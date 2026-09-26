@@ -1,46 +1,65 @@
 {
   "country": "Dominica",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Rain drums on giant leaves, a river rushes somewhere below, and a parrot calls from the treetops. On Dominica, nature is always talking, which is why people call it the Nature Island of the Caribbean."
+      "en": "Rain drums on giant leaves, a river rushes somewhere below, and a parrot calls from the treetops. On Dominica, nature is always talking, which is why people call it the Nature Island of the Caribbean.",
+      "img": "Dominica_Hiking_Path.JPG"
     },
     {
-      "en": "A quick tip first. Dominica, with the stress on the knee sound, Domi-nee-ka, is a different country from the Dominican Republic. This is a small, steep, green island between Guadeloupe and Martinique."
+      "en": "A quick tip first. Dominica, with the stress on the knee sound, Domi-nee-ka, is a different country from the Dominican Republic. This is a small, steep, green island between Guadeloupe and Martinique.",
+      "img": "Tanetane-Dominica.jpg"
     },
     {
-      "en": "The island was built by volcanoes, and it's still warm underneath. Hike for hours through the rainforest of Morne Trois Pitons National Park and you'll reach the Boiling Lake, a grey-blue pool that bubbles and steams inside a cloud of mist."
+      "en": "The island was built by volcanoes, and it's still warm underneath. Hike for hours through the rainforest of Morne Trois Pitons National Park and you'll reach the Boiling Lake, a grey-blue pool that bubbles and steams inside a cloud of mist.",
+      "img": "Dominica_Boiling_Lake.jpg"
     },
     {
-      "en": "Locals like to say there's a river for every day of the year. They tumble into waterfalls like the twin cascades of Trafalgar Falls, where you can soak in warm springs right beside the cool water."
+      "en": "Locals like to say there's a river for every day of the year. They tumble into waterfalls like the twin cascades of Trafalgar Falls, where you can soak in warm springs right beside the cool water.",
+      "img": "Trafalgar_Falls_at_Morne_Trois_Pitons_National_Park.jpg"
     },
     {
-      "en": "Off the west coast the sea floor drops away steeply, and sperm whales live here all year round. Scientists have even learned to tell whale families apart by the patterns of clicks they use to talk to each other."
+      "en": "Off the west coast the sea floor drops away steeply, and sperm whales live here all year round. Scientists have even learned to tell whale families apart by the patterns of clicks they use to talk to each other.",
+      "img": "Mother_and_baby_sperm_whale.jpg"
     },
     {
-      "en": "Dominica is home to the Kalinago, the Indigenous people of the Eastern Caribbean, who have their own territory on the east coast. They still carve canoes from tree trunks, weave baskets from forest reeds and bake flat, crispy cassava bread."
+      "en": "Dominica is home to the Kalinago, the Indigenous people of the Eastern Caribbean, who have their own territory on the east coast. They still carve canoes from tree trunks, weave baskets from forest reeds and bake flat, crispy cassava bread.",
+      "img": "Dominica_-_Castle_Bruce.jpg"
     },
     {
-      "en": "English is the official language, but many people also speak Kwéyòl, a French-based Creole. You might hear bonjou for hello, or sa ka fèt, meaning how are things?"
+      "en": "English is the official language, but many people also speak Kwéyòl, a French-based Creole. You might hear bonjou for hello, or sa ka fèt, meaning how are things?",
+      "img": "Portsmouth_(Dominica).jpg"
     },
     {
-      "en": "Every October, in the lead-up to Independence Day, the island celebrates its Creole heritage. People dress in madras, checked cotton in red, yellow and orange, and the World Creole Music Festival fills the nights with cadence and bouyon."
+      "en": "Every October, in the lead-up to Independence Day, the island celebrates its Creole heritage. People dress in madras, checked cotton in red, yellow and orange, and the World Creole Music Festival fills the nights with cadence and bouyon.",
+      "img": "Patchwork_madras_fabric,_made_from_Indian_cotton_madras_plaid.jpg"
     },
     {
-      "en": "At the table, try callaloo soup made with dasheen leaves and coconut milk, and in the morning, fried bakes, little golden breads, with saltfish."
+      "en": "At the table, try callaloo soup made with dasheen leaves and coconut milk, and in the morning, fried bakes, little golden breads, with saltfish.",
+      "img": "Callaloo.jpg"
     },
     {
-      "en": "Look closely at the national flag and you'll spot a purple and green parrot. It's the Sisserou, found only on Dominica, living high in the misty mountain forests."
+      "en": "Look closely at the national flag and you'll spot a purple and green parrot. It's the Sisserou, found only on Dominica, living high in the misty mountain forests.",
+      "img": "Amazona_imperialis_-Roseau_-Dominica_-aviary-6a-3c.jpg"
     },
     {
-      "en": "The capital, Roseau, is a small, colourful town of wooden houses with balconies, and its Saturday market is piled high with mangoes, grapefruit and bananas."
+      "en": "The capital, Roseau, is a small, colourful town of wooden houses with balconies, and its Saturday market is piled high with mangoes, grapefruit and bananas.",
+      "img": "Roseau_Dominica.jpg"
     },
     {
-      "en": "For the adventurous, the Waitukubuli National Trail winds the whole length of the island, from south to north, through villages, forests and wild coastline."
+      "en": "For the adventurous, the Waitukubuli National Trail winds the whole length of the island, from south to north, through villages, forests and wild coastline.",
+      "img": "Waitukubuli_National_Trail.jpg"
     },
     {
-      "en": "Walk softly and leave only footprints. Then sail south past Martinique, and Saint Lucia is waiting, with its twin green peaks rising straight out of the sea."
+      "en": "Walk softly and leave only footprints. Then sail south past Martinique, and Saint Lucia is waiting, with its twin green peaks rising straight out of the sea.",
+      "img": "Scotts_Head_Dominica.JPG"
     }
   ],
-  "next": ["Saint Lucia", "Barbados", "Antigua and Barbuda"]
+  "next": [
+    "Saint Lucia",
+    "Barbados",
+    "Antigua and Barbuda"
+  ]
 }

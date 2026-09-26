@@ -1,55 +1,74 @@
 {
   "country": "Albania",
-  "languages": ["en", "sq"],
+  "languages": [
+    "en",
+    "sq"
+  ],
   "segments": [
     {
       "en": "Mirëmbrëma, good evening! As the sun drops, whole towns in Albania step outside for the xhiro, a slow walk up and down the main street to greet friends, admire a new baby and share the news of the day.",
-      "sq": "Mirëmbrëma! Kur dielli ulet, qytete të tëra në Shqipëri dalin për xhiro, një shëtitje e ngadaltë lart e poshtë rrugës kryesore për të përshëndetur miqtë, për të parë foshnjën e re të dikujt dhe për të ndarë lajmet e ditës."
+      "sq": "Mirëmbrëma! Kur dielli ulet, qytete të tëra në Shqipëri dalin për xhiro, një shëtitje e ngadaltë lart e poshtë rrugës kryesore për të përshëndetur miqtë, për të parë foshnjën e re të dikujt dhe për të ndarë lajmet e ditës.",
+      "img": "The_City_and_the_Prokletije_from_the_castle.jpg"
     },
     {
       "en": "Albanians call their land Shqipëria, and many love to link its name to the eagle, the double-headed bird that spreads its wings across the red flag.",
-      "sq": "Shqiptarët e quajnë vendin e tyre Shqipëri, dhe shumë prej tyre e lidhin me dashuri emrin me shqiponjën, zogun me dy krerë që shtrin krahët mbi flamurin e kuq."
+      "sq": "Shqiptarët e quajnë vendin e tyre Shqipëri, dhe shumë prej tyre e lidhin me dashuri emrin me shqiponjën, zogun me dy krerë që shtrin krahët mbi flamurin e kuq.",
+      "img": "015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg"
     },
     {
       "en": "Look west and you find two seas: the Adriatic in the north and the clear Ionian in the south, where villages tumble down toward pebbly coves and silver olive groves.",
-      "sq": "Shikoni nga perëndimi dhe do të gjeni dy dete: Adriatikun në veri dhe Jonin e kthjellët në jug, ku fshatrat zbresin drejt gjireve me zaje dhe ullishteve të argjendta."
+      "sq": "Shikoni nga perëndimi dhe do të gjeni dy dete: Adriatikun në veri dhe Jonin e kthjellët në jug, ku fshatrat zbresin drejt gjireve me zaje dhe ullishteve të argjendta.",
+      "img": "Gjipe_beach,_Albania.JPG"
     },
     {
       "en": "Look north and east and the land rises into wild mountains. In the Albanian Alps, shepherds still lead flocks to summer pastures, and hikers cross between remote valleys like Theth and Valbona.",
-      "sq": "Nga veriu dhe lindja toka ngrihet në male të egra. Në Alpet Shqiptare, barinjtë ende i çojnë kopetë në kullotat verore, dhe ecësit kalojnë nga një luginë e largët në tjetrën, si Thethi dhe Valbona."
+      "sq": "Nga veriu dhe lindja toka ngrihet në male të egra. Në Alpet Shqiptare, barinjtë ende i çojnë kopetë në kullotat verore, dhe ecësit kalojnë nga një luginë e largët në tjetrën, si Thethi dhe Valbona.",
+      "img": "Theth_and_Theth_National_Park,_Albania_2017.jpg"
     },
     {
       "en": "At the heart of Albanian life is besa, a promise that must never be broken. A guest under your roof is protected by it, and hospitality is taken very seriously indeed.",
-      "sq": "Në zemër të jetës shqiptare është besa, një premtim që nuk thyhet kurrë. Mikun nën çatinë tënde e mbron besa, dhe mikpritja merret vërtet shumë seriozisht."
+      "sq": "Në zemër të jetës shqiptare është besa, një premtim që nuk thyhet kurrë. Mikun nën çatinë tënde e mbron besa, dhe mikpritja merret vërtet shumë seriozisht.",
+      "img": "Krujë-KrujaAlbania_2016.jpg"
     },
     {
       "en": "Something that surprises many visitors: traditionally, lots of Albanians wobble their head from side to side to say yes, and nod to say no. So watch the smile, not just the head!",
-      "sq": "Diçka që habit shumë vizitorë: sipas traditës, shumë shqiptarë e tundin kokën anash kur thonë po, dhe e ulin e ngrenë kur thonë jo. Ndaj shikoni buzëqeshjen, jo vetëm kokën!"
+      "sq": "Diçka që habit shumë vizitorë: sipas traditës, shumë shqiptarë e tundin kokën anash kur thonë po, dhe e ulin e ngrenë kur thonë jo. Ndaj shikoni buzëqeshjen, jo vetëm kokën!",
+      "img": "2013-10-05_Valbona,_Albania_8265.jpg"
     },
     {
       "en": "In Berat, white Ottoman houses climb the hillside so tightly that it is called the city of windows stacked one above another. In Gjirokastër, the roofs are grey stone slabs, and a great castle watches over the old town.",
-      "sq": "Në Berat, shtëpitë e bardha osmane ngjiten në kodër aq ngjeshur sa qyteti njihet si qyteti i një mbi një dritareve. Në Gjirokastër, çatitë janë prej pllakash guri gri, dhe një kështjellë e madhe ruan qytetin e vjetër."
+      "sq": "Në Berat, shtëpitë e bardha osmane ngjiten në kodër aq ngjeshur sa qyteti njihet si qyteti i një mbi një dritareve. Në Gjirokastër, çatitë janë prej pllakash guri gri, dhe një kështjellë e madhe ruan qytetin e vjetër.",
+      "img": "Berat_57.jpg"
     },
     {
       "en": "Tirana, the capital, is bright and busy, with painted buildings, leafy cafés and a love of strong coffee that can stretch a quick chat into a whole afternoon.",
-      "sq": "Tirana, kryeqyteti, është e gjallë dhe plot lëvizje, me pallate të lyera me ngjyra, kafene nën hijen e pemëve dhe një dashuri për kafenë e fortë që e kthen një bisedë të shkurtër në një pasdite të tërë."
+      "sq": "Tirana, kryeqyteti, është e gjallë dhe plot lëvizje, me pallate të lyera me ngjyra, kafene nën hijen e pemëve dhe një dashuri për kafenë e fortë që e kthen një bisedë të shkurtër në një pasdite të tërë.",
+      "img": "Skanderbeg_square_from_the_Municipality_building_rooftop.jpeg"
     },
     {
       "en": "Food here is simple and generous. Try byrek, flaky pastry filled with cheese or spinach, and tavë kosi, lamb baked under a golden layer of yoghurt and egg.",
-      "sq": "Ushqimi këtu është i thjeshtë dhe bujar. Provoni byrekun me petë të holla, me djathë ose spinaq, dhe tavën e kosit, mish qengji i pjekur nën një shtresë të artë kosi dhe veze."
+      "sq": "Ushqimi këtu është i thjeshtë dhe bujar. Provoni byrekun me petë të holla, me djathë ose spinaq, dhe tavën e kosit, mish qengji i pjekur nën një shtresë të artë kosi dhe veze.",
+      "img": "Tavë_kosi.jpg"
     },
     {
       "en": "In the south, listen for iso-polyphony. One group holds a long, steady drone, and other voices weave the song above it. It is recognised around the world as a treasure of human heritage.",
-      "sq": "Në jug, dëgjoni isopolifoninë. Një grup mban një zë të gjatë e të qëndrueshëm, isonë, dhe zërat e tjerë e thurin këngën mbi të. Ajo njihet në gjithë botën si një thesar i trashëgimisë njerëzore."
+      "sq": "Në jug, dëgjoni isopolifoninë. Një grup mban një zë të gjatë e të qëndrueshëm, isonë, dhe zërat e tjerë e thurin këngën mbi të. Ajo njihet në gjithë botën si një thesar i trashëgimisë njerëzore.",
+      "img": "Gjirokaster_2016-2017.jpg"
     },
     {
       "en": "At festivals you may spot men in the white felt cap called the qeleshe, and women in embroidered costumes, like the bell-shaped xhubleta skirt of the north, swinging with every step of the dance.",
-      "sq": "Në festa mund të shihni burra me qeleshen e bardhë prej shajaku, dhe gra me veshje të qëndisura, si xhubleta në formë kambane e veriut, që lëkundet me çdo hap të vallës."
+      "sq": "Në festa mund të shihni burra me qeleshen e bardhë prej shajaku, dhe gra me veshje të qëndisura, si xhubleta në formë kambane e veriut, që lëkundet me çdo hap të vallës.",
+      "img": "Rozafa_Castle_in_July_2013_(5).JPG"
     },
     {
       "en": "When you leave, someone will surely wish you rrugë të mbarë, a good road. Follow the coast south, past Corfu shimmering offshore, and Greece is waiting just across the border.",
-      "sq": "Kur të largoheni, dikush me siguri do t'ju urojë rrugë të mbarë. Ndiqni bregun drejt jugut, pranë Korfuzit që shkëlqen në det, dhe Greqia ju pret menjëherë përtej kufirit."
+      "sq": "Kur të largoheni, dikush me siguri do t'ju urojë rrugë të mbarë. Ndiqni bregun drejt jugut, pranë Korfuzit që shkëlqen në det, dhe Greqia ju pret menjëherë përtej kufirit.",
+      "img": "CIty_of_Saranda_Albania_2016.jpg"
     }
   ],
-  "next": ["Greece", "Montenegro", "North Macedonia"]
+  "next": [
+    "Greece",
+    "Montenegro",
+    "North Macedonia"
+  ]
 }

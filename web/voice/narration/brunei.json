@@ -1,59 +1,79 @@
 {
   "country": "Brunei",
-  "languages": ["en", "ms"],
+  "languages": [
+    "en",
+    "ms"
+  ],
   "segments": [
     {
       "en": "Early morning on the Brunei River. Water taxis zip between wooden houses on stilts, the call to prayer drifts across the water, and the golden dome of a mosque catches the first light.",
-      "ms": "Awal pagi di Sungai Brunei. Perahu tambang meluncur laju di celah-celah rumah kayu bertiang, azan berkumandang di atas air, dan kubah emas sebuah masjid menangkap cahaya pertama matahari."
+      "ms": "Awal pagi di Sungai Brunei. Perahu tambang meluncur laju di celah-celah rumah kayu bertiang, azan berkumandang di atas air, dan kubah emas sebuah masjid menangkap cahaya pertama matahari.",
+      "img": "Brunei_River_(19042022).jpg"
     },
     {
       "en": "This is Kampong Ayer, the water village of Bandar Seri Begawan. Families have lived above the river here for centuries, with their own schools, mosques and shops, all linked by wooden walkways.",
-      "ms": "Inilah Kampong Ayer, perkampungan air di Bandar Seri Begawan. Keluarga-keluarga telah tinggal di atas sungai ini sejak berabad-abad lalu, lengkap dengan sekolah, masjid dan kedai sendiri, semuanya dihubungkan oleh titian kayu."
+      "ms": "Inilah Kampong Ayer, perkampungan air di Bandar Seri Begawan. Keluarga-keluarga telah tinggal di atas sungai ini sejak berabad-abad lalu, lengkap dengan sekolah, masjid dan kedai sendiri, semuanya dihubungkan oleh titian kayu.",
+      "img": "Kampong_Ayer,_Brunei_Town,_with_the_Edinburgh_Bridge_in_the_background.jpg"
     },
     {
       "en": "Brunei is a small sultanate on the northern coast of Borneo, an island it shares with Malaysia and Indonesia. Its full name, Brunei Darussalam, means the abode of peace.",
-      "ms": "Brunei ialah sebuah kesultanan kecil di pantai utara Pulau Borneo, pulau yang dikongsi bersama Malaysia dan Indonesia. Nama penuhnya, Brunei Darussalam, membawa maksud negeri kedamaian."
+      "ms": "Brunei ialah sebuah kesultanan kecil di pantai utara Pulau Borneo, pulau yang dikongsi bersama Malaysia dan Indonesia. Nama penuhnya, Brunei Darussalam, membawa maksud negeri kedamaian.",
+      "img": "View_from_the_Waterfront_Bandar_Seri_Begawan,_Brunei_01.jpg"
     },
     {
       "en": "The Omar Ali Saifuddien Mosque rises beside a lagoon, its dome mirrored in the still water. Visitors remove their shoes, dress modestly and speak softly inside.",
-      "ms": "Masjid Omar Ali Saifuddien tersergam di tepi sebuah lagun, kubahnya terpantul di permukaan air yang tenang. Pengunjung menanggalkan kasut, berpakaian sopan dan bercakap dengan perlahan di dalamnya."
+      "ms": "Masjid Omar Ali Saifuddien tersergam di tepi sebuah lagun, kubahnya terpantul di permukaan air yang tenang. Pengunjung menanggalkan kasut, berpakaian sopan dan bercakap dengan perlahan di dalamnya.",
+      "img": "Sultan_Omar_Ali_Saifuddin_Mosque_with_the_ceremonial_ship.jpg"
     },
     {
       "en": "Life here follows a national philosophy of Malay culture, Islam and monarchy. The Sultan is deeply respected, and during Hari Raya, at the end of Ramadan, the palace opens its doors so people can greet the royal family.",
-      "ms": "Kehidupan di sini berlandaskan falsafah negara, Melayu Islam Beraja. Sultan amat dihormati, dan sempena Hari Raya di penghujung Ramadan, istana membuka pintunya supaya rakyat dapat bersalaman dengan keluarga diraja."
+      "ms": "Kehidupan di sini berlandaskan falsafah negara, Melayu Islam Beraja. Sultan amat dihormati, dan sempena Hari Raya di penghujung Ramadan, istana membuka pintunya supaya rakyat dapat bersalaman dengan keluarga diraja.",
+      "img": "Istana_Darul_Hana_(2022).jpg"
     },
     {
       "en": "Hari Raya is also the season of open houses. Families welcome friends and neighbours with trays of cakes, cookies and rendang, and children receive little envelopes of festive money.",
-      "ms": "Hari Raya juga musim rumah terbuka. Keluarga menyambut kawan dan jiran dengan hidangan kuih-muih, biskut dan rendang, dan kanak-kanak menerima sampul kecil berisi duit raya."
+      "ms": "Hari Raya juga musim rumah terbuka. Keluarga menyambut kawan dan jiran dengan hidangan kuih-muih, biskut dan rendang, dan kanak-kanak menerima sampul kecil berisi duit raya.",
+      "img": "Rendang_daging_sapi_asli_Padang.JPG"
     },
     {
       "en": "The national dish is ambuyat, a sticky, glue-like starch from the sago palm. You twirl it around a bamboo fork called a chandas and dip it into a sour, spicy sauce. It is fun to eat, and best shared.",
-      "ms": "Hidangan kebangsaan ialah ambuyat, kanji sagu yang melekit seperti gam. Ambuyat digulung pada candas, sejenis garpu buluh, lalu dicecah ke dalam cacah yang masam dan pedas. Seronok dimakan, dan paling sedap dikongsi bersama."
+      "ms": "Hidangan kebangsaan ialah ambuyat, kanji sagu yang melekit seperti gam. Ambuyat digulung pada candas, sejenis garpu buluh, lalu dicecah ke dalam cacah yang masam dan pedas. Seronok dimakan, dan paling sedap dikongsi bersama.",
+      "img": "Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg"
     },
     {
       "en": "For a quick bite, locals grab nasi katok, a humble parcel of rice, fried chicken and sambal, sold day and night for a small price.",
-      "ms": "Untuk makan ringkas, orang tempatan membeli nasi katok, bungkusan sederhana berisi nasi, ayam goreng dan sambal, yang dijual siang dan malam dengan harga yang murah."
+      "ms": "Untuk makan ringkas, orang tempatan membeli nasi katok, bungkusan sederhana berisi nasi, ayam goreng dan sambal, yang dijual siang dan malam dengan harga yang murah.",
+      "img": "Nasi_Katok.jpg"
     },
     {
       "en": "Good manners matter. A greeting is often a light touch of hands, then a hand placed on the heart, but wait to see if a hand is offered. Point with your thumb, not your finger, and give and receive with your right hand.",
-      "ms": "Budi bahasa amat penting. Bersalaman biasanya dengan sentuhan tangan yang lembut, lalu tangan diletakkan di dada, tetapi tunggu dahulu sama ada tangan dihulurkan. Tunjuk dengan ibu jari, bukan jari telunjuk, dan beri serta terima dengan tangan kanan."
+      "ms": "Budi bahasa amat penting. Bersalaman biasanya dengan sentuhan tangan yang lembut, lalu tangan diletakkan di dada, tetapi tunggu dahulu sama ada tangan dihulurkan. Tunjuk dengan ibu jari, bukan jari telunjuk, dan beri serta terima dengan tangan kanan.",
+      "img": "Pusat_Bandar_16_July_2022_04.jpg"
     },
     {
       "en": "Much of the country is still covered in rainforest. In Temburong, reached by a long bridge across the bay, you can walk a canopy walkway high above the treetops as hornbills glide past.",
-      "ms": "Sebahagian besar negara ini masih diliputi hutan hujan. Di Temburong, yang dihubungkan oleh sebuah jambatan panjang merentasi teluk, anda boleh berjalan di laluan kanopi tinggi di atas pucuk-pucuk pokok sambil burung enggang terbang melintas."
+      "ms": "Sebahagian besar negara ini masih diliputi hutan hujan. Di Temburong, yang dihubungkan oleh sebuah jambatan panjang merentasi teluk, anda boleh berjalan di laluan kanopi tinggi di atas pucuk-pucuk pokok sambil burung enggang terbang melintas.",
+      "img": "Long_way_to_go....jpg"
     },
     {
       "en": "In the mangroves along the river, watch for proboscis monkeys, with their long noses and round bellies, leaping between branches at dusk.",
-      "ms": "Di hutan bakau sepanjang sungai, perhatikan monyet belanda, dengan hidungnya yang panjang dan perutnya yang buncit, melompat dari dahan ke dahan ketika senja."
+      "ms": "Di hutan bakau sepanjang sungai, perhatikan monyet belanda, dengan hidungnya yang panjang dan perutnya yang buncit, melompat dari dahan ke dahan ketika senja.",
+      "img": "Proboscis_Monkey_in_Borneo.jpg"
     },
     {
       "en": "After dark, the night market comes alive with sizzling satay, grilled fish and brightly coloured drinks. People chat, children play, and the air smells of charcoal and lemongrass.",
-      "ms": "Selepas senja, pasar malam mula meriah dengan sate yang berdesir, ikan bakar dan minuman berwarna-warni. Orang ramai berbual, kanak-kanak bermain, dan udara berbau arang dan serai."
+      "ms": "Selepas senja, pasar malam mula meriah dengan sate yang berdesir, ikan bakar dan minuman berwarna-warni. Orang ramai berbual, kanak-kanak bermain, dan udara berbau arang dan serai.",
+      "img": "Gadong_Night_Market_4_October_2024_21.jpg"
     },
     {
       "en": "Brunei is wrapped by the Malaysian state of Sarawak, so wherever you cross the border, Malaysia is waiting to welcome you next.",
-      "ms": "Brunei dikelilingi oleh negeri Sarawak, jadi di mana-mana pun anda melintasi sempadan, Malaysia sedia menyambut anda seterusnya."
+      "ms": "Brunei dikelilingi oleh negeri Sarawak, jadi di mana-mana pun anda melintasi sempadan, Malaysia sedia menyambut anda seterusnya.",
+      "img": "Kuching_Skyline.jpg"
     }
   ],
-  "next": ["Malaysia", "Indonesia", "Philippines"]
+  "next": [
+    "Malaysia",
+    "Indonesia",
+    "Philippines"
+  ]
 }

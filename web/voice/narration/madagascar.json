@@ -1,59 +1,79 @@
 {
   "country": "Madagascar",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Salama! Picture red earth glowing in the evening sun, the colour that gives Madagascar its nickname, the Great Red Island. It drifted away from the rest of Africa long, long ago, and life here went its own way.",
-      "fr": "Salama ! Imaginez une terre rouge qui s'embrase au soleil du soir, cette couleur qui a donné à Madagascar son surnom de Grande Île rouge. Elle s'est détachée du reste de l'Afrique il y a très, très longtemps, et la vie y a suivi son propre chemin."
+      "fr": "Salama ! Imaginez une terre rouge qui s'embrase au soleil du soir, cette couleur qui a donné à Madagascar son surnom de Grande Île rouge. Elle s'est détachée du reste de l'Afrique il y a très, très longtemps, et la vie y a suivi son propre chemin.",
+      "img": "Landscape_Madagascar_04.jpg"
     },
     {
       "en": "That long isolation is why so many plants and animals here live nowhere else on Earth. Lemurs with huge eyes and ringed tails leap through the trees, and chameleons change colour on the branches.",
-      "fr": "C'est à ce long isolement que l'on doit tant de plantes et d'animaux qui ne vivent nulle part ailleurs sur Terre. Des lémuriens aux grands yeux et à la queue rayée bondissent d'arbre en arbre, et des caméléons changent de couleur sur les branches."
+      "fr": "C'est à ce long isolement que l'on doit tant de plantes et d'animaux qui ne vivent nulle part ailleurs sur Terre. Des lémuriens aux grands yeux et à la queue rayée bondissent d'arbre en arbre, et des caméléons changent de couleur sur les branches.",
+      "img": "Ring-tailed_lemur_(Lemur_catta).jpg"
     },
     {
       "en": "The Malagasy people have a remarkable story of their own. Their ancestors came both from East Africa and from Southeast Asia, sailing across the Indian Ocean, and the Malagasy language is a cousin of languages spoken on the island of Borneo.",
-      "fr": "Le peuple malgache a lui aussi une histoire étonnante. Ses ancêtres sont venus à la fois d'Afrique de l'Est et d'Asie du Sud-Est, en traversant l'océan Indien, et la langue malgache est cousine de langues parlées sur l'île de Bornéo."
+      "fr": "Le peuple malgache a lui aussi une histoire étonnante. Ses ancêtres sont venus à la fois d'Afrique de l'Est et d'Asie du Sud-Est, en traversant l'océan Indien, et la langue malgache est cousine de langues parlées sur l'île de Bornéo.",
+      "img": "Madagascar_-_Traditional_fishing_pirogue.jpg"
     },
     {
       "en": "A word you will hear often is fihavanana, the spirit of kinship and living in harmony. People speak gently, avoid open conflict, and show deep respect to elders and to the ancestors.",
-      "fr": "Un mot revient souvent : le fihavanana, l'esprit de parenté et de bonne entente. On parle avec douceur, on évite les conflits ouverts, et l'on témoigne un profond respect aux aînés et aux ancêtres."
+      "fr": "Un mot revient souvent : le fihavanana, l'esprit de parenté et de bonne entente. On parle avec douceur, on évite les conflits ouverts, et l'on témoigne un profond respect aux aînés et aux ancêtres.",
+      "img": "Lake_Anosy,_Central_Antananarivo,_Capital_of_Madagascar,_Photo_by_Sascha_Grabow.jpg"
     },
     {
       "en": "In the highlands, some families hold a famadihana, a joyful reunion where relatives honour their ancestors, wrap them in fresh cloth and dance to brass bands. It is a day of togetherness, not of sadness.",
-      "fr": "Sur les Hautes Terres, certaines familles organisent un famadihana, de joyeuses retrouvailles où l'on honore les ancêtres, où on les enveloppe dans de nouveaux linceuls et où l'on danse au son des fanfares. C'est un jour de partage, pas de tristesse."
+      "fr": "Sur les Hautes Terres, certaines familles organisent un famadihana, de joyeuses retrouvailles où l'on honore les ancêtres, où on les enveloppe dans de nouveaux linceuls et où l'on danse au son des fanfares. C'est un jour de partage, pas de tristesse.",
+      "img": "Ambositra_skyline.JPG"
     },
     {
       "en": "The capital, Antananarivo, which everyone calls Tana, spills over green hills and rice fields. On its highest hill stands the Rova, the old palace of the Merina kings and queens.",
-      "fr": "La capitale, Antananarivo, que tout le monde appelle Tana, s'étale sur des collines verdoyantes et des rizières. Sur sa plus haute colline se dresse le Rova, l'ancien palais des rois et des reines merina."
+      "fr": "La capitale, Antananarivo, que tout le monde appelle Tana, s'étale sur des collines verdoyantes et des rizières. Sur sa plus haute colline se dresse le Rova, l'ancien palais des rois et des reines merina.",
+      "img": "Reconstructed_Rova_Antananarivo_Madagascar.jpg"
     },
     {
       "en": "Rice is the heart of every meal, sometimes three times a day. It comes with a side dish called laoka, perhaps romazava, a light beef broth with leafy greens that make your tongue tingle.",
-      "fr": "Le riz est au cœur de chaque repas, parfois trois fois par jour. On l'accompagne d'un plat appelé laoka, par exemple le romazava, un bouillon léger de bœuf aux brèdes qui font picoter la langue."
+      "fr": "Le riz est au cœur de chaque repas, parfois trois fois par jour. On l'accompagne d'un plat appelé laoka, par exemple le romazava, un bouillon léger de bœuf aux brèdes qui font picoter la langue.",
+      "img": "Madagaskar_stew_2019-10-01.jpg"
     },
     {
       "en": "In the northeast, vanilla vines climb through the forest, and every single flower is pollinated by hand. The next time you taste vanilla ice cream, it may well have started its journey here.",
-      "fr": "Dans le nord-est, les lianes de vanille grimpent dans la forêt, et chaque fleur est pollinisée à la main. La prochaine fois que vous goûterez une glace à la vanille, elle aura peut-être commencé son voyage ici."
+      "fr": "Dans le nord-est, les lianes de vanille grimpent dans la forêt, et chaque fleur est pollinisée à la main. La prochaine fois que vous goûterez une glace à la vanille, elle aura peut-être commencé son voyage ici.",
+      "img": "Vanilla_planifolia_-_Köhler–s_Medizinal-Pflanzen-278.jpg"
     },
     {
       "en": "Out west, near Morondava, giant baobabs line a dusty road called the Avenue of the Baobabs. At sunset, their enormous trunks turn to dark shapes against a pink and orange sky.",
-      "fr": "À l'ouest, près de Morondava, des baobabs géants bordent une piste poussiéreuse appelée l'allée des Baobabs. Au coucher du soleil, leurs troncs immenses deviennent des silhouettes sombres sur un ciel rose et orangé."
+      "fr": "À l'ouest, près de Morondava, des baobabs géants bordent une piste poussiéreuse appelée l'allée des Baobabs. Au coucher du soleil, leurs troncs immenses deviennent des silhouettes sombres sur un ciel rose et orangé.",
+      "img": "Adansonia_grandidieri04.jpg"
     },
     {
       "en": "Further north, the Tsingy de Bemaraha is a stone forest of razor-sharp limestone needles, so jagged that visitors cross it on rope bridges and ladders.",
-      "fr": "Plus au nord, le Tsingy de Bemaraha est une forêt de pierre faite d'aiguilles calcaires tranchantes comme des lames, si déchiquetées que l'on s'y aventure sur des ponts de corde et des échelles."
+      "fr": "Plus au nord, le Tsingy de Bemaraha est une forêt de pierre faite d'aiguilles calcaires tranchantes comme des lames, si déchiquetées que l'on s'y aventure sur des ponts de corde et des échelles.",
+      "img": "Tsingy_de_Bemaraha.jpg"
     },
     {
       "en": "Along the coasts, islands such as Nosy Be offer white sand and coral reefs, and from July to September humpback whales come to the waters around Sainte Marie Island to raise their calves.",
-      "fr": "Sur les côtes, des îles comme Nosy Be offrent du sable blanc et des récifs de corail, et de juillet à septembre, les baleines à bosse viennent dans les eaux de l'île Sainte-Marie pour élever leurs petits."
+      "fr": "Sur les côtes, des îles comme Nosy Be offrent du sable blanc et des récifs de corail, et de juillet à septembre, les baleines à bosse viennent dans les eaux de l'île Sainte-Marie pour élever leurs petits.",
+      "img": "Beache_of_La_Crique_Sainte_Marie.jpg"
     },
     {
       "en": "Music is everywhere, from the fast, happy beat of salegy to the valiha, a tube of bamboo strung all around, whose notes sound like drops of rain.",
-      "fr": "La musique est partout, du rythme rapide et joyeux du salegy jusqu'à la valiha, un tube de bambou entouré de cordes, dont les notes ressemblent à des gouttes de pluie."
+      "fr": "La musique est partout, du rythme rapide et joyeux du salegy jusqu'à la valiha, un tube de bambou entouré de cordes, dont les notes ressemblent à des gouttes de pluie.",
+      "img": "Valiha_diffusa_MNHN-P-P00754007.jpg"
     },
     {
       "en": "Veloma, goodbye, from the Great Red Island. Sail east across the Indian Ocean and Mauritius is waiting, with its turquoise lagoons.",
-      "fr": "Veloma, au revoir, depuis la Grande Île rouge. Mettez le cap à l'est sur l'océan Indien : l'île Maurice vous attend, avec ses lagons turquoise."
+      "fr": "Veloma, au revoir, depuis la Grande Île rouge. Mettez le cap à l'est sur l'océan Indien : l'île Maurice vous attend, avec ses lagons turquoise.",
+      "img": "Ile_aux_nattes,_Madagascar_(26067878865).jpg"
     }
   ],
-  "next": ["Mauritius", "Mozambique", "Comoros"]
+  "next": [
+    "Mauritius",
+    "Mozambique",
+    "Comoros"
+  ]
 }

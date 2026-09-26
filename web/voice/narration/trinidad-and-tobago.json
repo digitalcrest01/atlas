@@ -1,46 +1,64 @@
 {
   "country": "Trinidad and Tobago",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Listen to that bright, ringing sound. It's the steelpan, a drum hammered out of old oil barrels and invented right here in Trinidad during the twentieth century. Today it's the national instrument."
+      "en": "Listen to that bright, ringing sound. It's the steelpan, a drum hammered out of old oil barrels and invented right here in Trinidad during the twentieth century. Today it's the national instrument.",
+      "img": "Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg"
     },
     {
-      "en": "Trinidad and Tobago are the southernmost islands of the Caribbean, just off the coast of Venezuela. Trinidad is the larger, busier island, while Tobago is quieter, with palm-lined beaches and rainforest."
+      "en": "Trinidad and Tobago are the southernmost islands of the Caribbean, just off the coast of Venezuela. Trinidad is the larger, busier island, while Tobago is quieter, with palm-lined beaches and rainforest.",
+      "img": "Pigeon_Point_beach.jpg"
     },
     {
       "en": "Carnival is the biggest celebration of the year. In the days before Lent, masqueraders in feathers and sequins dance through Port of Spain, and it all begins before dawn with J'ouvert, when revellers cover each other in mud and paint."
     },
     {
-      "en": "Calypso and soca were born here. Calypsonians sing clever, witty songs about everyday life and the news, and soca keeps everyone jumping."
+      "en": "Calypso and soca were born here. Calypsonians sing clever, witty songs about everyday life and the news, and soca keeps everyone jumping.",
+      "img": "St.jamesuphigh.jpg"
     },
     {
-      "en": "The people of these islands have roots in Africa, India, China, Europe and the Middle East, along with the first Indigenous peoples, and their festivals are shared by everyone."
+      "en": "The people of these islands have roots in Africa, India, China, Europe and the Middle East, along with the first Indigenous peoples, and their festivals are shared by everyone.",
+      "img": "POS_at_night_Skyline.jpg"
     },
     {
-      "en": "At Divali, homes glow with thousands of little clay lamps. Eid, Christmas and Emancipation Day are celebrated too, and neighbours of every background share food across the fence."
+      "en": "At Divali, homes glow with thousands of little clay lamps. Eid, Christmas and Emancipation Day are celebrated too, and neighbours of every background share food across the fence.",
+      "img": "The_Rangoli_of_Lights.jpg"
     },
     {
-      "en": "Breakfast might be doubles, two soft fried breads filled with curried chickpeas and tangy chutney, bought from a roadside vendor and eaten standing up."
+      "en": "Breakfast might be doubles, two soft fried breads filled with curried chickpeas and tangy chutney, bought from a roadside vendor and eaten standing up.",
+      "img": "FOOD_Doubles_2.jpg"
     },
     {
-      "en": "Try roti stuffed with curry, pelau cooked with rice and pigeon peas, or bake and shark on the beach at Maracas Bay. At Christmas, kitchens smell of black cake and pastelles."
+      "en": "Try roti stuffed with curry, pelau cooked with rice and pigeon peas, or bake and shark on the beach at Maracas Bay. At Christmas, kitchens smell of black cake and pastelles.",
+      "img": "MISC_Bake_&_Shark.jpg"
     },
     {
-      "en": "The islands are alive with birds. In the Caroni Swamp at dusk, flocks of scarlet ibis, the national bird, fly in to roost, turning the mangroves bright red."
+      "en": "The islands are alive with birds. In the Caroni Swamp at dusk, flocks of scarlet ibis, the national bird, fly in to roost, turning the mangroves bright red.",
+      "img": "Caronipanchrisfitzpatrick.JPG"
     },
     {
-      "en": "In the south of Trinidad lies Pitch Lake, a strange, wrinkled lake of natural asphalt that you can actually walk on."
+      "en": "In the south of Trinidad lies Pitch Lake, a strange, wrinkled lake of natural asphalt that you can actually walk on.",
+      "img": "Mother-of-the-Lake.jpg"
     },
     {
-      "en": "On Tobago, leatherback turtles nest on quiet beaches, and the Main Ridge rainforest is one of the oldest protected forests in the Americas."
+      "en": "On Tobago, leatherback turtles nest on quiet beaches, and the Main Ridge rainforest is one of the oldest protected forests in the Americas.",
+      "img": "Aromobatidae_Mannophryne_olmonae_1.jpg"
     },
     {
-      "en": "Listen for local words. A party is a fete, and liming means hanging out with friends, chatting and laughing, which is a favourite pastime here."
+      "en": "Listen for local words. A party is a fete, and liming means hanging out with friends, chatting and laughing, which is a favourite pastime here.",
+      "img": "QRC2009.JPG"
     },
     {
-      "en": "Before you go, grab a cold coconut water from a roadside cart. Then hop north along the chain of islands, where Grenada is waiting for you."
+      "en": "Before you go, grab a cold coconut water from a roadside cart. Then hop north along the chain of islands, where Grenada is waiting for you.",
+      "img": "Crown_Point_Beach_Tobago.jpg"
     }
   ],
-  "next": ["Grenada", "Venezuela", "Barbados"]
+  "next": [
+    "Grenada",
+    "Venezuela",
+    "Barbados"
+  ]
 }

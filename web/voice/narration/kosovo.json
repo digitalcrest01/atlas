@@ -1,59 +1,79 @@
 {
   "country": "Kosovo",
-  "languages": ["en", "sq"],
+  "languages": [
+    "en",
+    "sq"
+  ],
   "segments": [
     {
       "en": "In Prishtina, the cafés are full from morning till late at night. Order a macchiato and settle in, because here coffee is never rushed. It's the reason to sit with friends and talk for hours.",
-      "sq": "Në Prishtinë, kafenetë janë plot nga mëngjesi deri natën vonë. Porosit një makiato dhe rehatohu, sepse këtu kafeja nuk pihet me ngut. Ajo është arsyeja për t'u ulur me miqtë dhe për të biseduar me orë të tëra."
+      "sq": "Në Prishtinë, kafenetë janë plot nga mëngjesi deri natën vonë. Porosit një makiato dhe rehatohu, sepse këtu kafeja nuk pihet me ngut. Ajo është arsyeja për t'u ulur me miqtë dhe për të biseduar me orë të tëra.",
+      "img": "Macchiato_(7199366530).jpg"
     },
     {
       "en": "Kosovo is a small, landlocked land in the heart of the Balkans, ringed by mountains, with wide green plains and river valleys in the middle.",
-      "sq": "Kosova është një vend i vogël pa dalje në det, në zemër të Ballkanit, e rrethuar nga male, me fusha të gjera të gjelbra dhe lugina lumenjsh në mes."
+      "sq": "Kosova është një vend i vogël pa dalje në det, në zemër të Ballkanit, e rrethuar nga male, me fusha të gjera të gjelbra dhe lugina lumenjsh në mes.",
+      "img": "Long_ridge_of_Pashallore.jpg"
     },
     {
       "en": "It has one of the youngest populations in Europe, and you can feel it. The streets buzz with students, musicians and small businesses, and the evening walk along the main boulevard is a chance to see and be seen.",
-      "sq": "Ka një nga popullsitë më të reja në Evropë, dhe kjo ndihet menjëherë. Rrugët gumëzhijnë nga studentët, muzikantët dhe bizneset e vogla, ndërsa shëtitja e mbrëmjes përgjatë bulevardit kryesor është rasti për të parë e për t'u parë."
+      "sq": "Ka një nga popullsitë më të reja në Evropë, dhe kjo ndihet menjëherë. Rrugët gumëzhijnë nga studentët, muzikantët dhe bizneset e vogla, ndërsa shëtitja e mbrëmjes përgjatë bulevardit kryesor është rasti për të parë e për t'u parë.",
+      "img": "View_of_Prishtina.jpg"
     },
     {
       "en": "Most people speak Albanian, and Serbian is spoken too, along with the languages of Bosniak, Turkish and Roma communities. A warm greeting in Albanian is mirëdita, good day.",
-      "sq": "Shumica e njerëzve flasin shqip, por flitet edhe serbisht, si dhe gjuhët e komuniteteve boshnjake, turke dhe rome. Një përshëndetje e ngrohtë në shqip është mirëdita."
+      "sq": "Shumica e njerëzve flasin shqip, por flitet edhe serbisht, si dhe gjuhët e komuniteteve boshnjake, turke dhe rome. Një përshëndetje e ngrohtë në shqip është mirëdita.",
+      "img": "Đeravica.jpg"
     },
     {
       "en": "Prizren, in the south, is a picture of old Balkan charm. An Ottoman stone bridge arches over a clear river, minarets and church towers rise side by side, and a fortress watches from the hill above.",
-      "sq": "Prizreni, në jug, është një tablo e hijshme e Ballkanit të vjetër. Një urë guri osmane harkohet mbi një lumë të kthjellët, minaret dhe kambanoret ngrihen krah njëra-tjetrës, ndërsa kalaja vështron nga kodra sipër."
+      "sq": "Prizreni, në jug, është një tablo e hijshme e Ballkanit të vjetër. Një urë guri osmane harkohet mbi një lumë të kthjellët, minaret dhe kambanoret ngrihen krah njëra-tjetrës, ndërsa kalaja vështron nga kodra sipër.",
+      "img": "Stone_Bridge_in_Prizren_(by_Pudelek).JPG"
     },
     {
       "en": "Every summer, Prizren fills with film lovers for a lively documentary festival, with screenings on open-air stages and even beside the river.",
-      "sq": "Çdo verë, Prizreni mbushet me dashamirës të filmit për një festival të gjallë të filmit dokumentar, me shfaqje në skena të hapura dhe madje buzë lumit."
+      "sq": "Çdo verë, Prizreni mbushet me dashamirës të filmit për një festival të gjallë të filmit dokumentar, me shfaqje në skena të hapura dhe madje buzë lumit.",
+      "img": "37_Prizreni_-_Xhamia_e_Sinan_Pashës_-_The_Sinan_Pasha_Moscue.JPG"
     },
     {
       "en": "The land also holds medieval Serbian Orthodox monasteries, like Visoki Dečani and Gračanica, whose walls are covered in centuries-old frescoes. They are protected as World Heritage treasures.",
-      "sq": "Kjo tokë ruan edhe manastire mesjetare ortodokse serbe, si Deçani dhe Graçanica, muret e të cilëve janë të mbuluara me afreske shekullore. Ato mbrohen si thesare të trashëgimisë botërore."
+      "sq": "Kjo tokë ruan edhe manastire mesjetare ortodokse serbe, si Deçani dhe Graçanica, muret e të cilëve janë të mbuluara me afreske shekullore. Ato mbrohen si thesare të trashëgimisë botërore.",
+      "img": "Manastir_Visoki_Dečani_(Манастир_Високи_Дечани)_-_by_Pudelek..jpg"
     },
     {
       "en": "Near Peja, the Rugova Gorge cuts deep into the mountains. Hikers follow its cliffs and forests, and brave visitors can cross a high zipline over the canyon.",
-      "sq": "Pranë Pejës, Gryka e Rugovës çan thellë në male. Alpinistët ndjekin shkëmbinjtë dhe pyjet e saj, ndërsa vizitorët më të guximshëm mund ta kalojnë kanionin me një litar të lartë."
+      "sq": "Pranë Pejës, Gryka e Rugovës çan thellë në male. Alpinistët ndjekin shkëmbinjtë dhe pyjet e saj, ndërsa vizitorët më të guximshëm mund ta kalojnë kanionin me një litar të lartë.",
+      "img": "Rugova_Canyon.jpg"
     },
     {
       "en": "Hospitality is a matter of honour. Old Albanian tradition speaks of besa, a promise that must always be kept, and it says a guest should be welcomed and protected like family.",
-      "sq": "Mikpritja është çështje nderi. Tradita e vjetër shqiptare flet për besën, një premtim që duhet mbajtur gjithmonë, dhe thotë se mysafiri duhet pritur e mbrojtur si pjesë e familjes."
+      "sq": "Mikpritja është çështje nderi. Tradita e vjetër shqiptare flet për besën, një premtim që duhet mbajtur gjithmonë, dhe thotë se mysafiri duhet pritur e mbrojtur si pjesë e familjes.",
+      "img": "Peja_with_Rugova.jpg"
     },
     {
       "en": "The dish that brings people together is flija, made from thin layers of batter brushed with cream and baked slowly under a metal lid covered in hot coals. It takes hours and a lot of patience.",
-      "sq": "Gjella që i bashkon njerëzit është flija, e bërë me shtresa të holla brumi të lyera me ajkë e të pjekura ngadalë nën një saç të mbuluar me prush. Kërkon orë të tëra dhe shumë durim."
+      "sq": "Gjella që i bashkon njerëzit është flija, e bërë me shtresa të holla brumi të lyera me ajkë e të pjekura ngadalë nën një saç të mbuluar me prush. Kërkon orë të tëra dhe shumë durim.",
+      "img": "Flia̠.jpg"
     },
     {
       "en": "You'll also taste pite, flaky pies filled with cheese, spinach or meat, and ajvar, a smoky red pepper spread. And there is always bread on the table.",
-      "sq": "Do të shijosh edhe pite, byrekë të shtresuar me djathë, spinaq ose mish, si dhe ajvar, një pastë e tymosur me speca të kuq. Dhe në tryezë ka gjithmonë bukë."
+      "sq": "Do të shijosh edhe pite, byrekë të shtresuar me djathë, spinaq ose mish, si dhe ajvar, një pastë e tymosur me speca të kuq. Dhe në tryezë ka gjithmonë bukë.",
+      "img": "Peja_(cropped).jpg"
     },
     {
       "en": "Weddings are huge, joyful affairs that can last several days, with singing, dancing in long circles, and music from the çifteli, a slender two-stringed lute.",
-      "sq": "Dasmat janë festa të mëdha e plot gëzim që mund të zgjasin disa ditë, me këngë, valle në rrathë të gjatë dhe muzikë me çifteli, një vegël e hollë me dy tela."
+      "sq": "Dasmat janë festa të mëdha e plot gëzim që mund të zgjasin disa ditë, me këngë, valle në rrathë të gjatë dhe muzikë me çifteli, një vegël e hollë me dy tela.",
+      "img": "Çifteli-_Чифтелија_е_традиционален,_албански,_народен,_жичан_инструмент..jpg"
     },
     {
       "en": "Mirupafshim, see you again! Head south-west over the mountains toward the Adriatic Sea, where Albania is waiting.",
-      "sq": "Mirupafshim! Nisu drejt jugperëndimit, përtej maleve, drejt detit Adriatik, ku të pret Shqipëria."
+      "sq": "Mirupafshim! Nisu drejt jugperëndimit, përtej maleve, drejt detit Adriatik, ku të pret Shqipëria.",
+      "img": "KosovoMirusha.jpg"
     }
   ],
-  "next": ["Albania", "North Macedonia", "Montenegro"]
+  "next": [
+    "Albania",
+    "North Macedonia",
+    "Montenegro"
+  ]
 }

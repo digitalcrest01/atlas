@@ -1,55 +1,74 @@
 {
   "country": "Azerbaijan",
-  "languages": ["en", "az"],
+  "languages": [
+    "en",
+    "az"
+  ],
   "segments": [
     {
       "en": "On a hillside near Baku, flames dance out of the ground and never go out, fed by natural gas seeping from the earth. No wonder Azerbaijan is called the Land of Fire.",
-      "az": "Bakı yaxınlığında bir yamacda alov torpaqdan çıxıb rəqs edir və heç sönmür, çünki onu yerin altından sızan təbii qaz qidalandırır. Təəccüblü deyil ki, Azərbaycana Odlar Yurdu deyirlər."
+      "az": "Bakı yaxınlığında bir yamacda alov torpaqdan çıxıb rəqs edir və heç sönmür, çünki onu yerin altından sızan təbii qaz qidalandırır. Təəccüblü deyil ki, Azərbaycana Odlar Yurdu deyirlər.",
+      "img": "Ateshgah_Fire_Temple.jpg"
     },
     {
       "en": "The country sits where Europe and Asia meet, between the snowy Caucasus Mountains and the Caspian, the largest lake on Earth, so vast that people have always called it a sea.",
-      "az": "Ölkə Avropa ilə Asiyanın qovuşduğu yerdə, qarlı Qafqaz dağları ilə Xəzər arasında yerləşir. Xəzər dünyanın ən böyük gölüdür, amma o qədər genişdir ki, insanlar həmişə ona dəniz deyiblər."
+      "az": "Ölkə Avropa ilə Asiyanın qovuşduğu yerdə, qarlı Qafqaz dağları ilə Xəzər arasında yerləşir. Xəzər dünyanın ən böyük gölüdür, amma o qədər genişdir ki, insanlar həmişə ona dəniz deyiblər.",
+      "img": "Şahdağ_Mountain,_Qusar,_2013.JPG"
     },
     {
       "en": "Baku, the capital, mixes old and new. Inside the walls of the Old City, narrow lanes wind past caravanserais and the mysterious Maiden Tower, while above the bay three glass Flame Towers shimmer like fire at night.",
-      "az": "Paytaxt Bakı köhnə ilə yenini birləşdirir. İçərişəhərin qədim divarları arasında dar küçələr karvansaraların və sirli Qız qalasının yanından dolanır, körfəzin üstündə isə üç şüşə Alov qülləsi gecələr od kimi parlayır."
+      "az": "Paytaxt Bakı köhnə ilə yenini birləşdirir. İçərişəhərin qədim divarları arasında dar küçələr karvansaraların və sirli Qız qalasının yanından dolanır, körfəzin üstündə isə üç şüşə Alov qülləsi gecələr od kimi parlayır.",
+      "img": "Maiden_tower_IMG_8521.jpg"
     },
     {
       "en": "Tea is the heart of hospitality. It arrives in small, pear-shaped glasses called armudu, with lumps of sugar and little bowls of jam made from cherries, quince or even young walnuts.",
-      "az": "Çay qonaqpərvərliyin ürəyidir. O, armudu adlanan balaca stəkanlarda, qənd parçaları və albalıdan, heyvadan, hətta cavan qozdan bişirilmiş mürəbbə ilə gətirilir."
+      "az": "Çay qonaqpərvərliyin ürəyidir. O, armudu adlanan balaca stəkanlarda, qənd parçaları və albalıdan, heyvadan, hətta cavan qozdan bişirilmiş mürəbbə ilə gətirilir.",
+      "img": "Ghahvexane_Azeri_Rahahan_02265.jpg"
     },
     {
       "en": "If you are invited to a home, you will probably be given the seat of honour and offered far more than you can eat. Refusing is difficult, so arrive hungry.",
-      "az": "Əgər evə qonaq çağırılsanız, çox güman ki, sizi başda oturdacaq və yeyə biləcəyinizdən qat-qat çox yemək təklif edəcəklər. İmtina etmək çətindir, ona görə də ac gəlin."
+      "az": "Əgər evə qonaq çağırılsanız, çox güman ki, sizi başda oturdacaq və yeyə biləcəyinizdən qat-qat çox yemək təklif edəcəklər. İmtina etmək çətindir, ona görə də ac gəlin.",
+      "img": "Baku_Montage.jpg"
     },
     {
       "en": "The king of the table is plov, fluffy saffron rice served with meat, chestnuts, dried fruit and herbs. There are said to be dozens of kinds, and every family is sure theirs is the best.",
-      "az": "Süfrənin şahı plovdur: zəfəranlı, dənə-dənə düyü ət, şabalıd, quru meyvə və göyərti ilə süfrəyə gəlir. Deyirlər ki, onun onlarla növü var və hər ailə əmindir ki, ən yaxşısı onlarınkıdır."
+      "az": "Süfrənin şahı plovdur: zəfəranlı, dənə-dənə düyü ət, şabalıd, quru meyvə və göyərti ilə süfrəyə gəlir. Deyirlər ki, onun onlarla növü var və hər ailə əmindir ki, ən yaxşısı onlarınkıdır.",
+      "img": "Afghan_Palo.jpg"
     },
     {
       "en": "Listen now to mugham, a deeply emotional music in which a singer improvises long, soaring melodies, accompanied by the tar, a long-necked lute, and the kamancha, a small spiked fiddle.",
-      "az": "İndi isə muğama qulaq asın. Bu, dərin hisslərlə dolu bir musiqidir: xanəndə tarın və kamançanın müşayiəti ilə uzun, ucalan melodiyaları bədahətən oxuyur."
+      "az": "İndi isə muğama qulaq asın. Bu, dərin hisslərlə dolu bir musiqidir: xanəndə tarın və kamançanın müşayiəti ilə uzun, ucalan melodiyaları bədahətən oxuyur.",
+      "img": "Aserbaidschanische_Volksinstrument_Tar.JPG"
     },
     {
       "en": "Carpet weaving is an old and beloved art. Each region has its own patterns and colours, and a fine carpet can carry a family's story from one generation to the next.",
-      "az": "Xalçaçılıq qədim və sevimli sənətdir. Hər bölgənin öz naxışları və rəngləri var, gözəl bir xalça isə bir ailənin hekayəsini nəsildən-nəslə daşıya bilər."
+      "az": "Xalçaçılıq qədim və sevimli sənətdir. Hər bölgənin öz naxışları və rəngləri var, gözəl bir xalça isə bir ailənin hekayəsini nəsildən-nəslə daşıya bilər.",
+      "img": "Azərbaycan_xalça_muzeyi.jpg"
     },
     {
       "en": "In March comes Novruz, the spring new year. Families grow trays of green wheat sprouts called samani, bake sweet pastries like shekerbura and pakhlava, and children jump over small bonfires for good luck.",
-      "az": "Martda Novruz, yazın yeni ili gəlir. Ailələr səməni göyərdir, şəkərbura və paxlava kimi şirniyyatlar bişirir, uşaqlar isə xoşbəxtlik üçün balaca tonqalların üstündən tullanırlar."
+      "az": "Martda Novruz, yazın yeni ili gəlir. Ailələr səməni göyərdir, şəkərbura və paxlava kimi şirniyyatlar bişirir, uşaqlar isə xoşbəxtlik üçün balaca tonqalların üstündən tullanırlar.",
+      "img": "Şəkərbura_Novruz_şirniyyatı.jpg"
     },
     {
       "en": "In the north, beneath forested mountains, the town of Sheki is famous for its palace of the khans, with coloured glass windows pieced together without a single nail, and for its sticky, layered halva.",
-      "az": "Şimalda, meşəli dağların ətəyində yerləşən Şəki bircə mismar belə işlədilmədən yığılmış rəngli şəbəkələri olan Xan sarayı və şirin, laylı halvası ilə məşhurdur."
+      "az": "Şimalda, meşəli dağların ətəyində yerləşən Şəki bircə mismar belə işlədilmədən yığılmış rəngli şəbəkələri olan Xan sarayı və şirin, laylı halvası ilə məşhurdur.",
+      "img": "Şəki_xan_sarayı.jpg"
     },
     {
       "en": "South of Baku, at Gobustan, ancient people carved dancers, boats and animals into the rocks thousands of years ago. Nearby, little mud volcanoes gurgle and bubble like pots on a stove.",
-      "az": "Bakıdan cənubda, Qobustanda qədim insanlar min illər əvvəl qayalara rəqqaslar, qayıqlar və heyvanlar həkk ediblər. Yaxınlıqda isə balaca palçıq vulkanları ocaqdakı qazan kimi quruldayır və qaynayır."
+      "az": "Bakıdan cənubda, Qobustanda qədim insanlar min illər əvvəl qayalara rəqqaslar, qayıqlar və heyvanlar həkk ediblər. Yaxınlıqda isə balaca palçıq vulkanları ocaqdakı qazan kimi quruldayır və qaynayır.",
+      "img": "Qobustan_giriş_qayası_2026_(1).jpg"
     },
     {
       "en": "When it is time to go, someone will wish you yaxşı yol, a good journey. Take a boat across the Caspian to its eastern shore, where Turkmenistan is waiting.",
-      "az": "Yola düşmək vaxtı gələndə kimsə sizə yaxşı yol arzulayacaq. Gəmiyə minib Xəzəri keçin, şərq sahilinə gedin, orada sizi Türkmənistan gözləyir."
+      "az": "Yola düşmək vaxtı gələndə kimsə sizə yaxşı yol arzulayacaq. Gəmiyə minib Xəzəri keçin, şərq sahilinə gedin, orada sizi Türkmənistan gözləyir.",
+      "img": "Caspian_seal_03.jpg"
     }
   ],
-  "next": ["Turkmenistan", "Georgia", "Iran"]
+  "next": [
+    "Turkmenistan",
+    "Georgia",
+    "Iran"
+  ]
 }

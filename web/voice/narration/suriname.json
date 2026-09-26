@@ -1,59 +1,79 @@
 {
   "country": "Suriname",
-  "languages": ["en", "nl"],
+  "languages": [
+    "en",
+    "nl"
+  ],
   "segments": [
     {
       "en": "In Paramaribo, a mosque and a synagogue stand side by side on the same street, and nobody finds that surprising. Suriname is a country where many peoples have learned to live together.",
-      "nl": "In Paramaribo staan een moskee en een synagoge naast elkaar in dezelfde straat, en niemand kijkt daarvan op. Suriname is een land waar veel volken hebben geleerd samen te leven."
+      "nl": "In Paramaribo staan een moskee en een synagoge naast elkaar in dezelfde straat, en niemand kijkt daarvan op. Suriname is een land waar veel volken hebben geleerd samen te leven.",
+      "img": "Moschee-Keizerstraat-Suriname.jpg"
     },
     {
       "en": "On the northeastern shoulder of South America, Suriname is mostly rainforest. Broad rivers flow from the jungle interior to the Atlantic coast, and most people live close to the sea.",
-      "nl": "Suriname ligt op de noordoostelijke schouder van Zuid-Amerika en bestaat grotendeels uit regenwoud. Brede rivieren stromen van het binnenland naar de Atlantische kust, en de meeste mensen wonen dicht bij zee."
+      "nl": "Suriname ligt op de noordoostelijke schouder van Zuid-Amerika en bestaat grotendeels uit regenwoud. Brede rivieren stromen van het binnenland naar de Atlantische kust, en de meeste mensen wonen dicht bij zee.",
+      "img": "Suriname_River.jpg"
     },
     {
       "en": "Indigenous peoples, the descendants of enslaved Africans, and families whose ancestors came from India, Java, China and Europe have all shaped Suriname. Maroon communities still live along the rivers of the interior.",
-      "nl": "Inheemse volken, nazaten van tot slaaf gemaakte Afrikanen en families met voorouders uit India, Java, China en Europa hebben Suriname allemaal gevormd. Langs de rivieren in het binnenland wonen nog altijd marrongemeenschappen."
+      "nl": "Inheemse volken, nazaten van tot slaaf gemaakte Afrikanen en families met voorouders uit India, Java, China en Europa hebben Suriname allemaal gevormd. Langs de rivieren in het binnenland wonen nog altijd marrongemeenschappen.",
+      "img": "Atjoni_(33496718666).jpg"
     },
     {
       "en": "Dutch is the official language, but on the street you'll hear Sranan Tongo, a creole that almost everyone uses to chat. Sarnami, Javanese and many other languages are spoken at home.",
-      "nl": "Nederlands is de officiële taal, maar op straat hoor je Sranantongo, een creoolse taal die bijna iedereen gebruikt om te kletsen. Thuis spreken mensen Sarnami, Javaans en nog veel andere talen."
+      "nl": "Nederlands is de officiële taal, maar op straat hoor je Sranantongo, een creoolse taal die bijna iedereen gebruikt om te kletsen. Thuis spreken mensen Sarnami, Javaans en nog veel andere talen.",
+      "img": "Waterkant_(15357070483).jpg"
     },
     {
       "en": "The food is a delicious mix. Try roti with curried chicken, Javanese bami and nasi, or pom, a festive oven dish of chicken and a tangy root vegetable called pomtajer.",
-      "nl": "Het eten is een heerlijke mengelmoes. Probeer roti met kerriekip, Javaanse bami en nasi, of pom, een feestelijke ovenschotel van kip en een frisse knol die pomtajer heet."
+      "nl": "Het eten is een heerlijke mengelmoes. Probeer roti met kerriekip, Javaanse bami en nasi, of pom, een feestelijke ovenschotel van kip en een frisse knol die pomtajer heet.",
+      "img": "Pom_gerecht.JPG"
     },
     {
       "en": "The old centre of Paramaribo is full of white wooden houses with green shutters and wide steps, and it is a World Heritage Site.",
-      "nl": "Het oude centrum van Paramaribo staat vol witte houten huizen met groene luiken en brede trappen, en het is Werelderfgoed."
+      "nl": "Het oude centrum van Paramaribo staat vol witte houten huizen met groene luiken en brede trappen, en het is Werelderfgoed.",
+      "img": "DSC_2604_Monumentale_gebouwen_Waterkant_Paramaribo.jpg"
     },
     {
       "en": "On the first of July, people celebrate Keti Koti, which means 'the chains are broken', marking the end of slavery with music, traditional dress and shared meals.",
-      "nl": "Op één juli vieren mensen Keti Koti, wat 'de ketenen zijn gebroken' betekent. Zo herdenken ze het einde van de slavernij met muziek, traditionele kleding en gedeelde maaltijden."
+      "nl": "Op één juli vieren mensen Keti Koti, wat 'de ketenen zijn gebroken' betekent. Zo herdenken ze het einde van de slavernij met muziek, traditionele kleding en gedeelde maaltijden.",
+      "img": "Paramaribo_District.jpg"
     },
     {
       "en": "Phagwa, Eid, Christmas and Chinese New Year are all celebrated here, and neighbours of every background often join in, sharing sweets and good wishes.",
-      "nl": "Phagwa, het Suikerfeest, Kerstmis en Chinees Nieuwjaar worden hier allemaal gevierd, en buren van elke achtergrond doen vaak mee, met lekkernijen en goede wensen."
+      "nl": "Phagwa, het Suikerfeest, Kerstmis en Chinees Nieuwjaar worden hier allemaal gevierd, en buren van elke achtergrond doen vaak mee, met lekkernijen en goede wensen.",
+      "img": "Sint-Petrus-en-Pauluskathedraal.jpg"
     },
     {
       "en": "Deep in the interior, the Central Suriname Nature Reserve protects a huge stretch of untouched rainforest, home to jaguars, giant otters and harpy eagles.",
-      "nl": "Diep in het binnenland beschermt het Centraal Suriname Natuurreservaat een enorm gebied ongerept regenwoud, waar jaguars, reuzenotters en harpij-arenden leven."
+      "nl": "Diep in het binnenland beschermt het Centraal Suriname Natuurreservaat een enorm gebied ongerept regenwoud, waar jaguars, reuzenotters en harpij-arenden leven.",
+      "img": "Amazon_jungle_from_above.jpg"
     },
     {
       "en": "At Galibi, on the coast, giant leatherback turtles crawl onto the beaches at night to lay their eggs in the warm sand.",
-      "nl": "Bij Galibi aan de kust kruipen 's nachts enorme lederschildpadden het strand op om hun eieren in het warme zand te leggen."
+      "nl": "Bij Galibi aan de kust kruipen 's nachts enorme lederschildpadden het strand op om hun eieren in het warme zand te leggen.",
+      "img": "Galibi,_Suriname_07.jpg"
     },
     {
       "en": "On Sunday mornings in Paramaribo, men gather in the square with little songbirds for friendly whistling contests, to see whose bird can sing the most.",
-      "nl": "Op zondagochtend komen mannen in Paramaribo met hun zangvogeltjes samen op het plein voor vriendschappelijke fluitwedstrijden, om te zien welke vogel het meest zingt."
+      "nl": "Op zondagochtend komen mannen in Paramaribo met hun zangvogeltjes samen op het plein voor vriendschappelijke fluitwedstrijden, om te zien welke vogel het meest zingt.",
+      "img": "Presidential_Palace_of_Suriname_(31165680496).jpg"
     },
     {
       "en": "Football is loved, and many famous footballers who played for the Netherlands have Surinamese roots.",
-      "nl": "Voetbal is geliefd, en veel beroemde voetballers die voor Nederland speelden, hebben Surinaamse wortels."
+      "nl": "Voetbal is geliefd, en veel beroemde voetballers die voor Nederland speelden, hebben Surinaamse wortels.",
+      "img": "Brokopondo_reservoir.jpg"
     },
     {
       "en": "Before you go, cool down with a glass of sweet dawet. Then cross the Corantijn River to the west, where Guyana is waiting for you.",
-      "nl": "Koel af met een glas zoete dawet voordat je vertrekt. Steek daarna de Corantijnrivier over naar het westen, waar Guyana op je wacht."
+      "nl": "Koel af met een glas zoete dawet voordat je vertrekt. Steek daarna de Corantijnrivier over naar het westen, waar Guyana op je wacht.",
+      "img": "Nickerie.jpg"
     }
   ],
-  "next": ["Guyana", "Brazil", "Netherlands"]
+  "next": [
+    "Guyana",
+    "Brazil",
+    "Netherlands"
+  ]
 }

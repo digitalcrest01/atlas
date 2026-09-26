@@ -1,55 +1,74 @@
 {
   "country": "Bangladesh",
-  "languages": ["en", "bn"],
+  "languages": [
+    "en",
+    "bn"
+  ],
   "segments": [
     {
       "en": "Listen to the monsoon: rain drumming on tin roofs, frogs calling from the ponds, and a boatman singing as he poles along a swollen river. In Bangladesh, water shapes almost everything.",
-      "bn": "বর্ষার শব্দ শুনুন: টিনের চালে বৃষ্টির ঝমঝম, পুকুর থেকে ব্যাঙের ডাক, আর ভরা নদীতে লগি ঠেলতে ঠেলতে গান গাইছেন এক মাঝি। বাংলাদেশে প্রায় সবকিছুর রূপ গড়ে দেয় পানি।"
+      "bn": "বর্ষার শব্দ শুনুন: টিনের চালে বৃষ্টির ঝমঝম, পুকুর থেকে ব্যাঙের ডাক, আর ভরা নদীতে লগি ঠেলতে ঠেলতে গান গাইছেন এক মাঝি। বাংলাদেশে প্রায় সবকিছুর রূপ গড়ে দেয় পানি।",
+      "img": "Boat_on_Jamuna_River.jpg"
     },
     {
       "en": "The country sits on one of the world's great river deltas, where the Padma, the Jamuna and the Meghna meet and spread toward the Bay of Bengal. The land is flat, green and wonderfully fertile.",
-      "bn": "দেশটি পৃথিবীর অন্যতম বড় নদী-বদ্বীপে, যেখানে পদ্মা, যমুনা আর মেঘনা মিলে বঙ্গোপসাগরের দিকে ছড়িয়ে পড়েছে। এখানকার মাটি সমতল, সবুজ আর আশ্চর্য রকম উর্বর।"
+      "bn": "দেশটি পৃথিবীর অন্যতম বড় নদী-বদ্বীপে, যেখানে পদ্মা, যমুনা আর মেঘনা মিলে বঙ্গোপসাগরের দিকে ছড়িয়ে পড়েছে। এখানকার মাটি সমতল, সবুজ আর আশ্চর্য রকম উর্বর।",
+      "img": "Padma_River,_Bangladesh.jpg"
     },
     {
       "en": "People here say that fish and rice make a Bengali. The favourite fish is ilish, a silvery river fish often cooked in a sharp mustard sauce and eaten with the right hand, each mouthful mixed with rice.",
-      "bn": "এখানে বলে, মাছে-ভাতে বাঙালি। সবচেয়ে প্রিয় মাছ ইলিশ, নদীর রুপালি মাছ, প্রায়ই ঝাঁঝালো সরষে বাটায় রান্না হয়, আর ডান হাতে প্রতিটি লোকমা ভাতের সঙ্গে মেখে খাওয়া হয়।"
+      "bn": "এখানে বলে, মাছে-ভাতে বাঙালি। সবচেয়ে প্রিয় মাছ ইলিশ, নদীর রুপালি মাছ, প্রায়ই ঝাঁঝালো সরষে বাটায় রান্না হয়, আর ডান হাতে প্রতিটি লোকমা ভাতের সঙ্গে মেখে খাওয়া হয়।",
+      "img": "ঐতিহ্যবাহী_সর্ষে_ইলিশ.jpg"
     },
     {
       "en": "Bangla is spoken with enormous pride. Every twenty-first of February, people lay flowers at the Shaheed Minar to honour those who gave their lives in 1952 for the right to speak it. The world now marks that day as International Mother Language Day.",
-      "bn": "বাংলা ভাষা এখানে উচ্চারিত হয় গভীর গর্বে। প্রতি একুশে ফেব্রুয়ারি মানুষ শহীদ মিনারে ফুল দেয়, উনিশশো বাহান্ন সালে মাতৃভাষার অধিকারের জন্য যাঁরা প্রাণ দিয়েছিলেন তাঁদের স্মরণে। সারা বিশ্ব এখন দিনটিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে পালন করে।"
+      "bn": "বাংলা ভাষা এখানে উচ্চারিত হয় গভীর গর্বে। প্রতি একুশে ফেব্রুয়ারি মানুষ শহীদ মিনারে ফুল দেয়, উনিশশো বাহান্ন সালে মাতৃভাষার অধিকারের জন্য যাঁরা প্রাণ দিয়েছিলেন তাঁদের স্মরণে। সারা বিশ্ব এখন দিনটিকে আন্তর্জাতিক মাতৃভাষা দিবস হিসেবে পালন করে।",
+      "img": "Bangla_academy.JPG"
     },
     {
       "en": "The great poet Rabindranath Tagore wrote the national anthem, Amar Shonar Bangla, my golden Bengal, and the rebel poet Kazi Nazrul Islam is honoured as the national poet.",
-      "bn": "মহাকবি রবীন্দ্রনাথ ঠাকুর লিখেছেন জাতীয় সংগীত, আমার সোনার বাংলা, আর বিদ্রোহী কবি কাজী নজরুল ইসলাম সম্মানিত হন জাতীয় কবি হিসেবে।"
+      "bn": "মহাকবি রবীন্দ্রনাথ ঠাকুর লিখেছেন জাতীয় সংগীত, আমার সোনার বাংলা, আর বিদ্রোহী কবি কাজী নজরুল ইসলাম সম্মানিত হন জাতীয় কবি হিসেবে।",
+      "img": "Shilaidaha_Rabindra_Kuthibadi._5.jpg"
     },
     {
       "en": "Dhaka, the capital, is loud, crowded and full of energy. Its streets overflow with cycle rickshaws painted in dazzling colours, with film stars, flowers and birds on every panel.",
-      "bn": "রাজধানী ঢাকা কোলাহলময়, জনাকীর্ণ আর প্রাণশক্তিতে ভরপুর। রাস্তা উপচে পড়ে ঝলমলে রঙে আঁকা রিকশায়, যাদের গায়ে সিনেমার তারকা, ফুল আর পাখির ছবি।"
+      "bn": "রাজধানী ঢাকা কোলাহলময়, জনাকীর্ণ আর প্রাণশক্তিতে ভরপুর। রাস্তা উপচে পড়ে ঝলমলে রঙে আঁকা রিকশায়, যাদের গায়ে সিনেমার তারকা, ফুল আর পাখির ছবি।",
+      "img": "Tejgaon_Commercial_Area.jpg"
     },
     {
       "en": "Mid-April brings Pohela Boishakh, the Bengali new year. People dress in red and white, eat rice with fried ilish and plenty of sweets, and join a joyful parade of giant masks and painted animals.",
-      "bn": "এপ্রিলের মাঝামাঝি আসে পহেলা বৈশাখ, বাংলা নববর্ষ। মানুষ লাল-সাদা পোশাকে সাজে, পান্তা-ইলিশ আর মিষ্টি খায়, আর বিশাল মুখোশ ও রং করা পশুপাখির আনন্দ শোভাযাত্রায় যোগ দেয়।"
+      "bn": "এপ্রিলের মাঝামাঝি আসে পহেলা বৈশাখ, বাংলা নববর্ষ। মানুষ লাল-সাদা পোশাকে সাজে, পান্তা-ইলিশ আর মিষ্টি খায়, আর বিশাল মুখোশ ও রং করা পশুপাখির আনন্দ শোভাযাত্রায় যোগ দেয়।",
+      "img": "Panta_Ilish.jpg"
     },
     {
       "en": "In winter, kitchens fill with the smell of pitha, rice cakes sweetened with date palm molasses, steamed, fried or stuffed with coconut. A cup of milky tea is never far away.",
-      "bn": "শীতে রান্নাঘর ভরে যায় পিঠার গন্ধে, খেজুরের গুড়ে মিষ্টি চালের পিঠা, ভাপা, ভাজা কিংবা নারকেলের পুর দেওয়া। আর এক কাপ দুধ চা কখনো দূরে থাকে না।"
+      "bn": "শীতে রান্নাঘর ভরে যায় পিঠার গন্ধে, খেজুরের গুড়ে মিষ্টি চালের পিঠা, ভাপা, ভাজা কিংবা নারকেলের পুর দেওয়া। আর এক কাপ দুধ চা কখনো দূরে থাকে না।",
+      "img": "Bhapa_Pitha.jpg"
     },
     {
       "en": "In the southwest lies the Sundarbans, the largest mangrove forest in the world, shared with India. In its maze of tidal creeks, the Bengal tiger swims between islands and deer tiptoe through the roots.",
-      "bn": "দক্ষিণ-পশ্চিমে সুন্দরবন, ভারতের সঙ্গে ভাগ করে নেওয়া পৃথিবীর সবচেয়ে বড় ম্যানগ্রোভ বন। জোয়ার-ভাটার খালের এই গোলকধাঁধায় রয়েল বেঙ্গল টাইগার সাঁতরে এক দ্বীপ থেকে আরেক দ্বীপে যায়, আর হরিণ শ্বাসমূলের ফাঁকে পা টিপে হাঁটে।"
+      "bn": "দক্ষিণ-পশ্চিমে সুন্দরবন, ভারতের সঙ্গে ভাগ করে নেওয়া পৃথিবীর সবচেয়ে বড় ম্যানগ্রোভ বন। জোয়ার-ভাটার খালের এই গোলকধাঁধায় রয়েল বেঙ্গল টাইগার সাঁতরে এক দ্বীপ থেকে আরেক দ্বীপে যায়, আর হরিণ শ্বাসমূলের ফাঁকে পা টিপে হাঁটে।",
+      "img": "Sundarban_Tiger.jpg"
     },
     {
       "en": "In the northeast, around Sylhet, tea gardens roll over the hills like green waves. And in the southeast, at Cox's Bazar, a golden beach runs on and on beside the sea.",
-      "bn": "উত্তর-পূর্বে সিলেটের আশপাশে চা-বাগান পাহাড়ের গায়ে সবুজ ঢেউয়ের মতো গড়িয়ে যায়। আর দক্ষিণ-পূর্বে কক্সবাজারে সোনালি সৈকত সমুদ্রের পাশে চলেছে তো চলেছেই।"
+      "bn": "উত্তর-পূর্বে সিলেটের আশপাশে চা-বাগান পাহাড়ের গায়ে সবুজ ঢেউয়ের মতো গড়িয়ে যায়। আর দক্ষিণ-পূর্বে কক্সবাজারে সোনালি সৈকত সমুদ্রের পাশে চলেছে তো চলেছেই।",
+      "img": "Tea_garden_in_Sylhet_(40349163252).jpg"
     },
     {
       "en": "Village women stitch nakshi kantha, quilts embroidered with scenes of daily life, and wandering Baul singers travel with a one-stringed ektara, singing of the soul and of love.",
-      "bn": "গ্রামের নারীরা সেলাই করেন নকশিকাঁথা, যাতে ফুটে ওঠে প্রতিদিনের জীবনের ছবি, আর বাউল শিল্পীরা একতারা হাতে ঘুরে বেড়ান, গেয়ে চলেন মন আর ভালোবাসার গান।"
+      "bn": "গ্রামের নারীরা সেলাই করেন নকশিকাঁথা, যাতে ফুটে ওঠে প্রতিদিনের জীবনের ছবি, আর বাউল শিল্পীরা একতারা হাতে ঘুরে বেড়ান, গেয়ে চলেন মন আর ভালোবাসার গান।",
+      "img": "Kantha_(Quilt)_LACMA_AC1994.131.1.jpg"
     },
     {
       "en": "As the boatman turns for home, it is time for us to travel on too. Follow the river west, and India is waiting on the other bank.",
-      "bn": "মাঝি যখন ঘরের পথে নৌকা ফেরান, তখন আমাদেরও এগিয়ে যাওয়ার সময়। নদী ধরে পশ্চিমে চলুন, ওপারে অপেক্ষা করছে ভারত।"
+      "bn": "মাঝি যখন ঘরের পথে নৌকা ফেরান, তখন আমাদেরও এগিয়ে যাওয়ার সময়। নদী ধরে পশ্চিমে চলুন, ওপারে অপেক্ষা করছে ভারত।",
+      "img": "Burigonga_River.jpg"
     }
   ],
-  "next": ["India", "Myanmar", "Bhutan"]
+  "next": [
+    "India",
+    "Myanmar",
+    "Bhutan"
+  ]
 }

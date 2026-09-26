@@ -1,55 +1,74 @@
 {
   "country": "Costa Rica",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "Pura vida! You'll hear those two words everywhere here. They mean pure life, but people use them for hello, goodbye, thank you and everything's fine. Costa Rica is a small country with a very big smile.",
-      "es-419": "¡Pura vida! Vas a escuchar esas dos palabras por todas partes. Significan vida pura, pero aquí sirven para saludar, despedirse, dar las gracias o decir que todo está bien. Costa Rica es un país pequeño con una sonrisa enorme."
+      "es-419": "¡Pura vida! Vas a escuchar esas dos palabras por todas partes. Significan vida pura, pero aquí sirven para saludar, despedirse, dar las gracias o decir que todo está bien. Costa Rica es un país pequeño con una sonrisa enorme.",
+      "img": "Manuel_antonio_06_april_2005.jpeg"
     },
     {
       "en": "Costa Ricans call themselves Ticos and Ticas. The nickname comes from their habit of making words small and affectionate, so a moment becomes a momentico, a tiny little moment.",
-      "es-419": "Los costarricenses se llaman a sí mismos ticos y ticas. El apodo viene de su costumbre de hacer las palabras chiquitas y cariñosas, así que un momento se convierte en un momentico."
+      "es-419": "Los costarricenses se llaman a sí mismos ticos y ticas. El apodo viene de su costumbre de hacer las palabras chiquitas y cariñosas, así que un momento se convierte en un momentico.",
+      "img": "Beach_Tamarindo,_Costa_Rica.jpg"
     },
     {
       "en": "Look at the map and you'll see a narrow land bridge between two oceans. On one side the Pacific, with long surf beaches. On the other the Caribbean, where Afro-Caribbean families brought calypso rhythms, rice cooked in coconut milk and a lilting English Creole.",
-      "es-419": "Mira el mapa y verás un puente de tierra angosto entre dos océanos. De un lado, el Pacífico, con largas playas para surfear. Del otro, el Caribe, donde las familias afrocaribeñas trajeron ritmos de calipso, el arroz cocinado en leche de coco y un criollo inglés muy cantadito."
+      "es-419": "Mira el mapa y verás un puente de tierra angosto entre dos océanos. De un lado, el Pacífico, con largas playas para surfear. Del otro, el Caribe, donde las familias afrocaribeñas trajeron ritmos de calipso, el arroz cocinado en leche de coco y un criollo inglés muy cantadito.",
+      "img": "Cahuita_national_park,_Costa_Rica.jpg"
     },
     {
       "en": "Down the middle runs a spine of volcanoes. Arenal rises in an almost perfect cone above the forest, and at Poás you can peer into a crater that often holds a steaming, milky blue lake.",
-      "es-419": "Por el centro corre una columna de volcanes. El Arenal se levanta como un cono casi perfecto sobre el bosque, y en el Poás puedes asomarte a un cráter que muchas veces guarda una laguna humeante de color celeste lechoso."
+      "es-419": "Por el centro corre una columna de volcanes. El Arenal se levanta como un cono casi perfecto sobre el bosque, y en el Poás puedes asomarte a un cráter que muchas veces guarda una laguna humeante de color celeste lechoso.",
+      "img": "Arenal_volcano_(70785p)_(cropped).jpg"
     },
     {
       "en": "Up in the cloud forests of Monteverde, mist drifts through trees dripping with moss and orchids. If you're lucky, a resplendent quetzal flashes by in green and scarlet, trailing its long tail feathers.",
-      "es-419": "Arriba, en los bosques nubosos de Monteverde, la neblina se cuela entre árboles cubiertos de musgo y orquídeas. Si tienes suerte, verás pasar un quetzal resplandeciente, verde y rojo, con sus larguísimas plumas de la cola."
+      "es-419": "Arriba, en los bosques nubosos de Monteverde, la neblina se cuela entre árboles cubiertos de musgo y orquídeas. Si tienes suerte, verás pasar un quetzal resplandeciente, verde y rojo, con sus larguísimas plumas de la cola.",
+      "img": "Monteverde_bosque.jpg"
     },
     {
       "en": "Costa Rica has protected a large share of its land as national parks and reserves. Sloths hang from the branches, howler monkeys roar at dawn, and on certain beaches sea turtles crawl ashore at night to lay their eggs.",
-      "es-419": "Costa Rica ha protegido una buena parte de su territorio en parques nacionales y reservas. Los perezosos cuelgan de las ramas, los monos congo rugen al amanecer y, en ciertas playas, las tortugas marinas salen de noche a poner sus huevos."
+      "es-419": "Costa Rica ha protegido una buena parte de su territorio en parques nacionales y reservas. Los perezosos cuelgan de las ramas, los monos congo rugen al amanecer y, en ciertas playas, las tortugas marinas salen de noche a poner sus huevos.",
+      "img": "Bradypus.jpg"
     },
     {
       "en": "In 1948 the country abolished its army, and the money went instead into schools and health care. Ticos are proud of that choice, and you'll often hear it mentioned with a smile.",
-      "es-419": "En 1948 el país abolió su ejército, y ese dinero se dedicó a escuelas y a la salud. Los ticos están orgullosos de esa decisión, y es común que la mencionen con una sonrisa."
+      "es-419": "En 1948 el país abolió su ejército, y ese dinero se dedicó a escuelas y a la salud. Los ticos están orgullosos de esa decisión, y es común que la mencionen con una sonrisa.",
+      "img": "Irazu_Volcano.JPG"
     },
     {
       "en": "Breakfast means gallo pinto, rice and black beans fried together with onion and coriander, served with eggs, sweet plantain and a splash of the tangy brown sauce everyone simply calls Lizano.",
-      "es-419": "El desayuno es gallo pinto: arroz y frijoles negros sofritos con cebolla y culantro, acompañados de huevo, plátano maduro y un chorrito de la salsa café que todo el mundo llama simplemente Lizano."
+      "es-419": "El desayuno es gallo pinto: arroz y frijoles negros sofritos con cebolla y culantro, acompañados de huevo, plátano maduro y un chorrito de la salsa café que todo el mundo llama simplemente Lizano.",
+      "img": "Gallo_Pinto.jpg"
     },
     {
       "en": "Coffee here is a matter of pride. On the green slopes around the Central Valley, families still pick the ripe red cherries by hand, and the painted oxcarts that once carried the harvest are now a national symbol, bright with swirling patterns.",
-      "es-419": "El café aquí es motivo de orgullo. En las laderas verdes del Valle Central, muchas familias todavía recogen a mano los granos rojos y maduros, y las carretas pintadas que antes llevaban la cosecha son hoy un símbolo nacional, llenas de dibujos de colores."
+      "es-419": "El café aquí es motivo de orgullo. En las laderas verdes del Valle Central, muchas familias todavía recogen a mano los granos rojos y maduros, y las carretas pintadas que antes llevaban la cosecha son hoy un símbolo nacional, llenas de dibujos de colores.",
+      "img": "World's_Largest_Oxcart_Sarchi_Costa_Rica.JPG"
     },
     {
       "en": "San José, the capital, sits in that valley, busy and friendly, with markets full of fruit you may never have tasted, like mamón chino, red and hairy on the outside and sweet within.",
-      "es-419": "San José, la capital, está en ese valle: ajetreada y amable, con mercados llenos de frutas que quizás nunca has probado, como el mamón chino, rojo y peludo por fuera y dulce por dentro."
+      "es-419": "San José, la capital, está en ese valle: ajetreada y amable, con mercados llenos de frutas que quizás nunca has probado, como el mamón chino, rojo y peludo por fuera y dulce por dentro.",
+      "img": "Rambutan_white_background_alt.jpg"
     },
     {
       "en": "Ticos tend to be gentle and polite. Many use the formal usted even with friends and family, and they'd rather say maybe than a blunt no.",
-      "es-419": "Los ticos suelen ser amables y educados. Muchos usan el usted incluso con amigos y familia, y prefieren decir tal vez antes que un no rotundo."
+      "es-419": "Los ticos suelen ser amables y educados. Muchos usan el usted incluso con amigos y familia, y prefieren decir tal vez antes que un no rotundo.",
+      "img": "Rio_celeste.jpg"
     },
     {
       "en": "So pack your rain jacket and your sense of wonder. When you're ready, head south along the coast, where Panama and its famous canal are waiting. Pura vida!",
-      "es-419": "Así que empaca tu capa para la lluvia y tus ganas de asombrarte. Cuando estés listo, sigue hacia el sur por la costa, donde te espera Panamá con su famoso canal. ¡Pura vida!"
+      "es-419": "Así que empaca tu capa para la lluvia y tus ganas de asombrarte. Cuando estés listo, sigue hacia el sur por la costa, donde te espera Panamá con su famoso canal. ¡Pura vida!",
+      "img": "Sirena_Station_at_Corcovado_National_Park_Costa_Rica.jpg"
     }
   ],
-  "next": ["Panama", "Nicaragua", "Colombia"]
+  "next": [
+    "Panama",
+    "Nicaragua",
+    "Colombia"
+  ]
 }

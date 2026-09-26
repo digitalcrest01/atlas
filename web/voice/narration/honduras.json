@@ -1,55 +1,74 @@
 {
   "country": "Honduras",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "A warm flour tortilla, folded around beans, cream and crumbly cheese. That's a baleada, and in Honduras it's breakfast, lunch or a late-night snack from a street stall. Buen provecho!",
-      "es-419": "Una tortilla de harina calientita, doblada con frijoles, mantequilla y queso desmoronado. Eso es una baleada, y en Honduras sirve de desayuno, almuerzo o antojo de medianoche en un puesto de la calle. ¡Buen provecho!"
+      "es-419": "Una tortilla de harina calientita, doblada con frijoles, mantequilla y queso desmoronado. Eso es una baleada, y en Honduras sirve de desayuno, almuerzo o antojo de medianoche en un puesto de la calle. ¡Buen provecho!",
+      "img": "Baleada.jpg"
     },
     {
       "en": "Honduras sits in the middle of Central America, with a long Caribbean coast in the north and a small window onto the Pacific in the south. Between them, pine-covered mountains and cloud forests fill the land.",
-      "es-419": "Honduras está en el centro de Centroamérica, con una larga costa caribeña al norte y una pequeña ventana al Pacífico en el sur. Entre las dos, montañas cubiertas de pinos y bosques nublados llenan el país."
+      "es-419": "Honduras está en el centro de Centroamérica, con una larga costa caribeña al norte y una pequeña ventana al Pacífico en el sur. Entre las dos, montañas cubiertas de pinos y bosques nublados llenan el país.",
+      "img": "Pico-Bonito_(12122463094).jpg"
     },
     {
       "en": "Hondurans are often called catrachos, and they wear the nickname with pride. You'll hear it shouted loudest when the national football team, La H, takes the field.",
-      "es-419": "A los hondureños les dicen catrachos, y llevan el apodo con orgullo. Se escucha más fuerte que nunca cuando la selección nacional, la H, sale a la cancha."
+      "es-419": "A los hondureños les dicen catrachos, y llevan el apodo con orgullo. Se escucha más fuerte que nunca cuando la selección nacional, la H, sale a la cancha.",
+      "img": "Cusuco_National_Park,_Honduras.jpg"
     },
     {
       "en": "In the west, near the border with Guatemala, lies Copán, a Maya city famous for its carvings. Its stone stelae show kings in elaborate headdresses, and a great staircase is covered with thousands of carved glyphs.",
-      "es-419": "En el occidente, cerca de la frontera con Guatemala, está Copán, una ciudad maya famosa por sus esculturas. Sus estelas de piedra muestran a reyes con tocados elaborados, y una gran escalinata está cubierta de miles de glifos tallados."
+      "es-419": "En el occidente, cerca de la frontera con Guatemala, está Copán, una ciudad maya famosa por sus esculturas. Sus estelas de piedra muestran a reyes con tocados elaborados, y una gran escalinata está cubierta de miles de glifos tallados.",
+      "img": "Copan_sculpture.jpg"
     },
     {
       "en": "At Copán, bright red scarlet macaws, the national bird, fly over the ruins again, and their raucous calls echo across the plazas where Maya rulers once walked.",
-      "es-419": "En Copán, las guacamayas rojas, el ave nacional, vuelven a volar sobre las ruinas, y sus graznidos resuenan en las plazas donde antes caminaban los gobernantes mayas."
+      "es-419": "En Copán, las guacamayas rojas, el ave nacional, vuelven a volar sobre las ruinas, y sus graznidos resuenan en las plazas donde antes caminaban los gobernantes mayas.",
+      "img": "Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg"
     },
     {
       "en": "Off the northern coast lie the Bay Islands, Roatán, Utila and Guanaja. Around them stretches part of a great barrier reef, where divers meet sea turtles, rays and, in some seasons, gentle whale sharks.",
-      "es-419": "Frente a la costa norte están las Islas de la Bahía: Roatán, Utila y Guanaja. A su alrededor se extiende parte de un gran arrecife, donde los buzos se encuentran con tortugas, rayas y, en ciertas temporadas, con el manso tiburón ballena."
+      "es-419": "Frente a la costa norte están las Islas de la Bahía: Roatán, Utila y Guanaja. A su alrededor se extiende parte de un gran arrecife, donde los buzos se encuentran con tortugas, rayas y, en ciertas temporadas, con el manso tiburón ballena.",
+      "img": "Westbay2106.jpg"
     },
     {
       "en": "Along the Caribbean shore live the Garifuna, descendants of African and Indigenous Caribbean peoples. Their language, music and dance are recognised by UNESCO, and their punta rhythms on the drums are impossible to sit still to.",
-      "es-419": "En la costa caribeña viven los garífunas, descendientes de pueblos africanos e indígenas del Caribe. Su idioma, su música y su danza están reconocidos por la UNESCO, y es imposible quedarse quieto con sus ritmos de punta."
+      "es-419": "En la costa caribeña viven los garífunas, descendientes de pueblos africanos e indígenas del Caribe. Su idioma, su música y su danza están reconocidos por la UNESCO, y es imposible quedarse quieto con sus ritmos de punta.",
+      "img": "Cerro_Chachahuate.jpg"
     },
     {
       "en": "Garifuna cooks make machuca, mashed plantain served with a coconut fish soup, and pan de coco, soft coconut bread. Across the country, people love plato típico, with beans, plantains, avocado and grilled meat.",
-      "es-419": "Las cocineras garífunas preparan machuca, plátano machacado con sopa de pescado en leche de coco, y pan de coco bien suavecito. En todo el país se disfruta el plato típico, con frijoles, plátano, aguacate y carne asada."
+      "es-419": "Las cocineras garífunas preparan machuca, plátano machacado con sopa de pescado en leche de coco, y pan de coco bien suavecito. En todo el país se disfruta el plato típico, con frijoles, plátano, aguacate y carne asada.",
+      "img": "Tostones.JPG"
     },
     {
       "en": "In the northeast, the Mosquitia is a vast wilderness of rainforest, rivers and lagoons, reachable mostly by boat or small plane. The Río Plátano reserve protects jaguars, tapirs and ancient secrets in the forest.",
-      "es-419": "En el noreste, la Mosquitia es una enorme selva de ríos y lagunas, adonde se llega casi siempre en lancha o en avioneta. La reserva del Río Plátano protege jaguares, dantos y antiguos secretos escondidos en la selva."
+      "es-419": "En el noreste, la Mosquitia es una enorme selva de ríos y lagunas, adonde se llega casi siempre en lancha o en avioneta. La reserva del Río Plátano protege jaguares, dantos y antiguos secretos escondidos en la selva.",
+      "img": "Rio_platano.jpg"
     },
     {
       "en": "The capital, Tegucigalpa, climbs steep hills in the highlands, and people often call it Tegus for short. San Pedro Sula, in the north, is the busy centre of business and industry.",
-      "es-419": "La capital, Tegucigalpa, trepa por empinados cerros del altiplano, y la gente a menudo la llama Tegus. San Pedro Sula, en el norte, es el gran centro de comercio e industria."
+      "es-419": "La capital, Tegucigalpa, trepa por empinados cerros del altiplano, y la gente a menudo la llama Tegus. San Pedro Sula, en el norte, es el gran centro de comercio e industria.",
+      "img": "Tegucigalpa_downtown_panoramic_2026.jpg"
     },
     {
       "en": "In the town of Yoro, people tell of the lluvia de peces, a rain of fish. After certain summer storms, small silver fish are found flapping on the ground, and the town celebrates with a festival.",
-      "es-419": "En Yoro, la gente habla de la lluvia de peces. Después de ciertas tormentas de verano, aparecen pececitos plateados coleteando en el suelo, y el pueblo lo celebra con un festival."
+      "es-419": "En Yoro, la gente habla de la lluvia de peces. Después de ciertas tormentas de verano, aparecen pececitos plateados coleteando en el suelo, y el pueblo lo celebra con un festival.",
+      "img": "Rio_cangrejo.JPG"
     },
     {
       "en": "One last baleada for the road? Then head west to Guatemala, where more of the Maya world is waiting, or south to Nicaragua, just across the mountains.",
-      "es-419": "¿Una última baleada para el camino? Luego sigue hacia el oeste, a Guatemala, donde te espera más del mundo maya, o hacia el sur, a Nicaragua, justo al otro lado de las montañas."
+      "es-419": "¿Una última baleada para el camino? Luego sigue hacia el oeste, a Guatemala, donde te espera más del mundo maya, o hacia el sur, a Nicaragua, justo al otro lado de las montañas.",
+      "img": "Yojoa_Lake.jpg"
     }
   ],
-  "next": ["Guatemala", "Nicaragua", "El Salvador"]
+  "next": [
+    "Guatemala",
+    "Nicaragua",
+    "El Salvador"
+  ]
 }
