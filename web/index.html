@@ -726,17 +726,29 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
-  .puzzle-wrap { max-width: 720px; margin: 0 auto; width: 100%; }
-  .puzzle-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .puzzle-wrap {
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    gap: 8px;
+  }
+  .puzzle-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex: 0 0 auto; }
   .puzzle-top h2 { margin: 0; font-size: 22px; }
   .puzzle-count { color: var(--ink-dim); font-size: 13px; }
   .puzzle-board {
-    width: min(100%, 720px);
-    margin: 0 auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
-    gap: 12px;
-    padding: 12px;
+    grid-template-columns: repeat(var(--pz-cols, 3), minmax(0, 1fr));
+    grid-template-rows: repeat(var(--pz-rows, 2), minmax(0, 1fr));
+    gap: 8px;
+    padding: 8px;
     background: #0c1c2e;
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -747,45 +759,54 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 4px;
     width: 100%;
-    min-height: 124px;
-    padding: 10px 8px;
-    border-radius: 14px;
+    height: 100%;
+    min-height: 0;
+    min-width: 0;
+    padding: 4px;
+    border-radius: 12px;
     border: 2px solid #f6e7c8;
     background: rgba(8, 16, 28, 0.92);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.28);
     touch-action: none;
+    overflow: hidden;
+    container-type: size;
   }
-  .puzzle-shape { width: 78px; height: 56px; }
+  .puzzle-shape { width: 86%; height: 42%; min-height: 0; }
   .puzzle-shape svg { width: 100%; height: 100%; display: block; }
   .puzzle-shape path { fill: #e7c27a; stroke: #3a2a12; stroke-width: 0.6; }
-  .puzzle-flag-emoji { font-size: 40px; line-height: 1; }
+  .puzzle-flag-emoji { font-size: 28px; font-size: 38cqmin; line-height: 1; }
   .puzzle-flag-name {
-    font-size: 13px;
+    font-size: 14cqmin;
     font-weight: 800;
     color: #fff;
     line-height: 1.1;
     text-align: center;
-    max-width: 110px;
+    max-width: 100%;
   }
-  .puzzle-flag.done { min-height: 108px; border-color: #d4a056; }
-  .puzzle-flag.done .puzzle-flag-emoji { font-size: 32px; }
-  .puzzle-flag.done .puzzle-shape { height: 40px; }
+  .puzzle-flag.done {
+    border-color: #d4a056;
+    padding: 2px;
+  }
+  .puzzle-flag.done .puzzle-flag-emoji { font-size: 42px; font-size: 74cqmin; }
   .puzzle-flag.is-hint {
     border-color: #ffd56a;
     box-shadow: 0 0 0 4px rgba(255, 196, 70, 0.55);
     animation: puzzlePulse 0.8s ease-in-out infinite;
   }
-  .puzzle-msg { min-height: 22px; text-align: center; color: var(--ink-dim); margin: 10px 0; }
+  .puzzle-msg { min-height: 18px; text-align: center; color: var(--ink-dim); margin: 0; flex: 0 0 auto; font-size: 14px; }
   .puzzle-msg.ok { color: var(--success, #7dcea0); }
   .puzzle-msg.no { color: #e07a5f; }
   .puzzle-tray {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 4px;
-    padding: 12px;
+    gap: 8px;
+    margin: 0;
+    padding: 8px;
+    max-height: 30%;
+    overflow: auto;
+    flex: 0 1 auto;
     border: 1px dashed var(--line);
     border-radius: 14px;
     background: rgba(0,0,0,0.15);
@@ -1094,6 +1115,10 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 24px 16px;
+  }
+  #view-puzzle {
+    overflow: hidden;
+    padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px));
   }
   .today-wrap { max-width: 640px; margin: 0 auto; width: 100%; display: flex; flex-direction: column; gap: 12px; }
   .today-card {
@@ -5402,11 +5427,13 @@ function renderPuzzle() {
   shown.forEach(c => {
     const placed = pz.placed.has(c.n);
     const hinted = pz.hint === c.n;
-    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '">' +
-      '<span class="puzzle-shape">' + puzzlePieceSvg(puzzleRings(c)) + '</span>' +
-      '<span class="puzzle-flag-emoji">' + (c.flag || '🏳️') + '</span>' +
-      (placed || hinted ? '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>' : '') +
-      '</button>';
+    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '">';
+    if (!placed) {
+      flags += '<span class="puzzle-shape">' + puzzlePieceSvg(puzzleRings(c)) + '</span>';
+    }
+    flags += '<span class="puzzle-flag-emoji">' + (c.flag || '🏳️') + '</span>';
+    if (!placed && hinted) flags += '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>';
+    flags += '</button>';
   });
   let tray = '';
   pz.tray.forEach(name => {
@@ -5440,6 +5467,35 @@ function renderPuzzle() {
       if (puzzleDidDrag) return;
       tryPlacePuzzle(pz.selected, flag.getAttribute('data-puzzle'));
     };
+  });
+  requestAnimationFrame(fitPuzzleBoard);
+}
+
+function fitPuzzleBoard() {
+  const board = document.querySelector('#view-puzzle .puzzle-board');
+  if (!board) return;
+  const n = board.children.length;
+  if (!n) return;
+  const gap = 8;
+  const w = Math.max(0, board.clientWidth - 16);
+  const h = Math.max(0, board.clientHeight - 16);
+  if (w < 20 || h < 20) return;
+  let cols = 1;
+  let best = -1;
+  for (let c = 1; c <= n; c++) {
+    const rows = Math.ceil(n / c);
+    const cw = (w - gap * (c - 1)) / c;
+    const ch = (h - gap * (rows - 1)) / rows;
+    const side = Math.min(cw, ch);
+    if (side > best) { best = side; cols = c; }
+  }
+  board.style.setProperty('--pz-cols', String(cols));
+  board.style.setProperty('--pz-rows', String(Math.ceil(n / cols)));
+}
+if (!window.__puzzleFitBound) {
+  window.__puzzleFitBound = true;
+  window.addEventListener('resize', () => {
+    if (document.body.classList.contains('mode-puzzle')) fitPuzzleBoard();
   });
 }
 
