@@ -1,59 +1,79 @@
 {
   "country": "China",
-  "languages": ["en", "zh-Hans"],
+  "languages": [
+    "en",
+    "zh-Hans"
+  ],
   "segments": [
     {
       "en": "Early morning in a city park. Grandparents move slowly through tai chi, a group dances to music from a small speaker, and an old man writes poems on the pavement with a brush dipped in water, words that fade as the sun climbs.",
-      "zh-Hans": "清晨的城市公园里，爷爷奶奶们正慢慢地打着太极拳，一群人跟着小音箱的音乐跳起广场舞，一位老人用蘸了清水的毛笔在地上写诗，字迹随着太阳升高渐渐消失。"
+      "zh-Hans": "清晨的城市公园里，爷爷奶奶们正慢慢地打着太极拳，一群人跟着小音箱的音乐跳起广场舞，一位老人用蘸了清水的毛笔在地上写诗，字迹随着太阳升高渐渐消失。",
+      "img": "Beihai_Park_65414.jpg"
     },
     {
       "en": "This is morning in China, a country so large and so old that it holds deserts and rainforests, snowy plateaus and tropical beaches, and thousands of years of history.",
-      "zh-Hans": "这就是中国的早晨。这个国家辽阔而古老，有沙漠也有雨林，有雪域高原也有热带海滩，还有几千年的悠久历史。"
+      "zh-Hans": "这就是中国的早晨。这个国家辽阔而古老，有沙漠也有雨林，有雪域高原也有热带海滩，还有几千年的悠久历史。",
+      "img": "1_tianzishan_wulingyuan_zhangjiajie_2012.jpg"
     },
     {
       "en": "Mandarin is the common language, but people also speak many regional tongues, like Cantonese in the south. What links them all is writing: Chinese characters, each carrying its own meaning, used for thousands of years.",
-      "zh-Hans": "普通话是全国通用的语言，但各地还有许多方言，比如南方的粤语。把大家联系在一起的是文字：每个汉字都有自己的意义，已经使用了几千年。"
+      "zh-Hans": "普通话是全国通用的语言，但各地还有许多方言，比如南方的粤语。把大家联系在一起的是文字：每个汉字都有自己的意义，已经使用了几千年。",
+      "img": "Temple_of_Earth_paifang.jpg"
     },
     {
       "en": "A traditional friendly greeting is not hello at all, but chī le ma, have you eaten? Food is how people care for each other, and meals are shared from dishes in the middle of the table.",
-      "zh-Hans": "一句传统的亲切问候，并不是你好，而是吃了吗？在这里，食物就是关心彼此的方式，大家围坐在一起，共享桌子中间的菜。"
+      "zh-Hans": "一句传统的亲切问候，并不是你好，而是吃了吗？在这里，食物就是关心彼此的方式，大家围坐在一起，共享桌子中间的菜。",
+      "img": "Chinese_DimSum_(9023590541).jpg"
     },
     {
       "en": "And what food! Sichuan dishes tingle with numbing peppercorns, Cantonese families gather for dim sum in bamboo steamers, Beijing is famous for roast duck, and in the north, noodles are pulled by hand into long, stretchy strands.",
-      "zh-Hans": "说到美食，四川菜里的花椒让舌头发麻，广东人一家老小去喝早茶，品尝竹蒸笼里的点心，北京以烤鸭闻名，而在北方，师傅们用手拉出又长又筋道的面条。"
+      "zh-Hans": "说到美食，四川菜里的花椒让舌头发麻，广东人一家老小去喝早茶，品尝竹蒸笼里的点心，北京以烤鸭闻名，而在北方，师傅们用手拉出又长又筋道的面条。",
+      "img": "Peking_Duck,_2014_(02).jpg"
     },
     {
       "en": "A tip at the table: never stand your chopsticks upright in a bowl of rice, as it recalls offerings for the dead. And when someone pours your tea, tap two fingers on the table to say thank you.",
-      "zh-Hans": "餐桌上有个小提醒：别把筷子竖着插在米饭里，那会让人联想到祭奠。别人给你倒茶时，用两根手指在桌上轻轻敲一敲，就表示谢谢。"
+      "zh-Hans": "餐桌上有个小提醒：别把筷子竖着插在米饭里，那会让人联想到祭奠。别人给你倒茶时，用两根手指在桌上轻轻敲一敲，就表示谢谢。",
+      "img": "Chinese_tea_set_and_three_gaiwan.jpg"
     },
     {
       "en": "The biggest celebration is Spring Festival, the Lunar New Year. Families travel across the country to be together, homes glow with lucky red, children receive red envelopes of money, and in many places firecrackers crackle at midnight.",
-      "zh-Hans": "最盛大的节日是春节，也就是农历新年。人们跨越千山万水回家团圆，家家户户换上喜庆的红色，孩子们收到红包，在许多地方，午夜时分鞭炮声响成一片。"
+      "zh-Hans": "最盛大的节日是春节，也就是农历新年。人们跨越千山万水回家团圆，家家户户换上喜庆的红色，孩子们收到红包，在许多地方，午夜时分鞭炮声响成一片。",
+      "img": "Kung_Hei_Fat_Choi!_(6834861529).jpg"
     },
     {
       "en": "At the Mid-Autumn Festival, families gaze at the full moon together and share mooncakes, round pastries filled with sweet lotus paste or red bean.",
-      "zh-Hans": "中秋节时，一家人一起赏月，分享月饼，那是一种圆圆的点心，里面有甜甜的莲蓉或红豆馅。"
+      "zh-Hans": "中秋节时，一家人一起赏月，分享月饼，那是一种圆圆的点心，里面有甜甜的莲蓉或红豆馅。",
+      "img": "Snowskin_cake_truffle_mooncakes_-_48601590197.jpg"
     },
     {
       "en": "History is everywhere. The Great Wall winds over mountains and deserts for thousands of kilometres, the Forbidden City in Beijing was home to emperors for centuries, and near Xi'an an army of life-size clay warriors guards the tomb of the first emperor.",
-      "zh-Hans": "历史无处不在。长城翻山越岭、穿越沙漠，绵延数千公里；北京的紫禁城曾是历代帝王居住了几百年的皇宫；西安附近，一支与真人一般大小的陶俑大军守护着秦始皇的陵墓。"
+      "zh-Hans": "历史无处不在。长城翻山越岭、穿越沙漠，绵延数千公里；北京的紫禁城曾是历代帝王居住了几百年的皇宫；西安附近，一支与真人一般大小的陶俑大军守护着秦始皇的陵墓。",
+      "img": "The_Forbidden_City_-_View_from_Coal_Hill.jpg"
     },
     {
       "en": "In the misty bamboo forests of Sichuan live giant pandas, and around Guilin, rivers wind between steep green hills that look like brushstrokes in an ink painting.",
-      "zh-Hans": "在四川云雾缭绕的竹林里生活着大熊猫；在桂林，江水蜿蜒穿过一座座陡峭的青山，宛如一幅水墨画。"
+      "zh-Hans": "在四川云雾缭绕的竹林里生活着大熊猫；在桂林，江水蜿蜒穿过一座座陡峭的青山，宛如一幅水墨画。",
+      "img": "Grosser_Panda.JPG"
     },
     {
       "en": "The Yangtze, China's longest river, flows from the high western mountains to the sea near Shanghai, where glittering towers and historic buildings face each other across the Huangpu River.",
-      "zh-Hans": "中国最长的河流长江，从西部的高山一路奔流，在上海附近汇入大海。在上海，闪亮的摩天大楼与历史悠久的老建筑隔着黄浦江遥遥相望。"
+      "zh-Hans": "中国最长的河流长江，从西部的高山一路奔流，在上海附近汇入大海。在上海，闪亮的摩天大楼与历史悠久的老建筑隔着黄浦江遥遥相望。",
+      "img": "Dusk_on_the_Yangtze_River.jpg"
     },
     {
       "en": "Tea is part of daily life, from green tea in Hangzhou to oolong in Fujian. Sip slowly, and watch the leaves unfold.",
-      "zh-Hans": "茶是日常生活的一部分，从杭州的绿茶到福建芬芳的乌龙茶。慢慢品一口，看着茶叶在杯中缓缓舒展。"
+      "zh-Hans": "茶是日常生活的一部分，从杭州的绿茶到福建芬芳的乌龙茶。慢慢品一口，看着茶叶在杯中缓缓舒展。",
+      "img": "Longjing_tea.jpg"
     },
     {
       "en": "Now travel north beyond the Great Wall, toward wide grasslands and round felt tents. Mongolia is waiting.",
-      "zh-Hans": "现在，向北出发吧，越过长城，走向辽阔的草原和圆圆的毡房。蒙古国正在等着你。"
+      "zh-Hans": "现在，向北出发吧，越过长城，走向辽阔的草原和圆圆的毡房。蒙古国正在等着你。",
+      "img": "呼伦贝尔_哈克_-_panoramio.jpg"
     }
   ],
-  "next": ["Mongolia", "Vietnam", "Nepal"]
+  "next": [
+    "Mongolia",
+    "Vietnam",
+    "Nepal"
+  ]
 }

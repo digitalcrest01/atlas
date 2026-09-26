@@ -7,55 +7,68 @@
   "segments": [
     {
       "en": "Picture a white plain so flat and so vast that, after the summer rains, a thin sheet of water turns it into a mirror. You seem to walk across the sky. This is the Salar de Uyuni, and it is only the beginning of Bolivia.",
-      "es-419": "Imagina una llanura blanca tan plana y tan inmensa que, después de las lluvias de verano, una fina capa de agua la convierte en un espejo. Parece que caminas sobre el cielo. Es el Salar de Uyuni, y es apenas el comienzo de Bolivia."
+      "es-419": "Imagina una llanura blanca tan plana y tan inmensa que, después de las lluvias de verano, una fina capa de agua la convierte en un espejo. Parece que caminas sobre el cielo. Es el Salar de Uyuni, y es apenas el comienzo de Bolivia.",
+      "img": "Volcán_Tunupa_&_Salar_de_Uyuni.jpg"
     },
     {
       "en": "Bolivia has no coastline, but it has height. Much of the west lies on the Altiplano, a high plateau between two ranges of the Andes, where the air is thin and everyone gives you the same advice: walk slowly.",
-      "es-419": "Bolivia no tiene mar, pero tiene altura. Gran parte del oeste se extiende sobre el Altiplano, una meseta elevada entre dos cordilleras de los Andes, donde el aire es delgado y todos te dan el mismo consejo: camina despacio."
+      "es-419": "Bolivia no tiene mar, pero tiene altura. Gran parte del oeste se extiende sobre el Altiplano, una meseta elevada entre dos cordilleras de los Andes, donde el aire es delgado y todos te dan el mismo consejo: camina despacio.",
+      "img": "Reserva_Eduardo_Avaroa.jpg"
     },
     {
       "en": "La Paz, the seat of government, tumbles down a steep canyon beneath snowy Illimani. On the rim above sits El Alto, and between the two glide bright cable cars, a flying commute over rooftops and markets.",
-      "es-419": "La Paz, sede del gobierno, se derrama por un cañón empinado bajo el nevado Illimani. En el borde de arriba está El Alto, y entre ambas se deslizan teleféricos de colores, un viaje diario por los aires sobre techos y mercados."
+      "es-419": "La Paz, sede del gobierno, se derrama por un cañón empinado bajo el nevado Illimani. En el borde de arriba está El Alto, y entre ambas se deslizan teleféricos de colores, un viaje diario por los aires sobre techos y mercados.",
+      "img": "Illimani2.JPG"
     },
     {
       "en": "The constitutional capital is Sucre, a gentle city of white walls and red roofs. Nearby, Potosí grew rich in colonial times on the silver of Cerro Rico.",
-      "es-419": "La capital constitucional es Sucre, una ciudad apacible de muros blancos y tejados rojos. Cerca de allí, Potosí se enriqueció en tiempos coloniales con la plata del Cerro Rico."
+      "es-419": "La capital constitucional es Sucre, una ciudad apacible de muros blancos y tejados rojos. Cerca de allí, Potosí se enriqueció en tiempos coloniales con la plata del Cerro Rico.",
+      "img": "Sucre,_Capital_de_Bolivia.jpg"
     },
     {
       "en": "Beside Spanish you will hear Quechua and Aymara in markets and on buses, and Guaraní in the lowlands. A friendly greeting in Aymara is kamisaraki, and it always earns a smile.",
-      "es-419": "Junto al castellano escucharás quechua y aimara en los mercados y en los micros, y guaraní en las tierras bajas. Un saludo amable en aimara es kamisaraki, y siempre arranca una sonrisa."
+      "es-419": "Junto al castellano escucharás quechua y aimara en los mercados y en los micros, y guaraní en las tierras bajas. Un saludo amable en aimara es kamisaraki, y siempre arranca una sonrisa.",
+      "img": "Vista_de_la_Villa_Imperial_de_Potosí.jpg"
     },
     {
       "en": "Look out for the cholitas of La Paz, in wide layered skirts called polleras, long braids and small bowler hats perched just so. Their style is a proud statement of identity.",
-      "es-419": "Fíjate en las cholitas paceñas, con sus amplias polleras de varias capas, largas trenzas y un pequeño sombrero bombín colocado con precisión. Su estilo es una orgullosa afirmación de identidad."
+      "es-419": "Fíjate en las cholitas paceñas, con sus amplias polleras de varias capas, largas trenzas y un pequeño sombrero bombín colocado con precisión. Su estilo es una orgullosa afirmación de identidad.",
+      "img": "El_Alto,_Bo.jpg"
     },
     {
       "en": "Lake Titicaca, shared with Peru, shines a deep blue, and the Isla del Sol keeps ancient paths and terraces. Not far away stand the stone gateways of Tiwanaku, built by a civilisation that flourished long before the Inca.",
-      "es-419": "El lago Titicaca, compartido con el Perú, brilla con un azul profundo, y la Isla del Sol guarda senderos y terrazas antiguas. No muy lejos se alzan las portadas de piedra de Tiwanaku, obra de una civilización que floreció mucho antes que los incas."
+      "es-419": "El lago Titicaca, compartido con el Perú, brilla con un azul profundo, y la Isla del Sol guarda senderos y terrazas antiguas. No muy lejos se alzan las portadas de piedra de Tiwanaku, obra de una civilización que floreció mucho antes que los incas.",
+      "img": "Isladelsol.jpg"
     },
     {
       "en": "Mid-morning is salteña time. These baked pastries hold a hot, juicy stew, and eating one without dripping is a small art. Hold it upright, bite a corner, and sip before you chew.",
-      "es-419": "A media mañana llega la hora de la salteña. Estas empanadas horneadas guardan un guiso caliente y jugoso, y comerlas sin chorrearse es todo un arte. Sostenla de pie, muerde una esquina y sorbe antes de masticar."
+      "es-419": "A media mañana llega la hora de la salteña. Estas empanadas horneadas guardan un guiso caliente y jugoso, y comerlas sin chorrearse es todo un arte. Sostenla de pie, muerde una esquina y sorbe antes de masticar.",
+      "img": "Salteñas_de_Bolivia.jpg"
     },
     {
       "en": "On a chilly evening, warm your hands around a cup of api, a thick drink of purple corn and cinnamon, with a crisp fried pastry on the side.",
-      "es-419": "En una tarde fría, calienta tus manos con un vaso de api, una bebida espesa de maíz morado y canela, acompañada de un pastel frito y crujiente."
+      "es-419": "En una tarde fría, calienta tus manos con un vaso de api, una bebida espesa de maíz morado y canela, acompañada de un pastel frito y crujiente.",
+      "img": "Altiplano,_Bolivien_(11215029456).jpg"
     },
     {
       "en": "Carnival in Oruro is one of the great festivals of the Andes. Dancers in towering devil masks leap through the streets in the Diablada, while brass bands thunder behind them.",
-      "es-419": "El Carnaval de Oruro es una de las grandes fiestas de los Andes. Bailarines con enormes máscaras de diablo saltan por las calles en la Diablada, mientras las bandas de bronces retumban detrás."
+      "es-419": "El Carnaval de Oruro es una de las grandes fiestas de los Andes. Bailarines con enormes máscaras de diablo saltan por las calles en la Diablada, mientras las bandas de bronces retumban detrás.",
+      "img": "Santuario_de_Nuestra_Señora_del_Socavón,_Oruro.jpg"
     },
     {
       "en": "In August, many families honour Pachamama, Mother Earth, with sweets, coca leaves and a splash of drink, thanking her for the harvest.",
-      "es-419": "En agosto, muchas familias rinden homenaje a la Pachamama, la Madre Tierra, con dulces, hojas de coca y un chorrito de bebida, para agradecerle la cosecha."
+      "es-419": "En agosto, muchas familias rinden homenaje a la Pachamama, la Madre Tierra, con dulces, hojas de coca y un chorrito de bebida, para agradecerle la cosecha.",
+      "img": "Arbol_de_Piedra.jpg"
     },
     {
       "en": "Travel east and the mountains fall away into warm lowlands. Santa Cruz is lively and tropical, and beyond it stretch wetlands and Amazon rainforest, home to river dolphins, macaws and monkeys.",
-      "es-419": "Si viajas al este, las montañas dan paso a tierras bajas y cálidas. Santa Cruz es alegre y tropical, y más allá se extienden humedales y selva amazónica, hogar de bufeos, parabas y monos."
+      "es-419": "Si viajas al este, las montañas dan paso a tierras bajas y cálidas. Santa Cruz es alegre y tropical, y más allá se extienden humedales y selva amazónica, hogar de bufeos, parabas y monos.",
+      "img": "Madidi_park.JPG"
     },
     {
       "en": "So take one last look at that mirror of salt and sky, then follow the shore of Lake Titicaca westward. Peru is waiting just across the water.",
-      "es-419": "Así que echa una última mirada a ese espejo de sal y cielo, y luego sigue la orilla del lago Titicaca hacia el oeste. El Perú te espera al otro lado del agua."
+      "es-419": "Así que echa una última mirada a ese espejo de sal y cielo, y luego sigue la orilla del lago Titicaca hacia el oeste. El Perú te espera al otro lado del agua.",
+      "img": "Copacabana,_Bolivia_at_sunset.jpg"
     }
   ],
   "next": [

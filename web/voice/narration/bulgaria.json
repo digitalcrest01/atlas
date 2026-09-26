@@ -1,42 +1,54 @@
 {
   "country": "Bulgaria",
-  "languages": ["en", "bg"],
+  "languages": [
+    "en",
+    "bg"
+  ],
   "segments": [
     {
       "en": "A small secret before we begin. In Bulgaria, a nod of the head often means no, and a gentle shake from side to side means yes. Remember that at the market, and you will fit right in.",
-      "bg": "Една малка тайна, преди да започнем. В България кимането с глава често означава „не“, а лекото поклащане наляво-надясно означава „да“. Запомнете това на пазара и ще се чувствате като у дома си."
+      "bg": "Една малка тайна, преди да започнем. В България кимането с глава често означава „не“, а лекото поклащане наляво-надясно означава „да“. Запомнете това на пазара и ще се чувствате като у дома си.",
+      "img": "Владишкия_мост,_Велико_Търново.jpg"
     },
     {
       "en": "Bulgaria lies in the eastern Balkans, between the Danube and the Black Sea, with mountains folded through its middle.",
-      "bg": "България се намира в източната част на Балканите, между Дунав и Черно море, а през средата ѝ се простират планини."
+      "bg": "България се намира в източната част на Балканите, между Дунав и Черно море, а през средата ѝ се простират планини.",
+      "img": "Nikopolview.JPG"
     },
     {
       "en": "It is one of Europe's oldest states, and the Cyrillic alphabet took shape and flourished here more than a thousand years ago. Every twenty-fourth of May, children carry flowers to honour Saints Cyril and Methodius and the gift of letters.",
-      "bg": "Това е една от най-старите държави в Европа, а кирилицата се ражда и разцъфтява именно тук преди повече от хиляда години. Всяка година на двайсет и четвърти май децата носят цветя в чест на светите Кирил и Методий и на дара на буквите."
+      "bg": "Това е една от най-старите държави в Европа, а кирилицата се ражда и разцъфтява именно тук преди повече от хиляда години. Всяка година на двайсет и четвърти май децата носят цветя в чест на светите Кирил и Методий и на дара на буквите.",
+      "img": "The_Great_Basilica_Klearchos_2.jpg"
     },
     {
       "en": "On the first of March, friends give each other martenitsi, little bracelets of red and white thread, for health and spring. You wear yours until you see a stork or a tree in blossom, then hang it on a branch.",
-      "bg": "На първи март приятели си подаряват мартеници, малки гривни от червени и бели конци, за здраве и пролет. Носите своята, докато видите щъркел или цъфнало дърво, а после я закачате на клонче."
+      "bg": "На първи март приятели си подаряват мартеници, малки гривни от червени и бели конци, за здраве и пролет. Носите своята, докато видите щъркел или цъфнало дърво, а после я закачате на клонче.",
+      "img": "Martenitsa.jpg"
     },
     {
       "en": "In the Valley of Roses, near Kazanlak, pickers gather pink petals at dawn, when the scent is strongest. The precious rose oil distilled here is treasured by perfume makers around the world.",
-      "bg": "В Розовата долина край Казанлък берачите събират розовите цветчета призори, когато ароматът е най-силен. Скъпоценното розово масло, което се дестилира тук, е ценено от парфюмеристите по целия свят."
+      "bg": "В Розовата долина край Казанлък берачите събират розовите цветчета призори, когато ароматът е най-силен. Скъпоценното розово масло, което се дестилира тук, е ценено от парфюмеристите по целия свят.",
+      "img": "Rose_Valey_Bulgaria_01.JPG"
     },
     {
       "en": "Bulgarians are proud of their yoghurt, thick and tangy, made with a bacterium that even carries the country's name. It becomes tarator, a cold soup with cucumber, dill and walnuts, perfect on a hot summer day.",
-      "bg": "Българите се гордеят със своето кисело мляко, гъсто и приятно кисело, приготвено с бактерия, която дори носи името на страната. От него се прави таратор, студена супа с краставици, копър и орехи, идеална в горещ летен ден."
+      "bg": "Българите се гордеят със своето кисело мляко, гъсто и приятно кисело, приготвено с бактерия, която дори носи името на страната. От него се прави таратор, студена супа с краставици, копър и орехи, идеална в горещ летен ден.",
+      "img": "Joghurt.jpg"
     },
     {
       "en": "Breakfast might be banitsa, flaky pastry layered with egg and white cheese. Lunch might begin with shopska salad, tomatoes, cucumbers and peppers under a snowy blanket of grated cheese, in the colours of the flag.",
-      "bg": "Закуската може да е баница, хрупкави кори с яйца и сирене. Обядът може да започне с шопска салата, домати, краставици и чушки под снежна покривка от настъргано сирене, в цветовете на знамето."
+      "bg": "Закуската може да е баница, хрупкави кори с яйца и сирене. Обядът може да започне с шопска салата, домати, краставици и чушки под снежна покривка от настъргано сирене, в цветовете на знамето.",
+      "img": "Panagyurishte-style_eggs.jpg"
     },
     {
       "en": "High in the Rila Mountains stands Rila Monastery, its striped arches and painted walls glowing with saints and stories. For centuries it has been a heart of Bulgarian faith and learning.",
-      "bg": "Високо в Рила се издига Рилският манастир, с шарените си арки и изписани стени, пълни със светци и истории. Векове наред той е сърце на българската вяра и просвета."
+      "bg": "Високо в Рила се издига Рилският манастир, с шарените си арки и изписани стени, пълни със светци и истории. Векове наред той е сърце на българската вяра и просвета.",
+      "img": "Rila_Monastery,_August_2013.jpg"
     },
     {
       "en": "Plovdiv is one of the oldest continuously inhabited cities in Europe. You can sit in its Roman theatre, then wander among colourful merchant houses from the time of the National Revival.",
-      "bg": "Пловдив е един от най-старите непрекъснато обитавани градове в Европа. Можете да седнете в античния му театър, а после да се разходите сред пъстрите търговски къщи от епохата на Възраждането."
+      "bg": "Пловдив е един от най-старите непрекъснато обитавани градове в Европа. Можете да седнете в античния му театър, а после да се разходите сред пъстрите търговски къщи от епохата на Възраждането.",
+      "img": "Пловдив.jpg"
     },
     {
       "en": "In winter, villages fill with kukeri, dancers in huge furry costumes and fierce masks, heavy bells swinging from their belts. Their clanging and stamping chase away evil and welcome a good year.",
@@ -44,16 +56,23 @@
     },
     {
       "en": "Listen for the famous Bulgarian voices, women singing close, ringing harmonies, and join the horo, a line dance where everyone holds hands and nobody is left out.",
-      "bg": "Заслушайте се в прочутите български гласове, жени, които пеят в плътни, звънки хармонии, и се хванете на хорото, където всички се държат за ръце и никой не остава настрана."
+      "bg": "Заслушайте се в прочутите български гласове, жени, които пеят в плътни, звънки хармонии, и се хванете на хорото, където всички се държат за ръце и никой не остава настрана.",
+      "img": "Rila_Mountains,_Bulgaria.jpg"
     },
     {
       "en": "Sofia, the capital, sits at the foot of Mount Vitosha, where city folk hike at weekends. In summer, families head to the Black Sea, to sandy beaches and old seaside towns like Nesebar.",
-      "bg": "София, столицата, е в подножието на Витоша, където софиянци излизат на разходка през уикендите. През лятото семействата поемат към Черно море, към пясъчните плажове и старинни крайбрежни градчета като Несебър."
+      "bg": "София, столицата, е в подножието на Витоша, където софиянци излизат на разходка през уикендите. През лятото семействата поемат към Черно море, към пясъчните плажове и старинни крайбрежни градчета като Несебър.",
+      "img": "Panoramic_view_over_central_Sofia_and_the_Vitosha_Mountain_2017-10-08.jpg"
     },
     {
       "en": "When you are ready, follow the Danube along the northern border and cross one of its bridges. Romania is waiting on the other side.",
-      "bg": "Когато сте готови, последвайте Дунав по северната граница и минете по някой от мостовете му. Румъния ви очаква от другата страна."
+      "bg": "Когато сте готови, последвайте Дунав по северната граница и минете по някой от мостовете му. Румъния ви очаква от другата страна.",
+      "img": "Danube_Bridge_border_crossing.JPG"
     }
   ],
-  "next": ["Romania", "Greece", "North Macedonia"]
+  "next": [
+    "Romania",
+    "Greece",
+    "North Macedonia"
+  ]
 }

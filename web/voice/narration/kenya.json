@@ -1,59 +1,79 @@
 {
   "country": "Kenya",
-  "languages": ["en", "sw"],
+  "languages": [
+    "en",
+    "sw"
+  ],
   "segments": [
     {
       "en": "The sun climbs over the savannah, and a line of giraffes strolls past an acacia tree as if they own the place. In a way, they do. Jambo, and karibu, welcome to Kenya!",
-      "sw": "Jua linachomoza juu ya mbuga, na kundi la twiga linapita kando ya mti wa mgunga kana kwamba mahali hapa ni pao. Kwa namna fulani, ni kweli. Jambo, na karibu Kenya!"
+      "sw": "Jua linachomoza juu ya mbuga, na kundi la twiga linapita kando ya mti wa mgunga kana kwamba mahali hapa ni pao. Kwa namna fulani, ni kweli. Jambo, na karibu Kenya!",
+      "img": "Masai_giraffes_(Giraffa_tippelskirchi)_Arusha.jpg"
     },
     {
       "en": "Kenya sits right on the equator in East Africa. It has sandy beaches on the Indian Ocean, cool green highlands, dry northern deserts, and the Great Rift Valley, a vast crack in the Earth lined with lakes and volcanoes.",
-      "sw": "Kenya iko moja kwa moja kwenye ikweta, Afrika Mashariki. Ina fukwe za mchanga kando ya Bahari ya Hindi, nyanda za juu zenye baridi na kijani kibichi, jangwa kavu upande wa kaskazini, na Bonde la Ufa, mpasuko mkubwa wa ardhi uliopambwa kwa maziwa na volkeno."
+      "sw": "Kenya iko moja kwa moja kwenye ikweta, Afrika Mashariki. Ina fukwe za mchanga kando ya Bahari ya Hindi, nyanda za juu zenye baridi na kijani kibichi, jangwa kavu upande wa kaskazini, na Bonde la Ufa, mpasuko mkubwa wa ardhi uliopambwa kwa maziwa na volkeno.",
+      "img": "Lake-Nakuru-Baboon-Hill-View.JPG"
     },
     {
       "en": "Every year, in the Maasai Mara, enormous herds of wildebeest and zebra thunder across the plains and plunge through the Mara River. Lions, cheetahs and elephants are part of the scenery too.",
-      "sw": "Kila mwaka, katika Maasai Mara, makundi makubwa ya nyumbu na punda milia hupita kwa kishindo kwenye nyanda na kuvuka Mto Mara. Simba, duma na tembo nao ni sehemu ya mandhari hiyo."
+      "sw": "Kila mwaka, katika Maasai Mara, makundi makubwa ya nyumbu na punda milia hupita kwa kishindo kwenye nyanda na kuvuka Mto Mara. Simba, duma na tembo nao ni sehemu ya mandhari hiyo.",
+      "img": "Mara_River_Massai_Mara.jpg"
     },
     {
       "en": "Kenya is home to many peoples, including the Kikuyu, Luo, Luhya, Kalenjin, Kamba and Maasai, each with their own language. Swahili and English help everyone talk together.",
-      "sw": "Kenya ni nyumbani kwa jamii nyingi, zikiwemo Wakikuyu, Waluo, Waluhya, Wakalenjin, Wakamba na Wamaasai, kila moja ikiwa na lugha yake. Kiswahili na Kiingereza huwasaidia wote kuzungumza pamoja."
+      "sw": "Kenya ni nyumbani kwa jamii nyingi, zikiwemo Wakikuyu, Waluo, Waluhya, Wakalenjin, Wakamba na Wamaasai, kila moja ikiwa na lugha yake. Kiswahili na Kiingereza huwasaidia wote kuzungumza pamoja.",
+      "img": "Kisumu_rooftop.jpg"
     },
     {
       "en": "Among the Maasai, you may see young men in bright red cloth leap straight up into the air, higher and higher, in a joyful jumping dance, while others sing and chant in deep voices around them.",
-      "sw": "Miongoni mwa Wamaasai, unaweza kuwaona vijana waliovaa shuka nyekundu wakiruka juu moja kwa moja, juu zaidi na zaidi, katika ngoma ya furaha ya kuruka, huku wengine wakiimba kwa sauti nzito kuwazunguka."
+      "sw": "Miongoni mwa Wamaasai, unaweza kuwaona vijana waliovaa shuka nyekundu wakiruka juu moja kwa moja, juu zaidi na zaidi, katika ngoma ya furaha ya kuruka, huku wengine wakiimba kwa sauti nzito kuwazunguka.",
+      "img": "Masai_Mara_at_Sunset.jpg"
     },
     {
       "en": "Nairobi, the capital, is a busy, creative city, and it has something rare: a national park right on its edge, where zebras and rhinos graze with skyscrapers in the background.",
-      "sw": "Nairobi, mji mkuu, ni jiji lenye shughuli nyingi na ubunifu mwingi, na lina kitu cha nadra: hifadhi ya taifa pembeni mwake, ambapo punda milia na vifaru hula nyasi huku majengo marefu yakionekana kwa nyuma."
+      "sw": "Nairobi, mji mkuu, ni jiji lenye shughuli nyingi na ubunifu mwingi, na lina kitu cha nadra: hifadhi ya taifa pembeni mwake, ambapo punda milia na vifaru hula nyasi huku majengo marefu yakionekana kwa nyuma.",
+      "img": "Lions_of_Kenya_02.jpg"
     },
     {
       "en": "In the highlands, children often run to school, and the region has produced some of the greatest long-distance runners in history. When they win, the whole country celebrates.",
-      "sw": "Katika nyanda za juu, mara nyingi watoto hukimbia kwenda shuleni, na eneo hilo limezaa baadhi ya wakimbiaji hodari zaidi wa masafa marefu katika historia. Wanaposhinda, nchi nzima husherehekea."
+      "sw": "Katika nyanda za juu, mara nyingi watoto hukimbia kwenda shuleni, na eneo hilo limezaa baadhi ya wakimbiaji hodari zaidi wa masafa marefu katika historia. Wanaposhinda, nchi nzima husherehekea.",
+      "img": "City_of_Champions_Monument,_Eldoret.jpg"
     },
     {
       "en": "At the dinner table, you'll almost always find ugali, a firm maize porridge, eaten with greens called sukuma wiki. On weekends friends gather for nyama choma, grilled meat shared slowly over long conversations.",
-      "sw": "Mezani, karibu kila mara utakuta ugali, uliopikwa kwa unga wa mahindi, ukiliwa pamoja na mboga za majani ziitwazo sukuma wiki. Mwishoni mwa wiki marafiki hukutana kwa nyama choma, wakila polepole huku wakipiga soga ndefu."
+      "sw": "Mezani, karibu kila mara utakuta ugali, uliopikwa kwa unga wa mahindi, ukiliwa pamoja na mboga za majani ziitwazo sukuma wiki. Mwishoni mwa wiki marafiki hukutana kwa nyama choma, wakila polepole huku wakipiga soga ndefu.",
+      "img": "Ugali_&_Sukuma_Wiki.jpg"
     },
     {
       "en": "Kenya grows excellent tea and coffee on its green hillsides, and a sweet, milky cup of chai is the perfect start to the day.",
-      "sw": "Kenya hulima chai na kahawa bora kwenye milima yake ya kijani, na kikombe cha chai ya maziwa yenye sukari ni mwanzo mzuri wa siku."
+      "sw": "Kenya hulima chai na kahawa bora kwenye milima yake ya kijani, na kikombe cha chai ya maziwa yenye sukari ni mwanzo mzuri wa siku.",
+      "img": "Mug_of_English_Breakfast_Tea.jpg"
     },
     {
       "en": "On the coast, the old towns of Mombasa and Lamu have carved wooden doors, narrow lanes and dhows with triangle sails. This is where the Swahili language and culture grew, blending African, Arab and Indian Ocean influences.",
-      "sw": "Pwani, miji ya kale ya Mombasa na Lamu ina milango ya mbao iliyonakshiwa, vichochoro vyembamba na majahazi yenye matanga ya pembetatu. Hapa ndipo lugha na utamaduni wa Kiswahili ulipokua, ukichanganya athari za Kiafrika, Kiarabu na za Bahari ya Hindi."
+      "sw": "Pwani, miji ya kale ya Mombasa na Lamu ina milango ya mbao iliyonakshiwa, vichochoro vyembamba na majahazi yenye matanga ya pembetatu. Hapa ndipo lugha na utamaduni wa Kiswahili ulipokua, ukichanganya athari za Kiafrika, Kiarabu na za Bahari ya Hindi.",
+      "img": "Lamu_Old_Town.jpg"
     },
     {
       "en": "Towering over the middle of the country is Mount Kenya, with glaciers near its peaks even though it sits almost on the equator. The country is named after this mountain.",
-      "sw": "Katikati ya nchi unasimama Mlima Kenya, wenye barafu karibu na vilele vyake ingawa uko karibu kabisa na ikweta. Nchi hii imepewa jina lake kutokana na mlima huu."
+      "sw": "Katikati ya nchi unasimama Mlima Kenya, wenye barafu karibu na vilele vyake ingawa uko karibu kabisa na ikweta. Nchi hii imepewa jina lake kutokana na mlima huu.",
+      "img": "MtKenya.jpg"
     },
     {
       "en": "One word you'll hear with pride is harambee, which means let's all pull together. Neighbours use it when they join forces to build a school, help a family or lift a community.",
-      "sw": "Neno moja utakalolisikia kwa fahari ni harambee, yaani tuvute pamoja. Majirani hulitumia wanapoungana kujenga shule, kusaidia familia au kuinua jamii."
+      "sw": "Neno moja utakalolisikia kwa fahari ni harambee, yaani tuvute pamoja. Majirani hulitumia wanapoungana kujenga shule, kusaidia familia au kuinua jamii.",
+      "img": "Naivasha_lake.jpg"
     },
     {
       "en": "Kwaheri, and safari njema, have a good journey! Just across the border, where Mount Kilimanjaro rises above the plains, Tanzania is waiting.",
-      "sw": "Kwaheri, na safari njema! Ng'ambo tu ya mpaka, pale Mlima Kilimanjaro unapoinuka juu ya nyanda, Tanzania inakusubiri."
+      "sw": "Kwaheri, na safari njema! Ng'ambo tu ya mpaka, pale Mlima Kilimanjaro unapoinuka juu ya nyanda, Tanzania inakusubiri.",
+      "img": "Kilimanjaro_from_Amboseli.jpg"
     }
   ],
-  "next": ["Tanzania", "Uganda", "Ethiopia"]
+  "next": [
+    "Tanzania",
+    "Uganda",
+    "Ethiopia"
+  ]
 }

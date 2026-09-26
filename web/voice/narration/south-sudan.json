@@ -1,6 +1,8 @@
 {
   "country": "South Sudan",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
       "en": "At sunset along the White Nile, herds of long-horned cattle walk home through tall grass, the dust glowing gold behind them. This is South Sudan, one of the world's youngest countries, independent since 2011."
@@ -12,19 +14,24 @@
       "en": "In the middle of the country lies the Sudd, one of Africa's largest wetlands, a vast maze of papyrus and quiet channels where the Nile spreads out and slows down."
     },
     {
-      "en": "Every year, great herds of antelope, like the white-eared kob and the tiang, travel across the grasslands in search of water and grazing, one of the great animal journeys of Africa."
+      "en": "Every year, great herds of antelope, like the white-eared kob and the tiang, travel across the grasslands in search of water and grazing, one of the great animal journeys of Africa.",
+      "img": "Tiang_(Damaliscus_lunatus_tiang).jpg"
     },
     {
-      "en": "More than sixty languages are spoken here. English is the official language, and in the markets many people chat in a local form of Arabic often called Juba Arabic."
+      "en": "More than sixty languages are spoken here. English is the official language, and in the markets many people chat in a local form of Arabic often called Juba Arabic.",
+      "img": "Merol_Market,_Bor_Town,_Jonglei_State,_South_Sudan.jpg"
     },
     {
-      "en": "The capital, Juba, sits on the banks of the White Nile. Boats and bicycles, busy markets and music from radios give the city its rhythm from morning until night."
+      "en": "The capital, Juba, sits on the banks of the White Nile. Boats and bicycles, busy markets and music from radios give the city its rhythm from morning until night.",
+      "img": "Sudan_Juba_bridge.jpg"
     },
     {
-      "en": "A common meal is asida, a thick porridge of sorghum or maize, eaten with a stew of okra, greens or fish. Kisra, a thin sourdough flatbread, is another favourite, torn and dipped into sauces."
+      "en": "A common meal is asida, a thick porridge of sorghum or maize, eaten with a stew of okra, greens or fish. Kisra, a thin sourdough flatbread, is another favourite, torn and dipped into sauces.",
+      "img": "Bamia-Ocras_tomate_(cropped).JPG"
     },
     {
-      "en": "Greetings matter. People shake hands warmly, sometimes touching their right arm with the left hand as a sign of respect, and take time to ask after your family."
+      "en": "Greetings matter. People shake hands warmly, sometimes touching their right arm with the left hand as a sign of respect, and take time to ask after your family.",
+      "img": "Southsudanmountains.jpg"
     },
     {
       "en": "Traditional wrestling is hugely popular. Young men from different communities meet in the ring while crowds sing, drum and cheer, and matches have become a joyful way of bringing people together."
@@ -33,14 +40,20 @@
       "en": "Basketball is another great passion, and the national team has thrilled fans by competing on the world stage."
     },
     {
-      "en": "In the far south, the Imatong Mountains rise green and cool, while in the east, the plains around Boma stretch wide beneath enormous skies."
+      "en": "In the far south, the Imatong Mountains rise green and cool, while in the east, the plains around Boma stretch wide beneath enormous skies.",
+      "img": "Sudan_Kinyeti.jpg"
     },
     {
       "en": "Look out for beadwork, carved wooden stools and the patterns painted for celebrations, each carrying the style of a particular community and passed down through families."
     },
     {
-      "en": "People here are resilient, hopeful and generous with a smile. Follow the Nile upstream to the south, and Uganda is waiting for you."
+      "en": "People here are resilient, hopeful and generous with a smile. Follow the Nile upstream to the south, and Uganda is waiting for you.",
+      "img": "Beautiful_nature_along_Nile_River_01.jpg"
     }
   ],
-  "next": ["Uganda", "Kenya", "Sudan"]
+  "next": [
+    "Uganda",
+    "Kenya",
+    "Sudan"
+  ]
 }

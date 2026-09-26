@@ -1,59 +1,79 @@
 {
   "country": "Mozambique",
-  "languages": ["en", "pt-PT"],
+  "languages": [
+    "en",
+    "pt-PT"
+  ],
   "segments": [
     {
       "en": "The Indian Ocean is warm, the sand is white, and a wooden dhow with a triangular sail glides slowly between the islands. Mozambique runs for a very long way down the southeast coast of Africa.",
-      "pt-PT": "O oceano Índico está morno, a areia é branca e um dhow de madeira com vela triangular desliza devagar entre as ilhas. Moçambique estende-se ao longo de uma costa muito comprida no sudeste de África."
+      "pt-PT": "O oceano Índico está morno, a areia é branca e um dhow de madeira com vela triangular desliza devagar entre as ilhas. Moçambique estende-se ao longo de uma costa muito comprida no sudeste de África.",
+      "img": "Ilha_do_Ibo-sunset-02.jpg"
     },
     {
       "en": "Portuguese is the official language, a legacy of centuries of Portuguese rule, but most people also speak an African language such as Emakhuwa, Xichangana or Cisena.",
-      "pt-PT": "O português é a língua oficial, herança de séculos de domínio português, mas a maioria das pessoas fala também uma língua africana, como o emakhuwa, o xichangana ou o cisena."
+      "pt-PT": "O português é a língua oficial, herança de séculos de domínio português, mas a maioria das pessoas fala também uma língua africana, como o emakhuwa, o xichangana ou o cisena.",
+      "img": "Inhambane_Province,_Mozambique_-_panoramio_(2).jpg"
     },
     {
       "en": "The country takes its name from the Island of Mozambique, a small coral island in the north that was once a busy trading post. Its old town of stone houses, chapels and a fortress is a World Heritage Site.",
-      "pt-PT": "O país deve o nome à Ilha de Moçambique, uma pequena ilha de coral no norte que foi em tempos um movimentado entreposto comercial. A sua cidade antiga, com casas de pedra, capelas e uma fortaleza, é Património Mundial."
+      "pt-PT": "O país deve o nome à Ilha de Moçambique, uma pequena ilha de coral no norte que foi em tempos um movimentado entreposto comercial. A sua cidade antiga, com casas de pedra, capelas e uma fortaleza, é Património Mundial.",
+      "img": "Ilha_de_Mocambique.jpg"
     },
     {
       "en": "The capital, Maputo, has wide avenues lined with jacaranda trees that bloom purple, pavement cafés, and a grand old railway station with a green dome.",
-      "pt-PT": "A capital, Maputo, tem avenidas largas ladeadas de jacarandás que florescem em tons de lilás, esplanadas e uma imponente estação ferroviária antiga com uma cúpula verde."
+      "pt-PT": "A capital, Maputo, tem avenidas largas ladeadas de jacarandás que florescem em tons de lilás, esplanadas e uma imponente estação ferroviária antiga com uma cúpula verde.",
+      "img": "Delagoa_bay.jpg"
     },
     {
       "en": "In Maputo you will hear marrabenta, a lively dance music born in the city's neighbourhoods. In the south, the Chopi people play timbila, great orchestras of wooden xylophones.",
-      "pt-PT": "Em Maputo vai ouvir a marrabenta, uma música de dança animada nascida nos bairros da cidade. No sul, o povo chope toca a timbila, grandes orquestras de xilofones de madeira."
+      "pt-PT": "Em Maputo vai ouvir a marrabenta, uma música de dança animada nascida nos bairros da cidade. No sul, o povo chope toca a timbila, grandes orquestras de xilofones de madeira.",
+      "img": "Beach_in_xaixai.jpg"
     },
     {
       "en": "Seafood is superb. Try prawns grilled with piri piri, a fiery chilli sauce, or matapa, cassava leaves cooked with peanuts and coconut milk, served with xima, a stiff maize porridge.",
-      "pt-PT": "O marisco é soberbo. Prove camarões grelhados com piri-piri, um molho de malagueta bem picante, ou a matapa, folhas de mandioca cozinhadas com amendoim e leite de coco, servida com xima, uma papa espessa de milho."
+      "pt-PT": "O marisco é soberbo. Prove camarões grelhados com piri-piri, um molho de malagueta bem picante, ou a matapa, folhas de mandioca cozinhadas com amendoim e leite de coco, servida com xima, uma papa espessa de milho.",
+      "img": "Shrimp_curry_on_plate.jpg"
     },
     {
       "en": "Women wear the capulana, a bright printed cloth tied as a skirt, used to carry a baby on the back or sewn into dresses. Giving someone a capulana is a special gift.",
-      "pt-PT": "As mulheres usam a capulana, um pano estampado de cores vivas atado como saia, usado para levar o bebé às costas ou transformado em vestidos. Oferecer uma capulana é um presente especial."
+      "pt-PT": "As mulheres usam a capulana, um pano estampado de cores vivas atado como saia, usado para levar o bebé às costas ou transformado em vestidos. Oferecer uma capulana é um presente especial.",
+      "img": "Kanga,_Tanzania,_2011.jpg"
     },
     {
       "en": "Mozambicans are warm and easygoing, and greetings take their time. Ask how someone's family is, and always greet the elders first.",
-      "pt-PT": "Os moçambicanos são calorosos e descontraídos, e os cumprimentos não têm pressa. Pergunte pela família de cada um e cumprimente sempre primeiro os mais velhos."
+      "pt-PT": "Os moçambicanos são calorosos e descontraídos, e os cumprimentos não têm pressa. Pergunte pela família de cada um e cumprimente sempre primeiro os mais velhos.",
+      "img": "Wimbe_Beach_2_(4871485865).jpg"
     },
     {
       "en": "Off the coast, the Bazaruto Archipelago has towering sand dunes and clear water, where lucky visitors may spot dugongs, gentle sea mammals that graze on seagrass.",
-      "pt-PT": "Ao largo da costa, o arquipélago de Bazaruto tem dunas altíssimas e águas transparentes, onde os visitantes com sorte podem avistar dugongos, mamíferos marinhos tranquilos que pastam nas ervas marinhas."
+      "pt-PT": "Ao largo da costa, o arquipélago de Bazaruto tem dunas altíssimas e águas transparentes, onde os visitantes com sorte podem avistar dugongos, mamíferos marinhos tranquilos que pastam nas ervas marinhas.",
+      "img": "Bazaruto_-_III_(23846085349).jpg"
     },
     {
       "en": "At Tofo, divers swim with whale sharks and manta rays, and in the middle of the year humpback whales pass along the coast.",
-      "pt-PT": "Em Tofo, os mergulhadores nadam com tubarões-baleia e jamantas, e a meio do ano as baleias-jubarte passam ao longo da costa."
+      "pt-PT": "Em Tofo, os mergulhadores nadam com tubarões-baleia e jamantas, e a meio do ano as baleias-jubarte passam ao longo da costa.",
+      "img": "Similan_Dive_Center_-_great_whale_shark.jpg"
     },
     {
       "en": "Inland, Gorongosa National Park is coming back to life, as elephants, lions and antelope return in growing numbers thanks to years of patient work.",
-      "pt-PT": "No interior, o Parque Nacional da Gorongosa está a renascer, com elefantes, leões e antílopes a regressar em número cada vez maior, graças a anos de trabalho paciente."
+      "pt-PT": "No interior, o Parque Nacional da Gorongosa está a renascer, com elefantes, leões e antílopes a regressar em número cada vez maior, graças a anos de trabalho paciente.",
+      "img": "Mount_Gorongosa,_Gorongosa_National_Park,_Mozambique_(46316615492).jpg"
     },
     {
       "en": "In the north, Makonde artists carve dark hardwood into intricate sculptures of many figures intertwined, sometimes called the tree of life.",
-      "pt-PT": "No norte, os artistas macondes esculpem madeira escura e dura em esculturas minuciosas de muitas figuras entrelaçadas, a que por vezes chamam árvore da vida."
+      "pt-PT": "No norte, os artistas macondes esculpem madeira escura e dura em esculturas minuciosas de muitas figuras entrelaçadas, a que por vezes chamam árvore da vida.",
+      "img": "Magaruge_Island_beach_(2006).jpg"
     },
     {
       "en": "Até logo! Head inland across the border, and Malawi, with its great lake, is waiting.",
-      "pt-PT": "Até logo! Siga para o interior e atravesse a fronteira: o Malawi, com o seu grande lago, está à sua espera."
+      "pt-PT": "Até logo! Siga para o interior e atravesse a fronteira: o Malawi, com o seu grande lago, está à sua espera.",
+      "img": "A_street_in_Mandimba,_Niassa,_Mozambique.jpg"
     }
   ],
-  "next": ["Malawi", "Tanzania", "South Africa"]
+  "next": [
+    "Malawi",
+    "Tanzania",
+    "South Africa"
+  ]
 }

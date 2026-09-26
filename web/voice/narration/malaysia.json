@@ -1,59 +1,79 @@
 {
   "country": "Malaysia",
-  "languages": ["en", "ms"],
+  "languages": [
+    "en",
+    "ms"
+  ],
   "segments": [
     {
       "en": "The sizzle of a wok, the scent of lemongrass and chilli, and the twin Petronas Towers shining above the city. It is evening in Kuala Lumpur, and it seems all of Malaysia has come out for dinner.",
-      "ms": "Desiran kuali yang panas, bau serai dan cili, dan Menara Berkembar Petronas yang bersinar di atas kota. Hari sudah senja di Kuala Lumpur, dan seolah-olah seluruh Malaysia keluar mencari makan malam."
+      "ms": "Desiran kuali yang panas, bau serai dan cili, dan Menara Berkembar Petronas yang bersinar di atas kota. Hari sudah senja di Kuala Lumpur, dan seolah-olah seluruh Malaysia keluar mencari makan malam.",
+      "img": "Sky_Deck_at_Kuala_Lumpur_Tower_(Menara_KL),_Malaysia_on_28_July_2020_at_172828.jpg"
     },
     {
       "en": "Malaysia comes in two parts. The Malay Peninsula reaches south towards Singapore, and across the South China Sea lie Sabah and Sarawak, on the great island of Borneo.",
-      "ms": "Malaysia terbahagi kepada dua bahagian. Semenanjung Tanah Melayu menganjur ke selatan hingga ke Singapura, dan di seberang Laut China Selatan terletak Sabah dan Sarawak, di pulau Borneo yang luas."
+      "ms": "Malaysia terbahagi kepada dua bahagian. Semenanjung Tanah Melayu menganjur ke selatan hingga ke Singapura, dan di seberang Laut China Selatan terletak Sabah dan Sarawak, di pulau Borneo yang luas.",
+      "img": "Taman_Negara_Sungai_Tembeling.JPG"
     },
     {
       "en": "Its people are a blend of Malays, Chinese, Indians and many Indigenous communities, especially on Borneo. Each brings its own language, faith and festivals, and neighbours happily share them all.",
-      "ms": "Rakyatnya terdiri daripada orang Melayu, Cina, India dan pelbagai masyarakat pribumi, terutamanya di Borneo. Setiap kaum membawa bahasa, kepercayaan dan perayaan sendiri, dan jiran tetangga meraikannya bersama-sama dengan gembira."
+      "ms": "Rakyatnya terdiri daripada orang Melayu, Cina, India dan pelbagai masyarakat pribumi, terutamanya di Borneo. Setiap kaum membawa bahasa, kepercayaan dan perayaan sendiri, dan jiran tetangga meraikannya bersama-sama dengan gembira.",
+      "img": "Kuala_Lumpur_Sultan_Abdul_Building.jpg"
     },
     {
       "en": "At Hari Raya, Chinese New Year or Deepavali, families hold an open house, inviting friends of every background to drop in and eat. Just remember to take off your shoes at the door.",
-      "ms": "Pada Hari Raya, Tahun Baru Cina atau Deepavali, keluarga mengadakan rumah terbuka dan menjemput kawan-kawan dari semua latar belakang untuk singgah dan menjamu selera. Cuma jangan lupa tanggalkan kasut di pintu."
+      "ms": "Pada Hari Raya, Tahun Baru Cina atau Deepavali, keluarga mengadakan rumah terbuka dan menjemput kawan-kawan dari semua latar belakang untuk singgah dan menjamu selera. Cuma jangan lupa tanggalkan kasut di pintu.",
+      "img": "Ketupat2.jpg"
     },
     {
       "en": "Breakfast might be nasi lemak, rice cooked in coconut milk with spicy sambal, peanuts, crispy anchovies and egg. Wash it down with teh tarik, sweet milky tea poured from a height until it froths.",
-      "ms": "Sarapan pagi mungkin nasi lemak, nasi yang dimasak dengan santan, dihidang bersama sambal pedas, kacang, ikan bilis rangup dan telur. Hirup pula teh tarik, teh susu manis yang dituang dari tinggi sehingga berbuih."
+      "ms": "Sarapan pagi mungkin nasi lemak, nasi yang dimasak dengan santan, dihidang bersama sambal pedas, kacang, ikan bilis rangup dan telur. Hirup pula teh tarik, teh susu manis yang dituang dari tinggi sehingga berbuih.",
+      "img": "Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas,_di_Penang_Summer_Restaurant.jpg"
     },
     {
       "en": "Malay is the national language, and people often mix several languages in one chat. Listen for the little word lah at the end of a sentence, softening everything, as in okay lah.",
-      "ms": "Bahasa Melayu ialah bahasa kebangsaan, dan orang sering mencampurkan beberapa bahasa dalam satu perbualan. Dengar perkataan kecil lah di hujung ayat, yang melembutkan segalanya, seperti okey lah."
+      "ms": "Bahasa Melayu ialah bahasa kebangsaan, dan orang sering mencampurkan beberapa bahasa dalam satu perbualan. Dengar perkataan kecil lah di hujung ayat, yang melembutkan segalanya, seperti okey lah.",
+      "img": "Dataran_Merdeka_2.jpg"
     },
     {
       "en": "Good manners matter. Many people point with the thumb rather than a finger, and give and receive things with the right hand, sometimes touching the right arm with the left as a sign of respect.",
-      "ms": "Budi bahasa amat penting. Ramai orang menunjuk dengan ibu jari, bukan jari telunjuk, dan memberi serta menerima sesuatu dengan tangan kanan, kadang-kadang sambil menyentuh lengan kanan dengan tangan kiri sebagai tanda hormat."
+      "ms": "Budi bahasa amat penting. Ramai orang menunjuk dengan ibu jari, bukan jari telunjuk, dan memberi serta menerima sesuatu dengan tangan kanan, kadang-kadang sambil menyentuh lengan kanan dengan tangan kiri sebagai tanda hormat.",
+      "img": "Tea_fields_(Will_Ellis).jpg"
     },
     {
       "en": "In Penang, the streets of George Town are lined with old shophouses, temples and playful street art, and many say its hawker food is the best in the land. Further south, Melaka remembers centuries as a great trading port.",
-      "ms": "Di Pulau Pinang, jalan-jalan di George Town dipenuhi rumah kedai lama, kuil dan lukisan mural yang ceria, dan ramai yang berkata makanan penjajanya paling sedap di seluruh negara. Lebih ke selatan, Melaka menyimpan kenangan berabad-abad sebagai pelabuhan dagang yang hebat."
+      "ms": "Di Pulau Pinang, jalan-jalan di George Town dipenuhi rumah kedai lama, kuil dan lukisan mural yang ceria, dan ramai yang berkata makanan penjajanya paling sedap di seluruh negara. Lebih ke selatan, Melaka menyimpan kenangan berabad-abad sebagai pelabuhan dagang yang hebat.",
+      "img": "Farquhar_Street,_George_Town,_Penang.jpg"
     },
     {
       "en": "On Borneo, ancient rainforests shelter the orangutan, whose name means person of the forest in Malay. In Sabah, Mount Kinabalu rises above the clouds, and climbers set off before dawn to see sunrise from the top.",
-      "ms": "Di Borneo, hutan hujan purba menjadi rumah kepada orang utan, yang namanya bermaksud manusia hutan. Di Sabah, Gunung Kinabalu menjulang di atas awan, dan pendaki bertolak sebelum subuh untuk melihat matahari terbit dari puncaknya."
+      "ms": "Di Borneo, hutan hujan purba menjadi rumah kepada orang utan, yang namanya bermaksud manusia hutan. Di Sabah, Gunung Kinabalu menjulang di atas awan, dan pendaki bertolak sebelum subuh untuk melihat matahari terbit dari puncaknya.",
+      "img": "Kinabalu_Sabah_Borneo_Kampong_Kundasang_panorama_2.jpg"
     },
     {
       "en": "In Sarawak, some Iban families still live in longhouses, where many households share one long veranda under a single roof, and guests are welcomed with food, music and dance.",
-      "ms": "Di Sarawak, sesetengah keluarga Iban masih tinggal di rumah panjang, tempat banyak keluarga berkongsi satu ruai yang panjang di bawah satu bumbung, dan tetamu disambut dengan makanan, muzik dan tarian."
+      "ms": "Di Sarawak, sesetengah keluarga Iban masih tinggal di rumah panjang, tempat banyak keluarga berkongsi satu ruai yang panjang di bawah satu bumbung, dan tetamu disambut dengan makanan, muzik dan tarian.",
+      "img": "Moa-4.jpg"
     },
     {
       "en": "Around the coasts, islands such as Langkawi and the Perhentians offer white beaches and clear water, and divers travel to Sipadan to swim among turtles.",
-      "ms": "Di sekitar pantai, pulau-pulau seperti Langkawi dan Pulau Perhentian menawarkan pantai berpasir putih dan air yang jernih, dan penyelam datang ke Sipadan untuk berenang bersama penyu."
+      "ms": "Di sekitar pantai, pulau-pulau seperti Langkawi dan Pulau Perhentian menawarkan pantai berpasir putih dan air yang jernih, dan penyelam datang ke Sipadan untuk berenang bersama penyu.",
+      "img": "Pulau_Sipadan.jpg"
     },
     {
       "en": "Malaysians go wild for badminton, and in villages you may see sepak takraw, a game like volleyball played with the feet and a woven rattan ball.",
-      "ms": "Rakyat Malaysia sangat meminati badminton, dan di kampung-kampung anda mungkin melihat sepak takraw, permainan seperti bola tampar yang dimainkan dengan kaki dan bola rotan yang dianyam."
+      "ms": "Rakyat Malaysia sangat meminati badminton, dan di kampung-kampung anda mungkin melihat sepak takraw, permainan seperti bola tampar yang dimainkan dengan kaki dan bola rotan yang dianyam.",
+      "img": "Langkawi_sky_bridge.jpg"
     },
     {
       "en": "Terima kasih, thank you, for visiting. Just across the narrow Johor Strait, Singapore is waiting.",
-      "ms": "Terima kasih kerana sudi berkunjung. Hanya di seberang Selat Johor yang sempit, Singapura sedang menanti."
+      "ms": "Terima kasih kerana sudi berkunjung. Hanya di seberang Selat Johor yang sempit, Singapura sedang menanti.",
+      "img": "Malaysia-Singapore_Second_Link_Linkedua.jpg"
     }
   ],
-  "next": ["Singapore", "Thailand", "Indonesia"]
+  "next": [
+    "Singapore",
+    "Thailand",
+    "Indonesia"
+  ]
 }

@@ -7,51 +7,63 @@
   "segments": [
     {
       "en": "Namaste! Palms pressed together, a small bow of the head. It's how millions of Indians greet one another, and it carries a lovely meaning: the light in me honours the light in you.",
-      "hi": "नमस्ते! हथेलियाँ जुड़ी हुईं, सिर थोड़ा-सा झुका हुआ। करोड़ों भारतीय इसी तरह एक-दूसरे का अभिवादन करते हैं, और इसका अर्थ बहुत सुंदर है: मेरे भीतर का प्रकाश आपके भीतर के प्रकाश को नमन करता है।"
+      "hi": "नमस्ते! हथेलियाँ जुड़ी हुईं, सिर थोड़ा-सा झुका हुआ। करोड़ों भारतीय इसी तरह एक-दूसरे का अभिवादन करते हैं, और इसका अर्थ बहुत सुंदर है: मेरे भीतर का प्रकाश आपके भीतर के प्रकाश को नमन करता है।",
+      "img": "Delhi_fort.jpg"
     },
     {
       "en": "India is so vast and varied that it can feel like many countries in one. The Himalayas rise in the north, the Thar Desert stretches across the west, and the south is green with coconut palms.",
-      "hi": "भारत इतना विशाल और विविध है कि कई देशों जैसा लगता है। उत्तर में हिमालय खड़ा है, पश्चिम में थार का रेगिस्तान फैला है, और दक्षिण नारियल के पेड़ों से हरा-भरा है।"
+      "hi": "भारत इतना विशाल और विविध है कि कई देशों जैसा लगता है। उत्तर में हिमालय खड़ा है, पश्चिम में थार का रेगिस्तान फैला है, और दक्षिण नारियल के पेड़ों से हरा-भरा है।",
+      "img": "Thar_desert_Rajasthan_India.jpg"
     },
     {
       "en": "An old saying goes that the water changes every few miles, and the speech every few more. Hindi and English are widely used, but India has more than twenty official languages, from Bengali and Tamil to Marathi and Punjabi.",
-      "hi": "पुरानी कहावत है, कोस-कोस पर बदले पानी, चार कोस पर वाणी। हिंदी और अंग्रेज़ी बहुत बोली जाती हैं, पर भारत में बीस से ज़्यादा आधिकारिक भाषाएँ हैं, बांग्ला और तमिल से लेकर मराठी और पंजाबी तक।"
+      "hi": "पुरानी कहावत है, कोस-कोस पर बदले पानी, चार कोस पर वाणी। हिंदी और अंग्रेज़ी बहुत बोली जाती हैं, पर भारत में बीस से ज़्यादा आधिकारिक भाषाएँ हैं, बांग्ला और तमिल से लेकर मराठी और पंजाबी तक।",
+      "img": "East_facade_Hawa_Mahal_Jaipur_from_ground_level_(July_2022)_-_img_01.jpg"
     },
     {
       "en": "In Agra stands the Taj Mahal, built by the emperor Shah Jahan in memory of his wife Mumtaz Mahal. Its white marble seems to change colour through the day, pink at dawn and gold at sunset.",
-      "hi": "आगरा में ताजमहल खड़ा है, जिसे बादशाह शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में बनवाया था। इसका सफ़ेद संगमरमर दिन भर रंग बदलता-सा लगता है, सुबह गुलाबी और शाम को सुनहरा।"
+      "hi": "आगरा में ताजमहल खड़ा है, जिसे बादशाह शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में बनवाया था। इसका सफ़ेद संगमरमर दिन भर रंग बदलता-सा लगता है, सुबह गुलाबी और शाम को सुनहरा।",
+      "img": "Mehtab_Bagh_facing_Taj_Mahal.JPG"
     },
     {
       "en": "In Varanasi, one of the oldest living cities in the world, pilgrims bathe in the Ganges at dawn. At dusk, priests wave flaming lamps for the evening aarti, as bells ring out over the river.",
-      "hi": "वाराणसी में, जो दुनिया के सबसे पुराने बसे हुए शहरों में से एक है, तीर्थयात्री सुबह-सुबह गंगा में स्नान करते हैं। शाम को आरती में पुजारी जलते दीये घुमाते हैं, और नदी पर घंटियाँ गूँज उठती हैं।"
+      "hi": "वाराणसी में, जो दुनिया के सबसे पुराने बसे हुए शहरों में से एक है, तीर्थयात्री सुबह-सुबह गंगा में स्नान करते हैं। शाम को आरती में पुजारी जलते दीये घुमाते हैं, और नदी पर घंटियाँ गूँज उठती हैं।",
+      "img": "Ahilya_Ghat_by_the_Ganges,_Varanasi.jpg"
     },
     {
       "en": "India is home to many faiths living side by side: Hindus, Muslims, Christians, Sikhs, Buddhists, Jains and more. At the Golden Temple in Amritsar, a free community kitchen serves a warm meal to anyone who comes, whoever they are.",
-      "hi": "भारत में कई धर्म साथ-साथ रहते हैं: हिंदू, मुसलमान, ईसाई, सिख, बौद्ध, जैन और कई अन्य। अमृतसर के स्वर्ण मंदिर में लंगर हर आने वाले को गरम खाना मुफ़्त खिलाता है, चाहे वह कोई भी हो।"
+      "hi": "भारत में कई धर्म साथ-साथ रहते हैं: हिंदू, मुसलमान, ईसाई, सिख, बौद्ध, जैन और कई अन्य। अमृतसर के स्वर्ण मंदिर में लंगर हर आने वाले को गरम खाना मुफ़्त खिलाता है, चाहे वह कोई भी हो।",
+      "img": "The_Golden_Temple_of_Amrithsar_7.jpg"
     },
     {
       "en": "Festivals light up the whole year. At Diwali, rows of little oil lamps glow in every window. At Holi, in spring, friends and strangers throw coloured powder at each other until everyone is pink, green and laughing.",
-      "hi": "पूरा साल त्योहारों से जगमगाता है। दिवाली पर हर खिड़की में दीयों की कतारें जलती हैं। वसंत में होली पर दोस्त और अजनबी एक-दूसरे पर रंग डालते हैं, जब तक सब गुलाबी, हरे और हँसते हुए न हो जाएँ।"
+      "hi": "पूरा साल त्योहारों से जगमगाता है। दिवाली पर हर खिड़की में दीयों की कतारें जलती हैं। वसंत में होली पर दोस्त और अजनबी एक-दूसरे पर रंग डालते हैं, जब तक सब गुलाबी, हरे और हँसते हुए न हो जाएँ।",
+      "img": "The_Rangoli_of_Lights.jpg"
     },
     {
       "en": "Then there's the food, rich with spices. In the north, warm naan and creamy dal. In the south, crispy dosas with coconut chutney. Everywhere, a cup of sweet, milky masala chai, poured steaming at a roadside stall.",
-      "hi": "फिर आता है खाना, मसालों से भरपूर। उत्तर में गरमागरम नान और मलाईदार दाल। दक्षिण में कुरकुरा डोसा और नारियल की चटनी। और हर जगह सड़क किनारे की टपरी पर भाप उड़ाती मीठी, दूध वाली मसाला चाय।"
+      "hi": "फिर आता है खाना, मसालों से भरपूर। उत्तर में गरमागरम नान और मलाईदार दाल। दक्षिण में कुरकुरा डोसा और नारियल की चटनी। और हर जगह सड़क किनारे की टपरी पर भाप उड़ाती मीठी, दूध वाली मसाला चाय।",
+      "img": "Chai_In_Sakora.jpg"
     },
     {
       "en": "If you're a guest in an Indian home, you'll likely take off your shoes at the door, and you may eat with your right hand. Your hosts will keep refilling your plate, so leave a little to show you're full.",
-      "hi": "अगर आप किसी भारतीय घर में मेहमान हैं, तो शायद दरवाज़े पर जूते उतारेंगे, और दाएँ हाथ से खाना खा सकते हैं। मेज़बान आपकी थाली बार-बार भरते रहेंगे, इसलिए पेट भर जाए तो थोड़ा-सा छोड़ दीजिए।"
+      "hi": "अगर आप किसी भारतीय घर में मेहमान हैं, तो शायद दरवाज़े पर जूते उतारेंगे, और दाएँ हाथ से खाना खा सकते हैं। मेज़बान आपकी थाली बार-बार भरते रहेंगे, इसलिए पेट भर जाए तो थोड़ा-सा छोड़ दीजिए।",
+      "img": "Gujarat_Thali.JPG"
     },
     {
       "en": "Cricket is almost a religion. In every lane and park, children play with a bat and ball, and when the national team plays, whole cities hold their breath.",
-      "hi": "क्रिकेट यहाँ लगभग धर्म जैसा है। हर गली और मैदान में बच्चे बल्ला-गेंद लेकर खेलते हैं, और जब भारतीय टीम खेलती है, तो पूरे-पूरे शहर साँस थामे रहते हैं।"
+      "hi": "क्रिकेट यहाँ लगभग धर्म जैसा है। हर गली और मैदान में बच्चे बल्ला-गेंद लेकर खेलते हैं, और जब भारतीय टीम खेलती है, तो पूरे-पूरे शहर साँस थामे रहते हैं।",
+      "img": "House_Boat_DSW.jpg"
     },
     {
       "en": "Music and dance have ancient roots here, from the sitar and tabla to the graceful classical dances of Bharatanatyam and Kathak. And Indian cinema bursts with song and dance, loved by audiences far beyond India.",
-      "hi": "यहाँ संगीत और नृत्य की जड़ें बहुत पुरानी हैं, सितार और तबले से लेकर भरतनाट्यम और कथक जैसे सुंदर शास्त्रीय नृत्यों तक। और भारतीय फ़िल्में गीत-संगीत से भरी होती हैं, जिन्हें भारत से बहुत दूर तक लोग पसंद करते हैं।"
+      "hi": "यहाँ संगीत और नृत्य की जड़ें बहुत पुरानी हैं, सितार और तबले से लेकर भरतनाट्यम और कथक जैसे सुंदर शास्त्रीय नृत्यों तक। और भारतीय फ़िल्में गीत-संगीत से भरी होती हैं, जिन्हें भारत से बहुत दूर तक लोग पसंद करते हैं।",
+      "img": "Sitar,_late_19th_Century.jpg"
     },
     {
       "en": "There's always more to discover here. When you're ready, head north into the Himalayas, where the mountain kingdom of Nepal is waiting to welcome you.",
-      "hi": "यहाँ देखने को हमेशा कुछ और बचा रहता है। जब आप तैयार हों, तो उत्तर की ओर हिमालय में चलिए, जहाँ पहाड़ों का देश नेपाल आपका स्वागत करने को तैयार है।"
+      "hi": "यहाँ देखने को हमेशा कुछ और बचा रहता है। जब आप तैयार हों, तो उत्तर की ओर हिमालय में चलिए, जहाँ पहाड़ों का देश नेपाल आपका स्वागत करने को तैयार है।",
+      "img": "Tea_Estate,_Darjeeling.jpg"
     }
   ],
   "next": [

@@ -1,55 +1,74 @@
 {
   "country": "Andorra",
-  "languages": ["en", "ca"],
+  "languages": [
+    "en",
+    "ca"
+  ],
   "segments": [
     {
       "en": "Cowbells, a rushing stream, and the crunch of boots on a mountain path. High in the Pyrenees, tucked between France and Spain, sits Andorra, a tiny country made almost entirely of valleys and peaks.",
-      "ca": "Esquelles de vaca, un torrent que baixa amb força i el cruixit de les botes en un camí de muntanya. Ben amunt dels Pirineus, entre França i Espanya, hi ha Andorra, un país petit fet gairebé només de valls i cims."
+      "ca": "Esquelles de vaca, un torrent que baixa amb força i el cruixit de les botes en un camí de muntanya. Ben amunt dels Pirineus, entre França i Espanya, hi ha Andorra, un país petit fet gairebé només de valls i cims.",
+      "img": "AndorraSoldeuView.JPG"
     },
     {
       "en": "You could drive across it in under an hour, yet it feels much larger, because every road winds and climbs, and every bend opens a new view of forests, meadows and stone villages.",
-      "ca": "El podríeu travessar en cotxe en menys d'una hora, però sembla molt més gran, perquè cada carretera fa revolts i s'enfila, i cada corba obre una vista nova de boscos, prats i pobles de pedra."
+      "ca": "El podríeu travessar en cotxe en menys d'una hora, però sembla molt més gran, perquè cada carretera fa revolts i s'enfila, i cada corba obre una vista nova de boscos, prats i pobles de pedra.",
+      "img": "La_Massana_-_Sant_Climent_de_Pal.jpg"
     },
     {
       "en": "The language here is Catalan, and Andorra is the only country in the world where it is the sole official language. You will also hear Spanish, French and Portuguese in the shops and cafés.",
-      "ca": "Aquí la llengua és el català, i Andorra és l'únic país del món on és l'única llengua oficial. També sentireu castellà, francès i portuguès a les botigues i als cafès."
+      "ca": "Aquí la llengua és el català, i Andorra és l'únic país del món on és l'única llengua oficial. També sentireu castellà, francès i portuguès a les botigues i als cafès.",
+      "img": "2013._San_Martí_de_La_Cortinada._Andorra_37.jpg"
     },
     {
       "en": "Andorra has a unique way of being governed. It has two co-princes, the Bishop of Urgell in Catalonia and the President of France, an arrangement that goes back more than seven centuries.",
-      "ca": "Andorra té una manera única de governar-se. Té dos coprínceps, el bisbe d'Urgell i el president de França, un acord que es remunta a més de set segles enrere."
+      "ca": "Andorra té una manera única de governar-se. Té dos coprínceps, el bisbe d'Urgell i el president de França, un acord que es remunta a més de set segles enrere.",
+      "img": "Cathedral_of_La_Seu_d'Urgell_(8).jpg"
     },
     {
       "en": "For centuries, local matters were settled in the Casa de la Vall, a sturdy stone house in the capital, Andorra la Vella, where the council of the valleys met around a long wooden table.",
-      "ca": "Durant segles, els afers del país es resolien a la Casa de la Vall, una sòlida casa de pedra a la capital, Andorra la Vella, on el Consell de la Terra es reunia al voltant d'una llarga taula de fusta."
+      "ca": "Durant segles, els afers del país es resolien a la Casa de la Vall, una sòlida casa de pedra a la capital, Andorra la Vella, on el Consell de la Terra es reunia al voltant d'una llarga taula de fusta.",
+      "img": "Casa_de_la_Vall_2015-10.JPG"
     },
     {
       "en": "The country is divided into seven parishes, each with its own character. Look out for small Romanesque churches with tall, slender bell towers, standing quietly among the fields as they have for a thousand years.",
-      "ca": "El país es divideix en set parròquies, cadascuna amb el seu caràcter. Fixeu-vos en les petites esglésies romàniques amb campanars alts i esvelts, que s'alcen tranquil·les entre els camps com fa mil anys."
+      "ca": "El país es divideix en set parròquies, cadascuna amb el seu caràcter. Fixeu-vos en les petites esglésies romàniques amb campanars alts i esvelts, que s'alcen tranquil·les entre els camps com fa mil anys.",
+      "img": "Església_de_Sant_Joan_de_Caselles_-_10.jpg"
     },
     {
       "en": "In winter, the slopes fill with skiers and families playing in the snow. In summer, the snow melts into lakes and waterfalls, and walkers follow old shepherd trails through valleys like the Madriu, a protected world heritage landscape.",
-      "ca": "A l'hivern, les pistes s'omplen d'esquiadors i de famílies que juguen a la neu. A l'estiu, la neu es fon en estanys i cascades, i els excursionistes segueixen antics camins de pastors per valls com la del Madriu, un paisatge declarat patrimoni mundial."
+      "ca": "A l'hivern, les pistes s'omplen d'esquiadors i de famílies que juguen a la neu. A l'estiu, la neu es fon en estanys i cascades, i els excursionistes segueixen antics camins de pastors per valls com la del Madriu, un paisatge declarat patrimoni mundial.",
+      "img": "Vista_de_Estany_de_L'Illa_-_A_Caminho_do_Pic_de_Pessons_-_panoramio.jpg"
     },
     {
       "en": "Mountain food is hearty. Try trinxat, cabbage and potato mashed together and fried with crispy bacon, or escudella, a slow stew of meat and vegetables that warms you after a long day outdoors.",
-      "ca": "El menjar de muntanya és contundent. Proveu el trinxat, col i patata esclafades i rossejades amb cansalada cruixent, o l'escudella, un guisat lent de carn i verdures que us escalfa després d'un llarg dia a l'aire lliure."
+      "ca": "El menjar de muntanya és contundent. Proveu el trinxat, col i patata esclafades i rossejades amb cansalada cruixent, o l'escudella, un guisat lent de carn i verdures que us escalfa després d'un llarg dia a l'aire lliure.",
+      "img": "Trinxat_1.jpg"
     },
     {
       "en": "Families still love a good mountain picnic, with bread rubbed with tomato and olive oil, local cheese and cured sausage, eaten on a sunny rock with a view that stretches for miles.",
-      "ca": "Les famílies encara estimen un bon berenar a la muntanya, amb pa amb tomàquet i oli, formatge del país i embotits, menjats sobre una roca assolellada amb una vista que arriba ben lluny."
+      "ca": "Les famílies encara estimen un bon berenar a la muntanya, amb pa amb tomàquet i oli, formatge del país i embotits, menjats sobre una roca assolellada amb una vista que arriba ben lluny.",
+      "img": "Pa_amb_tomàquet_-_001.jpg"
     },
     {
       "en": "On Midsummer's Eve, the night of Sant Joan, bonfires are lit and people gather to celebrate the shortest night of the year. In some villages, the old Andorran dances are still performed in traditional dress.",
-      "ca": "La nit de Sant Joan s'encenen fogueres i la gent es reuneix per celebrar la nit més curta de l'any. En alguns pobles encara es ballen les danses tradicionals andorranes amb la roba de sempre."
+      "ca": "La nit de Sant Joan s'encenen fogueres i la gent es reuneix per celebrar la nit més curta de l'any. En alguns pobles encara es ballen les danses tradicionals andorranes amb la roba de sempre.",
+      "img": "Baixada_de_Falles_a_Sort,_2026.jpg"
     },
     {
       "en": "Andorrans are proud of their independence and their mountains. Greet people with bon dia, and you will soon notice how friendly a small country can be.",
-      "ca": "Els andorrans estan orgullosos de la seva independència i de les seves muntanyes. Saludeu amb un bon dia i aviat veureu com n'és d'acollidor un país petit."
+      "ca": "Els andorrans estan orgullosos de la seva independència i de les seves muntanyes. Saludeu amb un bon dia i aviat veureu com n'és d'acollidor un país petit.",
+      "img": "Radio_Andorre_Lac_d'Engolasters.JPG"
     },
     {
       "en": "When you are ready to leave, follow the river Valira down the valley, and in no time Spain is waiting at the foot of the mountains.",
-      "ca": "Quan estigueu a punt de marxar, seguiu el riu Valira vall avall, i en un tres i no res Espanya us espera al peu de les muntanyes."
+      "ca": "Quan estigueu a punt de marxar, seguiu el riu Valira vall avall, i en un tres i no res Espanya us espera al peu de les muntanyes.",
+      "img": "Andorra_la_Vella,_Valira_river.jpg"
     }
   ],
-  "next": ["Spain", "France", "Portugal"]
+  "next": [
+    "Spain",
+    "France",
+    "Portugal"
+  ]
 }

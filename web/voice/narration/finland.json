@@ -1,59 +1,79 @@
 {
   "country": "Finland",
-  "languages": ["en", "fi"],
+  "languages": [
+    "en",
+    "fi"
+  ],
   "segments": [
     {
       "en": "It's midnight in June, and the sky is still light. On the shore of a quiet lake, a family sits on the jetty outside their wooden cottage, the water perfectly still, the horizon glowing gold. This is summer in Finland.",
-      "fi": "On keskiyö kesäkuussa, ja taivas on yhä valoisa. Hiljaisen järven rannalla perhe istuu laiturilla puisen mökkinsä edessä, vesi on täysin tyyni ja taivaanranta hehkuu kultaisena. Tällainen on Suomen kesä."
+      "fi": "On keskiyö kesäkuussa, ja taivas on yhä valoisa. Hiljaisen järven rannalla perhe istuu laiturilla puisen mökkinsä edessä, vesi on täysin tyyni ja taivaanranta hehkuu kultaisena. Tällainen on Suomen kesä.",
+      "img": "Finnish_Lakeland.jpg"
     },
     {
       "en": "Finland is often called the land of a thousand lakes, but that's a huge understatement. There are far, far more, scattered through endless forests of pine, spruce and birch.",
-      "fi": "Suomea kutsutaan usein tuhansien järvien maaksi, mutta sekin on vähättelyä. Järviä on paljon, paljon enemmän, ja ne ovat siroteltuina loputtomiin mänty-, kuusi- ja koivumetsiin."
+      "fi": "Suomea kutsutaan usein tuhansien järvien maaksi, mutta sekin on vähättelyä. Järviä on paljon, paljon enemmän, ja ne ovat siroteltuina loputtomiin mänty-, kuusi- ja koivumetsiin.",
+      "img": "Lake_Saimaa_aerial.jpg"
     },
     {
       "en": "Many families have a mökki, a summer cottage by the water, often without running water, where they fish, chop wood, pick berries and simply enjoy the quiet.",
-      "fi": "Monella perheellä on mökki veden äärellä, usein ilman juoksevaa vettä, ja siellä kalastetaan, pilkotaan puita, poimitaan marjoja ja nautitaan yksinkertaisesti hiljaisuudesta."
+      "fi": "Monella perheellä on mökki veden äärellä, usein ilman juoksevaa vettä, ja siellä kalastetaan, pilkotaan puita, poimitaan marjoja ja nautitaan yksinkertaisesti hiljaisuudesta.",
+      "img": "Pielinen-SU.jpg"
     },
     {
       "en": "And of course there's a sauna. Finns bathe in them all year round, then cool off by jumping into the lake, or in winter, by rolling in the snow or dipping through a hole in the ice.",
-      "fi": "Ja tietysti on sauna. Suomalaiset saunovat ympäri vuoden ja vilvoittelevat sen jälkeen hyppäämällä järveen, tai talvella kieriskelemällä lumessa tai pulahtamalla avantoon."
+      "fi": "Ja tietysti on sauna. Suomalaiset saunovat ympäri vuoden ja vilvoittelevat sen jälkeen hyppäämällä järveen, tai talvella kieriskelemällä lumessa tai pulahtamalla avantoon.",
+      "img": "Koli_hill_view.jpg"
     },
     {
       "en": "Thanks to a tradition called everyman's right, anyone may walk through the forests and pick wild blueberries, lingonberries and mushrooms, as long as they respect nature and people's homes.",
-      "fi": "Jokamiehenoikeuksien ansiosta kuka tahansa saa kulkea metsissä ja poimia mustikoita, puolukoita ja sieniä, kunhan kunnioittaa luontoa ja ihmisten kotirauhaa."
+      "fi": "Jokamiehenoikeuksien ansiosta kuka tahansa saa kulkea metsissä ja poimia mustikoita, puolukoita ja sieniä, kunhan kunnioittaa luontoa ja ihmisten kotirauhaa.",
+      "img": "Vaccinium_myrtillus_Mustikka_IMG_1100_C-_cropped.jpg"
     },
     {
       "en": "Up in Lapland, the winter sun barely rises, but the Northern Lights ripple across the sky in green and violet. Reindeer roam the snowy forests, and the Sámi, the Indigenous people of the far north, have herded them for generations.",
-      "fi": "Lapissa talviaurinko tuskin nousee, mutta revontulet väreilevät taivaalla vihreinä ja violetteina. Porot kulkevat lumisissa metsissä, ja saamelaiset, pohjoisen alkuperäiskansa, ovat paimentaneet niitä sukupolvien ajan."
+      "fi": "Lapissa talviaurinko tuskin nousee, mutta revontulet väreilevät taivaalla vihreinä ja violetteina. Porot kulkevat lumisissa metsissä, ja saamelaiset, pohjoisen alkuperäiskansa, ovat paimentaneet niitä sukupolvien ajan.",
+      "img": "Reinbukken_på_frisk_grønt_beite._-_panoramio.jpg"
     },
     {
       "en": "Finns have a special word, sisu. It means a quiet, stubborn courage: keeping going when things get tough, without making a fuss about it.",
-      "fi": "Suomalaisilla on erityinen sana: sisu. Se tarkoittaa hiljaista, sitkeää rohkeutta, sitä että jatketaan, vaikka on vaikeaa, eikä siitä pidetä turhaa meteliä."
+      "fi": "Suomalaisilla on erityinen sana: sisu. Se tarkoittaa hiljaista, sitkeää rohkeutta, sitä että jatketaan, vaikka on vaikeaa, eikä siitä pidetä turhaa meteliä.",
+      "img": "Mustalampi_Lake_in_Nuuksio.jpg"
     },
     {
       "en": "They also value calm and personal space. A pause in conversation isn't awkward here, it's comfortable, and people mean exactly what they say.",
-      "fi": "He arvostavat myös rauhaa ja omaa tilaa. Tauko keskustelussa ei ole täällä kiusallinen vaan mukava, ja ihmiset tarkoittavat juuri sitä, mitä sanovat."
+      "fi": "He arvostavat myös rauhaa ja omaa tilaa. Tauko keskustelussa ei ole täällä kiusallinen vaan mukava, ja ihmiset tarkoittavat juuri sitä, mitä sanovat.",
+      "img": "Porvoo_in_January.jpg"
     },
     {
       "en": "Helsinki, the capital, sits on the Baltic Sea, with clean modern design, a busy market square by the harbour, and an old sea fortress called Suomenlinna spread across a cluster of islands.",
-      "fi": "Pääkaupunki Helsinki sijaitsee Itämeren rannalla. Siellä on selkeää modernia muotoilua, vilkas kauppatori sataman vieressä ja vanha merilinnoitus Suomenlinna, joka levittäytyy useille saarille."
+      "fi": "Pääkaupunki Helsinki sijaitsee Itämeren rannalla. Siellä on selkeää modernia muotoilua, vilkas kauppatori sataman vieressä ja vanha merilinnoitus Suomenlinna, joka levittäytyy useille saarille.",
+      "img": "Kauppatori_Helsinki1.jpg"
     },
     {
       "en": "Children everywhere know the Moomins, the gentle, round creatures created by the Finnish writer and artist Tove Jansson. And Finland's national epic, the Kalevala, inspired the music of the composer Jean Sibelius.",
-      "fi": "Lapset kaikkialla tuntevat muumit, suomalaisen kirjailijan ja taiteilijan Tove Janssonin luomat lempeät ja pyöreät olennot. Kansalliseepos Kalevala puolestaan innoitti säveltäjä Jean Sibeliuksen musiikkia."
+      "fi": "Lapset kaikkialla tuntevat muumit, suomalaisen kirjailijan ja taiteilijan Tove Janssonin luomat lempeät ja pyöreät olennot. Kansalliseepos Kalevala puolestaan innoitti säveltäjä Jean Sibeliuksen musiikkia.",
+      "img": "Muumitalo_3.jpg"
     },
     {
       "en": "At the table, try Karelian pies, thin rye crusts filled with rice porridge and topped with egg butter, or a creamy salmon soup. With coffee, and Finns drink plenty of it, comes a warm cinnamon bun called korvapuusti.",
-      "fi": "Ruokapöydässä kannattaa maistaa karjalanpiirakoita, ohuita ruiskuoria, joissa on riisipuurotäyte ja päällä munavoita, tai kermaista lohikeittoa. Kahvin kanssa, ja kahvia suomalaiset juovat paljon, syödään lämmin korvapuusti."
+      "fi": "Ruokapöydässä kannattaa maistaa karjalanpiirakoita, ohuita ruiskuoria, joissa on riisipuurotäyte ja päällä munavoita, tai kermaista lohikeittoa. Kahvin kanssa, ja kahvia suomalaiset juovat paljon, syödään lämmin korvapuusti.",
+      "img": "Karjalanpiirakka-20060227.jpg"
     },
     {
       "en": "Finns have a playful side too. They hold championships in carrying your partner through an obstacle course, in throwing mobile phones, and even in playing air guitar.",
-      "fi": "Suomalaisilla on myös leikkisä puolensa. Täällä järjestetään mestaruuskilpailuja eukonkannossa, kännykänheitossa ja jopa ilmakitaransoitossa."
+      "fi": "Suomalaisilla on myös leikkisä puolensa. Täällä järjestetään mestaruuskilpailuja eukonkannossa, kännykänheitossa ja jopa ilmakitaransoitossa.",
+      "img": "Olavinlinna_Savonlinna_Finland.jpg"
     },
     {
       "en": "Kiitos, thank you for visiting. Take the overnight ferry west across the Baltic, and in the morning Sweden will be waiting.",
-      "fi": "Kiitos käynnistä! Nouse yölauttaan ja matkaa Itämeren yli länteen, niin aamulla sinua odottaa Ruotsi."
+      "fi": "Kiitos käynnistä! Nouse yölauttaan ja matkaa Itämeren yli länteen, niin aamulla sinua odottaa Ruotsi.",
+      "img": "View_from_Turku_Cathedral_tower.jpg"
     }
   ],
-  "next": ["Sweden", "Estonia", "Norway"]
+  "next": [
+    "Sweden",
+    "Estonia",
+    "Norway"
+  ]
 }

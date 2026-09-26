@@ -1,59 +1,79 @@
 {
   "country": "Libya",
-  "languages": ["en", "ar"],
+  "languages": [
+    "en",
+    "ar"
+  ],
   "segments": [
     {
       "en": "Tea is poured from high above the glass, again and again, until a thick layer of foam sits on top. Then a spoonful of roasted peanuts or almonds is dropped in. Sip slowly, you're in Libya.",
-      "ar": "يُصبّ الشاي من علوّ فوق الكأس، مرة بعد مرة، حتى تعلوه رغوة كثيفة. ثم تُضاف ملعقة من الفول السوداني المحمّص أو اللوز. ارتشفه على مهل، فأنت في ليبيا."
+      "ar": "يُصبّ الشاي من علوّ فوق الكأس، مرة بعد مرة، حتى تعلوه رغوة كثيفة. ثم تُضاف ملعقة من الفول السوداني المحمّص أو اللوز. ارتشفه على مهل، فأنت في ليبيا.",
+      "img": "Libyan_green_tea.jpg"
     },
     {
       "en": "Libya stretches along the southern shore of the Mediterranean in North Africa. Most people live near the coast, while much of the land to the south is the Sahara, a sea of sand, stone and silence.",
-      "ar": "تمتد ليبيا على الشاطئ الجنوبي للبحر المتوسط في شمال أفريقيا. ويعيش معظم الناس قرب الساحل، أما الجزء الأكبر من الأرض جنوبًا فهو الصحراء الكبرى، بحر من الرمال والحجارة والسكون."
+      "ar": "تمتد ليبيا على الشاطئ الجنوبي للبحر المتوسط في شمال أفريقيا. ويعيش معظم الناس قرب الساحل، أما الجزء الأكبر من الأرض جنوبًا فهو الصحراء الكبرى، بحر من الرمال والحجارة والسكون.",
+      "img": "Libyandesertcscott.jpg"
     },
     {
       "en": "Along that coast lie some of the most remarkable ancient ruins anywhere. At Leptis Magna, a grand Roman city, you can walk through marble streets, an arched market and a theatre facing the sea.",
-      "ar": "وعلى ذلك الساحل تقع بعض أروع الآثار القديمة في العالم. ففي لبدة الكبرى، المدينة الرومانية العظيمة، يمكنك أن تمشي في شوارع من الرخام، وسوق بأقواس، ومسرح يطلّ على البحر."
+      "ar": "وعلى ذلك الساحل تقع بعض أروع الآثار القديمة في العالم. ففي لبدة الكبرى، المدينة الرومانية العظيمة، يمكنك أن تمشي في شوارع من الرخام، وسوق بأقواس، ومسرح يطلّ على البحر.",
+      "img": "Leptis_Magna_(29)_(8288918733).jpg"
     },
     {
       "en": "Further west is Sabratha, with its tall theatre of red stone, and in the green hills of the east lies Cyrene, a city founded by ancient Greeks, full of temples and fountains.",
-      "ar": "وإلى الغرب تقع صبراتة بمسرحها الشامخ من الحجر الأحمر، وفي تلال الشرق الخضراء تقع قورينا، المدينة التي أسّسها الإغريق القدماء، بمعابدها وينابيعها."
+      "ar": "وإلى الغرب تقع صبراتة بمسرحها الشامخ من الحجر الأحمر، وفي تلال الشرق الخضراء تقع قورينا، المدينة التي أسّسها الإغريق القدماء، بمعابدها وينابيعها.",
+      "img": "Theatre_of_Sabratha,_Libya.jpg"
     },
     {
       "en": "Tripoli, the capital, has an old walled medina of narrow lanes, where coppersmiths tap at their pots, and spice and gold sellers call out from tiny shops.",
-      "ar": "أما طرابلس، العاصمة، ففيها مدينة قديمة مسوّرة بأزقّة ضيّقة، يطرق فيها النحّاسون أوانيهم، وينادي باعة التوابل والذهب من دكاكينهم الصغيرة."
+      "ar": "أما طرابلس، العاصمة، ففيها مدينة قديمة مسوّرة بأزقّة ضيّقة، يطرق فيها النحّاسون أوانيهم، وينادي باعة التوابل والذهب من دكاكينهم الصغيرة.",
+      "img": "Al-Saraya_al-Hamra_Fortress,_Tripoli_(5282695461).jpg"
     },
     {
       "en": "Deep in the desert, near the borders with Algeria and Tunisia, is the old town of Ghadames. Its houses are joined together and its alleys are roofed over, keeping them cool and shady even in the hottest sun.",
-      "ar": "وفي عمق الصحراء، قرب الحدود مع الجزائر وتونس، تقع مدينة غدامس القديمة. بيوتها متلاصقة وأزقّتها مسقوفة، فتبقى باردة ظليلة حتى في أشدّ الشمس حرارة."
+      "ar": "وفي عمق الصحراء، قرب الحدود مع الجزائر وتونس، تقع مدينة غدامس القديمة. بيوتها متلاصقة وأزقّتها مسقوفة، فتبقى باردة ظليلة حتى في أشدّ الشمس حرارة.",
+      "img": "Ghadames_-_Altstadt_bei_Nacht_02.jpg"
     },
     {
       "en": "In the far south-west, the Acacus Mountains hide rock paintings and carvings made thousands of years ago, showing giraffes, elephants and cattle from a time when the Sahara was green.",
-      "ar": "وفي أقصى الجنوب الغربي تُخفي جبال أكاكوس رسومًا ونقوشًا صخرية عمرها آلاف السنين، تصوّر الزرافات والفيلة والأبقار من زمن كانت فيه الصحراء خضراء."
+      "ar": "وفي أقصى الجنوب الغربي تُخفي جبال أكاكوس رسومًا ونقوشًا صخرية عمرها آلاف السنين، تصوّر الزرافات والفيلة والأبقار من زمن كانت فيه الصحراء خضراء.",
+      "img": "Tadrart_Acacus_1.jpg"
     },
     {
       "en": "Arabic is the main language, and Amazigh communities in the mountains and the Tuareg of the desert keep their own languages and traditions alive.",
-      "ar": "والعربية هي اللغة الرئيسية، بينما تحافظ المجتمعات الأمازيغية في الجبال والطوارق في الصحراء على لغاتهم وتقاليدهم."
+      "ar": "والعربية هي اللغة الرئيسية، بينما تحافظ المجتمعات الأمازيغية في الجبال والطوارق في الصحراء على لغاتهم وتقاليدهم.",
+      "img": "Medina_ghat.jpg"
     },
     {
       "en": "Food brings everyone to the table. Couscous is steamed and served with lamb and vegetables, and sharba, a tomato soup with tiny pasta and mint, is a must during the month of Ramadan.",
-      "ar": "والطعام يجمع الجميع حول المائدة. فالكسكسي يُطهى على البخار ويُقدَّم مع لحم الضأن والخضار، أما الشربة، حساء الطماطم بالشعيرية الصغيرة والنعناع، فلا غنى عنها في شهر رمضان."
+      "ar": "والطعام يجمع الجميع حول المائدة. فالكسكسي يُطهى على البخار ويُقدَّم مع لحم الضأن والخضار، أما الشربة، حساء الطماطم بالشعيرية الصغيرة والنعناع، فلا غنى عنها في شهر رمضان.",
+      "img": "Moroccan_cuscus,_from_Casablanca,_September_2018.jpg"
     },
     {
       "en": "For a special meal, try bazeen, a dome of barley dough surrounded by a spicy sauce with lamb and eggs. It's eaten together from one dish, by hand.",
-      "ar": "وفي المناسبات الخاصة جرّب البازين، قبّة من عجين الشعير تحيط بها صلصة حارّة مع اللحم والبيض. ويؤكل من صحن واحد بالأيدي، والجميع معًا."
+      "ar": "وفي المناسبات الخاصة جرّب البازين، قبّة من عجين الشعير تحيط بها صلصة حارّة مع اللحم والبيض. ويؤكل من صحن واحد بالأيدي، والجميع معًا.",
+      "img": "Bazin.jpg"
     },
     {
       "en": "Hospitality is deeply rooted. A guest is welcomed with dates and milk or tea, and families love to gather for long evenings of conversation.",
-      "ar": "والكرم متجذّر في النفوس. فالضيف يُستقبل بالتمر والحليب أو بالشاي، والعائلات تحبّ أن تجتمع في سهرات طويلة من الأحاديث."
+      "ar": "والكرم متجذّر في النفوس. فالضيف يُستقبل بالتمر والحليب أو بالشاي، والعائلات تحبّ أن تجتمع في سهرات طويلة من الأحاديث.",
+      "img": "Dates005.jpg"
     },
     {
       "en": "Out in the dunes, the Ubari lakes are a surprise: blue pools of water ringed by palm trees in the middle of the golden sand.",
-      "ar": "وفي قلب الكثبان تفاجئك بحيرات أوباري: برك زرقاء تحيط بها أشجار النخيل وسط الرمال الذهبية."
+      "ar": "وفي قلب الكثبان تفاجئك بحيرات أوباري: برك زرقاء تحيط بها أشجار النخيل وسط الرمال الذهبية.",
+      "img": "Lake_Gaberoun_(5282881127).jpg"
     },
     {
       "en": "Ma'a salama, go in peace! Follow the Mediterranean coast west, past palm groves and old ports, and Tunisia is waiting.",
-      "ar": "مع السلامة! اتبع ساحل البحر المتوسط غربًا، مرورًا ببساتين النخيل والموانئ القديمة، فهناك تنتظرك تونس."
+      "ar": "مع السلامة! اتبع ساحل البحر المتوسط غربًا، مرورًا ببساتين النخيل والموانئ القديمة، فهناك تنتظرك تونس.",
+      "img": "Apollonia_portoriental.jpg"
     }
   ],
-  "next": ["Tunisia", "Egypt", "Algeria"]
+  "next": [
+    "Tunisia",
+    "Egypt",
+    "Algeria"
+  ]
 }

@@ -1,55 +1,74 @@
 {
   "country": "Belarus",
-  "languages": ["en", "ru"],
+  "languages": [
+    "en",
+    "ru"
+  ],
   "segments": [
     {
       "en": "Deep in an ancient forest, a twig snaps, and a huge shaggy shape steps out between the oaks. It is a European bison, the heaviest land animal in Europe, and in Belarus it still roams wild in the Belovezhskaya Pushcha.",
-      "ru": "В глубине древнего леса хрустнула ветка, и между дубами показывается огромный косматый силуэт. Это зубр, самое тяжёлое сухопутное животное Европы, и в Беларуси он до сих пор свободно бродит по Беловежской пуще."
+      "ru": "В глубине древнего леса хрустнула ветка, и между дубами показывается огромный косматый силуэт. Это зубр, самое тяжёлое сухопутное животное Европы, и в Беларуси он до сих пор свободно бродит по Беловежской пуще.",
+      "img": "European_bison_(Bison_bonasus)_male_Białowieza.jpg"
     },
     {
       "en": "That forest is one of the last pieces of the great woodland that once covered this part of Europe. Belarus is a land of pine and birch, of quiet rivers, bogs and thousands of lakes.",
-      "ru": "Эта пуща — один из последних уголков огромного леса, который когда-то покрывал эту часть Европы. Беларусь — край сосен и берёз, тихих рек, болот и тысяч озёр."
+      "ru": "Эта пуща — один из последних уголков огромного леса, который когда-то покрывал эту часть Европы. Беларусь — край сосен и берёз, тихих рек, болот и тысяч озёр.",
+      "img": "BelarusBNP09.JPG"
     },
     {
       "en": "In spring, white storks return from Africa and build enormous nests on rooftops, church towers and poles. People see them as a sign of good luck and a happy home.",
-      "ru": "Весной из Африки возвращаются белые аисты и вьют огромные гнёзда на крышах, колокольнях и столбах. Люди считают их знаком удачи и счастливого дома."
+      "ru": "Весной из Африки возвращаются белые аисты и вьют огромные гнёзда на крышах, колокольнях и столбах. Люди считают их знаком удачи и счастливого дома.",
+      "img": "White_stork_(Ciconia_ciconia)_Białowieza.jpg"
     },
     {
       "en": "Two languages are official, Belarusian and Russian, and you will hear both. A friendly greeting in Belarusian is dobry dzien, good day.",
-      "ru": "Здесь два государственных языка, белорусский и русский, и звучат оба. Дружеское приветствие по-белорусски — добры дзень, то есть добрый день."
+      "ru": "Здесь два государственных языка, белорусский и русский, и звучат оба. Дружеское приветствие по-белорусски — добры дзень, то есть добрый день.",
+      "img": "Полацк._Сафійскі_сабор.jpg"
     },
     {
       "en": "The potato is king of the kitchen. The favourite dish is draniki, crispy golden potato pancakes served hot with sour cream, sometimes alongside machanka, a rich sauce of pork and sausage for dipping.",
-      "ru": "Картошка здесь — королева кухни. Любимое блюдо — драники, хрустящие золотистые картофельные оладьи, которые подают горячими со сметаной, а иногда с мачанкой, густым соусом со свининой и колбасками, в который их макают."
+      "ru": "Картошка здесь — королева кухни. Любимое блюдо — драники, хрустящие золотистые картофельные оладьи, которые подают горячими со сметаной, а иногда с мачанкой, густым соусом со свининой и колбасками, в который их макают.",
+      "img": "Babka-ziemniaczana.jpg"
     },
     {
       "en": "Guests are treated generously. Expect a table covered with pickles, mushrooms from the forest, dark rye bread and more dishes than you can count, and your host will keep filling your plate.",
-      "ru": "Гостей принимают щедро. Вас ждёт стол с соленьями, лесными грибами, тёмным ржаным хлебом и таким количеством блюд, что не сосчитать, а хозяева будут подкладывать ещё и ещё."
+      "ru": "Гостей принимают щедро. Вас ждёт стол с соленьями, лесными грибами, тёмным ржаным хлебом и таким количеством блюд, что не сосчитать, а хозяева будут подкладывать ещё и ещё.",
+      "img": "Gherkins_and_Onions.JPG"
     },
     {
       "en": "Minsk, the capital, was almost entirely rebuilt after the Second World War. Today it has wide avenues, grand buildings, parks and a river running through the middle.",
-      "ru": "Минск, столица, был почти полностью отстроен заново после Второй мировой войны. Сегодня это город широких проспектов, величественных зданий, парков и реки, текущей через самый центр."
+      "ru": "Минск, столица, был почти полностью отстроен заново после Второй мировой войны. Сегодня это город широких проспектов, величественных зданий, парков и реки, текущей через самый центр.",
+      "img": "View_of_Minsk_(180819)_09.jpg"
     },
     {
       "en": "Outside the cities, fairy-tale castles rise from the countryside. Mir Castle has red brick towers reflected in a pond, and nearby Nesvizh is a palace surrounded by water and gardens.",
-      "ru": "За городами среди полей встают сказочные замки. Мирский замок отражает свои башни из красного кирпича в пруду, а неподалёку Несвижский дворец окружён водой и садами."
+      "ru": "За городами среди полей встают сказочные замки. Мирский замок отражает свои башни из красного кирпича в пруду, а неподалёку Несвижский дворец окружён водой и садами.",
+      "img": "Комплекс_Мирского_замка.JPG"
     },
     {
       "en": "Look for the ruchnik, a long linen cloth embroidered in red and white patterns. It is used to welcome guests with bread and salt, and appears at weddings and family celebrations.",
-      "ru": "Обратите внимание на рушник — длинное льняное полотенце с красно-белой вышивкой. С ним встречают гостей хлебом-солью, его можно увидеть на свадьбах и семейных праздниках."
+      "ru": "Обратите внимание на рушник — длинное льняное полотенце с красно-белой вышивкой. С ним встречают гостей хлебом-солью, его можно увидеть на свадьбах и семейных праздниках.",
+      "img": "Narač_-_4.jpg"
     },
     {
       "en": "On the shortest night of summer comes Kupalle. People weave flower wreaths and float them on rivers, jump over bonfires, and search the dark forest for a magical fern flower said to bring happiness.",
-      "ru": "В самую короткую летнюю ночь празднуют Купалье. Люди плетут венки и пускают их по реке, прыгают через костры и ищут в тёмном лесу волшебный цветок папоротника, который, по преданию, приносит счастье."
+      "ru": "В самую короткую летнюю ночь празднуют Купалье. Люди плетут венки и пускают их по реке, прыгают через костры и ищут в тёмном лесу волшебный цветок папоротника, который, по преданию, приносит счастье.",
+      "img": "После_заката_на_озере_Снуды.jpg"
     },
     {
       "en": "The painter Marc Chagall grew up in the city of Vitebsk, and his floating lovers and flying goats were inspired by its streets. Each summer, the city hosts a big music festival.",
-      "ru": "Художник Марк Шагал вырос в Витебске, и его парящие влюблённые и летающие козы навеяны улицами этого города. Каждое лето Витебск принимает большой музыкальный фестиваль."
+      "ru": "Художник Марк Шагал вырос в Витебске, и его парящие влюблённые и летающие козы навеяны улицами этого города. Каждое лето Витебск принимает большой музыкальный фестиваль.",
+      "img": "Віцебскія_краявіды_03.jpg"
     },
     {
       "en": "Now follow the forest west, past the grazing bison, across the border where the same ancient woods continue. Poland is waiting on the other side.",
-      "ru": "А теперь идите по лесу на запад, мимо пасущихся зубров, через границу, за которой продолжается та же древняя пуща. На другой стороне вас ждёт Польша."
+      "ru": "А теперь идите по лесу на запад, мимо пасущихся зубров, через границу, за которой продолжается та же древняя пуща. На другой стороне вас ждёт Польша.",
+      "img": "Bialowieza_National_Park_in_Poland0029.JPG"
     }
   ],
-  "next": ["Poland", "Lithuania", "Ukraine"]
+  "next": [
+    "Poland",
+    "Lithuania",
+    "Ukraine"
+  ]
 }

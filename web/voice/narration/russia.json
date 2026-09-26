@@ -1,55 +1,74 @@
 {
   "country": "Russia",
-  "languages": ["en", "ru"],
+  "languages": [
+    "en",
+    "ru"
+  ],
   "segments": [
     {
       "en": "A train whistle sounds, and the carriage begins to sway. Outside the window, birch trees flicker past, white trunks against dark forest, hour after hour. Travelling across Russia, you soon learn that distances here are measured in days.",
-      "ru": "Раздаётся гудок, и вагон начинает покачиваться. За окном мелькают берёзы, белые стволы на фоне тёмного леса, час за часом. Путешествуя по России, быстро понимаешь, что расстояния здесь измеряют днями."
+      "ru": "Раздаётся гудок, и вагон начинает покачиваться. За окном мелькают берёзы, белые стволы на фоне тёмного леса, час за часом. Путешествуя по России, быстро понимаешь, что расстояния здесь измеряют днями.",
+      "img": "VL_85-022_container_train.jpg"
     },
     {
       "en": "Russia is the largest country on Earth, stretching from the Baltic Sea to the Pacific Ocean across eleven time zones. When families in the far east are sitting down to dinner, people in the west are only just waking up.",
-      "ru": "Россия — самая большая страна на Земле: она тянется от Балтийского моря до Тихого океана через одиннадцать часовых поясов. Когда на Дальнем Востоке садятся ужинать, на западе страны люди только просыпаются."
+      "ru": "Россия — самая большая страна на Земле: она тянется от Балтийского моря до Тихого океана через одиннадцать часовых поясов. Когда на Дальнем Востоке садятся ужинать, на западе страны люди только просыпаются.",
+      "img": "Ključevskaja_za_východu_slunce.jpg"
     },
     {
       "en": "The Trans-Siberian Railway crosses much of that distance, linking Moscow with Vladivostok on the Pacific coast. On board, passengers share tea from a glass in a metal holder, swap snacks and stories, and watch the land unroll.",
-      "ru": "Транссибирская магистраль пересекает большую часть этого пространства, соединяя Москву с Владивостоком на берегу Тихого океана. В поезде пассажиры пьют чай из стакана в подстаканнике, делятся едой и историями и смотрят, как за окном разворачивается страна."
+      "ru": "Транссибирская магистраль пересекает большую часть этого пространства, соединяя Москву с Владивостоком на берегу Тихого океана. В поезде пассажиры пьют чай из стакана в подстаканнике, делятся едой и историями и смотрят, как за окном разворачивается страна.",
+      "img": "Vladivostok_harbor.jpg"
     },
     {
       "en": "In Moscow, the red walls of the Kremlin rise beside Red Square, where the bright, swirling domes of Saint Basil's Cathedral look almost like sweets.",
-      "ru": "В Москве рядом с Красной площадью поднимаются красные стены Кремля, а яркие витые купола храма Василия Блаженного похожи на леденцы."
+      "ru": "В Москве рядом с Красной площадью поднимаются красные стены Кремля, а яркие витые купола храма Василия Блаженного похожи на леденцы.",
+      "img": "Saint_Basil's_Cathedral_in_Moscow.jpg"
     },
     {
       "en": "Saint Petersburg, built by Peter the Great beside the Baltic, is a city of canals and palaces. In early summer come the White Nights, when the sky barely darkens and people stroll along the river Neva after midnight.",
-      "ru": "Санкт-Петербург, построенный Петром Великим у Балтийского моря, — город каналов и дворцов. В начале лета наступают белые ночи, когда небо почти не темнеет, и люди гуляют по набережным Невы и после полуночи."
+      "ru": "Санкт-Петербург, построенный Петром Великим у Балтийского моря, — город каналов и дворцов. В начале лета наступают белые ночи, когда небо почти не темнеет, и люди гуляют по набережным Невы и после полуночи.",
+      "img": "Spb_Finland_Bridge_asv2019-09_img2.jpg"
     },
     {
       "en": "Beyond the cities lie endless forests called taiga, the snowy expanses of Siberia, and Lake Baikal, the deepest lake in the world, so clear in winter that you can see through the ice.",
-      "ru": "За городами лежат бескрайние леса — тайга, заснеженные просторы Сибири и озеро Байкал, самое глубокое озеро в мире; зимой его лёд настолько прозрачен, что сквозь него видно воду."
+      "ru": "За городами лежат бескрайние леса — тайга, заснеженные просторы Сибири и озеро Байкал, самое глубокое озеро в мире; зимой его лёд настолько прозрачен, что сквозь него видно воду.",
+      "img": "Baikal,_Cape_Burhan,_Olkhon_Island,_Lake_Baikal,_Russia.jpg"
     },
     {
       "en": "Russia is home to many peoples, including Tatars, Chechens, Yakuts, Buryats and many more, each with their own languages, faiths and traditions, alongside the Russian language that most people share.",
-      "ru": "Россия — дом для многих народов: татар, чеченцев, якутов, бурят и многих других, у каждого свои языки, вера и традиции, а объединяет большинство людей русский язык."
+      "ru": "Россия — дом для многих народов: татар, чеченцев, якутов, бурят и многих других, у каждого свои языки, вера и традиции, а объединяет большинство людей русский язык.",
+      "img": "Казанский_кремль._Панорама_с_колеса_обозрения.jpg"
     },
     {
       "en": "Stories matter here. Children grow up with fairy tales of the witch Baba Yaga in her hut on chicken legs, and later read great writers like Pushkin, Tolstoy and Dostoevsky. Ballet and the music of Tchaikovsky are treasured too.",
-      "ru": "Истории здесь очень важны. Дети растут на сказках о Бабе-яге и её избушке на курьих ножках, а потом читают Пушкина, Толстого и Достоевского. Высоко ценят и балет, и музыку Чайковского."
+      "ru": "Истории здесь очень важны. Дети растут на сказках о Бабе-яге и её избушке на курьих ножках, а потом читают Пушкина, Толстого и Достоевского. Высоко ценят и балет, и музыку Чайковского.",
+      "img": "Kizhi_06-2017_img08_Pogost_view.jpg"
     },
     {
       "en": "If you're invited home, take off your shoes at the door, and don't arrive empty-handed; a cake or some flowers will do. Just remember, flowers are given in odd numbers.",
-      "ru": "Если вас пригласили в гости, снимите обувь у порога и не приходите с пустыми руками: подойдёт торт или цветы. Только помните, что цветы дарят нечётным числом."
+      "ru": "Если вас пригласили в гости, снимите обувь у порога и не приходите с пустыми руками: подойдёт торт или цветы. Только помните, что цветы дарят нечётным числом.",
+      "img": "SuzdalPanoramaC_9345.jpg"
     },
     {
       "en": "At the table you might find borscht, a beetroot soup with a swirl of sour cream, little dumplings called pelmeni, and thin pancakes, blini, especially during Maslenitsa, the cheerful festival that says goodbye to winter.",
-      "ru": "На столе может оказаться борщ со сметаной, пельмени и тонкие блины, особенно на Масленицу, весёлый праздник проводов зимы."
+      "ru": "На столе может оказаться борщ со сметаной, пельмени и тонкие блины, особенно на Масленицу, весёлый праздник проводов зимы.",
+      "img": "Borscht_served.jpg"
     },
     {
       "en": "Winter is long, and people embrace it, with ice skating, cross-country skiing, ice hockey, and a steamy visit to the banya, the traditional bathhouse.",
-      "ru": "Зима здесь долгая, и её встречают с удовольствием: коньки, лыжи, хоккей и, конечно, жаркая баня."
+      "ru": "Зима здесь долгая, и её встречают с удовольствием: коньки, лыжи, хоккей и, конечно, жаркая баня.",
+      "img": "Moscow_Gorky_Park_main_portal_08-2016_img1.jpg"
     },
     {
       "en": "Spasibo, thank you, for travelling with us. Stay on the train as it turns south past Lake Baikal, and the wide grasslands of Mongolia will soon come into view.",
-      "ru": "Спасибо, что путешествовали с нами! Оставайтесь в поезде: он повернёт на юг за Байкалом, и скоро за окном покажутся широкие степи Монголии."
+      "ru": "Спасибо, что путешествовали с нами! Оставайтесь в поезде: он повернёт на юг за Байкалом, и скоро за окном покажутся широкие степи Монголии.",
+      "img": "Ogoy_island_in_winter.jpg"
     }
   ],
-  "next": ["Mongolia", "Finland", "Kazakhstan"]
+  "next": [
+    "Mongolia",
+    "Finland",
+    "Kazakhstan"
+  ]
 }

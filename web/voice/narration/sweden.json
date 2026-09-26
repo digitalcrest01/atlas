@@ -1,18 +1,24 @@
 {
   "country": "Sweden",
-  "languages": ["en", "sv"],
+  "languages": [
+    "en",
+    "sv"
+  ],
   "segments": [
     {
       "en": "Fika! In Sweden, this little word means a pause for coffee and something sweet, often a cinnamon bun, shared with friends or colleagues. For many people it's an almost daily ritual.",
-      "sv": "Fika! I Sverige betyder det lilla ordet en paus med kaffe och något sött, ofta en kanelbulle, tillsammans med vänner eller kollegor. För många är det en nästan daglig ritual."
+      "sv": "Fika! I Sverige betyder det lilla ordet en paus med kaffe och något sött, ofta en kanelbulle, tillsammans med vänner eller kollegor. För många är det en nästan daglig ritual.",
+      "img": "Cinnamon_roll_in_Stockholm.jpg"
     },
     {
       "en": "Sweden stretches long and narrow, from the beech woods and farmland of the south to Lapland in the far north, past tens of thousands of lakes and a coastline scattered with islands.",
-      "sv": "Sverige är ett långt och smalt land, från bokskogar och åkrar i söder till Lappland längst upp i norr, med tiotusentals sjöar och en kust full av öar."
+      "sv": "Sverige är ett långt och smalt land, från bokskogar och åkrar i söder till Lappland längst upp i norr, med tiotusentals sjöar och en kust full av öar.",
+      "img": "00_2778_Lappland_(Nord-Schweden).jpg"
     },
     {
       "en": "Stockholm is built on islands where Lake Mälaren meets the Baltic Sea. Its old town, Gamla stan, is a maze of narrow cobbled lanes and houses painted ochre, rust and gold.",
-      "sv": "Stockholm är byggt på öar där Mälaren möter Östersjön. Gamla stan är en labyrint av smala kullerstensgränder och hus i ockra, rostrött och guld."
+      "sv": "Stockholm är byggt på öar där Mälaren möter Östersjön. Gamla stan är en labyrint av smala kullerstensgränder och hus i ockra, rostrött och guld.",
+      "img": "Gamla_stan_September_2014_01.jpg"
     },
     {
       "en": "At Midsummer, when the nights barely darken, families dance around a flower-decked maypole, hop like little frogs to a favourite song, and feast on pickled herring, new potatoes and strawberries.",
@@ -20,40 +26,53 @@
     },
     {
       "en": "Winter is a different world. In the north there are weeks when the sun hardly rises, and the northern lights may ripple across the sky. On the thirteenth of December, Lucia processions bring candles and song into the darkness.",
-      "sv": "Vintern är en helt annan värld. I norr finns veckor då solen knappt går upp, och norrskenet kan fladdra över himlen. Den trettonde december bär luciatågen in ljus och sång i mörkret."
+      "sv": "Vintern är en helt annan värld. I norr finns veckor då solen knappt går upp, och norrskenet kan fladdra över himlen. Den trettonde december bär luciatågen in ljus och sång i mörkret.",
+      "img": "Lapporten_2.jpg"
     },
     {
       "en": "In the north live the Sámi, an Indigenous people with their own languages and traditions, including reindeer herding and joik, a song that captures the spirit of a person or a place.",
-      "sv": "I norr bor samerna, ett urfolk med egna språk och traditioner, bland annat renskötsel och jojk, en sång som fångar själen hos en människa eller en plats."
+      "sv": "I norr bor samerna, ett urfolk med egna språk och traditioner, bland annat renskötsel och jojk, en sång som fångar själen hos en människa eller en plats.",
+      "img": "Sarek_Skierffe_Rapadelta.jpg"
     },
     {
       "en": "Swedes love the outdoors, and the right of public access, allemansrätten, lets everyone walk, pick berries and even camp for a night in nature, as long as they take care of it.",
-      "sv": "Svenskar älskar att vara ute, och allemansrätten låter alla vandra, plocka bär och till och med tälta en natt i naturen, så länge man är rädd om den."
+      "sv": "Svenskar älskar att vara ute, och allemansrätten låter alla vandra, plocka bär och till och med tälta en natt i naturen, så länge man är rädd om den.",
+      "img": "Stensjön,_Tyresta_national_park,_2007-07-31,_northern_shore_on_Stensjöborg,_view_southeast.jpeg"
     },
     {
       "en": "A useful word to know is lagom, meaning just the right amount. Not too much and not too little, it sums up a very Swedish love of balance.",
-      "sv": "Ett bra ord att kunna är lagom. Inte för mycket och inte för lite, det sammanfattar en väldigt svensk kärlek till balans."
+      "sv": "Ett bra ord att kunna är lagom. Inte för mycket och inte för lite, det sammanfattar en väldigt svensk kärlek till balans.",
+      "img": "Dalarna_sommar_1986.jpg"
     },
     {
       "en": "Try meatballs with creamy sauce and lingonberries, crispbread with cheese, or, in late summer, a crayfish party with paper hats, lanterns and plenty of singing.",
-      "sv": "Smaka köttbullar med gräddsås och lingon, knäckebröd med ost eller, på sensommaren, en kräftskiva med pappershattar, lyktor och massor av sång."
+      "sv": "Smaka köttbullar med gräddsås och lingon, knäckebröd med ost eller, på sensommaren, en kräftskiva med pappershattar, lyktor och massor av sång.",
+      "img": "Knaeckebroed.jpg"
     },
     {
       "en": "Sweden gave the world Astrid Lindgren's Pippi Longstocking, the Nobel Prizes, and the catchy pop songs of ABBA that people still sing everywhere.",
-      "sv": "Sverige har gett världen Astrid Lindgrens Pippi Långstrump, Nobelpriset och Abbas medryckande poplåtar som folk fortfarande sjunger överallt."
+      "sv": "Sverige har gett världen Astrid Lindgrens Pippi Långstrump, Nobelpriset och Abbas medryckande poplåtar som folk fortfarande sjunger överallt.",
+      "img": "Djurgarden.jpg"
     },
     {
       "en": "If you visit a Swedish home, take off your shoes at the door, and try to arrive on time, because punctuality is a sign of respect.",
-      "sv": "Om du hälsar på hemma hos någon i Sverige tar du av dig skorna vid dörren, och försök komma i tid, för punktlighet är ett tecken på respekt."
+      "sv": "Om du hälsar på hemma hos någon i Sverige tar du av dig skorna vid dörren, och försök komma i tid, för punktlighet är ett tecken på respekt.",
+      "img": "A_distant_memory_(2835767026).jpg"
     },
     {
       "en": "Out in the archipelago, red wooden cottages with white corners sit on smooth granite rocks, and summer days are spent swimming, sailing and picking wild strawberries.",
-      "sv": "Ute i skärgården ligger röda trästugor med vita knutar på släta granithällar, och sommardagarna går åt till bad, segling och att plocka smultron."
+      "sv": "Ute i skärgården ligger röda trästugor med vita knutar på släta granithällar, och sommardagarna går åt till bad, segling och att plocka smultron.",
+      "img": "Beach_at_Södra_Grinda.jpg"
     },
     {
       "en": "As the evening light lingers over the water, look west. Just across the mountains, Norway and its deep fjords are waiting for you.",
-      "sv": "När kvällsljuset dröjer sig kvar över vattnet, titta västerut. Strax bortom fjällen väntar Norge och dess djupa fjordar på dig."
+      "sv": "När kvällsljuset dröjer sig kvar över vattnet, titta västerut. Strax bortom fjällen väntar Norge och dess djupa fjordar på dig.",
+      "img": "Kebnekaise_viewed_from_Tarfala_valley_-_narrower_crop.jpg"
     }
   ],
-  "next": ["Norway", "Finland", "Denmark"]
+  "next": [
+    "Norway",
+    "Finland",
+    "Denmark"
+  ]
 }

@@ -1,55 +1,74 @@
 {
   "country": "São Tomé and Príncipe",
-  "languages": ["en", "pt-PT"],
+  "languages": [
+    "en",
+    "pt-PT"
+  ],
   "segments": [
     {
       "en": "Leve-leve. You'll hear it everywhere here. It means easy, easy, or take it slowly, and it's the perfect way to describe life on these two little islands in the Gulf of Guinea.",
-      "pt-PT": "Leve-leve. Vai ouvir esta expressão em todo o lado. Quer dizer devagar, com calma, e é a melhor maneira de descrever a vida nestas duas pequenas ilhas do golfo da Guiné."
+      "pt-PT": "Leve-leve. Vai ouvir esta expressão em todo o lado. Quer dizer devagar, com calma, e é a melhor maneira de descrever a vida nestas duas pequenas ilhas do golfo da Guiné.",
+      "img": "Sao_Tome_Blue_Lagoon_4_(16061430518).jpg"
     },
     {
       "en": "São Tomé and Príncipe sits off the west coast of Central Africa, almost exactly on the equator. In fact, the line of the equator runs right across a tiny islet just off the southern tip of São Tomé, where you can stand with one foot in each hemisphere.",
-      "pt-PT": "São Tomé e Príncipe fica ao largo da costa ocidental da África Central, quase em cima do equador. Aliás, a linha do equador atravessa mesmo um ilhéu minúsculo junto à ponta sul de São Tomé, onde se pode ficar com um pé em cada hemisfério."
+      "pt-PT": "São Tomé e Príncipe fica ao largo da costa ocidental da África Central, quase em cima do equador. Aliás, a linha do equador atravessa mesmo um ilhéu minúsculo junto à ponta sul de São Tomé, onde se pode ficar com um pé em cada hemisfério.",
+      "img": "Resort_in_Ilheu_das_Rolas.jpg"
     },
     {
       "en": "The islands were born from volcanoes, and they're covered in thick, steamy rainforest. Rising out of the jungle is Pico Cão Grande, an astonishing needle of rock that points straight up at the sky like a giant's finger.",
-      "pt-PT": "As ilhas nasceram de vulcões e estão cobertas por uma floresta tropical densa e húmida. Da selva ergue-se o Pico Cão Grande, uma agulha de rocha impressionante que aponta direitinha ao céu, como o dedo de um gigante."
+      "pt-PT": "As ilhas nasceram de vulcões e estão cobertas por uma floresta tropical densa e húmida. Da selva ergue-se o Pico Cão Grande, uma agulha de rocha impressionante que aponta direitinha ao céu, como o dedo de um gigante.",
+      "img": "Pico_Cão_Grande.jpg"
     },
     {
       "en": "Nobody lived here until Portuguese sailors arrived in the fifteenth century. They brought people from mainland Africa, many of them enslaved, to work on sugar and later on vast plantations called roças.",
-      "pt-PT": "Ninguém vivia aqui até os navegadores portugueses chegarem, no século quinze. Trouxeram pessoas do continente africano, muitas delas escravizadas, para trabalhar no açúcar e, mais tarde, em grandes plantações chamadas roças."
+      "pt-PT": "Ninguém vivia aqui até os navegadores portugueses chegarem, no século quinze. Trouxeram pessoas do continente africano, muitas delas escravizadas, para trabalhar no açúcar e, mais tarde, em grandes plantações chamadas roças.",
+      "img": "São_Tomé_-_Ilhéu_Santana.jpg"
     },
     {
       "en": "Those roças grew cocoa and coffee, and for a time these small islands were among the world's biggest producers of cocoa. Today some of the old plantation houses are crumbling in the forest, while others make fine chocolate once again.",
-      "pt-PT": "Essas roças produziam cacau e café, e durante algum tempo estas pequenas ilhas estiveram entre os maiores produtores de cacau do mundo. Hoje algumas das antigas casas das roças desfazem-se no meio da floresta, enquanto outras voltaram a fazer chocolate de excelente qualidade."
+      "pt-PT": "Essas roças produziam cacau e café, e durante algum tempo estas pequenas ilhas estiveram entre os maiores produtores de cacau do mundo. Hoje algumas das antigas casas das roças desfazem-se no meio da floresta, enquanto outras voltaram a fazer chocolate de excelente qualidade.",
+      "img": "2017_Guadalupe_STP_DSC_8254_(32725836952).jpg"
     },
     {
       "en": "The country became independent in nineteen seventy-five. Portuguese is the official language, but at home and in the markets you'll also hear local Creole languages like Forro, full of rhythm and warmth.",
-      "pt-PT": "O país tornou-se independente em mil novecentos e setenta e cinco. O português é a língua oficial, mas em casa e nos mercados ouvem-se também crioulos locais, como o forro, cheios de ritmo e de calor."
+      "pt-PT": "O país tornou-se independente em mil novecentos e setenta e cinco. O português é a língua oficial, mas em casa e nos mercados ouvem-se também crioulos locais, como o forro, cheios de ritmo e de calor.",
+      "img": "2012SaoTome-8_(8042889363).jpg"
     },
     {
       "en": "Try calulu, a slow-cooked stew of smoked fish or chicken with lots of green leaves and palm oil, served with rice or cooked banana. Breadfruit and jackfruit grow almost everywhere, and fresh fish comes straight from the canoes on the beach.",
-      "pt-PT": "Prove o calulu, um guisado demorado de peixe fumado ou galinha, com muitas folhas verdes e óleo de palma, servido com arroz ou banana cozida. A fruta-pão e a jaca crescem quase por todo o lado, e o peixe fresco vem diretamente das canoas na praia."
+      "pt-PT": "Prove o calulu, um guisado demorado de peixe fumado ou galinha, com muitas folhas verdes e óleo de palma, servido com arroz ou banana cozida. A fruta-pão e a jaca crescem quase por todo o lado, e o peixe fresco vem diretamente das canoas na praia.",
+      "img": "Calulu.jpg"
     },
     {
       "en": "One of the most special traditions is the Tchiloli, a long outdoor play performed in masks and costumes, with flutes and drums. It retells an old European tale of a king and justice, turned into something completely São Toméan.",
-      "pt-PT": "Uma das tradições mais especiais é o tchiloli, uma longa peça de teatro ao ar livre representada com máscaras e trajes, ao som de flautas e tambores. Conta uma velha história europeia de um rei e da justiça, transformada em algo totalmente são-tomense."
+      "pt-PT": "Uma das tradições mais especiais é o tchiloli, uma longa peça de teatro ao ar livre representada com máscaras e trajes, ao som de flautas e tambores. Conta uma velha história europeia de um rei e da justiça, transformada em algo totalmente são-tomense.",
+      "img": "Catedral_de_Nossa_Senhora_da_Graça_São_Tomé_(20234213142).jpg"
     },
     {
       "en": "Príncipe, the smaller island, is quieter still. Its forests are home to birds found nowhere else, and on many beaches, sea turtles come ashore at night to lay their eggs.",
-      "pt-PT": "O Príncipe, a ilha mais pequena, é ainda mais tranquilo. As suas florestas abrigam aves que não existem em mais lado nenhum, e em muitas praias as tartarugas marinhas vêm a terra de noite pôr os ovos."
+      "pt-PT": "O Príncipe, a ilha mais pequena, é ainda mais tranquilo. As suas florestas abrigam aves que não existem em mais lado nenhum, e em muitas praias as tartarugas marinhas vêm a terra de noite pôr os ovos.",
+      "img": "Palacio_do_Governo_Regional_(20911940070).jpg"
     },
     {
       "en": "People are friendly and unhurried. Take time to greet everyone you meet, and don't be surprised if a quick question turns into a long, cheerful conversation.",
-      "pt-PT": "As pessoas são simpáticas e não têm pressa. Cumprimente toda a gente com calma, e não se admire se uma pergunta rápida se transformar numa conversa longa e bem-disposta."
+      "pt-PT": "As pessoas são simpáticas e não têm pressa. Cumprimente toda a gente com calma, e não se admire se uma pergunta rápida se transformar numa conversa longa e bem-disposta.",
+      "img": "Sao_Tome_Neves_2_(16061715170).jpg"
     },
     {
       "en": "Football is the favourite sport, played on sandy pitches and village clearings, and music, from lively dance songs to drumming, fills the evenings.",
-      "pt-PT": "O futebol é o desporto preferido, jogado em campos de areia e clareiras nas aldeias, e a música, das canções dançantes aos tambores, enche as noites."
+      "pt-PT": "O futebol é o desporto preferido, jogado em campos de areia e clareiras nas aldeias, e a música, das canções dançantes aos tambores, enche as noites.",
+      "img": "Typical_landscape_of_the_park_in_Caué_district.jpg"
     },
     {
       "en": "Obrigado for visiting, leve-leve. The nearest mainland is just to the east, where the rainforests of Gabon are waiting for you.",
-      "pt-PT": "Obrigado pela visita, e leve-leve! O continente mais próximo fica logo a leste, onde as florestas tropicais do Gabão estão à sua espera."
+      "pt-PT": "Obrigado pela visita, e leve-leve! O continente mais próximo fica logo a leste, onde as florestas tropicais do Gabão estão à sua espera.",
+      "img": "Angolares_(20998698446).jpg"
     }
   ],
-  "next": ["Gabon", "Equatorial Guinea", "Cape Verde"]
+  "next": [
+    "Gabon",
+    "Equatorial Guinea",
+    "Cape Verde"
+  ]
 }

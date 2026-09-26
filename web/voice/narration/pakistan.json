@@ -1,59 +1,79 @@
 {
   "country": "Pakistan",
-  "languages": ["en", "ur"],
+  "languages": [
+    "en",
+    "ur"
+  ],
   "segments": [
     {
       "en": "A truck rumbles past, covered from bumper to roof in painted flowers, peacocks, poetry and tiny jingling chains. In Pakistan, even the lorries are works of art.",
-      "ur": "ایک ٹرک گڑگڑاتا ہوا گزرتا ہے، جو بمپر سے چھت تک رنگین پھولوں، موروں، شعروں اور چھوٹی چھوٹی چھنکتی زنجیروں سے سجا ہوا ہے۔ پاکستان میں تو ٹرک بھی فن کا نمونہ ہوتے ہیں۔"
+      "ur": "ایک ٹرک گڑگڑاتا ہوا گزرتا ہے، جو بمپر سے چھت تک رنگین پھولوں، موروں، شعروں اور چھوٹی چھوٹی چھنکتی زنجیروں سے سجا ہوا ہے۔ پاکستان میں تو ٹرک بھی فن کا نمونہ ہوتے ہیں۔",
+      "img": "Chogori.jpg"
     },
     {
       "en": "Pakistan stretches from the Arabian Sea in the south to some of the highest mountains on Earth in the north, where the Karakoram, the Himalaya and the Hindu Kush meet.",
-      "ur": "پاکستان جنوب میں بحیرۂ عرب سے لے کر شمال میں دنیا کے چند بلند ترین پہاڑوں تک پھیلا ہوا ہے، جہاں قراقرم، ہمالیہ اور ہندوکش آپس میں ملتے ہیں۔"
+      "ur": "پاکستان جنوب میں بحیرۂ عرب سے لے کر شمال میں دنیا کے چند بلند ترین پہاڑوں تک پھیلا ہوا ہے، جہاں قراقرم، ہمالیہ اور ہندوکش آپس میں ملتے ہیں۔",
+      "img": "Baltoro_glacier_from_air.jpg"
     },
     {
       "en": "Up there stands K2, the second highest mountain in the world, and valleys like Hunza, where apricot trees blossom in spring beneath snowy peaks.",
-      "ur": "وہیں دنیا کی دوسری بلند ترین چوٹی کے ٹو کھڑی ہے، اور ہنزہ جیسی وادیاں ہیں جہاں بہار میں برف پوش چوٹیوں کے نیچے خوبانی کے درخت کھل اٹھتے ہیں۔"
+      "ur": "وہیں دنیا کی دوسری بلند ترین چوٹی کے ٹو کھڑی ہے، اور ہنزہ جیسی وادیاں ہیں جہاں بہار میں برف پوش چوٹیوں کے نیچے خوبانی کے درخت کھل اٹھتے ہیں۔",
+      "img": "Hunza_Valley_HDR.jpg"
     },
     {
       "en": "The great Indus River flows the length of the country. Along its banks, more than four thousand years ago, people built Mohenjo-daro, one of the world's earliest planned cities, with straight streets and covered drains.",
-      "ur": "عظیم دریائے سندھ پورے ملک میں بہتا ہے۔ اس کے کنارے چار ہزار سال سے بھی پہلے لوگوں نے موئن جو دڑو بسایا، جو دنیا کے اولین منصوبہ بند شہروں میں سے ایک تھا، سیدھی گلیوں اور ڈھکی ہوئی نالیوں کے ساتھ۔"
+      "ur": "عظیم دریائے سندھ پورے ملک میں بہتا ہے۔ اس کے کنارے چار ہزار سال سے بھی پہلے لوگوں نے موئن جو دڑو بسایا، جو دنیا کے اولین منصوبہ بند شہروں میں سے ایک تھا، سیدھی گلیوں اور ڈھکی ہوئی نالیوں کے ساتھ۔",
+      "img": "Mohenjodaro_-_view_of_the_stupa_mound.JPG"
     },
     {
       "en": "Urdu is the national language and ties the country together, but people also speak Punjabi, Sindhi, Pashto, Balochi and many more. A warm greeting is Assalam-o-alaikum, peace be upon you.",
-      "ur": "اردو قومی زبان ہے اور پورے ملک کو جوڑتی ہے، مگر لوگ پنجابی، سندھی، پشتو، بلوچی اور بہت سی دوسری زبانیں بھی بولتے ہیں۔ پرتپاک سلام ہے، السلام علیکم۔"
+      "ur": "اردو قومی زبان ہے اور پورے ملک کو جوڑتی ہے، مگر لوگ پنجابی، سندھی، پشتو، بلوچی اور بہت سی دوسری زبانیں بھی بولتے ہیں۔ پرتپاک سلام ہے، السلام علیکم۔",
+      "img": "Minar_e_Pakistan_2021.jpg"
     },
     {
       "en": "Guests are treated as a blessing here. If you visit a home, expect a cup of sweet milky tea, called chai, and a table that keeps filling up however much you say you are full.",
-      "ur": "یہاں مہمان کو رحمت سمجھا جاتا ہے۔ کسی کے گھر جائیں تو میٹھی دودھ والی چائے ضرور ملے گی، اور دسترخوان بھرتا ہی چلا جائے گا، چاہے آپ کتنا ہی کہیں کہ پیٹ بھر گیا ہے۔"
+      "ur": "یہاں مہمان کو رحمت سمجھا جاتا ہے۔ کسی کے گھر جائیں تو میٹھی دودھ والی چائے ضرور ملے گی، اور دسترخوان بھرتا ہی چلا جائے گا، چاہے آپ کتنا ہی کہیں کہ پیٹ بھر گیا ہے۔",
+      "img": "Chai_In_Sakora.jpg"
     },
     {
       "en": "Lahore is the city of food and gardens. People say that if you have not seen Lahore, you have not been born. Its old city gates, the grand Badshahi Mosque and the Shalimar Gardens are proud reminders of the Mughal era.",
-      "ur": "لاہور کھانوں اور باغوں کا شہر ہے۔ کہتے ہیں، جس نے لاہور نہیں دیکھا وہ پیدا ہی نہیں ہوا۔ اس کے پرانے دروازے، شاندار بادشاہی مسجد اور شالامار باغ مغلیہ دور کی شان کی یاد دلاتے ہیں۔"
+      "ur": "لاہور کھانوں اور باغوں کا شہر ہے۔ کہتے ہیں، جس نے لاہور نہیں دیکھا وہ پیدا ہی نہیں ہوا۔ اس کے پرانے دروازے، شاندار بادشاہی مسجد اور شالامار باغ مغلیہ دور کی شان کی یاد دلاتے ہیں۔",
+      "img": "Badshahi_Mosque_front_picture.jpg"
     },
     {
       "en": "Karachi, by the sea, is the biggest and busiest city, while the capital, Islamabad, is green and calm at the foot of the Margalla Hills.",
-      "ur": "سمندر کنارے کراچی سب سے بڑا اور مصروف شہر ہے، جبکہ دارالحکومت اسلام آباد مارگلہ کی پہاڑیوں کے دامن میں سرسبز اور پرسکون ہے۔"
+      "ur": "سمندر کنارے کراچی سب سے بڑا اور مصروف شہر ہے، جبکہ دارالحکومت اسلام آباد مارگلہ کی پہاڑیوں کے دامن میں سرسبز اور پرسکون ہے۔",
+      "img": "Faisal_Mosque,_Islamabad_III.jpg"
     },
     {
       "en": "Try biryani, fragrant rice layered with spiced meat, or nihari, a slow-cooked stew eaten with fresh naan for breakfast. In the northwest, grilled chapli kebabs sizzle on huge iron pans.",
-      "ur": "بریانی چکھیے، مصالحے دار گوشت کے ساتھ تہہ در تہہ خوشبودار چاول، یا نہاری، دھیمی آنچ پر پکا سالن جو ناشتے میں تازہ نان کے ساتھ کھایا جاتا ہے۔ شمال مغرب میں بڑے بڑے توے پر چپلی کباب سنسناتے ہیں۔"
+      "ur": "بریانی چکھیے، مصالحے دار گوشت کے ساتھ تہہ در تہہ خوشبودار چاول، یا نہاری، دھیمی آنچ پر پکا سالن جو ناشتے میں تازہ نان کے ساتھ کھایا جاتا ہے۔ شمال مغرب میں بڑے بڑے توے پر چپلی کباب سنسناتے ہیں۔",
+      "img": "Sindhi_Biryani.JPG"
     },
     {
       "en": "Cricket is a national passion. Children play in streets, parks and rooftops with a taped-up tennis ball, and when the national team plays, the whole country holds its breath.",
-      "ur": "کرکٹ قوم کا جنون ہے۔ بچے گلیوں، پارکوں اور چھتوں پر ٹیپ لگی ٹینس گیند سے کھیلتے ہیں، اور جب قومی ٹیم کھیلتی ہے تو سارا ملک سانس روک کر بیٹھ جاتا ہے۔"
+      "ur": "کرکٹ قوم کا جنون ہے۔ بچے گلیوں، پارکوں اور چھتوں پر ٹیپ لگی ٹینس گیند سے کھیلتے ہیں، اور جب قومی ٹیم کھیلتی ہے تو سارا ملک سانس روک کر بیٹھ جاتا ہے۔",
+      "img": "Margalla_Hills_Islamabad.jpg"
     },
     {
       "en": "Music here can lift the soul. Qawwali singers, clapping and swaying with harmonium and tabla, perform devotional songs that build and build until the audience is carried away.",
-      "ur": "یہاں کی موسیقی روح کو چھو لیتی ہے۔ قوال ہارمونیم اور طبلے کے ساتھ تالیاں بجاتے اور جھومتے ہوئے عارفانہ کلام گاتے ہیں، جو بڑھتا ہی چلا جاتا ہے یہاں تک کہ سننے والے مسحور ہو جاتے ہیں۔"
+      "ur": "یہاں کی موسیقی روح کو چھو لیتی ہے۔ قوال ہارمونیم اور طبلے کے ساتھ تالیاں بجاتے اور جھومتے ہوئے عارفانہ کلام گاتے ہیں، جو بڑھتا ہی چلا جاتا ہے یہاں تک کہ سننے والے مسحور ہو جاتے ہیں۔",
+      "img": "Harmonium_20151009_(23914086965).jpg"
     },
     {
       "en": "Most people wear shalwar kameez, loose trousers with a long shirt, and at weddings, which can last for several days, the colours of the clothes and the henna on the hands are dazzling.",
-      "ur": "زیادہ تر لوگ شلوار قمیص پہنتے ہیں، اور شادیوں میں، جو کئی دن تک چلتی ہیں، کپڑوں کے رنگ اور ہاتھوں پر لگی مہندی آنکھوں کو خیرہ کر دیتی ہے۔"
+      "ur": "زیادہ تر لوگ شلوار قمیص پہنتے ہیں، اور شادیوں میں، جو کئی دن تک چلتی ہیں، کپڑوں کے رنگ اور ہاتھوں پر لگی مہندی آنکھوں کو خیرہ کر دیتی ہے۔",
+      "img": "Reflection_of_Farah_Baksh_Terrace_(Upper_Terrace)_main_building.jpg"
     },
     {
       "en": "Before you go, sip one more cup of chai as the evening call to prayer drifts over the rooftops. Then follow the old caravan roads west, through the mountain passes, into Afghanistan.",
-      "ur": "جانے سے پہلے ایک پیالی چائے اور پی لیجیے، جب شام کی اذان چھتوں پر گونج رہی ہو۔ پھر پرانے قافلوں کے راستوں پر مغرب کی طرف پہاڑی دروں سے گزرتے ہوئے افغانستان چلے جائیے۔"
+      "ur": "جانے سے پہلے ایک پیالی چائے اور پی لیجیے، جب شام کی اذان چھتوں پر گونج رہی ہو۔ پھر پرانے قافلوں کے راستوں پر مغرب کی طرف پہاڑی دروں سے گزرتے ہوئے افغانستان چلے جائیے۔",
+      "img": "KhyberPassPakistan.jpg"
     }
   ],
-  "next": ["Afghanistan", "India", "Iran"]
+  "next": [
+    "Afghanistan",
+    "India",
+    "Iran"
+  ]
 }

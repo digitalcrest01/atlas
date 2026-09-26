@@ -111,7 +111,7 @@ WHAT YOU CAN DO
 • Spin a 3D globe — drag to rotate, pinch to zoom, tap a pin to dive in
 • Explore all 197 countries with rich, readable detail and a landmark photo for each
 • Hear each country's name read aloud
-• Take a Daily Challenge and build a streak
+• Take a new Daily Challenge every day
 • Test yourself with quizzes — flags, capitals, culture, food and more
 • Compare any two countries side by side
 • Convert currencies with live exchange rates
@@ -128,21 +128,16 @@ FREE
 • 3 quizzes per day
 • A daily challenge
 
-MYATLASTIC PRO — unlock everything
-• All 197 countries in full depth
-• A landmark photo for every country
-• Compare mode + currency converter
-• The Spell-the-Country game
-• Unlimited quizzes
-• Full Daily Challenge with streak history
+EVERYTHING ABOVE IS FREE
+Every country, the spoken tours, the phrasebook, passports and stamps, Compare, the currency converter, Spell-the-Country, Mystery Country and the Daily Challenge — all free.
 
-PRICING
-• Annual — $29.99 / year (save 50%)
-• Monthly — $4.99 / month
-• Lifetime — $59.99 one-time, includes all future updates
-Subscriptions start with a 1-week free trial.
+QUIZ & PUZZLE — $29.99 ONE-TIME
+• Unlimited quizzes: flags, capitals, food, sport, culture and world facts
+• The Globe Flag Hunt
+• The World puzzle
+Pay once and keep it forever, including future updates. No subscription. Family Sharing included.
 
-Payment is charged to your Apple ID. Subscriptions auto-renew unless turned off at least 24 hours before the end of the period; manage or cancel anytime in Settings. The Lifetime option is a one-time purchase and does not renew.
+Payment is charged to your Apple ID. This is a one-time purchase and does not renew.
 
 Privacy Policy: https://myatlastic.com/privacy
 Terms of Use: https://myatlastic.com/terms
@@ -179,7 +174,7 @@ Suggested order (lead with the most striking):
 4. Currency converter — a live conversion
 5. Spell-the-Country game — mid-round with the letter tiles
 6. A quiz question
-7. Daily Challenge with a streak
+7. Daily Challenge
 8. The "Myatlastic Pro" plans screen
 
 Tip: a short caption across the top of each shot (e.g. "Spin the globe", "Compare any two countries") noticeably lifts conversion — optional but recommended.
@@ -190,14 +185,15 @@ Tip: a short caption across the top of each shot (e.g. "Spin the globe", "Compar
 
 In App Store Connect → My Apps → Myatlastic → create these (IDs **must match** `BILLING_CONFIG` in `web/index.html`):
 
-| Product ID | Type | Price | Free trial |
+| Product ID | Type | Price | Status |
 |---|---|---|---|
-| `io.vertotech.atlastic.pro.monthly` | Auto-renewable subscription | $4.99 / month | 1 week |
-| `io.vertotech.atlastic.pro.annual` | Auto-renewable subscription | $29.99 / year | 1 week |
-| `io.vertotech.atlastic.pro.lifetime` | Non-consumable | $59.99 one-time | — |
+| `io.vertotech.atlastic.pro.lifetime` | Non-consumable | **$29.99 one-time** | On sale: the only thing the app sells (unlocks Quiz & Puzzle) |
+| `io.vertotech.atlastic.pro.monthly` | Auto-renewable subscription | $4.99 / month | Removed from sale (existing subscribers keep access until they cancel) |
+| `io.vertotech.atlastic.pro.annual` | Auto-renewable subscription | $29.99 / year | Removed from sale (same) |
 
-- Put the two subscriptions in one **Subscription Group** ("Myatlastic Pro"); add a **1-week free Introductory Offer** to each.
-- The Lifetime tier is a **Non-consumable** (not in the group).
+- Change the Lifetime price in **In-App Purchases → Lifetime → Price Schedule** (no review needed for a price change).
+- Don't set the subscriptions to $0 (Apple doesn't allow it): set their **Availability** to remove them from sale in all countries. Keep the products; deleting them would break restores for past subscribers.
+- In RevenueCat, the **current offering** only needs the Lifetime package; the entitlement stays `Myatlastic Pro`.
 - Turn on **Family Sharing** for all three.
 
 RevenueCat is **already integrated** in the app (`@revenuecat/purchases-capacitor`, gated behind `BILLING_CONFIG`; entitlement `pro`). Once the products + RevenueCat project exist, paste the `appl_…` key into `BILLING_CONFIG.revenueCatApiKey` and rebuild — no other code change. Full steps: `mobile_setup/REVENUECAT_SETUP.md`.
@@ -312,9 +308,7 @@ Play Console → Myatlastic → Monetise → In-app products → Subscriptions �
 
 | Product ID | Name | Price |
 |---|---|---|
-| `io.vertotech.atlastic.pro.monthly` | Myatlastic Pro Monthly | $4.99/month |
-| `io.vertotech.atlastic.pro.annual` | Myatlastic Pro Annual | $29.99/year |
-| `io.vertotech.atlastic.pro.lifetime` | Myatlastic Pro Lifetime | $59.99 one-time |
+| `io.vertotech.atlastic.pro.lifetime` | Myatlastic Quiz & Puzzle | $29.99 one-time |
 
 ---
 

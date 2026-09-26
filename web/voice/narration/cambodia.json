@@ -1,59 +1,79 @@
 {
   "country": "Cambodia",
-  "languages": ["en", "km"],
+  "languages": [
+    "en",
+    "km"
+  ],
   "segments": [
     {
       "en": "Before dawn, crowds wait in silence beside a lotus pond. Slowly, five stone towers appear against a pink sky, reflected perfectly in the water. This is Angkor Wat, the soul of Cambodia.",
-      "km": "មុនពេលថ្ងៃរះ មនុស្សជាច្រើនរង់ចាំយ៉ាងស្ងាត់ស្ងៀមនៅក្បែរស្រះឈូក។ បន្តិចម្តងៗ កំពូលប្រាសាទថ្មទាំងប្រាំលេចចេញលើផ្ទៃមេឃពណ៌ផ្កាឈូក ហើយឆ្លុះបញ្ចាំងយ៉ាងច្បាស់នៅលើផ្ទៃទឹក។ នេះគឺប្រាសាទអង្គរវត្ត ដែលជាព្រលឹងនៃប្រទេសកម្ពុជា។"
+      "km": "មុនពេលថ្ងៃរះ មនុស្សជាច្រើនរង់ចាំយ៉ាងស្ងាត់ស្ងៀមនៅក្បែរស្រះឈូក។ បន្តិចម្តងៗ កំពូលប្រាសាទថ្មទាំងប្រាំលេចចេញលើផ្ទៃមេឃពណ៌ផ្កាឈូក ហើយឆ្លុះបញ្ចាំងយ៉ាងច្បាស់នៅលើផ្ទៃទឹក។ នេះគឺប្រាសាទអង្គរវត្ត ដែលជាព្រលឹងនៃប្រទេសកម្ពុជា។",
+      "img": "Angkor_Wat.jpg"
     },
     {
       "en": "Built by the Khmer Empire nearly nine centuries ago, Angkor Wat is so dear to Cambodians that it appears on the national flag. Around it, hundreds of temples lie hidden in the forest.",
-      "km": "ប្រាសាទអង្គរវត្តត្រូវបានកសាងឡើងដោយចក្រភពខ្មែរ កាលពីជិតប្រាំបួនរយឆ្នាំមុន ហើយជាទីស្រឡាញ់របស់ប្រជាជនកម្ពុជា រហូតដល់មានរូបនៅលើទង់ជាតិ។ នៅជុំវិញនោះ មានប្រាសាទរាប់រយលាក់ខ្លួននៅក្នុងព្រៃ។"
+      "km": "ប្រាសាទអង្គរវត្តត្រូវបានកសាងឡើងដោយចក្រភពខ្មែរ កាលពីជិតប្រាំបួនរយឆ្នាំមុន ហើយជាទីស្រឡាញ់របស់ប្រជាជនកម្ពុជា រហូតដល់មានរូបនៅលើទង់ជាតិ។ នៅជុំវិញនោះ មានប្រាសាទរាប់រយលាក់ខ្លួននៅក្នុងព្រៃ។",
+      "img": "Angkor_Thom_(II).jpg"
     },
     {
       "en": "At the Bayon, giant calm faces smile down from the towers, and at Ta Prohm the roots of enormous trees wrap around the stones like giant snakes.",
-      "km": "នៅប្រាសាទបាយ័ន ព្រះភក្ត្រដ៏ធំៗញញឹមយ៉ាងស្ងប់ស្ងាត់ពីលើកំពូលប្រាសាទ ហើយនៅប្រាសាទតាព្រហ្ម ឫសឈើដ៏ធំៗរុំព័ទ្ធថ្មដូចពស់យក្ស។"
+      "km": "នៅប្រាសាទបាយ័ន ព្រះភក្ត្រដ៏ធំៗញញឹមយ៉ាងស្ងប់ស្ងាត់ពីលើកំពូលប្រាសាទ ហើយនៅប្រាសាទតាព្រហ្ម ឫសឈើដ៏ធំៗរុំព័ទ្ធថ្មដូចពស់យក្ស។",
+      "img": "Bayon,_Angkor_Thom,_Camboya,_2013-08-17,_DD_37.JPG"
     },
     {
       "en": "Cambodians greet each other with the sampeah, palms pressed together and a gentle bow. The higher the hands, the greater the respect, so they rise highest for monks and elders.",
-      "km": "ប្រជាជនកម្ពុជាស្វាគមន៍គ្នាដោយការសំពះ គឺប្រណម្យដៃ ហើយឱនក្បាលបន្តិច។ ដៃកាន់តែខ្ពស់ ការគោរពកាន់តែច្រើន ដូច្នេះគេលើកដៃខ្ពស់ជាងគេនៅពេលសំពះព្រះសង្ឃ និងចាស់ទុំ។"
+      "km": "ប្រជាជនកម្ពុជាស្វាគមន៍គ្នាដោយការសំពះ គឺប្រណម្យដៃ ហើយឱនក្បាលបន្តិច។ ដៃកាន់តែខ្ពស់ ការគោរពកាន់តែច្រើន ដូច្នេះគេលើកដៃខ្ពស់ជាងគេនៅពេលសំពះព្រះសង្ឃ និងចាស់ទុំ។",
+      "img": "03_Prasat_Preah_Vihear-nX-06478.jpg"
     },
     {
       "en": "Each morning, monks in saffron robes walk barefoot through the streets, and families offer them rice and food. Buddhism shapes daily life, and every village has its pagoda.",
-      "km": "រៀងរាល់ព្រឹក ព្រះសង្ឃស្លៀកចីវរពណ៌លឿងទុំនិមន្តបិណ្ឌបាតដោយជើងទទេតាមផ្លូវ ហើយក្រុមគ្រួសារនានាដាក់បាត្រថ្វាយបាយ និងម្ហូប។ ព្រះពុទ្ធសាសនាមានឥទ្ធិពលលើជីវិតប្រចាំថ្ងៃ ហើយភូមិនីមួយៗសុទ្ធតែមានវត្ត។"
+      "km": "រៀងរាល់ព្រឹក ព្រះសង្ឃស្លៀកចីវរពណ៌លឿងទុំនិមន្តបិណ្ឌបាតដោយជើងទទេតាមផ្លូវ ហើយក្រុមគ្រួសារនានាដាក់បាត្រថ្វាយបាយ និងម្ហូប។ ព្រះពុទ្ធសាសនាមានឥទ្ធិពលលើជីវិតប្រចាំថ្ងៃ ហើយភូមិនីមួយៗសុទ្ធតែមានវត្ត។",
+      "img": "Wat_Phnom_Doun_Penh.jpg"
     },
     {
       "en": "Cambodia has a remarkable lake, the Tonle Sap. In the rainy season the Mekong swells so much that the river feeding the lake reverses its flow, and the lake grows many times larger. Floating villages move with the seasons.",
-      "km": "កម្ពុជាមានបឹងដ៏អស្ចារ្យមួយ គឺបឹងទន្លេសាប។ នៅរដូវវស្សា ទឹកទន្លេមេគង្គឡើងខ្លាំង រហូតដល់ទន្លេសាបហូរបញ្ច្រាសទិស ហើយបឹងរីកធំឡើងជាច្រើនដង។ ភូមិអណ្តែតទឹកផ្លាស់ទីតាមរដូវកាល។"
+      "km": "កម្ពុជាមានបឹងដ៏អស្ចារ្យមួយ គឺបឹងទន្លេសាប។ នៅរដូវវស្សា ទឹកទន្លេមេគង្គឡើងខ្លាំង រហូតដល់ទន្លេសាបហូរបញ្ច្រាសទិស ហើយបឹងរីកធំឡើងជាច្រើនដង។ ភូមិអណ្តែតទឹកផ្លាស់ទីតាមរដូវកាល។",
+      "img": "Cambodia,_Tonle_Sap_IMG_3285.JPG"
     },
     {
       "en": "When the waters turn back toward the sea, Phnom Penh celebrates the Water Festival. Long painted boats with dozens of rowers race on the river while crowds cheer from the banks.",
-      "km": "នៅពេលទឹកហូរត្រឡប់ទៅរកសមុទ្រវិញ រាជធានីភ្នំពេញប្រារព្ធពិធីបុណ្យអុំទូក។ ទូកងវែងៗលាបពណ៌ស្រស់ស្អាត ដែលមានអ្នកអុំរាប់សិបនាក់ ប្រណាំងគ្នានៅលើទន្លេ ខណៈហ្វូងមនុស្សនៅលើមាត់ច្រាំងស្រែកអបអរ។"
+      "km": "នៅពេលទឹកហូរត្រឡប់ទៅរកសមុទ្រវិញ រាជធានីភ្នំពេញប្រារព្ធពិធីបុណ្យអុំទូក។ ទូកងវែងៗលាបពណ៌ស្រស់ស្អាត ដែលមានអ្នកអុំរាប់សិបនាក់ ប្រណាំងគ្នានៅលើទន្លេ ខណៈហ្វូងមនុស្សនៅលើមាត់ច្រាំងស្រែកអបអរ។",
+      "img": "Phnom_Penh_(50922190262).jpg"
     },
     {
       "en": "In April, in the hottest weeks of the year, comes Khmer New Year. Families visit pagodas, build little mountains of sand, play traditional games and splash each other with water for good luck.",
-      "km": "នៅខែមេសា ក្នុងរដូវក្តៅបំផុតនៃឆ្នាំ បុណ្យចូលឆ្នាំខ្មែរក៏មកដល់។ ក្រុមគ្រួសារនាំគ្នាទៅវត្ត ពូនភ្នំខ្សាច់ លេងល្បែងប្រជាប្រិយ និងបាចទឹកដាក់គ្នាដើម្បីសំណាងល្អ។"
+      "km": "នៅខែមេសា ក្នុងរដូវក្តៅបំផុតនៃឆ្នាំ បុណ្យចូលឆ្នាំខ្មែរក៏មកដល់។ ក្រុមគ្រួសារនាំគ្នាទៅវត្ត ពូនភ្នំខ្សាច់ លេងល្បែងប្រជាប្រិយ និងបាចទឹកដាក់គ្នាដើម្បីសំណាងល្អ។",
+      "img": "Front_porch_of_Wat_Damnak.jpg"
     },
     {
       "en": "The best-loved dish is fish amok, steamed in banana leaves with coconut milk and a fragrant paste of lemongrass, turmeric and galangal. For breakfast, try num banh chok, fresh rice noodles with a green fish curry and crunchy vegetables.",
-      "km": "ម្ហូបដែលគេចូលចិត្តបំផុតគឺអាម៉ុកត្រី ដែលចំហុយក្នុងស្លឹកចេកជាមួយខ្ទិះដូង និងគ្រឿងក្រអូបនៃស្លឹកគ្រៃ រមៀត និងរំដេង។ សម្រាប់អាហារពេលព្រឹក សូមភ្លក្សនំបញ្ចុក ជាមួយសម្លត្រីពណ៌បៃតង និងបន្លែស្រស់ស្រួយ។"
+      "km": "ម្ហូបដែលគេចូលចិត្តបំផុតគឺអាម៉ុកត្រី ដែលចំហុយក្នុងស្លឹកចេកជាមួយខ្ទិះដូង និងគ្រឿងក្រអូបនៃស្លឹកគ្រៃ រមៀត និងរំដេង។ សម្រាប់អាហារពេលព្រឹក សូមភ្លក្សនំបញ្ចុក ជាមួយសម្លត្រីពណ៌បៃតង និងបន្លែស្រស់ស្រួយ។",
+      "img": "Fish_Amok_with_Rice.jpg"
     },
     {
       "en": "Across the countryside, tall sugar palms stand above green rice paddies like guardians. They are a national symbol, and their sap is boiled down into a sweet, fragrant sugar.",
-      "km": "នៅតាមជនបទ ដើមត្នោតខ្ពស់ៗឈរលើវាលស្រែបៃតង ដូចជាអ្នកយាមស្រែ។ ដើមត្នោតជានិមិត្តរូបជាតិ ហើយទឹកត្នោតត្រូវបានគេរំងាស់ធ្វើជាស្ករត្នោតផ្អែមឈ្ងុយ។"
+      "km": "នៅតាមជនបទ ដើមត្នោតខ្ពស់ៗឈរលើវាលស្រែបៃតង ដូចជាអ្នកយាមស្រែ។ ដើមត្នោតជានិមិត្តរូបជាតិ ហើយទឹកត្នោតត្រូវបានគេរំងាស់ធ្វើជាស្ករត្នោតផ្អែមឈ្ងុយ។",
+      "img": "Borassus_flabellifer.jpg"
     },
     {
       "en": "Classical Apsara dancers move with slow, graceful hands and curved fingers, echoing the heavenly dancers carved on the walls of Angkor centuries ago.",
-      "km": "អ្នករបាំអប្សរារាំដោយកាយវិការយឺតៗ និងទន់ភ្លន់ ម្រាមដៃកោងយ៉ាងស្រស់ស្អាត ដូចទេពអប្សរដែលឆ្លាក់នៅលើជញ្ជាំងប្រាសាទអង្គរ តាំងពីរាប់រយឆ្នាំមុន។"
+      "km": "អ្នករបាំអប្សរារាំដោយកាយវិការយឺតៗ និងទន់ភ្លន់ ម្រាមដៃកោងយ៉ាងស្រស់ស្អាត ដូចទេពអប្សរដែលឆ្លាក់នៅលើជញ្ជាំងប្រាសាទអង្គរ តាំងពីរាប់រយឆ្នាំមុន។",
+      "img": "Banteay_Srei_full2.jpg"
     },
     {
       "en": "In Phnom Penh, the golden roofs of the Royal Palace glow beside the river, and in the south, around Kampot, fragrant pepper vines grow in the shade of the hills.",
-      "km": "នៅភ្នំពេញ ដំបូលពណ៌មាសនៃព្រះបរមរាជវាំងភ្លឺចែងចាំងនៅក្បែរមាត់ទន្លេ ហើយនៅភាគខាងត្បូង ជុំវិញខេត្តកំពត ចម្ការម្រេចក្រអូបដុះលូតលាស់ក្រោមម្លប់ភ្នំ។"
+      "km": "នៅភ្នំពេញ ដំបូលពណ៌មាសនៃព្រះបរមរាជវាំងភ្លឺចែងចាំងនៅក្បែរមាត់ទន្លេ ហើយនៅភាគខាងត្បូង ជុំវិញខេត្តកំពត ចម្ការម្រេចក្រអូបដុះលូតលាស់ក្រោមម្លប់ភ្នំ។",
+      "img": "Silverpagoda.jpg"
     },
     {
       "en": "Now follow the Mekong south as it winds toward the sea. Vietnam and its green river delta are waiting.",
-      "km": "ឥឡូវនេះ សូមតាមដងទន្លេមេគង្គទៅទិសខាងត្បូង ដែលហូរបត់បែនឆ្ពោះទៅកាន់សមុទ្រ។ ប្រទេសវៀតណាម និងដីសណ្តទន្លេដ៏បៃតងរបស់ខ្លួន កំពុងរង់ចាំអ្នក។"
+      "km": "ឥឡូវនេះ សូមតាមដងទន្លេមេគង្គទៅទិសខាងត្បូង ដែលហូរបត់បែនឆ្ពោះទៅកាន់សមុទ្រ។ ប្រទេសវៀតណាម និងដីសណ្តទន្លេដ៏បៃតងរបស់ខ្លួន កំពុងរង់ចាំអ្នក។",
+      "img": "20171123_Sunset_over_Mekong_Kratie_3996_DxO.jpg"
     }
   ],
-  "next": ["Vietnam", "Thailand", "Laos"]
+  "next": [
+    "Vietnam",
+    "Thailand",
+    "Laos"
+  ]
 }

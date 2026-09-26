@@ -1,63 +1,84 @@
 {
   "country": "Myanmar",
-  "languages": ["en", "my"],
+  "languages": [
+    "en",
+    "my"
+  ],
   "segments": [
     {
       "en": "Before dawn in Bagan, hot air balloons drift above a wide plain dotted with thousands of ancient temples and pagodas, their spires rising out of the morning mist.",
-      "my": "ပုဂံမှာ အရုဏ်မတက်ခင် မိုးပျံပူဖောင်းတွေဟာ ရှေးဟောင်းဘုရားစေတီ ထောင်ပေါင်းများစွာ ပြန့်ကျဲနေတဲ့ လွင်ပြင်ကြီးအပေါ် လွင့်မျောနေပြီး၊ ဘုရားထီးတော်တွေက မနက်ခင်း မြူခိုးတွေကြားက ထိုးထွက်နေပါတယ်။"
+      "my": "ပုဂံမှာ အရုဏ်မတက်ခင် မိုးပျံပူဖောင်းတွေဟာ ရှေးဟောင်းဘုရားစေတီ ထောင်ပေါင်းများစွာ ပြန့်ကျဲနေတဲ့ လွင်ပြင်ကြီးအပေါ် လွင့်မျောနေပြီး၊ ဘုရားထီးတော်တွေက မနက်ခင်း မြူခိုးတွေကြားက ထိုးထွက်နေပါတယ်။",
+      "img": "Bagan,_Burma.jpg"
     },
     {
       "en": "In Myanmar, people greet each other with mingalaba, a word full of blessing and good fortune. Most people follow Theravada Buddhism, and every morning monks in maroon robes walk quietly from house to house to receive food.",
-      "my": "မြန်မာနိုင်ငံမှာ လူတွေက မင်္ဂလာပါ လို့ နှုတ်ဆက်ကြပါတယ်။ ဒီစကားလုံးမှာ မင်္ဂလာနဲ့ ကံကောင်းခြင်း အဓိပ္ပာယ်တွေ ပါဝင်ပါတယ်။ လူအများစုက ထေရဝါဒ ဗုဒ္ဓဘာသာကို ကိုးကွယ်ကြပြီး၊ မနက်တိုင်း သင်္ကန်းဝတ် ရဟန်းတော်တွေ အိမ်တစ်အိမ်ပြီးတစ်အိမ် ဆွမ်းခံကြွကြပါတယ်။"
+      "my": "မြန်မာနိုင်ငံမှာ လူတွေက မင်္ဂလာပါ လို့ နှုတ်ဆက်ကြပါတယ်။ ဒီစကားလုံးမှာ မင်္ဂလာနဲ့ ကံကောင်းခြင်း အဓိပ္ပာယ်တွေ ပါဝင်ပါတယ်။ လူအများစုက ထေရဝါဒ ဗုဒ္ဓဘာသာကို ကိုးကွယ်ကြပြီး၊ မနက်တိုင်း သင်္ကန်းဝတ် ရဟန်းတော်တွေ အိမ်တစ်အိမ်ပြီးတစ်အိမ် ဆွမ်းခံကြွကြပါတယ်။",
+      "img": "Bagan,_Myanmar,_Ananda_Temple.jpg"
     },
     {
       "en": "In Yangon, the Shwedagon Pagoda glows gold on its hill, covered in gold leaf and crowned with jewels. At sunset, families walk barefoot around it, clockwise, praying and chatting.",
-      "my": "ရန်ကုန်မှာ ရွှေတိဂုံစေတီတော်ဟာ ကုန်းမြင့်ပေါ်မှာ ရွှေရောင်တဖိတ်ဖိတ် တောက်ပနေပါတယ်။ ရွှေပြားတွေ ကပ်ထားပြီး ထီးတော်မှာ ရတနာတွေ စီခြယ်ထားပါတယ်။ နေဝင်ချိန်မှာ မိသားစုတွေ ဖိနပ်ချွတ်ပြီး လက်ယာရစ် လှည့်ပတ်ကာ ဘုရားရှိခိုးရင်း စကားပြောကြပါတယ်။"
+      "my": "ရန်ကုန်မှာ ရွှေတိဂုံစေတီတော်ဟာ ကုန်းမြင့်ပေါ်မှာ ရွှေရောင်တဖိတ်ဖိတ် တောက်ပနေပါတယ်။ ရွှေပြားတွေ ကပ်ထားပြီး ထီးတော်မှာ ရတနာတွေ စီခြယ်ထားပါတယ်။ နေဝင်ချိန်မှာ မိသားစုတွေ ဖိနပ်ချွတ်ပြီး လက်ယာရစ် လှည့်ပတ်ကာ ဘုရားရှိခိုးရင်း စကားပြောကြပါတယ်။",
+      "img": "Shwedagon_Pagoda_2017.jpg"
     },
     {
       "en": "Remember to take off your shoes and socks before entering any pagoda or home, and try not to point your feet at people or at images of the Buddha.",
-      "my": "ဘုရားကျောင်းကန် ဒါမှမဟုတ် အိမ်ထဲ မဝင်ခင် ဖိနပ်နဲ့ ခြေအိတ်ကို ချွတ်ဖို့ မမေ့ပါနဲ့။ ခြေထောက်ကို လူတွေဆီ ဒါမှမဟုတ် ဘုရားဆင်းတုတော်တွေဆီ မချိန်မိအောင်လည်း သတိထားပါ။"
+      "my": "ဘုရားကျောင်းကန် ဒါမှမဟုတ် အိမ်ထဲ မဝင်ခင် ဖိနပ်နဲ့ ခြေအိတ်ကို ချွတ်ဖို့ မမေ့ပါနဲ့။ ခြေထောက်ကို လူတွေဆီ ဒါမှမဟုတ် ဘုရားဆင်းတုတော်တွေဆီ မချိန်မိအောင်လည်း သတိထားပါ။",
+      "img": "Sule_Pagoda_Yangoon.jpg"
     },
     {
       "en": "You will notice many faces painted with thanaka, a pale yellow paste made from ground tree bark. It cools the skin and protects it from the sun.",
-      "my": "မျက်နှာမှာ သနပ်ခါး လိမ်းထားတဲ့ လူအများကြီးကို တွေ့ရပါလိမ့်မယ်။ သနပ်ခါးဆိုတာ သစ်ခေါက်ကို သွေးပြီးလုပ်ထားတဲ့ အဝါနုရောင် အနှစ်ဖြစ်ပြီး၊ အသားအရေကို အေးမြစေကာ နေရောင်ကနေ ကာကွယ်ပေးပါတယ်။"
+      "my": "မျက်နှာမှာ သနပ်ခါး လိမ်းထားတဲ့ လူအများကြီးကို တွေ့ရပါလိမ့်မယ်။ သနပ်ခါးဆိုတာ သစ်ခေါက်ကို သွေးပြီးလုပ်ထားတဲ့ အဝါနုရောင် အနှစ်ဖြစ်ပြီး၊ အသားအရေကို အေးမြစေကာ နေရောင်ကနေ ကာကွယ်ပေးပါတယ်။",
+      "img": "Wood-apple_tree.JPG"
     },
     {
       "en": "Men and women alike wear the longyi, a long cloth wrapped around the waist that stays cool in the heat.",
-      "my": "အမျိုးသားရော အမျိုးသမီးပါ ခါးမှာ ပတ်ဝတ်တဲ့ လုံချည်ကို ဝတ်ကြပြီး၊ ပူအိုက်တဲ့ ရာသီမှာ အေးမြပါတယ်။"
+      "my": "အမျိုးသားရော အမျိုးသမီးပါ ခါးမှာ ပတ်ဝတ်တဲ့ လုံချည်ကို ဝတ်ကြပြီး၊ ပူအိုက်တဲ့ ရာသီမှာ အေးမြပါတယ်။",
+      "img": "Dawei_13.jpg"
     },
     {
       "en": "Breakfast is often mohinga, a fish noodle soup with lemongrass and crispy fritters. Another favourite is lahpet thoke, a salad of pickled tea leaves with crunchy beans and peanuts.",
-      "my": "မနက်စာအတွက် မုန့်ဟင်းခါးကို စားလေ့ရှိပါတယ်။ စပါးလင်မွှေးတဲ့ ငါးဟင်းရည်နဲ့ ကြွပ်ကြွပ်အကြော်တွေ ပါပါတယ်။ နောက်ထပ် အကြိုက်ဆုံးတစ်ခုကတော့ လက်ဖက်သုပ်ပါ။ လက်ဖက်စိမ်းကို ကြွပ်ကြွပ်ပဲနဲ့ မြေပဲတွေနဲ့ နယ်ထားတာပါ။"
+      "my": "မနက်စာအတွက် မုန့်ဟင်းခါးကို စားလေ့ရှိပါတယ်။ စပါးလင်မွှေးတဲ့ ငါးဟင်းရည်နဲ့ ကြွပ်ကြွပ်အကြော်တွေ ပါပါတယ်။ နောက်ထပ် အကြိုက်ဆုံးတစ်ခုကတော့ လက်ဖက်သုပ်ပါ။ လက်ဖက်စိမ်းကို ကြွပ်ကြွပ်ပဲနဲ့ မြေပဲတွေနဲ့ နယ်ထားတာပါ။",
+      "img": "Laphet_thoke.JPG"
     },
     {
       "en": "Tea shops are the heart of everyday life, where friends sit on low stools sharing sweet, milky tea and long conversations.",
-      "my": "လက်ဖက်ရည်ဆိုင်တွေဟာ နေ့စဉ်ဘဝရဲ့ နှလုံးသားပါ။ သူငယ်ချင်းတွေ ခုံပုလေးတွေပေါ် ထိုင်ပြီး ချိုချိုဆိမ့်ဆိမ့် လက်ဖက်ရည် သောက်ရင်း စကားတွေ အကြာကြီး ပြောကြပါတယ်။"
+      "my": "လက်ဖက်ရည်ဆိုင်တွေဟာ နေ့စဉ်ဘဝရဲ့ နှလုံးသားပါ။ သူငယ်ချင်းတွေ ခုံပုလေးတွေပေါ် ထိုင်ပြီး ချိုချိုဆိမ့်ဆိမ့် လက်ဖက်ရည် သောက်ရင်း စကားတွေ အကြာကြီး ပြောကြပါတယ်။",
+      "img": "Myanmar_Tea_House_Food.jpg"
     },
     {
       "en": "At Inle Lake in the Shan hills, fishermen row by wrapping one leg around the oar, keeping their hands free for the nets, and tomatoes grow in floating gardens.",
-      "my": "ရှမ်းတောင်တန်းပေါ်က အင်းလေးကန်မှာ တံငါသည်တွေက ခြေထောက်တစ်ဖက်နဲ့ လှော်တက်ကို ပတ်ပြီး လှော်ကြလို့ လက်တွေက ပိုက်ကွန်အတွက် လွတ်နေပါတယ်။ ရေပေါ်ကျွန်းမျောတွေပေါ်မှာလည်း ခရမ်းချဉ်သီးတွေ စိုက်ပျိုးကြပါတယ်။"
+      "my": "ရှမ်းတောင်တန်းပေါ်က အင်းလေးကန်မှာ တံငါသည်တွေက ခြေထောက်တစ်ဖက်နဲ့ လှော်တက်ကို ပတ်ပြီး လှော်ကြလို့ လက်တွေက ပိုက်ကွန်အတွက် လွတ်နေပါတယ်။ ရေပေါ်ကျွန်းမျောတွေပေါ်မှာလည်း ခရမ်းချဉ်သီးတွေ စိုက်ပျိုးကြပါတယ်။",
+      "img": "Inle_Lake_(Myanmar).jpg"
     },
     {
       "en": "The great Ayeyarwady River flows through the heart of the country. On its banks lies Mandalay, the last royal capital, where craftspeople still beat gold into the thinnest leaf.",
-      "my": "ဧရာဝတီမြစ်ကြီးဟာ နိုင်ငံရဲ့ အလယ်ဗဟိုကို ဖြတ်စီးနေပါတယ်။ မြစ်ကမ်းပေါ်မှာ နောက်ဆုံး နေပြည်တော်ဖြစ်ခဲ့တဲ့ မန္တလေးရှိပြီး၊ လက်မှုပညာသည်တွေက ရွှေကို အပါးဆုံး ရွှေပြားဖြစ်အောင် အခုထိ ထုနေကြဆဲပါ။"
+      "my": "ဧရာဝတီမြစ်ကြီးဟာ နိုင်ငံရဲ့ အလယ်ဗဟိုကို ဖြတ်စီးနေပါတယ်။ မြစ်ကမ်းပေါ်မှာ နောက်ဆုံး နေပြည်တော်ဖြစ်ခဲ့တဲ့ မန္တလေးရှိပြီး၊ လက်မှုပညာသည်တွေက ရွှေကို အပါးဆုံး ရွှေပြားဖြစ်အောင် အခုထိ ထုနေကြဆဲပါ။",
+      "img": "Irrawaddy-River-Myanmar-Burma-2005.jpg"
     },
     {
       "en": "In April comes Thingyan, the water festival that welcomes the new year. Everyone splashes water on each other to wash away the old year and cool off in the heat.",
-      "my": "ဧပြီလမှာ နှစ်သစ်ကို ကြိုဆိုတဲ့ သင်္ကြန် ရေပွဲတော် ရောက်လာပါတယ်။ နှစ်ဟောင်းကို ဆေးကြောပြီး အပူဒဏ်ကို ပြေစေဖို့ လူတိုင်း အချင်းချင်း ရေပက်ကြပါတယ်။"
+      "my": "ဧပြီလမှာ နှစ်သစ်ကို ကြိုဆိုတဲ့ သင်္ကြန် ရေပွဲတော် ရောက်လာပါတယ်။ နှစ်ဟောင်းကို ဆေးကြောပြီး အပူဒဏ်ကို ပြေစေဖို့ လူတိုင်း အချင်းချင်း ရေပက်ကြပါတယ်။",
+      "img": "Thingyan_Hta_Min.jpg"
     },
     {
       "en": "Myanmar is home to many peoples, among them the Bamar, Shan, Karen, Kachin, Chin, Mon and Rakhine, each with their own languages, clothing and festivals.",
-      "my": "မြန်မာနိုင်ငံမှာ ဗမာ၊ ရှမ်း၊ ကရင်၊ ကချင်၊ ချင်း၊ မွန်နဲ့ ရခိုင် အပါအဝင် လူမျိုးများစွာ နေထိုင်ကြပြီး၊ တစ်မျိုးစီမှာ ကိုယ်ပိုင် ဘာသာစကား၊ ဝတ်စားဆင်ယင်မှုနဲ့ ပွဲတော်တွေ ရှိကြပါတယ်။"
+      "my": "မြန်မာနိုင်ငံမှာ ဗမာ၊ ရှမ်း၊ ကရင်၊ ကချင်၊ ချင်း၊ မွန်နဲ့ ရခိုင် အပါအဝင် လူမျိုးများစွာ နေထိုင်ကြပြီး၊ တစ်မျိုးစီမှာ ကိုယ်ပိုင် ဘာသာစကား၊ ဝတ်စားဆင်ယင်မှုနဲ့ ပွဲတော်တွေ ရှိကြပါတယ်။",
+      "img": "Hpa_An_03.jpg"
     },
     {
       "en": "Children kick a woven rattan ball in chinlone, a graceful game where the aim is to keep the ball in the air, more like a dance than a contest.",
-      "my": "ကလေးတွေက ကြိမ်နဲ့ယက်ထားတဲ့ ဘောလုံးကို ခြင်းလုံး ခတ်ကြပါတယ်။ ဘောလုံးကို မြေကြီးပေါ် မကျအောင် ထိန်းရတဲ့ ဒီကစားနည်းဟာ ပြိုင်ပွဲထက် အကတစ်ခုနဲ့ ပိုတူပါတယ်။"
+      "my": "ကလေးတွေက ကြိမ်နဲ့ယက်ထားတဲ့ ဘောလုံးကို ခြင်းလုံး ခတ်ကြပါတယ်။ ဘောလုံးကို မြေကြီးပေါ် မကျအောင် ထိန်းရတဲ့ ဒီကစားနည်းဟာ ပြိုင်ပွဲထက် အကတစ်ခုနဲ့ ပိုတူပါတယ်။",
+      "img": "Golden_Rock.JPG"
     },
     {
       "en": "Kyay zu tin ba de, thank you. To the east, across the hills, Thailand is waiting.",
-      "my": "ကျေးဇူးတင်ပါတယ်။ အရှေ့ဘက် တောင်တန်းတွေကို ကျော်လိုက်ရင် ထိုင်းနိုင်ငံက စောင့်နေပါတယ်။"
+      "my": "ကျေးဇူးတင်ပါတယ်။ အရှေ့ဘက် တောင်တန်းတွေကို ကျော်လိုက်ရင် ထိုင်းနိုင်ငံက စောင့်နေပါတယ်။",
+      "img": "U_Bein_Bridge,_Mandalay.jpg"
     }
   ],
-  "next": ["Thailand", "Laos", "Bangladesh"]
+  "next": [
+    "Thailand",
+    "Laos",
+    "Bangladesh"
+  ]
 }

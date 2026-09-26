@@ -1,14 +1,19 @@
 {
   "country": "Somalia",
-  "languages": ["en", "so"],
+  "languages": [
+    "en",
+    "so"
+  ],
   "segments": [
     {
       "en": "Before dawn in Mogadishu, the call to prayer drifts over white houses and out across the Indian Ocean. Somalia has the longest coastline of mainland Africa, curving from the Gulf of Aden right around the Horn.",
-      "so": "Waaberiga ka hor, codka aadaanka ayaa ka dul gama'a guryaha cadcad ee Muqdisho oo gaara Badweynta Hindiya. Soomaaliya waxay leedahay xeebta ugu dheer dhulweynaha Afrika, oo ka bilaabata Gacanka Cadmeed kuna wareegta Geeska Afrika."
+      "so": "Waaberiga ka hor, codka aadaanka ayaa ka dul gama'a guryaha cadcad ee Muqdisho oo gaara Badweynta Hindiya. Soomaaliya waxay leedahay xeebta ugu dheer dhulweynaha Afrika, oo ka bilaabata Gacanka Cadmeed kuna wareegta Geeska Afrika.",
+      "img": "Lido_beach_from_the_sea_in_Mogadishu.jpg"
     },
     {
       "en": "Somalis are often called a nation of poets. For centuries, verses were memorised and recited aloud, and a well-made poem could settle an argument, praise a hero or win a heart.",
-      "so": "Soomaalida waxaa badanaa lagu tilmaamaa ummad gabayaa ah. Qarniyo badan, gabayada waa la xifdin jiray oo kor baa loogu tirin jiray, gabay si fiican loo tiriyeyna wuxuu xallin karay khilaaf, ammaani karay geesi ama kasban karay qalbi."
+      "so": "Soomaalida waxaa badanaa lagu tilmaamaa ummad gabayaa ah. Qarniyo badan, gabayada waa la xifdin jiray oo kor baa loogu tirin jiray, gabay si fiican loo tiriyeyna wuxuu xallin karay khilaaf, ammaani karay geesi ama kasban karay qalbi.",
+      "img": "HargeisaDrone.jpg"
     },
     {
       "en": "Camels sit at the heart of traditional life. Herding families moved with their animals across dry plains in search of water and grazing, and camel milk is still a treasured drink.",
@@ -16,7 +21,8 @@
     },
     {
       "en": "When Somalis meet, they often ask 'Iska warran?', which means 'What's the news?', and the reply might be 'Waa fiican', 'I'm well'. Greetings are warm and unhurried, with questions about family and health.",
-      "so": "Marka Soomaalidu kulmaan, waxay inta badan isweydiiyaan 'Iska warran?', jawaabtuna waxay noqon kartaa 'Waa fiican'. Salaantu waa diirran tahay oo lama degdego, waxaana la isweydiiyaa xaalka qoyska iyo caafimaadka."
+      "so": "Marka Soomaalidu kulmaan, waxay inta badan isweydiiyaan 'Iska warran?', jawaabtuna waxay noqon kartaa 'Waa fiican'. Salaantu waa diirran tahay oo lama degdego, waxaana la isweydiiyaa xaalka qoyska iyo caafimaadka.",
+      "img": "Almadow_Overview.JPG"
     },
     {
       "en": "If you visit a Somali home, you'll probably be offered shaah, sweet tea spiced with cardamom and cinnamon, and perhaps some dates or a piece of halwa, a glossy, sticky sweet.",
@@ -24,19 +30,23 @@
     },
     {
       "en": "Lunch is the big meal. Many families eat bariis, fragrant spiced rice with goat or chicken, and a banana on the side, a habit that surprises many visitors. Breakfast might be canjeero, a soft, spongy pancake.",
-      "so": "Qadadu waa cuntada ugu weyn maalinta. Qoysas badan waxay cunaan bariis udgoon oo xawaash leh, hilib ari ama digaag, iyo muus dhinaca ah, caado ay la yaabaan martida badankood. Quraacdana waxay noqon kartaa canjeero jilicsan oo daloolo leh."
+      "so": "Qadadu waa cuntada ugu weyn maalinta. Qoysas badan waxay cunaan bariis udgoon oo xawaash leh, hilib ari ama digaag, iyo muus dhinaca ah, caado ay la yaabaan martida badankood. Quraacdana waxay noqon kartaa canjeero jilicsan oo daloolo leh.",
+      "img": "Somalicamelmeat.jpg"
     },
     {
       "en": "The Somali language has been written in the Latin alphabet since 1972. Arabic is widely used too, especially in faith and learning, as nearly all Somalis are Muslim.",
-      "so": "Af-Soomaaliga waxaa far Laatiin lagu qoraa tan iyo 1972. Carabiguna si weyn ayaa loo adeegsadaa, gaar ahaan diinta iyo waxbarashada, maadaama ku dhawaad dhammaan Soomaalidu ay Muslimiin yihiin."
+      "so": "Af-Soomaaliga waxaa far Laatiin lagu qoraa tan iyo 1972. Carabiguna si weyn ayaa loo adeegsadaa, gaar ahaan diinta iyo waxbarashada, maadaama ku dhawaad dhammaan Soomaalidu ay Muslimiin yihiin.",
+      "img": "Bosasohorizon.jpg"
     },
     {
       "en": "Mogadishu is an ancient trading port. For centuries, sailing dhows arrived here carrying goods between Arabia, India and the East African coast, and old stone buildings near the harbour still tell that story.",
-      "so": "Muqdisho waa deked ganacsi oo qadiim ah. Qarniyo badan, doonyaha shiraaca leh ayaa halkan imaan jiray iyagoo sida badeecado u kala goosha Carabta, Hindiya iyo xeebta Bariga Afrika, dhismayaasha dhagaxa ah ee duugga ah ee dekedda u dhowna weli sheekadaas ayay sheegaan."
+      "so": "Muqdisho waa deked ganacsi oo qadiim ah. Qarniyo badan, doonyaha shiraaca leh ayaa halkan imaan jiray iyagoo sida badeecado u kala goosha Carabta, Hindiya iyo xeebta Bariga Afrika, dhismayaasha dhagaxa ah ee duugga ah ee dekedda u dhowna weli sheekadaas ayay sheegaan.",
+      "img": "Jama'a_Xamar_Weyne.jpg"
     },
     {
       "en": "In the north rise rugged mountains, and at the rock shelters of Laas Geel, herders painted colourful cattle on the stone thousands of years ago. The paintings are still bright today.",
-      "so": "Waqooyiga waxaa ku yaal buuro qallafsan, godadka dhagaxa ee Laas Geelna, xoolo-dhaqatadii hore waxay kumanaan sano ka hor dhagaxa ku sawireen lo' midabo leh. Sawiradaasi maanta weli way ifayaan."
+      "so": "Waqooyiga waxaa ku yaal buuro qallafsan, godadka dhagaxa ee Laas Geelna, xoolo-dhaqatadii hore waxay kumanaan sano ka hor dhagaxa ku sawireen lo' midabo leh. Sawiradaasi maanta weli way ifayaan.",
+      "img": "Laas_Geel.jpg"
     },
     {
       "en": "Colourful clothes brighten the streets. Women often wear the flowing dirac or the guntiino, wrapped in bold patterns, while many men wear a macawiis, a patterned sarong, with a shirt.",
@@ -44,16 +54,23 @@
     },
     {
       "en": "Music is much loved. Somali songs, played with the oud and drums, often speak of love and homeland, and at weddings everyone joins traditional dances while the crowd claps along.",
-      "so": "Muusigga aad baa loo jecel yahay. Heesaha Soomaalida ee lagu tumo kabanka iyo durbaanka waxay inta badan ka hadlaan jacaylka iyo dalka, aroosyadana qof walba wuxuu ku biiraa ciyaaraha hiddaha, iyadoo dadku sacabka la tumayaan."
+      "so": "Muusigga aad baa loo jecel yahay. Heesaha Soomaalida ee lagu tumo kabanka iyo durbaanka waxay inta badan ka hadlaan jacaylka iyo dalka, aroosyadana qof walba wuxuu ku biiraa ciyaaraha hiddaha, iyadoo dadku sacabka la tumayaan.",
+      "img": "Ūd_MET_DP340079.jpg"
     },
     {
       "en": "Along the coast, long sandy beaches like Lido in Mogadishu fill up on Friday afternoons with families, games of football and fresh fish grilled over hot coals.",
-      "so": "Xeebaha ciidda dheer leh sida Liido ee Muqdisho waxay galabta Jimcaha ka buuxsamaan qoysas, ciyaaro kubbadda cagta ah iyo kalluun cusub oo dab dhuxul ah lagu dubay."
+      "so": "Xeebaha ciidda dheer leh sida Liido ee Muqdisho waxay galabta Jimcaha ka buuxsamaan qoysas, ciyaaro kubbadda cagta ah iyo kalluun cusub oo dab dhuxul ah lagu dubay.",
+      "img": "Lido_Beach_2023B.jpg"
     },
     {
       "en": "Somalis carry their stories wherever they go, and families far from home keep the poems and recipes alive around the world. To the west, the green highlands of Ethiopia are waiting for you.",
-      "so": "Soomaalidu sheekooyinkooda meel kasta way la tagaan, qoysaska qurbaha joogaana adduunka oo dhan ayay ku ilaaliyaan gabayada iyo cuntooyinka. Dhanka galbeedka, buuraleyda cagaaran ee Itoobiya ayaa ku sugaysa."
+      "so": "Soomaalidu sheekooyinkooda meel kasta way la tagaan, qoysaska qurbaha joogaana adduunka oo dhan ayay ku ilaaliyaan gabayada iyo cuntooyinka. Dhanka galbeedka, buuraleyda cagaaran ee Itoobiya ayaa ku sugaysa.",
+      "img": "Gacan_Libaax,_Somaliland.jpg"
     }
   ],
-  "next": ["Ethiopia", "Kenya", "Djibouti"]
+  "next": [
+    "Ethiopia",
+    "Kenya",
+    "Djibouti"
+  ]
 }

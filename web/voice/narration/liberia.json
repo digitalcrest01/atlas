@@ -1,20 +1,64 @@
 {
   "country": "Liberia",
-  "languages": ["en"],
-  "segments": [
-    { "en": "Shake hands with a friend in Liberia and, as your hands slide apart, you both pull your middle fingers together with a quick snap. Get it right and you'll hear a satisfying click, and a big laugh." },
-    { "en": "Liberia lies on the Atlantic coast of West Africa. Long beaches run along the ocean, and behind them rise green hills and some of the largest rainforests left in this part of the continent." },
-    { "en": "The country has a unique history. In the nineteenth century, freed Black Americans and formerly enslaved people from the Caribbean settled here, and in 1847 Liberia declared independence, becoming Africa's first republic." },
-    { "en": "You can see that story in the flag, with its red and white stripes and a single white star, and in the name of the capital, Monrovia, named after the American president James Monroe." },
-    { "en": "But Liberia was home to many peoples long before that. The Kpelle, Bassa, Gio, Mano, Kru, Vai and others each have their own languages, crafts and traditions. The Vai people even created their own writing system." },
-    { "en": "English is the official language, and on the street you'll hear Liberian English, full of warmth and humour. A friend might greet you with, how's the body? which simply means, how are you?" },
-    { "en": "Rice is the heart of every meal. It's served with rich, spicy sauces like palm butter, made from palm nuts, or cassava leaf, simmered with fish or meat. A bowl of pepper soup will certainly wake you up!" },
-    { "en": "Monrovia is a busy seaside city, full of markets, music and colourful shared taxis. People gather in the evenings to talk, joke and listen to the latest songs." },
-    { "en": "Deep in the forest of Sapo National Park live shy pygmy hippos, forest elephants and chimpanzees. Walking through the thick green trees, you'll hear birds calling high above." },
-    { "en": "On the western coast, the town of Robertsport has long, curling waves that draw surfers from around the world, and local kids ride them too, sometimes on homemade boards." },
-    { "en": "Football is a national passion. Liberia's most famous player, George Weah, became a world football star and was named the best player in the world in 1995." },
-    { "en": "Masks and dance play an important role in many communities, especially at ceremonies and festivals, where drummers and dancers bring old stories to life." },
-    { "en": "Liberians are known for their hospitality, and visitors are quickly treated like family. Now travel north-west along the coast, where Sierra Leone is waiting." }
+  "languages": [
+    "en"
   ],
-  "next": ["Sierra Leone", "Guinea", "Côte d'Ivoire"]
+  "segments": [
+    {
+      "en": "Shake hands with a friend in Liberia and, as your hands slide apart, you both pull your middle fingers together with a quick snap. Get it right and you'll hear a satisfying click, and a big laugh.",
+      "img": "City_of_Kakata,_photograph_of_main_road_near_BWI,_May_2012.jpg"
+    },
+    {
+      "en": "Liberia lies on the Atlantic coast of West Africa. Long beaches run along the ocean, and behind them rise green hills and some of the largest rainforests left in this part of the continent.",
+      "img": "Galleryforest_300.jpg"
+    },
+    {
+      "en": "The country has a unique history. In the nineteenth century, freed Black Americans and formerly enslaved people from the Caribbean settled here, and in 1847 Liberia declared independence, becoming Africa's first republic.",
+      "img": "Providence_Island_view_of_downtown_Monrovia.jpg"
+    },
+    {
+      "en": "You can see that story in the flag, with its red and white stripes and a single white star, and in the name of the capital, Monrovia, named after the American president James Monroe.",
+      "img": "Liberia,_Africa_-_panoramio_(256).jpg"
+    },
+    {
+      "en": "But Liberia was home to many peoples long before that. The Kpelle, Bassa, Gio, Mano, Kru, Vai and others each have their own languages, crafts and traditions. The Vai people even created their own writing system.",
+      "img": "Lake_Piso.jpg"
+    },
+    {
+      "en": "English is the official language, and on the street you'll hear Liberian English, full of warmth and humour. A friend might greet you with, how's the body? which simply means, how are you?",
+      "img": "BuchananLiberia.jpg"
+    },
+    {
+      "en": "Rice is the heart of every meal. It's served with rich, spicy sauces like palm butter, made from palm nuts, or cassava leaf, simmered with fish or meat. A bowl of pepper soup will certainly wake you up!",
+      "img": "Jollof_Rice_with_Stew.jpg"
+    },
+    {
+      "en": "Monrovia is a busy seaside city, full of markets, music and colourful shared taxis. People gather in the evenings to talk, joke and listen to the latest songs.",
+      "img": "Mamba_Point.jpg"
+    },
+    {
+      "en": "Deep in the forest of Sapo National Park live shy pygmy hippos, forest elephants and chimpanzees. Walking through the thick green trees, you'll hear birds calling high above.",
+      "img": "Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG"
+    },
+    {
+      "en": "On the western coast, the town of Robertsport has long, curling waves that draw surfers from around the world, and local kids ride them too, sometimes on homemade boards.",
+      "img": "HarperLiberia.jpg"
+    },
+    {
+      "en": "Football is a national passion. Liberia's most famous player, George Weah, became a world football star and was named the best player in the world in 1995.",
+      "img": "Voinjama.jpg"
+    },
+    {
+      "en": "Masks and dance play an important role in many communities, especially at ceremonies and festivals, where drummers and dancers bring old stories to life."
+    },
+    {
+      "en": "Liberians are known for their hospitality, and visitors are quickly treated like family. Now travel north-west along the coast, where Sierra Leone is waiting.",
+      "img": "Mont_Nimba_landscape.jpg"
+    }
+  ],
+  "next": [
+    "Sierra Leone",
+    "Guinea",
+    "Côte d'Ivoire"
+  ]
 }

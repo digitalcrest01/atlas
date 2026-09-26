@@ -1,59 +1,79 @@
 {
   "country": "Burkina Faso",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Burkina Faso has a name that is also a promise. It joins words from two local languages, Mooré and Dioula, and means the land of upright, honest people.",
-      "fr": "Le Burkina Faso porte un nom qui est aussi une promesse. Il réunit des mots de deux langues du pays, le mooré et le dioula, et signifie le pays des hommes intègres."
+      "fr": "Le Burkina Faso porte un nom qui est aussi une promesse. Il réunit des mots de deux langues du pays, le mooré et le dioula, et signifie le pays des hommes intègres.",
+      "img": "Ouagadougou_Skyline.jpg"
     },
     {
       "en": "It is a landlocked country of wide West African savanna, where baobabs stand like giants in the fields and the red earth glows at sunset. The dry season is hot and dusty, and the first rains are welcomed with joy.",
-      "fr": "C'est un pays sans accès à la mer, fait de vastes savanes d'Afrique de l'Ouest, où les baobabs se dressent comme des géants au milieu des champs et où la terre rouge s'embrase au coucher du soleil. La saison sèche est chaude et poussiéreuse, et les premières pluies sont accueillies avec bonheur."
+      "fr": "C'est un pays sans accès à la mer, fait de vastes savanes d'Afrique de l'Ouest, où les baobabs se dressent comme des géants au milieu des champs et où la terre rouge s'embrase au coucher du soleil. La saison sèche est chaude et poussiéreuse, et les premières pluies sont accueillies avec bonheur.",
+      "img": "Kabore_Tambi_NP_MS_10798.jpg"
     },
     {
       "en": "Greetings are never rushed. People ask about your health, your family, your work and your whole household, and only then get down to business. Taking your time is a sign of respect.",
-      "fr": "Ici, on ne bâcle jamais les salutations. On vous demande des nouvelles de votre santé, de votre famille, de votre travail et de toute la maisonnée, et c'est seulement après qu'on parle affaires. Prendre son temps est une marque de respect."
+      "fr": "Ici, on ne bâcle jamais les salutations. On vous demande des nouvelles de votre santé, de votre famille, de votre travail et de toute la maisonnée, et c'est seulement après qu'on parle affaires. Prendre son temps est une marque de respect.",
+      "img": "Mud_Mosque_-_Bani_-_Sahel_Region_-_Burkina_Faso_-_02.jpg"
     },
     {
       "en": "Ouagadougou, the capital, is simply called Ouaga. Every two years it becomes the capital of African cinema, when the great film festival known as FESPACO fills the city with filmmakers, stars and eager audiences.",
-      "fr": "Ouagadougou, la capitale, qu'on appelle tout simplement Ouaga, devient tous les deux ans la capitale du cinéma africain, quand le grand festival de films qu'est le FESPACO remplit la ville de cinéastes, de vedettes et de spectateurs passionnés."
+      "fr": "Ouagadougou, la capitale, qu'on appelle tout simplement Ouaga, devient tous les deux ans la capitale du cinéma africain, quand le grand festival de films qu'est le FESPACO remplit la ville de cinéastes, de vedettes et de spectateurs passionnés.",
+      "img": "Ouaga_grande_mosquee.jpg"
     },
     {
       "en": "Burkinabè artisans are known for bronze figures cast by the lost wax method, for leatherwork, and for Faso Dan Fani, a proud, colourful cotton cloth woven by hand.",
-      "fr": "Les artisans burkinabè sont réputés pour leurs bronzes coulés à la cire perdue, pour leurs objets en cuir et pour le Faso Dan Fani, fier pagne de coton aux couleurs vives, tissé à la main."
+      "fr": "Les artisans burkinabè sont réputés pour leurs bronzes coulés à la cire perdue, pour leurs objets en cuir et pour le Faso Dan Fani, fier pagne de coton aux couleurs vives, tissé à la main.",
+      "img": "Markt_Banfora_MS_2255.JPG"
     },
     {
       "en": "In the south, near Tiébélé, Kassena women paint the walls of their earthen homes with bold patterns in red, black and white. Each design carries a meaning, and the painting is done together, as a community.",
-      "fr": "Dans le sud, près de Tiébélé, les femmes kassena décorent les murs de leurs maisons en terre de motifs audacieux, rouges, noirs et blancs. Chaque dessin a un sens, et la peinture se fait ensemble, en communauté."
+      "fr": "Dans le sud, près de Tiébélé, les femmes kassena décorent les murs de leurs maisons en terre de motifs audacieux, rouges, noirs et blancs. Chaque dessin a un sens, et la peinture se fait ensemble, en communauté.",
+      "img": "Tiebele_village_in_Burkina_Faso_02.jpg"
     },
     {
       "en": "In Bobo-Dioulasso, the second city, the old Grand Mosque is built of earth, with wooden beams bristling from its walls. The town moves to the rhythm of the balafon and the djembe.",
-      "fr": "À Bobo-Dioulasso, la deuxième ville du pays, la vieille grande mosquée est bâtie en terre, hérissée de poutres en bois. La ville vit au rythme du balafon et du djembé."
+      "fr": "À Bobo-Dioulasso, la deuxième ville du pays, la vieille grande mosquée est bâtie en terre, hérissée de poutres en bois. La ville vit au rythme du balafon et du djembé.",
+      "img": "Moschee_von_Bobo-Dioulasso.jpg"
     },
     {
       "en": "At mealtimes, families gather around tô, a firm porridge of millet or maize, eaten with the right hand and dipped into a silky okra or leaf sauce. On special days there is riz gras, rice simmered in a rich tomato sauce with meat.",
-      "fr": "À l'heure du repas, la famille se réunit autour du tô, une pâte ferme de mil ou de maïs qu'on mange de la main droite en la trempant dans une sauce gluante au gombo ou aux feuilles. Les jours de fête, on sert le riz gras, mijoté dans une sauce tomate généreuse avec de la viande."
+      "fr": "À l'heure du repas, la famille se réunit autour du tô, une pâte ferme de mil ou de maïs qu'on mange de la main droite en la trempant dans une sauce gluante au gombo ou aux feuilles. Les jours de fête, on sert le riz gras, mijoté dans une sauce tomate généreuse avec de la viande.",
+      "img": "Plat_de_riz_au_gras_plus_viande.jpg"
     },
     {
       "en": "Women gather nuts from wild shea trees and turn them into smooth shea butter, used in cooking and for the skin. It is a skill passed from mothers to daughters.",
-      "fr": "Les femmes ramassent les noix des karités sauvages et les transforment en un beurre onctueux, utilisé en cuisine et pour la peau. C'est un savoir-faire transmis de mère en fille."
+      "fr": "Les femmes ramassent les noix des karités sauvages et les transforment en un beurre onctueux, utilisé en cuisine et pour la peau. C'est un savoir-faire transmis de mère en fille.",
+      "img": "BoboDioulasso-Market.JPG"
     },
     {
       "en": "Masks hold a special place in village life. At festivals and funerals, dancers in tall masks of wood and fibre spin and leap, linking the living with their ancestors.",
-      "fr": "Les masques occupent une place à part dans la vie des villages. Lors des fêtes et des funérailles, des danseurs coiffés de hauts masques de bois et de fibres tournoient et bondissent, reliant les vivants aux ancêtres."
+      "fr": "Les masques occupent une place à part dans la vie des villages. Lors des fêtes et des funérailles, des danseurs coiffés de hauts masques de bois et de fibres tournoient et bondissent, reliant les vivants aux ancêtres.",
+      "img": "Masque_de_Fibre_7.jpg"
     },
     {
       "en": "Nature has its surprises too. The Sindou Peaks rise like a crowd of stone towers shaped by wind and rain, and near Banfora the Karfiguéla waterfalls tumble over rocky steps.",
-      "fr": "La nature réserve aussi des surprises. Les pics de Sindou se dressent comme une foule de tours de pierre sculptées par le vent et la pluie, et près de Banfora, les cascades de Karfiguéla dévalent des marches rocheuses."
+      "fr": "La nature réserve aussi des surprises. Les pics de Sindou se dressent comme une foule de tours de pierre sculptées par le vent et la pluie, et près de Banfora, les cascades de Karfiguéla dévalent des marches rocheuses.",
+      "img": "Burkina_20110120_164655.jpg"
     },
     {
       "en": "Before you leave, sip a glass of cold bissap, a ruby red hibiscus drink, and say barka, thank you in Mooré.",
-      "fr": "Avant de partir, buvez un verre de bissap bien frais, une boisson à l'hibiscus rouge rubis, et dites barka, merci en mooré."
+      "fr": "Avant de partir, buvez un verre de bissap bien frais, une boisson à l'hibiscus rouge rubis, et dites barka, merci en mooré.",
+      "img": "Hibiscus_tea.jpg"
     },
     {
       "en": "Then take the road south, past fields of millet and cotton. Ghana is waiting just across the border.",
-      "fr": "Puis prenez la route du sud, à travers les champs de mil et de coton. Le Ghana vous attend juste de l'autre côté de la frontière."
+      "fr": "Puis prenez la route du sud, à travers les champs de mil et de coton. Le Ghana vous attend juste de l'autre côté de la frontière.",
+      "img": "Comoe_near_Folonzo_MS_1262.jpg"
     }
   ],
-  "next": ["Ghana", "Mali", "Niger"]
+  "next": [
+    "Ghana",
+    "Mali",
+    "Niger"
+  ]
 }

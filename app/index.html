@@ -104,12 +104,6 @@
     border-radius: 4px;
     border: none;
   }
-  .streak {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 11px;
-    color: var(--accent);
-    white-space: nowrap;
-  }
   .kids-toggle {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px; color: var(--ink-dim);
@@ -188,13 +182,21 @@
     .pane.globe { display: flex; flex: 1 1 auto; }
     .pane.details { display: flex; flex: 0 0 400px; border-left: 1px solid var(--line); }
   }
+  /* iPad landscape: slimmer side panes so the globe keeps room */
   @media (min-width: 901px) and (max-width: 1200px) {
-    .pane.list { flex-basis: 280px; }
+    .pane.list { flex-basis: 260px; }
     .pane.details { flex-basis: 340px; }
   }
-  /* Mobile: only the active pane visible */
+  /* iPhone and iPad portrait: the globe always stays on screen at the top;
+     the list or the country's details fill the space below it. */
   @media (max-width: 900px) {
-    .pane.mobile-active { display: flex; flex: 1 1 auto; }
+    .pane.globe { display: flex; flex: 0 0 34vh; min-height: 220px; border-bottom: 1px solid var(--line); }
+    .pane.list.mobile-active, .pane.details.mobile-active { display: flex; flex: 1 1 auto; }
+    .mobile-bar button[data-pane="globe"] { display: none; }
+  }
+  @media (min-width: 700px) and (max-width: 900px) {
+    .pane.globe { flex-basis: 46vh; }
+    .pane.details, .pane.list { font-size: 15px; }
   }
 
   /* ===== MOBILE BOTTOM BAR (only in explore mode) ===== */
@@ -486,13 +488,8 @@
     flex-wrap: wrap;
   }
   .detail-flag { font-size: 34px; }
-  .local-time {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    margin: 4px 0 14px; padding: 12px 14px; border-radius: 12px;
-    background: var(--panel); border: 1px solid var(--line);
-  }
-  .local-time-label { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
-  .local-time-clock { font-size: 28px; font-weight: 800; }
+  .local-time { font-size: 12px; color: var(--ink-dim); white-space: nowrap; margin-right: 4px; font-variant-numeric: tabular-nums; }
+  .local-time-clock { font-weight: 600; }
   .detail-image {
     margin: 14px 0;
     border-radius: 6px;
@@ -511,24 +508,6 @@
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
     font-size: 64px; background: var(--panel-2);
-  }
-  .img-locked {
-    position: absolute; inset: 0;
-    background: rgba(11, 14, 19, 0.85);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--lock);
-    gap: 8px;
-    cursor: pointer;
-  }
-  .img-locked .lock-icon { font-size: 28px; }
-  .img-locked .lock-label {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
   }
   .fact-grid {
     display: grid;
@@ -645,8 +624,8 @@
     position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
   }
-  /* LISTEN card — the spoken visit */
-  .listen-card, .phrasebook {
+  /* TOUR card and PHRASEBOOK */
+  .tour-cta, .phrasebook {
     background: var(--panel-2);
     border: 1px solid var(--line);
     border-radius: 12px;
@@ -660,16 +639,9 @@
     font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-2); font-weight: 700;
   }
   .lc-len, .pb-hint { font-size: 11px; color: var(--ink-dim); white-space: nowrap; }
-  .lc-controls { display: flex; align-items: center; gap: 8px; margin: 4px 0 10px; }
-  .lc-controls .btn-primary { flex: 0 0 auto; min-width: 118px; min-height: 44px; }
-  .lc-controls .back-btn { min-height: 44px; }
-  .lc-controls .back-btn[disabled], .lc-controls .btn-primary[disabled] { opacity: 0.45; cursor: default; }
-  .lc-progress { margin-left: auto; font-size: 12px; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
-  .lc-line { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; }
-  .lc-sub { margin: 6px 0 0; font-size: 13px; line-height: 1.45; color: var(--ink-dim); overflow-wrap: anywhere; }
-  .lc-next { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
-  .lc-next .chip { min-height: 36px; }
-  .lc-langs, .pb-langs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .tour-cta-sub { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink-dim); }
+  .tour-cta .tour-launch { min-height: 44px; }
+  .pb-langs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
   .pb-lang {
     display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;
     min-height: 40px; padding: 5px 12px;
@@ -679,20 +651,9 @@
   }
   .pb-lang small { font-size: 10px; color: var(--ink-dim); letter-spacing: 0.02em; }
   .pb-lang.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
-  .pb-lang:focus-visible, .pb-cat:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pb-lang:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .pb-single { font-size: 13px; color: var(--ink-dim); margin-bottom: 8px; }
   /* PHRASEBOOK */
-  .pb-cats {
-    display: flex; gap: 6px; overflow-x: auto; margin: 0 -14px 6px; padding: 2px 14px 6px;
-    scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  }
-  .pb-cats::-webkit-scrollbar { display: none; }
-  .pb-cat {
-    flex: 0 0 auto; min-height: 34px; padding: 6px 12px;
-    background: none; border: 1px solid var(--line); border-radius: 999px;
-    color: var(--ink-dim); font: inherit; font-size: 12px; cursor: pointer; white-space: nowrap;
-  }
-  .pb-cat.on { background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 700; }
   .pb-row { display: flex; align-items: center; gap: 6px; padding: 9px 0; border-top: 1px solid var(--line); }
   .pb-list .pb-row:first-child { border-top: none; }
   .pb-main { flex: 1; min-width: 0; }
@@ -705,6 +666,17 @@
   .pb-say { font-size: 12px; color: var(--ink-dim); margin-top: 2px; overflow-wrap: anywhere; }
   .pb-say b { color: var(--accent-2); font-style: italic; font-weight: 600; }
   .pb-note { font-size: 12px; line-height: 1.45; color: var(--ink-dim); margin: 4px 0 8px; }
+  .pb-pick-label { display: block; font-size: 12px; color: var(--ink-dim); margin: 2px 0 6px; }
+  .pb-pick {
+    width: 100%; min-height: 46px; padding: 10px 40px 10px 12px;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 10px;
+    font: inherit; font-size: 16px; appearance: none; -webkit-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink-dim) 50%), linear-gradient(135deg, var(--ink-dim) 50%, transparent 50%);
+    background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px, 6px 6px; background-repeat: no-repeat;
+  }
+  .pb-pick:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pb-card { display: flex; align-items: center; gap: 8px; margin-top: 10px; padding: 12px; border-radius: 10px; background: var(--panel); border: 1px solid var(--line); }
+  .pb-card .pb-text { font-size: 24px; }
   /* NATIONAL ANTHEM card */
   .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
   .anthem-head { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
@@ -731,18 +703,20 @@
   .landmark-card:active { transform: scale(0.99); }
   .landmark-head { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
   .landmark-fact { font-size: 13px; line-height: 1.45; color: var(--ink-dim); }
-  .landmark-cta { font-size: 12px; color: var(--accent); margin-top: 8px; font-weight: 600; }
   .tour-launch { width: 100%; margin-top: 12px; }
   .tour-overlay {
     position: fixed; inset: 0; z-index: 9500;
-    background: rgba(6, 8, 12, 0.55);
+    background: transparent;
+    pointer-events: none;
     display: flex; align-items: flex-end; justify-content: center;
-    padding: 16px 16px 28px;
+    padding: 16px 16px max(16px, env(safe-area-inset-bottom, 0px));
   }
+  .tour-overlay .tour-card { pointer-events: auto; }
   .tour-card {
     width: min(520px, 100%);
-    max-height: min(92vh, 820px);
+    max-height: min(62vh, 640px);
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -767,7 +741,7 @@
   .tour-next-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
   .tour-next-row[hidden], .tour-card .tour-note[hidden] { display: none; }
   .tour-card .tour-note { margin-top: 8px; font-size: 12px; color: var(--ink-dim); }
-  .tour-actions button, .tour-talk button, .tour-talk input { min-height: 44px; }
+  .tour-actions button { min-height: 44px; }
   .tour-stage {
     position: relative;
     height: 220px;
@@ -784,8 +758,13 @@
     object-fit: cover;
     opacity: 0;
   }
-  .tour-frame.pan-a { animation: tourFade 0.55s ease forwards, tourKenA 8s ease-out forwards; }
-  .tour-frame.pan-b { animation: tourFade 0.55s ease forwards, tourKenB 8s ease-out forwards; }
+  .tour-frame.ken-in { animation: tourFade 0.7s ease forwards, tourKenIn 14s ease-in-out forwards; }
+  .tour-frame.ken-out { animation: tourFade 0.7s ease forwards, tourKenOut 14s ease-in-out forwards; }
+  .tour-frame.pan-left { animation: tourFade 0.7s ease forwards, tourPanLeft 14s ease-in-out forwards; }
+  .tour-frame.pan-right { animation: tourFade 0.7s ease forwards, tourPanRight 14s ease-in-out forwards; }
+  .tour-frame.pan-up { animation: tourFade 0.7s ease forwards, tourPanUp 14s ease-in-out forwards; }
+  .tour-frame.pan-down { animation: tourFade 0.7s ease forwards, tourPanDown 14s ease-in-out forwards; }
+  @media (prefers-reduced-motion: reduce) { .tour-frame { animation: tourFade 0.7s ease forwards; } }
   .tour-route { height: 8px; margin: 14px 0 8px; display: flex; gap: 6px; align-items: center; }
   .tour-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
   .tour-dot.on { background: var(--accent); transform: scale(1.3); }
@@ -795,17 +774,29 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
-  .tour-talk { display: flex; gap: 8px; margin-top: 10px; }
+  .tour-talk { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+  .tour-ask {
+    min-height: 48px; width: 100%; border-radius: 999px; cursor: pointer;
+    background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); font: inherit; font-size: 15px; font-weight: 700;
+  }
+  .tour-ask.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+  .tour-ask:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tour-ask-hint { margin: 0; font-size: 12px; color: var(--ink-dim); text-align: center; overflow-wrap: anywhere; }
   .tour-talk input {
-    flex: 1; min-width: 0;
+    min-height: 44px; min-width: 0;
     background: var(--panel-2); color: var(--ink);
     border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
-    font: inherit; font-size: 15px;
+    font: inherit; font-size: 16px;
   }
-  .tour-mic.on { color: var(--accent); border-color: var(--accent); }
+  .tour-talk input[hidden], .tour-ask[hidden] { display: none; }
+  .tour-sub-label { display: inline-block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); margin-right: 4px; font-weight: 700; }
+  #globe-canvas { transition: transform 0.6s ease; }
   @media (max-width: 700px) {
-    .tour-stage { height: 140px; }
-    .tour-animal { font-size: 40px; }
+    .tour-stage { height: 120px; }
+    .tour-animal { font-size: 34px; }
+    .tour-card { max-height: 52vh; padding: 14px 14px 10px; }
+    .tour-card h2 { font-size: 20px; margin: 4px 0 6px; }
+    .tour-overlay { padding: 8px 8px max(8px, env(safe-area-inset-bottom, 0px)); }
   }
   .puzzle-wrap {
     max-width: 1100px;
@@ -821,15 +812,14 @@
   .puzzle-top h2 { margin: 0; font-size: 22px; }
   .puzzle-count { color: var(--ink-dim); font-size: 13px; }
   .puzzle-board {
-    flex: 1 1 auto;
-    min-height: 0;
+    flex: 0 0 auto;
     width: 100%;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(var(--pz-cols, 3), minmax(0, 1fr));
-    grid-template-rows: repeat(var(--pz-rows, 2), minmax(0, 1fr));
-    gap: 8px;
-    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
     background: #0c1c2e;
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -840,42 +830,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    min-width: 0;
+    gap: 2px;
+    width: 76px;
+    height: 76px;
     padding: 4px;
     border-radius: 12px;
     border: 2px solid #f6e7c8;
     background: rgba(8, 16, 28, 0.92);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.28);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.28);
     touch-action: none;
-    overflow: hidden;
-    container-type: size;
+    cursor: pointer;
   }
-  .puzzle-shape { width: 86%; height: 42%; min-height: 0; }
-  .puzzle-shape svg { width: 100%; height: 100%; display: block; }
-  .puzzle-shape path { fill: #e7c27a; stroke: #3a2a12; stroke-width: 0.6; }
-  .puzzle-flag-emoji { font-size: 28px; font-size: 38cqmin; line-height: 1; }
-  .puzzle-flag-name {
-    font-size: 14cqmin;
-    font-weight: 800;
-    color: #fff;
-    line-height: 1.1;
-    text-align: center;
-    max-width: 100%;
-  }
-  .puzzle-flag.done {
-    border-color: #d4a056;
-    padding: 2px;
-  }
-  .puzzle-flag.done .puzzle-flag-emoji { font-size: 42px; font-size: 74cqmin; }
+  .puzzle-flag-emoji { font-size: 42px; line-height: 1; }
+  .puzzle-flag-name { font-size: 10px; font-weight: 800; color: #fff; line-height: 1.1; text-align: center; max-width: 100%; overflow-wrap: anywhere; }
   .puzzle-flag.is-hint {
     border-color: #ffd56a;
     box-shadow: 0 0 0 4px rgba(255, 196, 70, 0.55);
     animation: puzzlePulse 0.8s ease-in-out infinite;
   }
+  @media (max-width: 420px) { .puzzle-flag { width: 64px; height: 64px; } .puzzle-flag-emoji { font-size: 36px; } }
   .puzzle-msg { min-height: 18px; text-align: center; color: var(--ink-dim); margin: 0; flex: 0 0 auto; font-size: 14px; }
   .puzzle-msg.ok { color: var(--success, #7dcea0); }
   .puzzle-msg.no { color: #e07a5f; }
@@ -925,11 +898,45 @@
   @keyframes puzzleShake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
   @keyframes tourIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
   @keyframes tourFade { from { opacity: 0; } to { opacity: 1; } }
-  @keyframes tourKenA { from { transform: scale(1) translate3d(0,0,0); } to { transform: scale(1.16) translate3d(-3%, -2%, 0); } }
-  @keyframes tourKenB { from { transform: scale(1.08) translate3d(-2%, 0, 0); } to { transform: scale(1.18) translate3d(3%, 2%, 0); } }
+  @keyframes tourKenIn { from { transform: scale(1.02); } to { transform: scale(1.18); } }
+  @keyframes tourKenOut { from { transform: scale(1.2); } to { transform: scale(1.03); } }
+  @keyframes tourPanLeft { from { transform: scale(1.14) translate3d(4%, 0, 0); } to { transform: scale(1.14) translate3d(-4%, 0, 0); } }
+  @keyframes tourPanRight { from { transform: scale(1.14) translate3d(-4%, 0, 0); } to { transform: scale(1.14) translate3d(4%, 0, 0); } }
+  @keyframes tourPanUp { from { transform: scale(1.16) translate3d(0, 4%, 0); } to { transform: scale(1.16) translate3d(0, -4%, 0); } }
+  @keyframes tourPanDown { from { transform: scale(1.16) translate3d(0, -4%, 0); } to { transform: scale(1.16) translate3d(0, 4%, 0); } }
   @keyframes pinDrop { from { opacity: 0; transform: rotate(-45deg) translateY(-16px); } to { opacity: 1; transform: rotate(-45deg); } }
   /* PASSPORT */
-  .passport-wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 60px; }
+  .passport-wrap { max-width: 1000px; margin: 0 auto; padding: 18px 16px 60px; }
+  .pp-head h2 { margin: 0 0 4px; font-size: 22px; }
+  .pp-tools { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+  .pp-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 12px; margin-bottom: 28px; }
+  .pp-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; background: none; border: none; color: var(--ink); cursor: pointer; text-align: center; }
+  .pp-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 8px; }
+  .pp-cover { position: relative; width: 100%; aspect-ratio: 5 / 7; border-radius: 6px 10px 10px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 6px 14px rgba(0,0,0,0.35); transition: transform 0.15s ease; }
+  .pp-card:hover .pp-cover { transform: translateY(-3px) rotate(-1deg); }
+  .pp-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+  .pp-drawn { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 8px;
+    background: linear-gradient(160deg, #1f3a5f, #12233b); color: #e8d9a8; border-left: 5px solid rgba(0,0,0,0.25); }
+  .pp-drawn-flag { font-size: 34px; line-height: 1; }
+  .pp-drawn-name { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.2; }
+  .pp-drawn-word { font-size: 9px; letter-spacing: 0.24em; opacity: 0.8; }
+  .pp-stamp { position: absolute; z-index: 2; right: 6px; bottom: 6px; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    border: 2px solid #c0392b; color: #c0392b; background: rgba(255,255,255,0.85); font-weight: 900; font-size: 15px; transform: rotate(-12deg); }
+  .pp-stamp.gold { border-color: #b8860b; color: #b8860b; }
+  .pp-card:not(.got) .pp-cover { filter: saturate(0.75); }
+  .pp-name { font-size: 12px; line-height: 1.25; overflow-wrap: anywhere; }
+  .pp-open { max-width: 420px; }
+  .pp-open-cover { position: relative; width: 58%; margin: 4px auto 14px; aspect-ratio: 5 / 7; border-radius: 6px 12px 12px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 10px 24px rgba(0,0,0,0.45); }
+  .pp-visa { margin: 14px 0 4px; padding: 12px; border-radius: 10px; background: #f6f1e3; color: #3a3326;
+    background-image: repeating-linear-gradient(0deg, transparent 0 22px, rgba(58,51,38,0.06) 22px 23px); }
+  .pp-visa-head { display: flex; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #7a6c52; margin-bottom: 8px; }
+  .pp-visa-stamps { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 6px; }
+  .imm-stamp { width: 100%; height: auto; display: block; }
+  .pp-visa-empty, .pp-visa-gold { margin: 4px 0; font-size: 13px; color: #6b5f48; }
+  .pp-visa-gold { color: #9a6b00; font-weight: 700; }
+  .pp-your-stamp { margin: 14px 0 4px; padding: 10px 12px; border-radius: 10px; border: 1px dashed var(--line); color: var(--ink-dim); font-size: 13px; }
+  .pp-your-stamp.got { border-style: solid; border-color: #c0392b; color: var(--ink); }
   .explorer-card {
     display: flex; align-items: center; gap: 16px;
     background: linear-gradient(135deg, rgba(212,160,86,0.18), rgba(110,168,196,0.10));
@@ -946,18 +953,6 @@
   .passport-section h3 { font-size: 16px; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
   .count-pill { font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 2px 8px; font-weight: 600; }
   .passport-hint { font-size: 13px; color: var(--ink-dim); line-height: 1.5; }
-  .streak-big { font-size: 30px; font-weight: 800; color: var(--accent); margin-bottom: 14px; }
-  .reward-row { display: flex; gap: 10px; flex-wrap: wrap; }
-  .reward { flex: 1; min-width: 64px; text-align: center; padding: 12px 6px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--line); opacity: 0.45; }
-  .reward.got { opacity: 1; border-color: var(--accent); background: rgba(212,160,86,0.12); }
-  .reward-ic { font-size: 26px; }
-  .reward-lb { font-size: 11px; color: var(--ink-dim); margin-top: 4px; }
-  .badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
-  .badge-cell { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 12px; text-align: center; opacity: 0.5; }
-  .badge-cell.got { opacity: 1; border-color: var(--accent); }
-  .badge-ic { font-size: 30px; margin-bottom: 6px; }
-  .badge-nm { font-size: 13px; font-weight: 700; color: var(--ink); }
-  .badge-ds { font-size: 11px; color: var(--ink-dim); margin-top: 3px; line-height: 1.35; }
   .cont-row { display: flex; flex-wrap: wrap; gap: 8px; }
   .cont-chip { font-size: 13px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 20px; padding: 7px 13px; color: var(--ink-dim); }
   .cont-chip b { color: var(--ink); }
@@ -982,8 +977,6 @@
   .stamp-flag { font-size: 30px; display: block; }
   .stamp-star { position: absolute; top: 3px; right: 5px; font-size: 13px; }
   .stamp-lock { position: absolute; top: 3px; right: 5px; font-size: 11px; opacity: 0.85; }
-  .lock-tease { color: var(--accent); cursor: pointer; font-weight: 600; white-space: nowrap; }
-  .lock-tease:hover { text-decoration: underline; }
   /* MYSTERY COUNTRY */
   .clue-list { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
   .clue { display: flex; gap: 10px; align-items: flex-start; background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--accent-2); border-radius: 10px; padding: 11px 13px; font-size: 14px; line-height: 1.4; animation: clue-in 0.3s ease; }
@@ -1028,8 +1021,6 @@
   .set-group { margin-bottom: 18px; }
   .set-label { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
   .set-hint { font-size: 12px; color: var(--ink-dim); margin-bottom: 8px; line-height: 1.4; }
-  .pro-tag { font-size: 9px; background: var(--accent); color: var(--bg); border-radius: 6px; padding: 2px 6px; letter-spacing: 0.08em; vertical-align: middle; font-weight: 700; }
-  .set-locked-note { font-size: 13px; color: var(--ink-dim); background: var(--panel-2); border: 1px solid var(--accent); border-radius: 10px; padding: 10px 12px; margin-bottom: 18px; }
   .link-btn { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 13px; text-decoration: underline; padding: 0; }
   .seg-row { display: flex; gap: 6px; flex-wrap: wrap; }
   .seg { flex: 1; min-width: 70px; padding: 9px 8px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 8px; cursor: pointer; font-size: 13px; }
@@ -1520,7 +1511,7 @@
   }
   .share-btn:hover { border-color: var(--accent-2); }
 
-  /* ===== ACHIEVEMENT TOAST ===== */
+  /* ===== NOTICE (e.g. "Link copied!") ===== */
   .achievement-toast {
     position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
     background: var(--panel); border: 1px solid var(--accent);
@@ -1544,17 +1535,6 @@
     transition: width 0.4s ease; width: 0%;
   }
 
-  /* ===== QUIZ STREAK COUNTER ===== */
-  .quiz-streak-row {
-    display: flex; justify-content: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;
-  }
-  .quiz-streak-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-    background: var(--line);
-    transition: background 0.2s;
-  }
-  .quiz-streak-dot.correct { background: var(--success); }
-  .quiz-streak-dot.wrong { background: var(--danger); }
 
   /* ===== FIRST-RUN COACH MARK (sits on the home-country pin) ===== */
   .coach-mark {
@@ -1589,6 +1569,129 @@
     border: 1px solid var(--line); border-radius: 8px; font-size: 15px;
   }
   .welcome-hit.on { border-color: var(--accent); }
+  /* Phones and iPads: nothing smaller than comfortable reading size, and
+     every button a full finger's width. */
+  @media (max-width: 1200px), (pointer: coarse) {
+    .fact-label, .qf-label, .wow-label, .section h4, .badge, .kids-toggle, .share-btn,
+    .mobile-bar button, .detail-eyebrow, .lc-top h3, .pb-head h3, .pb-en, .pb-lang small,
+    .tour-sub-label, .tour-kicker, .count-pill, .pp-drawn-word { font-size: 11.5px !important; }
+    .fav-btn, .share-btn { min-width: 40px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+    .fav-btn { font-size: 18px; }
+  }
+  /* ===== KIDS MODE — bright, rounded and playful ===== */
+  body.kids {
+    font-family: ui-rounded, 'SF Pro Rounded', 'Nunito', 'Trebuchet MS', system-ui, sans-serif;
+    background: linear-gradient(180deg, #dff3ff 0%, #fff6d8 55%, #ffe9f1 100%) fixed;
+  }
+  body.kids header {
+    background: linear-gradient(100deg, #ff8a3d 0%, #ff5fa2 55%, #8b5cf6 100%);
+    border-bottom: none;
+    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.25);
+  }
+  body.kids header, body.kids header .logo-sub, body.kids header .kids-toggle { color: #fff; }
+  body.kids .kids-toggle { border-color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.18); font-weight: 800; }
+  body.kids .kids-toggle.on { background: #fff; color: #ff5fa2; border-color: #fff; }
+  body.kids .tabs { background: transparent; border-bottom: none; gap: 6px; padding: 8px 8px 6px; }
+  body.kids .tabs button {
+    border-radius: 999px; border: none; margin: 0; padding: 8px 10px;
+    font-weight: 800; letter-spacing: 0.02em; text-transform: none; font-size: 14px;
+    color: #fff; box-shadow: 0 3px 0 rgba(0,0,0,0.12); transition: transform 0.12s ease;
+  }
+  body.kids .tabs button[data-mode="today"] { background: #ffb020; }
+  body.kids .tabs button[data-mode="explore"] { background: #22b8cf; }
+  body.kids .tabs button[data-mode="quiz"] { background: #ff6b6b; }
+  body.kids .tabs button[data-mode="puzzle"] { background: #51cf66; }
+  body.kids .tabs button[data-mode="passport"] { background: #845ef7; }
+  body.kids .tabs button[data-mode="today"]::before { content: '🌞 '; }
+  body.kids .tabs button[data-mode="explore"]::before { content: '🌍 '; }
+  body.kids .tabs button[data-mode="quiz"]::before { content: '❓ '; }
+  body.kids .tabs button[data-mode="puzzle"]::before { content: '🧩 '; }
+  body.kids .tabs button[data-mode="passport"]::before { content: '🛂 '; }
+  body.kids .tabs button.active { transform: translateY(-2px) scale(1.04); box-shadow: 0 5px 0 rgba(0,0,0,0.18); outline: 3px solid #fff; }
+  body.kids .pane, body.kids .view { background: transparent; }
+  body.kids .pane.list, body.kids .pane.details { background: rgba(255,255,255,0.72); }
+  body.kids .detail-name { font-size: 30px; font-weight: 900; }
+  body.kids .wow-fact { background: #fff3bf; border: 3px solid #ffd43b; border-radius: 20px; box-shadow: 0 4px 0 #ffd43b; }
+  body.kids .tour-cta { background: #e3f6ff; border: 3px solid #4dabf7; border-radius: 20px; box-shadow: 0 4px 0 #4dabf7; }
+  body.kids .phrasebook { background: #ebfbee; border: 3px solid #51cf66; border-radius: 20px; box-shadow: 0 4px 0 #51cf66; }
+  body.kids .qf-item, body.kids .landmark-card, body.kids .anthem-card { border-radius: 18px; border-width: 2px; }
+  body.kids .lc-top h3, body.kids .pb-head h3 { font-size: 14px !important; letter-spacing: 0.04em; color: #1c7ed6; }
+  body.kids .btn-primary {
+    border-radius: 999px; font-weight: 900; font-size: 16px; letter-spacing: 0.02em; text-transform: none;
+    background: linear-gradient(180deg, #ffa94d, #ff7a1a); color: #fff; border: none;
+    box-shadow: 0 5px 0 #d9480f; transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  body.kids .btn-primary:active { transform: translateY(3px); box-shadow: 0 2px 0 #d9480f; }
+  body.kids .chip { border-radius: 999px; font-weight: 800; }
+  body.kids .chip.active { background: #22b8cf; border-color: #22b8cf; color: #fff; }
+  body.kids .country-item { border-radius: 14px; margin: 3px 6px; }
+  body.kids .country-item.active { background: #fff3bf; border-left-color: #ff922b; }
+  body.kids .center-card, body.kids .quiz-card { border-radius: 24px; border: 3px solid #b197fc; box-shadow: 0 6px 0 #b197fc; background: #fff; }
+  body.kids .puzzle-board { background: linear-gradient(160deg, #74c0fc, #4dabf7); border: none; border-radius: 22px; }
+  body.kids .puzzle-flag { border-color: #fff; border-radius: 16px; }
+  body.kids .puzzle-piece { border-radius: 999px; background: #fff; border: 3px solid #ffd43b; color: #2b3142; }
+  body.kids .pp-card:hover .pp-cover { transform: translateY(-4px) rotate(-2deg) scale(1.03); }
+  body.kids .tour-card { border-radius: 24px; border: 3px solid #4dabf7; }
+  body.kids .mobile-bar { background: #fff; border-top: 3px solid #ffd43b; }
+  body.kids .mobile-bar button.active { color: #ff5fa2; }
+  body.kids .today-card { border-radius: 22px; border: 3px solid; background: #fff; }
+  body.kids .today-card:nth-child(5n+1) { border-color: #ffb020; box-shadow: 0 5px 0 #ffb020; background: #fff8e1; }
+  body.kids .today-card:nth-child(5n+2) { border-color: #51cf66; box-shadow: 0 5px 0 #51cf66; background: #ebfbee; }
+  body.kids .today-card:nth-child(5n+3) { border-color: #ff6b6b; box-shadow: 0 5px 0 #ff6b6b; background: #fff0f0; }
+  body.kids .today-card:nth-child(5n+4) { border-color: #845ef7; box-shadow: 0 5px 0 #845ef7; background: #f3f0ff; }
+  body.kids .today-card:nth-child(5n+5) { border-color: #22b8cf; box-shadow: 0 5px 0 #22b8cf; background: #e3fafc; }
+  body.kids .today-go { font-weight: 900; }
+  @media (max-width: 560px) {
+    body.kids .tabs { gap: 4px; padding: 6px 6px 4px; }
+    body.kids .tabs button {
+      flex: 1 1 0; min-width: 0; padding: 6px 2px; border-radius: 16px;
+      display: flex; flex-direction: column; align-items: center; gap: 1px;
+      font-size: 11px; line-height: 1.1;
+    }
+    body.kids .tabs button::before { font-size: 20px; line-height: 1; }
+    body.kids .tabs button.active { transform: translateY(-1px); outline-width: 2px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body.kids .tabs button, body.kids .btn-primary { transition: none; }
+  }
+  .quiz-why { margin: 14px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--panel-2); border: 1px solid var(--line); font-size: 14px; line-height: 1.5; color: var(--ink); text-align: left; }
+  .quiz-why::before { content: '💡 '; }
+  /* Phones: text sized for a small screen. Labels keep the 11.5px minimum above. */
+  @media (max-width: 480px) {
+    body { font-size: 14px; }
+    .logo-name { font-size: 18px !important; }
+    .today-card h3, .view h3 { font-size: 16px; }
+    .view h2, .puzzle-top h2, .pp-head h2 { font-size: 18px; }
+    .detail-name { font-size: 22px; gap: 8px; }
+    .detail-flag { font-size: 26px; }
+    body.kids .detail-name { font-size: 24px; }
+    .wow-fact { font-size: 14px; }
+    .pb-card .pb-text { font-size: 20px; }
+    .pb-text { font-size: 17px; }
+    .quiz-prompt { font-size: 18px !important; }
+    .quiz-prompt-flag { font-size: 72px; }
+    .quiz-option { font-size: 14px; }
+    .pp-drawn-flag { font-size: 26px; }
+    .tour-card .tour-story { font-size: 15px; }
+    .tour-host-line { font-size: 13px; }
+    .lc-line, .section-body, .fact-value, .qf-body { font-size: 14px; }
+  }
+  .locked-tab { max-width: 460px; text-align: center; }
+  .locked-ic {
+    width: 96px; height: 96px; margin: 0 auto 10px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 50% 40%, rgba(212,160,86,0.28), rgba(212,160,86,0.05) 70%);
+    box-shadow: 0 0 0 1px rgba(212,160,86,0.35) inset;
+  }
+  .locked-ic svg { filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35)); }
+  .locked-tab h2 { margin: 4px 0 10px; }
+  .locked-blurb { color: var(--ink-dim); margin: 0 0 20px; line-height: 1.5; }
+  .unlock-note { font-size: 13px; color: var(--ink-dim); margin: 12px 0 0; line-height: 1.45; }
+  .one-price { display: flex; flex-direction: column; align-items: center; margin: 18px 0 14px; }
+  .one-price-amount { font-size: 36px; font-weight: 800; color: var(--accent); line-height: 1.1; }
+  .one-price-detail { font-size: 13px; color: var(--ink-dim); }
+  /* No photo for this line yet: no empty box in the tour. */
+  .tour-stage:empty { display: none; }
 </style>
 </head>
 <body class="mode-explore">
@@ -1596,8 +1699,7 @@
 <header>
   <div class="logo"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg><span class="logo-text"><span class="logo-name">Myatlastic</span><span class="logo-slogan">The world at your finger tips</span></span></div>
   <div class="header-right">
-    <span class="streak" id="streak-display"></span>
-    <button class="badge hidden" id="pro-badge">Upgrade</button>
+    <button class="badge hidden" id="pro-badge">Unlock Quiz</button>
     <button class="kids-toggle" id="kids-toggle">Kids: Off</button>
     <button class="kids-toggle" id="settings-btn" title="Settings, reading help, 2-player &amp; teacher tools" aria-label="Settings">⚙️</button>
   </div>
@@ -1680,7 +1782,6 @@
 <noscript><div style="padding:40px;color:#fff;background:#0b0e13;text-align:center;">This app requires JavaScript. Please enable it.</div></noscript>
 
 <script src="attractions.js"></script>
-<script src="puzzle-shapes.js"></script>
 <script src="voice/locales.js"></script>
 <script src="voice/phrases.js"></script>
 <script src="voice/voice.js"></script>
@@ -2444,27 +2545,7 @@ function quizOptionCount() {
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
 // Countries already opened. They stay open.
-const FREE_COUNTRIES = [
-  'Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco',
-  'Japan', 'China', 'India', 'Thailand', 'United Arab Emirates', 'South Korea',
-  'United Kingdom', 'France', 'Italy', 'Germany', 'Spain', 'Greece',
-  'United States', 'Canada', 'Mexico',
-  'Brazil', 'Argentina', 'Peru', 'Ecuador',
-  'Australia', 'New Zealand',
-  'Jamaica'
-];
 // Small countries, island nations, and microstates. All of these are open.
-const SMALL_OR_ISLAND = [
-  'Antigua and Barbuda', 'Bahamas', 'Bahrain', 'Barbados', 'Brunei', 'Cape Verde',
-  'Comoros', 'Cuba', 'Cyprus', 'Dominica', 'Dominican Republic', 'Fiji', 'Grenada',
-  'Haiti', 'Iceland', 'Ireland', 'Kiribati', 'Madagascar', 'Maldives', 'Malta',
-  'Marshall Islands', 'Mauritius', 'Micronesia', 'Nauru', 'Palau',
-  'Papua New Guinea', 'Saint Kitts and Nevis', 'Saint Lucia',
-  'Saint Vincent and the Grenadines', 'Samoa', 'São Tomé and Príncipe', 'Seychelles',
-  'Singapore', 'Solomon Islands', 'Sri Lanka', 'Timor-Leste', 'Tonga',
-  'Trinidad and Tobago', 'Tuvalu', 'Vanuatu',
-  'Andorra', 'Liechtenstein', 'Luxembourg', 'Monaco', 'San Marino', 'Vatican City'
-];
 
 /* ============================================================
  * PLATFORM — the iPhone/iPad app is the real product; the web is a
@@ -2477,7 +2558,7 @@ const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
-const WEB_APP_ONLY = ['compare', 'currency'];
+const WEB_APP_ONLY = [];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
 window.__getApp = () => { try { window.open(APP_STORE_URL, '_blank', 'noopener'); } catch (e) {} };
 // Friendly "this lives in the app" wall shown for web-gated features.
@@ -2497,30 +2578,43 @@ function homeCountry() {
     return COUNTRIES.find(c => c.n === name) || null;
   } catch (e) { return null; }
 }
-function isFree(c) {
-  if (!c) return false;
-  if (FREE_COUNTRIES.indexOf(c.n) !== -1) return true;
-  if (SMALL_OR_ISLAND.indexOf(c.n) !== -1) return true;
-  const cont = (c.c || '').split(' / ')[0];
-  if (cont === 'Caribbean' || cont === 'Oceania') return true;
-  const peers = COUNTRIES.filter(x => x.isCountry !== false && (x.c || '').split(' / ')[0] === cont)
-    .map(x => x.n)
-    .sort((a, b) => a.localeCompare(b));
-  return peers.slice(0, 7).indexOf(c.n) !== -1;
-}
 // Sovereign = the 195 (193 UN members + Vatican + Palestine). Kosovo & Taiwan are tagged isCountry:false.
 function isSovereign(c) { return c.isCountry !== false; }
 const SOVEREIGN_COUNTRIES = COUNTRIES.filter(isSovereign);
-function canView(c) { return state.isPro || isFree(c); }
-function canCompare() { return state.isPro; }
-function canQuiz() {
-  if (state.isPro) return true;
-  try {
-    const today = todaySeed();
-    const lastDay = parseInt(localStorage.getItem('myatlastic_quiz_day') || '0', 10);
-    const count = lastDay === today ? parseInt(localStorage.getItem('myatlastic_quiz_count') || '0', 10) : 0;
-    return count < 3;
-  } catch (e) { return true; }
+// Everything is free except the Quiz and Puzzle tabs, which one $29.99
+// purchase unlocks for good.
+const UNLOCK_PRICE = '$29.99';
+function canView(c) { return true; }
+function canCompare() { return true; }
+function canQuiz() { return state.isPro; }
+function canPuzzle() { return state.isPro; }
+
+// A drawn padlock (same on every device, unlike the emoji).
+function lockIconSvg() {
+  return '<svg viewBox="0 0 64 64" width="64" height="64" focusable="false">' +
+    '<defs>' +
+      '<linearGradient id="lk-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c77a"/><stop offset="1" stop-color="#c98a2e"/></linearGradient>' +
+      '<linearGradient id="lk-shackle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cfd6e0"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#9aa4b2"/></linearGradient>' +
+    '</defs>' +
+    '<path d="M20 29v-8a12 12 0 0 1 24 0v8" fill="none" stroke="url(#lk-shackle)" stroke-width="6" stroke-linecap="round"/>' +
+    '<rect x="12" y="27" width="40" height="31" rx="8" fill="url(#lk-body)"/>' +
+    '<rect x="12" y="27" width="40" height="7" rx="3.5" fill="#ffffff" opacity="0.22"/>' +
+    '<circle cx="32" cy="41" r="4.5" fill="#5a3a0c"/>' +
+    '<path d="M30 43.5h4l1.2 7.5h-6.4z" fill="#5a3a0c"/>' +
+  '</svg>';
+}
+
+// Shown in place of the Quiz or Puzzle tab until they're unlocked.
+function lockedTabHtml(what, blurb) {
+  const cta = IS_WEB
+    ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
+      '<p class="unlock-note">Unlock it in the iPhone &amp; iPad app: ' + UNLOCK_PRICE + ' once.</p>'
+    : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">Unlock Quiz &amp; Puzzle · ' + UNLOCK_PRICE + '</button>' +
+      '<p class="unlock-note">One payment, yours forever. Everything else in Myatlastic is free.</p>';
+  return '<div class="center-card quiz-card locked-tab">' +
+    '<div class="locked-ic" aria-hidden="true">' + lockIconSvg() + '</div>' +
+    '<h2>' + what + '</h2>' +
+    '<p class="locked-blurb">' + blurb + '</p>' + cta + '</div>';
 }
 function recordQuiz() {
   try {
@@ -2537,8 +2631,6 @@ function todaySeed() {
   return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
 }
 function getDaily() { return SOVEREIGN_COUNTRIES[todaySeed() % SOVEREIGN_COUNTRIES.length]; }
-function getStreak() { try { return parseInt(localStorage.getItem('myatlastic_streak') || '0', 10); } catch (e) { return 0; } }
-function setStreak(n) { try { localStorage.setItem('myatlastic_streak', String(n)); } catch (e) {} }
 function getLastDailyDay() { try { return parseInt(localStorage.getItem('myatlastic_lastday') || '0', 10); } catch (e) { return 0; } }
 function setLastDailyDay(d) { try { localStorage.setItem('myatlastic_lastday', String(d)); } catch (e) {} }
 
@@ -2666,7 +2758,7 @@ function sayQuietly(text) {
 
 /* ---------- Phrasebook: country -> language -> phrase -> play ---------- */
 const phraseChoice = {};      // country -> locale
-let phraseCategory = 'greet';
+let phraseChosen = 'hello';    // phrase id shown in the phrasebook
 
 function phraseLanguages(c) {
   return languagesOf(c).filter(l => l.lang !== 'en');
@@ -2680,7 +2772,7 @@ function phraseEntry(book, locale, id) {
 function phrasebookHtml(c) {
   if (phraseLanguages(c).length) {
     return '<section class="phrasebook" aria-labelledby="pb-title">' +
-      '<div class="pb-head"><h3 id="pb-title">Phrasebook</h3><span class="pb-hint">Tap a speaker to hear it</span></div>' +
+      '<div class="pb-head"><h3 id="pb-title">Phrasebook</h3></div>' +
       '<div id="pb-body" data-country="' + escapeHtml(c.n) + '"><div class="pb-note">Loading phrases…</div></div>' +
       '</section>';
   }
@@ -2710,6 +2802,8 @@ function mountPhrasebook(c) {
 
 function paintPhrasebook(root, c, langs, lang, book) {
   const speakable = Voice.canSpeak(lang.locale) !== false;
+  const phrases = PhraseCatalog.PHRASES.filter(p => { const e = phraseEntry(book, lang.locale, p.id); return e && e.text; });
+  if (!phrases.find(p => p.id === phraseChosen)) phraseChosen = phrases.length ? phrases[0].id : '';
   let html = '';
   if (langs.length > 1) {
     html += '<div class="pb-langs" role="radiogroup" aria-label="Phrasebook language">' +
@@ -2718,33 +2812,36 @@ function paintPhrasebook(root, c, langs, lang, book) {
         '<span lang="' + escapeHtml(l.locale) + '">' + escapeHtml(l.native) + '</span>' +
         (l.native !== l.name ? '<small>' + escapeHtml(l.name) + '</small>' : '') + '</button>').join('') +
       '</div>';
-  } else {
-    html += '<div class="pb-single"><span lang="' + escapeHtml(lang.locale) + '">' + escapeHtml(lang.native) + '</span>' +
-      (lang.native !== lang.name ? ' · ' + escapeHtml(lang.name) : '') + '</div>';
   }
-  html += '<div class="pb-cats" role="tablist" aria-label="Phrase topics">' +
-    PhraseCatalog.CATEGORIES.map(cat => '<button type="button" role="tab" class="pb-cat' + (cat.id === phraseCategory ? ' on' : '') + '"' +
-      ' aria-selected="' + (cat.id === phraseCategory) + '" data-cat="' + cat.id + '">' + escapeHtml(cat.label) + '</button>').join('') +
-    '</div>';
-  if (!speakable) {
-    html += '<div class="pb-note">Audio in ' + escapeHtml(lang.name) + " isn't available yet. The written phrases and pronunciation guide are all here.</div>";
-  }
-  html += '<div class="pb-list" role="tabpanel">';
-  PhraseCatalog.PHRASES.filter(p => p.cat === phraseCategory).forEach(p => {
-    const e = phraseEntry(book, lang.locale, p.id);
-    if (!e || !e.text) return;
-    const english = p.n ? p.n + ' · ' + p.en : p.en;
-    html += '<div class="pb-row">' +
+  // One dropdown: pick a word or phrase and hear it.
+  html += '<label class="pb-pick-label" for="pb-pick">' + (speakable ? 'Pick a phrase to hear it in ' : 'Pick a phrase in ') + escapeHtml(lang.name) + '</label>' +
+    '<select id="pb-pick" class="pb-pick">' +
+    PhraseCatalog.CATEGORIES.map(cat => {
+      const items = phrases.filter(p => p.cat === cat.id);
+      if (!items.length) return '';
+      return '<optgroup label="' + escapeHtml(cat.label) + '">' + items.map(p => {
+        const e = phraseEntry(book, lang.locale, p.id);
+        const english = p.n ? p.n + ' · ' + p.en : p.en;
+        return '<option value="' + p.id + '"' + (p.id === phraseChosen ? ' selected' : '') + '>' + escapeHtml(english + ' — ' + e.text) + '</option>';
+      }).join('') + '</optgroup>';
+    }).join('') +
+    '</select>';
+  const p = phrases.find(x => x.id === phraseChosen);
+  const e = p && phraseEntry(book, lang.locale, p.id);
+  if (e) {
+    html += '<div class="pb-card">' +
       '<div class="pb-main">' +
-        '<div class="pb-en">' + escapeHtml(english) + '</div>' +
+        '<div class="pb-en">' + escapeHtml(p.n ? p.n + ' · ' + p.en : p.en) + '</div>' +
         '<div class="pb-text" lang="' + escapeHtml(lang.locale) + '" dir="auto">' + escapeHtml(e.text) + '</div>' +
         (e.roman ? '<div class="pb-roman">' + escapeHtml(e.roman) + '</div>' : '') +
         (e.say ? '<div class="pb-say">say it: <b>' + escapeHtml(e.say) + '</b></div>' : '') +
       '</div>' +
-      (speakable ? voiceButton(e.text, lang.locale, 'Play "' + p.en + '" in ' + lang.name) : '') +
+      (speakable ? voiceButton(e.text, lang.locale, 'Hear "' + p.en + '" again in ' + lang.name, 'pb-again') : '') +
       '</div>';
-  });
-  html += '</div>';
+  }
+  if (!speakable) {
+    html += '<div class="pb-note">Audio in ' + escapeHtml(lang.name) + " isn't available yet. The written phrase and pronunciation guide are here.</div>";
+  }
   root.innerHTML = html;
   root.querySelectorAll('.pb-lang').forEach(b => {
     b.onclick = () => {
@@ -2753,182 +2850,55 @@ function paintPhrasebook(root, c, langs, lang, book) {
       mountPhrasebook(c);
     };
   });
-  root.querySelectorAll('.pb-cat').forEach(b => {
-    b.onclick = () => {
-      phraseCategory = b.dataset.cat;
-      paintPhrasebook(root, c, langs, lang, book);
-      const again = root.querySelector('.pb-cat.on');
-      if (again) again.focus();
-    };
-  });
+  const pick = root.querySelector('#pb-pick');
+  pick.onchange = () => {
+    phraseChosen = pick.value;
+    paintPhrasebook(root, c, langs, lang, book);
+    // Say it straight away, the way the user asked for it.
+    const again = root.querySelector('.pb-again');
+    if (again) again.click();
+    const sel = root.querySelector('#pb-pick');
+    if (sel) sel.focus();
+  };
 }
 
-/* ---------- Country narration: a short spoken visit ---------- */
-let narrationPref = 'local';  // 'local' | 'en'
-try { narrationPref = localStorage.getItem('myatlastic_narration_lang') || 'local'; } catch (e) {}
-
-// The books this device can actually hear for a narration, English first.
-function narrationChoices(c, data) {
-  return (data.languages || ['en']).filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
-}
-
-function pickNarrationBook(c, data, choices) {
-  const local = choices.filter(b => b !== 'en');
-  if (narrationPref !== 'en' && local.length) return local[0];
-  return choices.indexOf('en') !== -1 ? 'en' : (choices[0] || 'en');
-}
-
+/* ---------- The tour: one spoken visit per country ---------- */
 function narrationParts(c, data, book) {
   const locale = localeForBook(c, book);
   return (data.segments || []).map(s => ({ text: s[book] || s.en, locale: book === 'en' ? englishLocaleFor(c) : locale }));
 }
 
-function listenCardHtml(c) {
-  return '<section class="listen-card" id="listen-card" data-country="' + escapeHtml(c.n) + '" aria-labelledby="lc-title">' +
-    '<div class="lc-top"><h3 id="lc-title">Listen: a visit to ' + escapeHtml(c.n) + '</h3><span class="lc-len">2–3 min</span></div>' +
-    '<div class="lc-body"><div class="pb-note">Loading…</div></div>' +
+// The tour speaks the country's own language wherever a voice can say it.
+// missing: the local book that has no voice yet (so the visit is in English).
+function tourBook(c, data) {
+  const localBooks = (data.languages || []).filter(b => b !== 'en');
+  const voiced = localBooks.filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
+  return { book: voiced[0] || 'en', missing: localBooks.length && !voiced.length ? localBooks[0] : '' };
+}
+
+function tourCardHtml(c) {
+  const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
+  return '<section class="tour-cta" id="tour-cta" data-country="' + escapeHtml(c.n) + '" aria-labelledby="tc-title">' +
+    '<div class="lc-top"><h3 id="tc-title">A spoken visit to ' + escapeHtml(c.n) + '</h3><span class="lc-len">2–3 min</span></div>' +
+    '<p class="tour-cta-sub">A local guide shows you around. Pictures follow the story, and you can stop to ask a question.</p>' +
+    '<button type="button" class="btn-primary tour-launch" onclick="window.__myatlasticTour(' + cq + ')">▶ Play the tour</button>' +
     '</section>';
 }
 
-const narration = { country: null, book: null, data: null, index: 0, state: 'idle' };
-
-function mountListen(c) {
-  const card = $('listen-card');
-  if (!card || card.dataset.country !== c.n) return;
-  Content.narration(c.n).then(data => {
-    const live = $('listen-card');
-    if (!live || live.dataset.country !== c.n) return;
-    if (!data) { live.querySelector('.lc-body').innerHTML = '<div class="pb-note">This narration couldn\'t load. Check your connection.</div>'; return; }
-    if (narration.country !== c.n) {
-      narration.country = c.n; narration.data = data; narration.index = 0; narration.state = 'idle';
-      narration.book = null;
-    }
-    paintListen(live, c, data);
-    // Have the opening line ready, so Listen or the tour starts at once.
-    Voice.status().then(() => {
-      if (narration.country === c.n && !Voice.playing()) Voice.prefetch(narrationParts(c, data, narration.book).slice(0, 1));
-    });
+// Say which language the tour speaks, and have its first line ready.
+function mountTourCard(c) {
+  Promise.all([Content.narration(c.n), Voice.status()]).then(([data]) => {
+    const card = $('tour-cta');
+    if (!data || !card || card.dataset.country !== c.n) return;
+    const t = tourBook(c, data);
+    const sub = card.querySelector('.tour-cta-sub');
+    const said = t.book === 'en'
+      ? (t.missing ? 'In English for now: ' + languageLabel(localeForBook(c, t.missing)) + ' audio is coming.' : 'In English.')
+      : 'In ' + languageLabel(localeForBook(c, t.book)) + ', with English subtitles.';
+    if (sub) sub.textContent = said + ' A local guide shows you around, pictures follow the story, and you can stop to ask a question.';
+    if (!Voice.playing()) Voice.prefetch(narrationParts(c, data, t.book).slice(0, 1));
   });
 }
-
-function paintListen(card, c, data) {
-  const choices = narrationChoices(c, data);
-  if (!narration.book || choices.indexOf(narration.book) === -1) narration.book = pickNarrationBook(c, data, choices);
-  const book = narration.book;
-  const seg = (data.segments || [])[narration.index] || data.segments[0] || {};
-  const active = narration.state === 'playing' || narration.state === 'loading';
-  let html = '';
-  if (choices.length > 1) {
-    html += '<div class="lc-langs" role="radiogroup" aria-label="Narration language">' +
-      choices.map(b => {
-        const loc = localeForBook(c, b);
-        const n = Locales.nameOf(loc);
-        return '<button type="button" role="radio" class="pb-lang' + (b === book ? ' on' : '') + '" aria-checked="' + (b === book) + '" data-book="' + escapeHtml(b) + '">' +
-          '<span lang="' + escapeHtml(loc) + '">' + escapeHtml(b === 'en' ? 'English' : n.native) + '</span></button>';
-      }).join('') + '</div>';
-  }
-  if (!choices.length) {
-    html += '<div class="pb-note">' + voiceProblem({}) + '</div>';
-  }
-  html += '<div class="lc-controls">' +
-    '<button type="button" class="btn-primary lc-play" aria-label="' + (active ? 'Pause narration' : (narration.state === 'paused' ? 'Resume narration' : 'Play narration')) + '"' + (choices.length ? '' : ' disabled') + '>' +
-      (narration.state === 'loading' ? '<span class="vb-spin on" aria-hidden="true"></span> Starting…' : active ? '❚❚ Pause' : narration.state === 'paused' ? '▶ Resume' : '▶ Listen') + '</button>' +
-    '<button type="button" class="back-btn lc-stop" aria-label="Stop narration"' + (narration.state === 'idle' || narration.state === 'ended' ? ' disabled' : '') + '>Stop</button>' +
-    '<span class="lc-progress" aria-hidden="true">' + (narration.index + 1) + ' / ' + (data.segments || []).length + '</span>' +
-    '</div>';
-  html += '<p class="lc-line" lang="' + escapeHtml(localeForBook(c, book)) + '" dir="auto">' + escapeHtml(seg[book] || seg.en || '') + '</p>';
-  if (book !== 'en' && seg.en) html += '<p class="lc-sub">' + escapeHtml(seg.en) + '</p>';
-  if (narration.state === 'ended' && (data.next || []).length) {
-    html += '<div class="lc-next"><span>Where next?</span>' + data.next.map(n => {
-      const nc = COUNTRIES.find(x => x.n === n);
-      return nc ? '<button type="button" class="chip lc-go" data-go="' + escapeHtml(n) + '">' + (nc.flag || '') + ' ' + escapeHtml(n) + '</button>' : '';
-    }).join('') + '</div>';
-  }
-  card.querySelector('.lc-body').innerHTML = html;
-  card.querySelectorAll('.lc-langs .pb-lang').forEach(b => {
-    b.onclick = () => {
-      narration.book = b.dataset.book;
-      narrationPref = narration.book === 'en' ? 'en' : 'local';
-      try { localStorage.setItem('myatlastic_narration_lang', narrationPref); } catch (e) {}
-      const wasPlaying = narration.state === 'playing' || narration.state === 'loading' || narration.state === 'paused';
-      if (wasPlaying) startNarration(c, data, narration.index);
-      else paintListen(card, c, data);
-    };
-  });
-  const play = card.querySelector('.lc-play');
-  if (play) play.onclick = () => {
-    if (narration.state === 'playing') { Voice.pause(); return; }
-    if (narration.state === 'loading') { Voice.stop(); return; }
-    if (narration.state === 'paused' && Voice.playing('narration:' + c.n)) { Voice.resume(); return; }
-    startNarration(c, data, narration.state === 'ended' ? 0 : narration.index);
-  };
-  const stopBtn = card.querySelector('.lc-stop');
-  if (stopBtn) stopBtn.onclick = () => { Voice.stop(); narration.index = 0; narration.state = 'idle'; paintListen(card, c, data); };
-  card.querySelectorAll('.lc-go').forEach(b => { b.onclick = () => goToCountry(b.dataset.go); });
-}
-
-function startNarration(c, data, from) {
-  const owner = 'narration:' + c.n;
-  narration.country = c.n;
-  narration.data = data;
-  narration.index = from || 0;
-  const parts = narrationParts(c, data, narration.book);
-  Voice.play(parts, {
-    owner: owner,
-    startAt: narration.index,
-    onPart: (i) => {
-      narration.index = i;
-      const card = $('listen-card');
-      if (card && card.dataset.country === c.n) {
-        const seg = data.segments[i] || {};
-        const line = card.querySelector('.lc-line');
-        const sub = card.querySelector('.lc-sub');
-        const prog = card.querySelector('.lc-progress');
-        if (line) line.textContent = seg[narration.book] || seg.en || '';
-        if (sub) sub.textContent = seg.en || '';
-        if (prog) prog.textContent = (i + 1) + ' / ' + data.segments.length;
-      }
-    },
-    onState: (s, info) => {
-      if (narration.country !== c.n) return;
-      if (s === 'stopped' && Voice.playing(owner)) return;
-      narration.state = s === 'stopped' ? (narration.index ? 'paused-stopped' : 'idle') : s;
-      if (narration.state === 'paused-stopped') narration.state = 'idle';
-      if (s === 'ended') narration.index = data.segments.length - 1;
-      if (s === 'error') voiceLive(voiceProblem(info));
-      if (s === 'ended') voiceLive('Narration finished. Pick where to go next.');
-      const card = $('listen-card');
-      if (card && card.dataset.country === c.n) {
-        const focusPlay = document.activeElement && document.activeElement.classList.contains('lc-play');
-        paintListen(card, c, data);
-        if (focusPlay) { const p = card.querySelector('.lc-play'); if (p) p.focus(); }
-      }
-    }
-  });
-}
-
-// Open another country from a "where next" suggestion.
-function goToCountry(name) {
-  const c = COUNTRIES.find(x => x.n === name);
-  if (!c) return;
-  Voice.stop();
-  if (state.mode !== 'explore') setMode('explore');
-  state.activeCountry = c;
-  renderList();
-  renderDetails();
-  if (globeAPI) globeAPI.focus(c);
-  if (window.innerWidth <= 900) setMobilePane('details');
-}
-
-window.__myatlasticReadAloud = (countryName) => {
-  const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
-  Content.narration(c.n).then(data => {
-    if (!data) return;
-    if (!narration.book || narration.country !== c.n) narration.book = pickNarrationBook(c, data, narrationChoices(c, data));
-    startNarration(c, data, 0);
-  });
-};
 
 function fillTourLine(tpl, vars) {
   const keys = tpl.match(/\{(\w+)\}/g) || [];
@@ -2974,58 +2944,52 @@ function isPhotoUrl(url) {
   return /\.(jpe?g|png|webp)$/.test(path) || /\/\d+px-/.test(path);
 }
 
-function wikiPicture(title) {
-  const q = String(title || '').trim();
-  if (!q) return Promise.resolve(null);
-  const page = encodeURIComponent(q);
-  return fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/' + page)
-    .then(r => r.ok ? r.json() : null)
-    .then(j => {
-      const items = (j && j.items) || [];
-      for (let i = 0; i < items.length; i++) {
-        const it = items[i];
-        const name = ((it && it.title) || '').toLowerCase();
-        if (/logo|icon|flag|coat|locator|map|emblem|seal/.test(name)) continue;
-        const set = it && it.srcset;
-        const raw = (set && set.length && set[set.length - 1].src) || '';
-        const src = raw.indexOf('//') === 0 ? 'https:' + raw : raw;
-        if (isPhotoUrl(src)) return biggerWikiThumb(src);
-      }
-      return null;
-    })
-    .catch(() => null);
+/* ---------- Tour pictures: one chosen photo per narration line ----------
+   Each line's photo is picked in advance and stored with the narration
+   ("img": a Wikimedia Commons file), reviewed for children. Nothing is
+   searched while the tour plays. */
+function tourPhotoUrl(file) {
+  return 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(file) + '?width=1280';
 }
 
-function loadStoryFrames(c, stops) {
-  return Promise.all(stops.map(s => {
-    const jobs = [];
-    if (s.kicker === 'Arriving' && c.img) jobs.push(Promise.resolve(wikiImage(c.img)));
-    (s.look || []).forEach(title => jobs.push(wikiPicture(title)));
-    return Promise.all(jobs).then(urls => {
-      const seen = {};
-      s.frames = urls.filter(u => {
-        if (!u || seen[u]) return false;
-        seen[u] = true;
-        return true;
-      });
-    });
-  }));
-}
+const TOUR_MOTIONS = ['ken-in', 'pan-left', 'ken-out', 'pan-up', 'pan-right', 'pan-down'];
 
-function paintStoryFrame(url, n) {
+// Crossfade to a new photo, or give the current one a new movement.
+function paintTourPicture(url, n) {
   const stage = document.getElementById('tour-stage');
-  if (!stage || !url) return;
+  if (!stage) return;
+  const motion = TOUR_MOTIONS[n % TOUR_MOTIONS.length];
+  const src = url || (stage.lastElementChild && stage.lastElementChild.src);
+  if (!src) return;
   const img = document.createElement('img');
-  img.className = 'tour-frame ' + (n % 2 ? 'pan-b' : 'pan-a');
+  img.className = 'tour-frame ' + motion;
   img.alt = '';
-  img.src = url;
+  img.src = src;
   img.onerror = () => img.remove();
   stage.appendChild(img);
   while (stage.children.length > 2) stage.removeChild(stage.firstChild);
 }
 
-/* ---------- Tour: the narration with pictures; interrupt any time ---------- */
-let tourTimer = null;
+// Shows each line's photo as the voice reaches it; a line without one keeps
+// the last photo but gives it a new movement.
+function tourPictures(c) {
+  let data = null;
+  let shown = 0;
+  const urlFor = i => {
+    const seg = data && data.segments && data.segments[i];
+    return seg && seg.img ? tourPhotoUrl(seg.img) : null;
+  };
+  const warm = i => { const u = urlFor(i); if (u) { const im = new Image(); im.src = u; } };
+  return {
+    start(d) { data = d; warm(0); warm(1); },
+    show(i, stillCurrent) {
+      if (!data) return;
+      warm(i + 1);
+      if (!stillCurrent || stillCurrent()) paintTourPicture(urlFor(i), shown++);
+    }
+  };
+}
+
 let roomMemory = { name: '', pattern: '' };
 const roomSessions = {};
 let roomEarGen = 0;
@@ -3121,81 +3085,69 @@ function talkParts(line, session) {
   return out;
 }
 
-function tourRecognizer() {
+// Asking the guide out loud. The app uses the phone's own speech recognition
+// (Capacitor plugin); the website uses the browser's. Either way, one question.
+function nativeSpeech() {
+  return IS_NATIVE && window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.SpeechRecognition || null;
+}
+function webSpeech() {
   return window.SpeechRecognition || window.webkitSpeechRecognition || null;
 }
-
-function askMicPermission() {
-  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-    return Promise.resolve(!!tourRecognizer());
-  }
-  return navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-    stream.getTracks().forEach(track => track.stop());
-    return true;
-  }).catch(() => false);
+function canListen() {
+  const n = nativeSpeech();
+  if (n) return n.available().then(r => !!(r && r.available)).catch(() => false);
+  return Promise.resolve(!!webSpeech());
 }
 
-function listenTourMic(onText, mic, sayBox, session, beforeListen) {
-  const SR = tourRecognizer();
-  if (!SR) {
-    sayBox.placeholder = 'Type a question, then press Enter';
-    sayBox.focus();
-    return;
+// Resolves with what was said ('' if nothing). onHeard(text) shows it live.
+function listenOnce(onHeard) {
+  stopRoomEar();
+  const gen = roomEarGen;
+  const lang = Voice.englishLocale();
+  const n = nativeSpeech();
+  if (n) {
+    return n.checkPermissions().then(p => (p && p.speechRecognition === 'granted') ? p : n.requestPermissions()).then(p => {
+      if (!p || p.speechRecognition !== 'granted') throw new Error('denied');
+      let heard = '';
+      return new Promise(resolve => {
+        const handles = [];
+        const finish = () => { handles.forEach(h => h && h.remove && h.remove()); roomRec = null; resolve(heard.trim()); };
+        roomRec = { stop: () => n.stop().catch(() => {}), abort: () => { n.stop().catch(() => {}); } };
+        Promise.all([
+          n.addListener('partialResults', d => { if (gen !== roomEarGen) return; heard = (d && d.matches && d.matches[0]) || heard; onHeard(heard); }),
+          n.addListener('listeningState', d => { if (d && d.status === 'stopped') finish(); })
+        ]).then(h => handles.push.apply(handles, h));
+        n.start({ language: lang, maxResults: 1, partialResults: true, popup: false }).catch(finish);
+      });
+    });
   }
-  if (roomRec) {
-    stopRoomEar();
-    mic.classList.remove('on');
-    mic.setAttribute('aria-pressed', 'false');
-    sayBox.placeholder = 'Ask, or name a country';
-    return;
-  }
-  beforeListen();
-  sayBox.placeholder = 'Listening…';
-  mic.classList.add('on');
-  mic.setAttribute('aria-pressed', 'true');
-  const done = (hint) => {
-    mic.classList.remove('on');
-    mic.setAttribute('aria-pressed', 'false');
-    sayBox.placeholder = hint;
-  };
-  const start = () => {
-    if (!document.getElementById('tour-overlay')) return;
-    stopRoomEar();
-    const gen = roomEarGen;
+  const SR = webSpeech();
+  if (!SR) return Promise.reject(new Error('unsupported'));
+  return new Promise((resolve, reject) => {
     const rec = new SR();
     roomRec = rec;
     rec.continuous = false;
     rec.interimResults = true;
-    rec.lang = Voice.englishLocale();
+    rec.lang = lang;
     let heard = '';
     rec.onresult = (ev) => {
       if (gen !== roomEarGen) return;
       let next = '';
       for (let i = ev.resultIndex; i < ev.results.length; i++) next += ev.results[i][0].transcript || '';
       heard = next.trim();
-      if (heard) sayBox.value = heard;
+      onHeard(heard);
     };
-    rec.onerror = () => { if (gen === roomEarGen) done('Try the mic again, or type a question'); };
-    rec.onend = () => {
-      if (gen !== roomEarGen) return;
-      roomRec = null;
-      done('Ask, or name a country');
-      const said = (sayBox.value || heard).trim();
-      if (!said || roomEcho(said, session)) return;
-      sayBox.value = '';
-      onText(said);
-    };
-    try { rec.start(); } catch (e) { roomRec = null; done('Type a question, then press Enter'); sayBox.focus(); }
-  };
-  askMicPermission().then(ok => {
-    if (!ok) { done('Allow the microphone, or type a question'); sayBox.focus(); return; }
-    start();
+    rec.onerror = (ev) => { if (ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')) reject(new Error('denied')); };
+    rec.onend = () => { if (roomRec === rec) roomRec = null; resolve(gen === roomEarGen ? heard : ''); };
+    try { rec.start(); } catch (e) { roomRec = null; reject(e); }
   });
 }
 
 window.__myatlasticTour = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c || !window.RoomTalk) return;
+  const previous = document.getElementById('tour-overlay');
+  if (previous && previous.__close) previous.__close(true);
   stopRoomEar();
   Voice.stop();
   setMode('explore');
@@ -3203,19 +3155,18 @@ window.__myatlasticTour = (countryName) => {
   state.activeCountry = c;
   renderList();
   renderDetails();
-  if (globeAPI) globeAPI.focus(c);
+  document.body.classList.add('touring');
+  if (globeAPI) (globeAPI.tourFocus ? globeAPI.tourFocus(c) : globeAPI.focus(c));
 
   const animal = animalFor(c) || ['guide', '🐾'];
   const placeNow = landmarkFor(c) || {};
   const local = languagesOf(c).find(l => l.lang !== 'en');
-  const hostLang = local && ANIMAL_HOST[local.lang] ? local.lang : 'en';
+  // Animal and place names only exist in English, so the host line stays in
+  // English rather than mixing them into another language's sentence.
+  const hostLang = 'en';
   const animalName = String(animal[0] || 'guide').replace(/\s*\([^)]*\)/g, '').trim();
   const host = fillTourLine(ANIMAL_HOST[hostLang] || ANIMAL_HOST.en, { animal: animalName, place: placeNow.name || c.n });
-  const stop = {
-    kicker: c.n,
-    look: [placeNow.name, c.n, animal[0], c.cap].filter(Boolean),
-    frames: []
-  };
+  const pictures = tourPictures(c);
 
   const old = document.getElementById('tour-overlay');
   if (old) old.remove();
@@ -3224,18 +3175,6 @@ window.__myatlasticTour = (countryName) => {
   overlay.className = 'tour-overlay';
   document.body.appendChild(overlay);
   const opener = document.activeElement;
-
-  loadStoryFrames(c, [stop]).then(() => {
-    if (!overlay.isConnected) return;
-    let frameN = 0;
-    const spin = () => {
-      if (!overlay.isConnected) return;
-      if (stop.frames.length) paintStoryFrame(stop.frames[frameN % stop.frames.length], frameN);
-      frameN++;
-      tourTimer = setTimeout(spin, 8000);
-    };
-    spin();
-  });
 
   overlay.innerHTML =
     '<div class="tour-card" role="dialog" aria-modal="true" aria-label="A visit to ' + escapeHtml(c.n) + '">' +
@@ -3251,8 +3190,9 @@ window.__myatlasticTour = (countryName) => {
       '<p class="tour-note" hidden></p>' +
       '<div class="tour-next-row" hidden></div>' +
       '<div class="tour-talk">' +
-        '<input id="tour-say" type="text" placeholder="Ask, or name a country" aria-label="Ask the guide, or name a country" autocomplete="off" enterkeyhint="send" />' +
-        '<button type="button" class="back-btn tour-mic" id="tour-mic" aria-pressed="false">Mic</button>' +
+        '<button type="button" class="tour-ask" id="tour-mic" aria-pressed="false">🎤 Ask the guide</button>' +
+        '<p class="tour-ask-hint" id="tour-ask-hint">Tap, then ask. Try “How do I say thank you?” or “Take me to Japan”.</p>' +
+        '<input id="tour-say" type="text" hidden placeholder="Type a question, then press Enter" aria-label="Type a question for the guide" autocomplete="off" enterkeyhint="send" />' +
       '</div>' +
       '<div class="tour-actions">' +
         '<button type="button" class="back-btn" id="tour-again">Again</button>' +
@@ -3273,10 +3213,14 @@ window.__myatlasticTour = (countryName) => {
     mainBtn.textContent = label;
     mainBtn.setAttribute('aria-label', label + ' the visit');
   };
+  // Small English translation under anything said in another language.
+  const setSub = (english) => {
+    subEl.innerHTML = english ? '<span class="tour-sub-label">English</span> ' + escapeHtml(english) : '';
+  };
   const caption = (seg) => {
     storyEl.textContent = (seg && (seg[tour.book] || seg.en)) || '';
     storyEl.setAttribute('lang', localeForBook(c, tour.book));
-    subEl.textContent = tour.book !== 'en' && seg && seg.en ? seg.en : '';
+    setSub(tour.book !== 'en' && seg && seg.en ? seg.en : '');
   };
   const showNext = () => {
     const next = (tour.data && tour.data.next) || [];
@@ -3300,6 +3244,7 @@ window.__myatlasticTour = (countryName) => {
         tour.index = i;
         tour.session.narrIndex = i;
         caption(tour.data.segments[i]);
+        pictures.show(i, () => overlay.isConnected && tour.index === i);
         tour.session.spoken.push(tour.data.segments[i][tour.book] || '');
       },
       onState: (s, info) => {
@@ -3307,7 +3252,7 @@ window.__myatlasticTour = (countryName) => {
         if (s === 'stopped' && Voice.playing()) return;
         tour.mode = s === 'ended' || s === 'stopped' || s === 'error' ? 'idle' : s;
         if (s === 'ended') { tour.session.narrIndex = 0; showNext(); }
-        if (s === 'error') { storyEl.textContent = voiceProblem(info); subEl.textContent = ''; }
+        if (s === 'error') { storyEl.textContent = voiceProblem(info); setSub(''); }
         setMain();
       }
     });
@@ -3326,7 +3271,9 @@ window.__myatlasticTour = (countryName) => {
     });
     storyEl.textContent = lineForScreen(clean[0]);
     storyEl.removeAttribute('lang');
-    subEl.textContent = '';
+    const lp = tour.session.lastPhrase;
+    const teaches = lp && lp.native && lp.en && lp.native !== lp.en && clean.some(l => l.indexOf('{{p:' + lp.native + '}}') !== -1);
+    setSub(teaches ? '“' + lp.native + '” means “' + lp.en.replace(/[.]$/, '') + '”' : '');
     Voice.play(parts, {
       owner: 'talk:' + c.n,
       onPart: (i) => { storyEl.textContent = screens[i] || storyEl.textContent; },
@@ -3340,15 +3287,16 @@ window.__myatlasticTour = (countryName) => {
     });
   };
 
-  const close = () => {
-    if (tourTimer) clearTimeout(tourTimer);
-    tourTimer = null;
+  const close = (switching) => {
     stopRoomEar();
     Voice.stop();
+    if (globeAPI && globeAPI.clearTourFocus) globeAPI.clearTourFocus();
+    if (!switching) document.body.classList.remove('touring');
     document.removeEventListener('keydown', onKey);
     if (overlay.parentNode) overlay.remove();
-    if (opener && opener.focus) opener.focus();
+    if (!switching && opener && opener.focus) opener.focus();
   };
+  overlay.__close = close;
   const onKey = (ev) => { if (ev.key === 'Escape') close(); };
   document.addEventListener('keydown', onKey);
 
@@ -3374,6 +3322,13 @@ window.__myatlasticTour = (countryName) => {
     playNarration(tour.index);
   };
   const sayBox = $('tour-say');
+  const mic = $('tour-mic');
+  const hint = $('tour-ask-hint');
+  const typeInstead = (why) => {
+    sayBox.hidden = false;
+    hint.textContent = why;
+    sayBox.focus();
+  };
   sayBox.addEventListener('keydown', (ev) => {
     if (ev.key !== 'Enter') return;
     ev.preventDefault();
@@ -3382,8 +3337,33 @@ window.__myatlasticTour = (countryName) => {
     sayBox.value = '';
     onUser(text);
   });
-  const mic = $('tour-mic');
-  mic.onclick = () => listenTourMic(onUser, mic, sayBox, tour.session || { spoken: [] }, () => Voice.stop());
+  canListen().then(ok => { if (!ok && overlay.isConnected) { mic.hidden = true; typeInstead('Type a question for the guide, or name a country.'); } });
+  mic.onclick = () => {
+    if (roomRec) { const r = roomRec; try { r.stop(); } catch (e) {} return; }
+    Voice.stop();
+    mic.classList.add('on');
+    mic.setAttribute('aria-pressed', 'true');
+    mic.textContent = '● Listening… tap when done';
+    hint.textContent = 'Listening…';
+    const reset = () => {
+      mic.classList.remove('on');
+      mic.setAttribute('aria-pressed', 'false');
+      mic.textContent = '🎤 Ask the guide';
+    };
+    listenOnce(heard => { hint.textContent = '“' + heard + '”'; }).then(said => {
+      reset();
+      if (!overlay.isConnected) return;
+      if (!said || roomEcho(said, tour.session || { spoken: [] })) { hint.textContent = 'I didn’t catch that. Tap and try again.'; return; }
+      hint.textContent = 'You asked: “' + said + '”';
+      onUser(said);
+    }, err => {
+      reset();
+      if (!overlay.isConnected) return;
+      typeInstead(err && err.message === 'denied'
+        ? 'Microphone access is off. Turn it on in Settings, or type your question.'
+        : 'The microphone isn’t available here. Type your question instead.');
+    });
+  };
   overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
   mainBtn.focus();
 
@@ -3392,18 +3372,16 @@ window.__myatlasticTour = (countryName) => {
     tour.session = bootRoom(c, book);
     if (!data) { storyEl.textContent = "This visit couldn't load. Check your connection."; return; }
     tour.data = data;
-    // The tour always speaks the country's own language. English only where
-    // English is the local language, or no voice can say the local one yet.
-    const localBooks = (data.languages || []).filter(b => b !== 'en');
-    const voiced = localBooks.filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
-    tour.book = voiced[0] || 'en';
-    if (localBooks.length && !voiced.length) {
+    const chosen = tourBook(c, data);
+    tour.book = chosen.book;
+    if (chosen.missing) {
       const note = overlay.querySelector('.tour-note');
       note.hidden = false;
-      note.textContent = languageLabel(localeForBook(c, localBooks[0])) + " audio isn't available yet, so this visit is in English.";
+      note.textContent = languageLabel(localeForBook(c, chosen.missing)) + " audio isn't available yet, so this visit is in English.";
     }
     tour.index = tour.session.narrIndex || 0;
     caption(data.segments[tour.index]);
+    pictures.start(data);
     playNarration(tour.index);
   });
 };
@@ -3460,6 +3438,9 @@ function setMode(newMode) {
 }
 
 function setMobilePane(pane) {
+  // The globe is always visible on small screens; asking for it keeps
+  // whichever of the list or details is showing below.
+  if (pane === 'globe') pane = state.mobilePane === 'details' ? 'details' : 'list';
   state.mobilePane = pane;
   document.querySelectorAll('#view-explore .pane').forEach(p => {
     const matches = (
@@ -3472,9 +3453,7 @@ function setMobilePane(pane) {
   document.querySelectorAll('.mobile-bar button').forEach(b => {
     b.classList.toggle('active', b.dataset.pane === pane);
   });
-  if (pane === 'globe' && globeAPI && globeAPI.resize) {
-    requestAnimationFrame(() => globeAPI.resize());
-  }
+  if (globeAPI && globeAPI.resize) requestAnimationFrame(() => globeAPI.resize());
 }
 
 /* ============================================================
@@ -3583,15 +3562,16 @@ function renderDetails() {
     return;
   }
 
-  const free = canView(c);
   const imgUrl = wikiImage(c.img);
 
   let html = '';
   recordCountryView(c.n);
   html += '<button class="back-btn detail-back" onclick="setMobilePane(\'list\')">← Back to list</button>';
-  html += '<div class="detail-eyebrow" style="display:flex;justify-content:space-between;align-items:center">' +
-    '<span>' + escapeHtml(c.c) + (free ? '' : ' · Pro preview') + '</span>' +
-    '<div style="display:flex;gap:6px">' +
+  html += '<div class="detail-eyebrow" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:space-between;align-items:center">' +
+    '<span>' + escapeHtml(c.c) + '</span>' +
+    '<div style="display:flex;gap:6px;align-items:center">' +
+    '<span class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '" title="Local time in ' + escapeHtml(c.n) + '">' +
+      '<span class="sr-only">Local time </span><span class="local-time-clock"></span></span>' +
     '<button class="fav-btn' + (isFav(c.n) ? ' active' : '') + '" onclick="window.__myatlasticToggleFav(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" title="' + (isFav(c.n) ? 'Remove favourite' : 'Add to favourites') + '">' + (isFav(c.n) ? '★' : '☆') + '</button>' +
     '<button class="share-btn" onclick="window.__myatlasticShare(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" title="Share">Share</button>' +
     '</div></div>';
@@ -3599,16 +3579,13 @@ function renderDetails() {
   html += '<div class="detail-name"><span class="detail-flag">' + (c.flag || '🌐') + '</span><span>' + escapeHtml(c.n) + '</span>' +
     voiceButton(c.n, englishLocaleFor(c), 'Hear how to say ' + c.n, 'vbtn-inline') +
     '</div>';
-  html += '<div class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '">' +
-    '<span class="local-time-label">Local time</span>' +
-    '<span class="local-time-clock"></span></div>';
 
   // WOW FACT — surfaced first, before the heavier detail. Free for everyone:
   // it is the hook that makes a child want to dig in (and unlock Pro).
   html += '<div class="wow-fact"><span class="wow-spark">✨</span><span><span class="wow-label">Wow fact</span>' + escapeHtml(wowFor(c)) + '</span></div>';
 
-  // LISTEN — a short spoken visit, then the PHRASEBOOK.
-  html += listenCardHtml(c);
+  // THE TOUR — the spoken visit, then the PHRASEBOOK.
+  html += tourCardHtml(c);
   html += phrasebookHtml(c);
 
   const animal = animalFor(c);
@@ -3631,7 +3608,6 @@ function renderDetails() {
     html += '<div class="landmark-card">' +
       '<div class="landmark-head">📍 ' + escapeHtml(lm.name) + '</div>' +
       '<div class="landmark-fact">' + escapeHtml(lm.fact) + '</div>' +
-      '<button type="button" class="btn-primary tour-launch" onclick="window.__myatlasticTour(' + cq + ')">Play the tour</button>' +
       '</div>';
   }
 
@@ -3647,10 +3623,8 @@ function renderDetails() {
       '</div>';
   }
 
-  if (free && imgUrl) {
+  if (imgUrl) {
     html += '<div class="detail-image"><img src="' + imgUrl + '" alt="" loading="lazy" data-flag="' + (c.flag || '🌐') + '" onerror="window.__myatlasticImgFallback(this)"></div>';
-  } else if (!free) {
-    html += '<div class="detail-image"><div class="img-locked" onclick="window.__myatlasticOpenPaywall()"><div class="lock-icon">🔒</div><div class="lock-label">Pro · tap to unlock</div></div></div>';
   }
 
   html += '<div class="fact-grid">';
@@ -3673,14 +3647,11 @@ function renderDetails() {
     ['Notable Figures', c.fig || '—'],
   ];
   sections.forEach(([label, body]) => {
-    if (free) {
-      html += '<div class="section"><h4>' + label + '</h4><div class="section-body">' + escapeHtml(body) + '</div></div>';
-    } else {
-      html += '<div class="section locked" onclick="window.__myatlasticOpenPaywall()"><h4>' + label + '</h4><div class="section-body">' + escapeHtml(body) + '</div></div>';
-    }
+    html += '<div class="section"><h4>' + label + '</h4><div class="section-body">' + escapeHtml(body) + '</div></div>';
   });
 
-  if (c.states && c.states.length && free) {
+
+  if (c.states && c.states.length) {
     html += '<div class="states"><h4>States / Provinces</h4><div class="states-grid">';
     c.states.forEach(s => {
       html += '<div class="state-item"><span>' + escapeHtml(s.n) + '</span><span class="state-cap">' + escapeHtml(s.cap || '') + '</span></div>';
@@ -3688,20 +3659,11 @@ function renderDetails() {
     html += '</div></div>';
   }
 
-  if (!free) {
-    html += '<div class="upgrade-cta">';
-    html += '<h3>🔓 Unlock every country in the world</h3>';
-    html += '<p>' + (IS_WEB ? 'The full Myatlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and full Daily streak.') + '</p>';
-    html += IS_WEB
-      ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>'
-      : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>';
-    html += '</div>';
-  }
 
   html += '<div class="footer-note">On the map: ' + c.lat.toFixed(1) + '°, ' + c.lon.toFixed(1) + '°. Photos from Wikimedia Commons.</div>';
   root.innerHTML = html;
   watchCountryClock(c.n);
-  mountListen(c);
+  mountTourCard(c);
   mountPhrasebook(c);
 }
 
@@ -3732,7 +3694,6 @@ function toggleFav(countryName) {
   if (idx >= 0) favs.splice(idx, 1);
   else {
     favs.unshift(countryName);
-    checkAchievements();
   }
   setFavs(favs);
   renderDetails();
@@ -3752,7 +3713,7 @@ function shareCountry(country) {
     navigator.share({ title: 'Myatlastic · ' + country.n, text, url }).catch(() => {});
   } else {
     try { navigator.clipboard.writeText(url); } catch (e) {}
-    showAchievementToast({ icon: '📋', name: 'Link copied!', desc: url.slice(0, 40) + (url.length > 40 ? '…' : '') });
+    showToast({ icon: '📋', name: 'Link copied!', desc: url.slice(0, 40) + (url.length > 40 ? '…' : '') });
   }
 }
 window.__myatlasticShare = (name) => {
@@ -3761,7 +3722,7 @@ window.__myatlasticShare = (name) => {
 };
 
 /* ============================================================
- * ACHIEVEMENTS
+ * PROGRESS — countries visited and stamped
  * ============================================================ */
 /* Passport stamps — countries a child has "visited" (viewed) or answered
  * correctly about. Visited = browsed the detail; stamped = got it right. */
@@ -3777,7 +3738,6 @@ function stampCountry(name) {
     if (!set.has(name)) {
       set.add(name);
       localStorage.setItem('myatlastic_stamped', JSON.stringify([...set]));
-      checkAchievements();
     }
   } catch (e) {}
 }
@@ -3807,35 +3767,8 @@ function explorerLevel() {
   return lvl;
 }
 
-const ACHIEVEMENTS = [
-  { id: 'first_fav', icon: '⭐', name: 'First Favourite', desc: 'Saved your first country', check: () => getFavs().length >= 1 },
-  { id: 'five_favs', icon: '🌟', name: 'Five Stars', desc: 'Saved 5 favourite countries', check: () => getFavs().length >= 5 },
-  { id: 'streak_3', icon: '🔥', name: 'On Fire', desc: 'Built a 3-day daily streak', check: () => getStreak() >= 3 },
-  { id: 'streak_7', icon: '🏆', name: 'Week Champion', desc: 'Built a 7-day daily streak', check: () => getStreak() >= 7 },
-  { id: 'quiz_10', icon: '🧠', name: 'Quiz Buff', desc: 'Answered 10 quiz questions', check: () => state.quiz.total >= 10 },
-  { id: 'quiz_50', icon: '🎓', name: 'Geography Master', desc: 'Answered 50 quiz questions', check: () => state.quiz.total >= 50 },
-  // Goal badges tied to real progress
-  { id: 'flags_20', icon: '🏁', name: 'Flag Collector', desc: 'Learned 20 flags', check: () => getViewedSet().size >= 20 },
-  { id: 'stamps_10', icon: '🛂', name: 'Passport Holder', desc: 'Earned 10 passport stamps', check: () => getStampedSet().size >= 10 },
-  { id: 'continent_done', icon: '🗺️', name: 'Continent Complete', desc: 'Visited a whole continent', check: () => completedContinents().length >= 1 },
-  { id: 'globetrotter', icon: '🌍', name: 'Globetrotter', desc: 'Visited 50 countries', check: () => getViewedSet().size >= 50 },
-  { id: 'world_citizen', icon: '👑', name: 'World Citizen', desc: 'Visited every country in the world', check: () => SOVEREIGN_COUNTRIES.every(c => getViewedSet().has(c.n)) },
-];
-
-function getUnlockedAchievements() {
-  try { return JSON.parse(localStorage.getItem('myatlastic_ach') || '[]'); } catch (e) { return []; }
-}
-function checkAchievements() {
-  const unlocked = getUnlockedAchievements();
-  ACHIEVEMENTS.forEach(a => {
-    if (!unlocked.includes(a.id) && a.check()) {
-      unlocked.push(a.id);
-      try { localStorage.setItem('myatlastic_ach', JSON.stringify(unlocked)); } catch (e) {}
-      showAchievementToast(a);
-    }
-  });
-}
-function showAchievementToast(a) {
+// A short notice at the bottom of the screen (e.g. "Link copied!").
+function showToast(a) {
   let toast = document.getElementById('achievement-toast');
   if (!toast) {
     toast = document.createElement('div');
@@ -3850,104 +3783,168 @@ function showAchievementToast(a) {
 }
 
 /* ============================================================
- * PASSPORT — stamps, streak rewards, explorer avatar, badges
+ * PASSPORT — the passport of every country, stamped on each visit
  * ============================================================ */
+/* ---------- Passport: the real passport of every country ---------- */
+let passportCovers = null;
+let passportFilter = 'All';
+let passportQuery = '';
+function loadPassportCovers() {
+  if (passportCovers) return Promise.resolve(passportCovers);
+  return fetch('passports.json').then(r => (r.ok ? r.json() : {})).catch(() => ({})).then(j => (passportCovers = j || {}));
+}
+function passportCoverUrl(file, width) {
+  return 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(file) + '?width=' + (width || 240);
+}
+// A real cover where Wikimedia Commons has one; otherwise a drawn booklet.
+function passportCoverHtml(c, width) {
+  const file = passportCovers && passportCovers[c.n];
+  const drawn = '<span class="pp-drawn"><span class="pp-drawn-flag">' + (c.flag || '🌐') + '</span>' +
+    '<span class="pp-drawn-name">' + escapeHtml(c.n) + '</span><span class="pp-drawn-word">PASSPORT</span></span>';
+  if (!file) return drawn;
+  return '<img class="pp-img" loading="lazy" alt="Passport of ' + escapeHtml(c.n) + '" src="' + passportCoverUrl(file, width) + '"' +
+    ' onerror="this.remove()">' + drawn.replace('pp-drawn"', 'pp-drawn pp-under"');
+}
+
 function renderPassport() {
   const root = $('view-passport');
   const viewed = getViewedSet();
   const stamped = getStampedSet();
-  const lvl = explorerLevel();
+  const all = COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n));
   const total = SOVEREIGN_COUNTRIES.length;
-  const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
-  const pct = Math.round((visitedCount / total) * 100);
-  const streak = getStreak();
-  const done = completedContinents();
+  const visitsAll = getVisits();
+  const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n) || (visitsAll[c.n] || []).length).length;
+  const stampTotal = Object.values(visitsAll).reduce((n, l) => n + l.length, 0);
+  if (!passportCovers) {
+    root.innerHTML = '<div class="passport-wrap"><p class="passport-hint">Opening the passport office…</p></div>';
+    loadPassportCovers().then(() => { if (state.mode === 'passport') renderPassport(); });
+    return;
+  }
+  const conts = CONTINENTS.filter(x => x !== 'All');
+  const q = passportQuery.trim().toLowerCase();
+  const list = all.filter(c => (passportFilter === 'All' || c.c.split(' / ')[0] === passportFilter) && (!q || c.n.toLowerCase().indexOf(q) !== -1));
 
-  // Next explorer level for the progress hint
-  const next = EXPLORER_LEVELS.find(l => l.at > viewed.size);
-  const nextHint = next ? ('Visit ' + (next.at - viewed.size) + ' more to become ' + next.title + ' ' + next.icon) : 'You have reached the top rank!';
-
-  // Streak reward tiers
-  const rewards = [
-    { at: 3, icon: '🔥', label: '3-day streak' },
-    { at: 7, icon: '🏅', label: '1 week' },
-    { at: 14, icon: '💎', label: '2 weeks' },
-    { at: 30, icon: '👑', label: '1 month' },
-  ];
-
-  let html = '<div class="passport-wrap">';
-
-  // Explorer avatar header
-  html += '<div class="explorer-card">' +
-    '<div class="explorer-avatar">' + lvl.icon + '</div>' +
-    '<div class="explorer-meta">' +
-    '<div class="explorer-title">' + lvl.title + '</div>' +
-    '<div class="explorer-bar"><div class="explorer-fill" style="width:' + pct + '%"></div></div>' +
-    '<div class="explorer-sub">' + visitedCount + ' / ' + total + ' countries · ' + stamped.size + ' stamps</div>' +
-    '<div class="explorer-next">' + escapeHtml(nextHint) + '</div>' +
-    '</div></div>';
-
-  // Streak + rewards
-  html += '<div class="passport-section"><h3>🔥 Daily streak</h3>' +
-    '<div class="streak-big">' + (streak > 0 ? streak + (streak === 1 ? ' day' : ' days') : 'No streak yet') + '</div>' +
-    '<div class="reward-row">';
-  rewards.forEach(r => {
-    const got = streak >= r.at;
-    html += '<div class="reward' + (got ? ' got' : '') + '"><div class="reward-ic">' + r.icon + '</div><div class="reward-lb">' + r.label + '</div></div>';
-  });
-  html += '</div>';
-  if (streak === 0) html += '<p class="passport-hint">Answer the Daily challenge each day to build a streak and unlock rewards.</p>';
-  html += '</div>';
-
-  // Badges
-  const unlocked = getUnlockedAchievements();
-  html += '<div class="passport-section"><h3>🏅 Badges <span class="count-pill">' + unlocked.length + '/' + ACHIEVEMENTS.length + '</span></h3>' +
-    '<div class="badge-grid">';
-  ACHIEVEMENTS.forEach(a => {
-    const got = unlocked.includes(a.id) || a.check();
-    html += '<div class="badge-cell' + (got ? ' got' : '') + '" title="' + escapeHtml(a.desc) + '">' +
-      '<div class="badge-ic">' + (got ? a.icon : '🔒') + '</div>' +
-      '<div class="badge-nm">' + escapeHtml(a.name) + '</div>' +
-      '<div class="badge-ds">' + escapeHtml(a.desc) + '</div>' +
-      '</div>';
-  });
-  html += '</div></div>';
-
-  // Continents completed
-  html += '<div class="passport-section"><h3>🗺️ Continents</h3><div class="cont-row">';
-  CONTINENTS.filter(x => x !== 'All').forEach(cont => {
-    const inCont = SOVEREIGN_COUNTRIES.filter(c => c.c.split(' / ')[0] === cont);
-    const v = inCont.filter(c => viewed.has(c.n)).length;
-    const full = done.includes(cont);
-    html += '<div class="cont-chip' + (full ? ' full' : '') + '">' + (full ? '✅ ' : '') + escapeHtml(cont) + ' <b>' + v + '/' + inCont.length + '</b></div>';
-  });
-  html += '</div></div>';
-
-  // Stamp wall — ALL 195 sovereign countries as collectible slots. Visited ones
-  // are filled (gold ⭐ if answered correctly); the rest are greyed "to collect".
-  // For free users, Pro-locked countries show a 🔒 and tap through to the paywall —
-  // the empty slots themselves merchandise Pro (this is the parent-facing trigger).
-  const lockedRemaining = SOVEREIGN_COUNTRIES.filter(c => !state.isPro && !isFree(c) && !viewed.has(c.n)).length;
-  html += '<div class="passport-section"><h3>🛂 Stamp wall <span class="count-pill">' + visitedCount + ' / ' + total + '</span></h3>';
-  html += '<p class="passport-hint">Tap a greyed country to go collect its stamp. Answer it right in a quiz for a gold stamp ⭐' +
-    (lockedRemaining > 0 ? ' &nbsp;·&nbsp; <span class="lock-tease" onclick="window.__myatlasticOpenPaywall()">🔒 ' + lockedRemaining + ' unlock with Pro</span>' : '') + '</p>';
-  html += '<div class="stamp-grid">';
-  SOVEREIGN_COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n)).forEach(c => {
-    const isViewed = viewed.has(c.n);
+  let html = '<div class="passport-wrap">' +
+    '<div class="pp-head"><div><h2>Passports of the world</h2>' +
+    '<div class="passport-hint">Every country\'s passport. Each visit earns an entry stamp: ' + visitedCount + ' of ' + total + ' countries, ' + stampTotal + ' stamps in all.</div></div></div>' +
+    '<div class="pp-tools">' +
+      '<input id="pp-search" class="search-input" type="search" placeholder="Find a country" aria-label="Find a country\'s passport" value="' + escapeHtml(passportQuery) + '">' +
+      '<div class="pp-chips" role="tablist" aria-label="Continent">' +
+        ['All'].concat(conts).map(x => '<button type="button" role="tab" class="chip' + (x === passportFilter ? ' active' : '') + '" aria-selected="' + (x === passportFilter) + '" data-cont="' + escapeHtml(x) + '">' + escapeHtml(x) + '</button>').join('') +
+      '</div>' +
+    '</div>' +
+    '<div class="pp-grid">';
+  list.forEach(c => {
+    const count = (visitsAll[c.n] || []).length || (viewed.has(c.n) ? 1 : 0);
+    const got = count > 0;
     const gold = stamped.has(c.n);
-    const locked = !state.isPro && !isFree(c) && !isViewed;
-    const cls = 'stamp' + (gold ? ' gold' : '') + (isViewed ? ' got' : '') + (locked ? ' locked' : '');
-    const action = locked ? 'window.__myatlasticOpenPaywall()' : 'window.__myatlasticShowOnGlobe(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')';
-    html += '<button class="' + cls + '" onclick="' + action + '" title="' + escapeHtml(c.n) + (locked ? ' · Pro' : '') + '">' +
-      '<span class="stamp-flag">' + (c.flag || '🌐') + '</span>' +
-      (gold ? '<span class="stamp-star">⭐</span>' : (locked ? '<span class="stamp-lock">🔒</span>' : '')) +
-      '<span class="stamp-nm">' + escapeHtml(c.n) + '</span></button>';
+    html += '<button type="button" class="pp-card' + (got ? ' got' : '') + '" data-pp="' + escapeHtml(c.n) + '" aria-label="' + escapeHtml(c.n) + ' passport' + (got ? ', ' + count + (count === 1 ? ' stamp' : ' stamps') : '') + '">' +
+      '<span class="pp-cover">' + passportCoverHtml(c, 240) +
+        (got ? '<span class="pp-stamp' + (gold ? ' gold' : '') + '" aria-hidden="true">' + (count > 1 ? '×' + count : (gold ? '★' : '✓')) + '</span>' : '') +
+      '</span>' +
+      '<span class="pp-name">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</span>' +
+      '</button>';
   });
-  html += '</div>';
+  if (!list.length) html += '<p class="passport-hint">No country matches that.</p>';
   html += '</div>';
 
-  html += '</div>';
+  html += '<p class="footer-note">Passport images from Wikimedia Commons. Drawn covers are illustrations.</p></div>';
   root.innerHTML = html;
+
+  const search = $('pp-search');
+  search.oninput = () => {
+    passportQuery = search.value;
+    const pos = search.selectionStart;
+    renderPassport();
+    const again = $('pp-search');
+    again.focus();
+    try { again.setSelectionRange(pos, pos); } catch (e) {}
+  };
+  root.querySelectorAll('.pp-chips .chip').forEach(b => { b.onclick = () => { passportFilter = b.dataset.cont; renderPassport(); }; });
+  root.querySelectorAll('.pp-card').forEach(b => { b.onclick = () => openPassport(b.dataset.pp, b); });
+}
+
+// An immigration entry stamp, drawn in ink: shape, colour and tilt vary by
+// country and visit, with a worn-ink texture.
+const STAMP_INKS = ['#c0392b', '#1f5fa8', '#6a3d9a', '#1e7b4f', '#b3541e'];
+function stampCode(name) {
+  const words = String(name).replace(/[^A-Za-z ]/g, '').toUpperCase().split(/\s+/).filter(Boolean);
+  if (words.length >= 3) return words.map(w => w[0]).join('').slice(0, 3);
+  const w = words.join('');
+  return (w.slice(0, 1) + w.slice(1).replace(/[AEIOU]/g, '')).slice(0, 3).padEnd(3, 'X');
+}
+function stampDate(ms) {
+  const d = new Date(ms);
+  return String(d.getDate()).padStart(2, '0') + ' ' + ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][d.getMonth()] + ' ' + d.getFullYear();
+}
+function stampSvg(name, ms, n) {
+  let h = 7;
+  const key = name + ':' + n;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  // Mix the bits so consecutive visits look clearly different.
+  h ^= h >>> 16; h = Math.imul(h, 0x45d9f3b) >>> 0; h ^= h >>> 16; h = Math.imul(h, 0x45d9f3b) >>> 0; h = (h ^ (h >>> 16)) >>> 0;
+  const ink = STAMP_INKS[h % STAMP_INKS.length];
+  const tilt = ((h >>> 3) % 31) - 15;
+  const shape = (h >>> 8) % 3;
+  const label = String(name).toUpperCase();
+  const small = label.length > 14 ? 9 : 11;
+  const id = 'ink' + (h % 100000);
+  const frame = shape === 0
+    ? '<circle cx="60" cy="60" r="54" fill="none" stroke="' + ink + '" stroke-width="4"/><circle cx="60" cy="60" r="44" fill="none" stroke="' + ink + '" stroke-width="1.5"/>'
+    : shape === 1
+      ? '<rect x="6" y="18" width="108" height="84" rx="8" fill="none" stroke="' + ink + '" stroke-width="4"/><rect x="13" y="25" width="94" height="70" rx="4" fill="none" stroke="' + ink + '" stroke-width="1.5"/>'
+      : '<ellipse cx="60" cy="60" rx="56" ry="42" fill="none" stroke="' + ink + '" stroke-width="4"/><ellipse cx="60" cy="60" rx="47" ry="34" fill="none" stroke="' + ink + '" stroke-width="1.5"/>';
+  return '<svg class="imm-stamp" viewBox="0 0 120 120" role="img" aria-label="Entry stamp for ' + escapeHtml(name) + ', ' + stampDate(ms) + '" style="transform:rotate(' + tilt + 'deg)">' +
+    '<defs><filter id="' + id + '"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="' + (h % 97) + '"/>' +
+    '<feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.6"/><feComposite in="SourceGraphic" operator="in"/></filter></defs>' +
+    '<g filter="url(#' + id + ')" opacity="0.88">' + frame +
+      '<text x="60" y="' + (shape === 0 ? 40 : 44) + '" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="' + small + '" fill="' + ink + '">' + escapeHtml(label.slice(0, 18)) + '</text>' +
+      '<text x="60" y="63" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="17" letter-spacing="2" fill="' + ink + '">ENTRY</text>' +
+      '<text x="60" y="80" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="10" fill="' + ink + '">' + stampDate(ms) + '</text>' +
+      '<text x="60" y="' + (shape === 0 ? 96 : 93) + '" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="9" fill="' + ink + '">✈ ' + stampCode(name) + ' · ' + (n + 1) + '</text>' +
+    '</g></svg>';
+}
+
+// One passport, opened: the cover, the country, and your stamps.
+function openPassport(name, opener) {
+  const c = COUNTRIES.find(x => x.n === name);
+  if (!c) return;
+  const visits = visitsOf(c.n);
+  const viewed = visits.length > 0 || getViewedSet().has(c.n);
+  const gold = getStampedSet().has(c.n);
+  const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
+  const modal = document.createElement('div');
+  modal.className = 'ts-modal';
+  modal.innerHTML = '<div class="ts-box pp-open" role="dialog" aria-modal="true" aria-label="Passport of ' + escapeHtml(c.n) + '">' +
+    '<button class="ts-close" aria-label="Close">✕</button>' +
+    '<div class="pp-open-cover">' + passportCoverHtml(c, 480) + '</div>' +
+    '<h2 class="ts-title">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</h2>' +
+    '<div class="fact-grid">' +
+      '<div class="fact-label">Capital</div><div class="fact-value">' + escapeHtml(c.cap || '—') + '</div>' +
+      '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang || '—') + '</div>' +
+      '<div class="fact-label">Currency</div><div class="fact-value">' + escapeHtml(c.cur || '—') + '</div>' +
+    '</div>' +
+    '<div class="pp-visa" aria-label="Visa page">' +
+      '<div class="pp-visa-head"><span>VISAS · ' + escapeHtml(c.n.toUpperCase()) + '</span><span>' + visits.length + (visits.length === 1 ? ' STAMP' : ' STAMPS') + '</span></div>' +
+      (visits.length
+        ? '<div class="pp-visa-stamps">' + visits.slice().reverse().map((t, k) => stampSvg(c.n, t, visits.length - 1 - k)).join('') + '</div>'
+        : '<p class="pp-visa-empty">No stamps yet. Visit ' + escapeHtml(c.n) + ' to get your first entry stamp.</p>') +
+      (gold ? '<p class="pp-visa-gold">★ Gold: you answered a question about ' + escapeHtml(c.n) + ' correctly.</p>' : '') +
+    '</div>' +
+    '<div class="tour-actions">' +
+      '<button type="button" class="back-btn" id="pp-globe">Show on globe</button>' +
+      '<button type="button" class="btn-primary" id="pp-tour">▶ Play the tour</button>' +
+    '</div>' +
+    '</div>';
+  document.body.appendChild(modal);
+  const close = () => { modal.remove(); document.removeEventListener('keydown', onKey); if (opener && opener.focus) opener.focus(); };
+  const onKey = (ev) => { if (ev.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  modal.onclick = (ev) => { if (ev.target === modal) close(); };
+  modal.querySelector('.ts-close').onclick = close;
+  $('pp-globe').onclick = () => { close(); window.__myatlasticShowOnGlobe(c.n); };
+  $('pp-tour').onclick = () => { close(); window.__myatlasticTour(c.n); };
+  modal.querySelector('.ts-close').focus();
 }
 
 /* ============================================================
@@ -4065,7 +4062,6 @@ function renderMystery() {
           m.lastPoints = points;
           m.status = 'won';
           stampCountry(m.target.n);
-          checkAchievements();
         } else {
           m.wrong.push(name);
           btn.classList.add('wrong'); btn.disabled = true;
@@ -4102,8 +4098,8 @@ function openSettings() {
   modal = document.createElement('div');
   modal.id = 'settings-modal';
   modal.className = 'ts-modal';
-  const proTag = state.isPro ? '' : ' <span class="pro-tag">PRO</span>';
-  const lockNote = state.isPro ? '' : '<div class="set-locked-note">🔒 These are Pro features. <button class="link-btn" id="set-upgrade">Upgrade to unlock</button></div>';
+  const proTag = '';
+  const lockNote = '';
 
   const bandBtns = Object.keys(AGE_BANDS).map(k =>
     '<button class="seg' + (state.ageBand === k ? ' on' : '') + '" data-band="' + k + '">' + AGE_BANDS[k].label + '</button>').join('');
@@ -4149,7 +4145,7 @@ function openSettings() {
   modal.querySelector('.ts-close').onclick = () => modal.remove();
   modal.onclick = e => { if (e.target === modal) modal.remove(); };
 
-  const gate = () => { if (!state.isPro) { modal.remove(); setMode('paywall'); return false; } return true; };
+  const gate = () => true;
   const up = $('set-upgrade'); if (up) up.onclick = () => { modal.remove(); setMode('paywall'); };
 
   modal.querySelectorAll('#seg-band .seg').forEach(b => b.onclick = () => {
@@ -4239,6 +4235,7 @@ function renderTwoPlayer() {
     case 'culture-hint': eyebrow = 'Which country fits?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px;font-style:italic">' + escapeHtml(correct.cul || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
     case 'food-to-country': eyebrow = 'Whose dishes are these?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px">🍽 ' + escapeHtml(correct.food || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
     case 'sport-to-country': eyebrow = 'Whose sports?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px">⚽ ' + escapeHtml(correct.sport || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
+    case 'world-fact': eyebrow = '🌍 World facts'; promptHtml = '<div class="quiz-prompt" style="font-size:17px;line-height:1.4">' + escapeHtml(q.fact.q) + '</div>'; textFn = x => x; break;
   }
 
   if (twoP.phase === 'handoff') {
@@ -4404,7 +4401,27 @@ function updateExploreProgress() {
   bar.style.display = 'block';
   fill.style.width = pct + '%';
 }
+// Every visit earns an entry stamp; returning later earns another (at most one
+// every 30 minutes, so flicking between countries doesn't flood the passport).
+const VISIT_GAP_MS = 30 * 60 * 1000;
+function getVisits() {
+  try { return JSON.parse(localStorage.getItem('myatlastic_visits') || '{}') || {}; } catch (e) { return {}; }
+}
+function visitsOf(name) { return getVisits()[name] || []; }
+function recordVisit(name) {
+  try {
+    const all = getVisits();
+    const list = all[name] || [];
+    const now = Date.now();
+    if (list.length && now - list[list.length - 1] < VISIT_GAP_MS) return;
+    list.push(now);
+    all[name] = list.slice(-24);
+    localStorage.setItem('myatlastic_visits', JSON.stringify(all));
+  } catch (e) {}
+}
+
 function recordCountryView(name) {
+  recordVisit(name);
   try {
     const set = new Set(JSON.parse(localStorage.getItem('myatlastic_viewed') || '[]'));
     if (!set.has(name)) {
@@ -4448,6 +4465,62 @@ function handleDeepLink() {
  * ============================================================ */
 const QUIZ_TYPES = ['flag-to-country', 'country-to-capital', 'capital-to-country', 'culture-hint', 'food-to-country', 'sport-to-country'];
 
+// World facts: a simple answer, then one short line explaining it. Where
+// people count differently, the answer is the usual count and says so.
+const WORLD_FACTS = [
+  { id: 'continents', q: 'How many continents are there in the world?', a: '7', o: ['5', '6', '8'],
+    why: 'Africa, Antarctica, Asia, Australia (Oceania), Europe, North America and South America. Some schools join a few together and count 5 or 6.' },
+  { id: 'countries', q: 'How many countries are there in the world?', a: '195', o: ['150', '180', '220'],
+    why: '193 countries belong to the United Nations, plus 2 observer states: Vatican City and Palestine.' },
+  { id: 'oceans', q: 'How many oceans are there?', a: '5', o: ['3', '4', '7'],
+    why: 'The Pacific, Atlantic, Indian, Southern and Arctic oceans.' },
+  { id: 'africa', q: 'How many countries are in Africa?', a: '54', o: ['34', '48', '62'],
+    why: 'Africa has 54 countries, more than any other continent.' },
+  { id: 'europe', q: 'How many countries are in Europe?', a: '44', o: ['27', '36', '55'],
+    why: 'That is the United Nations count, including Russia and tiny Vatican City. Cyprus is in the European Union but sits in Asia, so our map shows it with Europe, making 45. (27 is the number in the European Union.)' },
+  { id: 'asia', q: 'How many countries are in Asia?', a: '48', o: ['30', '40', '58'],
+    why: 'The United Nations counts 48, including Cyprus. Our map shows Cyprus with Europe, so it lists 47 in Asia.' },
+  { id: 'east-asia', q: 'How many countries are in East Asia?', a: '5', o: ['3', '7', '9'],
+    why: 'China, Japan, Mongolia, North Korea and South Korea. Taiwan is sometimes counted too.' },
+  { id: 'south-asia', q: 'How many countries are in South Asia?', a: '8', o: ['5', '11', '14'],
+    why: 'Afghanistan, Bangladesh, Bhutan, India, the Maldives, Nepal, Pakistan and Sri Lanka. The United Nations also includes Iran, making 9.' },
+  { id: 'southeast-asia', q: 'How many countries are in South-East Asia?', a: '11', o: ['7', '9', '15'],
+    why: 'Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, the Philippines, Singapore, Thailand, Timor-Leste and Vietnam.' },
+  { id: 'central-asia', q: 'How many countries are in Central Asia?', a: '5', o: ['3', '7', '10'],
+    why: 'Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan and Uzbekistan. All five names end in "-stan", meaning "land of".' },
+  { id: 'south-america', q: 'How many countries are in South America?', a: '12', o: ['8', '15', '20'],
+    why: 'From Colombia and Venezuela in the north to Argentina and Chile in the south.' },
+  { id: 'north-america', q: 'How many countries are in North America?', a: '23', o: ['3', '12', '31'],
+    why: 'Canada, the United States and Mexico, plus the countries of Central America and the Caribbean islands.' },
+  { id: 'central-america', q: 'How many countries are in Central America?', a: '7', o: ['4', '10', '12'],
+    why: 'Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua and Panama.' },
+  { id: 'caribbean', q: 'How many island countries are in the Caribbean?', a: '13', o: ['7', '20', '25'],
+    why: 'From Cuba, the biggest, to tiny Saint Kitts and Nevis. Many other Caribbean islands belong to countries elsewhere.' },
+  { id: 'oceania', q: 'How many countries are in Oceania?', a: '14', o: ['6', '10', '22'],
+    why: 'Australia, New Zealand, Papua New Guinea and 11 Pacific island nations such as Fiji and Samoa.' },
+  { id: 'antarctica', q: 'How many countries are in Antarctica?', a: '0', o: ['1', '7', '12'],
+    why: 'Nobody owns Antarctica. It is kept for science and peace by an international treaty.' },
+  { id: 'most-islands', q: 'Which country has the most islands?', a: 'Sweden', o: ['Indonesia', 'Philippines', 'Japan'],
+    why: 'Sweden has more than 250,000 islands, most of them tiny and without anyone living on them.' },
+  { id: 'indonesia-islands', q: 'About how many islands make up Indonesia?', a: 'More than 17,000', o: ['About 500', 'About 3,000', 'About 100,000'],
+    why: 'Indonesia is the biggest island country in the world, stretching across more than 17,000 islands.' },
+  { id: 'largest-continent', q: 'Which is the largest continent?', a: 'Asia', o: ['Africa', 'North America', 'Europe'],
+    why: 'Asia covers about a third of all the land on Earth.' },
+  { id: 'smallest-continent', q: 'Which is the smallest continent?', a: 'Australia (Oceania)', o: ['Europe', 'Antarctica', 'South America'],
+    why: 'Australia is the smallest continent, which is why it is sometimes called an island continent.' },
+  { id: 'largest-country', q: 'Which is the largest country by area?', a: 'Russia', o: ['Canada', 'China', 'United States'],
+    why: 'Russia stretches across 11 time zones, from Europe all the way to the Pacific.' },
+  { id: 'smallest-country', q: 'Which is the smallest country in the world?', a: 'Vatican City', o: ['Monaco', 'San Marino', 'Nauru'],
+    why: 'Vatican City sits inside Rome and is smaller than many city parks.' },
+  { id: 'largest-ocean', q: 'Which is the largest ocean?', a: 'Pacific', o: ['Atlantic', 'Indian', 'Arctic'],
+    why: 'The Pacific is bigger than all the land on Earth put together.' },
+  { id: 'most-countries', q: 'Which continent has the most countries?', a: 'Africa', o: ['Asia', 'Europe', 'South America'],
+    why: 'Africa has 54 countries.' },
+  { id: 'highest-mountain', q: 'What is the highest mountain in the world?', a: 'Mount Everest', o: ['K2', 'Kilimanjaro', 'Mont Blanc'],
+    why: 'Mount Everest, on the border of Nepal and China, is about 8,849 metres high.' }
+];
+
+
 function pickN(pool, n, exclude) {
   const arr = pool.filter(x => x !== exclude);
   const out = [];
@@ -4457,7 +4530,18 @@ function pickN(pool, n, exclude) {
   return out;
 }
 
+let recentFacts = [];
+function newWorldFact() {
+  const fresh = WORLD_FACTS.filter(f => recentFacts.indexOf(f.id) === -1);
+  const fact = fresh[Math.floor(Math.random() * fresh.length)] || WORLD_FACTS[0];
+  recentFacts = recentFacts.concat(fact.id).slice(-Math.min(10, WORLD_FACTS.length - 1));
+  const options = [fact.a].concat(fact.o.slice(0, quizOptionCount() - 1)).sort(() => Math.random() - 0.5);
+  return { type: 'world-fact', fact: fact, correct: fact.a, options: options };
+}
+
 function newQuizQuestion() {
+  // About one question in three is a world fact.
+  if (Math.random() < 0.34) return newWorldFact();
   // Difficulty / age band shape the question pool, option count, and how close
   // the wrong answers are (harder = same-continent distractors).
   const diff = effectiveDifficulty();
@@ -4485,11 +4569,7 @@ function newQuizQuestion() {
 function renderQuiz() {
   const root = $('view-quiz');
   if (!canQuiz()) {
-    root.innerHTML =
-      '<div class="center-card quiz-card"><div class="quiz-eyebrow">Daily limit reached</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">You have used your 3 free quizzes today</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Upgrade for unlimited quizzes.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button></div>';
+    root.innerHTML = lockedTabHtml('Quiz', 'Flags, capitals, food, sport, culture and world facts, with the Globe Flag Hunt. Unlimited questions that grow with your child.');
     return;
   }
 
@@ -4518,6 +4598,10 @@ function renderQuiz() {
       eyebrow = 'Which country eats these dishes?';
       promptHtml = '<div class="quiz-prompt" style="font-size:16px;line-height:1.5">🍽 ' + escapeHtml(correct.food || '') + '</div>';
       textFn = c => c.flag + ' ' + c.n; break;
+    case 'world-fact':
+      eyebrow = '🌍 World facts';
+      promptHtml = '<div class="quiz-prompt" style="font-size:20px;line-height:1.4">' + escapeHtml(state.quiz.current.fact.q) + '</div>';
+      textFn = x => x; break;
     case 'sport-to-country':
       eyebrow = 'Whose national sport(s) are these?';
       promptHtml = '<div class="quiz-prompt" style="font-size:16px;line-height:1.5">⚽ ' + escapeHtml(correct.sport || '') + '</div>';
@@ -4539,14 +4623,20 @@ function renderQuiz() {
       const idx = parseInt(btn.dataset.idx, 10);
       const picked = options[idx];
       state.quiz.total++;
-      if (picked === correct) { state.quiz.score++; stampCountry(correct.n); }
+      if (picked === correct) { state.quiz.score++; if (correct && correct.n) stampCountry(correct.n); }
       recordQuiz();
-      checkAchievements();
       card.querySelectorAll('.quiz-option').forEach((b, i) => {
         b.disabled = true;
         if (options[i] === correct) b.classList.add('correct');
         else if (i === idx) b.classList.add('wrong');
       });
+      if (type === 'world-fact') {
+        const why = document.createElement('p');
+        why.className = 'quiz-why';
+        why.setAttribute('role', 'status');
+        why.textContent = (picked === correct ? '✓ ' : 'The answer is ' + correct + '. ') + state.quiz.current.fact.why;
+        card.appendChild(why);
+      }
       const next = document.createElement('button');
       next.className = 'btn-primary next-btn';
       next.textContent = 'Next →';
@@ -4591,7 +4681,7 @@ function onHuntPick(country) {
   const g = globeHunt;
   if (!g || !g.active || g.status !== 'playing' || !country) return;
   const ok = country.n === g.target.n;
-  if (ok) { g.score++; stampCountry(g.target.n); checkAchievements(); g.feedback = { ok: true, text: '✓ Yes — ' + g.target.n + '!' }; }
+  if (ok) { g.score++; stampCountry(g.target.n); g.feedback = { ok: true, text: '✓ Yes — ' + g.target.n + '!' }; }
   else { g.feedback = { ok: false, text: '✗ That was ' + country.n + '. Here is ' + g.target.n + '.' }; }
   g.status = 'reveal';
   if (globeAPI) globeAPI.focus(g.target);   // fly to the answer so they learn where it is
@@ -4638,40 +4728,6 @@ function savePuzzlePlaced(set) {
 
 let puzzleState = null;
 
-function puzzleBlob(c) {
-  const pts = [];
-  for (let i = 0; i < 8; i++) {
-    const a = Math.PI * 2 * i / 8;
-    pts.push([
-      Math.round((c.lon + Math.cos(a) * 3) * 100) / 100,
-      Math.round((c.lat + Math.sin(a) * 2.2) * 100) / 100
-    ]);
-  }
-  return [pts];
-}
-function puzzleRings(c) {
-  const table = window.PUZZLE_RINGS || {};
-  if (table[c.n] && table[c.n].length) return table[c.n];
-  return puzzleBlob(c);
-}
-function puzzlePath(rings) {
-  return rings.map(ring => ring.map((p, i) => (i ? 'L' : 'M') + p[0] + ',' + (-p[1])).join('') + 'Z').join('');
-}
-function puzzlePieceSvg(rings) {
-  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-  rings.forEach(ring => ring.forEach(p => {
-    const x = p[0], y = -p[1];
-    if (x < minX) minX = x;
-    if (y < minY) minY = y;
-    if (x > maxX) maxX = x;
-    if (y > maxY) maxY = y;
-  }));
-  const w = Math.max(0.4, maxX - minX);
-  const h = Math.max(0.4, maxY - minY);
-  const pad = Math.max(w, h) * 0.14;
-  const vb = (minX - pad) + ' ' + (minY - pad) + ' ' + (w + pad * 2) + ' ' + (h + pad * 2);
-  return '<svg viewBox="' + vb + '" aria-hidden="true"><path d="' + puzzlePath(rings) + '"></path></svg>';
-}
 function shuffleNames(list) {
   const a = list.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -4703,6 +4759,10 @@ function scatterStyle(name) {
 }
 function renderPuzzle() {
   const root = $('view-puzzle');
+  if (!canPuzzle()) {
+    root.innerHTML = lockedTabHtml('World puzzle', 'Match every country\'s name to its flag, one small round at a time, until you have built the whole world.');
+    return;
+  }
   const pz = ensurePuzzle();
   const all = SOVEREIGN_COUNTRIES;
   const byName = {};
@@ -4720,20 +4780,16 @@ function renderPuzzle() {
     };
     return;
   }
-  const shown = [];
-  pz.tray.forEach(name => { if (byName[name]) shown.push(byName[name]); });
-  all.forEach(c => { if (pz.placed.has(c.n)) shown.push(c); });
+  // Only this round's flags, in a different order from the names below.
+  const mix = n => { let h = 7; for (let i = 0; i < n.length; i++) h = (h * 31 + n.charCodeAt(i)) >>> 0; return h; };
+  const shown = pz.tray.filter(name => byName[name]).sort((a, b) => mix(a) - mix(b)).map(name => byName[name]);
   let flags = '';
   shown.forEach(c => {
-    const placed = pz.placed.has(c.n);
     const hinted = pz.hint === c.n;
-    flags += '<button type="button" class="puzzle-flag' + (placed ? ' done' : '') + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '">';
-    if (!placed) {
-      flags += '<span class="puzzle-shape">' + puzzlePieceSvg(puzzleRings(c)) + '</span>';
-    }
-    flags += '<span class="puzzle-flag-emoji">' + (c.flag || '🏳️') + '</span>';
-    if (!placed && hinted) flags += '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>';
-    flags += '</button>';
+    flags += '<button type="button" class="puzzle-flag' + (hinted ? ' is-hint' : '') + '" data-puzzle="' + escapeHtml(c.n) + '" aria-label="Flag ' + (hinted ? 'of ' + escapeHtml(c.n) : 'to match') + '">' +
+      '<span class="puzzle-flag-emoji" aria-hidden="true">' + (c.flag || '🏳️') + '</span>' +
+      (hinted ? '<span class="puzzle-flag-name">' + escapeHtml(c.n) + '</span>' : '') +
+      '</button>';
   });
   let tray = '';
   pz.tray.forEach(name => {
@@ -4767,35 +4823,6 @@ function renderPuzzle() {
       if (puzzleDidDrag) return;
       tryPlacePuzzle(pz.selected, flag.getAttribute('data-puzzle'));
     };
-  });
-  requestAnimationFrame(fitPuzzleBoard);
-}
-
-function fitPuzzleBoard() {
-  const board = document.querySelector('#view-puzzle .puzzle-board');
-  if (!board) return;
-  const n = board.children.length;
-  if (!n) return;
-  const gap = 8;
-  const w = Math.max(0, board.clientWidth - 16);
-  const h = Math.max(0, board.clientHeight - 16);
-  if (w < 20 || h < 20) return;
-  let cols = 1;
-  let best = -1;
-  for (let c = 1; c <= n; c++) {
-    const rows = Math.ceil(n / c);
-    const cw = (w - gap * (c - 1)) / c;
-    const ch = (h - gap * (rows - 1)) / rows;
-    const side = Math.min(cw, ch);
-    if (side > best) { best = side; cols = c; }
-  }
-  board.style.setProperty('--pz-cols', String(cols));
-  board.style.setProperty('--pz-rows', String(Math.ceil(n / cols)));
-}
-if (!window.__puzzleFitBound) {
-  window.__puzzleFitBound = true;
-  window.addEventListener('resize', () => {
-    if (document.body.classList.contains('mode-puzzle')) fitPuzzleBoard();
   });
 }
 
@@ -4869,7 +4896,6 @@ function renderToday() {
   const root = $('view-today');
   const daily = getDaily();
   const done = getLastDailyDay() === todaySeed();
-  const streak = getStreak();
   const viewed = getViewedSet();
   const total = SOVEREIGN_COUNTRIES.length;
   const visited = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
@@ -4879,7 +4905,7 @@ function renderToday() {
     '<div class="today-kicker">Today\'s country' + (done ? ' · done' : '') + '</div>' +
     '<h3>' + (daily.flag || '') + ' ' + escapeHtml(daily.n) + '</h3>' +
     '<p>' + escapeHtml(wowFor(daily)) + '</p>' +
-    '<span class="today-go">' + (done ? 'Streak ' + streak + ' · see it again' : 'Answer today\'s question') + '</span>' +
+    '<span class="today-go">' + (done ? 'Done for today · see it again' : 'Answer today\'s question') + '</span>' +
     '</button>';
   const puzzleDone = puzzlePlacedCount();
   html += '<button type="button" class="today-card" id="today-puzzle">' +
@@ -4897,7 +4923,7 @@ function renderToday() {
   html += '<button type="button" class="today-card" id="today-passport">' +
     '<div class="today-kicker">Passport</div>' +
     '<h3>' + visited + ' / ' + total + ' countries</h3>' +
-    '<p>' + (streak > 0 ? streak + '-day streak. ' : '') + 'Stamps, badges, and the countries still to visit.</p>' +
+    '<p>An entry stamp for every visit, and the countries still to see.</p>' +
     '<span class="today-go">Open passport</span>' +
     '</button>';
   if (home) {
@@ -4942,7 +4968,6 @@ function renderDaily() {
   const today = new Date();
   const dateStr = today.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   const completedToday = getLastDailyDay() === todaySeed();
-  const streak = getStreak();
 
   let html = '<div class="center-card">';
   html += '<div class="quiz-eyebrow">Today · ' + escapeHtml(dateStr) + '</div>';
@@ -4977,13 +5002,13 @@ function renderDaily() {
   html += '<div id="daily-quiz-box"></div>';
   html += '</div></div>';
   root.innerHTML = html;
-  renderDailyQuiz(c, completedToday, streak);
+  renderDailyQuiz(c, completedToday);
 }
 
-function renderDailyQuiz(c, completedToday, streak) {
+function renderDailyQuiz(c, completedToday) {
   const box = $('daily-quiz-box');
   if (completedToday) {
-    box.innerHTML = '<div style="font-size:17px;color:var(--success)">✓ Today complete · streak: ' + streak + ' 🔥</div>';
+    box.innerHTML = '<div style="font-size:17px;color:var(--success)">✓ Done for today. Come back tomorrow for a new country.</div>';
     return;
   }
   const options = [c, ...pickN(COUNTRIES, 3, c)].sort(() => Math.random() - 0.5);
@@ -5004,17 +5029,11 @@ function renderDailyQuiz(c, completedToday, streak) {
       const msg = document.createElement('div');
       msg.style.cssText = 'margin-top:14px;font-size:15px';
       if (correct) {
-        const newStreak = streak + 1;
-        setStreak(newStreak);
         setLastDailyDay(todaySeed());
         stampCountry(c.n);
-        checkAchievements();
-        updateStreakDisplay();
         msg.style.color = 'var(--success)';
-        msg.textContent = '✓ Correct. Streak: ' + newStreak + ' 🔥';
+        msg.textContent = '✓ Correct! ' + c.cap + ' is the capital of ' + c.n + '.';
       } else {
-        setStreak(0);
-        updateStreakDisplay();
         msg.style.color = 'var(--danger)';
         msg.textContent = '✗ Wrong. The capital is ' + c.cap + '.';
       }
@@ -5146,16 +5165,6 @@ function startChipDrag(e, country, chip) {
 
 function renderCompare() {
   const root = $('view-compare');
-  if (!canCompare()) {
-    root.innerHTML = '<div class="center-card quiz-card">' +
-      '<div style="text-align:left"><button class="back-btn" onclick="setMode(\'explore\')">← Exit</button></div>' +
-      '<div class="quiz-eyebrow">Pro feature</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">🔒 Compare is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Side-by-side comparison of any two countries.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
-      '</div>';
-    return;
-  }
   if (state.compareSubmitted && state.compareA && state.compareB) {
     renderCompareResult(root);
   } else {
@@ -5348,6 +5357,7 @@ function setProState(isPro) {
   state.isPro = !!isPro;
   try { localStorage.setItem('myatlastic_pro', isPro ? '1' : '0'); } catch (e) {}
   if (typeof updateProBadge === 'function') updateProBadge();
+  if (state.mode === 'quiz' || state.mode === 'puzzle') setMode(state.mode);
 }
 
 const Billing = {
@@ -5592,60 +5602,35 @@ const Account = {
 
 function renderPaywall() {
   const root = $('view-paywall');
-  // On the web, Pro is purchased in the app — show a download screen, not plans.
+  const features = '<ul class="feature-list">' +
+    '<li>Quiz: flags, capitals, food, sport, culture and world facts, unlimited</li>' +
+    '<li>The Globe Flag Hunt</li>' +
+    '<li>World puzzle: match every country to its flag</li>' +
+    '<li>Pay once, keep it forever, including future updates</li>' +
+    '<li>Family Sharing: one purchase covers your Apple Family</li>' +
+    '</ul>' +
+    '<p class="unlock-note">Everything else is free: every country, the spoken tours, the phrasebook, passports and more.</p>';
+  // On the web, the unlock is bought in the app.
   if (IS_WEB) {
     root.innerHTML = '<div class="center-card paywall-card webwall">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
       '<div class="webwall-badge">📱 In the app</div>' +
-      '<h2 class="webwall-title">Get Myatlastic Pro on iPhone &amp; iPad</h2>' +
-      '<p class="webwall-blurb">Every country in the world in full depth, all quizzes &amp; games, the passport, compare, currency converter and more — in the full app.</p>' +
-      '<ul class="feature-list" style="text-align:left">' +
-        '<li>Every country in the world — full depth</li>' +
-        '<li>All quizzes and the Spell-the-Country game</li>' +
-        '<li>Compare countries + live currency converter</li>' +
-        '<li>Family Sharing — one purchase for the whole family</li>' +
-      '</ul>' +
+      '<h2 class="webwall-title">Unlock Quiz &amp; Puzzle · ' + UNLOCK_PRICE + ' once</h2>' + features +
       '<button class="btn-primary webwall-cta" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
       '</div>';
     return;
   }
-  let selectedPlan = 'annual';
+  const selectedPlan = 'lifetime';
   root.innerHTML = '<div class="center-card paywall-card">' +
     '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
-    '<h2>Myatlastic Pro</h2>' +
-    '<p>Unlock every country, every feature, every day.</p>' +
-    '<ul class="feature-list">' +
-    '<li>Every country in the world — full depth (history, culture, religion, notable figures)</li>' +
-    '<li>Landmark photo for every country</li>' +
-    '<li>Spell-the-Country spelling game</li>' +
-    '<li>Compare any two countries side by side</li>' +
-    '<li>Currency converter with live exchange rates</li>' +
-    '<li>Unlimited quizzes (free: 3 per day)</li>' +
-    '<li>Full Daily Challenge with streak history</li>' +
-    '<li>Two-player pass &amp; play quiz for families</li>' +
-    '<li>Teacher / class challenge links</li>' +
-    '<li>Age bands, adjustable difficulty &amp; dyslexia-friendly reading mode</li>' +
-    '<li>Family Sharing — one purchase covers your Apple Family</li>' +
-    '</ul>' +
-    '<div class="plan-grid">' +
-    '<div class="plan recommended selected" data-plan="annual"><div class="plan-name">Annual</div><div class="plan-price">$29.99</div><div class="plan-detail">/year · save 50% · 1-week trial</div></div>' +
-    '<div class="plan" data-plan="monthly"><div class="plan-name">Monthly</div><div class="plan-price">$4.99</div><div class="plan-detail">/month · 1-week trial</div></div>' +
-    '<div class="plan" data-plan="lifetime"><div class="plan-name">Lifetime</div><div class="plan-price">$59.99</div><div class="plan-detail">pay once · all future updates</div></div>' +
-    '</div>' +
-    '<div style="font-size:13px;color:var(--accent);margin:14px 0;padding:10px 12px;border:1px solid var(--accent);border-radius:10px">▶ Monthly &amp; Annual start with a 1-week free trial — cancel anytime before it ends and you won\'t be charged. Lifetime is a one-time purchase with all future updates included.</div>' +
-    '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:13px">Upgrade to Pro</button>' +
-    '<div class="restore-link" id="restore-link">Already subscribed? Restore purchase</div>' +
-    '<div class="legal-note">On iPhone &amp; iPad, payment is handled securely by the Apple App Store. On the web, checkout supports card, Apple Pay, Google Pay and PayPal.<br><br>Questions? <a href="mailto:support@myatlastic.com" style="color:var(--accent)">support@myatlastic.com</a></div>' +
+    '<h2>Unlock Quiz &amp; Puzzle</h2>' + features +
+    '<div class="one-price"><span class="one-price-amount">' + UNLOCK_PRICE + '</span><span class="one-price-detail">one payment · no subscription</span></div>' +
+    '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:14px">Unlock for ' + UNLOCK_PRICE + '</button>' +
+    '<div class="restore-link" id="restore-link">Already unlocked, or had Pro before? Restore purchase</div>' +
+    '<div class="legal-note">Payment is handled securely by the Apple App Store.<br><br>Questions? <a href="mailto:support@myatlastic.com">support@myatlastic.com</a></div>' +
     '</div>';
 
   const card = root.querySelector('.paywall-card');
-  card.querySelectorAll('.plan').forEach(p => {
-    p.onclick = () => {
-      card.querySelectorAll('.plan').forEach(pp => pp.classList.remove('selected'));
-      p.classList.add('selected');
-      selectedPlan = p.dataset.plan;
-    };
-  });
   $('upgrade-btn').onclick = async () => {
     const btn = $('upgrade-btn'), orig = btn.textContent;
     btn.disabled = true; btn.textContent = 'Processing…';
@@ -5710,15 +5695,6 @@ async function fetchRates() {
 
 function renderCurrency() {
   const root = $('view-currency');
-  if (!state.isPro) {
-    root.innerHTML = '<div class="center-card quiz-card">' +
-      '<div class="quiz-eyebrow">Pro feature</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">🔒 Currency converter is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Convert between the currencies of every country with live exchange rates.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
-      '</div>';
-    return;
-  }
 
   const list = buildCurrencyList();
   const opts = list.map(x => '<option value="' + x.code + '">' + x.code + ' — ' + escapeHtml(x.name) + '</option>').join('');
@@ -6074,7 +6050,7 @@ function setupGlobe(THREE) {
   const pinLocked = new THREE.MeshBasicMaterial({ color: 0xb89460 });
   COUNTRIES.forEach(c => {
     const pos = latLonToVec3(c.lat, c.lon, 1.518, THREE);
-    const pin = new THREE.Mesh(pinGeo, (isFree(c) || state.isPro) ? pinFree : pinLocked);
+    const pin = new THREE.Mesh(pinGeo, pinFree);
     pin.position.copy(pos);
     pin.userData = c;
     pinsGroup.add(pin);
@@ -6114,6 +6090,7 @@ function setupGlobe(THREE) {
     COUNTRIES.forEach(c => {
       if (!c.flag || typeof c.lat !== 'number') return;
       const sp = makeEmojiSprite(c.flag, true);
+      sp.userData.n = c.n;
       sp.scale.set(0.17, 0.17, 0.17);
       sp.position.copy(latLonToVec3(c.lat, c.lon, 1.525, THREE));
       flagsGroup.add(sp);
@@ -6123,7 +6100,9 @@ function setupGlobe(THREE) {
 
   let isDragging = false, prevX = 0, prevY = 0, dragStartX = 0, dragStartY = 0;
   let targetRotY = 0, targetRotX = 0, currentRotY = 0, currentRotX = 0;
-  let targetZoom = 4, autoSpin = true, lastTouchDist = 0;
+  // The globe always revolves; touching it or focusing a country only pauses it.
+  let targetZoom = 4, spinPausedUntil = 0, lastTouchDist = 0;
+  const pauseSpin = ms => { spinPausedUntil = Math.max(spinPausedUntil, performance.now() + ms); };
 
   const raycaster = new THREE.Raycaster();
   raycaster.params.Mesh.threshold = 0.05;
@@ -6164,7 +6143,7 @@ function setupGlobe(THREE) {
   canvas.addEventListener('mousedown', e => {
     isDragging = true; prevX = e.clientX; prevY = e.clientY;
     dragStartX = e.clientX; dragStartY = e.clientY;
-    autoSpin = false;
+    pauseSpin(3500);
   });
   window.addEventListener('mouseup', e => {
     if (isDragging) {
@@ -6218,7 +6197,7 @@ function setupGlobe(THREE) {
       isDragging = true;
       prevX = e.touches[0].clientX; prevY = e.touches[0].clientY;
       dragStartX = prevX; dragStartY = prevY;
-      autoSpin = false;
+      pauseSpin(3500);
     } else if (e.touches.length === 2) {
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
@@ -6266,14 +6245,38 @@ function setupGlobe(THREE) {
     targetZoom = Math.max(2.5, Math.min(7, targetZoom + e.deltaY * 0.003));
   }, { passive: false });
 
+  // Tour focus: the country's flag comes forward, the rest of the world greys out.
+  let tourFlag = null;
+  let tourZoomBefore = null;
+  const pinGrey = new THREE.MeshBasicMaterial({ color: 0x5b6270 });
+  function greyOthers(c) {
+    pinsGroup.children.forEach(pin => {
+      if (!pin.userData.__mat) pin.userData.__mat = pin.material;
+      pin.material = (c && pin.userData.n === c.n) ? pin.userData.__mat : pinGrey;
+    });
+    if (flagsGroup) flagsGroup.children.forEach(sp => {
+      const mine = c && sp.userData.n === c.n;
+      sp.material.color.setHex(c && !mine ? 0x4a4f58 : 0xffffff);
+      sp.material.opacity = c && !mine ? 0.45 : 1;
+    });
+    if (earth && earth.material && earth.material.color) earth.material.color.setHex(c ? 0x8a8a8a : 0xffffff);
+  }
+
   function animate() {
     requestAnimationFrame(animate);
-    if (autoSpin && !isDragging) targetRotY += 0.0015;
+    if (!isDragging && performance.now() > spinPausedUntil) targetRotY += 0.0015;
     currentRotY += (targetRotY - currentRotY) * 0.08;
     currentRotX += (targetRotX - currentRotX) * 0.08;
     globeGroup.rotation.y = currentRotY;
     globeGroup.rotation.x = currentRotX;
     camera.position.z += (targetZoom - camera.position.z) * 0.08;
+    if (tourFlag) {
+      const t = Math.min(1, (performance.now() - tourFlag.userData.born) / 900);
+      const grow = 1 - Math.pow(1 - t, 3);
+      const pulse = 1 + Math.sin(performance.now() / 420) * 0.04 * grow;
+      const k = (0.12 + 0.46 * grow) * pulse;
+      tourFlag.scale.set(k, k, k);
+    }
     if (ring.visible && state.activeCountry) {
       const p = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, 1.55, THREE);
       p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
@@ -6285,8 +6288,31 @@ function setupGlobe(THREE) {
   animate();
 
   globeAPI = {
+    tourFocus(c) {
+      if (!c) return;
+      if (tourFlag) { globeGroup.remove(tourFlag); tourFlag = null; }
+      if (c.flag) {
+        tourFlag = makeEmojiSprite(c.flag, false);
+        tourFlag.renderOrder = 10;
+        tourFlag.position.copy(latLonToVec3(c.lat, c.lon, 1.62, THREE));
+        tourFlag.userData.born = performance.now();
+        tourFlag.scale.set(0.12, 0.12, 0.12);
+        globeGroup.add(tourFlag);
+      }
+      greyOthers(c);
+      if (tourZoomBefore === null) tourZoomBefore = targetZoom;
+      targetZoom = 3.3;
+      this.focus(c);
+      // On a phone the tour card covers the lower half: tip the country up into view.
+      if (window.innerWidth <= 900) targetRotX -= 0.42;
+    },
+    clearTourFocus() {
+      if (tourFlag) { globeGroup.remove(tourFlag); tourFlag = null; }
+      greyOthers(null);
+      if (tourZoomBefore !== null) { targetZoom = tourZoomBefore; tourZoomBefore = null; }
+    },
     focus(c) {
-      autoSpin = false;
+      pauseSpin(5000);
       targetRotY = -c.lon * (Math.PI / 180) - Math.PI / 2;
       targetRotX = c.lat * (Math.PI / 180) * 0.6;
       ring.visible = true;
@@ -6295,7 +6321,7 @@ function setupGlobe(THREE) {
       if (on) buildFlags();
       if (flagsGroup) flagsGroup.visible = on;
       pinsGroup.visible = !on;        // swap dots for flags to avoid clutter
-      if (on) autoSpin = true;        // let it spin so you see them all go by
+      if (on) spinPausedUntil = 0;    // spin now so you see them all go by
     },
     resize,
     project(c) {
@@ -6309,7 +6335,13 @@ function setupGlobe(THREE) {
         };
       } catch (e) { return null; }
     }
-  };
+  };  // Every country's flag is on the globe from the start.
+  globeAPI.setFlags(true);
+  const flagsOn = document.getElementById('flags-toggle');
+  if (flagsOn) flagsOn.classList.add('on');
+  const hintEl = document.getElementById('globe-hint');
+  if (hintEl) hintEl.textContent = 'Every country\'s flag · drag to spin the world';
+
 }
 
 /* ============================================================
@@ -6345,7 +6377,7 @@ function renderFlatMap() {
     dot.setAttribute('cx', String(c.lon));
     dot.setAttribute('cy', String(-c.lat));
     dot.setAttribute('r', '1.2');
-    dot.setAttribute('fill', (isFree(c) || state.isPro) ? '#ff5544' : '#b89460');
+    dot.setAttribute('fill', '#ff5544');
     dot.setAttribute('stroke', '#0b0e13');
     dot.setAttribute('stroke-width', '0.2');
     dot.style.cursor = 'pointer';
@@ -6535,10 +6567,6 @@ function openWelcome() {
 /* ============================================================
  * UI HOOKUP
  * ============================================================ */
-function updateStreakDisplay() {
-  const s = getStreak();
-  $('streak-display').textContent = s > 0 ? '🔥 ' + s + '-day streak' : '';
-}
 function updateProBadge() {
   $('pro-badge').classList.toggle('hidden', state.isPro);
 }
@@ -6585,7 +6613,6 @@ if (setBtn) setBtn.onclick = () => openSettings();
 
 // Init — with diagnostic fallback so we never end up with "header only, nothing else"
 try {
-  updateStreakDisplay();
   updateProBadge();
   applySettings();
   updateExploreProgress();

@@ -88,7 +88,11 @@ names.forEach((country) => {
       if (/[*#_`<>\[\]]|https?:/.test(t)) fail(where, 'segment ' + i + ' ' + b + ' has markup');
       if (/myatlastic/i.test(t)) fail(where, 'segment ' + i + ' mentions the app');
     });
-    Object.keys(s || {}).forEach((k) => { if (expect.indexOf(k) === -1) fail(where, 'segment ' + i + ' has extra key ' + k); });
+    Object.keys(s || {}).forEach((k) => { if (k !== 'img' && expect.indexOf(k) === -1) fail(where, 'segment ' + i + ' has extra key ' + k); });
+    if (s && s.img !== undefined) {
+      if (!/\.jpe?g$/i.test(String(s.img))) fail(where, 'segment ' + i + ' img must be a .jpg Commons file');
+      if (segs.some((o, k) => k !== i && o && o.img === s.img)) fail(where, 'segment ' + i + ' repeats photo ' + s.img);
+    }
     enWords += words(s && s.en);
   });
   if (enWords < 290 || enWords > 460) fail(where, 'English is ' + enWords + ' words (want 300-450)');

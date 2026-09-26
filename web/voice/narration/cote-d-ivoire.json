@@ -1,59 +1,79 @@
 {
   "country": "Côte d'Ivoire",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Early morning in Abidjan, and the lagoon is glittering. Wooden pirogues slide across the water while the towers of the Plateau district catch the first light. Côte d'Ivoire is waking up, and it's rarely quiet for long.",
-      "fr": "Le petit matin à Abidjan, et la lagune scintille. Des pirogues glissent sur l'eau pendant que les tours du Plateau attrapent les premiers rayons du soleil. La Côte d'Ivoire se réveille, et elle ne reste jamais silencieuse bien longtemps."
+      "fr": "Le petit matin à Abidjan, et la lagune scintille. Des pirogues glissent sur l'eau pendant que les tours du Plateau attrapent les premiers rayons du soleil. La Côte d'Ivoire se réveille, et elle ne reste jamais silencieuse bien longtemps.",
+      "img": "Tour_F.jpg"
     },
     {
       "en": "The name means Ivory Coast, and the country stretches from sandy Atlantic beaches in the south, through rainforest and farmland, to wide open savanna in the north.",
-      "fr": "Le pays s'étend des plages de sable de l'Atlantique, au sud, jusqu'aux grandes savanes du nord, en passant par la forêt tropicale et les terres agricoles."
+      "fr": "Le pays s'étend des plages de sable de l'Atlantique, au sud, jusqu'aux grandes savanes du nord, en passant par la forêt tropicale et les terres agricoles.",
+      "img": "Comoe_savannah.jpg"
     },
     {
       "en": "More than sixty ethnic groups call it home, among them the Baoulé, the Bété, the Sénoufo and the Dioula. French is the shared language, but listen closely in Abidjan and you'll hear Nouchi, a playful street slang that mixes French with local words.",
-      "fr": "Plus de soixante groupes ethniques y vivent, parmi lesquels les Baoulé, les Bété, les Sénoufo et les Dioula. Le français est la langue commune, mais tendez l'oreille à Abidjan et vous entendrez le nouchi, un argot de la rue plein d'humour qui mêle le français aux langues locales."
+      "fr": "Plus de soixante groupes ethniques y vivent, parmi lesquels les Baoulé, les Bété, les Sénoufo et les Dioula. Le français est la langue commune, mais tendez l'oreille à Abidjan et vous entendrez le nouchi, un argot de la rue plein d'humour qui mêle le français aux langues locales.",
+      "img": "2010_Adjame_Abidjan_4579039229.jpg"
     },
     {
       "en": "Greetings matter here. People ask after your health, your family and your work, and only then get down to business. A cheerful on dit quoi is the easy way to ask what's up.",
-      "fr": "Ici, les salutations comptent. On prend des nouvelles de votre santé, de votre famille, de votre travail, et ensuite seulement on parle affaires. Un joyeux « on dit quoi ? » est la façon la plus simple de demander comment ça va."
+      "fr": "Ici, les salutations comptent. On prend des nouvelles de votre santé, de votre famille, de votre travail, et ensuite seulement on parle affaires. Un joyeux « on dit quoi ? » est la façon la plus simple de demander comment ça va.",
+      "img": "Plagecocody.jpg"
     },
     {
       "en": "Now, the food. Attiéké is fluffy grated cassava, a little like couscous, and it's perfect with grilled fish, onions and hot pepper. Add a side of alloco, sweet fried plantain, and you have a meal everyone loves.",
-      "fr": "Passons à table. L'attiéké, c'est du manioc râpé et léger, un peu comme de la semoule, parfait avec du poisson braisé, des oignons et du piment. Ajoutez une portion d'alloco, de la banane plantain frite, et vous tenez un repas que tout le monde adore."
+      "fr": "Passons à table. L'attiéké, c'est du manioc râpé et léger, un peu comme de la semoule, parfait avec du poisson braisé, des oignons et du piment. Ajoutez une portion d'alloco, de la banane plantain frite, et vous tenez un repas que tout le monde adore.",
+      "img": "Attieke.JPG"
     },
     {
       "en": "You'll eat it in a maquis, an open-air restaurant with plastic chairs, loud music and grilled chicken, where friends linger long into the evening.",
-      "fr": "On le mange dans un maquis, un restaurant en plein air avec des chaises en plastique, de la musique à fond et du poulet braisé, où les amis s'attardent jusque tard dans la soirée."
+      "fr": "On le mange dans un maquis, un restaurant en plein air avec des chaises en plastique, de la musique à fond et du poulet braisé, où les amis s'attardent jusque tard dans la soirée.",
+      "img": "Kedjenou_-_01.jpg"
     },
     {
       "en": "And that music! Coupé-décalé was created by young Ivorians, fast and joyful and made for dancing. Zouglou, a little older, tells stories of student life and everyday troubles with plenty of humour.",
-      "fr": "Et cette musique ! Le coupé-décalé est né parmi les jeunes Ivoiriens, rapide, joyeux et fait pour danser. Le zouglou, un peu plus ancien, raconte la vie étudiante et les galères du quotidien avec beaucoup d'humour."
+      "fr": "Et cette musique ! Le coupé-décalé est né parmi les jeunes Ivoiriens, rapide, joyeux et fait pour danser. Le zouglou, un peu plus ancien, raconte la vie étudiante et les galères du quotidien avec beaucoup d'humour.",
+      "img": "Plage_à_San-Pédro_en_2024_38.jpg"
     },
     {
       "en": "Côte d'Ivoire grows a huge share of the world's cocoa. So the next time you bite into a bar of chocolate, there's a good chance its story began on a small family farm here.",
-      "fr": "La Côte d'Ivoire produit une très grande partie du cacao mondial. Alors la prochaine fois que vous croquerez dans une tablette de chocolat, il y a de bonnes chances que son histoire ait commencé dans une petite plantation familiale d'ici."
+      "fr": "La Côte d'Ivoire produit une très grande partie du cacao mondial. Alors la prochaine fois que vous croquerez dans une tablette de chocolat, il y a de bonnes chances que son histoire ait commencé dans une petite plantation familiale d'ici.",
+      "img": "Matadecacao.jpg"
     },
     {
       "en": "In the west, around the mountain town of Man, the Dan people are famous for their carved masks and for dancers who whirl on towering stilts. In the north, in Korhogo, Sénoufo artists paint bold figures onto cotton cloth.",
-      "fr": "À l'ouest, autour de Man et de ses montagnes, le peuple dan est célèbre pour ses masques sculptés et ses danseurs qui tourbillonnent sur de hautes échasses. Au nord, à Korhogo, les artistes sénoufo peignent des motifs puissants sur des toiles de coton."
+      "fr": "À l'ouest, autour de Man et de ses montagnes, le peuple dan est célèbre pour ses masques sculptés et ses danseurs qui tourbillonnent sur de hautes échasses. Au nord, à Korhogo, les artistes sénoufo peignent des motifs puissants sur des toiles de coton.",
+      "img": "Man,_Côte_d'Ivoire.JPG"
     },
     {
       "en": "The capital is Yamoussoukro, where a vast domed basilica rises above the palm trees. On the coast, the old town of Grand-Bassam keeps its faded colonial houses beside a lively beach.",
-      "fr": "La capitale est Yamoussoukro, où une immense basilique à coupole se dresse au-dessus des palmiers. Sur la côte, la vieille ville de Grand-Bassam garde ses maisons coloniales aux couleurs passées, tout près d'une plage très animée."
+      "fr": "La capitale est Yamoussoukro, où une immense basilique à coupole se dresse au-dessus des palmiers. Sur la côte, la vieille ville de Grand-Bassam garde ses maisons coloniales aux couleurs passées, tout près d'une plage très animée.",
+      "img": "Notre_dame_de_la_paix_yamoussoukro_by_felix_krohn.jpg"
     },
     {
       "en": "Deep in Taï National Park, one of the last great stretches of West African rainforest, chimpanzees use stones and wooden hammers to crack open nuts, a skill passed from mother to child.",
-      "fr": "Au cœur du parc national de Taï, l'un des derniers grands massifs de forêt tropicale d'Afrique de l'Ouest, les chimpanzés se servent de pierres et de morceaux de bois pour casser des noix, un savoir transmis de mère en petit."
+      "fr": "Au cœur du parc national de Taï, l'un des derniers grands massifs de forêt tropicale d'Afrique de l'Ouest, les chimpanzés se servent de pierres et de morceaux de bois pour casser des noix, un savoir transmis de mère en petit.",
+      "img": "Taï_National_Park_(24148248710).jpg"
     },
     {
       "en": "And when the national football team, the Elephants, takes the field, the whole country dresses in orange and the streets fill with drums and dancing.",
-      "fr": "Et quand l'équipe nationale de football, les Éléphants, entre sur le terrain, tout le pays s'habille en orange et les rues se remplissent de tambours et de danses."
+      "fr": "Et quand l'équipe nationale de football, les Éléphants, entre sur le terrain, tout le pays s'habille en orange et les rues se remplissent de tambours et de danses.",
+      "img": "Stade_Olympique_Alassane_Ouattara_d'Ebimpé_Abidjan.jpg"
     },
     {
       "en": "Thank you for visiting. Follow the coastline east, past the lagoons, and Ghana is waiting with its own rhythms and a warm akwaaba, which means welcome.",
-      "fr": "Merci de votre visite. Suivez la côte vers l'est, au-delà des lagunes, et le Ghana vous attend avec ses propres rythmes et un chaleureux akwaaba, qui veut dire bienvenue."
+      "fr": "Merci de votre visite. Suivez la côte vers l'est, au-delà des lagunes, et le Ghana vous attend avec ses propres rythmes et un chaleureux akwaaba, qui veut dire bienvenue.",
+      "img": "Parc_National_des_Iles_Ehotilé_.jpg"
     }
   ],
-  "next": ["Ghana", "Liberia", "Burkina Faso"]
+  "next": [
+    "Ghana",
+    "Liberia",
+    "Burkina Faso"
+  ]
 }

@@ -1,59 +1,79 @@
 {
   "country": "Cyprus",
-  "languages": ["en", "el"],
+  "languages": [
+    "en",
+    "el"
+  ],
   "segments": [
     {
       "en": "Where the waves break around a great pale rock off the southwest coast, legend says Aphrodite, goddess of love, rose from the sea foam. People still swim around the rock, hoping for a little of her luck.",
-      "el": "Εκεί όπου τα κύματα σπάνε γύρω από έναν μεγάλο ανοιχτόχρωμο βράχο στη νοτιοδυτική ακτή, ο θρύλος λέει ότι η Αφροδίτη, η θεά του έρωτα, αναδύθηκε από τον αφρό της θάλασσας. Ακόμη και σήμερα κάποιοι κολυμπούν γύρω από τον βράχο, ελπίζοντας σε λίγη από την τύχη της."
+      "el": "Εκεί όπου τα κύματα σπάνε γύρω από έναν μεγάλο ανοιχτόχρωμο βράχο στη νοτιοδυτική ακτή, ο θρύλος λέει ότι η Αφροδίτη, η θεά του έρωτα, αναδύθηκε από τον αφρό της θάλασσας. Ακόμη και σήμερα κάποιοι κολυμπούν γύρω από τον βράχο, ελπίζοντας σε λίγη από την τύχη της.",
+      "img": "Roca_de_Afrodita,_Chipre,_2021-12-10,_DD_65.jpg"
     },
     {
       "en": "Cyprus is an island in the eastern Mediterranean, where Europe, Asia and Africa feel close together. For thousands of years traders, kings and sailors passed through, and each left something behind.",
-      "el": "Η Κύπρος είναι νησί στην ανατολική Μεσόγειο, εκεί όπου η Ευρώπη, η Ασία και η Αφρική μοιάζουν πολύ κοντά. Για χιλιάδες χρόνια πέρασαν από εδώ έμποροι, βασιλιάδες και ναυτικοί, και ο καθένας άφησε κάτι πίσω του."
+      "el": "Η Κύπρος είναι νησί στην ανατολική Μεσόγειο, εκεί όπου η Ευρώπη, η Ασία και η Αφρική μοιάζουν πολύ κοντά. Για χιλιάδες χρόνια πέρασαν από εδώ έμποροι, βασιλιάδες και ναυτικοί, και ο καθένας άφησε κάτι πίσω του.",
+      "img": "Kyrenia_01-2017_img04_view_from_castle_bastion.jpg"
     },
     {
       "en": "In Paphos you can walk among Roman villas whose floors are covered in mosaics, tiny coloured stones forming gods, hunters and wild animals that still look alive.",
-      "el": "Στην Πάφο μπορείτε να περπατήσετε ανάμεσα σε ρωμαϊκές επαύλεις με δάπεδα γεμάτα ψηφιδωτά, μικρές χρωματιστές πέτρες που σχηματίζουν θεούς, κυνηγούς και άγρια ζώα που μοιάζουν ακόμη ζωντανά."
+      "el": "Στην Πάφο μπορείτε να περπατήσετε ανάμεσα σε ρωμαϊκές επαύλεις με δάπεδα γεμάτα ψηφιδωτά, μικρές χρωματιστές πέτρες που σχηματίζουν θεούς, κυνηγούς και άγρια ζώα που μοιάζουν ακόμη ζωντανά.",
+      "img": "Casa_de_Dionisio,_parque_arqueológico_de_Pafos,_Chipre,_2021-12-10,_DD_47.jpg"
     },
     {
       "en": "Inland rise the Troodos Mountains, cool and scented with pine, with snow on the peaks in winter. Hidden in their valleys are small churches with steep wooden roofs, painted inside from floor to ceiling with glowing frescoes.",
-      "el": "Στο εσωτερικό υψώνεται η οροσειρά του Τροόδους, δροσερή και μοσχομυρισμένη από τα πεύκα, με χιόνι στις κορυφές τον χειμώνα. Στις κοιλάδες της κρύβονται μικρές εκκλησίες με απότομες ξύλινες στέγες, ζωγραφισμένες μέσα από το πάτωμα ως το ταβάνι με λαμπερές τοιχογραφίες."
+      "el": "Στο εσωτερικό υψώνεται η οροσειρά του Τροόδους, δροσερή και μοσχομυρισμένη από τα πεύκα, με χιόνι στις κορυφές τον χειμώνα. Στις κοιλάδες της κρύβονται μικρές εκκλησίες με απότομες ξύλινες στέγες, ζωγραφισμένες μέσα από το πάτωμα ως το ταβάνι με λαμπερές τοιχογραφίες.",
+      "img": "Chionistra_winter_1.JPG"
     },
     {
       "en": "The island is home to Greek Cypriots and Turkish Cypriots, so you'll hear both Greek and Turkish spoken. Nicosia, the capital, sits in the middle of the island, ringed by old Venetian walls shaped like a star.",
-      "el": "Στο νησί ζουν Ελληνοκύπριοι και Τουρκοκύπριοι, γι' αυτό θα ακούσετε να μιλιούνται τόσο τα ελληνικά όσο και τα τουρκικά. Η Λευκωσία, η πρωτεύουσα, βρίσκεται στη μέση του νησιού, περικυκλωμένη από παλιά ενετικά τείχη σε σχήμα αστεριού."
+      "el": "Στο νησί ζουν Ελληνοκύπριοι και Τουρκοκύπριοι, γι' αυτό θα ακούσετε να μιλιούνται τόσο τα ελληνικά όσο και τα τουρκικά. Η Λευκωσία, η πρωτεύουσα, βρίσκεται στη μέση του νησιού, περικυκλωμένη από παλιά ενετικά τείχη σε σχήμα αστεριού.",
+      "img": "Venetian_walls_and_green_parks_Nicosia_Republic_of_Cyprus_Kypros.jpg"
     },
     {
       "en": "Now, let's eat. A Cypriot meze isn't one dish but a parade of small plates, dips, salads, grilled meats and fish, arriving one after another until you're sure you can't manage another bite. Then more arrives.",
-      "el": "Ώρα για φαγητό. Ο κυπριακός μεζές δεν είναι ένα πιάτο, αλλά μια παρέλαση από μικρά πιατάκια, αλοιφές, σαλάτες, ψητά κρέατα και ψάρια, που έρχονται το ένα μετά το άλλο μέχρι να είστε σίγουροι ότι δεν χωράει άλλη μπουκιά. Και τότε έρχονται κι άλλα."
+      "el": "Ώρα για φαγητό. Ο κυπριακός μεζές δεν είναι ένα πιάτο, αλλά μια παρέλαση από μικρά πιατάκια, αλοιφές, σαλάτες, ψητά κρέατα και ψάρια, που έρχονται το ένα μετά το άλλο μέχρι να είστε σίγουροι ότι δεν χωράει άλλη μπουκιά. Και τότε έρχονται κι άλλα.",
+      "img": "Petra_metzes.jpg"
     },
     {
       "en": "Among them you'll find halloumi, the squeaky cheese Cyprus is famous for, grilled until golden. Many village families still make it by hand and fold it with fresh mint.",
-      "el": "Ανάμεσά τους θα βρείτε το χαλλούμι, το τυρί που τρίζει στα δόντια και για το οποίο φημίζεται η Κύπρος, ψημένο μέχρι να ροδίσει. Πολλές οικογένειες στα χωριά το φτιάχνουν ακόμη με τα χέρια και το διπλώνουν με φρέσκο δυόσμο."
+      "el": "Ανάμεσά τους θα βρείτε το χαλλούμι, το τυρί που τρίζει στα δόντια και για το οποίο φημίζεται η Κύπρος, ψημένο μέχρι να ροδίσει. Πολλές οικογένειες στα χωριά το φτιάχνουν ακόμη με τα χέρια και το διπλώνουν με φρέσκο δυόσμο.",
+      "img": "Lefkara_view.jpg"
     },
     {
       "en": "Hospitality here is taken seriously. Visit a village and someone will probably offer you coffee, a glass of cold water and a spoonful of glyko, fruit preserved in syrup. Saying no is very difficult.",
-      "el": "Η φιλοξενία εδώ είναι σοβαρή υπόθεση. Επισκεφθείτε ένα χωριό και πιθανότατα κάποιος θα σας κεράσει καφέ, ένα ποτήρι κρύο νερό κι ένα γλυκό του κουταλιού. Είναι πολύ δύσκολο να πείτε όχι."
+      "el": "Η φιλοξενία εδώ είναι σοβαρή υπόθεση. Επισκεφθείτε ένα χωριό και πιθανότατα κάποιος θα σας κεράσει καφέ, ένα ποτήρι κρύο νερό κι ένα γλυκό του κουταλιού. Είναι πολύ δύσκολο να πείτε όχι.",
+      "img": "Türk_Kahvesi_-_Bakir_Cezve.jpg"
     },
     {
       "en": "In the village of Lefkara, women sit in their doorways stitching delicate white lace, a craft handed down through generations.",
-      "el": "Στα Λεύκαρα, γυναίκες κάθονται στα κατώφλια των σπιτιών τους και κεντούν λεπτή λευκή δαντέλα, μια τέχνη που περνά από γενιά σε γενιά."
+      "el": "Στα Λεύκαρα, γυναίκες κάθονται στα κατώφλια των σπιτιών τους και κεντούν λεπτή λευκή δαντέλα, μια τέχνη που περνά από γενιά σε γενιά.",
+      "img": "Lefkaritiko.jpg"
     },
     {
       "en": "Early summer brings Kataklysmos, the Festival of the Flood. Seaside towns fill with music and stalls, and people splash each other with water to celebrate.",
-      "el": "Στις αρχές του καλοκαιριού γιορτάζεται ο Κατακλυσμός. Οι παραθαλάσσιες πόλεις γεμίζουν μουσική και πάγκους, και ο κόσμος ρίχνει νερό ο ένας στον άλλον για να γιορτάσει."
+      "el": "Στις αρχές του καλοκαιριού γιορτάζεται ο Κατακλυσμός. Οι παραθαλάσσιες πόλεις γεμίζουν μουσική και πάγκους, και ο κόσμος ρίχνει νερό ο ένας στον άλλον για να γιορτάσει.",
+      "img": "Larnaca_01-2017_img27_Finikoudes.jpg"
     },
     {
       "en": "On quiet beaches in the west, loggerhead and green turtles come ashore at night to lay their eggs, and volunteers help to guard the nests.",
-      "el": "Σε ήσυχες παραλίες στα δυτικά, χελώνες καρέτα και πράσινες χελώνες βγαίνουν τη νύχτα στην ακτή για να γεννήσουν τα αυγά τους, και εθελοντές βοηθούν να προστατευτούν οι φωλιές."
+      "el": "Σε ήσυχες παραλίες στα δυτικά, χελώνες καρέτα και πράσινες χελώνες βγαίνουν τη νύχτα στην ακτή για να γεννήσουν τα αυγά τους, και εθελοντές βοηθούν να προστατευτούν οι φωλιές.",
+      "img": "Loggerhead_sea_turtle.jpg"
     },
     {
       "en": "And for something sweet, try loukoumades, little golden puffs of dough soaked in honey syrup, best eaten hot from a street stall.",
-      "el": "Και για κάτι γλυκό, δοκιμάστε λουκουμάδες, μικρές χρυσαφένιες μπουκιές ζύμης βουτηγμένες σε σιρόπι με μέλι, που είναι πιο νόστιμοι ζεστοί από κάποιον πάγκο στον δρόμο."
+      "el": "Και για κάτι γλυκό, δοκιμάστε λουκουμάδες, μικρές χρυσαφένιες μπουκιές ζύμης βουτηγμένες σε σιρόπι με μέλι, που είναι πιο νόστιμοι ζεστοί από κάποιον πάγκο στον δρόμο.",
+      "img": "Protaras_beach,_Protaras,_Paralimni,_Cyprus_(July_2026).jpg"
     },
     {
       "en": "Thank you for sharing the island's sunshine with me. Sail west across the sea, and Greece, with its countless islands, is waiting to welcome you.",
-      "el": "Σας ευχαριστώ που μοιραστήκατε μαζί μου τον ήλιο του νησιού. Ταξιδέψτε δυτικά, πέρα από τη θάλασσα, και η Ελλάδα, με τα αμέτρητα νησιά της, σας περιμένει να σας καλωσορίσει."
+      "el": "Σας ευχαριστώ που μοιραστήκατε μαζί μου τον ήλιο του νησιού. Ταξιδέψτε δυτικά, πέρα από τη θάλασσα, και η Ελλάδα, με τα αμέτρητα νησιά της, σας περιμένει να σας καλωσορίσει.",
+      "img": "Nissi-Beach.jpg"
     }
   ],
-  "next": ["Greece", "Lebanon", "Israel"]
+  "next": [
+    "Greece",
+    "Lebanon",
+    "Israel"
+  ]
 }

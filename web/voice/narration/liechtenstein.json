@@ -1,59 +1,79 @@
 {
   "country": "Liechtenstein",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "segments": [
     {
       "en": "Cowbells clang softly on a high Alpine meadow, and far below, the Rhine winds through a green valley. From up here you can see almost the whole country at once. Hoi, and hello from Liechtenstein!",
-      "de": "Auf einer hohen Alpwiese bimmeln leise die Kuhglocken, und tief unten schlängelt sich der Rhein durch ein grünes Tal. Von hier oben sieht man fast das ganze Land auf einmal. Hoi und herzlich willkommen in Liechtenstein!"
+      "de": "Auf einer hohen Alpwiese bimmeln leise die Kuhglocken, und tief unten schlängelt sich der Rhein durch ein grünes Tal. Von hier oben sieht man fast das ganze Land auf einmal. Hoi und herzlich willkommen in Liechtenstein!",
+      "img": "View_of_Vaduz.jpg"
     },
     {
       "en": "Liechtenstein is one of the smallest countries in the world, tucked between Switzerland and Austria. You could cycle from one end to the other in an afternoon, with time left over for cake.",
-      "de": "Liechtenstein gehört zu den kleinsten Ländern der Welt und liegt zwischen der Schweiz und Österreich. Man kann an einem Nachmittag von einem Ende zum anderen radeln und hat danach noch Zeit für ein Stück Kuchen."
+      "de": "Liechtenstein gehört zu den kleinsten Ländern der Welt und liegt zwischen der Schweiz und Österreich. Man kann an einem Nachmittag von einem Ende zum anderen radeln und hat danach noch Zeit für ein Stück Kuchen.",
+      "img": "Drei_schwestern.JPG"
     },
     {
       "en": "Here's a fun fact: it is one of only two countries on Earth that are doubly landlocked. That means it has no coast, and neither does any of its neighbours.",
-      "de": "Eine lustige Tatsache: Es ist eines von nur zwei Ländern der Erde, die doppelt vom Meer abgeschnitten sind. Das heisst, es hat keine Küste, und auch keines seiner Nachbarländer hat eine."
+      "de": "Eine lustige Tatsache: Es ist eines von nur zwei Ländern der Erde, die doppelt vom Meer abgeschnitten sind. Das heisst, es hat keine Küste, und auch keines seiner Nachbarländer hat eine.",
+      "img": "Gorfion_vom_Bettlerjoch.jpg"
     },
     {
       "en": "It is also a principality, ruled by a prince. His family's castle sits on a rocky ledge above Vaduz, the capital, looking down over rooftops, vineyards and the river.",
-      "de": "Ausserdem ist es ein Fürstentum mit einem Fürsten an der Spitze. Das Schloss der Fürstenfamilie thront auf einem Felsvorsprung über der Hauptstadt Vaduz und blickt auf Dächer, Weinberge und den Fluss hinunter."
+      "de": "Ausserdem ist es ein Fürstentum mit einem Fürsten an der Spitze. Das Schloss der Fürstenfamilie thront auf einem Felsvorsprung über der Hauptstadt Vaduz und blickt auf Dächer, Weinberge und den Fluss hinunter.",
+      "img": "Liechtenstein_asv2022-10_img22_Vaduz_Schloss.jpg"
     },
     {
       "en": "On the fifteenth of August, the national holiday, the prince invites everyone to the castle gardens for a reception. In the evening, fireworks light up the whole valley.",
-      "de": "Am fünfzehnten August, dem Staatsfeiertag, lädt der Fürst alle zu einem Empfang in den Schlossgarten ein. Am Abend erhellt ein Feuerwerk das ganze Tal."
+      "de": "Am fünfzehnten August, dem Staatsfeiertag, lädt der Fürst alle zu einem Empfang in den Schlossgarten ein. Am Abend erhellt ein Feuerwerk das ganze Tal.",
+      "img": "Liechtenstein_asv2022-10_img21_Vaduz_Kathedrale_StFlorin.jpg"
     },
     {
       "en": "German is the official language, but at home and among friends, people speak a warm Alemannic dialect. Each village has its own way of saying things, and locals can often tell where you grew up just from how you talk.",
-      "de": "Amtssprache ist Deutsch, doch zu Hause und unter Freunden spricht man einen gemütlichen alemannischen Dialekt. Jedes Dorf hat seine eigene Art zu reden, und oft hören die Einheimischen sofort, wo jemand aufgewachsen ist."
+      "de": "Amtssprache ist Deutsch, doch zu Hause und unter Freunden spricht man einen gemütlichen alemannischen Dialekt. Jedes Dorf hat seine eigene Art zu reden, und oft hören die Einheimischen sofort, wo jemand aufgewachsen ist.",
+      "img": "Liechtenstein_asv2022-10_img25_Balzers_Burg_Gutenberg.jpg"
     },
     {
       "en": "Liechtenstein has close ties with Switzerland. People pay with Swiss francs, and you can drive across the border without even noticing.",
-      "de": "Liechtenstein ist eng mit der Schweiz verbunden. Man bezahlt mit Schweizer Franken, und die Grenze überquert man mit dem Auto, ohne es überhaupt zu bemerken."
+      "de": "Liechtenstein ist eng mit der Schweiz verbunden. Man bezahlt mit Schweizer Franken, und die Grenze überquert man mit dem Auto, ohne es überhaupt zu bemerken.",
+      "img": "Schaan-Vaduz.jpg"
     },
     {
       "en": "The mountains are the playground. In summer, families hike well-marked trails to mountain huts, and in winter the village of Malbun turns into a friendly ski resort where many local children learn to ski.",
-      "de": "Die Berge sind der Spielplatz des Landes. Im Sommer wandern Familien auf gut markierten Wegen zu Berghütten, und im Winter wird das Dorf Malbun zu einem gemütlichen Skigebiet, wo viele Kinder aus dem Land Skifahren lernen."
+      "de": "Die Berge sind der Spielplatz des Landes. Im Sommer wandern Familien auf gut markierten Wegen zu Berghütten, und im Winter wird das Dorf Malbun zu einem gemütlichen Skigebiet, wo viele Kinder aus dem Land Skifahren lernen.",
+      "img": "Malbun_seen_from_Augstenberg_(valo139).jpg"
     },
     {
       "en": "A favourite dish is Käsknöpfle, little dumplings tossed with tangy local cheese and topped with crispy fried onions, often served with apple sauce on the side.",
-      "de": "Ein Lieblingsgericht sind Käsknöpfle, kleine Teigknöpfle mit würzigem Käse aus der Region und knusprigen Röstzwiebeln, dazu gibt es oft Apfelmus."
+      "de": "Ein Lieblingsgericht sind Käsknöpfle, kleine Teigknöpfle mit würzigem Käse aus der Region und knusprigen Röstzwiebeln, dazu gibt es oft Apfelmus.",
+      "img": "Berggasthof_Haldenhof_-_Käsknöpfle_(1).jpg"
     },
     {
       "en": "On the sunny slopes above the Rhine, vineyards produce fine wines, and the prince's own winery sits right in Vaduz.",
-      "de": "An den sonnigen Hängen über dem Rhein wachsen Reben für feine Weine, und die fürstliche Hofkellerei liegt mitten in Vaduz."
+      "de": "An den sonnigen Hängen über dem Rhein wachsen Reben für feine Weine, und die fürstliche Hofkellerei liegt mitten in Vaduz.",
+      "img": "Cabernet_Sauvignon_Gaillac.jpg"
     },
     {
       "en": "Liechtenstein is also famous for its beautiful postage stamps, which collectors around the world treasure. There's even a postal museum in Vaduz.",
-      "de": "Berühmt ist Liechtenstein auch für seine schönen Briefmarken, die Sammler auf der ganzen Welt schätzen. In Vaduz gibt es sogar ein Postmuseum."
+      "de": "Berühmt ist Liechtenstein auch für seine schönen Briefmarken, die Sammler auf der ganzen Welt schätzen. In Vaduz gibt es sogar ein Postmuseum.",
+      "img": "Engländerbau.jpg"
     },
     {
       "en": "Every village has its customs, from spring bonfires chasing away winter to cattle coming down from the high pastures in autumn, decorated with flowers and bells.",
-      "de": "Jedes Dorf pflegt seine Bräuche, vom Funkenfeuer im Frühling, das den Winter vertreibt, bis zum Alpabtrieb im Herbst, wenn das Vieh mit Blumen und Glocken geschmückt von den Alpen herunterkommt."
+      "de": "Jedes Dorf pflegt seine Bräuche, vom Funkenfeuer im Frühling, das den Winter vertreibt, bis zum Alpabtrieb im Herbst, wenn das Vieh mit Blumen und Glocken geschmückt von den Alpen herunterkommt.",
+      "img": "Steg_Kirchlespitz_01.jpg"
     },
     {
       "en": "Auf Wiedersehen, see you again soon! Just across the Rhine to the west, Switzerland is waiting.",
-      "de": "Auf Wiedersehen und bis bald! Gleich auf der anderen Seite des Rheins, im Westen, wartet die Schweiz auf dich."
+      "de": "Auf Wiedersehen und bis bald! Gleich auf der anderen Seite des Rheins, im Westen, wartet die Schweiz auf dich.",
+      "img": "Hoechst-Rhine-Lustenau-Sankt_Margrethen-Au-Rinevalley-02ASD.jpg"
     }
   ],
-  "next": ["Switzerland", "Austria", "Germany"]
+  "next": [
+    "Switzerland",
+    "Austria",
+    "Germany"
+  ]
 }

@@ -1,59 +1,79 @@
 {
   "country": "Tanzania",
-  "languages": ["en", "sw"],
+  "languages": [
+    "en",
+    "sw"
+  ],
   "segments": [
     {
       "en": "'Habari?' That's how Tanzanians often greet you, asking 'What's the news?' The answer is almost always 'Nzuri', 'Good', whatever the day has brought.",
-      "sw": "«Habari?» Hivyo ndivyo Watanzania wengi wanavyokusalimu, wakiuliza kuhusu hali yako. Jibu karibu kila mara ni «Nzuri», hata siku iwe imeleta nini."
+      "sw": "«Habari?» Hivyo ndivyo Watanzania wengi wanavyokusalimu, wakiuliza kuhusu hali yako. Jibu karibu kila mara ni «Nzuri», hata siku iwe imeleta nini.",
+      "img": "The_bird's_view_of_the_harbour_in_Dar_es_Salaam.jpg"
     },
     {
       "en": "In the north, Mount Kilimanjaro rises snow-capped above the plains, the highest mountain in Africa. Climbers walk up through rainforest, heath and rocky alpine desert to reach its summit.",
-      "sw": "Kaskazini, Mlima Kilimanjaro unainuka juu ya nyanda ukiwa na theluji kileleni, mlima mrefu kuliko yote barani Afrika. Wapandaji hupita katika msitu wa mvua, vichaka na jangwa la miamba kabla ya kufika kileleni."
+      "sw": "Kaskazini, Mlima Kilimanjaro unainuka juu ya nyanda ukiwa na theluji kileleni, mlima mrefu kuliko yote barani Afrika. Wapandaji hupita katika msitu wa mvua, vichaka na jangwa la miamba kabla ya kufika kileleni.",
+      "img": "Kilimanjaro_from_Amboseli.jpg"
     },
     {
       "en": "On the Serengeti plains, vast herds of wildebeest and zebra follow the rains in the great migration, with lions and cheetahs never far behind.",
-      "sw": "Katika nyanda za Serengeti, makundi makubwa ya nyumbu na pundamilia hufuata mvua katika uhamaji mkuu, huku simba na duma wakiwa karibu nyuma yao."
+      "sw": "Katika nyanda za Serengeti, makundi makubwa ya nyumbu na pundamilia hufuata mvua katika uhamaji mkuu, huku simba na duma wakiwa karibu nyuma yao.",
+      "img": "Serengeti-Landscape-2012.JPG"
     },
     {
       "en": "Nearby, the Ngorongoro Crater is a giant bowl left by an ancient volcano, where animals live on the crater floor, surrounded by high green walls.",
-      "sw": "Karibu na hapo, Kreta ya Ngorongoro ni bakuli kubwa lililoachwa na volkano ya kale, ambapo wanyama wanaishi sakafuni mwa kreta, wakizungukwa na kuta ndefu za kijani."
+      "sw": "Karibu na hapo, Kreta ya Ngorongoro ni bakuli kubwa lililoachwa na volkano ya kale, ambapo wanyama wanaishi sakafuni mwa kreta, wakizungukwa na kuta ndefu za kijani.",
+      "img": "Ngorongoro-1001-2.jpg"
     },
     {
       "en": "Maasai herders, wrapped in bright red and blue shukas, move their cattle across the northern grasslands, and their high-jumping dances are a joy to watch.",
-      "sw": "Wafugaji wa Kimasai, wakiwa wamejifunga shuka nyekundu na za buluu, huchunga ng'ombe wao katika mbuga za kaskazini, na ngoma zao za kuruka juu zinapendeza sana kutazama."
+      "sw": "Wafugaji wa Kimasai, wakiwa wamejifunga shuka nyekundu na za buluu, huchunga ng'ombe wao katika mbuga za kaskazini, na ngoma zao za kuruka juu zinapendeza sana kutazama.",
+      "img": "Ol_Doinyo_Lengai_and_Lake_Empakaai.jpg"
     },
     {
       "en": "Kiswahili unites the country's many peoples and is spoken across East Africa. Phrases like 'hakuna matata', no worries, and 'pole pole', slowly slowly, capture the gentle pace of life.",
-      "sw": "Kiswahili kinaunganisha makabila mengi ya nchi hii na kinazungumzwa kote Afrika Mashariki. Maneno kama «hakuna matata» na «pole pole» yanaonyesha mwendo wa taratibu wa maisha."
+      "sw": "Kiswahili kinaunganisha makabila mengi ya nchi hii na kinazungumzwa kote Afrika Mashariki. Maneno kama «hakuna matata» na «pole pole» yanaonyesha mwendo wa taratibu wa maisha.",
+      "img": "Arusha_City_view.jpg"
     },
     {
       "en": "Off the coast lies Zanzibar, the Spice Island. The narrow alleys of Stone Town hide carved wooden doors, and the air smells of cloves, cinnamon and the sea.",
-      "sw": "Pwani ya bahari kuna Zanzibar, Kisiwa cha Viungo. Vichochoro vyembamba vya Mji Mkongwe vinaficha milango ya mbao iliyonakshiwa, na hewa inanukia karafuu, mdalasini na bahari."
+      "sw": "Pwani ya bahari kuna Zanzibar, Kisiwa cha Viungo. Vichochoro vyembamba vya Mji Mkongwe vinaficha milango ya mbao iliyonakshiwa, na hewa inanukia karafuu, mdalasini na bahari.",
+      "img": "Stone_town_,Zanzibar.jpg"
     },
     {
       "en": "Ugali, a firm maize porridge, is eaten with beans, greens or grilled fish. Spiced pilau is made for celebrations, and on the street, chipsi mayai, an omelette cooked with chips, is a favourite snack.",
-      "sw": "Ugali huliwa na maharage, mboga za majani au samaki wa kuchoma. Pilau yenye viungo hupikwa kwa sherehe, na mitaani, chipsi mayai ni kitafunio kinachopendwa sana."
+      "sw": "Ugali huliwa na maharage, mboga za majani au samaki wa kuchoma. Pilau yenye viungo hupikwa kwa sherehe, na mitaani, chipsi mayai ni kitafunio kinachopendwa sana.",
+      "img": "Chipsi_mayai_(zege).jpg"
     },
     {
       "en": "Tanzania touches three of Africa's Great Lakes: Victoria, Tanganyika and Nyasa. Lake Tanganyika is one of the deepest lakes in the world, full of colourful fish.",
-      "sw": "Tanzania inapakana na maziwa makuu matatu ya Afrika: Viktoria, Tanganyika na Nyasa. Ziwa Tanganyika ni moja ya maziwa yenye kina kirefu zaidi duniani, na limejaa samaki wa rangi nyingi."
+      "sw": "Tanzania inapakana na maziwa makuu matatu ya Afrika: Viktoria, Tanganyika na Nyasa. Ziwa Tanganyika ni moja ya maziwa yenye kina kirefu zaidi duniani, na limejaa samaki wa rangi nyingi.",
+      "img": "DKoehl_Boulengerochromis_microlepis.jpg"
     },
     {
       "en": "Respect for elders matters. Young people greet them with 'Shikamoo', and the elder replies 'Marahaba'.",
-      "sw": "Heshima kwa wazee ni muhimu. Vijana huwasalimu kwa «Shikamoo», na mzee hujibu «Marahaba»."
+      "sw": "Heshima kwa wazee ni muhimu. Vijana huwasalimu kwa «Shikamoo», na mzee hujibu «Marahaba».",
+      "img": "Baobab_and_elephant,_Tanzania.jpg"
     },
     {
       "en": "Taarab music, blending African, Arabic and Indian sounds, drifts out of Zanzibar, while bongo flava fills the radios and dance floors of Dar es Salaam.",
-      "sw": "Muziki wa taarab, unaochanganya sauti za Kiafrika, Kiarabu na Kihindi, unasikika kutoka Zanzibar, huku bongo flava ikijaa redioni na kwenye kumbi za dansi za Dar es Salaam."
+      "sw": "Muziki wa taarab, unaochanganya sauti za Kiafrika, Kiarabu na Kihindi, unasikika kutoka Zanzibar, huku bongo flava ikijaa redioni na kwenye kumbi za dansi za Dar es Salaam.",
+      "img": "Zanzibar_sultan_palace.jpg"
     },
     {
       "en": "Look out for Tingatinga paintings, bold and cheerful pictures of animals in bright glossy colours, a style first painted in Dar es Salaam.",
-      "sw": "Angalia michoro ya Tingatinga, picha za wanyama zenye furaha na rangi angavu zinazong'aa, mtindo ulioanzia Dar es Salaam."
+      "sw": "Angalia michoro ya Tingatinga, picha za wanyama zenye furaha na rangi angavu zinazong'aa, mtindo ulioanzia Dar es Salaam.",
+      "img": "St_Joseph's_Catholic_Cathedral_(34895613805).jpg"
     },
     {
       "en": "Karibu tena, come again! Just to the north, across the plains where the herds roam, Kenya is waiting for you.",
-      "sw": "Karibu tena! Upande wa kaskazini, ng'ambo ya nyanda wanamozurura wanyama, Kenya inakusubiri."
+      "sw": "Karibu tena! Upande wa kaskazini, ng'ambo ya nyanda wanamozurura wanyama, Kenya inakusubiri.",
+      "img": "Overlook_of_Lake_Manyara_National_Park.JPG"
     }
   ],
-  "next": ["Kenya", "Uganda", "Mozambique"]
+  "next": [
+    "Kenya",
+    "Uganda",
+    "Mozambique"
+  ]
 }

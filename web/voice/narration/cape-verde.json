@@ -1,59 +1,79 @@
 {
   "country": "Cape Verde",
-  "languages": ["en", "pt-PT"],
+  "languages": [
+    "en",
+    "pt-PT"
+  ],
   "segments": [
     {
       "en": "Ask someone in Cape Verde to describe their islands in one word, and many will say morabeza. It means a warm, easy-going kindness toward strangers, and you feel it the moment you arrive.",
-      "pt-PT": "Peça a alguém de Cabo Verde que descreva as suas ilhas numa só palavra, e muitos dirão morabeza. Significa uma gentileza calorosa e descontraída para com quem chega de fora, e sente-se logo à chegada."
+      "pt-PT": "Peça a alguém de Cabo Verde que descreva as suas ilhas numa só palavra, e muitos dirão morabeza. Significa uma gentileza calorosa e descontraída para com quem chega de fora, e sente-se logo à chegada.",
+      "img": "Mindelo_portogrande.jpg"
     },
     {
       "en": "Cape Verde is a scattering of ten volcanic islands in the Atlantic, off the coast of West Africa. They were uninhabited until Portuguese sailors arrived in the fifteenth century, and a new people grew here from African and European roots.",
-      "pt-PT": "Cabo Verde é um punhado de dez ilhas vulcânicas no Atlântico, ao largo da costa da África Ocidental. Estavam desabitadas até à chegada dos navegadores portugueses no século quinze, e aqui nasceu um povo novo, de raízes africanas e europeias."
+      "pt-PT": "Cabo Verde é um punhado de dez ilhas vulcânicas no Atlântico, ao largo da costa da África Ocidental. Estavam desabitadas até à chegada dos navegadores portugueses no século quinze, e aqui nasceu um povo novo, de raízes africanas e europeias.",
+      "img": "Fogo,_Cape_Verde_Islands.jpg"
     },
     {
       "en": "Portuguese is the official language, but at home and in the street people speak Kriolu, a Creole that sounds a little different on almost every island.",
-      "pt-PT": "O português é a língua oficial, mas em casa e na rua fala-se o crioulo, que soa um pouco diferente em quase todas as ilhas."
+      "pt-PT": "O português é a língua oficial, mas em casa e na rua fala-se o crioulo, que soa um pouco diferente em quase todas as ilhas.",
+      "img": "2006.07.12.cv.sv.mindelo.palacio.jpg"
     },
     {
       "en": "Music is the heartbeat here. The morna is slow and tender, full of longing for the sea and for loved ones far away. Cesária Évora, who sang barefoot, carried it from Mindelo to concert halls around the world.",
-      "pt-PT": "A música é o coração destas ilhas. A morna é lenta e terna, cheia de saudade do mar e de quem está longe. Cesária Évora, que cantava descalça, levou-a do Mindelo às grandes salas de concerto do mundo."
+      "pt-PT": "A música é o coração destas ilhas. A morna é lenta e terna, cheia de saudade do mar e de quem está longe. Cesária Évora, que cantava descalça, levou-a do Mindelo às grandes salas de concerto do mundo.",
+      "img": "Palais_gouverneur_Mindelo.jpg"
     },
     {
       "en": "When spirits rise, there is the quick accordion of funaná and the pounding beat of batuque, sung and drummed by women in a circle. Mindelo's carnival fills the streets with costumes, floats and dancing.",
-      "pt-PT": "Quando o ânimo sobe, há o acordeão acelerado do funaná e o ritmo forte do batuque, cantado e batido pelas mulheres em roda. O carnaval do Mindelo enche as ruas de fantasias, carros alegóricos e dança."
+      "pt-PT": "Quando o ânimo sobe, há o acordeão acelerado do funaná e o ritmo forte do batuque, cantado e batido pelas mulheres em roda. O carnaval do Mindelo enche as ruas de fantasias, carros alegóricos e dança.",
+      "img": "Serra_Malagueta_CV.jpg"
     },
     {
       "en": "The national dish is cachupa, a slow-cooked stew of corn, beans, vegetables and fish or meat. Nothing is wasted: the next morning, leftover cachupa is fried and served for breakfast with an egg on top.",
-      "pt-PT": "O prato nacional é a cachupa, um guisado lento de milho, feijão, legumes e peixe ou carne. Nada se desperdiça: na manhã seguinte, a cachupa que sobrou é refogada e servida ao pequeno-almoço com um ovo estrelado por cima."
+      "pt-PT": "O prato nacional é a cachupa, um guisado lento de milho, feijão, legumes e peixe ou carne. Nada se desperdiça: na manhã seguinte, a cachupa que sobrou é refogada e servida ao pequeno-almoço com um ovo estrelado por cima.",
+      "img": "Cachupa_2.jpg"
     },
     {
       "en": "On Fogo, a great volcano rises from the sea. Families live and farm inside its crater, growing grapes, beans and coffee in the black volcanic soil.",
-      "pt-PT": "No Fogo, um grande vulcão ergue-se do mar. Há famílias que vivem e cultivam dentro da cratera, plantando vinha, feijão e café no solo negro vulcânico."
+      "pt-PT": "No Fogo, um grande vulcão ergue-se do mar. Há famílias que vivem e cultivam dentro da cratera, plantando vinha, feijão e café no solo negro vulcânico.",
+      "img": "Cape_Verde_Pico_do_Fogo_b.jpg"
     },
     {
       "en": "Santo Antão is the green island, with steep valleys, terraced fields and paths that wind along the cliffs. Farmers still crush sugar cane in wooden presses, some turned by oxen.",
-      "pt-PT": "Santo Antão é a ilha verde, de vales íngremes, socalcos e trilhos que serpenteiam pelas falésias. Os agricultores ainda esmagam a cana-de-açúcar em trapiches de madeira, alguns movidos por bois."
+      "pt-PT": "Santo Antão é a ilha verde, de vales íngremes, socalcos e trilhos que serpenteiam pelas falésias. Os agricultores ainda esmagam a cana-de-açúcar em trapiches de madeira, alguns movidos por bois.",
+      "img": "ValeRibeiraGrande.JPG"
     },
     {
       "en": "Sal and Boa Vista are flat and sandy, with long beaches and warm water. In the old salt pans inside an ancient crater on Sal, the water is so salty that you float without trying.",
-      "pt-PT": "O Sal e a Boa Vista são planas e arenosas, com praias longas e água morna. Nas antigas salinas da Pedra de Lume, dentro de uma velha cratera no Sal, a água é tão salgada que se flutua sem esforço."
+      "pt-PT": "O Sal e a Boa Vista são planas e arenosas, com praias longas e água morna. Nas antigas salinas da Pedra de Lume, dentro de uma velha cratera no Sal, a água é tão salgada que se flutua sem esforço.",
+      "img": "Unnamed_Road,_Santa_Maria,_Cape_Verde_-_panoramio_-_brunobarbato_(1).jpg"
     },
     {
       "en": "In summer, sea turtles haul themselves onto the beaches of Boa Vista at night to lay their eggs, while local volunteers watch over the nests.",
-      "pt-PT": "No verão, as tartarugas marinhas sobem de noite às praias da Boa Vista para pôr os ovos, enquanto voluntários locais vigiam os ninhos."
+      "pt-PT": "No verão, as tartarugas marinhas sobem de noite às praias da Boa Vista para pôr os ovos, enquanto voluntários locais vigiam os ninhos.",
+      "img": "Loggerhead_sea_turtle.jpg"
     },
     {
       "en": "Praia, the capital, is on the island of Santiago. Nearby, Cidade Velha was one of the first European towns built in the tropics, and its old stone streets are now a world heritage site.",
-      "pt-PT": "A Praia, a capital, fica na ilha de Santiago. Ali perto, a Cidade Velha foi uma das primeiras cidades europeias construídas nos trópicos, e as suas velhas ruas de pedra são hoje Património Mundial."
+      "pt-PT": "A Praia, a capital, fica na ilha de Santiago. Ali perto, a Cidade Velha foi uma das primeiras cidades europeias construídas nos trópicos, e as suas velhas ruas de pedra são hoje Património Mundial.",
+      "img": "Palácio_da_Cultura,_Praia,_Cape_Verde.jpg"
     },
     {
       "en": "Many Cape Verdeans live abroad, in Europe and the Americas, yet their hearts stay tied to the islands. When they come home in summer, every village fills with music and reunions.",
-      "pt-PT": "Muitos cabo-verdianos vivem no estrangeiro, na Europa e nas Américas, mas o coração continua preso às ilhas. Quando regressam no verão, cada aldeia enche-se de música e de reencontros."
+      "pt-PT": "Muitos cabo-verdianos vivem no estrangeiro, na Europa e nas Américas, mas o coração continua preso às ilhas. Quando regressam no verão, cada aldeia enche-se de música e de reencontros.",
+      "img": "Praia_da_Atalanta.JPG"
     },
     {
       "en": "Now look east across the ocean to the African mainland. Senegal is waiting on the other side.",
-      "pt-PT": "Agora olhe para leste, através do oceano, até ao continente africano. O Senegal espera do outro lado."
+      "pt-PT": "Agora olhe para leste, através do oceano, até ao continente africano. O Senegal espera do outro lado.",
+      "img": "Cidade_Velha-Igreja_Nossa_Senhora_do_Rosário_(1).jpg"
     }
   ],
-  "next": ["Senegal", "Portugal", "Guinea-Bissau"]
+  "next": [
+    "Senegal",
+    "Portugal",
+    "Guinea-Bissau"
+  ]
 }

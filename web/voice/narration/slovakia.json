@@ -1,59 +1,79 @@
 {
   "country": "Slovakia",
-  "languages": ["en", "sk"],
+  "languages": [
+    "en",
+    "sk"
+  ],
   "segments": [
     {
       "en": "A deep, breathy note drifts across a mountain meadow. It comes from the fujara, a shepherd's flute so long that the player has to stand it upright beside him. Its sound has echoed through the valleys of Slovakia for centuries.",
-      "sk": "Horskou lúkou sa nesie hlboký, zamatový tón. Vychádza z fujary, pastierskej píšťaly takej dlhej, že ju hráč musí držať zvislo vedľa seba. Jej zvuk sa ozýva slovenskými dolinami už celé stáročia."
+      "sk": "Horskou lúkou sa nesie hlboký, zamatový tón. Vychádza z fujary, pastierskej píšťaly takej dlhej, že ju hráč musí držať zvislo vedľa seba. Jej zvuk sa ozýva slovenskými dolinami už celé stáročia.",
+      "img": "Krivanska_mala_fatra_hreben.jpg"
     },
     {
       "en": "Slovakia is a small country in the heart of Europe, and much of it is mountains and forests. In the north rise the High Tatras, jagged granite peaks with clear mountain lakes called plesá, where people hike in summer and ski in winter.",
-      "sk": "Slovensko je malá krajina v srdci Európy a veľkú časť z neho tvoria hory a lesy. Na severe sa dvíhajú Vysoké Tatry, zubaté žulové štíty s čistými plesami, kde ľudia v lete chodia na túry a v zime lyžujú."
+      "sk": "Slovensko je malá krajina v srdci Európy a veľkú časť z neho tvoria hory a lesy. Na severe sa dvíhajú Vysoké Tatry, zubaté žulové štíty s čistými plesami, kde ľudia v lete chodia na túry a v zime lyžujú.",
+      "img": "Strbske_pleso_2024.jpg"
     },
     {
       "en": "Beneath the hills there's a hidden world of caves, some full of sparkling stalactites, and one, the Dobšiná Ice Cave, filled with thick walls of ice even in the middle of summer.",
-      "sk": "Pod kopcami sa skrýva svet jaskýň. Niektoré sú plné trblietavých kvapľov a jedna, Dobšinská ľadová jaskyňa, je aj uprostred leta plná hrubých ľadových stien."
+      "sk": "Pod kopcami sa skrýva svet jaskýň. Niektoré sú plné trblietavých kvapľov a jedna, Dobšinská ľadová jaskyňa, je aj uprostred leta plná hrubých ľadových stien.",
+      "img": "Dobsinska_ladova_cave.jpg"
     },
     {
       "en": "Slovakia has a remarkable number of castles for its size. Spiš Castle sprawls across a hilltop in the east, one of the largest castle complexes in Central Europe, while Bojnice Castle looks like something from a fairy tale.",
-      "sk": "Na svoju veľkosť má Slovensko pozoruhodne veľa hradov a zámkov. Spišský hrad sa rozkladá na kopci na východe a patrí k najväčším hradným komplexom v strednej Európe, zatiaľ čo Bojnický zámok vyzerá ako z rozprávky."
+      "sk": "Na svoju veľkosť má Slovensko pozoruhodne veľa hradov a zámkov. Spišský hrad sa rozkladá na kopci na východe a patrí k najväčším hradným komplexom v strednej Európe, zatiaľ čo Bojnický zámok vyzerá ako z rozprávky.",
+      "img": "Spiš_Castle_from_the_south_in_Spiš,_Slovakia,_2016_June.jpg"
     },
     {
       "en": "In the villages of the east, you'll find little wooden churches built without a single metal nail, their shingled towers rising above the trees.",
-      "sk": "V dedinách na východe nájdete malé drevené kostolíky postavené bez jediného kovového klinca, so šindľovými vežičkami, ktoré sa týčia nad stromami."
+      "sk": "V dedinách na východe nájdete malé drevené kostolíky postavené bez jediného kovového klinca, so šindľovými vežičkami, ktoré sa týčia nad stromami.",
+      "img": "Hervartov,_kościół_św._Franciszka_z_Asyżu.jpg"
     },
     {
       "en": "The capital, Bratislava, sits on the Danube, close to both Austria and Hungary. Stroll its old town and you might bump into Čumil, a bronze workman peeking cheekily out of a manhole.",
-      "sk": "Hlavné mesto Bratislava leží na Dunaji, blízko Rakúska aj Maďarska. Keď sa budete prechádzať starým mestom, možno narazíte na Čumila, bronzového robotníka, ktorý šibalsky vykukuje z kanála."
+      "sk": "Hlavné mesto Bratislava leží na Dunaji, blízko Rakúska aj Maďarska. Keď sa budete prechádzať starým mestom, možno narazíte na Čumila, bronzového robotníka, ktorý šibalsky vykukuje z kanála.",
+      "img": "Bratislava_01-2009_-_panoramio_-_adirricor_(4).jpg"
     },
     {
       "en": "For a long time Slovakia was part of Czechoslovakia, and in nineteen ninety-three it peacefully became an independent country. Slovak and Czech are so close that speakers of each can usually understand the other.",
-      "sk": "Dlhý čas bolo Slovensko súčasťou Česko-Slovenska a v roku tisícdeväťstodeväťdesiattri sa pokojne stalo samostatnou krajinou. Slovenčina a čeština sú si také blízke, že si ich hovoriaci zvyčajne navzájom rozumejú."
+      "sk": "Dlhý čas bolo Slovensko súčasťou Česko-Slovenska a v roku tisícdeväťstodeväťdesiattri sa pokojne stalo samostatnou krajinou. Slovenčina a čeština sú si také blízke, že si ich hovoriaci zvyčajne navzájom rozumejú.",
+      "img": "Slovakia_bratislava.jpg"
     },
     {
       "en": "Every Slovak child knows the story of Jánošík, a legendary outlaw of the mountains who, the tales say, took from the rich and gave to the poor.",
-      "sk": "Každé slovenské dieťa pozná príbeh o Jánošíkovi, legendárnom zbojníkovi z hôr, ktorý podľa povestí bral bohatým a dával chudobným."
+      "sk": "Každé slovenské dieťa pozná príbeh o Jánošíkovi, legendárnom zbojníkovi z hôr, ktorý podľa povestí bral bohatým a dával chudobným.",
+      "img": "Slovakia_Terchova_18.jpg"
     },
     {
       "en": "Hungry? The national dish is bryndzové halušky, soft little potato dumplings covered in tangy sheep's cheese and topped with crispy bacon. Wash it down with a glass of žinčica, a sour whey drink, if you're feeling brave.",
-      "sk": "Máte hlad? Národným jedlom sú bryndzové halušky, mäkké zemiakové halušky s pikantnou ovčou bryndzou a chrumkavou slaninkou. Ak ste odvážni, zapite ich pohárom žinčice."
+      "sk": "Máte hlad? Národným jedlom sú bryndzové halušky, mäkké zemiakové halušky s pikantnou ovčou bryndzou a chrumkavou slaninkou. Ak ste odvážni, zapite ich pohárom žinčice.",
+      "img": "Bryndzové_halušky_so_slaninou.jpg"
     },
     {
       "en": "Folk traditions are very much alive, with colourful embroidered costumes, lively dances and festivals. At Easter, boys playfully sprinkle water on girls and tap them with braided willow switches, an old custom meant to bring health and freshness for the year.",
-      "sk": "Ľudové tradície sú stále živé, s pestrými vyšívanými krojmi, živými tancami a festivalmi. Na Veľkú noc chlapci dievčatá žartom polievajú vodou a šibú ich pletenými korbáčmi z vŕbového prútia, podľa starého zvyku, ktorý má priniesť zdravie a sviežosť na celý rok."
+      "sk": "Ľudové tradície sú stále živé, s pestrými vyšívanými krojmi, živými tancami a festivalmi. Na Veľkú noc chlapci dievčatá žartom polievajú vodou a šibú ich pletenými korbáčmi z vŕbového prútia, podľa starého zvyku, ktorý má priniesť zdravie a sviežosť na celý rok.",
+      "img": "Čičmany_-_wooden_houses.jpg"
     },
     {
       "en": "When you visit a Slovak home, take off your shoes at the door, and expect to be offered something to eat almost as soon as you sit down.",
-      "sk": "Keď prídete na návštevu do slovenskej domácnosti, vyzujte sa pri dverách a počítajte s tým, že vás pohostia hneď, ako si sadnete."
+      "sk": "Keď prídete na návštevu do slovenskej domácnosti, vyzujte sa pri dverách a počítajte s tým, že vás pohostia hneď, ako si sadnete.",
+      "img": "Vlkolinecslovakia001.jpg"
     },
     {
       "en": "And sport? Ice hockey is the great passion, and when the national team plays at the world championships, the whole country cheers.",
-      "sk": "A šport? Veľkou vášňou je hokej, a keď národný tím hrá na majstrovstvách sveta, fandí celá krajina."
+      "sk": "A šport? Veľkou vášňou je hokej, a keď národný tím hrá na majstrovstvách sveta, fandí celá krajina.",
+      "img": "Dóm_svätej_Alžbety.jpg"
     },
     {
       "en": "Ďakujem, thank you, for the visit. Just to the west, the Czech Republic, our closest cousin, is waiting for you.",
-      "sk": "Ďakujem za návštevu! Hneď na západe vás čaká Česko, náš najbližší sused a príbuzný."
+      "sk": "Ďakujem za návštevu! Hneď na západe vás čaká Česko, náš najbližší sused a príbuzný.",
+      "img": "Devin02.jpg"
     }
   ],
-  "next": ["Czech Republic", "Poland", "Austria"]
+  "next": [
+    "Czech Republic",
+    "Poland",
+    "Austria"
+  ]
 }

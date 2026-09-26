@@ -1,46 +1,65 @@
 {
   "country": "Bahamas",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "It is the middle of the night on Boxing Day, yet the streets of Nassau are packed. Goatskin drums boom, cowbells clang, whistles shriek, and dancers in towering costumes of glittering paper whirl past. This is Junkanoo, and it is pure Bahamian joy."
+      "en": "It is the middle of the night on Boxing Day, yet the streets of Nassau are packed. Goatskin drums boom, cowbells clang, whistles shriek, and dancers in towering costumes of glittering paper whirl past. This is Junkanoo, and it is pure Bahamian joy.",
+      "img": "Nassau,_Bahamas_aerial_view_(cropped).jpg"
     },
     {
-      "en": "Groups spend months building those costumes in secret workshops called shacks, and the parade is also a competition. When the sun comes up, everyone waits to hear which group has won."
+      "en": "Groups spend months building those costumes in secret workshops called shacks, and the parade is also a competition. When the sun comes up, everyone waits to hear which group has won.",
+      "img": "Lucayan_Harbor_JonWorth.jpg"
     },
     {
-      "en": "The Bahamas is not one island but hundreds, from large islands to tiny sandy cays, scattered across shallow, gleaming water in the Atlantic just southeast of Florida."
+      "en": "The Bahamas is not one island but hundreds, from large islands to tiny sandy cays, scattered across shallow, gleaming water in the Atlantic just southeast of Florida.",
+      "img": "Exuma_Cays_Land_and_Sea_Park_2.jpeg"
     },
     {
-      "en": "That water is famous for its colours: pale green over sandbanks, bright turquoise in the shallows, and suddenly deep indigo where the seabed drops away. From a plane, it looks like someone painted it."
+      "en": "That water is famous for its colours: pale green over sandbanks, bright turquoise in the shallows, and suddenly deep indigo where the seabed drops away. From a plane, it looks like someone painted it.",
+      "img": "Great_Harbor_Cay_horseshoe.jpg"
     },
     {
-      "en": "Nassau, the capital, is on the island of New Providence. Its pastel colonial buildings, busy harbour and straw market, where weavers plait hats and baskets from palm leaves, are a lively introduction."
+      "en": "Nassau, the capital, is on the island of New Providence. Its pastel colonial buildings, busy harbour and straw market, where weavers plait hats and baskets from palm leaves, are a lively introduction.",
+      "img": "BahamianParliamentPanorama.jpg"
     },
     {
-      "en": "But many Bahamians will tell you the real magic lies in the Family Islands, the quieter islands where everyone knows everyone, and life follows the rhythm of the tides and the Sunday church service."
+      "en": "But many Bahamians will tell you the real magic lies in the Family Islands, the quieter islands where everyone knows everyone, and life follows the rhythm of the tides and the Sunday church service.",
+      "img": "Cat_Island,_Bahamas.JPG"
     },
     {
-      "en": "In the Exumas, wild pigs paddle out through clear water to greet visiting boats, and on Harbour Island the beach has a soft pink tint from tiny crushed shells."
+      "en": "In the Exumas, wild pigs paddle out through clear water to greet visiting boats, and on Harbour Island the beach has a soft pink tint from tiny crushed shells.",
+      "img": "Vorobek_Bahamas_-_swimming_pigs.jpg"
     },
     {
-      "en": "On Andros, the biggest island, deep blue holes plunge into underwater caves, and on Inagua in the far south, thousands of pink flamingos, the national bird, wade through salty lakes."
+      "en": "On Andros, the biggest island, deep blue holes plunge into underwater caves, and on Inagua in the far south, thousands of pink flamingos, the national bird, wade through salty lakes.",
+      "img": "American_Flamingo_JG.jpg"
     },
     {
-      "en": "Food here comes from the sea. The favourite is conch, a large sea snail: sliced into a zesty salad with lime, onion and hot pepper, or fried into crispy golden fritters. Wash it down with fresh coconut water."
+      "en": "Food here comes from the sea. The favourite is conch, a large sea snail: sliced into a zesty salad with lime, onion and hot pepper, or fried into crispy golden fritters. Wash it down with fresh coconut water.",
+      "img": "Queen_Conch_(Lobatus_gigas).jpg"
     },
     {
-      "en": "Listen for rake and scrape, a homegrown music where someone plays a carpenter's saw by scraping it with a knife, alongside a goatskin drum and an accordion. It sounds rough, cheerful and impossible to sit still to."
+      "en": "Listen for rake and scrape, a homegrown music where someone plays a carpenter's saw by scraping it with a knife, alongside a goatskin drum and an accordion. It sounds rough, cheerful and impossible to sit still to.",
+      "img": "Paradise_Island_Lighthouse,_Bahamas.jpg"
     },
     {
-      "en": "People are warm and polite. It is good manners to say good morning or good afternoon before asking anything, even in a shop. Skip it, and you may get a gentle reminder."
+      "en": "People are warm and polite. It is good manners to say good morning or good afternoon before asking anything, even in a shop. Skip it, and you may get a gentle reminder.",
+      "img": "Andros_island2978.jpg"
     },
     {
-      "en": "Sailing is in the blood here, and at regattas, locally built wooden sloops race between the islands while crowds cheer from the shore."
+      "en": "Sailing is in the blood here, and at regattas, locally built wooden sloops race between the islands while crowds cheer from the shore.",
+      "img": "Alice_Town_Bimini_Bahamas_01.jpg"
     },
     {
-      "en": "When you are ready, set sail south across the channel. Cuba is waiting, just beyond the horizon."
+      "en": "When you are ready, set sail south across the channel. Cuba is waiting, just beyond the horizon.",
+      "img": "NorthShoreGreatInagua.jpg"
     }
   ],
-  "next": ["Cuba", "United States", "Haiti"]
+  "next": [
+    "Cuba",
+    "United States",
+    "Haiti"
+  ]
 }

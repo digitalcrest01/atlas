@@ -1,46 +1,63 @@
 {
   "country": "Eswatini",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "At the end of winter, a long line of young women walks through the valley carrying tall reeds on their shoulders, singing as they go. They're heading for the royal village and Umhlanga, the Reed Dance, one of the great celebrations of Eswatini."
+      "en": "At the end of winter, a long line of young women walks through the valley carrying tall reeds on their shoulders, singing as they go. They're heading for the royal village and Umhlanga, the Reed Dance, one of the great celebrations of Eswatini.",
+      "img": "Mbabane,_Eswatini.jpg"
     },
     {
-      "en": "Eswatini, known until recently as Swaziland, is a small kingdom tucked between South Africa and Mozambique. Its name means land of the Swazi, and its people are called emaSwati."
+      "en": "Eswatini, known until recently as Swaziland, is a small kingdom tucked between South Africa and Mozambique. Its name means land of the Swazi, and its people are called emaSwati.",
+      "img": "Mdzimba_Mountain.jpg"
     },
     {
-      "en": "Small as it is, the country is wonderfully varied. In the west there are cool, misty highlands and pine forests. In the middle, rolling green hills. And in the east lies the warm lowveld, dry bushland where wild animals roam."
+      "en": "Small as it is, the country is wonderfully varied. In the west there are cool, misty highlands and pine forests. In the middle, rolling green hills. And in the east lies the warm lowveld, dry bushland where wild animals roam.",
+      "img": "EswatiPoker.jpg"
     },
     {
-      "en": "The national language is siSwati, spoken alongside English. To greet someone, say sawubona, which means I see you. To say thank you, it's ngiyabonga."
+      "en": "The national language is siSwati, spoken alongside English. To greet someone, say sawubona, which means I see you. To say thank you, it's ngiyabonga.",
+      "img": "SZ-manzini-zufahrt.jpg"
     },
     {
       "en": "Traditions run deep. Around the height of summer comes Incwala, the most sacred ceremony of the year, when the nation gathers with songs and dances to bless the first fruits and the year ahead."
     },
     {
-      "en": "Look out for the colourful cloth called emahiya, printed with bold patterns and wrapped around the body. At festivals, men add cowhide shields and feathered headdresses."
+      "en": "Look out for the colourful cloth called emahiya, printed with bold patterns and wrapped around the body. At festivals, men add cowhide shields and feathered headdresses.",
+      "img": "2012-10-06-nhlangano_town_center_jacaranda.jpg"
     },
     {
-      "en": "Mbabane, up in the hills, is the main city of government, while nearby Lobamba is home to Parliament and the royal ceremonies. Both lie close to the green Ezulwini Valley, whose name means the Valley of Heaven."
+      "en": "Mbabane, up in the hills, is the main city of government, while nearby Lobamba is home to Parliament and the royal ceremonies. Both lie close to the green Ezulwini Valley, whose name means the Valley of Heaven.",
+      "img": "Mbabane_(6035476964).jpg"
     },
     {
-      "en": "In Hlane Royal National Park you can see rhinos, elephants and lions, and at Mlilwane Wildlife Sanctuary, zebras and antelope graze so close you can hear them chewing."
+      "en": "In Hlane Royal National Park you can see rhinos, elephants and lions, and at Mlilwane Wildlife Sanctuary, zebras and antelope graze so close you can hear them chewing.",
+      "img": "Hlane-Basic-Hide-At-Hippo-Pool.JPG"
     },
     {
       "en": "Near the northwestern border is Ngwenya, one of the oldest known mines in the world. Tens of thousands of years ago, people dug red iron ore here, perhaps to make paint for their bodies and rituals."
     },
     {
-      "en": "Everyday meals are simple and filling. Try sishwala, a thick maize porridge eaten with meat or vegetables, and emasi, thick soured milk that's cool and refreshing on a hot day."
+      "en": "Everyday meals are simple and filling. Try sishwala, a thick maize porridge eaten with meat or vegetables, and emasi, thick soured milk that's cool and refreshing on a hot day.",
+      "img": "Rio_Komati_gorge_cmichaelhoganlowres.jpg"
     },
     {
-      "en": "Eswatini is also known for its crafts. Candles shaped like animals, glowing glass made from recycled bottles, and grass baskets woven in bright patterns come from small workshops all over the country."
+      "en": "Eswatini is also known for its crafts. Candles shaped like animals, glowing glass made from recycled bottles, and grass baskets woven in bright patterns come from small workshops all over the country.",
+      "img": "Ngwenya_Glass_Factory.jpg"
     },
     {
-      "en": "People here are gentle and courteous. Elders are treated with great respect, and it's good manners to greet everyone properly before you ask a question."
+      "en": "People here are gentle and courteous. Elders are treated with great respect, and it's good manners to greet everyone properly before you ask a question.",
+      "img": "Granite_monolith.jpg"
     },
     {
-      "en": "Ngiyabonga for visiting. Follow the road east, down through the lowveld, and Mozambique is waiting, with its long coast on the Indian Ocean."
+      "en": "Ngiyabonga for visiting. Follow the road east, down through the lowveld, and Mozambique is waiting, with its long coast on the Indian Ocean.",
+      "img": "MR8_before_Big_Bend_Swaziland.jpg"
     }
   ],
-  "next": ["Mozambique", "South Africa", "Lesotho"]
+  "next": [
+    "Mozambique",
+    "South Africa",
+    "Lesotho"
+  ]
 }

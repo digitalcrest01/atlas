@@ -1,55 +1,74 @@
 {
   "country": "Singapore",
-  "languages": ["en", "zh-Hans"],
+  "languages": [
+    "en",
+    "zh-Hans"
+  ],
   "segments": [
     {
       "en": "Woks clang, steam rises, and someone calls out an order in three languages at once. It's lunchtime at a hawker centre in Singapore, and the tables are filling up fast.",
-      "zh-Hans": "铁锅叮当作响，热气腾腾，有人一口气用三种语言喊着点餐。这是新加坡小贩中心的午饭时间，座位很快就坐满了。"
+      "zh-Hans": "铁锅叮当作响，热气腾腾，有人一口气用三种语言喊着点餐。这是新加坡小贩中心的午饭时间，座位很快就坐满了。",
+      "img": "Lau_Pa_Sat_Singapore_1.jpg"
     },
     {
       "en": "See that little packet of tissues left on an empty table? That's called chope. It means someone has saved the seat while they queue for food, and everyone respects it.",
-      "zh-Hans": "看到空桌上那包小小的纸巾了吗？这叫“占位”。意思是有人已经留了座位，自己去排队买吃的，大家都会尊重这个规矩。"
+      "zh-Hans": "看到空桌上那包小小的纸巾了吗？这叫“占位”。意思是有人已经留了座位，自己去排队买吃的，大家都会尊重这个规矩。",
+      "img": "Lau_Pa_Sat_Singapore_2.jpg"
     },
     {
       "en": "Singapore is a small island nation at the southern tip of the Malay Peninsula, a city and a country at the same time. It sits just north of the equator, so it's warm and humid all year, with sudden, heavy tropical downpours.",
-      "zh-Hans": "新加坡是马来半岛南端的一个小小岛国，既是一座城市，也是一个国家。它就在赤道以北，一年四季温暖潮湿，热带大雨说来就来。"
+      "zh-Hans": "新加坡是马来半岛南端的一个小小岛国，既是一座城市，也是一个国家。它就在赤道以北，一年四季温暖潮湿，热带大雨说来就来。",
+      "img": "Marina_Bay_Singapore-3499.jpg"
     },
     {
       "en": "People of Chinese, Malay, Indian and many other backgrounds live side by side here, and there are four official languages, English, Mandarin, Malay and Tamil. Many Singaporeans also speak Singlish, a lively local English sprinkled with words from all of them.",
-      "zh-Hans": "华人、马来人、印度人和其他许多族群在这里比邻而居，官方语言有四种：英语、华语、马来语和淡米尔语。很多新加坡人还会说“新加坡式英语”，里面夹杂着各种语言的词，非常生动。"
+      "zh-Hans": "华人、马来人、印度人和其他许多族群在这里比邻而居，官方语言有四种：英语、华语、马来语和淡米尔语。很多新加坡人还会说“新加坡式英语”，里面夹杂着各种语言的词，非常生动。",
+      "img": "Aerial_perspective_of_Singapore's_Chinatown.jpg"
     },
     {
       "en": "So the calendar is full of celebrations. Chinese New Year brings lion dances and red lanterns, Hari Raya Puasa marks the end of Ramadan, Deepavali lights up Little India, and Christmas decorations glitter along Orchard Road.",
-      "zh-Hans": "所以这里一年到头都有节庆。农历新年有舞狮和红灯笼，开斋节标志着斋月结束，屠妖节点亮小印度，圣诞节时乌节路上的灯饰闪闪发光。"
+      "zh-Hans": "所以这里一年到头都有节庆。农历新年有舞狮和红灯笼，开斋节标志着斋月结束，屠妖节点亮小印度，圣诞节时乌节路上的灯饰闪闪发光。",
+      "img": "2016_Singapur,_Little_India,_Ulica_Kerbau,_Była_rezydencja_Tan_Teng_Niaha_(02).jpg"
     },
     {
       "en": "Back to the food. Try Hainanese chicken rice, fragrant and simple, spicy laksa noodles in coconut broth, or chilli crab eaten messily with your hands. For breakfast, locals love kaya toast, with coconut jam, soft-boiled eggs and strong coffee.",
-      "zh-Hans": "再说说吃的。尝尝香喷喷的海南鸡饭，椰浆汤底的辣味叻沙，或者用手剥着吃、吃得满手都是的辣椒螃蟹。早餐的话，当地人最爱咖椰吐司，配半生熟鸡蛋和一杯浓浓的咖啡。"
+      "zh-Hans": "再说说吃的。尝尝香喷喷的海南鸡饭，椰浆汤底的辣味叻沙，或者用手剥着吃、吃得满手都是的辣椒螃蟹。早餐的话，当地人最爱咖椰吐司，配半生熟鸡蛋和一杯浓浓的咖啡。",
+      "img": "Hainanese_Chicken_Rice.jpg"
     },
     {
       "en": "Singapore grew as a trading port on one of the busiest sea routes in the world. It became an independent country in nineteen sixty-five, and has grown into a gleaming modern city.",
-      "zh-Hans": "新加坡是在世界上最繁忙的航线之一上发展起来的贸易港口。一九六五年，它成为独立国家，如今已发展成一座闪亮的现代化城市。"
+      "zh-Hans": "新加坡是在世界上最繁忙的航线之一上发展起来的贸易港口。一九六五年，它成为独立国家，如今已发展成一座闪亮的现代化城市。",
+      "img": "A_water_taxi_at_Singapore_River.jpg"
     },
     {
       "en": "Yet it's also called a city in a garden. Trees line almost every road, and at Gardens by the Bay, giant metal Supertrees covered in plants glow with light and music every evening.",
-      "zh-Hans": "不过，它也被称为“花园中的城市”。几乎每条路都绿树成荫；在滨海湾花园，覆盖着植物的巨型“擎天大树”每晚都会随着音乐亮起灯光。"
+      "zh-Hans": "不过，它也被称为“花园中的城市”。几乎每条路都绿树成荫；在滨海湾花园，覆盖着植物的巨型“擎天大树”每晚都会随着音乐亮起灯光。",
+      "img": "Supertree_Grove,_Gardens_by_the_Bay,_Singapore_-_20120712-02.jpg"
     },
     {
       "en": "Down by the water, the Merlion, half lion and half fish, spouts water into the bay. The lion recalls the old name Singapura, lion city, and the fish remembers its past as a fishing village.",
-      "zh-Hans": "在水边，鱼尾狮一半是狮子，一半是鱼，正向海湾喷着水。狮子代表古名“新加坡拉”，也就是狮城；鱼尾则让人想起它曾经是个小渔村。"
+      "zh-Hans": "在水边，鱼尾狮一半是狮子，一半是鱼，正向海湾喷着水。狮子代表古名“新加坡拉”，也就是狮城；鱼尾则让人想起它曾经是个小渔村。",
+      "img": "Singapore_Merlion_BCT.jpg"
     },
     {
       "en": "Most Singaporeans live in tall public housing blocks, and on the ground floor you'll find open spaces where neighbours chat, children play and families hold weddings and gatherings.",
-      "zh-Hans": "大多数新加坡人住在高高的组屋里，楼下有开放的空间，邻居们在那里聊天，孩子们玩耍，家人们也会在这里举办婚礼和各种聚会。"
+      "zh-Hans": "大多数新加坡人住在高高的组屋里，楼下有开放的空间，邻居们在那里聊天，孩子们玩耍，家人们也会在这里举办婚礼和各种聚会。",
+      "img": "Pinnacle@Duxton,_Singapore_-_20100101.jpg"
     },
     {
       "en": "People here value good manners, clean streets and queuing patiently. Show respect to older people, whom many call uncle or auntie even if they aren't related.",
-      "zh-Hans": "这里的人讲究礼貌、爱护街道整洁，也会耐心排队。要尊重长辈，很多人会称呼年长的人为“安哥”或“安娣”，即使并没有亲戚关系。"
+      "zh-Hans": "这里的人讲究礼貌、爱护街道整洁，也会耐心排队。要尊重长辈，很多人会称呼年长的人为“安哥”或“安娣”，即使并没有亲戚关系。",
+      "img": "Symphony_Lake,_Singapore_Botanic_Gardens_-_20041025.jpg"
     },
     {
       "en": "Thank you for stopping by. Cross the causeway to the north, and Malaysia is waiting just across the water.",
-      "zh-Hans": "谢谢你的到访！沿着长堤往北走，隔着一道海峡，马来西亚正在等着你。"
+      "zh-Hans": "谢谢你的到访！沿着长堤往北走，隔着一道海峡，马来西亚正在等着你。",
+      "img": "Malaysia-Singapore_Second_Link_Linkedua.jpg"
     }
   ],
-  "next": ["Malaysia", "Indonesia", "Brunei"]
+  "next": [
+    "Malaysia",
+    "Indonesia",
+    "Brunei"
+  ]
 }

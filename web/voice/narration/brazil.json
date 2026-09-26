@@ -1,55 +1,74 @@
 {
   "country": "Brazil",
-  "languages": ["en", "pt-BR"],
+  "languages": [
+    "en",
+    "pt-BR"
+  ],
   "segments": [
     {
       "en": "There is a Portuguese word that Brazilians say has no true translation: saudade, a tender longing for someone or somewhere you love. Spend a little time in Brazil, and you may start to feel it too.",
-      "pt-BR": "Existe uma palavra em português que, segundo os brasileiros, não tem tradução exata: saudade, aquele aperto no peito de quem sente falta de alguém ou de algum lugar querido. Passe um tempinho no Brasil e talvez você comece a senti-la também."
+      "pt-BR": "Existe uma palavra em português que, segundo os brasileiros, não tem tradução exata: saudade, aquele aperto no peito de quem sente falta de alguém ou de algum lugar querido. Passe um tempinho no Brasil e talvez você comece a senti-la também.",
+      "img": "Cidade_Maravilhosa.jpg"
     },
     {
       "en": "Brazil is enormous, covering nearly half of South America, and it is the only country on the continent where Portuguese is the main language, a legacy of colonial times.",
-      "pt-BR": "O Brasil é enorme, ocupa quase metade da América do Sul e é o único país do continente onde o português é a língua principal, herança dos tempos coloniais."
+      "pt-BR": "O Brasil é enorme, ocupa quase metade da América do Sul e é o único país do continente onde o português é a língua principal, herança dos tempos coloniais.",
+      "img": "Igreja_de_São_Francisco_de_Assis_(Ouro_Preto,_MG)_cropped.jpg"
     },
     {
       "en": "In the north, the Amazon rainforest breathes around a colossal river. Pink river dolphins surface beside wooden boats, and near Manaus the dark Rio Negro meets the muddy Solimões, the two flowing side by side for miles without mixing.",
-      "pt-BR": "No norte, a floresta amazônica respira em volta de um rio colossal. Botos-cor-de-rosa surgem ao lado dos barcos de madeira, e perto de Manaus o escuro Rio Negro encontra o barrento Solimões, e os dois correm lado a lado por quilômetros sem se misturar."
+      "pt-BR": "No norte, a floresta amazônica respira em volta de um rio colossal. Botos-cor-de-rosa surgem ao lado dos barcos de madeira, e perto de Manaus o escuro Rio Negro encontra o barrento Solimões, e os dois correm lado a lado por quilômetros sem se misturar.",
+      "img": "Encontro_das_Águas_-_Manaus.jpg"
     },
     {
       "en": "Rio de Janeiro wraps itself around mountains and beaches. Christ the Redeemer opens his arms above the city, cable cars climb Sugarloaf Mountain, and on Copacabana people play footvolley until sunset.",
-      "pt-BR": "O Rio de Janeiro se espalha entre morros e praias. O Cristo Redentor abre os braços sobre a cidade, o bondinho sobe o Pão de Açúcar e, em Copacabana, a turma joga futevôlei até o pôr do sol."
+      "pt-BR": "O Rio de Janeiro se espalha entre morros e praias. O Cristo Redentor abre os braços sobre a cidade, o bondinho sobe o Pão de Açúcar e, em Copacabana, a turma joga futevôlei até o pôr do sol.",
+      "img": "Christ_the_Redeemer_-_Cristo_Redentor.jpg"
     },
     {
       "en": "Before Lent comes Carnival. In Rio, samba schools rehearse all year for one glittering night of parade, while in Salvador and Recife whole cities dance through the streets behind sound trucks and brass bands.",
-      "pt-BR": "Antes da Quaresma vem o Carnaval. No Rio, as escolas de samba ensaiam o ano inteiro para uma única noite de desfile cheia de brilho, enquanto em Salvador e no Recife cidades inteiras dançam pelas ruas atrás dos trios elétricos e das orquestras de frevo."
+      "pt-BR": "Antes da Quaresma vem o Carnaval. No Rio, as escolas de samba ensaiam o ano inteiro para uma única noite de desfile cheia de brilho, enquanto em Salvador e no Recife cidades inteiras dançam pelas ruas atrás dos trios elétricos e das orquestras de frevo.",
+      "img": "Desfile_Portela_2014_(906185).jpg"
     },
     {
       "en": "Salvador, in Bahia, is the heart of Afro-Brazilian culture. In the old Pelourinho quarter you hear drums, watch capoeira, a blend of martial art, dance and music, and smell acarajé, bean fritters fried in palm oil.",
-      "pt-BR": "Salvador, na Bahia, é o coração da cultura afro-brasileira. No velho Pelourinho você ouve tambores, assiste à capoeira, mistura de luta, dança e música, e sente o cheiro do acarajé, bolinho de feijão frito no azeite de dendê."
+      "pt-BR": "Salvador, na Bahia, é o coração da cultura afro-brasileira. No velho Pelourinho você ouve tambores, assiste à capoeira, mistura de luta, dança e música, e sente o cheiro do acarajé, bolinho de feijão frito no azeite de dendê.",
+      "img": "Salvadorpelourinho.jpg"
     },
     {
       "en": "Food is a family affair. On Saturdays many people share feijoada, a hearty stew of black beans and pork with rice, greens and orange slices. And every child's birthday party has brigadeiros, chocolate sweets rolled in sprinkles.",
-      "pt-BR": "Comer é coisa de família. Aos sábados, muita gente se reúne em volta de uma feijoada, um ensopado caprichado de feijão-preto e carne de porco, com arroz, couve e fatias de laranja. E em todo aniversário de criança tem brigadeiro, docinho de chocolate enrolado no granulado."
+      "pt-BR": "Comer é coisa de família. Aos sábados, muita gente se reúne em volta de uma feijoada, um ensopado caprichado de feijão-preto e carne de porco, com arroz, couve e fatias de laranja. E em todo aniversário de criança tem brigadeiro, docinho de chocolate enrolado no granulado.",
+      "img": "Feijoada_01.jpg"
     },
     {
       "en": "Friends greet each other warmly, often with a kiss on the cheek. Ask tudo bem, and you will almost always hear tudo, with a smile. Then someone will offer you a cafezinho, a tiny, sweet coffee.",
-      "pt-BR": "Os amigos se cumprimentam com carinho, muitas vezes com um beijinho no rosto. Pergunte tudo bem e quase sempre vão responder tudo, com um sorriso. Depois, alguém vai te oferecer um cafezinho, pequeno e docinho."
+      "pt-BR": "Os amigos se cumprimentam com carinho, muitas vezes com um beijinho no rosto. Pergunte tudo bem e quase sempre vão responder tudo, com um sorriso. Depois, alguém vai te oferecer um cafezinho, pequeno e docinho.",
+      "img": "Praia_de_Copacabana_-_Rio_de_Janeiro,_Brasil.jpg"
     },
     {
       "en": "Football is almost a second language. Children play barefoot on beaches and dusty streets, dreaming of the yellow shirt, and on match days whole neighbourhoods fall silent, then explode with joy.",
-      "pt-BR": "O futebol é quase uma segunda língua. A criançada joga descalça na areia e nas ruas de terra, sonhando com a camisa amarela, e em dia de jogo bairros inteiros ficam em silêncio e depois explodem de alegria."
+      "pt-BR": "O futebol é quase uma segunda língua. A criançada joga descalça na areia e nas ruas de terra, sonhando com a camisa amarela, e em dia de jogo bairros inteiros ficam em silêncio e depois explodem de alegria.",
+      "img": "Maracanã_2014_g.jpg"
     },
     {
       "en": "Music is everywhere, from samba and gentle bossa nova to forró in the northeast, where in June the Festas Juninas fill towns with bonfires, paper flags, corn treats and square dancing.",
-      "pt-BR": "A música está em toda parte, do samba e da suave bossa nova ao forró do Nordeste, onde em junho as festas juninas enchem as cidades de fogueiras, bandeirinhas, comidas de milho e quadrilha."
+      "pt-BR": "A música está em toda parte, do samba e da suave bossa nova ao forró do Nordeste, onde em junho as festas juninas enchem as cidades de fogueiras, bandeirinhas, comidas de milho e quadrilha.",
+      "img": "Festa_de_São_João_em_Barão_Geraldo_2.jpg"
     },
     {
       "en": "Inland lies Brasília, the capital, a modernist city planned from scratch that looks, from above, a little like an aeroplane. Further west, the Pantanal wetlands shelter jaguars, capybaras and flocks of bright macaws.",
-      "pt-BR": "No interior fica Brasília, a capital, uma cidade modernista planejada do zero que, vista de cima, lembra um avião. Mais a oeste, o Pantanal abriga onças-pintadas, capivaras e bandos de araras coloridas."
+      "pt-BR": "No interior fica Brasília, a capital, uma cidade modernista planejada do zero que, vista de cima, lembra um avião. Mais a oeste, o Pantanal abriga onças-pintadas, capivaras e bandos de araras coloridas.",
+      "img": "Planalto_Central_(cropped).jpg"
     },
     {
       "en": "Finish at Iguaçu, where hundreds of waterfalls roar through the forest and rainbows hang in the mist. On the far side of the falls, Argentina is waiting.",
-      "pt-BR": "Termine em Foz do Iguaçu, onde centenas de quedas-d'água rugem no meio da mata e arco-íris flutuam na névoa. Do outro lado das cataratas, a Argentina está à sua espera."
+      "pt-BR": "Termine em Foz do Iguaçu, onde centenas de quedas-d'água rugem no meio da mata e arco-íris flutuam na névoa. Do outro lado das cataratas, a Argentina está à sua espera.",
+      "img": "Iguazu_Cataratas2.jpg"
     }
   ],
-  "next": ["Argentina", "Paraguay", "Uruguay"]
+  "next": [
+    "Argentina",
+    "Paraguay",
+    "Uruguay"
+  ]
 }

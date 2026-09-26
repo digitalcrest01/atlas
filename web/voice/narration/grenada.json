@@ -1,43 +1,60 @@
 {
   "country": "Grenada",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Close your eyes and breathe in. Nutmeg, cinnamon, cloves and cocoa, all drifting on a warm sea breeze. Grenada is known as the Spice Isle, and you can smell why."
+      "en": "Close your eyes and breathe in. Nutmeg, cinnamon, cloves and cocoa, all drifting on a warm sea breeze. Grenada is known as the Spice Isle, and you can smell why.",
+      "img": "Grenada_South_Flight_-_Hog_Island.jpg"
     },
     {
-      "en": "Grenada is a small country in the southeastern Caribbean, made up of the main island of Grenada and the smaller islands of Carriacou and Petite Martinique, with a scattering of tiny cays in between."
+      "en": "Grenada is a small country in the southeastern Caribbean, made up of the main island of Grenada and the smaller islands of Carriacou and Petite Martinique, with a scattering of tiny cays in between.",
+      "img": "Hillsborough_Carriacou.jpg"
     },
     {
-      "en": "Look closely at the flag and you'll spot a nutmeg, tucked into the green triangle on the left. Nutmeg grows on tall trees in the hills, and each fruit splits open to reveal a seed wrapped in a lacy red covering called mace."
+      "en": "Look closely at the flag and you'll spot a nutmeg, tucked into the green triangle on the left. Nutmeg grows on tall trees in the hills, and each fruit splits open to reveal a seed wrapped in a lacy red covering called mace.",
+      "img": "Spices1.jpg"
     },
     {
-      "en": "The island is volcanic, with a mountainous, rainforest heart. Trails lead to waterfalls you can swim beneath, and to Grand Etang, a lake sitting in the crater of an old volcano, where mona monkeys watch from the trees."
+      "en": "The island is volcanic, with a mountainous, rainforest heart. Trails lead to waterfalls you can swim beneath, and to Grand Etang, a lake sitting in the crater of an old volcano, where mona monkeys watch from the trees.",
+      "img": "Mona_monkey_-_Grand_Etang_Lake_-_Grenada_-_2.jpg"
     },
     {
-      "en": "Down on the coast is Grand Anse Beach, a long curve of soft white sand and calm turquoise water. Nearby, in the sea itself, an underwater sculpture park lets snorkellers swim among statues slowly turning into coral reef."
+      "en": "Down on the coast is Grand Anse Beach, a long curve of soft white sand and calm turquoise water. Nearby, in the sea itself, an underwater sculpture park lets snorkellers swim among statues slowly turning into coral reef.",
+      "img": "Vue_de_Petite_Martinique.jpg"
     },
     {
-      "en": "The capital, St. George's, is one of the prettiest harbour towns in the Caribbean. Houses painted in bright colours climb the hills around a horseshoe-shaped bay called the Carenage, where fishing boats come and go."
+      "en": "The capital, St. George's, is one of the prettiest harbour towns in the Caribbean. Houses painted in bright colours climb the hills around a horseshoe-shaped bay called the Carenage, where fishing boats come and go.",
+      "img": "St_Georges_Grenada_Fort_-_panoramio.jpg"
     },
     {
-      "en": "English is the official language, but listen and you'll hear a lively Grenadian Creole, with words from French, African languages and English all mixed together."
+      "en": "English is the official language, but listen and you'll hear a lively Grenadian Creole, with words from French, African languages and English all mixed together.",
+      "img": "Gouyave_town_aerial_view.jpg"
     },
     {
-      "en": "The national dish is oil down, a hearty one-pot stew of breadfruit, salted meat, dumplings and callaloo leaves, slow-cooked in coconut milk until the liquid is soaked up, leaving just a little oil at the bottom of the pot."
+      "en": "The national dish is oil down, a hearty one-pot stew of breadfruit, salted meat, dumplings and callaloo leaves, slow-cooked in coconut milk until the liquid is soaked up, leaving just a little oil at the bottom of the pot.",
+      "img": "Cooking_oil_down_03.jpg"
     },
     {
-      "en": "Cooking oil down is often a gathering in itself, with friends and neighbours taking turns at the fire. Grenadians also make fine chocolate, grown and made right here on the island."
+      "en": "Cooking oil down is often a gathering in itself, with friends and neighbours taking turns at the fire. Grenadians also make fine chocolate, grown and made right here on the island.",
+      "img": "Matadecacao.jpg"
     },
     {
       "en": "In August, Spicemas carnival takes over. Before dawn at J'ouvert, Jab Jab masqueraders cover themselves in black oil and dance through the streets, and later, bands in feathers and sequins parade to soca and calypso."
     },
     {
-      "en": "Cricket is loved, as across the Caribbean, and so is athletics. When a Grenadian sprinter races on the world stage, the whole island stops to watch and cheer."
+      "en": "Cricket is loved, as across the Caribbean, and so is athletics. When a Grenadian sprinter races on the world stage, the whole island stops to watch and cheer.",
+      "img": "GREN-grand-etang-see.jpg"
     },
     {
-      "en": "As the sun goes down over the bay, the evening smells of spice and sea. Sail north through the Grenadines and you'll reach Saint Vincent and the Grenadines, waiting for your next adventure."
+      "en": "As the sun goes down over the bay, the evening smells of spice and sea. Sail north through the Grenadines and you'll reach Saint Vincent and the Grenadines, waiting for your next adventure.",
+      "img": "Petit_martinique_Carriacou.jpg"
     }
   ],
-  "next": ["Saint Vincent and the Grenadines", "Trinidad and Tobago", "Barbados"]
+  "next": [
+    "Saint Vincent and the Grenadines",
+    "Trinidad and Tobago",
+    "Barbados"
+  ]
 }

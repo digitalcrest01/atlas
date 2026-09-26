@@ -1,46 +1,65 @@
 {
   "country": "Fiji",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Bula! You'll hear it the moment you arrive, called out with a huge smile. It means hello, but also life and good health, and in Fiji people say it to everyone, friends and strangers alike."
+      "en": "Bula! You'll hear it the moment you arrive, called out with a huge smile. It means hello, but also life and good health, and in Fiji people say it to everyone, friends and strangers alike.",
+      "img": "Mamanuca.jpg"
     },
     {
-      "en": "Fiji is made up of more than three hundred islands scattered across the South Pacific. Most people live on the two largest, Viti Levu and Vanua Levu, while many of the smaller islands are ringed by white sand and turquoise lagoons."
+      "en": "Fiji is made up of more than three hundred islands scattered across the South Pacific. Most people live on the two largest, Viti Levu and Vanua Levu, while many of the smaller islands are ringed by white sand and turquoise lagoons.",
+      "img": "Yasawa3.jpeg"
     },
     {
-      "en": "Life in the villages follows old customs. If you visit, you bring a gift of dried kava root for the chief. It's called sevusevu, and once it's accepted, you're welcomed as a guest of the village."
+      "en": "Life in the villages follows old customs. If you visit, you bring a gift of dried kava root for the chief. It's called sevusevu, and once it's accepted, you're welcomed as a guest of the village.",
+      "img": "Starr_070515-7054_Piper_methysticum.jpg"
     },
     {
-      "en": "Dress modestly, with your shoulders and knees covered, and take off your hat, because wearing one in a village, or touching someone's head, can be seen as disrespectful."
+      "en": "Dress modestly, with your shoulders and knees covered, and take off your hat, because wearing one in a village, or touching someone's head, can be seen as disrespectful.",
+      "img": "BureNavala2.jpg"
     },
     {
-      "en": "The kava, called yaqona, is mixed with water in a big wooden bowl called a tanoa and shared from a coconut shell cup. Clap once, say bula, drink it down, then clap three times."
+      "en": "The kava, called yaqona, is mixed with water in a big wooden bowl called a tanoa and shared from a coconut shell cup. Clap once, say bula, drink it down, then clap three times.",
+      "img": "Viti_Levu_Islands.jpg"
     },
     {
-      "en": "Fiji's people have roots in many places. Indigenous Fijians, the iTaukei, share the islands with Indo-Fijians, whose ancestors came from India more than a century ago. English, Fijian and Fiji Hindi are all spoken, and Diwali is a national holiday."
+      "en": "Fiji's people have roots in many places. Indigenous Fijians, the iTaukei, share the islands with Indo-Fijians, whose ancestors came from India more than a century ago. English, Fijian and Fiji Hindi are all spoken, and Diwali is a national holiday.",
+      "img": "Nadi_Sri_Siva_Subramaniya_Temple.jpg"
     },
     {
-      "en": "For a feast, food is cooked in a lovo, an earth oven lined with hot stones and covered with banana leaves, so meat, fish and root vegetables steam slowly for hours."
+      "en": "For a feast, food is cooked in a lovo, an earth oven lined with hot stones and covered with banana leaves, so meat, fish and root vegetables steam slowly for hours.",
+      "img": "SigatokaRiver.jpg"
     },
     {
-      "en": "Try kokoda, raw fish marinated in lime juice and mixed with fresh coconut cream, chilli and tomato. From the Indo-Fijian kitchen, curries wrapped in soft roti are an everyday favourite."
+      "en": "Try kokoda, raw fish marinated in lime juice and mixed with fresh coconut cream, chilli and tomato. From the Indo-Fijian kitchen, curries wrapped in soft roti are an everyday favourite.",
+      "img": "Kokodafood.jpg"
     },
     {
-      "en": "Traditional dances called meke tell stories of legends and history, with singing, chanting and the deep beat of the lali, a hollow wooden drum."
+      "en": "Traditional dances called meke tell stories of legends and history, with singing, chanting and the deep beat of the lali, a hollow wooden drum.",
+      "img": "TamTam.jpg"
     },
     {
-      "en": "On the island of Beqa, some families keep a tradition of firewalking, stepping calmly across white-hot stones. Legend says the gift was handed down from a spirit god."
+      "en": "On the island of Beqa, some families keep a tradition of firewalking, stepping calmly across white-hot stones. Legend says the gift was handed down from a spirit god.",
+      "img": "Beqa-island.jpg"
     },
     {
-      "en": "Rugby is a passion. Children play barefoot on village fields, and Fiji's rugby sevens team has won Olympic gold, sending the whole nation into joyful celebration."
+      "en": "Rugby is a passion. Children play barefoot on village fields, and Fiji's rugby sevens team has won Olympic gold, sending the whole nation into joyful celebration.",
+      "img": "Nadi.jpg"
     },
     {
-      "en": "The capital, Suva, is a green, rainy harbour city with a lively produce market, while Nadi, in the west, is where most visitors first arrive."
+      "en": "The capital, Suva, is a green, rainy harbour city with a lively produce market, while Nadi, in the west, is where most visitors first arrive.",
+      "img": "Suva,_Fiji_77.jpg"
     },
     {
-      "en": "People here like to talk about Fiji time, meaning nothing needs to be rushed. Vinaka, thank you for slowing down with me. Sail southeast across the Pacific, and Tonga is waiting."
+      "en": "People here like to talk about Fiji time, meaning nothing needs to be rushed. Vinaka, thank you for slowing down with me. Sail southeast across the Pacific, and Tonga is waiting.",
+      "img": "YaweBeach.jpg"
     }
   ],
-  "next": ["Tonga", "Samoa", "Vanuatu"]
+  "next": [
+    "Tonga",
+    "Samoa",
+    "Vanuatu"
+  ]
 }

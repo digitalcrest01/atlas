@@ -1,22 +1,29 @@
 {
   "country": "Equatorial Guinea",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "From the sea, Bioko Island rises steep and green, its highest peak, Pico Basilé, often wrapped in cloud. Across the water on the mainland, rainforest stretches as far as you can see. This is Equatorial Guinea, a land of islands and forest on the Gulf of Guinea.",
-      "es-419": "Desde el mar, la isla de Bioko se alza empinada y verde, y su cumbre más alta, el Pico Basilé, suele estar envuelta en nubes. Al otro lado del agua, en el continente, la selva se extiende hasta perderse de vista. Esto es Guinea Ecuatorial, una tierra de islas y bosques en el golfo de Guinea."
+      "es-419": "Desde el mar, la isla de Bioko se alza empinada y verde, y su cumbre más alta, el Pico Basilé, suele estar envuelta en nubes. Al otro lado del agua, en el continente, la selva se extiende hasta perderse de vista. Esto es Guinea Ecuatorial, una tierra de islas y bosques en el golfo de Guinea.",
+      "img": "Pico_Basilé.jpg"
     },
     {
       "en": "The country has two main parts: Bioko and several smaller islands out at sea, and a mainland region called Río Muni, tucked between Cameroon and Gabon.",
-      "es-419": "El país tiene dos partes principales: Bioko y otras islas más pequeñas mar adentro, y una región continental llamada Río Muni, entre Camerún y Gabón."
+      "es-419": "El país tiene dos partes principales: Bioko y otras islas más pequeñas mar adentro, y una región continental llamada Río Muni, entre Camerún y Gabón.",
+      "img": "Corisco_Island_Equatorial_Guinea.jpg"
     },
     {
       "en": "Here's something unusual. Equatorial Guinea is the only country in Africa with Spanish as an official language, a legacy of its colonial past. French and Portuguese are official too, and most families also speak their own African languages at home.",
-      "es-419": "Aquí hay algo poco común: Guinea Ecuatorial es el único país de África con el español como lengua oficial, herencia de su pasado colonial. El francés y el portugués también son oficiales, y la mayoría de las familias habla además sus propias lenguas africanas en casa."
+      "es-419": "Aquí hay algo poco común: Guinea Ecuatorial es el único país de África con el español como lengua oficial, herencia de su pasado colonial. El francés y el portugués también son oficiales, y la mayoría de las familias habla además sus propias lenguas africanas en casa.",
+      "img": "Hotel_de_Federaciones_02.jpg"
     },
     {
       "en": "On the mainland, most people are Fang, famous for the mvet, long epic stories sung to the sound of a stringed instrument made with gourds and a long stem. A single performance can last through the night.",
-      "es-419": "En el continente, la mayoría de la gente es fang, pueblo famoso por el mvet, largas epopeyas que se cantan al son de un instrumento de cuerdas hecho con calabazas y un tallo largo. Una sola actuación puede durar toda la noche."
+      "es-419": "En el continente, la mayoría de la gente es fang, pueblo famoso por el mvet, largas epopeyas que se cantan al son de un instrumento de cuerdas hecho con calabazas y un tallo largo. Una sola actuación puede durar toda la noche.",
+      "img": "Plaza_del_centro_de_la_ciudad_de_Mbini_Guinea_Ecuatorial_4_2015_BNB-UM.jpg"
     },
     {
       "en": "On Bioko, the Bubi people have their own traditions, including the balélé, a lively dance with drums and rattles performed at festivals and celebrations.",
@@ -24,27 +31,33 @@
     },
     {
       "en": "Malabo, the capital for many years, sits on the northern tip of Bioko, with a twin-towered cathedral and colourful old wooden houses. On the mainland, deep in the forest, a new capital called Ciudad de la Paz is being built.",
-      "es-419": "Malabo, la capital desde hace muchos años, está en la punta norte de Bioko, con una catedral de dos torres y viejas casas de madera de colores. En el continente, en medio de la selva, se construye una nueva capital llamada Ciudad de la Paz."
+      "es-419": "Malabo, la capital desde hace muchos años, está en la punta norte de Bioko, con una catedral de dos torres y viejas casas de madera de colores. En el continente, en medio de la selva, se construye una nueva capital llamada Ciudad de la Paz.",
+      "img": "Santa_Isabel_Malabo_20131224_140204.jpg"
     },
     {
       "en": "The mainland's biggest city is Bata, a busy port with a long seaside promenade where families walk in the evening breeze.",
-      "es-419": "La ciudad más grande del continente es Bata, un puerto muy activo con un largo paseo marítimo donde las familias caminan con la brisa de la tarde."
+      "es-419": "La ciudad más grande del continente es Bata, un puerto muy activo con un largo paseo marítimo donde las familias caminan con la brisa de la tarde.",
+      "img": "Torre_de_la_Libertad.jpg"
     },
     {
       "en": "The forests are rich with wildlife. In Monte Alén National Park, gorillas, chimpanzees and forest elephants live among giant trees, and on Bioko, rare monkeys call from the mountain slopes.",
-      "es-419": "Los bosques están llenos de vida. En el Parque Nacional de Monte Alén, gorilas, chimpancés y elefantes de bosque viven entre árboles gigantes, y en Bioko se oye a monos poco comunes en las laderas de las montañas."
+      "es-419": "Los bosques están llenos de vida. En el Parque Nacional de Monte Alén, gorilas, chimpancés y elefantes de bosque viven entre árboles gigantes, y en Bioko se oye a monos poco comunes en las laderas de las montañas.",
+      "img": "Dschungel_bei_Oyala.JPG"
     },
     {
       "en": "On the wild beaches of southern Bioko, huge leatherbacks and other sea turtles crawl ashore at night to nest, watched over by local guardians.",
-      "es-419": "En las playas salvajes del sur de Bioko, enormes tortugas laúd y otras tortugas marinas salen de noche a desovar, vigiladas por guardianes locales."
+      "es-419": "En las playas salvajes del sur de Bioko, enormes tortugas laúd y otras tortugas marinas salen de noche a desovar, vigiladas por guardianes locales.",
+      "img": "Leatherback_sea_turtle_Tinglar,_USVI_(5839996547).jpg"
     },
     {
       "en": "Food here is full of flavour. Try grilled fish or chicken with plantain and cassava, and pepesup, a spicy fish or meat soup that warms you up even on a hot day.",
-      "es-419": "Aquí la comida tiene mucho sabor. Prueba el pescado o el pollo a la brasa con plátano y yuca, y el pepesup, una sopa picante de pescado o de carne que reconforta incluso en un día caluroso."
+      "es-419": "Aquí la comida tiene mucho sabor. Prueba el pescado o el pollo a la brasa con plátano y yuca, y el pepesup, una sopa picante de pescado o de carne que reconforta incluso en un día caluroso.",
+      "img": "Plantains.jpg"
     },
     {
       "en": "Cocoa once grew on large farms across Bioko, and old plantation houses still stand among the trees, slowly being reclaimed by the forest.",
-      "es-419": "Hace tiempo, el cacao crecía en grandes fincas por toda Bioko, y las viejas casas de las plantaciones siguen en pie entre los árboles, que poco a poco las van cubriendo."
+      "es-419": "Hace tiempo, el cacao crecía en grandes fincas por toda Bioko, y las viejas casas de las plantaciones siguen en pie entre los árboles, que poco a poco las van cubriendo.",
+      "img": "View_on_Luba,_Bioko,_2013.JPG"
     },
     {
       "en": "Far to the southwest lies tiny Annobón, a volcanic island with its own Portuguese-based Creole language, a lake inside a crater and a quiet fishing village life.",
@@ -52,8 +65,13 @@
     },
     {
       "en": "Gracias for visiting. Cross the northern border of Río Muni, and Cameroon is waiting with its mountains, markets and music.",
-      "es-419": "¡Gracias por la visita! Cruza la frontera norte de Río Muni y Camerún te espera con sus montañas, sus mercados y su música."
+      "es-419": "¡Gracias por la visita! Cruza la frontera norte de Río Muni y Camerún te espera con sus montañas, sus mercados y su música.",
+      "img": "Basilica_of_the_Immaculate_Conception,_Mongomo.jpg"
     }
   ],
-  "next": ["Cameroon", "Gabon", "São Tomé and Príncipe"]
+  "next": [
+    "Cameroon",
+    "Gabon",
+    "São Tomé and Príncipe"
+  ]
 }

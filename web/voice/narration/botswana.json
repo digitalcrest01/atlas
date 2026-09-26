@@ -1,46 +1,65 @@
 {
   "country": "Botswana",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Before sunrise, a long wooden canoe slides silently through the reeds. A guide standing at the back pushes with a pole, water lilies open, and somewhere nearby a hippo grunts. You are in the Okavango Delta, in the heart of Botswana."
+      "en": "Before sunrise, a long wooden canoe slides silently through the reeds. A guide standing at the back pushes with a pole, water lilies open, and somewhere nearby a hippo grunts. You are in the Okavango Delta, in the heart of Botswana.",
+      "img": "Okavango_Delta,_Botswana1.jpg"
     },
     {
-      "en": "The Okavango is a river that never reaches the sea. Its water comes from the highlands of Angola and spreads out into the Kalahari, and the floods arrive in the dry winter months, just when animals need them most."
+      "en": "The Okavango is a river that never reaches the sea. Its water comes from the highlands of Angola and spreads out into the Kalahari, and the floods arrive in the dry winter months, just when animals need them most.",
+      "img": "Namibia_Okavango_2.jpg"
     },
     {
-      "en": "Those dugout canoes are called mokoro, and gliding in one is among the quietest ways to meet Africa's wildlife."
+      "en": "Those dugout canoes are called mokoro, and gliding in one is among the quietest ways to meet Africa's wildlife.",
+      "img": "Maun_Anflug2.jpg"
     },
     {
-      "en": "Further north, along the Chobe River, elephants gather in great herds in the late afternoon, drinking, splashing and rolling in the mud while their calves stay close."
+      "en": "Further north, along the Chobe River, elephants gather in great herds in the late afternoon, drinking, splashing and rolling in the mud while their calves stay close.",
+      "img": "African_Elephant_(Loxodonta_africana)_male_(17289351322).jpg"
     },
     {
-      "en": "Much of Botswana is covered by the Kalahari, a sandy land of grasses, thorn trees and enormous skies. The San, among the oldest peoples of southern Africa, have read its tracks and found its hidden water for thousands of years."
+      "en": "Much of Botswana is covered by the Kalahari, a sandy land of grasses, thorn trees and enormous skies. The San, among the oldest peoples of southern Africa, have read its tracks and found its hidden water for thousands of years.",
+      "img": "Giraffes_(Giraffa_camelopardalis)_(6516556673).jpg"
     },
     {
-      "en": "At the Tsodilo Hills, sometimes called the mountains of the gods, painted animals and people still dance across the rocks, a gallery created over countless generations."
+      "en": "At the Tsodilo Hills, sometimes called the mountains of the gods, painted animals and people still dance across the rocks, a gallery created over countless generations.",
+      "img": "Tsodilo_rock_paintings_1.jpg"
     },
     {
-      "en": "In the Makgadikgadi Pans, vast salt flats shimmer in the heat. When the rains come, the grass turns green and zebras travel across the land in long, striped lines."
+      "en": "In the Makgadikgadi Pans, vast salt flats shimmer in the heat. When the rains come, the grass turns green and zebras travel across the land in long, striped lines.",
+      "img": "Zebras_chobe_national_park.jpg"
     },
     {
-      "en": "Rain is so precious here that its word, pula, is also the name of the currency and a joyful cheer. Shout pula at a celebration, and the whole crowd will shout it back."
+      "en": "Rain is so precious here that its word, pula, is also the name of the currency and a joyful cheer. Shout pula at a celebration, and the whole crowd will shout it back.",
+      "img": "Botswana_Nxai_Pan_NP_Baynes_Baobabs.jpg"
     },
     {
-      "en": "Most people speak Setswana as well as English. Greet an older woman with dumela mma and an older man with dumela rra, and give or receive things with your right hand, or with both hands to show respect."
+      "en": "Most people speak Setswana as well as English. Greet an older woman with dumela mma and an older man with dumela rra, and give or receive things with your right hand, or with both hands to show respect.",
+      "img": "Maun_Botswana2.jpg"
     },
     {
-      "en": "Every village has a kgotla, a meeting place where people talk through community matters and anyone may have a say. It is a tradition of listening that Batswana are proud of."
+      "en": "Every village has a kgotla, a meeting place where people talk through community matters and anyone may have a say. It is a tradition of listening that Batswana are proud of.",
+      "img": "BotswanaSeroweWaterhole.jpg"
     },
     {
-      "en": "At a wedding or a national holiday you will surely taste seswaa, beef slowly boiled and pounded until it falls apart, served with soft maize porridge and greens. The adventurous can try mopane worms, crunchy caterpillars fried with tomato and onion."
+      "en": "At a wedding or a national holiday you will surely taste seswaa, beef slowly boiled and pounded until it falls apart, served with soft maize porridge and greens. The adventurous can try mopane worms, crunchy caterpillars fried with tomato and onion.",
+      "img": "Seswaa.jpg"
     },
     {
-      "en": "Gaborone, the capital, is young and relaxed. Since independence in nineteen sixty-six, the country has used its diamond wealth to build schools, roads and clinics."
+      "en": "Gaborone, the capital, is young and relaxed. Since independence in nineteen sixty-six, the country has used its diamond wealth to build schools, roads and clinics.",
+      "img": "View_from_I-Tower_SE_20200712.jpg"
     },
     {
-      "en": "When you are ready to move on, head north to Kasane. Just a short drive away the Zambezi thunders over Victoria Falls, and Zimbabwe is waiting."
+      "en": "When you are ready to move on, head north to Kasane. Just a short drive away the Zambezi thunders over Victoria Falls, and Zimbabwe is waiting.",
+      "img": "Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_04.jpg"
     }
   ],
-  "next": ["Zimbabwe", "Namibia", "South Africa"]
+  "next": [
+    "Zimbabwe",
+    "Namibia",
+    "South Africa"
+  ]
 }

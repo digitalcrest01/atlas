@@ -1,55 +1,74 @@
 {
   "country": "France",
-  "languages": ["en", "fr"],
+  "languages": [
+    "en",
+    "fr"
+  ],
   "segments": [
     {
       "en": "Seven in the morning, and a queue is already forming at the boulangerie. Someone asks for a well-baked baguette and walks off nibbling the warm end before reaching the corner. Bonjour!",
-      "fr": "Sept heures du matin, et la file s'allonge déjà devant la boulangerie. Quelqu'un demande une baguette bien cuite et repart en croquant le quignon encore chaud avant d'atteindre le coin de la rue. Bonjour !"
+      "fr": "Sept heures du matin, et la file s'allonge déjà devant la boulangerie. Quelqu'un demande une baguette bien cuite et repart en croquant le quignon encore chaud avant d'atteindre le coin de la rue. Bonjour !",
+      "img": "Baguettes,_Paris,_France_-_panoramio.jpg"
     },
     {
       "en": "That little word matters. In France you say bonjour when you walk into a shop or a café, and au revoir when you leave. Forget it and people may think you rude; say it and doors open.",
-      "fr": "Ce petit mot compte. En France, on dit bonjour en entrant dans une boutique ou un café, et au revoir en sortant. Oubliez-le, on vous trouvera mal élevé ; dites-le, et les portes s'ouvrent."
+      "fr": "Ce petit mot compte. En France, on dit bonjour en entrant dans une boutique ou un café, et au revoir en sortant. Oubliez-le, on vous trouvera mal élevé ; dites-le, et les portes s'ouvrent.",
+      "img": "Café_de_Flore.jpg"
     },
     {
       "en": "The French often call their country the Hexagon, for its shape. Inside it you'll find snowy Alps and Mont Blanc, the lavender fields of Provence, the wild coast of Brittany and the sunny Mediterranean.",
-      "fr": "Les Français appellent souvent leur pays l'Hexagone, à cause de sa forme. On y trouve les Alpes enneigées et le mont Blanc, les champs de lavande de Provence, la côte sauvage de la Bretagne et la Méditerranée ensoleillée."
+      "fr": "Les Français appellent souvent leur pays l'Hexagone, à cause de sa forme. On y trouve les Alpes enneigées et le mont Blanc, les champs de lavande de Provence, la côte sauvage de la Bretagne et la Méditerranée ensoleillée.",
+      "img": "Lavender_field_and_Mont_Ventoux.jpg"
     },
     {
       "en": "Paris sits on the river Seine, with the iron lace of the Eiffel Tower and the glass pyramid of the Louvre. Yet many will tell you the heart of France beats in its villages, each with a church, a market and a square.",
-      "fr": "Paris s'étend au bord de la Seine, avec la dentelle de fer de la tour Eiffel et la pyramide de verre du Louvre. Pourtant, beaucoup vous diront que le cœur de la France bat dans ses villages, chacun avec son église, son marché et sa place."
+      "fr": "Paris s'étend au bord de la Seine, avec la dentelle de fer de la tour Eiffel et la pyramide de verre du Louvre. Pourtant, beaucoup vous diront que le cœur de la France bat dans ses villages, chacun avec son église, son marché et sa place.",
+      "img": "Tour_Eiffel_Wikimedia_Commons_(cropped).jpg"
     },
     {
       "en": "Food here is close to sacred. Lunch can last well over an hour: a starter, a main dish, cheese, then dessert. There are hundreds of cheeses, from creamy Camembert to Roquefort, which ripens in caves in the south.",
-      "fr": "Ici, la cuisine est presque sacrée. Le déjeuner peut durer bien plus d'une heure : entrée, plat, fromage, puis dessert. Il existe des centaines de fromages, du camembert crémeux au roquefort, qui mûrit dans des caves du Sud."
+      "fr": "Ici, la cuisine est presque sacrée. Le déjeuner peut durer bien plus d'une heure : entrée, plat, fromage, puis dessert. Il existe des centaines de fromages, du camembert crémeux au roquefort, qui mûrit dans des caves du Sud.",
+      "img": "Cheese_platter.jpg"
     },
     {
       "en": "Every region has its own dish: crêpes in Brittany, bouillabaisse in Marseille, choucroute in Alsace. And the pain au chocolat? In parts of the southwest, people insist it's called a chocolatine.",
-      "fr": "Chaque région a son plat : les crêpes en Bretagne, la bouillabaisse à Marseille, la choucroute en Alsace. Et le pain au chocolat ? Dans une partie du Sud-Ouest, on vous soutiendra qu'il s'appelle une chocolatine."
+      "fr": "Chaque région a son plat : les crêpes en Bretagne, la bouillabaisse à Marseille, la choucroute en Alsace. Et le pain au chocolat ? Dans une partie du Sud-Ouest, on vous soutiendra qu'il s'appelle une chocolatine.",
+      "img": "Crepes_dsc07085.jpg"
     },
     {
       "en": "If you're invited to a French home, bring flowers or a dessert, and expect friends to greet you with la bise, a light kiss on each cheek. How many kisses? It depends on the region, and even the French argue about it.",
-      "fr": "Si l'on vous invite chez des Français, apportez des fleurs ou un dessert, et attendez-vous à ce que les amis vous fassent la bise. Combien de bises ? Cela dépend de la région, et même les Français en débattent."
+      "fr": "Si l'on vous invite chez des Français, apportez des fleurs ou un dessert, et attendez-vous à ce que les amis vous fassent la bise. Combien de bises ? Cela dépend de la région, et même les Français en débattent.",
+      "img": "Franse_tarte_tatin.jpg"
     },
     {
       "en": "The story is long. Prehistoric artists painted the caves of Lascaux, Romans built arenas, and kings raised castles along the Loire. The Revolution of 1789 gave France its motto: liberty, equality, fraternity.",
-      "fr": "L'histoire est longue. Des artistes préhistoriques ont peint la grotte de Lascaux, les Romains ont bâti des arènes, et les rois ont élevé des châteaux le long de la Loire. La Révolution de 1789 a donné à la France sa devise : liberté, égalité, fraternité."
+      "fr": "L'histoire est longue. Des artistes préhistoriques ont peint la grotte de Lascaux, les Romains ont bâti des arènes, et les rois ont élevé des châteaux le long de la Loire. La Révolution de 1789 a donné à la France sa devise : liberté, égalité, fraternité.",
+      "img": "Aerial_image_of_Château_de_Chambord_(view_from_the_southeast).jpg"
     },
     {
       "en": "On the fourteenth of July, fireworks burst over towns and people dance at firemen's balls. And in June, on the longest day, the Fête de la Musique fills every street with free concerts.",
-      "fr": "Le 14 juillet, les feux d'artifice éclatent au-dessus des villes et l'on danse aux bals des pompiers. Et en juin, le jour le plus long, la Fête de la musique remplit chaque rue de concerts gratuits."
+      "fr": "Le 14 juillet, les feux d'artifice éclatent au-dessus des villes et l'on danse aux bals des pompiers. Et en juin, le jour le plus long, la Fête de la musique remplit chaque rue de concerts gratuits.",
+      "img": "MG-Paris-Champ_de_Mars.jpg"
     },
     {
       "en": "Each summer the Tour de France bicycle race winds through mountains and sunflower fields, and families picnic by the road to cheer the riders. Back in the village square, older friends play a slow game of pétanque.",
-      "fr": "Chaque été, le Tour de France serpente entre montagnes et champs de tournesols, et les familles pique-niquent au bord de la route pour encourager les coureurs. Sur la place du village, les anciens font une partie tranquille de pétanque."
+      "fr": "Chaque été, le Tour de France serpente entre montagnes et champs de tournesols, et les familles pique-niquent au bord de la route pour encourager les coureurs. Sur la place du village, les anciens font une partie tranquille de pétanque.",
+      "img": "Cicloturismo-Col_del_Tourmalet-Francia-2014-06.JPG"
     },
     {
       "en": "French is spoken on every continent, but at home you may also hear Breton, Basque, Occitan, Alsatian or Corsican, old languages that families are keeping alive.",
-      "fr": "Le français se parle sur tous les continents, mais dans l'Hexagone on entend aussi le breton, le basque, l'occitan, l'alsacien ou le corse, des langues anciennes que les familles font vivre."
+      "fr": "Le français se parle sur tous les continents, mais dans l'Hexagone on entend aussi le breton, le basque, l'occitan, l'alsacien ou le corse, des langues anciennes que les familles font vivre.",
+      "img": "Cap_Frehel_Cliff.jpg"
     },
     {
       "en": "As the sun sets, café terraces fill and conversation flows until late. When you're ready, head east across the Rhine, where Germany is waiting.",
-      "fr": "Au coucher du soleil, les terrasses se remplissent et la conversation se prolonge tard. Quand vous serez prêt, filez vers l'est, de l'autre côté du Rhin : l'Allemagne vous attend."
+      "fr": "Au coucher du soleil, les terrasses se remplissent et la conversation se prolonge tard. Quand vous serez prêt, filez vers l'est, de l'autre côté du Rhin : l'Allemagne vous attend.",
+      "img": "Strasbourg_Cathedral_Exterior_-_Diliff.jpg"
     }
   ],
-  "next": ["Germany", "Spain", "Belgium"]
+  "next": [
+    "Germany",
+    "Spain",
+    "Belgium"
+  ]
 }
