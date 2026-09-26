@@ -82,6 +82,10 @@
     {
       "source": "/app/voice/:path*",
       "destination": "/web/voice/:path*"
+    },
+    {
+      "source": "/app/vendor/:path*",
+      "destination": "/web/vendor/:path*"
     }
   ]
 }

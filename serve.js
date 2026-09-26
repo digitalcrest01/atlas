@@ -49,8 +49,9 @@ const TYPES = {
 
 function serveFile(req, res) {
   let rel = decodeURIComponent(new URL(req.url, 'http://local').pathname);
-  // Same rewrite as vercel.json: /app shares the web build's voice data.
+  // Same rewrites as vercel.json: /app shares the web build's voice data and vendor files.
   if (rel.indexOf('/app/voice/') === 0) rel = '/web/voice/' + rel.slice('/app/voice/'.length);
+  if (rel.indexOf('/app/vendor/') === 0) rel = '/web/vendor/' + rel.slice('/app/vendor/'.length);
   let file = path.normalize(path.join(ROOT, rel));
   if (!file.startsWith(ROOT)) { res.statusCode = 403; res.end(); return; }
   if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
