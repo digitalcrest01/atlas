@@ -12,7 +12,6 @@ Interactive geography app for kids and curious minds of all ages. Photorealistic
 myatlastic/
 ├── web/                       The app (one file, ~243 KB, runs anywhere)
 │   ├── index.html             Shell, UI, 3D globe, paywall, all modes
-│   ├── room-talk.js           Tour conversation (interrupt, ask, switch country)
 │   └── voice/                 The one speech system every feature uses
 │       ├── voice.js           MyatlasticVoice: play / stop / pause, caching, no device TTS
 │       ├── locales.js         Country → languages → BCP-47 locale → neural voice
