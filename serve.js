@@ -2,7 +2,8 @@
 /* Local preview: serves the site and the same /api/voice the deployment uses.
    node serve.js   ->   http://127.0.0.1:8772/app/
 
-   Keys stay on this machine: XAI_API_KEY (or a signed-in grok CLI),
+   Keys stay on this machine: XAI_API_KEY in the environment or .env.local
+   (git-ignored), else a signed-in grok CLI;
    AZURE_SPEECH_KEY + AZURE_SPEECH_REGION for the languages xAI does not speak. */
 const http = require('http');
 const fs = require('fs');
@@ -14,8 +15,20 @@ const ROOT = __dirname;
 const HOST = '127.0.0.1';
 const PORT = Number(process.env.PORT || 8772);
 
+// KEY=value lines from .env.local (git-ignored) fill in anything not already set.
+function fileEnv() {
+  const out = {};
+  try {
+    fs.readFileSync(path.join(ROOT, '.env.local'), 'utf8').split(/\r?\n/).forEach(line => {
+      const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
+      if (m) out[m[1]] = m[2].replace(/^['"]|['"]$/g, '');
+    });
+  } catch (e) {}
+  return out;
+}
+
 function localEnv() {
-  const env = Object.assign({}, process.env);
+  const env = Object.assign(fileEnv(), process.env);
   if (!env.XAI_API_KEY) {
     try {
       const auth = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.grok', 'auth.json'), 'utf8'));
