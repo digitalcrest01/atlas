@@ -5538,6 +5538,12 @@ function renderToday() {
     '<p>Clues about animals, food, and language. Guess the country.</p>' +
     '<span class="today-go">Play</span>' +
     '</button>';
+  html += '<button type="button" class="today-card" id="today-hunt">' +
+    '<div class="today-kicker">Game</div>' +
+    '<h3>🌍 Globe Flag Hunt</h3>' +
+    '<p>See a flag, then tap that country on the globe. Free, any day.</p>' +
+    '<span class="today-go">Play</span>' +
+    '</button>';
   html += '<button type="button" class="today-card" id="today-passport">' +
     '<div class="today-kicker">Passport</div>' +
     '<h3>' + visited + ' / ' + total + ' countries</h3>' +
@@ -5561,6 +5567,7 @@ function renderToday() {
   $('today-daily').onclick = () => setMode('daily');
   $('today-puzzle').onclick = () => setMode('puzzle');
   $('today-mystery').onclick = () => setMode('mystery');
+  $('today-hunt').onclick = () => startGlobeHunt();
   $('today-passport').onclick = () => setMode('passport');
   const homeBtn = $('today-home');
   if (homeBtn) homeBtn.onclick = () => {
@@ -6245,7 +6252,7 @@ function renderPaywall() {
       '<p class="webwall-blurb">Every country in the world in full depth, all quizzes &amp; games, the passport, compare, currency converter and more — in the full app.</p>' +
       '<ul class="feature-list" style="text-align:left">' +
         '<li>Every country in the world — full depth</li>' +
-        '<li>All quizzes, the Spell &amp; Flag-Hunt games</li>' +
+        '<li>All quizzes and the Spell-the-Country game</li>' +
         '<li>Compare countries + live currency converter</li>' +
         '<li>Family Sharing — one purchase for the whole family</li>' +
       '</ul>' +
@@ -7032,6 +7039,10 @@ function renderFlatMap() {
     dot.setAttribute('stroke-width', '0.2');
     dot.style.cursor = 'pointer';
     dot.addEventListener('click', () => {
+      if (globeHunt && globeHunt.active && globeHunt.status === 'playing') {
+        onHuntPick(c);
+        return;
+      }
       state.activeCountry = c;
       renderList();
       renderDetails();
