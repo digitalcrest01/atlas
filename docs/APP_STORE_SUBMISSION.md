@@ -94,60 +94,59 @@ Go to https://appstoreconnect.apple.com → My Apps → `+` → New App.
 
 **App Name** (30 chars): `Myatlastic: World Geography`  *(alt: `Myatlastic`)*
 
-**Subtitle** (30 chars): `Explore all 197 countries`
+**Subtitle** (30 chars): `Hear every country's voice`
 
 **Promotional text** (170 chars — editable anytime, no review):
 ```
-Spin a 3D globe and discover all 197 countries — flags, capitals, cultures, quizzes, a daily challenge, and a relaxed spelling game. No ads, no tracking.
+Take a spoken tour of any of 195 countries in its own language, with English translation. Spin a 3D globe of flags and collect a passport stamp for every visit.
 ```
 
 **Description** (4,000 chars max):
 ```
-Discover the whole world — all 197 countries — with Myatlastic, an interactive geography app for kids and curious minds of all ages.
+Explore all 195 countries of the world and hear them in their own languages.
 
-Spin a photorealistic 3D globe and tap any country to instantly explore its flag, capital, currency, language, culture, history, notable figures, religion, national food, sport, and traditional dress.
+Myatlastic is a world atlas you can listen to. Spin a 3D globe covered in flags, pick any country, and take a spoken tour led by a natural, human-sounding voice in the country's own language, with a small English translation as it plays. It's made for curious kids, families, students and travellers.
 
-WHAT YOU CAN DO
-• Spin a 3D globe — drag to rotate, pinch to zoom, tap a pin to dive in
-• Explore all 197 countries with rich, readable detail and a landmark photo for each
-• Hear each country's name read aloud
-• Take a new Daily Challenge every day
-• Test yourself with quizzes — flags, capitals, culture, food and more
-• Compare any two countries side by side
-• Convert currencies with live exchange rates
-• Play Spell-the-Country, a relaxed word game for learning country names
+LISTEN TO THE WORLD
+• Play the tour: a 2–3 minute spoken visit to every country, in the local language, with English translation.
+• Photos of the places being described change as the story unfolds.
+• Phrasebook: pick a phrase such as hello, thank you or how much? and hear it said by a local voice.
 
-MADE FOR FAMILIES
-• Kids mode with a brighter, simpler interface
-• No ads. No tracking. No account required.
-• Collects zero personal data — COPPA and GDPR-K compliant
-• Family Sharing — one purchase covers your whole Apple Family
+A LIVING 3D GLOBE
+• A photorealistic Earth that keeps turning, with every country's flag on it.
+• Tap a country to fly to it. When a tour starts, its flag rises from the globe while the rest of the world fades to grey.
+• A soft background sound while you explore, which you can switch off at any time.
 
-FREE
-• 10 countries fully unlocked
-• 3 quizzes per day
-• A daily challenge
+EVERY COUNTRY AT A GLANCE
+• Flag, capital, currency, languages, local time, culture, history and food for all 195 countries.
+• Compare countries side by side, convert currencies and practise spelling country names.
+• Mystery Country: follow the clues and guess where you are.
 
-EVERYTHING ABOVE IS FREE
-Every country, the spoken tours, the phrasebook, passports and stamps, Compare, the currency converter, Spell-the-Country, Mystery Country and the Daily Challenge — all free.
+PASSPORTS OF THE WORLD
+• See the real passport cover of every country.
+• Every visit earns an immigration-style entry stamp. The more you explore, the fuller your passport gets.
 
-QUIZ & PUZZLE — $29.99 ONE-TIME
-• Unlimited quizzes: flags, capitals, food, sport, culture and world facts
-• The Globe Flag Hunt
-• The World puzzle
-Pay once and keep it forever, including future updates. No subscription. Family Sharing included.
+QUIZ & PUZZLE
+• Quiz: flags, capitals and world facts, such as how many continents there are or how many countries speak Spanish, each with a short explanation.
+• Puzzle: drag each country's name onto its flag.
 
-Payment is charged to your Apple ID. This is a one-time purchase and does not renew.
+MADE FOR KIDS AND FAMILIES
+• A bright, playful Kids mode.
+• Designed for iPhone and iPad.
+• No ads, no account, no tracking.
 
-Privacy Policy: https://myatlastic.com/privacy
-Terms of Use: https://myatlastic.com/terms
+SIMPLE PRICING
+Exploring, tours, the phrasebook, passports and the globe are free.
+Quiz and Puzzle unlock with one single purchase of $29.99. It's yours forever, with no subscription. Restore it any time on your other devices.
 
-Questions? support@myatlastic.com
+Voices and photos need an internet connection.
+
+Questions or ideas? Visit myatlastic.com
 ```
 
 **Keywords** (100 chars max):
 ```
-capitals,flags,globe,atlas,maps,quiz,nations,culture,currency,spelling,learn,education,travel,kids
+geography,languages,phrasebook,passport,flags,globe,atlas,capitals,quiz,culture,learn,kids,travel
 ```
 
 **Support URL**: `https://myatlastic.com`
@@ -158,26 +157,23 @@ capitals,flags,globe,atlas,maps,quiz,nations,culture,currency,spelling,learn,edu
 
 ### Step 6: Screenshots
 
-Apple needs **iPhone 6.9"** screenshots (it scales them down for smaller phones, so this one set covers every iPhone). Add **iPad 13"** only if you ship an iPad build.
+The app ships for iPhone and iPad, so both sets are required. App Store Connect currently asks for the **iPhone 6.5"** slot; Apple scales screenshots down for smaller devices.
 
-| Device (Simulator) | Portrait size | Required? |
-|---|---|---|
-| iPhone 16 Pro Max — 6.9" | 1320 × 2868 | ✅ required |
-| iPad Pro 13" (M4) | 2064 × 2752 | only if iPad-supported |
+| Slot | Portrait size |
+|---|---|
+| iPhone 6.5" | 1284 × 2778 (1242 × 2688 also accepted) |
+| iPhone 6.9" (if asked) | 1320 × 2868 |
+| iPad 13" | 2064 × 2752 |
 
-Capture in the iOS Simulator: open the device, load the app, **Cmd + S** saves to Desktop. **Unlock Pro via the demo paywall first** so the Pro screens are populated. You may upload 3–10 per device; aim for 5–8.
+The 2.0 set is six framed screenshots per device, each a real app screen under a headline, in this order:
+1. Hear every country (a spoken tour, in the local language with English translation)
+2. A living 3D globe (every country's flag)
+3. Say it like a local (the phrasebook)
+4. Passports of the world (a real cover with entry stamps)
+5. Quiz the whole world (a world-facts question and its explanation)
+6. Made for curious kids (Kids mode)
 
-Suggested order (lead with the most striking):
-1. The 3D globe — rotated to a region, a country pin/tooltip showing
-2. A country detail with its landmark photo (e.g. Brazil, Japan, or France)
-3. Compare — two countries side by side
-4. Currency converter — a live conversion
-5. Spell-the-Country game — mid-round with the letter tiles
-6. A quiz question
-7. Daily Challenge
-8. The "Myatlastic Pro" plans screen
-
-Tip: a short caption across the top of each shot (e.g. "Spin the globe", "Compare any two countries") noticeably lifts conversion — optional but recommended.
+They were generated from the app with headless Chrome at each device's real screen size; the files are in "Myatlastic 2.0 App Store Screenshots" on the release Mac's Desktop, one folder per slot.
 
 ---
 
@@ -194,7 +190,7 @@ In App Store Connect → My Apps → Myatlastic → create these (IDs **must mat
 - Change the Lifetime price in **In-App Purchases → Lifetime → Price Schedule** (no review needed for a price change).
 - Don't set the subscriptions to $0 (Apple doesn't allow it): set their **Availability** to remove them from sale in all countries. Keep the products; deleting them would break restores for past subscribers.
 - In RevenueCat, the **current offering** only needs the Lifetime package; the entitlement stays `Myatlastic Pro`.
-- Turn on **Family Sharing** for all three.
+- Family Sharing is optional. The app and website don't advertise it, so leave it off unless you want to offer it.
 
 RevenueCat is **already integrated** in the app (`@revenuecat/purchases-capacitor`, gated behind `BILLING_CONFIG`; entitlement `pro`). Once the products + RevenueCat project exist, paste the `appl_…` key into `BILLING_CONFIG.revenueCatApiKey` and rebuild — no other code change. Full steps: `mobile_setup/REVENUECAT_SETUP.md`.
 
@@ -204,13 +200,16 @@ RevenueCat is **already integrated** in the app (`@revenuecat/purchases-capacito
 
 In the "Review Notes" field on App Store Connect:
 ```
-This is an educational geography reference app covering 197 countries.
-It uses a 3D globe with NASA Blue Marble public domain imagery.
-Landmark images link to Wikimedia Commons (Creative Commons / Public Domain).
-The paywall (Myatlastic Pro) uses auto-renewing subscriptions.
-No user login required for the free tier.
-Test the app freely — all features accessible via the Upgrade button
-which runs in demo mode (no real payment taken in demo builds).
+Myatlastic is an educational geography app covering 195 countries.
+Everything is free except Quiz and Puzzle, which unlock with one
+non-consumable in-app purchase (io.vertotech.atlastic.pro.lifetime,
+$29.99). "Restore purchases" is in Settings and on the unlock screen,
+which also links to the Terms of Use and Privacy Policy.
+No login or account is needed.
+Spoken tours and phrases use computer-generated voices (xAI, Microsoft
+Azure) reading the app's own text, and need an internet connection.
+The globe uses NASA Blue Marble public-domain imagery; landmark photos
+and passport covers come from Wikimedia Commons.
 ```
 
 **Demo credentials**: Not required (no login needed).
