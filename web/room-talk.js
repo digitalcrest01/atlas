@@ -30,7 +30,7 @@
       social: [['Je visite', 'zhuh vee-ZEET', "I'm visiting"], ["C'est ma première fois", 'seh ma pruh-mee-AIR FWAH', 'This is my first time']]
     },
     es: {
-      greet: [['Hola', 'OH-lah', 'Hello'], ['Buenos días', 'BWEH-nos DEE-as', 'Good morning'], ['¿Cómo está?', 'KO-mo es-TAH', 'How are you?']],
+      greet: [['Hola', 'OH-lah', 'Hello'], ['Buenos días', 'BWEH-nos DEE-as', 'Good morning'], ['¿Cómo estás?', 'KO-mo es-TAHS', 'How are you?'], ['¿Cómo está?', 'KO-mo es-TAH', 'How are you? (formal)']],
       polite: [['Por favor', 'por fa-VOR', 'Please'], ['Gracias', 'GRAH-see-as', 'Thank you'], ['Perdón', 'per-DON', 'Sorry']],
       talk: [['¿Habla inglés?', 'AH-blah een-GLAYS', 'Do you speak English?'], ['No entiendo', 'no en-tee-EN-do', "I don't understand"], ['Más despacio, por favor', 'mas des-PAH-see-o por fa-VOR', 'More slowly, please']],
       nav: [['¿Dónde está la estación?', 'DON-deh es-TAH la es-ta-see-ON', 'Where is the station?'], ['¿Dónde está el baño?', 'DON-deh es-TAH el BAH-nyo', 'Where is the bathroom?'], ['¿Está lejos?', 'es-TAH LEH-hos', 'Is it far?']],
@@ -181,10 +181,13 @@
     const leads = Array.isArray(lead) ? lead : (lead ? [lead] : ['You\'ll hear this one a lot.', 'Here\'s one worth remembering.', 'A useful expression here is', 'If you only remember one, make it this.', 'Listen to how this sounds.', 'You can use this when you need it.', 'If someone says this, they mean']);
     const head = String(leads[hash(p[0] + String(lead || '')) % leads.length]).replace(/\.$/, '');
     const meaning = String(p[2] || '').replace(/\.$/, '');
+    const said = '{{p:' + p[0] + '}}';
+    const sound = '{{s:' + p[1] + '}}';
+    const end = /[.!?。？]$/.test(String(p[0] || '')) ? ' ' : '. ';
     const styles = [
-      head + '. ' + p[0] + '. That means ' + meaning + '. It sounds like ' + p[1] + '.',
-      p[0] + '. Meaning, ' + meaning + '. The sound is ' + p[1] + '.',
-      head + ': ' + p[0] + '. ' + meaning + '.'
+      head + '. ' + said + end + 'That means ' + meaning + '. It sounds like ' + sound + '.',
+      said + end + 'Meaning, ' + meaning + '. The sound is ' + sound + '.',
+      head + ': ' + said + end + meaning + '.'
     ];
     return styles[hash(p[1]) % styles.length];
   }
@@ -285,7 +288,7 @@
   function explainPhrase(session) {
     const p = session.lastPhrase;
     if (!p) return ['We hadn\'t landed on a phrase yet. Tell me if you want food, a taxi, or just getting around.'];
-    return [p.native + ' means ' + p.en.replace(/\.$/, '') + '. The sound is ' + p.phon + '.'];
+    return ['{{p:' + p.native + '}} means ' + p.en.replace(/\.$/, '') + '. It sounds like {{s:' + p.phon + '}}.'];
   }
 
   function categoryFor(text) {
@@ -327,13 +330,13 @@
       return { lines: resumeLines(session), resume: true };
     }
     if (/slow down|say that again|repeat that|one more time/.test(t)) {
-      if (session.lastPhrase) return { lines: ['Once more. ' + session.lastPhrase.native + '. ' + session.lastPhrase.phon + '.'] };
+      if (session.lastPhrase) return { lines: ['Once more. {{p:' + session.lastPhrase.native + '}}. It sounds like {{s:' + session.lastPhrase.phon + '}}.'] };
       if (session.spoken.length) return { lines: [session.spoken[session.spoken.length - 1]] };
       return { lines: ['Say which part, and I\'ll take it slowly.'] };
     }
     if (/pronounc|how do i say|how does that sound/.test(t)) {
       if (!session.lastPhrase) return { lines: [teach(session, 'greet', ['Here\'s the sound.'])] };
-      return { lines: ['The stress sits like this: ' + session.lastPhrase.phon + '. You\'re aiming for ' + session.lastPhrase.native + '.'] };
+      return { lines: ['You\'re aiming for {{p:' + session.lastPhrase.native + '}}. It sounds like {{s:' + session.lastPhrase.phon + '}}.'] };
     }
     if (/what does that (phrase |word )?mean|what did that mean|what was that phrase/.test(t)) {
       return { lines: explainPhrase(session) };
@@ -380,9 +383,9 @@
       if (tried) {
         const notes = [
           'Yep, that works.',
-          'Close. Soften the ending a little. ' + session.lastPhrase.native + '.',
-          'The stress sits like this: ' + session.lastPhrase.phon + '.',
-          'You\'re close. Listen once more. ' + session.lastPhrase.native + '.'
+          'Close. Soften the ending a little. {{p:' + session.lastPhrase.native + '}}.',
+          'You\'re aiming for {{p:' + session.lastPhrase.native + '}}. It sounds like {{s:' + session.lastPhrase.phon + '}}.',
+          'You\'re close. Listen once more. {{p:' + session.lastPhrase.native + '}}.'
         ];
         return { lines: [notes[hash(raw + session.turns) % notes.length]] };
       }
@@ -426,6 +429,11 @@
       return man;
     });
     if (gendered.length) pool = gendered;
+    const lively = pool.filter(function (v) {
+      const blob = ((v.name || '') + ' ' + (v.voiceURI || '')).toLowerCase();
+      return !/\bflo\b|\breed\b|\bgrandma\b|\bgrandpa\b|\bshelley\b|\bsandy\b/.test(blob);
+    });
+    if (lively.length) pool = lively;
     const voice = pool.length ? pool[hash(name) % pool.length] : null;
     const personalities = [
       { id: 'warm guide', rate: 0.98 },
@@ -441,7 +449,7 @@
     return {
       country: name,
       language: lang,
-      voiceProvider: 'speechSynthesis',
+      voiceProvider: 'grok',
       voice: chosen,
       voiceId: idOf(chosen),
       locale: chosen && chosen.lang ? chosen.lang : (locale || 'en-US'),
@@ -495,6 +503,22 @@
     return session;
   }
 
+  function book(langKey) {
+    const bank = bankFor(langKey);
+    const cats = ['greet', 'polite', 'talk', 'nav', 'food', 'shop', 'taxi', 'help', 'social'];
+    const out = [];
+    const seen = {};
+    cats.forEach(function (cat) {
+      (bank[cat] || []).forEach(function (p, i) {
+        const en = String(p[2] || '').trim();
+        if (!en || seen[en]) return;
+        seen[en] = true;
+        out.push({ key: cat + '-' + i, label: en, t: p[0], p: p[1] });
+      });
+    });
+    return out;
+  }
+
   window.RoomTalk = {
     boot: boot,
     opening: opening,
@@ -502,6 +526,7 @@
     profile: profile,
     choosePattern: choosePattern,
     matchCountry: matchCountry,
+    book: book,
     patterns: PATTERNS
   };
 })();

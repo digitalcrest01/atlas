@@ -397,8 +397,6 @@
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
-  .globe-btn-2 { top: 50px; }
-  .globe-btn-3 { top: 88px; }
   .globe-btn:hover { border-color: var(--accent); }
   .globe-btn.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
   /* Globe Flag Hunt overlay */
@@ -619,17 +617,21 @@
   .hello-row { display: flex; align-items: center; gap: 10px; }
   .hello-word { font-size: 26px; font-weight: 700; color: var(--ink); }
   .hello-speak {
-    background: var(--accent-2);
-    border: none;
-    color: var(--bg);
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    font-size: 18px;
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    color: var(--accent);
+    width: 36px; height: 36px;
+    border-radius: 999px;
     cursor: pointer;
     display: inline-flex; align-items: center; justify-content: center;
-    transition: transform 0.1s;
+    padding: 0;
+    flex-shrink: 0;
+    transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
   }
-  .hello-speak:active { transform: scale(0.9); }
+  .hello-speak svg { width: 14px; height: 14px; display: block; }
+  .hello-speak:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .hello-speak:active { transform: scale(0.94); }
+  .hello-speak.speaking { background: var(--accent); color: var(--bg); border-color: var(--accent); }
   .hello-phon { font-size: 13px; color: var(--ink-dim); margin-top: 6px; }
   .hello-phon b { color: var(--accent-2); font-style: italic; }
   /* Phrasebook rows inside the hello card */
@@ -642,9 +644,22 @@
   .phrase-main { display: flex; align-items: center; gap: 10px; }
   .phrase-loc { font-size: 20px; font-weight: 700; color: var(--ink); }
   .phrase-row.first .phrase-loc { font-size: 26px; }
-  .phrase-speak { width: 34px; height: 34px; font-size: 16px; }
+  .phrase-speak { width: 32px; height: 32px; }
   .phrase-phon { font-size: 12px; color: var(--ink-dim); margin-top: 4px; }
   .phrase-phon b { color: var(--accent-2); font-style: italic; }
+  .phrase-pick { display: flex; align-items: center; gap: 8px; margin: 8px 0 12px; }
+  .phrase-pick select {
+    flex: 1; min-width: 0;
+    background: var(--panel-2); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px 12px; font: inherit; font-size: 14px;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink-dim) 50%), linear-gradient(135deg, var(--ink-dim) 50%, transparent 50%);
+    background-position: calc(100% - 16px) calc(50% - 2px), calc(100% - 11px) calc(50% - 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+  }
+  .phrase-pick select:focus { outline: none; border-color: var(--accent); }
   /* NATIONAL ANTHEM card */
   .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
   .anthem-head { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
@@ -950,7 +965,7 @@
   .webwall-blurb { font-size: 14px; color: var(--ink-dim); line-height: 1.55; margin-bottom: 22px; }
   .webwall-cta { width: 100%; padding: 14px; }
   .webwall-back { display: block; width: 100%; margin-top: 12px; background: none; border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 11px; cursor: pointer; }
-  /* TRUE SIZE modal */
+  /* Shared modal (settings, welcome) */
   .ts-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 9000; display: flex; align-items: center; justify-content: center; padding: 16px; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
   .ts-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; max-width: 460px; width: 100%; max-height: 92vh; overflow: auto; position: relative; }
   .ts-close { position: absolute; top: 12px; right: 12px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 14px; }
@@ -1612,16 +1627,14 @@
         <span class="tt-flag" id="tt-flag"></span><span class="tt-name" id="tt-name"></span>
         <span class="tt-cap" id="tt-cap"></span>
       </div>
-      <div class="globe-hint" id="globe-hint">Drag to spin &middot; tap a pin to select</div>
+      <div class="globe-hint" id="globe-hint">Drag to spin</div>
       <button class="globe-btn" id="flags-toggle" title="Show every country's flag on the globe">🚩 All Flags</button>
-      <button class="globe-btn globe-btn-2" id="daynight-toggle" title="Show where it is day and night right now">🌗 Day &amp; Night</button>
-      <button class="globe-btn globe-btn-3" id="truesize-btn" title="See the real size of countries">📐 True Size</button>
       <div class="globe-hunt" id="globe-hunt" style="display:none"></div>
     </div>
 
     <aside class="pane details" id="details-pane">
       <div class="placeholder">
-        Tap a country on the globe or in the list.
+        Choose a country in the list.
       </div>
     </aside>
   </section>
@@ -2013,15 +2026,46 @@ const PHRASES = {
   'Tagalog':    { meet:['Ikinagagalak kong makilala ka','ee-kee-na-ga-GA-lak kong ma-kee-LA-la ka'], thanks:['Salamat','sa-LA-mat'], bye:['Paalam','pa-AH-lam'] },
 };
 
-// Builds the ordered phrase list for a country: Hello (always) + any extras.
+const LANG_KEY = {
+  English: 'en', Spanish: 'es', Portuguese: 'pt', French: 'fr', German: 'de', Italian: 'it',
+  Japanese: 'ja', Thai: 'th', Arabic: 'ar', Mandarin: 'zh', Chinese: 'zh', Korean: 'ko',
+  Hindi: 'hi', Swahili: 'sw', Russian: 'ru', Dutch: 'nl', Swedish: 'sv', Polish: 'pl',
+  Greek: 'el', Turkish: 'tr', Indonesian: 'id', Vietnamese: 'vi', Hebrew: 'he'
+};
+
+function langKeyFor(c) {
+  return LANG_KEY[primaryLang(c)] || String(tourLocale(c) || 'en').split('-')[0];
+}
+
+function isEnglishSpeaking(c) {
+  if (!c) return false;
+  if (/^english\b/i.test(primaryLang(c) || '')) return true;
+  const spoken = SPEECH_LOCALE[c.n];
+  return !!(spoken && String(spoken).split('-')[0] === 'en');
+}
+
+// Everyday lines in the local language. English-speaking countries have no phrase book.
 function phrasesFor(c) {
+  if (isEnglishSpeaking(c)) return [];
   const g = helloFor(c);
-  const out = [{ key: 'hi', label: 'Hello', t: g.hi, p: g.phon }];
+  const out = [];
+  const seen = {};
+  const add = function (item) {
+    if (!item || !item.t || seen[item.label]) return;
+    seen[item.label] = true;
+    out.push(item);
+  };
+  add({ key: 'hi', label: 'Hello', t: g.hi, p: g.phon });
+  const book = window.RoomTalk && window.RoomTalk.book && window.RoomTalk.book(langKeyFor(c));
+  if (book && book.length && langKeyFor(c) !== 'en') {
+    book.forEach(add);
+    return out;
+  }
   const ph = PHRASES[primaryLang(c)];
   if (ph) {
-    if (ph.meet)   out.push({ key: 'meet',   label: 'Nice to meet you', t: ph.meet[0],   p: ph.meet[1] });
-    if (ph.thanks) out.push({ key: 'thanks', label: 'Thank you',        t: ph.thanks[0], p: ph.thanks[1] });
-    if (ph.bye)    out.push({ key: 'bye',    label: 'Goodbye',          t: ph.bye[0],    p: ph.bye[1] });
+    if (ph.meet)   add({ key: 'meet',   label: 'Nice to meet you', t: ph.meet[0],   p: ph.meet[1] });
+    if (ph.thanks) add({ key: 'thanks', label: 'Thank you',        t: ph.thanks[0], p: ph.thanks[1] });
+    if (ph.bye)    add({ key: 'bye',    label: 'Goodbye',          t: ph.bye[0],    p: ph.bye[1] });
   }
   return out;
 }
@@ -2502,7 +2546,7 @@ const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
-const WEB_APP_ONLY = ['game', 'compare', 'currency'];
+const WEB_APP_ONLY = ['compare', 'currency'];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
 window.__getApp = () => { try { window.open(APP_STORE_URL, '_blank', 'noopener'); } catch (e) {} };
 // Friendly "this lives in the app" wall shown for web-gated features.
@@ -2650,8 +2694,9 @@ if (speech.available) {
 }
 
 const ROBOT_VOICE = /eloquence|novelty|espeak|e-speak|festival|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing|albert|bahh|deranged|hysterical|superstar|fred|ralph|junior|princess|kathy|rocko|eddy/i;
+const FLAT_VOICE = /\bflo\b|\breed\b|\bgrandma\b|\bgrandpa\b|\bshelley\b|\bsandy\b/;
 const HUMAN_VOICES = {
-  en: ['ava', 'allison', 'zoe', 'evan', 'nicky', 'aaron', 'nathan', 'samantha', 'daniel', 'serena', 'kate', 'martha', 'karen', 'moira', 'lee'],
+  en: ['samantha', 'daniel', 'karen', 'moira', 'serena', 'kate', 'martha', 'allison', 'ava', 'zoe', 'evan', 'nicky', 'aaron', 'nathan', 'lee'],
   fr: ['amelie', 'amélie', 'audrey', 'aurelie', 'thomas', 'denise', 'henri'],
   es: ['monica', 'mónica', 'paulina', 'jorge', 'diego', 'marisol'],
   de: ['anna', 'helena', 'markus', 'petra', 'yannick'],
@@ -2678,10 +2723,14 @@ function voiceBlob(v) {
 
 function isRoboticVoice(v) {
   const n = voiceBlob(v);
-  if (/premium|enhanced|natural|neural/.test(n) && !/\bcompact\b/.test(n)) return false;
+  if (/premium|enhanced|natural|neural/.test(n) && !/\bcompact\b/.test(n) && !FLAT_VOICE.test(n)) return false;
   if (/\bcompact\b|eloquence|\bnovelty\b|espeak|e-speak/.test(n)) return true;
   if (/microsoft/.test(n) && /desktop/.test(n) && !/natural|online/.test(n)) return true;
   return ROBOT_VOICE.test(n);
+}
+
+function isFlatVoice(v) {
+  return FLAT_VOICE.test(voiceBlob(v));
 }
 
 // Spoken text only. Em dashes and emoji are not said aloud.
@@ -2910,8 +2959,9 @@ function findVoice(locale) {
     if (/microsoft (aria|jenny|guy|michelle|sonia|ryan|libby)/.test(n)) score += 30;
     if (v.localService === false && !isRoboticVoice(v)) score += 6;
     named.forEach((name, i) => {
-      if (n.includes(name)) score += 18 - Math.min(i, 12);
+      if (n.includes(name)) score += 36 - Math.min(i, 16);
     });
+    if (isFlatVoice(v)) score -= 90;
     if (isRoboticVoice(v)) score -= 100;
     if (score > bestScore) { bestScore = score; best = v; }
   });
@@ -2925,9 +2975,78 @@ function voiceSpeaks(locale, voice) {
   return !!want && want === got;
 }
 
+function humanEnglishVoice() {
+  loadVoices();
+  return findVoice(narrationLocale()) || findVoice('en-US') || findVoice('en-GB');
+}
+
+function escapeRegExp(s) {
+  return String(s || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Phonetic spellings stay on the card. They are not spoken.
+function spokenForEar(text, session) {
+  let s = forSpeech(text);
+  const phon = session && session.lastPhrase && session.lastPhrase.phon;
+  if (phon) s = s.replace(new RegExp(escapeRegExp(phon), 'gi'), ' ');
+  s = s
+    .replace(/\bit sounds like\b/gi, ' ')
+    .replace(/\bthe sound is\b/gi, ' ')
+    .replace(/\bthe stress sits like this:?/gi, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.!?])/g, '$1')
+    .replace(/([.!?])\s*[.!?]+/g, '$1')
+    .replace(/^[.\s,]+/, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return s;
+}
+
+function sentenceBits(text) {
+  return String(text || '').split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(Boolean);
+}
+
+function speechParts(line, session) {
+  const spoken = spokenForEar(line, session);
+  const english = humanEnglishVoice();
+  const enLocale = (english && english.lang) || narrationLocale();
+  const native = session && session.lastPhrase && session.lastPhrase.native;
+  const nativeLocale = (session && (session.voiceLocale || session.locale)) || '';
+  if (!spoken) return [];
+  if (!native || spoken.toLowerCase().indexOf(String(native).toLowerCase()) === -1) {
+    return sentenceBits(spoken).map(text => ({ text: text, locale: enLocale, voice: english, rate: 0.93, pitch: 1 }));
+  }
+  const at = spoken.toLowerCase().indexOf(String(native).toLowerCase());
+  const before = spoken.slice(0, at).replace(/[\s,:;.!?]+$/, '').trim();
+  const phrase = spoken.slice(at, at + native.length);
+  const after = spoken.slice(at + native.length).replace(/^[\s,:;.!?]+/, '').trim();
+  const nativeVoice = findVoice(nativeLocale);
+  const phraseVoice = voiceSpeaks(nativeLocale, nativeVoice) ? nativeVoice : english;
+  const phraseLocale = (phraseVoice && phraseVoice.lang) || enLocale;
+  const parts = [];
+  sentenceBits(before).forEach(text => parts.push({ text: text, locale: enLocale, voice: english, rate: 0.93, pitch: 1 }));
+  parts.push({ text: phrase, locale: phraseLocale, voice: phraseVoice, rate: phraseVoice === english ? 0.84 : 0.88, pitch: 1 });
+  sentenceBits(after).forEach(text => parts.push({ text: text, locale: enLocale, voice: english, rate: 0.93, pitch: 1 }));
+  return parts.filter(p => p.text && /[A-Za-z0-9\u00C0-\u024F\u0400-\u04FF\u0600-\u06FF\u0900-\u097F\u0E00-\u0E7F\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF]/.test(p.text));
+}
+
 let speakToken = 0;
+let grokAudio = null;
+const grokStops = new Set();
+const grokPlayers = new Set();
 function stopSpeaking() {
   speakToken++;
+  grokStops.forEach(ctrl => { try { ctrl.abort(); } catch (e) {} });
+  grokStops.clear();
+  grokPlayers.forEach(audio => {
+    audio.onended = null;
+    audio.onpause = null;
+    audio.onerror = null;
+    try { audio.pause(); } catch (e) {}
+    audio.src = '';
+  });
+  grokPlayers.clear();
+  grokAudio = null;
   if (speech.available) {
     window.speechSynthesis.cancel();
   }
@@ -3003,14 +3122,31 @@ window.__myatlasticSpeak = (countryName) => {
 // by checking an asset map before falling back to this synthesized voice.
 function speakPhraseLine(text, phonetic, locale, btnSelector) {
   const buttons = btnSelector ? Array.from(document.querySelectorAll(btnSelector)) : [];
-  const voice = findVoice(locale);
-  if (voiceSpeaks(locale, voice)) {
-    speakLines([text], locale, buttons, 0.9);
+  const line = String(text || '').trim();
+  if (!line) return;
+  buttons.forEach(b => b.classList.add('speaking'));
+  const done = () => buttons.forEach(b => b.classList.remove('speaking'));
+  const grokLang = grokLanguage(locale);
+  const token = speakToken;
+  if (!window.__grokVoiceBlocked) {
+    fetchGrokClip(line, token, grokLang).then(blob => {
+      if (blob) return playGrokClip(blob, token).then(done);
+      const voice = findVoice(locale);
+      if (voiceSpeaks(locale, voice)) speakLines([line], locale, buttons, 0.9, true, done, voice);
+      else speakLines([line], narrationLocale(), buttons, 0.86, true, done, humanEnglishVoice());
+    }).catch(() => {
+      const voice = findVoice(locale);
+      if (voiceSpeaks(locale, voice)) speakLines([line], locale, buttons, 0.9, true, done, voice);
+      else speakLines([line], narrationLocale(), buttons, 0.86, true, done, humanEnglishVoice());
+    });
     return;
   }
-  // No voice for that language: say the phonetic slowly, the way a person would coach it.
-  const coach = (phonetic || text || '').replace(/[-–]/g, ' ').replace(/\s+/g, ' ').trim();
-  if (coach) speakLines([coach], narrationLocale(), buttons, 0.78);
+  const voice = findVoice(locale);
+  if (voiceSpeaks(locale, voice)) {
+    speakLines([line], locale, buttons, 0.9, true, done, voice);
+    return;
+  }
+  speakLines([line], narrationLocale(), buttons, 0.86, true, done, humanEnglishVoice());
 }
 
 // "Say hello" in the local language, recorded-speaker style via on-device TTS.
@@ -3022,14 +3158,27 @@ window.__myatlasticSayHello = (countryName) => {
   speakPhraseLine(greeting.hi, greeting.phon, locale, '.hello-speak');
 };
 
-// Speak any phrasebook line (hello / nice to meet you / thank you / goodbye).
+function paintChosenPhrase(c, key) {
+  const p = phrasesFor(c).find(x => x.key === key) || phrasesFor(c)[0];
+  if (!p) return null;
+  const local = $('phrase-local');
+  const phon = $('phrase-phon');
+  const play = $('phrase-play');
+  if (local) local.textContent = p.t;
+  if (phon) phon.innerHTML = p.p ? 'say it: <b>' + escapeHtml(p.p) + '</b>' : '';
+  if (play) play.className = 'hello-speak phrase-speak k-' + p.key;
+  return p;
+}
+
 window.__myatlasticSpeakPhrase = (countryName, key) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c) return;
-  const p = phrasesFor(c).find(x => x.key === key);
+  const pick = $('phrase-pick');
+  const chosen = key || (pick && pick.value) || (phrasesFor(c)[0] && phrasesFor(c)[0].key);
+  const p = paintChosenPhrase(c, chosen);
   if (!p) return;
-  const locale = SPEECH_LOCALE[c.n] || narrationLocale();
-  speakPhraseLine(p.t, p.p, locale, '.phrase-speak.k-' + key);
+  const locale = tourLocale(c);
+  speakPhraseLine(p.t, p.p, locale, '.phrase-speak');
 };
 
 // A short spoken tour: the surprise, the capital, one animal, one dish, one place.
@@ -3895,6 +4044,47 @@ function paintStoryFrame(url, n) {
   while (stage.children.length > 2) stage.removeChild(stage.firstChild);
 }
 
+function grokLanguage(locale) {
+  const raw = String(locale || 'en').toLowerCase().replace('_', '-');
+  const lang = raw.split('-')[0];
+  if (lang === 'es') return raw.indexOf('mx') !== -1 ? 'es-MX' : 'es-ES';
+  if (lang === 'pt') return raw.indexOf('br') !== -1 ? 'pt-BR' : 'pt-PT';
+  if (lang === 'ar') return 'ar-SA';
+  const known = {
+    en: 'en', fr: 'fr', de: 'de', it: 'it', ja: 'ja', ko: 'ko', zh: 'zh',
+    hi: 'hi', id: 'id', ru: 'ru', tr: 'tr', vi: 'vi', bn: 'bn'
+  };
+  return known[lang] || 'auto';
+}
+
+function localTourSpeech(c) {
+  const locale = tourLocale(c);
+  const lang = locale.split('-')[0];
+  const place = landmarkFor(c) || {};
+  const animal = animalFor(c) || ['guide', ''];
+  const animalName = String(animal[0] || '').replace(/\s*\([^)]*\)/g, '').trim();
+  const vars = {
+    country: c.n,
+    capital: c.cap || '',
+    place: place.name || c.n,
+    animal: animalName,
+    dish: ''
+  };
+  let lines = spotHistoryLines(c, place, lang, animalName).slice(0, 2);
+  if (!lines.length) {
+    const sayLang = TOUR_SAY[lang] ? lang : 'en';
+    const hostPack = ANIMAL_HOST[sayLang] || ANIMAL_HOST.en;
+    const host = fillTourLine(hostPack, vars);
+    if (host) lines.push(host);
+    lines.push(sayTour(sayLang, 'arrive', vars, c.n.length));
+    if (c.cap) lines.push(sayTour(sayLang, 'capital', vars));
+  }
+  return {
+    lines: lines.map(s => String(s || '').trim()).filter(Boolean),
+    language: grokLanguage(locale)
+  };
+}
+
 function spokenTour(c) {
   const lines = [];
   tourStops(c).forEach(s => s.lines.forEach(line => lines.push(line)));
@@ -3906,8 +4096,10 @@ window.__myatlasticReadAloud = (countryName) => {
   if (!c || !window.RoomTalk) return;
   const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
   const session = bootRoom(c);
+  const local = localTourSpeech(c);
+  session.speakLanguage = local.language;
   buttons.forEach(b => b.classList.add('speaking'));
-  playRoom(session, session.spoken.length ? ['We can pick up from here.'] : session.plan, null);
+  playRoom(session, local.lines, null, local.language, tourLocale(c));
 };
 
 let tourTimer = null;
@@ -3989,74 +4181,216 @@ function silenceRoom(session) {
   stopSpeaking();
 }
 
-function playRoom(session, lines, story) {
+function lineForScreen(text) {
+  return String(text || '')
+    .replace(/\{\{s:([^}]*)\}\}/g, '$1')
+    .replace(/\{\{p:([^}]*)\}\}/g, '$1');
+}
+
+function grokScript(text) {
+  let spoken = String(text || '')
+    .replace(/\{\{s:[^}]*\}\}/g, ' ')
+    .replace(/\{\{p:([^}]*)\}\}/g, '$1');
+  spoken = forSpeech(spoken)
+    .replace(/\bit sounds like\b/gi, ' ')
+    .replace(/\bthe sound is\b/gi, ' ')
+    .replace(/\bthe stress sits like this:?/gi, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([,.!?])/g, '$1')
+    .replace(/([.!?])\s*[.!?]+/g, '$1')
+    .replace(/^[.\s,]+/, '')
+    .trim();
+  return spoken.replace(/([.!?])\s+/g, '$1 [pause] ');
+}
+
+function fetchGrokClip(text, token, language) {
+  const ctrl = new AbortController();
+  grokStops.add(ctrl);
+  return fetch('/api/grok-voice', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text: text, language: language || 'auto' }),
+    signal: ctrl.signal
+  }).then(res => {
+    grokStops.delete(ctrl);
+    if (token !== speakToken) return null;
+    if (res.status === 402) {
+      window.__grokVoiceBlocked = true;
+      return null;
+    }
+    if (!res.ok) throw new Error('grok');
+    return res.blob();
+  }).catch(err => {
+    grokStops.delete(ctrl);
+    if (err && err.name === 'AbortError') return null;
+    throw err;
+  });
+}
+
+function playGrokClip(blob, token) {
+  return new Promise(resolve => {
+    if (!blob || token !== speakToken) { resolve(); return; }
+    const url = URL.createObjectURL(blob);
+    const audio = new Audio();
+    grokPlayers.add(audio);
+    grokAudio = audio;
+    let settled = false;
+    const done = () => {
+      if (settled) return;
+      settled = true;
+      grokPlayers.delete(audio);
+      URL.revokeObjectURL(url);
+      if (grokAudio === audio) grokAudio = null;
+      resolve();
+    };
+    audio.onended = done;
+    audio.onerror = done;
+    audio.src = url;
+    if (token !== speakToken) { done(); return; }
+    audio.play().then(() => {
+      if (token !== speakToken) {
+        try { audio.pause(); } catch (e) {}
+        done();
+      }
+    }, done);
+  });
+}
+
+function forDevice(text) {
+  return String(text || '').replace(/\[[^\]]+\]/g, ' ').replace(/\s{2,}/g, ' ').trim();
+}
+
+function speakDeviceLine(text, locale, token) {
+  return new Promise(resolve => {
+    const line = forDevice(text);
+    if (!line || token !== speakToken || !window.speechSynthesis) { resolve(); return; }
+    const utt = new SpeechSynthesisUtterance(line);
+    const voice = findVoice(locale);
+    utt.lang = (voice && voice.lang) || locale || narrationLocale();
+    if (voice) utt.voice = voice;
+    utt.rate = 0.94;
+    const done = () => resolve();
+    utt.onend = done;
+    utt.onerror = done;
+    window.speechSynthesis.speak(utt);
+    window.speechSynthesis.resume();
+  });
+}
+
+function playRoom(session, lines, story, language, deviceLocale) {
   const clean = (lines || []).map(s => String(s || '').trim()).filter(Boolean);
+  const voiceLanguage = language || session.speakLanguage || 'auto';
+  const spokenLocale = deviceLocale || session.locale || narrationLocale();
   session.queue = clean;
   session.qi = 0;
   stopSpeaking();
   session.playToken = speakToken;
-    const step = () => {
-    if (session.playToken !== speakToken) return;
-    if (story && !document.getElementById('tour-overlay')) return;
-    if (session.qi >= session.queue.length) return;
-    const line = session.queue[session.qi++];
-    session.spoken.push(line);
-    if (story) story.textContent = line;
-    if (!speech.available || !window.speechSynthesis) return;
-    const utt = new SpeechSynthesisUtterance(forSpeech(line));
-    const voice = session.voice;
-    utt.lang = (voice && voice.lang) || session.voiceLocale || session.locale || narrationLocale();
-    if (voice) utt.voice = voice;
-    utt.rate = session.rate || 1;
-    utt.pitch = 1;
-    utt.onend = step;
-    utt.onerror = step;
-    window.speechSynthesis.speak(utt);
-    window.speechSynthesis.resume();
+  const step = async () => {
+    while (session.playToken === speakToken && session.qi < session.queue.length) {
+      if (story && !document.getElementById('tour-overlay')) return;
+      const line = session.queue[session.qi++];
+      const screen = lineForScreen(line);
+      const spoken = grokScript(line);
+      session.spoken.push(screen);
+      if (story) story.textContent = screen;
+      if (!spoken) continue;
+      const token = session.playToken;
+      let blob = null;
+      if (!window.__grokVoiceBlocked) {
+        try { blob = await fetchGrokClip(spoken, token, voiceLanguage); }
+        catch (e) { blob = null; }
+      }
+      if (token !== speakToken) return;
+      if (blob) await playGrokClip(blob, token);
+      else await speakDeviceLine(spoken, spokenLocale, token);
+      if (token !== speakToken) return;
+    }
   };
   step();
 }
 
-function armRoomEar(session, onText) {
-  stopRoomEar();
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!SR) return false;
-  const gen = roomEarGen;
-  const rec = new SR();
-  roomRec = rec;
-  rec.continuous = true;
-  rec.interimResults = true;
-  rec.lang = narrationLocale();
-  let sent = '';
-  rec.onresult = (ev) => {
-    if (gen !== roomEarGen) return;
-    let interim = '';
-    let finalText = '';
-    for (let i = ev.resultIndex; i < ev.results.length; i++) {
-      const piece = ev.results[i][0].transcript || '';
-      if (ev.results[i].isFinal) finalText += piece;
-      else interim += piece;
-    }
-    const live = (interim || finalText).trim();
-    if (live && session.playToken === speakToken && !roomEcho(live, session) && normTalk(live).length >= 4) {
-      silenceRoom(session);
-    }
-    const said = finalText.trim();
-    if (!said || said === sent || roomEcho(said, session)) return;
-    sent = said;
-    onText(said);
-  };
-  rec.onend = () => {
-    if (gen !== roomEarGen) return;
-    if (!document.getElementById('tour-overlay')) return;
-    try { rec.start(); } catch (e) {}
-  };
-  try {
-    rec.start();
-    return true;
-  } catch (e) {
-    return false;
+function tourRecognizer() {
+  return window.SpeechRecognition || window.webkitSpeechRecognition || null;
+}
+
+function askMicPermission() {
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+    return Promise.resolve(!!tourRecognizer());
   }
+  return navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+    stream.getTracks().forEach(track => track.stop());
+    return true;
+  }).catch(() => false);
+}
+
+function listenTourMic(session, onText, mic, sayBox) {
+  const SR = tourRecognizer();
+  if (!SR) {
+    sayBox.placeholder = 'Type a question, then press Enter';
+    sayBox.focus();
+    return;
+  }
+  if (roomRec) {
+    stopRoomEar();
+    mic.classList.remove('on');
+    sayBox.placeholder = 'Interrupt, ask, or name a country';
+    return;
+  }
+  silenceRoom(session);
+  sayBox.placeholder = 'Listening…';
+  mic.classList.add('on');
+  const start = () => {
+    if (!document.getElementById('tour-overlay')) return;
+    stopRoomEar();
+    const gen = roomEarGen;
+    const rec = new SR();
+    roomRec = rec;
+    rec.continuous = false;
+    rec.interimResults = true;
+    rec.lang = narrationLocale();
+    let heard = '';
+    rec.onresult = (ev) => {
+      if (gen !== roomEarGen) return;
+      let next = '';
+      for (let i = ev.resultIndex; i < ev.results.length; i++) {
+        next += ev.results[i][0].transcript || '';
+      }
+      heard = next.trim();
+      if (heard) sayBox.value = heard;
+    };
+    rec.onerror = () => {
+      if (gen !== roomEarGen) return;
+      mic.classList.remove('on');
+      sayBox.placeholder = 'Try the mic again, or type a question';
+    };
+    rec.onend = () => {
+      if (gen !== roomEarGen) return;
+      roomRec = null;
+      mic.classList.remove('on');
+      sayBox.placeholder = 'Interrupt, ask, or name a country';
+      const said = (sayBox.value || heard).trim();
+      if (!said || roomEcho(said, session)) return;
+      sayBox.value = '';
+      onText(said);
+    };
+    try {
+      rec.start();
+    } catch (e) {
+      roomRec = null;
+      mic.classList.remove('on');
+      sayBox.placeholder = 'Type a question, then press Enter';
+      sayBox.focus();
+    }
+  };
+  askMicPermission().then(ok => {
+    if (!ok) {
+      mic.classList.remove('on');
+      sayBox.placeholder = 'Allow the microphone, or type a question';
+      sayBox.focus();
+      return;
+    }
+    start();
+  });
 }
 
 window.__myatlasticTour = (countryName) => {
@@ -4116,6 +4450,8 @@ window.__myatlasticTour = (countryName) => {
     stopSpeaking();
     if (overlay.parentNode) overlay.remove();
   };
+  const local = localTourSpeech(c);
+  session.speakLanguage = local.language;
   const storyEl = () => overlay.querySelector('.tour-story');
   const onUser = (text) => {
     if (!overlay.isConnected) return;
@@ -4130,12 +4466,9 @@ window.__myatlasticTour = (countryName) => {
       }
     }
     if (res.resume) session.paused = [];
-    playRoom(session, res.lines, storyEl());
+    playRoom(session, res.lines, storyEl(), 'auto', narrationLocale());
   };
-  const opening = session.spoken.length
-    ? (session.paused && session.paused.length ? session.paused.slice() : ['We can pick up from here.'])
-    : session.plan;
-  if (session.spoken.length && session.paused && session.paused.length) session.paused = [];
+  const opening = local.lines;
   overlay.innerHTML =
     '<div class="tour-card" role="dialog" aria-label="Tour of ' + escapeHtml(c.n) + '">' +
       '<div style="display:flex;justify-content:space-between;align-items:center">' +
@@ -4149,7 +4482,7 @@ window.__myatlasticTour = (countryName) => {
       '<p class="tour-story">' + escapeHtml(opening[0] || '') + '</p>' +
       '<div class="tour-talk">' +
         '<input id="tour-say" type="text" placeholder="Interrupt, ask, or name a country" autocomplete="off" enterkeyhint="send" />' +
-        '<button type="button" class="back-btn" id="tour-mic">Mic</button>' +
+        '<button type="button" class="back-btn tour-mic" id="tour-mic">Mic</button>' +
       '</div>' +
       '<div class="tour-actions">' +
         '<button type="button" class="back-btn" id="tour-again">Again</button>' +
@@ -4169,23 +4502,16 @@ window.__myatlasticTour = (countryName) => {
     sayBox.value = '';
     onUser(text);
   });
-  const earOn = armRoomEar(session, onUser);
   const mic = $('tour-mic');
-  if (earOn) mic.classList.add('on');
-  mic.onclick = () => {
-    silenceRoom(session);
-    if (!earOn) {
-      sayBox.focus();
-      return;
-    }
-    mic.classList.add('on');
-    sayBox.focus();
-  };
+  mic.onclick = () => listenTourMic(session, onUser, mic, sayBox);
   overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
-  playRoom(session, opening, storyEl());
+  playRoom(session, opening, storyEl(), local.language, tourLocale(c));
 };
 
 function $(id) { return document.getElementById(id); }
+function playMark() {
+  return '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8.4 5.3a1 1 0 0 0-1.5.86v11.68a1 1 0 0 0 1.5.86l10.2-5.84a1 1 0 0 0 0-1.72L8.4 5.3z"/></svg>';
+}
 function escapeHtml(s) {
   if (s == null) return '';
   return String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch]);
@@ -4352,7 +4678,7 @@ function renderDetails() {
   const root = $('details-pane');
   const c = state.activeCountry;
   if (!c) {
-    root.innerHTML = '<div class="placeholder">Tap a country on the globe or in the list.</div>';
+    root.innerHTML = '<div class="placeholder">Choose a country in the list.</div>';
     return;
   }
 
@@ -4381,22 +4707,23 @@ function renderDetails() {
   // it is the hook that makes a child want to dig in (and unlock Pro).
   html += '<div class="wow-fact"><span class="wow-spark">✨</span><span><span class="wow-label">Wow fact</span>' + escapeHtml(wowFor(c)) + '</span></div>';
 
-  // USEFUL PHRASES in the local language — phonetic spell-out + spoken playback.
+  // USEFUL PHRASES — only for non-English countries.
   const phrases = phrasesFor(c);
-  const langLabel = escapeHtml(primaryLang(c) || c.lang);
-  html += '<div class="hello-card">' +
-    '<div class="hello-head">🗣 ' + (phrases.length > 1 ? 'Useful phrases' : 'Say hello') + ' in ' + langLabel + '</div>';
-  phrases.forEach((p, i) => {
-    html += '<div class="phrase-row' + (i === 0 ? ' first' : '') + '">' +
-      '<div class="phrase-en">' + escapeHtml(p.label) + '</div>' +
-      '<div class="phrase-main">' +
-        '<span class="phrase-loc">' + escapeHtml(p.t) + '</span>' +
-        (speech.available ? '<button class="hello-speak phrase-speak k-' + p.key + '" onclick="window.__myatlasticSpeakPhrase(' + cq + ', \'' + p.key + '\')" aria-label="Hear it" title="Hear it">🔊</button>' : '') +
+  if (phrases.length) {
+    const langLabel = escapeHtml(primaryLang(c) || c.lang);
+    const first = phrases[0];
+    html += '<div class="hello-card">' +
+      '<div class="hello-head">Useful phrases in ' + langLabel + '</div>' +
+      '<div class="phrase-pick">' +
+        '<select id="phrase-pick" aria-label="Choose a phrase">' +
+          phrases.map(p => '<option value="' + escapeHtml(p.key) + '">' + escapeHtml(p.label) + '</option>').join('') +
+        '</select>' +
+        (speech.available ? '<button class="hello-speak phrase-speak k-' + escapeHtml(first.key) + '" id="phrase-play" onclick="window.__myatlasticSpeakPhrase(' + cq + ')" aria-label="Play phrase" title="Play">' + playMark() + '</button>' : '') +
       '</div>' +
-      (p.p ? '<div class="phrase-phon">say it: <b>' + escapeHtml(p.p) + '</b></div>' : '') +
+      '<div class="phrase-loc" id="phrase-local">' + escapeHtml(first.t) + '</div>' +
+      (first.p ? '<div class="phrase-phon" id="phrase-phon">say it: <b>' + escapeHtml(first.p) + '</b></div>' : '<div class="phrase-phon" id="phrase-phon"></div>') +
     '</div>';
-  });
-  html += '</div>';
+  }
 
   const animal = animalFor(c);
   if (c.food || animal || c.sport || c.attire) {
@@ -4488,6 +4815,10 @@ function renderDetails() {
   html += '<div class="footer-note">On the map: ' + c.lat.toFixed(1) + '°, ' + c.lon.toFixed(1) + '°. Photos from Wikimedia Commons.</div>';
   root.innerHTML = html;
   watchCountryClock(c.n);
+  const pick = $('phrase-pick');
+  if (pick) {
+    pick.onchange = () => window.__myatlasticSpeakPhrase(c.n, pick.value);
+  }
 }
 
 window.__myatlasticOpenPaywall = () => setMode('paywall');
@@ -4868,85 +5199,6 @@ function renderMystery() {
   }
 }
 window.__myatlasticExitMystery = () => { mysteryState = null; setMode('explore'); };
-
-/* ============================================================
- * TRUE SIZE — drag/pick two countries to see their real relative
- * size, plus the famous Mercator-map distortion reveal.
- * ============================================================ */
-const AREA_KM2 = {
-  'Afghanistan':652230,'Albania':28748,'Algeria':2381741,'Andorra':468,'Angola':1246700,'Antigua and Barbuda':442,'Argentina':2780400,'Armenia':29743,'Australia':7692024,'Austria':83879,'Azerbaijan':86600,'Bahamas':13943,'Bahrain':765,'Bangladesh':147570,'Barbados':430,'Belarus':207600,'Belgium':30528,'Belize':22966,'Benin':114763,'Bhutan':38394,'Bolivia':1098581,'Bosnia and Herzegovina':51197,'Botswana':581730,'Brazil':8515767,'Brunei':5765,'Bulgaria':110879,'Burkina Faso':272967,'Burundi':27834,'Cambodia':181035,'Cameroon':475442,'Canada':9984670,'Cape Verde':4033,'Central African Republic':622984,'Chad':1284000,'Chile':756102,'China':9596961,'Colombia':1141748,'Comoros':1862,'Congo (DRC)':2344858,'Congo (Republic)':342000,'Costa Rica':51100,'Côte d\'Ivoire':322463,'Croatia':56594,'Cuba':109884,'Cyprus':9251,'Czech Republic':78867,'Denmark':43094,'Djibouti':23200,'Dominica':751,'Dominican Republic':48671,'Ecuador':283561,'Egypt':1001450,'El Salvador':21041,'Equatorial Guinea':28051,'Eritrea':117600,'Estonia':45227,'Eswatini':17364,'Ethiopia':1104300,'Fiji':18272,'Finland':338424,'France':551695,'Gabon':267668,'Gambia':11295,'Georgia':69700,'Germany':357114,'Ghana':238533,'Greece':131957,'Grenada':344,'Guatemala':108889,'Guinea':245857,'Guinea-Bissau':36125,'Guyana':214969,'Haiti':27750,'Honduras':112492,'Hungary':93028,'Iceland':103000,'India':3287263,'Indonesia':1904569,'Iran':1648195,'Iraq':438317,'Ireland':70273,'Israel':20770,'Italy':301340,'Jamaica':10991,'Japan':377975,'Jordan':89342,'Kazakhstan':2724900,'Kenya':580367,'Kiribati':811,'Kosovo':10887,'Kuwait':17818,'Kyrgyzstan':199951,'Laos':236800,'Latvia':64589,'Lebanon':10452,'Lesotho':30355,'Liberia':111369,'Libya':1759540,'Liechtenstein':160,'Lithuania':65300,'Luxembourg':2586,'Madagascar':587041,'Malawi':118484,'Malaysia':330803,'Maldives':300,'Mali':1240192,'Malta':316,'Marshall Islands':181,'Mauritania':1030700,'Mauritius':2040,'Mexico':1964375,'Micronesia':702,'Moldova':33846,'Monaco':2,'Mongolia':1564110,'Montenegro':13812,'Morocco':446550,'Mozambique':801590,'Myanmar':676578,'Namibia':825615,'Nauru':21,'Nepal':147181,'Netherlands':41850,'New Zealand':270467,'Nicaragua':130373,'Niger':1267000,'Nigeria':923768,'North Korea':120538,'North Macedonia':25713,'Norway':385207,'Oman':309500,'Pakistan':881913,'Palau':459,'Palestine':6020,'Panama':75417,'Papua New Guinea':462840,'Paraguay':406752,'Peru':1285216,'Philippines':300000,'Poland':312696,'Portugal':92090,'Qatar':11586,'Romania':238397,'Russia':17098242,'Rwanda':26338,'Saint Kitts and Nevis':261,'Saint Lucia':616,'Saint Vincent and the Grenadines':389,'Samoa':2842,'San Marino':61,'São Tomé and Príncipe':964,'Saudi Arabia':2149690,'Senegal':196722,'Serbia':88361,'Seychelles':452,'Sierra Leone':71740,'Singapore':728,'Slovakia':49035,'Slovenia':20273,'Solomon Islands':28896,'Somalia':637657,'South Africa':1221037,'South Korea':100210,'South Sudan':619745,'Spain':505992,'Sri Lanka':65610,'Sudan':1861484,'Suriname':163820,'Sweden':450295,'Switzerland':41285,'Syria':185180,'Taiwan':36193,'Tajikistan':143100,'Tanzania':945087,'Thailand':513120,'Timor-Leste':14874,'Togo':56785,'Tonga':747,'Trinidad and Tobago':5130,'Tunisia':163610,'Turkey':783562,'Turkmenistan':488100,'Tuvalu':26,'Uganda':241550,'Ukraine':603500,'United Arab Emirates':83600,'United Kingdom':243610,'United States':9833517,'Uruguay':176215,'Uzbekistan':447400,'Vanuatu':12189,'Vatican City':0.5,'Venezuela':916445,'Vietnam':331212,'Yemen':527968,'Zambia':752618,'Zimbabwe':390757,
-};
-
-function trueSizeCountries() {
-  return SOVEREIGN_COUNTRIES.filter(c => AREA_KM2[c.n]).sort((a, b) => a.n.localeCompare(b.n));
-}
-function fmtArea(km2) {
-  if (km2 >= 1000) return Math.round(km2).toLocaleString() + ' km²';
-  return km2 + ' km²';
-}
-
-function renderTrueSize(aName, bName) {
-  const list = trueSizeCountries();
-  const a = COUNTRIES.find(c => c.n === aName) || list[0];
-  const b = COUNTRIES.find(c => c.n === bName) || list.find(c => c.n !== a.n);
-  const areaA = AREA_KM2[a.n], areaB = AREA_KM2[b.n];
-  const big = Math.max(areaA, areaB);
-  // Square side ∝ sqrt(area) so the *area* (not the side) is to scale.
-  const MAX = 170;
-  const sideA = MAX * Math.sqrt(areaA / big);
-  const sideB = MAX * Math.sqrt(areaB / big);
-  const ratio = areaA >= areaB ? (areaA / areaB) : (areaB / areaA);
-  const bigger = areaA >= areaB ? a : b, smaller = areaA >= areaB ? b : a;
-  // Mercator illusion: a country's area looks 1/cos²(lat) bigger on a flat map.
-  const inflate = c => Math.min(99, 1 / Math.pow(Math.cos(c.lat * Math.PI / 180), 2));
-
-  const opts = sel => list.map(c => '<option value="' + escapeHtml(c.n) + '"' + (c.n === sel ? ' selected' : '') + '>' + escapeHtml(c.n) + '</option>').join('');
-
-  return '<div class="ts-pickers">' +
-      '<select id="ts-a" class="ts-select">' + opts(a.n) + '</select>' +
-      '<span class="ts-vs">vs</span>' +
-      '<select id="ts-b" class="ts-select">' + opts(b.n) + '</select>' +
-    '</div>' +
-    '<div class="ts-stage">' +
-      '<div class="ts-sq" style="width:' + sideA.toFixed(0) + 'px;height:' + sideA.toFixed(0) + 'px;background:rgba(212,160,86,0.30);border-color:var(--accent)"><span>' + a.flag + '</span></div>' +
-      '<div class="ts-sq" style="width:' + sideB.toFixed(0) + 'px;height:' + sideB.toFixed(0) + 'px;background:rgba(110,168,196,0.30);border-color:var(--accent-2)"><span>' + b.flag + '</span></div>' +
-    '</div>' +
-    '<div class="ts-verdict"><b>' + escapeHtml(bigger.n) + '</b> is about <b>' + (ratio >= 10 ? Math.round(ratio) : ratio.toFixed(1)) + '×</b> the size of <b>' + escapeHtml(smaller.n) + '</b>.</div>' +
-    '<div class="ts-areas">' +
-      '<span>' + a.flag + ' ' + escapeHtml(a.n) + ': ' + fmtArea(areaA) + '</span>' +
-      '<span>' + b.flag + ' ' + escapeHtml(b.n) + ': ' + fmtArea(areaB) + '</span>' +
-    '</div>' +
-    '<div class="ts-illusion">🗺️ Map trick: on a flat world map, <b>' + escapeHtml(a.n) + '</b> looks about <b>' + inflate(a).toFixed(1) + '×</b> bigger than it really is, and <b>' + escapeHtml(b.n) + '</b> about <b>' + inflate(b).toFixed(1) + '×</b>. The further from the equator, the more a country gets stretched!</div>';
-}
-
-function openTrueSize() {
-  let modal = document.getElementById('truesize-modal');
-  if (modal) modal.remove();
-  modal = document.createElement('div');
-  modal.id = 'truesize-modal';
-  modal.className = 'ts-modal';
-  const startA = (state.activeCountry && AREA_KM2[state.activeCountry.n]) ? state.activeCountry.n : 'Greenland';
-  const aName = AREA_KM2[startA] ? startA : 'France';
-  modal.innerHTML = '<div class="ts-box">' +
-    '<button class="ts-close" aria-label="Close">✕</button>' +
-    '<h2 class="ts-title">📐 True Size</h2>' +
-    '<p class="ts-intro">Maps stretch countries near the poles. Pick two and see how big they <i>really</i> are.</p>' +
-    '<div id="ts-body">' + renderTrueSize(aName, aName === 'Russia' ? 'India' : 'Russia') + '</div>' +
-    '</div>';
-  document.body.appendChild(modal);
-  const rewire = () => {
-    const av = $('ts-a').value, bv = $('ts-b').value;
-    $('ts-body').innerHTML = renderTrueSize(av, bv);
-    wire();
-  };
-  const wire = () => {
-    $('ts-a').onchange = rewire;
-    $('ts-b').onchange = rewire;
-  };
-  wire();
-  modal.querySelector('.ts-close').onclick = () => modal.remove();
-  modal.onclick = e => { if (e.target === modal) modal.remove(); };
-}
 
 /* ============================================================
  * SETTINGS + PRO TOOLS — age bands, reading help (dyslexia font),
@@ -5346,25 +5598,14 @@ function newQuizQuestion() {
 }
 
 // A small card that launches the Globe Flag Hunt — shown at the top of the Quiz tab.
-function huntLauncherHtml() {
-  return '<div class="center-card hunt-launch">' +
-    '<div class="hunt-launch-row">' +
-      '<div><div class="hunt-launch-title">🌍 Globe Flag Hunt</div>' +
-      '<div class="hunt-launch-sub">See a flag, then tap that country on the 3D globe.</div></div>' +
-      '<button class="btn-primary" id="hunt-start">Play</button>' +
-    '</div></div>';
-}
-function wireHuntLauncher() { const b = $('hunt-start'); if (b) b.onclick = startGlobeHunt; }
-
 function renderQuiz() {
   const root = $('view-quiz');
   if (!canQuiz()) {
-    root.innerHTML = huntLauncherHtml() +
+    root.innerHTML =
       '<div class="center-card quiz-card"><div class="quiz-eyebrow">Daily limit reached</div>' +
       '<h2 style="font-size:24px;margin:20px 0">You have used your 3 free quizzes today</h2>' +
       '<p style="color:var(--ink-dim);margin-bottom:24px">Upgrade for unlimited quizzes.</p>' +
       '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button></div>';
-    wireHuntLauncher();
     return;
   }
 
@@ -5399,7 +5640,7 @@ function renderQuiz() {
       textFn = c => c.flag + ' ' + c.n; break;
   }
 
-  root.innerHTML = huntLauncherHtml() +
+  root.innerHTML =
     '<div class="center-card quiz-card">' +
     '<div class="quiz-eyebrow">' + eyebrow + '</div>' + promptHtml +
     '<div class="quiz-options">' +
@@ -5407,7 +5648,6 @@ function renderQuiz() {
     '</div>' +
     '<div class="quiz-score">Score: ' + state.quiz.score + ' / ' + state.quiz.total + '</div>' +
     '</div>';
-  wireHuntLauncher();
 
   const card = root.querySelector('.quiz-card');
   card.querySelectorAll('.quiz-option').forEach(btn => {
@@ -5770,12 +6010,6 @@ function renderToday() {
     '<p>Clues about animals, food, and language. Guess the country.</p>' +
     '<span class="today-go">Play</span>' +
     '</button>';
-  html += '<button type="button" class="today-card" id="today-hunt">' +
-    '<div class="today-kicker">Game</div>' +
-    '<h3>🌍 Globe Flag Hunt</h3>' +
-    '<p>See a flag, then tap that country on the globe. Free, any day.</p>' +
-    '<span class="today-go">Play</span>' +
-    '</button>';
   html += '<button type="button" class="today-card" id="today-passport">' +
     '<div class="today-kicker">Passport</div>' +
     '<h3>' + visited + ' / ' + total + ' countries</h3>' +
@@ -5799,7 +6033,6 @@ function renderToday() {
   $('today-daily').onclick = () => setMode('daily');
   $('today-puzzle').onclick = () => setMode('puzzle');
   $('today-mystery').onclick = () => setMode('mystery');
-  $('today-hunt').onclick = () => startGlobeHunt();
   $('today-passport').onclick = () => setMode('passport');
   const homeBtn = $('today-home');
   if (homeBtn) homeBtn.onclick = () => {
@@ -6678,16 +6911,6 @@ function gameShuffle(arr) {
 
 function renderGame() {
   const root = $('view-game');
-  if (!state.isPro) {
-    root.innerHTML = '<div class="center-card quiz-card">' +
-      '<div style="text-align:left"><button class="back-btn" onclick="setMode(\'explore\')">← Exit</button></div>' +
-      '<div class="quiz-eyebrow">Pro feature</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">🔒 Spell-the-Country is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Spell each country from scrambled letters and learn as you play. Unlock the game with Myatlastic Pro.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
-      '</div>';
-    return;
-  }
   if (!gameState || gameState.status === 'intro') { renderGameIntro(root); return; }
   if (gameState.status === 'over') { renderGameOver(root); return; }
   renderGameRound(root);
@@ -6697,7 +6920,7 @@ function renderGameIntro(root) {
   root.innerHTML =
     '<div class="center-card" style="max-width:480px;text-align:center">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticExitGame()">← Back</button></div>' +
-      '<div class="quiz-eyebrow">Pro game</div>' +
+      '<div class="quiz-eyebrow">Spelling game</div>' +
       '<h2 style="color:var(--accent);font-size:30px;margin:14px 0 6px">Spell-the-Country</h2>' +
       '<p style="color:var(--ink-dim);margin-bottom:24px;font-size:14px">See the flag, hear the name in an American accent, then spell the country from the scrambled letters. Learn at your own pace — no timer, no pressure.</p>' +
       '<button class="btn-primary" id="game-start" style="width:100%;padding:14px">Start playing</button>' +
@@ -6982,20 +7205,6 @@ function setupGlobe(THREE) {
   ring.visible = false;
   scene.add(ring);
 
-  // DAY / NIGHT — point the sun at the real subsolar point so the lit and dark
-  // hemispheres match the actual time right now. Toggled off by default.
-  let dayNight = false;
-  function subsolarLocalDir() {
-    const now = new Date();
-    const start = new Date(Date.UTC(now.getUTCFullYear(), 0, 0));
-    const dayOfYear = Math.floor((now - start) / 86400000);
-    // Solar declination (deg), simple but good-enough approximation.
-    const decl = -23.44 * Math.cos((2 * Math.PI / 365) * (dayOfYear + 10));
-    const utcHours = now.getUTCHours() + now.getUTCMinutes() / 60;
-    const subLon = -15 * (utcHours - 12); // longitude where it's local noon
-    return latLonToVec3(decl, subLon, 1, THREE).normalize();
-  }
-
   // EXPLORER AVATAR — an emoji sprite that rides to the active country and bobs.
   // Levels up (icon changes) as the child unlocks more of the world.
   function makeEmojiSprite(emoji, depthTest) {
@@ -7183,14 +7392,6 @@ function setupGlobe(THREE) {
     globeGroup.rotation.y = currentRotY;
     globeGroup.rotation.x = currentRotX;
     camera.position.z += (targetZoom - camera.position.z) * 0.08;
-    if (dayNight) {
-      // Rotate the real sun direction into scene space so it tracks geography
-      // as the user spins the globe.
-      const dir = subsolarLocalDir().applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
-      sun.position.copy(dir.multiplyScalar(6));
-      sun.intensity = 1.5;
-      ambient.intensity = 0.12;
-    }
     if (ring.visible && state.activeCountry) {
       const p = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, 1.55, THREE);
       p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
@@ -7207,10 +7408,6 @@ function setupGlobe(THREE) {
       targetRotY = -c.lon * (Math.PI / 180) - Math.PI / 2;
       targetRotX = c.lat * (Math.PI / 180) * 0.6;
       ring.visible = true;
-    },
-    setDayNight(on) {
-      dayNight = on;
-      if (!on) { sun.position.set(5, 3, 5); sun.intensity = 1.1; ambient.intensity = 0.65; }
     },
     setFlags(on) {
       if (on) buildFlags();
@@ -7348,7 +7545,7 @@ function showCoach(c) {
   tip.id = 'coach-mark';
   tip.className = 'coach-mark';
   tip.type = 'button';
-  tip.innerHTML = '<b>' + escapeHtml(c.n) + '</b><br>Drag to spin · tap a pin';
+  tip.innerHTML = '<b>' + escapeHtml(c.n) + '</b><br>Drag to spin';
   pane.appendChild(tip);
   let frames = 0;
   const place = () => {
@@ -7492,25 +7689,14 @@ $('kids-toggle').onclick = () => {
 };
 $('search').addEventListener('input', e => { state.search = e.target.value; renderList(); });
 
-// Globe: day/night terminator toggle
-const dnBtn = $('daynight-toggle');
-if (dnBtn) dnBtn.onclick = () => {
-  const on = !dnBtn.classList.contains('on');
-  dnBtn.classList.toggle('on', on);
-  $('globe-hint').textContent = on ? 'Lit side = daytime now · dark side = night' : 'Drag to spin · tap a pin to select';
-  if (globeAPI && globeAPI.setDayNight) globeAPI.setDayNight(on);
-};
 // Globe: all-flags layer toggle
 const flagsBtn = $('flags-toggle');
 if (flagsBtn) flagsBtn.onclick = () => {
   const on = !flagsBtn.classList.contains('on');
   flagsBtn.classList.toggle('on', on);
-  $('globe-hint').textContent = on ? 'Every country\'s flag · drag to spin the world' : 'Drag to spin · tap a pin to select';
+  $('globe-hint').textContent = on ? 'Every country\'s flag · drag to spin the world' : 'Drag to spin';
   if (globeAPI && globeAPI.setFlags) globeAPI.setFlags(on);
 };
-// Globe: true-size comparison opener
-const tsBtn = $('truesize-btn');
-if (tsBtn) tsBtn.onclick = () => openTrueSize();
 // Settings / Pro tools
 const setBtn = $('settings-btn');
 if (setBtn) setBtn.onclick = () => openSettings();
