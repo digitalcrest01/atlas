@@ -4,7 +4,9 @@
 
    Keys stay on this machine: XAI_API_KEY in the environment or .env.local
    (git-ignored), else a signed-in grok CLI;
-   AZURE_SPEECH_KEY + AZURE_SPEECH_REGION for the languages xAI does not speak. */
+   AZURE_SPEECH_KEY + AZURE_SPEECH_REGION for the languages xAI does not speak.
+   Without an Azure key, speech is fetched from the live site instead, so every
+   language (Filipino, Swahili, Amharic...) sounds here as it does in production. */
 const http = require('http');
 const fs = require('fs');
 const os = require('os');
@@ -13,6 +15,7 @@ const { handleVoice } = require('./api/_voice.js');
 
 const ROOT = __dirname;
 const HOST = '127.0.0.1';
+const LIVE = 'https://www.myatlastic.com';
 const PORT = Number(process.env.PORT || 8772);
 
 // KEY=value lines from .env.local (git-ignored) fill in anything not already set.
@@ -87,9 +90,20 @@ function fakeVoice(req, res) {
   setTimeout(() => res.end(b), 150);
 }
 
+// Relay a voice request to the live site (no Origin header, so it is accepted).
+function fromLive(req, res) {
+  fetch(LIVE + req.url).then(async r => {
+    res.statusCode = r.status;
+    ['content-type', 'cache-control'].forEach(h => { if (r.headers.get(h)) res.setHeader(h, r.headers.get(h)); });
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.end(Buffer.from(await r.arrayBuffer()));
+  }).catch(() => { res.statusCode = 502; res.end(); });
+}
+
 http.createServer((req, res) => {
   const route = new URL(req.url, 'http://local').pathname;
   if (route === '/api/voice' && process.env.VOICE_FAKE === '1') { fakeVoice(req, res); return; }
+  if (route === '/api/voice' && !localEnv().AZURE_SPEECH_KEY) { fromLive(req, res); return; }
   if (route === '/api/voice') {
     handleVoice(req, res, localEnv()).catch(() => { if (!res.headersSent) { res.statusCode = 500; } res.end(); });
     return;

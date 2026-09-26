@@ -78,17 +78,6 @@
     min-width: 0;
   }
   .logo-text { display: flex; flex-direction: column; line-height: 1.05; min-width: 0; }
-  .logo-slogan {
-    margin-top: 2px;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    color: var(--ink-dim);
-    max-width: 150px;
-  }
-  @media (min-width: 520px) {
-    .logo-slogan { max-width: none; white-space: nowrap; }
-  }
   .logo-mark { width: 22px; height: 22px; flex-shrink: 0; }
   .logo-mark .star { fill: var(--accent); }
   .logo-mark .inner { fill: var(--bg); }
@@ -113,6 +102,12 @@
     background: transparent;
   }
   .kids-toggle.on { color: var(--accent); border-color: var(--accent); }
+  .ambient-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; }
+  .ambient-btn svg { display: block; }
+  .ambient-btn .amb-off { display: none; }
+  .ambient-btn[aria-pressed="false"] .amb-on { display: none; }
+  .ambient-btn[aria-pressed="false"] .amb-off { display: inline; }
+  .ambient-btn[aria-pressed="true"] { color: var(--accent); }
 
   /* ===== MODE TABS ===== */
   nav.tabs {
@@ -773,12 +768,21 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
+  .tour-actions { align-items: center; justify-content: center; gap: 16px; }
+  .tour-top { display: flex; justify-content: space-between; align-items: center; position: sticky; top: -18px; z-index: 2; margin: -18px -18px 0; padding: 18px 18px 4px; background: var(--panel); border-radius: 16px 16px 0 0; }
+  .tour-x { width: 40px; height: 40px; margin: -8px -8px -8px 0; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: none; border-radius: 999px; background: transparent; color: var(--ink-dim); cursor: pointer; }
+  .tour-x:hover, .tour-x:focus-visible { color: var(--ink); background: rgba(255,255,255,0.08); }
+  .tour-actions button { height: 48px; min-height: 48px; }
+  .tour-actions .tour-icon { flex: 0 0 48px; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+  .tour-actions .tour-icon.btn-primary { border-radius: 999px; }
+  .tour-actions .tour-icon svg { display: block; }
   .tour-sub-label { display: inline-block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); margin-right: 4px; font-weight: 700; }
   #globe-canvas { transition: transform 0.6s ease; }
   @media (max-width: 700px) {
     .tour-stage { height: 120px; }
     .tour-animal { font-size: 34px; }
     .tour-card { max-height: 52vh; padding: 14px 14px 10px; }
+    .tour-top { top: -14px; margin: -14px -14px 0; padding: 14px 14px 4px; }
     .tour-card h2 { font-size: 20px; margin: 4px 0 6px; }
     .tour-overlay { padding: 8px 8px max(8px, env(safe-area-inset-bottom, 0px)); }
   }
@@ -892,26 +896,23 @@
   /* PASSPORT */
   .passport-wrap { max-width: 1000px; margin: 0 auto; padding: 18px 16px 60px; }
   .pp-head h2 { margin: 0 0 4px; font-size: 22px; }
-  .pp-tools { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
-  .pp-chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .pp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 12px; margin-bottom: 28px; }
-  .pp-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; background: none; border: none; color: var(--ink); cursor: pointer; text-align: center; }
-  .pp-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 8px; }
-  .pp-cover { position: relative; width: 100%; aspect-ratio: 5 / 7; border-radius: 6px 10px 10px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 6px 14px rgba(0,0,0,0.35); transition: transform 0.15s ease; }
-  .pp-card:hover .pp-cover { transform: translateY(-3px) rotate(-1deg); }
   .pp-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
   .pp-drawn { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 8px;
     background: linear-gradient(160deg, #1f3a5f, #12233b); color: #e8d9a8; border-left: 5px solid rgba(0,0,0,0.25); }
   .pp-drawn-flag { font-size: 34px; line-height: 1; }
   .pp-drawn-name { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.2; }
   .pp-drawn-word { font-size: 9px; letter-spacing: 0.24em; opacity: 0.8; }
-  .pp-stamp { position: absolute; z-index: 2; right: 6px; bottom: 6px; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-    border: 2px solid #c0392b; color: #c0392b; background: rgba(255,255,255,0.85); font-weight: 900; font-size: 15px; transform: rotate(-12deg); }
-  .pp-stamp.gold { border-color: #b8860b; color: #b8860b; }
-  .pp-card:not(.got) .pp-cover { filter: saturate(0.75); }
-  .pp-name { font-size: 12px; line-height: 1.25; overflow-wrap: anywhere; }
-  .pp-open { max-width: 420px; }
-  .pp-open-cover { position: relative; width: 58%; margin: 4px auto 14px; aspect-ratio: 5 / 7; border-radius: 6px 12px 12px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 10px 24px rgba(0,0,0,0.45); }
+  .pp-head { margin-bottom: 14px; }
+  .pp-pick-row { display: flex; gap: 8px; align-items: center; }
+  .pp-pick-row .pb-pick { flex: 1; min-width: 0; }
+  .pp-step { flex: 0 0 46px; height: 46px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font-size: 24px; line-height: 1; }
+  .pp-step:disabled { opacity: 0.35; cursor: default; }
+  .pp-step:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pp-open { max-width: 460px; margin: 18px auto 24px; }
+  .pp-actions { display: flex; gap: 8px; margin-top: 14px; }
+  .pp-actions button { flex: 1; height: 48px; min-height: 48px; margin: 0; box-sizing: border-box; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; padding: 10px 12px; }
+  .pp-open-name { text-align: center; font-size: 22px; margin: 0 0 12px; }
+  .pp-open-cover { position: relative; width: min(62%, 240px); margin: 4px auto 14px; aspect-ratio: 5 / 7; border-radius: 6px 12px 12px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 10px 24px rgba(0,0,0,0.45); }
   .pp-visa { margin: 14px 0 4px; padding: 12px; border-radius: 10px; background: #f6f1e3; color: #3a3326;
     background-image: repeating-linear-gradient(0deg, transparent 0 22px, rgba(58,51,38,0.06) 22px 23px); }
   .pp-visa-head { display: flex; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #7a6c52; margin-bottom: 8px; }
@@ -1614,7 +1615,6 @@
   body.kids .puzzle-board { background: linear-gradient(160deg, #74c0fc, #4dabf7); border: none; border-radius: 22px; }
   body.kids .puzzle-flag { border-color: #fff; border-radius: 16px; }
   body.kids .puzzle-piece { border-radius: 999px; background: #fff; border: 3px solid #ffd43b; color: #2b3142; }
-  body.kids .pp-card:hover .pp-cover { transform: translateY(-4px) rotate(-2deg) scale(1.03); }
   body.kids .tour-card { border-radius: 24px; border: 3px solid #4dabf7; }
   body.kids .mobile-bar { background: #fff; border-top: 3px solid #ffd43b; }
   body.kids .mobile-bar button.active { color: #ff5fa2; }
@@ -1644,6 +1644,13 @@
   @media (max-width: 480px) {
     body { font-size: 14px; }
     .logo-name { font-size: 18px !important; }
+    header { padding-left: 12px; padding-right: 12px; }
+    .logo { flex-shrink: 0; gap: 6px; }
+    .logo-name { white-space: nowrap; }
+    .header-right { gap: 6px; min-width: 0; }
+    .header-right .kids-toggle, .header-right .badge { padding: 6px 7px; white-space: nowrap; letter-spacing: 0.03em; }
+    .header-right .ambient-btn, #settings-btn { min-width: 28px; padding: 6px 4px; }
+    .logo { margin-right: 6px; }
     .today-card h3, .view h3 { font-size: 16px; }
     .view h2, .puzzle-top h2, .pp-head h2 { font-size: 18px; }
     .detail-name { font-size: 22px; gap: 8px; }
@@ -1681,9 +1688,10 @@
 <body class="mode-explore">
 
 <header>
-  <div class="logo"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg><span class="logo-text"><span class="logo-name">Myatlastic</span><span class="logo-slogan">The world at your finger tips</span></span></div>
+  <div class="logo"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg><span class="logo-text"><span class="logo-name">Myatlastic</span></span></div>
   <div class="header-right">
     <button class="badge hidden" id="pro-badge">Unlock Quiz</button>
+    <button class="kids-toggle ambient-btn" id="ambient-btn" aria-pressed="true" aria-label="Background sound" title="Background sound"><svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true" focusable="false"><path d="M3.5 7.6h2.9L10 4.5v11l-3.6-3.1H3.5z" fill="currentColor"/><path class="amb-on" d="M12.6 7.4a3.6 3.6 0 0 1 0 5.2M14.8 5.4a6.4 6.4 0 0 1 0 9.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="amb-off" d="M13 7.5l5 5m0-5l-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
     <button class="kids-toggle" id="kids-toggle">Kids: Off</button>
     <button class="kids-toggle" id="settings-btn" title="Settings, reading help, 2-player &amp; teacher tools" aria-label="Settings">⚙️</button>
   </div>
@@ -2480,6 +2488,105 @@ window.__myatlasticAnthem = (countryName) => {
   _anthemTimer = setTimeout(stopAnthem, (t - ctx.currentTime + 0.2) * 1000);
 };
 
+/* Ambient sound while the globe turns: a soft, slowly shifting chord with a
+   breath of wind, made in Web Audio (no file to download). It starts on the
+   first tap (browsers require one), falls silent whenever a voice or anthem
+   plays or the app is hidden, and the header button turns it off for good. */
+const Ambient = (() => {
+  const KEY = 'myatlastic_ambient';
+  const LEVEL = 0.05;
+  let ctx = null, master = null, started = false;
+  let on = true;
+  try { on = localStorage.getItem(KEY) !== 'off'; } catch (e) {}
+
+  function build() {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return false;
+    ctx = new AC();
+    master = ctx.createGain();
+    master.gain.value = 0;
+    const tone = ctx.createBiquadFilter();
+    tone.type = 'lowpass'; tone.frequency.value = 900; tone.Q.value = 0.4;
+    tone.connect(master); master.connect(ctx.destination);
+    // The filter opens and closes over about 20 seconds, like breathing.
+    const sweep = ctx.createOscillator(), sweepAmt = ctx.createGain();
+    sweep.frequency.value = 0.05; sweepAmt.gain.value = 350;
+    sweep.connect(sweepAmt); sweepAmt.connect(tone.frequency); sweep.start();
+    // An open chord (A, E, B, C#): each note drifts in and out on its own clock.
+    [110, 164.81, 246.94, 277.18, 329.63].forEach((f, i) => {
+      [-4, 4].forEach(detune => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = i === 0 ? 'sine' : 'triangle';
+        o.frequency.value = f; o.detune.value = detune;
+        g.gain.value = i === 0 ? 0.35 : 0.12;
+        const lfo = ctx.createOscillator(), depth = ctx.createGain();
+        lfo.frequency.value = 0.03 + i * 0.017; depth.gain.value = g.gain.value * 0.8;
+        lfo.connect(depth); depth.connect(g.gain);
+        o.connect(g); g.connect(tone); o.start(); lfo.start();
+      });
+    });
+    // Wind: quiet filtered noise.
+    const len = ctx.sampleRate * 4, buf = ctx.createBuffer(1, len, ctx.sampleRate), d = buf.getChannelData(0);
+    let last = 0;
+    for (let i = 0; i < len; i++) { last = (last + 0.02 * (Math.random() * 2 - 1)) / 1.02; d[i] = last * 3.5; }
+    const wind = ctx.createBufferSource(), windTone = ctx.createBiquadFilter(), windGain = ctx.createGain();
+    wind.buffer = buf; wind.loop = true;
+    windTone.type = 'bandpass'; windTone.frequency.value = 500; windTone.Q.value = 0.6;
+    windGain.gain.value = 0.25;
+    wind.connect(windTone); windTone.connect(windGain); windGain.connect(master); wind.start();
+    return true;
+  }
+
+  function quiet() {
+    return document.hidden ||
+      (window.MyatlasticVoice && window.MyatlasticVoice.playing()) ||
+      (typeof _anthemPlaying !== 'undefined' && _anthemPlaying);
+  }
+
+  function update() {
+    if (!ctx) return;
+    const target = on && !quiet() ? LEVEL : 0;
+    const now = ctx.currentTime;
+    master.gain.cancelScheduledValues(now);
+    master.gain.setValueAtTime(master.gain.value, now);
+    // Quick to step aside for a voice, slow to come back.
+    master.gain.linearRampToValueAtTime(target, now + (target ? 2.5 : 0.25));
+    if (target && ctx.state === 'suspended') ctx.resume();
+  }
+
+  function start() {
+    if (started || !on) return;
+    started = true;
+    try { if (!build()) return; } catch (e) { return; }
+    if (ctx.state === 'suspended') ctx.resume();
+    update();
+    setInterval(update, 400);
+    document.addEventListener('visibilitychange', update);
+  }
+
+  function paint() {
+    const b = document.getElementById('ambient-btn');
+    if (!b) return;
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.title = on ? 'Background sound: on' : 'Background sound: off';
+  }
+
+  function toggle() {
+    on = !on;
+    try { localStorage.setItem(KEY, on ? 'on' : 'off'); } catch (e) {}
+    paint();
+    if (on) start();
+    update();
+  }
+
+  ['touchend', 'click', 'keydown'].forEach(t => document.addEventListener(t, (ev) => {
+    if (ev.target && ev.target.closest && ev.target.closest('#ambient-btn')) return;
+    start();
+  }, { capture: true, passive: true }));
+
+  return { toggle, paint, update, level: () => (master ? master.gain.value : 0), running: () => !!ctx && ctx.state === 'running' };
+})();
+
 /* ============================================================
  * STATE
  * ============================================================ */
@@ -2859,6 +2966,14 @@ function tourBook(c, data) {
   return { book: voiced[0] || 'en', missing: localBooks.length && !voiced.length ? localBooks[0] : '' };
 }
 
+// Tour controls are icons; the words live in aria-label and title.
+const TOUR_ICONS = {
+  pause: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="6" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1.2" fill="currentColor"/></svg>',
+  play: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M8 5.2v13.6a.8.8 0 0 0 1.2.7l10.6-6.8a.8.8 0 0 0 0-1.4L9.2 4.5A.8.8 0 0 0 8 5.2z" fill="currentColor"/></svg>',
+  close: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
+  again: '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M4.5 12a7.5 7.5 0 1 0 2.4-5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 3.8v4.6h4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+
 function tourCardHtml(c) {
   const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
   return '<section class="tour-cta" id="tour-cta" data-country="' + escapeHtml(c.n) + '" aria-labelledby="tc-title">' +
@@ -3009,9 +3124,10 @@ window.__myatlasticTour = (countryName) => {
 
   overlay.innerHTML =
     '<div class="tour-card" role="dialog" aria-modal="true" aria-label="A visit to ' + escapeHtml(c.n) + '">' +
-      '<div style="display:flex;justify-content:space-between;align-items:center">' +
+      '<div class="tour-top">' +
         '<div class="tour-kicker">' + escapeHtml(c.n) + '</div>' +
-        '<span class="tour-pin" aria-hidden="true"></span>' +
+        '<span style="display:flex;align-items:center;gap:8px"><span class="tour-pin" aria-hidden="true"></span>' +
+        '<button type="button" class="tour-x" id="tour-close" aria-label="Close the visit" title="Close">' + TOUR_ICONS.close + '</button></span>' +
       '</div>' +
       '<div class="tour-host"><span class="tour-animal" aria-hidden="true">' + (animal[1] || '🐾') + '</span><span class="tour-host-line">' + escapeHtml(host) + '</span></div>' +
       '<div class="tour-stage" id="tour-stage"></div>' +
@@ -3021,9 +3137,8 @@ window.__myatlasticTour = (countryName) => {
       '<p class="tour-note" hidden></p>' +
       '<div class="tour-next-row" hidden></div>' +
       '<div class="tour-actions">' +
-        '<button type="button" class="back-btn" id="tour-again">Again</button>' +
-        '<button type="button" class="btn-primary" id="tour-next">Pause</button>' +
-        '<button type="button" class="back-btn" id="tour-close">Close</button>' +
+        '<button type="button" class="back-btn tour-icon" id="tour-again" aria-label="Hear this line again" title="Again">' + TOUR_ICONS.again + '</button>' +
+        '<button type="button" class="btn-primary tour-icon" id="tour-next" aria-label="Pause the visit" title="Pause">' + TOUR_ICONS.pause + '</button>' +
       '</div>' +
     '</div>';
 
@@ -3035,8 +3150,10 @@ window.__myatlasticTour = (countryName) => {
   const owner = 'narration:' + c.n;
 
   const setMain = () => {
-    const label = tour.mode === 'playing' || tour.mode === 'loading' ? 'Pause' : tour.mode === 'paused' ? 'Resume' : 'Continue';
-    mainBtn.textContent = label;
+    const busy = tour.mode === 'playing' || tour.mode === 'loading';
+    const label = busy ? 'Pause' : tour.mode === 'paused' ? 'Resume' : 'Continue';
+    mainBtn.innerHTML = busy ? TOUR_ICONS.pause : TOUR_ICONS.play;
+    mainBtn.title = label;
     mainBtn.setAttribute('aria-label', label + ' the visit');
   };
   // Small English translation under anything said in another language.
@@ -3525,8 +3642,9 @@ function showToast(a) {
  * ============================================================ */
 /* ---------- Passport: the real passport of every country ---------- */
 let passportCovers = null;
-let passportFilter = 'All';
-let passportQuery = '';
+const PP_PICK_KEY = 'myatlastic_passport_pick';
+let passportPick = '';
+try { passportPick = localStorage.getItem(PP_PICK_KEY) || ''; } catch (e) {}
 function loadPassportCovers() {
   if (passportCovers) return Promise.resolve(passportCovers);
   return fetch('passports.json').then(r => (r.ok ? r.json() : {})).catch(() => ({})).then(j => (passportCovers = j || {}));
@@ -3544,13 +3662,13 @@ function passportCoverHtml(c, width) {
     ' onerror="this.remove()">' + drawn.replace('pp-drawn"', 'pp-drawn pp-under"');
 }
 
+// Pick a country from the list and its passport opens right below:
+// the real cover, the basics, and your entry stamps.
 function renderPassport() {
   const root = $('view-passport');
   const viewed = getViewedSet();
-  const stamped = getStampedSet();
-  const all = COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n));
-  const total = SOVEREIGN_COUNTRIES.length;
   const visitsAll = getVisits();
+  const total = SOVEREIGN_COUNTRIES.length;
   const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n) || (visitsAll[c.n] || []).length).length;
   const stampTotal = Object.values(visitsAll).reduce((n, l) => n + l.length, 0);
   if (!passportCovers) {
@@ -3558,48 +3676,61 @@ function renderPassport() {
     loadPassportCovers().then(() => { if (state.mode === 'passport') renderPassport(); });
     return;
   }
+  const all = COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n));
   const conts = CONTINENTS.filter(x => x !== 'All');
-  const q = passportQuery.trim().toLowerCase();
-  const list = all.filter(c => (passportFilter === 'All' || c.c.split(' / ')[0] === passportFilter) && (!q || c.n.toLowerCase().indexOf(q) !== -1));
+  // In list order (continent, then name), so ‹ › step the way the list reads.
+  const ordered = [];
+  conts.forEach(k => all.forEach(c => { if (c.c.split(' / ')[0] === k) ordered.push(c); }));
+  if (!ordered.some(c => c.n === passportPick)) {
+    // Start on the country visited most recently, else the first in the list.
+    let best = '', when = 0;
+    Object.keys(visitsAll).forEach(n => {
+      const last = Math.max.apply(null, visitsAll[n] || [0]);
+      if (last > when && ordered.some(c => c.n === n)) { when = last; best = n; }
+    });
+    passportPick = best || ordered[0].n;
+  }
+  const stampsOf = (c) => (visitsAll[c.n] || []).length;
 
   let html = '<div class="passport-wrap">' +
-    '<div class="pp-head"><div><h2>Passports of the world</h2>' +
-    '<div class="passport-hint">Every country\'s passport. Each visit earns an entry stamp: ' + visitedCount + ' of ' + total + ' countries, ' + stampTotal + ' stamps in all.</div></div></div>' +
-    '<div class="pp-tools">' +
-      '<input id="pp-search" class="search-input" type="search" placeholder="Find a country" aria-label="Find a country\'s passport" value="' + escapeHtml(passportQuery) + '">' +
-      '<div class="pp-chips" role="tablist" aria-label="Continent">' +
-        ['All'].concat(conts).map(x => '<button type="button" role="tab" class="chip' + (x === passportFilter ? ' active' : '') + '" aria-selected="' + (x === passportFilter) + '" data-cont="' + escapeHtml(x) + '">' + escapeHtml(x) + '</button>').join('') +
-      '</div>' +
+    '<div class="pp-head"><h2>Passports of the world</h2>' +
+    '<div class="passport-hint">Every country\'s passport. Each visit earns an entry stamp: ' + visitedCount + ' of ' + total + ' countries, ' + stampTotal + ' stamps in all.</div></div>' +
+    '<label class="pb-pick-label" for="pp-pick">Pick a country to see its passport</label>' +
+    '<div class="pp-pick-row">' +
+      '<button type="button" class="pp-step" id="pp-prev" aria-label="Previous country">‹</button>' +
+      '<select id="pp-pick" class="pb-pick">' +
+      conts.map(k => '<optgroup label="' + escapeHtml(k) + '">' +
+        ordered.filter(c => c.c.split(' / ')[0] === k).map(c => {
+          const n = stampsOf(c);
+          return '<option value="' + escapeHtml(c.n) + '"' + (c.n === passportPick ? ' selected' : '') + '>' +
+            (c.flag ? c.flag + ' ' : '') + escapeHtml(c.n) + (n ? ' · ' + n + (n === 1 ? ' stamp' : ' stamps') : '') + '</option>';
+        }).join('') + '</optgroup>').join('') +
+      '</select>' +
+      '<button type="button" class="pp-step" id="pp-next" aria-label="Next country">›</button>' +
     '</div>' +
-    '<div class="pp-grid">';
-  list.forEach(c => {
-    const count = (visitsAll[c.n] || []).length || (viewed.has(c.n) ? 1 : 0);
-    const got = count > 0;
-    const gold = stamped.has(c.n);
-    html += '<button type="button" class="pp-card' + (got ? ' got' : '') + '" data-pp="' + escapeHtml(c.n) + '" aria-label="' + escapeHtml(c.n) + ' passport' + (got ? ', ' + count + (count === 1 ? ' stamp' : ' stamps') : '') + '">' +
-      '<span class="pp-cover">' + passportCoverHtml(c, 240) +
-        (got ? '<span class="pp-stamp' + (gold ? ' gold' : '') + '" aria-hidden="true">' + (count > 1 ? '×' + count : (gold ? '★' : '✓')) + '</span>' : '') +
-      '</span>' +
-      '<span class="pp-name">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</span>' +
-      '</button>';
-  });
-  if (!list.length) html += '<p class="passport-hint">No country matches that.</p>';
-  html += '</div>';
-
-  html += '<p class="footer-note">Passport images from Wikimedia Commons. Drawn covers are illustrations.</p></div>';
+    '<div id="pp-shown" aria-live="polite"></div>' +
+    '<p class="footer-note">Passport images from Wikimedia Commons. Drawn covers are illustrations.</p></div>';
   root.innerHTML = html;
 
-  const search = $('pp-search');
-  search.oninput = () => {
-    passportQuery = search.value;
-    const pos = search.selectionStart;
-    renderPassport();
-    const again = $('pp-search');
-    again.focus();
-    try { again.setSelectionRange(pos, pos); } catch (e) {}
+  const pick = $('pp-pick');
+  const show = (name) => {
+    passportPick = name;
+    try { localStorage.setItem(PP_PICK_KEY, name); } catch (e) {}
+    pick.value = name;
+    const i = ordered.findIndex(c => c.n === name);
+    $('pp-prev').disabled = i <= 0;
+    $('pp-next').disabled = i >= ordered.length - 1;
+    showPassport(name);
   };
-  root.querySelectorAll('.pp-chips .chip').forEach(b => { b.onclick = () => { passportFilter = b.dataset.cont; renderPassport(); }; });
-  root.querySelectorAll('.pp-card').forEach(b => { b.onclick = () => openPassport(b.dataset.pp, b); });
+  const step = (d) => {
+    const i = ordered.findIndex(c => c.n === passportPick);
+    const next = ordered[i + d];
+    if (next) show(next.n);
+  };
+  pick.onchange = () => show(pick.value);
+  $('pp-prev').onclick = () => step(-1);
+  $('pp-next').onclick = () => step(1);
+  show(passportPick);
 }
 
 // An immigration entry stamp, drawn in ink: shape, colour and tilt vary by
@@ -3643,20 +3774,16 @@ function stampSvg(name, ms, n) {
     '</g></svg>';
 }
 
-// One passport, opened: the cover, the country, and your stamps.
-function openPassport(name, opener) {
+// One passport, open on the page: the cover, the country, and your stamps.
+function showPassport(name) {
+  const box = $('pp-shown');
   const c = COUNTRIES.find(x => x.n === name);
-  if (!c) return;
+  if (!box || !c) return;
   const visits = visitsOf(c.n);
-  const viewed = visits.length > 0 || getViewedSet().has(c.n);
   const gold = getStampedSet().has(c.n);
-  const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
-  const modal = document.createElement('div');
-  modal.className = 'ts-modal';
-  modal.innerHTML = '<div class="ts-box pp-open" role="dialog" aria-modal="true" aria-label="Passport of ' + escapeHtml(c.n) + '">' +
-    '<button class="ts-close" aria-label="Close">✕</button>' +
+  box.innerHTML = '<div class="pp-open">' +
     '<div class="pp-open-cover">' + passportCoverHtml(c, 480) + '</div>' +
-    '<h2 class="ts-title">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</h2>' +
+    '<h3 class="pp-open-name">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</h3>' +
     '<div class="fact-grid">' +
       '<div class="fact-label">Capital</div><div class="fact-value">' + escapeHtml(c.cap || '—') + '</div>' +
       '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang || '—') + '</div>' +
@@ -3669,20 +3796,13 @@ function openPassport(name, opener) {
         : '<p class="pp-visa-empty">No stamps yet. Visit ' + escapeHtml(c.n) + ' to get your first entry stamp.</p>') +
       (gold ? '<p class="pp-visa-gold">★ Gold: you answered a question about ' + escapeHtml(c.n) + ' correctly.</p>' : '') +
     '</div>' +
-    '<div class="tour-actions">' +
+    '<div class="pp-actions">' +
       '<button type="button" class="back-btn" id="pp-globe">Show on globe</button>' +
       '<button type="button" class="btn-primary" id="pp-tour">▶ Play the tour</button>' +
     '</div>' +
     '</div>';
-  document.body.appendChild(modal);
-  const close = () => { modal.remove(); document.removeEventListener('keydown', onKey); if (opener && opener.focus) opener.focus(); };
-  const onKey = (ev) => { if (ev.key === 'Escape') close(); };
-  document.addEventListener('keydown', onKey);
-  modal.onclick = (ev) => { if (ev.target === modal) close(); };
-  modal.querySelector('.ts-close').onclick = close;
-  $('pp-globe').onclick = () => { close(); window.__myatlasticShowOnGlobe(c.n); };
-  $('pp-tour').onclick = () => { close(); window.__myatlasticTour(c.n); };
-  modal.querySelector('.ts-close').focus();
+  $('pp-globe').onclick = () => window.__myatlasticShowOnGlobe(c.n);
+  $('pp-tour').onclick = () => window.__myatlasticTour(c.n);
 }
 
 /* ============================================================
@@ -4206,6 +4326,18 @@ const QUIZ_TYPES = ['flag-to-country', 'country-to-capital', 'capital-to-country
 // World facts: a simple answer, then one short line explaining it. Where
 // people count differently, the answer is the usual count and says so.
 const WORLD_FACTS = [
+  { id: 'lang-portuguese', q: 'In how many countries is Portuguese an official language?', a: '9', o: ['4', '6', '14'],
+    why: 'Portugal, Brazil, Angola, Mozambique, Cape Verde, Guinea-Bissau, São Tomé and Príncipe, East Timor and Equatorial Guinea. Brazil has far more speakers than Portugal.' },
+  { id: 'lang-spanish', q: 'In how many countries is Spanish an official language?', a: '20', o: ['12', '16', '27'],
+    why: 'Spain, Mexico, Equatorial Guinea and 17 countries across Central America, South America and the Caribbean. Spanish is the main language of every South American country except Brazil and the Guianas.' },
+  { id: 'lang-french', q: 'In how many countries is French an official language?', a: '26', o: ['12', '19', '35'],
+    why: 'France, Belgium, Switzerland, Luxembourg, Monaco, Canada, Haiti, Vanuatu and 18 countries in Africa. Mali, Burkina Faso and Niger recently made French a working language instead, so older books say 29.' },
+  { id: 'lang-dutch', q: 'In how many countries is Dutch an official language?', a: '3', o: ['1', '5', '8'],
+    why: 'The Netherlands, Belgium (where it is called Flemish) and Suriname in South America. Afrikaans, spoken in South Africa, grew out of Dutch.' },
+  { id: 'lang-arabic', q: 'In how many countries is Arabic an official language?', a: '23', o: ['11', '17', '31'],
+    why: 'The 22 members of the Arab League, from Morocco to Iraq and Oman, plus Chad. Arabic is also the language of the Quran, so many more people learn it.' },
+  { id: 'lang-german', q: 'In how many countries is German an official language?', a: '6', o: ['2', '4', '9'],
+    why: 'Germany, Austria, Switzerland, Liechtenstein, Luxembourg and Belgium, where a small German-speaking community lives in the east.' },
   { id: 'continents', q: 'How many continents are there in the world?', a: '7', o: ['5', '6', '8'],
     why: 'Africa, Antarctica, Asia, Australia (Oceania), Europe, North America and South America. Some schools join a few together and count 5 or 6.' },
   { id: 'countries', q: 'How many countries are there in the world?', a: '195', o: ['150', '180', '220'],
@@ -6328,6 +6460,8 @@ document.querySelectorAll('.mobile-bar button').forEach(b => {
   b.onclick = () => setMobilePane(b.dataset.pane);
 });
 $('pro-badge').onclick = () => setMode('paywall');
+$('ambient-btn').onclick = () => Ambient.toggle();
+Ambient.paint();
 $('kids-toggle').onclick = () => {
   state.kidsMode = !state.kidsMode;
   document.body.classList.toggle('kids', state.kidsMode);

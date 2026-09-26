@@ -17,7 +17,9 @@
   const isNative = () => !!(root.Capacitor && typeof root.Capacitor.isNativePlatform === 'function' && root.Capacitor.isNativePlatform());
 
   // Native builds have no server of their own: speech comes from the site.
-  let apiBase = root.MYATLASTIC_VOICE_API || (isNative() ? 'https://myatlastic.com' : '');
+  // The www host answers directly; the bare domain redirects, and a
+  // cross-origin redirect makes the app's requests fail.
+  let apiBase = root.MYATLASTIC_VOICE_API || (isNative() ? 'https://www.myatlastic.com' : '');
 
   const audio = typeof Audio !== 'undefined' ? new Audio() : null;
   if (audio) audio.preload = 'auto';
