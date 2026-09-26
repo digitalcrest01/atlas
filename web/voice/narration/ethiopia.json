@@ -1,0 +1,59 @@
+{
+  "country": "Ethiopia",
+  "languages": ["en", "am"],
+  "segments": [
+    {
+      "en": "The smell reaches you first: green coffee beans roasting in a small pan over glowing coals, crackling as they darken. The pan is carried around the room so everyone can breathe in the smoke. In Ethiopia, the coffee ceremony has begun.",
+      "am": "መጀመሪያ የሚደርሰው መዓዛው ነው፤ አረንጓዴው የቡና ፍሬ በፍም ላይ በትንሽ ምጣድ ሲቆላ እየጠቆረ ይንጣጣል። ሁሉም ጭሱን እንዲያሸት ምጣዱ በቤቱ ውስጥ ይዞራል። በኢትዮጵያ የቡና ሥነ ሥርዓቱ ተጀምሯል።"
+    },
+    {
+      "en": "Many people believe coffee was first discovered here. An old legend tells of a goat herder named Kaldi, who noticed his goats leaping with energy after nibbling the red berries of a wild shrub.",
+      "am": "ብዙዎች ቡና መጀመሪያ የተገኘው እዚህ እንደሆነ ያምናሉ። አንድ የቆየ አፈ ታሪክ ስለ ካልዲ የተባለ የፍየል እረኛ ይናገራል፤ ፍየሎቹ የአንድን የዱር ቁጥቋጦ ቀይ ፍሬ ከበሉ በኋላ በኃይል ሲዘሉ ተመለከተ።"
+    },
+    {
+      "en": "The coffee is pounded by hand, brewed in a clay pot called a jebena and poured into tiny cups, usually for three rounds, with popcorn or roasted barley on the side. It's a time to sit, talk and simply be together.",
+      "am": "ቡናው በእጅ ይወቀጣል፣ ጀበና በሚባል የሸክላ ዕቃ ይፈላል፣ በትንንሽ ስኒዎችም ይቀዳል። ብዙውን ጊዜ ሦስት ዙር ሲሆን ከፈንዲሻ ወይም ከቆሎ ጋር ይቀርባል። ቁጭ ብሎ የመጨዋወትና አብሮ የመሆን ጊዜ ነው።"
+    },
+    {
+      "en": "Ethiopia keeps its own calendar, with twelve months of thirty days and a thirteenth month of just five or six. New Year, called Enkutatash, falls in September, when the rains end and yellow daisies cover the hills.",
+      "am": "ኢትዮጵያ የራሷ የዘመን አቆጣጠር አላት፤ ሠላሳ ቀናት ያሏቸው አሥራ ሁለት ወራትና አምስት ወይም ስድስት ቀናት ብቻ ያላት አሥራ ሦስተኛዋ ወር ጳጉሜ። አዲስ ዓመት ወይም እንቁጣጣሽ በመስከረም ይከበራል፤ ዝናቡ አብቅቶ ኮረብቶቹ በቢጫ አደይ አበባ በሚሸፈኑበት ወቅት።"
+    },
+    {
+      "en": "Amharic, the most widely used language, is written in its own beautiful script called fidel, where each letter stands for a whole syllable. Yet more than eighty languages are spoken across the country.",
+      "am": "በሰፊው የሚነገረው አማርኛ በራሱ ውብ የፊደል ገበታ ይጻፋል፤ እያንዳንዱ ፊደል ተነባቢንና አናባቢን በአንድ ላይ ይወክላል። ሆኖም በመላ አገሪቱ ከሰማንያ በላይ ቋንቋዎች ይነገራሉ።"
+    },
+    {
+      "en": "In Lalibela, around eight hundred years ago, whole churches were carved straight down into solid red rock, roofs, windows and all. Pilgrims wrapped in white shawls still come to pray in them today.",
+      "am": "በላሊበላ፣ ከስምንት መቶ ዓመታት ገደማ በፊት፣ አብያተ ክርስቲያናት ከጣሪያቸው እስከ መስኮቶቻቸው ድረስ ከአንድ ወጥ ቀይ አለት ተፈልፍለው ተሠርተዋል። ዛሬም ነጭ ነጠላ የለበሱ ምዕመናን ለጸሎት ወደዚያ ይመጣሉ።"
+    },
+    {
+      "en": "In January, the festival of Timket celebrates Epiphany with processions, singing, drums and crowds dressed in white. In September, the Meskel festival lights up towns with huge bonfires.",
+      "am": "በጥር ወር የጥምቀት በዓል በሰልፍ፣ በዝማሬ፣ በከበሮና ነጭ በለበሱ ብዙ ሕዝብ ይከበራል። በመስከረም ደግሞ የመስቀል በዓል ከተሞችን በትላልቅ ደመራዎች ያደምቃል።"
+    },
+    {
+      "en": "Meals are shared from one big platter lined with injera, a soft, tangy flatbread made from a tiny grain called teff, with spicy stews called wat on top. If a friend feeds you a bite by hand, that's gursha, a sign of love and respect.",
+      "am": "ምግብ የሚበላው ጤፍ ከሚባል ጥቃቅን እህል በተሠራ ለስላሳና ኮምጠጥ ያለ እንጀራ በተነጠፈበት አንድ ትልቅ ትሪ ላይ በጋራ ነው፤ በላዩም ቅመም የበዛባቸው ወጦች ይደረጋሉ። ጓደኛዎ በእጁ ቢያጎርስዎ ያ ጉርሻ ይባላል፤ የፍቅርና የአክብሮት ምልክት ነው።"
+    },
+    {
+      "en": "The landscape is spectacular. In the Simien Mountains, gelada monkeys with bright red patches on their chests graze on high green meadows at the edge of dramatic cliffs.",
+      "am": "መልክዓ ምድሩ እጅግ አስደናቂ ነው። በስሜን ተራሮች ደረታቸው ላይ ደማቅ ቀይ ምልክት ያላቸው ጭላዳ ዝንጀሮዎች በአስገራሚ ገደሎች አፋፍ ላይ ባሉ ከፍተኛ አረንጓዴ መስኮች ሳር ይግጣሉ።"
+    },
+    {
+      "en": "Far below, in the Danakil Depression, hot springs have painted the ground yellow, green and orange. And from Lake Tana, the Blue Nile begins its long journey north.",
+      "am": "ራቅ ብሎ በዝቅተኛው የዳናኪል ምድር ፍል ውሃዎች መሬቱን በቢጫ፣ በአረንጓዴና በብርቱካናማ ቀለም አስውበውታል። ከጣና ሐይቅ ደግሞ ዓባይ ወደ ሰሜን ረጅም ጉዞውን ይጀምራል።"
+    },
+    {
+      "en": "Ethiopians are proud runners. At the Rome Olympics in nineteen sixty, Abebe Bikila won the marathon running barefoot, and many great long-distance champions have followed him.",
+      "am": "ኢትዮጵያውያን በሩጫ ይኮራሉ። በአውሮፓውያን አቆጣጠር በ1960 በሮም በተካሄደው ኦሊምፒክ አበበ ቢቂላ በባዶ እግሩ ሮጦ ማራቶንን አሸንፏል፤ ከእርሱም በኋላ ብዙ ታላላቅ የረጅም ርቀት ሻምፒዮኖች ተከትለዋል።"
+    },
+    {
+      "en": "Addis Ababa, the capital, whose name means new flower, is a busy highland city and home to the African Union.",
+      "am": "ርዕሰ ከተማዋ አዲስ አበባ በደጋው ላይ የምትገኝ ሁልጊዜ የምትንቀሳቀስ ከተማና የአፍሪካ ኅብረት መቀመጫ ናት።"
+    },
+    {
+      "en": "Amesegenallo, thank you for visiting. Travel south, past the lakes of the Rift Valley, and Kenya is waiting.",
+      "am": "ስለ ጉብኝትዎ አመሰግናለሁ። በስምጥ ሸለቆው ሐይቆች በኩል ወደ ደቡብ ይጓዙ፤ ኬንያ እየጠበቀችዎ ነው።"
+    }
+  ],
+  "next": ["Kenya", "Djibouti", "Sudan"]
+}

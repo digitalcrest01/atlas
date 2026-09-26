@@ -1,0 +1,59 @@
+{
+  "country": "Croatia",
+  "languages": ["en", "hr"],
+  "segments": [
+    {
+      "en": "Listen. At the edge of the sea in Zadar, waves push air through pipes hidden beneath stone steps, and the steps begin to sing. It's called the Sea Organ, and it never plays the same tune twice.",
+      "hr": "Poslušajte. Na rubu mora u Zadru valovi potiskuju zrak kroz cijevi skrivene ispod kamenih stepenica i stepenice počinju pjevati. Zovu se Morske orgulje i nikad ne sviraju istu melodiju dvaput."
+    },
+    {
+      "en": "Croatia curves like a crescent moon along the Adriatic Sea, and its coast is scattered with more than a thousand islands. Some are busy with harbours and cafés, others are home only to olive trees and goats.",
+      "hr": "Hrvatska se poput polumjeseca savija uz Jadransko more, a njezina je obala posuta s više od tisuću otoka. Neki su puni luka i kafića, a na drugima žive samo masline i koze."
+    },
+    {
+      "en": "In Split, people live, shop and drink coffee inside the walls of a palace built for the Roman emperor Diocletian some seventeen centuries ago. Laundry hangs between the ancient stones.",
+      "hr": "U Splitu ljudi žive, kupuju i piju kavu unutar zidina palače koju je prije sedamnaest stoljeća dao sagraditi rimski car Dioklecijan. Između drevnog kamenja suši se rublje."
+    },
+    {
+      "en": "Further south, Dubrovnik is wrapped in massive stone walls. Walk along the top at sunset and the terracotta roofs glow orange against the deep blue sea.",
+      "hr": "Južnije, Dubrovnik je okružen golemim kamenim zidinama. Prošećite njima u zalazak sunca i crveni će krovovi zasjati narančasto nad tamnoplavim morem."
+    },
+    {
+      "en": "Inland, the Plitvice Lakes tumble down a green valley in a staircase of turquoise pools and waterfalls, linked by wooden walkways that seem to float on the water.",
+      "hr": "U unutrašnjosti Plitvička jezera spuštaju se zelenom dolinom poput stuba od tirkiznih jezera i slapova, povezanih drvenim stazama koje kao da lebde nad vodom."
+    },
+    {
+      "en": "The capital, Zagreb, feels more Central European, with blue trams, leafy parks and an Upper Town where Saint Mark's Church wears a roof of brightly coloured tiles.",
+      "hr": "Glavni grad Zagreb ima srednjoeuropski duh, s plavim tramvajima, zelenim parkovima i Gornjim gradom, gdje crkva svetog Marka nosi krov od šarenih crijepova."
+    },
+    {
+      "en": "Here's an important custom. When a Croatian friend says let's go for coffee, it isn't really about the coffee. It's about sitting on a sunny terrace for an hour or two, talking and watching the world go by.",
+      "hr": "Evo jednog važnog običaja. Kad vam prijatelj kaže „idemo na kavu”, zapravo nije riječ o kavi. Riječ je o sjedenju na sunčanoj terasi sat ili dva, uz razgovor i promatranje prolaznika."
+    },
+    {
+      "en": "On the coast there's even a word, fjaka, for that sweet, sleepy state of doing nothing at all in the summer heat. It isn't laziness. It's an art.",
+      "hr": "Na obali za to postoji i posebna riječ, fjaka, ono slatko, pospano stanje kad se po ljetnoj vrućini ne radi baš ništa. To nije lijenost. To je umijeće."
+    },
+    {
+      "en": "In the evenings you might hear klapa, groups of men or women singing in close harmony without any instruments, their voices echoing through narrow stone streets.",
+      "hr": "Navečer ćete možda čuti klapu, skupinu muškaraca ili žena koji pjevaju višeglasno i bez ikakvih instrumenata, a glasovi im odzvanjaju uskim kamenim ulicama."
+    },
+    {
+      "en": "Food changes with the landscape. By the sea there's grilled fish, olive oil and black risotto coloured with cuttlefish ink. In Istria, people search the forests for truffles. And in many regions, meat and vegetables are slow-baked under a bell-shaped lid called a peka.",
+      "hr": "Hrana se mijenja s krajolikom. Uz more je tu riba s gradela, maslinovo ulje i crni rižot obojen crnilom sipe. U Istri se po šumama traže tartufi. A u mnogim se krajevima meso i povrće polako peku ispod zvona koje se zove peka."
+    },
+    {
+      "en": "Two things the world borrowed from Croatia may surprise you. The necktie grew out of the scarves worn by Croatian soldiers centuries ago, and the spotted Dalmatian dog takes its name from this very coast.",
+      "hr": "Dvije stvari koje je svijet posudio od Hrvatske možda će vas iznenaditi. Kravata je nastala od marama koje su prije nekoliko stoljeća nosili hrvatski vojnici, a pjegavi dalmatinac ime je dobio upravo po ovoj obali."
+    },
+    {
+      "en": "When the national football team plays in its red and white checkerboard shirts, whole towns gather in the squares to sing and cheer together.",
+      "hr": "A kad igra nogometna reprezentacija u svojim crveno-bijelim kockastim dresovima, cijeli se gradovi okupljaju na trgovima da zajedno pjevaju i navijaju."
+    },
+    {
+      "en": "Hvala, thank you for coming. Head north through the green hills and you'll soon cross into Slovenia, with its Alps and emerald rivers.",
+      "hr": "Hvala vam što ste došli. Krenite prema sjeveru kroz zelena brda i uskoro ćete prijeći u Sloveniju, zemlju Alpa i smaragdnih rijeka."
+    }
+  ],
+  "next": ["Slovenia", "Bosnia and Herzegovina", "Hungary"]
+}

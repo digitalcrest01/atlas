@@ -1,0 +1,62 @@
+{
+  "country": "Japan",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "segments": [
+    {
+      "en": "Before the first bite, everyone at the table puts their hands together and says, itadakimasu, a small thank you for the food and everyone who made it. It's a lovely way to begin a visit to Japan.",
+      "ja": "食べる前に、みんなで手を合わせて「いただきます」と言います。食べ物と、それを用意してくれた人たちへの小さな感謝の言葉です。日本の旅を始めるのに、ぴったりの一言ですね。"
+    },
+    {
+      "en": "Japan is a chain of islands in the Pacific Ocean, stretching from snowy Hokkaido in the north to the warm, turquoise seas of Okinawa in the south. Mountains cover much of the land, and perfect, snow-capped Mount Fuji is the most beloved of all.",
+      "ja": "日本は太平洋に連なる島々の国で、北は雪深い北海道から、南はあたたかく青い海に囲まれた沖縄まで続いています。国土の多くは山で、なかでも雪をかぶった美しい富士山は、いちばん愛されている山です。"
+    },
+    {
+      "en": "People here pay close attention to the seasons. In spring, friends and families gather under blooming cherry trees for picnics called hanami, and in autumn, whole mountainsides blaze red and gold with maple leaves.",
+      "ja": "日本の人々は季節の移り変わりをとても大切にしています。春には満開の桜の下に友だちや家族が集まってお花見を楽しみ、秋には山全体がもみじの赤や黄色に染まります。"
+    },
+    {
+      "en": "Tokyo, the capital, is enormous and full of energy, with glowing signs, busy crossings and trains every few minutes. Yet just around a corner you'll find a quiet shrine, a tiny garden, or a noodle shop with only a few seats.",
+      "ja": "首都の東京は巨大で活気にあふれ、光る看板やにぎやかな交差点、数分おきに来る電車があります。それでも角をひとつ曲がれば、静かな神社や小さな庭、数席しかないラーメン屋さんが見つかります。"
+    },
+    {
+      "en": "For centuries Kyoto was the home of the emperor. Its wooden temples, stone paths and moss gardens feel calm and timeless, and in the evening you might glimpse a maiko, a young apprentice geiko, walking in her bright kimono.",
+      "ja": "京都は何百年ものあいだ、天皇の住む都でした。木造のお寺や石畳の道、苔の庭は、静かで時が止まったようです。夕方には、華やかな着物姿で歩く、芸妓さんの見習いの舞妓さんを見かけるかもしれません。"
+    },
+    {
+      "en": "Good manners matter a great deal. People greet each other with a bow, and when you step into a home you take off your shoes at the entrance and slip into indoor slippers.",
+      "ja": "礼儀はとても大切にされています。あいさつのときはおじぎをし、家に上がるときは玄関で靴を脱いで、スリッパにはき替えます。"
+    },
+    {
+      "en": "Japanese food is all about fresh ingredients and beautiful presentation. There's sushi and tempura, warming bowls of miso soup, and ramen, which it's perfectly polite to slurp. For lunch, many people carry a neat bento box.",
+      "ja": "日本の料理は、新鮮な食材と美しい盛りつけが大切です。お寿司や天ぷら、体があたたまるお味噌汁、そして音を立ててすすっても失礼にならないラーメンもあります。お昼には、きれいに詰めたお弁当を持っていく人もたくさんいます。"
+    },
+    {
+      "en": "Because Japan sits on volcanic land, hot springs bubble up across the country. Soaking in an outdoor onsen while snow falls around you is one of the great joys of winter.",
+      "ja": "日本は火山の多い土地なので、全国に温泉がわき出ています。雪が降るなか、露天風呂にゆっくりつかるのは、冬の大きな楽しみのひとつです。"
+    },
+    {
+      "en": "Getting around is a pleasure. The shinkansen, or bullet train, zooms between cities at astonishing speed, and it's famous for leaving and arriving right on time.",
+      "ja": "移動も楽しみのひとつです。新幹線は驚くほどの速さで都市と都市を結び、時間どおりに発車し、時間どおりに到着することで有名です。"
+    },
+    {
+      "en": "Summer is the season of matsuri, lively festivals with drums, paper lanterns and portable shrines carried through the streets. Children in light cotton yukata enjoy games, shaved ice and fireworks.",
+      "ja": "夏はお祭りの季節です。太鼓が鳴りひびき、ちょうちんがともり、おみこしが町を練り歩きます。浴衣を着た子どもたちは、屋台の遊びやかき氷、花火を楽しみます。"
+    },
+    {
+      "en": "Japan's arts reach from very old to brand new. There's the short poem called haiku, the quiet tea ceremony and the art of flower arranging, and there are manga and anime, loved by readers and viewers all over the world.",
+      "ja": "日本の芸術は、とても古いものから最新のものまでさまざまです。短い詩の俳句、静かな茶道や生け花があり、そして世界中の人に愛されている漫画やアニメもあります。"
+    },
+    {
+      "en": "When it's time to leave, people say, mata ne, see you again. And just across the sea to the west, South Korea is waiting.",
+      "ja": "お別れのときは「またね」と言います。そして西の海を渡ったすぐ先で、韓国が待っています。"
+    }
+  ],
+  "next": [
+    "South Korea",
+    "China",
+    "Taiwan"
+  ]
+}

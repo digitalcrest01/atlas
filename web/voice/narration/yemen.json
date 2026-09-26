@@ -1,0 +1,59 @@
+{
+  "country": "Yemen",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "Tall towers of mud brick rise from a desert valley, crowded together like a city of skyscrapers. This is Shibam in Hadramaut, built centuries ago, and it has been called the Manhattan of the desert.",
+      "ar": "أبراج شاهقة من الطين تنتصب في وادٍ صحراوي، متلاصقة كأنها مدينة من ناطحات السحاب. هذه شبام في حضرموت، بُنيت قبل قرون، ولُقّبت بمانهاتن الصحراء."
+    },
+    {
+      "en": "Yemen lies at the southwestern tip of the Arabian Peninsula, where the Red Sea meets the Gulf of Aden. Its land holds high green mountains, hot coastal plains and wide deserts.",
+      "ar": "يقع اليمن في الطرف الجنوبي الغربي من شبه الجزيرة العربية، حيث يلتقي البحر الأحمر بخليج عدن. وفي أرضه جبال خضراء عالية، وسهول ساحلية حارة، وصحارى واسعة."
+    },
+    {
+      "en": "In ancient times this land was called Arabia Felix, happy Arabia, because it was rich and green. Frankincense and myrrh were carried from here by camel caravans to faraway kingdoms.",
+      "ar": "في العصور القديمة سُمّيت هذه الأرض العربية السعيدة لخصبها وغناها. ومن هنا كانت قوافل الإبل تحمل اللبان والمرّ إلى ممالك بعيدة."
+    },
+    {
+      "en": "Stories tell of the Queen of Sheba, whose kingdom is linked with Yemen, and of the great Marib Dam, an ancient wonder of engineering that watered the fields long ago.",
+      "ar": "وتروي الحكايات قصة ملكة سبأ التي ترتبط مملكتها باليمن، وقصة سدّ مأرب العظيم، أعجوبة الهندسة القديمة التي روت الحقول منذ زمن بعيد."
+    },
+    {
+      "en": "The old city of Sana'a is one of the oldest continuously lived-in cities in the world. Its tower houses are decorated with white patterns around the windows, like icing on a cake, and topped with coloured glass.",
+      "ar": "صنعاء القديمة من أقدم المدن المأهولة باستمرار في العالم. بيوتها البرجية مزيّنة بزخارف بيضاء حول النوافذ كأنها سكّر على كعكة، وتعلوها نوافذ القمريّات بزجاجها الملوّن."
+    },
+    {
+      "en": "In the mountains, farmers built terraces step by step up the steep slopes to grow grain, fruit and coffee. Yemen was one of the first places where coffee was traded, and the port of Mocha gave its name to a famous drink.",
+      "ar": "في الجبال بنى المزارعون المدرّجات درجة درجة على السفوح الشديدة ليزرعوا الحبوب والفاكهة والبن. وكان اليمن من أوائل البلاد التي تاجرت بالقهوة، ومن ميناء المخا جاء اسم مشروب شهير."
+    },
+    {
+      "en": "Far off the coast lies the island of Socotra, home to strange, umbrella-shaped dragon's blood trees and many plants that grow nowhere else on Earth.",
+      "ar": "وبعيداً عن الساحل تقع جزيرة سقطرى، موطن أشجار دم الأخوين العجيبة التي تشبه المظلات، ونباتات كثيرة لا تنمو في أي مكان آخر على الأرض."
+    },
+    {
+      "en": "Yemeni hospitality is famous. Guests are welcomed with sweet spiced tea or qishr, a drink made from coffee husks with ginger, and a meal is shared from large plates in the centre.",
+      "ar": "الكرم اليمني مشهور. يُستقبل الضيف بشاي محلّى بالتوابل أو بالقِشر، وهو مشروب من قشور البن مع الزنجبيل، ويتشارك الجميع الطعام من صحون كبيرة في الوسط."
+    },
+    {
+      "en": "A favourite dish is saltah, a bubbling stew topped with a frothy fenugreek sauce and eaten with flatbread. For something sweet, there is bint al-sahn, a honey-soaked layered bread.",
+      "ar": "ومن الأطباق المحبوبة السَّلتة، مرق يغلي تعلوه رغوة الحلبة ويؤكل مع الخبز. وللحلوى هناك بنت الصحن، خبز رقيق بطبقات يُسقى بالعسل."
+    },
+    {
+      "en": "Yemen is also known for its honey, especially from the sidr tree, which is prized across the region.",
+      "ar": "ويشتهر اليمن كذلك بعسله، وخاصة عسل السدر المقدَّر في المنطقة كلها."
+    },
+    {
+      "en": "Music and poetry are deeply loved. Players of the oud sing old verses, and at weddings men perform dances with great energy to the beat of drums.",
+      "ar": "الموسيقى والشعر محبوبان جداً. يغنّي عازفو العود أبياتاً قديمة، وفي الأعراس يؤدي الرجال رقصات مفعمة بالحيوية على إيقاع الطبول."
+    },
+    {
+      "en": "Life has been hard for many Yemeni families in recent years, yet their generosity, their humour and their pride in a long heritage remain strong.",
+      "ar": "مرّت على كثير من العائلات اليمنية سنوات صعبة، ومع ذلك بقي كرمهم وروح الدعابة لديهم واعتزازهم بتراثهم العريق راسخاً."
+    },
+    {
+      "en": "Now travel east along the coast toward the rising sun, where Oman is waiting with its mountains and its sea.",
+      "ar": "والآن سافر شرقاً على طول الساحل نحو الشمس المشرقة، حيث تنتظرك عُمان بجبالها وبحرها."
+    }
+  ],
+  "next": ["Oman", "Saudi Arabia", "Djibouti"]
+}

@@ -1,0 +1,59 @@
+{
+  "country": "Mozambique",
+  "languages": ["en", "pt-PT"],
+  "segments": [
+    {
+      "en": "The Indian Ocean is warm, the sand is white, and a wooden dhow with a triangular sail glides slowly between the islands. Mozambique runs for a very long way down the southeast coast of Africa.",
+      "pt-PT": "O oceano Índico está morno, a areia é branca e um dhow de madeira com vela triangular desliza devagar entre as ilhas. Moçambique estende-se ao longo de uma costa muito comprida no sudeste de África."
+    },
+    {
+      "en": "Portuguese is the official language, a legacy of centuries of Portuguese rule, but most people also speak an African language such as Emakhuwa, Xichangana or Cisena.",
+      "pt-PT": "O português é a língua oficial, herança de séculos de domínio português, mas a maioria das pessoas fala também uma língua africana, como o emakhuwa, o xichangana ou o cisena."
+    },
+    {
+      "en": "The country takes its name from the Island of Mozambique, a small coral island in the north that was once a busy trading post. Its old town of stone houses, chapels and a fortress is a World Heritage Site.",
+      "pt-PT": "O país deve o nome à Ilha de Moçambique, uma pequena ilha de coral no norte que foi em tempos um movimentado entreposto comercial. A sua cidade antiga, com casas de pedra, capelas e uma fortaleza, é Património Mundial."
+    },
+    {
+      "en": "The capital, Maputo, has wide avenues lined with jacaranda trees that bloom purple, pavement cafés, and a grand old railway station with a green dome.",
+      "pt-PT": "A capital, Maputo, tem avenidas largas ladeadas de jacarandás que florescem em tons de lilás, esplanadas e uma imponente estação ferroviária antiga com uma cúpula verde."
+    },
+    {
+      "en": "In Maputo you will hear marrabenta, a lively dance music born in the city's neighbourhoods. In the south, the Chopi people play timbila, great orchestras of wooden xylophones.",
+      "pt-PT": "Em Maputo vai ouvir a marrabenta, uma música de dança animada nascida nos bairros da cidade. No sul, o povo chope toca a timbila, grandes orquestras de xilofones de madeira."
+    },
+    {
+      "en": "Seafood is superb. Try prawns grilled with piri piri, a fiery chilli sauce, or matapa, cassava leaves cooked with peanuts and coconut milk, served with xima, a stiff maize porridge.",
+      "pt-PT": "O marisco é soberbo. Prove camarões grelhados com piri-piri, um molho de malagueta bem picante, ou a matapa, folhas de mandioca cozinhadas com amendoim e leite de coco, servida com xima, uma papa espessa de milho."
+    },
+    {
+      "en": "Women wear the capulana, a bright printed cloth tied as a skirt, used to carry a baby on the back or sewn into dresses. Giving someone a capulana is a special gift.",
+      "pt-PT": "As mulheres usam a capulana, um pano estampado de cores vivas atado como saia, usado para levar o bebé às costas ou transformado em vestidos. Oferecer uma capulana é um presente especial."
+    },
+    {
+      "en": "Mozambicans are warm and easygoing, and greetings take their time. Ask how someone's family is, and always greet the elders first.",
+      "pt-PT": "Os moçambicanos são calorosos e descontraídos, e os cumprimentos não têm pressa. Pergunte pela família de cada um e cumprimente sempre primeiro os mais velhos."
+    },
+    {
+      "en": "Off the coast, the Bazaruto Archipelago has towering sand dunes and clear water, where lucky visitors may spot dugongs, gentle sea mammals that graze on seagrass.",
+      "pt-PT": "Ao largo da costa, o arquipélago de Bazaruto tem dunas altíssimas e águas transparentes, onde os visitantes com sorte podem avistar dugongos, mamíferos marinhos tranquilos que pastam nas ervas marinhas."
+    },
+    {
+      "en": "At Tofo, divers swim with whale sharks and manta rays, and in the middle of the year humpback whales pass along the coast.",
+      "pt-PT": "Em Tofo, os mergulhadores nadam com tubarões-baleia e jamantas, e a meio do ano as baleias-jubarte passam ao longo da costa."
+    },
+    {
+      "en": "Inland, Gorongosa National Park is coming back to life, as elephants, lions and antelope return in growing numbers thanks to years of patient work.",
+      "pt-PT": "No interior, o Parque Nacional da Gorongosa está a renascer, com elefantes, leões e antílopes a regressar em número cada vez maior, graças a anos de trabalho paciente."
+    },
+    {
+      "en": "In the north, Makonde artists carve dark hardwood into intricate sculptures of many figures intertwined, sometimes called the tree of life.",
+      "pt-PT": "No norte, os artistas macondes esculpem madeira escura e dura em esculturas minuciosas de muitas figuras entrelaçadas, a que por vezes chamam árvore da vida."
+    },
+    {
+      "en": "Até logo! Head inland across the border, and Malawi, with its great lake, is waiting.",
+      "pt-PT": "Até logo! Siga para o interior e atravesse a fronteira: o Malawi, com o seu grande lago, está à sua espera."
+    }
+  ],
+  "next": ["Malawi", "Tanzania", "South Africa"]
+}

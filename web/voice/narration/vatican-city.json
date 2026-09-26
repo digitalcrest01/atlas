@@ -1,0 +1,59 @@
+{
+  "country": "Vatican City",
+  "languages": ["en", "it"],
+  "segments": [
+    {
+      "en": "Bells ring out across the rooftops of Rome, and pilgrims hurry toward a vast square embraced by curving rows of columns. Step inside those arms and you have crossed into another country.",
+      "it": "Le campane risuonano sui tetti di Roma, e i pellegrini si affrettano verso una piazza immensa, abbracciata da file curve di colonne. Varcate quell'abbraccio e siete entrati in un altro Paese."
+    },
+    {
+      "en": "Vatican City is the smallest independent country in the world, so small that you can walk around its walls in well under an hour. It sits entirely inside the city of Rome.",
+      "it": "La Città del Vaticano è lo Stato indipendente più piccolo del mondo, così piccolo che se ne può fare il giro delle mura a piedi in molto meno di un'ora. Si trova interamente dentro la città di Roma."
+    },
+    {
+      "en": "It is the home of the Pope, the leader of the Catholic Church, and the spiritual centre for more than a billion Catholics around the world.",
+      "it": "È la casa del Papa, la guida della Chiesa cattolica, e il centro spirituale per oltre un miliardo di cattolici in tutto il mondo."
+    },
+    {
+      "en": "The columns around Saint Peter's Square were designed by the sculptor Bernini, who wanted them to look like two arms welcoming everyone who arrives.",
+      "it": "Il colonnato di Piazza San Pietro fu progettato dallo scultore Bernini, che voleva che sembrasse due braccia aperte ad accogliere chiunque arrivi."
+    },
+    {
+      "en": "Saint Peter's Basilica rises above the square. Its great dome was designed by Michelangelo, and if you climb the hundreds of steps to the top, all of Rome spreads out beneath you.",
+      "it": "La Basilica di San Pietro domina la piazza. La sua grande cupola fu progettata da Michelangelo e, se salite le centinaia di gradini fino in cima, tutta Roma si stende sotto di voi."
+    },
+    {
+      "en": "Inside the Vatican Museums, corridors glow with maps, statues and tapestries. At the end lies the Sistine Chapel, where Michelangelo painted the ceiling with scenes of creation while standing on scaffolding for years.",
+      "it": "Nei Musei Vaticani i corridoi risplendono di carte geografiche, statue e arazzi. In fondo c'è la Cappella Sistina, dove Michelangelo dipinse sulla volta le scene della Creazione, lavorando per anni in piedi sulle impalcature."
+    },
+    {
+      "en": "Visitors are asked to keep their voices low and their shoulders and knees covered, as a sign of respect in this holy place.",
+      "it": "Ai visitatori si chiede di parlare a bassa voce e di tenere coperte spalle e ginocchia, in segno di rispetto per questo luogo sacro."
+    },
+    {
+      "en": "Keep an eye out for the Swiss Guard, the Pope's own soldiers since the sixteenth century. Their striped uniforms of blue, red and yellow make them look like figures from an old painting.",
+      "it": "Fate attenzione alle Guardie Svizzere, i soldati del Papa fin dal Cinquecento. Le loro uniformi a strisce blu, rosse e gialle li fanno sembrare figure uscite da un antico dipinto."
+    },
+    {
+      "en": "This tiny country has its own post office, its own stamps and coins, a radio station, a pharmacy and even a railway station, though its track is one of the shortest anywhere.",
+      "it": "Questo piccolissimo Stato ha le sue poste, i suoi francobolli e le sue monete, una radio, una farmacia e perfino una stazione ferroviaria, anche se il suo binario è tra i più corti che esistano."
+    },
+    {
+      "en": "Behind the walls lie the peaceful Vatican Gardens, with fountains, grottoes and shady paths, and the Vatican Library, which guards ancient manuscripts collected over centuries.",
+      "it": "Dietro le mura si trovano i tranquilli Giardini Vaticani, con fontane, grotte e viali ombreggiati, e la Biblioteca Vaticana, che custodisce antichi manoscritti raccolti nel corso dei secoli."
+    },
+    {
+      "en": "Latin is still used in official documents, while Italian is the everyday language you will hear in the square. On Sundays, crowds gather to hear the Pope speak from a window above.",
+      "it": "Il latino si usa ancora nei documenti ufficiali, mentre l'italiano è la lingua di tutti i giorni che sentirete in piazza. La domenica la folla si raduna per ascoltare il Papa che parla da una finestra in alto."
+    },
+    {
+      "en": "When a new Pope is chosen, the world watches a small chimney. White smoke rising from it means the decision has been made, and the square erupts in cheers.",
+      "it": "Quando si elegge un nuovo Papa, il mondo intero guarda un piccolo comignolo. Il fumo bianco significa che la scelta è fatta, e la piazza esplode in un applauso."
+    },
+    {
+      "en": "Now step back through the columns and into the streets of Rome, where Italy is waiting with fountains, pasta and a cheerful buongiorno.",
+      "it": "Ora ripassate tra le colonne e tornate nelle strade di Roma, dove l'Italia vi aspetta con le sue fontane, la sua pasta e un allegro buongiorno."
+    }
+  ],
+  "next": ["Italy", "San Marino", "Malta"]
+}

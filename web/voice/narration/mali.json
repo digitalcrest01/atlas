@@ -1,0 +1,59 @@
+{
+  "country": "Mali",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "Listen. The rippling notes of a kora, a harp with twenty-one strings, and a griot singing of kings who lived long ago. In Mali, history is not only written down, it is sung.",
+      "fr": "Écoutez. Les notes cristallines d'une kora, une harpe à vingt et une cordes, et la voix d'un griot qui chante des rois d'autrefois. Au Mali, l'histoire ne s'écrit pas seulement, elle se chante."
+    },
+    {
+      "en": "Griots are the keepers of memory. They tell the epic of Sundiata Keita, who founded the Mali Empire in the thirteenth century, an empire that stretched across much of West Africa.",
+      "fr": "Les griots sont les gardiens de la mémoire. Ils racontent l'épopée de Soundiata Keïta, fondateur de l'Empire du Mali au treizième siècle, un empire qui s'étendait sur une grande partie de l'Afrique de l'Ouest."
+    },
+    {
+      "en": "Its most famous ruler, Mansa Musa, travelled to Mecca carrying so much gold that his journey became a legend in lands far away.",
+      "fr": "Son souverain le plus célèbre, Mansa Moussa, se rendit à La Mecque avec tant d'or que son voyage devint une légende jusque dans des contrées lointaines."
+    },
+    {
+      "en": "Timbuktu grew into a great city of learning, with mosques built of earth and libraries of handwritten books on astronomy, law and poetry. Families have guarded many of these manuscripts for centuries.",
+      "fr": "Tombouctou devint une grande cité du savoir, avec ses mosquées de terre et ses bibliothèques de livres écrits à la main sur l'astronomie, le droit et la poésie. Des familles veillent sur nombre de ces manuscrits depuis des siècles."
+    },
+    {
+      "en": "In Djenné stands the Great Mosque, a vast building made entirely of sun-dried mud brick. Every year the whole town joins a joyful festival to give its walls a fresh coat of mud.",
+      "fr": "À Djenné se dresse la Grande Mosquée, un immense édifice entièrement bâti en briques de terre séchées au soleil. Chaque année, toute la ville participe à une fête joyeuse pour recouvrir ses murs d'un nouvel enduit de terre."
+    },
+    {
+      "en": "The Niger River curves through the country like a lifeline. Fishermen cast their nets from long wooden pirogues, and herders drive their cattle across the water as the seasons change.",
+      "fr": "Le fleuve Niger traverse le pays comme un fil de vie. Les pêcheurs lancent leurs filets depuis de longues pirogues en bois, et les éleveurs font traverser le fleuve à leurs troupeaux au rythme des saisons."
+    },
+    {
+      "en": "The capital, Bamako, spreads along both banks of the Niger, buzzing with markets, motorbikes and music spilling out of courtyards late into the night.",
+      "fr": "La capitale, Bamako, s'étend sur les deux rives du Niger et bourdonne de marchés, de motos et de musique qui s'échappe des cours jusque tard dans la nuit."
+    },
+    {
+      "en": "Mali has given the world some of its greatest musicians, from the desert blues guitar of Ali Farka Touré to the soaring voice of Salif Keita.",
+      "fr": "Le Mali a offert au monde certains de ses plus grands musiciens, du blues du désert d'Ali Farka Touré à la voix envoûtante de Salif Keïta."
+    },
+    {
+      "en": "Along the Bandiagara cliffs, the Dogon people built villages clinging to the rock, with granaries topped by pointed straw hats. Their masked dances are among the most striking in Africa.",
+      "fr": "Le long de la falaise de Bandiagara, le peuple dogon a bâti des villages accrochés à la roche, avec des greniers coiffés de chapeaux de paille pointus. Leurs danses masquées comptent parmi les plus saisissantes d'Afrique."
+    },
+    {
+      "en": "Wherever you go, you may be invited to share tea. It comes in three small glasses, the first strong and bitter, the second sweeter, and the third the sweetest of all.",
+      "fr": "Partout où vous irez, on vous invitera peut-être à partager le thé. Il se sert en trois petits verres, le premier fort et amer, le deuxième plus doux, et le troisième le plus sucré de tous."
+    },
+    {
+      "en": "Families eat together from a shared bowl, using the right hand. Try tiguadèguè, a rich peanut sauce with meat, or riz au gras, rice simmered with tomato and vegetables.",
+      "fr": "En famille, on mange ensemble dans un grand plat commun, avec la main droite. Goûtez le tiguadèguè, une riche sauce d'arachide à la viande, ou le riz au gras, mijoté avec de la tomate et des légumes."
+    },
+    {
+      "en": "Malians also share a custom of joking cousins, where certain families playfully tease each other. It is a clever way of keeping friendship alive between different peoples.",
+      "fr": "Les Maliens partagent aussi la coutume du cousinage à plaisanterie, où certaines familles se taquinent affectueusement. C'est une manière habile d'entretenir l'amitié entre les différents peuples."
+    },
+    {
+      "en": "I ni ce, thank you, for listening. Head west along the Senegal River towards the Atlantic, and Senegal is waiting.",
+      "fr": "I ni ce, merci de votre écoute. Suivez le fleuve Sénégal vers l'Atlantique, à l'ouest, et le Sénégal vous attend."
+    }
+  ],
+  "next": ["Senegal", "Burkina Faso", "Niger"]
+}

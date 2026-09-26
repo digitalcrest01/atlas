@@ -1,0 +1,20 @@
+{
+  "country": "Mauritius",
+  "languages": ["en"],
+  "segments": [
+    { "en": "Bonzour! That is hello in Mauritian Creole, the language most people speak at home. Stay a while and you will also hear French, English, Bhojpuri and more, sometimes all in the same conversation." },
+    { "en": "Mauritius is a volcanic island in the Indian Ocean, east of Madagascar. A coral reef almost completely surrounds it, keeping the lagoons calm, clear and turquoise." },
+    { "en": "Its people trace their families to India, Africa, France and China. Hindu temples, mosques, churches and Chinese pagodas stand side by side, and neighbours join in each other's celebrations." },
+    { "en": "At the festival of Maha Shivaratri, pilgrims dressed in white walk for miles to Grand Bassin, a sacred lake in an old volcanic crater, carrying beautifully decorated offerings." },
+    { "en": "The island's music is sega, born among enslaved Africans. The beat of the ravanne drum grows faster and faster, and dancers sway in swirling, colourful skirts." },
+    { "en": "Mauritius was the only home of the dodo, a large bird that could not fly and vanished soon after sailors arrived. Today it is the island's beloved symbol, and it even appears on the national coat of arms." },
+    { "en": "Street food is a joy. Try dholl puri, soft flatbread filled with ground split peas and wrapped around curry, or gateaux piments, crunchy little chilli fritters from a roadside stall." },
+    { "en": "The capital, Port Louis, bustles around its busy central market. Nearby, Aapravasi Ghat marks the place where hundreds of thousands of indentured workers from India first stepped ashore in the nineteenth century." },
+    { "en": "Inland, the Black River Gorges shelter rare forest and birds found only here, and at Chamarel the Seven Coloured Earths are rippling dunes of red, purple and yellow soil." },
+    { "en": "On the southwest coast, the mountain of Le Morne rises above the lagoon. It once sheltered people who escaped slavery, and today it is honoured as a place of freedom and memory." },
+    { "en": "Fields of sugar cane still wave across much of the island, and some of the old sugar mills have been turned into museums where you can learn how the island grew." },
+    { "en": "On weekends, families head to the beach with big pots of biryani or noodles, and picnics under the filao trees last all afternoon." },
+    { "en": "Mersi and bon voyage! Across the water to the west, Madagascar is waiting." }
+  ],
+  "next": ["Madagascar", "Seychelles", "India"]
+}

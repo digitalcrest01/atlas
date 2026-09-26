@@ -1,0 +1,59 @@
+{
+  "country": "Tajikistan",
+  "languages": ["en", "ru"],
+  "segments": [
+    {
+      "en": "High in the Pamir Mountains, the peaks rise so tall that travellers long ago called them the Roof of the World. Tajikistan is a land of mountains, with snowy ranges covering most of the country.",
+      "ru": "Высоко в горах Памира вершины поднимаются так высоко, что путешественники в старину называли их Крышей мира. Таджикистан — горная страна: заснеженные хребты занимают большую часть её территории."
+    },
+    {
+      "en": "The Pamir Highway winds past turquoise lakes and grazing yaks, and through villages where apricot trees burst into blossom every spring.",
+      "ru": "Памирский тракт петляет мимо бирюзовых озёр и пасущихся яков, через кишлаки, где каждую весну пышно расцветают абрикосовые деревья."
+    },
+    {
+      "en": "Tajik is a form of Persian, written in Cyrillic letters, and Russian is widely used too. Poets like Rudaki, often called the father of Persian poetry, are deeply loved here.",
+      "ru": "Таджикский язык — это одна из форм персидского, но пишут на нём кириллицей, а русский здесь тоже широко распространён. Поэтов, таких как Рудаки, которого часто называют отцом персидской поэзии, здесь очень любят."
+    },
+    {
+      "en": "Hospitality is sacred. A guest is welcomed onto soft cushions around a dastarkhan, a cloth spread with bread, fruit, nuts and sweets. Bread is honoured and should never be placed upside down.",
+      "ru": "Гостеприимство здесь свято. Гостя усаживают на мягкие курпачи вокруг дастархана, скатерти, уставленной лепёшками, фруктами, орехами и сладостями. Хлеб почитают, и его никогда не кладут верхней стороной вниз."
+    },
+    {
+      "en": "The national favourite is qurutob, pieces of flatbread soaked in a tangy yoghurt sauce, topped with onions and eaten by hand from a shared wooden dish. For celebrations, a great pot of plov is cooked with rice, carrots and meat.",
+      "ru": "Любимое национальное блюдо — курутоб: кусочки лепёшки, пропитанные кисловатым соусом из курута, с луком сверху. Его едят руками из общего деревянного блюда. А на праздники в огромном казане готовят плов с рисом, морковью и мясом."
+    },
+    {
+      "en": "Green tea flows all day. Your host may pour a cup and tip it back into the pot a few times to brew it well, then fill your bowl only halfway, so they can keep refilling it as a sign of care.",
+      "ru": "Зелёный чай пьют весь день. Хозяин может несколько раз налить чай в пиалу и вылить обратно в чайник, чтобы он лучше заварился, а потом нальёт вам лишь полпиалы, чтобы подливать снова и снова в знак заботы."
+    },
+    {
+      "en": "In March, Navruz, the Persian New Year, welcomes spring with music, games and new clothes, and with sumalak, a sweet wheat pudding stirred through the night.",
+      "ru": "В марте Навруз, персидский Новый год, встречает весну музыкой, играми и новой одеждой, а ещё сумалаком — сладким блюдом из пророщенной пшеницы, которое помешивают всю ночь."
+    },
+    {
+      "en": "The name of the capital, Dushanbe, means Monday, because it grew from a village with a Monday market. Today it has wide avenues, fountains and an enormous, beautifully decorated teahouse.",
+      "ru": "Название столицы, Душанбе, означает «понедельник»: город вырос из кишлака, где по понедельникам устраивали базар. Сегодня здесь широкие проспекты, фонтаны и огромная, богато украшенная чайхана."
+    },
+    {
+      "en": "Many women wear dresses of shimmering atlas silk in bold patterns, and men may wear a toqi, an embroidered skullcap.",
+      "ru": "Многие женщины носят платья из переливающегося атласа с яркими узорами, а мужчины — токи, расшитую тюбетейку."
+    },
+    {
+      "en": "Shashmaqam, a classical music tradition of long, elaborate songs, is shared with neighbouring Uzbekistan, while in the Pamirs people play the long-necked rubab.",
+      "ru": "Шашмаком, классическая музыкальная традиция долгих и изысканных песен, объединяет Таджикистан с соседним Узбекистаном, а на Памире играют на длинногрифом рубабе."
+    },
+    {
+      "en": "The Fann Mountains hide lakes of turquoise and emerald, like Iskanderkul, named after Alexander the Great, who is said to have passed this way.",
+      "ru": "В Фанских горах прячутся бирюзовые и изумрудные озёра, например Искандеркуль, названное в честь Александра Македонского, который, как говорят, проходил этими местами."
+    },
+    {
+      "en": "In the north, the old city of Khujand and the ruins of ancient Panjakent recall the days of the Silk Road, when Sogdian merchants traded across Asia.",
+      "ru": "На севере древний Худжанд и руины старого Пенджикента напоминают о временах Шёлкового пути, когда согдийские купцы торговали по всей Азии."
+    },
+    {
+      "en": "Leave with a pocket full of dried apricots and almonds. To the west, Uzbekistan and its famous Silk Road cities are waiting for you.",
+      "ru": "Уезжайте с полными карманами кураги и миндаля. На западе вас ждёт Узбекистан с его знаменитыми городами Шёлкового пути."
+    }
+  ],
+  "next": ["Uzbekistan", "Kyrgyzstan", "Afghanistan"]
+}

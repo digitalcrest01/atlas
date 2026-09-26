@@ -1,0 +1,67 @@
+{
+  "country": "Belgium",
+  "languages": ["en", "nl", "fr"],
+  "segments": [
+    {
+      "en": "A paper cone, piping hot, thick golden fries, and a generous spoonful of mayonnaise on top. Belgians will politely remind you that these are not French fries at all, and a street stall called a frituur is the place to try them.",
+      "nl": "Een papieren puntzak, gloeiend heet, dikke goudgele frieten en een flinke lepel mayonaise erbovenop. Belgen zullen je vriendelijk herinneren dat dit helemaal geen Franse frietjes zijn, en een frituur op de hoek is de plek om ze te proeven.",
+      "fr": "Un cornet en papier brûlant, de grosses frites dorées et une belle cuillerée de mayonnaise par-dessus. Les Belges vous rappelleront poliment que ce ne sont pas du tout des frites françaises, et c'est dans une friterie de quartier qu'il faut les goûter."
+    },
+    {
+      "en": "Belgium is small, but it holds three official languages. Dutch is spoken in Flanders in the north, French in Wallonia in the south, and German in a small area in the east. Brussels, the capital, is officially bilingual.",
+      "nl": "België is klein, maar het heeft drie officiële talen. In Vlaanderen, in het noorden, spreekt men Nederlands, in Wallonië, in het zuiden, Frans, en in een klein gebied in het oosten Duits. De hoofdstad Brussel is officieel tweetalig.",
+      "fr": "La Belgique est petite, mais elle compte trois langues officielles. On parle néerlandais en Flandre, au nord, français en Wallonie, au sud, et allemand dans une petite région à l'est. Bruxelles, la capitale, est officiellement bilingue."
+    },
+    {
+      "en": "So you may say goeiedag in Ghent and bonjour in Liège. Living together with different languages has made Belgians experts in compromise, and in a good-humoured shrug.",
+      "nl": "Dus zeg je goeiedag in Gent en bonjour in Luik. Samenleven met verschillende talen heeft van de Belgen meesters in het compromis gemaakt, en in een goedgehumeurd schouderophalen.",
+      "fr": "Vous direz donc goeiedag à Gand et bonjour à Liège. Vivre ensemble avec plusieurs langues a fait des Belges des champions du compromis, et du haussement d'épaules bon enfant."
+    },
+    {
+      "en": "In the heart of Brussels lies the Grand Place, a square surrounded by gilded guild houses and a lacy Gothic town hall. Every other summer, it is covered with an enormous carpet of flowers.",
+      "nl": "In het hart van Brussel ligt de Grote Markt, omringd door vergulde gildehuizen en een kanten gotisch stadhuis. Om de twee jaar wordt het plein in de zomer bedekt met een reusachtig bloementapijt.",
+      "fr": "Au cœur de Bruxelles se trouve la Grand-Place, entourée de maisons de corporations dorées et d'un hôtel de ville gothique ciselé comme de la dentelle. Un été sur deux, elle se couvre d'un immense tapis de fleurs."
+    },
+    {
+      "en": "Brussels is also home to the Atomium, a giant shining model of an iron crystal, and to the cheeky little fountain statue known as Manneken Pis, who is regularly dressed up in costumes.",
+      "nl": "In Brussel staat ook het Atomium, een reusachtig glanzend model van een ijzerkristal, en het brutale fonteinbeeldje Manneken Pis, dat geregeld in een kostuumpje wordt gestoken.",
+      "fr": "Bruxelles abrite aussi l'Atomium, gigantesque maquette brillante d'un cristal de fer, et l'effronté petit Manneken-Pis, une statue de fontaine régulièrement habillée de costumes."
+    },
+    {
+      "en": "Belgium loves comic strips. Tintin, the boy reporter with his little white dog, and the Smurfs were both created here, and in Brussels you will find cartoon murals on the sides of buildings.",
+      "nl": "België houdt van strips. Kuifje, de jonge reporter met zijn witte hondje, en de Smurfen werden hier bedacht, en in Brussel vind je stripmuren op de gevels van gebouwen.",
+      "fr": "La Belgique adore la bande dessinée. Tintin, le jeune reporter et son petit chien blanc, et les Schtroumpfs sont nés ici, et à Bruxelles, des fresques de BD décorent les façades des immeubles."
+    },
+    {
+      "en": "In Bruges, canals wind between medieval brick houses and swans glide under stone bridges. In Ghent and Antwerp, you can admire paintings by Flemish masters like Van Eyck and Rubens.",
+      "nl": "In Brugge kronkelen de reien tussen middeleeuwse bakstenen huizen en glijden zwanen onder stenen bruggen door. In Gent en Antwerpen bewonder je schilderijen van Vlaamse meesters als Van Eyck en Rubens.",
+      "fr": "À Bruges, les canaux serpentent entre les maisons médiévales en brique et les cygnes glissent sous les ponts de pierre. À Gand et à Anvers, on admire les tableaux de maîtres flamands comme Van Eyck et Rubens."
+    },
+    {
+      "en": "Now, something sweet. Belgian chocolatiers fill shop windows with pralines, and there are two kinds of waffle: the light, rectangular Brussels waffle and the dense, sugary Liège waffle, best eaten warm from a street cart.",
+      "nl": "En nu iets zoets. Belgische chocolatiers vullen hun etalages met pralines, en er zijn twee soorten wafels: de luchtige, rechthoekige Brusselse wafel en de stevige, suikerige Luikse wafel, het lekkerst warm uit een kraampje.",
+      "fr": "Et maintenant, une douceur. Les chocolatiers belges remplissent leurs vitrines de pralines, et il existe deux gaufres : la gaufre de Bruxelles, légère et rectangulaire, et la gaufre de Liège, dense et sucrée, délicieuse encore chaude sortie d'une échoppe."
+    },
+    {
+      "en": "For a hearty meal, try mussels steamed in a big black pot, served with fries, or stoofvlees, a slow stew of beef that is often cooked with beer and a slice of bread spread with mustard.",
+      "nl": "Voor een stevige maaltijd neem je mosselen uit een grote zwarte pot, met frietjes, of stoofvlees, rundvlees dat langzaam stooft, vaak met bier en een boterham met mosterd.",
+      "fr": "Pour un repas copieux, goûtez les moules cuites dans une grande marmite noire, servies avec des frites, ou la carbonnade flamande, un bœuf mijoté longuement, souvent à la bière avec une tranche de pain à la moutarde."
+    },
+    {
+      "en": "In the south, the Ardennes roll with deep forests, rivers and castles on rocky hilltops, perfect for kayaking and long walks. In spring, cyclists race over the cobbled hills of Flanders as fans cheer along the roadside.",
+      "nl": "In het zuiden golven de Ardennen met diepe bossen, rivieren en kastelen op rotsige heuvels, ideaal om te kajakken en lang te wandelen. In de lente razen wielrenners over de kasseihellingen van Vlaanderen, aangemoedigd door supporters langs de weg.",
+      "fr": "Au sud, les Ardennes ondulent de forêts profondes, de rivières et de châteaux perchés sur des rochers, idéales pour le kayak et les longues balades. Au printemps, les coureurs cyclistes s'attaquent aux monts pavés de Flandre sous les encouragements du public."
+    },
+    {
+      "en": "At the Carnival of Binche, dancers called Gilles wear tall feathered hats and wooden clogs, stamping to the drums and tossing oranges into the crowd. Catching one is said to bring good luck.",
+      "nl": "Op het carnaval van Binche dragen dansers, de Gilles, hoge verenhoeden en houten klompen. Ze stampen op het ritme van de trommels en gooien sinaasappels in de menigte. Wie er een vangt, heeft geluk, zegt men.",
+      "fr": "Au carnaval de Binche, les danseurs appelés Gilles portent de hauts chapeaux de plumes et des sabots de bois. Ils frappent le sol au rythme des tambours et lancent des oranges dans la foule. En attraper une porterait bonheur."
+    },
+    {
+      "en": "When it is time to go, say tot ziens or au revoir, whichever you like. Then cycle north along the flat canal paths, and the Netherlands is waiting just over the border.",
+      "nl": "Als het tijd is om te gaan, zeg dan tot ziens of au revoir, wat je maar wilt. Fiets daarna noordwaarts langs de vlakke jaagpaden, en Nederland wacht op je, net over de grens.",
+      "fr": "Quand vient l'heure du départ, dites au revoir ou tot ziens, comme vous préférez. Puis pédalez vers le nord le long des chemins de halage bien plats, et les Pays-Bas vous attendent juste de l'autre côté de la frontière."
+    }
+  ],
+  "next": ["Netherlands", "France", "Luxembourg"]
+}

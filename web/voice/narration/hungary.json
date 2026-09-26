@@ -1,0 +1,55 @@
+{
+  "country": "Hungary",
+  "languages": ["en", "hu"],
+  "segments": [
+    {
+      "en": "Steam rises into the cold winter air, and in the middle of it, people sit up to their shoulders in hot water, playing chess on floating boards. This is a thermal bath in Budapest, and Hungarians have been soaking like this for centuries.",
+      "hu": "Gőz száll fel a hideg téli levegőbe, a közepén pedig emberek ülnek vállig a forró vízben, és úszó táblákon sakkoznak. Ez egy budapesti termálfürdő, és a magyarok évszázadok óta áznak így."
+    },
+    {
+      "en": "Hungary sits in the heart of Central Europe, in the wide Carpathian Basin. Underground, warm mineral springs bubble up in hundreds of places, so bathing is part of everyday life.",
+      "hu": "Magyarország Közép-Európa szívében, a tágas Kárpát-medencében fekszik. A föld alól több száz helyen tör fel meleg gyógyvíz, így a fürdőzés a mindennapok része."
+    },
+    {
+      "en": "The Danube flows right through Budapest, dividing hilly Buda from flat Pest. On one bank stands the castle, on the other the grand Parliament, glowing gold when it's lit up at night.",
+      "hu": "A Duna egyenesen átfolyik Budapesten, és kettéválasztja a dombos Budát a sík Pesttől. Az egyik parton a vár áll, a másikon a hatalmas Országház, amely éjszaka aranyszínben ragyog."
+    },
+    {
+      "en": "Hungarian, or Magyar, is unlike its neighbours' languages. It is related to Finnish and Estonian, though only distantly. Hungarians put their family name first, so a person might be Kovács Anna rather than Anna Kovács.",
+      "hu": "A magyar nyelv egészen más, mint a szomszédoké. Távoli rokona a finnek és az észtek nyelvének. A magyarok a családnevet mondják előre, így valaki Kovács Anna, és nem Anna Kovács."
+    },
+    {
+      "en": "To say hello to a friend, try Szia! And don't be surprised if people say it when they leave, too. Among friends, it means both hello and goodbye.",
+      "hu": "Ha egy barátodnak köszönsz, mondd azt, hogy szia! És ne lepődj meg, ha búcsúzáskor is ezt hallod. Barátok között köszönésre és elköszönésre is jó."
+    },
+    {
+      "en": "Paprika is the red soul of Hungarian cooking. It colours gulyás, a hearty soup of beef and vegetables first cooked by herdsmen in kettles over open fires, and chicken paprikash, served with little dumplings.",
+      "hu": "A paprika a magyar konyha piros lelke. Ettől lesz színes a gulyásleves, ez a marhahúsos, zöldséges étel, amelyet eredetileg a pásztorok főztek bográcsban a tűz fölött, és a paprikás csirke, galuskával tálalva."
+    },
+    {
+      "en": "For something sweet, try kürtőskalács, chimney cake, a spiral of dough roasted over coals and rolled in sugar and cinnamon, or a slice of Dobos torte with its crackly caramel top.",
+      "hu": "Valami édesért kóstold meg a kürtőskalácsot, a parázs fölött sütött, cukorba és fahéjba forgatott tésztaspirált, vagy egy szelet Dobos-tortát a ropogós karamelltetejével."
+    },
+    {
+      "en": "East of the Danube lies the Great Plain, the Alföld, where horsemen called csikós perform daring tricks, even standing on the backs of two galloping horses at once.",
+      "hu": "A Dunától keletre terül el az Alföld, ahol a csikósok merész mutatványokat adnak elő, és még két vágtató ló hátán is képesek egyszerre állva lovagolni."
+    },
+    {
+      "en": "To the west shines Lake Balaton, the largest lake in Central Europe, which Hungarians fondly call their sea. In summer, families swim, sail and eat lángos, fried dough topped with sour cream and cheese.",
+      "hu": "Nyugaton csillog a Balaton, Közép-Európa legnagyobb tava, amelyet a magyarok szeretettel magyar tengernek hívnak. Nyáron a családok úsznak, vitorláznak, és lángost esznek tejföllel és sajttal."
+    },
+    {
+      "en": "Music runs deep here. Composers Franz Liszt and Béla Bartók drew on Hungarian folk tunes, and in village dance houses, people still stamp and twirl to fiddles and the cimbalom.",
+      "hu": "A zene mélyen gyökerezik itt. Liszt Ferenc és Bartók Béla is a magyar népdalokból merített, és a táncházakban ma is dobbantanak és forognak a hegedű és a cimbalom hangjára."
+    },
+    {
+      "en": "In the town of Mohács, at the end of winter, the Busójárás festival fills the streets with people in fearsome wooden masks and shaggy sheepskins, chasing the winter away with noise and fun.",
+      "hu": "Mohácson, a tél végén, a busójárás idején félelmetes fa álarcos, bozontos bundába öltözött alakok lepik el az utcákat, és zajjal, mókával kergetik el a telet."
+    },
+    {
+      "en": "One last soak in the warm water, then it's time to go. Follow the Danube upstream to Austria, or cross into Slovakia, just to the north. Szia!",
+      "hu": "Még egy utolsó áztatás a meleg vízben, aztán indulni kell. Kövesd a Dunát felfelé Ausztriáig, vagy menj át északra, Szlovákiába. Szia!"
+    }
+  ],
+  "next": ["Austria", "Slovakia", "Romania"]
+}

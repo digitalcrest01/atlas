@@ -1,0 +1,55 @@
+{
+  "country": "Togo",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "In the great market of Lomé, traders sit behind towering piles of cloth, peppers and tomatoes, calling out to customers with a laugh. The most famous were the Nana Benz, cloth sellers so successful they drove Mercedes cars.",
+      "fr": "Au grand marché de Lomé, les commerçantes trônent derrière des montagnes de tissus, de piments et de tomates, et interpellent les clients en riant. Les plus célèbres furent les Nana Benz, des vendeuses de pagnes si prospères qu'elles roulaient en Mercedes."
+    },
+    {
+      "en": "Togo is a slim ribbon of land, stretching from a short Atlantic coastline deep into West Africa. Though narrow, it holds sandy beaches, calm lagoons, forested hills and dry savanna in the north.",
+      "fr": "Le Togo est un mince ruban de terre qui s'étire d'une courte côte atlantique jusqu'au cœur de l'Afrique de l'Ouest. Malgré sa minceur, il abrite des plages de sable, des lagunes paisibles, des collines boisées et, au nord, une savane sèche."
+    },
+    {
+      "en": "French is the official language, while Ewe in the south and Kabiyè in the north are among the many languages heard every day.",
+      "fr": "Le français est la langue officielle, tandis que l'éwé au sud et le kabiyè au nord font partie des nombreuses langues que l'on entend chaque jour."
+    },
+    {
+      "en": "Greetings are important and never rushed. People ask about your health, your family and your work, and it's polite to answer and ask in return before getting down to business.",
+      "fr": "Les salutations sont importantes et ne se font jamais à la hâte. On vous demande des nouvelles de votre santé, de votre famille et de votre travail, et il est poli de répondre et de retourner la question avant d'aborder le reste."
+    },
+    {
+      "en": "Fufu, pounded yam, is shaped into a smooth ball and dipped into a rich peanut or palm-nut soup. Another staple, akoumé, a soft corn dough, is eaten with sauces of okra or greens.",
+      "fr": "Le foufou, de l'igname pilée, est façonné en boule lisse que l'on trempe dans une riche sauce d'arachide ou de graines de palme. Autre base du repas, l'akoumé, une pâte de maïs moelleuse, se mange avec une sauce gombo ou une sauce aux feuilles."
+    },
+    {
+      "en": "In the northeast, the Batammariba people build takienta, tower houses of earth that look like little castles. Their landscape, Koutammakou, is a World Heritage Site.",
+      "fr": "Au nord-est, le peuple batammariba construit des takienta, des maisons-tours en terre qui ressemblent à de petits châteaux forts. Leur paysage, le Koutammakou, est inscrit au patrimoine mondial."
+    },
+    {
+      "en": "In the hills around Kpalimé, coffee and cocoa grow in the shade, waterfalls tumble through the forest, and butterflies flutter across the paths.",
+      "fr": "Dans les collines autour de Kpalimé, le café et le cacao poussent à l'ombre, des cascades dévalent la forêt et des papillons voltigent au-dessus des sentiers."
+    },
+    {
+      "en": "In the north, the Evala festival marks the passage of young Kabiyè men into adulthood, with wrestling matches, drumming and whole villages cheering them on.",
+      "fr": "Dans le nord, la fête des Evala marque le passage des jeunes hommes kabiyè à l'âge adulte, avec des combats de lutte, des tambours et des villages entiers qui les encouragent."
+    },
+    {
+      "en": "Colourful wax print fabric is everywhere, sewn into dresses, shirts and headwraps. Tailors in every neighbourhood can make you a new outfit in a day or two.",
+      "fr": "Les pagnes en wax aux couleurs vives sont partout, cousus en robes, en chemises et en foulards. Dans chaque quartier, un tailleur peut vous confectionner une tenue neuve en un jour ou deux."
+    },
+    {
+      "en": "Music keeps the rhythm of life, from drumming at ceremonies to the dance floors of Lomé, and football is a national passion.",
+      "fr": "La musique rythme la vie, des tambours des cérémonies aux pistes de danse de Lomé, et le football est une passion nationale."
+    },
+    {
+      "en": "East of Lomé, Lake Togo is a calm lagoon where fishermen glide in dugout canoes. Across the water lies Togoville, an old village with a long history.",
+      "fr": "À l'est de Lomé, le lac Togo est une lagune tranquille où les pêcheurs glissent en pirogue. De l'autre côté de l'eau se trouve Togoville, un vieux village chargé d'histoire."
+    },
+    {
+      "en": "As the sun sets over the Gulf of Guinea, the palm trees sway along the shore. Just to the east, Benin is waiting for you.",
+      "fr": "Tandis que le soleil se couche sur le golfe de Guinée, les palmiers se balancent le long du rivage. Juste à l'est, le Bénin vous attend."
+    }
+  ],
+  "next": ["Benin", "Ghana", "Burkina Faso"]
+}

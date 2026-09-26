@@ -1,0 +1,62 @@
+{
+  "country": "Turkey",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "segments": [
+    {
+      "en": "Listen: a ferry horn over the water, gulls wheeling above, and a street seller calling out fresh simit, those sesame bread rings. This is Istanbul in the morning, a city that sits on two continents at once.",
+      "tr": "Dinleyin: suyun üstünde bir vapur düdüğü, tepede dönen martılar ve taze simit diye bağıran bir satıcı. Burası sabah vakti İstanbul, aynı anda iki kıtaya yayılan bir şehir."
+    },
+    {
+      "en": "The Bosphorus strait runs right through the city, with Europe on one shore and Asia on the other. Locals hop between them on ferries the way other people catch a bus, often with a glass of tea in hand.",
+      "tr": "Boğaz şehrin tam ortasından akar; bir yakada Avrupa, öbür yakada Asya vardır. İstanbullular iki yaka arasında vapurla, başkalarının otobüse bindiği gibi geçer, çoğu zaman elinde bir bardak çayla."
+    },
+    {
+      "en": "Tea is everywhere in Turkey. It comes in small tulip-shaped glasses, strong and red, and it is offered in shops, offices and homes. Saying yes to a glass is a friendly way to begin almost any conversation.",
+      "tr": "Türkiye'de çay her yerdedir. İnce belli küçük bardaklarda, demli ve kırmızı olarak gelir; dükkânlarda, bürolarda, evlerde ikram edilir. Bir bardak çaya evet demek, hemen her sohbete güzel bir başlangıçtır."
+    },
+    {
+      "en": "Guests are treated with great warmth. If you visit a family, you may be asked to take off your shoes at the door, and you will almost certainly be offered more food than you can finish.",
+      "tr": "Misafire büyük bir sıcaklıkla davranılır. Bir aileyi ziyaret ederseniz kapıda ayakkabılarınızı çıkarmanız istenebilir ve bitirebileceğinizden çok daha fazla yemek ikram edileceği neredeyse kesindir."
+    },
+    {
+      "en": "And what food it is. A Turkish breakfast spreads across the whole table: olives, cheeses, tomatoes, honey, eggs and warm bread. Later come kebabs, stuffed vegetables, lentil soup, and sweet baklava layered with pistachios.",
+      "tr": "Hem de ne yemekler. Türk kahvaltısı bütün sofraya yayılır: zeytin, peynirler, domates, bal, yumurta ve sıcak ekmek. Sonra kebaplar, dolmalar, mercimek çorbası ve fıstıklı tatlı baklava gelir."
+    },
+    {
+      "en": "This land has been home to many peoples. The Hittites, Greeks, Romans, Byzantines and Ottomans all left their mark, and in 1923 the modern Republic was founded by Mustafa Kemal Atatürk, with Ankara as its capital.",
+      "tr": "Bu topraklar pek çok halka yurt oldu. Hititler, Yunanlar, Romalılar, Bizanslılar ve Osmanlılar izlerini bıraktı; 1923'te ise Mustafa Kemal Atatürk modern Cumhuriyeti kurdu ve başkent Ankara oldu."
+    },
+    {
+      "en": "In Istanbul you can stand beneath the great dome of Hagia Sophia, then wander the Grand Bazaar, a maze of covered lanes glowing with lamps, carpets and spices.",
+      "tr": "İstanbul'da Ayasofya'nın büyük kubbesinin altında durabilir, ardından lambaların, halıların ve baharatların parıldadığı üstü kapalı sokaklardan oluşan bir labirent olan Kapalıçarşı'da dolaşabilirsiniz."
+    },
+    {
+      "en": "Travel inland to Cappadocia and the landscape turns magical, with tall rock chimneys and homes carved into soft stone. At dawn, hot air balloons drift silently over the valleys.",
+      "tr": "İç bölgelere, Kapadokya'ya gittiğinizde manzara büyülü bir hâl alır: uzun peri bacaları ve yumuşak taşa oyulmuş evler. Şafak vakti sıcak hava balonları vadilerin üzerinde sessizce süzülür."
+    },
+    {
+      "en": "The coasts are just as lovely. The turquoise Aegean and Mediterranean shores are dotted with ancient ruins, while the green Black Sea region is famous for its tea gardens and hazelnuts.",
+      "tr": "Kıyılar da en az o kadar güzeldir. Turkuaz Ege ve Akdeniz sahilleri antik kalıntılarla doludur; yemyeşil Karadeniz bölgesi ise çay bahçeleri ve fındığıyla ünlüdür."
+    },
+    {
+      "en": "Music fills the streets and weddings, from the plucked strings of the bağlama to lively folk dances where everyone links arms. Football is a national passion, and match nights can shake a whole city.",
+      "tr": "Sokaklarda ve düğünlerde müzik eksik olmaz; bağlamanın tellerinden herkesin kol kola girdiği coşkulu halaylara kadar. Futbol ise bir milli tutkudur ve maç geceleri koca bir şehri sallayabilir."
+    },
+    {
+      "en": "During holidays like the Sugar Feast at the end of Ramadan, children kiss the hands of their elders and are given sweets or a little pocket money.",
+      "tr": "Ramazan'ın sonundaki Şeker Bayramı gibi bayramlarda çocuklar büyüklerinin elini öper, karşılığında şeker ya da biraz harçlık alır."
+    },
+    {
+      "en": "So finish your tea, say teşekkürler for the warm welcome, and head east across the mountains, where Georgia is waiting with songs of its own.",
+      "tr": "Haydi çayınızı bitirin, bu sıcak karşılama için teşekkür edin ve dağların ardından doğuya yönelin; kendi şarkılarıyla Gürcistan sizi bekliyor."
+    }
+  ],
+  "next": [
+    "Georgia",
+    "Greece",
+    "Bulgaria"
+  ]
+}

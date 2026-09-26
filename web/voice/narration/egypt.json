@@ -1,0 +1,59 @@
+{
+  "country": "Egypt",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "Dawn on the Nile. A felucca with a tall white sail drifts past green fields, a farmer leads his donkey along the bank, and the water shines gold. For thousands of years, life in Egypt has followed this river.",
+      "ar": "الفجر على النيل. فلوكة بشراع أبيض عالٍ تنساب بجوار الحقول الخضراء، وفلاح يقود حماره على الضفة، والماء يلمع كالذهب. منذ آلاف السنين والحياة في مصر تسير مع هذا النهر."
+    },
+    {
+      "en": "Most of Egypt is desert, so nearly everyone lives along the Nile and its wide delta, a narrow ribbon of green running through a sea of sand all the way to the Mediterranean.",
+      "ar": "معظم أرض مصر صحراء، ولذلك يعيش الناس تقريبًا كلهم على ضفاف النيل ودلتاه الواسعة، شريطٍ أخضر ضيق يشق بحرًا من الرمال حتى يبلغ البحر المتوسط."
+    },
+    {
+      "en": "At Giza, on the edge of Cairo, the great pyramids have stood for more than four and a half thousand years, guarded by the Sphinx, with the body of a lion and the head of a king.",
+      "ar": "في الجيزة، على أطراف القاهرة، تقف الأهرامات العظيمة منذ أكثر من أربعة آلاف وخمسمئة عام، ويحرسها أبو الهول بجسد أسد ورأس ملك."
+    },
+    {
+      "en": "Further south, in Luxor, you can walk between giant stone columns carved with hieroglyphs, and visit the Valley of the Kings, where pharaohs like Tutankhamun were buried in painted tombs.",
+      "ar": "وإلى الجنوب، في الأقصر، يمكنك أن تمشي بين أعمدة حجرية عملاقة منقوشة بالكتابة الهيروغليفية، وأن تزور وادي الملوك حيث دُفن فراعنة مثل توت عنخ آمون في مقابر مزينة بالرسوم."
+    },
+    {
+      "en": "Near Aswan, Nubian villages glow with houses painted sky blue, yellow and pink, decorated with patterns and pictures, and families welcome visitors with a cool glass of red hibiscus tea called karkadeh.",
+      "ar": "وقرب أسوان، تتألق القرى النوبية ببيوت مطلية بالأزرق السماوي والأصفر والوردي، مزينة بالنقوش والرسوم، وترحب العائلات بالزوار بكوب بارد من الكركديه الأحمر."
+    },
+    {
+      "en": "Cairo, the capital, is huge, loud and full of life. It's sometimes called the city of a thousand minarets, and in the old Khan el-Khalili market, the lanes are packed with lanterns, spices, perfumes and copper trays.",
+      "ar": "القاهرة، العاصمة، مدينة ضخمة صاخبة تنبض بالحياة، ويسميها البعض مدينة الألف مئذنة. وفي سوق خان الخليلي القديم تزدحم الأزقة بالفوانيس والتوابل والعطور والصواني النحاسية."
+    },
+    {
+      "en": "Egyptians are famous across the Arab world for their sense of humour. Jokes fly in taxis and cafés, and Egyptian films and songs are loved from Morocco to the Gulf.",
+      "ar": "يشتهر المصريون في العالم العربي كله بخفة الظل وروح الدعابة. النكات تتطاير في سيارات الأجرة والمقاهي، والأفلام والأغاني المصرية محبوبة من المغرب إلى الخليج."
+    },
+    {
+      "en": "Breakfast is often ful medames, slow-cooked fava beans with oil and lemon, and taameya, Egypt's green falafel made from fava beans instead of chickpeas, all scooped up with round baladi bread.",
+      "ar": "الفطور غالبًا فول مدمس مطهو على نار هادئة مع الزيت والليمون، وطعمية، وهي الفلافل المصرية الخضراء المصنوعة من الفول بدلًا من الحمص، ويؤكل ذلك كله بالخبز البلدي المستدير."
+    },
+    {
+      "en": "For lunch, try koshari, a hearty mix of rice, lentils, macaroni and chickpeas, topped with crispy onions and a tangy tomato sauce. Busy little shops serve it in big metal bowls.",
+      "ar": "وعلى الغداء جرّب الكشري، خليطًا مشبعًا من الأرز والعدس والمعكرونة والحمص، يعلوه البصل المقرمش وصلصة طماطم لاذعة. وتقدمه المحلات الشعبية المزدحمة في أطباق معدنية كبيرة."
+    },
+    {
+      "en": "During Ramadan, the streets glow with colourful lanterns called fanous, and when the sun sets, families gather for iftar, often inviting neighbours and passers-by to share the meal.",
+      "ar": "وفي شهر رمضان تضيء الشوارع بالفوانيس الملونة، وعند غروب الشمس تجتمع العائلات على الإفطار، وكثيرًا ما تدعو الجيران والمارة إلى مشاركتها الطعام."
+    },
+    {
+      "en": "In spring, Egyptians of every faith celebrate Sham el-Nessim, a festival with roots in ancient times. Families picnic in parks and along the Nile, and children colour eggs.",
+      "ar": "وفي الربيع يحتفل المصريون من جميع الأديان بشم النسيم، وهو عيد تمتد جذوره إلى العصور القديمة. تخرج العائلات للتنزه في الحدائق وعلى ضفاف النيل، ويلوّن الأطفال البيض."
+    },
+    {
+      "en": "To the east, the Red Sea sparkles over coral reefs full of bright fish. And in the Western Desert, the wind has carved white chalk rocks into shapes like giant mushrooms.",
+      "ar": "وفي الشرق يتلألأ البحر الأحمر فوق شعاب مرجانية مليئة بالأسماك الزاهية. وفي الصحراء الغربية نحتت الرياح صخورًا بيضاء من الطباشير على هيئة فطر عملاق."
+    },
+    {
+      "en": "Shukran, thank you for visiting. Follow the Nile upstream to the south, past the great temples of Abu Simbel, and Sudan is waiting.",
+      "ar": "شكرًا على زيارتك. اتبع النيل جنوبًا نحو منابعه، مرورًا بمعابد أبو سمبل العظيمة، وستجد السودان في انتظارك."
+    }
+  ],
+  "next": ["Sudan", "Libya", "Jordan"]
+}

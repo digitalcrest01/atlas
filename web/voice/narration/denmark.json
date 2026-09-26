@@ -1,0 +1,59 @@
+{
+  "country": "Denmark",
+  "languages": ["en", "da"],
+  "segments": [
+    {
+      "en": "A dark winter afternoon, rain against the window, and inside the candles are lit, there's a pot of tea and a plate of warm pastries. The Danes have a word for this cosy, contented feeling: hygge.",
+      "da": "En mørk vintereftermiddag med regn på ruden, og indenfor er lysene tændt, der står en kande te og et fad med lune kager. Danskerne har et ord for den rare, trygge følelse: hygge."
+    },
+    {
+      "en": "Denmark is a low, green land of farmland, beech woods and beaches, made up of the Jutland peninsula and hundreds of islands. Wherever you stand, the sea is never very far away.",
+      "da": "Danmark er et lavt, grønt land med marker, bøgeskove og strande, som består af halvøen Jylland og flere hundrede øer. Uanset hvor man står, er havet aldrig langt væk."
+    },
+    {
+      "en": "In Copenhagen, the capital, bicycles rule. Parents pedal their children to school in cargo bikes with a wooden box on the front, and at rush hour the cycle lanes flow like rivers.",
+      "da": "I hovedstaden København er det cyklerne, der bestemmer. Forældre fragter børnene i skole på ladcykler med en trækasse foran, og i myldretiden flyder cykelstierne som floder."
+    },
+    {
+      "en": "Stroll along Nyhavn, the old harbour, where tall houses painted yellow, red and blue look down on wooden sailing ships. Then walk out along the waterfront to find a small bronze mermaid gazing out to sea.",
+      "da": "Slentr langs Nyhavn, den gamle havn, hvor høje huse i gult, rødt og blåt kigger ned på gamle træskibe. Gå så ud langs vandet, hvor en lille havfrue i bronze sidder og kigger ud over havet."
+    },
+    {
+      "en": "She comes from a fairy tale by Hans Christian Andersen, who also gave us The Ugly Duckling and The Emperor's New Clothes. He grew up poor in the town of Odense and became one of the best loved storytellers of all time.",
+      "da": "Hun stammer fra et eventyr af Hans Christian Andersen, som også gav os Den grimme ælling og Kejserens nye klæder. Han voksede op i fattige kår i Odense og blev en af de mest elskede eventyrfortællere nogensinde."
+    },
+    {
+      "en": "Something else Danish is probably in your home right now. LEGO comes from the small town of Billund, and its name is made from two Danish words, leg godt, which mean play well.",
+      "da": "Noget andet dansk står sikkert hjemme hos dig lige nu. LEGO kommer fra den lille by Billund, og navnet er lavet af to danske ord, leg godt."
+    },
+    {
+      "en": "Lunch is often smørrebrød, a slice of dark rye bread piled with toppings like pickled herring, egg and shrimp, or roast pork with crackling. You eat it with a knife and fork, and fish comes first.",
+      "da": "Til frokost spiser man ofte smørrebrød, en skive mørkt rugbrød med pålæg som marinerede sild, æg og rejer eller flæskesteg med sprøde svær. Man spiser det med kniv og gaffel, og fisken kommer altid først."
+    },
+    {
+      "en": "The red flag with its white cross, the Dannebrog, is one of the oldest national flags in the world, and Danes adore it. They stick little flags in birthday cakes and wave them at the door when guests arrive.",
+      "da": "Det røde flag med det hvide kors, Dannebrog, er et af verdens ældste nationalflag, og danskerne elsker det. De sætter små flag i fødselsdagskagen og vifter med dem ved døren, når gæsterne kommer."
+    },
+    {
+      "en": "Long ago, this was Viking land. In the village of Jelling stand two great carved runestones more than a thousand years old, often called Denmark's birth certificate.",
+      "da": "For længe siden var dette vikingernes land. I Jelling står to store runesten, der er over tusind år gamle, og som ofte kaldes Danmarks dåbsattest."
+    },
+    {
+      "en": "At the very tip of Jutland, near Skagen, you can stand on a thin strip of sand where two seas meet, with waves rolling in from both sides at once.",
+      "da": "Helt oppe på spidsen af Jylland, ved Skagen, kan man stå på en smal sandtange, hvor to have mødes, og bølgerne ruller ind fra begge sider på én gang."
+    },
+    {
+      "en": "Danes are relaxed and direct, and they value equality. People use first names even with teachers and bosses, and being on time really matters.",
+      "da": "Danskerne er afslappede og direkte, og de sætter lighed højt. Man siger du og bruger fornavne, også til lærere og chefer, og det betyder meget at komme til tiden."
+    },
+    {
+      "en": "Far out in the North Atlantic, the Faroe Islands and vast, icy Greenland also belong to the Danish realm, each with its own language and its own government.",
+      "da": "Langt ude i Nordatlanten hører Færøerne og det store, isdækkede Grønland også til rigsfællesskabet, hver med sit eget sprog og sit eget selvstyre."
+    },
+    {
+      "en": "Tak for besøget, thanks for visiting. Cross the long bridge over the water from Copenhagen, and in about half an hour you'll be in Sweden.",
+      "da": "Tak for besøget. Kør over den lange bro over Øresund fra København, og om cirka en halv time er du i Sverige."
+    }
+  ],
+  "next": ["Sweden", "Germany", "Norway"]
+}

@@ -1,0 +1,59 @@
+{
+  "country": "Vietnam",
+  "languages": ["en", "vi"],
+  "segments": [
+    {
+      "en": "Six in the morning in Hanoi. Motorbikes are already humming, old men are playing chess on the pavement, and someone is ladling steaming broth into a bowl of phở for breakfast.",
+      "vi": "Sáu giờ sáng ở Hà Nội. Xe máy đã rộn ràng khắp phố, mấy ông cụ ngồi đánh cờ trên vỉa hè, và ai đó đang múc nước dùng nghi ngút vào bát phở cho bữa sáng."
+    },
+    {
+      "en": "Vietnam is long and narrow, curving like the letter S along the coast of Southeast Asia. In the north is the Red River, in the south the Mekong, and in between runs a spine of green mountains.",
+      "vi": "Việt Nam dài và hẹp, uốn cong như chữ S dọc bờ biển Đông Nam Á. Phía bắc có sông Hồng, phía nam có sông Mê Kông, và ở giữa là dãy núi xanh chạy dài như xương sống."
+    },
+    {
+      "en": "Hanoi, the capital, is a city of lakes, tree-lined streets and a busy Old Quarter where each lane was once known for a single trade, such as silk, silver or paper.",
+      "vi": "Hà Nội, thủ đô, là thành phố của hồ nước, những con đường rợp bóng cây và khu phố cổ nhộn nhịp, nơi mỗi con phố từng nổi tiếng với một nghề riêng như lụa, bạc hay giấy."
+    },
+    {
+      "en": "Not far away lies Hạ Long Bay, where thousands of limestone islands rise straight out of emerald water. Legend says they were scattered there by a dragon coming down from the mountains.",
+      "vi": "Không xa là vịnh Hạ Long, nơi hàng nghìn đảo đá vôi nhô thẳng lên từ làn nước xanh ngọc. Truyền thuyết kể rằng chúng do một con rồng từ trên núi bay xuống rải lại."
+    },
+    {
+      "en": "In the central city of Huế stands the old imperial citadel, and further south, the lantern-lit streets of Hội An glow every evening in red, yellow and blue.",
+      "vi": "Ở miền Trung, thành phố Huế có kinh thành xưa của các vua triều Nguyễn, và xa hơn về phía nam, phố cổ Hội An rực rỡ đèn lồng đỏ, vàng, xanh mỗi tối."
+    },
+    {
+      "en": "In the south, Ho Chi Minh City buzzes day and night, and the Mekong Delta is a maze of rivers where people shop from floating markets, trading fruit from boat to boat.",
+      "vi": "Ở miền Nam, Thành phố Hồ Chí Minh nhộn nhịp ngày đêm, còn đồng bằng sông Cửu Long là mê cung sông nước, nơi người ta mua bán trái cây từ thuyền này sang thuyền khác ở chợ nổi."
+    },
+    {
+      "en": "Rice is at the centre of life. Terraced fields climb the northern hills like giant green staircases, and a common way to ask how someone is doing is, have you eaten rice yet?",
+      "vi": "Lúa gạo là trung tâm của cuộc sống. Những thửa ruộng bậc thang leo lên núi đồi phía bắc như những bậc cầu thang xanh khổng lồ, và một câu hỏi thăm quen thuộc là: ăn cơm chưa?"
+    },
+    {
+      "en": "Vietnamese food is fresh and fragrant, full of herbs and fish sauce. Try a bánh mì sandwich, fresh spring rolls or a glass of strong iced coffee sweetened with condensed milk.",
+      "vi": "Món ăn Việt tươi và thơm, đầy rau thơm và nước mắm. Hãy thử một ổ bánh mì, vài cuốn gỏi cuốn hay một ly cà phê sữa đá đậm đà."
+    },
+    {
+      "en": "Family and respect for elders are very important. Many homes have an altar to honour ancestors, and people use different words for you depending on the other person's age.",
+      "vi": "Gia đình và sự kính trọng người lớn tuổi rất quan trọng. Nhiều nhà có bàn thờ tổ tiên, và cách xưng hô thay đổi tùy theo tuổi của người đối diện."
+    },
+    {
+      "en": "Vietnamese is a tonal language, so the same syllable can mean different things depending on how your voice rises or falls. A simple thank you is cảm ơn.",
+      "vi": "Tiếng Việt là ngôn ngữ có thanh điệu, nên cùng một âm tiết có thể mang nghĩa khác nhau tùy giọng lên hay xuống. Lời cảm ơn đơn giản nhất là: cảm ơn."
+    },
+    {
+      "en": "The biggest celebration is Tết, the lunar new year. Families clean their homes, visit relatives, eat sticky rice cakes and give children red envelopes of lucky money.",
+      "vi": "Lễ lớn nhất là Tết Nguyên Đán. Các gia đình dọn dẹp nhà cửa, đi thăm họ hàng, ăn bánh chưng và mừng tuổi trẻ em bằng phong bao lì xì đỏ."
+    },
+    {
+      "en": "On special days, women wear the áo dài, a long, graceful silk tunic over trousers, and water puppets dance across ponds to the sound of drums and flutes.",
+      "vi": "Vào những ngày đặc biệt, phụ nữ mặc áo dài, chiếc áo lụa dài duyên dáng mặc cùng quần, còn những con rối nước nhảy múa trên mặt ao theo tiếng trống và tiếng sáo."
+    },
+    {
+      "en": "Now follow the Mekong upriver to the west, and you will reach Cambodia, where ancient temples are waiting in the forest.",
+      "vi": "Giờ hãy ngược dòng Mê Kông về phía tây, bạn sẽ đến Campuchia, nơi những ngôi đền cổ đang chờ đợi giữa rừng."
+    }
+  ],
+  "next": ["Cambodia", "Laos", "China"]
+}

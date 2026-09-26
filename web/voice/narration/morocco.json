@@ -1,0 +1,59 @@
+{
+  "country": "Morocco",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "The call to prayer drifts over the rooftops of Fez at sunrise, and in the maze of the old city a donkey clatters past, loaded with bundles of leather. This is Morocco, where Africa, Europe and the Arab world meet.",
+      "ar": "يتردد الأذان فوق سطوح فاس عند الشروق، وفي متاهة المدينة القديمة يمر حمار محمّل بحزم من الجلود. هذا هو المغرب، حيث تلتقي أفريقيا وأوروبا والعالم العربي."
+    },
+    {
+      "en": "Morocco looks out over both the Atlantic and the Mediterranean, and at the Strait of Gibraltar, Spain is only about fourteen kilometres away. Inland, the snowy Atlas Mountains divide the green north from the Sahara.",
+      "ar": "يطل المغرب على المحيط الأطلسي والبحر الأبيض المتوسط معًا، وعند مضيق جبل طارق لا تبعد إسبانيا سوى أربعة عشر كيلومترًا تقريبًا. وفي الداخل، تفصل جبال الأطلس المكسوة بالثلوج الشمال الأخضر عن الصحراء."
+    },
+    {
+      "en": "People speak Moroccan Arabic, called Darija, and Amazigh languages, spoken by the Amazigh people whose roots here go back thousands of years. Amazigh has its own ancient script, Tifinagh, and French is common too.",
+      "ar": "يتحدث الناس العربية المغربية المعروفة بالدارجة، واللغات الأمازيغية التي يتكلمها الأمازيغ، وجذورهم هنا تمتد آلاف السنين. وللأمازيغية خطها العريق، تيفيناغ، كما تنتشر الفرنسية أيضًا."
+    },
+    {
+      "en": "The old medina of Fez is a labyrinth of lanes, fountains and workshops where no cars can go. It is home to al-Qarawiyyin, founded in the ninth century by a woman named Fatima al-Fihri, and still a place of learning today.",
+      "ar": "مدينة فاس العتيقة متاهة من الأزقة والنوافير والورشات لا تدخلها السيارات. وفيها جامع القرويين الذي أسسته امرأة اسمها فاطمة الفهرية في القرن التاسع، وما زال منارة للعلم حتى اليوم."
+    },
+    {
+      "en": "In Marrakech, the great square of Jemaa el-Fnaa comes alive at dusk with storytellers, musicians and rows of steaming food stalls.",
+      "ar": "وفي مراكش، تدب الحياة في ساحة جامع الفنا عند الغروب، مع الحكواتيين والموسيقيين وصفوف من أكشاك الطعام المتصاعد بخارها."
+    },
+    {
+      "en": "Wherever you go, you will be offered mint tea, green tea with fresh mint and plenty of sugar, poured from a height into small glasses. Accepting it is a sign of friendship.",
+      "ar": "أينما ذهبت سيُقدَّم لك أتاي بالنعناع، شاي أخضر بالنعناع الطازج والكثير من السكر، يُصب من علو في كؤوس صغيرة. وقبوله علامة على الصداقة."
+    },
+    {
+      "en": "Dinner might be a tagine, slow-cooked in a clay pot with a cone-shaped lid, perhaps chicken with preserved lemon and olives. On Fridays, many families gather around a big dish of couscous.",
+      "ar": "قد يكون العشاء طاجينًا مطهوًا على نار هادئة في قدر فخاري بغطاء مخروطي، ربما دجاج بالليمون المصبّر والزيتون. وفي أيام الجمعة تجتمع عائلات كثيرة حول صحن كبير من الكسكس."
+    },
+    {
+      "en": "Meals are shared from one dish, with bread used to scoop up the food, always with the right hand.",
+      "ar": "يأكل الجميع من صحن واحد، ويُستعمل الخبز لتناول الطعام، دائمًا باليد اليمنى."
+    },
+    {
+      "en": "In the Rif mountains, the town of Chefchaouen is painted in every shade of blue, from its doorways to its winding staircases.",
+      "ar": "وفي جبال الريف، تكتسي مدينة شفشاون بكل درجات الأزرق، من أبوابها إلى أدراجها المتعرجة."
+    },
+    {
+      "en": "In the southeast, the dunes of Erg Chebbi rise near Merzouga, glowing orange at sunset, and at night you can sleep under a sky thick with stars.",
+      "ar": "وفي الجنوب الشرقي، ترتفع كثبان عرق الشبي قرب مرزوكة، وتتوهج برتقالية عند الغروب، وفي الليل يمكنك أن تنام تحت سماء مرصعة بالنجوم."
+    },
+    {
+      "en": "Moroccan craft is breathtaking: mosaic tiles called zellige, carved cedar ceilings, and carpets woven by Amazigh women in the mountains. Many old houses, called riads, hide peaceful courtyard gardens behind plain walls.",
+      "ar": "الحرف المغربية مدهشة: فسيفساء الزليج، وسقوف خشب الأرز المنقوشة، والزرابي التي تنسجها النساء الأمازيغيات في الجبال. وكثير من البيوت القديمة، المعروفة بالرياض، تخفي خلف جدرانها البسيطة حدائق هادئة."
+    },
+    {
+      "en": "In the seaside town of Essaouira you may hear Gnawa music, with deep, hypnotic rhythms played on metal castanets and a three-stringed bass lute called the guembri.",
+      "ar": "وفي مدينة الصويرة الساحلية قد تسمع موسيقى كناوة، بإيقاعاتها العميقة الآسرة على القراقب المعدنية وآلة الكمبري ذات الأوتار الثلاثة."
+    },
+    {
+      "en": "Bslama, goodbye! Across the narrow strait to the north, Spain is waiting.",
+      "ar": "بالسلامة! وعبر المضيق الضيق شمالًا، إسبانيا في انتظارك."
+    }
+  ],
+  "next": ["Spain", "Algeria", "Mauritania"]
+}

@@ -1,0 +1,59 @@
+{
+  "country": "Congo (Republic)",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "At the edge of Brazzaville, the great Congo River suddenly breaks into white, roaring rapids. Children watch from the rocks, fishermen cast their nets in the calmer pools, and the evening sun turns the spray to gold.",
+      "fr": "Aux portes de Brazzaville, le grand fleuve Congo se brise soudain en rapides blancs et grondants. Des enfants regardent depuis les rochers, des pêcheurs lancent leurs filets dans les eaux plus calmes, et le soleil du soir change les embruns en or."
+    },
+    {
+      "en": "This is the Republic of the Congo, a land of rainforest, rivers and a short Atlantic coastline, lying across the equator in Central Africa.",
+      "fr": "Nous sommes en République du Congo, un pays de forêts tropicales, de rivières et d'une courte façade atlantique, à cheval sur l'équateur, en Afrique centrale."
+    },
+    {
+      "en": "Brazzaville, the capital, sits on the river's northern bank, looking straight across at Kinshasa. It is a green, relaxed city with shady avenues and a basilica roofed with bright green tiles.",
+      "fr": "Brazzaville, la capitale, s'étend sur la rive nord du fleuve, face à Kinshasa. C'est une ville verte et paisible, aux avenues ombragées, avec une basilique coiffée de tuiles d'un vert éclatant."
+    },
+    {
+      "en": "In the lively Poto-Poto district, a famous painting school has trained artists for generations. Their bold, colourful pictures of slender figures, markets and village life are known far beyond Africa.",
+      "fr": "Dans le quartier animé de Poto-Poto, une célèbre école de peinture forme des artistes depuis des générations. Leurs tableaux aux couleurs vives, peuplés de silhouettes élancées, de marchés et de scènes de village, sont connus bien au-delà de l'Afrique."
+    },
+    {
+      "en": "Brazzaville also calls itself a birthplace of the sapeurs, who treat dressing well as an art. On a Sunday afternoon you may spot one striding by in a pink suit and matching hat, greeted with cheers.",
+      "fr": "Brazzaville se dit aussi l'un des berceaux des sapeurs, pour qui bien s'habiller est un art. Un dimanche après-midi, vous en croiserez peut-être un, en costume rose et chapeau assorti, salué par des applaudissements."
+    },
+    {
+      "en": "French is the official language, and most people also speak Lingala or Kituba. In the markets you hear them all at once, mixed with laughter and friendly bargaining.",
+      "fr": "Le français est la langue officielle, et la plupart des gens parlent aussi le lingala ou le kituba. Sur les marchés, on les entend toutes à la fois, mêlées aux rires et aux marchandages amicaux."
+    },
+    {
+      "en": "A favourite staple is chikwangue, fermented cassava bread wrapped in leaves, soft and a little sour. It comes with saka-saka, cassava leaves cooked with palm oil and peanuts, or with smoked river fish.",
+      "fr": "Un aliment de base très apprécié est la chikwangue, un pain de manioc fermenté enveloppé dans des feuilles, moelleux et légèrement acidulé. On la mange avec le saka-saka, des feuilles de manioc cuites à l'huile de palme et à l'arachide, ou avec du poisson de rivière fumé."
+    },
+    {
+      "en": "In the north, the forests of Odzala-Kokoua and Nouabalé-Ndoki are among the wildest places in Africa. Western lowland gorillas feed in marshy clearings, and forest elephants move silently between the trees.",
+      "fr": "Au nord, les forêts d'Odzala-Kokoua et de Nouabalé-Ndoki comptent parmi les lieux les plus sauvages d'Afrique. Les gorilles des plaines de l'Ouest se nourrissent dans des clairières marécageuses, et les éléphants de forêt avancent en silence entre les arbres."
+    },
+    {
+      "en": "In the Lésio-Louna reserve, orphaned gorillas have been cared for and helped back to life in the wild, a slow and patient work of kindness.",
+      "fr": "Dans la réserve de Lésio-Louna, des gorilles orphelins ont été soignés puis aidés à retrouver la vie sauvage, un travail lent et patient, plein de bienveillance."
+    },
+    {
+      "en": "To the southwest lies Pointe-Noire, the port city on the Atlantic, with long sandy beaches where families picnic on Sundays and fishermen haul in their catch at dawn.",
+      "fr": "Au sud-ouest se trouve Pointe-Noire, la ville portuaire sur l'Atlantique, avec de longues plages de sable où les familles pique-niquent le dimanche et où les pêcheurs ramènent leurs prises à l'aube."
+    },
+    {
+      "en": "Not far away, the Diosso Gorge opens into a great amphitheatre of red and orange cliffs, carved by rain and edged with green forest.",
+      "fr": "Non loin de là, les gorges de Diosso s'ouvrent en un vaste amphithéâtre de falaises rouges et orangées, sculptées par la pluie et bordées de forêt verte."
+    },
+    {
+      "en": "Music and dance bring people together at every celebration, and a guest is always offered the best seat. When you arrive, greet everyone in the room, starting with the eldest.",
+      "fr": "La musique et la danse rassemblent tout le monde à chaque fête, et l'invité se voit toujours offrir la meilleure place. En arrivant, saluez toutes les personnes présentes, en commençant par la plus âgée."
+    },
+    {
+      "en": "Now follow the coast north, past lagoons and swaying palms. Gabon is waiting just across the border.",
+      "fr": "Maintenant, suivez la côte vers le nord, le long des lagunes et des palmiers. Le Gabon vous attend juste de l'autre côté de la frontière."
+    }
+  ],
+  "next": ["Gabon", "Cameroon", "Congo (DRC)"]
+}

@@ -1,0 +1,20 @@
+{
+  "country": "Maldives",
+  "languages": ["en"],
+  "segments": [
+    { "en": "Imagine flying low over the Indian Ocean and seeing rings of turquoise and white scattered below like strings of pearls. These are the atolls of the Maldives, more than a thousand coral islands stretched out in a long chain." },
+    { "en": "Most islands rise only a metre or so above the sea, making this one of the lowest-lying countries on Earth. People here know the ocean intimately, and caring for the reefs and the shoreline matters deeply." },
+    { "en": "In fact, the English word atoll comes from Dhivehi, the local language. Dhivehi is written in its own script, called Thaana, which runs from right to left." },
+    { "en": "The capital, Malé, is a small island packed with colourful buildings and buzzing motorbikes. Its old Friday Mosque was built from blocks of coral stone, carved with delicate patterns." },
+    { "en": "The Maldives is a Muslim nation, and daily life follows the rhythm of prayer times. When you visit a local island, it is respectful to cover your shoulders and knees." },
+    { "en": "For centuries, Maldivians have caught tuna with a simple pole and line, one fish at a time, from wooden boats called dhoni. It is a skilled and careful way of fishing that protects the sea." },
+    { "en": "Breakfast is often mas huni, tuna mixed with grated coconut, onion and chilli, scooped up with warm flatbread called roshi. With afternoon tea come little savoury snacks known as hedhikaa." },
+    { "en": "Beneath the waves lies another world. In Hanifaru Bay, manta rays gather in great numbers to feed, and in South Ari Atoll you might swim alongside a gentle whale shark." },
+    { "en": "On some nights, tiny plankton glow blue along the shore, so it looks as if the waves are sprinkled with stars." },
+    { "en": "When the drums start, it is bodu beru, which means big drum. Men sing and drum faster and faster, until the dancers leap up and everyone is clapping along." },
+    { "en": "On local islands, children play football on sandy pitches, and neighbours chat in the shade on rope swing seats called joali. Everyone seems to know everyone." },
+    { "en": "Traders have sailed through these islands for a very long time, carrying cowrie shells gathered here, which were once used as money in markets across Asia and Africa." },
+    { "en": "As the sun sinks into the lagoon, it is time to sail on. To the northeast, Sri Lanka is waiting, with its tea hills and elephants." }
+  ],
+  "next": ["Sri Lanka", "India", "Seychelles"]
+}

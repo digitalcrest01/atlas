@@ -1,0 +1,59 @@
+{
+  "country": "Sri Lanka",
+  "languages": ["en", "si"],
+  "segments": [
+    {
+      "en": "Ayubowan! In Sri Lanka, people greet you with palms pressed together and this lovely word, which means 'may you live long'.",
+      "si": "ආයුබෝවන්! ශ්‍රී ලංකාවේ මිනිසුන් දෑත් එක්කොට මේ සුන්දර වචනයෙන් ඔබව පිළිගන්නවා. එහි තේරුම 'දීර්ඝායුෂ ලැබේවා' යන්නයි."
+    },
+    {
+      "en": "This teardrop-shaped island lies in the Indian Ocean, just south of India. In a single day you can travel from palm-fringed beaches up to cool, misty mountains.",
+      "si": "කඳුළු බිඳක හැඩැති මේ දිවයින ඉන්දියාවට දකුණින්, ඉන්දියන් සාගරයේ පිහිටා තිබෙනවා. එක දවසකින් පොල් ගස් පිරුණු වෙරළේ සිට සීතල, මීදුමෙන් වැසුණු කඳුකරයට යන්න ඔබට පුළුවන්."
+    },
+    {
+      "en": "In the hill country around Nuwara Eliya, tea bushes cover the slopes like green velvet. Pickers move along the rows, and Ceylon tea, named after the island's old name, is enjoyed all over the world.",
+      "si": "නුවරඑළිය අවට කඳුකරයේ තේ පඳුරු කොළ පාට වෙල්වට් එකක් වගේ බෑවුම් වසාගෙන තිබෙනවා. තේ දළු නෙළන්නන් පේළි දිගේ ගමන් කරනවා. දිවයිනේ පැරණි නමින් හැඳින්වෙන සිලෝන් තේ ලොව පුරා රසවිඳිනවා."
+    },
+    {
+      "en": "The everyday meal is rice and curry, which means rice with several small curries, perhaps dhal, jackfruit or fish, and a spoonful of coconut sambol. Many people eat with their right hand.",
+      "si": "එදිනෙදා කෑම බත් සහ ව්‍යංජන. ඒ කියන්නේ පරිප්පු, පොලොස් හෝ මාළු වැනි ව්‍යංජන කිහිපයක් සහ පොල් සම්බෝල හැන්දක් එක්ක බත්. බොහෝ දෙනා කන්නේ දකුණු අතින්."
+    },
+    {
+      "en": "For breakfast or supper, try hoppers, bowl-shaped pancakes with lacy, crispy edges, sometimes with an egg cooked right in the middle.",
+      "si": "උදේට හෝ රෑට ආප්ප රස බලන්න. ඒවා කෝප්පයක හැඩැති, කෙළවර හැපෙන සුළු ආප්ප. සමහර විට මැද්දටම බිත්තරයක් දාලා උයනවා."
+    },
+    {
+      "en": "Sri Lanka is home to Sinhala and Tamil speakers, and to Buddhists, Hindus, Muslims and Christians. A temple, a kovil, a mosque and a church can stand within a short walk of each other.",
+      "si": "ශ්‍රී ලංකාව සිංහල සහ දෙමළ කතා කරන ජනතාවගේ මෙන්ම බෞද්ධ, හින්දු, මුස්ලිම් සහ ක්‍රිස්තියානි ජනතාවගේත් නිවහනයි. පන්සලක්, කෝවිලක්, මුස්ලිම් පල්ලියක් සහ කිතුනු දේවස්ථානයක් එකිනෙකට ඇවිද යා හැකි දුරින් තිබෙන්න පුළුවන්."
+    },
+    {
+      "en": "In the heart of the island rises Sigiriya, a giant rock where a king built a palace on the summit more than fifteen hundred years ago. Painted maidens still smile from its walls.",
+      "si": "දිවයිනේ මැද සීගිරිය නැඟී සිටිනවා. අවුරුදු එක්දහස් පන්සියයකටත් පෙර රජෙක් එහි මුදුනේ මාළිගාවක් ඉදිකළා. සීගිරි ලලනාවන් තවමත් එහි බිත්තිවල සිට සිනාසෙනවා."
+    },
+    {
+      "en": "In the city of Kandy, the Temple of the Tooth holds a treasured relic of the Buddha. Each year the Esala Perahera fills the streets with drummers, dancers and elephants dressed in glowing costumes.",
+      "si": "මහනුවර දළදා මාළිගාවේ බුදුරජාණන් වහන්සේගේ පූජනීය දන්ත ධාතූන් වහන්සේ වැඩ සිටිනවා. හැමවසරකම ඇසළ පෙරහැර බෙර වාදකයන්, නර්තන ශිල්පීන් සහ දිලිසෙන ඇඳුම් ඇඳි ඇතුන්ගෙන් වීදි පුරවනවා."
+    },
+    {
+      "en": "In April, the Sinhala and Tamil New Year is celebrated together. Families light the hearth at an auspicious time, boil milk until it overflows for good luck, and share kiribath, rice cooked in coconut milk.",
+      "si": "අප්‍රේල් මාසයේ සිංහල හා දෙමළ අලුත් අවුරුද්ද එකට සමරනවා. පවුල් නැකතට ලිප ගිනි මොළවා, සුබ පැතුමක් ලෙස කිරි උතුරවා, පොල් කිරෙන් උයන කිරිබත් බෙදා ගන්නවා."
+    },
+    {
+      "en": "In Yala and other national parks, leopards rest in the trees and elephants gather by the water. Off the southern coast, you might even spot a blue whale.",
+      "si": "යාල සහ අනෙකුත් ජාතික වනෝද්‍යානවල දිවියන් ගස් මත විවේක ගන්නවා, අලි ඇතුන් වතුර ළඟ රැස් වෙනවා. දකුණු වෙරළෙන් එහා මුහුදේ ඔබට නිල් තල්මසෙක් වුණත් දකින්න පුළුවන්."
+    },
+    {
+      "en": "Cricket is a passion. Children play in narrow lanes and on the beach, and when the national team takes the field, the whole island seems to be listening.",
+      "si": "ක්‍රිකට් යනු ආදරණීය ක්‍රීඩාවක්. ළමයි පටු පාරවල සහ වෙරළේ ක්‍රිකට් ගහනවා. ජාතික කණ්ඩායම පිටියට බසින විට මුළු දිවයිනම සවන් දෙනවා වගේ."
+    },
+    {
+      "en": "On the south coast, people walk the ramparts of the old fort at Galle at sunset, while in busy Colombo, cooks chop kottu, shredded roti fried on a sizzling griddle with a rhythmic clatter.",
+      "si": "දකුණු වෙරළේ, ගාලු කොටුවේ පැරණි බලකොටු පවුර මත හිරු බැසයන වේලාවේ මිනිසුන් ඇවිදිනවා. කාර්යබහුල කොළඹදී, රත් වූ තාච්චියක කපපු රොටි බදින කොත්තුවේ රිද්මයානුකූල ටක ටක හඬ ඇසෙනවා."
+    },
+    {
+      "en": "As the waves roll in, say 'ayubowan' once more. Just across the Palk Strait to the north, India is waiting for you.",
+      "si": "රළ වෙරළට ගසාගෙන එද්දී, තවත් වරක් 'ආයුබෝවන්' කියන්න. උතුරින් පෝක් සමුද්‍ර සන්ධියෙන් එපිට ඉන්දියාව ඔබ එනතුරු බලා සිටිනවා."
+    }
+  ],
+  "next": ["India", "Maldives", "Bangladesh"]
+}

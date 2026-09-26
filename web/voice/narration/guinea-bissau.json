@@ -1,0 +1,55 @@
+{
+  "country": "Guinea-Bissau",
+  "languages": ["en", "pt-PT"],
+  "segments": [
+    {
+      "en": "The tide is going out. Across the mudflats, crabs scuttle between mangrove roots, and flocks of wading birds land to feed. Twice a day, the sea breathes in and out along the coast of Guinea-Bissau.",
+      "pt-PT": "A maré está a vazar. Pelos lodaçais, os caranguejos correm entre as raízes dos mangais e bandos de aves pernaltas pousam para se alimentar. Duas vezes por dia, o mar respira ao longo da costa da Guiné-Bissau."
+    },
+    {
+      "en": "This small West African country is laced with rivers and inlets, where fresh water meets salt. Rice paddies line the riverbanks, carefully built and tended by farmers for generations.",
+      "pt-PT": "Este pequeno país da África Ocidental é recortado por rios e braços de mar, onde a água doce encontra a salgada. As bolanhas de arroz ladeiam as margens, construídas e cuidadas pelos agricultores há gerações."
+    },
+    {
+      "en": "Offshore lies the Bijagós Archipelago, a scattering of dozens of islands with palm groves, empty beaches and forest. Sea turtles come ashore to lay their eggs, and some islands are sacred, visited only for ceremonies.",
+      "pt-PT": "Ao largo fica o Arquipélago dos Bijagós, dezenas de ilhas com palmeirais, praias desertas e floresta. As tartarugas marinhas vêm a terra pôr os ovos, e algumas ilhas são sagradas, visitadas apenas para cerimónias."
+    },
+    {
+      "en": "On the island of Orango, hippos live in lagoons and even swim in the sea, something you'll see in very few places on Earth. The islands are protected as a biosphere reserve.",
+      "pt-PT": "Na ilha de Orango, os hipopótamos vivem nas lagoas e chegam a nadar no mar, algo que se vê em muito poucos lugares do mundo. As ilhas são protegidas como reserva da biosfera."
+    },
+    {
+      "en": "In the Bijagós, women have traditionally held an important voice in family and village life, and ceremonies mark each stage of growing up, with masks shaped like bulls, sharks and sawfish.",
+      "pt-PT": "Nos Bijagós, as mulheres sempre tiveram uma voz importante na vida da família e da aldeia, e as cerimónias marcam cada etapa do crescimento, com máscaras em forma de touro, tubarão e peixe-serra."
+    },
+    {
+      "en": "Portuguese is the official language, a legacy of the colonial past. But the language of the street and the market is Kriol, a Creole with Portuguese roots that brings everyone together.",
+      "pt-PT": "O português é a língua oficial, herança do passado colonial. Mas a língua da rua e do mercado é o crioulo, com raízes portuguesas, que une toda a gente."
+    },
+    {
+      "en": "Many peoples share this land, among them the Balanta, Fula, Mandinka, Papel and Manjaco, each with its own language and customs. Neighbours often greet one another in several languages in a single morning.",
+      "pt-PT": "Muitos povos partilham esta terra, entre eles os balantas, fulas, mandingas, papéis e manjacos, cada um com a sua língua e os seus costumes. Numa só manhã, os vizinhos cumprimentam-se muitas vezes em várias línguas."
+    },
+    {
+      "en": "Bissau, the capital, sits on the estuary of the Geba River. Its old quarter has faded colonial buildings with balconies, and down by the port, canoes unload fish and fruit.",
+      "pt-PT": "Bissau, a capital, fica no estuário do rio Geba. O bairro antigo tem velhos edifícios coloniais com varandas, e junto ao porto as pirogas descarregam peixe e fruta."
+    },
+    {
+      "en": "Cashew trees grow all over the country, and in the dry season the air smells sweet from their ripening fruit. The nuts are sold abroad, while the juicy fruit is enjoyed here.",
+      "pt-PT": "Os cajueiros crescem por todo o país, e na estação seca o ar cheira docemente aos frutos a amadurecer. A castanha é vendida para fora, enquanto o suculento caju se saboreia cá dentro."
+    },
+    {
+      "en": "Meals centre on rice, often with fish or oysters from the mangroves. Try caldo de mancarra, a peanut stew, or jollof rice, and finish with a slice of fresh mango.",
+      "pt-PT": "As refeições giram à volta do arroz, muitas vezes com peixe ou ostras dos mangais. Prove o caldo de mancarra, um guisado de amendoim, ou o arroz jollof, e termine com uma fatia de manga fresca."
+    },
+    {
+      "en": "Before Lent, Carnival bursts into the streets of Bissau, with dancers in masks and costumes from every region of the country. And gumbe music, with its rolling drums, gets everyone dancing.",
+      "pt-PT": "Antes da Quaresma, o Carnaval invade as ruas de Bissau, com dançarinos de máscaras e trajes de todas as regiões do país. E a música gumbé, com os seus tambores ritmados, põe toda a gente a dançar."
+    },
+    {
+      "en": "As the tide comes back in and the mangroves fill again, it's time to move on. Senegal is waiting just to the north, and Guinea lies to the south and east.",
+      "pt-PT": "Quando a maré volta a encher e os mangais se cobrem de novo, é hora de seguir viagem. O Senegal espera-o logo a norte, e a Guiné fica a sul e a leste."
+    }
+  ],
+  "next": ["Senegal", "Guinea", "Gambia"]
+}

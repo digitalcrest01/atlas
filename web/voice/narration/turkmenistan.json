@@ -1,0 +1,59 @@
+{
+  "country": "Turkmenistan",
+  "languages": ["en", "ru"],
+  "segments": [
+    {
+      "en": "Imagine a golden horse racing across the sand, its coat shining like polished metal in the sun. This is the Akhal-Teke, a proud and ancient breed, and in Turkmenistan it is a treasure of the nation.",
+      "ru": "Представьте золотого коня, который мчится по песку, и его шерсть сияет на солнце, словно начищенный металл. Это ахалтекинец, гордая и древняя порода, и в Туркменистане он настоящее национальное сокровище."
+    },
+    {
+      "en": "Much of this country is covered by the Karakum, which means black sand. It is a vast desert of dunes and hardy shrubs, hot in summer and surprisingly cold on winter nights.",
+      "ru": "Большую часть страны занимает пустыня Каракумы, что значит «чёрные пески». Это огромное пространство дюн и выносливых кустарников, жаркое летом и неожиданно холодное зимними ночами."
+    },
+    {
+      "en": "Along its edges, life gathers around water. Oases, rivers and a long canal bring green fields of cotton and melons to the desert, and Turkmen melons are famous for their sweetness.",
+      "ru": "По краям пустыни жизнь собирается у воды. Оазисы, реки и длинный канал приносят в пустыню зелёные поля хлопка и бахчи, а туркменские дыни славятся своей сладостью."
+    },
+    {
+      "en": "For centuries, caravans on the Silk Road passed through here. The ruins of Merv, once one of the great cities of Central Asia, still rise from the plain, their walls worn soft by wind.",
+      "ru": "Веками через эти земли проходили караваны Великого шёлкового пути. Руины Мерва, когда-то одного из великих городов Средней Азии, до сих пор возвышаются над равниной, а их стены сглажены ветром."
+    },
+    {
+      "en": "The capital, Ashgabat, lies at the foot of the Kopet Dag mountains. It is a city of white marble buildings, wide boulevards and fountains that sparkle at night under colourful lights.",
+      "ru": "Столица, Ашхабад, лежит у подножия гор Копетдаг. Это город белых мраморных зданий, широких проспектов и фонтанов, которые по ночам сверкают в разноцветной подсветке."
+    },
+    {
+      "en": "Turkmen carpets are known around the world. Each tribe has its own pattern of deep red and repeated shapes called guls, and the finest are knotted by hand over many months.",
+      "ru": "Туркменские ковры известны во всём мире. У каждого племени свой узор из глубокого красного цвета и повторяющихся фигур, которые называют гёлями, а лучшие ковры вручную вяжут многие месяцы."
+    },
+    {
+      "en": "People speak Turkmen, a Turkic language, and many also know Russian. You may notice women in long, embroidered dresses and men in tall, shaggy sheepskin hats called telpek.",
+      "ru": "Здесь говорят по-туркменски, на тюркском языке, и многие знают русский. Вы заметите женщин в длинных вышитых платьях и мужчин в высоких косматых папахах из овчины, которые называют тельпеками."
+    },
+    {
+      "en": "Hospitality is at the heart of family life. Guests sit on cushions around a cloth spread on the floor, and green tea is poured again and again from small pots.",
+      "ru": "Гостеприимство лежит в основе семейной жизни. Гости садятся на подушки вокруг скатерти, расстеленной на полу, а зелёный чай снова и снова наливают из маленьких чайников."
+    },
+    {
+      "en": "The table might hold plov, rice cooked with carrots and meat, or dograma, bread torn into a rich broth. Warm round loaves come straight from a clay oven called a tamdyr.",
+      "ru": "На столе может быть плов, рис с морковью и мясом, или дограма, хлеб, раскрошенный в наваристый бульон. Тёплые круглые лепёшки достают прямо из глиняной печи, которую называют тамдыр."
+    },
+    {
+      "en": "In spring, families celebrate Nowruz, the new year, with music, games and feasting. There is even a special day to honour the Akhal-Teke horse, with races and parades.",
+      "ru": "Весной семьи отмечают Новруз, новый год, с музыкой, играми и угощениями. Есть даже особый праздник в честь ахалтекинского коня, со скачками и парадами."
+    },
+    {
+      "en": "Deep in the desert burns a crater of fire known as the Gates of Hell, glowing orange through the night. Travellers camp nearby just to watch the flames under the stars.",
+      "ru": "Глубоко в пустыне горит огненный кратер, который называют «Врата ада», и всю ночь он светится оранжевым. Путешественники разбивают рядом лагерь, чтобы смотреть на пламя под звёздами."
+    },
+    {
+      "en": "Along the western edge, the Caspian Sea brings cooler breezes and sandy shores, a surprising sight after so much desert.",
+      "ru": "На западе Каспийское море приносит прохладный ветер и песчаные берега, неожиданная картина после стольких песков."
+    },
+    {
+      "en": "Now, follow the old caravan road north and east along the river, and you will reach the blue domes of Uzbekistan.",
+      "ru": "А теперь пройдите по старой караванной дороге вдоль реки на северо-восток, и вы окажетесь среди голубых куполов Узбекистана."
+    }
+  ],
+  "next": ["Uzbekistan", "Iran", "Kazakhstan"]
+}

@@ -1,0 +1,62 @@
+{
+  "country": "Iceland",
+  "languages": [
+    "en",
+    "is"
+  ],
+  "segments": [
+    {
+      "en": "Midnight in June, and the sun is still up, hanging low and golden over the sea. In Iceland's summer, night barely comes at all. In winter it's the opposite, and the sky may dance with green northern lights.",
+      "is": "Miðnætti í júní, og sólin er enn á lofti, lágt og gullin yfir hafinu. Á íslensku sumri kemur nóttin varla. Á veturna er þessu öfugt farið, og þá geta græn norðurljós dansað um himininn."
+    },
+    {
+      "en": "Iceland is an island in the North Atlantic, just below the Arctic Circle. It sits right on the line where two great plates of the Earth's crust are slowly pulling apart, and that makes it a land of fire and ice.",
+      "is": "Ísland er eyja í Norður-Atlantshafi, rétt sunnan við heimskautsbaug. Landið liggur á mörkum tveggja jarðskorpufleka sem færast hægt í sundur, og þess vegna er það land elds og ísa."
+    },
+    {
+      "en": "Volcanoes rumble beneath glaciers, and hot water bursts from the ground. At Geysir, the Strokkur geyser shoots a column of boiling water into the air every few minutes, while everyone waits with cameras ready.",
+      "is": "Eldfjöll krauma undir jöklum og heitt vatn brýst upp úr jörðinni. Við Geysi þeytir Strokkur sjóðandi vatnssúlu upp í loftið á nokkurra mínútna fresti, á meðan allir bíða með myndavélina tilbúna."
+    },
+    {
+      "en": "That warm water heats most homes, and it fills the swimming pools found in almost every town. Icelanders meet friends in the hot tubs, rain or snow, to chat about the weather and the news.",
+      "is": "Þetta heita vatn hitar flest heimili og fyllir sundlaugarnar sem finnast í nær hverjum bæ. Íslendingar hitta vini sína í heitu pottunum, hvort sem það rignir eða snjóar, og spjalla um veðrið og fréttirnar."
+    },
+    {
+      "en": "Around eleven hundred years ago, Norse settlers arrived and founded the Althing, one of the oldest parliaments in the world. It met in the open air at Þingvellir, a rift valley you can walk through today.",
+      "is": "Fyrir um ellefu hundruð árum komu norrænir landnámsmenn og stofnuðu Alþingi, eitt elsta þjóðþing heims. Það kom saman undir berum himni á Þingvöllum, í sigdal sem hægt er að ganga um í dag."
+    },
+    {
+      "en": "Icelandic has changed so little that children can still read the old sagas, tales of heroes and feuds written down in the Middle Ages. New words are invented from old roots; a computer is a tölva, a number prophetess.",
+      "is": "Íslenskan hefur breyst svo lítið að börn geta enn lesið gömlu Íslendingasögurnar, frásagnir af hetjum og deilum sem skráðar voru á miðöldum. Ný orð eru smíðuð úr gömlum rótum; tölva er dregið af tölu og völvu."
+    },
+    {
+      "en": "Most Icelanders don't have family names. Instead, a surname says whose child you are. Jón's son is Jónsson, and his daughter is Jónsdóttir. People address each other by first names, even the president.",
+      "is": "Flestir Íslendingar bera ekki ættarnöfn. Þess í stað segir kenninafnið hvers barn maður er. Sonur Jóns er Jónsson og dóttir hans Jónsdóttir. Fólk ávarpar hvert annað með fornafni, jafnvel forsetann."
+    },
+    {
+      "en": "Reykjavík, the capital, has colourful houses with tin roofs and a tall white church, Hallgrímskirkja, shaped a little like basalt columns. From the top, the whole city and the mountains beyond spread out below you.",
+      "is": "Í Reykjavík, höfuðborginni, eru litrík hús með bárujárnsþökum og há, hvít kirkja, Hallgrímskirkja, sem minnir á stuðlaberg. Ofan úr turninum sést yfir alla borgina og fjöllin handan hennar."
+    },
+    {
+      "en": "Try skyr, a thick, creamy dairy food eaten for centuries, lamb soup to warm you up, fresh fish, and rye bread baked slowly in the hot ground near hot springs.",
+      "is": "Smakkaðu skyr, þykkt og mjúkt, sem hefur verið borðað öldum saman, kjötsúpu til að ylja sér, nýjan fisk og rúgbrauð sem bakað er hægt í heitri jörðinni við hverina."
+    },
+    {
+      "en": "At Christmas, thirteen mischievous Yule Lads visit one by one, with names like Spoon Licker and Door Slammer. Children leave a shoe on the windowsill, hoping for a treat instead of a potato.",
+      "is": "Um jólin koma þrettán uppátækjasamir jólasveinar hver á eftir öðrum, með nöfn eins og Þvörusleikir og Hurðaskellir. Börnin setja skó út í glugga og vona að fá eitthvað gott en ekki kartöflu."
+    },
+    {
+      "en": "In summer, puffins nest on the sea cliffs, and sturdy Icelandic horses with long manes graze in the fields. They have a special smooth gait of their own, called the tölt.",
+      "is": "Á sumrin verpa lundar í sjávarhömrum, og sterklegir íslenskir hestar með síðan fax bíta gras í högunum. Þeir hafa sína eigin mjúku gangtegund, töltið."
+    },
+    {
+      "en": "Takk fyrir, thank you, for visiting. Sail east across the ocean to Norway, the land the first settlers came from, and it will welcome you like an old friend.",
+      "is": "Takk fyrir komuna. Sigldu austur yfir hafið til Noregs, landsins sem fyrstu landnámsmennirnir komu frá, og þar verður tekið á móti þér eins og gömlum vini."
+    }
+  ],
+  "next": [
+    "Norway",
+    "Denmark",
+    "United Kingdom"
+  ]
+}

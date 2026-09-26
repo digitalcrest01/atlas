@@ -1,0 +1,46 @@
+{
+  "country": "United States",
+  "languages": ["en"],
+  "segments": [
+    {
+      "en": "Sunrise reaches the coast of Maine first, while in Hawaii it is still the middle of the night. The United States is so wide that it spans six time zones, from the Atlantic all the way across the Pacific."
+    },
+    {
+      "en": "Fifty states make up this country, and each feels a little different. You could spend a lifetime exploring and still find new accents, new landscapes and new favourite foods."
+    },
+    {
+      "en": "Long before the nation was founded, many Native American peoples lived across this land, each with their own languages and traditions. Many of their communities and cultures continue today."
+    },
+    {
+      "en": "The country declared its independence in 1776. Since then, people have arrived from every corner of the world, which is why a single city block can smell of tacos, dumplings, pizza and barbecue all at once."
+    },
+    {
+      "en": "New York City never seems to sleep, with its yellow taxis, towering skyscrapers and the Statue of Liberty raising her torch over the harbour. Washington, the capital, is lined with monuments and free museums."
+    },
+    {
+      "en": "Head west and the landscape grows enormous. The Grand Canyon plunges more than a mile deep, painted in red and orange rock, and Yellowstone bubbles with geysers, hot springs and roaming bison."
+    },
+    {
+      "en": "There are rainforests in the Pacific Northwest, sunny beaches in California and Florida, snowy peaks in Alaska and swamps full of alligators in Louisiana."
+    },
+    {
+      "en": "Americans are often friendly and chatty with strangers. Don't be surprised if someone in a shop asks how your day is going. A cheerful reply is all that's needed."
+    },
+    {
+      "en": "Food comes in generous portions. Think pancakes with maple syrup, burgers on the grill, cornbread and chilli in the South, and fresh lobster rolls up in New England."
+    },
+    {
+      "en": "Music is one of America's great gifts to the world. Jazz and blues were born here, along with rock and roll, country and hip hop, and each tells a story about the people who made it."
+    },
+    {
+      "en": "Sport brings people together in huge crowds: American football in autumn, baseball on long summer evenings, and basketball all winter long."
+    },
+    {
+      "en": "Two holidays stand out. On Thanksgiving, families share turkey and pumpkin pie and say what they are grateful for, and on the Fourth of July, fireworks burst over towns across the country."
+    },
+    {
+      "en": "Now point your compass north, across the longest land border in the world, and Canada is waiting with maple trees and open wilderness."
+    }
+  ],
+  "next": ["Canada", "Mexico", "Cuba"]
+}

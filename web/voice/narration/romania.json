@@ -1,0 +1,55 @@
+{
+  "country": "Romania",
+  "languages": ["en", "ro"],
+  "segments": [
+    {
+      "en": "Early mist lifts off the Carpathian Mountains, a shepherd's dog barks somewhere on the slope, and a church bell answers from the valley. Bună dimineața, good morning, from Romania.",
+      "ro": "Ceața dimineții se ridică de pe Munții Carpați, un câine de stână latră undeva pe coastă, iar un clopot de biserică îi răspunde din vale. Bună dimineața din România!"
+    },
+    {
+      "en": "Those mountains curve through the middle of the country like a great arch. Inside the curve lies Transylvania, with fortified churches and old Saxon towns, while beyond it stretch the wide plains of Wallachia and the rolling hills of Moldavia.",
+      "ro": "Munții aceștia străbat mijlocul țării ca un arc uriaș. În interiorul arcului se află Transilvania, cu biserici fortificate și vechi orașe săsești, iar dincolo de ea se întind câmpiile largi ale Munteniei și dealurile domoale ale Moldovei."
+    },
+    {
+      "en": "Listen closely to Romanian and you may hear echoes of Latin. It's a Romance language, a cousin of Italian and French, a reminder that the Romans once ruled here, in the land of the ancient Dacians.",
+      "ro": "Ascultați cu atenție limba română și veți auzi ecouri din latină. Este o limbă romanică, verișoară cu italiana și franceza, o amintire a vremii când romanii au stăpânit aici, pe pământul vechilor daci."
+    },
+    {
+      "en": "In the north, in Bucovina, painted monasteries glow with saints and angels on their outside walls, colours that have survived the weather for centuries. In Maramureș, tall wooden churches with needle-thin spires rise above the villages.",
+      "ro": "În nord, în Bucovina, mănăstirile pictate strălucesc cu sfinți și îngeri pe zidurile exterioare, culori care au înfruntat vremea de secole. În Maramureș, biserici înalte de lemn, cu turle subțiri ca acul, se ridică deasupra satelor."
+    },
+    {
+      "en": "Yes, there are castles too. Bran Castle, perched on a rock, is often linked with the Dracula legend, but Romanians will happily tell you about the real Vlad the Impaler, a fifteenth century prince of Wallachia.",
+      "ro": "Da, avem și castele. Castelul Bran, cocoțat pe o stâncă, este adesea legat de legenda lui Dracula, dar românii vă vor povesti cu plăcere despre adevăratul Vlad Țepeș, un domnitor al Țării Românești din secolul al cincisprezecelea."
+    },
+    {
+      "en": "Far to the east, the Danube ends its long journey across Europe in a maze of reeds, channels and lakes, the Danube Delta, home to pelicans, herons and fishing villages you can only reach by boat.",
+      "ro": "Departe, în est, Dunărea își încheie lungul drum prin Europa într-un labirint de stuf, canale și lacuri: Delta Dunării, casa pelicanilor, a stârcilor și a satelor de pescari la care ajungi doar cu barca."
+    },
+    {
+      "en": "Sit down for a meal and you might be served sarmale, cabbage leaves rolled around minced meat and rice, with a spoonful of creamy polenta called mămăligă. For dessert, try papanași, warm doughnuts with sour cream and jam.",
+      "ro": "Dacă vă așezați la masă, s-ar putea să primiți sarmale în foi de varză, cu o lingură de mămăligă și smântână. La desert, încercați papanași, gogoși calde cu smântână și dulceață."
+    },
+    {
+      "en": "Hospitality matters here. If you're invited home, bring flowers in an odd number, because even numbers are for funerals, and expect your host to keep filling your plate.",
+      "ro": "Ospitalitatea contează mult aici. Dacă sunteți invitat acasă, aduceți flori în număr impar, fiindcă numărul par e pentru înmormântări, și așteptați-vă ca gazda să vă tot umple farfuria."
+    },
+    {
+      "en": "On the first of March comes Mărțișor, a welcome to spring. People give each other small charms tied with red and white string, to wear for luck and good health.",
+      "ro": "Pe întâi martie vine Mărțișorul, o urare de bun venit primăverii. Oamenii își dăruiesc mici talismane legate cu șnur roșu și alb, purtate pentru noroc și sănătate."
+    },
+    {
+      "en": "Folk traditions are alive in the embroidered blouse called the ie, in village dances like the hora, where everyone joins hands in a circle, and in the haunting call of the pan flute.",
+      "ro": "Tradițiile populare trăiesc în iia brodată, în dansuri ca hora, unde toată lumea se prinde de mână în cerc, și în sunetul tânguitor al naiului."
+    },
+    {
+      "en": "Bucharest, the capital, mixes grand old boulevards, leafy parks and busy modern life, and was once nicknamed Little Paris for its elegant buildings.",
+      "ro": "Bucureștiul, capitala, îmbină bulevarde vechi și impunătoare, parcuri umbroase și o viață modernă agitată, și a fost cândva poreclit Micul Paris pentru clădirile sale elegante."
+    },
+    {
+      "en": "Mulțumesc, thank you, for the visit. Across the river Prut to the east, Moldova shares our language and many of our songs, and it's waiting for you.",
+      "ro": "Mulțumesc pentru vizită! Dincolo de Prut, spre răsărit, Republica Moldova are aceeași limbă și multe dintre cântecele noastre, și vă așteaptă."
+    }
+  ],
+  "next": ["Moldova", "Hungary", "Bulgaria"]
+}

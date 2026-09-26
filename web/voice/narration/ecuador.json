@@ -1,0 +1,59 @@
+{
+  "country": "Ecuador",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "Just outside Quito, at a place called the Middle of the World, a line marks the equator. Stand astride it and you have one foot in the northern hemisphere and one in the southern. That's where this country gets its name.",
+      "es-419": "Muy cerca de Quito, en un lugar llamado la Mitad del Mundo, una línea marca la latitud cero. Párate con un pie a cada lado y tendrás uno en el hemisferio norte y otro en el sur. De ahí viene el nombre del país."
+    },
+    {
+      "en": "Ecuador is small, yet it holds four different worlds: the Pacific coast, the snowy Andes, the Amazon rainforest and, far out at sea, the Galápagos Islands.",
+      "es-419": "Ecuador es pequeño, pero guarda cuatro mundos distintos: la Costa del Pacífico, los Andes nevados, la selva amazónica y, lejos en el mar, las islas Galápagos."
+    },
+    {
+      "en": "Quito, the capital, sits high in an Andean valley ringed by volcanoes. Its old centre is full of white churches, golden altars and balconied streets that climb steeply up and down the hills.",
+      "es-419": "Quito, la capital, está en lo alto de un valle andino rodeado de volcanes. Su centro histórico está lleno de iglesias blancas, altares dorados y calles con balcones que suben y bajan por las lomas."
+    },
+    {
+      "en": "Cotopaxi rises nearby, a snowy, almost perfect cone. And because the Earth bulges at the equator, the summit of Chimborazo is the point on land farthest from the centre of our planet.",
+      "es-419": "Cerca se alza el Cotopaxi, un cono nevado casi perfecto. Y como la Tierra es más ancha en el ecuador, la cumbre del Chimborazo es el punto de tierra firme más alejado del centro del planeta."
+    },
+    {
+      "en": "In the highlands, many people are Indigenous and speak Kichwa. At the Saturday market in Otavalo, weavers sell ponchos and blankets in every colour, and people greet each other with a cheerful alli puncha, good morning.",
+      "es-419": "En la Sierra, mucha gente es indígena y habla kichwa. En la feria del sábado en Otavalo, los tejedores venden ponchos y cobijas de todos los colores, y la gente se saluda con un alegre alli puncha, buenos días."
+    },
+    {
+      "en": "Here's a surprise: the famous Panama hat is actually made in Ecuador. It's woven by hand from fine toquilla straw, and the very best can take months to finish.",
+      "es-419": "Una sorpresa: el famoso sombrero de Panamá en realidad se hace en Ecuador. Se teje a mano con fina paja toquilla, y los mejores pueden tardar meses en terminarse."
+    },
+    {
+      "en": "On the coast, try shrimp ceviche in a zesty lime and tomato sauce, with a bowl of popcorn or toasted corn on the side to sprinkle over the top.",
+      "es-419": "En la Costa, prueba el ceviche de camarón, en un jugo de limón y tomate bien fresco, con canguil o chulpi al lado para echarle encima."
+    },
+    {
+      "en": "Up in the mountains, warm up with locro de papa, a creamy potato soup with cheese and avocado, or llapingachos, golden potato patties served with a fried egg.",
+      "es-419": "En la Sierra, caliéntate con un locro de papa, una sopa cremosa de papa con queso y aguacate, o con unos llapingachos, tortillas doradas de papa con huevo frito."
+    },
+    {
+      "en": "East of the Andes, rivers wind down into the Amazon, where Indigenous communities live alongside monkeys, macaws and pink river dolphins.",
+      "es-419": "Al este de los Andes, los ríos bajan serpenteando hacia la Amazonía, donde las comunidades indígenas viven junto a monos, guacamayos y delfines rosados de río."
+    },
+    {
+      "en": "And about a thousand kilometres out in the Pacific lie the Galápagos. Giant tortoises plod through the grass, blue-footed boobies dance to impress each other, and sea lions nap on park benches.",
+      "es-419": "Y a unos mil kilómetros, en pleno Pacífico, están las Galápagos. Las tortugas gigantes caminan despacio entre la hierba, los piqueros de patas azules bailan para conquistarse y los lobos marinos duermen la siesta en las bancas del parque."
+    },
+    {
+      "en": "The islands' unusual animals helped inspire Charles Darwin's ideas about how living things change over time, and even today they're remarkably unafraid of people.",
+      "es-419": "Los animales únicos de estas islas ayudaron a inspirar las ideas de Charles Darwin sobre cómo cambian los seres vivos con el tiempo, y todavía hoy casi no le tienen miedo a la gente."
+    },
+    {
+      "en": "Around the June solstice, Andean communities celebrate Inti Raymi, the festival of the sun, with music, dancing and thanks for the harvest.",
+      "es-419": "Cerca del solsticio de junio, las comunidades andinas celebran el Inti Raymi, la fiesta del sol, con música, baile y agradecimiento por la cosecha."
+    },
+    {
+      "en": "Thank you for climbing, paddling and sailing through Ecuador with me. Head south along the Andes, and Peru is waiting with the mountains of the Incas.",
+      "es-419": "Gracias por subir, remar y navegar por Ecuador conmigo. Sigue hacia el sur por los Andes y el Perú te espera con las montañas de los incas."
+    }
+  ],
+  "next": ["Peru", "Colombia", "Bolivia"]
+}

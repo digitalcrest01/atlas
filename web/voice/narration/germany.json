@@ -1,0 +1,55 @@
+{
+  "country": "Germany",
+  "languages": ["en", "de"],
+  "segments": [
+    {
+      "en": "Sunday afternoon, three o'clock. Across Germany, families sit down to Kaffee und Kuchen: coffee, and a slice of plum cake or Black Forest gateau with cherries and cream. It's a small ritual, and a very German one.",
+      "de": "Sonntagnachmittag, drei Uhr. Überall in Deutschland setzen sich Familien zu Kaffee und Kuchen: Kaffee und ein Stück Pflaumenkuchen oder Schwarzwälder Kirschtorte mit Kirschen und Sahne. Ein kleines Ritual, und ein sehr deutsches."
+    },
+    {
+      "en": "Germany stretches from the North Sea and the Baltic, with their dunes and islands, down to the Alps in the south. In between lie deep forests, rolling hills and the great river Rhine, lined with vineyards and castles.",
+      "de": "Deutschland reicht von Nord- und Ostsee mit ihren Dünen und Inseln bis hinunter zu den Alpen im Süden. Dazwischen liegen tiefe Wälder, sanfte Hügel und der große Rhein, gesäumt von Weinbergen und Burgen."
+    },
+    {
+      "en": "Forests matter here. Germans love a Spaziergang, a walk in the fresh air, whatever the weather. There's even a saying: there is no bad weather, only the wrong clothes.",
+      "de": "Der Wald ist hier wichtig. Die Deutschen lieben den Spaziergang an der frischen Luft, egal bei welchem Wetter. Es gibt sogar ein Sprichwort: Es gibt kein schlechtes Wetter, nur falsche Kleidung."
+    },
+    {
+      "en": "Berlin, the capital, is a city of history and fresh ideas. For almost thirty years a wall divided it. Today you can walk through the Brandenburg Gate, where crowds celebrated when the Wall fell in 1989.",
+      "de": "Berlin, die Hauptstadt, ist eine Stadt voller Geschichte und neuer Ideen. Fast dreißig Jahre lang teilte eine Mauer die Stadt. Heute kann man durch das Brandenburger Tor gehen, wo die Menschen 1989 den Fall der Mauer feierten."
+    },
+    {
+      "en": "Every region feels different. Hamburg is a harbour city of ships and brick warehouses. Cologne has its twin-spired cathedral. And in Bavaria, near the Alps, Neuschwanstein Castle looks like something from a fairy tale.",
+      "de": "Jede Region fühlt sich anders an. Hamburg ist eine Hafenstadt mit Schiffen und Speichern aus Backstein. Köln hat seinen Dom mit den zwei Türmen. Und in Bayern, nahe den Alpen, sieht Schloss Neuschwanstein aus wie aus einem Märchen."
+    },
+    {
+      "en": "Speaking of fairy tales, the Brothers Grimm collected many of them here: Hansel and Gretel, Snow White, Little Red Riding Hood. Some were first told in villages you can still visit.",
+      "de": "Apropos Märchen: Die Brüder Grimm haben viele davon hier gesammelt, Hänsel und Gretel, Schneewittchen, Rotkäppchen. Manche wurden zuerst in Dörfern erzählt, die man heute noch besuchen kann."
+    },
+    {
+      "en": "Germans value being on time, keeping promises and a little peace and quiet. On Sundays most shops are closed, and it's a day for rest, family and long walks.",
+      "de": "Den Deutschen ist Pünktlichkeit wichtig, ein gegebenes Wort und ein bisschen Ruhe. Sonntags haben die meisten Geschäfte geschlossen, und der Tag gehört der Erholung, der Familie und langen Spaziergängen."
+    },
+    {
+      "en": "Bread is a point of pride, with hundreds of kinds, dark and seeded and hearty. Add a pretzel, a sausage from Nuremberg or Thuringia, potato salad, and in the south, soft cheese noodles called Käsespätzle.",
+      "de": "Auf ihr Brot sind die Deutschen stolz: Hunderte Sorten, dunkel, mit Körnern und kräftig. Dazu eine Brezel, eine Bratwurst aus Nürnberg oder Thüringen, Kartoffelsalat und im Süden weiche Käsespätzle."
+    },
+    {
+      "en": "This is the land of Bach, Beethoven and Brahms. Almost every city has its orchestra or opera house, and many children learn an instrument at school.",
+      "de": "Dies ist das Land von Bach, Beethoven und Brahms. Fast jede Stadt hat ihr Orchester oder Opernhaus, und viele Kinder lernen in der Schule ein Instrument."
+    },
+    {
+      "en": "In December, Christmas markets glow in town squares, with wooden stalls, gingerbread, roasted almonds and warm spiced drinks. Children open a door in their Advent calendar each morning.",
+      "de": "Im Dezember leuchten die Weihnachtsmärkte auf den Plätzen, mit Holzbuden, Lebkuchen, gebrannten Mandeln und warmen Gewürzgetränken. Jeden Morgen öffnen die Kinder ein Türchen im Adventskalender."
+    },
+    {
+      "en": "Football is the national passion, and on match days whole neighbourhoods wear their club's colours. Cycling is everywhere too, and many people ride to work or school.",
+      "de": "Fußball ist die große Leidenschaft, und an Spieltagen tragen ganze Viertel die Farben ihres Vereins. Auch Fahrrad fahren ist überall beliebt, viele radeln zur Arbeit oder zur Schule."
+    },
+    {
+      "en": "So, one more slice of cake? Then follow the Rhine north to its mouth in the Netherlands, or cross into Austria, just over the mountains. Tschüss, and see you soon!",
+      "de": "Also, noch ein Stück Kuchen? Dann folgen Sie dem Rhein nach Norden bis zu seiner Mündung in den Niederlanden, oder reisen Sie hinüber nach Österreich, gleich hinter den Bergen. Tschüss und bis bald!"
+    }
+  ],
+  "next": ["Netherlands", "Austria", "Poland"]
+}

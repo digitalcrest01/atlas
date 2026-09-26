@@ -1,0 +1,55 @@
+{
+  "country": "Haiti",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "Tap-taps rumble down the street, pickup trucks turned into buses and painted in every colour, with bright portraits, flowers and sayings across the back. In Haiti, even the traffic is a gallery.",
+      "fr": "Les tap-taps descendent la rue en grondant, des camionnettes transformées en autobus et peintes de toutes les couleurs, avec des portraits éclatants, des fleurs et des devises à l'arrière. En Haïti, même la circulation est une galerie d'art."
+    },
+    {
+      "en": "Haiti shares the island of Hispaniola with the Dominican Republic, in the Caribbean Sea. Its name comes from the Taíno word for mountainous land, and mountains rise almost everywhere you look.",
+      "fr": "Haïti partage l'île d'Hispaniola avec la République dominicaine, dans la mer des Caraïbes. Son nom vient d'un mot taïno qui veut dire terre montagneuse, et les montagnes se dressent presque partout où l'on regarde."
+    },
+    {
+      "en": "Haitians speak Haitian Creole, Kreyòl, and many also speak French. A favourite proverb says Dèyè mòn gen mòn: beyond the mountains, more mountains. It means there is always another challenge, and another horizon.",
+      "fr": "Les Haïtiens parlent le créole haïtien, le kreyòl, et beaucoup parlent aussi le français. Un proverbe très aimé dit « Dèyè mòn gen mòn » : derrière les montagnes, encore des montagnes. Il y a toujours un autre défi, et un autre horizon."
+    },
+    {
+      "en": "Haiti's history is one of great courage. In 1804, after a long struggle led by people who had been enslaved, it became the first free Black republic in the world.",
+      "fr": "L'histoire d'Haïti est une histoire de grand courage. En 1804, au terme d'une longue lutte menée par des hommes et des femmes réduits en esclavage, elle est devenue la première république noire libre du monde."
+    },
+    {
+      "en": "High on a mountain in the north stands the Citadelle Laferrière, a huge stone fortress built after independence. From its walls you can see across green valleys all the way to the sea.",
+      "fr": "Au sommet d'une montagne du Nord se dresse la Citadelle Laferrière, une immense forteresse de pierre construite après l'indépendance. Depuis ses remparts, le regard porte sur les vallées vertes jusqu'à la mer."
+    },
+    {
+      "en": "Every first of January, Haitians celebrate Independence Day by sharing soup joumou, a pumpkin soup once forbidden to enslaved people. Now it is a taste of freedom, shared with family and neighbours.",
+      "fr": "Chaque premier janvier, les Haïtiens fêtent l'indépendance en partageant la soupe joumou, une soupe au giraumon autrefois interdite aux esclaves. C'est aujourd'hui le goût de la liberté, partagé en famille et entre voisins."
+    },
+    {
+      "en": "Other favourites include griot, crispy fried pork, served with pikliz, a fiery pickled cabbage, and diri ak djon djon, rice cooked black with tiny wild mushrooms.",
+      "fr": "Parmi les autres plats préférés, il y a le griot, du porc frit bien croustillant, servi avec du pikliz, un chou mariné très pimenté, et le diri ak djon djon, un riz noirci par de petits champignons sauvages."
+    },
+    {
+      "en": "Art is everywhere. Haitian painters are known for bold, joyful colours, and in Croix-des-Bouquets, metalworkers hammer old oil drums into delicate sculptures of trees, birds and mermaids.",
+      "fr": "L'art est partout. Les peintres haïtiens sont connus pour leurs couleurs vives et joyeuses, et à Croix-des-Bouquets, les ferronniers martèlent de vieux fûts de pétrole pour en faire de délicates sculptures d'arbres, d'oiseaux et de sirènes."
+    },
+    {
+      "en": "Music never stops for long. Kompa, smooth and danceable, plays at every party, and at Carnival and Rara season, bands with drums, bamboo trumpets and horns parade through the streets.",
+      "fr": "La musique ne s'arrête jamais longtemps. Le kompa, doux et dansant, résonne à chaque fête, et au Carnaval comme pendant la saison du rara, des groupes avec tambours, trompettes de bambou et cuivres défilent dans les rues."
+    },
+    {
+      "en": "Storytelling is loved too. An elder might call out Krik? and the children answer Krak! before a tale begins, often about clever Ti Malice and his greedy friend Bouki.",
+      "fr": "On adore aussi les contes. Un ancien lance « Krik ? » et les enfants répondent « Krak ! » avant que l'histoire commence, souvent celle du rusé Ti Malice et de son ami gourmand Bouki."
+    },
+    {
+      "en": "Along the coast, there are quiet beaches and turquoise bays, and in the south, the town of Jacmel is famous for its papier-mâché carnival masks and its elegant old houses with iron balconies.",
+      "fr": "Le long de la côte, on trouve des plages tranquilles et des baies turquoise, et dans le Sud, la ville de Jacmel est célèbre pour ses masques de carnaval en papier mâché et ses élégantes vieilles maisons à balcons de fer."
+    },
+    {
+      "en": "Beyond the mountains, more mountains, and beyond those, a neighbour. Cross the island to the east and the Dominican Republic is waiting for you.",
+      "fr": "Derrière les montagnes, encore des montagnes, et derrière elles, un voisin. Traversez l'île vers l'est : la République dominicaine vous attend."
+    }
+  ],
+  "next": ["Dominican Republic", "Cuba", "Jamaica"]
+}

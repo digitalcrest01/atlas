@@ -1,0 +1,21 @@
+{
+  "country": "Namibia",
+  "languages": ["en"],
+  "segments": [
+    { "en": "It is still dark at Sossusvlei, and climbers are racing up a giant red dune to watch the first light spill across the Namib, one of the oldest deserts on Earth." },
+    { "en": "Nearby lies Deadvlei, a white clay pan dotted with dark, dead camel thorn trees that have stood there for hundreds of years, framed by orange dunes and a deep blue sky." },
+    { "en": "Along the Atlantic, the Skeleton Coast is wrapped in cool fog, and old shipwrecks rest on the sand. Inland, elephants and lions have learned to survive in the dry riverbeds." },
+    { "en": "In the north, Etosha National Park surrounds a vast salt pan that shimmers white. In the dry season, elephants, giraffes, zebras and rhinos gather at the waterholes, and floodlights let you watch them after dark." },
+    { "en": "Namibia is home to many peoples and many languages, from Oshiwambo and Otjiherero to Khoekhoegowab, with its clicking sounds, and Afrikaans and German, while English is the official language." },
+    { "en": "Herero women wear long, full dresses and a wide hat shaped like the horns of cattle, a proud symbol of their heritage and their herds." },
+    { "en": "In the northwest, Himba women coat their skin and braided hair with otjize, a mix of red ochre and butterfat that protects against the sun and is considered very beautiful." },
+    { "en": "At Twyfelfontein, ancient hunter-gatherers carved thousands of images of giraffes, rhinos and lions into the sandstone, and many of them are thousands of years old." },
+    { "en": "The capital, Windhoek, sits in the central highlands. Its sandstone Christ Church and older buildings recall the colonial era, while its busy markets are full of today's Namibian life." },
+    { "en": "Namibians love a braai, a barbecue under the stars with family and friends. In Windhoek's markets, try kapana, strips of beef grilled over the fire and dipped in spicy salt." },
+    { "en": "On the coast, Swakopmund is the place for sandboarding down dunes, and nearby Walvis Bay turns pink with flocks of flamingos." },
+    { "en": "Namibia was among the first countries to write protection of the environment into its constitution, and many rural communities help look after the wildlife on their land." },
+    { "en": "At night, far from any city, the sky is so dark and clear that the Milky Way seems close enough to touch." },
+    { "en": "Thank you for travelling with me. Head east across the Kalahari, and Botswana is waiting." }
+  ],
+  "next": ["Botswana", "South Africa", "Angola"]
+}

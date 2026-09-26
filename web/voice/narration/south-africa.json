@@ -1,0 +1,59 @@
+{
+  "country": "South Africa",
+  "languages": ["en", "zu"],
+  "segments": [
+    {
+      "en": "Sawubona! In isiZulu, this greeting means 'I see you', and it's a lovely way to begin in South Africa, a country with many official languages and many more spoken at home.",
+      "zu": "Sawubona! NgesiZulu, lokhu kubingelela kusho ukuthi 'ngiyakubona', futhi kuyindlela enhle yokuqala eNingizimu Afrika, izwe elinezilimi eziningi ezisemthethweni nezinye eziningi ezikhulunywa emakhaya."
+    },
+    {
+      "en": "At the southern tip of Africa, two oceans meet. The Atlantic brings cold water up the west coast, while the Indian Ocean warms the eastern beaches around Durban.",
+      "zu": "Esiphethweni saseningizimu ye-Afrika, kuhlangana izilwandle ezimbili. I-Atlantic iletha amanzi abandayo ogwini olusentshonalanga, kanti uLwandlekazi i-Indiya lufudumeza amabhishi asempumalanga eduze kwaseThekwini."
+    },
+    {
+      "en": "Cape Town sits beneath Table Mountain, whose flat top is often draped in a white cloud that locals call the tablecloth. Nearby, penguins waddle across the sand at Boulders Beach.",
+      "zu": "IKapa lihlezi ngaphansi kweNtaba iTafula, isiqongo sayo esiyisicaba esivame ukumbozwa ifu elimhlophe abantu bendawo abalibiza ngendwangu yetafula. Eduze, amaphengwini ahamba ecwayiza esihlabathini eBoulders Beach."
+    },
+    {
+      "en": "Inland, the land rises to the Highveld, a high grassy plateau where Johannesburg grew up around gold discovered in the 1880s. Today it's a buzzing city of music, art and business.",
+      "zu": "Maphakathi nezwe, umhlaba uyakhuphuka uye eHighveld, ithafa eliphakeme elinotshani, lapho iGoli lakhula khona ngenxa yegolide elatholakala ngeminyaka yama-1880. Namuhla liyidolobha eligcwele umculo, ubuciko nebhizinisi."
+    },
+    {
+      "en": "In the northeast, Kruger National Park is home to elephants, lions and rhinos roaming the bush, and at sunrise you might hear a lion's roar echo across the grassland.",
+      "zu": "Enyakatho-mpumalanga, iPaki kaZwelonke iKruger iyikhaya lezindlovu, amabhubesi nobhejane abazulazula ehlathini, futhi ekuphumeni kwelanga ungezwa ukubhonga kwebhubesi kunanela otshanini."
+    },
+    {
+      "en": "Ubuntu is a word you'll hear often. It's the idea that a person is a person through other people, that we're all connected, and it shapes how many South Africans treat neighbours and guests.",
+      "zu": "Ubuntu yigama ozolizwa kaningi. Kusho umqondo wokuthi umuntu ngumuntu ngabantu, ukuthi sonke sixhumene, futhi lokho kulolonga indlela abantu abaningi baseNingizimu Afrika abaphatha ngayo omakhelwane nezivakashi."
+    },
+    {
+      "en": "Food brings everyone together at a braai, a barbecue over wood coals. Boerewors sausage sizzles beside pap, a stiff maize porridge, and there's usually chakalaka, a spicy vegetable relish, on the side.",
+      "zu": "Ukudla kuhlanganisa wonke umuntu ebhulayini, lapho kosiwa inyama phezu kwamalahle. Iboerewors iyahayiza eduze kwepapa, iphalishi eliqinile lombila, futhi ngokuvamile kukhona nechakalaka, isitshulu semifino esibabayo."
+    },
+    {
+      "en": "In Durban, try bunny chow, a hollowed-out loaf of bread filled with curry, created by the city's Indian community. In the Cape, bobotie, gently spiced baked mince with an egg topping, has Cape Malay roots.",
+      "zu": "EThekwini, zama ibunny chow, isinkwa esikhishwe ingaphakathi sagcwaliswa ngekhari, esasungulwa umphakathi wamaNdiya waleli dolobha. EKapa, ibobotie, inyama egayiwe ebhakwe ngezinongo ezimnene nongqimba lweqanda phezulu, inezimpande zamaMalay aseKapa."
+    },
+    {
+      "en": "The country's past includes the long injustice of apartheid, which separated people by race. In 1994, everyone could vote together for the first time, and Nelson Mandela became president, a moment many remember with pride.",
+      "zu": "Umlando waleli zwe uhlanganisa ukungabi nabulungisa okwathatha isikhathi eside kobandlululo, olwahlukanisa abantu ngokwebala. Ngo-1994 wonke umuntu wavota ndawonye okokuqala, uNelson Mandela waba ngumongameli, isikhathi abaningi abasikhumbula ngokuziqhenya."
+    },
+    {
+      "en": "Archbishop Desmond Tutu called this land of many peoples the rainbow nation, and you can feel it in the mix of languages you might hear on a single street.",
+      "zu": "UMbhishobhi Omkhulu uDesmond Tutu wabiza leli zwe labantu abaningi ngokuthi yisizwe sothingo lwenkosazana, futhi ungakuzwa lokho ezilimini eziningi ongazizwa emgwaqweni owodwa."
+    },
+    {
+      "en": "Music is everywhere, from the rich harmonies of isicathamiya choirs like Ladysmith Black Mambazo to the dance floors of amapiano. And when the Springboks play rugby, the whole country seems to hold its breath.",
+      "zu": "Umculo ukuyo yonke indawo, kusukela ezingomeni ezihlabelelwa ngokuzwana ngamakhwaya esicathamiya afana neLadysmith Black Mambazo kuya ezindaweni zokudansa ze-amapiano. Futhi uma amaSpringboks edlala umbhoxo, kubonakala sengathi izwe lonke libambe umoya."
+    },
+    {
+      "en": "In KwaZulu-Natal, rolling green hills are home to the Zulu people, famous for their beadwork, where colours and patterns can carry messages of love and belonging.",
+      "zu": "KwaZulu-Natali, amagquma aluhlaza agingqikayo ayikhaya lamaZulu, adume ngobuhlalu bawo, lapho imibala namaphethini angathwala imiyalezo yothando nokuba ngowomndeni."
+    },
+    {
+      "en": "From the Drakensberg mountains to the vineyards of the Cape, there's always another road to follow. To the north, across the Limpopo River, Zimbabwe is waiting for you.",
+      "zu": "Kusukela ezintabeni zoKhahlamba kuya ezivinini zaseKapa, kuhlale kukhona omunye umgwaqo ongawulandela. Enyakatho, ngaphesheya komfula iLimpopo, iZimbabwe iyakulinda."
+    }
+  ],
+  "next": ["Zimbabwe", "Botswana", "Lesotho"]
+}

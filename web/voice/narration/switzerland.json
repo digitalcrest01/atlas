@@ -1,0 +1,85 @@
+{
+  "country": "Switzerland",
+  "languages": ["en", "de", "fr", "it"],
+  "segments": [
+    {
+      "en": "Grüezi, bonjour, buongiorno, allegra! On a single train journey through Switzerland you might hear all four greetings, because the country has four national languages: German, French, Italian and Romansh.",
+      "de": "Grüezi, bonjour, buongiorno, allegra! Auf einer einzigen Zugfahrt durch die Schweiz hört man vielleicht alle vier Grüsse, denn das Land hat vier Landessprachen: Deutsch, Französisch, Italienisch und Rätoromanisch.",
+      "fr": "Grüezi, bonjour, buongiorno, allegra ! Au cours d'un seul trajet en train à travers la Suisse, on peut entendre ces quatre salutations, car le pays compte quatre langues nationales : l'allemand, le français, l'italien et le romanche.",
+      "it": "Grüezi, bonjour, buongiorno, allegra! In un solo viaggio in treno attraverso la Svizzera si possono sentire tutti e quattro questi saluti, perché il Paese ha quattro lingue nazionali: tedesco, francese, italiano e romancio."
+    },
+    {
+      "en": "The Alps cover much of the country, with peaks like the Matterhorn, whose sharp pyramid towers above Zermatt. Between the mountains lie deep valleys, thundering waterfalls and clear blue lakes.",
+      "de": "Die Alpen bedecken einen grossen Teil des Landes, mit Gipfeln wie dem Matterhorn, dessen spitze Pyramide über Zermatt thront. Dazwischen liegen tiefe Täler, tosende Wasserfälle und klare blaue Seen.",
+      "fr": "Les Alpes couvrent une grande partie du pays, avec des sommets comme le Cervin, dont la pyramide pointue domine Zermatt. Entre les montagnes s'étendent des vallées profondes, des cascades grondantes et des lacs d'un bleu limpide.",
+      "it": "Le Alpi coprono gran parte del Paese, con vette come il Cervino, la cui piramide aguzza svetta sopra Zermatt. Tra le montagne si aprono valli profonde, cascate fragorose e laghi di un azzurro limpido."
+    },
+    {
+      "en": "Swiss trains are famous for running on time, climbing mountains through spiral tunnels and over soaring viaducts. On winding roads, the yellow postbus sounds its cheerful three-note horn.",
+      "de": "Schweizer Züge sind bekannt für ihre Pünktlichkeit. Sie erklimmen Berge durch Kehrtunnel und über schwindelerregende Viadukte. Auf kurvigen Passstrassen ertönt das fröhliche Dreiklanghorn des gelben Postautos.",
+      "fr": "Les trains suisses sont célèbres pour leur ponctualité, et ils gravissent les montagnes par des tunnels hélicoïdaux et des viaducs vertigineux. Sur les routes sinueuses, le car postal jaune fait retentir son joyeux klaxon à trois tons.",
+      "it": "I treni svizzeri sono famosi per la loro puntualità e salgono sulle montagne attraverso gallerie elicoidali e viadotti vertiginosi. Sulle strade tortuose, l'autopostale giallo fa risuonare il suo allegro clacson a tre note."
+    },
+    {
+      "en": "The Swiss vote often, several times a year, on questions big and small. In a couple of places, citizens still gather in the town square once a year and vote by raising their hands.",
+      "de": "Die Schweizerinnen und Schweizer stimmen oft ab, mehrmals im Jahr, über grosse und kleine Fragen. An einigen wenigen Orten versammelt sich das Volk noch einmal im Jahr auf dem Dorfplatz und stimmt mit erhobener Hand ab.",
+      "fr": "Les Suisses votent souvent, plusieurs fois par an, sur des questions petites et grandes. Dans quelques endroits, les citoyens se réunissent encore une fois par an sur la place et votent à main levée.",
+      "it": "Gli svizzeri votano spesso, più volte all'anno, su questioni grandi e piccole. In un paio di luoghi i cittadini si riuniscono ancora una volta all'anno in piazza e votano per alzata di mano."
+    },
+    {
+      "en": "Food here is warming and hearty. Friends share fondue, dipping bread into a pot of melted cheese, or raclette, where cheese is melted and scraped over potatoes. Drop your bread in the fondue, and tradition says you owe the table a small forfeit!",
+      "de": "Das Essen hier wärmt und macht satt. Freunde teilen ein Fondue und tunken Brot in geschmolzenen Käse, oder geniessen Raclette, bei dem der Käse geschmolzen und über Kartoffeln geschabt wird. Wer sein Brot im Fondue verliert, muss der Tradition nach ein kleines Pfand zahlen!",
+      "fr": "Ici, la cuisine réchauffe et régale. Entre amis, on partage une fondue en trempant son pain dans le fromage fondu, ou une raclette, où le fromage fondu est raclé sur des pommes de terre. Si votre pain tombe dans le caquelon, la tradition veut que vous payiez un petit gage !",
+      "it": "Qui la cucina scalda e sazia. Tra amici si condivide la fonduta, intingendo il pane nel formaggio fuso, oppure la raclette, dove il formaggio fuso viene raschiato sulle patate. Se il pane vi cade nella fonduta, la tradizione vuole che paghiate un piccolo pegno!"
+    },
+    {
+      "en": "Swiss chocolatiers helped invent milk chocolate, and making chocolate here is still treated as a fine craft.",
+      "de": "Schweizer Chocolatiers haben die Milchschokolade mit erfunden, und Schokolade herzustellen gilt hier noch immer als feines Handwerk.",
+      "fr": "Des chocolatiers suisses ont contribué à inventer le chocolat au lait, et la fabrication du chocolat reste ici un véritable art.",
+      "it": "I cioccolatieri svizzeri hanno contribuito a inventare il cioccolato al latte, e qui produrre cioccolato è ancora considerato un'arte raffinata."
+    },
+    {
+      "en": "Geneva, on its crescent-shaped lake, is home to the Red Cross and many international organisations. Zurich bustles along the Limmat river, and Bern, the federal city, has long arcaded streets and a famous clock tower.",
+      "de": "Genf, am halbmondförmigen See, ist Sitz des Roten Kreuzes und vieler internationaler Organisationen. Zürich pulsiert an der Limmat, und die Bundesstadt Bern hat lange Laubengänge und einen berühmten Zytglogge-Turm.",
+      "fr": "Genève, au bord de son lac en forme de croissant, accueille la Croix-Rouge et de nombreuses organisations internationales. Zurich s'anime le long de la Limmat, et Berne, la ville fédérale, a de longues rues à arcades et une célèbre tour de l'horloge.",
+      "it": "Ginevra, sul suo lago a forma di mezzaluna, ospita la Croce Rossa e molte organizzazioni internazionali. Zurigo è vivace lungo la Limmat, e Berna, la città federale, ha lunghe vie porticate e una famosa torre dell'orologio."
+    },
+    {
+      "en": "South of the Alps, in Ticino, palm trees grow beside lakes like Lugano, and life feels Italian, with risotto, chestnuts in autumn and sunny piazzas.",
+      "de": "Südlich der Alpen, im Tessin, wachsen Palmen an Seen wie dem Luganersee, und das Leben fühlt sich italienisch an, mit Risotto, Marroni im Herbst und sonnigen Piazzas.",
+      "fr": "Au sud des Alpes, au Tessin, des palmiers poussent au bord de lacs comme celui de Lugano, et la vie a un air d'Italie, avec du risotto, des châtaignes en automne et des piazzas ensoleillées.",
+      "it": "A sud delle Alpi, in Ticino, le palme crescono sulle rive di laghi come il Ceresio, e la vita ha un sapore italiano, con il risotto, le castagne in autunno e le piazze assolate."
+    },
+    {
+      "en": "Swiss watchmaking grew up in the Jura mountains, where families crafted tiny gears through the long winters. Their watches are still admired all over the world.",
+      "de": "Die Schweizer Uhrmacherei entstand im Jura, wo Familien in den langen Wintern winzige Zahnräder fertigten. Ihre Uhren werden noch heute auf der ganzen Welt bewundert.",
+      "fr": "L'horlogerie suisse est née dans les montagnes du Jura, où des familles fabriquaient de minuscules rouages pendant les longs hivers. Leurs montres sont encore admirées dans le monde entier.",
+      "it": "L'orologeria svizzera è nata tra le montagne del Giura, dove le famiglie costruivano minuscoli ingranaggi durante i lunghi inverni. I loro orologi sono ancora ammirati in tutto il mondo."
+    },
+    {
+      "en": "In autumn, cows crowned with flowers and wearing huge bells come down from the mountain pastures in colourful processions. You might also hear the deep call of an alphorn or the clear notes of yodelling.",
+      "de": "Im Herbst ziehen Kühe mit Blumenkränzen und grossen Glocken in farbenfrohen Alpabzügen von den Bergweiden herunter. Vielleicht hört man dazu den tiefen Ruf eines Alphorns oder klaren Jodelgesang.",
+      "fr": "En automne, des vaches couronnées de fleurs et portant d'énormes cloches descendent des alpages lors de joyeuses désalpes. On entend parfois aussi l'appel grave d'un cor des Alpes ou les notes claires d'un yodel.",
+      "it": "In autunno le mucche, incoronate di fiori e con enormi campanacci, scendono dagli alpeggi in variopinte processioni. Si può sentire anche il richiamo profondo di un corno delle Alpi o le note limpide dello jodel."
+    },
+    {
+      "en": "Friends often greet each other with three kisses on the cheeks, while new acquaintances get a firm handshake. And on Sundays, keep things quiet, because many people rest.",
+      "de": "Freunde begrüssen sich oft mit drei Küsschen auf die Wangen, neue Bekannte mit einem festen Händedruck. Und am Sonntag ist Ruhe angesagt, denn viele Menschen erholen sich.",
+      "fr": "Entre amis, on se fait souvent trois bises, tandis qu'une nouvelle connaissance reçoit une poignée de main franche. Et le dimanche, on reste discret, car beaucoup de gens se reposent.",
+      "it": "Tra amici ci si saluta spesso con tre baci sulle guance, mentre alle nuove conoscenze si dà una stretta di mano decisa. E la domenica si fa silenzio, perché molti si riposano."
+    },
+    {
+      "en": "On the first of August, the Swiss national day, bonfires glow on the hilltops and paper lanterns light up the summer night.",
+      "de": "Am ersten August, dem Nationalfeiertag, leuchten Höhenfeuer auf den Hügeln, und Lampions erhellen die Sommernacht.",
+      "fr": "Le premier août, jour de la fête nationale, des feux brillent sur les collines et des lampions illuminent la nuit d'été.",
+      "it": "Il primo agosto, festa nazionale svizzera, i falò brillano sulle colline e le lanterne di carta illuminano la notte d'estate."
+    },
+    {
+      "en": "From glacier to lakeshore, Switzerland is small but full of surprises. Just to the east, across the young Rhine, tiny Liechtenstein is waiting for you.",
+      "de": "Vom Gletscher bis zum Seeufer ist die Schweiz klein, aber voller Überraschungen. Gleich im Osten, jenseits des jungen Rheins, wartet das kleine Liechtenstein auf dich.",
+      "fr": "Du glacier au bord du lac, la Suisse est petite mais pleine de surprises. Juste à l'est, de l'autre côté du jeune Rhin, le petit Liechtenstein vous attend.",
+      "it": "Dal ghiacciaio alla riva del lago, la Svizzera è piccola ma piena di sorprese. Subito a est, al di là del giovane Reno, vi aspetta il piccolo Liechtenstein."
+    }
+  ],
+  "next": ["Liechtenstein", "Austria", "Italy"]
+}

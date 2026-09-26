@@ -1,0 +1,62 @@
+{
+  "country": "Kyrgyzstan",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "segments": [
+    {
+      "en": "High on a summer pasture, smoke curls from the roof of a yurt, horses graze on a hillside full of wildflowers, and a child runs out to offer you a bowl of fresh cream. This is the jailoo, and this is Kyrgyzstan.",
+      "ru": "Высоко на летнем пастбище над крышей юрты вьётся дымок, на склоне, усыпанном полевыми цветами, пасутся лошади, а ребёнок выбегает навстречу с пиалой свежих сливок. Это джайлоо, и это Кыргызстан."
+    },
+    {
+      "en": "Mountains are everywhere here. The mighty Tian Shan ranges cover most of the land, with snowy peaks, glaciers and deep green valleys, and the Pamir mountains rise along the southern edge.",
+      "ru": "Горы здесь повсюду. Могучие хребты Тянь-Шаня покрывают большую часть страны: снежные вершины, ледники и глубокие зелёные долины, а вдоль южной границы поднимается Памир."
+    },
+    {
+      "en": "In the middle of the mountains lies Issyk-Kul, a vast, clear blue lake. Its name means warm lake, because even in the coldest winters it does not freeze over.",
+      "ru": "Посреди гор раскинулся Иссык-Куль, огромное прозрачное синее озеро. Его название означает тёплое озеро, потому что даже в самые холодные зимы оно не замерзает."
+    },
+    {
+      "en": "For generations, Kyrgyz families have moved their sheep, cattle and horses up to high pastures each summer, living in yurts. The round wooden frame at the top of the yurt, called the tunduk, even appears on the national flag.",
+      "ru": "Из поколения в поколение кыргызские семьи каждое лето перегоняют овец, коров и лошадей на высокогорные пастбища и живут в юртах. Круглое деревянное навершие юрты, тундук, изображено даже на государственном флаге."
+    },
+    {
+      "en": "The Kyrgyz people treasure the Epic of Manas, the story of a great hero and his people. It is enormously long, and special storytellers called manaschi recite it from memory, their voices rising and falling like music.",
+      "ru": "Кыргызы бережно хранят эпос Манас, сказание о великом богатыре и его народе. Он невероятно длинный, и особые сказители, манасчи, читают его наизусть, а их голоса то взлетают, то затихают, словно музыка."
+    },
+    {
+      "en": "Horses are part of almost every celebration. In kok-boru, two teams of riders wrestle for a heavy goat carcass and try to throw it into a goal, while crowds cheer from the hillsides.",
+      "ru": "Лошади участвуют почти в каждом празднике. В кок-бору две команды всадников борются за тяжёлую тушу козла и стараются забросить её в ворота, а зрители подбадривают их со склонов."
+    },
+    {
+      "en": "Look for the kalpak, a tall white felt hat with black trim worn by many men. Felt is everywhere, in fact: shyrdak carpets are stitched from bright pieces of felt in swirling patterns like ram's horns.",
+      "ru": "Обратите внимание на калпак, высокую белую войлочную шапку с чёрной отделкой, которую носят многие мужчины. Войлок здесь вообще повсюду: ковры-шырдаки сшивают из ярких кусочков войлока с узорами, похожими на завитки бараньих рогов."
+    },
+    {
+      "en": "Bishkek, the capital, is a green city of wide avenues and shady parks, with snowy mountains on the horizon. In the south, Osh is one of the oldest cities in Central Asia, with a bustling bazaar that has welcomed Silk Road traders for centuries.",
+      "ru": "Бишкек, столица, это зелёный город с широкими проспектами и тенистыми парками, а на горизонте видны заснеженные горы. На юге находится Ош, один из древнейших городов Центральной Азии, с шумным базаром, который веками встречал торговцев Шёлкового пути."
+    },
+    {
+      "en": "Kyrgyz and Russian are both spoken widely. Guests are welcomed with round loaves of bread, boorsok, little puffs of fried dough, and endless cups of tea.",
+      "ru": "Здесь широко говорят и по-кыргызски, и по-русски. Гостей встречают круглыми лепёшками, боорсоками, маленькими пышками из жареного теста, и бесконечными пиалами чая."
+    },
+    {
+      "en": "The main meal might be beshbarmak, noodles and meat eaten from a shared platter, or plov, rice slowly cooked with carrots and lamb. In summer, some families drink kymyz, fermented mare's milk, for good health.",
+      "ru": "На обед может быть бешбармак, лапша с мясом из общего блюда, или плов, рис, томлённый с морковью и бараниной. Летом некоторые семьи пьют для здоровья кымыз, перебродившее кобылье молоко."
+    },
+    {
+      "en": "Music is played on the komuz, a small three-stringed lute. A skilled player can make it sound like galloping horses, rushing rivers, or even a conversation between two people.",
+      "ru": "Музыку играют на комузе, небольшом трёхструнном инструменте. Опытный музыкант может передать на нём топот скачущих коней, шум горных рек и даже разговор двух людей."
+    },
+    {
+      "en": "Kosh, goodbye, and safe travels! Ride north over the mountains to the wide open steppe, where Kazakhstan is waiting.",
+      "ru": "Кош, до свидания, и счастливого пути! Отправляйтесь на север через горы, в широкую степь, где вас ждёт Казахстан."
+    }
+  ],
+  "next": [
+    "Kazakhstan",
+    "Tajikistan",
+    "Uzbekistan"
+  ]
+}

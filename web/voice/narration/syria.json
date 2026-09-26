@@ -1,0 +1,59 @@
+{
+  "country": "Syria",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "In the covered souks of old Damascus, the scent of jasmine and cardamom coffee drifts between the stalls. Damascus is often called one of the oldest continuously inhabited cities in the world.",
+      "ar": "في الأسواق المسقوفة لدمشق القديمة، يتسلّل عبق الياسمين والقهوة بالهيل بين الدكاكين. وكثيرًا ما تُوصف دمشق بأنها من أقدم المدن المأهولة باستمرار في العالم."
+    },
+    {
+      "en": "Syria stretches from a short Mediterranean coast, across green mountains and fertile plains, to the Euphrates River and the wide open desert of the east.",
+      "ar": "تمتد سوريا من ساحل قصير على البحر المتوسط، عبر جبال خضراء وسهول خصبة، حتى نهر الفرات والبادية الواسعة في الشرق."
+    },
+    {
+      "en": "At the heart of Damascus stands the Umayyad Mosque, built about thirteen centuries ago. Its courtyard of polished marble is a place where families gather in the cool of the evening.",
+      "ar": "في قلب دمشق يقوم الجامع الأموي الذي شُيّد قبل نحو ثلاثة عشر قرنًا. وصحنه المرصوف بالرخام المصقول مكان تجتمع فيه العائلات في نسمات المساء."
+    },
+    {
+      "en": "Aleppo, in the north, is famous for its mighty citadel on a hill and for its soap, made from olive oil and laurel oil for centuries.",
+      "ar": "أما حلب في الشمال فتشتهر بقلعتها الشامخة على التلّ، وبصابونها المصنوع من زيت الزيتون وزيت الغار منذ قرون."
+    },
+    {
+      "en": "Out in the desert, the ancient city of Palmyra was once a rich oasis on the caravan routes, where long rows of columns rose from the sand and glowed gold at sunset.",
+      "ar": "وفي قلب البادية كانت مدينة تدمر القديمة واحة غنية على طرق القوافل، تنتصب فيها صفوف طويلة من الأعمدة فوق الرمال وتتوهّج ذهبًا عند الغروب."
+    },
+    {
+      "en": "Syrian cooking is loved across the region. Try kibbeh, crisp shells of bulgur wheat filled with spiced meat, or a mezze spread of hummus, muhammara and tabbouleh with warm bread.",
+      "ar": "المطبخ السوري محبوب في المنطقة كلها. جرّب الكبّة، وهي أقراص مقرمشة من البرغل محشوّة باللحم المتبّل، أو سفرة مازة من الحمّص والمحمّرة والتبّولة مع الخبز الساخن."
+    },
+    {
+      "en": "Sweets are an art. Layers of baklava glisten with syrup, and in Damascus, booza ice cream is stretched and pounded with wooden pestles, then rolled in crushed pistachios.",
+      "ar": "الحلويات هنا فنّ قائم بذاته. طبقات البقلاوة تلمع بالقطر، وفي دمشق تُمطّ البوظة وتُدقّ بمدقّات خشبية ثم تُغلّف بالفستق الحلبي المطحون."
+    },
+    {
+      "en": "Hospitality is a point of honour. Guests are greeted with 'Ahlan wa sahlan' and offered coffee, and it's polite to accept at least one cup.",
+      "ar": "الكرم مسألة شرف. يُستقبل الضيف بعبارة «أهلًا وسهلًا» وتُقدَّم له القهوة، ومن اللياقة أن يقبل فنجانًا واحدًا على الأقل."
+    },
+    {
+      "en": "In the old cafés, the hakawati, a traditional storyteller, once held audiences spellbound with epic tales. Damascus craftsmen are also known for brocade silk and wooden boxes inlaid with mother-of-pearl.",
+      "ar": "في المقاهي القديمة كان الحكواتي يأسر جمهوره بالسِّيَر والحكايات الطويلة. ويشتهر حرفيّو دمشق أيضًا بالبروكار الحريري والعلب الخشبية المطعّمة بالصدف."
+    },
+    {
+      "en": "Aleppo is renowned for its music, especially the qudud and muwashshahat, graceful traditional songs passed down through generations.",
+      "ar": "وحلب ذائعة الصيت بموسيقاها، ولا سيما القدود والموشّحات، وهي أغانٍ تراثية رشيقة تتوارثها الأجيال."
+    },
+    {
+      "en": "Arabic is the main language, and in a few mountain villages near Damascus, such as Maaloula, people still speak a form of Aramaic, a language from ancient times.",
+      "ar": "العربية هي اللغة الرئيسية، وفي بضع قرى جبلية قرب دمشق مثل معلولا ما زال الناس يتحدثون بلهجة من الآرامية، تلك اللغة الضاربة في القدم."
+    },
+    {
+      "en": "On a hilltop in the west stands Krak des Chevaliers, a vast medieval castle that seems to keep watch over the green valleys below.",
+      "ar": "وعلى قمة تلّ في الغرب تقوم قلعة الحصن، قلعة ضخمة من العصور الوسطى تبدو كأنها تحرس الوديان الخضراء من تحتها."
+    },
+    {
+      "en": "People here love to say that a guest is a gift from God. To the west, across the mountains, Lebanon is waiting for you.",
+      "ar": "يحبّ الناس هنا أن يقولوا إن الضيف ضيف الله. وإلى الغرب، خلف الجبال، ينتظرك لبنان."
+    }
+  ],
+  "next": ["Lebanon", "Jordan", "Turkey"]
+}

@@ -1,0 +1,62 @@
+{
+  "country": "Saudi Arabia",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "segments": [
+    {
+      "en": "As the sun sinks and the heat softens, families drive out to the edge of the desert. Carpets are rolled out on the sand, a flask of coffee is opened, and children race up the dunes as the sky turns orange and pink.",
+      "ar": "مع غروب الشمس وانكسار حرّ النهار، تخرج العائلات بسياراتها إلى أطراف الصحراء. تُفرش البُسط على الرمل، وتُفتح دلّة القهوة، ويتسابق الأطفال صعودًا على الكثبان بينما تتلوّن السماء بالبرتقالي والوردي."
+    },
+    {
+      "en": "This is Saudi Arabia, which covers most of the Arabian Peninsula. It stretches from the Red Sea in the west to the Gulf in the east, and much of it is desert, including the Empty Quarter, one of the largest seas of sand on Earth.",
+      "ar": "هذه المملكة العربية السعودية، التي تشغل معظم شبه الجزيرة العربية. تمتد من البحر الأحمر غربًا إلى الخليج العربي شرقًا، وأغلب أراضيها صحراء، ومنها الربع الخالي، أحد أكبر بحار الرمال على وجه الأرض."
+    },
+    {
+      "en": "For Muslims around the world, this land is especially sacred. Mecca, where the Prophet Muhammad was born, and Medina are the two holiest cities in Islam, and every year millions of pilgrims come for the Hajj, dressed in simple white.",
+      "ar": "لهذه الأرض مكانة خاصة عند المسلمين في أنحاء العالم، ففيها مكة المكرمة، مولد النبي محمد صلى الله عليه وسلم، والمدينة المنورة، أقدس مدينتين في الإسلام. ويأتي كل عام ملايين الحجاج لأداء فريضة الحج بلباس أبيض بسيط."
+    },
+    {
+      "en": "Five times a day, the call to prayer rises over towns and cities, and daily life pauses around it. During Ramadan, the month of fasting, evenings come alive as families gather to break the fast together.",
+      "ar": "خمس مرات في اليوم يرتفع الأذان فوق المدن والقرى، وتنتظم الحياة اليومية حوله. وفي رمضان، شهر الصيام، تدبّ الحياة في الأمسيات حين تجتمع العائلات على مائدة الإفطار."
+    },
+    {
+      "en": "Hospitality runs deep. Guests are greeted with Arabic coffee, light and golden, spiced with cardamom and poured into tiny cups, and always served with dates. Accept with your right hand, and when you've had enough, gently shake the cup.",
+      "ar": "الكرم متأصّل هنا. يُستقبل الضيف بالقهوة العربية الشقراء المنكّهة بالهيل في فناجين صغيرة، ومعها التمر دائمًا. تناول الفنجان بيدك اليمنى، وإذا اكتفيت فهزّه هزّة خفيفة."
+    },
+    {
+      "en": "For a feast, there's kabsa, fragrant rice piled high with chicken or lamb, spiced with cloves, cardamom and dried lime, and shared from one large platter.",
+      "ar": "وفي الولائم تحضر الكبسة، أرز فوّاح تعلوه قطع الدجاج أو اللحم، متبّل بالقرنفل والهيل واللومي، يتشاركه الجميع من صحن واحد كبير."
+    },
+    {
+      "en": "Near the capital Riyadh, the land suddenly ends at a towering cliff known as the Edge of the World, where you can gaze across a vast plain that was once an ancient seabed.",
+      "ar": "وبالقرب من العاصمة الرياض تنتهي الأرض فجأة عند جرف شاهق يُعرف بحافة العالم، تطلّ منه على سهل فسيح كان يومًا قاع بحر قديم."
+    },
+    {
+      "en": "In the northwest, around AlUla, golden sandstone rocks have been carved by wind into strange shapes, and at Hegra, the Nabataeans cut grand tombs straight into the cliffs about two thousand years ago.",
+      "ar": "وفي الشمال الغربي، حول العُلا، نحتت الرياح الصخور الرملية الذهبية في أشكال عجيبة، وفي الحِجر نحت الأنباط مقابر عظيمة في قلب الجبال قبل نحو ألفي عام."
+    },
+    {
+      "en": "Down in the southwest, the Asir mountains are cool and green, and women there have long painted the insides of their homes with bright geometric patterns, an art called al-qatt al-asiri.",
+      "ar": "وفي الجنوب الغربي، جبال عسير الباردة الخضراء، حيث اعتادت النساء منذ زمن طويل تزيين جدران البيوت من الداخل بنقوش هندسية زاهية، في فنّ يُعرف بالقط العسيري."
+    },
+    {
+      "en": "On the Red Sea coast, the old quarter of Jeddah, Al-Balad, has tall houses built of coral stone, with carved wooden balconies that catch the sea breeze.",
+      "ar": "وعلى ساحل البحر الأحمر، تضمّ جدة التاريخية، البلد، بيوتًا عالية مبنية من الحجر المرجاني، برواشين خشبية منقوشة تستقبل نسيم البحر."
+    },
+    {
+      "en": "At celebrations, watch for the ardah, a traditional dance where rows of men sway with swords to the beat of drums and poetry. Camels and falcons still hold a special place in people's hearts.",
+      "ar": "وفي الاحتفالات، شاهد العرضة، الرقصة التقليدية التي تتمايل فيها صفوف الرجال بالسيوف على وقع الطبول وأبيات الشعر. وما زال للإبل والصقور مكانة خاصة في القلوب."
+    },
+    {
+      "en": "Shukran for joining us under the desert stars. Head north past the tombs of Hegra, and in Jordan you'll find Petra, another city the Nabataeans carved from rock.",
+      "ar": "شكرًا لأنك شاركتنا السهر تحت نجوم الصحراء. اتجه شمالًا متجاوزًا مقابر الحِجر، وفي الأردن ستجد البتراء، مدينة أخرى نحتها الأنباط في الصخر."
+    }
+  ],
+  "next": [
+    "Jordan",
+    "Yemen",
+    "Oman"
+  ]
+}

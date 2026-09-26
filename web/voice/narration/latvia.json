@@ -1,0 +1,59 @@
+{
+  "country": "Latvia",
+  "languages": ["en", "lv"],
+  "segments": [
+    {
+      "en": "Imagine thousands of singers in folk costume, standing together on a huge open-air stage under the summer sky, their voices rising as one. That is the Latvian Song and Dance Festival, and to Latvians it feels like the heartbeat of the nation.",
+      "lv": "Iedomājies tūkstošiem dziedātāju tautastērpos, kas zem vasaras debesīm stāv kopā uz milzīgas brīvdabas estrādes un dzied vienā balsī. Tie ir Latvijas Dziesmu un deju svētki, un latviešiem tie ir kā visas tautas sirdspuksti."
+    },
+    {
+      "en": "Latvia lies on the eastern shore of the Baltic Sea, between Estonia and Lithuania. It is a gentle land of forests, rivers, lakes and a long, sandy coastline with pine trees right down to the beach.",
+      "lv": "Latvija atrodas Baltijas jūras austrumu krastā, starp Igauniju un Lietuvu. Tā ir maiga zeme ar mežiem, upēm, ezeriem un garu smilšainu krastu, kur priedes aug līdz pašai pludmalei."
+    },
+    {
+      "en": "Singing runs deep here. Latvians have collected hundreds of thousands of dainas, short folk songs about nature, work, love and the turning of the seasons. Many families know dozens by heart.",
+      "lv": "Dziesmai šeit ir dziļas saknes. Latvieši ir savākuši simtiem tūkstošu dainu, īsu tautasdziesmu par dabu, darbu, mīlestību un gadalaiku ritējumu. Daudzās ģimenēs tās zina no galvas desmitiem."
+    },
+    {
+      "en": "Let's follow the year. In spring, storks return to their nests on farm roofs and chimneys, and people head into the countryside to collect birch sap, a slightly sweet, refreshing drink straight from the tree.",
+      "lv": "Sekosim gada ritumam. Pavasarī stārķi atgriežas savās ligzdās uz lauku māju jumtiem un skursteņiem, bet cilvēki dodas uz laukiem tecināt bērzu sulas, viegli saldu un atsvaidzinošu dzērienu tieši no koka."
+    },
+    {
+      "en": "Summer peaks with Jāņi, the midsummer festival. On the shortest night of the year people wear crowns of oak leaves and flowers, sing around bonfires until sunrise, and eat Jāņi cheese flavoured with caraway seeds.",
+      "lv": "Vasaras kulminācija ir Jāņi. Īsākajā gada naktī cilvēki liek galvā ozollapu un ziedu vainagus, dzied pie ugunskuriem līdz saullēktam un ēd Jāņu sieru ar ķimenēm."
+    },
+    {
+      "en": "In autumn, the forests call. Latvians love to go mushroom and berry picking, and many have a secret spot they never share, not even with their best friends.",
+      "lv": "Rudenī sauc meži. Latvieši ļoti mīl sēņot un ogot, un daudziem ir sava slepenā vieta, ko viņi neatklāj nevienam, pat labākajiem draugiem."
+    },
+    {
+      "en": "Winter brings snow, skating and cosy evenings in the pirts, a traditional steam sauna. Bathers are gently swished with bundles of birch or oak leaves, then cool off in the snow or a cold lake.",
+      "lv": "Ziema nes sniegu, slidošanu un omulīgus vakarus pirtī. Pirtī cilvēkus viegli noper ar bērza vai ozola slotām, un pēc tam viņi atveldzējas sniegā vai aukstā ezerā."
+    },
+    {
+      "en": "Riga, the capital, sits where the Daugava River meets the sea. Its old town has cobbled streets and church spires, and its newer streets are full of Art Nouveau buildings decorated with faces, flowers and mythical creatures.",
+      "lv": "Rīga, galvaspilsēta, atrodas tur, kur Daugava ieplūst jūrā. Vecrīgā ir bruģētas ielas un baznīcu torņi, bet jaunākajās ielās paceļas jūgendstila nami, kas rotāti ar sejām, ziediem un teiksmainām būtnēm."
+    },
+    {
+      "en": "Don't miss Riga Central Market, housed in giant hangars that were once built for airships. Inside you'll find smoked fish, honey, pickles and fresh vegetables piled high.",
+      "lv": "Neaizmirsti apmeklēt Rīgas Centrāltirgu, kas izvietots milzīgos angāros, kuri reiz celti dirižabļiem. Tur atradīsi kūpinātas zivis, medu, marinējumus un kaudzēm svaigu dārzeņu."
+    },
+    {
+      "en": "At the table, dark rye bread is almost sacred, and grey peas with bacon are a winter favourite. For something sweet, try rye bread dessert, layered with cream and berries.",
+      "lv": "Pie galda tumšā rudzu maize ir gandrīz svēta, un pelēkie zirņi ar speķi ir iecienīts ziemas ēdiens. Kaut kam saldam pamēģini rupjmaizes kārtojumu ar putukrējumu un ogām."
+    },
+    {
+      "en": "Along the coast, lucky walkers sometimes find pieces of amber washed up after a storm, golden drops of ancient tree resin that have been treasured here for thousands of years.",
+      "lv": "Jūras krastā laimīgi gājēji pēc vētras dažreiz atrod izskalotus dzintara gabaliņus, zeltainas senu koku sveķu lāses, kas šeit tiek lolotas jau tūkstošiem gadu."
+    },
+    {
+      "en": "Latvian is one of only two living Baltic languages, and people are proud of it. Say labdien for good day and paldies for thank you, and you'll see faces light up.",
+      "lv": "Latviešu valoda ir viena no tikai divām dzīvajām baltu valodām, un cilvēki ar to lepojas. Saki labdien un paldies, un redzēsi, kā sejas iemirdzas."
+    },
+    {
+      "en": "Uz redzēšanos, until we meet again! Travel just south across the border, where Latvia's Baltic cousin Lithuania is waiting.",
+      "lv": "Uz redzēšanos! Dodies mazliet uz dienvidiem pāri robežai, kur tevi gaida Latvijas baltu māsa Lietuva."
+    }
+  ],
+  "next": ["Lithuania", "Estonia", "Belarus"]
+}

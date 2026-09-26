@@ -1,0 +1,59 @@
+{
+  "country": "Estonia",
+  "languages": ["en", "et"],
+  "segments": [
+    {
+      "en": "Imagine tens of thousands of voices singing together under the open sky, a choir so big it fills a whole hillside. That's the Song Festival in Tallinn, and for Estonians it's one of the most moving moments there is.",
+      "et": "Kujuta ette kümneid tuhandeid hääli, mis laulavad koos lageda taeva all, koori, mis on nii suur, et täidab terve nõlva. See on laulupidu Tallinnas ning eestlaste jaoks üks kõige liigutavamaid hetki üldse."
+    },
+    {
+      "en": "Singing is woven into Estonia's story. In the late nineteen eighties, huge crowds gathered to sing their own songs peacefully, and that Singing Revolution helped the country win back its independence.",
+      "et": "Laul on Eesti loo lahutamatu osa. Kaheksakümnendate lõpus kogunesid suured rahvahulgad rahumeelselt oma laule laulma, ja see laulev revolutsioon aitas riigil iseseisvuse tagasi võita."
+    },
+    {
+      "en": "Tallinn, the capital, has one of the best preserved medieval old towns in Europe, with cobbled lanes, red roofs and tall stone towers. Climb up Toompea hill for a view across the rooftops to the sea.",
+      "et": "Pealinnas Tallinnas on üks Euroopa paremini säilinud keskaegseid vanalinnu, kus on munakivitänavad, punased katused ja kõrged kivitornid. Roni Toompeale ja vaata üle katuste mere poole."
+    },
+    {
+      "en": "Yet Estonia is also one of the most digital countries in the world. People can vote online, sign documents with an ID card and handle almost any official task from a laptop at home.",
+      "et": "Samas on Eesti ka üks maailma kõige digitaalsemaid riike. Inimesed saavad hääletada internetis, allkirjastada dokumente ID-kaardiga ja ajada peaaegu kõik ametlikud asjad korda kodus sülearvutist."
+    },
+    {
+      "en": "Step outside the towns and you're in the forest. About half the country is covered in trees, and across wide peat bogs, wooden boardwalks lead through a mossy, silent landscape.",
+      "et": "Astu linnast välja ja oled metsas. Umbes pool riigist on kaetud metsaga, ning laiadel rabadel viivad laudteed läbi sammaldunud ja vaikse maastiku."
+    },
+    {
+      "en": "In Soomaa, spring floods can cover roads and meadows so completely that locals get around by dugout canoe. They call it the fifth season.",
+      "et": "Soomaal võivad kevadised üleujutused katta teed ja niidud nii täielikult, et kohalikud liiguvad ringi haabjaga. Seda nimetatakse viiendaks aastaajaks."
+    },
+    {
+      "en": "Estonian is a close cousin of Finnish, not of the languages spoken by its southern neighbours. It has fourteen grammatical cases, and one word is famous for its vowels: jäääär, which means the edge of the ice.",
+      "et": "Eesti keel on soome keele lähedane sugulane, mitte lõunanaabrite keelte oma. Sellel on neliteist käänet ja üks sõna on kuulus oma täishäälikute poolest: jäääär."
+    },
+    {
+      "en": "Midsummer, called Jaanipäev, is the favourite holiday. On the longest evening of the year, families light bonfires, sing and jump over the flames, while the sky barely gets dark at all.",
+      "et": "Kõige armsam püha on jaanipäev. Aasta pikimal õhtul süütavad pered jaanituled, laulavad ja hüppavad üle lõkke, samal ajal kui taevas ei lähe peaaegu üldse pimedaks."
+    },
+    {
+      "en": "The sauna is almost sacred. In the southeast, the smoke sauna, heated by a fire with no chimney, is an old tradition handed down through families.",
+      "et": "Saun on peaaegu püha paik. Kagu-Eestis on suitsusaun, mida köetakse ilma korstnata, vana traditsioon, mis kandub põlvest põlve."
+    },
+    {
+      "en": "At the table, dark rye bread is treated with great respect. An old custom says that if you drop a piece, you pick it up and kiss it. Try it with smoked fish, or try kama, a blend of roasted grain flours stirred into buttermilk.",
+      "et": "Laual on must leib suures austuses. Vana komme ütleb, et kui leivatükk maha kukub, tõstetakse see üles ja suudeldakse. Proovi seda suitsukalaga või maitse kama, röstitud jahude segu, mis segatakse petipiima sisse."
+    },
+    {
+      "en": "Off the west coast lie the islands of Saaremaa and Hiiumaa, with windmills, juniper meadows, stone walls and lighthouses standing guard over the Baltic Sea.",
+      "et": "Läänerannikust eemal asuvad Saaremaa ja Hiiumaa, kus on tuulikud, kadastikud, kiviaiad ja tuletornid, mis valvavad Läänemere kohal."
+    },
+    {
+      "en": "Estonians can seem quiet and reserved at first, but they're warm, curious and full of dry humour. They even invented a sport called kiiking, where you swing on a giant swing right over the top.",
+      "et": "Eestlased võivad esmapilgul tunduda vaiksed ja kinnised, kuid tegelikult on nad soojad, uudishimulikud ja kuiva huumoriga. Nad on leiutanud isegi spordiala nimega kiiking, kus hiiglaslikul kiigel sõidetakse üle võlli."
+    },
+    {
+      "en": "Aitäh, thank you for coming. Head south through the pine forests, and Latvia is waiting just across the border.",
+      "et": "Aitäh, et tulid! Sõida lõuna poole läbi männimetsade ja kohe üle piiri ootab sind Läti."
+    }
+  ],
+  "next": ["Latvia", "Finland", "Sweden"]
+}

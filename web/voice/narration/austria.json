@@ -1,0 +1,55 @@
+{
+  "country": "Austria",
+  "languages": ["en", "de"],
+  "segments": [
+    {
+      "en": "A marble table, a newspaper on a wooden holder, and a small coffee served on a silver tray with a glass of water. In a Viennese coffee house you can sit for hours, and no waiter will ever hurry you.",
+      "de": "Ein Marmortisch, eine Zeitung im Holzhalter und ein kleiner Kaffee auf einem Silbertablett mit einem Glas Wasser. In einem Wiener Kaffeehaus kann man stundenlang sitzen, und kein Ober wird einen je drängen."
+    },
+    {
+      "en": "Coffee houses are Austria's living rooms, places to read, argue, write and dream. Order a Melange, similar to a cappuccino, and a slice of cake, and simply watch the world go by.",
+      "de": "Kaffeehäuser sind die Wohnzimmer Österreichs, Orte zum Lesen, Streiten, Schreiben und Träumen. Bestellen Sie eine Melange und ein Stück Torte, und schauen Sie einfach der Welt beim Vorbeiziehen zu."
+    },
+    {
+      "en": "Vienna, the capital, was for centuries the heart of the Habsburg empire, and it still feels grand, with palaces, gilded concert halls and wide boulevards where horse-drawn carriages clip-clop past.",
+      "de": "Wien, die Hauptstadt, war jahrhundertelang das Herz des Habsburgerreichs und wirkt noch heute prachtvoll, mit Palästen, vergoldeten Konzertsälen und breiten Boulevards, auf denen Fiaker vorbeiklappern."
+    },
+    {
+      "en": "Music is everywhere. Mozart was born in Salzburg, Haydn and Schubert were Austrian too, and Vienna gave the world the waltz. In winter, people dress up for elegant balls and whirl around the dance floor until dawn.",
+      "de": "Musik ist überall. Mozart wurde in Salzburg geboren, auch Haydn und Schubert waren Österreicher, und Wien schenkte der Welt den Walzer. Im Winter macht man sich für elegante Bälle schön und dreht sich bis zum Morgengrauen über das Parkett."
+    },
+    {
+      "en": "When you walk into a shop or pass someone on a mountain path, say Grüß Gott. It is the traditional Austrian greeting, and a friendly reply is almost guaranteed.",
+      "de": "Wenn Sie ein Geschäft betreten oder jemandem auf einem Bergweg begegnen, sagen Sie Grüß Gott. Das ist der traditionelle österreichische Gruß, und eine freundliche Antwort ist so gut wie sicher."
+    },
+    {
+      "en": "Most of the country is mountains. The Alps fill the west and south with snowy peaks, glaciers and green valleys, and skiing is something many Austrian children learn almost as soon as they can walk.",
+      "de": "Der Großteil des Landes besteht aus Bergen. Die Alpen füllen den Westen und Süden mit schneebedeckten Gipfeln, Gletschern und grünen Tälern, und viele österreichische Kinder lernen Skifahren fast so früh wie das Gehen."
+    },
+    {
+      "en": "In summer, the same slopes turn into flowery meadows. Hikers stop at mountain huts for a bowl of soup, and cows wearing bells graze beside the trail.",
+      "de": "Im Sommer verwandeln sich dieselben Hänge in blühende Almwiesen. Wanderer kehren in Almhütten auf eine Suppe ein, und Kühe mit Glocken grasen neben dem Weg."
+    },
+    {
+      "en": "At the lakeside village of Hallstatt, pastel houses crowd between steep mountains and still water, a view so lovely it hardly seems real.",
+      "de": "Im Dorf Hallstatt am See drängen sich pastellfarbene Häuser zwischen steilen Bergen und stillem Wasser, ein Anblick so schön, dass er kaum echt wirkt."
+    },
+    {
+      "en": "Now for food. Wiener Schnitzel is a thin slice of veal, breaded and fried until golden, served with a wedge of lemon. For dessert, try Kaiserschmarrn, a fluffy torn pancake dusted with sugar, or a rich chocolate Sachertorte.",
+      "de": "Und nun zum Essen. Das Wiener Schnitzel ist ein dünnes Kalbsschnitzel, paniert und goldbraun herausgebacken, mit einer Zitronenspalte. Zum Nachtisch gibt es Kaiserschmarrn, flaumig zerrupft und mit Staubzucker bestreut, oder eine saftige Sachertorte."
+    },
+    {
+      "en": "Along the Danube, in the Wachau valley, vineyards and apricot orchards line the river. Around Vienna, families gather at a Heuriger, a cosy wine tavern, to eat and drink at long wooden tables.",
+      "de": "An der Donau, in der Wachau, säumen Weingärten und Marillengärten den Fluss. Rund um Wien treffen sich Familien beim Heurigen, um an langen Holztischen zu essen und zu trinken."
+    },
+    {
+      "en": "For festivals, people still proudly wear traditional dress: the dirndl, with its apron and fitted bodice, and leather trousers called Lederhosen. In December, Christmas markets fill the squares with lights and the smell of roasting chestnuts.",
+      "de": "Zu Festen trägt man noch immer stolz Tracht: das Dirndl mit Schürze und Mieder und die Lederhose. Im Dezember füllen Christkindlmärkte die Plätze mit Lichtern und dem Duft von gebratenen Maroni."
+    },
+    {
+      "en": "Before you leave, say Servus, the casual Austrian hello and goodbye. Then follow the Danube east, where the river flows on toward Hungary, which is waiting just downstream.",
+      "de": "Bevor Sie gehen, sagen Sie Servus, das lockere Wort, mit dem man in Österreich grüßt und sich auch verabschiedet. Folgen Sie dann der Donau nach Osten, wo der Fluss weiter nach Ungarn fließt, das schon flussabwärts auf Sie wartet."
+    }
+  ],
+  "next": ["Hungary", "Germany", "Switzerland"]
+}

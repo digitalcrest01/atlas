@@ -1,0 +1,59 @@
+{
+  "country": "Colombia",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "In a famous Colombian novel, a cloud of yellow butterflies follows a young man wherever he goes. Here, that kind of magic never feels far away. Colombia is a land where the everyday and the extraordinary sit side by side.",
+      "es-419": "En una famosa novela colombiana, una nube de mariposas amarillas sigue a un joven adondequiera que va. Aquí, esa clase de magia nunca parece lejana. Colombia es una tierra donde lo cotidiano y lo extraordinario conviven."
+    },
+    {
+      "en": "That novel was written by Gabriel García Márquez, who grew up near the Caribbean coast and won the Nobel Prize. His way of writing, often called magical realism, drew on the stories his grandmother told him.",
+      "es-419": "Esa novela la escribió Gabriel García Márquez, que creció cerca de la costa caribe y ganó el Premio Nobel. Su manera de escribir, que muchos llaman realismo mágico, se nutrió de las historias que le contaba su abuela."
+    },
+    {
+      "en": "Colombia is the only South American country with coasts on both the Caribbean Sea and the Pacific Ocean. Between them, the Andes split into three ranges, with deep valleys, cloud forests and snowy peaks.",
+      "es-419": "Colombia es el único país de Sudamérica con costas en el mar Caribe y en el océano Pacífico. Entre ambos, los Andes se dividen en tres cordilleras, con valles profundos, bosques de niebla y picos nevados."
+    },
+    {
+      "en": "Bogotá, the capital, sits high on a plateau, cool and often rainy. On a chilly afternoon, try ajiaco, a chicken and potato soup served with corn, cream, capers and avocado.",
+      "es-419": "Bogotá, la capital, está en lo alto de una sabana, fresca y a menudo lluviosa. En una tarde fría, prueba el ajiaco, una sopa de pollo y papa servida con mazorca, crema, alcaparras y aguacate."
+    },
+    {
+      "en": "Mornings begin with an arepa, a warm corn cake, and a tinto, a small black coffee. The coffee grows on steep green slopes in the heart of the country, where towering wax palms, the national tree, reach toward the clouds.",
+      "es-419": "Las mañanas empiezan con una arepa calientita y un tinto, un cafecito negro. El café crece en empinadas laderas verdes en el corazón del país, donde las altísimas palmas de cera, el árbol nacional, se estiran hacia las nubes."
+    },
+    {
+      "en": "Medellín is known as the city of eternal spring, and cable cars glide over its hillside neighbourhoods. Every August, at the Flower Festival, farmers called silleteros parade with huge flower arrangements strapped to their backs.",
+      "es-419": "Medellín es conocida como la ciudad de la eterna primavera, y los metrocables se deslizan sobre sus barrios de ladera. Cada agosto, en la Feria de las Flores, los silleteros desfilan con enormes arreglos florales cargados a la espalda."
+    },
+    {
+      "en": "On the Caribbean coast, Cartagena glows with colonial walls, balconies spilling bougainvillea, and women selling tropical fruit from bowls balanced on their heads.",
+      "es-419": "En la costa caribe, Cartagena brilla con sus murallas coloniales, balcones cubiertos de buganvilias y palenqueras que venden frutas tropicales en poncheras sobre la cabeza."
+    },
+    {
+      "en": "Music is everywhere: cumbia, born on the coast, the accordion of vallenato, and salsa in Cali, where dancers' feet move almost too fast to see. At Barranquilla's Carnival, the whole city dances for days.",
+      "es-419": "La música está en todas partes: la cumbia, nacida en la costa, el acordeón del vallenato y la salsa de Cali, donde los pies de los bailarines se mueven tan rápido que casi no se ven. En el Carnaval de Barranquilla, toda la ciudad baila durante días."
+    },
+    {
+      "en": "Colombia has more kinds of birds than almost anywhere on Earth, from tiny hummingbirds to the Andean condor. In one river, Caño Cristales, water plants paint the stream red, yellow and green for part of the year.",
+      "es-419": "Colombia tiene más especies de aves que casi cualquier otro lugar del planeta, desde diminutos colibríes hasta el cóndor de los Andes. En un río, Caño Cristales, las plantas acuáticas pintan el agua de rojo, amarillo y verde durante parte del año."
+    },
+    {
+      "en": "Markets overflow with fruit you may never have tasted, like tangy lulo and creamy soursop, blended into fresh juices with water or milk.",
+      "es-419": "Los mercados rebosan de frutas que quizá nunca hayas probado, como el lulo ácido y la cremosa guanábana, licuadas en jugos frescos en agua o en leche."
+    },
+    {
+      "en": "Colombians are famously courteous. Say thank you, and you will often hear con mucho gusto, with great pleasure, while shopkeepers greet you with a la orden, at your service.",
+      "es-419": "Los colombianos son famosos por su cortesía. Da las gracias y a menudo escucharás con mucho gusto, mientras los vendedores te reciben con un amable a la orden."
+    },
+    {
+      "en": "Look out for the sombrero vueltiao, a hat woven from cane fibre in black and cream patterns, worn with pride as a national symbol.",
+      "es-419": "Fíjate en el sombrero vueltiao, tejido con fibra de caña flecha en diseños negros y crema, que se lleva con orgullo como símbolo nacional."
+    },
+    {
+      "en": "Now head northwest, where the land narrows toward Central America. Panama is waiting just beyond the rainforest.",
+      "es-419": "Ahora ve hacia el noroeste, donde la tierra se estrecha rumbo a Centroamérica. Panamá te espera justo detrás de la selva."
+    }
+  ],
+  "next": ["Panama", "Ecuador", "Venezuela"]
+}
