@@ -1,46 +1,65 @@
 {
   "country": "United States",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Sunrise reaches the coast of Maine first, while in Hawaii it is still the middle of the night. The United States is so wide that it spans six time zones, from the Atlantic all the way across the Pacific."
+      "en": "Sunrise reaches the coast of Maine first, while in Hawaii it is still the middle of the night. The United States is so wide that it spans six time zones, from the Atlantic all the way across the Pacific.",
+      "img": "Bass_Harbor_Head_Light_Station_2016.jpg"
     },
     {
-      "en": "Fifty states make up this country, and each feels a little different. You could spend a lifetime exploring and still find new accents, new landscapes and new favourite foods."
+      "en": "Fifty states make up this country, and each feels a little different. You could spend a lifetime exploring and still find new accents, new landscapes and new favourite foods.",
+      "img": "Monument_Valley,_Utah,_USA_(23611451292).jpg"
     },
     {
-      "en": "Long before the nation was founded, many Native American peoples lived across this land, each with their own languages and traditions. Many of their communities and cultures continue today."
+      "en": "Long before the nation was founded, many Native American peoples lived across this land, each with their own languages and traditions. Many of their communities and cultures continue today.",
+      "img": "Taos_Pueblo_2017-05-05.jpg"
     },
     {
-      "en": "The country declared its independence in 1776. Since then, people have arrived from every corner of the world, which is why a single city block can smell of tacos, dumplings, pizza and barbecue all at once."
+      "en": "The country declared its independence in 1776. Since then, people have arrived from every corner of the world, which is why a single city block can smell of tacos, dumplings, pizza and barbecue all at once.",
+      "img": "Independence_Hall.jpg"
     },
     {
-      "en": "New York City never seems to sleep, with its yellow taxis, towering skyscrapers and the Statue of Liberty raising her torch over the harbour. Washington, the capital, is lined with monuments and free museums."
+      "en": "New York City never seems to sleep, with its yellow taxis, towering skyscrapers and the Statue of Liberty raising her torch over the harbour. Washington, the capital, is lined with monuments and free museums.",
+      "img": "Front_view_of_Statue_of_Liberty_(cropped).jpg"
     },
     {
-      "en": "Head west and the landscape grows enormous. The Grand Canyon plunges more than a mile deep, painted in red and orange rock, and Yellowstone bubbles with geysers, hot springs and roaming bison."
+      "en": "Head west and the landscape grows enormous. The Grand Canyon plunges more than a mile deep, painted in red and orange rock, and Yellowstone bubbles with geysers, hot springs and roaming bison.",
+      "img": "Dawn_on_the_S_rim_of_the_Grand_Canyon_(8645178272).jpg"
     },
     {
-      "en": "There are rainforests in the Pacific Northwest, sunny beaches in California and Florida, snowy peaks in Alaska and swamps full of alligators in Louisiana."
+      "en": "There are rainforests in the Pacific Northwest, sunny beaches in California and Florida, snowy peaks in Alaska and swamps full of alligators in Louisiana.",
+      "img": "Wonder_Lake_and_Denali.jpg"
     },
     {
-      "en": "Americans are often friendly and chatty with strangers. Don't be surprised if someone in a shop asks how your day is going. A cheerful reply is all that's needed."
+      "en": "Americans are often friendly and chatty with strangers. Don't be surprised if someone in a shop asks how your day is going. A cheerful reply is all that's needed.",
+      "img": "Golden_Gate_Bridge_as_seen_from_Battery_East.jpg"
     },
     {
-      "en": "Food comes in generous portions. Think pancakes with maple syrup, burgers on the grill, cornbread and chilli in the South, and fresh lobster rolls up in New England."
+      "en": "Food comes in generous portions. Think pancakes with maple syrup, burgers on the grill, cornbread and chilli in the South, and fresh lobster rolls up in New England.",
+      "img": "Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg"
     },
     {
-      "en": "Music is one of America's great gifts to the world. Jazz and blues were born here, along with rock and roll, country and hip hop, and each tells a story about the people who made it."
+      "en": "Music is one of America's great gifts to the world. Jazz and blues were born here, along with rock and roll, country and hip hop, and each tells a story about the people who made it.",
+      "img": "French_Quarter,_looking_north_with_Mississippi_River_to_the_right_2011.jpg"
     },
     {
-      "en": "Sport brings people together in huge crowds: American football in autumn, baseball on long summer evenings, and basketball all winter long."
+      "en": "Sport brings people together in huge crowds: American football in autumn, baseball on long summer evenings, and basketball all winter long.",
+      "img": "Madison_Square_Garden_(MSG)_-_Full_(48124330357).jpg"
     },
     {
-      "en": "Two holidays stand out. On Thanksgiving, families share turkey and pumpkin pie and say what they are grateful for, and on the Fourth of July, fireworks burst over towns across the country."
+      "en": "Two holidays stand out. On Thanksgiving, families share turkey and pumpkin pie and say what they are grateful for, and on the Fourth of July, fireworks burst over towns across the country.",
+      "img": "Pumpkin-Pie-Whole-Slice.jpg"
     },
     {
-      "en": "Now point your compass north, across the longest land border in the world, and Canada is waiting with maple trees and open wilderness."
+      "en": "Now point your compass north, across the longest land border in the world, and Canada is waiting with maple trees and open wilderness.",
+      "img": "American_Falls,_Niagara_Falls_(470659)_(9447307187).jpg"
     }
   ],
-  "next": ["Canada", "Mexico", "Cuba"]
+  "next": [
+    "Canada",
+    "Mexico",
+    "Cuba"
+  ]
 }

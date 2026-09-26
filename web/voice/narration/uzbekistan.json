@@ -1,55 +1,74 @@
 {
   "country": "Uzbekistan",
-  "languages": ["en", "uz"],
+  "languages": [
+    "en",
+    "uz"
+  ],
   "segments": [
     {
       "en": "Turquoise tiles glitter in the afternoon sun, covering domes and towering gateways in patterns of stars and flowers. You are standing in the Registan square of Samarkand, one of the most beautiful places in Central Asia.",
-      "uz": "Tushdan keyingi quyoshda firuza koshinlar yaltiraydi, gumbazlar va baland peshtoqlarni yulduz va gul naqshlari bilan qoplaydi. Siz Samarqanddagi Registon maydonida turibsiz, bu Markaziy Osiyoning eng go‘zal joylaridan biri."
+      "uz": "Tushdan keyingi quyoshda firuza koshinlar yaltiraydi, gumbazlar va baland peshtoqlarni yulduz va gul naqshlari bilan qoplaydi. Siz Samarqanddagi Registon maydonida turibsiz, bu Markaziy Osiyoning eng go‘zal joylaridan biri.",
+      "img": "RegistanSquare_Samarkand.jpg"
     },
     {
       "en": "For centuries, Silk Road caravans stopped in Uzbek cities to trade silk, spices, paper and ideas. Scholars, poets and astronomers gathered here, and their mosques and schools still stand.",
-      "uz": "Asrlar davomida Buyuk Ipak yo‘li karvonlari o‘zbek shaharlarida to‘xtab, ipak, ziravorlar, qog‘oz va g‘oyalar almashgan. Bu yerda olimlar, shoirlar va munajjimlar to‘plangan, ularning masjid va madrasalari hanuz qad rostlab turibdi."
+      "uz": "Asrlar davomida Buyuk Ipak yo‘li karvonlari o‘zbek shaharlarida to‘xtab, ipak, ziravorlar, qog‘oz va g‘oyalar almashgan. Bu yerda olimlar, shoirlar va munajjimlar to‘plangan, ularning masjid va madrasalari hanuz qad rostlab turibdi.",
+      "img": "Мечеть_Биби_Ханум._Самарканд.jpg"
     },
     {
       "en": "Bukhara is a city of quiet lanes, old trading domes and shady pools where elders sit and talk. Further west, Khiva is wrapped in mud-brick walls, its whole old town like a living museum.",
-      "uz": "Buxoro sokin ko‘chalar, qadimiy savdo gumbazlari va qariyalar suhbat quradigan salqin hovuzlar shahri. G‘arbroqda esa Xiva loy g‘ishtli devorlar bilan o‘ralgan, uning butun eski shahri tirik muzeyga o‘xshaydi."
+      "uz": "Buxoro sokin ko‘chalar, qadimiy savdo gumbazlari va qariyalar suhbat quradigan salqin hovuzlar shahri. G‘arbroqda esa Xiva loy g‘ishtli devorlar bilan o‘ralgan, uning butun eski shahri tirik muzeyga o‘xshaydi.",
+      "img": "Kalon-Ensemble_Buchara.jpg"
     },
     {
       "en": "The capital, Tashkent, is a big, green city with wide avenues and a metro whose stations are decorated like palaces, with chandeliers, marble and mosaics.",
-      "uz": "Poytaxt Toshkent keng xiyobonlari bo‘lgan katta va yashil shahar. Uning metro bekatlari saroylardek bezatilgan: qandillar, marmar va mozaikalar bilan."
+      "uz": "Poytaxt Toshkent keng xiyobonlari bo‘lgan katta va yashil shahar. Uning metro bekatlari saroylardek bezatilgan: qandillar, marmar va mozaikalar bilan.",
+      "img": "Nest_One_Tashkent.jpg"
     },
     {
       "en": "Much of Uzbekistan is dry steppe and desert, but its rivers feed orchards and fields. Markets overflow with melons, grapes, pomegranates, apricots and mountains of dried fruit and nuts.",
-      "uz": "O‘zbekistonning katta qismi quruq cho‘l va sahro, ammo daryolar bog‘ va dalalarni sug‘oradi. Bozorlar qovun, uzum, anor, o‘rik hamda tog‘-tog‘ quruq meva va yong‘oqlarga to‘la."
+      "uz": "O‘zbekistonning katta qismi quruq cho‘l va sahro, ammo daryolar bog‘ va dalalarni sug‘oradi. Bozorlar qovun, uzum, anor, o‘rik hamda tog‘-tog‘ quruq meva va yong‘oqlarga to‘la.",
+      "img": "Khudayar_Khan_Palace,_Kokand_01.JPG"
     },
     {
       "en": "The king of Uzbek food is plov, rice slowly cooked in a huge iron pot with carrots, onions and meat. Every region has its own recipe, and it is often cooked by men for weddings and big gatherings.",
-      "uz": "O‘zbek taomlarining shohi palov: katta qozonda sabzi, piyoz va go‘sht bilan sekin pishirilgan guruch. Har bir viloyatning o‘z retsepti bor, to‘y va katta yig‘inlarda uni ko‘pincha erkaklar damlaydi."
+      "uz": "O‘zbek taomlarining shohi palov: katta qozonda sabzi, piyoz va go‘sht bilan sekin pishirilgan guruch. Har bir viloyatning o‘z retsepti bor, to‘y va katta yig‘inlarda uni ko‘pincha erkaklar damlaydi.",
+      "img": "Urazmat-Plov.jpg"
     },
     {
       "en": "Bread, called non, is round and stamped with patterns in the middle. It is treated with respect: never placed upside down, and always broken by hand and shared.",
-      "uz": "O‘rtasiga naqsh bosilgan dumaloq non alohida hurmatga ega: uni hech qachon teskari qo‘yishmaydi, doim qo‘l bilan sindirib, baham ko‘rishadi."
+      "uz": "O‘rtasiga naqsh bosilgan dumaloq non alohida hurmatga ega: uni hech qachon teskari qo‘yishmaydi, doim qo‘l bilan sindirib, baham ko‘rishadi.",
+      "img": "Naan_in_Samarkand.jpg"
     },
     {
       "en": "Guests are honoured here. You will be invited to sit at a low table covered in dishes, and your host will pour green tea into a small bowl called a piyola, filling it only halfway so it can be refilled often.",
-      "uz": "Bu yerda mehmon aziz. Sizni turli taomlar bilan to‘la pastak dasturxonga taklif qilishadi, mezbon esa piyolaga ko‘k choy quyadi, lekin tez-tez to‘ldirib turish uchun faqat yarmigacha."
+      "uz": "Bu yerda mehmon aziz. Sizni turli taomlar bilan to‘la pastak dasturxonga taklif qilishadi, mezbon esa piyolaga ko‘k choy quyadi, lekin tez-tez to‘ldirib turish uchun faqat yarmigacha.",
+      "img": "DD-Famverte-Tasse.JPG"
     },
     {
       "en": "A common greeting is assalomu alaykum, often with a hand placed over the heart. Uzbek is the national language, a Turkic tongue, and many people also speak Russian or Tajik.",
-      "uz": "Odatiy salomlashuv: assalomu alaykum, ko‘pincha qo‘lni ko‘ksiga qo‘yib aytiladi. O‘zbek tili davlat tili, u turkiy tillardan biri, ko‘pchilik esa rus yoki tojik tilida ham gapiradi."
+      "uz": "Odatiy salomlashuv: assalomu alaykum, ko‘pincha qo‘lni ko‘ksiga qo‘yib aytiladi. O‘zbek tili davlat tili, u turkiy tillardan biri, ko‘pchilik esa rus yoki tojik tilida ham gapiradi.",
+      "img": "Kalta_Minar.jpg"
     },
     {
       "en": "Crafts are everywhere. Silk ikat fabric shimmers with bold, blurred patterns, and suzani embroideries bloom with giant flowers stitched by hand.",
-      "uz": "Hunarmandchilik har qadamda. Ipak atlas matolar yorqin, xira chegarali naqshlar bilan tovlanadi, suzanalarda esa qo‘lda tikilgan ulkan gullar ochiladi."
+      "uz": "Hunarmandchilik har qadamda. Ipak atlas matolar yorqin, xira chegarali naqshlar bilan tovlanadi, suzanalarda esa qo‘lda tikilgan ulkan gullar ochiladi.",
+      "img": "Kermina_Suzani.jpg"
     },
     {
       "en": "In March, families celebrate Navruz, the spring new year. They stay up stirring a sweet pudding of sprouted wheat called sumalak, singing and laughing through the night.",
-      "uz": "Mart oyida oilalar bahor yangi yili Navro‘zni nishonlaydi. Ular undirilgan bug‘doydan tayyorlanadigan shirin sumalakni tun bo‘yi aralashtirib, qo‘shiq aytib, kulib o‘tirishadi."
+      "uz": "Mart oyida oilalar bahor yangi yili Navro‘zni nishonlaydi. Ular undirilgan bug‘doydan tayyorlanadigan shirin sumalakni tun bo‘yi aralashtirib, qo‘shiq aytib, kulib o‘tirishadi.",
+      "img": "Samanu_for_7_sin.jpg"
     },
     {
       "en": "So take one last sip of tea, place your hand on your heart to say thank you, and travel east toward the high mountains, where Kyrgyzstan is waiting.",
-      "uz": "Endi so‘nggi qultum choyni iching, rahmat aytib qo‘lingizni ko‘ksingizga qo‘ying va baland tog‘lar tomon sharqqa yo‘l oling, u yerda sizni Qirg‘iziston kutmoqda."
+      "uz": "Endi so‘nggi qultum choyni iching, rahmat aytib qo‘lingizni ko‘ksingizga qo‘ying va baland tog‘lar tomon sharqqa yo‘l oling, u yerda sizni Qirg‘iziston kutmoqda.",
+      "img": "Greater_Chimgan_Mountain.JPG"
     }
   ],
-  "next": ["Kyrgyzstan", "Tajikistan", "Kazakhstan"]
+  "next": [
+    "Kyrgyzstan",
+    "Tajikistan",
+    "Kazakhstan"
+  ]
 }

@@ -1,46 +1,65 @@
 {
   "country": "United Kingdom",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "The kettle clicks off, someone asks, fancy a cuppa, and before you know it there's a mug of tea in your hands. In the United Kingdom, a good chat often starts exactly like this."
+      "en": "The kettle clicks off, someone asks, fancy a cuppa, and before you know it there's a mug of tea in your hands. In the United Kingdom, a good chat often starts exactly like this.",
+      "img": "Mug_of_English_Breakfast_Tea.jpg"
     },
     {
-      "en": "The UK is made up of four nations sharing one set of islands: England, Scotland, Wales and Northern Ireland. Each has its own character, its own accents and its own proud traditions."
+      "en": "The UK is made up of four nations sharing one set of islands: England, Scotland, Wales and Northern Ireland. Each has its own character, its own accents and its own proud traditions.",
+      "img": "Derwent_Water,_Lake_District,_Cumbria_-_June_2009.jpg"
     },
     {
-      "en": "London, the capital, stretches along the River Thames. Red double-decker buses roll past the Houses of Parliament, the bell called Big Ben chimes the hours, and the Tower of London has guarded the river for nearly a thousand years."
+      "en": "London, the capital, stretches along the River Thames. Red double-decker buses roll past the Houses of Parliament, the bell called Big Ben chimes the hours, and the Tower of London has guarded the river for nearly a thousand years.",
+      "img": "Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg"
     },
     {
-      "en": "Head north into Scotland and the land rises into misty Highlands and deep lochs. In Edinburgh, a castle perches on an old volcanic rock, and you may hear the skirl of bagpipes drifting down the Royal Mile."
+      "en": "Head north into Scotland and the land rises into misty Highlands and deep lochs. In Edinburgh, a castle perches on an old volcanic rock, and you may hear the skirl of bagpipes drifting down the Royal Mile.",
+      "img": "City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg"
     },
     {
-      "en": "In Wales, green valleys meet rugged mountains and a coastline of cliffs and castles. Welsh is spoken alongside English, and road signs appear in both. Croeso, they say, which means welcome."
+      "en": "In Wales, green valleys meet rugged mountains and a coastline of cliffs and castles. Welsh is spoken alongside English, and road signs appear in both. Croeso, they say, which means welcome.",
+      "img": "Conwy_Castle,_water_view1.jpg"
     },
     {
-      "en": "Northern Ireland has the Giant's Causeway, thousands of six-sided stone columns stepping into the sea, formed by ancient lava but wrapped in legends about a giant named Finn McCool."
+      "en": "Northern Ireland has the Giant's Causeway, thousands of six-sided stone columns stepping into the sea, formed by ancient lava but wrapped in legends about a giant named Finn McCool.",
+      "img": "Scotland-Staffa-Fingals-Cave-1900.jpg"
     },
     {
-      "en": "British people are known for politeness. Queueing patiently is taken seriously, and you will hear please, thank you and sorry many times a day, sometimes even when nothing has gone wrong."
+      "en": "British people are known for politeness. Queueing patiently is taken seriously, and you will hear please, thank you and sorry many times a day, sometimes even when nothing has gone wrong.",
+      "img": "London_Skyline_(125508655).jpeg"
     },
     {
-      "en": "The weather changes quickly, so it is a favourite topic of conversation. A sunny morning can turn to drizzle by lunchtime, which is why an umbrella is never far away."
+      "en": "The weather changes quickly, so it is a favourite topic of conversation. A sunny morning can turn to drizzle by lunchtime, which is why an umbrella is never far away.",
+      "img": "Stonehenge2007_07_30.jpg"
     },
     {
-      "en": "Food ranges from fish and chips wrapped in paper at the seaside to a Sunday roast with gravy and Yorkshire puddings. Afternoon tea brings scones with jam and clotted cream, and in cities you will find flavours from all over the world."
+      "en": "Food ranges from fish and chips wrapped in paper at the seaside to a Sunday roast with gravy and Yorkshire puddings. Afternoon tea brings scones with jam and clotted cream, and in cities you will find flavours from all over the world.",
+      "img": "Fish_and_chips_blackpool.jpg"
     },
     {
-      "en": "Many sports were first organised here, including football, rugby, cricket and tennis. On a Saturday afternoon, football stadiums roar with songs and chants."
+      "en": "Many sports were first organised here, including football, rugby, cricket and tennis. On a Saturday afternoon, football stadiums roar with songs and chants.",
+      "img": "Wembley_Stadium_Twin_Towers.jpg"
     },
     {
-      "en": "This is also a land of stories. Shakespeare wrote his plays here, and so did the authors behind Peter Rabbit, Alice in Wonderland and a certain young wizard. Music too, from the Beatles to today's pop stars."
+      "en": "This is also a land of stories. Shakespeare wrote his plays here, and so did the authors behind Peter Rabbit, Alice in Wonderland and a certain young wizard. Music too, from the Beatles to today's pop stars.",
+      "img": "Stratford-Upon-Avon,_High_Street,_geograph_3969622_by_Lewis_Clarke.jpg"
     },
     {
-      "en": "In the countryside, footpaths wind between hedgerows and stone walls, past thatched cottages and village pubs, where walkers stop for a warm meal by the fire."
+      "en": "In the countryside, footpaths wind between hedgerows and stone walls, past thatched cottages and village pubs, where walkers stop for a warm meal by the fire.",
+      "img": "Castle_combe_river.jpg"
     },
     {
-      "en": "So pop the kettle on one last time, then cross the Irish Sea to the west, where Ireland is waiting with a céad míle fáilte, a hundred thousand welcomes."
+      "en": "So pop the kettle on one last time, then cross the Irish Sea to the west, where Ireland is waiting with a céad míle fáilte, a hundred thousand welcomes.",
+      "img": "Holyhead_Port_-_2024-06-15_01.jpg"
     }
   ],
-  "next": ["Ireland", "France", "Netherlands"]
+  "next": [
+    "Ireland",
+    "France",
+    "Netherlands"
+  ]
 }

@@ -1,55 +1,74 @@
 {
   "country": "Uruguay",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "Almost everyone you pass seems to carry the same two things: a gourd tucked in one hand and a thermos of hot water under the arm. It is time for mate, and in Uruguay it is always time for mate.",
-      "es-419": "Casi todas las personas con las que te cruzas llevan lo mismo: un mate en una mano y un termo de agua caliente bajo el brazo. Es la hora del mate, y en Uruguay siempre es la hora del mate."
+      "es-419": "Casi todas las personas con las que te cruzas llevan lo mismo: un mate en una mano y un termo de agua caliente bajo el brazo. Es la hora del mate, y en Uruguay siempre es la hora del mate.",
+      "img": "Mate_en_calabaza.jpg"
     },
     {
       "en": "Mate is a bitter herbal drink sipped through a metal straw called a bombilla. Friends pass one gourd around the circle, and being offered a sip is a small sign of trust and friendship.",
-      "es-419": "El mate es una infusión amarga que se toma con una bombilla de metal. Los amigos pasan el mismo mate en ronda, y que te ofrezcan uno es una pequeña señal de confianza y amistad."
+      "es-419": "El mate es una infusión amarga que se toma con una bombilla de metal. Los amigos pasan el mismo mate en ronda, y que te ofrezcan uno es una pequeña señal de confianza y amistad.",
+      "img": "Courge_encore_verte.jpg"
     },
     {
       "en": "Uruguay is a small, gentle country between two giants, Brazil and Argentina. Its land is mostly rolling grassland, where cattle graze and gauchos, the cowboys of the south, still ride.",
-      "es-419": "Uruguay es un país pequeño y tranquilo entre dos gigantes, Brasil y Argentina. Su tierra es sobre todo pradera ondulada, donde pasta el ganado y todavía cabalgan los gauchos."
+      "es-419": "Uruguay es un país pequeño y tranquilo entre dos gigantes, Brasil y Argentina. Su tierra es sobre todo pradera ondulada, donde pasta el ganado y todavía cabalgan los gauchos.",
+      "img": "Río_Tacuarembó.JPG"
     },
     {
       "en": "Montevideo, the capital, lies on the wide Río de la Plata. Its long seaside walkway, the Rambla, follows the water for miles, and in the evening families stroll, jog, fish and chat there.",
-      "es-419": "Montevideo, la capital, está a orillas del ancho Río de la Plata. Su larga Rambla acompaña el agua por kilómetros, y al atardecer las familias caminan, corren, pescan y conversan allí."
+      "es-419": "Montevideo, la capital, está a orillas del ancho Río de la Plata. Su larga Rambla acompaña el agua por kilómetros, y al atardecer las familias caminan, corren, pescan y conversan allí.",
+      "img": "2016_Uruguay_Rambla_Gandhi_Montevideo.jpg"
     },
     {
       "en": "Further west along the river, the old town of Colonia del Sacramento has cobbled lanes, colourful houses and a lighthouse. It feels as though time has slowed down.",
-      "es-419": "Más al oeste, junto al río, el casco histórico de Colonia del Sacramento tiene calles empedradas, casas de colores y un faro. Parece que allí el tiempo anduviera más despacio."
+      "es-419": "Más al oeste, junto al río, el casco histórico de Colonia del Sacramento tiene calles empedradas, casas de colores y un faro. Parece que allí el tiempo anduviera más despacio.",
+      "img": "Basilica_del_Sanctísimo_Sacramento.jpg"
     },
     {
       "en": "On the Atlantic coast, beaches stretch for miles. Punta del Este is famous for a giant sculpture of a hand rising out of the sand, while quieter villages like Cabo Polonio have sea lions and no paved roads.",
-      "es-419": "En la costa atlántica, las playas se extienden por kilómetros. Punta del Este es famosa por una mano gigante que emerge de la arena, y pueblos más tranquilos como Cabo Polonio tienen lobos marinos y ningún camino asfaltado."
+      "es-419": "En la costa atlántica, las playas se extienden por kilómetros. Punta del Este es famosa por una mano gigante que emerge de la arena, y pueblos más tranquilos como Cabo Polonio tienen lobos marinos y ningún camino asfaltado.",
+      "img": "Пунта-дель-Эсте.jpg"
     },
     {
       "en": "Food centres on the asado, a slow barbecue over wood embers. Uruguayans are proud of their beef, and a Sunday asado with family can last all afternoon.",
-      "es-419": "La comida gira en torno al asado, cocinado lentamente sobre brasas de leña. Los uruguayos están orgullosos de su carne, y un asado de domingo en familia puede durar toda la tarde."
+      "es-419": "La comida gira en torno al asado, cocinado lentamente sobre brasas de leña. Los uruguayos están orgullosos de su carne, y un asado de domingo en familia puede durar toda la tarde.",
+      "img": "Mercado_del_puerto_Fachada.JPG"
     },
     {
       "en": "If you are hungry on the go, try a chivito, a sandwich piled high with steak, ham, cheese and egg. For something sweet, there is dulce de leche, a caramel spread loved in almost every dessert.",
-      "es-419": "Si tienes hambre al paso, prueba un chivito, un sándwich cargado de carne, jamón, queso y huevo. Para algo dulce está el dulce de leche, presente en casi todos los postres."
+      "es-419": "Si tienes hambre al paso, prueba un chivito, un sándwich cargado de carne, jamón, queso y huevo. Para algo dulce está el dulce de leche, presente en casi todos los postres.",
+      "img": "AlfajoresP1115215_02.jpg"
     },
     {
       "en": "Football is a passion. Uruguay hosted and won the very first World Cup in 1930, and children kick balls in every park and on every beach.",
-      "es-419": "El fútbol es una pasión. Uruguay organizó y ganó el primer Mundial de la historia en 1930, y los niños patean la pelota en cada plaza y en cada playa."
+      "es-419": "El fútbol es una pasión. Uruguay organizó y ganó el primer Mundial de la historia en 1930, y los niños patean la pelota en cada plaza y en cada playa.",
+      "img": "PzaIndependencia_Este_18Julio839_PcioRinaldi_110406_004ht.jpg"
     },
     {
       "en": "Listen for the drums of candombe, a rhythm with African roots. On weekends and at Carnival, groups of drummers march through Montevideo's streets, and neighbours come out to dance.",
-      "es-419": "Escucha los tambores del candombe, un ritmo de raíces africanas. Los fines de semana y en Carnaval, las comparsas recorren las calles de Montevideo y los vecinos salen a bailar."
+      "es-419": "Escucha los tambores del candombe, un ritmo de raíces africanas. Los fines de semana y en Carnaval, las comparsas recorren las calles de Montevideo y los vecinos salen a bailar.",
+      "img": "Tambores-El-Power.jpg"
     },
     {
       "en": "Uruguayan Carnival is one of the longest in the world, with weeks of music and theatre by troupes called murgas, who sing funny songs about everyday life.",
-      "es-419": "El Carnaval uruguayo es de los más largos del mundo, con semanas de música y teatro de las murgas, que cantan canciones graciosas sobre la vida cotidiana."
+      "es-419": "El Carnaval uruguayo es de los más largos del mundo, con semanas de música y teatro de las murgas, que cantan canciones graciosas sobre la vida cotidiana.",
+      "img": "Anglican_Church,_Montevideo.jpg"
     },
     {
       "en": "So pour the last mate, pass it along, and take the ferry across the river, where Argentina is waiting on the other shore.",
-      "es-419": "Así que ceba el último mate, pásalo a tu vecino y toma el barco para cruzar el río, que en la otra orilla te espera Argentina."
+      "es-419": "Así que ceba el último mate, pásalo a tu vecino y toma el barco para cruzar el río, que en la otra orilla te espera Argentina.",
+      "img": "Piriapolis_from_Cerro_San_Antonio.jpg"
     }
   ],
-  "next": ["Argentina", "Brazil", "Paraguay"]
+  "next": [
+    "Argentina",
+    "Brazil",
+    "Paraguay"
+  ]
 }

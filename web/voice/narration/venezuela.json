@@ -1,59 +1,79 @@
 {
   "country": "Venezuela",
-  "languages": ["en", "es-419"],
+  "languages": [
+    "en",
+    "es-419"
+  ],
   "segments": [
     {
       "en": "Water tumbles off the edge of a flat-topped mountain and falls so far that much of it turns to mist before it reaches the forest below. This is Angel Falls, the highest waterfall on Earth, and it is in Venezuela.",
-      "es-419": "El agua se desploma desde el borde de una montaña de cima plana y cae desde tan alto que buena parte se vuelve neblina antes de llegar a la selva. Es el Salto Ángel, la cascada más alta del planeta, y está en Venezuela."
+      "es-419": "El agua se desploma desde el borde de una montaña de cima plana y cae desde tan alto que buena parte se vuelve neblina antes de llegar a la selva. Es el Salto Ángel, la cascada más alta del planeta, y está en Venezuela.",
+      "img": "SaltoAngel1.jpg"
     },
     {
       "en": "That mountain is a tepui, one of many giant table mountains rising from the grasslands of the Gran Sabana. Their cliffs are wrapped in clouds, and their tops hold plants found nowhere else.",
-      "es-419": "Esa montaña es un tepuy, uno de los muchos gigantes de cima plana que se alzan sobre las praderas de la Gran Sabana. Sus paredes están envueltas en nubes y en sus cumbres crecen plantas que no existen en ningún otro lugar."
+      "es-419": "Esa montaña es un tepuy, uno de los muchos gigantes de cima plana que se alzan sobre las praderas de la Gran Sabana. Sus paredes están envueltas en nubes y en sus cumbres crecen plantas que no existen en ningún otro lugar.",
+      "img": "Kukenan_Tepuy_at_Sunset.jpg"
     },
     {
       "en": "Venezuela has an amazing variety of landscapes. The snowy peaks of the Andes rise in the west, the great Orinoco River winds through the south and east, and a long Caribbean coastline is fringed with palm-lined beaches.",
-      "es-419": "Venezuela tiene una variedad asombrosa de paisajes. Al oeste se alzan los picos nevados de los Andes, el gran río Orinoco serpentea por el sur y el este, y una larga costa caribeña está bordeada de playas con palmeras."
+      "es-419": "Venezuela tiene una variedad asombrosa de paisajes. Al oeste se alzan los picos nevados de los Andes, el gran río Orinoco serpentea por el sur y el este, y una larga costa caribeña está bordeada de playas con palmeras.",
+      "img": "PicoBolivar2.jpg"
     },
     {
       "en": "In the middle lie the Llanos, wide plains that flood in the rainy season. Cowboys called llaneros herd cattle here, and capybaras, caimans and scarlet ibis gather at the water's edge.",
-      "es-419": "En el centro están los Llanos, extensas planicies que se inundan en la época de lluvias. Allí los llaneros arrean el ganado, y los chigüires, los caimanes y las corocoras rojas se reúnen a la orilla del agua."
+      "es-419": "En el centro están los Llanos, extensas planicies que se inundan en la época de lluvias. Allí los llaneros arrean el ganado, y los chigüires, los caimanes y las corocoras rojas se reúnen a la orilla del agua.",
+      "img": "Llano_abierto.JPG"
     },
     {
       "en": "Caracas, the capital, sits in a green valley beneath the Ávila mountain. People love to ride the cable car up for fresh air and views that stretch toward the sea.",
-      "es-419": "Caracas, la capital, está en un valle verde a los pies del Ávila. A la gente le encanta subir en teleférico para respirar aire fresco y ver un paisaje que se extiende hacia el mar."
+      "es-419": "Caracas, la capital, está en un valle verde a los pies del Ávila. A la gente le encanta subir en teleférico para respirar aire fresco y ver un paisaje que se extiende hacia el mar.",
+      "img": "Caracas_desde_el_ávila.jpg"
     },
     {
       "en": "Breakfast usually means arepas, round corn cakes split open and stuffed with cheese, black beans, shredded beef or avocado. Every family has its favourite filling.",
-      "es-419": "El desayuno casi siempre son arepas, tortas redondas de maíz que se abren y se rellenan de queso, caraotas, carne mechada o aguacate. Cada familia tiene su relleno favorito."
+      "es-419": "El desayuno casi siempre son arepas, tortas redondas de maíz que se abren y se rellenan de queso, caraotas, carne mechada o aguacate. Cada familia tiene su relleno favorito.",
+      "img": "Arepas_(1880609741).jpg"
     },
     {
       "en": "At Christmas, kitchens fill with the smell of hallacas, corn dough filled with a rich stew and wrapped in banana leaves. Making them is a family affair, with everyone helping around the table.",
-      "es-419": "En Navidad, las cocinas se llenan del olor de las hallacas, masa de maíz rellena de un guiso sabroso y envuelta en hojas de plátano. Hacerlas es cosa de toda la familia, todos ayudan alrededor de la mesa."
+      "es-419": "En Navidad, las cocinas se llenan del olor de las hallacas, masa de maíz rellena de un guiso sabroso y envuelta en hojas de plátano. Hacerlas es cosa de toda la familia, todos ayudan alrededor de la mesa.",
+      "img": "Hallacas_con_pan_de_jamon,_plato_Venezuelano.jpg"
     },
     {
       "en": "Venezuelans are warm and expressive. Friends greet with a hug or a kiss on the cheek, and you may be called mi amor or mi pana, my friend, within minutes of meeting someone.",
-      "es-419": "Los venezolanos son cálidos y expresivos. Los amigos se saludan con un abrazo o un beso en la mejilla, y a los pocos minutos de conocer a alguien puede que te diga mi amor o mi pana."
+      "es-419": "Los venezolanos son cálidos y expresivos. Los amigos se saludan con un abrazo o un beso en la mejilla, y a los pocos minutos de conocer a alguien puede que te diga mi amor o mi pana.",
+      "img": "Parque_nacional_Henri_Pittier_vista.jpg"
     },
     {
       "en": "Music is everywhere. Joropo, the dance of the plains, is played on the harp, the maracas and the cuatro, a small four-stringed guitar that is a national symbol.",
-      "es-419": "La música está en todas partes. El joropo, el baile de los Llanos, se toca con arpa, maracas y cuatro, una pequeña guitarra de cuatro cuerdas que es símbolo nacional."
+      "es-419": "La música está en todas partes. El joropo, el baile de los Llanos, se toca con arpa, maracas y cuatro, una pequeña guitarra de cuatro cuerdas que es símbolo nacional.",
+      "img": "Maracas.jpg"
     },
     {
       "en": "Venezuela is also known for its youth orchestras, where children from all backgrounds learn to play classical music together.",
-      "es-419": "Venezuela también es conocida por sus orquestas juveniles, donde niños de todos los orígenes aprenden a tocar música clásica juntos."
+      "es-419": "Venezuela también es conocida por sus orquestas juveniles, donde niños de todos los orígenes aprenden a tocar música clásica juntos.",
+      "img": "Gran_Sabana_-_Panoramica_frente_a_la_comunidad_de_Wonken.JPG"
     },
     {
       "en": "Baseball, not football, is the favourite sport here, and many Venezuelan players have become stars in the major leagues abroad.",
-      "es-419": "Aquí el deporte favorito no es el fútbol sino el béisbol, y muchos peloteros venezolanos se han convertido en estrellas de las grandes ligas en el extranjero."
+      "es-419": "Aquí el deporte favorito no es el fútbol sino el béisbol, y muchos peloteros venezolanos se han convertido en estrellas de las grandes ligas en el extranjero.",
+      "img": "Orinoco_Bridge.jpg"
     },
     {
       "en": "Out in the Caribbean, the islands of Los Roques offer white sand and turquoise water, while Lake Maracaibo is famous for silent lightning that flickers above it on many nights.",
-      "es-419": "En el Caribe, el archipiélago de Los Roques ofrece arena blanca y agua turquesa, mientras que el lago de Maracaibo es famoso por los relámpagos silenciosos que lo iluminan muchas noches."
+      "es-419": "En el Caribe, el archipiélago de Los Roques ofrece arena blanca y agua turquesa, mientras que el lago de Maracaibo es famoso por los relámpagos silenciosos que lo iluminan muchas noches.",
+      "img": "El_gran_roque.jpg"
     },
     {
       "en": "Now follow the Andes west across the border, where Colombia is waiting with more music, more coffee and more arepas.",
-      "es-419": "Ahora sigue los Andes hacia el oeste y cruza la frontera, donde Colombia te espera con más música, más café y más arepas."
+      "es-419": "Ahora sigue los Andes hacia el oeste y cruza la frontera, donde Colombia te espera con más música, más café y más arepas.",
+      "img": "Sierra_Nevada_de_Mérida_(Venezuela).jpg"
     }
   ],
-  "next": ["Colombia", "Guyana", "Brazil"]
+  "next": [
+    "Colombia",
+    "Guyana",
+    "Brazil"
+  ]
 }
