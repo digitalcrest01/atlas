@@ -141,7 +141,7 @@ test('Thai goes to Azure with a Thai neural voice in SSML', async () => {
   const calls = mockFetch(() => audioResponse([1]));
   const r = await call(q('สวัสดีค่ะ', 'th-TH'));
   assert.strictEqual(r.status, 200);
-  assert.ok(calls[0].url.indexOf('westeurope.tts.speech.microsoft.com') !== -1);
+  assert.strictEqual(calls[0].url, 'https://westeurope.tts.speech.microsoft.com/cognitiveservices/v1');
   assert.ok(/<voice name="th-TH-PremwadeeNeural">สวัสดีค่ะ<\/voice>/.test(calls[0].init.body));
   assert.ok(/xml:lang="th-TH"/.test(calls[0].init.body));
 });

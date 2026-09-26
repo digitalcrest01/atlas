@@ -94,7 +94,7 @@ async function fromAzure(text, voice, k, signal) {
   const lang = name.split('-').slice(0, name.split('-').length - 1).join('-');
   const ssml = '<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="' + lang + '">' +
     '<voice name="' + name + '">' + escapeXml(text) + '</voice></speak>';
-  return fetch('https://' + encodeURIComponent(k.azureRegion) + '.tts.speech.microsoft.com/cognitive/services/v1', {
+  return fetch('https://' + encodeURIComponent(k.azureRegion) + '.tts.speech.microsoft.com/cognitiveservices/v1', {
     method: 'POST',
     signal: signal,
     headers: {
