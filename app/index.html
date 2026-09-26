@@ -509,24 +509,6 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 64px; background: var(--panel-2);
   }
-  .img-locked {
-    position: absolute; inset: 0;
-    background: rgba(11, 14, 19, 0.85);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--lock);
-    gap: 8px;
-    cursor: pointer;
-  }
-  .img-locked .lock-icon { font-size: 28px; }
-  .img-locked .lock-label {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-  }
   .fact-grid {
     display: grid;
     grid-template-columns: 90px 1fr;
@@ -995,8 +977,6 @@
   .stamp-flag { font-size: 30px; display: block; }
   .stamp-star { position: absolute; top: 3px; right: 5px; font-size: 13px; }
   .stamp-lock { position: absolute; top: 3px; right: 5px; font-size: 11px; opacity: 0.85; }
-  .lock-tease { color: var(--accent); cursor: pointer; font-weight: 600; white-space: nowrap; }
-  .lock-tease:hover { text-decoration: underline; }
   /* MYSTERY COUNTRY */
   .clue-list { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
   .clue { display: flex; gap: 10px; align-items: flex-start; background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--accent-2); border-radius: 10px; padding: 11px 13px; font-size: 14px; line-height: 1.4; animation: clue-in 0.3s ease; }
@@ -1041,8 +1021,6 @@
   .set-group { margin-bottom: 18px; }
   .set-label { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
   .set-hint { font-size: 12px; color: var(--ink-dim); margin-bottom: 8px; line-height: 1.4; }
-  .pro-tag { font-size: 9px; background: var(--accent); color: var(--bg); border-radius: 6px; padding: 2px 6px; letter-spacing: 0.08em; vertical-align: middle; font-weight: 700; }
-  .set-locked-note { font-size: 13px; color: var(--ink-dim); background: var(--panel-2); border: 1px solid var(--accent); border-radius: 10px; padding: 10px 12px; margin-bottom: 18px; }
   .link-btn { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 13px; text-decoration: underline; padding: 0; }
   .seg-row { display: flex; gap: 6px; flex-wrap: wrap; }
   .seg { flex: 1; min-width: 70px; padding: 9px 8px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 8px; cursor: pointer; font-size: 13px; }
@@ -1698,6 +1676,14 @@
     .tour-host-line { font-size: 13px; }
     .lc-line, .section-body, .fact-value, .qf-body { font-size: 14px; }
   }
+  .locked-tab { max-width: 460px; text-align: center; }
+  .locked-ic { font-size: 40px; margin-bottom: 6px; }
+  .locked-tab h2 { margin: 4px 0 10px; }
+  .locked-blurb { color: var(--ink-dim); margin: 0 0 20px; line-height: 1.5; }
+  .unlock-note { font-size: 13px; color: var(--ink-dim); margin: 12px 0 0; line-height: 1.45; }
+  .one-price { display: flex; flex-direction: column; align-items: center; margin: 18px 0 14px; }
+  .one-price-amount { font-size: 36px; font-weight: 800; color: var(--accent); line-height: 1.1; }
+  .one-price-detail { font-size: 13px; color: var(--ink-dim); }
 </style>
 </head>
 <body class="mode-explore">
@@ -1705,7 +1691,7 @@
 <header>
   <div class="logo"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg><span class="logo-text"><span class="logo-name">Myatlastic</span><span class="logo-slogan">The world at your finger tips</span></span></div>
   <div class="header-right">
-    <button class="badge hidden" id="pro-badge">Upgrade</button>
+    <button class="badge hidden" id="pro-badge">Unlock Quiz</button>
     <button class="kids-toggle" id="kids-toggle">Kids: Off</button>
     <button class="kids-toggle" id="settings-btn" title="Settings, reading help, 2-player &amp; teacher tools" aria-label="Settings">⚙️</button>
   </div>
@@ -2551,27 +2537,7 @@ function quizOptionCount() {
 
 const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' / ')[0]))).sort()];
 // Countries already opened. They stay open.
-const FREE_COUNTRIES = [
-  'Egypt', 'Kenya', 'South Africa', 'Nigeria', 'Morocco',
-  'Japan', 'China', 'India', 'Thailand', 'United Arab Emirates', 'South Korea',
-  'United Kingdom', 'France', 'Italy', 'Germany', 'Spain', 'Greece',
-  'United States', 'Canada', 'Mexico',
-  'Brazil', 'Argentina', 'Peru', 'Ecuador',
-  'Australia', 'New Zealand',
-  'Jamaica'
-];
 // Small countries, island nations, and microstates. All of these are open.
-const SMALL_OR_ISLAND = [
-  'Antigua and Barbuda', 'Bahamas', 'Bahrain', 'Barbados', 'Brunei', 'Cape Verde',
-  'Comoros', 'Cuba', 'Cyprus', 'Dominica', 'Dominican Republic', 'Fiji', 'Grenada',
-  'Haiti', 'Iceland', 'Ireland', 'Kiribati', 'Madagascar', 'Maldives', 'Malta',
-  'Marshall Islands', 'Mauritius', 'Micronesia', 'Nauru', 'Palau',
-  'Papua New Guinea', 'Saint Kitts and Nevis', 'Saint Lucia',
-  'Saint Vincent and the Grenadines', 'Samoa', 'São Tomé and Príncipe', 'Seychelles',
-  'Singapore', 'Solomon Islands', 'Sri Lanka', 'Timor-Leste', 'Tonga',
-  'Trinidad and Tobago', 'Tuvalu', 'Vanuatu',
-  'Andorra', 'Liechtenstein', 'Luxembourg', 'Monaco', 'San Marino', 'Vatican City'
-];
 
 /* ============================================================
  * PLATFORM — the iPhone/iPad app is the real product; the web is a
@@ -2584,7 +2550,7 @@ const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
-const WEB_APP_ONLY = ['compare', 'currency'];
+const WEB_APP_ONLY = [];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
 window.__getApp = () => { try { window.open(APP_STORE_URL, '_blank', 'noopener'); } catch (e) {} };
 // Friendly "this lives in the app" wall shown for web-gated features.
@@ -2604,30 +2570,28 @@ function homeCountry() {
     return COUNTRIES.find(c => c.n === name) || null;
   } catch (e) { return null; }
 }
-function isFree(c) {
-  if (!c) return false;
-  if (FREE_COUNTRIES.indexOf(c.n) !== -1) return true;
-  if (SMALL_OR_ISLAND.indexOf(c.n) !== -1) return true;
-  const cont = (c.c || '').split(' / ')[0];
-  if (cont === 'Caribbean' || cont === 'Oceania') return true;
-  const peers = COUNTRIES.filter(x => x.isCountry !== false && (x.c || '').split(' / ')[0] === cont)
-    .map(x => x.n)
-    .sort((a, b) => a.localeCompare(b));
-  return peers.slice(0, 7).indexOf(c.n) !== -1;
-}
 // Sovereign = the 195 (193 UN members + Vatican + Palestine). Kosovo & Taiwan are tagged isCountry:false.
 function isSovereign(c) { return c.isCountry !== false; }
 const SOVEREIGN_COUNTRIES = COUNTRIES.filter(isSovereign);
-function canView(c) { return state.isPro || isFree(c); }
-function canCompare() { return state.isPro; }
-function canQuiz() {
-  if (state.isPro) return true;
-  try {
-    const today = todaySeed();
-    const lastDay = parseInt(localStorage.getItem('myatlastic_quiz_day') || '0', 10);
-    const count = lastDay === today ? parseInt(localStorage.getItem('myatlastic_quiz_count') || '0', 10) : 0;
-    return count < 3;
-  } catch (e) { return true; }
+// Everything is free except the Quiz and Puzzle tabs, which one $29.99
+// purchase unlocks for good.
+const UNLOCK_PRICE = '$29.99';
+function canView(c) { return true; }
+function canCompare() { return true; }
+function canQuiz() { return state.isPro; }
+function canPuzzle() { return state.isPro; }
+
+// Shown in place of the Quiz or Puzzle tab until they're unlocked.
+function lockedTabHtml(what, blurb) {
+  const cta = IS_WEB
+    ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
+      '<p class="unlock-note">Unlock it in the iPhone &amp; iPad app: ' + UNLOCK_PRICE + ' once.</p>'
+    : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">Unlock Quiz &amp; Puzzle · ' + UNLOCK_PRICE + '</button>' +
+      '<p class="unlock-note">One payment, yours forever. Everything else in Myatlastic is free.</p>';
+  return '<div class="center-card quiz-card locked-tab">' +
+    '<div class="locked-ic" aria-hidden="true">🔒</div>' +
+    '<h2>' + what + '</h2>' +
+    '<p class="locked-blurb">' + blurb + '</p>' + cta + '</div>';
 }
 function recordQuiz() {
   try {
@@ -3575,14 +3539,13 @@ function renderDetails() {
     return;
   }
 
-  const free = canView(c);
   const imgUrl = wikiImage(c.img);
 
   let html = '';
   recordCountryView(c.n);
   html += '<button class="back-btn detail-back" onclick="setMobilePane(\'list\')">← Back to list</button>';
   html += '<div class="detail-eyebrow" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:space-between;align-items:center">' +
-    '<span>' + escapeHtml(c.c) + (free ? '' : ' · Pro preview') + '</span>' +
+    '<span>' + escapeHtml(c.c) + '</span>' +
     '<div style="display:flex;gap:6px;align-items:center">' +
     '<span class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '" title="Local time in ' + escapeHtml(c.n) + '">' +
       '<span class="sr-only">Local time </span><span class="local-time-clock"></span></span>' +
@@ -3637,10 +3600,8 @@ function renderDetails() {
       '</div>';
   }
 
-  if (free && imgUrl) {
+  if (imgUrl) {
     html += '<div class="detail-image"><img src="' + imgUrl + '" alt="" loading="lazy" data-flag="' + (c.flag || '🌐') + '" onerror="window.__myatlasticImgFallback(this)"></div>';
-  } else if (!free) {
-    html += '<div class="detail-image"><div class="img-locked" onclick="window.__myatlasticOpenPaywall()"><div class="lock-icon">🔒</div><div class="lock-label">Pro · tap to unlock</div></div></div>';
   }
 
   html += '<div class="fact-grid">';
@@ -3663,14 +3624,11 @@ function renderDetails() {
     ['Notable Figures', c.fig || '—'],
   ];
   sections.forEach(([label, body]) => {
-    if (free) {
-      html += '<div class="section"><h4>' + label + '</h4><div class="section-body">' + escapeHtml(body) + '</div></div>';
-    } else {
-      html += '<div class="section locked" onclick="window.__myatlasticOpenPaywall()"><h4>' + label + '</h4><div class="section-body">' + escapeHtml(body) + '</div></div>';
-    }
+    html += '<div class="section"><h4>' + label + '</h4><div class="section-body">' + escapeHtml(body) + '</div></div>';
   });
 
-  if (c.states && c.states.length && free) {
+
+  if (c.states && c.states.length) {
     html += '<div class="states"><h4>States / Provinces</h4><div class="states-grid">';
     c.states.forEach(s => {
       html += '<div class="state-item"><span>' + escapeHtml(s.n) + '</span><span class="state-cap">' + escapeHtml(s.cap || '') + '</span></div>';
@@ -3678,15 +3636,6 @@ function renderDetails() {
     html += '</div></div>';
   }
 
-  if (!free) {
-    html += '<div class="upgrade-cta">';
-    html += '<h3>🔓 Unlock every country in the world</h3>';
-    html += '<p>' + (IS_WEB ? 'The full Myatlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and the full Daily Challenge.') + '</p>';
-    html += IS_WEB
-      ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>'
-      : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>';
-    html += '</div>';
-  }
 
   html += '<div class="footer-note">On the map: ' + c.lat.toFixed(1) + '°, ' + c.lon.toFixed(1) + '°. Photos from Wikimedia Commons.</div>';
   root.innerHTML = html;
@@ -4126,8 +4075,8 @@ function openSettings() {
   modal = document.createElement('div');
   modal.id = 'settings-modal';
   modal.className = 'ts-modal';
-  const proTag = state.isPro ? '' : ' <span class="pro-tag">PRO</span>';
-  const lockNote = state.isPro ? '' : '<div class="set-locked-note">🔒 These are Pro features. <button class="link-btn" id="set-upgrade">Upgrade to unlock</button></div>';
+  const proTag = '';
+  const lockNote = '';
 
   const bandBtns = Object.keys(AGE_BANDS).map(k =>
     '<button class="seg' + (state.ageBand === k ? ' on' : '') + '" data-band="' + k + '">' + AGE_BANDS[k].label + '</button>').join('');
@@ -4173,7 +4122,7 @@ function openSettings() {
   modal.querySelector('.ts-close').onclick = () => modal.remove();
   modal.onclick = e => { if (e.target === modal) modal.remove(); };
 
-  const gate = () => { if (!state.isPro) { modal.remove(); setMode('paywall'); return false; } return true; };
+  const gate = () => true;
   const up = $('set-upgrade'); if (up) up.onclick = () => { modal.remove(); setMode('paywall'); };
 
   modal.querySelectorAll('#seg-band .seg').forEach(b => b.onclick = () => {
@@ -4597,11 +4546,7 @@ function newQuizQuestion() {
 function renderQuiz() {
   const root = $('view-quiz');
   if (!canQuiz()) {
-    root.innerHTML =
-      '<div class="center-card quiz-card"><div class="quiz-eyebrow">Daily limit reached</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">You have used your 3 free quizzes today</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Upgrade for unlimited quizzes.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button></div>';
+    root.innerHTML = lockedTabHtml('Quiz', 'Flags, capitals, food, sport, culture and world facts, with the Globe Flag Hunt. Unlimited questions that grow with your child.');
     return;
   }
 
@@ -4791,6 +4736,10 @@ function scatterStyle(name) {
 }
 function renderPuzzle() {
   const root = $('view-puzzle');
+  if (!canPuzzle()) {
+    root.innerHTML = lockedTabHtml('World puzzle', 'Match every country\'s name to its flag, one small round at a time, until you have built the whole world.');
+    return;
+  }
   const pz = ensurePuzzle();
   const all = SOVEREIGN_COUNTRIES;
   const byName = {};
@@ -5193,16 +5142,6 @@ function startChipDrag(e, country, chip) {
 
 function renderCompare() {
   const root = $('view-compare');
-  if (!canCompare()) {
-    root.innerHTML = '<div class="center-card quiz-card">' +
-      '<div style="text-align:left"><button class="back-btn" onclick="setMode(\'explore\')">← Exit</button></div>' +
-      '<div class="quiz-eyebrow">Pro feature</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">🔒 Compare is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Side-by-side comparison of any two countries.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
-      '</div>';
-    return;
-  }
   if (state.compareSubmitted && state.compareA && state.compareB) {
     renderCompareResult(root);
   } else {
@@ -5395,6 +5334,7 @@ function setProState(isPro) {
   state.isPro = !!isPro;
   try { localStorage.setItem('myatlastic_pro', isPro ? '1' : '0'); } catch (e) {}
   if (typeof updateProBadge === 'function') updateProBadge();
+  if (state.mode === 'quiz' || state.mode === 'puzzle') setMode(state.mode);
 }
 
 const Billing = {
@@ -5639,60 +5579,35 @@ const Account = {
 
 function renderPaywall() {
   const root = $('view-paywall');
-  // On the web, Pro is purchased in the app — show a download screen, not plans.
+  const features = '<ul class="feature-list">' +
+    '<li>Quiz: flags, capitals, food, sport, culture and world facts, unlimited</li>' +
+    '<li>The Globe Flag Hunt</li>' +
+    '<li>World puzzle: match every country to its flag</li>' +
+    '<li>Pay once, keep it forever, including future updates</li>' +
+    '<li>Family Sharing: one purchase covers your Apple Family</li>' +
+    '</ul>' +
+    '<p class="unlock-note">Everything else is free: every country, the spoken tours, the phrasebook, passports and more.</p>';
+  // On the web, the unlock is bought in the app.
   if (IS_WEB) {
     root.innerHTML = '<div class="center-card paywall-card webwall">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
       '<div class="webwall-badge">📱 In the app</div>' +
-      '<h2 class="webwall-title">Get Myatlastic Pro on iPhone &amp; iPad</h2>' +
-      '<p class="webwall-blurb">Every country in the world in full depth, all quizzes &amp; games, the passport, compare, currency converter and more — in the full app.</p>' +
-      '<ul class="feature-list" style="text-align:left">' +
-        '<li>Every country in the world — full depth</li>' +
-        '<li>All quizzes and the Spell-the-Country game</li>' +
-        '<li>Compare countries + live currency converter</li>' +
-        '<li>Family Sharing — one purchase for the whole family</li>' +
-      '</ul>' +
+      '<h2 class="webwall-title">Unlock Quiz &amp; Puzzle · ' + UNLOCK_PRICE + ' once</h2>' + features +
       '<button class="btn-primary webwall-cta" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
       '</div>';
     return;
   }
-  let selectedPlan = 'annual';
+  const selectedPlan = 'lifetime';
   root.innerHTML = '<div class="center-card paywall-card">' +
     '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticPaywallBack()">← Back</button></div>' +
-    '<h2>Myatlastic Pro</h2>' +
-    '<p>Unlock every country, every feature, every day.</p>' +
-    '<ul class="feature-list">' +
-    '<li>Every country in the world — full depth (history, culture, religion, notable figures)</li>' +
-    '<li>Landmark photo for every country</li>' +
-    '<li>Spell-the-Country spelling game</li>' +
-    '<li>Compare any two countries side by side</li>' +
-    '<li>Currency converter with live exchange rates</li>' +
-    '<li>Unlimited quizzes (free: 3 per day)</li>' +
-    '<li>A new Daily Challenge country every day</li>' +
-    '<li>Two-player pass &amp; play quiz for families</li>' +
-    '<li>Teacher / class challenge links</li>' +
-    '<li>Age bands, adjustable difficulty &amp; dyslexia-friendly reading mode</li>' +
-    '<li>Family Sharing — one purchase covers your Apple Family</li>' +
-    '</ul>' +
-    '<div class="plan-grid">' +
-    '<div class="plan recommended selected" data-plan="annual"><div class="plan-name">Annual</div><div class="plan-price">$29.99</div><div class="plan-detail">/year · save 50% · 1-week trial</div></div>' +
-    '<div class="plan" data-plan="monthly"><div class="plan-name">Monthly</div><div class="plan-price">$4.99</div><div class="plan-detail">/month · 1-week trial</div></div>' +
-    '<div class="plan" data-plan="lifetime"><div class="plan-name">Lifetime</div><div class="plan-price">$59.99</div><div class="plan-detail">pay once · all future updates</div></div>' +
-    '</div>' +
-    '<div style="font-size:13px;color:var(--accent);margin:14px 0;padding:10px 12px;border:1px solid var(--accent);border-radius:10px">▶ Monthly &amp; Annual start with a 1-week free trial — cancel anytime before it ends and you won\'t be charged. Lifetime is a one-time purchase with all future updates included.</div>' +
-    '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:13px">Upgrade to Pro</button>' +
-    '<div class="restore-link" id="restore-link">Already subscribed? Restore purchase</div>' +
-    '<div class="legal-note">On iPhone &amp; iPad, payment is handled securely by the Apple App Store. On the web, checkout supports card, Apple Pay, Google Pay and PayPal.<br><br>Questions? <a href="mailto:support@myatlastic.com" style="color:var(--accent)">support@myatlastic.com</a></div>' +
+    '<h2>Unlock Quiz &amp; Puzzle</h2>' + features +
+    '<div class="one-price"><span class="one-price-amount">' + UNLOCK_PRICE + '</span><span class="one-price-detail">one payment · no subscription</span></div>' +
+    '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:14px">Unlock for ' + UNLOCK_PRICE + '</button>' +
+    '<div class="restore-link" id="restore-link">Already unlocked, or had Pro before? Restore purchase</div>' +
+    '<div class="legal-note">Payment is handled securely by the Apple App Store.<br><br>Questions? <a href="mailto:support@myatlastic.com">support@myatlastic.com</a></div>' +
     '</div>';
 
   const card = root.querySelector('.paywall-card');
-  card.querySelectorAll('.plan').forEach(p => {
-    p.onclick = () => {
-      card.querySelectorAll('.plan').forEach(pp => pp.classList.remove('selected'));
-      p.classList.add('selected');
-      selectedPlan = p.dataset.plan;
-    };
-  });
   $('upgrade-btn').onclick = async () => {
     const btn = $('upgrade-btn'), orig = btn.textContent;
     btn.disabled = true; btn.textContent = 'Processing…';
@@ -5757,15 +5672,6 @@ async function fetchRates() {
 
 function renderCurrency() {
   const root = $('view-currency');
-  if (!state.isPro) {
-    root.innerHTML = '<div class="center-card quiz-card">' +
-      '<div class="quiz-eyebrow">Pro feature</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">🔒 Currency converter is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Convert between the currencies of every country with live exchange rates.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
-      '</div>';
-    return;
-  }
 
   const list = buildCurrencyList();
   const opts = list.map(x => '<option value="' + x.code + '">' + x.code + ' — ' + escapeHtml(x.name) + '</option>').join('');
@@ -6121,7 +6027,7 @@ function setupGlobe(THREE) {
   const pinLocked = new THREE.MeshBasicMaterial({ color: 0xb89460 });
   COUNTRIES.forEach(c => {
     const pos = latLonToVec3(c.lat, c.lon, 1.518, THREE);
-    const pin = new THREE.Mesh(pinGeo, (isFree(c) || state.isPro) ? pinFree : pinLocked);
+    const pin = new THREE.Mesh(pinGeo, pinFree);
     pin.position.copy(pos);
     pin.userData = c;
     pinsGroup.add(pin);
@@ -6448,7 +6354,7 @@ function renderFlatMap() {
     dot.setAttribute('cx', String(c.lon));
     dot.setAttribute('cy', String(-c.lat));
     dot.setAttribute('r', '1.2');
-    dot.setAttribute('fill', (isFree(c) || state.isPro) ? '#ff5544' : '#b89460');
+    dot.setAttribute('fill', '#ff5544');
     dot.setAttribute('stroke', '#0b0e13');
     dot.setAttribute('stroke-width', '0.2');
     dot.style.cursor = 'pointer';

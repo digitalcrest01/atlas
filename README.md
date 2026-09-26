@@ -108,16 +108,15 @@ The paywall is a UI simulation — production wiring to RevenueCat or native Sto
 
 ## Monetisation
 
-Tight-free model: 10 countries fully unlocked, hard paywall on the other 187.
+Everything is free except the Quiz and Puzzle tabs, which one purchase unlocks (decided 2026-09-26).
 
 | Plan | Price (USD) |
 |---|---|
-| Free | $0 — 10 countries, 3 quizzes/day, 1 daily challenge |
-| Pro Monthly | $4.99/mo · 1-week trial |
-| Pro Annual | $29.99/yr (saves 50%) · 1-week trial |
-| Lifetime | $59.99 once |
-| Family Sharing | Included with every paid plan |
-| School Classroom | $199/yr |
+| Free | $0 — every country in full depth, tours, phrasebook, passports, games, compare, currency |
+| Quiz & Puzzle | $29.99 once (`io.vertotech.atlastic.pro.lifetime`), all future updates |
+| Family Sharing | Included |
+
+Earlier subscribers (monthly/annual) keep Quiz & Puzzle while their subscription runs: every Pro product grants the same entitlement.
 
 See `docs/BUSINESS_PLAN.md` §1 for pricing rationale and §8 for the strategy risk analysis. The financial model on the `Cover` sheet has a Bear/Base/Bull selector that recalculates the full forecast.
 
