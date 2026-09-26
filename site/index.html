@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0b0e13">
-<title>Myatlastic — Hear the world in its own voice</title>
+<title>Myatlastic — Visit every country in its own language</title>
 <meta name="description" content="Myatlastic is a world atlas you can listen to. Spin a 3D globe of flags, take a spoken tour of any of 195 countries in its own language with English translation, hear phrases said by local voices, and collect a passport stamp for every visit. For iPhone and iPad.">
-<meta property="og:title" content="Myatlastic — Hear the world in its own voice">
+<meta property="og:title" content="Myatlastic — Visit every country in its own language">
 <meta property="og:description" content="Spoken tours of 195 countries in their own languages, a living 3D globe, a phrasebook you can hear and real passports of the world.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.myatlastic.com/">
@@ -48,20 +48,22 @@
   body {
     margin: 0; background: var(--bg); color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+    font-size: clamp(15px, 0.35vw + 14px, 17px); line-height: 1.55; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
   }
   img { max-width: 100%; height: auto; display: block; }
   .device img, .phone img { width: 100%; }
   a { color: inherit; }
   .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3, h4, p, li, .btn { overflow-wrap: break-word; }
+  p, li { hyphens: auto; }
   h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; letter-spacing: -0.02em; margin: 0; }
   .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; }
   .muted { color: var(--ink-dim); }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
   /* Buttons */
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 14px;
-    font-weight: 700; font-size: 16px; text-decoration: none; border: 1px solid transparent; transition: transform .15s ease, background .15s ease; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 10px 24px; border-radius: 14px; text-align: center; line-height: 1.25;
+    font-weight: 700; font-size: clamp(15px, 0.2vw + 14.5px, 16px); text-decoration: none; border: 1px solid transparent; transition: transform .15s ease, background .15s ease; }
   .btn:hover { transform: translateY(-1px); }
   .btn-primary { background: var(--accent); color: var(--accent-ink); }
   .btn-ghost { border-color: var(--line); color: var(--ink); background: rgba(255,255,255,0.03); }
@@ -79,18 +81,28 @@
   .nav-links { display: flex; align-items: center; gap: 26px; font-size: 15px; }
   .nav-links a { text-decoration: none; color: var(--ink-dim); }
   .nav-links a:hover { color: var(--ink); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .lang-pick { position: relative; display: inline-flex; align-items: center; gap: 6px; color: var(--ink-dim); }
+  .lang-pick svg { width: 18px; height: 18px; position: absolute; inset-inline-start: 10px; pointer-events: none; }
+  .lang-pick select { appearance: none; -webkit-appearance: none; min-height: 40px; padding-block: 0; padding-inline: 34px 28px; border-radius: 11px;
+    border: 1px solid var(--line); background: rgba(255,255,255,0.04); color: var(--ink); font: inherit; font-size: 14px; cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink-dim) 50%), linear-gradient(135deg, var(--ink-dim) 50%, transparent 50%);
+    background-size: 5px 5px; background-repeat: no-repeat; background-position: calc(100% - 15px) 52%, calc(100% - 10px) 52%; }
+  [dir="rtl"] .lang-pick select { background-position: 15px 52%, 10px 52%; }
+  .lang-pick select:hover { border-color: rgba(212,160,86,0.6); }
+  .lang-pick option { background: var(--panel); color: var(--ink); }
   .nav-links .btn { min-height: 40px; padding: 0 16px; font-size: 14px; border-radius: 11px; color: var(--accent-ink); }
 
   /* Hero */
   .hero { position: relative; overflow: hidden; padding: 72px 0 40px;
     background: radial-gradient(90% 70% at 70% 10%, rgba(124,196,228,0.14), transparent 60%), radial-gradient(70% 60% at 10% 0%, rgba(212,160,86,0.14), transparent 60%); }
-  .hero .wrap { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
-  .hero h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.02; font-weight: 800; }
+  .hero .wrap { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 48px; align-items: center; }
+  .hero h1 { font-size: clamp(34px, 3.4vw + 18px, 62px); line-height: 1.04; font-weight: 800; }
   .hero h1 span { color: var(--accent); }
-  .lede { font-size: 20px; color: #d9d3c3; margin: 22px 0 30px; max-width: 34ch; }
+  .lede { font-size: clamp(17px, 0.5vw + 15px, 20px); color: #d9d3c3; margin: 22px 0 30px; max-width: 34ch; }
   .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
   .hero-note { margin-top: 16px; font-size: 14px; color: var(--ink-dim); }
-  .devices { position: relative; width: 100%; max-width: 560px; margin-left: auto; aspect-ratio: 1 / 0.98; }
+  .devices { position: relative; width: 100%; max-width: 560px; margin-inline-start: auto; aspect-ratio: 1 / 0.98; }
   .device { position: absolute; border-radius: 28px; overflow: hidden; background: #000; box-shadow: 0 30px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.08); }
   .device.ipad { width: 72%; right: 0; top: 0; border-radius: 20px; }
   .device.iphone { width: 34%; left: 4%; bottom: 0; border-radius: 26px; border: 5px solid #1b1f27; }
@@ -99,23 +111,23 @@
   .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--bg-2); }
   .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
   .stat { padding: 26px 12px; text-align: center; }
-  .stat b { display: block; font-size: 30px; font-weight: 800; color: var(--ink); }
+  .stat b { display: block; font-size: clamp(22px, 1vw + 18px, 30px); font-weight: 800; color: var(--ink); }
   .stat span { font-size: 14px; color: var(--ink-dim); }
 
   section { padding: 96px 0; }
   .section-head { max-width: 680px; margin: 0 0 48px; }
-  .section-head h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.08; font-weight: 800; }
-  .section-head p { font-size: 18px; color: var(--ink-dim); margin: 16px 0 0; }
+  .section-head h2 { font-size: clamp(26px, 2.4vw + 16px, 46px); line-height: 1.08; font-weight: 800; }
+  .section-head p { font-size: clamp(16px, 0.3vw + 15px, 18px); color: var(--ink-dim); margin: 16px 0 0; }
 
   /* Listen */
   .listen { background: linear-gradient(180deg, var(--bg) 0%, #0e141d 100%); }
-  .hello-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .hello-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
   .hello { display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: 16px; border: 1px solid var(--line); background: var(--panel);
-    color: var(--ink); font: inherit; text-align: left; cursor: pointer; transition: border-color .15s ease, transform .15s ease; min-height: 76px; }
+    color: var(--ink); font: inherit; text-align: start; cursor: pointer; transition: border-color .15s ease, transform .15s ease; min-height: 76px; }
   .hello:hover { border-color: rgba(212,160,86,0.6); transform: translateY(-1px); }
   .hello img { width: 36px; height: auto; border-radius: 4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.3); flex: none; }
   .hello .h-text { flex: 1; min-width: 0; }
-  .hello .h-word { display: block; font-size: 19px; font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
+  .hello .h-word { display: block; font-size: clamp(17px, 0.3vw + 16px, 19px); font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
   .hello .h-lang { display: block; font-size: 13px; color: var(--ink-dim); }
   .hello .h-icon { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: rgba(212,160,86,0.14); color: var(--accent); flex: none; }
   .hello .h-icon svg { width: 16px; height: 16px; }
@@ -126,14 +138,14 @@
   .listen-note { margin-top: 18px; font-size: 14px; color: var(--ink-dim); min-height: 1.5em; }
 
   /* Feature rows */
-  .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; padding: 56px 0; }
+  .feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; padding: 56px 0; }
   .feature + .feature { border-top: 1px solid var(--line); }
   .feature.flip .shot { order: -1; }
-  .feature h3 { font-size: clamp(26px, 3vw, 36px); line-height: 1.1; font-weight: 800; margin-bottom: 16px; }
-  .feature p { color: #d0cabb; margin: 0 0 14px; font-size: 18px; }
+  .feature h3 { font-size: clamp(22px, 1.6vw + 16px, 36px); line-height: 1.1; font-weight: 800; margin-bottom: 16px; }
+  .feature p { color: #d0cabb; margin: 0 0 14px; font-size: clamp(16px, 0.3vw + 15px, 18px); }
   .feature ul { list-style: none; padding: 0; margin: 18px 0 0; }
-  .feature li { position: relative; padding-left: 28px; margin: 10px 0; color: var(--ink-dim); font-size: 16px; }
-  .feature li::before { content: ''; position: absolute; left: 0; top: 7px; width: 14px; height: 14px; border-radius: 50%; background: rgba(212,160,86,0.2); box-shadow: inset 0 0 0 4px var(--accent); }
+  .feature li { position: relative; padding-inline-start: 28px; margin: 10px 0; color: var(--ink-dim); font-size: 16px; }
+  .feature li::before { content: ''; position: absolute; inset-inline-start: 0; top: 7px; width: 14px; height: 14px; border-radius: 50%; background: rgba(212,160,86,0.2); box-shadow: inset 0 0 0 4px var(--accent); }
   .shot { display: flex; justify-content: center; }
   .phone { width: min(320px, 78%); border-radius: 36px; overflow: hidden; border: 8px solid #1b1f27; box-shadow: 0 30px 70px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.07); background: #000; }
   .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; margin-bottom: 14px; }
@@ -153,11 +165,11 @@
   .plan { padding: 32px; border-radius: 22px; border: 1px solid var(--line); background: var(--panel); }
   .plan.featured { border-color: rgba(212,160,86,0.55); background: linear-gradient(180deg, rgba(212,160,86,0.10), var(--panel) 60%); }
   .plan h3 { font-size: 20px; }
-  .price { font-size: 52px; font-weight: 800; letter-spacing: -0.03em; margin: 12px 0 2px; }
+  .price { font-size: clamp(40px, 1.6vw + 34px, 52px); font-weight: 800; letter-spacing: -0.03em; margin: 12px 0 2px; }
   .price-note { color: var(--ink-dim); font-size: 15px; margin-bottom: 20px; }
   .plan ul { list-style: none; padding: 0; margin: 0; }
-  .plan li { padding: 9px 0 9px 28px; position: relative; border-top: 1px solid var(--line); font-size: 15px; color: #d7d1c1; }
-  .plan li::before { content: '✓'; position: absolute; left: 2px; color: var(--accent); font-weight: 800; }
+  .plan li { padding-block: 9px; padding-inline: 28px 0; position: relative; border-top: 1px solid var(--line); font-size: 15px; color: #d7d1c1; }
+  .plan li::before { content: '✓'; position: absolute; inset-inline-start: 2px; color: var(--accent); font-weight: 800; }
   .fine { margin-top: 22px; font-size: 14px; color: var(--ink-dim); max-width: 900px; }
 
   /* Trust */
@@ -166,8 +178,8 @@
 
   /* Final CTA */
   .final { text-align: center; padding: 110px 0; background: radial-gradient(60% 80% at 50% 100%, rgba(212,160,86,0.16), transparent 70%); }
-  .final h2 { font-size: clamp(32px, 5vw, 54px); font-weight: 800; line-height: 1.05; }
-  .final p { color: var(--ink-dim); font-size: 18px; margin: 16px auto 30px; max-width: 520px; }
+  .final h2 { font-size: clamp(28px, 3.2vw + 16px, 54px); font-weight: 800; line-height: 1.05; }
+  .final p { color: var(--ink-dim); font-size: clamp(16px, 0.3vw + 15px, 18px); margin: 16px auto 30px; max-width: 520px; }
   .final .cta-row { justify-content: center; }
 
   footer { border-top: 1px solid var(--line); padding: 44px 0 56px; font-size: 14px; color: var(--ink-dim); }
@@ -176,10 +188,12 @@
   footer a { text-decoration: none; color: var(--ink-dim); }
   footer a:hover { color: var(--ink); }
 
+  @media (max-width: 1100px) {
+    .nav-links a:not(.btn) { display: none; }
+  }
   @media (max-width: 960px) {
     .hero .wrap { grid-template-columns: 1fr; }
     .devices { margin: 8px auto 0; }
-    .hello-grid { grid-template-columns: repeat(2, 1fr); }
     .feature, .feature.flip { grid-template-columns: 1fr; gap: 36px; }
     .feature.flip .shot { order: 0; }
     .more-grid, .trust .wrap { grid-template-columns: repeat(2, 1fr); }
@@ -188,12 +202,15 @@
     body { font-size: 16px; }
     .wrap { padding: 0 16px; }
     .nav-links a:not(.btn) { display: none; }
+    .nav-links { gap: 10px; }
+    .nav-links .btn { display: none; }
+    .lang-pick select { padding-inline: 32px 24px; max-width: 128px; }
+    .brand { font-size: 18px; }
     .hero { padding: 44px 0 24px; }
     .lede { font-size: 18px; }
     .cta-row .btn { width: 100%; }
     .stats .wrap { grid-template-columns: repeat(2, 1fr); }
     section { padding: 64px 0; }
-    .hello-grid { grid-template-columns: 1fr; }
     .plans, .more-grid, .trust .wrap { grid-template-columns: 1fr; }
     .plan { padding: 24px; }
     .feature { padding: 40px 0; }
@@ -215,11 +232,27 @@
       Myatlastic
     </a>
     <nav class="nav-links" aria-label="Main">
-      <a href="#listen">Listen</a>
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a href="/app/">Web preview</a>
-      <a class="btn btn-primary" href="https://apps.apple.com/app/id6773543267">Get the app</a>
+      <a href="#listen" data-i18n="nav_listen">Listen</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+      <a href="/app/" data-i18n="nav_preview">Web preview</a>
+      <label class="lang-pick">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span class="sr-only" data-i18n="lang_label">Language</span>
+        <select id="lang-select">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="pt">Português</option>
+          <option value="de">Deutsch</option>
+          <option value="ar">العربية</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="hi">हिन्दी</option>
+          <option value="fil">Filipino</option>
+        </select>
+      </label>
+      <a class="btn btn-primary" href="https://apps.apple.com/app/id6773543267" data-i18n="nav_get">Get the app</a>
     </nav>
   </div>
 </header>
@@ -228,17 +261,17 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
       <div>
-        <p class="eyebrow">For iPhone &amp; iPad · Version 2.0</p>
-        <h1 id="hero-title">Hear the world<br><span>in its own voice.</span></h1>
-        <p class="lede">Spin a living 3D globe, pick any of 195 countries and take a spoken tour in its own language, with English translation as you listen.</p>
+        <p class="eyebrow" data-i18n="hero_eyebrow">For iPhone &amp; iPad · Version 2.0</p>
+        <h1 id="hero-title" data-i18n="hero_title">Visit every country<br><span>in its own language.</span></h1>
+        <p class="lede" data-i18n="hero_lede">Spin a living 3D globe, pick any of 195 countries and take a spoken tour in its own language, with English translation as you listen.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://apps.apple.com/app/id6773543267">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.2 5.8c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></svg>
-            Download on the App Store
+            <span data-i18n="hero_download">Download on the App Store</span>
           </a>
-          <a class="btn btn-ghost" href="#listen">▶ Hear a sample</a>
+          <a class="btn btn-ghost" href="#listen" data-i18n="hero_sample">▶ Hear a sample</a>
         </div>
-        <p class="hero-note">Free to explore. Quiz &amp; Puzzle unlock once for $29.99, with no subscription.</p>
+        <p class="hero-note" data-i18n="hero_note">Free to explore. Quiz &amp; Puzzle unlock once for $29.99, with no subscription.</p>
       </div>
       <div class="devices" aria-hidden="true">
         <div class="device ipad"><img src="/assets/site/ipad_globe.jpg" alt="" width="1100" height="1467" loading="eager"></div>
@@ -249,19 +282,19 @@
 
   <div class="stats" role="list">
     <div class="wrap">
-      <div class="stat" role="listitem"><b>195</b><span>countries, every one</span></div>
-      <div class="stat" role="listitem"><b>2–3 min</b><span>spoken tour of each</span></div>
-      <div class="stat" role="listitem"><b>60+</b><span>languages in the phrasebook</span></div>
-      <div class="stat" role="listitem"><b>0</b><span>ads, accounts or trackers</span></div>
+      <div class="stat" role="listitem"><b>195</b><span data-i18n="stat_countries">countries, every one</span></div>
+      <div class="stat" role="listitem"><b data-i18n="stat_tour_num">2–3 min</b><span data-i18n="stat_tour">spoken tour of each</span></div>
+      <div class="stat" role="listitem"><b>60+</b><span data-i18n="stat_langs">languages in the phrasebook</span></div>
+      <div class="stat" role="listitem"><b>0</b><span data-i18n="stat_zero">ads, accounts or trackers</span></div>
     </div>
   </div>
 
   <section class="listen" id="listen" aria-labelledby="listen-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Listen</p>
-        <h2 id="listen-title">Say hello to the world</h2>
-        <p>These are the voices from the app. Tap a country to hear how people there say hello.</p>
+        <p class="eyebrow" data-i18n="listen_eyebrow">Listen</p>
+        <h2 id="listen-title" data-i18n="listen_title">Say hello to the world</h2>
+        <p data-i18n="listen_sub">These are the voices from the app. Tap a country to hear how people there say hello.</p>
       </div>
       <div class="hello-grid" id="hello-grid"></div>
       <p class="listen-note" id="listen-note" aria-live="polite"></p>
@@ -271,20 +304,20 @@
   <section id="features" aria-labelledby="features-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">What's inside</p>
-        <h2 id="features-title">Explore by ear and by eye</h2>
+        <p class="eyebrow" data-i18n="feat_eyebrow">What's inside</p>
+        <h2 id="features-title" data-i18n="feat_title">Explore by ear and by eye</h2>
       </div>
 
       <article class="feature">
         <div>
-          <span class="tag free">Free</span>
-          <h3>A spoken tour of every country</h3>
-          <p>Two or three minutes that feel like a local friend showing you around: everyday life, food, celebrations and landscapes.</p>
-          <p>It is told in the country's own language by a natural, human-sounding voice, with a small English translation under every line.</p>
+          <span class="tag free" data-i18n="plan_free">Free</span>
+          <h3 data-i18n="tour_title">A spoken tour of every country</h3>
+          <p data-i18n="tour_p1">Two or three minutes that feel like a local friend showing you around: everyday life, food, celebrations and landscapes.</p>
+          <p data-i18n="tour_p2">It is told in the country's own language by a natural, human-sounding voice, with a small English translation under every line.</p>
           <ul>
-            <li>Photos of the places being described change as the story goes on</li>
-            <li>The country's flag rises from the globe while the rest of the world fades to grey</li>
-            <li>Replay, pause and pick up where you left off</li>
+            <li data-i18n="tour_li1">Photos of the places being described change as the story goes on</li>
+            <li data-i18n="tour_li2">The country's flag rises from the globe while the rest of the world fades to grey</li>
+            <li data-i18n="tour_li3">Replay, pause and pick up where you left off</li>
           </ul>
         </div>
         <div class="shot"><div class="phone"><img src="/assets/site/iphone_tour.jpg" alt="A spoken tour of the Philippines in Filipino, with a photo of Kayangan Lake and the English translation below" width="640" height="1391" loading="lazy"></div></div>
@@ -292,12 +325,12 @@
 
       <article class="feature flip">
         <div>
-          <span class="tag free">Free</span>
-          <h3>A living 3D globe</h3>
-          <p>A photorealistic Earth that keeps turning, with every country's flag on it. Drag to spin it, tap a country to fly there, or switch the flags off for a clear view.</p>
+          <span class="tag free" data-i18n="tag_free">Free</span>
+          <h3 data-i18n="globe_title">A living 3D globe</h3>
+          <p data-i18n="globe_p">A photorealistic Earth that keeps turning, with every country's flag on it. Drag to spin it, tap a country to fly there, or switch the flags off for a clear view.</p>
           <ul>
-            <li>Capital, currency, languages, local time, culture, history and food for all 195 countries</li>
-            <li>A soft background sound while you explore, which falls quiet whenever something is spoken</li>
+            <li data-i18n="globe_li1">Capital, currency, languages, local time, culture, history and food for all 195 countries</li>
+            <li data-i18n="globe_li2">A soft background sound while you explore, which falls quiet whenever something is spoken</li>
           </ul>
         </div>
         <div class="shot"><div class="phone"><img src="/assets/site/iphone_globe.jpg" alt="The 3D globe showing Africa covered in country flags" width="640" height="1391" loading="lazy"></div></div>
@@ -305,12 +338,12 @@
 
       <article class="feature">
         <div>
-          <span class="tag free">Free</span>
-          <h3>A phrasebook you can hear</h3>
-          <p>Pick a phrase, such as hello, thank you or how much?, and hear it said by a local voice, with the English meaning and a simple guide to saying it yourself.</p>
+          <span class="tag free" data-i18n="tag_free">Free</span>
+          <h3 data-i18n="phr_title">A phrasebook you can hear</h3>
+          <p data-i18n="phr_p">Pick a phrase, such as hello, thank you or how much?, and hear it said by a local voice, with the English meaning and a simple guide to saying it yourself.</p>
           <ul>
-            <li>More than 60 languages, written in their own scripts</li>
-            <li>Filipino (Tagalog), Swahili, Arabic, Hindi, Japanese and many more</li>
+            <li data-i18n="phr_li1">More than 60 languages, written in their own scripts</li>
+            <li data-i18n="phr_li2">Filipino (Tagalog), Swahili, Arabic, Hindi, Japanese and many more</li>
           </ul>
         </div>
         <div class="shot"><div class="phone"><img src="/assets/site/iphone_phrases.jpg" alt="The French phrasebook with Bonsoir selected" width="640" height="1391" loading="lazy"></div></div>
@@ -318,12 +351,12 @@
 
       <article class="feature flip">
         <div>
-          <span class="tag free">Free</span>
-          <h3>Passports of the world</h3>
-          <p>Pick any country to see its real passport cover. Every visit earns an immigration-style entry stamp, and the more you explore, the fuller your passport gets.</p>
+          <span class="tag free" data-i18n="tag_free">Free</span>
+          <h3 data-i18n="pp_title">Passports of the world</h3>
+          <p data-i18n="pp_p">Pick any country to see its real passport cover. Every visit earns an immigration-style entry stamp, and the more you explore, the fuller your passport gets.</p>
           <ul>
-            <li>Official covers from each country's passport, where a free image exists</li>
-            <li>Stamps in different inks and shapes, dated by visit</li>
+            <li data-i18n="pp_li1">Official covers from each country's passport, where a free image exists</li>
+            <li data-i18n="pp_li2">Stamps in different inks and shapes, dated by visit</li>
           </ul>
         </div>
         <div class="shot"><div class="phone"><img src="/assets/site/iphone_passport.jpg" alt="The Japanese passport cover with three entry stamps" width="640" height="1391" loading="lazy"></div></div>
@@ -331,12 +364,12 @@
 
       <article class="feature">
         <div>
-          <span class="tag paid">Quiz &amp; Puzzle · $29.99 once</span>
-          <h3>Quiz the whole world</h3>
-          <p>Flags, capitals, food, sport, culture and world facts, such as how many continents there are or in how many countries Spanish is spoken. Every answer comes with a short explanation.</p>
+          <span class="tag paid" data-i18n="quiz_tag">Quiz &amp; Puzzle · $29.99 once</span>
+          <h3 data-i18n="quiz_title">Quiz the whole world</h3>
+          <p data-i18n="quiz_p">Flags, capitals, food, sport, culture and world facts, such as how many continents there are or in how many countries Spanish is spoken. Every answer comes with a short explanation.</p>
           <ul>
-            <li>World puzzle: drag each country's name onto its flag</li>
-            <li>Globe Flag Hunt and adjustable difficulty</li>
+            <li data-i18n="quiz_li1">World puzzle: drag each country's name onto its flag</li>
+            <li data-i18n="quiz_li2">Globe Flag Hunt and adjustable difficulty</li>
           </ul>
         </div>
         <div class="shot"><div class="phone"><img src="/assets/site/iphone_quiz.jpg" alt="A world-facts question with the answer and explanation" width="640" height="1391" loading="lazy"></div></div>
@@ -344,9 +377,9 @@
 
       <article class="feature flip">
         <div>
-          <span class="tag free">Free</span>
-          <h3>Made for curious kids</h3>
-          <p>A bright, playful Kids mode, reading levels for ages 3–5, 6–8 and 9–12, and a dyslexia-friendly reading option. Grown-ups love it too.</p>
+          <span class="tag free" data-i18n="tag_free">Free</span>
+          <h3 data-i18n="kids_title">Made for curious kids</h3>
+          <p data-i18n="kids_p">A bright, playful Kids mode, reading levels for ages 3–5, 6–8 and 9–12, and a dyslexia-friendly reading option. Grown-ups love it too.</p>
         </div>
         <div class="shot"><div class="phone"><img src="/assets/site/iphone_kids.jpg" alt="Kids mode with colourful cards for today's country, the puzzle and Mystery Country" width="640" height="1391" loading="lazy"></div></div>
       </article>
@@ -356,16 +389,16 @@
   <section class="more" aria-labelledby="more-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">And more</p>
-        <h2 id="more-title">Something new every time you open it</h2>
+        <p class="eyebrow" data-i18n="more_eyebrow">And more</p>
+        <h2 id="more-title" data-i18n="more_title">Something new every time you open it</h2>
       </div>
       <div class="more-grid">
-        <div class="card"><div class="ic">📅</div><h4>Today's country</h4><p>A new country each day, with a question to answer about it.</p></div>
-        <div class="card"><div class="ic">🕵️</div><h4>Mystery Country</h4><p>Follow clues about animals, food and language to guess where you are.</p></div>
-        <div class="card"><div class="ic">⚖️</div><h4>Compare</h4><p>Put two countries side by side, from population to time zone.</p></div>
-        <div class="card"><div class="ic">💱</div><h4>Currency converter</h4><p>Live exchange rates between the world's currencies.</p></div>
-        <div class="card"><div class="ic">🔤</div><h4>Spell the country</h4><p>Practise spelling country names, letter by letter.</p></div>
-        <div class="card"><div class="ic">👨‍👩‍👧</div><h4>Family &amp; classroom</h4><p>Two-player pass-and-play, and class challenge links a teacher can share, with no logins.</p></div>
+        <div class="card"><div class="ic">📅</div><h4 data-i18n="more_today_t">Today's country</h4><p data-i18n="more_today_p">A new country each day, with a question to answer about it.</p></div>
+        <div class="card"><div class="ic">🕵️</div><h4 data-i18n="more_mystery_t">Mystery Country</h4><p data-i18n="more_mystery_p">Follow clues about animals, food and language to guess where you are.</p></div>
+        <div class="card"><div class="ic">⚖️</div><h4 data-i18n="more_compare_t">Compare</h4><p data-i18n="more_compare_p">Put two countries side by side, from population to time zone.</p></div>
+        <div class="card"><div class="ic">💱</div><h4 data-i18n="more_currency_t">Currency converter</h4><p data-i18n="more_currency_p">Live exchange rates between the world's currencies.</p></div>
+        <div class="card"><div class="ic">🔤</div><h4 data-i18n="more_spell_t">Spell the country</h4><p data-i18n="more_spell_p">Practise spelling country names, letter by letter.</p></div>
+        <div class="card"><div class="ic">👨‍👩‍👧</div><h4 data-i18n="more_family_t">Family &amp; classroom</h4><p data-i18n="more_family_p">Two-player pass-and-play, and class challenge links a teacher can share, with no logins.</p></div>
       </div>
     </div>
   </section>
@@ -373,58 +406,58 @@
   <section id="pricing" aria-labelledby="pricing-title">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Pricing</p>
-        <h2 id="pricing-title">Free to explore. One price for Quiz &amp; Puzzle.</h2>
-        <p>No subscription and no ads. Pay once, and it's yours.</p>
+        <p class="eyebrow" data-i18n="price_eyebrow">Pricing</p>
+        <h2 id="pricing-title" data-i18n="price_title">Free to explore. One price for Quiz &amp; Puzzle.</h2>
+        <p data-i18n="price_sub">No subscription and no ads. Pay once, and it's yours.</p>
       </div>
       <div class="plans">
         <div class="plan">
           <h3>Free</h3>
           <div class="price">$0</div>
-          <div class="price-note">Everything you need to explore</div>
+          <div class="price-note" data-i18n="plan_free_note">Everything you need to explore</div>
           <ul>
-            <li>Every country, in full, with photos</li>
-            <li>The 3D globe with every country's flag</li>
-            <li>Spoken tours in each country's own language</li>
-            <li>The phrasebook you can hear</li>
-            <li>Passports and entry stamps</li>
-            <li>Today's country, Mystery Country, Compare, Currency and Spell</li>
-            <li>Kids mode, reading levels and dyslexia-friendly reading</li>
+            <li data-i18n="pf1">Every country, in full, with photos</li>
+            <li data-i18n="pf2">The 3D globe with every country's flag</li>
+            <li data-i18n="pf3">Spoken tours in each country's own language</li>
+            <li data-i18n="pf4">The phrasebook you can hear</li>
+            <li data-i18n="pf5">Passports and entry stamps</li>
+            <li data-i18n="pf6">Today's country, Mystery Country, Compare, Currency and Spell</li>
+            <li data-i18n="pf7">Kids mode, reading levels and dyslexia-friendly reading</li>
           </ul>
         </div>
         <div class="plan featured">
-          <h3>Quiz &amp; Puzzle</h3>
+          <h3 data-i18n="plan_paid">Quiz &amp; Puzzle</h3>
           <div class="price">$29.99</div>
-          <div class="price-note">One payment · no subscription</div>
+          <div class="price-note" data-i18n="plan_paid_note">One payment · no subscription</div>
           <ul>
-            <li>Unlimited quizzes: flags, capitals, food, sport, culture and world facts</li>
-            <li>Short explanations with every answer</li>
-            <li>The World puzzle and the Globe Flag Hunt</li>
-            <li>Future updates to Quiz and Puzzle included</li>
-            <li>Restore on your other iPhone and iPad</li>
+            <li data-i18n="pp1">Unlimited quizzes: flags, capitals, food, sport, culture and world facts</li>
+            <li data-i18n="pp2">Short explanations with every answer</li>
+            <li data-i18n="pp3">The World puzzle and the Globe Flag Hunt</li>
+            <li data-i18n="pp4">Future updates to Quiz and Puzzle included</li>
+            <li data-i18n="pp5">Restore on your other iPhone and iPad</li>
           </ul>
         </div>
       </div>
-      <p class="fine">Bought in the app through the App Store. The price may be shown in your local currency. If you have an earlier Myatlastic subscription, it keeps working until it ends.</p>
+      <p class="fine" data-i18n="price_fine">Bought in the app through the App Store. The price may be shown in your local currency. If you have an earlier Myatlastic subscription, it keeps working until it ends.</p>
     </div>
   </section>
 
   <section class="trust" aria-label="Privacy">
     <div class="wrap">
-      <div class="card"><div class="ic">🚫</div><h4>No ads</h4><p>Nothing to skip, nothing to click by mistake.</p></div>
-      <div class="card"><div class="ic">👤</div><h4>No accounts</h4><p>Open it and go. No sign-up and no email.</p></div>
-      <div class="card"><div class="ic">🔒</div><h4>No tracking</h4><p>Progress stays on the device. We collect no personal data.</p></div>
-      <div class="card"><div class="ic">🧒</div><h4>Safe for children</h4><p>Designed with COPPA and GDPR-K in mind. <a href="/privacy">Read our privacy policy</a>.</p></div>
+      <div class="card"><div class="ic">🚫</div><h4 data-i18n="trust_ads_t">No ads</h4><p data-i18n="trust_ads_p">Nothing to skip, nothing to click by mistake.</p></div>
+      <div class="card"><div class="ic">👤</div><h4 data-i18n="trust_acc_t">No accounts</h4><p data-i18n="trust_acc_p">Open it and go. No sign-up and no email.</p></div>
+      <div class="card"><div class="ic">🔒</div><h4 data-i18n="trust_track_t">No tracking</h4><p data-i18n="trust_track_p">Progress stays on the device. We collect no personal data.</p></div>
+      <div class="card"><div class="ic">🧒</div><h4 data-i18n="trust_kids_t">Safe for children</h4><p data-i18n="trust_kids_p">Designed with COPPA and GDPR-K in mind. <a href="/privacy">Read our privacy policy</a>.</p></div>
     </div>
   </section>
 
   <section class="final" aria-labelledby="final-title">
     <div class="wrap">
-      <h2 id="final-title">Where will you go first?</h2>
-      <p>Myatlastic 2.0 for iPhone and iPad. Free to download.</p>
+      <h2 id="final-title" data-i18n="final_title">Where will you go first?</h2>
+      <p data-i18n="final_sub">Myatlastic 2.0 for iPhone and iPad. Free to download.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://apps.apple.com/app/id6773543267">Download on the App Store</a>
-        <a class="btn btn-ghost" href="/app/">Try the web preview</a>
+        <a class="btn btn-primary" href="https://apps.apple.com/app/id6773543267" data-i18n="final_download">Download on the App Store</a>
+        <a class="btn btn-ghost" href="/app/" data-i18n="final_preview">Try the web preview</a>
       </div>
     </div>
   </section>
@@ -432,52 +465,80 @@
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Vertotech LLC. Myatlastic is operated by Vertotech LLC.</div>
+    <div data-i18n="foot_copy">© 2026 Vertotech LLC. Myatlastic is operated by Vertotech LLC.</div>
     <nav aria-label="Footer">
-      <a href="/privacy">Privacy policy</a>
-      <a href="/terms">Terms of use</a>
+      <a href="/privacy" data-i18n="foot_privacy">Privacy policy</a>
+      <a href="/terms" data-i18n="foot_terms">Terms of use</a>
       <a href="mailto:support@myatlastic.com">support@myatlastic.com</a>
-      <a href="/app/">Web preview</a>
+      <a href="/app/" data-i18n="foot_preview">Web preview</a>
     </nav>
   </div>
 </footer>
 
 <script>
-/* "Say hello": real clips from the app's voice service (same site, cached for a year). */
+/* Language menu and "Say hello". Text is swapped from /assets/site/i18n/<lang>.json;
+   English is the page itself. The choice is remembered on this device. */
 (function () {
+  var LANGS = ['en', 'es', 'fr', 'pt', 'de', 'ar', 'zh', 'ja', 'hi', 'fil'];
+  var KEY = 'myatlastic_site_lang';
+  var EN = {};
+  var T = {};
+  document.querySelectorAll('[data-i18n]').forEach(function (el) { EN[el.getAttribute('data-i18n')] = el.innerHTML; });
+  EN.meta_title = document.title;
+  EN.meta_desc = document.querySelector('meta[name="description"]').getAttribute('content');
+  EN.voice_error = 'The voice is not available right now. Please try again in a moment.';
+  EN.hello_aria = 'Hear hello in {lang}, from {country}';
+  var cache = { en: EN };
+
   var HELLOS = [
-    { country: 'Japan', code: 'jp', lang: 'Japanese', text: 'こんにちは', roman: 'konnichiwa', locale: 'ja-JP' },
-    { country: 'France', code: 'fr', lang: 'French', text: 'Bonjour', locale: 'fr-FR' },
-    { country: 'Philippines', code: 'ph', lang: 'Filipino (Tagalog)', text: 'Magandang araw po', locale: 'fil-PH' },
-    { country: 'Kenya', code: 'ke', lang: 'Swahili', text: 'Hujambo', locale: 'sw-KE' },
-    { country: 'Egypt', code: 'eg', lang: 'Arabic', text: 'مرحبًا', roman: 'marhaban', locale: 'ar-EG' },
-    { country: 'Brazil', code: 'br', lang: 'Portuguese', text: 'Olá', locale: 'pt-BR' },
-    { country: 'India', code: 'in', lang: 'Hindi', text: 'नमस्ते', roman: 'namaste', locale: 'hi-IN' },
-    { country: 'South Korea', code: 'kr', lang: 'Korean', text: '안녕하세요', roman: 'annyeonghaseyo', locale: 'ko-KR' },
-    { country: 'Mexico', code: 'mx', lang: 'Spanish', text: 'Hola', locale: 'es-MX' },
-    { country: 'Greece', code: 'gr', lang: 'Greek', text: 'Γεια σας', roman: 'yia sas', locale: 'el-GR' },
-    { country: 'Thailand', code: 'th', lang: 'Thai', text: 'สวัสดีค่ะ', roman: 'sawatdi kha', locale: 'th-TH' },
-    { country: 'Turkey', code: 'tr', lang: 'Turkish', text: 'Merhaba', locale: 'tr-TR' }
+    { country: 'Japan', code: 'jp', lang: 'ja', text: 'こんにちは', roman: 'konnichiwa', locale: 'ja-JP' },
+    { country: 'France', code: 'fr', lang: 'fr', text: 'Bonjour', locale: 'fr-FR' },
+    { country: 'Philippines', code: 'ph', lang: 'fil', text: 'Magandang araw po', locale: 'fil-PH' },
+    { country: 'Kenya', code: 'ke', lang: 'sw', text: 'Hujambo', locale: 'sw-KE' },
+    { country: 'Egypt', code: 'eg', lang: 'ar', text: 'مرحبًا', roman: 'marhaban', locale: 'ar-EG' },
+    { country: 'Brazil', code: 'br', lang: 'pt', text: 'Olá', locale: 'pt-BR' },
+    { country: 'India', code: 'in', lang: 'hi', text: 'नमस्ते', roman: 'namaste', locale: 'hi-IN' },
+    { country: 'South Korea', code: 'kr', lang: 'ko', text: '안녕하세요', roman: 'annyeonghaseyo', locale: 'ko-KR' },
+    { country: 'Mexico', code: 'mx', lang: 'es', text: 'Hola', locale: 'es-MX' },
+    { country: 'Greece', code: 'gr', lang: 'el', text: 'Γεια σας', roman: 'yia sas', locale: 'el-GR' },
+    { country: 'Thailand', code: 'th', lang: 'th', text: 'สวัสดีค่ะ', roman: 'sawatdi kha', locale: 'th-TH' },
+    { country: 'Turkey', code: 'tr', lang: 'tr', text: 'Merhaba', locale: 'tr-TR' }
   ];
+  var LANG_EN = { ja: 'Japanese', fr: 'French', fil: 'Filipino (Tagalog)', sw: 'Swahili', ar: 'Arabic', pt: 'Portuguese', hi: 'Hindi', ko: 'Korean', es: 'Spanish', el: 'Greek', th: 'Thai', tr: 'Turkish' };
+  HELLOS.forEach(function (h) {
+    EN['langname_' + h.lang] = LANG_EN[h.lang];
+    EN['country_' + h.country.replace(/ /g, '_')] = h.country === 'Philippines' ? 'the Philippines' : h.country;
+  });
+
+  function t(key) { return (T && T[key]) || EN[key] || ''; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
   var grid = document.getElementById('hello-grid');
   var note = document.getElementById('listen-note');
   var audio = new Audio();
   var current = null;
   var speaker = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 7.6h2.9L10 4.5v11l-3.6-3.1H3.5z" fill="currentColor"/><path d="M12.6 7.4a3.6 3.6 0 0 1 0 5.2M14.8 5.4a6.4 6.4 0 0 1 0 9.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
-
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function setState(btn, s) { if (btn) btn.setAttribute('data-state', s); }
   function stop() { audio.pause(); setState(current, 'idle'); current = null; }
+  function failed() { if (current) { setState(current, 'idle'); current = null; } note.textContent = t('voice_error'); }
+
+  function paintHellos() {
+    grid.querySelectorAll('.hello').forEach(function (b, i) {
+      var h = HELLOS[i];
+      var lang = t('langname_' + h.lang), country = t('country_' + h.country.replace(/ /g, '_'));
+      b.setAttribute('aria-label', t('hello_aria').replace('{lang}', lang).replace('{country}', country));
+      var label = lang.charAt(0).toUpperCase() + lang.slice(1);
+      b.querySelector('.h-lang').textContent = label + (h.roman ? ' · ' + h.roman : '');
+    });
+  }
 
   HELLOS.forEach(function (h) {
     var b = document.createElement('button');
     b.type = 'button';
     b.className = 'hello';
     b.setAttribute('data-state', 'idle');
-    b.setAttribute('aria-label', 'Hear hello in ' + h.lang + ', from ' + h.country);
     b.innerHTML = '<img src="/web/flags/' + h.code + '.png" alt="" width="36" height="24">' +
-      '<span class="h-text"><span class="h-word" lang="' + h.locale + '">' + esc(h.text) + '</span>' +
-      '<span class="h-lang">' + esc(h.lang) + (h.roman ? ' · ' + esc(h.roman) : '') + '</span></span>' +
+      '<span class="h-text"><span class="h-word" lang="' + h.locale + '">' + esc(h.text) + '</span><span class="h-lang"></span></span>' +
       '<span class="h-icon">' + speaker + '</span>';
     b.addEventListener('click', function () {
       if (current === b) { stop(); return; }
@@ -487,13 +548,60 @@
       note.textContent = '';
       audio.src = '/api/voice?v=1&locale=' + encodeURIComponent(h.locale) + '&text=' + encodeURIComponent(h.text);
       var p = audio.play();
-      if (p && p.catch) p.catch(function () { if (current === b) { setState(b, 'idle'); current = null; note.textContent = 'The voice is not available right now. Please try again in a moment.'; } });
+      if (p && p.catch) p.catch(function () { if (current === b) failed(); });
     });
     grid.appendChild(b);
   });
   audio.addEventListener('playing', function () { setState(current, 'playing'); });
   audio.addEventListener('ended', function () { setState(current, 'idle'); current = null; });
-  audio.addEventListener('error', function () { if (current) { setState(current, 'idle'); current = null; note.textContent = 'The voice is not available right now. Please try again in a moment.'; } });
+  audio.addEventListener('error', function () { if (current) failed(); });
+
+  function apply(lang, dict) {
+    T = dict;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = dict[el.getAttribute('data-i18n')];
+      if (v) el.innerHTML = v;
+    });
+    document.title = t('meta_title');
+    document.querySelector('meta[name="description"]').setAttribute('content', t('meta_desc'));
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    select.value = lang;
+    paintHellos();
+    if (note.textContent) note.textContent = t('voice_error');
+  }
+
+  function load(lang) {
+    if (cache[lang]) { apply(lang, cache[lang]); return; }
+    fetch('/assets/site/i18n/' + lang + '.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (!d) { apply('en', EN); return; }
+      cache[lang] = d;
+      if (select.value === lang) apply(lang, d);
+    }).catch(function () { apply('en', EN); });
+  }
+
+  function pick() {
+    var q = (location.search.match(/[?&]lang=([a-z]+)/i) || [])[1];
+    if (q && LANGS.indexOf(q.toLowerCase()) !== -1) return q.toLowerCase();
+    try { var saved = localStorage.getItem(KEY); if (saved && LANGS.indexOf(saved) !== -1) return saved; } catch (e) {}
+    var prefs = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < prefs.length; i++) {
+      var base = String(prefs[i]).toLowerCase().split('-')[0];
+      if (base === 'tl') base = 'fil';
+      if (LANGS.indexOf(base) !== -1) return base;
+    }
+    return 'en';
+  }
+
+  var select = document.getElementById('lang-select');
+  select.addEventListener('change', function () {
+    try { localStorage.setItem(KEY, select.value); } catch (e) {}
+    load(select.value);
+  });
+  var first = pick();
+  select.value = first;
+  paintHellos();
+  if (first !== 'en') load(first);
 })();
 </script>
 </body>
