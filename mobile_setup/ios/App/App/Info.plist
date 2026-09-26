@@ -47,9 +47,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Myatlastic uses the microphone so you can ask the tour guide a question out loud.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Myatlastic turns your spoken question into text so the tour guide can answer it.</string>
 </dict>
 </plist>

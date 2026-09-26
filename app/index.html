@@ -774,21 +774,6 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
-  .tour-talk { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
-  .tour-ask {
-    min-height: 48px; width: 100%; border-radius: 999px; cursor: pointer;
-    background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); font: inherit; font-size: 15px; font-weight: 700;
-  }
-  .tour-ask.on { color: var(--bg); background: var(--accent); border-color: var(--accent); }
-  .tour-ask:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .tour-ask-hint { margin: 0; font-size: 12px; color: var(--ink-dim); text-align: center; overflow-wrap: anywhere; }
-  .tour-talk input {
-    min-height: 44px; min-width: 0;
-    background: var(--panel-2); color: var(--ink);
-    border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
-    font: inherit; font-size: 16px;
-  }
-  .tour-talk input[hidden], .tour-ask[hidden] { display: none; }
   .tour-sub-label { display: inline-block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); margin-right: 4px; font-weight: 700; }
   #globe-canvas { transition: transform 0.6s ease; }
   @media (max-width: 700px) {
@@ -1786,7 +1771,6 @@
 <script src="voice/phrases.js"></script>
 <script src="voice/voice.js"></script>
 <script src="voice/content.js"></script>
-<script src="room-talk.js"></script>
 <script>
 'use strict';
 
@@ -2880,7 +2864,7 @@ function tourCardHtml(c) {
   const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
   return '<section class="tour-cta" id="tour-cta" data-country="' + escapeHtml(c.n) + '" aria-labelledby="tc-title">' +
     '<div class="lc-top"><h3 id="tc-title">A spoken visit to ' + escapeHtml(c.n) + '</h3><span class="lc-len">2–3 min</span></div>' +
-    '<p class="tour-cta-sub">A local guide shows you around. Pictures follow the story, and you can stop to ask a question.</p>' +
+    '<p class="tour-cta-sub">A local guide shows you around, and pictures follow the story.</p>' +
     '<button type="button" class="btn-primary tour-launch" onclick="window.__myatlasticTour(' + cq + ')">▶ Play the tour</button>' +
     '</section>';
 }
@@ -2895,7 +2879,7 @@ function mountTourCard(c) {
     const said = t.book === 'en'
       ? (t.missing ? 'In English for now: ' + languageLabel(localeForBook(c, t.missing)) + ' audio is coming.' : 'In English.')
       : 'In ' + languageLabel(localeForBook(c, t.book)) + ', with English subtitles.';
-    if (sub) sub.textContent = said + ' A local guide shows you around, pictures follow the story, and you can stop to ask a question.';
+    if (sub) sub.textContent = said + ' A local guide shows you around, and pictures follow the story.';
     if (!Voice.playing()) Voice.prefetch(narrationParts(c, data, t.book).slice(0, 1));
   });
 }
@@ -2990,165 +2974,14 @@ function tourPictures(c) {
   };
 }
 
-let roomMemory = { name: '', pattern: '' };
-const roomSessions = {};
-let roomEarGen = 0;
-let roomRec = null;
-
-function stopRoomEar() {
-  roomEarGen++;
-  const rec = roomRec;
-  roomRec = null;
-  if (!rec) return;
-  rec.onend = null;
-  rec.onresult = null;
-  try { rec.abort(); } catch (e) {}
-  try { rec.stop(); } catch (e2) {}
-}
-
-function normTalk(s) {
-  return String(s || '').toLowerCase().replace(/[^a-z0-9À-ɏ\s]/gi, ' ').replace(/\s+/g, ' ').trim();
-}
-
-// Ignore the microphone hearing the guide's own last words.
-function roomEcho(text, session) {
-  const heard = normTalk(text);
-  if (!heard) return true;
-  const recent = normTalk((session.spoken || []).slice(-2).join(' '));
-  if (!recent) return false;
-  if (recent.indexOf(heard) !== -1) return true;
-  const words = heard.split(' ').filter(w => w.length > 3);
-  if (words.length < 3) return false;
-  const hit = words.filter(w => recent.indexOf(w) !== -1).length;
-  return hit / words.length > 0.72;
-}
-
-function bootRoom(c, book) {
-  if (roomSessions[c.n]) {
-    roomMemory = { name: c.n, pattern: roomSessions[c.n].pattern };
-    return roomSessions[c.n];
-  }
-  const local = languagesOf(c).find(l => l.lang !== 'en');
-  const place = landmarkFor(c) || {};
-  const food = c.food ? c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim() : '';
-  const prevName = roomMemory.name && roomMemory.name !== c.n ? roomMemory.name : '';
-  const session = window.RoomTalk.boot({
-    name: c.n,
-    prevName: prevName,
-    prevPattern: prevName ? roomMemory.pattern : '',
-    city: c.cap || '',
-    place: place.name || '',
-    fact: place.fact || '',
-    food: food,
-    langName: local ? local.name : (primaryLang(c) || 'English'),
-    langKey: local ? local.lang : 'en',
-    locale: local ? local.locale : englishLocaleFor(c),
-    roster: COUNTRIES.map(x => x.n),
-    book: book,
-    catalog: PhraseCatalog,
-    seed: Math.floor(Math.random() * 997)
-  });
-  session.narrIndex = 0;
-  roomSessions[c.n] = session;
-  roomMemory = { name: c.n, pattern: session.pattern };
-  return session;
-}
-
-function lineForScreen(text) {
-  return String(text || '')
-    .replace(/\{\{s:([^}]*)\}\}/g, '$1')
-    .replace(/\{\{p:([^}]*)\}\}/g, '$1');
-}
-
-// A conversation line: English around the local phrase, each in its own voice.
-// Pronunciation respellings ({{s:}}) are for the screen only.
-function talkParts(line, session) {
-  const en = Voice.englishLocale();
-  const out = [];
-  const tidy = s => String(s || '')
-    .replace(/\b(it sounds like|the sound is|you're aiming for)\s*[.:,]?\s*(?=[.!?]|$)/gi, ' ')
-    .replace(/\s+([,.!?])/g, '$1')
-    .replace(/([.!?])\s*[.!?]+/g, '$1')
-    .replace(/^[\s,.:;]+/, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-  const re = /\{\{(p|s):([^}]*)\}\}/g;
-  let last = 0;
-  let m;
-  const push = (text, locale) => { const t = locale === en ? tidy(text) : String(text || '').trim(); if (/[\p{L}\p{N}]/u.test(t)) out.push({ text: t, locale: locale }); };
-  while ((m = re.exec(line))) {
-    push(line.slice(last, m.index), en);
-    if (m[1] === 'p' && Voice.canSpeak(session.locale) !== false) push(m[2], session.locale);
-    last = re.lastIndex;
-  }
-  push(line.slice(last), en);
-  return out;
-}
-
-// Asking the guide out loud. The app uses the phone's own speech recognition
-// (Capacitor plugin); the website uses the browser's. Either way, one question.
-function nativeSpeech() {
-  return IS_NATIVE && window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.SpeechRecognition || null;
-}
-function webSpeech() {
-  return window.SpeechRecognition || window.webkitSpeechRecognition || null;
-}
-function canListen() {
-  const n = nativeSpeech();
-  if (n) return n.available().then(r => !!(r && r.available)).catch(() => false);
-  return Promise.resolve(!!webSpeech());
-}
-
-// Resolves with what was said ('' if nothing). onHeard(text) shows it live.
-function listenOnce(onHeard) {
-  stopRoomEar();
-  const gen = roomEarGen;
-  const lang = Voice.englishLocale();
-  const n = nativeSpeech();
-  if (n) {
-    return n.checkPermissions().then(p => (p && p.speechRecognition === 'granted') ? p : n.requestPermissions()).then(p => {
-      if (!p || p.speechRecognition !== 'granted') throw new Error('denied');
-      let heard = '';
-      return new Promise(resolve => {
-        const handles = [];
-        const finish = () => { handles.forEach(h => h && h.remove && h.remove()); roomRec = null; resolve(heard.trim()); };
-        roomRec = { stop: () => n.stop().catch(() => {}), abort: () => { n.stop().catch(() => {}); } };
-        Promise.all([
-          n.addListener('partialResults', d => { if (gen !== roomEarGen) return; heard = (d && d.matches && d.matches[0]) || heard; onHeard(heard); }),
-          n.addListener('listeningState', d => { if (d && d.status === 'stopped') finish(); })
-        ]).then(h => handles.push.apply(handles, h));
-        n.start({ language: lang, maxResults: 1, partialResults: true, popup: false }).catch(finish);
-      });
-    });
-  }
-  const SR = webSpeech();
-  if (!SR) return Promise.reject(new Error('unsupported'));
-  return new Promise((resolve, reject) => {
-    const rec = new SR();
-    roomRec = rec;
-    rec.continuous = false;
-    rec.interimResults = true;
-    rec.lang = lang;
-    let heard = '';
-    rec.onresult = (ev) => {
-      if (gen !== roomEarGen) return;
-      let next = '';
-      for (let i = ev.resultIndex; i < ev.results.length; i++) next += ev.results[i][0].transcript || '';
-      heard = next.trim();
-      onHeard(heard);
-    };
-    rec.onerror = (ev) => { if (ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')) reject(new Error('denied')); };
-    rec.onend = () => { if (roomRec === rec) roomRec = null; resolve(gen === roomEarGen ? heard : ''); };
-    try { rec.start(); } catch (e) { roomRec = null; reject(e); }
-  });
-}
+// Where each country's tour was left, so it can pick up there.
+const tourPlace = {};
 
 window.__myatlasticTour = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c || !window.RoomTalk) return;
+  if (!c) return;
   const previous = document.getElementById('tour-overlay');
   if (previous && previous.__close) previous.__close(true);
-  stopRoomEar();
   Voice.stop();
   setMode('explore');
   if (window.innerWidth <= 900) setMobilePane('globe');
@@ -3160,7 +2993,6 @@ window.__myatlasticTour = (countryName) => {
 
   const animal = animalFor(c) || ['guide', '🐾'];
   const placeNow = landmarkFor(c) || {};
-  const local = languagesOf(c).find(l => l.lang !== 'en');
   // Animal and place names only exist in English, so the host line stays in
   // English rather than mixing them into another language's sentence.
   const hostLang = 'en';
@@ -3189,11 +3021,6 @@ window.__myatlasticTour = (countryName) => {
       '<p class="tour-sub"></p>' +
       '<p class="tour-note" hidden></p>' +
       '<div class="tour-next-row" hidden></div>' +
-      '<div class="tour-talk">' +
-        '<button type="button" class="tour-ask" id="tour-mic" aria-pressed="false">🎤 Ask the guide</button>' +
-        '<p class="tour-ask-hint" id="tour-ask-hint">Tap, then ask. Try “How do I say thank you?” or “Take me to Japan”.</p>' +
-        '<input id="tour-say" type="text" hidden placeholder="Type a question, then press Enter" aria-label="Type a question for the guide" autocomplete="off" enterkeyhint="send" />' +
-      '</div>' +
       '<div class="tour-actions">' +
         '<button type="button" class="back-btn" id="tour-again">Again</button>' +
         '<button type="button" class="btn-primary" id="tour-next">Pause</button>' +
@@ -3205,7 +3032,7 @@ window.__myatlasticTour = (countryName) => {
   const subEl = overlay.querySelector('.tour-sub');
   const nextRow = overlay.querySelector('.tour-next-row');
   const mainBtn = $('tour-next');
-  const tour = { data: null, book: 'en', session: null, index: 0, mode: 'idle' };
+  const tour = { data: null, book: 'en', index: 0, mode: 'idle' };
   const owner = 'narration:' + c.n;
 
   const setMain = () => {
@@ -3242,53 +3069,22 @@ window.__myatlasticTour = (countryName) => {
       startAt: Math.min(from || 0, parts.length - 1),
       onPart: (i) => {
         tour.index = i;
-        tour.session.narrIndex = i;
+        tourPlace[c.n] = i;
         caption(tour.data.segments[i]);
         pictures.show(i, () => overlay.isConnected && tour.index === i);
-        tour.session.spoken.push(tour.data.segments[i][tour.book] || '');
       },
       onState: (s, info) => {
         if (!overlay.isConnected) return;
         if (s === 'stopped' && Voice.playing()) return;
         tour.mode = s === 'ended' || s === 'stopped' || s === 'error' ? 'idle' : s;
-        if (s === 'ended') { tour.session.narrIndex = 0; showNext(); }
+        if (s === 'ended') { tourPlace[c.n] = 0; showNext(); }
         if (s === 'error') { storyEl.textContent = voiceProblem(info); setSub(''); }
         setMain();
       }
     });
   };
 
-  const playTalk = (lines) => {
-    const clean = (lines || []).filter(Boolean);
-    if (!clean.length) return;
-    const parts = [];
-    const screens = [];
-    clean.forEach(line => {
-      const bits = talkParts(line, tour.session);
-      bits.forEach(() => screens.push(lineForScreen(line)));
-      bits.forEach(b => parts.push(b));
-      tour.session.spoken.push(lineForScreen(line));
-    });
-    storyEl.textContent = lineForScreen(clean[0]);
-    storyEl.removeAttribute('lang');
-    const lp = tour.session.lastPhrase;
-    const teaches = lp && lp.native && lp.en && lp.native !== lp.en && clean.some(l => l.indexOf('{{p:' + lp.native + '}}') !== -1);
-    setSub(teaches ? '“' + lp.native + '” means “' + lp.en.replace(/[.]$/, '') + '”' : '');
-    Voice.play(parts, {
-      owner: 'talk:' + c.n,
-      onPart: (i) => { storyEl.textContent = screens[i] || storyEl.textContent; },
-      onState: (s, info) => {
-        if (!overlay.isConnected) return;
-        if (s === 'stopped' && Voice.playing()) return;
-        tour.mode = s === 'playing' || s === 'loading' ? s : 'idle';
-        if (s === 'error') storyEl.textContent = voiceProblem(info);
-        setMain();
-      }
-    });
-  };
-
   const close = (switching) => {
-    stopRoomEar();
     Voice.stop();
     if (globeAPI && globeAPI.clearTourFocus) globeAPI.clearTourFocus();
     if (!switching) document.body.classList.remove('touring');
@@ -3300,19 +3096,6 @@ window.__myatlasticTour = (countryName) => {
   const onKey = (ev) => { if (ev.key === 'Escape') close(); };
   document.addEventListener('keydown', onKey);
 
-  const onUser = (text) => {
-    if (!overlay.isConnected || !tour.session) return;
-    Voice.stop();
-    const res = window.RoomTalk.reply(text, tour.session);
-    tour.session.turns++;
-    if (res.switchTo) {
-      const next = COUNTRIES.find(x => x.n === res.switchTo);
-      if (next) { window.__myatlasticTour(next.n); return; }
-    }
-    if (res.resume) { playNarration(tour.index); return; }
-    playTalk(res.lines);
-  };
-
   $('tour-close').onclick = close;
   $('tour-again').onclick = () => { if (tour.data) playNarration(tour.index); };
   mainBtn.onclick = () => {
@@ -3321,55 +3104,11 @@ window.__myatlasticTour = (countryName) => {
     if (tour.mode === 'playing' || tour.mode === 'loading') { Voice.stop(); return; }
     playNarration(tour.index);
   };
-  const sayBox = $('tour-say');
-  const mic = $('tour-mic');
-  const hint = $('tour-ask-hint');
-  const typeInstead = (why) => {
-    sayBox.hidden = false;
-    hint.textContent = why;
-    sayBox.focus();
-  };
-  sayBox.addEventListener('keydown', (ev) => {
-    if (ev.key !== 'Enter') return;
-    ev.preventDefault();
-    const text = sayBox.value.trim();
-    if (!text) return;
-    sayBox.value = '';
-    onUser(text);
-  });
-  canListen().then(ok => { if (!ok && overlay.isConnected) { mic.hidden = true; typeInstead('Type a question for the guide, or name a country.'); } });
-  mic.onclick = () => {
-    if (roomRec) { const r = roomRec; try { r.stop(); } catch (e) {} return; }
-    Voice.stop();
-    mic.classList.add('on');
-    mic.setAttribute('aria-pressed', 'true');
-    mic.textContent = '● Listening… tap when done';
-    hint.textContent = 'Listening…';
-    const reset = () => {
-      mic.classList.remove('on');
-      mic.setAttribute('aria-pressed', 'false');
-      mic.textContent = '🎤 Ask the guide';
-    };
-    listenOnce(heard => { hint.textContent = '“' + heard + '”'; }).then(said => {
-      reset();
-      if (!overlay.isConnected) return;
-      if (!said || roomEcho(said, tour.session || { spoken: [] })) { hint.textContent = 'I didn’t catch that. Tap and try again.'; return; }
-      hint.textContent = 'You asked: “' + said + '”';
-      onUser(said);
-    }, err => {
-      reset();
-      if (!overlay.isConnected) return;
-      typeInstead(err && err.message === 'denied'
-        ? 'Microphone access is off. Turn it on in Settings, or type your question.'
-        : 'The microphone isn’t available here. Type your question instead.');
-    });
-  };
   overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
   mainBtn.focus();
 
-  Promise.all([Content.narration(c.n), local ? Content.book(local.book) : Promise.resolve(null)]).then(([data, book]) => {
+  Content.narration(c.n).then(data => {
     if (!overlay.isConnected) return;
-    tour.session = bootRoom(c, book);
     if (!data) { storyEl.textContent = "This visit couldn't load. Check your connection."; return; }
     tour.data = data;
     const chosen = tourBook(c, data);
@@ -3379,7 +3118,7 @@ window.__myatlasticTour = (countryName) => {
       note.hidden = false;
       note.textContent = languageLabel(localeForBook(c, chosen.missing)) + " audio isn't available yet, so this visit is in English.";
     }
-    tour.index = tour.session.narrIndex || 0;
+    tour.index = tourPlace[c.n] || 0;
     caption(data.segments[tour.index]);
     pictures.start(data);
     playNarration(tour.index);
