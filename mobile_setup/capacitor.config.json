@@ -2,7 +2,6 @@
   "appId": "io.vertotech.atlastic",
   "appName": "Myatlastic",
   "webDir": "../web",
-  "bundledWebRuntime": false,
   "server": {
     "androidScheme": "https",
     "iosScheme": "https"

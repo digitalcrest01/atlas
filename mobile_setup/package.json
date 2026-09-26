@@ -10,19 +10,19 @@
     "add:ios": "npx cap add ios",
     "add:android": "npx cap add android",
     "build": "echo 'Static site — no build step. Run: npx cap sync.'",
-    "serve": "cd ../web && python3 -m http.server 8000"
+    "serve": "cd .. && node serve.js"
   },
   "dependencies": {
-    "@capacitor/android": "^6.1.2",
-    "@capacitor/app": "^6.0.1",
-    "@capacitor/core": "^6.1.2",
-    "@capacitor/ios": "^6.1.2",
-    "@capacitor/preferences": "^6.0.2",
-    "@capacitor/splash-screen": "^6.0.2",
-    "@capacitor/status-bar": "^6.0.1",
-    "@revenuecat/purchases-capacitor": "^9.2.2"
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2",
+    "@capacitor/preferences": "^8.0.1",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.3",
+    "@revenuecat/purchases-capacitor": "^13.6.1"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.1.2"
+    "@capacitor/cli": "^8.5.2"
   }
 }
