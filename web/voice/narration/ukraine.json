@@ -1,59 +1,79 @@
 {
   "country": "Ukraine",
-  "languages": ["en", "uk"],
+  "languages": [
+    "en",
+    "uk"
+  ],
   "segments": [
     {
       "en": "Picture a field of sunflowers stretching to the horizon, all turning their faces to the sun, under a wide blue sky. Blue above, yellow below: the colours of Ukraine's flag.",
-      "uk": "Уявіть поле соняшників до самого обрію, що повертають голівки до сонця під широким синім небом. Синє вгорі, жовте внизу: кольори українського прапора."
+      "uk": "Уявіть поле соняшників до самого обрію, що повертають голівки до сонця під широким синім небом. Синє вгорі, жовте внизу: кольори українського прапора.",
+      "img": "Sunflower_sky_backdrop.jpg"
     },
     {
       "en": "Much of Ukraine is broad, rolling steppe with rich black soil, among the most fertile in the world. For generations, wheat from these fields has fed people near and far.",
-      "uk": "Більша частина України — це широкий хвилястий степ із багатим чорноземом, одним із найродючіших у світі. Протягом поколінь пшениця з цих полів годувала людей і поблизу, і далеко."
+      "uk": "Більша частина України — це широкий хвилястий степ із багатим чорноземом, одним із найродючіших у світі. Протягом поколінь пшениця з цих полів годувала людей і поблизу, і далеко.",
+      "img": "Хомутовская_01.jpg"
     },
     {
       "en": "Bread is sacred here. Guests of honour are greeted with a round loaf called korovai, carried on an embroidered towel, with a little salt on top. You break off a piece, dip it in the salt, and taste.",
-      "uk": "Хліб тут священний. Почесних гостей зустрічають круглим короваєм на вишитому рушнику, з дрібкою солі зверху. Ви відламуєте шматочок, умочуєте в сіль і куштуєте."
+      "uk": "Хліб тут священний. Почесних гостей зустрічають круглим короваєм на вишитому рушнику, з дрібкою солі зверху. Ви відламуєте шматочок, умочуєте в сіль і куштуєте.",
+      "img": "2013-01_Internationale_Grüne_Woche_Berlin_anagoria_15.JPG"
     },
     {
       "en": "At the family table you might find a deep red bowl of borscht, made with beetroot and served with sour cream, alongside varenyky, soft dumplings filled with potato, cheese or cherries.",
-      "uk": "За родинним столом може стояти глибока тарілка червоного борщу з буряком і сметаною, а поруч вареники з картоплею, сиром чи вишнями."
+      "uk": "За родинним столом може стояти глибока тарілка червоного борщу з буряком і сметаною, а поруч вареники з картоплею, сиром чи вишнями.",
+      "img": "Borscht_served.jpg"
     },
     {
       "en": "Embroidery is everywhere in Ukrainian life. The vyshyvanka, a shirt stitched with patterns in red, black and many other colours, is worn with pride on holidays, and each region has its own designs.",
-      "uk": "Вишивка є всюди в українському житті. Вишиванку, сорочку з візерунками червоними, чорними та багатьма іншими нитками, з гордістю вдягають на свята, і кожен край має свої узори."
+      "uk": "Вишивка є всюди в українському житті. Вишиванку, сорочку з візерунками червоними, чорними та багатьма іншими нитками, з гордістю вдягають на свята, і кожен край має свої узори.",
+      "img": "Зимовий_виднокрай.jpg"
     },
     {
       "en": "At Easter, families decorate pysanky, eggs painted with wax and dye in tiny, careful patterns of stars, wheat and waves. Each one is a small work of art.",
-      "uk": "На Великдень родини розписують писанки, яйця, прикрашені воском і фарбами дрібними ретельними візерунками зірок, колосків і хвиль. Кожна з них — маленький витвір мистецтва."
+      "uk": "На Великдень родини розписують писанки, яйця, прикрашені воском і фарбами дрібними ретельними візерунками зірок, колосків і хвиль. Кожна з них — маленький витвір мистецтва.",
+      "img": "Pysanka_Museum.jpg"
     },
     {
       "en": "Kyiv, the capital, stands on hills above the wide Dnipro River. Its golden domes shine over leafy parks, and its history goes back more than a thousand years.",
-      "uk": "Київ, столиця країни, стоїть на пагорбах над широким Дніпром. Його золоті бані сяють над зеленими парками, а його історія налічує понад тисячу років."
+      "uk": "Київ, столиця країни, стоїть на пагорбах над широким Дніпром. Його золоті бані сяють над зеленими парками, а його історія налічує понад тисячу років.",
+      "img": "Лавра.jpg"
     },
     {
       "en": "In the west, Lviv charms visitors with cobbled streets, cosy coffee houses and chocolate makers. The green Carpathian Mountains nearby are home to shepherds and wooden churches.",
-      "uk": "На заході Львів зачаровує бруківкою, затишними кав'ярнями та шоколадними майстернями. Неподалік зелені Карпати, де живуть вівчарі й стоять дерев'яні церкви."
+      "uk": "На заході Львів зачаровує бруківкою, затишними кав'ярнями та шоколадними майстернями. Неподалік зелені Карпати, де живуть вівчарі й стоять дерев'яні церкви.",
+      "img": "Латинський_кафедральний_собор_(Львів)_16.jpg"
     },
     {
       "en": "To the south lies the Black Sea, with the port city of Odesa, famous for its grand staircase, its humour and its seaside summers.",
-      "uk": "На півдні лежить Чорне море з портовим містом Одесою, відомою своїми сходами, гумором і літом біля моря."
+      "uk": "На півдні лежить Чорне море з портовим містом Одесою, відомою своїми сходами, гумором і літом біля моря.",
+      "img": "Воронцовський_маяк_17.jpg"
     },
     {
       "en": "Music runs deep. The bandura, a many-stringed instrument, accompanies old songs, and at Christmas groups of carollers go from house to house singing. One of their melodies, Shchedryk, is now sung as a Christmas carol all around the world.",
-      "uk": "Музика тут у крові. Бандура з багатьма струнами супроводжує старовинні пісні, а на Різдво колядники ходять від хати до хати. Одна з їхніх мелодій, «Щедрик», тепер лунає як різдвяна колядка по всьому світу."
+      "uk": "Музика тут у крові. Бандура з багатьма струнами супроводжує старовинні пісні, а на Різдво колядники ходять від хати до хати. Одна з їхніх мелодій, «Щедрик», тепер лунає як різдвяна колядка по всьому світу.",
+      "img": "Kobza-krakow2.jpg"
     },
     {
       "en": "Ukrainian is the national language, melodic and rich in sayings. A warm word to learn is dyakuyu, thank you.",
-      "uk": "Українська мова — державна, мелодійна й багата на приказки. Тепле слово, яке варто запам'ятати: «дякую»."
+      "uk": "Українська мова — державна, мелодійна й багата на приказки. Тепле слово, яке варто запам'ятати: «дякую».",
+      "img": "Zamek_w_Kamieńcu_Podolskim_2019.jpg"
     },
     {
       "en": "Ukrainians have been through hard times, and they hold on to their songs, their fields and their families with remarkable courage and warmth.",
-      "uk": "Українці пройшли крізь важкі часи, і вони тримаються за свої пісні, свої поля й свої родини з дивовижною мужністю та теплом."
+      "uk": "Українці пройшли крізь важкі часи, і вони тримаються за свої пісні, свої поля й свої родини з дивовижною мужністю та теплом.",
+      "img": "Осінь_у_Тунелі_кохання.JPG"
     },
     {
       "en": "Now follow the Carpathian ridge westward, across green valleys, and you will find yourself in Poland.",
-      "uk": "А тепер рушайте на захід уздовж Карпат, через зелені долини, і опинитеся в Польщі."
+      "uk": "А тепер рушайте на захід уздовж Карпат, через зелені долини, і опинитеся в Польщі.",
+      "img": "Ранок_на_Кукулі.jpg"
     }
   ],
-  "next": ["Poland", "Moldova", "Romania"]
+  "next": [
+    "Poland",
+    "Moldova",
+    "Romania"
+  ]
 }

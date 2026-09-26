@@ -1732,7 +1732,7 @@
         <span class="tt-cap" id="tt-cap"></span>
       </div>
       <div class="globe-hint" id="globe-hint">Drag to spin</div>
-      <button class="globe-btn" id="flags-toggle" title="Show every country's flag on the globe">🚩 All Flags</button>
+      <button class="globe-btn" id="flags-toggle" aria-pressed="true" title="Show or hide every country's flag on the globe">🚩 Flags: On</button>
       <div class="globe-hunt" id="globe-hunt" style="display:none"></div>
     </div>
 
@@ -5936,15 +5936,42 @@ function setupGlobe(THREE) {
 
   // EXPLORER AVATAR — an emoji sprite that rides to the active country and bobs.
   // Levels up (icon changes) as the child unlocks more of the world.
+  // Flags are drawn from bundled images (flags/<code>.png): flag emoji do
+  // not draw on Windows and some Android phones. Other emoji stay emoji.
+  function flagCode(emoji) {
+    const cps = Array.from(String(emoji || '')).map(ch => ch.codePointAt(0));
+    if (cps.length !== 2 || cps.some(cp => cp < 0x1F1E6 || cp > 0x1F1FF)) return '';
+    return cps.map(cp => String.fromCharCode(cp - 0x1F1E6 + 97)).join('');
+  }
   function makeEmojiSprite(emoji, depthTest) {
     const cv = document.createElement('canvas');
     cv.width = cv.height = 128;
     const ctx = cv.getContext('2d');
-    ctx.font = '96px serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(emoji, 64, 72);
+    const drawEmoji = () => {
+      ctx.font = '96px serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(emoji, 64, 72);
+    };
+    const code = flagCode(emoji);
+    if (!code) drawEmoji();
     const tex = new THREE.CanvasTexture(cv);
+    if (code) {
+      const img = new Image();
+      img.onload = () => {
+        // Fit the flag in a 112 x 80 box, centred, with a thin dark edge.
+        const k = Math.min(112 / img.naturalWidth, 80 / img.naturalHeight);
+        const w = img.naturalWidth * k, h = img.naturalHeight * k;
+        const x = (128 - w) / 2, y = (128 - h) / 2;
+        ctx.clearRect(0, 0, 128, 128);
+        ctx.fillStyle = 'rgba(0,0,0,0.45)';
+        ctx.fillRect(x - 2, y - 2, w + 4, h + 4);
+        ctx.drawImage(img, x, y, w, h);
+        tex.needsUpdate = true;
+      };
+      img.onerror = () => { drawEmoji(); tex.needsUpdate = true; };
+      img.src = 'flags/' + code + '.png';
+    }
     if ('colorSpace' in tex) tex.colorSpace = THREE.SRGBColorSpace;
     const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: depthTest !== false });
     const sp = new THREE.Sprite(mat);
@@ -6477,6 +6504,8 @@ const flagsBtn = $('flags-toggle');
 if (flagsBtn) flagsBtn.onclick = () => {
   const on = !flagsBtn.classList.contains('on');
   flagsBtn.classList.toggle('on', on);
+  flagsBtn.textContent = '🚩 Flags: ' + (on ? 'On' : 'Off');
+  flagsBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
   $('globe-hint').textContent = on ? 'Every country\'s flag · drag to spin the world' : 'Drag to spin';
   if (globeAPI && globeAPI.setFlags) globeAPI.setFlags(on);
 };

@@ -86,6 +86,10 @@
     {
       "source": "/app/vendor/:path*",
       "destination": "/web/vendor/:path*"
+    },
+    {
+      "source": "/app/flags/:path*",
+      "destination": "/web/flags/:path*"
     }
   ]
 }

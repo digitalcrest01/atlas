@@ -2,8 +2,8 @@
 # /app on the website is a copy of the Capacitor web build (web/).
 # Vercel serves it at /app (no trailing slash), so relative URLs would resolve
 # from the site root; a <base href="/app/"> keeps them under /app/.
-# Voice data and vendor files are not copied: vercel.json rewrites
-# /app/voice/* and /app/vendor/* to /web/.
+# Voice data, vendor files and flags are not copied: vercel.json rewrites
+# /app/voice/*, /app/vendor/* and /app/flags/* to /web/.
 set -e
 cd "$(dirname "$0")/.."
 cp web/attractions.js web/passports.json app/

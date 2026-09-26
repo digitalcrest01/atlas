@@ -1,46 +1,65 @@
 {
   "country": "Vanuatu",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "Stand on the rim of Mount Yasur at dusk and feel the ground tremble. Below you, the volcano glows red and throws sparks into the evening sky, as it has done for a very long time."
+      "en": "Stand on the rim of Mount Yasur at dusk and feel the ground tremble. Below you, the volcano glows red and throws sparks into the evening sky, as it has done for a very long time.",
+      "img": "Mount_Yasur_eruption_2006,_Tanna_Island,_Vanuatu,_VAN_0516.jpg"
     },
     {
-      "en": "Vanuatu is a Y-shaped chain of more than eighty islands in the South Pacific. Some are crowned by volcanoes, others ringed with coral reefs, and many are covered in thick green forest."
+      "en": "Vanuatu is a Y-shaped chain of more than eighty islands in the South Pacific. Some are crowned by volcanoes, others ringed with coral reefs, and many are covered in thick green forest.",
+      "img": "Champagne_Beach.jpg"
     },
     {
-      "en": "Its people are called ni-Vanuatu, and their islands hold an astonishing number of languages, more than a hundred, many spoken only on a single island or even in a single valley."
+      "en": "Its people are called ni-Vanuatu, and their islands hold an astonishing number of languages, more than a hundred, many spoken only on a single island or even in a single valley.",
+      "img": "Mount_Gharat_and_Lake_Letas.jpg"
     },
     {
-      "en": "To understand one another, people use Bislama, a lively language that grew from English words and island grammar. To say thank you, you say tankyu tumas. English and French are official languages too."
+      "en": "To understand one another, people use Bislama, a lively language that grew from English words and island grammar. To say thank you, you say tankyu tumas. English and French are official languages too.",
+      "img": "Main_Street_Luganville_(28661070193).jpg"
     },
     {
-      "en": "The capital, Port Vila, sits on the island of Efate around a sparkling harbour. Its market is piled high with taro, yams, bananas, papayas and bundles of green leaves, often sold by women who stay overnight beside their stalls."
+      "en": "The capital, Port Vila, sits on the island of Efate around a sparkling harbour. Its market is piled high with taro, yams, bananas, papayas and bundles of green leaves, often sold by women who stay overnight beside their stalls.",
+      "img": "Port_Vila_aerial.jpg"
     },
     {
-      "en": "Life in the villages follows kastom, the traditional ways passed down by ancestors. Chiefs guide their communities, and important events are marked with feasts, dances and the exchange of gifts such as pigs and woven mats."
+      "en": "Life in the villages follows kastom, the traditional ways passed down by ancestors. Chiefs guide their communities, and important events are marked with feasts, dances and the exchange of gifts such as pigs and woven mats.",
+      "img": "South_Espiritu_Santo.jpg"
     },
     {
-      "en": "The favourite dish is lap lap, grated root vegetables mixed with coconut cream, wrapped in leaves and baked on hot stones in an earth oven."
+      "en": "The favourite dish is lap lap, grated root vegetables mixed with coconut cream, wrapped in leaves and baked on hot stones in an earth oven.",
+      "img": "Laplap_sosor.jpg"
     },
     {
-      "en": "In the evening, many men gather to share kava, a calming drink made from a pepper plant root. It is a quiet, social time, and voices drop low as the sun goes down."
+      "en": "In the evening, many men gather to share kava, a calming drink made from a pepper plant root. It is a quiet, social time, and voices drop low as the sun goes down.",
+      "img": "Starr_070515-7054_Piper_methysticum.jpg"
     },
     {
-      "en": "On Pentecost Island each spring, young men leap from tall wooden towers with vines tied to their ankles. This land diving is an ancient ritual to bless the yam harvest, and it inspired the modern bungee jump."
+      "en": "On Pentecost Island each spring, young men leap from tall wooden towers with vines tied to their ankles. This land diving is an ancient ritual to bless the yam harvest, and it inspired the modern bungee jump.",
+      "img": "Pentecost_Island_Palm_Trees.jpg"
     },
     {
-      "en": "Beneath the waves, the reefs are full of colourful fish and turtles, and divers explore a huge wartime ship lying on the seabed off the island of Espiritu Santo."
+      "en": "Beneath the waves, the reefs are full of colourful fish and turtles, and divers explore a huge wartime ship lying on the seabed off the island of Espiritu Santo.",
+      "img": "Aore_Island_Resort.jpg"
     },
     {
-      "en": "Music here is joyful. String bands play guitars and ukuleles on porches, and on some islands women stand in the water and slap the sea with their hands, making rhythms like drumbeats."
+      "en": "Music here is joyful. String bands play guitars and ukuleles on porches, and on some islands women stand in the water and slap the sea with their hands, making rhythms like drumbeats.",
+      "img": "Inyeug_Islet.jpg"
     },
     {
-      "en": "People are warm and relaxed, and island time means there's no need to hurry. Smile, say halo, and you'll soon be chatting like old friends."
+      "en": "People are warm and relaxed, and island time means there's no need to hurry. Smile, say halo, and you'll soon be chatting like old friends.",
+      "img": "Todiramphus_albonotatus.jpg"
     },
     {
-      "en": "When you're ready, sail northwest across the Coral Sea to the Solomon Islands, where more reefs and villages are waiting."
+      "en": "When you're ready, sail northwest across the Coral Sea to the Solomon Islands, where more reefs and villages are waiting.",
+      "img": "Butmas.jpg"
     }
   ],
-  "next": ["Solomon Islands", "Fiji", "Australia"]
+  "next": [
+    "Solomon Islands",
+    "Fiji",
+    "Australia"
+  ]
 }

@@ -1,46 +1,65 @@
 {
   "country": "Zimbabwe",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "segments": [
     {
-      "en": "The soft, rippling notes of an mbira drift across a village at dusk. This small instrument has metal keys plucked with the thumbs, and in Zimbabwe its music has been played for centuries to tell stories and call on the ancestors."
+      "en": "The soft, rippling notes of an mbira drift across a village at dusk. This small instrument has metal keys plucked with the thumbs, and in Zimbabwe its music has been played for centuries to tell stories and call on the ancestors.",
+      "img": "Ene_mbira.jpg"
     },
     {
-      "en": "The country takes its name from Great Zimbabwe, a city of stone built long ago on a hilltop in the south. Its curved walls were made without any mortar, the stones fitted so skilfully that they still stand today."
+      "en": "The country takes its name from Great Zimbabwe, a city of stone built long ago on a hilltop in the south. Its curved walls were made without any mortar, the stones fitted so skilfully that they still stand today.",
+      "img": "Conical_Tower_-_Great_Enclosure_III_(33736918448).jpg"
     },
     {
-      "en": "Zimbabwe means houses of stone in the Shona language, and a carved soapstone bird found at the ruins now appears on the national flag."
+      "en": "Zimbabwe means houses of stone in the Shona language, and a carved soapstone bird found at the ruins now appears on the national flag.",
+      "img": "Great-Zimbabwe-2.jpg"
     },
     {
-      "en": "Stone is part of the landscape too. In the Matobo Hills, giant granite boulders balance on top of one another as if a giant had stacked them, and caves there hold ancient rock paintings."
+      "en": "Stone is part of the landscape too. In the Matobo Hills, giant granite boulders balance on top of one another as if a giant had stacked them, and caves there hold ancient rock paintings.",
+      "img": "Sunrise_Matobo_Zimbabwe.jpg"
     },
     {
-      "en": "In the north, the mighty Zambezi River pours over Victoria Falls, and further downstream it widens into Lake Kariba, where houseboats drift past hippos and elephants come down to drink."
+      "en": "In the north, the mighty Zambezi River pours over Victoria Falls, and further downstream it widens into Lake Kariba, where houseboats drift past hippos and elephants come down to drink.",
+      "img": "Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_04.jpg"
     },
     {
-      "en": "Hwange National Park is famous for its huge herds of elephants, and in Mana Pools you can watch wildlife along the riverbanks, among tall trees and golden light."
+      "en": "Hwange National Park is famous for its huge herds of elephants, and in Mana Pools you can watch wildlife along the riverbanks, among tall trees and golden light.",
+      "img": "Down_the_water_hole.jpg"
     },
     {
-      "en": "In the east, the Eastern Highlands are cool, misty and green, with waterfalls, pine forests and tea plantations along the border with Mozambique."
+      "en": "In the east, the Eastern Highlands are cool, misty and green, with waterfalls, pine forests and tea plantations along the border with Mozambique.",
+      "img": "Central_nyanga_np.jpg"
     },
     {
-      "en": "Harare, the capital, is a city of wide streets and jacaranda trees, which turn the avenues a beautiful purple every spring."
+      "en": "Harare, the capital, is a city of wide streets and jacaranda trees, which turn the avenues a beautiful purple every spring.",
+      "img": "Jacarandá-mimoso_(do_tupi_îakarandá)_-_54942878507_02.jpg"
     },
     {
-      "en": "Zimbabwe has many official languages, but Shona and Ndebele are the most widely spoken, along with English. A friendly Shona greeting is mhoro, and people often ask about your whole family before anything else."
+      "en": "Zimbabwe has many official languages, but Shona and Ndebele are the most widely spoken, along with English. A friendly Shona greeting is mhoro, and people often ask about your whole family before anything else.",
+      "img": "Bulawayo_CBD.jpg"
     },
     {
-      "en": "Respect for elders runs deep. Children may kneel or crouch slightly when greeting an older person, and it is polite to clap your hands gently when saying thank you."
+      "en": "Respect for elders runs deep. Children may kneel or crouch slightly when greeting an older person, and it is polite to clap your hands gently when saying thank you.",
+      "img": "Masvingo_at_dusk.jpg"
     },
     {
-      "en": "The daily staple is sadza, a thick maize porridge eaten with your hand alongside stews of beef, chicken, beans or leafy greens. Some adventurous eaters also enjoy crunchy dried mopane worms."
+      "en": "The daily staple is sadza, a thick maize porridge eaten with your hand alongside stews of beef, chicken, beans or leafy greens. Some adventurous eaters also enjoy crunchy dried mopane worms.",
+      "img": "Nsima_-_on_a_plate_-_Malawi_-_Jan_2018_.jpg"
     },
     {
-      "en": "Zimbabwean sculptors are known around the world for their stone carvings, smooth figures of people, animals and spirits shaped from local serpentine."
+      "en": "Zimbabwean sculptors are known around the world for their stone carvings, smooth figures of people, animals and spirits shaped from local serpentine.",
+      "img": "Tengenenge_sculptures.jpg"
     },
     {
-      "en": "So let the mbira play you out, then head south across the Limpopo River, where South Africa is waiting with a warm welcome."
+      "en": "So let the mbira play you out, then head south across the Limpopo River, where South Africa is waiting with a warm welcome.",
+      "img": "Limpopo.jpg"
     }
   ],
-  "next": ["South Africa", "Zambia", "Mozambique"]
+  "next": [
+    "South Africa",
+    "Zambia",
+    "Mozambique"
+  ]
 }
