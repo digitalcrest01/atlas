@@ -1677,7 +1677,13 @@
     .lc-line, .section-body, .fact-value, .qf-body { font-size: 14px; }
   }
   .locked-tab { max-width: 460px; text-align: center; }
-  .locked-ic { font-size: 40px; margin-bottom: 6px; }
+  .locked-ic {
+    width: 96px; height: 96px; margin: 0 auto 10px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 50% 40%, rgba(212,160,86,0.28), rgba(212,160,86,0.05) 70%);
+    box-shadow: 0 0 0 1px rgba(212,160,86,0.35) inset;
+  }
+  .locked-ic svg { filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35)); }
   .locked-tab h2 { margin: 4px 0 10px; }
   .locked-blurb { color: var(--ink-dim); margin: 0 0 20px; line-height: 1.5; }
   .unlock-note { font-size: 13px; color: var(--ink-dim); margin: 12px 0 0; line-height: 1.45; }
@@ -2581,6 +2587,21 @@ function canCompare() { return true; }
 function canQuiz() { return state.isPro; }
 function canPuzzle() { return state.isPro; }
 
+// A drawn padlock (same on every device, unlike the emoji).
+function lockIconSvg() {
+  return '<svg viewBox="0 0 64 64" width="64" height="64" focusable="false">' +
+    '<defs>' +
+      '<linearGradient id="lk-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c77a"/><stop offset="1" stop-color="#c98a2e"/></linearGradient>' +
+      '<linearGradient id="lk-shackle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cfd6e0"/><stop offset="0.5" stop-color="#ffffff"/><stop offset="1" stop-color="#9aa4b2"/></linearGradient>' +
+    '</defs>' +
+    '<path d="M20 29v-8a12 12 0 0 1 24 0v8" fill="none" stroke="url(#lk-shackle)" stroke-width="6" stroke-linecap="round"/>' +
+    '<rect x="12" y="27" width="40" height="31" rx="8" fill="url(#lk-body)"/>' +
+    '<rect x="12" y="27" width="40" height="7" rx="3.5" fill="#ffffff" opacity="0.22"/>' +
+    '<circle cx="32" cy="41" r="4.5" fill="#5a3a0c"/>' +
+    '<path d="M30 43.5h4l1.2 7.5h-6.4z" fill="#5a3a0c"/>' +
+  '</svg>';
+}
+
 // Shown in place of the Quiz or Puzzle tab until they're unlocked.
 function lockedTabHtml(what, blurb) {
   const cta = IS_WEB
@@ -2589,7 +2610,7 @@ function lockedTabHtml(what, blurb) {
     : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">Unlock Quiz &amp; Puzzle · ' + UNLOCK_PRICE + '</button>' +
       '<p class="unlock-note">One payment, yours forever. Everything else in Myatlastic is free.</p>';
   return '<div class="center-card quiz-card locked-tab">' +
-    '<div class="locked-ic" aria-hidden="true">🔒</div>' +
+    '<div class="locked-ic" aria-hidden="true">' + lockIconSvg() + '</div>' +
     '<h2>' + what + '</h2>' +
     '<p class="locked-blurb">' + blurb + '</p>' + cta + '</div>';
 }
