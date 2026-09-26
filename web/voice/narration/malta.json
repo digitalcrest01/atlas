@@ -1,0 +1,55 @@
+{
+  "country": "Malta",
+  "languages": ["en", "mt"],
+  "segments": [
+    {
+      "en": "Church bells ring out over honey-coloured stone, and fireworks crackle above a village square. It must be festa season in Malta, a small island nation in the very middle of the Mediterranean.",
+      "mt": "Il-qniepen idoqqu fuq il-ġebel lewn l-għasel, u l-murtali jisplodu fuq il-pjazza tar-raħal. Żgur li wasal żmien il-festi f'Malta, pajjiż żgħir ta' gżejjer eżatt f'nofs il-Mediterran."
+    },
+    {
+      "en": "The country is made up of three inhabited islands, Malta, Gozo and tiny Comino, lying between Sicily and North Africa.",
+      "mt": "Il-pajjiż huwa magħmul minn tliet gżejjer abitati, Malta, Għawdex u Kemmuna ċkejkna, bejn Sqallija u l-Afrika ta' Fuq."
+    },
+    {
+      "en": "People have lived here for thousands of years. On Gozo, the great stones of the Ġgantija temples were raised more than five thousand years ago, before the pyramids of Egypt were built.",
+      "mt": "In-nies ilhom jgħixu hawn għal eluf ta' snin. F'Għawdex, il-ġebel kbir tat-tempji tal-Ġgantija ttella' aktar minn ħamest elef sena ilu, qabel ma nbnew il-piramidi tal-Eġittu."
+    },
+    {
+      "en": "Maltese is a remarkable language. It grew from Arabic roots, borrowed many words from Italian and English, and is the only Semitic language that is an official language of the European Union.",
+      "mt": "Il-Malti huwa lsien tal-għaġeb. Kiber minn għeruq Għarbin, issellef ħafna kliem mit-Taljan u mill-Ingliż, u huwa l-uniku lsien Semitiku li huwa lingwa uffiċjali tal-Unjoni Ewropea."
+    },
+    {
+      "en": "In 1565, the Knights of Saint John and the Maltese people held out against a huge Ottoman fleet in the Great Siege. Soon afterwards the Knights built a new capital, Valletta, named after their Grand Master.",
+      "mt": "Fl-1565, il-Kavallieri ta' San Ġwann u l-poplu Malti żammew sod kontra flotta Ottomana kbira fl-Assedju l-Kbir. Ftit wara, il-Kavallieri bnew belt kapitali ġdida, il-Belt Valletta, imsemmija għall-Gran Mastru tagħhom."
+    },
+    {
+      "en": "Valletta is a compact city of steep streets and painted wooden balconies. Inside Saint John's Co-Cathedral the walls shimmer with gold, and a dramatic painting by Caravaggio hangs in the oratory.",
+      "mt": "Il-Belt hija belt żgħira b'toroq weqfin u gallariji tal-injam miżbugħin. Ġewwa l-Kon-Katidral ta' San Ġwann, il-ħitan jleqqu bid-deheb, u fl-oratorju hemm pittura drammatika ta' Caravaggio."
+    },
+    {
+      "en": "From the Upper Barrakka Gardens you can gaze across the Grand Harbour to the Three Cities, and every day at noon a cannon fires a salute. Little wooden boats called dgħajjes still ferry people across the water.",
+      "mt": "Mill-Barrakka ta' Fuq tista' tħares lejn il-Port il-Kbir u l-Kottonera, u kuljum f'nofsinhar tisparalu kanun bħala salut. Id-dgħajjes tal-pass tal-injam għadhom iġorru n-nies minn naħa għall-oħra."
+    },
+    {
+      "en": "In the fishing village of Marsaxlokk, colourful boats called luzzu bob in the harbour, each with a painted eye on its bow to watch over the fishermen.",
+      "mt": "Fir-raħal tas-sajd ta' Marsaxlokk, il-luzzijiet ikkuluriti jitbandlu fil-port, u kull wieħed għandu għajn miżbugħa fuq il-pruwa biex tħares lis-sajjieda."
+    },
+    {
+      "en": "Hungry? Grab a pastizz, a flaky pastry filled with ricotta or mushy peas. For a family feast, many Maltese love stuffat tal-fenek, a slow-cooked rabbit stew.",
+      "mt": "Bil-ġuħ? Ixtri pastizz, għaġina sfoljata mimlija bl-irkotta jew bil-piżelli. Għal ikla kbira mal-familja, ħafna Maltin iħobbu l-istuffat tal-fenek, imsajjar bil-mod għal ħafna sigħat."
+    },
+    {
+      "en": "Each summer, every town and village honours its patron saint with a festa. Brass bands march, the streets are hung with decorations, and the saint's statue is carried shoulder-high through the crowds.",
+      "mt": "Kull sajf, kull belt u raħal jiċċelebraw il-festa tal-qaddis patrun tagħhom. Il-baned jimxu fit-toroq, it-toroq jitżejnu bid-dekorazzjonijiet, u l-istatwa tal-qaddis tinġarr fuq l-ispallejn f'nofs il-folla."
+    },
+    {
+      "en": "Gozo is greener and slower, with salt pans carved into the rocks beside the sea. And between the islands, the Blue Lagoon at Comino shines an almost unbelievable blue.",
+      "mt": "Għawdex huwa aktar aħdar u kalm, bil-melħiet imqattgħin fil-blat ħdejn il-baħar. U bejn il-gżejjer, il-lagun blu ta' Kemmuna jiddi b'kulur blu li kważi ma temminhx."
+    },
+    {
+      "en": "Saħħa, goodbye, as the sun sets over the old bastions. Just to the north, across a short stretch of sea, Italy is waiting.",
+      "mt": "Saħħa, hekk kif ix-xemx tinżel fuq is-sisien il-qodma. Eżatt lejn it-Tramuntana, wara biċċa baħar qasira, l-Italja qed tistenniek."
+    }
+  ],
+  "next": ["Italy", "Tunisia", "Libya"]
+}

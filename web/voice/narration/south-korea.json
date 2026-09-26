@@ -1,0 +1,55 @@
+{
+  "country": "South Korea",
+  "languages": ["en", "ko"],
+  "segments": [
+    {
+      "en": "Annyeonghaseyo! On a crisp morning in Seoul, old palace gates stand beneath glass towers, and the city hums with subway trains, coffee shops and street stalls selling hot, sweet pancakes called hotteok.",
+      "ko": "안녕하세요! 상쾌한 서울의 아침, 오래된 궁궐 문이 유리 빌딩 아래에 서 있고, 도시는 지하철과 카페, 따끈하고 달콤한 호떡을 파는 노점들로 활기가 넘칩니다."
+    },
+    {
+      "en": "South Korea covers the southern half of a mountainous peninsula, with seas on three sides. Green hills are never far away, and hiking is a favourite weekend pastime for all ages.",
+      "ko": "한국은 산이 많은 반도의 남쪽 절반에 자리하고 있으며, 삼면이 바다로 둘러싸여 있습니다. 어디서든 푸른 산이 가까이 있어서, 등산은 남녀노소 모두가 즐기는 주말 취미랍니다."
+    },
+    {
+      "en": "At the centre of every meal is rice, surrounded by little side dishes called banchan. The most famous is kimchi, spicy fermented cabbage, and in late autumn families gather to make huge batches together, a tradition called gimjang.",
+      "ko": "모든 식사의 중심에는 밥이 있고, 그 주위를 반찬이라 부르는 작은 그릇들이 둘러쌉니다. 가장 유명한 반찬은 매콤하게 발효시킨 배추김치인데, 늦가을이면 가족들이 모여 함께 많은 양을 담그는 김장을 합니다."
+    },
+    {
+      "en": "Try bibimbap, rice topped with vegetables and red chilli paste, or join friends grilling meat right at the table. Wrapping each bite in a crisp lettuce leaf is part of the fun.",
+      "ko": "채소와 고추장을 얹은 비빔밥을 맛보거나, 친구들과 식탁에서 바로 고기를 구워 보세요. 한 입씩 아삭한 상추에 싸 먹는 것도 즐거움의 하나랍니다."
+    },
+    {
+      "en": "Respect for elders runs deep. People bow when they greet, use two hands to give or receive something from an older person, and at meals the youngest wait for the eldest to lift their spoon first.",
+      "ko": "어른을 공경하는 마음이 깊습니다. 인사할 때는 고개를 숙이고, 어른께 무언가를 드리거나 받을 때는 두 손을 쓰며, 식사 자리에서는 가장 웃어른이 먼저 수저를 드실 때까지 기다립니다."
+    },
+    {
+      "en": "Koreans are proud of their alphabet, Hangeul, created in the fifteenth century under King Sejong the Great so that everyone could learn to read. It even has its own holiday, on the ninth of October.",
+      "ko": "한국 사람들은 한글을 자랑스러워합니다. 한글은 15세기에 세종대왕 때 누구나 쉽게 글을 배울 수 있도록 만들어졌지요. 10월 9일에는 한글날이라는 기념일까지 있답니다."
+    },
+    {
+      "en": "At Chuseok, the autumn harvest festival, roads fill as families travel back to their hometowns. They share songpyeon, little half-moon rice cakes, and honour their ancestors together.",
+      "ko": "가을 수확을 기념하는 추석이 되면 가족들이 고향으로 향하면서 길이 붐빕니다. 반달 모양의 작은 떡인 송편을 나누어 먹고, 함께 조상께 예를 올립니다."
+    },
+    {
+      "en": "On festival days you may see people in hanbok, traditional clothing with full, flowing skirts and bright, graceful jackets. Many visitors rent one to stroll around Gyeongbokgung Palace.",
+      "ko": "명절이면 풍성하게 흐르는 치마와 화사하고 우아한 저고리로 된 전통 옷, 한복을 입은 사람들을 볼 수 있습니다. 많은 여행객들이 한복을 빌려 입고 경복궁을 거닐지요."
+    },
+    {
+      "en": "Korean pop music, films and television dramas are loved around the world, and young fans everywhere learn the dance moves. Yet pansori, a traditional form of sung storytelling with a drum, is treasured too.",
+      "ko": "한국의 대중음악과 영화, 드라마는 전 세계에서 사랑받고 있고, 곳곳의 젊은 팬들이 춤을 따라 배웁니다. 그러면서도 북장단에 맞춰 이야기를 노래하는 전통 예술, 판소리도 소중히 이어지고 있습니다."
+    },
+    {
+      "en": "Down south, the port city of Busan has sandy beaches and a lively fish market. Off the coast lies Jeju Island, a volcanic island of black stone walls and haenyeo, women divers who gather seafood from the sea.",
+      "ko": "남쪽의 항구 도시 부산에는 모래사장과 활기찬 수산시장이 있습니다. 바다 건너에는 검은 돌담과, 바다에서 해산물을 캐는 여성 잠수부 해녀로 유명한 화산섬 제주도가 있지요."
+    },
+    {
+      "en": "Taekwondo, the martial art of high kicks, was born here. And on chilly nights, families relax in a jjimjilbang, a warm bathhouse where people snack on baked eggs and even take a nap.",
+      "ko": "높은 발차기로 유명한 무술, 태권도가 태어난 곳도 바로 여기입니다. 쌀쌀한 밤이면 가족들이 찜질방에 가서 몸을 녹이고, 구운 계란을 먹으며 낮잠까지 즐긴답니다."
+    },
+    {
+      "en": "When it's time to go, Koreans say 'annyeonghi gaseyo', go in peace. Across the sea to the east, Japan is waiting for you.",
+      "ko": "떠날 때가 되면 한국 사람들은 '안녕히 가세요'라고 인사합니다. 동쪽 바다 건너에서 일본이 여러분을 기다리고 있어요."
+    }
+  ],
+  "next": ["Japan", "China", "Taiwan"]
+}

@@ -1,0 +1,59 @@
+{
+  "country": "Burundi",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "Listen. A deep boom rolls across the hills, then another, faster and faster, until the ground seems to shake. Drummers in red, white and green carry great drums on their heads, set them in a circle, and leap as they play. This is Burundi.",
+      "fr": "Écoutez. Un grondement sourd roule sur les collines, puis un autre, de plus en plus vite, jusqu'à ce que le sol semble trembler. Des tambourinaires vêtus de rouge, de blanc et de vert portent d'énormes tambours sur la tête, les disposent en cercle et bondissent en jouant. Nous sommes au Burundi."
+    },
+    {
+      "en": "The royal drum was once the very symbol of the kingdom, and today this drumming ritual is recognised as a treasure of world heritage. It opens celebrations and welcomes honoured guests.",
+      "fr": "Le tambour royal était jadis le symbole même du royaume, et ce rituel est aujourd'hui inscrit au patrimoine culturel immatériel de l'humanité. Il ouvre les fêtes et accueille les invités de marque."
+    },
+    {
+      "en": "Burundi is small and green, a land of rolling hills in the heart of Africa, where banana groves, tea gardens and little farms climb the slopes. Most families live in homesteads scattered across the hillsides rather than in villages.",
+      "fr": "Le Burundi est un petit pays verdoyant au cœur de l'Afrique, fait de collines ondulantes où bananeraies, jardins de thé et petites fermes grimpent sur les pentes. La plupart des familles vivent dans des enclos dispersés à flanc de colline plutôt qu'en villages."
+    },
+    {
+      "en": "Almost everyone speaks Kirundi, and many also speak French or Swahili. A lovely word to learn is amahoro, which means peace and is also used as a greeting.",
+      "fr": "Presque tout le monde parle le kirundi, et beaucoup parlent aussi le français ou le swahili. Un joli mot à retenir est amahoro, qui veut dire paix et sert aussi de salutation."
+    },
+    {
+      "en": "To the west stretches Lake Tanganyika, long, deep and ancient, shared with three other countries. Bujumbura, the largest city, lies on its shore, and at dusk fishermen set out with lanterns to catch tiny silver fish.",
+      "fr": "À l'ouest s'étend le lac Tanganyika, long, profond et très ancien, partagé avec trois autres pays. Bujumbura, la plus grande ville, s'étire sur sa rive, et au crépuscule les pêcheurs partent avec des lanternes pour attraper de minuscules poissons argentés."
+    },
+    {
+      "en": "Those little fish are called ndagala, dried in the sun and cooked with tomato and onion. The lake also gives mukeke, a fish so loved that people will tell you it tastes of home.",
+      "fr": "Ces petits poissons, les ndagala, sèchent au soleil avant d'être cuisinés à la tomate et à l'oignon. Le lac offre aussi le mukeke, un poisson si apprécié qu'on vous dira qu'il a le goût de la maison."
+    },
+    {
+      "en": "Everyday meals are simple and filling, with beans, sweet potatoes, cassava and cooking bananas, often livened up with fiery pili pili sauce. Grilled brochettes are the favourite for evenings with friends.",
+      "fr": "Les repas de tous les jours sont simples et nourrissants, à base de haricots, de patates douces, de manioc et de bananes à cuire, souvent relevés d'une sauce pili-pili bien piquante. Les brochettes grillées sont les reines des soirées entre amis."
+    },
+    {
+      "en": "Cattle have long been a sign of wealth and friendship, and long-horned Ankole cows are admired for their elegance. An old greeting even wishes you great herds.",
+      "fr": "Depuis toujours, la vache est ici signe de richesse et d'amitié, et les vaches ankolé aux longues cornes sont admirées pour leur élégance. Une ancienne salutation vous souhaite même de grands troupeaux."
+    },
+    {
+      "en": "In the south, at Rutovu, a small stone pyramid marks a spring often called the southernmost source of the Nile. From here, the water begins a journey of thousands of kilometres to the Mediterranean.",
+      "fr": "Dans le sud, à Rutovu, une petite pyramide de pierre marque une source souvent présentée comme la plus méridionale du Nil. D'ici, l'eau entame un voyage de milliers de kilomètres jusqu'à la Méditerranée."
+    },
+    {
+      "en": "In the north, the misty Kibira forest shelters chimpanzees and bright birds, while tea gardens roll out along its edges.",
+      "fr": "Au nord, la forêt brumeuse de la Kibira abrite des chimpanzés et des oiseaux aux couleurs vives, tandis que des jardins de thé s'étendent à ses lisières."
+    },
+    {
+      "en": "Gitega, in the centre, is the political capital, home to the national museum and memories of the old kingdom. Coffee grown on these high hills is sweet and fruity, and more and more of the world is discovering it.",
+      "fr": "Gitega, au centre du pays, est la capitale politique, avec son musée national et les souvenirs de l'ancien royaume. Le café cultivé sur ces hautes collines est doux et fruité, et le monde le découvre de plus en plus."
+    },
+    {
+      "en": "Burundians are known for their warmth and courtesy. Speak gently, greet elders first, and accept the cup of sweet, milky tea you are offered.",
+      "fr": "Les Burundais sont réputés pour leur chaleur et leur courtoisie. Parlez avec douceur, saluez d'abord les aînés et acceptez la tasse de thé au lait bien sucré qu'on vous offre."
+    },
+    {
+      "en": "When the drums fall quiet, follow the hills north. Rwanda, a close neighbour and a cousin in language, is waiting.",
+      "fr": "Quand les tambours se taisent, suivez les collines vers le nord. Le Rwanda, proche voisin et cousin par la langue, vous attend."
+    }
+  ],
+  "next": ["Rwanda", "Tanzania", "Congo (DRC)"]
+}

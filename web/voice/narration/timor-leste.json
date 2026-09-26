@@ -1,0 +1,59 @@
+{
+  "country": "Timor-Leste",
+  "languages": ["en", "pt-PT"],
+  "segments": [
+    {
+      "en": "As the sun rises over Dili, fishermen pull their boats up onto the sand, and the great statue of Christ on the headland watches over the bay.",
+      "pt-PT": "Quando o sol nasce sobre Díli, os pescadores puxam os barcos para a areia, e a grande estátua de Cristo no promontório vela pela baía."
+    },
+    {
+      "en": "Here's a fun fact: Timor comes from a Malay word for east, and Leste means east in Portuguese, so the country's name says east twice. It covers the eastern half of the island of Timor.",
+      "pt-PT": "Uma curiosidade: Timor vem de uma palavra malaia que significa leste, e Leste quer dizer o mesmo em português, por isso o nome do país diz leste duas vezes. Ocupa a metade oriental da ilha de Timor."
+    },
+    {
+      "en": "It's one of the youngest countries in Asia, independent since 2002 after a long struggle, and people are proud of the freedom they worked so hard for.",
+      "pt-PT": "É um dos países mais jovens da Ásia, independente desde 2002 depois de uma longa luta, e as pessoas orgulham-se da liberdade que tanto lhes custou conquistar."
+    },
+    {
+      "en": "Tetum and Portuguese are the official languages, and many local languages are spoken too. A friendly 'Bondia!' means good morning in Tetum.",
+      "pt-PT": "O tétum e o português são as línguas oficiais, e fala-se também muitas línguas locais. Um simpático «Bondia!» quer dizer bom dia em tétum."
+    },
+    {
+      "en": "Women weave tais, beautiful handwoven cloth whose patterns change from region to region. Tais are worn at ceremonies and given as gifts of honour.",
+      "pt-PT": "As mulheres tecem tais, belos panos feitos à mão cujos padrões mudam de região para região. Os tais usam-se nas cerimónias e oferecem-se como presentes de honra."
+    },
+    {
+      "en": "In the villages, sacred houses called uma lulik, with tall pointed roofs, keep family heirlooms safe and connect people with their ancestors.",
+      "pt-PT": "Nas aldeias, as casas sagradas chamadas uma lulik, de telhados altos e pontiagudos, guardam as relíquias da família e ligam as pessoas aos seus antepassados."
+    },
+    {
+      "en": "In the cool mountains, coffee grows in the shade of tall trees, and Timorese coffee is one of the country's most important exports.",
+      "pt-PT": "Nas montanhas frescas, o café cresce à sombra de árvores altas, e o café timorense é uma das exportações mais importantes do país."
+    },
+    {
+      "en": "Meals centre on rice or corn, with fresh fish, vegetables and a spicy chilli sauce called ai-manas. Batar daan, corn simmered with beans and pumpkin, is a warming favourite.",
+      "pt-PT": "As refeições giram à volta do arroz ou do milho, com peixe fresco, legumes e um molho picante de malagueta chamado ai-manas. O batar daan, milho cozinhado lentamente com feijão e abóbora, é um dos pratos preferidos."
+    },
+    {
+      "en": "The waters around Atauro Island are wonderfully rich in coral reef life, and divers come to see bright fish, turtles and even whales passing through.",
+      "pt-PT": "As águas em redor da ilha de Ataúro são extraordinariamente ricas em vida nos recifes de coral, e os mergulhadores vêm ver peixes coloridos, tartarugas e até baleias de passagem."
+    },
+    {
+      "en": "Mount Ramelau is the highest peak, and many people climb it in the dark to watch the sunrise, when on a clear day you can see the sea on both sides of the island.",
+      "pt-PT": "O monte Ramelau é o pico mais alto, e muitas pessoas sobem-no ainda de noite para ver o nascer do sol, quando, num dia limpo, se avista o mar dos dois lados da ilha."
+    },
+    {
+      "en": "Most Timorese are Catholic, and church bells, processions and festive masses are part of community life, alongside older traditions that honour the land and the ancestors.",
+      "pt-PT": "A maioria dos timorenses é católica, e os sinos, as procissões e as missas festivas fazem parte da vida da comunidade, a par de tradições mais antigas que honram a terra e os antepassados."
+    },
+    {
+      "en": "Music brings people together, from drums and circle dances at celebrations to guitar songs sung on the beach as evening falls.",
+      "pt-PT": "A música junta as pessoas, dos tambores e das danças de roda nas festas às canções à guitarra cantadas na praia ao cair da tarde."
+    },
+    {
+      "en": "When you leave, a warm 'obrigadu barak', thank you very much, goes a long way. Just across the island to the west, Indonesia is waiting for you.",
+      "pt-PT": "Ao partir, um caloroso «obrigadu barak», muito obrigado, vale muito. Logo ali, do outro lado da ilha, a oeste, a Indonésia está à sua espera."
+    }
+  ],
+  "next": ["Indonesia", "Australia", "Portugal"]
+}

@@ -1,0 +1,227 @@
+{
+  "book": "th",
+  "name": "Thai",
+  "native": "ไทย",
+  "phrases": {
+    "hello": {
+      "text": "สวัสดีค่ะ",
+      "roman": "sawatdi kha",
+      "say": "sah-wah-DEE KAH"
+    },
+    "good_morning": {
+      "text": "อรุณสวัสดิ์ค่ะ",
+      "roman": "arun sawat kha",
+      "say": "ah-ROON sah-WAHT KAH"
+    },
+    "good_evening": {
+      "text": "สวัสดีตอนเย็นค่ะ",
+      "roman": "sawatdi ton yen kha",
+      "say": "sah-wah-DEE tawn YEN KAH"
+    },
+    "goodbye": {
+      "text": "แล้วพบกันใหม่ค่ะ",
+      "roman": "laeo phop kan mai kha",
+      "say": "LAEW pop gan MAI KAH"
+    },
+    "how_are_you": {
+      "text": "สบายดีไหมคะ",
+      "roman": "sabai di mai kha",
+      "say": "sah-BAI dee MAI KAH"
+    },
+    "nice_to_meet": {
+      "text": "ยินดีที่ได้รู้จักค่ะ",
+      "roman": "yindi thi dai ruchak kha",
+      "say": "yin-DEE tee dai ROO-jak KAH"
+    },
+    "please": {
+      "text": "กรุณา",
+      "roman": "karuna",
+      "say": "gah-roo-NAH"
+    },
+    "thank_you": {
+      "text": "ขอบคุณค่ะ",
+      "roman": "khop khun kha",
+      "say": "kop KOON KAH"
+    },
+    "youre_welcome": {
+      "text": "ไม่เป็นไรค่ะ",
+      "roman": "mai pen rai kha",
+      "say": "mai pen RAI KAH"
+    },
+    "excuse_me": {
+      "text": "ขอโทษค่ะ",
+      "roman": "kho thot kha",
+      "say": "kaw TOHT KAH"
+    },
+    "sorry": {
+      "text": "ขอโทษค่ะ",
+      "roman": "kho thot kha",
+      "say": "kaw TOHT KAH"
+    },
+    "yes": {
+      "text": "ใช่ค่ะ",
+      "roman": "chai kha",
+      "say": "CHAI KAH"
+    },
+    "no": {
+      "text": "ไม่ใช่ค่ะ",
+      "roman": "mai chai kha",
+      "say": "mai CHAI KAH"
+    },
+    "speak_english": {
+      "text": "พูดภาษาอังกฤษได้ไหมคะ",
+      "roman": "phut phasa angkrit dai mai kha",
+      "say": "poot pah-SAH ang-GRIT dai MAI KAH"
+    },
+    "dont_understand": {
+      "text": "ไม่เข้าใจค่ะ",
+      "roman": "mai khao chai kha",
+      "say": "mai KOW jai KAH"
+    },
+    "slowly": {
+      "text": "ช่วยพูดช้าๆ หน่อยค่ะ",
+      "roman": "chuai phut cha cha noi kha",
+      "say": "CHOO-ay poot CHAH chah NOY KAH"
+    },
+    "repeat": {
+      "text": "พูดอีกครั้งได้ไหมคะ",
+      "roman": "phut ik khrang dai mai kha",
+      "say": "poot EEK krahng dai MAI KAH"
+    },
+    "where_station": {
+      "text": "สถานีรถไฟอยู่ที่ไหนคะ",
+      "roman": "sathani rot fai yu thi nai kha",
+      "say": "sah-tah-NEE rot FAI yoo tee NAI KAH"
+    },
+    "where_toilet": {
+      "text": "ห้องน้ำอยู่ที่ไหนคะ",
+      "roman": "hong nam yu thi nai kha",
+      "say": "hawng NAHM yoo tee NAI KAH"
+    },
+    "is_it_far": {
+      "text": "ไกลไหมคะ",
+      "roman": "klai mai kha",
+      "say": "glai MAI KAH"
+    },
+    "left": {
+      "text": "ซ้าย",
+      "roman": "sai",
+      "say": "SAI"
+    },
+    "right": {
+      "text": "ขวา",
+      "roman": "khwa",
+      "say": "KWAH"
+    },
+    "straight": {
+      "text": "ตรงไป",
+      "roman": "trong pai",
+      "say": "trong PAI"
+    },
+    "menu": {
+      "text": "ขอเมนูหน่อยค่ะ",
+      "roman": "kho menu noi kha",
+      "say": "kaw meh-NOO NOY KAH"
+    },
+    "water": {
+      "text": "ขอน้ำเปล่าหน่อยค่ะ",
+      "roman": "kho nam plao noi kha",
+      "say": "kaw nahm PLOW NOY KAH"
+    },
+    "bill": {
+      "text": "เช็คบิลด้วยค่ะ",
+      "roman": "chek bin duai kha",
+      "say": "chek BIN DOO-ay KAH"
+    },
+    "delicious": {
+      "text": "อร่อยมากค่ะ",
+      "roman": "aroi mak kha",
+      "say": "ah-ROY MAHK KAH"
+    },
+    "vegetarian": {
+      "text": "ฉันกินมังสวิรัติค่ะ",
+      "roman": "chan kin mangsawirat kha",
+      "say": "chahn gin mahng-sah-wi-RAHT KAH"
+    },
+    "how_much": {
+      "text": "เท่าไหร่คะ",
+      "roman": "thao rai kha",
+      "say": "tow RAI KAH"
+    },
+    "too_expensive": {
+      "text": "แพงไปค่ะ",
+      "roman": "phaeng pai kha",
+      "say": "paeng PAI KAH"
+    },
+    "pay_card": {
+      "text": "จ่ายด้วยบัตรได้ไหมคะ",
+      "roman": "chai duai bat dai mai kha",
+      "say": "jai doo-ay BAHT dai MAI KAH"
+    },
+    "help": {
+      "text": "ช่วยด้วย",
+      "roman": "chuai duai",
+      "say": "CHOO-ay DOO-ay"
+    },
+    "need_doctor": {
+      "text": "ฉันต้องไปหาหมอค่ะ",
+      "roman": "chan tong pai ha mo kha",
+      "say": "chahn tawng pai HAH MAW KAH"
+    },
+    "lost": {
+      "text": "ฉันหลงทางค่ะ",
+      "roman": "chan long thang kha",
+      "say": "chahn long TAHNG KAH"
+    },
+    "n1": {
+      "text": "หนึ่ง",
+      "roman": "nueng",
+      "say": "NEUNG"
+    },
+    "n2": {
+      "text": "สอง",
+      "roman": "song",
+      "say": "SAWNG"
+    },
+    "n3": {
+      "text": "สาม",
+      "roman": "sam",
+      "say": "SAHM"
+    },
+    "n4": {
+      "text": "สี่",
+      "roman": "si",
+      "say": "SEE"
+    },
+    "n5": {
+      "text": "ห้า",
+      "roman": "ha",
+      "say": "HAH"
+    },
+    "n6": {
+      "text": "หก",
+      "roman": "hok",
+      "say": "HOK"
+    },
+    "n7": {
+      "text": "เจ็ด",
+      "roman": "chet",
+      "say": "JET"
+    },
+    "n8": {
+      "text": "แปด",
+      "roman": "paet",
+      "say": "BAET"
+    },
+    "n9": {
+      "text": "เก้า",
+      "roman": "kao",
+      "say": "GOW"
+    },
+    "n10": {
+      "text": "สิบ",
+      "roman": "sip",
+      "say": "SIP"
+    }
+  }
+}

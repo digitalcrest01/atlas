@@ -397,8 +397,6 @@
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
-  .globe-btn-2 { top: 50px; }
-  .globe-btn-3 { top: 88px; }
   .globe-btn:hover { border-color: var(--accent); }
   .globe-btn.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
   /* Globe Flag Hunt overlay */
@@ -600,51 +598,112 @@
     color: var(--accent);
     margin-bottom: 3px;
   }
-  /* SAY HELLO card */
-  .hello-card {
+  /* SPEAKER BUTTON — a small icon inside a full-size touch target */
+  .vbtn {
+    --vb-size: 40px;
+    position: relative;
+    width: var(--vb-size); height: var(--vb-size);
+    flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 0; margin: 0;
+    background: transparent; border: none; border-radius: 999px;
+    color: var(--accent-2);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .vbtn .vb-icon { width: 17px; height: 17px; display: block; transition: transform 0.12s ease, opacity 0.12s ease; }
+  .vbtn::before {
+    content: ''; position: absolute; inset: 8px; border-radius: 999px;
+    background: currentColor; opacity: 0; transition: opacity 0.12s ease;
+  }
+  .vbtn:hover::before { opacity: 0.12; }
+  .vbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
+  .vbtn:active .vb-icon { transform: scale(0.9); }
+  .vbtn[data-state="playing"] { color: var(--accent); }
+  .vbtn[data-state="playing"]::before { opacity: 0.16; }
+  .vbtn[data-state="playing"] .vb-wave { animation: vbWave 0.9s ease-in-out infinite; }
+  .vbtn[data-state="loading"] .vb-icon { opacity: 0.35; }
+  .vbtn[data-state="error"] { color: var(--danger, #d9534f); }
+  .vb-spin {
+    position: absolute; inset: 11px; border-radius: 50%;
+    border: 2px solid currentColor; border-right-color: transparent;
+    opacity: 0; pointer-events: none;
+  }
+  .vbtn[data-state="loading"] .vb-spin, .vb-spin.on { opacity: 0.9; animation: vbSpin 0.8s linear infinite; }
+  .vb-spin.on { position: relative; display: inline-block; inset: auto; width: 12px; height: 12px; vertical-align: -1px; }
+  .vbtn-inline { --vb-size: 36px; margin-left: 2px; vertical-align: middle; }
+  .vbtn-big { --vb-size: 48px; border: 1px solid var(--line); background: var(--panel-2); }
+  .vbtn-big .vb-icon { width: 20px; height: 20px; }
+  @media (pointer: coarse) { .vbtn { --vb-size: 44px; } .vbtn-big { --vb-size: 52px; } }
+  @keyframes vbSpin { to { transform: rotate(360deg); } }
+  @keyframes vbWave { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  @media (prefers-reduced-motion: reduce) {
+    .vbtn[data-state="playing"] .vb-wave, .vb-spin { animation: none !important; }
+  }
+  .sr-only {
+    position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  /* LISTEN card — the spoken visit */
+  .listen-card, .phrasebook {
     background: var(--panel-2);
     border: 1px solid var(--line);
     border-radius: 12px;
     padding: 12px 14px;
     margin-bottom: 16px;
   }
-  .hello-head {
+  .lc-top, .pb-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+  .lc-top h3, .pb-head h3 {
+    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent-2);
-    margin-bottom: 8px;
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-2); font-weight: 700;
   }
-  .hello-row { display: flex; align-items: center; gap: 10px; }
-  .hello-word { font-size: 26px; font-weight: 700; color: var(--ink); }
-  .hello-speak {
-    background: var(--accent-2);
-    border: none;
-    color: var(--bg);
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    font-size: 18px;
-    cursor: pointer;
-    display: inline-flex; align-items: center; justify-content: center;
-    transition: transform 0.1s;
+  .lc-len, .pb-hint { font-size: 11px; color: var(--ink-dim); white-space: nowrap; }
+  .lc-controls { display: flex; align-items: center; gap: 8px; margin: 4px 0 10px; }
+  .lc-controls .btn-primary { flex: 0 0 auto; min-width: 118px; min-height: 44px; }
+  .lc-controls .back-btn { min-height: 44px; }
+  .lc-controls .back-btn[disabled], .lc-controls .btn-primary[disabled] { opacity: 0.45; cursor: default; }
+  .lc-progress { margin-left: auto; font-size: 12px; color: var(--ink-dim); font-variant-numeric: tabular-nums; }
+  .lc-line { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; }
+  .lc-sub { margin: 6px 0 0; font-size: 13px; line-height: 1.45; color: var(--ink-dim); overflow-wrap: anywhere; }
+  .lc-next { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
+  .lc-next .chip { min-height: 36px; }
+  .lc-langs, .pb-langs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .pb-lang {
+    display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center;
+    min-height: 40px; padding: 5px 12px;
+    background: var(--panel); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 10px;
+    font: inherit; font-size: 14px; line-height: 1.2; cursor: pointer; text-align: left;
   }
-  .hello-speak:active { transform: scale(0.9); }
-  .hello-phon { font-size: 13px; color: var(--ink-dim); margin-top: 6px; }
-  .hello-phon b { color: var(--accent-2); font-style: italic; }
-  /* Phrasebook rows inside the hello card */
-  .phrase-row { padding: 10px 0; border-top: 1px solid var(--line); }
-  .phrase-row.first { border-top: none; padding-top: 2px; }
-  .phrase-en {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px;
-    letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 3px;
+  .pb-lang small { font-size: 10px; color: var(--ink-dim); letter-spacing: 0.02em; }
+  .pb-lang.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .pb-lang:focus-visible, .pb-cat:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pb-single { font-size: 13px; color: var(--ink-dim); margin-bottom: 8px; }
+  /* PHRASEBOOK */
+  .pb-cats {
+    display: flex; gap: 6px; overflow-x: auto; margin: 0 -14px 6px; padding: 2px 14px 6px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
   }
-  .phrase-main { display: flex; align-items: center; gap: 10px; }
-  .phrase-loc { font-size: 20px; font-weight: 700; color: var(--ink); }
-  .phrase-row.first .phrase-loc { font-size: 26px; }
-  .phrase-speak { width: 34px; height: 34px; font-size: 16px; }
-  .phrase-phon { font-size: 12px; color: var(--ink-dim); margin-top: 4px; }
-  .phrase-phon b { color: var(--accent-2); font-style: italic; }
+  .pb-cats::-webkit-scrollbar { display: none; }
+  .pb-cat {
+    flex: 0 0 auto; min-height: 34px; padding: 6px 12px;
+    background: none; border: 1px solid var(--line); border-radius: 999px;
+    color: var(--ink-dim); font: inherit; font-size: 12px; cursor: pointer; white-space: nowrap;
+  }
+  .pb-cat.on { background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 700; }
+  .pb-row { display: flex; align-items: center; gap: 6px; padding: 9px 0; border-top: 1px solid var(--line); }
+  .pb-list .pb-row:first-child { border-top: none; }
+  .pb-main { flex: 1; min-width: 0; }
+  .pb-en {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px; letter-spacing: 0.04em; color: var(--ink-dim); margin-bottom: 2px;
+  }
+  .pb-text { font-size: 19px; font-weight: 700; color: var(--ink); line-height: 1.3; overflow-wrap: anywhere; }
+  .pb-roman { font-size: 13px; color: var(--ink); opacity: 0.8; margin-top: 1px; overflow-wrap: anywhere; }
+  .pb-say { font-size: 12px; color: var(--ink-dim); margin-top: 2px; overflow-wrap: anywhere; }
+  .pb-say b { color: var(--accent-2); font-style: italic; font-weight: 600; }
+  .pb-note { font-size: 12px; line-height: 1.45; color: var(--ink-dim); margin: 4px 0 8px; }
   /* NATIONAL ANTHEM card */
   .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
   .anthem-head { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
@@ -681,6 +740,8 @@
   }
   .tour-card {
     width: min(520px, 100%);
+    max-height: min(92vh, 820px);
+    overflow: auto;
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -699,6 +760,13 @@
   }
   .tour-card h2 { margin: 6px 0 8px; font-size: 26px; }
   .tour-card p { margin: 0; color: var(--ink-dim); line-height: 1.45; }
+  .tour-card .tour-story { color: var(--ink); font-size: 16px; line-height: 1.5; min-height: 3em; overflow-wrap: anywhere; }
+  .tour-card .tour-sub { margin-top: 6px; font-size: 13px; overflow-wrap: anywhere; }
+  .tour-card .tour-sub:empty { display: none; }
+  .tour-next-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
+  .tour-next-row[hidden], .tour-card .tour-note[hidden] { display: none; }
+  .tour-card .tour-note { margin-top: 8px; font-size: 12px; color: var(--ink-dim); }
+  .tour-actions button, .tour-talk button, .tour-talk input { min-height: 44px; }
   .tour-stage {
     position: relative;
     height: 220px;
@@ -726,6 +794,18 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
+  .tour-talk { display: flex; gap: 8px; margin-top: 10px; }
+  .tour-talk input {
+    flex: 1; min-width: 0;
+    background: var(--panel-2); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+    font: inherit; font-size: 15px;
+  }
+  .tour-mic.on { color: var(--accent); border-color: var(--accent); }
+  @media (max-width: 700px) {
+    .tour-stage { height: 140px; }
+    .tour-animal { font-size: 40px; }
+  }
   .puzzle-wrap {
     max-width: 1100px;
     width: 100%;
@@ -936,23 +1016,13 @@
   .webwall-blurb { font-size: 14px; color: var(--ink-dim); line-height: 1.55; margin-bottom: 22px; }
   .webwall-cta { width: 100%; padding: 14px; }
   .webwall-back { display: block; width: 100%; margin-top: 12px; background: none; border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 11px; cursor: pointer; }
-  /* TRUE SIZE modal */
+  /* Shared modal (settings, welcome) */
   .ts-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 9000; display: flex; align-items: center; justify-content: center; padding: 16px; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
   .ts-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; max-width: 460px; width: 100%; max-height: 92vh; overflow: auto; position: relative; }
   .ts-close { position: absolute; top: 12px; right: 12px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 14px; }
   .ts-title { font-size: 24px; color: var(--accent); margin-bottom: 6px; }
   .ts-intro { font-size: 13px; color: var(--ink-dim); line-height: 1.5; margin-bottom: 16px; }
-  .ts-pickers { display: flex; align-items: center; gap: 8px; margin-bottom: 18px; }
   .ts-select { flex: 1; min-width: 0; background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 9px 10px; font-size: 13px; }
-  .ts-vs { color: var(--ink-dim); font-size: 12px; }
-  .ts-stage { display: flex; align-items: flex-end; justify-content: center; gap: 14px; min-height: 180px; padding: 8px 0 14px; }
-  .ts-sq { border: 2px solid; border-radius: 8px; display: flex; align-items: center; justify-content: center; min-width: 22px; min-height: 22px; transition: width 0.4s ease, height 0.4s ease; }
-  .ts-sq span { font-size: 26px; }
-  .ts-verdict { text-align: center; font-size: 16px; color: var(--ink); line-height: 1.5; margin-bottom: 12px; }
-  .ts-verdict b { color: var(--accent); }
-  .ts-areas { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--ink-dim); margin-bottom: 14px; flex-wrap: wrap; }
-  .ts-illusion { font-size: 13px; line-height: 1.55; color: var(--ink-dim); background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
-  .ts-illusion b { color: var(--accent-2); }
   /* SETTINGS + PRO TOOLS */
   .set-group { margin-bottom: 18px; }
   .set-label { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
@@ -974,39 +1044,6 @@
     letter-spacing: 0.04em;
     word-spacing: 0.12em;
     line-height: 1.7 !important;
-  }
-  .speaking {
-    animation: speak-pulse 1s ease-in-out infinite;
-  }
-  .speak-btn {
-    background: transparent;
-    border: 1px solid var(--line);
-    color: var(--accent);
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    cursor: pointer;
-    padding: 0;
-    margin-left: 8px;
-    vertical-align: middle;
-    transition: transform 0.1s, background 0.1s;
-  }
-  .speak-btn:hover {
-    background: rgba(212, 160, 86, 0.15);
-    border-color: var(--accent);
-  }
-  .speak-btn:active {
-    transform: scale(0.9);
-  }
-  .speak-btn.speaking {
-    background: var(--accent);
-    color: var(--bg);
-    border-color: var(--accent);
-    animation: speak-pulse 1s ease-in-out infinite;
   }
   @keyframes speak-pulse {
     0%, 100% { opacity: 1; }
@@ -1598,16 +1635,14 @@
         <span class="tt-flag" id="tt-flag"></span><span class="tt-name" id="tt-name"></span>
         <span class="tt-cap" id="tt-cap"></span>
       </div>
-      <div class="globe-hint" id="globe-hint">Drag to spin &middot; tap a pin to select</div>
+      <div class="globe-hint" id="globe-hint">Drag to spin</div>
       <button class="globe-btn" id="flags-toggle" title="Show every country's flag on the globe">🚩 All Flags</button>
-      <button class="globe-btn globe-btn-2" id="daynight-toggle" title="Show where it is day and night right now">🌗 Day &amp; Night</button>
-      <button class="globe-btn globe-btn-3" id="truesize-btn" title="See the real size of countries">📐 True Size</button>
       <div class="globe-hunt" id="globe-hunt" style="display:none"></div>
     </div>
 
     <aside class="pane details" id="details-pane">
       <div class="placeholder">
-        Tap a country on the globe or in the list.
+        Choose a country in the list.
       </div>
     </aside>
   </section>
@@ -1644,8 +1679,12 @@
 <noscript><div style="padding:40px;color:#fff;background:#0b0e13;text-align:center;">This app requires JavaScript. Please enable it.</div></noscript>
 
 <script src="attractions.js"></script>
-<script src="spot-history.js"></script>
 <script src="puzzle-shapes.js"></script>
+<script src="voice/locales.js"></script>
+<script src="voice/phrases.js"></script>
+<script src="voice/voice.js"></script>
+<script src="voice/content.js"></script>
+<script src="room-talk.js"></script>
 <script>
 'use strict';
 
@@ -1959,57 +1998,6 @@ const HELLO_BY_LANG = {
   '11 official languages': {hi:'Sawubona', phon:'sah-woo-BOH-nah'},
 };
 
-// Mini phrasebook for the major languages, keyed the same way as HELLO_BY_LANG
-// (by primary language). [phrase, phonetic]. Languages not listed here just show
-// the greeting. Greeting ("Hello") comes from HELLO_BY_LANG above.
-const PHRASES = {
-  'English':    { meet:['Nice to meet you','nice to MEET you'], thanks:['Thank you','THANK you'], bye:['Goodbye','good-BYE'] },
-  'Spanish':    { meet:['Mucho gusto','MOO-cho GOOS-to'], thanks:['Gracias','GRAH-see-as'], bye:['Adiós','ah-dee-OHS'] },
-  'Portuguese': { meet:['Muito prazer','MOO-ee-too prah-ZEHR'], thanks:['Obrigado','oh-bree-GAH-doo'], bye:['Tchau','CHOW'] },
-  'French':     { meet:['Enchanté','on-shon-TAY'], thanks:['Merci','mair-SEE'], bye:['Au revoir','oh ruh-VWAR'] },
-  'German':     { meet:['Freut mich','FROYT mish'], thanks:['Danke','DAHN-kuh'], bye:['Auf Wiedersehen','owf VEE-der-zane'] },
-  'Italian':    { meet:['Piacere','pyah-CHEH-reh'], thanks:['Grazie','GRAH-tsee-eh'], bye:['Arrivederci','ah-ree-veh-DAIR-chee'] },
-  'Dutch':      { meet:['Aangenaam','AHN-guh-nahm'], thanks:['Dank je','DAHNK yuh'], bye:['Tot ziens','tot ZEENS'] },
-  'Arabic':     { meet:['Tasharrafna','ta-SHAR-raf-na'], thanks:['Shukran','SHOOK-ran'], bye:["Ma'a salama",'ma-ah sa-LA-ma'] },
-  'Russian':    { meet:['Ochen priyatno','OH-chen pree-YAHT-na'], thanks:['Spasibo','spah-SEE-ba'], bye:['Do svidaniya','da svee-DAH-nya'] },
-  'Mandarin':   { meet:['Hěn gāoxìng rènshí nǐ','hen gow-SHING ren-shir nee'], thanks:['Xièxie','SHYEH-shyeh'], bye:['Zàijiàn','dzai-JYEN'] },
-  'Chinese':    { meet:['Hěn gāoxìng rènshí nǐ','hen gow-SHING ren-shir nee'], thanks:['Xièxie','SHYEH-shyeh'], bye:['Zàijiàn','dzai-JYEN'] },
-  'Japanese':   { meet:['Hajimemashite','ha-jee-meh-MASH-teh'], thanks:['Arigatō','ah-ree-GAH-toh'], bye:['Sayōnara','sah-YOH-nah-rah'] },
-  'Korean':     { meet:['Bangapseumnida','pan-gap-SUM-ni-da'], thanks:['Gamsahamnida','kam-sa-HAM-ni-da'], bye:['Annyeonghi gaseyo','an-NYUNG-hee ga-SE-yo'] },
-  'Hindi':      { meet:['Aapse milkar khushi hui','AHP-se mil-KAR khu-SHEE hu-EE'], thanks:['Dhanyavaad','DHUN-ya-vaad'], bye:['Alvida','al-vee-DAH'] },
-  'Greek':      { meet:['Chárika polý','HA-ree-ka po-LEE'], thanks:['Efcharistó','ef-cha-ri-STO'], bye:['Antío','an-DEE-o'] },
-  'Turkish':    { meet:['Memnun oldum','mem-NOON ol-DUM'], thanks:['Teşekkürler','te-shek-koor-LER'], bye:['Hoşça kal','HOSH-cha kal'] },
-  'Polish':     { meet:['Miło mi','MEE-wo mee'], thanks:['Dziękuję','jen-KOO-yeh'], bye:['Do widzenia','do vee-DZEN-ya'] },
-  'Swahili':    { meet:['Nimefurahi kukutana','nee-meh-foo-RAH-hee koo-koo-TAH-na'], thanks:['Asante','ah-SAHN-teh'], bye:['Kwaheri','kwah-HEH-ree'] },
-  'Vietnamese': { meet:['Rất vui được gặp bạn','rut voo-ee duok gap ban'], thanks:['Cảm ơn','kahm uhn'], bye:['Tạm biệt','tahm bee-et'] },
-  'Thai':       { meet:['Yindee tee dai roojak','yin-DEE tee dai roo-JAK'], thanks:['Khob khun','kop koon'], bye:['La gon','lah gawn'] },
-  'Indonesian': { meet:['Senang bertemu','suh-NANG ber-TEH-moo'], thanks:['Terima kasih','teh-REE-ma KA-see'], bye:['Selamat tinggal','suh-LA-mat TING-gal'] },
-  'Hebrew':     { meet:["Na'im me'od",'na-EEM meh-OD'], thanks:['Toda','toh-DAH'], bye:["Lehitra'ot",'leh-hit-ra-OT'] },
-  'Persian':    { meet:['Khoshvaghtam','khosh-VACH-tam'], thanks:['Mamnoonam','mam-NOO-nam'], bye:['Khodahafez','kho-da-HA-fez'] },
-  'Urdu':       { meet:['Aap se mil kar khushi hui','ahp se mil kar khu-SHEE hu-EE'], thanks:['Shukriya','shook-REE-ya'], bye:['Khuda hafiz','khu-DA HA-fiz'] },
-  'Bengali':    { meet:['Apnake peye bhalo laglo','AHP-na-ke PEH-yeh BHA-lo LAHG-lo'], thanks:['Dhonnobad','DHON-no-bahd'], bye:['Abar dekha hobe','AH-bar DEH-kha HO-beh'] },
-  'Ukrainian':  { meet:['Pryyemno poznayomytysya','pri-YEM-no poz-na-YO-mi-ti-sya'], thanks:['Dyakuyu','DYA-koo-yu'], bye:['Do pobachennya','do po-BA-chen-nya'] },
-  'Czech':      { meet:['Těší mě','TYEH-shee myeh'], thanks:['Děkuji','DYEH-koo-yi'], bye:['Na shledanou','nas-KHLE-da-no'] },
-  'Swedish':    { meet:['Trevligt att träffas','TREV-leet at TREF-fas'], thanks:['Tack','TAHK'], bye:['Hej då','HAY doh'] },
-  'Norwegian':  { meet:['Hyggelig å møte deg','HEW-geh-lee oh MUH-teh dye'], thanks:['Takk','TAHK'], bye:['Ha det','HA deh'] },
-  'Danish':     { meet:['Hyggeligt at møde dig','HEW-geh-lee at MUH-the die'], thanks:['Tak','TAK'], bye:['Farvel','fah-VEL'] },
-  'Finnish':    { meet:['Hauska tavata','HOWS-ka TA-va-ta'], thanks:['Kiitos','KEE-tos'], bye:['Näkemiin','NAK-eh-meen'] },
-  'Filipino':   { meet:['Ikinagagalak kong makilala ka','ee-kee-na-ga-GA-lak kong ma-kee-LA-la ka'], thanks:['Salamat','sa-LA-mat'], bye:['Paalam','pa-AH-lam'] },
-  'Tagalog':    { meet:['Ikinagagalak kong makilala ka','ee-kee-na-ga-GA-lak kong ma-kee-LA-la ka'], thanks:['Salamat','sa-LA-mat'], bye:['Paalam','pa-AH-lam'] },
-};
-
-// Builds the ordered phrase list for a country: Hello (always) + any extras.
-function phrasesFor(c) {
-  const g = helloFor(c);
-  const out = [{ key: 'hi', label: 'Hello', t: g.hi, p: g.phon }];
-  const ph = PHRASES[primaryLang(c)];
-  if (ph) {
-    if (ph.meet)   out.push({ key: 'meet',   label: 'Nice to meet you', t: ph.meet[0],   p: ph.meet[1] });
-    if (ph.thanks) out.push({ key: 'thanks', label: 'Thank you',        t: ph.thanks[0], p: ph.thanks[1] });
-    if (ph.bye)    out.push({ key: 'bye',    label: 'Goodbye',          t: ph.bye[0],    p: ph.bye[1] });
-  }
-  return out;
-}
 
 // Notable wildlife to spot — the strongest pull for this age group.
 // Framed as "wildlife", not "official national animal", so a sensible
@@ -2372,6 +2360,7 @@ window.__myatlasticAnthem = (countryName) => {
   const a = ANTHEMS[countryName];
   if (!a) return;
   if (_anthemPlaying) { stopAnthem(); return; } // tap again = stop
+  if (window.MyatlasticVoice) window.MyatlasticVoice.stop(); // one sound at a time
   try {
     const AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return;
@@ -2487,7 +2476,7 @@ const IS_WEB = !IS_NATIVE;
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
-const WEB_APP_ONLY = ['game', 'compare', 'currency'];
+const WEB_APP_ONLY = ['compare', 'currency'];
 function getAppCTA() { return APP_LIVE ? 'Download on iPhone &amp; iPad' : 'Coming soon to iPhone &amp; iPad'; }
 window.__getApp = () => { try { window.open(APP_STORE_URL, '_blank', 'noopener'); } catch (e) {} };
 // Friendly "this lives in the app" wall shown for web-gated features.
@@ -2564,879 +2553,381 @@ window.__myatlasticImgFallback = (el) => {
 };
 
 /* ============================================================
- * SPEECH — Web Speech API for country name pronunciation
+ * VOICE — everything spoken goes through MyatlasticVoice
+ * (voice/voice.js): neural speech from /api/voice, one clip at a
+ * time, no device-voice fallback. Languages and locales per country
+ * come from voice/locales.js; phrases and narrations are data files
+ * loaded on demand (voice/content.js).
  * ============================================================ */
-const SPEECH_LOCALE = {
-  'Japan': 'ja-JP', 'China': 'zh-CN', 'Taiwan': 'zh-TW',
-  'South Korea': 'ko-KR', 'North Korea': 'ko-KR',
-  'France': 'fr-FR', 'Monaco': 'fr-FR', 'Luxembourg': 'fr-FR',
-  'Spain': 'es-ES', 'Mexico': 'es-MX', 'Argentina': 'es-AR',
-  'Colombia': 'es-CO', 'Chile': 'es-CL', 'Peru': 'es-PE',
-  'Venezuela': 'es-VE', 'Ecuador': 'es-EC', 'Bolivia': 'es-BO',
-  'Paraguay': 'es-PY', 'Uruguay': 'es-UY', 'Costa Rica': 'es-CR',
-  'Cuba': 'es-CU', 'Dominican Republic': 'es-DO', 'El Salvador': 'es-SV',
-  'Guatemala': 'es-GT', 'Honduras': 'es-HN', 'Nicaragua': 'es-NI',
-  'Panama': 'es-PA', 'Equatorial Guinea': 'es-ES',
-  'Germany': 'de-DE', 'Austria': 'de-AT', 'Switzerland': 'de-CH',
-  'Liechtenstein': 'de-LI',
-  'Italy': 'it-IT', 'San Marino': 'it-IT', 'Vatican City': 'it-IT',
-  'Portugal': 'pt-PT', 'Brazil': 'pt-BR', 'Angola': 'pt-PT',
-  'Mozambique': 'pt-PT', 'Cape Verde': 'pt-PT',
-  'São Tomé and Príncipe': 'pt-PT', 'Timor-Leste': 'pt-PT',
-  'Russia': 'ru-RU', 'Belarus': 'ru-RU', 'Kazakhstan': 'ru-RU',
-  'Kyrgyzstan': 'ru-RU', 'Tajikistan': 'ru-RU', 'Uzbekistan': 'ru-RU',
-  'Netherlands': 'nl-NL', 'Belgium': 'nl-BE',
-  'Sweden': 'sv-SE', 'Norway': 'nb-NO', 'Denmark': 'da-DK',
-  'Finland': 'fi-FI', 'Iceland': 'is-IS',
-  'Poland': 'pl-PL', 'Czech Republic': 'cs-CZ', 'Slovakia': 'sk-SK',
-  'Hungary': 'hu-HU', 'Romania': 'ro-RO', 'Bulgaria': 'bg-BG',
-  'Croatia': 'hr-HR', 'Serbia': 'sr-RS', 'Slovenia': 'sl-SI',
-  'Greece': 'el-GR', 'Turkey': 'tr-TR',
-  'India': 'hi-IN', 'Pakistan': 'ur-PK', 'Bangladesh': 'bn-BD',
-  'Sri Lanka': 'si-LK', 'Nepal': 'ne-NP',
-  'Thailand': 'th-TH', 'Vietnam': 'vi-VN', 'Indonesia': 'id-ID',
-  'Malaysia': 'ms-MY', 'Philippines': 'fil-PH',
-  'Israel': 'he-IL',
-  'Saudi Arabia': 'ar-SA', 'United Arab Emirates': 'ar-AE',
-  'Egypt': 'ar-EG', 'Morocco': 'ar-MA', 'Algeria': 'ar-DZ',
-  'Tunisia': 'ar-TN', 'Libya': 'ar-LY', 'Iraq': 'ar-IQ',
-  'Jordan': 'ar-JO', 'Lebanon': 'ar-LB', 'Syria': 'ar-SY',
-  'Yemen': 'ar-YE', 'Oman': 'ar-OM', 'Kuwait': 'ar-KW',
-  'Qatar': 'ar-QA', 'Bahrain': 'ar-BH', 'Palestine': 'ar-PS',
-  'Iran': 'fa-IR',
-  'Ukraine': 'uk-UA',
-  'United Kingdom': 'en-GB', 'Ireland': 'en-IE', 'United States': 'en-US',
-  'Canada': 'en-CA', 'Australia': 'en-AU', 'New Zealand': 'en-NZ', 'Jamaica': 'en-JM',
-  'Nigeria': 'en-NG', 'Ghana': 'en-GH', 'South Africa': 'en-ZA',
-  'Kenya': 'sw-KE', 'Tanzania': 'sw-TZ', 'Uganda': 'sw-UG',
-  'Benin': 'fr-FR', 'Burkina Faso': 'fr-FR', 'Cameroon': 'fr-FR',
-  'Central African Republic': 'fr-FR', 'Chad': 'fr-FR', 'Comoros': 'fr-FR',
-  'Congo (DRC)': 'fr-FR', 'Congo (Republic)': 'fr-FR', "Côte d'Ivoire": 'fr-FR',
-  'Djibouti': 'fr-FR', 'Gabon': 'fr-FR', 'Guinea': 'fr-FR', 'Haiti': 'fr-FR',
-  'Madagascar': 'fr-FR', 'Mali': 'fr-FR', 'Niger': 'fr-FR', 'Rwanda': 'fr-FR',
-  'Senegal': 'fr-FR', 'Seychelles': 'fr-FR', 'Togo': 'fr-FR', 'Burundi': 'fr-FR'
-};
+const Voice = window.MyatlasticVoice;
+const Locales = window.MyatlasticLocales;
+const Content = window.MyatlasticContent;
+const PhraseCatalog = window.MyatlasticPhrases;
 
-const speech = {
-  available: typeof window !== 'undefined' && 'speechSynthesis' in window,
-  voices: [],
-  current: null,
-  warmedUp: false,
-};
+function languagesOf(c) { return c ? Locales.languagesFor(c.n) : []; }
 
-function loadVoices() {
-  if (!speech.available) return;
-  speech.voices = window.speechSynthesis.getVoices();
-}
-if (speech.available) {
-  loadVoices();
-  // Voices load asynchronously on some browsers
-  window.speechSynthesis.onvoiceschanged = loadVoices;
+// English about an English-speaking country uses its own accent; everywhere
+// else, the listener's English.
+function englishLocaleFor(c) {
+  const own = c && Locales.isEnglishFirst(c.n) ? languagesOf(c)[0] : null;
+  return own && own.lang === 'en' ? own.locale : Voice.englishLocale();
 }
 
-const ROBOT_VOICE = /eloquence|novelty|espeak|e-speak|festival|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing|albert|bahh|deranged|hysterical|superstar|fred|ralph|junior|princess|kathy|rocko|eddy/i;
-const HUMAN_VOICES = {
-  en: ['ava', 'allison', 'zoe', 'evan', 'nicky', 'aaron', 'nathan', 'samantha', 'daniel', 'serena', 'kate', 'martha', 'karen', 'moira', 'lee'],
-  fr: ['amelie', 'amélie', 'audrey', 'aurelie', 'thomas', 'denise', 'henri'],
-  es: ['monica', 'mónica', 'paulina', 'jorge', 'diego', 'marisol'],
-  de: ['anna', 'helena', 'markus', 'petra', 'yannick'],
-  it: ['alice', 'luca', 'federica'],
-  pt: ['luciana', 'joana', 'felipe', 'francisca'],
-  nl: ['xander', 'claire'],
-  sv: ['alva', 'oskar', 'klara'],
-  pl: ['zosia', 'ewa'],
-  ru: ['milena', 'yuri'],
-  ar: ['maged', 'tarik', 'laila'],
-  hi: ['lekha'],
-  ja: ['kyoko', 'otoya'],
-  ko: ['yuna', 'sora'],
-  zh: ['ting-ting', 'tingting', 'sin-ji', 'sinji', 'meijia', 'mei-jia'],
-  el: ['melina', 'nikos'],
-  tr: ['yelda', 'cem'],
-  th: ['kanya'],
-  id: ['damayanti']
-};
-
-function voiceBlob(v) {
-  return (((v && v.name) || '') + ' ' + ((v && v.voiceURI) || '')).toLowerCase();
+function localeForBook(c, book) {
+  if (book === 'en') return englishLocaleFor(c);
+  const hit = languagesOf(c).find(l => l.book === book);
+  return hit ? hit.locale : Voice.englishLocale();
 }
 
-function isRoboticVoice(v) {
-  const n = voiceBlob(v);
-  if (/premium|enhanced|natural|neural/.test(n) && !/\bcompact\b/.test(n)) return false;
-  if (/\bcompact\b|eloquence|\bnovelty\b|espeak|e-speak/.test(n)) return true;
-  if (/microsoft/.test(n) && /desktop/.test(n) && !/natural|online/.test(n)) return true;
-  return ROBOT_VOICE.test(n);
+function languageLabel(locale) {
+  return Locales.nameOf(locale).name;
 }
 
-// Spoken text only. Em dashes and emoji are not said aloud.
-function forSpeech(s) {
-  return String(s || '')
-    .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{200D}]/gu, '')
-    .replace(/[—–―]/g, ', ')
-    .replace(/\(([^)]*)\)/g, ', $1, ')
-    .replace(/\s+,/g, ',')
-    .replace(/,{2,}/g, ',')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/\s+([.!?])/g, '$1')
-    .trim();
-}
-
-function tourLocale(c) {
-  if (c && SPEECH_LOCALE[c.n]) return SPEECH_LOCALE[c.n];
-  const name = (c && primaryLang(c) || '').toLowerCase();
-  const guess = [
-    ['french', 'fr-FR'], ['spanish', 'es-ES'], ['arabic', 'ar-SA'], ['german', 'de-DE'],
-    ['italian', 'it-IT'], ['portuguese', 'pt-PT'], ['russian', 'ru-RU'], ['dutch', 'nl-NL'],
-    ['greek', 'el-GR'], ['turkish', 'tr-TR'], ['polish', 'pl-PL'], ['swedish', 'sv-SE'],
-    ['hindi', 'hi-IN'], ['swahili', 'sw-KE'], ['mandarin', 'zh-CN'], ['chinese', 'zh-CN'],
-    ['japanese', 'ja-JP'], ['korean', 'ko-KR'], ['thai', 'th-TH'], ['vietnamese', 'vi-VN'],
-    ['indonesian', 'id-ID'], ['english', 'en-US']
-  ];
-  for (let i = 0; i < guess.length; i++) {
-    if (name.indexOf(guess[i][0]) !== -1) return guess[i][1];
+function voiceLive(msg) {
+  let el = document.getElementById('voice-live');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'voice-live';
+    el.className = 'sr-only';
+    el.setAttribute('aria-live', 'polite');
+    document.body.appendChild(el);
   }
-  return 'en-US';
+  el.textContent = '';
+  setTimeout(() => { el.textContent = msg; }, 30);
 }
 
-const TOUR_SAY = {
-  en: {
-    arrive: ['Here we are. Welcome to {country}.', 'Stay close. We just arrived in {country}.', 'Look down. That is {country}.'],
-    capital: 'If you need a place to start, the capital is {capital}.',
-    closer: 'Come a little closer.',
-    before: 'Before we go, there is something people here love.',
-    taste: 'If you visit, try it.'
-  },
-  fr: {
-    arrive: ['Nous y sommes. Bienvenue. {country}.', 'Reste près de moi. Nous arrivons. {country}.', 'Regarde. {country}.'],
-    capital: 'Pour commencer, la capitale est {capital}.',
-    closer: 'Approche-toi un peu.',
-    before: 'Avant de partir, voici ce que les gens d’ici aiment.',
-    taste: 'Si tu viens, goûte.'
-  },
-  es: {
-    arrive: ['Ya llegamos. Bienvenido. {country}.', 'Quédate cerca. Acabamos de llegar. {country}.', 'Mira. {country}.'],
-    capital: 'Para empezar, la capital es {capital}.',
-    closer: 'Acércate un poco.',
-    before: 'Antes de irnos, esto es lo que la gente de aquí ama.',
-    taste: 'Si vienes, pruébalo.'
-  },
-  de: {
-    arrive: ['Hier sind wir. Willkommen. {country}.', 'Bleib nah. Wir sind gerade angekommen. {country}.', 'Schau. {country}.'],
-    capital: 'Zum Start: die Hauptstadt ist {capital}.',
-    closer: 'Komm ein Stück näher.',
-    before: 'Bevor wir gehen: das lieben die Menschen hier.',
-    taste: 'Wenn du herkommst, probier es.'
-  },
-  it: {
-    arrive: ['Eccoci. Benvenuto. {country}.', 'Resta vicino. Siamo appena arrivati. {country}.', 'Guarda. {country}.'],
-    capital: 'Per iniziare, la capitale è {capital}.',
-    closer: 'Avvicinati un po’.',
-    before: 'Prima di andare, ecco cosa amano le persone qui.',
-    taste: 'Se vieni, assaggialo.'
-  },
-  pt: {
-    arrive: ['Chegámos. Bem-vindo. {country}.', 'Fica perto. Acabámos de chegar. {country}.', 'Olha. {country}.'],
-    capital: 'Para começar, a capital é {capital}.',
-    closer: 'Chega um pouco mais perto.',
-    before: 'Antes de irmos, eis o que as pessoas daqui adoram.',
-    taste: 'Se vieres, prova.'
-  },
-  ar: {
-    arrive: ['ها نحن. أهلًا. {country}.', 'ابقَ قريبًا. وصلنا الآن. {country}.', 'انظر. {country}.'],
-    capital: 'للبداية، العاصمة هي {capital}.',
-    closer: 'اقترب قليلًا.',
-    before: 'قبل أن نذهب، هذا ما يحبه الناس هنا.',
-    taste: 'إذا زرت، ذقه.'
-  },
-  zh: {
-    arrive: ['我们到了。欢迎。{country}。', '靠近一点。我们刚到。{country}。', '看。{country}。'],
-    capital: '先从首都开始。首都是{capital}。',
-    closer: '再靠近一点。',
-    before: '离开之前，这是这里的人喜欢的。',
-    taste: '如果你来，尝一尝。'
-  },
-  ja: {
-    arrive: ['着きました。ようこそ。{country}。', 'そばにいて。今着いたよ。{country}。', '見て。{country}。'],
-    capital: 'まずは首都。首都は{capital}です。',
-    closer: 'もう少し近くへ。',
-    before: '行く前に、ここの人が好きなものです。',
-    taste: '来たら、食べてみて。'
-  },
-  ko: {
-    arrive: ['도착했어요. 환영합니다. {country}.', '가까이 있어요. 방금 도착했어요. {country}.', '보세요. {country}.'],
-    capital: '시작은 수도예요. 수도는 {capital}입니다.',
-    closer: '조금 더 가까이.',
-    before: '가기 전에, 여기 사람들이 좋아하는 것이에요.',
-    taste: '오면, 맛보세요.'
-  },
-  hi: {
-    arrive: ['हम आ गए। स्वागत है। {country}।', 'पास रहो। हम अभी पहुँचे। {country}।', 'देखो। {country}।'],
-    capital: 'शुरुआत के लिए, राजधानी {capital} है।',
-    closer: 'थोड़ा और पास आओ।',
-    before: 'जाने से पहले, यह यहाँ के लोग पसंद करते हैं।',
-    taste: 'आओ, तो चखो।'
-  },
-  ru: {
-    arrive: ['Вот мы и здесь. Добро пожаловать. {country}.', 'Будь рядом. Мы только что прибыли. {country}.', 'Смотри. {country}.'],
-    capital: 'Для начала: столица — {capital}.',
-    closer: 'Подойди чуть ближе.',
-    before: 'Перед уходом: вот что здесь любят.',
-    taste: 'Если приедешь, попробуй.'
-  },
-  nl: {
-    arrive: ['Hier zijn we. Welkom. {country}.', 'Blijf dichtbij. We zijn net aangekomen. {country}.', 'Kijk. {country}.'],
-    capital: 'Om te beginnen: de hoofdstad is {capital}.',
-    closer: 'Kom een stukje dichterbij.',
-    before: 'Voor we gaan: dit houden de mensen hier van.',
-    taste: 'Als je komt, proef het.'
-  },
-  tr: {
-    arrive: ['İşte geldik. Hoş geldin. {country}.', 'Yakın dur. Yeni vardık. {country}.', 'Bak. {country}.'],
-    capital: 'Başlamak için: başkent {capital}.',
-    closer: 'Biraz daha yaklaş.',
-    before: 'Gitmeden önce: burada insanlar bunu sever.',
-    taste: 'Gelirsen, tadına bak.'
-  },
-  el: {
-    arrive: ['Φτάσαμε. Καλώς ήρθες. {country}.', 'Μείνε κοντά. Μόλις φτάσαμε. {country}.', 'Κοίτα. {country}.'],
-    capital: 'Για αρχή, η πρωτεύουσα είναι η {capital}.',
-    closer: 'Έλα λίγο πιο κοντά.',
-    before: 'Πριν φύγουμε, αυτό αγαπούν οι άνθρωποι εδώ.',
-    taste: 'Αν έρθεις, δοκίμασέ το.'
-  },
-  pl: {
-    arrive: ['Jesteśmy. Witaj. {country}.', 'Bądź blisko. Właśnie przyjechaliśmy. {country}.', 'Patrz. {country}.'],
-    capital: 'Na początek: stolica to {capital}.',
-    closer: 'Podejdź trochę bliżej.',
-    before: 'Zanim pójdziemy: to lubią tu ludzie.',
-    taste: 'Jeśli przyjedziesz, spróbuj.'
-  },
-  sv: {
-    arrive: ['Här är vi. Välkommen. {country}.', 'Stanna nära. Vi kom just fram. {country}.', 'Titta. {country}.'],
-    capital: 'Till att börja med: huvudstaden är {capital}.',
-    closer: 'Kom lite närmare.',
-    before: 'Innan vi går: det här älskar folk här.',
-    taste: 'Om du kommer, smaka.'
-  },
-  th: {
-    arrive: ['มาถึงแล้ว. ยินดีต้อนรับ. {country}.', 'อยู่ใกล้ ๆ. เราเพิ่งมาถึง. {country}.', 'ดูสิ. {country}.'],
-    capital: 'เริ่มที่เมืองหลวง. เมืองหลวงคือ {capital}.',
-    closer: 'เข้ามาใกล้อีกนิด.',
-    before: 'ก่อนไป นี่คือสิ่งที่คนที่นี่ชอบ.',
-    taste: 'ถ้ามา ลองชิมดู.'
-  },
-  vi: {
-    arrive: ['Chúng ta tới rồi. Chào mừng. {country}.', 'Đứng gần nhé. Chúng ta vừa tới. {country}.', 'Nhìn này. {country}.'],
-    capital: 'Để bắt đầu, thủ đô là {capital}.',
-    closer: 'Lại gần thêm một chút.',
-    before: 'Trước khi đi, đây là thứ người ở đây yêu thích.',
-    taste: 'Nếu đến, hãy nếm thử.'
-  },
-  id: {
-    arrive: ['Kita sampai. Selamat datang. {country}.', 'Tetap dekat. Kita baru sampai. {country}.', 'Lihat. {country}.'],
-    capital: 'Untuk mulai, ibu kotanya {capital}.',
-    closer: 'Mendekat sedikit.',
-    before: 'Sebelum pergi, ini yang disukai orang di sini.',
-    taste: 'Kalau datang, cobalah.'
-  },
-  sw: {
-    arrive: ['Tumefika. Karibu. {country}.', 'Kaa karibu. Tumefika sasa. {country}.', 'Angalia. {country}.'],
-    capital: 'Kuanza, mji mkuu ni {capital}.',
-    closer: 'Sogeza karibu kidogo.',
-    before: 'Kabla hatujaondoka, hili ndilo watu hapa wanapenda.',
-    taste: 'Ukija, onja.'
-  }
-};
-
-function sayTour(lang, key, vars, index) {
-  const pack = TOUR_SAY[lang] || TOUR_SAY.en;
-  let line = pack[key];
-  if (Array.isArray(line)) line = line[(index || 0) % line.length];
-  return String(line || '').replace(/\{(\w+)\}/g, function (_, k) { return vars[k] || ''; });
+function voiceProblem(info) {
+  const reason = info && info.reason;
+  if (reason === 'unsupported') return 'Audio in ' + languageLabel(info.locale) + " isn't available yet.";
+  if (reason === 'blocked') return 'Tap again to hear it.';
+  return "The voice isn't available right now. Please try again in a moment.";
 }
 
-function narrationLocale() {
-  const lang = (navigator.language || 'en-US').toLowerCase();
-  if (lang.startsWith('en-gb') || lang === 'en-uk') return 'en-GB';
-  if (lang.startsWith('en-au')) return 'en-AU';
-  if (lang.startsWith('en-ie')) return 'en-IE';
-  return 'en-US';
+// Small speaker icon. The glyph is 16px; the button around it is a full touch target.
+function speakerIcon() {
+  return '<svg class="vb-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">' +
+    '<path d="M3.5 7.6h2.9L10 4.5v11l-3.6-3.1H3.5z" fill="currentColor"/>' +
+    '<path class="vb-wave" d="M12.6 7.4a3.6 3.6 0 0 1 0 5.2M14.8 5.4a6.4 6.4 0 0 1 0 9.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>' +
+    '</svg><span class="vb-spin" aria-hidden="true"></span>';
 }
 
-function findVoice(locale) {
-  if (!speech.voices.length) loadVoices();
-  if (!speech.voices.length) return null;
-  const want = (locale || 'en-US').toLowerCase().replace('_', '-');
-  const lang = want.split('-')[0];
-  const region = want.split('-')[1] || '';
-  const sameLang = speech.voices.filter(v => {
-    const l = (v.lang || '').toLowerCase().replace('_', '-');
-    return l === want || l.startsWith(lang + '-') || l === lang;
-  });
-  const pool = sameLang.length ? sameLang : [];
-  const human = pool.filter(v => !isRoboticVoice(v));
-  const list = human.length ? human : pool;
-  const named = HUMAN_VOICES[lang] || [];
-  let best = null;
-  let bestScore = -Infinity;
-  list.forEach(v => {
-    const n = voiceBlob(v);
-    const l = (v.lang || '').toLowerCase().replace('_', '-');
-    let score = 0;
-    if (l === want) score += 30;
-    else if (region && l.endsWith('-' + region)) score += 18;
-    else if (l.startsWith(lang)) score += 8;
-    if (/premium/.test(n)) score += 60;
-    if (/enhanced/.test(n)) score += 48;
-    if (/natural|neural/.test(n)) score += 40;
-    if (/siri/.test(n) && !/\bcompact\b/.test(n)) score += 28;
-    if (/google/.test(n)) score += 26;
-    if (/microsoft (aria|jenny|guy|michelle|sonia|ryan|libby)/.test(n)) score += 30;
-    if (v.localService === false && !isRoboticVoice(v)) score += 6;
-    named.forEach((name, i) => {
-      if (n.includes(name)) score += 18 - Math.min(i, 12);
-    });
-    if (isRoboticVoice(v)) score -= 100;
-    if (score > bestScore) { bestScore = score; best = v; }
-  });
-  return best;
+// A self-describing speak button: the page-wide click handler reads it.
+function voiceButton(text, locale, label, extraClass) {
+  return '<button type="button" class="vbtn' + (extraClass ? ' ' + extraClass : '') + '"' +
+    ' data-text="' + escapeHtml(text) + '" data-locale="' + escapeHtml(locale) + '"' +
+    ' aria-label="' + escapeHtml(label) + '" title="' + escapeHtml(label) + '" data-state="idle">' +
+    speakerIcon() + '</button>';
 }
 
-function voiceSpeaks(locale, voice) {
-  if (!voice) return false;
-  const want = (locale || '').toLowerCase().split('-')[0];
-  const got = (voice.lang || '').toLowerCase().replace('_', '-').split('-')[0];
-  return !!want && want === got;
+function markVoice(btn, stateName) {
+  if (!btn) return;
+  const shown = (stateName === 'ended' || stateName === 'stopped') ? 'idle' : stateName;
+  btn.dataset.state = shown;
+  btn.setAttribute('aria-pressed', shown === 'playing' || shown === 'loading' ? 'true' : 'false');
+  btn.setAttribute('aria-busy', shown === 'loading' ? 'true' : 'false');
+  if (shown === 'error') setTimeout(() => { if (btn.dataset.state === 'error') btn.dataset.state = 'idle'; }, 2600);
 }
 
-let speakToken = 0;
-function stopSpeaking() {
-  speakToken++;
-  if (speech.available) {
-    window.speechSynthesis.cancel();
-  }
-  document.querySelectorAll('.speaking').forEach(b => b.classList.remove('speaking'));
-}
-
-// Short lines, queued, so the voice can pause the way a person does.
-function speakLines(lines, locale, buttons, rate, force, ondone) {
-  if (!speech.available) return;
-  const clean = (lines || []).map(s => forSpeech(s)).filter(Boolean);
-  if (!clean.length) return;
-  if (force) {
-    if (window.speechSynthesis) window.speechSynthesis.cancel();
-    speakToken++;
-  } else if (window.speechSynthesis.speaking) {
-    stopSpeaking();
+// Say something from a button. Tapping the playing button again stops it.
+function sayFrom(btn, parts, what) {
+  if (Voice.playing(btn)) { Voice.stop(); return; }
+  const blocked = parts.find(p => Voice.canSpeak(p.locale) === false);
+  if (blocked) {
+    markVoice(btn, 'error');
+    voiceLive(voiceProblem({ reason: 'unsupported', locale: blocked.locale }));
     return;
   }
-  const token = ++speakToken;
-  const voice = findVoice(locale);
-  const btns = buttons || [];
-  btns.forEach(b => b.classList.add('speaking'));
-  let i = 0;
-  const step = () => {
-    if (token !== speakToken) return;
-    if (i >= clean.length) {
-      btns.forEach(b => b.classList.remove('speaking'));
-      if (ondone) ondone();
-      return;
+  Voice.play(parts, {
+    owner: btn,
+    onState: (s, info) => {
+      markVoice(btn, s);
+      if (s === 'playing' && what) voiceLive('Playing ' + what);
+      if (s === 'error') voiceLive(voiceProblem(info));
     }
-    const utt = new SpeechSynthesisUtterance(clean[i++]);
-    utt.lang = locale || narrationLocale();
-    if (voice) utt.voice = voice;
-    utt.rate = rate || 1;
-    utt.pitch = 1;
-    utt.onend = step;
-    utt.onerror = step;
-    window.speechSynthesis.speak(utt);
-    window.speechSynthesis.resume();
+  });
+}
+
+document.addEventListener('click', (ev) => {
+  const btn = ev.target && ev.target.closest ? ev.target.closest('.vbtn[data-text]') : null;
+  if (!btn) return;
+  ev.preventDefault();
+  ev.stopPropagation();
+  const text = btn.dataset.text || '';
+  sayFrom(btn, [{ text: text, locale: btn.dataset.locale || Voice.englishLocale() }], text);
+});
+
+// A line said without a button (game feedback). Never interrupts a narration.
+function sayQuietly(text) {
+  const owner = Voice.owner();
+  if (owner && String(owner).indexOf('narration:') === 0) return;
+  Voice.play([{ text: text, locale: Voice.englishLocale() }], { owner: 'feedback' });
+}
+
+/* ---------- Phrasebook: country -> language -> phrase -> play ---------- */
+const phraseChoice = {};      // country -> locale
+let phraseCategory = 'greet';
+
+function phraseLanguages(c) {
+  return languagesOf(c).filter(l => l.lang !== 'en');
+}
+
+function phraseEntry(book, locale, id) {
+  const variant = book.variants && book.variants[locale] && book.variants[locale][id];
+  return variant || (book.phrases && book.phrases[id]) || null;
+}
+
+function phrasebookHtml(c) {
+  if (phraseLanguages(c).length) {
+    return '<section class="phrasebook" aria-labelledby="pb-title">' +
+      '<div class="pb-head"><h3 id="pb-title">Phrasebook</h3><span class="pb-hint">Tap a speaker to hear it</span></div>' +
+      '<div id="pb-body" data-country="' + escapeHtml(c.n) + '"><div class="pb-note">Loading phrases…</div></div>' +
+      '</section>';
+  }
+  // English-first countries: the local greeting, when it isn't English.
+  const g = helloFor(c);
+  if (!g || /^english\b/i.test(primaryLang(c) || '') || !primaryLang(c)) return '';
+  return '<section class="phrasebook" aria-label="Local greeting">' +
+    '<div class="pb-head"><h3>Say hello in ' + escapeHtml(primaryLang(c)) + '</h3></div>' +
+    '<div class="pb-row"><div class="pb-main"><div class="pb-text">' + escapeHtml(g.hi) + '</div>' +
+    (g.phon ? '<div class="pb-say">say it: <b>' + escapeHtml(g.phon) + '</b></div>' : '') + '</div></div>' +
+    '<div class="pb-note">English is widely used here, so this greeting has no audio yet.</div>' +
+    '</section>';
+}
+
+function mountPhrasebook(c) {
+  const body = $('pb-body');
+  if (!body || body.dataset.country !== c.n) return;
+  const langs = phraseLanguages(c);
+  const lang = langs.find(l => l.locale === phraseChoice[c.n]) || langs[0];
+  Content.book(lang.book).then(book => {
+    const live = $('pb-body');
+    if (!live || live.dataset.country !== c.n) return;
+    if (!book) { live.innerHTML = '<div class="pb-note">Phrases for ' + escapeHtml(lang.name) + " couldn't load. Check your connection.</div>"; return; }
+    paintPhrasebook(live, c, langs, lang, book);
+  });
+}
+
+function paintPhrasebook(root, c, langs, lang, book) {
+  const speakable = Voice.canSpeak(lang.locale) !== false;
+  let html = '';
+  if (langs.length > 1) {
+    html += '<div class="pb-langs" role="radiogroup" aria-label="Phrasebook language">' +
+      langs.map(l => '<button type="button" role="radio" class="pb-lang' + (l.locale === lang.locale ? ' on' : '') + '"' +
+        ' aria-checked="' + (l.locale === lang.locale) + '" data-locale="' + escapeHtml(l.locale) + '">' +
+        '<span lang="' + escapeHtml(l.locale) + '">' + escapeHtml(l.native) + '</span>' +
+        (l.native !== l.name ? '<small>' + escapeHtml(l.name) + '</small>' : '') + '</button>').join('') +
+      '</div>';
+  } else {
+    html += '<div class="pb-single"><span lang="' + escapeHtml(lang.locale) + '">' + escapeHtml(lang.native) + '</span>' +
+      (lang.native !== lang.name ? ' · ' + escapeHtml(lang.name) : '') + '</div>';
+  }
+  html += '<div class="pb-cats" role="tablist" aria-label="Phrase topics">' +
+    PhraseCatalog.CATEGORIES.map(cat => '<button type="button" role="tab" class="pb-cat' + (cat.id === phraseCategory ? ' on' : '') + '"' +
+      ' aria-selected="' + (cat.id === phraseCategory) + '" data-cat="' + cat.id + '">' + escapeHtml(cat.label) + '</button>').join('') +
+    '</div>';
+  if (!speakable) {
+    html += '<div class="pb-note">Audio in ' + escapeHtml(lang.name) + " isn't available yet. The written phrases and pronunciation guide are all here.</div>";
+  }
+  html += '<div class="pb-list" role="tabpanel">';
+  PhraseCatalog.PHRASES.filter(p => p.cat === phraseCategory).forEach(p => {
+    const e = phraseEntry(book, lang.locale, p.id);
+    if (!e || !e.text) return;
+    const english = p.n ? p.n + ' · ' + p.en : p.en;
+    html += '<div class="pb-row">' +
+      '<div class="pb-main">' +
+        '<div class="pb-en">' + escapeHtml(english) + '</div>' +
+        '<div class="pb-text" lang="' + escapeHtml(lang.locale) + '" dir="auto">' + escapeHtml(e.text) + '</div>' +
+        (e.roman ? '<div class="pb-roman">' + escapeHtml(e.roman) + '</div>' : '') +
+        (e.say ? '<div class="pb-say">say it: <b>' + escapeHtml(e.say) + '</b></div>' : '') +
+      '</div>' +
+      (speakable ? voiceButton(e.text, lang.locale, 'Play "' + p.en + '" in ' + lang.name) : '') +
+      '</div>';
+  });
+  html += '</div>';
+  root.innerHTML = html;
+  root.querySelectorAll('.pb-lang').forEach(b => {
+    b.onclick = () => {
+      phraseChoice[c.n] = b.dataset.locale;
+      Voice.stop();
+      mountPhrasebook(c);
+    };
+  });
+  root.querySelectorAll('.pb-cat').forEach(b => {
+    b.onclick = () => {
+      phraseCategory = b.dataset.cat;
+      paintPhrasebook(root, c, langs, lang, book);
+      const again = root.querySelector('.pb-cat.on');
+      if (again) again.focus();
+    };
+  });
+}
+
+/* ---------- Country narration: a short spoken visit ---------- */
+let narrationPref = 'local';  // 'local' | 'en'
+try { narrationPref = localStorage.getItem('myatlastic_narration_lang') || 'local'; } catch (e) {}
+
+// The books this device can actually hear for a narration, English first.
+function narrationChoices(c, data) {
+  return (data.languages || ['en']).filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
+}
+
+function pickNarrationBook(c, data, choices) {
+  const local = choices.filter(b => b !== 'en');
+  if (narrationPref !== 'en' && local.length) return local[0];
+  return choices.indexOf('en') !== -1 ? 'en' : (choices[0] || 'en');
+}
+
+function narrationParts(c, data, book) {
+  const locale = localeForBook(c, book);
+  return (data.segments || []).map(s => ({ text: s[book] || s.en, locale: book === 'en' ? englishLocaleFor(c) : locale }));
+}
+
+function listenCardHtml(c) {
+  return '<section class="listen-card" id="listen-card" data-country="' + escapeHtml(c.n) + '" aria-labelledby="lc-title">' +
+    '<div class="lc-top"><h3 id="lc-title">Listen: a visit to ' + escapeHtml(c.n) + '</h3><span class="lc-len">2–3 min</span></div>' +
+    '<div class="lc-body"><div class="pb-note">Loading…</div></div>' +
+    '</section>';
+}
+
+const narration = { country: null, book: null, data: null, index: 0, state: 'idle' };
+
+function mountListen(c) {
+  const card = $('listen-card');
+  if (!card || card.dataset.country !== c.n) return;
+  Content.narration(c.n).then(data => {
+    const live = $('listen-card');
+    if (!live || live.dataset.country !== c.n) return;
+    if (!data) { live.querySelector('.lc-body').innerHTML = '<div class="pb-note">This narration couldn\'t load. Check your connection.</div>'; return; }
+    if (narration.country !== c.n) {
+      narration.country = c.n; narration.data = data; narration.index = 0; narration.state = 'idle';
+      narration.book = null;
+    }
+    paintListen(live, c, data);
+    // Have the opening line ready, so Listen or the tour starts at once.
+    Voice.status().then(() => {
+      if (narration.country === c.n && !Voice.playing()) Voice.prefetch(narrationParts(c, data, narration.book).slice(0, 1));
+    });
+  });
+}
+
+function paintListen(card, c, data) {
+  const choices = narrationChoices(c, data);
+  if (!narration.book || choices.indexOf(narration.book) === -1) narration.book = pickNarrationBook(c, data, choices);
+  const book = narration.book;
+  const seg = (data.segments || [])[narration.index] || data.segments[0] || {};
+  const active = narration.state === 'playing' || narration.state === 'loading';
+  let html = '';
+  if (choices.length > 1) {
+    html += '<div class="lc-langs" role="radiogroup" aria-label="Narration language">' +
+      choices.map(b => {
+        const loc = localeForBook(c, b);
+        const n = Locales.nameOf(loc);
+        return '<button type="button" role="radio" class="pb-lang' + (b === book ? ' on' : '') + '" aria-checked="' + (b === book) + '" data-book="' + escapeHtml(b) + '">' +
+          '<span lang="' + escapeHtml(loc) + '">' + escapeHtml(b === 'en' ? 'English' : n.native) + '</span></button>';
+      }).join('') + '</div>';
+  }
+  if (!choices.length) {
+    html += '<div class="pb-note">' + voiceProblem({}) + '</div>';
+  }
+  html += '<div class="lc-controls">' +
+    '<button type="button" class="btn-primary lc-play" aria-label="' + (active ? 'Pause narration' : (narration.state === 'paused' ? 'Resume narration' : 'Play narration')) + '"' + (choices.length ? '' : ' disabled') + '>' +
+      (narration.state === 'loading' ? '<span class="vb-spin on" aria-hidden="true"></span> Starting…' : active ? '❚❚ Pause' : narration.state === 'paused' ? '▶ Resume' : '▶ Listen') + '</button>' +
+    '<button type="button" class="back-btn lc-stop" aria-label="Stop narration"' + (narration.state === 'idle' || narration.state === 'ended' ? ' disabled' : '') + '>Stop</button>' +
+    '<span class="lc-progress" aria-hidden="true">' + (narration.index + 1) + ' / ' + (data.segments || []).length + '</span>' +
+    '</div>';
+  html += '<p class="lc-line" lang="' + escapeHtml(localeForBook(c, book)) + '" dir="auto">' + escapeHtml(seg[book] || seg.en || '') + '</p>';
+  if (book !== 'en' && seg.en) html += '<p class="lc-sub">' + escapeHtml(seg.en) + '</p>';
+  if (narration.state === 'ended' && (data.next || []).length) {
+    html += '<div class="lc-next"><span>Where next?</span>' + data.next.map(n => {
+      const nc = COUNTRIES.find(x => x.n === n);
+      return nc ? '<button type="button" class="chip lc-go" data-go="' + escapeHtml(n) + '">' + (nc.flag || '') + ' ' + escapeHtml(n) + '</button>' : '';
+    }).join('') + '</div>';
+  }
+  card.querySelector('.lc-body').innerHTML = html;
+  card.querySelectorAll('.lc-langs .pb-lang').forEach(b => {
+    b.onclick = () => {
+      narration.book = b.dataset.book;
+      narrationPref = narration.book === 'en' ? 'en' : 'local';
+      try { localStorage.setItem('myatlastic_narration_lang', narrationPref); } catch (e) {}
+      const wasPlaying = narration.state === 'playing' || narration.state === 'loading' || narration.state === 'paused';
+      if (wasPlaying) startNarration(c, data, narration.index);
+      else paintListen(card, c, data);
+    };
+  });
+  const play = card.querySelector('.lc-play');
+  if (play) play.onclick = () => {
+    if (narration.state === 'playing') { Voice.pause(); return; }
+    if (narration.state === 'loading') { Voice.stop(); return; }
+    if (narration.state === 'paused' && Voice.playing('narration:' + c.n)) { Voice.resume(); return; }
+    startNarration(c, data, narration.state === 'ended' ? 0 : narration.index);
   };
-  step();
+  const stopBtn = card.querySelector('.lc-stop');
+  if (stopBtn) stopBtn.onclick = () => { Voice.stop(); narration.index = 0; narration.state = 'idle'; paintListen(card, c, data); };
+  card.querySelectorAll('.lc-go').forEach(b => { b.onclick = () => goToCountry(b.dataset.go); });
 }
 
-function speakCountry(country) {
-  if (!speech.available) return;
-  const buttons = Array.from(document.querySelectorAll('.speak-btn')).filter(b =>
-    b.getAttribute('onclick') && b.getAttribute('onclick').indexOf(JSON.stringify(country.n)) !== -1
-  );
-  // The name, said once, a little slower. That is the pronunciation.
-  speakLines([country.n + '.'], narrationLocale(), buttons, 0.88);
+function startNarration(c, data, from) {
+  const owner = 'narration:' + c.n;
+  narration.country = c.n;
+  narration.data = data;
+  narration.index = from || 0;
+  const parts = narrationParts(c, data, narration.book);
+  Voice.play(parts, {
+    owner: owner,
+    startAt: narration.index,
+    onPart: (i) => {
+      narration.index = i;
+      const card = $('listen-card');
+      if (card && card.dataset.country === c.n) {
+        const seg = data.segments[i] || {};
+        const line = card.querySelector('.lc-line');
+        const sub = card.querySelector('.lc-sub');
+        const prog = card.querySelector('.lc-progress');
+        if (line) line.textContent = seg[narration.book] || seg.en || '';
+        if (sub) sub.textContent = seg.en || '';
+        if (prog) prog.textContent = (i + 1) + ' / ' + data.segments.length;
+      }
+    },
+    onState: (s, info) => {
+      if (narration.country !== c.n) return;
+      if (s === 'stopped' && Voice.playing(owner)) return;
+      narration.state = s === 'stopped' ? (narration.index ? 'paused-stopped' : 'idle') : s;
+      if (narration.state === 'paused-stopped') narration.state = 'idle';
+      if (s === 'ended') narration.index = data.segments.length - 1;
+      if (s === 'error') voiceLive(voiceProblem(info));
+      if (s === 'ended') voiceLive('Narration finished. Pick where to go next.');
+      const card = $('listen-card');
+      if (card && card.dataset.country === c.n) {
+        const focusPlay = document.activeElement && document.activeElement.classList.contains('lc-play');
+        paintListen(card, c, data);
+        if (focusPlay) { const p = card.querySelector('.lc-play'); if (p) p.focus(); }
+      }
+    }
+  });
 }
 
-// iOS workaround: must "warm up" speech synthesis on first user interaction
-// or the first real speak() call gets silently dropped
-function warmUpSpeech() {
-  if (speech.warmedUp || !speech.available) return;
-  speech.warmedUp = true;
-  const u = new SpeechSynthesisUtterance('');
-  u.volume = 0;
-  window.speechSynthesis.speak(u);
-}
-document.addEventListener('touchstart', warmUpSpeech, { once: true, passive: true });
-document.addEventListener('click', warmUpSpeech, { once: true });
-
-window.__myatlasticSpeak = (countryName) => {
-  const c = COUNTRIES.find(x => x.n === countryName);
-  if (c) speakCountry(c);
-};
-
-// Speak arbitrary text. `locale` lets us greet in the country's own language
-// using whatever matching voice the device has; falls back to English narration.
-// AUDIO HOOK: real native-speaker / anthem recordings can be wired in here later
-// by checking an asset map before falling back to this synthesized voice.
-function speakPhraseLine(text, phonetic, locale, btnSelector) {
-  const buttons = btnSelector ? Array.from(document.querySelectorAll(btnSelector)) : [];
-  const voice = findVoice(locale);
-  if (voiceSpeaks(locale, voice)) {
-    speakLines([text], locale, buttons, 0.9);
-    return;
-  }
-  // No voice for that language: say the phonetic slowly, the way a person would coach it.
-  const coach = (phonetic || text || '').replace(/[-–]/g, ' ').replace(/\s+/g, ' ').trim();
-  if (coach) speakLines([coach], narrationLocale(), buttons, 0.78);
+// Open another country from a "where next" suggestion.
+function goToCountry(name) {
+  const c = COUNTRIES.find(x => x.n === name);
+  if (!c) return;
+  Voice.stop();
+  if (state.mode !== 'explore') setMode('explore');
+  state.activeCountry = c;
+  renderList();
+  renderDetails();
+  if (globeAPI) globeAPI.focus(c);
+  if (window.innerWidth <= 900) setMobilePane('details');
 }
 
-// "Say hello" in the local language, recorded-speaker style via on-device TTS.
-window.__myatlasticSayHello = (countryName) => {
+window.__myatlasticReadAloud = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
   if (!c) return;
-  const greeting = helloFor(c);
-  const locale = SPEECH_LOCALE[c.n] || narrationLocale();
-  speakPhraseLine(greeting.hi, greeting.phon, locale, '.hello-speak');
+  Content.narration(c.n).then(data => {
+    if (!data) return;
+    if (!narration.book || narration.country !== c.n) narration.book = pickNarrationBook(c, data, narrationChoices(c, data));
+    startNarration(c, data, 0);
+  });
 };
-
-// Speak any phrasebook line (hello / nice to meet you / thank you / goodbye).
-window.__myatlasticSpeakPhrase = (countryName, key) => {
-  const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
-  const p = phrasesFor(c).find(x => x.key === key);
-  if (!p) return;
-  const locale = SPEECH_LOCALE[c.n] || narrationLocale();
-  speakPhraseLine(p.t, p.p, locale, '.phrase-speak.k-' + key);
-};
-
-// A short spoken tour: the surprise, the capital, one animal, one dish, one place.
-// Not the encyclopedia paragraph.
-function sayWow(wow) {
-  let s = String(wow || '').trim();
-  const fixes = [
-    [/^Has\b/, 'It has'],
-    [/^Runs\b/, 'It runs'],
-    [/^Gave\b/, 'It gave'],
-    [/^Made\b/, "It's made"],
-    [/^Home to\b/, "It's home to"],
-    [/^Invented\b/, 'It invented'],
-    [/^So big\b/, "It's so big"],
-    [/^Measures\b/, 'It measures'],
-  ];
-  for (let i = 0; i < fixes.length; i++) {
-    if (fixes[i][0].test(s)) { s = s.replace(fixes[i][0], fixes[i][1]); break; }
-  }
-  if (s && !/[.!?]$/.test(s)) s += '.';
-  return s;
-}
-
-function guideLine(s) {
-  s = String(s || '').trim().replace(/~/g, 'about ');
-  if (s && !/[.!?]$/.test(s)) s += '.';
-  return s;
-}
-
-const TOUR_AGAIN = {
-  en: 'Once more, slowly.',
-  fr: 'Encore une fois, lentement.',
-  es: 'Otra vez, despacio.',
-  de: 'Noch einmal, langsam.',
-  it: 'Ancora una volta, lentamente.',
-  pt: 'Outra vez, devagar.',
-  ar: 'مرة أخرى، ببطء.',
-  zh: '再来一次，慢慢说。',
-  ja: 'もう一度、ゆっくり。',
-  ko: '한 번 더, 천천히.',
-  hi: 'एक बार और, धीरे से।',
-  ru: 'Ещё раз, медленно.',
-  nl: 'Nog een keer, langzaam.',
-  tr: 'Bir kez daha, yavaşça.',
-  el: 'Άλλη μια φορά, αργά.',
-  pl: 'Jeszcze raz, powoli.',
-  sv: 'En gång till, långsamt.',
-  th: 'อีกครั้ง ช้าๆ.',
-  vi: 'Một lần nữa, chậm thôi.',
-  id: 'Sekali lagi, pelan-pelan.',
-  sw: 'Tena, polepole.'
-};
-
-const TOUR_TALK = {
-  en: [
-    'Here we are together in {country}. Stay with me. I will walk you through this place, one small step at a time.',
-    'The capital is {capital}. Say it with me. {capital}. That is the city we start from.',
-    'A famous place here is {place}. Look at it, and remember how it sits in the land.',
-    'People here love {dish}. It is a taste of {country}, the kind of food you remember.',
-    'You might see {animal}. Picture it living here, in the fields, the forest, or the water.',
-    'A sport people play is {sport}. Imagine a game on a warm afternoon.',
-    'Here is how to say hello. {hello}. Say it slowly. {hello}.',
-    'Let me tell you something true. {fact}',
-    'If you remember only three things, remember {capital}, {place}, and {dish}.',
-    'Imagine you land in {capital}. You walk toward {place}. Someone offers you {dish}.',
-    'We are still in {country}. The capital is still {capital}. Do not rush.',
-    'I will ask you. What is the capital? It is {capital}. Say it again. {capital}.',
-    'What should you visit? {place}. Stay there in your mind for a moment.',
-    'What should you taste? {dish}. Say the name. {dish}.',
-    'Hello, one more time. {hello}. A greeting opens a country.',
-    '{country} is worth a long visit. We have time. Let us keep talking about {capital} and {place}.'
-  ],
-  fr: [
-    'Nous sommes ensemble. {country}. Reste avec moi. Je vais te promener ici, tout doucement.',
-    'La capitale est {capital}. Répète avec moi. {capital}. C’est là que l’on commence.',
-    'Un lieu célèbre, c’est {place}. Regarde-le bien. Garde cette image.',
-    'Les gens aiment {dish}. C’est un goût de ce pays. Dis le nom. {dish}.',
-    'Tu peux voir {animal}. Imagine-le ici, dans le paysage.',
-    'Un sport d’ici, c’est {sport}. Imagine une partie, dehors.',
-    'Voici bonjour. {hello}. Dis-le lentement. {hello}.',
-    'Si tu ne retiens que trois choses, retiens {capital}, {place}, et {dish}.',
-    'Imagine. Tu arrives à {capital}. Tu marches vers {place}. On t’offre {dish}.',
-    'Nous sommes toujours ici. La capitale reste {capital}. Ne te presse pas.',
-    'Je te demande. Quelle est la capitale ? {capital}. Encore. {capital}.',
-    'Que faut-il visiter ? {place}. Reste un instant avec ce lieu.',
-    'Que faut-il goûter ? {dish}. Répète. {dish}.',
-    'Bonjour, encore une fois. {hello}. Une salutation ouvre un pays.',
-    '{country} mérite une longue visite. Nous avons le temps. Parlons encore de {capital} et de {place}.'
-  ],
-  es: [
-    'Estamos juntos. {country}. Quédate conmigo. Te voy a pasear por aquí, despacito.',
-    'La capital es {capital}. Repite conmigo. {capital}. Ahí empezamos.',
-    'Un lugar famoso es {place}. Míralo bien. Guarda esa imagen.',
-    'A la gente le gusta {dish}. Es un sabor de este país. Di el nombre. {dish}.',
-    'Puedes ver {animal}. Imagínalo aquí, en el paisaje.',
-    'Un deporte de aquí es {sport}. Imagina un partido al aire libre.',
-    'Así se dice hola. {hello}. Dílo despacio. {hello}.',
-    'Si solo recuerdas tres cosas, recuerda {capital}, {place} y {dish}.',
-    'Imagina. Llegas a {capital}. Caminas hacia {place}. Alguien te ofrece {dish}.',
-    'Seguimos aquí. La capital sigue siendo {capital}. No tengas prisa.',
-    'Te pregunto. ¿Cuál es la capital? {capital}. Otra vez. {capital}.',
-    '¿Qué hay que visitar? {place}. Quédate un momento con ese lugar.',
-    '¿Qué hay que probar? {dish}. Repite. {dish}.',
-    'Hola, una vez más. {hello}. Un saludo abre un país.',
-    '{country} merece una visita larga. Tenemos tiempo. Hablemos otra vez de {capital} y de {place}.'
-  ],
-  de: [
-    'Wir sind zusammen hier. {country}. Bleib bei mir. Ich führe dich ganz langsam herum.',
-    'Die Hauptstadt ist {capital}. Sprich mit mir. {capital}. Dort fangen wir an.',
-    'Ein berühmter Ort ist {place}. Schau ihn dir an. Behalte das Bild.',
-    'Die Menschen mögen {dish}. Das ist ein Geschmack dieses Landes. Sag den Namen. {dish}.',
-    'Du kannst {animal} sehen. Stell es dir hier in der Landschaft vor.',
-    'Eine Sportart hier ist {sport}. Stell dir ein Spiel im Freien vor.',
-    'So sagt man hallo. {hello}. Sag es langsam. {hello}.',
-    'Wenn du nur drei Dinge behältst, dann {capital}, {place} und {dish}.',
-    'Stell dir vor. Du kommst in {capital} an. Du gehst zu {place}. Jemand bietet dir {dish} an.',
-    'Wir sind immer noch hier. Die Hauptstadt bleibt {capital}. Keine Eile.',
-    'Ich frage dich. Was ist die Hauptstadt? {capital}. Noch einmal. {capital}.',
-    'Was solltest du besuchen? {place}. Bleib einen Moment bei diesem Ort.',
-    'Was solltest du probieren? {dish}. Wiederhole. {dish}.',
-    'Hallo, noch einmal. {hello}. Ein Gruß öffnet ein Land.',
-    '{country} verdient einen langen Besuch. Wir haben Zeit. Wir reden weiter über {capital} und {place}.'
-  ],
-  it: [
-    'Siamo qui insieme. {country}. Resta con me. Ti accompagno piano piano.',
-    'La capitale è {capital}. Ripeti con me. {capital}. È da lì che partiamo.',
-    'Un luogo famoso è {place}. Guardalo bene. Tieni questa immagine.',
-    'Alla gente piace {dish}. È un sapore di questo paese. Di’ il nome. {dish}.',
-    'Puoi vedere {animal}. Immaginalo qui, nel paesaggio.',
-    'Uno sport di qui è {sport}. Immagina una partita all’aperto.',
-    'Così si dice ciao. {hello}. Dillo lentamente. {hello}.',
-    'Se ricordi solo tre cose, ricorda {capital}, {place} e {dish}.',
-    'Immagina. Arrivi a {capital}. Cammini verso {place}. Qualcuno ti offre {dish}.',
-    'Siamo ancora qui. La capitale è sempre {capital}. Non avere fretta.',
-    'Ti chiedo. Qual è la capitale? {capital}. Di nuovo. {capital}.',
-    'Cosa devi visitare? {place}. Resta un momento con questo luogo.',
-    'Cosa devi assaggiare? {dish}. Ripeti. {dish}.',
-    'Ciao, un’altra volta. {hello}. Un saluto apre un paese.',
-    '{country} merita una visita lunga. Abbiamo tempo. Parliamo ancora di {capital} e di {place}.'
-  ],
-  pt: [
-    'Estamos juntos. {country}. Fica comigo. Vou passear contigo, bem devagar.',
-    'A capital é {capital}. Repete comigo. {capital}. É aí que começamos.',
-    'Um lugar famoso é {place}. Olha bem. Guarda esta imagem.',
-    'As pessoas gostam de {dish}. É um sabor deste país. Diz o nome. {dish}.',
-    'Podes ver {animal}. Imagina-o aqui, na paisagem.',
-    'Um desporto daqui é {sport}. Imagina um jogo ao ar livre.',
-    'É assim que se diz olá. {hello}. Diz devagar. {hello}.',
-    'Se só lembrares três coisas, lembra {capital}, {place} e {dish}.',
-    'Imagina. Chegas a {capital}. Caminhas até {place}. Alguém te oferece {dish}.',
-    'Continuamos aqui. A capital continua a ser {capital}. Sem pressa.',
-    'Pergunto-te. Qual é a capital? {capital}. Outra vez. {capital}.',
-    'O que deves visitar? {place}. Fica um momento com esse lugar.',
-    'O que deves provar? {dish}. Repete. {dish}.',
-    'Olá, mais uma vez. {hello}. Uma saudação abre um país.',
-    '{country} merece uma visita longa. Temos tempo. Falamos outra vez de {capital} e de {place}.'
-  ],
-  ar: [
-    'نحن هنا معًا. {country}. ابقَ معي. سأمشي معك بهدوء.',
-    'العاصمة هي {capital}. كرّر معي. {capital}. من هنا نبدأ.',
-    'مكان مشهور هو {place}. انظر إليه جيدًا. احفظ الصورة.',
-    'الناس يحبون {dish}. هذا طعم البلد. قل الاسم. {dish}.',
-    'قد ترى {animal}. تخيّله هنا في الطبيعة.',
-    'رياضة من هنا هي {sport}. تخيّل مباراة في الخارج.',
-    'هكذا نقول مرحبًا. {hello}. قُلها ببطء. {hello}.',
-    'إذا تذكرت ثلاثة أشياء فقط، فلتكن {capital} و{place} و{dish}.',
-    'تخيّل. تصل إلى {capital}. تمشي نحو {place}. أحدهم يقدّم لك {dish}.',
-    'ما زلنا هنا. العاصمة ما زالت {capital}. لا تستعجل.',
-    'أسألك. ما العاصمة؟ {capital}. مرة أخرى. {capital}.',
-    'ماذا تزور؟ {place}. ابقَ لحظة مع هذا المكان.',
-    'ماذا تتذوّق؟ {dish}. كرّر. {dish}.',
-    'مرحبًا مرة أخرى. {hello}. التحية تفتح بلدًا.',
-    '{country} تستحق زيارة طويلة. لدينا وقت. لنتحدث مجددًا عن {capital} و{place}.'
-  ],
-  zh: [
-    '我们在一起。{country}。跟着我。我会慢慢带你看这个地方。',
-    '首都是{capital}。跟我说。{capital}。我们从这里开始。',
-    '一个有名的地方是{place}。好好看。记住这幅画面。',
-    '人们喜欢{dish}。这是这里的味道。说一遍。{dish}。',
-    '你可能会看见{animal}。想象它就在这片土地上。',
-    '这里的一项运动是{sport}。想象一场户外的比赛。',
-    '你好是这样说的。{hello}。慢慢说。{hello}。',
-    '如果只记得三件事，就记得{capital}、{place}和{dish}。',
-    '想象一下。你到达{capital}。你走向{place}。有人递给你{dish}。',
-    '我们还在这里。首都还是{capital}。不要着急。',
-    '我问你。首都是哪里？{capital}。再说一次。{capital}。',
-    '该去看什么？{place}。在这个地方停一会儿。',
-    '该尝什么？{dish}。重复。{dish}。',
-    '你好，再来一次。{hello}。一句问候打开一个国家。',
-    '{country}值得慢慢看。我们有时间。再谈谈{capital}和{place}。'
-  ],
-  ja: [
-    'いっしょにいます。{country}。そばにいて。ゆっくり案内するよ。',
-    '首都は{capital}です。いっしょに言って。{capital}。ここから始めます。',
-    '有名な場所は{place}です。よく見て。この景色を覚えて。',
-    '人々は{dish}が好きです。この国の味です。名前を言って。{dish}。',
-    '{animal}に会えるかもしれません。この土地にいるところを想像して。',
-    'ここでのスポーツは{sport}です。外で試合をするところを想像して。',
-    'こんにちははこう言います。{hello}。ゆっくり。{hello}。',
-    '三つだけ覚えるなら、{capital}と{place}と{dish}です。',
-    '想像して。{capital}に着く。{place}へ歩く。誰かが{dish}をくれる。',
-    'まだここにいます。首都は今も{capital}。急がなくていい。',
-    '質問です。首都は？ {capital}。もう一度。{capital}。',
-    '何を見る？ {place}。その場所に少し留まって。',
-    '何を味わう？ {dish}。繰り返して。{dish}。',
-    'こんにちは、もう一度。{hello}。あいさつが国を開く。',
-    '{country}は長く訪ねる価値がある。時間はある。{capital}と{place}の話を続けよう。'
-  ],
-  ko: [
-    '함께 있어요. {country}. 내 옆에 있어요. 천천히 안내할게요.',
-    '수도는 {capital}입니다. 따라 말해 보세요. {capital}. 여기서 시작해요.',
-    '유명한 곳은 {place}입니다. 잘 보세요. 이 모습을 기억하세요.',
-    '사람들은 {dish}를 좋아합니다. 이 나라의 맛이에요. 이름을 말해 보세요. {dish}.',
-    '{animal}을 볼 수도 있어요. 이 땅에 있는 모습을 상상해 보세요.',
-    '여기서의 운동은 {sport}입니다. 바깥에서 경기하는 모습을 상상해 보세요.',
-    '인사는 이렇게 해요. {hello}. 천천히. {hello}.',
-    '세 가지만 기억한다면 {capital}, {place}, {dish}입니다.',
-    '상상해 보세요. {capital}에 도착해요. {place}로 걸어요. 누군가 {dish}를 건넵니다.',
-    '아직 여기 있어요. 수도는 여전히 {capital}. 서두르지 마세요.',
-    '물어볼게요. 수도는? {capital}. 한 번 더. {capital}.',
-    '무엇을 보러 갈까요? {place}. 그 장소에 잠시 머무르세요.',
-    '무엇을 맛볼까요? {dish}. 반복하세요. {dish}.',
-    '안녕하세요, 한 번 더. {hello}. 인사가 나라를 열어요.',
-    '{country}는 오래 머물 만해요. 시간이 있어요. {capital}와 {place} 이야기를 계속해요.'
-  ],
-  hi: [
-    'हम साथ हैं। {country}। मेरे साथ रहो। मैं धीरे-धीरे घुमाऊँगा।',
-    'राजधानी {capital} है। मेरे साथ कहो। {capital}। यहीं से शुरू करते हैं।',
-    'एक प्रसिद्ध जगह {place} है। ध्यान से देखो। यह दृश्य याद रखो।',
-    'लोगों को {dish} पसंद है। यह इस देश का स्वाद है। नाम कहो। {dish}।',
-    'तुम {animal} देख सकते हो। उसे यहाँ की धरती पर सोचो।',
-    'यहाँ का एक खेल {sport} है। बाहर खेलते हुए सोचो।',
-    'नमस्ते ऐसे कहते हैं। {hello}। धीरे बोलो। {hello}।',
-    'अगर सिर्फ तीन बातें याद रखो, तो {capital}, {place}, और {dish}।',
-    'कल्पना करो। तुम {capital} पहुँचते हो। {place} की ओर चलते हो। कोई {dish} देता है।',
-    'हम अभी भी यहीं हैं। राजधानी अब भी {capital} है। जल्दी नहीं।',
-    'मैं पूछता हूँ। राजधानी क्या है? {capital}। फिर से। {capital}।',
-    'क्या देखना चाहिए? {place}। इस जगह पर थोड़ी देर रुको।',
-    'क्या चखना चाहिए? {dish}। दोहराओ। {dish}।',
-    'नमस्ते, एक बार और। {hello}। अभिवादन देश खोलता है।',
-    '{country} लंबी यात्रा के लायक है। समय है। {capital} और {place} की बात जारी रखें।'
-  ],
-  ru: [
-    'Мы здесь вместе. {country}. Останься со мной. Я проведу тебя медленно.',
-    'Столица — {capital}. Повтори со мной. {capital}. Отсюда мы начинаем.',
-    'Знаменитое место — {place}. Посмотри внимательно. Запомни этот вид.',
-    'Людям нравится {dish}. Это вкус страны. Скажи название. {dish}.',
-    'Можно увидеть {animal}. Представь его здесь, на этой земле.',
-    'Спорт здесь — {sport}. Представь игру на улице.',
-    'Здравствуйте говорят так. {hello}. Скажи медленно. {hello}.',
-    'Если запомнить только три вещи, то это {capital}, {place} и {dish}.',
-    'Представь. Ты приезжаешь в {capital}. Идёшь к {place}. Тебе предлагают {dish}.',
-    'Мы всё ещё здесь. Столица всё ещё {capital}. Не спеши.',
-    'Я спрошу. Какая столица? {capital}. Ещё раз. {capital}.',
-    'Что стоит увидеть? {place}. Побудь мысленно в этом месте.',
-    'Что стоит попробовать? {dish}. Повтори. {dish}.',
-    'Здравствуйте, ещё раз. {hello}. Приветствие открывает страну.',
-    '{country} стоит долгого визита. У нас есть время. Поговорим снова о {capital} и {place}.'
-  ],
-  nl: [
-    'We zijn samen hier. {country}. Blijf bij me. Ik leid je langzaam rond.',
-    'De hoofdstad is {capital}. Zeg het met me mee. {capital}. Daar beginnen we.',
-    'Een beroemde plek is {place}. Kijk goed. Onthoud dit beeld.',
-    'Mensen houden van {dish}. Dat is een smaak van dit land. Zeg de naam. {dish}.',
-    'Je kunt {animal} zien. Stel het je hier voor, in het landschap.',
-    'Een sport hier is {sport}. Stel je een wedstrijd buiten voor.',
-    'Zo zeg je hallo. {hello}. Zeg het langzaam. {hello}.',
-    'Als je maar drie dingen onthoudt, onthoud {capital}, {place} en {dish}.',
-    'Stel je voor. Je komt aan in {capital}. Je loopt naar {place}. Iemand geeft je {dish}.',
-    'We zijn er nog. De hoofdstad is nog steeds {capital}. Geen haast.',
-    'Ik vraag je. Wat is de hoofdstad? {capital}. Nog eens. {capital}.',
-    'Wat moet je bezoeken? {place}. Blijf even bij die plek.',
-    'Wat moet je proeven? {dish}. Herhaal. {dish}.',
-    'Hallo, nog een keer. {hello}. Een groet opent een land.',
-    '{country} is een lang bezoek waard. We hebben tijd. We praten verder over {capital} en {place}.'
-  ],
-  tr: [
-    'Birlikte buradayız. {country}. Yanımda kal. Seni yavaş yavaş gezdireceğim.',
-    'Başkent {capital}. Benimle söyle. {capital}. Buradan başlarız.',
-    'Ünlü bir yer {place}. İyi bak. Bu görüntüyü aklında tut.',
-    'İnsanlar {dish} sever. Bu, ülkenin tadıdır. Adını söyle. {dish}.',
-    '{animal} görebilirsin. Onu bu topraklarda hayal et.',
-    'Buradaki bir spor {sport}. Dışarıda bir maç hayal et.',
-    'Merhaba böyle denir. {hello}. Yavaş söyle. {hello}.',
-    'Yalnızca üç şey hatırlayacaksan, {capital}, {place} ve {dish}.',
-    'Hayal et. {capital} şehrine varırsın. {place} yönüne yürürsün. Biri sana {dish} uzatır.',
-    'Hâlâ buradayız. Başkent hâlâ {capital}. Acele etme.',
-    'Sorarım. Başkent neresi? {capital}. Bir daha. {capital}.',
-    'Neyi gezmelisin? {place}. Bu yerde bir an kal.',
-    'Neyi tatmalısın? {dish}. Tekrarla. {dish}.',
-    'Merhaba, bir kez daha. {hello}. Bir selam bir ülkeyi açar.',
-    '{country} uzun bir gezmeyi hak eder. Zamanımız var. {capital} ve {place} hakkında konuşmaya devam edelim.'
-  ],
-  el: [
-    'Είμαστε μαζί εδώ. {country}. Μείνε μαζί μου. Θα σε πάω αργά.',
-    'Η πρωτεύουσα είναι η {capital}. Πες το μαζί μου. {capital}. Από εκεί ξεκινάμε.',
-    'Ένα διάσημο μέρος είναι το {place}. Κοίτα το καλά. Κράτα την εικόνα.',
-    'Στους ανθρώπους αρέσει το {dish}. Είναι μια γεύση της χώρας. Πες το όνομα. {dish}.',
-    'Μπορεί να δεις {animal}. Φαντάσου το εδώ, στο τοπίο.',
-    'Ένα άθλημα εδώ είναι το {sport}. Φαντάσου ένα παιχνίδι έξω.',
-    'Έτσι λένε γεια. {hello}. Πες το αργά. {hello}.',
-    'Αν θυμάσαι μόνο τρία πράγματα, θυμήσου {capital}, {place} και {dish}.',
-    'Φαντάσου. Φτάνεις στην {capital}. Περπατάς προς το {place}. Κάποιος σου δίνει {dish}.',
-    'Είμαστε ακόμη εδώ. Η πρωτεύουσα είναι ακόμη η {capital}. Χωρίς βιασύνη.',
-    'Σε ρωτώ. Ποια είναι η πρωτεύουσα; {capital}. Ξανά. {capital}.',
-    'Τι να επισκεφτείς; {place}. Μείνε μια στιγμή σε αυτό το μέρος.',
-    'Τι να δοκιμάσεις; {dish}. Επανάλαβε. {dish}.',
-    'Γεια, άλλη μια φορά. {hello}. Ένας χαιρετισμός ανοίγει μια χώρα.',
-    'Η {country} αξίζει μια μεγάλη επίσκεψη. Έχουμε χρόνο. Μιλάμε ξανά για {capital} και {place}.'
-  ],
-  pl: [
-    'Jesteśmy tu razem. {country}. Zostań ze mną. Oprowadzę cię powoli.',
-    'Stolica to {capital}. Powtórz ze mną. {capital}. Stąd zaczynamy.',
-    'Znane miejsce to {place}. Popatrz uważnie. Zapamiętaj ten widok.',
-    'Ludzie lubią {dish}. To smak tego kraju. Powiedz nazwę. {dish}.',
-    'Możesz zobaczyć {animal}. Wyobraź je sobie tutaj, w krajobrazie.',
-    'Sportem tutaj jest {sport}. Wyobraź sobie mecz na dworze.',
-    'Tak mówi się cześć. {hello}. Powiedz powoli. {hello}.',
-    'Jeśli zapamiętasz tylko trzy rzeczy, niech to będą {capital}, {place} i {dish}.',
-    'Wyobraź sobie. Przyjeżdżasz do {capital}. Idziesz w stronę {place}. Ktoś podaje ci {dish}.',
-    'Nadal tu jesteśmy. Stolica nadal to {capital}. Bez pośpiechu.',
-    'Pytam. Jaka jest stolica? {capital}. Jeszcze raz. {capital}.',
-    'Co warto zobaczyć? {place}. Zostań chwilę przy tym miejscu.',
-    'Czego warto spróbować? {dish}. Powtórz. {dish}.',
-    'Cześć, jeszcze raz. {hello}. Powitanie otwiera kraj.',
-    '{country} jest warta długiej wizyty. Mamy czas. Mówimy dalej o {capital} i {place}.'
-  ],
-  sv: [
-    'Vi är här tillsammans. {country}. Stanna hos mig. Jag visar dig runt, långsamt.',
-    'Huvudstaden är {capital}. Säg det med mig. {capital}. Där börjar vi.',
-    'En berömd plats är {place}. Titta noga. Behåll bilden.',
-    'Folk gillar {dish}. Det är en smak av landet. Säg namnet. {dish}.',
-    'Du kan se {animal}. Föreställ dig det här, i landskapet.',
-    'En sport här är {sport}. Föreställ dig en match utomhus.',
-    'Så säger man hej. {hello}. Säg det långsamt. {hello}.',
-    'Om du bara minns tre saker, minns {capital}, {place} och {dish}.',
-    'Föreställ dig. Du kommer till {capital}. Du går mot {place}. Någon räcker dig {dish}.',
-    'Vi är kvar. Huvudstaden är fortfarande {capital}. Ingen brådska.',
-    'Jag frågar. Vad är huvudstaden? {capital}. Igen. {capital}.',
-    'Vad ska du besöka? {place}. Stanna en stund vid den platsen.',
-    'Vad ska du smaka? {dish}. Upprepa. {dish}.',
-    'Hej, en gång till. {hello}. En hälsning öppnar ett land.',
-    '{country} är värt ett långt besök. Vi har tid. Vi pratar vidare om {capital} och {place}.'
-  ],
-  th: [
-    'เราอยู่ด้วยกันที่นี่. {country}. อยู่กับฉัน. ฉันจะพาไปช้าๆ.',
-    'เมืองหลวงคือ {capital}. พูดตามฉัน. {capital}. เราเริ่มจากที่นี่.',
-    'สถานที่ที่มีชื่อเสียงคือ {place}. มองให้ดี. จำภาพนี้ไว้.',
-    'ผู้คนชอบ {dish}. นี่คือรสชาติของประเทศ. พูดชื่อ. {dish}.',
-    'เธออาจเห็น {animal}. นึกภาพมันอยู่ในแผ่นดินนี้.',
-    'กีฬาที่นี่คือ {sport}. นึกภาพการแข่งขันกลางแจ้ง.',
-    'สวัสดีพูดอย่างนี้. {hello}. พูดช้าๆ. {hello}.',
-    'ถ้าจำได้แค่สามอย่าง ให้จำ {capital}, {place}, และ {dish}.',
-    'ลองนึก. เธอมาถึง {capital}. เดินไปที่ {place}. มีคนยื่น {dish} ให้.',
-    'เรายังอยู่ที่นี่. เมืองหลวงยังเป็น {capital}. ไม่ต้องรีบ.',
-    'ฉันถาม. เมืองหลวงคืออะไร? {capital}. อีกครั้ง. {capital}.',
-    'ควรไปดูอะไร? {place}. อยู่กับที่นี่สักครู่.',
-    'ควรชิมอะไร? {dish}. พูดซ้ำ. {dish}.',
-    'สวัสดี อีกครั้ง. {hello}. คำทักทายเปิดประเทศ.',
-    '{country} คู่ควรกับการเยือนนานๆ. เรามีเวลา. พูดต่อเรื่อง {capital} และ {place}.'
-  ],
-  vi: [
-    'Chúng ta ở đây cùng nhau. {country}. Ở bên tôi. Tôi sẽ dẫn bạn đi chậm rãi.',
-    'Thủ đô là {capital}. Nói cùng tôi. {capital}. Chúng ta bắt đầu từ đó.',
-    'Một nơi nổi tiếng là {place}. Hãy nhìn kỹ. Giữ hình ảnh này.',
-    'Mọi người thích {dish}. Đó là hương vị của đất nước. Nói tên. {dish}.',
-    'Bạn có thể thấy {animal}. Hãy tưởng tượng nó trên vùng đất này.',
-    'Một môn thể thao ở đây là {sport}. Hãy tưởng tượng một trận đấu ngoài trời.',
-    'Xin chào nói như thế này. {hello}. Nói chậm. {hello}.',
-    'Nếu chỉ nhớ ba điều, hãy nhớ {capital}, {place}, và {dish}.',
-    'Hãy tưởng tượng. Bạn đến {capital}. Bạn đi về phía {place}. Ai đó đưa bạn {dish}.',
-    'Chúng ta vẫn ở đây. Thủ đô vẫn là {capital}. Đừng vội.',
-    'Tôi hỏi. Thủ đô là gì? {capital}. Lần nữa. {capital}.',
-    'Nên đi xem gì? {place}. Hãy dừng một lát ở nơi đó.',
-    'Nên nếm gì? {dish}. Lặp lại. {dish}.',
-    'Xin chào, một lần nữa. {hello}. Lời chào mở ra một đất nước.',
-    '{country} đáng để ở lại lâu. Chúng ta có thời gian. Hãy nói tiếp về {capital} và {place}.'
-  ],
-  id: [
-    'Kita di sini bersama. {country}. Tetaplah bersamaku. Aku akan mengajakmu pelan-pelan.',
-    'Ibu kotanya {capital}. Ucapkan bersamaku. {capital}. Dari situ kita mulai.',
-    'Tempat yang terkenal adalah {place}. Lihat baik-baik. Simpan gambar ini.',
-    'Orang-orang menyukai {dish}. Itu rasa negeri ini. Ucapkan namanya. {dish}.',
-    'Kamu mungkin melihat {animal}. Bayangkan ia ada di tanah ini.',
-    'Olahraga di sini adalah {sport}. Bayangkan pertandingan di luar.',
-    'Halo diucapkan begini. {hello}. Ucapkan pelan. {hello}.',
-    'Jika hanya mengingat tiga hal, ingat {capital}, {place}, dan {dish}.',
-    'Bayangkan. Kamu tiba di {capital}. Kamu berjalan ke {place}. Seseorang memberimu {dish}.',
-    'Kita masih di sini. Ibu kota masih {capital}. Jangan terburu.',
-    'Aku bertanya. Apa ibu kotanya? {capital}. Sekali lagi. {capital}.',
-    'Apa yang harus dikunjungi? {place}. Tinggallah sejenak di tempat itu.',
-    'Apa yang harus dicicipi? {dish}. Ulangi. {dish}.',
-    'Halo, sekali lagi. {hello}. Sebuah sapaan membuka negeri.',
-    '{country} layak dikunjungi lama. Kita punya waktu. Kita bicara lagi tentang {capital} dan {place}.'
-  ],
-  sw: [
-    'Tuko hapa pamoja. {country}. Kaa nami. Nitakutembeza polepole.',
-    'Mji mkuu ni {capital}. Sema nami. {capital}. Hapo ndipo tunaanzia.',
-    'Mahali maarufu ni {place}. Angalia vizuri. Hifadhi picha hii.',
-    'Watu wanapenda {dish}. Huo ni ladha ya nchi. Sema jina. {dish}.',
-    'Unaweza kuona {animal}. Fikiria yuko hapa katika nchi hii.',
-    'Michezo hapa ni {sport}. Fikiria mchezo wa nje.',
-    'Habari husemwa hivi. {hello}. Sema polepole. {hello}.',
-    'Ukikumbuka mambo matatu tu, kumbuka {capital}, {place}, na {dish}.',
-    'Fikiria. Unafika {capital}. Unatembea kuelekea {place}. Mtu anakupa {dish}.',
-    'Bado tuko hapa. Mji mkuu bado ni {capital}. Usifanye haraka.',
-    'Nakuuliza. Mji mkuu ni upi? {capital}. Tena. {capital}.',
-    'Uone nini? {place}. Kaa kidogo na mahali hapa.',
-    'Uonje nini? {dish}. Rudia. {dish}.',
-    'Habari, tena. {hello}. Salamu hufungua nchi.',
-    '{country} inastahili kukaa kwa muda mrefu. Tuna muda. Tuendelee kuzungumzia {capital} na {place}.'
-  ]
-};
-
-function tourSpeechSeconds(lines, lang) {
-  const text = lines.join('\n');
-  if (['zh', 'ja', 'ko', 'th'].indexOf(lang) !== -1) {
-    return text.replace(/\s+/g, '').length / 4.2;
-  }
-  const words = text.split(/\s+/).filter(Boolean).length;
-  return words / 2.15;
-}
 
 function fillTourLine(tpl, vars) {
   const keys = tpl.match(/\{(\w+)\}/g) || [];
@@ -3470,354 +2961,6 @@ const ANIMAL_HOST = {
   id: 'Aku {animal}. Aku menunjukkan {place} dan sejarahnya.',
   sw: 'Mimi ni {animal}. Ninakuonyesha {place} na historia yake.'
 };
-
-const ANIMAL_STORY = {
-  en: [
-    'I am the {animal} of {country}. Come with me. I will show you {place}, and I will tell you its history.',
-    'Long ago, people in {country} made {place} part of their story. I, the {animal}, still show it to visitors.',
-    'Listen. The history of {place} belongs to {country}. I am the one showing it to you.',
-    'The capital, {capital}, remembers this history. From there, the story of {place} spread.',
-    'Look at {place}. I, the {animal}, stand here so you do not forget it.',
-    'History is not only dates. It is this place, {place}, and the people who kept it.',
-    'Say it with me. {place}. I am the {animal}, and this is the story I show.',
-    'If you tell someone at home about {country}, tell them about {place}. I showed it to you.'
-  ],
-  fr: [
-    'Je suis le {animal} de ce pays. Viens. Je te montre {place}, et je te raconte son histoire.',
-    'Il y a longtemps, les gens ont mis {place} dans leur histoire. Moi, le {animal}, je la montre encore.',
-    'Écoute. L’histoire de {place} appartient à {country}. C’est moi qui te la montre.',
-    'La capitale, {capital}, se souvient de cette histoire. De là, l’histoire de {place} a voyagé.',
-    'Regarde {place}. Moi, le {animal}, je reste ici pour que tu n’oublies pas.',
-    'L’histoire, ce n’est pas seulement des dates. C’est ce lieu, {place}, et ceux qui l’ont gardé.',
-    'Dis-le avec moi. {place}. Je suis le {animal}, et voici l’histoire que je montre.',
-    'Si tu racontes {country} chez toi, parle de {place}. Je te l’ai montré.'
-  ],
-  es: [
-    'Soy el {animal} de este país. Ven. Te muestro {place} y te cuento su historia.',
-    'Hace mucho, la gente puso {place} en su historia. Yo, el {animal}, todavía la muestro.',
-    'Escucha. La historia de {place} pertenece a {country}. Yo te la estoy mostrando.',
-    'La capital, {capital}, recuerda esta historia. Desde allí viajó la historia de {place}.',
-    'Mira {place}. Yo, el {animal}, me quedo aquí para que no lo olvides.',
-    'La historia no son solo fechas. Es este lugar, {place}, y quienes lo cuidaron.',
-    'Dilo conmigo. {place}. Soy el {animal}, y esta es la historia que muestro.',
-    'Si cuentas {country} en casa, habla de {place}. Yo te lo mostré.'
-  ],
-  de: [
-    'Ich bin der {animal} dieses Landes. Komm. Ich zeige dir {place} und erzähle seine Geschichte.',
-    'Vor langer Zeit haben die Menschen {place} in ihre Geschichte gelegt. Ich, der {animal}, zeige sie noch.',
-    'Hör zu. Die Geschichte von {place} gehört zu {country}. Ich zeige sie dir.',
-    'Die Hauptstadt {capital} erinnert sich. Von dort reiste die Geschichte von {place}.',
-    'Schau auf {place}. Ich, der {animal}, bleibe hier, damit du es nicht vergisst.',
-    'Geschichte sind nicht nur Zahlen. Es ist dieser Ort, {place}, und die Menschen, die ihn bewahrt haben.',
-    'Sag es mit mir. {place}. Ich bin der {animal}, und das ist die Geschichte, die ich zeige.',
-    'Wenn du zu Hause von {country} erzählst, erzähl von {place}. Ich habe es dir gezeigt.'
-  ],
-  it: [
-    'Sono il {animal} di questo paese. Vieni. Ti mostro {place} e ti racconto la sua storia.',
-    'Tanto tempo fa la gente ha messo {place} nella sua storia. Io, il {animal}, la mostro ancora.',
-    'Ascolta. La storia di {place} appartiene a {country}. Sono io a mostrartela.',
-    'La capitale, {capital}, ricorda questa storia. Da lì è partita la storia di {place}.',
-    'Guarda {place}. Io, il {animal}, resto qui perché tu non lo dimentichi.',
-    'La storia non sono solo date. È questo luogo, {place}, e chi lo ha custodito.',
-    'Dillo con me. {place}. Sono il {animal}, e questa è la storia che mostro.',
-    'Se a casa racconti {country}, parla di {place}. Te l’ho mostrato io.'
-  ],
-  pt: [
-    'Eu sou o {animal} deste país. Vem. Mostro-te {place} e conto a sua história.',
-    'Há muito tempo, as pessoas puseram {place} na sua história. Eu, o {animal}, ainda a mostro.',
-    'Ouve. A história de {place} pertence a {country}. Sou eu que a mostro.',
-    'A capital, {capital}, lembra esta história. Dali partiu a história de {place}.',
-    'Olha para {place}. Eu, o {animal}, fico aqui para não esqueceres.',
-    'A história não são só datas. É este lugar, {place}, e quem o guardou.',
-    'Diz comigo. {place}. Eu sou o {animal}, e esta é a história que mostro.',
-    'Se em casa contares {country}, fala de {place}. Fui eu que te mostrei.'
-  ],
-  ar: [
-    'أنا {animal} في هذا البلد. تعال. أريك {place} وأحكي لك تاريخه.',
-    'منذ زمن بعيد، وضع الناس {place} في تاريخهم. أنا {animal} ما زلت أريه.',
-    'اسمع. تاريخ {place} يخص {country}. أنا الذي أريك إياه.',
-    'العاصمة {capital} تتذكر هذا التاريخ. ومن هناك سارت حكاية {place}.',
-    'انظر إلى {place}. أنا {animal} أبقى هنا كي لا تنسى.',
-    'التاريخ ليس تواريخ فقط. إنه هذا المكان، {place}، ومن حافظوا عليه.',
-    'قلها معي. {place}. أنا {animal}، وهذه هي الحكاية التي أريها.',
-    'إذا حكيت عن {country} في البيت، فاحكِ عن {place}. أنا أريتك إياه.'
-  ],
-  zh: [
-    '我是这个国家的{animal}。跟我来。我带你看{place}，并告诉你它的历史。',
-    '很久以前，人们把{place}写进了自己的故事。我这只{animal}，现在还在带人看它。',
-    '听着。{place}的历史属于{country}。是我在把它指给你看。',
-    '首都{capital}记得这段历史。{place}的故事从那里传开。',
-    '看{place}。我是{animal}，我站在这里，是为了让你不要忘记。',
-    '历史不只是年份。它是这个地方，{place}，和守住它的人。',
-    '跟我说。{place}。我是{animal}，这就是我讲的历史。',
-    '如果你回家讲{country}，一定要讲{place}。是我带你看的。'
-  ],
-  ja: [
-    'わたしはこの国の{animal}。おいで。{place}を見せて、その歴史を話すよ。',
-    'ずっと昔、人々は{place}を自分たちの物語に入れた。{animal}のわたしは、今もそれを見せている。',
-    '聞いて。{place}の歴史は{country}のもの。見せているのはわたし。',
-    '首都の{capital}はこの歴史を覚えている。{place}の話はそこから広がった。',
-    '{place}を見て。わたしは{animal}。忘れないように、ここにいるよ。',
-    '歴史は年号だけじゃない。この場所、{place}と、それを守った人たちだ。',
-    'いっしょに言って。{place}。わたしは{animal}。これがわたしの見せる歴史。',
-    '家で{country}の話をするなら、{place}を話して。わたしが見せたんだ。'
-  ],
-  ko: [
-    '나는 이 나라의 {animal}이에요. 와요. {place}를 보여주고 그 역사를 들려줄게요.',
-    '아주 오래전, 사람들은 {place}를 자기 이야기에 넣었어요. {animal}인 나는 아직도 그것을 보여 줘요.',
-    '들어요. {place}의 역사는 {country}의 것이에요. 보여 주는 사람은 나예요.',
-    '수도 {capital}은 이 역사를 기억해요. {place}의 이야기는 거기서 퍼졌어요.',
-    '{place}를 봐요. 나는 {animal}이에요. 잊지 말라고 여기 있어요.',
-    '역사는 연도만이 아니에요. 이 장소 {place}와 그것을 지킨 사람들이에요.',
-    '같이 말해요. {place}. 나는 {animal}이고, 이것이 내가 보여 주는 역사예요.',
-    '집에서 {country} 이야기를 한다면 {place}를 말해요. 내가 보여 줬어요.'
-  ],
-  hi: [
-    'मैं इस देश का {animal} हूँ। आओ। मैं तुम्हें {place} दिखाता हूँ और उसका इतिहास बताता हूँ।',
-    'बहुत पहले लोगों ने {place} को अपनी कहानी में रखा। मैं {animal} आज भी उसे दिखाता हूँ।',
-    'सुनो। {place} का इतिहास {country} का है। मैं ही उसे तुम्हें दिखा रहा हूँ।',
-    'राजधानी {capital} यह इतिहास याद रखती है। {place} की कथा वहीं से फैली।',
-    '{place} को देखो। मैं {animal} हूँ। मैं यहाँ हूँ ताकि तुम भूलो नहीं।',
-    'इतिहास केवल तारीखें नहीं। यह यह जगह है, {place}, और जिन्होंने उसे संभाला।',
-    'मेरे साथ कहो। {place}। मैं {animal} हूँ, और यही इतिहास मैं दिखाता हूँ।',
-    'अगर घर पर {country} की बात करो, तो {place} की बात करना। मैंने तुम्हें दिखाया।'
-  ],
-  ru: [
-    'Я {animal} этой страны. Иди со мной. Я покажу тебе {place} и расскажу его историю.',
-    'Давным-давно люди вписали {place} в свою историю. Я, {animal}, всё ещё показываю его.',
-    'Слушай. История {place} принадлежит {country}. Это я показываю её тебе.',
-    'Столица {capital} помнит эту историю. Оттуда разошёлся рассказ о {place}.',
-    'Смотри на {place}. Я {animal}. Я здесь, чтобы ты не забыл.',
-    'История — это не только даты. Это место {place} и люди, которые его хранили.',
-    'Скажи со мной. {place}. Я {animal}, и это история, которую я показываю.',
-    'Если дома расскажешь о {country}, расскажи о {place}. Это я тебе показал.'
-  ],
-  nl: [
-    'Ik ben de {animal} van dit land. Kom. Ik laat je {place} zien en vertel de geschiedenis.',
-    'Lang geleden zetten mensen {place} in hun verhaal. Ik, de {animal}, laat het nog steeds zien.',
-    'Luister. De geschiedenis van {place} hoort bij {country}. Ik ben degene die het je toont.',
-    'De hoofdstad {capital} herinnert zich dit. Vandaar reisde het verhaal van {place}.',
-    'Kijk naar {place}. Ik ben de {animal}. Ik blijf hier zodat je het niet vergeet.',
-    'Geschiedenis is niet alleen jaartallen. Het is deze plek, {place}, en wie haar bewaarden.',
-    'Zeg het met mij. {place}. Ik ben de {animal}, en dit is het verhaal dat ik laat zien.',
-    'Als je thuis over {country} vertelt, vertel dan over {place}. Ik heb het je laten zien.'
-  ],
-  tr: [
-    'Ben bu ülkenin {animal}. Gel. Sana {place} göstereyim ve tarihini anlatayım.',
-    'Çok eskiden insanlar {place} yerini hikâyelerine koydular. Ben {animal}, hâlâ gösteriyorum.',
-    'Dinle. {place} tarihi {country} ülkesine aittir. Sana gösteren benim.',
-    'Başkent {capital} bu tarihi hatırlar. {place} hikâyesi oradan yayıldı.',
-    '{place} yerine bak. Ben {animal}. Unutmaman için buradayım.',
-    'Tarih yalnızca tarihler değildir. Bu yerdir, {place}, ve onu koruyan insanlar.',
-    'Benimle söyle. {place}. Ben {animal}, gösterdiğim tarih bu.',
-    'Evde {country} ülkesini anlatırsan, {place} yerini de anlat. Ben sana gösterdim.'
-  ],
-  el: [
-    'Είμαι το {animal} αυτής της χώρας. Έλα. Σου δείχνω το {place} και σου λέω την ιστορία του.',
-    'Πολύ παλιά, οι άνθρωποι έβαλαν το {place} στην ιστορία τους. Εγώ, το {animal}, το δείχνω ακόμη.',
-    'Άκου. Η ιστορία του {place} ανήκει στη {country}. Εγώ σου τη δείχνω.',
-    'Η πρωτεύουσα {capital} θυμάται αυτή την ιστορία. Από εκεί ταξίδεψε η ιστορία του {place}.',
-    'Κοίτα το {place}. Είμαι το {animal}. Μένω εδώ για να μην το ξεχάσεις.',
-    'Η ιστορία δεν είναι μόνο χρονολογίες. Είναι αυτός ο τόπος, το {place}, και όσοι τον φύλαξαν.',
-    'Πες το μαζί μου. {place}. Είμαι το {animal}, και αυτή είναι η ιστορία που δείχνω.',
-    'Αν στο σπίτι μιλήσεις για τη {country}, μίλα για το {place}. Εγώ σου το έδειξα.'
-  ],
-  pl: [
-    'Jestem {animal} tego kraju. Chodź. Pokażę ci {place} i opowiem jego historię.',
-    'Dawno temu ludzie wpisali {place} w swoją historię. Ja, {animal}, wciąż je pokazuję.',
-    'Słuchaj. Historia {place} należy do {country}. To ja ci ją pokazuję.',
-    'Stolica {capital} pamięta tę historię. Stamtąd poszła opowieść o {place}.',
-    'Patrz na {place}. Jestem {animal}. Jestem tutaj, żebyś nie zapomniał.',
-    'Historia to nie tylko daty. To to miejsce, {place}, i ludzie, którzy je zachowali.',
-    'Powiedz ze mną. {place}. Jestem {animal}, i to jest historia, którą pokazuję.',
-    'Jeśli w domu opowiesz o {country}, opowiedz o {place}. To ja ci je pokazałem.'
-  ],
-  sv: [
-    'Jag är {animal} i det här landet. Kom. Jag visar dig {place} och berättar dess historia.',
-    'För länge sedan lade människor {place} i sin historia. Jag, {animal}, visar det fortfarande.',
-    'Lyssna. Historien om {place} tillhör {country}. Det är jag som visar den för dig.',
-    'Huvudstaden {capital} minns den här historien. Därifrån reste berättelsen om {place}.',
-    'Titta på {place}. Jag är {animal}. Jag är här så att du inte glömmer.',
-    'Historia är inte bara årtal. Det är den här platsen, {place}, och de som bevarade den.',
-    'Säg det med mig. {place}. Jag är {animal}, och det här är historien jag visar.',
-    'Om du hemma berättar om {country}, berätta om {place}. Jag visade det för dig.'
-  ],
-  th: [
-    'ฉันคือ {animal} ของประเทศนี้. มา. ฉันจะพาไปดู {place} และเล่าประวัติของมัน.',
-    'นานมาแล้วผู้คนใส่ {place} ไว้ในเรื่องราวของพวกเขา. ฉัน {animal} ยังพาไปดูอยู่.',
-    'ฟังนะ. ประวัติของ {place} เป็นของ {country}. ฉันเป็นคนที่แสดงให้เธอเห็น.',
-    'เมืองหลวง {capital} จำประวัตินี้. เรื่องของ {place} เดินทางจากที่นั่น.',
-    'มอง {place}. ฉันคือ {animal}. ฉันอยู่ที่นี่เพื่อไม่ให้เธอลืม.',
-    'ประวัติไม่ใช่แค่ปี. มันคือสถานที่นี้ {place} และผู้คนที่รักษามันไว้.',
-    'พูดตามฉัน. {place}. ฉันคือ {animal} และนี่คือประวัติที่ฉันแสดง.',
-    'ถ้ากลับบ้านแล้วเล่าเรื่อง {country} จงเล่าเรื่อง {place}. ฉันเป็นคนพาเธอไปดู.'
-  ],
-  vi: [
-    'Tôi là {animal} của đất nước này. Đi nào. Tôi chỉ cho bạn {place} và kể lịch sử của nó.',
-    'Từ rất lâu, người ta đặt {place} vào câu chuyện của họ. Tôi, {animal}, vẫn đang chỉ nó.',
-    'Hãy nghe. Lịch sử của {place} thuộc về {country}. Chính tôi đang chỉ nó cho bạn.',
-    'Thủ đô {capital} nhớ lịch sử này. Câu chuyện về {place} đi từ đó.',
-    'Nhìn {place}. Tôi là {animal}. Tôi ở đây để bạn không quên.',
-    'Lịch sử không chỉ là năm tháng. Đó là nơi này, {place}, và những người đã giữ nó.',
-    'Nói cùng tôi. {place}. Tôi là {animal}, và đây là lịch sử tôi chỉ.',
-    'Nếu về nhà kể về {country}, hãy kể về {place}. Tôi đã chỉ nó cho bạn.'
-  ],
-  id: [
-    'Aku {animal} negeri ini. Mari. Aku tunjukkan {place} dan kuceritakan sejarahnya.',
-    'Dulu sekali, orang memasukkan {place} ke dalam kisah mereka. Aku, {animal}, masih menunjukkannya.',
-    'Dengar. Sejarah {place} milik {country}. Akulah yang menunjukkannya padamu.',
-    'Ibu kota {capital} mengingat sejarah ini. Dari situ kisah {place} menyebar.',
-    'Lihat {place}. Aku {animal}. Aku di sini supaya kamu tidak lupa.',
-    'Sejarah bukan hanya angka tahun. Ia adalah tempat ini, {place}, dan orang yang menjaganya.',
-    'Ucapkan bersamaku. {place}. Aku {animal}, dan inilah sejarah yang kutunjukkan.',
-    'Jika di rumah kamu bercerita tentang {country}, ceritakan {place}. Aku yang menunjukkannya.'
-  ],
-  sw: [
-    'Mimi ni {animal} wa nchi hii. Njoo. Ninakuonyesha {place} na nakuambia historia yake.',
-    'Zamani sana, watu waliweka {place} katika hadithi yao. Mimi, {animal}, bado naionyesha.',
-    'Sikiliza. Historia ya {place} ni ya {country}. Mimi ndiye ninayeikuonyesha.',
-    'Mji mkuu {capital} unakumbuka historia hii. Kutoka huko hadithi ya {place} ilisafiri.',
-    'Angalia {place}. Mimi ni {animal}. Niko hapa usisahau.',
-    'Historia si tarehe tu. Ni mahali hapa, {place}, na watu walioihifadhi.',
-    'Sema nami. {place}. Mimi ni {animal}, na hii ndiyo historia ninayoonyesha.',
-    'Ukirudi nyumbani ukaeleze {country}, eleza {place}. Mimi nilikuonyesha.'
-  ]
-};
-
-function spotHistoryLines(c, place, useLang, animalName) {
-  const custom = (typeof window !== 'undefined' && window.SPOT_HISTORY && window.SPOT_HISTORY[c.n]) || null;
-  if (custom && custom.length) {
-    const vars = {
-      animal: animalName,
-      place: (place && place.name) || '',
-      country: c.n,
-      capital: c.cap || ''
-    };
-    return custom.map(function (line) { return fillTourLine(line, vars) || line; }).filter(Boolean);
-  }
-  if (useLang !== 'en' || !place || !place.name) return [];
-  const lines = [];
-  lines.push('I am the ' + animalName + ' of ' + c.n + '. I am showing you ' + place.name + '.');
-  if (place.fact) lines.push('Here is the history of ' + place.name + '. ' + guideLine(place.fact));
-  String(c.h || '').split(/(?<=[.!?])\s+/).forEach(function (sentence) {
-    const t = sentence.trim();
-    if (t.length > 24 && lines.length < 6) lines.push(t);
-  });
-  lines.push('Remember ' + place.name + '. I, the ' + animalName + ', showed you this history.');
-  return lines;
-}
-
-function longTour(c) {
-  const place = landmarkFor(c);
-  const locale = tourLocale(c);
-  const lang = locale.split('-')[0];
-  const useLang = TOUR_TALK[lang] ? lang : 'en';
-  const speakAs = useLang === 'en' && lang !== 'en' ? 'en-US' : (TOUR_SAY[lang] ? locale : 'en-US');
-  const dish = c.food ? c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim() : '';
-  const animal = animalFor(c);
-  const hello = (phrasesFor(c)[0] && phrasesFor(c)[0].t) || '';
-  const facts = [];
-  if (useLang === 'en') {
-    [wowFor(c), place && place.fact, c.h, c.cul, c.rel, c.fig].forEach(block => {
-      String(block || '').split(/(?<=[.!?])\s+/).forEach(sentence => {
-        const t = sentence.trim();
-        if (t.length > 24) facts.push(t);
-      });
-    });
-  }
-  const vars = {
-    country: c.n,
-    capital: c.cap || '',
-    place: (place && place.name) || '',
-    dish: dish,
-    animal: animal ? String(animal[0]).replace(/\s*\([^)]*\)/g, '').trim() : '',
-    sport: (c.sport || '').split(',')[0].trim(),
-    hello: hello,
-    fact: ''
-  };
-  const talk = TOUR_TALK[useLang];
-  const again = TOUR_AGAIN[useLang] || TOUR_AGAIN.en;
-  const animalTalk = ANIMAL_STORY[useLang] || ANIMAL_STORY.en;
-  const paris = c.n === 'France' ? [
-    'Nous sommes à Paris. Deux noms comptent. La tour Eiffel. Et le Louvre.',
-    'La tour Eiffel est en fer. Elle monte au-dessus de la Seine. En été, le métal chauffe et la tour grandit un peu.',
-    'Regarde la tour Eiffel. Elle est ajourée, légère, et elle veille sur la ville.',
-    'Maintenant, le Louvre. C’est un ancien palais, devenu un immense musée.',
-    'Devant le Louvre, une pyramide de verre marque l’entrée. On descend, et les salles commencent.',
-    'Au Louvre, la Joconde regarde les visiteurs. On s’approche, et on parle tout bas.',
-    'De la tour Eiffel, tu vois les toits de Paris. Au Louvre, tu vois des siècles de peinture.',
-    'Dis les deux noms. Tour Eiffel. Louvre. Encore. Tour Eiffel. Louvre.',
-    'Si tu n’as qu’une journée, commence par la tour Eiffel, puis marche vers le Louvre.',
-    'Paris sans la tour Eiffel n’est pas complet. Paris sans le Louvre non plus.',
-    'Sous la tour Eiffel, les gens s’arrêtent, lèvent la tête, et comptent les étages.',
-    'Dans le Louvre, on se perd un peu. C’est normal. Chaque couloir ouvre une autre époque.',
-    'La tour Eiffel brille le soir. Le Louvre, lui, garde sa lumière dans les tableaux.',
-    'Souviens-toi de Paris ainsi. Une tour de fer. Un palais de tableaux. La tour Eiffel et le Louvre.'
-  ] : null;
-  const history = (paris && paris.length) ? paris : spotHistoryLines(c, place, useLang, vars.animal);
-  const lines = [];
-  let guard = 0;
-  let cycle = 0;
-  while (tourSpeechSeconds(lines, useLang) < 300 && guard < 800) {
-    let filled = '';
-    const storyVars = Object.assign({}, vars, { fact: facts.length ? facts[guard % facts.length] : '' });
-    const slot = guard % 4;
-    if (slot === 1) filled = fillTourLine(animalTalk[guard % animalTalk.length], storyVars);
-    else if (history.length && (slot === 0 || slot === 2)) filled = history[Math.floor(guard / 2) % history.length];
-    else filled = fillTourLine(talk[guard % talk.length], storyVars);
-    if (filled) lines.push(cycle ? (again + ' ' + filled) : filled);
-    guard++;
-    if (guard % talk.length === 0) cycle++;
-  }
-  const hostPack = ANIMAL_HOST[useLang] || ANIMAL_HOST.en;
-  return {
-    locale: useLang === 'en' ? speakAs : locale,
-    lines: lines,
-    emoji: animal ? animal[1] : '🐾',
-    host: fillTourLine(hostPack, vars) || (animal ? animal[0] : '')
-  };
-}
-
-function tourStops(c) {
-  const place = landmarkFor(c);
-  const wow = sayWow(wowFor(c));
-  const locale = tourLocale(c);
-  const lang = locale.split('-')[0];
-  const speakAs = TOUR_SAY[lang] ? locale : 'en-US';
-  const vars = { country: c.n, capital: c.cap || '', place: place.name, dish: '' };
-  const hello = sayTour(lang, 'arrive', vars, c.n.length);
-  const arrive = [hello];
-  if (lang === 'en' && wow) arrive.push(guideLine(wow));
-  if (c.cap) arrive.push(sayTour(lang, 'capital', vars));
-  const placeLines = [sayTour(lang, 'closer', vars), place.name + '.'];
-  if (lang === 'en' && place.fact) placeLines.push(guideLine(place.fact));
-  const stops = [
-    { kicker: 'Arriving', title: c.n, lines: arrive, locale: speakAs },
-    { kicker: 'A famous place', title: place.name, lines: placeLines, locale: speakAs }
-  ];
-  if (c.food) {
-    const dish = c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim();
-    if (dish) {
-      vars.dish = dish;
-      stops.push({
-        kicker: 'One last stop',
-        title: dish,
-        locale: speakAs,
-        lines: [
-          sayTour(lang, 'before', vars),
-          dish + '.',
-          sayTour(lang, 'taste', vars)
-        ]
-      });
-    }
-  }
-  const dish = c.food ? c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim() : '';
-  stops[0].look = [c.n, c.cap].filter(Boolean);
-  stops[1].look = [place.name, place.name + ' ' + c.n];
-  if (stops[2]) stops[2].look = [dish, dish + ' food'];
-  stops.forEach(s => { s.body = s.lines.join(' '); s.frames = []; });
-  return stops;
-}
 
 function biggerWikiThumb(url) {
   return url ? String(url).replace(/\/\d+px-/, '/800px-') : null;
@@ -3880,133 +3023,388 @@ function paintStoryFrame(url, n) {
   while (stage.children.length > 2) stage.removeChild(stage.firstChild);
 }
 
-function spokenTour(c) {
-  const lines = [];
-  tourStops(c).forEach(s => s.lines.forEach(line => lines.push(line)));
-  return lines;
+/* ---------- Tour: the narration with pictures; interrupt any time ---------- */
+let tourTimer = null;
+let roomMemory = { name: '', pattern: '' };
+const roomSessions = {};
+let roomEarGen = 0;
+let roomRec = null;
+
+function stopRoomEar() {
+  roomEarGen++;
+  const rec = roomRec;
+  roomRec = null;
+  if (!rec) return;
+  rec.onend = null;
+  rec.onresult = null;
+  try { rec.abort(); } catch (e) {}
+  try { rec.stop(); } catch (e2) {}
 }
 
-window.__myatlasticReadAloud = (countryName) => {
-  const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
-  const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
-  const stops = tourStops(c);
-  speakLines(spokenTour(c), (stops[0] && stops[0].locale) || tourLocale(c), buttons, 1);
-};
+function normTalk(s) {
+  return String(s || '').toLowerCase().replace(/[^a-z0-9À-ɏ\s]/gi, ' ').replace(/\s+/g, ' ').trim();
+}
 
-let tourTimer = null;
+// Ignore the microphone hearing the guide's own last words.
+function roomEcho(text, session) {
+  const heard = normTalk(text);
+  if (!heard) return true;
+  const recent = normTalk((session.spoken || []).slice(-2).join(' '));
+  if (!recent) return false;
+  if (recent.indexOf(heard) !== -1) return true;
+  const words = heard.split(' ').filter(w => w.length > 3);
+  if (words.length < 3) return false;
+  const hit = words.filter(w => recent.indexOf(w) !== -1).length;
+  return hit / words.length > 0.72;
+}
+
+function bootRoom(c, book) {
+  if (roomSessions[c.n]) {
+    roomMemory = { name: c.n, pattern: roomSessions[c.n].pattern };
+    return roomSessions[c.n];
+  }
+  const local = languagesOf(c).find(l => l.lang !== 'en');
+  const place = landmarkFor(c) || {};
+  const food = c.food ? c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim() : '';
+  const prevName = roomMemory.name && roomMemory.name !== c.n ? roomMemory.name : '';
+  const session = window.RoomTalk.boot({
+    name: c.n,
+    prevName: prevName,
+    prevPattern: prevName ? roomMemory.pattern : '',
+    city: c.cap || '',
+    place: place.name || '',
+    fact: place.fact || '',
+    food: food,
+    langName: local ? local.name : (primaryLang(c) || 'English'),
+    langKey: local ? local.lang : 'en',
+    locale: local ? local.locale : englishLocaleFor(c),
+    roster: COUNTRIES.map(x => x.n),
+    book: book,
+    catalog: PhraseCatalog,
+    seed: Math.floor(Math.random() * 997)
+  });
+  session.narrIndex = 0;
+  roomSessions[c.n] = session;
+  roomMemory = { name: c.n, pattern: session.pattern };
+  return session;
+}
+
+function lineForScreen(text) {
+  return String(text || '')
+    .replace(/\{\{s:([^}]*)\}\}/g, '$1')
+    .replace(/\{\{p:([^}]*)\}\}/g, '$1');
+}
+
+// A conversation line: English around the local phrase, each in its own voice.
+// Pronunciation respellings ({{s:}}) are for the screen only.
+function talkParts(line, session) {
+  const en = Voice.englishLocale();
+  const out = [];
+  const tidy = s => String(s || '')
+    .replace(/\b(it sounds like|the sound is|you're aiming for)\s*[.:,]?\s*(?=[.!?]|$)/gi, ' ')
+    .replace(/\s+([,.!?])/g, '$1')
+    .replace(/([.!?])\s*[.!?]+/g, '$1')
+    .replace(/^[\s,.:;]+/, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  const re = /\{\{(p|s):([^}]*)\}\}/g;
+  let last = 0;
+  let m;
+  const push = (text, locale) => { const t = locale === en ? tidy(text) : String(text || '').trim(); if (/[\p{L}\p{N}]/u.test(t)) out.push({ text: t, locale: locale }); };
+  while ((m = re.exec(line))) {
+    push(line.slice(last, m.index), en);
+    if (m[1] === 'p' && Voice.canSpeak(session.locale) !== false) push(m[2], session.locale);
+    last = re.lastIndex;
+  }
+  push(line.slice(last), en);
+  return out;
+}
+
+function tourRecognizer() {
+  return window.SpeechRecognition || window.webkitSpeechRecognition || null;
+}
+
+function askMicPermission() {
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+    return Promise.resolve(!!tourRecognizer());
+  }
+  return navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+    stream.getTracks().forEach(track => track.stop());
+    return true;
+  }).catch(() => false);
+}
+
+function listenTourMic(onText, mic, sayBox, session, beforeListen) {
+  const SR = tourRecognizer();
+  if (!SR) {
+    sayBox.placeholder = 'Type a question, then press Enter';
+    sayBox.focus();
+    return;
+  }
+  if (roomRec) {
+    stopRoomEar();
+    mic.classList.remove('on');
+    mic.setAttribute('aria-pressed', 'false');
+    sayBox.placeholder = 'Ask, or name a country';
+    return;
+  }
+  beforeListen();
+  sayBox.placeholder = 'Listening…';
+  mic.classList.add('on');
+  mic.setAttribute('aria-pressed', 'true');
+  const done = (hint) => {
+    mic.classList.remove('on');
+    mic.setAttribute('aria-pressed', 'false');
+    sayBox.placeholder = hint;
+  };
+  const start = () => {
+    if (!document.getElementById('tour-overlay')) return;
+    stopRoomEar();
+    const gen = roomEarGen;
+    const rec = new SR();
+    roomRec = rec;
+    rec.continuous = false;
+    rec.interimResults = true;
+    rec.lang = Voice.englishLocale();
+    let heard = '';
+    rec.onresult = (ev) => {
+      if (gen !== roomEarGen) return;
+      let next = '';
+      for (let i = ev.resultIndex; i < ev.results.length; i++) next += ev.results[i][0].transcript || '';
+      heard = next.trim();
+      if (heard) sayBox.value = heard;
+    };
+    rec.onerror = () => { if (gen === roomEarGen) done('Try the mic again, or type a question'); };
+    rec.onend = () => {
+      if (gen !== roomEarGen) return;
+      roomRec = null;
+      done('Ask, or name a country');
+      const said = (sayBox.value || heard).trim();
+      if (!said || roomEcho(said, session)) return;
+      sayBox.value = '';
+      onText(said);
+    };
+    try { rec.start(); } catch (e) { roomRec = null; done('Type a question, then press Enter'); sayBox.focus(); }
+  };
+  askMicPermission().then(ok => {
+    if (!ok) { done('Allow the microphone, or type a question'); sayBox.focus(); return; }
+    start();
+  });
+}
+
 window.__myatlasticTour = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
+  if (!c || !window.RoomTalk) return;
+  stopRoomEar();
+  Voice.stop();
   setMode('explore');
   if (window.innerWidth <= 900) setMobilePane('globe');
   state.activeCountry = c;
   renderList();
   renderDetails();
   if (globeAPI) globeAPI.focus(c);
-  const visit = longTour(c);
+
+  const animal = animalFor(c) || ['guide', '🐾'];
   const placeNow = landmarkFor(c) || {};
-  const stops = [{
+  const local = languagesOf(c).find(l => l.lang !== 'en');
+  const hostLang = local && ANIMAL_HOST[local.lang] ? local.lang : 'en';
+  const animalName = String(animal[0] || 'guide').replace(/\s*\([^)]*\)/g, '').trim();
+  const host = fillTourLine(ANIMAL_HOST[hostLang] || ANIMAL_HOST.en, { animal: animalName, place: placeNow.name || c.n });
+  const stop = {
     kicker: c.n,
-    title: placeNow.name || c.n,
-    lines: visit.lines,
-    locale: visit.locale,
-    body: visit.lines[0] || '',
-    fact: placeNow.fact || '',
-    look: [placeNow.name, c.n, (animalFor(c) || [])[0], c.n === 'France' ? 'Louvre Museum' : '', c.n === 'France' ? 'Eiffel Tower' : '', c.cap].filter(Boolean),
-    emoji: visit.emoji,
-    host: visit.host,
+    look: [placeNow.name, c.n, animal[0], c.cap].filter(Boolean),
     frames: []
-  }];
-  loadStoryFrames(c, stops).then(() => {
-    if (!overlay.isConnected) return;
-    const sNow = stops[step];
-    const n = Number(overlay.dataset.line || 0);
-    const pics = sNow && sNow.frames;
-    if (pics && pics.length) paintStoryFrame(pics[n % pics.length], n);
-  });
-  let step = 0;
+  };
+
   const old = document.getElementById('tour-overlay');
   if (old) old.remove();
   const overlay = document.createElement('div');
   overlay.id = 'tour-overlay';
   overlay.className = 'tour-overlay';
   document.body.appendChild(overlay);
+  const opener = document.activeElement;
+
+  loadStoryFrames(c, [stop]).then(() => {
+    if (!overlay.isConnected) return;
+    let frameN = 0;
+    const spin = () => {
+      if (!overlay.isConnected) return;
+      if (stop.frames.length) paintStoryFrame(stop.frames[frameN % stop.frames.length], frameN);
+      frameN++;
+      tourTimer = setTimeout(spin, 8000);
+    };
+    spin();
+  });
+
+  overlay.innerHTML =
+    '<div class="tour-card" role="dialog" aria-modal="true" aria-label="A visit to ' + escapeHtml(c.n) + '">' +
+      '<div style="display:flex;justify-content:space-between;align-items:center">' +
+        '<div class="tour-kicker">' + escapeHtml(c.n) + '</div>' +
+        '<span class="tour-pin" aria-hidden="true"></span>' +
+      '</div>' +
+      '<div class="tour-host"><span class="tour-animal" aria-hidden="true">' + (animal[1] || '🐾') + '</span><span class="tour-host-line">' + escapeHtml(host) + '</span></div>' +
+      '<div class="tour-stage" id="tour-stage"></div>' +
+      '<h2>' + escapeHtml(placeNow.name || c.n) + '</h2>' +
+      '<p class="tour-story" aria-live="polite">Getting ready…</p>' +
+      '<p class="tour-sub"></p>' +
+      '<p class="tour-note" hidden></p>' +
+      '<div class="tour-next-row" hidden></div>' +
+      '<div class="tour-talk">' +
+        '<input id="tour-say" type="text" placeholder="Ask, or name a country" aria-label="Ask the guide, or name a country" autocomplete="off" enterkeyhint="send" />' +
+        '<button type="button" class="back-btn tour-mic" id="tour-mic" aria-pressed="false">Mic</button>' +
+      '</div>' +
+      '<div class="tour-actions">' +
+        '<button type="button" class="back-btn" id="tour-again">Again</button>' +
+        '<button type="button" class="btn-primary" id="tour-next">Pause</button>' +
+        '<button type="button" class="back-btn" id="tour-close">Close</button>' +
+      '</div>' +
+    '</div>';
+
+  const storyEl = overlay.querySelector('.tour-story');
+  const subEl = overlay.querySelector('.tour-sub');
+  const nextRow = overlay.querySelector('.tour-next-row');
+  const mainBtn = $('tour-next');
+  const tour = { data: null, book: 'en', session: null, index: 0, mode: 'idle' };
+  const owner = 'narration:' + c.n;
+
+  const setMain = () => {
+    const label = tour.mode === 'playing' || tour.mode === 'loading' ? 'Pause' : tour.mode === 'paused' ? 'Resume' : 'Continue';
+    mainBtn.textContent = label;
+    mainBtn.setAttribute('aria-label', label + ' the visit');
+  };
+  const caption = (seg) => {
+    storyEl.textContent = (seg && (seg[tour.book] || seg.en)) || '';
+    storyEl.setAttribute('lang', localeForBook(c, tour.book));
+    subEl.textContent = tour.book !== 'en' && seg && seg.en ? seg.en : '';
+  };
+  const showNext = () => {
+    const next = (tour.data && tour.data.next) || [];
+    if (!next.length) return;
+    nextRow.hidden = false;
+    nextRow.innerHTML = '<span>Where next?</span>' + next.map(n => {
+      const nc = COUNTRIES.find(x => x.n === n);
+      return nc ? '<button type="button" class="chip" data-go="' + escapeHtml(n) + '">' + (nc.flag || '') + ' ' + escapeHtml(n) + '</button>' : '';
+    }).join('');
+    nextRow.querySelectorAll('[data-go]').forEach(b => { b.onclick = () => window.__myatlasticTour(b.dataset.go); });
+  };
+
+  const playNarration = (from) => {
+    if (!tour.data || !overlay.isConnected) return;
+    nextRow.hidden = true;
+    const parts = narrationParts(c, tour.data, tour.book);
+    Voice.play(parts, {
+      owner: owner,
+      startAt: Math.min(from || 0, parts.length - 1),
+      onPart: (i) => {
+        tour.index = i;
+        tour.session.narrIndex = i;
+        caption(tour.data.segments[i]);
+        tour.session.spoken.push(tour.data.segments[i][tour.book] || '');
+      },
+      onState: (s, info) => {
+        if (!overlay.isConnected) return;
+        if (s === 'stopped' && Voice.playing()) return;
+        tour.mode = s === 'ended' || s === 'stopped' || s === 'error' ? 'idle' : s;
+        if (s === 'ended') { tour.session.narrIndex = 0; showNext(); }
+        if (s === 'error') { storyEl.textContent = voiceProblem(info); subEl.textContent = ''; }
+        setMain();
+      }
+    });
+  };
+
+  const playTalk = (lines) => {
+    const clean = (lines || []).filter(Boolean);
+    if (!clean.length) return;
+    const parts = [];
+    const screens = [];
+    clean.forEach(line => {
+      const bits = talkParts(line, tour.session);
+      bits.forEach(() => screens.push(lineForScreen(line)));
+      bits.forEach(b => parts.push(b));
+      tour.session.spoken.push(lineForScreen(line));
+    });
+    storyEl.textContent = lineForScreen(clean[0]);
+    storyEl.removeAttribute('lang');
+    subEl.textContent = '';
+    Voice.play(parts, {
+      owner: 'talk:' + c.n,
+      onPart: (i) => { storyEl.textContent = screens[i] || storyEl.textContent; },
+      onState: (s, info) => {
+        if (!overlay.isConnected) return;
+        if (s === 'stopped' && Voice.playing()) return;
+        tour.mode = s === 'playing' || s === 'loading' ? s : 'idle';
+        if (s === 'error') storyEl.textContent = voiceProblem(info);
+        setMain();
+      }
+    });
+  };
+
   const close = () => {
     if (tourTimer) clearTimeout(tourTimer);
     tourTimer = null;
-    stopSpeaking();
+    stopRoomEar();
+    Voice.stop();
+    document.removeEventListener('keydown', onKey);
     if (overlay.parentNode) overlay.remove();
+    if (opener && opener.focus) opener.focus();
   };
-  const show = () => {
-    if (tourTimer) { clearTimeout(tourTimer); tourTimer = null; }
-    const s = stops[step];
-    overlay.innerHTML =
-      '<div class="tour-card" role="dialog" aria-label="Tour of ' + escapeHtml(c.n) + '">' +
-        '<div style="display:flex;justify-content:space-between;align-items:center">' +
-          '<div class="tour-kicker">' + escapeHtml(s.kicker) + ' · ' + (step + 1) + ' of ' + stops.length + '</div>' +
-          '<span class="tour-pin" aria-hidden="true"></span>' +
-        '</div>' +
-        '<div class="tour-host"><span class="tour-animal">' + (s.emoji || '🐾') + '</span><span class="tour-host-line">' + escapeHtml(s.host || '') + '</span></div>' +
-        '<div class="tour-stage" id="tour-stage"></div>' +
-        '<h2>' + escapeHtml(s.title) + '</h2>' +
-        (s.fact ? '<p class="tour-fact">' + escapeHtml(s.fact) + '</p>' : '') +
-        '<p class="tour-story">' + escapeHtml(s.lines[0] || '') + '</p>' +
-        '<div class="tour-route">' + stops.map((_, n) => '<span class="tour-dot' + (n === step ? ' on' : '') + '"></span>').join('') + '</div>' +
-        '<div class="tour-actions">' +
-          '<button type="button" class="back-btn" id="tour-back"' + (step === 0 ? ' disabled' : '') + '>Back</button>' +
-          '<button type="button" class="btn-primary" id="tour-next">' + (s.lines && s.lines.length > 1 ? 'Next' : 'Finish') + '</button>' +
-          '<button type="button" class="back-btn" id="tour-close">Close</button>' +
-        '</div>' +
-      '</div>';
-    $('tour-close').onclick = close;
-    $('tour-back').onclick = () => {
-      const n = Number(overlay.dataset.line || 0);
-      if (n > 0) sayLine(n - 1);
-    };
-    $('tour-next').onclick = () => {
-      const n = Number(overlay.dataset.line || 0);
-      if (s.lines && n + 1 < s.lines.length) sayLine(n + 1);
-      else close();
-    };
-    overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
-    let moved = false;
-    const goOn = () => {
-      if (moved || !document.getElementById('tour-overlay')) return;
-      moved = true;
-      tourTimer = setTimeout(() => {
-        if (!document.getElementById('tour-overlay')) return;
-        if (step < stops.length - 1) { step++; show(); }
-        else close();
-      }, speech.available ? 1400 : 6500);
-    };
-    const frames = () => (s.frames && s.frames.length) ? s.frames : (c.img ? [wikiImage(c.img)] : []);
-    const sayLine = (n) => {
-      if (!document.getElementById('tour-overlay')) return;
-      overlay.dataset.line = String(n);
-      const pics = frames();
-      if (pics.length) paintStoryFrame(pics[Math.min(n, pics.length - 1)], n);
-      const story = overlay.querySelector('.tour-story');
-      if (story && s.lines && s.lines[n]) story.textContent = s.lines[n];
-      const kick = overlay.querySelector('.tour-kicker');
-      if (kick && s.lines) kick.textContent = c.n + ' · ' + (n + 1) + ' of ' + s.lines.length;
-      const nextBtn = document.getElementById('tour-next');
-      if (nextBtn && s.lines) nextBtn.textContent = (n + 1 < s.lines.length) ? 'Next' : 'Finish';
-      if (!s.lines || n >= s.lines.length) { goOn(); return; }
-      if (!speech.available) {
-        tourTimer = setTimeout(() => sayLine(n + 1), 4000);
-        return;
-      }
-      const safety = setTimeout(() => sayLine(n + 1), 22000);
-      speakLines([s.lines[n]], s.locale || tourLocale(c), [], 1, true, () => {
-        clearTimeout(safety);
-        if (n + 1 < s.lines.length) sayLine(n + 1);
-        else goOn();
-      });
-    };
-    sayLine(0);
+  const onKey = (ev) => { if (ev.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+
+  const onUser = (text) => {
+    if (!overlay.isConnected || !tour.session) return;
+    Voice.stop();
+    const res = window.RoomTalk.reply(text, tour.session);
+    tour.session.turns++;
+    if (res.switchTo) {
+      const next = COUNTRIES.find(x => x.n === res.switchTo);
+      if (next) { window.__myatlasticTour(next.n); return; }
+    }
+    if (res.resume) { playNarration(tour.index); return; }
+    playTalk(res.lines);
   };
-  show();
+
+  $('tour-close').onclick = close;
+  $('tour-again').onclick = () => { if (tour.data) playNarration(tour.index); };
+  mainBtn.onclick = () => {
+    if (tour.mode === 'playing' && Voice.playing(owner)) { Voice.pause(); return; }
+    if (tour.mode === 'paused') { Voice.resume(); return; }
+    if (tour.mode === 'playing' || tour.mode === 'loading') { Voice.stop(); return; }
+    playNarration(tour.index);
+  };
+  const sayBox = $('tour-say');
+  sayBox.addEventListener('keydown', (ev) => {
+    if (ev.key !== 'Enter') return;
+    ev.preventDefault();
+    const text = sayBox.value.trim();
+    if (!text) return;
+    sayBox.value = '';
+    onUser(text);
+  });
+  const mic = $('tour-mic');
+  mic.onclick = () => listenTourMic(onUser, mic, sayBox, tour.session || { spoken: [] }, () => Voice.stop());
+  overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
+  mainBtn.focus();
+
+  Promise.all([Content.narration(c.n), local ? Content.book(local.book) : Promise.resolve(null)]).then(([data, book]) => {
+    if (!overlay.isConnected) return;
+    tour.session = bootRoom(c, book);
+    if (!data) { storyEl.textContent = "This visit couldn't load. Check your connection."; return; }
+    tour.data = data;
+    // The tour always speaks the country's own language. English only where
+    // English is the local language, or no voice can say the local one yet.
+    const localBooks = (data.languages || []).filter(b => b !== 'en');
+    const voiced = localBooks.filter(b => Voice.canSpeak(localeForBook(c, b)) !== false);
+    tour.book = voiced[0] || 'en';
+    if (localBooks.length && !voiced.length) {
+      const note = overlay.querySelector('.tour-note');
+      note.hidden = false;
+      note.textContent = languageLabel(localeForBook(c, localBooks[0])) + " audio isn't available yet, so this visit is in English.";
+    }
+    tour.index = tour.session.narrIndex || 0;
+    caption(data.segments[tour.index]);
+    playNarration(tour.index);
+  });
 };
 
 function $(id) { return document.getElementById(id); }
@@ -4172,11 +3570,15 @@ function renderList() {
   });
 }
 
+let detailsCountry = null;
 function renderDetails() {
   const root = $('details-pane');
   const c = state.activeCountry;
+  // A new country silences the last one: no narration talks over another.
+  if (detailsCountry && c && detailsCountry !== c.n) Voice.stop();
+  detailsCountry = c ? c.n : null;
   if (!c) {
-    root.innerHTML = '<div class="placeholder">Tap a country on the globe or in the list.</div>';
+    root.innerHTML = '<div class="placeholder">Choose a country in the list.</div>';
     return;
   }
 
@@ -4194,8 +3596,7 @@ function renderDetails() {
     '</div></div>';
   const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
   html += '<div class="detail-name"><span class="detail-flag">' + (c.flag || '🌐') + '</span><span>' + escapeHtml(c.n) + '</span>' +
-    (speech.available ? '<button class="speak-btn" onclick="window.__myatlasticSpeak(' + cq + ')" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>' : '') +
-    (speech.available ? '<button class="speak-btn read-aloud-btn" onclick="window.__myatlasticReadAloud(' + cq + ')" aria-label="Read this country aloud" title="Read aloud">📖</button>' : '') +
+    voiceButton(c.n, englishLocaleFor(c), 'Hear how to say ' + c.n, 'vbtn-inline') +
     '</div>';
   html += '<div class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '">' +
     '<span class="local-time-label">Local time</span>' +
@@ -4205,22 +3606,9 @@ function renderDetails() {
   // it is the hook that makes a child want to dig in (and unlock Pro).
   html += '<div class="wow-fact"><span class="wow-spark">✨</span><span><span class="wow-label">Wow fact</span>' + escapeHtml(wowFor(c)) + '</span></div>';
 
-  // USEFUL PHRASES in the local language — phonetic spell-out + spoken playback.
-  const phrases = phrasesFor(c);
-  const langLabel = escapeHtml(primaryLang(c) || c.lang);
-  html += '<div class="hello-card">' +
-    '<div class="hello-head">🗣 ' + (phrases.length > 1 ? 'Useful phrases' : 'Say hello') + ' in ' + langLabel + '</div>';
-  phrases.forEach((p, i) => {
-    html += '<div class="phrase-row' + (i === 0 ? ' first' : '') + '">' +
-      '<div class="phrase-en">' + escapeHtml(p.label) + '</div>' +
-      '<div class="phrase-main">' +
-        '<span class="phrase-loc">' + escapeHtml(p.t) + '</span>' +
-        (speech.available ? '<button class="hello-speak phrase-speak k-' + p.key + '" onclick="window.__myatlasticSpeakPhrase(' + cq + ', \'' + p.key + '\')" aria-label="Hear it" title="Hear it">🔊</button>' : '') +
-      '</div>' +
-      (p.p ? '<div class="phrase-phon">say it: <b>' + escapeHtml(p.p) + '</b></div>' : '') +
-    '</div>';
-  });
-  html += '</div>';
+  // LISTEN — a short spoken visit, then the PHRASEBOOK.
+  html += listenCardHtml(c);
+  html += phrasebookHtml(c);
 
   const animal = animalFor(c);
   if (c.food || animal || c.sport || c.attire) {
@@ -4312,6 +3700,8 @@ function renderDetails() {
   html += '<div class="footer-note">On the map: ' + c.lat.toFixed(1) + '°, ' + c.lon.toFixed(1) + '°. Photos from Wikimedia Commons.</div>';
   root.innerHTML = html;
   watchCountryClock(c.n);
+  mountListen(c);
+  mountPhrasebook(c);
 }
 
 window.__myatlasticOpenPaywall = () => setMode('paywall');
@@ -4692,85 +4082,6 @@ function renderMystery() {
   }
 }
 window.__myatlasticExitMystery = () => { mysteryState = null; setMode('explore'); };
-
-/* ============================================================
- * TRUE SIZE — drag/pick two countries to see their real relative
- * size, plus the famous Mercator-map distortion reveal.
- * ============================================================ */
-const AREA_KM2 = {
-  'Afghanistan':652230,'Albania':28748,'Algeria':2381741,'Andorra':468,'Angola':1246700,'Antigua and Barbuda':442,'Argentina':2780400,'Armenia':29743,'Australia':7692024,'Austria':83879,'Azerbaijan':86600,'Bahamas':13943,'Bahrain':765,'Bangladesh':147570,'Barbados':430,'Belarus':207600,'Belgium':30528,'Belize':22966,'Benin':114763,'Bhutan':38394,'Bolivia':1098581,'Bosnia and Herzegovina':51197,'Botswana':581730,'Brazil':8515767,'Brunei':5765,'Bulgaria':110879,'Burkina Faso':272967,'Burundi':27834,'Cambodia':181035,'Cameroon':475442,'Canada':9984670,'Cape Verde':4033,'Central African Republic':622984,'Chad':1284000,'Chile':756102,'China':9596961,'Colombia':1141748,'Comoros':1862,'Congo (DRC)':2344858,'Congo (Republic)':342000,'Costa Rica':51100,'Côte d\'Ivoire':322463,'Croatia':56594,'Cuba':109884,'Cyprus':9251,'Czech Republic':78867,'Denmark':43094,'Djibouti':23200,'Dominica':751,'Dominican Republic':48671,'Ecuador':283561,'Egypt':1001450,'El Salvador':21041,'Equatorial Guinea':28051,'Eritrea':117600,'Estonia':45227,'Eswatini':17364,'Ethiopia':1104300,'Fiji':18272,'Finland':338424,'France':551695,'Gabon':267668,'Gambia':11295,'Georgia':69700,'Germany':357114,'Ghana':238533,'Greece':131957,'Grenada':344,'Guatemala':108889,'Guinea':245857,'Guinea-Bissau':36125,'Guyana':214969,'Haiti':27750,'Honduras':112492,'Hungary':93028,'Iceland':103000,'India':3287263,'Indonesia':1904569,'Iran':1648195,'Iraq':438317,'Ireland':70273,'Israel':20770,'Italy':301340,'Jamaica':10991,'Japan':377975,'Jordan':89342,'Kazakhstan':2724900,'Kenya':580367,'Kiribati':811,'Kosovo':10887,'Kuwait':17818,'Kyrgyzstan':199951,'Laos':236800,'Latvia':64589,'Lebanon':10452,'Lesotho':30355,'Liberia':111369,'Libya':1759540,'Liechtenstein':160,'Lithuania':65300,'Luxembourg':2586,'Madagascar':587041,'Malawi':118484,'Malaysia':330803,'Maldives':300,'Mali':1240192,'Malta':316,'Marshall Islands':181,'Mauritania':1030700,'Mauritius':2040,'Mexico':1964375,'Micronesia':702,'Moldova':33846,'Monaco':2,'Mongolia':1564110,'Montenegro':13812,'Morocco':446550,'Mozambique':801590,'Myanmar':676578,'Namibia':825615,'Nauru':21,'Nepal':147181,'Netherlands':41850,'New Zealand':270467,'Nicaragua':130373,'Niger':1267000,'Nigeria':923768,'North Korea':120538,'North Macedonia':25713,'Norway':385207,'Oman':309500,'Pakistan':881913,'Palau':459,'Palestine':6020,'Panama':75417,'Papua New Guinea':462840,'Paraguay':406752,'Peru':1285216,'Philippines':300000,'Poland':312696,'Portugal':92090,'Qatar':11586,'Romania':238397,'Russia':17098242,'Rwanda':26338,'Saint Kitts and Nevis':261,'Saint Lucia':616,'Saint Vincent and the Grenadines':389,'Samoa':2842,'San Marino':61,'São Tomé and Príncipe':964,'Saudi Arabia':2149690,'Senegal':196722,'Serbia':88361,'Seychelles':452,'Sierra Leone':71740,'Singapore':728,'Slovakia':49035,'Slovenia':20273,'Solomon Islands':28896,'Somalia':637657,'South Africa':1221037,'South Korea':100210,'South Sudan':619745,'Spain':505992,'Sri Lanka':65610,'Sudan':1861484,'Suriname':163820,'Sweden':450295,'Switzerland':41285,'Syria':185180,'Taiwan':36193,'Tajikistan':143100,'Tanzania':945087,'Thailand':513120,'Timor-Leste':14874,'Togo':56785,'Tonga':747,'Trinidad and Tobago':5130,'Tunisia':163610,'Turkey':783562,'Turkmenistan':488100,'Tuvalu':26,'Uganda':241550,'Ukraine':603500,'United Arab Emirates':83600,'United Kingdom':243610,'United States':9833517,'Uruguay':176215,'Uzbekistan':447400,'Vanuatu':12189,'Vatican City':0.5,'Venezuela':916445,'Vietnam':331212,'Yemen':527968,'Zambia':752618,'Zimbabwe':390757,
-};
-
-function trueSizeCountries() {
-  return SOVEREIGN_COUNTRIES.filter(c => AREA_KM2[c.n]).sort((a, b) => a.n.localeCompare(b.n));
-}
-function fmtArea(km2) {
-  if (km2 >= 1000) return Math.round(km2).toLocaleString() + ' km²';
-  return km2 + ' km²';
-}
-
-function renderTrueSize(aName, bName) {
-  const list = trueSizeCountries();
-  const a = COUNTRIES.find(c => c.n === aName) || list[0];
-  const b = COUNTRIES.find(c => c.n === bName) || list.find(c => c.n !== a.n);
-  const areaA = AREA_KM2[a.n], areaB = AREA_KM2[b.n];
-  const big = Math.max(areaA, areaB);
-  // Square side ∝ sqrt(area) so the *area* (not the side) is to scale.
-  const MAX = 170;
-  const sideA = MAX * Math.sqrt(areaA / big);
-  const sideB = MAX * Math.sqrt(areaB / big);
-  const ratio = areaA >= areaB ? (areaA / areaB) : (areaB / areaA);
-  const bigger = areaA >= areaB ? a : b, smaller = areaA >= areaB ? b : a;
-  // Mercator illusion: a country's area looks 1/cos²(lat) bigger on a flat map.
-  const inflate = c => Math.min(99, 1 / Math.pow(Math.cos(c.lat * Math.PI / 180), 2));
-
-  const opts = sel => list.map(c => '<option value="' + escapeHtml(c.n) + '"' + (c.n === sel ? ' selected' : '') + '>' + escapeHtml(c.n) + '</option>').join('');
-
-  return '<div class="ts-pickers">' +
-      '<select id="ts-a" class="ts-select">' + opts(a.n) + '</select>' +
-      '<span class="ts-vs">vs</span>' +
-      '<select id="ts-b" class="ts-select">' + opts(b.n) + '</select>' +
-    '</div>' +
-    '<div class="ts-stage">' +
-      '<div class="ts-sq" style="width:' + sideA.toFixed(0) + 'px;height:' + sideA.toFixed(0) + 'px;background:rgba(212,160,86,0.30);border-color:var(--accent)"><span>' + a.flag + '</span></div>' +
-      '<div class="ts-sq" style="width:' + sideB.toFixed(0) + 'px;height:' + sideB.toFixed(0) + 'px;background:rgba(110,168,196,0.30);border-color:var(--accent-2)"><span>' + b.flag + '</span></div>' +
-    '</div>' +
-    '<div class="ts-verdict"><b>' + escapeHtml(bigger.n) + '</b> is about <b>' + (ratio >= 10 ? Math.round(ratio) : ratio.toFixed(1)) + '×</b> the size of <b>' + escapeHtml(smaller.n) + '</b>.</div>' +
-    '<div class="ts-areas">' +
-      '<span>' + a.flag + ' ' + escapeHtml(a.n) + ': ' + fmtArea(areaA) + '</span>' +
-      '<span>' + b.flag + ' ' + escapeHtml(b.n) + ': ' + fmtArea(areaB) + '</span>' +
-    '</div>' +
-    '<div class="ts-illusion">🗺️ Map trick: on a flat world map, <b>' + escapeHtml(a.n) + '</b> looks about <b>' + inflate(a).toFixed(1) + '×</b> bigger than it really is, and <b>' + escapeHtml(b.n) + '</b> about <b>' + inflate(b).toFixed(1) + '×</b>. The further from the equator, the more a country gets stretched!</div>';
-}
-
-function openTrueSize() {
-  let modal = document.getElementById('truesize-modal');
-  if (modal) modal.remove();
-  modal = document.createElement('div');
-  modal.id = 'truesize-modal';
-  modal.className = 'ts-modal';
-  const startA = (state.activeCountry && AREA_KM2[state.activeCountry.n]) ? state.activeCountry.n : 'Greenland';
-  const aName = AREA_KM2[startA] ? startA : 'France';
-  modal.innerHTML = '<div class="ts-box">' +
-    '<button class="ts-close" aria-label="Close">✕</button>' +
-    '<h2 class="ts-title">📐 True Size</h2>' +
-    '<p class="ts-intro">Maps stretch countries near the poles. Pick two and see how big they <i>really</i> are.</p>' +
-    '<div id="ts-body">' + renderTrueSize(aName, aName === 'Russia' ? 'India' : 'Russia') + '</div>' +
-    '</div>';
-  document.body.appendChild(modal);
-  const rewire = () => {
-    const av = $('ts-a').value, bv = $('ts-b').value;
-    $('ts-body').innerHTML = renderTrueSize(av, bv);
-    wire();
-  };
-  const wire = () => {
-    $('ts-a').onchange = rewire;
-    $('ts-b').onchange = rewire;
-  };
-  wire();
-  modal.querySelector('.ts-close').onclick = () => modal.remove();
-  modal.onclick = e => { if (e.target === modal) modal.remove(); };
-}
 
 /* ============================================================
  * SETTINGS + PRO TOOLS — age bands, reading help (dyslexia font),
@@ -5170,25 +4481,14 @@ function newQuizQuestion() {
 }
 
 // A small card that launches the Globe Flag Hunt — shown at the top of the Quiz tab.
-function huntLauncherHtml() {
-  return '<div class="center-card hunt-launch">' +
-    '<div class="hunt-launch-row">' +
-      '<div><div class="hunt-launch-title">🌍 Globe Flag Hunt</div>' +
-      '<div class="hunt-launch-sub">See a flag, then tap that country on the 3D globe.</div></div>' +
-      '<button class="btn-primary" id="hunt-start">Play</button>' +
-    '</div></div>';
-}
-function wireHuntLauncher() { const b = $('hunt-start'); if (b) b.onclick = startGlobeHunt; }
-
 function renderQuiz() {
   const root = $('view-quiz');
   if (!canQuiz()) {
-    root.innerHTML = huntLauncherHtml() +
+    root.innerHTML =
       '<div class="center-card quiz-card"><div class="quiz-eyebrow">Daily limit reached</div>' +
       '<h2 style="font-size:24px;margin:20px 0">You have used your 3 free quizzes today</h2>' +
       '<p style="color:var(--ink-dim);margin-bottom:24px">Upgrade for unlimited quizzes.</p>' +
       '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button></div>';
-    wireHuntLauncher();
     return;
   }
 
@@ -5223,7 +4523,7 @@ function renderQuiz() {
       textFn = c => c.flag + ' ' + c.n; break;
   }
 
-  root.innerHTML = huntLauncherHtml() +
+  root.innerHTML =
     '<div class="center-card quiz-card">' +
     '<div class="quiz-eyebrow">' + eyebrow + '</div>' + promptHtml +
     '<div class="quiz-options">' +
@@ -5231,7 +4531,6 @@ function renderQuiz() {
     '</div>' +
     '<div class="quiz-score">Score: ' + state.quiz.score + ' / ' + state.quiz.total + '</div>' +
     '</div>';
-  wireHuntLauncher();
 
   const card = root.querySelector('.quiz-card');
   card.querySelectorAll('.quiz-option').forEach(btn => {
@@ -5456,7 +4755,7 @@ function renderPuzzle() {
     pz.hint = name;
     pz.message = name + ' matches ' + ((c && c.flag) || 'this flag') + '.';
     pz.tone = '';
-    if (speech.available) speakLines([name + ' matches the glowing flag.'], narrationLocale(), [], 1, true);
+    sayQuietly(name + ' matches the glowing flag.');
     renderPuzzle();
   };
   root.querySelectorAll('.puzzle-piece').forEach(btn => {
@@ -5512,7 +4811,7 @@ function tryPlacePuzzle(piece, target) {
     pz.selected = null;
     pz.message = 'Yes. That is ' + piece + '.';
     pz.tone = 'ok';
-    if (speech.available) speakLines(['Yes. That is ' + piece + '.'], narrationLocale(), [], 1, true);
+    sayQuietly('Yes. That is ' + piece + '.');
   } else {
     pz.message = 'That name does not match this flag.';
     pz.tone = 'no';
@@ -5594,12 +4893,6 @@ function renderToday() {
     '<p>Clues about animals, food, and language. Guess the country.</p>' +
     '<span class="today-go">Play</span>' +
     '</button>';
-  html += '<button type="button" class="today-card" id="today-hunt">' +
-    '<div class="today-kicker">Game</div>' +
-    '<h3>🌍 Globe Flag Hunt</h3>' +
-    '<p>See a flag, then tap that country on the globe. Free, any day.</p>' +
-    '<span class="today-go">Play</span>' +
-    '</button>';
   html += '<button type="button" class="today-card" id="today-passport">' +
     '<div class="today-kicker">Passport</div>' +
     '<h3>' + visited + ' / ' + total + ' countries</h3>' +
@@ -5623,7 +4916,6 @@ function renderToday() {
   $('today-daily').onclick = () => setMode('daily');
   $('today-puzzle').onclick = () => setMode('puzzle');
   $('today-mystery').onclick = () => setMode('mystery');
-  $('today-hunt').onclick = () => startGlobeHunt();
   $('today-passport').onclick = () => setMode('passport');
   const homeBtn = $('today-home');
   if (homeBtn) homeBtn.onclick = () => {
@@ -5654,7 +4946,7 @@ function renderDaily() {
   let html = '<div class="center-card">';
   html += '<div class="quiz-eyebrow">Today · ' + escapeHtml(dateStr) + '</div>';
   html += '<div class="daily-title"><span class="daily-flag">' + c.flag + '</span><span>' + escapeHtml(c.n) + '</span>' +
-    (speech.available ? '<button class="speak-btn" onclick="window.__myatlasticSpeak(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>' : '') +
+    voiceButton(c.n, englishLocaleFor(c), 'Hear how to say ' + c.n, 'vbtn-inline') +
     '</div>';
   html += '<div style="color:var(--ink-dim);font-family:monospace;font-size:11px;text-transform:uppercase;letter-spacing:.15em;margin-bottom:18px">' + escapeHtml(c.c) + '</div>';
   if (imgUrl) {
@@ -5750,7 +5042,7 @@ function renderCompareCol(c, label) {
     '<button class="compare-swap" data-slot="' + label + '" title="Change country">Change ✕</button>' +
     '</div>';
   html += '<div class="detail-name" style="font-size:20px"><span class="detail-flag" style="font-size:26px">' + c.flag + '</span><span>' + escapeHtml(c.n) + '</span>' +
-    (speech.available ? '<button class="speak-btn" onclick="window.__myatlasticSpeak(' + JSON.stringify(c.n).replace(/"/g, '&quot;') + ')" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>' : '') +
+    voiceButton(c.n, englishLocaleFor(c), 'Hear how to say ' + c.n, 'vbtn-inline') +
     '</div>';
   if (imgUrl) {
     html += '<div class="detail-image" style="margin:12px 0"><img src="' + imgUrl + '" alt="" loading="lazy" data-flag="' + (c.flag || '🌐') + '" onerror="window.__myatlasticImgFallback(this)"></div>';
@@ -6502,16 +5794,6 @@ function gameShuffle(arr) {
 
 function renderGame() {
   const root = $('view-game');
-  if (!state.isPro) {
-    root.innerHTML = '<div class="center-card quiz-card">' +
-      '<div style="text-align:left"><button class="back-btn" onclick="setMode(\'explore\')">← Exit</button></div>' +
-      '<div class="quiz-eyebrow">Pro feature</div>' +
-      '<h2 style="font-size:24px;margin:20px 0">🔒 Spell-the-Country is a Pro feature</h2>' +
-      '<p style="color:var(--ink-dim);margin-bottom:24px">Spell each country from scrambled letters and learn as you play. Unlock the game with Myatlastic Pro.</p>' +
-      '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>' +
-      '</div>';
-    return;
-  }
   if (!gameState || gameState.status === 'intro') { renderGameIntro(root); return; }
   if (gameState.status === 'over') { renderGameOver(root); return; }
   renderGameRound(root);
@@ -6521,7 +5803,7 @@ function renderGameIntro(root) {
   root.innerHTML =
     '<div class="center-card" style="max-width:480px;text-align:center">' +
       '<div style="text-align:left"><button class="back-btn" onclick="window.__myatlasticExitGame()">← Back</button></div>' +
-      '<div class="quiz-eyebrow">Pro game</div>' +
+      '<div class="quiz-eyebrow">Spelling game</div>' +
       '<h2 style="color:var(--accent);font-size:30px;margin:14px 0 6px">Spell-the-Country</h2>' +
       '<p style="color:var(--ink-dim);margin-bottom:24px;font-size:14px">See the flag, hear the name in an American accent, then spell the country from the scrambled letters. Learn at your own pace — no timer, no pressure.</p>' +
       '<button class="btn-primary" id="game-start" style="width:100%;padding:14px">Start playing</button>' +
@@ -6597,9 +5879,7 @@ function renderGameRound(root) {
     statusHtml = '<div style="color:var(--danger);margin:10px 0">Not quite — tap a letter to remove it, then try again.</div>';
   }
 
-  const speakBtn = speech.available
-    ? '<button onclick="window.__myatlasticSpeak(' + JSON.stringify(t.n).replace(/"/g, '&quot;') + ')" aria-label="Hear the name" style="background:var(--panel-2);border:1px solid var(--line);border-radius:50%;width:46px;height:46px;font-size:20px;cursor:pointer">🔊</button>'
-    : '';
+  const speakBtn = voiceButton(t.n, englishLocaleFor(t), 'Hear the name', 'vbtn-big');
 
   root.innerHTML =
     '<div class="center-card" style="max-width:520px;text-align:center">' +
@@ -6806,20 +6086,6 @@ function setupGlobe(THREE) {
   ring.visible = false;
   scene.add(ring);
 
-  // DAY / NIGHT — point the sun at the real subsolar point so the lit and dark
-  // hemispheres match the actual time right now. Toggled off by default.
-  let dayNight = false;
-  function subsolarLocalDir() {
-    const now = new Date();
-    const start = new Date(Date.UTC(now.getUTCFullYear(), 0, 0));
-    const dayOfYear = Math.floor((now - start) / 86400000);
-    // Solar declination (deg), simple but good-enough approximation.
-    const decl = -23.44 * Math.cos((2 * Math.PI / 365) * (dayOfYear + 10));
-    const utcHours = now.getUTCHours() + now.getUTCMinutes() / 60;
-    const subLon = -15 * (utcHours - 12); // longitude where it's local noon
-    return latLonToVec3(decl, subLon, 1, THREE).normalize();
-  }
-
   // EXPLORER AVATAR — an emoji sprite that rides to the active country and bobs.
   // Levels up (icon changes) as the child unlocks more of the world.
   function makeEmojiSprite(emoji, depthTest) {
@@ -7007,14 +6273,6 @@ function setupGlobe(THREE) {
     globeGroup.rotation.y = currentRotY;
     globeGroup.rotation.x = currentRotX;
     camera.position.z += (targetZoom - camera.position.z) * 0.08;
-    if (dayNight) {
-      // Rotate the real sun direction into scene space so it tracks geography
-      // as the user spins the globe.
-      const dir = subsolarLocalDir().applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
-      sun.position.copy(dir.multiplyScalar(6));
-      sun.intensity = 1.5;
-      ambient.intensity = 0.12;
-    }
     if (ring.visible && state.activeCountry) {
       const p = latLonToVec3(state.activeCountry.lat, state.activeCountry.lon, 1.55, THREE);
       p.applyEuler(new THREE.Euler(currentRotX, currentRotY, 0, 'XYZ'));
@@ -7031,10 +6289,6 @@ function setupGlobe(THREE) {
       targetRotY = -c.lon * (Math.PI / 180) - Math.PI / 2;
       targetRotX = c.lat * (Math.PI / 180) * 0.6;
       ring.visible = true;
-    },
-    setDayNight(on) {
-      dayNight = on;
-      if (!on) { sun.position.set(5, 3, 5); sun.intensity = 1.1; ambient.intensity = 0.65; }
     },
     setFlags(on) {
       if (on) buildFlags();
@@ -7172,7 +6426,7 @@ function showCoach(c) {
   tip.id = 'coach-mark';
   tip.className = 'coach-mark';
   tip.type = 'button';
-  tip.innerHTML = '<b>' + escapeHtml(c.n) + '</b><br>Drag to spin · tap a pin';
+  tip.innerHTML = '<b>' + escapeHtml(c.n) + '</b><br>Drag to spin';
   pane.appendChild(tip);
   let frames = 0;
   const place = () => {
@@ -7316,25 +6570,14 @@ $('kids-toggle').onclick = () => {
 };
 $('search').addEventListener('input', e => { state.search = e.target.value; renderList(); });
 
-// Globe: day/night terminator toggle
-const dnBtn = $('daynight-toggle');
-if (dnBtn) dnBtn.onclick = () => {
-  const on = !dnBtn.classList.contains('on');
-  dnBtn.classList.toggle('on', on);
-  $('globe-hint').textContent = on ? 'Lit side = daytime now · dark side = night' : 'Drag to spin · tap a pin to select';
-  if (globeAPI && globeAPI.setDayNight) globeAPI.setDayNight(on);
-};
 // Globe: all-flags layer toggle
 const flagsBtn = $('flags-toggle');
 if (flagsBtn) flagsBtn.onclick = () => {
   const on = !flagsBtn.classList.contains('on');
   flagsBtn.classList.toggle('on', on);
-  $('globe-hint').textContent = on ? 'Every country\'s flag · drag to spin the world' : 'Drag to spin · tap a pin to select';
+  $('globe-hint').textContent = on ? 'Every country\'s flag · drag to spin the world' : 'Drag to spin';
   if (globeAPI && globeAPI.setFlags) globeAPI.setFlags(on);
 };
-// Globe: true-size comparison opener
-const tsBtn = $('truesize-btn');
-if (tsBtn) tsBtn.onclick = () => openTrueSize();
 // Settings / Pro tools
 const setBtn = $('settings-btn');
 if (setBtn) setBtn.onclick = () => openSettings();

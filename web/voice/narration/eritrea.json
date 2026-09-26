@@ -1,0 +1,55 @@
+{
+  "country": "Eritrea",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "A bright morning in Asmara, and the smell of fresh coffee drifts from café doorways. People sip small macchiatos at the counter, bicycles glide along palm-lined avenues, and the air is cool, because this city sits high on a plateau above the Red Sea.",
+      "ar": "صباح مشرق في أسمرة، ورائحة القهوة الطازجة تفوح من أبواب المقاهي. يرتشف الناس فناجين صغيرة من الماكياتو عند منضدة المقهى، وتنساب الدراجات في شوارع تظللها أشجار النخيل، والهواء منعش لأن المدينة تقع عاليًا على هضبة تطل على البحر الأحمر."
+    },
+    {
+      "en": "Asmara's streets are lined with buildings from the first half of the twentieth century: cinemas, cafés, and a petrol station shaped like an aeroplane with long concrete wings. The whole city centre is a UNESCO World Heritage Site.",
+      "ar": "تصطف في شوارع أسمرة مبانٍ من النصف الأول من القرن العشرين: دور سينما ومقاهٍ، ومحطة وقود على شكل طائرة بجناحين طويلين من الخرسانة. ووسط المدينة كله مدرج في قائمة التراث العالمي لليونسكو."
+    },
+    {
+      "en": "In the early evening, people come out for a slow stroll along the main avenue, greeting friends and chatting without any hurry. It's one of the nicest ways to feel the rhythm of the city.",
+      "ar": "في أول المساء يخرج الناس في نزهة هادئة على طول الشارع الرئيسي، يسلّمون على الأصدقاء ويتبادلون الأحاديث دون عجلة. إنها من أجمل الطرق للإحساس بإيقاع المدينة."
+    },
+    {
+      "en": "Eritrea is home to nine recognized ethnic groups, each with its own language and traditions, among them the Tigrinya, the Tigre, the Afar, the Saho, the Bilen and the Kunama. Tigrinya and Arabic are widely used, and English is taught in schools.",
+      "ar": "تعيش في إريتريا تسع جماعات عرقية معترف بها، لكل منها لغتها وتقاليدها، ومنها التغرينية والتغري والعفر والساهو والبلين والكوناما. وتنتشر التغرينية والعربية على نطاق واسع، وتُدرَّس الإنجليزية في المدارس."
+    },
+    {
+      "en": "Coffee here is more than a drink, it's a ceremony. Green beans are roasted over coals, ground by hand and brewed in a clay pot called a jebena. Guests are served three rounds, and it's polite to stay for all of them.",
+      "ar": "القهوة هنا أكثر من مشروب، إنها طقس. تُحمَّص حبوب البن الخضراء على الجمر، وتُطحن باليد، وتُغلى في إبريق فخاري يسمى الجبنة. ويُقدَّم للضيوف ثلاثة أدوار، ومن اللياقة أن تبقى حتى آخرها."
+    },
+    {
+      "en": "Meals are shared from one large tray lined with injera, a soft, spongy flatbread. On top go spicy stews like zigni, and everyone eats together with the right hand, tearing off pieces of bread to scoop up the food.",
+      "ar": "تُتناول الوجبات من صينية كبيرة واحدة مفروشة بالإنجيرا، وهي خبز رقيق طري كالإسفنج. وفوقها توضع أطباق حارة مثل الزقني، ويأكل الجميع معًا باليد اليمنى، يقتطعون قطعًا من الخبز ليغرفوا بها الطعام."
+    },
+    {
+      "en": "Cycling is a national passion. On weekends, riders race around the city, crowds line the roads to cheer, and Eritrean cyclists have made their mark in races abroad.",
+      "ar": "ركوب الدراجات شغف وطني. في عطلات نهاية الأسبوع يتسابق الدراجون حول المدينة، ويصطف الناس على جوانب الطرق للتشجيع، وقد ترك الدراجون الإريتريون بصمتهم في سباقات خارج البلاد."
+    },
+    {
+      "en": "From the highlands, a narrow mountain railway winds down towards the coast through tunnels and over stone bridges, and old steam locomotives still sometimes puff along it.",
+      "ar": "ومن المرتفعات ينحدر خط سكة حديد جبلي ضيق نحو الساحل عبر الأنفاق وفوق الجسور الحجرية، ولا تزال قاطرات بخارية قديمة تنفث دخانها عليه أحيانًا."
+    },
+    {
+      "en": "Down on the Red Sea, the port town of Massawa has buildings of coral stone with carved wooden balconies and graceful arches, shaped by centuries of trade across the sea.",
+      "ar": "وعلى البحر الأحمر، تضم مدينة مصوع الساحلية مباني من الحجر المرجاني بشرفات خشبية منحوتة وأقواس أنيقة، شكّلتها قرون من التجارة عبر البحر."
+    },
+    {
+      "en": "In the southeast, near the Danakil, the land drops into one of the hottest places on Earth, where Afar herders have lived with the heat and the salt for generations.",
+      "ar": "وفي الجنوب الشرقي، قرب منخفض داناكيل، تنحدر الأرض إلى واحد من أشد الأماكن حرارة على وجه الأرض، حيث يعيش رعاة العفر مع الحر والملح منذ أجيال."
+    },
+    {
+      "en": "And in the highlands, the ruins of Qohaito, an ancient town with stone columns and an old dam, remind you how long people have been farming and trading here.",
+      "ar": "وفي المرتفعات، تذكّرك أطلال قوهايتو، وهي بلدة قديمة فيها أعمدة حجرية وسد عتيق، بأن الناس يزرعون ويتاجرون هنا منذ زمن بعيد جدًا."
+    },
+    {
+      "en": "Thank you for sharing a coffee with me. Head west across the lowlands, where camels graze among the acacia trees, and Sudan is waiting.",
+      "ar": "شكرًا لأنك شاركتني فنجان القهوة. اتجه غربًا عبر السهول المنخفضة، حيث ترعى الجمال بين أشجار السنط، وستجد السودان في انتظارك."
+    }
+  ],
+  "next": ["Sudan", "Djibouti", "Ethiopia"]
+}

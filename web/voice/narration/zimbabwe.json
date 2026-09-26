@@ -1,0 +1,46 @@
+{
+  "country": "Zimbabwe",
+  "languages": ["en"],
+  "segments": [
+    {
+      "en": "The soft, rippling notes of an mbira drift across a village at dusk. This small instrument has metal keys plucked with the thumbs, and in Zimbabwe its music has been played for centuries to tell stories and call on the ancestors."
+    },
+    {
+      "en": "The country takes its name from Great Zimbabwe, a city of stone built long ago on a hilltop in the south. Its curved walls were made without any mortar, the stones fitted so skilfully that they still stand today."
+    },
+    {
+      "en": "Zimbabwe means houses of stone in the Shona language, and a carved soapstone bird found at the ruins now appears on the national flag."
+    },
+    {
+      "en": "Stone is part of the landscape too. In the Matobo Hills, giant granite boulders balance on top of one another as if a giant had stacked them, and caves there hold ancient rock paintings."
+    },
+    {
+      "en": "In the north, the mighty Zambezi River pours over Victoria Falls, and further downstream it widens into Lake Kariba, where houseboats drift past hippos and elephants come down to drink."
+    },
+    {
+      "en": "Hwange National Park is famous for its huge herds of elephants, and in Mana Pools you can watch wildlife along the riverbanks, among tall trees and golden light."
+    },
+    {
+      "en": "In the east, the Eastern Highlands are cool, misty and green, with waterfalls, pine forests and tea plantations along the border with Mozambique."
+    },
+    {
+      "en": "Harare, the capital, is a city of wide streets and jacaranda trees, which turn the avenues a beautiful purple every spring."
+    },
+    {
+      "en": "Zimbabwe has many official languages, but Shona and Ndebele are the most widely spoken, along with English. A friendly Shona greeting is mhoro, and people often ask about your whole family before anything else."
+    },
+    {
+      "en": "Respect for elders runs deep. Children may kneel or crouch slightly when greeting an older person, and it is polite to clap your hands gently when saying thank you."
+    },
+    {
+      "en": "The daily staple is sadza, a thick maize porridge eaten with your hand alongside stews of beef, chicken, beans or leafy greens. Some adventurous eaters also enjoy crunchy dried mopane worms."
+    },
+    {
+      "en": "Zimbabwean sculptors are known around the world for their stone carvings, smooth figures of people, animals and spirits shaped from local serpentine."
+    },
+    {
+      "en": "So let the mbira play you out, then head south across the Limpopo River, where South Africa is waiting with a warm welcome."
+    }
+  ],
+  "next": ["South Africa", "Zambia", "Mozambique"]
+}

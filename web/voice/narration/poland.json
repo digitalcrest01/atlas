@@ -1,0 +1,62 @@
+{
+  "country": "Poland",
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "segments": [
+    {
+      "en": "Every hour, from the tallest tower of Saint Mary's Church in Kraków, a trumpeter plays a short tune, the Hejnał, and stops suddenly in the middle of a note. The story says it recalls a watchman who once sounded the alarm.",
+      "pl": "Co godzinę z wyższej wieży kościoła Mariackiego w Krakowie trębacz gra krótką melodię, hejnał, i nagle urywa ją w pół nuty. Legenda mówi, że to pamiątka po strażniku, który kiedyś ogłosił alarm."
+    },
+    {
+      "en": "Kraków was once the royal capital of Poland. Its great market square is one of the largest in Europe, and on the hill above the river stands Wawel Castle, where, legend says, a dragon once lived in a cave below.",
+      "pl": "Kraków był niegdyś królewską stolicą Polski. Jego Rynek Główny należy do największych placów w Europie, a na wzgórzu nad Wisłą stoi Wawel, pod którym, jak głosi legenda, w jaskini mieszkał kiedyś smok."
+    },
+    {
+      "en": "Poland stretches from the sandy beaches of the Baltic Sea in the north to the Tatra Mountains in the south, with forests, lakes and wide fields of wheat and rapeseed in between.",
+      "pl": "Polska rozciąga się od piaszczystych plaż Bałtyku na północy po Tatry na południu, a pomiędzy nimi leżą lasy, jeziora i szerokie pola pszenicy i rzepaku."
+    },
+    {
+      "en": "Warsaw, the capital, sits on the Vistula River. Its Old Town was almost completely destroyed during the Second World War, and afterwards people rebuilt it brick by brick, using old paintings and drawings as a guide.",
+      "pl": "Warszawa, stolica, leży nad Wisłą. Jej Stare Miasto zostało niemal całkowicie zniszczone podczas drugiej wojny światowej, a potem ludzie odbudowali je cegła po cegle, wzorując się na dawnych obrazach i rysunkach."
+    },
+    {
+      "en": "In Polish homes, guests are treated with great warmth. There is an old saying, gość w dom, Bóg w dom, a guest in the home is God in the home. Expect to be offered food again and again.",
+      "pl": "W polskich domach gości przyjmuje się bardzo serdecznie. Jest stare przysłowie: gość w dom, Bóg w dom. Trzeba się przygotować, że jedzenie będzie proponowane raz za razem."
+    },
+    {
+      "en": "The most famous dish is pierogi, soft dumplings filled with potato and cheese, cabbage and mushrooms, or sweet fruit in summer. A Sunday lunch often begins with a clear chicken soup called rosół.",
+      "pl": "Najsłynniejsze danie to pierogi: ruskie z ziemniakami i serem, z kapustą i grzybami, a latem ze słodkimi owocami. Niedzielny obiad często zaczyna się od złocistego rosołu."
+    },
+    {
+      "en": "Many Poles love going into the forest to pick mushrooms in autumn. Families set off early with baskets, and knowing which mushrooms are safe is a skill passed down from grandparents.",
+      "pl": "Wielu Polaków uwielbia jesienią chodzić do lasu na grzyby. Rodziny wyruszają wcześnie rano z koszykami, a wiedza o tym, które grzyby są jadalne, przechodzi z dziadków na wnuki."
+    },
+    {
+      "en": "Christmas Eve, called Wigilia, begins when the first star appears in the sky. Families share a thin wafer called opłatek and exchange good wishes, and an extra place is laid at the table for an unexpected guest.",
+      "pl": "Wigilia zaczyna się, gdy na niebie pojawi się pierwsza gwiazdka. Rodziny dzielą się opłatkiem i składają sobie życzenia, a przy stole zostawia się dodatkowe nakrycie dla niespodziewanego gościa."
+    },
+    {
+      "en": "At Easter, children decorate eggs with beautiful patterns, called pisanki, and carry baskets of food to church to be blessed on Holy Saturday.",
+      "pl": "Na Wielkanoc dzieci ozdabiają jajka pięknymi wzorami, czyli pisanki, a w Wielką Sobotę niosą do kościoła koszyczki z jedzeniem do święcenia."
+    },
+    {
+      "en": "Poland has given the world great minds and artists. Marie Curie, born in Warsaw as Maria Skłodowska, won two Nobel Prizes, and the composer Frédéric Chopin wrote piano music that is still played everywhere.",
+      "pl": "Polska dała światu wielkie umysły i artystów. Maria Skłodowska-Curie, urodzona w Warszawie, zdobyła dwie Nagrody Nobla, a kompozytor Fryderyk Chopin pisał muzykę fortepianową, którą gra się do dziś na całym świecie."
+    },
+    {
+      "en": "In the east lies the Białowieża Forest, one of the last ancient forests in Europe, where European bison, the continent's largest land animal, roam freely among the oaks.",
+      "pl": "Na wschodzie leży Puszcza Białowieska, jedna z ostatnich pierwotnych puszcz w Europie, gdzie wśród dębów swobodnie wędrują żubry, największe lądowe zwierzęta kontynentu."
+    },
+    {
+      "en": "Before you go, stroll through Kraków's market square as the trumpet sounds once more. Then head west across the Oder River, where Germany is waiting.",
+      "pl": "Zanim wyjedziesz, przejdź się po krakowskim Rynku, gdy hejnał rozbrzmiewa po raz kolejny. Potem ruszaj na zachód, za Odrę, gdzie czekają na ciebie Niemcy."
+    }
+  ],
+  "next": [
+    "Germany",
+    "Czech Republic",
+    "Lithuania"
+  ]
+}

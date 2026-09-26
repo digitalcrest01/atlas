@@ -1,0 +1,20 @@
+{
+  "country": "Marshall Islands",
+  "languages": ["en"],
+  "segments": [
+    { "en": "Iakwe! You will hear this greeting all across the Marshall Islands. It means hello, but it also carries a sense of love and kindness, which tells you a lot about the people here." },
+    { "en": "The country is scattered over a huge stretch of the central Pacific, in two chains of atolls. One is called Ratak, meaning sunrise, and the other Ralik, meaning sunset." },
+    { "en": "The land is thin and low, often just a ribbon of sand and coconut palms between a calm lagoon and the open ocean. On some islands you can walk from one shore to the other in a minute or two." },
+    { "en": "The capital, Majuro, is an atoll that curves around a wide lagoon, with one long road running along much of its length and the sea never more than a few steps away." },
+    { "en": "Marshallese navigators were among the finest in the Pacific. They made stick charts from palm ribs and shells to show how ocean swells bend around islands, and learned to feel those swells through the hulls of their canoes." },
+    { "en": "Outrigger canoes are still built and raced today, their sails curving over the lagoon, and young people learn the old skills of carving and sailing from their elders." },
+    { "en": "Marshallese women are known for their fine weaving. Pandanus leaves and coconut fibre become mats, baskets, fans and handbags with delicate patterns, sometimes decorated with tiny shells." },
+    { "en": "Family is at the heart of life, and land is passed down through the mother's family line. A child's first birthday, called kemem, is a huge celebration with singing, feasting and the whole community." },
+    { "en": "Meals come from the sea and the trees: reef fish, breadfruit, pandanus fruit, and coconut in every form, from sweet drinking coconuts to rich coconut cream." },
+    { "en": "On Sundays, churches fill with beautiful harmonies, and choirs love to sing together at every celebration." },
+    { "en": "History here has hard chapters too. In the mid twentieth century, nuclear tests were carried out at Bikini and Enewetak atolls, and Marshallese families still remember the home islands they had to leave." },
+    { "en": "Because the islands sit so close to sea level, Marshallese voices speak up around the world for protecting the ocean and the climate, for their children and grandchildren." },
+    { "en": "Kommol tata, thank you very much, for visiting. Sail west across the ocean, and the islands of Micronesia are waiting." }
+  ],
+  "next": ["Micronesia", "Kiribati", "Nauru"]
+}

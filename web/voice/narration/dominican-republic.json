@@ -1,0 +1,63 @@
+{
+  "country": "Dominican Republic",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "First you hear the güira, a metal scraper rasping out a quick beat. Then comes the tambora drum and a racing accordion. That's merengue, and in the Dominican Republic it spills out of radios, buses and kitchens all day long.",
+      "es-419": "Primero se oye la güira, un raspador de metal que marca el ritmo a toda prisa. Después entran la tambora y un acordeón que corre. Eso es el merengue, y en la República Dominicana sale de las radios, las guaguas y las cocinas todo el día."
+    },
+    {
+      "en": "The country shares the island of Hispaniola with Haiti, covering roughly the eastern two thirds. It's a land of palm-lined beaches, green valleys and surprisingly high mountains.",
+      "es-419": "El país comparte la isla La Española con Haití y ocupa más o menos sus dos tercios orientales. Es una tierra de playas bordeadas de palmeras, valles verdes y montañas sorprendentemente altas."
+    },
+    {
+      "en": "In fact, Pico Duarte, in the Central Mountain Range, is the highest peak in the whole Caribbean, and on winter nights frost can form near its summit.",
+      "es-419": "De hecho, el Pico Duarte, en la Cordillera Central, es la montaña más alta de todo el Caribe, y en las noches de invierno puede haber escarcha cerca de su cumbre."
+    },
+    {
+      "en": "Santo Domingo, the capital, was founded by the Spanish at the end of the fourteen hundreds, and it's the oldest European city still standing in the Americas. In its Colonial Zone, cobbled streets lead to the first cathedral built on the continent.",
+      "es-419": "Santo Domingo, la capital, fue fundada por los españoles a finales del siglo quince y es la ciudad europea más antigua que sigue en pie en América. En su Zona Colonial, las calles empedradas llevan hasta la primera catedral construida en el continente."
+    },
+    {
+      "en": "Alongside merengue there's bachata, born in the countryside and sung for years about lost love in little roadside bars. Today UNESCO recognizes both as treasured heritage, and bachata is danced all over the world.",
+      "es-419": "Junto al merengue está la bachata, nacida en el campo, que durante años se cantó a los amores perdidos en bares de carretera. Hoy la UNESCO reconoce ambos ritmos como patrimonio, y la bachata se baila en todo el mundo."
+    },
+    {
+      "en": "Everyday life often centres on the colmado, the corner shop, where neighbours buy rice and bread, turn up the music, play dominoes and catch up on the news.",
+      "es-419": "La vida del barrio gira muchas veces alrededor del colmado, la tiendita de la esquina, donde los vecinos compran arroz y pan, suben la música, juegan dominó y se ponen al día."
+    },
+    {
+      "en": "Lunch is the big meal, and it's called la bandera, the flag: white rice, red beans in sauce and stewed meat, usually with salad or fried plantain on the side.",
+      "es-419": "El almuerzo es la comida fuerte y se llama la bandera: arroz blanco, habichuelas rojas guisadas y carne guisada, casi siempre con ensalada o tostones al lado."
+    },
+    {
+      "en": "Breakfast might be mangú, mashed green plantain topped with red onions, served with fried salami, fried cheese and eggs. Dominicans call that trio los tres golpes, the three hits.",
+      "es-419": "El desayuno puede ser mangú, puré de plátano verde con cebolla roja por encima, acompañado de salami frito, queso frito y huevos. A ese trío los dominicanos le dicen los tres golpes."
+    },
+    {
+      "en": "Baseball is close to a religion. Children practise on dusty fields with homemade gloves, and many of the world's great professional players grew up right here.",
+      "es-419": "El béisbol es casi una religión. Los niños practican en terrenos polvorientos con guantes hechos en casa, y muchos de los grandes peloteros profesionales del mundo crecieron aquí mismo."
+    },
+    {
+      "en": "In February, Carnival fills the streets with dancers and diablos cojuelos, playful devils in shiny costumes and horned masks who tease the crowd as they pass.",
+      "es-419": "En febrero, el carnaval llena las calles de comparsas y de diablos cojuelos, diablos juguetones con trajes brillantes y máscaras con cuernos que molestan al público a su paso."
+    },
+    {
+      "en": "From January to March, humpback whales gather in Samaná Bay to have their calves, leaping and splashing in the warm water.",
+      "es-419": "De enero a marzo, las ballenas jorobadas llegan a la bahía de Samaná para tener a sus crías, y saltan y chapotean en el agua tibia."
+    },
+    {
+      "en": "And look out for larimar, a sky-blue stone found only here, polished into jewellery that looks like a little piece of the Caribbean Sea.",
+      "es-419": "Y fíjate en el larimar, una piedra azul cielo que solo se encuentra aquí y que se pule para hacer joyas que parecen un pedacito del mar Caribe."
+    },
+    {
+      "en": "Dominicans greet each other warmly and loudly, with a hug, a joke and a quick qué lo que, which means what's up?",
+      "es-419": "Los dominicanos se saludan con cariño y en voz alta, con un abrazo, un chiste y un rápido «¿qué lo que?»."
+    },
+    {
+      "en": "Gracias for visiting! Just beyond the mountains to the west, on this very same island, Haiti is waiting with its own language, art and history.",
+      "es-419": "¡Gracias por la visita! Justo detrás de las montañas, al oeste, en esta misma isla, te espera Haití con su propia lengua, su arte y su historia."
+    }
+  ],
+  "next": ["Haiti", "Cuba", "Jamaica"]
+}

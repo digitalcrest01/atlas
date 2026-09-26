@@ -1,0 +1,241 @@
+{
+  "book": "bn",
+  "name": "Bengali",
+  "native": "বাংলা",
+  "phrases": {
+    "hello": {
+      "text": "আসসালামু আলাইকুম",
+      "roman": "assalamu alaikum",
+      "say": "as-sa-LAA-moo a-LAI-koom"
+    },
+    "good_morning": {
+      "text": "সুপ্রভাত",
+      "roman": "suprobhat",
+      "say": "shu-pro-BHAHT"
+    },
+    "good_evening": {
+      "text": "শুভ সন্ধ্যা",
+      "roman": "shubho shondhya",
+      "say": "SHU-bho SHON-dha"
+    },
+    "goodbye": {
+      "text": "আবার দেখা হবে",
+      "roman": "abar dekha hobe",
+      "say": "AA-bar DEH-kha HO-beh"
+    },
+    "how_are_you": {
+      "text": "আপনি কেমন আছেন?",
+      "roman": "apni kemon achhen?",
+      "say": "AAP-ni KEH-mon AA-chhen"
+    },
+    "nice_to_meet": {
+      "text": "আপনার সাথে পরিচিত হয়ে ভালো লাগল",
+      "roman": "apnar shathe porichito hoye bhalo laglo",
+      "say": "AAP-nar SHA-teh PO-ri-chi-to HO-yeh BHA-lo LAAG-lo"
+    },
+    "please": {
+      "text": "দয়া করে",
+      "roman": "doya kore",
+      "say": "DO-ya KO-reh"
+    },
+    "thank_you": {
+      "text": "ধন্যবাদ",
+      "roman": "dhonnobad",
+      "say": "DHON-no-baad"
+    },
+    "youre_welcome": {
+      "text": "কোনো ব্যাপার না",
+      "roman": "kono byapar na",
+      "say": "KO-no BAA-par na"
+    },
+    "excuse_me": {
+      "text": "শুনছেন?",
+      "roman": "shunchhen?",
+      "say": "SHOON-chhen"
+    },
+    "sorry": {
+      "text": "দুঃখিত",
+      "roman": "dukkhito",
+      "say": "DOOK-khi-to"
+    },
+    "yes": {
+      "text": "হ্যাঁ",
+      "roman": "hyan",
+      "say": "HAANG"
+    },
+    "no": {
+      "text": "না",
+      "roman": "na",
+      "say": "NAA"
+    },
+    "speak_english": {
+      "text": "আপনি কি ইংরেজি বলতে পারেন?",
+      "roman": "apni ki ingreji bolte paren?",
+      "say": "AAP-ni ki ING-reh-ji BOL-teh PAA-ren"
+    },
+    "dont_understand": {
+      "text": "আমি বুঝতে পারছি না",
+      "roman": "ami bujhte parchhi na",
+      "say": "AA-mi BOOJH-teh PAAR-chhi na"
+    },
+    "slowly": {
+      "text": "দয়া করে একটু আস্তে বলুন",
+      "roman": "doya kore ektu aste bolun",
+      "say": "DO-ya KO-reh EK-tu AAS-teh BO-loon"
+    },
+    "repeat": {
+      "text": "আরেকবার বলবেন?",
+      "roman": "arekbar bolben?",
+      "say": "AA-rek-bar BOL-ben"
+    },
+    "where_station": {
+      "text": "রেলস্টেশনটা কোথায়?",
+      "roman": "relsteshonta kothay?",
+      "say": "REL-steh-shon-ta KO-thai"
+    },
+    "where_toilet": {
+      "text": "টয়লেটটা কোথায়?",
+      "roman": "toyletta kothay?",
+      "say": "TOY-let-ta KO-thai"
+    },
+    "is_it_far": {
+      "text": "এটা কি অনেক দূরে?",
+      "roman": "eta ki onek dure?",
+      "say": "EH-ta ki O-nek DOO-reh"
+    },
+    "left": {
+      "text": "বাঁ দিকে",
+      "roman": "ban dike",
+      "say": "BAAN di-keh"
+    },
+    "right": {
+      "text": "ডান দিকে",
+      "roman": "dan dike",
+      "say": "DAAN di-keh"
+    },
+    "straight": {
+      "text": "সোজা",
+      "roman": "shoja",
+      "say": "SHO-ja"
+    },
+    "menu": {
+      "text": "মেনুটা দেবেন?",
+      "roman": "menuta deben?",
+      "say": "MEH-noo-ta DEH-ben"
+    },
+    "water": {
+      "text": "একটু পানি দেবেন?",
+      "roman": "ektu pani deben?",
+      "say": "EK-tu PAA-ni DEH-ben"
+    },
+    "bill": {
+      "text": "বিলটা দেবেন?",
+      "roman": "bilta deben?",
+      "say": "BIL-ta DEH-ben"
+    },
+    "delicious": {
+      "text": "খুব সুস্বাদু!",
+      "roman": "khub shushadu!",
+      "say": "KHOOB shu-SHAA-du"
+    },
+    "vegetarian": {
+      "text": "আমি নিরামিষ খাই",
+      "roman": "ami niramish khai",
+      "say": "AA-mi NI-ra-mish KHAI"
+    },
+    "how_much": {
+      "text": "এটার দাম কত?",
+      "roman": "etar dam koto?",
+      "say": "EH-tar DAAM KO-to"
+    },
+    "too_expensive": {
+      "text": "দামটা অনেক বেশি",
+      "roman": "damta onek beshi",
+      "say": "DAAM-ta O-nek BEH-shi"
+    },
+    "pay_card": {
+      "text": "কার্ডে পেমেন্ট করা যাবে?",
+      "roman": "karde pement kora jabe?",
+      "say": "KAAR-deh PEH-ment KO-ra JAA-beh"
+    },
+    "help": {
+      "text": "বাঁচাও!",
+      "roman": "bachao!",
+      "say": "BAA-chao"
+    },
+    "need_doctor": {
+      "text": "আমার একজন ডাক্তার দরকার",
+      "roman": "amar ekjon daktar dorkar",
+      "say": "AA-mar EK-jon DAAK-tar DOR-kar"
+    },
+    "lost": {
+      "text": "আমি পথ হারিয়ে ফেলেছি",
+      "roman": "ami poth hariye phelechhi",
+      "say": "AA-mi POTH HA-ri-yeh FEH-leh-chhi"
+    },
+    "n1": {
+      "text": "এক",
+      "roman": "ek",
+      "say": "EK"
+    },
+    "n2": {
+      "text": "দুই",
+      "roman": "dui",
+      "say": "DOO-ee"
+    },
+    "n3": {
+      "text": "তিন",
+      "roman": "tin",
+      "say": "TIN"
+    },
+    "n4": {
+      "text": "চার",
+      "roman": "char",
+      "say": "CHAAR"
+    },
+    "n5": {
+      "text": "পাঁচ",
+      "roman": "panch",
+      "say": "PAANCH"
+    },
+    "n6": {
+      "text": "ছয়",
+      "roman": "chhoy",
+      "say": "CHHOY"
+    },
+    "n7": {
+      "text": "সাত",
+      "roman": "shat",
+      "say": "SHAAT"
+    },
+    "n8": {
+      "text": "আট",
+      "roman": "at",
+      "say": "AAT"
+    },
+    "n9": {
+      "text": "নয়",
+      "roman": "noy",
+      "say": "NOY"
+    },
+    "n10": {
+      "text": "দশ",
+      "roman": "dosh",
+      "say": "DOSH"
+    }
+  },
+  "variants": {
+    "bn-IN": {
+      "hello": {
+        "text": "নমস্কার",
+        "roman": "nomoshkar",
+        "say": "noh-mosh-KAR"
+      },
+      "water": {
+        "text": "একটু জল দেবেন?",
+        "roman": "ektu jol deben?",
+        "say": "EK-tu JOL DEH-ben"
+      }
+    }
+  }
+}

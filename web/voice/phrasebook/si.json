@@ -1,0 +1,227 @@
+{
+  "book": "si",
+  "name": "Sinhala",
+  "native": "සිංහල",
+  "phrases": {
+    "hello": {
+      "text": "ආයුබෝවන්",
+      "roman": "āyubōvan",
+      "say": "AA-yu-boh-wan"
+    },
+    "good_morning": {
+      "text": "සුබ උදෑසනක්",
+      "roman": "suba udǣsanak",
+      "say": "SU-ba u-DAA-sa-nak"
+    },
+    "good_evening": {
+      "text": "සුබ සන්ධ්‍යාවක්",
+      "roman": "suba sandhyāvak",
+      "say": "SU-ba san-DHYAA-wak"
+    },
+    "goodbye": {
+      "text": "ගිහින් එන්නම්",
+      "roman": "gihin ennam",
+      "say": "gi-HIN EN-nam"
+    },
+    "how_are_you": {
+      "text": "කොහොමද?",
+      "roman": "kohomada?",
+      "say": "ko-ho-MA-da"
+    },
+    "nice_to_meet": {
+      "text": "ඔබව හමුවීම සතුටක්",
+      "roman": "obava hamuvīma satuṭak",
+      "say": "O-ba-wa ha-mu-WEE-ma sa-TU-tak"
+    },
+    "please": {
+      "text": "කරුණාකර",
+      "roman": "karuṇākara",
+      "say": "ka-ru-NAA-ka-ra"
+    },
+    "thank_you": {
+      "text": "ස්තූතියි",
+      "roman": "stūtiyi",
+      "say": "STOO-ti-yi"
+    },
+    "youre_welcome": {
+      "text": "කමක් නැහැ",
+      "roman": "kamak næhæ",
+      "say": "ka-MAK NAE-hae"
+    },
+    "excuse_me": {
+      "text": "සමාවෙන්න",
+      "roman": "samāvenna",
+      "say": "sa-MAA-wen-na"
+    },
+    "sorry": {
+      "text": "මට සමාවෙන්න",
+      "roman": "maṭa samāvenna",
+      "say": "MA-ta sa-MAA-wen-na"
+    },
+    "yes": {
+      "text": "ඔව්",
+      "roman": "ow",
+      "say": "OW"
+    },
+    "no": {
+      "text": "නැහැ",
+      "roman": "næhæ",
+      "say": "NAE-hae"
+    },
+    "speak_english": {
+      "text": "ඔබ ඉංග්‍රීසි කතා කරනවාද?",
+      "roman": "oba iṁgrīsi katā karanavāda?",
+      "say": "O-ba ing-REE-si ka-TAA ka-ra-na-WAA-da"
+    },
+    "dont_understand": {
+      "text": "මට තේරෙන්නේ නැහැ",
+      "roman": "maṭa tērennē næhæ",
+      "say": "MA-ta tay-REN-nay NAE-hae"
+    },
+    "slowly": {
+      "text": "කරුණාකර හෙමින් කතා කරන්න",
+      "roman": "karuṇākara hemin katā karanna",
+      "say": "ka-ru-NAA-ka-ra HE-min ka-TAA ka-RAN-na"
+    },
+    "repeat": {
+      "text": "ආයෙත් කියන්න පුළුවන්ද?",
+      "roman": "āyet kiyanna puḷuvanda?",
+      "say": "AA-yet ki-YAN-na pu-lu-WAN-da"
+    },
+    "where_station": {
+      "text": "දුම්රිය ස්ථානය කොහෙද?",
+      "roman": "dumriya sthānaya koheda?",
+      "say": "DUM-ri-ya STAA-na-ya ko-HE-da"
+    },
+    "where_toilet": {
+      "text": "වැසිකිළිය කොහෙද?",
+      "roman": "væsikiḷiya koheda?",
+      "say": "wae-si-KI-li-ya ko-HE-da"
+    },
+    "is_it_far": {
+      "text": "ඒක දුරද?",
+      "roman": "ēka durada?",
+      "say": "AY-ka du-RA-da"
+    },
+    "left": {
+      "text": "වමට",
+      "roman": "vamaṭa",
+      "say": "WA-ma-ta"
+    },
+    "right": {
+      "text": "දකුණට",
+      "roman": "dakuṇaṭa",
+      "say": "DA-ku-na-ta"
+    },
+    "straight": {
+      "text": "කෙළින්ම",
+      "roman": "keḷinma",
+      "say": "KE-lin-ma"
+    },
+    "menu": {
+      "text": "කරුණාකර මෙනුව දෙන්න",
+      "roman": "karuṇākara menuva denna",
+      "say": "ka-ru-NAA-ka-ra ME-nu-wa DEN-na"
+    },
+    "water": {
+      "text": "කරුණාකර වතුර ටිකක් දෙන්න",
+      "roman": "karuṇākara vatura ṭikak denna",
+      "say": "ka-ru-NAA-ka-ra WA-tu-ra TI-kak DEN-na"
+    },
+    "bill": {
+      "text": "කරුණාකර බිල දෙන්න",
+      "roman": "karuṇākara bila denna",
+      "say": "ka-ru-NAA-ka-ra BI-la DEN-na"
+    },
+    "delicious": {
+      "text": "හරිම රසයි!",
+      "roman": "harima rasayi!",
+      "say": "HA-ri-ma RA-sa-yi"
+    },
+    "vegetarian": {
+      "text": "මම නිර්මාංශ කෙනෙක්",
+      "roman": "mama nirmāṁśa kenek",
+      "say": "MA-ma nir-MAAN-sha KE-nek"
+    },
+    "how_much": {
+      "text": "මේක කීයද?",
+      "roman": "mēka kīyada?",
+      "say": "MAY-ka KEE-ya-da"
+    },
+    "too_expensive": {
+      "text": "ගොඩක් ගණන්",
+      "roman": "goḍak gaṇan",
+      "say": "GO-dak GA-nan"
+    },
+    "pay_card": {
+      "text": "කාඩ් එකෙන් ගෙවන්න පුළුවන්ද?",
+      "roman": "kāḍ eken gevanna puḷuvanda?",
+      "say": "KAAD e-ken ge-WAN-na pu-lu-WAN-da"
+    },
+    "help": {
+      "text": "උදව් කරන්න!",
+      "roman": "udav karanna!",
+      "say": "u-DAW ka-RAN-na"
+    },
+    "need_doctor": {
+      "text": "මට දොස්තර කෙනෙක් ඕනේ",
+      "roman": "maṭa dostara kenek ōnē",
+      "say": "MA-ta DOS-ta-ra KE-nek OH-nay"
+    },
+    "lost": {
+      "text": "මට පාර වැරදුණා",
+      "roman": "maṭa pāra væraduṇā",
+      "say": "MA-ta PAA-ra wae-ra-DU-naa"
+    },
+    "n1": {
+      "text": "එක",
+      "roman": "eka",
+      "say": "E-ka"
+    },
+    "n2": {
+      "text": "දෙක",
+      "roman": "deka",
+      "say": "DE-ka"
+    },
+    "n3": {
+      "text": "තුන",
+      "roman": "tuna",
+      "say": "TU-na"
+    },
+    "n4": {
+      "text": "හතර",
+      "roman": "hatara",
+      "say": "HA-ta-ra"
+    },
+    "n5": {
+      "text": "පහ",
+      "roman": "paha",
+      "say": "PA-ha"
+    },
+    "n6": {
+      "text": "හය",
+      "roman": "haya",
+      "say": "HA-ya"
+    },
+    "n7": {
+      "text": "හත",
+      "roman": "hata",
+      "say": "HA-ta"
+    },
+    "n8": {
+      "text": "අට",
+      "roman": "aṭa",
+      "say": "A-ta"
+    },
+    "n9": {
+      "text": "නවය",
+      "roman": "navaya",
+      "say": "NA-wa-ya"
+    },
+    "n10": {
+      "text": "දහය",
+      "roman": "dahaya",
+      "say": "DA-ha-ya"
+    }
+  }
+}

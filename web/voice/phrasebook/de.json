@@ -1,0 +1,183 @@
+{
+  "book": "de",
+  "name": "German",
+  "native": "Deutsch",
+  "phrases": {
+    "hello": {
+      "text": "Hallo",
+      "say": "HAH-loh"
+    },
+    "good_morning": {
+      "text": "Guten Morgen",
+      "say": "GOO-ten MOR-gen"
+    },
+    "good_evening": {
+      "text": "Guten Abend",
+      "say": "GOO-ten AH-bent"
+    },
+    "goodbye": {
+      "text": "Auf Wiedersehen",
+      "say": "owf VEE-der-zay-en"
+    },
+    "how_are_you": {
+      "text": "Wie geht es Ihnen?",
+      "say": "vee GAYT es EE-nen"
+    },
+    "nice_to_meet": {
+      "text": "Freut mich",
+      "say": "FROYT mikh"
+    },
+    "please": {
+      "text": "Bitte",
+      "say": "BIT-teh"
+    },
+    "thank_you": {
+      "text": "Danke",
+      "say": "DAHN-keh"
+    },
+    "youre_welcome": {
+      "text": "Gern geschehen",
+      "say": "GERN geh-SHAY-en"
+    },
+    "excuse_me": {
+      "text": "Entschuldigung",
+      "say": "ent-SHOOL-dee-goong"
+    },
+    "sorry": {
+      "text": "Tut mir leid",
+      "say": "toot meer LITE"
+    },
+    "yes": {
+      "text": "Ja",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Nein",
+      "say": "NINE"
+    },
+    "speak_english": {
+      "text": "Sprechen Sie Englisch?",
+      "say": "SHPREKH-en zee ENG-lish"
+    },
+    "dont_understand": {
+      "text": "Ich verstehe nicht",
+      "say": "ikh fer-SHTAY-eh nikht"
+    },
+    "slowly": {
+      "text": "Bitte sprechen Sie langsamer",
+      "say": "BIT-teh SHPREKH-en zee LAHNG-zah-mer"
+    },
+    "repeat": {
+      "text": "Können Sie das wiederholen?",
+      "say": "KER-nen zee dahs vee-der-HOH-len"
+    },
+    "where_station": {
+      "text": "Wo ist der Bahnhof?",
+      "say": "voh ist dair BAHN-hohf"
+    },
+    "where_toilet": {
+      "text": "Wo ist die Toilette?",
+      "say": "voh ist dee toy-LET-teh"
+    },
+    "is_it_far": {
+      "text": "Ist es weit?",
+      "say": "ist es VITE"
+    },
+    "left": {
+      "text": "Links",
+      "say": "LINKS"
+    },
+    "right": {
+      "text": "Rechts",
+      "say": "REKHTS"
+    },
+    "straight": {
+      "text": "Geradeaus",
+      "say": "geh-rah-deh-OWS"
+    },
+    "menu": {
+      "text": "Die Speisekarte, bitte",
+      "say": "dee SHPY-zeh-kar-teh, BIT-teh"
+    },
+    "water": {
+      "text": "Wasser, bitte",
+      "say": "VAH-ser, BIT-teh"
+    },
+    "bill": {
+      "text": "Die Rechnung, bitte",
+      "say": "dee REKH-noong, BIT-teh"
+    },
+    "delicious": {
+      "text": "Lecker!",
+      "say": "LEK-er"
+    },
+    "vegetarian": {
+      "text": "Ich bin Vegetarierin",
+      "say": "ikh bin veh-geh-TAH-ree-er-in"
+    },
+    "how_much": {
+      "text": "Was kostet das?",
+      "say": "vahs KOS-tet dahs"
+    },
+    "too_expensive": {
+      "text": "Das ist zu teuer",
+      "say": "dahs ist tsoo TOY-er"
+    },
+    "pay_card": {
+      "text": "Kann ich mit Karte zahlen?",
+      "say": "kahn ikh mit KAR-teh TSAH-len"
+    },
+    "help": {
+      "text": "Hilfe!",
+      "say": "HIL-feh"
+    },
+    "need_doctor": {
+      "text": "Ich brauche einen Arzt",
+      "say": "ikh BROW-kheh I-nen ARTST"
+    },
+    "lost": {
+      "text": "Ich habe mich verlaufen",
+      "say": "ikh HAH-beh mikh fer-LOW-fen"
+    },
+    "n1": {
+      "text": "eins",
+      "say": "INES"
+    },
+    "n2": {
+      "text": "zwei",
+      "say": "TSVY"
+    },
+    "n3": {
+      "text": "drei",
+      "say": "DRY"
+    },
+    "n4": {
+      "text": "vier",
+      "say": "FEER"
+    },
+    "n5": {
+      "text": "fünf",
+      "say": "FEWNF"
+    },
+    "n6": {
+      "text": "sechs",
+      "say": "ZEKS"
+    },
+    "n7": {
+      "text": "sieben",
+      "say": "ZEE-ben"
+    },
+    "n8": {
+      "text": "acht",
+      "say": "AHKHT"
+    },
+    "n9": {
+      "text": "neun",
+      "say": "NOYN"
+    },
+    "n10": {
+      "text": "zehn",
+      "say": "TSAYN"
+    }
+  }
+}

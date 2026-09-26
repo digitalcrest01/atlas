@@ -1,0 +1,183 @@
+{
+  "book": "lv",
+  "name": "Latvian",
+  "native": "Latviešu",
+  "phrases": {
+    "hello": {
+      "text": "Labdien!",
+      "say": "LAHB-dee-en"
+    },
+    "good_morning": {
+      "text": "Labrīt!",
+      "say": "LAHB-reet"
+    },
+    "good_evening": {
+      "text": "Labvakar!",
+      "say": "LAHB-vah-kar"
+    },
+    "goodbye": {
+      "text": "Uz redzēšanos!",
+      "say": "ooz RED-zay-shah-nwos"
+    },
+    "how_are_you": {
+      "text": "Kā jums iet?",
+      "say": "KAA yooms EET"
+    },
+    "nice_to_meet": {
+      "text": "Priecājos iepazīties",
+      "say": "PRYEH-tsaa-yuos EE-eh-pah-zee-tyes"
+    },
+    "please": {
+      "text": "Lūdzu",
+      "say": "LOOD-zoo"
+    },
+    "thank_you": {
+      "text": "Paldies",
+      "say": "PAHL-dee-es"
+    },
+    "youre_welcome": {
+      "text": "Nav par ko",
+      "say": "NAHV par kwo"
+    },
+    "excuse_me": {
+      "text": "Atvainojiet",
+      "say": "AHT-vai-nwo-yee-et"
+    },
+    "sorry": {
+      "text": "Piedodiet",
+      "say": "PYEH-dwo-dee-et"
+    },
+    "yes": {
+      "text": "Jā",
+      "say": "YAA"
+    },
+    "no": {
+      "text": "Nē",
+      "say": "NEH"
+    },
+    "speak_english": {
+      "text": "Vai jūs runājat angliski?",
+      "say": "vai yoos ROO-naa-yat AHN-glee-skee"
+    },
+    "dont_understand": {
+      "text": "Es nesaprotu",
+      "say": "es NEH-sah-pro-too"
+    },
+    "slowly": {
+      "text": "Lūdzu, runājiet lēnāk",
+      "say": "LOOD-zoo, ROO-naa-yee-et LAY-naak"
+    },
+    "repeat": {
+      "text": "Vai jūs varētu atkārtot?",
+      "say": "vai yoos VAH-reh-too AHT-kaar-tot"
+    },
+    "where_station": {
+      "text": "Kur ir dzelzceļa stacija?",
+      "say": "koor ir DZELZ-tseh-lya STAH-tsee-ya"
+    },
+    "where_toilet": {
+      "text": "Kur ir tualete?",
+      "say": "koor ir TOO-ah-leh-teh"
+    },
+    "is_it_far": {
+      "text": "Vai tas ir tālu?",
+      "say": "vai tahs ir TAA-loo"
+    },
+    "left": {
+      "text": "Pa kreisi",
+      "say": "pah KRAY-see"
+    },
+    "right": {
+      "text": "Pa labi",
+      "say": "pah LAH-bee"
+    },
+    "straight": {
+      "text": "Taisni",
+      "say": "TAIS-nee"
+    },
+    "menu": {
+      "text": "Ēdienkarti, lūdzu",
+      "say": "AY-dee-en-kar-tee, LOOD-zoo"
+    },
+    "water": {
+      "text": "Ūdeni, lūdzu",
+      "say": "OO-deh-nee, LOOD-zoo"
+    },
+    "bill": {
+      "text": "Rēķinu, lūdzu",
+      "say": "RAY-tyee-noo, LOOD-zoo"
+    },
+    "delicious": {
+      "text": "Ļoti garšīgi!",
+      "say": "LYWO-tee GAR-shee-gee"
+    },
+    "vegetarian": {
+      "text": "Es esmu veģetāriete",
+      "say": "es ES-moo VEH-dyeh-taa-ree-eh-teh"
+    },
+    "how_much": {
+      "text": "Cik tas maksā?",
+      "say": "TSIK tahs MAHK-saa"
+    },
+    "too_expensive": {
+      "text": "Tas ir pārāk dārgi",
+      "say": "tahs ir PAA-raak DAAR-gee"
+    },
+    "pay_card": {
+      "text": "Vai varu maksāt ar karti?",
+      "say": "vai VAH-roo MAHK-saat ar KAR-tee"
+    },
+    "help": {
+      "text": "Palīgā!",
+      "say": "PAH-lee-gaa"
+    },
+    "need_doctor": {
+      "text": "Man vajag ārstu",
+      "say": "mahn VAH-yag AAR-stoo"
+    },
+    "lost": {
+      "text": "Es esmu apmaldījusies",
+      "say": "es ES-moo AHP-mahl-dee-yoo-see-es"
+    },
+    "n1": {
+      "text": "viens",
+      "say": "VEE-ens"
+    },
+    "n2": {
+      "text": "divi",
+      "say": "DEE-vee"
+    },
+    "n3": {
+      "text": "trīs",
+      "say": "TREES"
+    },
+    "n4": {
+      "text": "četri",
+      "say": "CHET-ree"
+    },
+    "n5": {
+      "text": "pieci",
+      "say": "PYEH-tsee"
+    },
+    "n6": {
+      "text": "seši",
+      "say": "SEH-shee"
+    },
+    "n7": {
+      "text": "septiņi",
+      "say": "SEP-tee-nyee"
+    },
+    "n8": {
+      "text": "astoņi",
+      "say": "AHS-to-nyee"
+    },
+    "n9": {
+      "text": "deviņi",
+      "say": "DEH-vee-nyee"
+    },
+    "n10": {
+      "text": "desmit",
+      "say": "DES-mit"
+    }
+  }
+}

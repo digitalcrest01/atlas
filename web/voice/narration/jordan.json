@@ -1,0 +1,59 @@
+{
+  "country": "Jordan",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "A small brass pot tilts, and a thin stream of golden coffee, spiced with cardamom, fills a tiny cup. Your host hands it to you with a smile and says, ahlan wa sahlan, you are among family here.",
+      "ar": "يميل إبريق نحاسي صغير، فينساب خيط رفيع من القهوة الذهبية المعطّرة بالهيل في فنجان صغير. يناولك المضيف إياه مبتسمًا ويقول: أهلًا وسهلًا، أنت هنا بين أهلك."
+    },
+    {
+      "en": "Here's a Jordanian tip: when you've had enough coffee, give the empty cup a gentle shake from side to side before handing it back. Otherwise your host will happily keep pouring.",
+      "ar": "وإليك نصيحة أردنية: إذا اكتفيت من القهوة، فهزّ الفنجان الفارغ هزًّا خفيفًا قبل أن تعيده، وإلا فسيواصل مضيفك صبّ القهوة لك بكل سرور."
+    },
+    {
+      "en": "Jordan lies at a crossroads of the Middle East, a land of rocky hills, wide deserts and deep valleys. The Jordan River flows along its western edge, down to the salty Dead Sea.",
+      "ar": "يقع الأردن عند ملتقى طرق الشرق الأوسط، وهو أرض تلال صخرية وصحارى واسعة ووديان عميقة. ويجري نهر الأردن على طول حدوده الغربية حتى يصبّ في البحر الميت شديد الملوحة."
+    },
+    {
+      "en": "Its most famous treasure is Petra. Walk through the Siq, a narrow canyon with towering walls, and suddenly the Treasury appears, carved straight into rose-red rock by the Nabataeans more than two thousand years ago.",
+      "ar": "وأشهر كنوزه البتراء. تمشي في السيق، وهو ممر ضيق تعلوه جدران شاهقة، وفجأة تظهر أمامك الخزنة، منحوتة مباشرة في الصخر الوردي على يد الأنباط قبل أكثر من ألفي عام."
+    },
+    {
+      "en": "Further south stretches Wadi Rum, a silent valley of red sand and giant sandstone mountains. Bedouin families have lived here for generations, and at night the sky is crowded with stars.",
+      "ar": "وإلى الجنوب يمتد وادي رم، وادٍ صامت من الرمال الحمراء والجبال الرملية العملاقة. عاشت فيه عائلات بدوية جيلًا بعد جيل، وفي الليل تمتلئ السماء بالنجوم."
+    },
+    {
+      "en": "Amman, the capital, is built across many hills, with homes of pale stone climbing their slopes. In the heart of the city sits a Roman theatre, and at dusk the call to prayer echoes from hill to hill.",
+      "ar": "أما عمّان، العاصمة، فقد بُنيت على تلال كثيرة، تتسلّق منحدراتها بيوت من الحجر الفاتح. وفي قلب المدينة يقوم مدرج روماني، وعند الغروب يتردّد صوت الأذان من تلّ إلى تلّ."
+    },
+    {
+      "en": "To the north, Jerash is one of the best preserved Roman cities anywhere, with colonnaded streets, temples and an oval plaza where you can almost hear the chariots.",
+      "ar": "وفي الشمال تقع جرش، وهي من أفضل المدن الرومانية حفظًا في العالم، بشوارعها المحاطة بالأعمدة ومعابدها وساحتها البيضاوية التي تكاد تسمع فيها وقع العربات القديمة."
+    },
+    {
+      "en": "The national dish is mansaf: tender lamb cooked in a sauce of tangy dried yoghurt called jameed, served on a great platter of rice and bread. Traditionally, guests eat it together, using the right hand.",
+      "ar": "والطبق الوطني هو المنسف: لحم ضأن طري مطبوخ بصلصة من الجميد، وهو لبن مجفف لاذع الطعم، ويُقدَّم على صينية كبيرة من الأرز وخبز الشراك. وتقليديًا يأكل الضيوف منه معًا باليد اليمنى."
+    },
+    {
+      "en": "For breakfast, look for warm bread dipped in olive oil and za'atar, a fragrant mix of wild thyme and sesame, with hummus and falafel on the side. And for dessert, try knafeh, sweet cheese pastry soaked in syrup.",
+      "ar": "وعلى الفطور ابحث عن الخبز الساخن المغمّس بزيت الزيتون والزعتر، مع الحمّص والفلافل. أما الحلوى فجرّب الكنافة، بجبنتها الحلوة وقطرها السكّري."
+    },
+    {
+      "en": "Many men wear the shemagh, a red and white checked headscarf, and at weddings you'll see the dabke, a line dance where everyone stamps and steps together to the beat of a drum.",
+      "ar": "ويرتدي كثير من الرجال الشماغ الأحمر والأبيض المرقّط، وفي الأعراس سترى الدبكة، رقصة جماعية يصطفّ فيها الناس ويدبكون بأقدامهم معًا على إيقاع الطبل."
+    },
+    {
+      "en": "Jordan's only stretch of coast is at Aqaba, on the Red Sea. Snorkel just off the beach and you'll float above coral gardens full of bright fish.",
+      "ar": "ولا يطلّ الأردن على البحر إلا عند العقبة، على البحر الأحمر. انزل للغطس قرب الشاطئ، وستطفو فوق حدائق مرجانية تعجّ بالأسماك الزاهية."
+    },
+    {
+      "en": "Wherever you go, you'll hear it again and again: tfaddal, please, come in, have some tea. Hospitality is a point of honour in Jordan, and no guest leaves hungry.",
+      "ar": "وأينما ذهبت ستسمع الكلمة مرة بعد مرة: تفضّل، ادخل، اشرب الشاي. فالكرم مسألة شرف في الأردن، ولا يغادر ضيف جائعًا."
+    },
+    {
+      "en": "Ma'a salama, go in peace! Head south across the desert, where the sands roll on and on, and Saudi Arabia is waiting.",
+      "ar": "مع السلامة! اتجه جنوبًا عبر الصحراء، حيث تمتد الرمال بلا نهاية، فهناك تنتظرك المملكة العربية السعودية."
+    }
+  ],
+  "next": ["Saudi Arabia", "Iraq", "Syria"]
+}

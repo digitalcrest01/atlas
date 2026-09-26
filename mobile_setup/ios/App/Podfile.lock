@@ -1,21 +1,21 @@
 PODS:
-  - Capacitor (6.2.1):
+  - Capacitor (8.5.2):
     - CapacitorCordova
-  - CapacitorApp (6.0.3):
+  - CapacitorApp (8.1.1):
     - Capacitor
-  - CapacitorCordova (6.2.1)
-  - CapacitorPreferences (6.0.4):
+  - CapacitorCordova (8.5.2)
+  - CapacitorPreferences (8.0.1):
     - Capacitor
-  - CapacitorSplashScreen (6.0.4):
+  - CapacitorSplashScreen (8.0.2):
     - Capacitor
-  - CapacitorStatusBar (6.0.3):
+  - CapacitorStatusBar (8.0.3):
     - Capacitor
-  - PurchasesHybridCommon (13.26.0):
-    - RevenueCat (= 5.20.0)
-  - RevenueCat (5.20.0)
-  - RevenuecatPurchasesCapacitor (9.2.2):
+  - PurchasesHybridCommon (19.3.1):
+    - RevenueCat (= 5.90.2)
+  - RevenueCat (5.90.2)
+  - RevenuecatPurchasesCapacitor (13.6.1):
     - Capacitor
-    - PurchasesHybridCommon (= 13.26.0)
+    - PurchasesHybridCommon (= 19.3.1)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
@@ -48,15 +48,15 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@revenuecat/purchases-capacitor"
 
 SPEC CHECKSUMS:
-  Capacitor: 1e0d0e7330dea9f983b50da737d8918abcf273f8
-  CapacitorApp: 22c94146dfaae1159ab7059cbd51e76d9f2d45ec
-  CapacitorCordova: 8d93e14982f440181be7304aa9559ca631d77fff
-  CapacitorPreferences: 877e40a640ee4311d4f7e334227a7b40052b9039
-  CapacitorSplashScreen: f65292695df7d7b24a22954a6cfbaecadd1718a4
-  CapacitorStatusBar: 38665f1a18c55677098367a29f6b42126b72dc65
-  PurchasesHybridCommon: fa166fc8b385cf80f581f923c91d8ccffe5dd7f8
-  RevenueCat: e47ff90dfd271fde155a4befe48e8fc02e8281e4
-  RevenuecatPurchasesCapacitor: 05a6dc8ba13e6cc072202c2dddcb4556abf45259
+  Capacitor: 59aea4e8bd98b24b798919b4c55ae90c6ded1b0d
+  CapacitorApp: 9fd99482b6536ddf1a54721ce678145fc7fa3418
+  CapacitorCordova: 5bec5648cbd09a176ce34ce5e7b6cdabb2c8a327
+  CapacitorPreferences: 0fa33b3affebf12d96358b491ed7c2b39bec3270
+  CapacitorSplashScreen: 120117d1b2264bba31a6e6f998f51e510144dd12
+  CapacitorStatusBar: 40bdc21352ecc617ec71c45ea06d669cdd2da8df
+  PurchasesHybridCommon: c364d4198150bf4027b00fcada9b4ddc280df108
+  RevenueCat: c44e15b3ee88506da1fdf537c62a6c239cc41b21
+  RevenuecatPurchasesCapacitor: c93cf1ec3416e1a26981cb652e1b7dd1d0eeb062
 
 PODFILE CHECKSUM: 4707e45ea3113d5ebffc1770655697ada1da2ff9
 

@@ -1,0 +1,183 @@
+{
+  "book": "ms",
+  "name": "Malay",
+  "native": "Bahasa Melayu",
+  "phrases": {
+    "hello": {
+      "text": "Helo",
+      "say": "HEH-lo"
+    },
+    "good_morning": {
+      "text": "Selamat pagi",
+      "say": "se-LA-mat PA-gi"
+    },
+    "good_evening": {
+      "text": "Selamat petang",
+      "say": "se-LA-mat pe-TANG"
+    },
+    "goodbye": {
+      "text": "Selamat tinggal",
+      "say": "se-LA-mat TING-gal"
+    },
+    "how_are_you": {
+      "text": "Apa khabar?",
+      "say": "A-pa KHA-bar"
+    },
+    "nice_to_meet": {
+      "text": "Selamat berkenalan",
+      "say": "se-LA-mat ber-ke-NA-lan"
+    },
+    "please": {
+      "text": "Tolong",
+      "say": "TO-long"
+    },
+    "thank_you": {
+      "text": "Terima kasih",
+      "say": "te-REE-ma KA-seh"
+    },
+    "youre_welcome": {
+      "text": "Sama-sama",
+      "say": "SA-ma SA-ma"
+    },
+    "excuse_me": {
+      "text": "Tumpang tanya",
+      "say": "TOOM-pang TA-nya"
+    },
+    "sorry": {
+      "text": "Maaf",
+      "say": "ma-AF"
+    },
+    "yes": {
+      "text": "Ya",
+      "say": "YA"
+    },
+    "no": {
+      "text": "Tidak",
+      "say": "TEE-dak"
+    },
+    "speak_english": {
+      "text": "Boleh cakap bahasa Inggeris?",
+      "say": "BO-leh CHA-kap ba-HA-sa ING-ge-ris"
+    },
+    "dont_understand": {
+      "text": "Saya tidak faham",
+      "say": "SA-ya TEE-dak FA-ham"
+    },
+    "slowly": {
+      "text": "Tolong cakap perlahan sikit",
+      "say": "TO-long CHA-kap per-LA-han SI-kit"
+    },
+    "repeat": {
+      "text": "Boleh ulang sekali lagi?",
+      "say": "BO-leh OO-lang se-KA-li LA-gi"
+    },
+    "where_station": {
+      "text": "Di mana stesen kereta api?",
+      "say": "di MA-na STE-sen ke-RE-ta A-pi"
+    },
+    "where_toilet": {
+      "text": "Di mana tandas?",
+      "say": "di MA-na TAN-das"
+    },
+    "is_it_far": {
+      "text": "Jauh tak?",
+      "say": "JA-oh tak"
+    },
+    "left": {
+      "text": "Kiri",
+      "say": "KEE-ri"
+    },
+    "right": {
+      "text": "Kanan",
+      "say": "KA-nan"
+    },
+    "straight": {
+      "text": "Terus",
+      "say": "te-ROOS"
+    },
+    "menu": {
+      "text": "Minta menu",
+      "say": "MIN-ta ME-nu"
+    },
+    "water": {
+      "text": "Minta air",
+      "say": "MIN-ta A-yer"
+    },
+    "bill": {
+      "text": "Minta bil",
+      "say": "MIN-ta BIL"
+    },
+    "delicious": {
+      "text": "Sedap!",
+      "say": "se-DAP"
+    },
+    "vegetarian": {
+      "text": "Saya seorang vegetarian",
+      "say": "SA-ya se-O-rang ve-je-TA-ri-an"
+    },
+    "how_much": {
+      "text": "Berapa harganya?",
+      "say": "be-RA-pa har-GA-nya"
+    },
+    "too_expensive": {
+      "text": "Mahal sangat",
+      "say": "MA-hal SA-ngat"
+    },
+    "pay_card": {
+      "text": "Boleh bayar dengan kad?",
+      "say": "BO-leh BA-yar de-NGAN KAD"
+    },
+    "help": {
+      "text": "Tolong!",
+      "say": "TO-long"
+    },
+    "need_doctor": {
+      "text": "Saya perlukan doktor",
+      "say": "SA-ya per-LU-kan DOK-tor"
+    },
+    "lost": {
+      "text": "Saya sesat",
+      "say": "SA-ya se-SAT"
+    },
+    "n1": {
+      "text": "satu",
+      "say": "SA-too"
+    },
+    "n2": {
+      "text": "dua",
+      "say": "DOO-a"
+    },
+    "n3": {
+      "text": "tiga",
+      "say": "TEE-ga"
+    },
+    "n4": {
+      "text": "empat",
+      "say": "EM-pat"
+    },
+    "n5": {
+      "text": "lima",
+      "say": "LEE-ma"
+    },
+    "n6": {
+      "text": "enam",
+      "say": "E-nam"
+    },
+    "n7": {
+      "text": "tujuh",
+      "say": "TOO-jooh"
+    },
+    "n8": {
+      "text": "lapan",
+      "say": "LA-pan"
+    },
+    "n9": {
+      "text": "sembilan",
+      "say": "sem-BEE-lan"
+    },
+    "n10": {
+      "text": "sepuluh",
+      "say": "se-POO-looh"
+    }
+  }
+}

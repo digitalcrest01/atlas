@@ -1,0 +1,183 @@
+{
+  "book": "tr",
+  "name": "Turkish",
+  "native": "Türkçe",
+  "phrases": {
+    "hello": {
+      "text": "Merhaba",
+      "say": "MEHR-hah-bah"
+    },
+    "good_morning": {
+      "text": "Günaydın",
+      "say": "gew-NAI-dun"
+    },
+    "good_evening": {
+      "text": "İyi akşamlar",
+      "say": "ee-YEE ahk-shahm-LAHR"
+    },
+    "goodbye": {
+      "text": "Hoşça kalın",
+      "say": "HOSH-chah kah-LUN"
+    },
+    "how_are_you": {
+      "text": "Nasılsınız?",
+      "say": "NAH-sul-su-nuz"
+    },
+    "nice_to_meet": {
+      "text": "Memnun oldum",
+      "say": "mem-NOON ol-DOOM"
+    },
+    "please": {
+      "text": "Lütfen",
+      "say": "LEWT-fen"
+    },
+    "thank_you": {
+      "text": "Teşekkür ederim",
+      "say": "teh-shek-KEWR eh-deh-REEM"
+    },
+    "youre_welcome": {
+      "text": "Rica ederim",
+      "say": "ree-JAH eh-deh-REEM"
+    },
+    "excuse_me": {
+      "text": "Affedersiniz",
+      "say": "ahf-feh-DEHR-see-neez"
+    },
+    "sorry": {
+      "text": "Özür dilerim",
+      "say": "ur-ZEWR dee-leh-REEM"
+    },
+    "yes": {
+      "text": "Evet",
+      "say": "eh-VET"
+    },
+    "no": {
+      "text": "Hayır",
+      "say": "HAH-yur"
+    },
+    "speak_english": {
+      "text": "İngilizce biliyor musunuz?",
+      "say": "een-gee-LEEZ-jeh bee-lee-YOR moo-soo-nooz"
+    },
+    "dont_understand": {
+      "text": "Anlamıyorum",
+      "say": "ahn-lah-MUH-yo-room"
+    },
+    "slowly": {
+      "text": "Daha yavaş konuşur musunuz?",
+      "say": "dah-HAH yah-VAHSH ko-noo-SHOOR moo-soo-nooz"
+    },
+    "repeat": {
+      "text": "Tekrar eder misiniz?",
+      "say": "tek-RAHR eh-DEHR mee-see-neez"
+    },
+    "where_station": {
+      "text": "Tren istasyonu nerede?",
+      "say": "TREN ees-tahs-yo-NOO NEH-reh-deh"
+    },
+    "where_toilet": {
+      "text": "Tuvalet nerede?",
+      "say": "too-vah-LET NEH-reh-deh"
+    },
+    "is_it_far": {
+      "text": "Uzak mı?",
+      "say": "oo-ZAHK muh"
+    },
+    "left": {
+      "text": "Sol",
+      "say": "SOL"
+    },
+    "right": {
+      "text": "Sağ",
+      "say": "SAH"
+    },
+    "straight": {
+      "text": "Düz",
+      "say": "DEWZ"
+    },
+    "menu": {
+      "text": "Menüyü alabilir miyim?",
+      "say": "meh-new-YEW ah-lah-bee-LEER mee-yeem"
+    },
+    "water": {
+      "text": "Bir su, lütfen",
+      "say": "beer SOO LEWT-fen"
+    },
+    "bill": {
+      "text": "Hesap, lütfen",
+      "say": "heh-SAHP LEWT-fen"
+    },
+    "delicious": {
+      "text": "Çok lezzetli!",
+      "say": "CHOK lez-zet-LEE"
+    },
+    "vegetarian": {
+      "text": "Vejetaryenim",
+      "say": "veh-zheh-tahr-YEH-neem"
+    },
+    "how_much": {
+      "text": "Ne kadar?",
+      "say": "NEH kah-dahr"
+    },
+    "too_expensive": {
+      "text": "Çok pahalı",
+      "say": "CHOK pah-hah-LUH"
+    },
+    "pay_card": {
+      "text": "Kartla ödeyebilir miyim?",
+      "say": "KART-lah ur-deh-yeh-bee-LEER mee-yeem"
+    },
+    "help": {
+      "text": "İmdat!",
+      "say": "eem-DAHT"
+    },
+    "need_doctor": {
+      "text": "Doktora ihtiyacım var",
+      "say": "dok-to-RAH eeh-tee-yah-JUM VAHR"
+    },
+    "lost": {
+      "text": "Kayboldum",
+      "say": "kai-bol-DOOM"
+    },
+    "n1": {
+      "text": "bir",
+      "say": "BEER"
+    },
+    "n2": {
+      "text": "iki",
+      "say": "ee-KEE"
+    },
+    "n3": {
+      "text": "üç",
+      "say": "EWCH"
+    },
+    "n4": {
+      "text": "dört",
+      "say": "DURT"
+    },
+    "n5": {
+      "text": "beş",
+      "say": "BESH"
+    },
+    "n6": {
+      "text": "altı",
+      "say": "ahl-TUH"
+    },
+    "n7": {
+      "text": "yedi",
+      "say": "yeh-DEE"
+    },
+    "n8": {
+      "text": "sekiz",
+      "say": "seh-KEEZ"
+    },
+    "n9": {
+      "text": "dokuz",
+      "say": "do-KOOZ"
+    },
+    "n10": {
+      "text": "on",
+      "say": "ON"
+    }
+  }
+}

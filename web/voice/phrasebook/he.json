@@ -1,0 +1,227 @@
+{
+  "book": "he",
+  "name": "Hebrew",
+  "native": "עברית",
+  "phrases": {
+    "hello": {
+      "text": "שלום",
+      "roman": "shalom",
+      "say": "sha-LOM"
+    },
+    "good_morning": {
+      "text": "בוקר טוב",
+      "roman": "boker tov",
+      "say": "BO-ker TOV"
+    },
+    "good_evening": {
+      "text": "ערב טוב",
+      "roman": "erev tov",
+      "say": "EH-rev TOV"
+    },
+    "goodbye": {
+      "text": "להתראות",
+      "roman": "lehitra'ot",
+      "say": "le-hit-ra-OT"
+    },
+    "how_are_you": {
+      "text": "מה נשמע?",
+      "roman": "ma nishma?",
+      "say": "ma nish-MA"
+    },
+    "nice_to_meet": {
+      "text": "נעים מאוד",
+      "roman": "na'im me'od",
+      "say": "na-EEM me-OD"
+    },
+    "please": {
+      "text": "בבקשה",
+      "roman": "bevakasha",
+      "say": "be-va-ka-SHA"
+    },
+    "thank_you": {
+      "text": "תודה",
+      "roman": "toda",
+      "say": "to-DA"
+    },
+    "youre_welcome": {
+      "text": "אין בעד מה",
+      "roman": "ein be'ad ma",
+      "say": "ein BE-ad MA"
+    },
+    "excuse_me": {
+      "text": "סליחה",
+      "roman": "slicha",
+      "say": "slee-KHA"
+    },
+    "sorry": {
+      "text": "אני מצטערת",
+      "roman": "ani mitsta'eret",
+      "say": "a-NEE mits-ta-E-ret"
+    },
+    "yes": {
+      "text": "כן",
+      "roman": "ken",
+      "say": "KEN"
+    },
+    "no": {
+      "text": "לא",
+      "roman": "lo",
+      "say": "LO"
+    },
+    "speak_english": {
+      "text": "מדברים כאן אנגלית?",
+      "roman": "medabrim kan anglit?",
+      "say": "me-dab-REEM kan ANG-leet"
+    },
+    "dont_understand": {
+      "text": "אני לא מבינה",
+      "roman": "ani lo mevina",
+      "say": "a-NEE lo me-vee-NA"
+    },
+    "slowly": {
+      "text": "לאט יותר, בבקשה",
+      "roman": "le'at yoter, bevakasha",
+      "say": "le-AT yo-TER be-va-ka-SHA"
+    },
+    "repeat": {
+      "text": "אפשר לחזור על זה?",
+      "roman": "efshar lachzor al ze?",
+      "say": "ef-SHAR lakh-ZOR al ZE"
+    },
+    "where_station": {
+      "text": "איפה תחנת הרכבת?",
+      "roman": "eifo tachanat harakevet?",
+      "say": "AY-fo ta-kha-NAT ha-ra-KE-vet"
+    },
+    "where_toilet": {
+      "text": "איפה השירותים?",
+      "roman": "eifo hasherutim?",
+      "say": "AY-fo ha-she-ru-TEEM"
+    },
+    "is_it_far": {
+      "text": "זה רחוק?",
+      "roman": "ze rachok?",
+      "say": "ze ra-KHOK"
+    },
+    "left": {
+      "text": "שמאלה",
+      "roman": "smola",
+      "say": "SMO-la"
+    },
+    "right": {
+      "text": "ימינה",
+      "roman": "yamina",
+      "say": "ya-MEE-na"
+    },
+    "straight": {
+      "text": "ישר",
+      "roman": "yashar",
+      "say": "ya-SHAR"
+    },
+    "menu": {
+      "text": "אפשר תפריט, בבקשה?",
+      "roman": "efshar tafrit, bevakasha?",
+      "say": "ef-SHAR taf-REET be-va-ka-SHA"
+    },
+    "water": {
+      "text": "מים, בבקשה",
+      "roman": "mayim, bevakasha",
+      "say": "MA-yim be-va-ka-SHA"
+    },
+    "bill": {
+      "text": "חשבון, בבקשה",
+      "roman": "cheshbon, bevakasha",
+      "say": "khesh-BON be-va-ka-SHA"
+    },
+    "delicious": {
+      "text": "טעים!",
+      "roman": "ta'im!",
+      "say": "ta-EEM"
+    },
+    "vegetarian": {
+      "text": "אני צמחונית",
+      "roman": "ani tsimchonit",
+      "say": "a-NEE tsim-kho-NEET"
+    },
+    "how_much": {
+      "text": "כמה זה עולה?",
+      "roman": "kama ze ole?",
+      "say": "KA-ma ze o-LE"
+    },
+    "too_expensive": {
+      "text": "זה יקר מדי",
+      "roman": "ze yakar midai",
+      "say": "ze ya-KAR mi-DAI"
+    },
+    "pay_card": {
+      "text": "אפשר לשלם בכרטיס?",
+      "roman": "efshar leshalem bekartis?",
+      "say": "ef-SHAR le-sha-LEM be-kar-TEES"
+    },
+    "help": {
+      "text": "הצילו!",
+      "roman": "hatsilu!",
+      "say": "ha-TSEE-loo"
+    },
+    "need_doctor": {
+      "text": "אני צריכה רופא",
+      "roman": "ani tsricha rofe",
+      "say": "a-NEE tsree-KHA ro-FE"
+    },
+    "lost": {
+      "text": "הלכתי לאיבוד",
+      "roman": "halachti le'ibud",
+      "say": "ha-LAKH-tee le-ee-BOOD"
+    },
+    "n1": {
+      "text": "אחת",
+      "roman": "achat",
+      "say": "a-KHAT"
+    },
+    "n2": {
+      "text": "שתיים",
+      "roman": "shtayim",
+      "say": "SHTA-yim"
+    },
+    "n3": {
+      "text": "שלוש",
+      "roman": "shalosh",
+      "say": "sha-LOSH"
+    },
+    "n4": {
+      "text": "ארבע",
+      "roman": "arba",
+      "say": "AR-ba"
+    },
+    "n5": {
+      "text": "חמש",
+      "roman": "chamesh",
+      "say": "kha-MESH"
+    },
+    "n6": {
+      "text": "שש",
+      "roman": "shesh",
+      "say": "SHESH"
+    },
+    "n7": {
+      "text": "שבע",
+      "roman": "sheva",
+      "say": "SHE-va"
+    },
+    "n8": {
+      "text": "שמונה",
+      "roman": "shmone",
+      "say": "SHMO-ne"
+    },
+    "n9": {
+      "text": "תשע",
+      "roman": "tesha",
+      "say": "TE-sha"
+    },
+    "n10": {
+      "text": "עשר",
+      "roman": "eser",
+      "say": "E-ser"
+    }
+  }
+}

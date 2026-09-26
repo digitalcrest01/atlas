@@ -1,0 +1,59 @@
+{
+  "country": "Lithuania",
+  "languages": ["en", "lt"],
+  "segments": [
+    {
+      "en": "Thump, thump, swish! Listen to any schoolyard in Lithuania and you'll hear a basketball. People here like to call it their second religion, and when the national team plays, the whole country holds its breath.",
+      "lt": "Bum, bum, šmaukšt! Įsiklausyk į bet kurį Lietuvos mokyklos kiemą ir išgirsi krepšinio kamuolį. Žmonės mėgsta jį vadinti antrąja religija, o kai žaidžia rinktinė, visa šalis sulaiko kvapą."
+    },
+    {
+      "en": "Lithuania is the southernmost of the three Baltic states, a land of rolling green hills, thousands of lakes, pine forests and a short but beautiful stretch of coast on the Baltic Sea.",
+      "lt": "Lietuva yra piečiausia iš trijų Baltijos valstybių, kraštas su banguojančiomis žaliomis kalvomis, tūkstančiais ežerų, pušynais ir trumpu, bet nuostabiu Baltijos jūros pakrantės ruožu."
+    },
+    {
+      "en": "Its language is one of the oldest-sounding living languages in Europe. Lithuanian has kept many features of ancient Indo-European speech, so language experts travel here just to listen.",
+      "lt": "Lietuvių kalba yra viena archajiškiausių gyvų Europos kalbų. Ji išsaugojo daug senosios indoeuropiečių kalbos bruožų, todėl kalbininkai atvyksta čia vien tam, kad jos pasiklausytų."
+    },
+    {
+      "en": "Vilnius, the capital, has one of the largest old towns in Central and Eastern Europe, full of baroque church towers, courtyards and winding streets that glow gold in the evening light.",
+      "lt": "Sostinė Vilnius turi vieną didžiausių senamiesčių Vidurio ir Rytų Europoje, pilną barokinių bažnyčių bokštų, kiemelių ir vingiuotų gatvelių, kurios vakaro šviesoje nusidažo auksu."
+    },
+    {
+      "en": "Just across a little river lies Užupis, an artists' neighbourhood that playfully calls itself a republic. Its constitution is posted on a wall, and one line says that everyone has the right to be happy.",
+      "lt": "Vos per upelį nuo senamiesčio yra Užupis, menininkų rajonas, žaismingai pasiskelbęs respublika. Jo konstitucija iškabinta ant sienos, o viena eilutė skelbia, kad kiekvienas turi teisę būti laimingas."
+    },
+    {
+      "en": "Half an hour away, Trakai Castle rises from an island in a lake, its red brick towers reflected in the water. In summer, families rent boats and paddle around its walls.",
+      "lt": "Už pusvalandžio kelio Trakų pilis kyla iš salos ežero viduryje, o jos raudonų plytų bokštai atsispindi vandenyje. Vasarą šeimos išsinuomoja valtis ir irkluoja aplink jos sienas."
+    },
+    {
+      "en": "On the coast, the Curonian Spit is a long, narrow strip of land between the sea and a lagoon, with towering sand dunes, pine forests and quiet fishing villages painted in bright colours.",
+      "lt": "Pajūryje driekiasi Kuršių nerija, ilgas ir siauras sausumos ruožas tarp jūros ir marių, su aukštomis smėlio kopomis, pušynais ir tyliais ryškiomis spalvomis nudažytais žvejų kaimeliais."
+    },
+    {
+      "en": "Now, let's eat. The famous dish is cepelinai, big potato dumplings shaped like airships and stuffed with meat or curd cheese. And in summer, everyone loves šaltibarščiai, a cold beetroot soup that is bright pink.",
+      "lt": "O dabar – prie stalo. Garsiausias patiekalas yra cepelinai, dideli bulviniai kukuliai, panašūs į dirižablius, įdaryti mėsa arba varške. O vasarą visi mėgsta šaltibarščius, ryškiai rausvą šaltą burokėlių sriubą."
+    },
+    {
+      "en": "In the north stands the Hill of Crosses, covered by many thousands of crosses left by visitors over generations. When the wind blows, the tiny ones clink together like a soft song.",
+      "lt": "Šiaurėje stūkso Kryžių kalnas, nusėtas daugybe tūkstančių kryžių, kuriuos per kartas paliko lankytojai. Papūtus vėjui, mažieji kryželiai tyliai skamba lyg daina."
+    },
+    {
+      "en": "Just before Lent comes Užgavėnės, a noisy carnival where people wear scary masks and act out a battle between winter and spring. Spring always wins, and everyone eats piles of pancakes.",
+      "lt": "Prieš gavėnią švenčiamos Užgavėnės, triukšmingas karnavalas, kai žmonės užsideda baisias kaukes ir vaidina žiemos ir pavasario kovą. Pavasaris visada laimi, o visi valgo krūvas blynų."
+    },
+    {
+      "en": "Lithuanian folk music includes sutartinės, ancient songs where voices overlap and weave around each other, and in midsummer, people jump over bonfires and search the forest for a magical fern flower.",
+      "lt": "Lietuvių liaudies muzikoje yra sutartinės, senovinės dainos, kuriose balsai persidengia ir pinasi vienas su kitu, o per Jonines žmonės šokinėja per laužus ir ieško miške stebuklingo paparčio žiedo."
+    },
+    {
+      "en": "In 1989, around two million people joined hands in a human chain called the Baltic Way, stretching all the way through Lithuania, Latvia and Estonia. It's a moment people here remember with great pride.",
+      "lt": "1989 metais apie du milijonus žmonių susikibo rankomis į gyvą grandinę, pavadintą Baltijos keliu, nusidriekusią per visą Lietuvą, Latviją ir Estiją. Tai akimirka, kurią žmonės čia prisimena su didžiuliu pasididžiavimu."
+    },
+    {
+      "en": "Iki pasimatymo, until we meet again! Head north across the border to Lithuania's Baltic neighbour, where Latvia is waiting.",
+      "lt": "Iki pasimatymo! Keliauk į šiaurę per sieną pas Lietuvos kaimynę Baltijos šalyse, kur tavęs laukia Latvija."
+    }
+  ],
+  "next": ["Latvia", "Poland", "Belarus"]
+}

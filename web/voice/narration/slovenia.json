@@ -1,0 +1,55 @@
+{
+  "country": "Slovenia",
+  "languages": ["en", "sl"],
+  "segments": [
+    {
+      "en": "Listen to the gentle hum around the beehive. In Slovenia, bees are treasured, and beekeeping is a proud tradition. Old hives were decorated with little painted panels showing saints, animals and funny village scenes, like tiny works of folk art.",
+      "sl": "Prisluhnite nežnemu brenčanju okoli čebelnjaka. V Sloveniji so čebele cenjene, čebelarstvo pa je ponosna tradicija. Stare panje so krasile poslikane panjske končnice s svetniki, živalmi in šaljivimi prizori z vasi, prave male umetnine ljudske umetnosti."
+    },
+    {
+      "en": "The local Carniolan honeybee is known for being calm and hard-working, and it was a Slovenian beekeeper, Anton Janša, whose birthday on the twentieth of May is now celebrated around the world as World Bee Day.",
+      "sl": "Domača kranjska čebela slovi po tem, da je mirna in pridna, rojstni dan slovenskega čebelarja Antona Janše, dvajseti maj, pa danes po vsem svetu praznujemo kot svetovni dan čebel."
+    },
+    {
+      "en": "Slovenia is a small country where the Alps meet the Mediterranean, the Pannonian plains and the Karst. In a single day you could wake up in the mountains, have lunch in the vineyards and watch the sunset over the Adriatic Sea.",
+      "sl": "Slovenija je majhna dežela, kjer se srečajo Alpe, Sredozemlje, Panonska nižina in Kras. V enem samem dnevu se lahko zbudite v gorah, kosite med vinogradi in opazujete sončni zahod nad Jadranskim morjem."
+    },
+    {
+      "en": "High above everything stands Triglav, the three-headed mountain, the highest peak in the country. It even appears on the flag, and it's said that a true Slovenian should climb it at least once.",
+      "sl": "Nad vsem se dviga Triglav, troglava gora in najvišji vrh v državi. Upodobljen je celo na zastavi, in pravijo, da mora vsak pravi Slovenec vsaj enkrat v življenju stopiti nanj."
+    },
+    {
+      "en": "At Lake Bled, a tiny island with a white church sits in green water beneath a castle on a cliff. Visitors are rowed across in wooden boats, and inside the church you can ring a bell and make a wish.",
+      "sl": "Na Blejskem jezeru sredi zelene vode leži otoček z belo cerkvico, nad njim pa na pečini stoji grad. Obiskovalce na otok prepeljejo s pletnami, v cerkvi pa lahko pozvonite z zvončkom želja."
+    },
+    {
+      "en": "Under the Karst, water has carved enormous caves. In Postojna Cave, a little train carries you deep underground, where you might meet the olm, a pale, blind salamander that local people once thought was a baby dragon.",
+      "sl": "Pod Krasom je voda izdolbla ogromne jame. V Postojnski jami vas vlakec odpelje globoko pod zemljo, kjer lahko srečate človeško ribico, bledo in slepo dvoživko, ki so jo domačini nekoč imeli za zmajevega mladiča."
+    },
+    {
+      "en": "Speaking of dragons, one guards the capital, Ljubljana. Dragons sit on the corners of the Dragon Bridge, and the city's riverbanks, bridges and markets were shaped by the architect Jože Plečnik.",
+      "sl": "Ko smo že pri zmajih: eden varuje prestolnico Ljubljano. Zmaji sedijo na vogalih Zmajskega mostu, nabrežja, mostove in tržnico pa je oblikoval arhitekt Jože Plečnik."
+    },
+    {
+      "en": "The Slovenian language has a rare feature called the dual. Besides singular and plural, there's a special form for exactly two, so you'd say one thing differently about a pair of friends than about a group.",
+      "sl": "Slovenščina ima redko posebnost, dvojino. Poleg ednine in množine ima posebno obliko za natanko dva, zato o dveh prijateljih govorimo drugače kot o večji skupini."
+    },
+    {
+      "en": "At the table, try potica, a rolled cake swirled with walnut filling, or kranjska klobasa, a famous smoked sausage. Many families have a small vineyard or orchard, and sharing homemade produce with friends is part of life.",
+      "sl": "Za mizo poskusite potico z orehovim nadevom ali kranjsko klobaso. Mnoge družine imajo majhen vinograd ali sadovnjak, in deliti domače pridelke s prijatelji je del življenja."
+    },
+    {
+      "en": "In late winter in Ptuj, shaggy figures called kurenti roam the streets wearing sheepskins, horned masks and heavy cowbells, stomping and jangling to chase winter away and welcome spring.",
+      "sl": "Konec zime po ulicah Ptuja hodijo kosmati kurenti v ovčjih kožuhih, z rogatimi maskami in težkimi zvonci, ki z drdranjem in poskakovanjem preganjajo zimo in kličejo pomlad."
+    },
+    {
+      "en": "The famous white Lipizzaner horses also come from Slovenia, from the stud farm at Lipica on the Karst, where they have been bred for more than four hundred years.",
+      "sl": "Tudi slavni beli lipicanci izvirajo iz Slovenije, iz kobilarne v Lipici na Krasu, kjer jih vzrejajo že več kot štiristo let."
+    },
+    {
+      "en": "Hvala, thank you, for your visit. Head south across the forests and rivers, and Croatia, with its long, sparkling coastline, is waiting for you.",
+      "sl": "Hvala za obisk! Pot vas vodi proti jugu, čez gozdove in reke, kjer vas pričakuje Hrvaška s svojo dolgo, bleščečo obalo."
+    }
+  ],
+  "next": ["Croatia", "Italy", "Austria"]
+}

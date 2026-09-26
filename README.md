@@ -11,8 +11,18 @@ Interactive geography app for kids and curious minds of all ages. Photorealistic
 ```
 myatlastic/
 ├── web/                       The app (one file, ~243 KB, runs anywhere)
-│   ├── index.html             Shell, UI, 3D globe, voice, paywall, all modes
-│   └── countries_data.js      197 countries × 19 fields
+│   ├── index.html             Shell, UI, 3D globe, paywall, all modes
+│   ├── room-talk.js           Tour conversation (interrupt, ask, switch country)
+│   └── voice/                 The one speech system every feature uses
+│       ├── voice.js           MyatlasticVoice: play / stop / pause, caching, no device TTS
+│       ├── locales.js         Country → languages → BCP-47 locale → neural voice
+│       ├── phrases.js         Phrasebook catalogue (ids, English, topics)
+│       ├── content.js         Loads phrasebooks and narrations on demand
+│       ├── phrasebook/*.json  One book per language, native script + pronunciation
+│       └── narration/*.json   A 2–3 minute spoken visit per country, English + local
+├── api/voice.js               Neural speech endpoint (keys stay server-side)
+├── serve.js                   Local preview with the same /api/voice
+├── scripts/                   check-voice-data.js, sync-app.sh
 ├── site/                      Marketing site
 │   ├── index.html             Landing page
 │   ├── privacy.html           Privacy policy (COPPA, GDPR-K)
@@ -37,13 +47,18 @@ myatlastic/
 ## Run it locally
 
 ```bash
-cd web
-python3 -m http.server 8000
-# Open http://localhost:8000 on Mac
-# Open http://<your-mac-local-ip>:8000 on your phone (same WiFi)
+node serve.js
+# Open http://127.0.0.1:8772/web/
 ```
 
-No build step. The app is a single static HTML file with inlined country data.
+No build step. Speech needs `XAI_API_KEY` (or a signed-in grok CLI) and, for the
+languages xAI doesn't speak (Thai, Dutch, Polish, Swahili and more),
+`AZURE_SPEECH_KEY` + `AZURE_SPEECH_REGION`. Without a key a language shows its
+text with no audio; there is no robotic fallback. `VOICE_FAKE=1 node serve.js`
+plays placeholder tones so playback can be tested without spending credits.
+
+After editing `web/`, run `scripts/sync-app.sh` (the website's `/app` is a copy)
+and `node scripts/check-voice-data.js` if you touched phrasebooks or narrations.
 
 ## Hosting on Vercel
 
@@ -77,7 +92,7 @@ Vercel auto-provisions HTTPS, runs on a CDN, gives you preview URLs per branch.
 | 197 countries | All sovereign states + Vatican + Palestine + Kosovo + Taiwan |
 | Photorealistic 3D globe | Three.js with NASA Blue Marble texture, raycaster pin picking |
 | SVG flat-map fallback | If WebGL fails (older devices), app degrades to a flat world map |
-| Voice pronunciation | Web Speech API, ~60 countries get native locale voice (ja-JP for Japan, fr-FR for France, etc) |
+| Voice | Neural speech via `/api/voice` (xAI, plus Azure for the languages xAI lacks). A spoken 2–3 minute visit to every country in English and its local language, and a phrasebook in 69 languages |
 | Expanded country data | Each country has: capital, currency, language, history, religion, culture, notable figures, food, sport, traditional attire, population, independence date, pronunciation guide |
 | Four modes | Explore (globe + facts), Quiz (6 question types), Daily challenge with streak, Compare two countries |
 | Paywall | 10 free countries (alphabetical: Afghanistan-Australia). Pro unlocks all 195+ and deep sections |
@@ -155,7 +170,7 @@ See `LAUNCH_PLAN.md` for a 14-day day-by-day plan.
 - **Paywall is a UI simulation.** Clicking Upgrade sets `localStorage.myatlastic_pro = '1'`. Production needs RevenueCat (recommended) or native StoreKit + Play Billing + verification backend.
 - **No analytics.** Deliberate privacy choice. No funnel data. If needed post-launch, add Plausible (self-hosted). Do not add Google Analytics or Mixpanel.
 - **Tight-free monetisation is aggressive.** Base scenario doesn't cash-positive in 36 months. Re-read `BUSINESS_PLAN.md` §8 before raising.
-- **Voice pronunciation depends on the browser's installed voices.** Older Android devices may have lower-quality TTS. About 60 countries get locale-specific voices; the rest fall back to English.
+- **Speech needs the server keys in Vercel.** `XAI_API_KEY` covers 20 languages. Set `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION` to voice the rest; until then those languages show text only. Audio is cached by the CDN, so each line is generated once.
 
 ## Licence
 

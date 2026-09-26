@@ -1,0 +1,59 @@
+{
+  "country": "Comoros",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "Before you see these islands, you may smell them. On warm evenings the air is sweet with ylang-ylang, a yellow flower whose oil is treasured by perfume makers. No wonder the Comoros are called the perfume islands.",
+      "fr": "Avant même de voir ces îles, on les sent. Les soirs de chaleur, l'air est parfumé d'ylang-ylang, une fleur jaune dont l'huile est très recherchée par les parfumeurs. Pas étonnant qu'on surnomme les Comores les îles aux parfums."
+    },
+    {
+      "en": "The Comoros are volcanic islands in the Indian Ocean, between Mozambique and Madagascar. The main ones are Grande Comore, Anjouan and Mohéli, each with its own character.",
+      "fr": "Les Comores sont des îles volcaniques de l'océan Indien, entre le Mozambique et Madagascar. Les principales sont la Grande Comore, Anjouan et Mohéli, chacune avec son propre caractère."
+    },
+    {
+      "en": "On Grande Comore rises Karthala, a great active volcano crowned by a wide crater. Its old lava flows run down to the sea, where black rock meets white sand.",
+      "fr": "Sur la Grande Comore se dresse le Karthala, un grand volcan actif couronné d'un vaste cratère. Ses anciennes coulées de lave descendent jusqu'à la mer, où la roche noire rencontre le sable blanc."
+    },
+    {
+      "en": "Moroni, the capital, is a small harbour town of white walls and narrow lanes. Its old Friday mosque looks out over the water, where wooden boats bob at anchor.",
+      "fr": "Moroni, la capitale, est une petite ville portuaire aux murs blancs et aux ruelles étroites. Sa vieille mosquée du vendredi domine l'eau, où se balancent des bateaux de bois."
+    },
+    {
+      "en": "People speak Comorian, a language related to Swahili, as well as French and Arabic. A warm greeting is jeje, and it always earns a smile.",
+      "fr": "On parle le comorien, une langue cousine du swahili, ainsi que le français et l'arabe. Pour saluer chaleureusement, on dit jeje, et cela vaut toujours un sourire."
+    },
+    {
+      "en": "Many women care for their skin with msindzano, a pale paste made by grinding sandalwood on a piece of coral, painted on the face in patterns. They wrap themselves in bright cloths called chiromani.",
+      "fr": "Beaucoup de femmes prennent soin de leur peau avec le msindzano, une pâte claire obtenue en frottant du bois de santal sur un morceau de corail, appliquée sur le visage en motifs. Elles se drapent dans des étoffes colorées appelées chiromani."
+    },
+    {
+      "en": "On Grande Comore, the grand marriage is the celebration of a lifetime. Families save for years, and the festivities last many days, with processions, music, dancing and gifts of gold.",
+      "fr": "Sur la Grande Comore, le grand mariage est la fête d'une vie. Les familles économisent pendant des années, et les festivités durent de nombreux jours, avec processions, musique, danses et cadeaux en or."
+    },
+    {
+      "en": "Farms and gardens are full of spices. Vanilla vines climb the trees, cloves dry in the sun on woven mats, and their sweet smell drifts through the villages.",
+      "fr": "Les champs et les jardins regorgent d'épices. La vanille grimpe le long des arbres, les clous de girofle sèchent au soleil sur des nattes tressées, et leur doux parfum flotte dans les villages."
+    },
+    {
+      "en": "At the table you might find mataba, cassava leaves simmered in coconut milk, grilled fish with rice, and on special days, lobster in vanilla sauce.",
+      "fr": "À table, on trouve le mataba, des feuilles de manioc mijotées dans le lait de coco, du poisson grillé avec du riz et, les jours de fête, de la langouste à la vanille."
+    },
+    {
+      "en": "The sea here holds a famous mystery: the coelacanth, a deep-water fish once thought to have vanished with the dinosaurs. Local fishermen have known it for generations.",
+      "fr": "La mer abrite ici un mystère célèbre : le cœlacanthe, un poisson des grands fonds qu'on croyait disparu avec les dinosaures. Les pêcheurs de l'archipel le connaissent depuis des générations."
+    },
+    {
+      "en": "Mohéli, the smallest and wildest of the main islands, is a marine park. Green turtles come ashore at night to lay their eggs, and in the southern winter humpback whales pass by with their calves.",
+      "fr": "Mohéli, la plus petite et la plus sauvage des îles principales, est un parc marin. Les tortues vertes viennent pondre la nuit sur ses plages, et pendant l'hiver austral, les baleines à bosse passent avec leurs petits."
+    },
+    {
+      "en": "Anjouan is steep and green, with rivers tumbling down forested slopes. In the evening, as the call to prayer echoes from the hills, families gather on their doorsteps to talk while the sun sinks into the sea.",
+      "fr": "Anjouan est escarpée et verdoyante, avec des rivières qui dévalent des pentes boisées. Le soir, quand l'appel à la prière résonne dans les collines, les familles se retrouvent sur le pas de la porte pour bavarder tandis que le soleil plonge dans la mer."
+    },
+    {
+      "en": "Now sail southeast across the channel. The great island of Madagascar is waiting on the horizon.",
+      "fr": "Maintenant, mettez le cap au sud-est à travers le canal. La grande île de Madagascar vous attend à l'horizon."
+    }
+  ],
+  "next": ["Madagascar", "Tanzania", "Mozambique"]
+}

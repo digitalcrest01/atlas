@@ -1,0 +1,183 @@
+{
+  "book": "so",
+  "name": "Somali",
+  "native": "Soomaali",
+  "phrases": {
+    "hello": {
+      "text": "Asalaamu calaykum",
+      "say": "as-sa-LAA-moo a-LAY-koom"
+    },
+    "good_morning": {
+      "text": "Subax wanaagsan",
+      "say": "SOO-bah wa-NAAG-san"
+    },
+    "good_evening": {
+      "text": "Habeen wanaagsan",
+      "say": "ha-BEEN wa-NAAG-san"
+    },
+    "goodbye": {
+      "text": "Nabad gelyo",
+      "say": "NA-bad GEL-yo"
+    },
+    "how_are_you": {
+      "text": "Sidee tahay?",
+      "say": "see-DAY TA-hai"
+    },
+    "nice_to_meet": {
+      "text": "Waan ku faraxsanahay inaan ku barto",
+      "say": "waan koo fa-rah-SA-na-hai in-AAN koo BAR-to"
+    },
+    "please": {
+      "text": "Fadlan",
+      "say": "FAD-lan"
+    },
+    "thank_you": {
+      "text": "Mahadsanid",
+      "say": "ma-had-SA-nid"
+    },
+    "youre_welcome": {
+      "text": "Adaa mudan",
+      "say": "a-DAA MU-dan"
+    },
+    "excuse_me": {
+      "text": "Iga raalli ahaw",
+      "say": "EE-ga RAAL-li a-HAW"
+    },
+    "sorry": {
+      "text": "Waan ka xumahay",
+      "say": "waan ka HU-ma-hai"
+    },
+    "yes": {
+      "text": "Haa",
+      "say": "HAA"
+    },
+    "no": {
+      "text": "Maya",
+      "say": "MA-ya"
+    },
+    "speak_english": {
+      "text": "Ma ku hadashaa Ingiriisi?",
+      "say": "ma koo ha-da-SHAA in-gi-REE-si"
+    },
+    "dont_understand": {
+      "text": "Ma fahmin",
+      "say": "ma FAH-min"
+    },
+    "slowly": {
+      "text": "Fadlan si tartiib ah u hadal",
+      "say": "FAD-lan si tar-TEEB ah oo HA-dal"
+    },
+    "repeat": {
+      "text": "Mar kale ma dhihi kartaa?",
+      "say": "mar KA-leh ma DI-hi kar-TAA"
+    },
+    "where_station": {
+      "text": "Aaway saldhigga tareenka?",
+      "say": "aa-WAY sal-DIG-ga ta-REEN-ka"
+    },
+    "where_toilet": {
+      "text": "Aaway musqusha?",
+      "say": "aa-WAY mus-QU-sha"
+    },
+    "is_it_far": {
+      "text": "Ma fog yahay?",
+      "say": "ma FOG YA-hai"
+    },
+    "left": {
+      "text": "Bidix",
+      "say": "BI-dih"
+    },
+    "right": {
+      "text": "Midig",
+      "say": "MI-dig"
+    },
+    "straight": {
+      "text": "Toos",
+      "say": "TOOS"
+    },
+    "menu": {
+      "text": "Fadlan menuuga i sii",
+      "say": "FAD-lan me-NOO-ga ee SEE"
+    },
+    "water": {
+      "text": "Biyo, fadlan",
+      "say": "BI-yo, FAD-lan"
+    },
+    "bill": {
+      "text": "Biilka, fadlan",
+      "say": "BEEL-ka, FAD-lan"
+    },
+    "delicious": {
+      "text": "Waa macaan!",
+      "say": "waa ma-AAN"
+    },
+    "vegetarian": {
+      "text": "Hilib ma cuno",
+      "say": "HI-lib ma OO-no"
+    },
+    "how_much": {
+      "text": "Waa imisa?",
+      "say": "waa i-MI-sa"
+    },
+    "too_expensive": {
+      "text": "Aad buu qaali u yahay",
+      "say": "AAD boo QAA-li oo YA-hai"
+    },
+    "pay_card": {
+      "text": "Kaarka ma ku bixin karaa?",
+      "say": "KAAR-ka ma koo BI-hin ka-RAA"
+    },
+    "help": {
+      "text": "I caawiya!",
+      "say": "ee AA-wi-ya"
+    },
+    "need_doctor": {
+      "text": "Dhakhtar baan u baahanahay",
+      "say": "DAKH-tar baan oo BAA-ha-na-hai"
+    },
+    "lost": {
+      "text": "Waan lumay",
+      "say": "waan LU-mai"
+    },
+    "n1": {
+      "text": "kow",
+      "say": "KOW"
+    },
+    "n2": {
+      "text": "laba",
+      "say": "LA-ba"
+    },
+    "n3": {
+      "text": "saddex",
+      "say": "SAD-deh"
+    },
+    "n4": {
+      "text": "afar",
+      "say": "A-far"
+    },
+    "n5": {
+      "text": "shan",
+      "say": "SHAN"
+    },
+    "n6": {
+      "text": "lix",
+      "say": "LIH"
+    },
+    "n7": {
+      "text": "toddoba",
+      "say": "TOD-do-ba"
+    },
+    "n8": {
+      "text": "siddeed",
+      "say": "sid-DEED"
+    },
+    "n9": {
+      "text": "sagaal",
+      "say": "sa-GAAL"
+    },
+    "n10": {
+      "text": "toban",
+      "say": "TO-ban"
+    }
+  }
+}

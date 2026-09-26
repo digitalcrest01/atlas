@@ -1,0 +1,46 @@
+{
+  "country": "Tonga",
+  "languages": ["en"],
+  "segments": [
+    {
+      "en": "Mālō e lelei! That's hello in Tongan, and you'll hear it everywhere in this kingdom of islands in the South Pacific."
+    },
+    {
+      "en": "Tonga is made up of around a hundred and seventy islands, gathered into groups such as Tongatapu, Haʻapai and Vavaʻu. Many are low coral islands ringed with white sand and turquoise lagoons, while others are volcanic."
+    },
+    {
+      "en": "Tonga is a kingdom, and it's proud to be the only Pacific island nation that was never fully colonised. The royal palace, a white wooden building with a red roof, stands by the waterfront in Nukuʻalofa."
+    },
+    {
+      "en": "Sunday is a special day. Shops close, church bells ring, and choirs sing in powerful, soaring harmonies. Afterwards, families share a feast cooked in an ʻumu, an earth oven."
+    },
+    {
+      "en": "In the ʻumu, taro, yams and fish cook slowly under hot stones, alongside lu pulu, bundles of taro leaves wrapped around corned beef and rich coconut cream."
+    },
+    {
+      "en": "In the evenings, men often gather for kava, a drink made from the root of a pepper plant, sipped from coconut shells while they talk, laugh and sing late into the night."
+    },
+    {
+      "en": "Women make ngatu, tapa cloth beaten from the bark of the paper mulberry tree and painted with bold brown and black designs. Huge pieces are given at weddings and other important occasions."
+    },
+    {
+      "en": "Many Tongans wear a taʻovala, a finely woven mat wrapped around the waist, as a sign of respect, especially at church and formal events."
+    },
+    {
+      "en": "From July to October, humpback whales come to Tonga's warm waters to give birth, and around Vavaʻu you might see a mother and calf rising gently beside the boat."
+    },
+    {
+      "en": "Traditional dances like the lakalaka tell stories through graceful arm movements, performed by long rows of dancers on special occasions."
+    },
+    {
+      "en": "Rugby is a passion, and before each match the national team faces their rivals with the Sipi Tau, a fierce and thrilling war dance."
+    },
+    {
+      "en": "On Tongatapu, the blowholes along the southern coast shoot sea spray high into the air with a roar, like a row of fountains."
+    },
+    {
+      "en": "As the Pacific sun sets over the reef, say 'mālō', thank you. Across the sea to the west, Fiji is waiting for you."
+    }
+  ],
+  "next": ["Fiji", "Samoa", "New Zealand"]
+}

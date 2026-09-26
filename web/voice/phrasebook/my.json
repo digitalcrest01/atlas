@@ -1,0 +1,227 @@
+{
+  "book": "my",
+  "name": "Burmese",
+  "native": "မြန်မာဘာသာ",
+  "phrases": {
+    "hello": {
+      "text": "မင်္ဂလာပါ",
+      "roman": "mingalaba",
+      "say": "min-gah-lah-BAH"
+    },
+    "good_morning": {
+      "text": "မင်္ဂလာနံနက်ခင်းပါ",
+      "roman": "mingala nannet khin ba",
+      "say": "min-gah-lah nahn-NET khin bah"
+    },
+    "good_evening": {
+      "text": "မင်္ဂလာညနေခင်းပါ",
+      "roman": "mingala nya-ne khin ba",
+      "say": "min-gah-lah nyah-NAY khin bah"
+    },
+    "goodbye": {
+      "text": "သွားတော့မယ်နော်",
+      "roman": "thwa dawt me naw",
+      "say": "thwah dawt MEH naw"
+    },
+    "how_are_you": {
+      "text": "နေကောင်းလား",
+      "roman": "nei kaung la?",
+      "say": "nay KOWNG lah"
+    },
+    "nice_to_meet": {
+      "text": "တွေ့ရတာ ဝမ်းသာပါတယ်",
+      "roman": "twei ya da wun tha ba de",
+      "say": "tway yah dah WUN thah bah deh"
+    },
+    "please": {
+      "text": "ကျေးဇူးပြုပြီး",
+      "roman": "kyei zu pyu byi",
+      "say": "chay-zoo PYOO pyee"
+    },
+    "thank_you": {
+      "text": "ကျေးဇူးတင်ပါတယ်",
+      "roman": "kyei zu tin ba de",
+      "say": "chay-zoo TIN bah deh"
+    },
+    "youre_welcome": {
+      "text": "ရပါတယ်",
+      "roman": "ya ba de",
+      "say": "yah bah DEH"
+    },
+    "excuse_me": {
+      "text": "တဆိတ်လောက်",
+      "roman": "ta hseik lauk",
+      "say": "tah-SAYK lowk"
+    },
+    "sorry": {
+      "text": "စိတ်မရှိပါနဲ့",
+      "roman": "seik ma shi ba ne",
+      "say": "sayk mah-SHEE bah neh"
+    },
+    "yes": {
+      "text": "ဟုတ်ကဲ့",
+      "roman": "hote ke",
+      "say": "hoht-KEH"
+    },
+    "no": {
+      "text": "မဟုတ်ဘူး",
+      "roman": "ma hote bu",
+      "say": "mah-HOHT boo"
+    },
+    "speak_english": {
+      "text": "အင်္ဂလိပ်လို ပြောတတ်လား",
+      "roman": "ingaleik lo pyaw tat la?",
+      "say": "in-gah-LAYK loh pyaw TAHT lah"
+    },
+    "dont_understand": {
+      "text": "နားမလည်ဘူး",
+      "roman": "na ma le bu",
+      "say": "nah mah LEH boo"
+    },
+    "slowly": {
+      "text": "ဖြည်းဖြည်း ပြောပေးပါ",
+      "roman": "phyei phyei pyaw pei ba",
+      "say": "pyay-pyay pyaw PAY bah"
+    },
+    "repeat": {
+      "text": "နောက်တစ်ခါ ပြောပေးပါ",
+      "roman": "nauk ta-kha pyaw pei ba",
+      "say": "nowk tah-KAH pyaw PAY bah"
+    },
+    "where_station": {
+      "text": "ဘူတာရုံ ဘယ်မှာလဲ",
+      "roman": "buda-yon be hma le?",
+      "say": "boo-dah-YOHN beh-mah LEH"
+    },
+    "where_toilet": {
+      "text": "အိမ်သာ ဘယ်မှာလဲ",
+      "roman": "ein-tha be hma le?",
+      "say": "AYN-thah beh-mah LEH"
+    },
+    "is_it_far": {
+      "text": "ဝေးလား",
+      "roman": "wei la?",
+      "say": "WAY lah"
+    },
+    "left": {
+      "text": "ဘယ်ဘက်",
+      "roman": "be bet",
+      "say": "beh-BET"
+    },
+    "right": {
+      "text": "ညာဘက်",
+      "roman": "nya bet",
+      "say": "nyah-BET"
+    },
+    "straight": {
+      "text": "တည့်တည့်",
+      "roman": "te te",
+      "say": "teh-TEH"
+    },
+    "menu": {
+      "text": "မီနူး ပေးပါ",
+      "roman": "mi-nu pei ba",
+      "say": "mee-NOO pay bah"
+    },
+    "water": {
+      "text": "ရေ ပေးပါ",
+      "roman": "yei pei ba",
+      "say": "YAY pay bah"
+    },
+    "bill": {
+      "text": "ပိုက်ဆံ ရှင်းမယ်",
+      "roman": "paik-hsan shin me",
+      "say": "pike-sahn SHIN meh"
+    },
+    "delicious": {
+      "text": "စားလို့ကောင်းတယ်",
+      "roman": "sa lo kaung de",
+      "say": "sah-loh KOWNG deh"
+    },
+    "vegetarian": {
+      "text": "သက်သတ်လွတ် စားပါတယ်",
+      "roman": "thet-that-lut sa ba de",
+      "say": "thet-thaht-LOOT sah bah deh"
+    },
+    "how_much": {
+      "text": "ဘယ်လောက်လဲ",
+      "roman": "be lauk le?",
+      "say": "beh-LOWK leh"
+    },
+    "too_expensive": {
+      "text": "ဈေးကြီးလွန်းတယ်",
+      "roman": "zei kyi lun de",
+      "say": "zay chee LOON deh"
+    },
+    "pay_card": {
+      "text": "ကတ်နဲ့ ပေးလို့ရလား",
+      "roman": "kat ne pei lo ya la?",
+      "say": "KAHT neh pay-loh YAH lah"
+    },
+    "help": {
+      "text": "ကယ်ကြပါ",
+      "roman": "ke kya ba",
+      "say": "KEH chah bah"
+    },
+    "need_doctor": {
+      "text": "ဆရာဝန် လိုတယ်",
+      "roman": "hsaya-wun lo de",
+      "say": "sah-yah-WUN loh deh"
+    },
+    "lost": {
+      "text": "လမ်းပျောက်နေတယ်",
+      "roman": "lan pyauk nei de",
+      "say": "lahn PYOWK nay deh"
+    },
+    "n1": {
+      "text": "တစ်",
+      "roman": "tit",
+      "say": "TIT"
+    },
+    "n2": {
+      "text": "နှစ်",
+      "roman": "hnit",
+      "say": "NIT"
+    },
+    "n3": {
+      "text": "သုံး",
+      "roman": "thon",
+      "say": "THOHN"
+    },
+    "n4": {
+      "text": "လေး",
+      "roman": "lei",
+      "say": "LAY"
+    },
+    "n5": {
+      "text": "ငါး",
+      "roman": "nga",
+      "say": "NGAH"
+    },
+    "n6": {
+      "text": "ခြောက်",
+      "roman": "chauk",
+      "say": "CHOWK"
+    },
+    "n7": {
+      "text": "ခုနစ်",
+      "roman": "khun-hnit",
+      "say": "KOHN-nit"
+    },
+    "n8": {
+      "text": "ရှစ်",
+      "roman": "shit",
+      "say": "SHIT"
+    },
+    "n9": {
+      "text": "ကိုး",
+      "roman": "ko",
+      "say": "KOH"
+    },
+    "n10": {
+      "text": "တစ်ဆယ်",
+      "roman": "ta-hse",
+      "say": "tah-SEH"
+    }
+  }
+}

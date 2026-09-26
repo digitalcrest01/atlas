@@ -1,0 +1,227 @@
+{
+  "book": "hy",
+  "name": "Armenian",
+  "native": "Հայերեն",
+  "phrases": {
+    "hello": {
+      "text": "Բարև ձեզ",
+      "roman": "Barev dzez",
+      "say": "bah-REV dzez"
+    },
+    "good_morning": {
+      "text": "Բարի լույս",
+      "roman": "Bari luys",
+      "say": "bah-REE LOOYS"
+    },
+    "good_evening": {
+      "text": "Բարի երեկո",
+      "roman": "Bari yereko",
+      "say": "bah-REE yeh-reh-KOH"
+    },
+    "goodbye": {
+      "text": "Ցտեսություն",
+      "roman": "Tstesutyun",
+      "say": "tsuh-teh-soo-TYOON"
+    },
+    "how_are_you": {
+      "text": "Ինչպե՞ս եք",
+      "roman": "Inchpes ek",
+      "say": "eench-PES ek"
+    },
+    "nice_to_meet": {
+      "text": "Շատ հաճելի է",
+      "roman": "Shat hacheli e",
+      "say": "shaht hah-cheh-LEE eh"
+    },
+    "please": {
+      "text": "Խնդրում եմ",
+      "roman": "Khndrum em",
+      "say": "khuhn-DROOM em"
+    },
+    "thank_you": {
+      "text": "Շնորհակալություն",
+      "roman": "Shnorhakalutyun",
+      "say": "shnor-hah-kah-loo-TYOON"
+    },
+    "youre_welcome": {
+      "text": "Խնդրեմ",
+      "roman": "Khndrem",
+      "say": "khuhn-DREM"
+    },
+    "excuse_me": {
+      "text": "Ներեցեք",
+      "roman": "Neretsek",
+      "say": "neh-reh-TSEK"
+    },
+    "sorry": {
+      "text": "Ներողություն",
+      "roman": "Neroghutyun",
+      "say": "neh-roh-ghoo-TYOON"
+    },
+    "yes": {
+      "text": "Այո",
+      "roman": "Ayo",
+      "say": "ah-YOH"
+    },
+    "no": {
+      "text": "Ոչ",
+      "roman": "Voch",
+      "say": "VOHCH"
+    },
+    "speak_english": {
+      "text": "Անգլերեն խոսո՞ւմ եք",
+      "roman": "Angleren khosum ek",
+      "say": "ahn-gleh-REN khoh-SOOM ek"
+    },
+    "dont_understand": {
+      "text": "Չեմ հասկանում",
+      "roman": "Chem haskanum",
+      "say": "chem hahs-kah-NOOM"
+    },
+    "slowly": {
+      "text": "Խնդրում եմ, ավելի դանդաղ խոսեք",
+      "roman": "Khndrum em, aveli dandagh khosek",
+      "say": "khuhn-DROOM em ah-veh-LEE dahn-DAHGH khoh-SEK"
+    },
+    "repeat": {
+      "text": "Կարո՞ղ եք կրկնել",
+      "roman": "Karogh ek krknel",
+      "say": "kah-ROGH ek kur-kuh-NEL"
+    },
+    "where_station": {
+      "text": "Որտե՞ղ է երկաթուղային կայարանը",
+      "roman": "Vortegh e yerkatughayin kayarany",
+      "say": "vor-TEGH eh yer-kah-too-ghah-YEEN kah-yah-RAH-nuh"
+    },
+    "where_toilet": {
+      "text": "Որտե՞ղ է զուգարանը",
+      "roman": "Vortegh e zugarany",
+      "say": "vor-TEGH eh zoo-gah-RAH-nuh"
+    },
+    "is_it_far": {
+      "text": "Հեռո՞ւ է",
+      "roman": "Herru e",
+      "say": "heh-RROO eh"
+    },
+    "left": {
+      "text": "Ձախ",
+      "roman": "Dzakh",
+      "say": "DZAHKH"
+    },
+    "right": {
+      "text": "Աջ",
+      "roman": "Aj",
+      "say": "AHJ"
+    },
+    "straight": {
+      "text": "Ուղիղ",
+      "roman": "Ughigh",
+      "say": "oo-GHEEGH"
+    },
+    "menu": {
+      "text": "Մենյուն, խնդրում եմ",
+      "roman": "Menyun, khndrum em",
+      "say": "men-YOON khuhn-DROOM em"
+    },
+    "water": {
+      "text": "Ջուր, խնդրում եմ",
+      "roman": "Jur, khndrum em",
+      "say": "JOOR khuhn-DROOM em"
+    },
+    "bill": {
+      "text": "Հաշիվը, խնդրում եմ",
+      "roman": "Hashivy, khndrum em",
+      "say": "hah-SHEE-vuh khuhn-DROOM em"
+    },
+    "delicious": {
+      "text": "Շատ համեղ է",
+      "roman": "Shat hamegh e",
+      "say": "shaht hah-MEGH eh"
+    },
+    "vegetarian": {
+      "text": "Ես բուսակեր եմ",
+      "roman": "Yes busaker em",
+      "say": "yes boo-sah-KER em"
+    },
+    "how_much": {
+      "text": "Ի՞նչ արժե",
+      "roman": "Inch arzhe",
+      "say": "EENCH ahr-ZHEH"
+    },
+    "too_expensive": {
+      "text": "Շատ թանկ է",
+      "roman": "Shat tank e",
+      "say": "shaht TAHNK eh"
+    },
+    "pay_card": {
+      "text": "Կարո՞ղ եմ քարտով վճարել",
+      "roman": "Karogh em kartov vcharel",
+      "say": "kah-ROGH em kar-TOHV vuh-chah-REL"
+    },
+    "help": {
+      "text": "Օգնությո՜ւն",
+      "roman": "Ognutyun",
+      "say": "og-noo-TYOON"
+    },
+    "need_doctor": {
+      "text": "Ինձ բժիշկ է պետք",
+      "roman": "Indz bzhishk e petk",
+      "say": "eendz buh-ZHEESHK eh PETK"
+    },
+    "lost": {
+      "text": "Ես մոլորվել եմ",
+      "roman": "Yes molorvel em",
+      "say": "yes moh-lor-VEL em"
+    },
+    "n1": {
+      "text": "մեկ",
+      "roman": "mek",
+      "say": "MEK"
+    },
+    "n2": {
+      "text": "երկու",
+      "roman": "yerku",
+      "say": "yer-KOO"
+    },
+    "n3": {
+      "text": "երեք",
+      "roman": "yerek",
+      "say": "yeh-REK"
+    },
+    "n4": {
+      "text": "չորս",
+      "roman": "chors",
+      "say": "CHORS"
+    },
+    "n5": {
+      "text": "հինգ",
+      "roman": "hing",
+      "say": "HEENG"
+    },
+    "n6": {
+      "text": "վեց",
+      "roman": "vets",
+      "say": "VETS"
+    },
+    "n7": {
+      "text": "յոթ",
+      "roman": "yot",
+      "say": "YOHT"
+    },
+    "n8": {
+      "text": "ութ",
+      "roman": "ut",
+      "say": "OOT"
+    },
+    "n9": {
+      "text": "ինը",
+      "roman": "iny",
+      "say": "EE-nuh"
+    },
+    "n10": {
+      "text": "տասը",
+      "roman": "tasy",
+      "say": "TAH-suh"
+    }
+  }
+}

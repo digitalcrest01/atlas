@@ -1,0 +1,59 @@
+{
+  "country": "Paraguay",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "Mba'éichapa? That is how you ask how are you in Guarani, and in Paraguay you will hear it everywhere, in markets, on buses and around the family table.",
+      "es-419": "¿Mba'éichapa? Así se pregunta cómo estás en guaraní, y en Paraguay lo vas a escuchar en todas partes, en los mercados, en los colectivos y alrededor de la mesa familiar."
+    },
+    {
+      "en": "Paraguay is special because most people speak two languages, Spanish and Guarani, an Indigenous language. Both are official, and people switch between them in the middle of a sentence without a second thought.",
+      "es-419": "Paraguay es especial porque la mayoría de la gente habla dos idiomas, el castellano y el guaraní, una lengua indígena. Los dos son oficiales, y la gente pasa de uno al otro en medio de una frase sin pensarlo dos veces."
+    },
+    {
+      "en": "The country has no coastline. It sits in the heart of South America, and the Paraguay River divides it in two, with green farmland and forests in the east and the wide, dry Chaco in the west.",
+      "es-419": "El país no tiene salida al mar. Está en el corazón de Sudamérica, y el río Paraguay lo divide en dos: al este, campos verdes y bosques, y al oeste, el Chaco, amplio y seco."
+    },
+    {
+      "en": "Wherever you go, you will see people carrying a thermos and a cup made from a horn or a gourd, filled with yerba mate. On hot days they drink it with ice-cold water and herbs, and it is called tereré.",
+      "es-419": "Vayas donde vayas, vas a ver gente con un termo y una guampa llena de yerba mate. En los días de calor se toma con agua bien helada y yuyos, y se llama tereré."
+    },
+    {
+      "en": "Tereré is shared in a circle. One person pours, passes the cup, and gets it back to refill for the next friend. Saying thank you means you have had enough.",
+      "es-419": "El tereré se comparte en ronda. Una persona sirve, pasa la guampa y la recibe de vuelta para cebarle al siguiente. Decir gracias significa que ya no querés más."
+    },
+    {
+      "en": "Asunción, the capital, is one of the oldest cities in South America, set on a bend of the river, with jacaranda and lapacho trees flowering pink and purple in the streets.",
+      "es-419": "Asunción, la capital, es una de las ciudades más antiguas de Sudamérica. Está en una curva del río, y en sus calles florecen los jacarandás y los lapachos, rosados y lilas."
+    },
+    {
+      "en": "In the south stand the ruins of Jesuit missions, like Trinidad and Jesús, where Guarani communities once lived, built great stone churches and made music together centuries ago.",
+      "es-419": "En el sur están las ruinas de las misiones jesuíticas, como Trinidad y Jesús, donde hace siglos vivieron comunidades guaraníes que levantaron grandes templos de piedra y hacían música juntas."
+    },
+    {
+      "en": "Music still fills the air. The Paraguayan harp, light and bright, is the sound of the country, and a polka paraguaya makes everybody want to dance.",
+      "es-419": "La música sigue en el aire. El arpa paraguaya, liviana y brillante, es el sonido del país, y una polca paraguaya hace que todos quieran bailar."
+    },
+    {
+      "en": "Paraguayan food has a secret: corn, cheese and cassava. Chipa is a chewy ring of bread sold at every bus stop, and sopa paraguaya is a soup that is actually a solid, golden cornbread.",
+      "es-419": "La comida paraguaya tiene su secreto: maíz, queso y mandioca. La chipa es un pan en forma de rosca que se vende en cada parada de colectivo, y la sopa paraguaya, aunque se llame sopa, es un pan de maíz dorado y bien firme."
+    },
+    {
+      "en": "In the town of Itauguá, women make ñandutí, which means spider's web in Guarani. It is a delicate, colourful lace woven in circles, like sunbursts.",
+      "es-419": "En la ciudad de Itauguá, las mujeres tejen el ñandutí, que en guaraní significa tela de araña. Es un encaje delicado y colorido tejido en círculos, como pequeños soles."
+    },
+    {
+      "en": "On the border with Brazil stands the Itaipú Dam, a huge wall of concrete across the Paraná River that produces a vast amount of the country's electricity.",
+      "es-419": "En la frontera con Brasil está la represa de Itaipú, un enorme muro de hormigón sobre el río Paraná que produce gran parte de la electricidad del país."
+    },
+    {
+      "en": "Football unites everyone, and on Sundays families gather for an asado, grilling meat slowly over the coals and passing around the tereré until the sun goes down.",
+      "es-419": "El fútbol une a todos, y los domingos las familias se juntan para hacer un asado, con la carne a las brasas despacito y el tereré pasando de mano en mano hasta que se pone el sol."
+    },
+    {
+      "en": "Before you go, sit in the shade with a round of cold tereré. Then cross the Paraná River to the east, where the waterfalls and forests of Brazil are waiting.",
+      "es-419": "Antes de irte, sentate a la sombra con una ronda de tereré bien frío. Luego cruzá el río Paraná hacia el este, donde te esperan las cataratas y los bosques de Brasil."
+    }
+  ],
+  "next": ["Brazil", "Argentina", "Bolivia"]
+}

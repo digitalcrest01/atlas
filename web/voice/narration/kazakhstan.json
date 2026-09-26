@@ -1,0 +1,62 @@
+{
+  "country": "Kazakhstan",
+  "languages": [
+    "en",
+    "kk"
+  ],
+  "segments": [
+    {
+      "en": "Two strings, one long wooden neck, and a rhythm like galloping hooves. That is the dombra, the beloved instrument of the Kazakh people, and its music carries the feeling of the endless steppe.",
+      "kk": "Екі ішек, бір ұзын ағаш мойын және шапқан аттың дүбіріндей ырғақ. Бұл – қазақ халқының сүйікті аспабы домбыра, ал оның әуені шексіз даланың тынысын жеткізеді."
+    },
+    {
+      "en": "Kazakhstan is huge, stretching from the Caspian Sea in the west to the Altai Mountains in the east. Much of it is steppe, a wide sea of grass where the sky seems to go on forever.",
+      "kk": "Қазақстан – ұлан-ғайыр ел: батыста Каспий теңізінен шығыста Алтай тауларына дейін созылып жатыр. Жерінің көп бөлігі – дала, көкжиегі шексіз көрінетін шалқар шөпті жазық."
+    },
+    {
+      "en": "For centuries, Kazakh families lived as nomads, moving their herds between summer and winter pastures. Their home was the yurt, a round felt tent that could be packed onto camels and set up again in a few hours.",
+      "kk": "Ғасырлар бойы қазақ отбасылары көшпелі өмір сүріп, малын жайлау мен қыстау арасында айдап жүрген. Олардың үйі – киіз үй еді: түйеге артып көшіріп, бірнеше сағатта қайта тігуге болатын дөңгелек баспана."
+    },
+    {
+      "en": "Horses are at the heart of that story. Kazakhs have ridden them across the steppe for thousands of years, and some still drink kumis, a slightly fizzy drink made from fermented mare's milk.",
+      "kk": "Бұл тарихтың өзегінде – жылқы. Қазақтар мыңдаған жылдар бойы далада ат үстінде жүрген, ал кейбіреулер әлі күнге дейін биенің сүтінен ашытылған, сәл қышқыл, көбікті сусын – қымыз ішеді."
+    },
+    {
+      "en": "Hospitality here is taken seriously. Guests are seated at the dastarkhan, a table covered with bread, sweets, dried fruit and bowls of tea with milk, and the host keeps refilling your cup.",
+      "kk": "Мұнда қонақжайлылыққа ерекше мән береді. Қонақты нан, тәттілер, кептірілген жемістер және сүт қосылған шай құйылған кеселер қойылған дастарханға отырғызады, ал үй иесі кесеңізді қайта-қайта толтырып отырады."
+    },
+    {
+      "en": "The most famous dish is beshbarmak, which means five fingers, because it was traditionally eaten by hand. It is boiled meat served on wide, flat noodles with an onion broth.",
+      "kk": "Ең атақты тағам – бесбармақ. Бұрын оны қолмен жегендіктен осылай аталған. Бұл кең жалпақ қамырдың үстіне салынған қайнатылған ет, жанына пиязды сорпа беріледі."
+    },
+    {
+      "en": "The capital, Astana, rose on the northern steppe with bold, modern buildings. At its centre stands the Bayterek tower, shaped like a tree holding a golden egg, inspired by an old legend about a magical bird.",
+      "kk": "Елорда Астана солтүстік далада батыл, заманауи ғимараттарымен бой көтерді. Оның ортасында алтын жұмыртқаны ұстап тұрған ағашқа ұқсайтын Бәйтерек мұнарасы тұр. Ол киелі құс туралы көне аңыздан шабыт алған."
+    },
+    {
+      "en": "In the south lies Almaty, a leafy city at the foot of snowy peaks. Its name comes from the word for apple, and wild apple trees growing in the nearby mountains are thought to be ancestors of the apples we eat today.",
+      "kk": "Оңтүстікте қарлы шыңдардың етегінде жасыл Алматы қаласы орналасқан. Атауы алма сөзінен шыққан, ал маңайдағы тауларда өсетін жабайы алма ағаштары бүгін біз жейтін алмалардың арғы тегі деп саналады."
+    },
+    {
+      "en": "In March, around the spring equinox, families celebrate Nauryz, the spring new year. They visit neighbours, wish each other well, and cook nauryz kozhe, a soup made with seven ingredients.",
+      "kk": "Наурыз айында, көктемгі күн мен түннің теңелуі кезінде, отбасылар көктемгі жаңа жыл – Наурыз мейрамын тойлайды. Көршілерге барып, бір-біріне жақсы тілек айтып, жеті түрлі өнімнен наурыз көже пісіреді."
+    },
+    {
+      "en": "In the countryside, some hunters still train golden eagles. The bond between a berkutshi and his eagle can last for many years, built slowly on patience and trust.",
+      "kk": "Ауылдық жерлерде кейбір аңшылар әлі күнге дейін бүркіт баулиды. Бүркітші мен оның құсы арасындағы байланыс көп жылға созылады, ол шыдамдылық пен сенім арқылы біртіндеп қалыптасады."
+    },
+    {
+      "en": "Kazakhstan also looks to the stars. From Baikonur, in the southern desert, the first person ever to travel into space, Yuri Gagarin, blasted off in 1961.",
+      "kk": "Қазақстан жұлдыздарға да қарайды. Оңтүстік шөлдегі Байқоңырдан 1961 жылы ғарышқа ұшқан тұңғыш адам Юрий Гагарин аттанған."
+    },
+    {
+      "en": "Two languages are heard everywhere, Kazakh and Russian, and a friendly greeting is salemetsiz be. Sau bolyngyz, goodbye for now! Just south, over the high Tian Shan mountains, Kyrgyzstan is waiting.",
+      "kk": "Мұнда қазақ және орыс тілдері кеңінен естіледі, ал жылы сәлемдесу – сәлеметсіз бе. Сау болыңыз! Оңтүстікте, биік Тянь-Шань тауларының арғы жағында, Қырғызстан күтіп тұр."
+    }
+  ],
+  "next": [
+    "Kyrgyzstan",
+    "Uzbekistan",
+    "China"
+  ]
+}

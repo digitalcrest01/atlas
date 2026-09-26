@@ -1,0 +1,55 @@
+{
+  "country": "Benin",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "Drums on the beach at Ouidah, crowds in white, and dancers spinning in the sand. Every January, Benin celebrates Vodun, the traditional religion that was born in this region and later travelled across the ocean to the Americas.",
+      "fr": "Des tambours sur la plage de Ouidah, une foule vêtue de blanc et des danseurs qui tournoient dans le sable. Chaque mois de janvier, le Bénin célèbre le vodoun, la religion traditionnelle née dans cette région, qui a ensuite traversé l'océan jusqu'aux Amériques."
+    },
+    {
+      "en": "Vodun is about respect for ancestors and for the spirits of nature, and it lives side by side with Christianity and Islam. Many families happily honour more than one tradition.",
+      "fr": "Le vodoun, c'est le respect des ancêtres et des esprits de la nature, et il vit côte à côte avec le christianisme et l'islam. Bien des familles honorent sans difficulté plusieurs traditions."
+    },
+    {
+      "en": "At night in some villages, you may see a Zangbeto, a tall, whirling figure covered in layers of straw. These guardians spin and sway through the streets, and people say they keep the community safe.",
+      "fr": "La nuit, dans certains villages, vous croiserez peut-être un Zangbéto, une grande silhouette couverte de couches de paille qui tourbillonne. Ces gardiens tournent et ondulent dans les rues, et l'on dit qu'ils protègent la communauté."
+    },
+    {
+      "en": "Benin is a narrow country, stretching from the Atlantic coast in the south to dry savannah in the north. French is the official language, and people also speak Fon, Yoruba, Bariba and many others.",
+      "fr": "Le Bénin est un pays étroit, qui s'étire de la côte atlantique au sud jusqu'à la savane sèche du nord. Le français est la langue officielle, et l'on parle aussi le fon, le yoruba, le bariba et bien d'autres langues."
+    },
+    {
+      "en": "For centuries, this was the Kingdom of Dahomey. At Abomey, the royal palaces are decorated with clay reliefs of lions, sharks and warriors, each telling the story of a king. Among the kingdom's soldiers was a famous regiment of women warriors.",
+      "fr": "Pendant des siècles, ce fut le royaume du Dahomey. À Abomey, les palais royaux sont ornés de bas-reliefs en terre montrant des lions, des requins et des guerriers, chacun racontant l'histoire d'un roi. L'armée du royaume comptait un célèbre régiment de femmes guerrières."
+    },
+    {
+      "en": "Ouidah also holds painful memories. A road leads to the sea and to the Door of No Return, a memorial to the many Africans who were taken from here and enslaved. It is a place for quiet reflection.",
+      "fr": "Ouidah porte aussi des souvenirs douloureux. Une route mène à la mer et à la Porte du Non-Retour, un mémorial dédié aux nombreux Africains qui furent emmenés d'ici et réduits en esclavage. C'est un lieu de recueillement."
+    },
+    {
+      "en": "On Lake Nokoué lies Ganvié, a whole town built on stilts above the water. Children paddle to school in wooden canoes, and women sell fish and fruit from their boats in the floating market.",
+      "fr": "Sur le lac Nokoué se trouve Ganvié, toute une ville bâtie sur pilotis au-dessus de l'eau. Les enfants vont à l'école en pirogue, et les femmes vendent poisson et fruits depuis leurs barques au marché flottant."
+    },
+    {
+      "en": "In Cotonou, the biggest city, motorbike taxis called zemidjans zip through traffic, their drivers in bright yellow shirts. The huge Dantokpa market sells everything from spices and fabrics to herbs for healing.",
+      "fr": "À Cotonou, la plus grande ville, les taxis-motos appelés zémidjans se faufilent dans la circulation, leurs conducteurs vêtus de chemises jaune vif. L'immense marché Dantokpa vend de tout, des épices aux tissus en passant par les plantes qui soignent."
+    },
+    {
+      "en": "The official capital, Porto-Novo, is calmer, with colonial houses, a colourful mosque and the palace of its old kings.",
+      "fr": "La capitale officielle, Porto-Novo, est plus paisible, avec ses maisons coloniales, sa mosquée colorée et le palais de ses anciens rois."
+    },
+    {
+      "en": "At mealtimes, try pâte, a smooth dough of maize flour that you pinch with your fingers and dip into a sauce of tomato, peanut or leafy greens, often with fish or chicken.",
+      "fr": "À table, goûtez la pâte, une boule lisse de farine de maïs que l'on pince du bout des doigts pour la tremper dans une sauce tomate, d'arachide ou de feuilles, souvent avec du poisson ou du poulet."
+    },
+    {
+      "en": "In the far north, Pendjari National Park shelters elephants, buffalo, hippos and lions. And from Benin came the singer Angélique Kidjo, whose joyful voice carries the rhythms of home around the world.",
+      "fr": "Tout au nord, le parc national de la Pendjari abrite éléphants, buffles, hippopotames et lions. Et c'est du Bénin qu'est venue la chanteuse Angélique Kidjo, dont la voix joyeuse porte les rythmes du pays dans le monde entier."
+    },
+    {
+      "en": "Greet everyone you meet, and ask how they slept and how the family is. Then head west along the palm-lined coast, and Togo is waiting only a short drive away.",
+      "fr": "Saluez chaque personne que vous croisez, demandez-lui si elle a bien dormi et comment va la famille. Puis prenez vers l'ouest le long de la côte bordée de palmiers : le Togo vous attend à quelques kilomètres."
+    }
+  ],
+  "next": ["Togo", "Nigeria", "Burkina Faso"]
+}

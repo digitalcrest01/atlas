@@ -1,0 +1,62 @@
+{
+  "country": "Italy",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "segments": [
+    {
+      "en": "Buongiorno! Here the day often begins standing at a bar counter with a tiny, strong espresso, a sweet cornetto pastry and a quick chat with the barista. Drink it in a few sips, then off you go.",
+      "it": "Buongiorno! Qui la giornata comincia spesso in piedi al bancone del bar, con un espresso piccolo e forte, un cornetto e due chiacchiere con il barista. Si beve in pochi sorsi, e via."
+    },
+    {
+      "en": "Italy stretches like a long boot into the Mediterranean Sea. The Alps crown the north, the Apennine mountains run down its spine, and the big islands of Sicily and Sardinia float off its shores.",
+      "it": "L'Italia si allunga come uno stivale nel mar Mediterraneo. Le Alpi la incoronano a nord, gli Appennini le corrono lungo la schiena, e le grandi isole di Sicilia e Sardegna galleggiano al largo delle sue coste."
+    },
+    {
+      "en": "In Rome, the capital, ancient history is simply part of the street. You can walk past the Colosseum on your way to buy bread, and tradition says that if you toss a coin into the Trevi Fountain, you'll return one day.",
+      "it": "A Roma, la capitale, la storia antica fa semplicemente parte della strada. Puoi passare davanti al Colosseo mentre vai a comprare il pane, e la tradizione vuole che chi lancia una moneta nella Fontana di Trevi un giorno ritornerà."
+    },
+    {
+      "en": "Florence was the cradle of the Renaissance, when artists like Michelangelo and Leonardo da Vinci changed the way the world saw painting, sculpture and science.",
+      "it": "Firenze fu la culla del Rinascimento, quando artisti come Michelangelo e Leonardo da Vinci cambiarono il modo in cui il mondo guardava la pittura, la scultura e la scienza."
+    },
+    {
+      "en": "Venice has no cars at all. It is built on islands in a lagoon, so people travel by boat, from water buses to the famous black gondolas gliding under little bridges.",
+      "it": "A Venezia non ci sono automobili. La città è costruita su isole in mezzo a una laguna, quindi ci si sposta in barca, dai vaporetti alle celebri gondole nere che scivolano sotto i ponticelli."
+    },
+    {
+      "en": "Now, the food. There are hundreds of pasta shapes, each made for a particular sauce. Pizza was born in Naples, and a scoop of creamy gelato on a warm evening is almost a rule of life.",
+      "it": "E poi c'è il cibo. Esistono centinaia di formati di pasta, ognuno pensato per un certo sugo. La pizza è nata a Napoli, e una coppetta di gelato cremoso in una sera d'estate è quasi una regola di vita."
+    },
+    {
+      "en": "Meals are for sharing and never rushed. A Sunday lunch with grandparents, cousins and neighbours can last all afternoon, moving slowly from antipasti to pasta to dessert and coffee.",
+      "it": "I pasti si condividono e non si fanno mai di corsa. Un pranzo della domenica con nonni, cugini e vicini può durare tutto il pomeriggio, passando con calma dall'antipasto alla pasta, fino al dolce e al caffè."
+    },
+    {
+      "en": "As the sun goes down, towns come alive with the passeggiata, a gentle evening stroll through the main square. Families, friends and children in strollers walk, chat and say hello to everyone they know.",
+      "it": "Quando il sole cala, i paesi si animano con la passeggiata serale in piazza. Famiglie, amici e bambini nel passeggino camminano, chiacchierano e salutano tutti quelli che conoscono."
+    },
+    {
+      "en": "Music has deep roots here. Opera grew up in Italy, with composers like Verdi and Puccini, and many musical words used around the world, such as piano, forte and allegro, are Italian.",
+      "it": "La musica qui ha radici profonde. L'opera è nata in Italia, con compositori come Verdi e Puccini, e tante parole musicali usate in tutto il mondo, come piano, forte e allegro, sono italiane."
+    },
+    {
+      "en": "Football is a passion that fills the piazzas when the national team, the Azzurri, plays. And every spring, cyclists race the length of the country in the Giro d'Italia, chasing the pink jersey.",
+      "it": "Il calcio è una passione che riempie le piazze quando gioca la Nazionale, gli Azzurri. E ogni primavera i ciclisti attraversano il Paese nel Giro d'Italia, all'inseguimento della maglia rosa."
+    },
+    {
+      "en": "In the south, the land still rumbles. Mount Vesuvius looks down on the Bay of Naples and the ancient town of Pompeii, while Etna on Sicily is one of the most active volcanoes in Europe.",
+      "it": "Al sud la terra brontola ancora. Il Vesuvio domina il golfo di Napoli e l'antica città di Pompei, mentre l'Etna, in Sicilia, è uno dei vulcani più attivi d'Europa."
+    },
+    {
+      "en": "Arrivederci, and see you soon! Before you leave Rome, take a few steps across the city to its smallest neighbour, because Vatican City is waiting.",
+      "it": "Arrivederci, e a presto! Prima di lasciare Roma, fai pochi passi attraverso la città fino al suo vicino più piccolo, perché la Città del Vaticano ti aspetta."
+    }
+  ],
+  "next": [
+    "Vatican City",
+    "San Marino",
+    "Switzerland"
+  ]
+}

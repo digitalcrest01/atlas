@@ -1,0 +1,55 @@
+{
+  "country": "Peru",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "Clouds drift apart, and there it is: stone terraces and temples perched on a ridge between green peaks. Machu Picchu, built by the Inca, is one of the most breathtaking places on Earth.",
+      "es-419": "Las nubes se abren y ahí está: terrazas y templos de piedra sobre una cresta entre picos verdes. Machu Picchu, construido por los incas, es uno de los lugares más impresionantes del planeta."
+    },
+    {
+      "en": "The Inca ruled a great empire from the city of Cusco, high in the Andes. Their stonemasons fitted huge blocks together so perfectly, without mortar, that you cannot slip a knife between them.",
+      "es-419": "Los incas gobernaron un gran imperio desde la ciudad del Cusco, en lo alto de los Andes. Sus canteros encajaban bloques enormes con tanta perfección, sin argamasa, que no cabe ni la hoja de un cuchillo entre ellos."
+    },
+    {
+      "en": "Peru has three worlds in one. There is the dry desert coast along the Pacific, the soaring Andes in the middle, and the Amazon rainforest in the east, which covers a huge part of the country.",
+      "es-419": "El Perú tiene tres mundos en uno: la costa desértica a lo largo del Pacífico, los Andes imponentes en el centro y la selva amazónica al este, que cubre una enorme parte del país."
+    },
+    {
+      "en": "Spanish is spoken everywhere, and millions of people also speak Quechua, the language of the Inca, or Aymara. In Quechua, a warm hello is allillanchu, and thank you is sulpayki.",
+      "es-419": "El castellano se habla en todo el país, y millones de personas también hablan quechua, la lengua de los incas, o aimara. En quechua, un saludo cariñoso es allillanchu, y gracias se dice sulpayki."
+    },
+    {
+      "en": "High on the Altiplano lies Lake Titicaca, shared with Bolivia. Here the Uros people live on floating islands made from bundles of totora reeds, and they build their boats from reeds too.",
+      "es-419": "En lo alto del altiplano está el lago Titicaca, que el Perú comparte con Bolivia. Allí los uros viven en islas flotantes hechas de haces de totora, y con la misma totora fabrican sus balsas."
+    },
+    {
+      "en": "In the Andes, llamas and alpacas graze on the mountain grass, and their wool is woven into ponchos and blankets in brilliant reds, pinks and blues, with patterns that tell stories.",
+      "es-419": "En los Andes, las llamas y las alpacas pastan en los pajonales, y con su lana se tejen ponchos y mantas de rojos, rosados y azules intensos, con diseños que cuentan historias."
+    },
+    {
+      "en": "Peruvian food is loved around the world. Ceviche is fresh raw fish cured in lime juice with chilli and red onion, and it tastes of the sea and sunshine.",
+      "es-419": "La comida peruana es admirada en el mundo entero. El cebiche es pescado fresco crudo, curado con jugo de limón, ají y cebolla morada, y sabe a mar y a sol."
+    },
+    {
+      "en": "Peru is also the home of the potato, and farmers in the Andes grow thousands of varieties in every shape and colour, from purple to yellow to speckled.",
+      "es-419": "El Perú es también la tierra de la papa, y los campesinos andinos cultivan miles de variedades de todas las formas y colores, moradas, amarillas y hasta pintadas."
+    },
+    {
+      "en": "Lima, the capital, sits on cliffs above the Pacific. Surfers ride the waves below, and in the old centre, carved wooden balconies hang over the streets.",
+      "es-419": "Lima, la capital, está sobre acantilados frente al Pacífico. Abajo los tablistas corren olas, y en el centro histórico los balcones de madera tallada se asoman a las calles."
+    },
+    {
+      "en": "In the southern desert, the Nazca Lines stretch across the ground, giant drawings of a hummingbird, a monkey and a spider, so big they are best seen from the air.",
+      "es-419": "En el desierto del sur se extienden las líneas de Nazca, dibujos gigantes de un colibrí, un mono y una araña, tan grandes que se ven mejor desde el aire."
+    },
+    {
+      "en": "Every June in Cusco, Inti Raymi, the Festival of the Sun, brings ancient Inca ceremonies back to life with music, dancers and costumes of gold and red.",
+      "es-419": "Cada junio en el Cusco, el Inti Raymi, la Fiesta del Sol, revive antiguas ceremonias incas con música, danzantes y trajes de oro y rojo."
+    },
+    {
+      "en": "Before you go, stand on a mountain pass and watch a condor ride the wind above the valley. Then follow Lake Titicaca across the border, where Bolivia is waiting.",
+      "es-419": "Antes de irte, párate en un abra de la montaña y mira cómo un cóndor planea sobre el valle. Luego cruza el lago Titicaca hacia la frontera, donde te espera Bolivia."
+    }
+  ],
+  "next": ["Bolivia", "Ecuador", "Chile"]
+}

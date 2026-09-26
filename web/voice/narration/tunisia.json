@@ -1,0 +1,59 @@
+{
+  "country": "Tunisia",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "Blue doors and whitewashed walls line the lanes of Sidi Bou Said, a village perched above the Gulf of Tunis, where you can sip mint tea with pine nuts while gazing out to sea.",
+      "ar": "تصطفّ الأبواب الزرقاء والجدران البيضاء على طول أزقّة سيدي بوسعيد، القرية المطلّة على خليج تونس، حيث يمكنك أن ترتشف الشاي بالنعناع والصنوبر وأنت تتأمّل البحر."
+    },
+    {
+      "en": "Tunisia is home to the northernmost point of Africa. It has a long Mediterranean coast to the north and east, while in the south the land gives way to the Sahara.",
+      "ar": "في تونس تقع أقصى نقطة في شمال أفريقيا. ولها ساحل طويل على البحر المتوسط شمالًا وشرقًا، أما في الجنوب فتفسح الأرض المجال للصحراء الكبرى."
+    },
+    {
+      "en": "Near Tunis lie the ruins of Carthage, a great city founded by Phoenician sailors long ago. Its general Hannibal famously marched elephants across the Alps.",
+      "ar": "قرب العاصمة تونس تقع أطلال قرطاج، المدينة العظيمة التي أسّسها البحّارة الفينيقيون في غابر الزمان. ومن أشهر قادتها حنّبعل الذي عبر جبال الألب بفيَلته."
+    },
+    {
+      "en": "In El Jem, a huge Roman amphitheatre towers over the town, and in the Bardo Museum, colourful Roman mosaics show everyday life from long ago.",
+      "ar": "وفي الجمّ يعلو مسرح روماني ضخم فوق المدينة، وفي متحف باردو تروي الفسيفساء الرومانية الملوّنة تفاصيل الحياة اليومية منذ قرون بعيدة."
+    },
+    {
+      "en": "The medina of Tunis is a maze of souks, where craftsmen make red chechia caps, perfumes and copperware, and the call to prayer rings out from the Zitouna Mosque.",
+      "ar": "مدينة تونس العتيقة متاهة من الأسواق، يصنع فيها الحرفيون الشاشية الحمراء والعطور والأواني النحاسية، ويتردّد الأذان من جامع الزيتونة."
+    },
+    {
+      "en": "Couscous is at the heart of Tunisian cooking, often shared on Fridays with lamb or fish and vegetables. Many dishes get their kick from harissa, a fiery red chilli paste.",
+      "ar": "الكسكسي قلب المطبخ التونسي، وكثيرًا ما يُتقاسم يوم الجمعة مع لحم الخروف أو السمك والخضار. وتستمدّ أطباق كثيرة حرارتها من الهريسة، معجون الفلفل الأحمر الحار."
+    },
+    {
+      "en": "Try brik, a crisp, thin pastry with a runny egg inside, eaten carefully so the yolk doesn't drip, or lablabi, a warming chickpea soup for cold mornings.",
+      "ar": "جرّب البريك، عجينة رقيقة مقرمشة في داخلها بيضة طريّة، تُؤكل بحذر حتى لا يسيل صفارها، أو اللبلابي، حساء الحمّص الذي يدفئ الصباحات الباردة."
+    },
+    {
+      "en": "In the south, the Sahara begins. Around Douz, camels stride out into golden dunes, and in Matmata, families have long lived in homes carved into the ground around sunken courtyards.",
+      "ar": "في الجنوب تبدأ الصحراء الكبرى. حول دوز تخطو الجِمال نحو الكثبان الذهبية، وفي مطماطة سكنت العائلات منذ زمن طويل بيوتًا محفورة في باطن الأرض حول أفنية غائرة."
+    },
+    {
+      "en": "The island of Djerba has white houses, olive groves and El Ghriba, a very old synagogue where Jewish pilgrims gather every spring.",
+      "ar": "وفي جزيرة جربة بيوت بيضاء وبساتين زيتون، وفيها كنيس الغريبة العريق الذي يقصده الحجّاج اليهود كل ربيع."
+    },
+    {
+      "en": "People speak Tunisian Arabic, known as Derja, and French is widely used too, while Amazigh heritage lives on in some southern villages.",
+      "ar": "يتحدث الناس العربية التونسية المعروفة بالدارجة، وتُستعمل الفرنسية على نطاق واسع، بينما يبقى التراث الأمازيغي حيًّا في بعض قرى الجنوب."
+    },
+    {
+      "en": "If you're invited home, you'll likely be offered makroudh, semolina pastries filled with dates, and your host may insist you take just one more.",
+      "ar": "إذا دُعيت إلى بيت، فالأرجح أن يُقدَّم لك المقروض، حلوى السميد المحشوّة بالتمر، وقد يُلحّ عليك مضيفك أن تأخذ قطعة أخرى."
+    },
+    {
+      "en": "Olive groves stretch in neat rows across the plains around Sfax, and golden olive oil finds its way into nearly every dish.",
+      "ar": "تمتدّ بساتين الزيتون في صفوف منتظمة عبر السهول المحيطة بصفاقس، ويجد زيت الزيتون الذهبي طريقه إلى كل طبق تقريبًا."
+    },
+    {
+      "en": "Tunisians say 'Marhba bik', you are welcome, and they truly mean it. To the west, beyond the mountains, Algeria is waiting for you.",
+      "ar": "يقول التونسيون «مرحبا بيك»، ويعنونها من القلب. وإلى الغرب، خلف الجبال، تنتظرك الجزائر."
+    }
+  ],
+  "next": ["Algeria", "Libya", "Italy"]
+}

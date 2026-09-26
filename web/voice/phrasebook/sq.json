@@ -1,0 +1,183 @@
+{
+  "book": "sq",
+  "name": "Albanian",
+  "native": "Shqip",
+  "phrases": {
+    "hello": {
+      "text": "Përshëndetje",
+      "say": "puhr-shuhn-DET-yeh"
+    },
+    "good_morning": {
+      "text": "Mirëmëngjes",
+      "say": "meer-muhn-JES"
+    },
+    "good_evening": {
+      "text": "Mirëmbrëma",
+      "say": "meer-uhm-BRUH-mah"
+    },
+    "goodbye": {
+      "text": "Mirupafshim",
+      "say": "mee-roo-PAHF-sheem"
+    },
+    "how_are_you": {
+      "text": "Si jeni?",
+      "say": "see YEH-nee"
+    },
+    "nice_to_meet": {
+      "text": "Gëzohem që u njohëm",
+      "say": "guh-ZOH-hem chuh oo NYOH-huhm"
+    },
+    "please": {
+      "text": "Ju lutem",
+      "say": "yoo LOO-tem"
+    },
+    "thank_you": {
+      "text": "Faleminderit",
+      "say": "fah-leh-meen-DEH-reet"
+    },
+    "youre_welcome": {
+      "text": "S'ka përse",
+      "say": "skah puhr-SEH"
+    },
+    "excuse_me": {
+      "text": "Më falni",
+      "say": "muh FAHL-nee"
+    },
+    "sorry": {
+      "text": "Më vjen keq",
+      "say": "muh VYEN KECH"
+    },
+    "yes": {
+      "text": "Po",
+      "say": "POH"
+    },
+    "no": {
+      "text": "Jo",
+      "say": "YOH"
+    },
+    "speak_english": {
+      "text": "Flisni anglisht?",
+      "say": "FLEES-nee ahn-GLEESHT"
+    },
+    "dont_understand": {
+      "text": "Nuk e kuptoj",
+      "say": "nook eh koop-TOY"
+    },
+    "slowly": {
+      "text": "Ju lutem, flisni më ngadalë",
+      "say": "yoo LOO-tem FLEES-nee muh ngah-DAH-luh"
+    },
+    "repeat": {
+      "text": "Mund ta përsërisni?",
+      "say": "moond tah puhr-suh-REES-nee"
+    },
+    "where_station": {
+      "text": "Ku është stacioni i trenit?",
+      "say": "koo UHSH-tuh stah-tsee-OH-nee ee TREH-neet"
+    },
+    "where_toilet": {
+      "text": "Ku është tualeti?",
+      "say": "koo UHSH-tuh too-ah-LEH-tee"
+    },
+    "is_it_far": {
+      "text": "Është larg?",
+      "say": "UHSH-tuh LARG"
+    },
+    "left": {
+      "text": "Majtas",
+      "say": "MAI-tahs"
+    },
+    "right": {
+      "text": "Djathtas",
+      "say": "DYAHTH-tahs"
+    },
+    "straight": {
+      "text": "Drejt",
+      "say": "DRAYT"
+    },
+    "menu": {
+      "text": "Menunë, ju lutem",
+      "say": "meh-NOO-nuh yoo LOO-tem"
+    },
+    "water": {
+      "text": "Ujë, ju lutem",
+      "say": "OO-yuh yoo LOO-tem"
+    },
+    "bill": {
+      "text": "Llogarinë, ju lutem",
+      "say": "loh-gah-REE-nuh yoo LOO-tem"
+    },
+    "delicious": {
+      "text": "Shumë e shijshme!",
+      "say": "SHOO-muh eh SHEEY-shmeh"
+    },
+    "vegetarian": {
+      "text": "Jam vegjetariane",
+      "say": "yahm veh-jeh-tah-ree-AH-neh"
+    },
+    "how_much": {
+      "text": "Sa kushton?",
+      "say": "sah koosh-TOHN"
+    },
+    "too_expensive": {
+      "text": "Është shumë shtrenjtë",
+      "say": "UHSH-tuh SHOO-muh SHTREN-tuh"
+    },
+    "pay_card": {
+      "text": "Mund të paguaj me kartë?",
+      "say": "moond tuh pah-GOO-ai meh KAR-tuh"
+    },
+    "help": {
+      "text": "Ndihmë!",
+      "say": "NDEEH-muh"
+    },
+    "need_doctor": {
+      "text": "Më duhet një mjek",
+      "say": "muh DOO-het nyuh MYEK"
+    },
+    "lost": {
+      "text": "Kam humbur rrugën",
+      "say": "kahm HOOM-boor ROO-guhn"
+    },
+    "n1": {
+      "text": "një",
+      "say": "NYUH"
+    },
+    "n2": {
+      "text": "dy",
+      "say": "DEW"
+    },
+    "n3": {
+      "text": "tre",
+      "say": "TREH"
+    },
+    "n4": {
+      "text": "katër",
+      "say": "KAH-tuhr"
+    },
+    "n5": {
+      "text": "pesë",
+      "say": "PEH-suh"
+    },
+    "n6": {
+      "text": "gjashtë",
+      "say": "JAHSH-tuh"
+    },
+    "n7": {
+      "text": "shtatë",
+      "say": "SHTAH-tuh"
+    },
+    "n8": {
+      "text": "tetë",
+      "say": "TEH-tuh"
+    },
+    "n9": {
+      "text": "nëntë",
+      "say": "NUHN-tuh"
+    },
+    "n10": {
+      "text": "dhjetë",
+      "say": "THYEH-tuh"
+    }
+  }
+}

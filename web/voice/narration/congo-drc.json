@@ -1,0 +1,59 @@
+{
+  "country": "Congo (DRC)",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "A guitar line ripples like water, a voice rises sweet and high, and suddenly the whole room is dancing. This is Congolese rumba, the sound of the Democratic Republic of the Congo, loved across Africa and beyond.",
+      "fr": "Une guitare ondule comme de l'eau, une voix s'élève, douce et aiguë, et soudain toute la salle se met à danser. C'est la rumba congolaise, le son de la République démocratique du Congo, aimée dans toute l'Afrique et bien au-delà."
+    },
+    {
+      "en": "The country is enormous, stretching across the equator in the heart of Africa. Much of it is rainforest, crossed by the mighty Congo River, which sweeps through the land in a great arc on its way to the Atlantic.",
+      "fr": "Le pays est immense, à cheval sur l'équateur, au cœur de l'Afrique. Une grande partie est couverte de forêt tropicale, traversée par le puissant fleuve Congo, qui dessine un grand arc avant de rejoindre l'Atlantique."
+    },
+    {
+      "en": "The river is the country's highway. Long barges carry passengers, goats, sacks of cassava and whole markets for days along its brown waters, and life on board is like a floating village.",
+      "fr": "Le fleuve est la grande route du pays. De longues barges transportent pendant des jours des passagers, des chèvres, des sacs de manioc et des marchés entiers sur ses eaux brunes, et la vie à bord ressemble à celle d'un village flottant."
+    },
+    {
+      "en": "Kinshasa, the capital, is a huge, lively city on the river's southern bank. Right across the water stands Brazzaville, capital of the neighbouring Republic of the Congo, so close you can see it from the shore.",
+      "fr": "Kinshasa, la capitale, est une ville immense et pleine de vie sur la rive sud du fleuve. Juste en face se trouve Brazzaville, capitale de la République du Congo voisine, si proche qu'on la voit depuis la berge."
+    },
+    {
+      "en": "French is the official language, and four national languages are widely spoken: Lingala, Swahili, Kikongo and Tshiluba. In Kinshasa, say mbote, hello in Lingala, and you will make friends quickly.",
+      "fr": "Le français est la langue officielle, et quatre langues nationales sont très parlées : le lingala, le swahili, le kikongo et le tshiluba. À Kinshasa, dites mbote, bonjour en lingala, et vous vous ferez vite des amis."
+    },
+    {
+      "en": "Style matters here. The sapeurs, gentlemen of elegance, stroll the streets in bright tailored suits, silk ties and polished shoes, turning an ordinary afternoon into a joyful fashion show.",
+      "fr": "Ici, le style compte. Les sapeurs, ces gentlemen de l'élégance, déambulent dans les rues en costumes colorés et bien coupés, cravates de soie et chaussures cirées, transformant un après-midi ordinaire en un joyeux défilé de mode."
+    },
+    {
+      "en": "Dinner might be chicken moambe, cooked in a rich palm nut sauce, or pondu, pounded cassava leaves, served with fufu, a soft cassava dough. Fish wrapped in leaves and cooked over coals is called liboke.",
+      "fr": "Au dîner, on sert le poulet à la moambe, cuit dans une riche sauce aux noix de palme, ou le pondu, des feuilles de manioc pilées, avec du fufu, une pâte souple de manioc. Le poisson enveloppé dans des feuilles et cuit sur la braise s'appelle liboke."
+    },
+    {
+      "en": "The forests hold animals found nowhere else. Bonobos, gentle cousins of the chimpanzee, live only here, and so does the okapi, a shy forest creature with a giraffe's face and zebra-striped legs.",
+      "fr": "Les forêts abritent des animaux qu'on ne trouve nulle part ailleurs. Les bonobos, doux cousins du chimpanzé, ne vivent qu'ici, tout comme l'okapi, un animal timide à tête de girafe et aux pattes rayées comme celles d'un zèbre."
+    },
+    {
+      "en": "In the east, the Virunga mountains rise green and misty. Mountain gorillas live on their slopes, and the Nyiragongo volcano holds a glowing lake of lava in its crater.",
+      "fr": "À l'est, les monts Virunga se dressent, verts et brumeux. Des gorilles de montagne vivent sur leurs pentes, et le volcan Nyiragongo abrite dans son cratère un lac de lave incandescent."
+    },
+    {
+      "en": "Nearby, Lake Kivu shines between green hills, dotted with islands and with fishing boats whose crews sing as they row out at night.",
+      "fr": "Tout près, le lac Kivu scintille entre des collines verdoyantes, parsemé d'îles et de pirogues de pêcheurs qui chantent en ramant la nuit."
+    },
+    {
+      "en": "Congolese artists are bold and inventive. Kinshasa's painters fill canvases with bright, witty scenes of city life, and sculptors turn wood and scrap metal into striking works.",
+      "fr": "Les artistes congolais sont audacieux et inventifs. Les peintres de Kinshasa remplissent leurs toiles de scènes vives et pleines d'humour sur la vie de la ville, et les sculpteurs transforment le bois et la ferraille en œuvres saisissantes."
+    },
+    {
+      "en": "Family is at the centre of everything. Elders are treated with deep respect, visitors are welcomed with a seat and a drink, and every big celebration comes with music and dancing.",
+      "fr": "La famille est au cœur de tout. Les aînés sont traités avec un profond respect, les visiteurs sont accueillis avec une chaise et à boire, et chaque grande fête s'accompagne de musique et de danse."
+    },
+    {
+      "en": "From the shores of Lake Kivu, look east across the water. Rwanda is waiting on the other side.",
+      "fr": "Depuis les rives du lac Kivu, regardez vers l'est, de l'autre côté de l'eau. Le Rwanda vous attend."
+    }
+  ],
+  "next": ["Rwanda", "Congo (Republic)", "Uganda"]
+}

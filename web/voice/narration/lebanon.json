@@ -1,0 +1,59 @@
+{
+  "country": "Lebanon",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "The table fills up before you've even sat down: bowls of hummus and smoky moutabal, bright green tabbouleh, crisp falafel, olives, pickles and a stack of warm flatbread. This is mezze, and in Lebanon, it's just the beginning.",
+      "ar": "تمتلئ المائدة قبل أن تجلس: صحون الحمّص والمتبّل المدخّن، والتبولة الخضراء الزاهية، والفلافل المقرمشة، والزيتون والمخلّلات، وكومة من الخبز الساخن. هذه هي المازة، وفي لبنان ليست سوى البداية."
+    },
+    {
+      "en": "Lebanon is a small country on the eastern Mediterranean, but it packs in a lot. Snowy mountains rise just a short drive from the sea, and in early spring some people ski in the morning and swim in the afternoon.",
+      "ar": "لبنان بلد صغير على الساحل الشرقي للبحر المتوسط، لكنه يجمع الكثير. فالجبال المكسوّة بالثلوج ترتفع على مسافة قصيرة من البحر، وفي أوائل الربيع يتزلّج بعض الناس صباحًا ويسبحون بعد الظهر."
+    },
+    {
+      "en": "The cedar tree is the symbol of Lebanon and stands proudly in the middle of the flag. High in the mountains, ancient cedar groves have been admired since Biblical times.",
+      "ar": "الأرزة رمز لبنان، وتقف شامخة في وسط العلم. وفي أعالي الجبال غابات أرز عتيقة يُعجَب بها الناس منذ أزمنة التوراة."
+    },
+    {
+      "en": "Thousands of years ago, this coast was home to the Phoenicians, bold sailors and traders who travelled across the Mediterranean and spread an alphabet that later inspired many others, including the one used for English.",
+      "ar": "قبل آلاف السنين كان هذا الساحل موطن الفينيقيين، البحّارة والتجار الجريئين الذين جابوا البحر المتوسط ونشروا أبجدية ألهمت فيما بعد أبجديات كثيرة، منها تلك التي تُكتب بها الإنجليزية."
+    },
+    {
+      "en": "Byblos, one of their harbours, is among the oldest continuously lived-in towns in the world. Today its little port is ringed by cafés, fishing boats and a crusader castle.",
+      "ar": "وجبيل، أحد موانئهم، من أقدم المدن المأهولة بلا انقطاع في العالم. واليوم يحيط بمرفئها الصغير المقاهي وقوارب الصيد وقلعة من زمن الصليبيين."
+    },
+    {
+      "en": "Inland, in the Bekaa Valley, stand the Roman temples of Baalbek, with columns so huge that visitors crane their necks and wonder how they were ever lifted into place.",
+      "ar": "وفي الداخل، في سهل البقاع، تقف معابد بعلبك الرومانية بأعمدتها الهائلة، فيرفع الزوّار رؤوسهم متعجّبين كيف رُفعت إلى مكانها يومًا."
+    },
+    {
+      "en": "Beirut, the capital, is lively and full of energy, with seaside walks along the Corniche, busy bakeries, galleries and music late into the night.",
+      "ar": "أما بيروت، العاصمة، فمدينة نابضة بالحياة، فيها نزهات على الكورنيش المطلّ على البحر، وأفران مزدحمة، وصالات عرض، وموسيقى حتى ساعات الليل المتأخرة."
+    },
+    {
+      "en": "Many Lebanese switch easily between Arabic, French and English, sometimes in a single sentence. A famous greeting mixes all three: hi, kifak, ça va?",
+      "ar": "كثير من اللبنانيين يتنقّلون بسهولة بين العربية والفرنسية والإنجليزية، أحيانًا في جملة واحدة. وهناك تحية مشهورة تجمع الثلاث معًا: هاي، كيفك، سافا؟"
+    },
+    {
+      "en": "Lebanon is home to many religious communities, Muslim and Christian, and neighbours often share each other's holidays, visiting with sweets and good wishes.",
+      "ar": "ويضمّ لبنان طوائف دينية كثيرة، مسلمة ومسيحية، وكثيرًا ما يتشارك الجيران أعيادهم، فيتزاورون حاملين الحلويات والتمنيات الطيبة."
+    },
+    {
+      "en": "Breakfast is often a manoushe, a warm flatbread baked with za'atar and olive oil, bought fresh from the neighbourhood bakery. Later you might try kibbeh, the national dish of bulgur wheat and minced meat.",
+      "ar": "وغالبًا ما يكون الفطور منقوشة زعتر بزيت الزيتون، طازجة من فرن الحيّ. وفي وقت لاحق قد تتذوّق الكبّة، الطبق الوطني المصنوع من البرغل واللحم المفروم."
+    },
+    {
+      "en": "Music is everywhere. The voice of the singer Fairuz drifts from radios every morning, and at weddings everyone links arms for the dabke, stamping out the rhythm together.",
+      "ar": "والموسيقى في كل مكان. صوت فيروز يصدح من أجهزة الراديو كل صباح، وفي الأعراس يتشابك الجميع بالأيدي في الدبكة، يضربون الأرض بأقدامهم على الإيقاع معًا."
+    },
+    {
+      "en": "In the north, the Qadisha Valley cuts deep into the mountains. Monks once built monasteries into its cliffs, and walking its quiet paths feels like stepping back in time.",
+      "ar": "وفي الشمال يشقّ وادي قاديشا طريقه عميقًا في الجبال. هناك بنى الرهبان أديرتهم في الصخور، والسير على دروبه الهادئة يشبه العودة بالزمن إلى الوراء."
+    },
+    {
+      "en": "Yalla, bye! Across the sea to the west, only a short hop away, the island of Cyprus is waiting.",
+      "ar": "إلى اللقاء، أو كما يقول اللبنانيون: يلّا، باي! وعبر البحر غربًا، على مسافة قصيرة، تنتظرك جزيرة قبرص."
+    }
+  ],
+  "next": ["Cyprus", "Syria", "Jordan"]
+}

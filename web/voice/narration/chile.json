@@ -1,0 +1,59 @@
+{
+  "country": "Chile",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "Picture a country shaped like a ribbon, long and thin, pressed between the snowy Andes and the Pacific Ocean. Travel its full length and you pass from one of the driest deserts on Earth to glaciers and icy fjords. This is Chile.",
+      "es-419": "Imagina un país con forma de cinta, largo y angosto, apretado entre la cordillera nevada de los Andes y el océano Pacífico. Si lo recorres de punta a punta, pasas de uno de los desiertos más secos del planeta a glaciares y fiordos helados. Esto es Chile."
+    },
+    {
+      "en": "In the north, the Atacama Desert is so dry and its skies so clear that astronomers from around the world have built great telescopes here. At night the Milky Way seems close enough to touch.",
+      "es-419": "En el norte, el desierto de Atacama es tan seco y su cielo tan despejado que astrónomos de todo el mundo han instalado aquí enormes telescopios. De noche, la Vía Láctea parece tan cerca que podrías tocarla."
+    },
+    {
+      "en": "Santiago, the capital, lies in a central valley with the Andes rising right behind it. After a rainy day the air clears, and the snowy peaks seem to stand at the end of every street.",
+      "es-419": "Santiago, la capital, está en un valle central con la cordillera alzándose justo detrás. Después de un día de lluvia el aire se limpia, y las cumbres nevadas parecen asomarse al final de cada calle."
+    },
+    {
+      "en": "On the coast, Valparaíso tumbles down steep hills in a jumble of brightly painted houses, murals and old funicular lifts that creak their way up the slopes.",
+      "es-419": "En la costa, Valparaíso se descuelga por cerros empinados en un revoltijo de casas pintadas de colores, murales y viejos ascensores que suben crujiendo por las laderas."
+    },
+    {
+      "en": "Chile is a land of poets. Gabriela Mistral and Pablo Neruda both won the Nobel Prize for Literature, and Neruda's homes, full of ship figureheads and seashells, are open to visitors.",
+      "es-419": "Chile es tierra de poetas. Gabriela Mistral y Pablo Neruda ganaron el Premio Nobel de Literatura, y las casas de Neruda, llenas de mascarones de proa y caracolas, están abiertas al público."
+    },
+    {
+      "en": "In the early evening, many families sit down to once, a light meal of bread, avocado, cheese and tea. Chileans love their bread, especially the crusty marraqueta.",
+      "es-419": "Al atardecer, muchas familias se sientan a tomar once, una comida liviana con pan, palta, queso y té. A los chilenos les encanta el pan, sobre todo la crujiente marraqueta."
+    },
+    {
+      "en": "In September, the Fiestas Patrias bring flags, beef empanadas with onion, egg and olive, and the cueca, the national dance, in which couples circle each other waving white handkerchiefs.",
+      "es-419": "En septiembre, las Fiestas Patrias traen banderas, empanadas de pino con carne, cebolla, huevo y aceituna, y la cueca, el baile nacional, en el que las parejas se rodean agitando pañuelos blancos."
+    },
+    {
+      "en": "In the countryside, huasos, the Chilean cowboys, wear flat-brimmed hats and short, colourful ponchos, and show off their horsemanship at the rodeo.",
+      "es-419": "En el campo, los huasos, los vaqueros chilenos, lucen sombreros de ala plana y mantas cortas de colores, y muestran su destreza a caballo en el rodeo."
+    },
+    {
+      "en": "The Mapuche people of the south have kept their language, Mapudungun, alive for centuries, along with their silverwork, weaving and ceremonies. Mari mari is a warm hello.",
+      "es-419": "El pueblo mapuche, en el sur, ha mantenido vivo durante siglos su idioma, el mapudungun, junto con su platería, sus tejidos y sus ceremonias. Mari mari es un saludo cálido."
+    },
+    {
+      "en": "On the island of Chiloé, wooden churches covered in shingles stand by the sea, and colourful houses on stilts, called palafitos, rise above the tide.",
+      "es-419": "En la isla de Chiloé, iglesias de madera cubiertas de tejuelas se alzan junto al mar, y casas de colores sobre pilotes, los palafitos, se elevan por encima de la marea."
+    },
+    {
+      "en": "Further south lies Patagonia, a land of wind, glaciers and granite towers. In Torres del Paine, guanacos graze beneath the peaks while condors ride the air above.",
+      "es-419": "Más al sur está la Patagonia, tierra de viento, glaciares y torres de granito. En Torres del Paine, los guanacos pastan bajo las cumbres mientras los cóndores planean en lo alto."
+    },
+    {
+      "en": "And far out in the Pacific, thousands of kilometres from the mainland, lies Rapa Nui, Easter Island, where giant stone figures called moai gaze silently over the land.",
+      "es-419": "Y muy lejos en el Pacífico, a miles de kilómetros del continente, está Rapa Nui, la Isla de Pascua, donde gigantescas figuras de piedra, los moáis, contemplan en silencio la isla."
+    },
+    {
+      "en": "Now climb back into the Andes and cross one of the high mountain passes. Argentina is waiting on the other side.",
+      "es-419": "Ahora vuelve a subir a la cordillera y cruza uno de sus altos pasos. Argentina te espera al otro lado."
+    }
+  ],
+  "next": ["Argentina", "Peru", "Bolivia"]
+}

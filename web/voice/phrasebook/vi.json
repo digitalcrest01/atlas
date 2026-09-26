@@ -1,0 +1,183 @@
+{
+  "book": "vi",
+  "name": "Vietnamese",
+  "native": "Tiếng Việt",
+  "phrases": {
+    "hello": {
+      "text": "Xin chào",
+      "say": "sin CHOW"
+    },
+    "good_morning": {
+      "text": "Chào buổi sáng",
+      "say": "chow BOO-ee SAHNG"
+    },
+    "good_evening": {
+      "text": "Chào buổi tối",
+      "say": "chow BOO-ee TOY"
+    },
+    "goodbye": {
+      "text": "Tạm biệt",
+      "say": "tahm BYET"
+    },
+    "how_are_you": {
+      "text": "Bạn có khỏe không?",
+      "say": "bahn kaw KWEH khohm"
+    },
+    "nice_to_meet": {
+      "text": "Rất vui được gặp bạn",
+      "say": "zuht VOO-ee duhk GAHP bahn"
+    },
+    "please": {
+      "text": "Làm ơn",
+      "say": "lahm UHN"
+    },
+    "thank_you": {
+      "text": "Cảm ơn",
+      "say": "gahm UHN"
+    },
+    "youre_welcome": {
+      "text": "Không có gì",
+      "say": "khohm kaw ZEE"
+    },
+    "excuse_me": {
+      "text": "Xin lỗi",
+      "say": "sin LOY"
+    },
+    "sorry": {
+      "text": "Tôi xin lỗi",
+      "say": "toy sin LOY"
+    },
+    "yes": {
+      "text": "Vâng",
+      "say": "VUHNG"
+    },
+    "no": {
+      "text": "Không",
+      "say": "KHOHM"
+    },
+    "speak_english": {
+      "text": "Bạn có nói tiếng Anh không?",
+      "say": "bahn kaw NOY tyeng AHN khohm"
+    },
+    "dont_understand": {
+      "text": "Tôi không hiểu",
+      "say": "toy khohm HYEW"
+    },
+    "slowly": {
+      "text": "Làm ơn nói chậm hơn",
+      "say": "lahm uhn NOY CHUHM huhn"
+    },
+    "repeat": {
+      "text": "Bạn có thể nhắc lại không?",
+      "say": "bahn kaw tay NYAHK lai khohm"
+    },
+    "where_station": {
+      "text": "Ga tàu hỏa ở đâu?",
+      "say": "gah tow HWAH uh DOH"
+    },
+    "where_toilet": {
+      "text": "Nhà vệ sinh ở đâu?",
+      "say": "nyah vay SIN uh DOH"
+    },
+    "is_it_far": {
+      "text": "Có xa không?",
+      "say": "kaw SAH khohm"
+    },
+    "left": {
+      "text": "Bên trái",
+      "say": "bayn CHAI"
+    },
+    "right": {
+      "text": "Bên phải",
+      "say": "bayn FAI"
+    },
+    "straight": {
+      "text": "Đi thẳng",
+      "say": "dee TAHNG"
+    },
+    "menu": {
+      "text": "Cho tôi xem thực đơn",
+      "say": "chaw toy sem TUHK duhn"
+    },
+    "water": {
+      "text": "Cho tôi xin nước",
+      "say": "chaw toy sin NUH-uhk"
+    },
+    "bill": {
+      "text": "Tính tiền giúp tôi",
+      "say": "TIN tyen ZOOP toy"
+    },
+    "delicious": {
+      "text": "Ngon quá!",
+      "say": "ngawn KWAH"
+    },
+    "vegetarian": {
+      "text": "Tôi ăn chay",
+      "say": "toy ahn CHAI"
+    },
+    "how_much": {
+      "text": "Bao nhiêu tiền?",
+      "say": "bow nyew TYEN"
+    },
+    "too_expensive": {
+      "text": "Đắt quá!",
+      "say": "daht KWAH"
+    },
+    "pay_card": {
+      "text": "Tôi có thể trả bằng thẻ không?",
+      "say": "toy kaw tay CHAH bahng TEH khohm"
+    },
+    "help": {
+      "text": "Cứu tôi với!",
+      "say": "KUH-oo toy VUH-ee"
+    },
+    "need_doctor": {
+      "text": "Tôi cần bác sĩ",
+      "say": "toy kuhn bahk SEE"
+    },
+    "lost": {
+      "text": "Tôi bị lạc đường",
+      "say": "toy bee LAHK duhng"
+    },
+    "n1": {
+      "text": "một",
+      "say": "MOHT"
+    },
+    "n2": {
+      "text": "hai",
+      "say": "HAI"
+    },
+    "n3": {
+      "text": "ba",
+      "say": "BAH"
+    },
+    "n4": {
+      "text": "bốn",
+      "say": "BOHN"
+    },
+    "n5": {
+      "text": "năm",
+      "say": "NAHM"
+    },
+    "n6": {
+      "text": "sáu",
+      "say": "SOW"
+    },
+    "n7": {
+      "text": "bảy",
+      "say": "BAY"
+    },
+    "n8": {
+      "text": "tám",
+      "say": "TAHM"
+    },
+    "n9": {
+      "text": "chín",
+      "say": "CHIN"
+    },
+    "n10": {
+      "text": "mười",
+      "say": "MUH-ee"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "country": "Palestine",
+  "languages": ["en", "ar"],
+  "segments": [
+    {
+      "en": "Autumn in the hills, and whole families are out among the olive trees. Children spread cloths on the ground, grandparents beat the branches gently with sticks, and the olives patter down like rain.",
+      "ar": "إنه الخريف في التلال، والعائلات كلها بين أشجار الزيتون. يفرش الأطفال الأقمشة على الأرض، ويضرب الأجداد الأغصان برفق بالعِصيّ، فيتساقط الزيتون كحبّات المطر."
+    },
+    {
+      "en": "The olive harvest is one of the most loved times of the year for Palestinians. Some trees here are hundreds of years old, and their oil is poured over almost every meal.",
+      "ar": "موسم قطف الزيتون من أحبّ أوقات السنة إلى قلوب الفلسطينيين. بعض الأشجار هنا عمرها مئات السنين، وزيتها يُسكب على كل وجبة تقريبًا."
+    },
+    {
+      "en": "Palestinian land lies in two parts, the West Bank, a region of rolling hills and valleys west of the Jordan River, and the Gaza Strip, a narrow coastal area on the Mediterranean Sea.",
+      "ar": "تتألّف الأرض الفلسطينية من جزأين: الضفة الغربية، وهي منطقة تلال ووديان غربيّ نهر الأردن، وقطاع غزة، وهو شريط ساحلي ضيّق على البحر الأبيض المتوسط."
+    },
+    {
+      "en": "Bethlehem, in the hills south of Jerusalem, is where Christians believe Jesus was born. Pilgrims stoop through a tiny doorway to enter the ancient Church of the Nativity.",
+      "ar": "بيت لحم، في التلال جنوبيّ القدس، هي المدينة التي يؤمن المسيحيون بأن السيد المسيح وُلد فيها. ويَنحني الحجّاج ليدخلوا من بابٍ صغير جدًا إلى كنيسة المهد العريقة."
+    },
+    {
+      "en": "Jericho, down in the warm Jordan Valley near the Dead Sea, is one of the oldest continuously inhabited towns on Earth, surrounded by palm groves and banana gardens.",
+      "ar": "أريحا، في غور الأردن الدافئ قرب البحر الميت، من أقدم المدن المأهولة على وجه الأرض، وتحيط بها بساتين النخيل والموز."
+    },
+    {
+      "en": "Every town has its craft. Nablus is famous for olive oil soap and for knafeh, a warm, cheesy pastry soaked in syrup. In Hebron, glassblowers shape vases in shades of blue and green.",
+      "ar": "لكل مدينة حرفتها. نابلس مشهورة بصابون زيت الزيتون وبالكنافة، تلك الحلوى الساخنة بالجبنة المغموسة بالقَطر. وفي الخليل ينفخ الحرفيون الزجاج ويصنعون مزهريات بدرجات الأزرق والأخضر."
+    },
+    {
+      "en": "Palestinian embroidery, called tatreez, is an art passed from mother to daughter. The cross-stitch patterns on a dress once showed which village a woman came from.",
+      "ar": "التطريز الفلسطيني فنّ تتوارثه البنات عن الأمهات. وكانت غُرز الصليب على الثوب تدلّ قديمًا على القرية التي جاءت منها المرأة."
+    },
+    {
+      "en": "Hospitality is a point of honour. A guest is offered coffee with cardamom or sweet mint tea, and turning down a second cup takes some skill.",
+      "ar": "الكرم مسألة شرف. يُقدَّم للضيف القهوة بالهيل أو الشاي الحلو بالنعناع، ورفضُ الفنجان الثاني يحتاج إلى شيء من المهارة."
+    },
+    {
+      "en": "The family favourite is maqluba, which means upside down. Rice, vegetables and chicken are cooked in a pot, and then the whole thing is flipped onto a tray, usually with a cheer from everyone watching.",
+      "ar": "الطبق المحبّب في العائلات هو المقلوبة. يُطهى الأرز مع الخضار والدجاج في قِدر، ثم يُقلب كله دفعة واحدة على صينية، وغالبًا ما يصفّق الجميع عندها."
+    },
+    {
+      "en": "There is also musakhan, flatbread topped with roasted chicken, onions and deep red sumac, and fresh bread baked in a clay oven called a taboon.",
+      "ar": "وهناك المسخّن، خبز مغطّى بالدجاج المحمّر والبصل والسمّاق الأحمر القاني، والخبز الطازج المخبوز في فرن الطابون."
+    },
+    {
+      "en": "At weddings, lines of dancers link arms and stamp out the rhythm of the dabke, while a singer improvises verses and the crowd claps along.",
+      "ar": "وفي الأعراس يتشابك الراقصون في صفوف ويدبكون على الإيقاع، بينما يرتجل الزجّال الأبيات والجمهور يصفّق معه."
+    },
+    {
+      "en": "Poetry is deeply loved. Mahmoud Darwish, one of the most celebrated poets in the Arabic language, wrote about home, memory and the land, and his lines are quoted by young and old.",
+      "ar": "للشعر مكانة عزيزة. فمحمود درويش، أحد أشهر الشعراء في اللغة العربية، كتب عن الوطن والذاكرة والأرض، ويردّد أبياتَه الصغار والكبار."
+    },
+    {
+      "en": "Before you go, sit under an olive tree and share a piece of warm bread dipped in oil and zaatar. Then cross the Jordan River to the east, where Jordan is waiting.",
+      "ar": "قبل أن ترحل، اجلس تحت شجرة زيتون وتقاسم قطعة خبز ساخن مغمّسة بالزيت والزعتر. ثم اعبُر نهر الأردن شرقًا، حيث ينتظرك الأردن."
+    }
+  ],
+  "next": ["Jordan", "Egypt", "Lebanon"]
+}

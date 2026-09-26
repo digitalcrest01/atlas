@@ -1,0 +1,183 @@
+{
+  "book": "ga",
+  "name": "Irish",
+  "native": "Gaeilge",
+  "phrases": {
+    "hello": {
+      "text": "Dia duit",
+      "say": "DEE-uh gwitch"
+    },
+    "good_morning": {
+      "text": "Maidin mhaith",
+      "say": "MAH-jin WAH"
+    },
+    "good_evening": {
+      "text": "Tráthnóna maith",
+      "say": "traw-NOH-nuh MAH"
+    },
+    "goodbye": {
+      "text": "Slán",
+      "say": "SLAWN"
+    },
+    "how_are_you": {
+      "text": "Conas atá tú?",
+      "say": "KUN-us uh-TAW too"
+    },
+    "nice_to_meet": {
+      "text": "Is deas bualadh leat",
+      "say": "iss JASS BOO-uh-luh lat"
+    },
+    "please": {
+      "text": "Le do thoil",
+      "say": "leh duh HULL"
+    },
+    "thank_you": {
+      "text": "Go raibh maith agat",
+      "say": "guh rev MAH AG-ut"
+    },
+    "youre_welcome": {
+      "text": "Tá fáilte romhat",
+      "say": "taw FAWL-cheh ROH-ut"
+    },
+    "excuse_me": {
+      "text": "Gabh mo leithscéal",
+      "say": "gow muh LESH-kayl"
+    },
+    "sorry": {
+      "text": "Tá brón orm",
+      "say": "taw BROHN UR-um"
+    },
+    "yes": {
+      "text": "Sea",
+      "say": "SHAH"
+    },
+    "no": {
+      "text": "Ní hea",
+      "say": "nee HAH"
+    },
+    "speak_english": {
+      "text": "An bhfuil Béarla agat?",
+      "say": "un WILL BAYR-luh AG-ut"
+    },
+    "dont_understand": {
+      "text": "Ní thuigim",
+      "say": "nee HIG-im"
+    },
+    "slowly": {
+      "text": "Labhair níos moille, le do thoil",
+      "say": "LOW-er nees MWIL-eh leh duh HULL"
+    },
+    "repeat": {
+      "text": "An ndéarfá é sin arís?",
+      "say": "un NYAYR-faw ay shin uh-REESH"
+    },
+    "where_station": {
+      "text": "Cá bhfuil an stáisiún traenach?",
+      "say": "kaw WILL un STAW-shoon TRAY-nukh"
+    },
+    "where_toilet": {
+      "text": "Cá bhfuil an leithreas?",
+      "say": "kaw WILL un LEH-ras"
+    },
+    "is_it_far": {
+      "text": "An bhfuil sé i bhfad?",
+      "say": "un WILL shay ih WAHD"
+    },
+    "left": {
+      "text": "Ar chlé",
+      "say": "er KHLAY"
+    },
+    "right": {
+      "text": "Ar dheis",
+      "say": "er YESH"
+    },
+    "straight": {
+      "text": "Díreach ar aghaidh",
+      "say": "JEE-rukh er EYE"
+    },
+    "menu": {
+      "text": "An biachlár, le do thoil",
+      "say": "un BEE-ukh-lawr leh duh HULL"
+    },
+    "water": {
+      "text": "Uisce, le do thoil",
+      "say": "ISH-keh leh duh HULL"
+    },
+    "bill": {
+      "text": "An bille, le do thoil",
+      "say": "un BIL-eh leh duh HULL"
+    },
+    "delicious": {
+      "text": "Tá sé an-bhlasta!",
+      "say": "taw shay AN-vlas-tuh"
+    },
+    "vegetarian": {
+      "text": "Is feoilséantóir mé",
+      "say": "iss FYOHL-shayn-tohr may"
+    },
+    "how_much": {
+      "text": "Cé mhéad atá air?",
+      "say": "kay VAYD uh-TAW er"
+    },
+    "too_expensive": {
+      "text": "Tá sé ródhaor",
+      "say": "taw shay roh-GHEER"
+    },
+    "pay_card": {
+      "text": "An féidir liom íoc le cárta?",
+      "say": "un FAY-dir lum EEK leh KAWR-tuh"
+    },
+    "help": {
+      "text": "Cabhair!",
+      "say": "KOW-er"
+    },
+    "need_doctor": {
+      "text": "Teastaíonn dochtúir uaim",
+      "say": "TASS-teen DOKH-toor OO-um"
+    },
+    "lost": {
+      "text": "Tá mé caillte",
+      "say": "taw may KAL-cheh"
+    },
+    "n1": {
+      "text": "a haon",
+      "say": "uh HAYN"
+    },
+    "n2": {
+      "text": "a dó",
+      "say": "uh DOH"
+    },
+    "n3": {
+      "text": "a trí",
+      "say": "uh TREE"
+    },
+    "n4": {
+      "text": "a ceathair",
+      "say": "uh KA-her"
+    },
+    "n5": {
+      "text": "a cúig",
+      "say": "uh KOO-ig"
+    },
+    "n6": {
+      "text": "a sé",
+      "say": "uh SHAY"
+    },
+    "n7": {
+      "text": "a seacht",
+      "say": "uh SHAKHT"
+    },
+    "n8": {
+      "text": "a hocht",
+      "say": "uh HUKHT"
+    },
+    "n9": {
+      "text": "a naoi",
+      "say": "uh NEE"
+    },
+    "n10": {
+      "text": "a deich",
+      "say": "uh JEH"
+    }
+  }
+}

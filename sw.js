@@ -1,5 +1,5 @@
 /* Myatlastic Service Worker — offline-first for app shell */
-const CACHE = 'myatlastic-v7';
+const CACHE = 'myatlastic-v8';
 const APP_SHELL = [
   '/app',
   '/web/countries_data.js',
@@ -27,6 +27,8 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   // Only cache same-origin and Fonts/CDN requests
   if (e.request.method !== 'GET') return;
+  // Speech is cached by the browser and CDN, not here: it would grow forever.
+  if (url.pathname.indexOf('/api/') === 0) return;
 
   // Network-first for HTML pages (to get updates)
   if (url.pathname === '/app' || url.pathname === '/app/' || url.pathname.endsWith('.html')) {

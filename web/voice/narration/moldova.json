@@ -1,0 +1,55 @@
+{
+  "country": "Moldova",
+  "languages": ["en", "ro"],
+  "segments": [
+    {
+      "en": "In a village courtyard, grapes hang heavy from a vine above the table, and a grandmother brings out warm plăcinte straight from the oven. This is Moldova, a small, green country between Romania and Ukraine.",
+      "ro": "Într-o curte de la țară, strugurii atârnă grei pe o viță deasupra mesei, iar o bunică aduce plăcinte calde, direct din cuptor. Aceasta este Moldova, o țară mică și verde, între România și Ucraina."
+    },
+    {
+      "en": "Moldova has no coastline, but it has gentle hills, rich black soil and fields of sunflowers that turn gold in summer. The Prut river runs along its western border, and the Dniester flows through the east.",
+      "ro": "Moldova nu are ieșire la mare, dar are dealuri line, pământ negru și roditor și lanuri de floarea-soarelui care se fac aurii vara. Prutul curge de-a lungul graniței de vest, iar Nistrul străbate estul țării."
+    },
+    {
+      "en": "The main language is Romanian, which grew from Latin, and many people also speak Russian. In the south, the Gagauz people have their own language, a close relative of Turkish.",
+      "ro": "Limba principală este româna, care s-a născut din latină, iar mulți oameni vorbesc și rusa. În sud, găgăuzii au propria lor limbă, rudă apropiată cu turca."
+    },
+    {
+      "en": "Wine is part of the country's soul. At Mileștii Mici, underground tunnels stretch for many kilometres, lined with an enormous collection of bottles, and at Cricova the cellars are so vast that visitors tour them by car.",
+      "ro": "Vinul face parte din sufletul țării. La Mileștii Mici, galeriile subterane se întind pe mulți kilometri, pline cu o colecție uriașă de sticle, iar la Cricova pivnițele sunt atât de mari încât vizitatorii le străbat cu mașina."
+    },
+    {
+      "en": "Each October, the capital celebrates National Wine Day with music, dancing and embroidered folk costumes.",
+      "ro": "În fiecare octombrie, capitala sărbătorește Ziua Națională a Vinului cu muzică, dansuri și costume populare brodate."
+    },
+    {
+      "en": "That capital, Chișinău, is a city of leafy parks and wide avenues. In the centre, the Cathedral of Christ's Nativity faces a small triumphal arch across a green square.",
+      "ro": "Capitala, Chișinău, este un oraș cu parcuri umbroase și bulevarde largi. În centru, Catedrala Nașterea Domnului stă față în față cu un mic arc de triumf, peste o piață verde."
+    },
+    {
+      "en": "At Orheiul Vechi, a monastery is carved into a limestone cliff above a looping river, and monks once lived in cells cut into the rock. It is one of the most beautiful sights in the country.",
+      "ro": "La Orheiul Vechi, o mănăstire este săpată într-o stâncă de calcar, deasupra unui râu care face o buclă largă, iar călugării locuiau odinioară în chilii tăiate în piatră. Este unul dintre cele mai frumoase locuri din țară."
+    },
+    {
+      "en": "At the table you will meet mămăligă, a golden cornmeal porridge served with cheese and sour cream, and zeamă, a chicken soup with homemade noodles and a pleasantly sour tang.",
+      "ro": "La masă vei întâlni mămăliga, aurie, servită cu brânză și smântână, și zeama, o supă de găină cu tăiței de casă și un gust plăcut acrișor."
+    },
+    {
+      "en": "Moldovans are famously generous hosts. On special occasions guests are greeted with bread and salt, and you may find your plate refilled again and again.",
+      "ro": "Moldovenii sunt cunoscuți ca gazde foarte primitoare. La ocazii speciale, oaspeții sunt întâmpinați cu pâine și sare, iar farfuria ți se poate umple iar și iar."
+    },
+    {
+      "en": "On the first of March, people give each other mărțișor, a little token tied with red and white string, to welcome the spring.",
+      "ro": "Întâi Martie, oamenii își dăruiesc mărțișoare, mici podoabe legate cu un șnur roșu și alb, ca să întâmpine primăvara."
+    },
+    {
+      "en": "At weddings and village festivals, everyone joins hands in the hora, a big circle dance, while fiddles and the nai, a panpipe, play faster and faster.",
+      "ro": "La nunți și la hramuri, toată lumea se prinde de mână în horă, un dans mare în cerc, în timp ce viorile și naiul cântă tot mai repede."
+    },
+    {
+      "en": "La revedere, goodbye! Cross the Prut to the west, and Romania is waiting.",
+      "ro": "La revedere! Treci Prutul spre apus, și România te așteaptă."
+    }
+  ],
+  "next": ["Romania", "Ukraine", "Bulgaria"]
+}

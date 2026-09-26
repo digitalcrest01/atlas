@@ -1,0 +1,59 @@
+{
+  "country": "Spain",
+  "languages": ["en", "es-ES"],
+  "segments": [
+    {
+      "en": "It's ten o'clock at night in Madrid, and the streets are still full. Grandparents, children and friends stroll together, and many families are only just sitting down to dinner. In Spain, the day runs late.",
+      "es-ES": "Son las diez de la noche en Madrid y las calles siguen llenas. Abuelos, niños y amigos pasean juntos, y muchas familias apenas se están sentando a cenar. En España, el día se alarga."
+    },
+    {
+      "en": "The paseo, an unhurried evening walk, is a much-loved ritual. People greet friends with two kisses on the cheeks and stop for a chat in the plaza while children play around the fountain.",
+      "es-ES": "El paseo de la tarde, sin prisas, es un ritual muy querido. La gente saluda a sus amigos con dos besos en las mejillas y se para a charlar en la plaza mientras los niños juegan alrededor de la fuente."
+    },
+    {
+      "en": "Hungry? Head out for tapas, small plates shared among friends. You might order crispy patatas bravas, thin slices of jamón, or a golden tortilla, the thick potato omelette you'll find in almost every bar.",
+      "es-ES": "¿Tienes hambre? Sal de tapas, pequeños platos para compartir entre amigos. Puedes pedir unas patatas bravas crujientes, unas lonchas finas de jamón o una tortilla de patatas dorada, esa que encontrarás en casi cualquier bar."
+    },
+    {
+      "en": "On the east coast, Valencia is the home of paella, cooked in a wide, flat pan over an open fire. The most prized part is the socarrat, the crispy rice stuck to the bottom.",
+      "es-ES": "En la costa este, Valencia es la cuna de la paella, que se cocina en una paellera ancha y plana sobre el fuego. Lo más codiciado es el socarrat, el arroz tostadito que se queda pegado al fondo."
+    },
+    {
+      "en": "Spanish, or castellano, is spoken everywhere, but Spain has other languages too. In Barcelona you'll hear Catalan, in Galicia Galician, and in the Basque Country, Euskara, a language with no known relatives anywhere.",
+      "es-ES": "El castellano se habla en todas partes, pero España tiene otras lenguas. En Barcelona oirás catalán, en Galicia gallego y en el País Vasco el euskera, una lengua sin parientes conocidos en ningún lugar."
+    },
+    {
+      "en": "The landscape is full of contrasts: snowy peaks in the Pyrenees and the Sierra Nevada, green hills in the rainy north, and wide golden plains in the centre dotted with windmills, the ones Don Quixote mistook for giants.",
+      "es-ES": "El paisaje está lleno de contrastes: cumbres nevadas en los Pirineos y en Sierra Nevada, colinas verdes en el norte lluvioso y amplias llanuras doradas en el centro salpicadas de molinos, los mismos que don Quijote confundió con gigantes."
+    },
+    {
+      "en": "In the south, Andalusia glows with whitewashed villages. In Granada, the Alhambra, a palace built during centuries of Moorish rule, is a wonder of carved plaster, bright tiles and trickling fountains.",
+      "es-ES": "En el sur, Andalucía brilla con sus pueblos blancos. En Granada, la Alhambra, un palacio construido durante los siglos de dominio andalusí, es una maravilla de yeserías labradas, azulejos de colores y fuentes que murmuran."
+    },
+    {
+      "en": "Andalusia is also the heart of flamenco, where a singer's cry, a guitar and the sharp clap of hands and heels tell stories of joy and sorrow.",
+      "es-ES": "Andalucía es también el corazón del flamenco, donde el quejío del cantaor, una guitarra y el golpe seco de las palmas y los tacones cuentan historias de alegría y de pena."
+    },
+    {
+      "en": "In Barcelona, Antoni Gaudí's Sagrada Família rises like a forest of stone. It has been under construction for well over a century, and its towers keep climbing towards the sky.",
+      "es-ES": "En Barcelona, la Sagrada Familia de Antoni Gaudí se alza como un bosque de piedra. Lleva en obras más de un siglo y sus torres siguen creciendo hacia el cielo."
+    },
+    {
+      "en": "Spaniards love a fiesta. In Valencia, giant sculptures go up in flames during Las Fallas, and in the town of Buñol, people happily pelt each other with tomatoes at La Tomatina.",
+      "es-ES": "A los españoles les encanta una fiesta. En Valencia, enormes monumentos arden durante las Fallas, y en el pueblo de Buñol la gente se lanza tomates con alegría en la Tomatina."
+    },
+    {
+      "en": "On New Year's Eve, everyone eats twelve grapes, one for each chime of the clock at midnight, to bring good luck for every month of the year ahead.",
+      "es-ES": "En Nochevieja, todo el mundo se come doce uvas, una por cada campanada de medianoche, para tener suerte en cada mes del año que empieza."
+    },
+    {
+      "en": "Football is a true passion, and when Real Madrid meet Barcelona, it can feel as though the whole country has stopped to watch.",
+      "es-ES": "El fútbol es una auténtica pasión, y cuando el Real Madrid se enfrenta al Barça, parece que el país entero se detiene para verlo."
+    },
+    {
+      "en": "Before you leave, dip warm churros into thick hot chocolate. Then head west, where Portugal is waiting just across the border.",
+      "es-ES": "Antes de irte, moja unos churros calentitos en un chocolate espeso. Y después pon rumbo al oeste, porque Portugal te espera justo al otro lado de la frontera."
+    }
+  ],
+  "next": ["Portugal", "France", "Andorra"]
+}

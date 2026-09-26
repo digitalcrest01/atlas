@@ -1,0 +1,183 @@
+{
+  "book": "sw",
+  "name": "Swahili",
+  "native": "Kiswahili",
+  "phrases": {
+    "hello": {
+      "text": "Hujambo",
+      "say": "hoo-JAHM-boh"
+    },
+    "good_morning": {
+      "text": "Habari za asubuhi",
+      "say": "hah-BAH-ree zah ah-soo-BOO-hee"
+    },
+    "good_evening": {
+      "text": "Habari za jioni",
+      "say": "hah-BAH-ree zah jee-OH-nee"
+    },
+    "goodbye": {
+      "text": "Kwa heri",
+      "say": "kwah HEH-ree"
+    },
+    "how_are_you": {
+      "text": "Habari yako?",
+      "say": "hah-BAH-ree YAH-koh"
+    },
+    "nice_to_meet": {
+      "text": "Nimefurahi kukutana nawe",
+      "say": "nee-meh-foo-RAH-hee koo-koo-TAH-nah NAH-weh"
+    },
+    "please": {
+      "text": "Tafadhali",
+      "say": "tah-fah-THAH-lee"
+    },
+    "thank_you": {
+      "text": "Asante",
+      "say": "ah-SAHN-teh"
+    },
+    "youre_welcome": {
+      "text": "Karibu",
+      "say": "kah-REE-boo"
+    },
+    "excuse_me": {
+      "text": "Samahani",
+      "say": "sah-mah-HAH-nee"
+    },
+    "sorry": {
+      "text": "Samahani sana",
+      "say": "sah-mah-HAH-nee SAH-nah"
+    },
+    "yes": {
+      "text": "Ndiyo",
+      "say": "n-DEE-yoh"
+    },
+    "no": {
+      "text": "Hapana",
+      "say": "hah-PAH-nah"
+    },
+    "speak_english": {
+      "text": "Unazungumza Kiingereza?",
+      "say": "oo-nah-zoon-GOOM-zah kee-een-geh-REH-zah"
+    },
+    "dont_understand": {
+      "text": "Sielewi",
+      "say": "see-eh-LEH-wee"
+    },
+    "slowly": {
+      "text": "Tafadhali ongea polepole",
+      "say": "tah-fah-THAH-lee on-GEH-ah poh-leh-POH-leh"
+    },
+    "repeat": {
+      "text": "Unaweza kurudia?",
+      "say": "oo-nah-WEH-zah koo-roo-DEE-ah"
+    },
+    "where_station": {
+      "text": "Kituo cha treni kiko wapi?",
+      "say": "kee-TOO-oh chah TREH-nee KEE-koh WAH-pee"
+    },
+    "where_toilet": {
+      "text": "Choo kiko wapi?",
+      "say": "CHOH-oh KEE-koh WAH-pee"
+    },
+    "is_it_far": {
+      "text": "Ni mbali?",
+      "say": "nee m-BAH-lee"
+    },
+    "left": {
+      "text": "Kushoto",
+      "say": "koo-SHOH-toh"
+    },
+    "right": {
+      "text": "Kulia",
+      "say": "koo-LEE-ah"
+    },
+    "straight": {
+      "text": "Moja kwa moja",
+      "say": "MOH-jah kwah MOH-jah"
+    },
+    "menu": {
+      "text": "Naomba menyu",
+      "say": "nah-OHM-bah MEH-nyoo"
+    },
+    "water": {
+      "text": "Naomba maji",
+      "say": "nah-OHM-bah MAH-jee"
+    },
+    "bill": {
+      "text": "Naomba bili",
+      "say": "nah-OHM-bah BEE-lee"
+    },
+    "delicious": {
+      "text": "Kitamu sana!",
+      "say": "kee-TAH-moo SAH-nah"
+    },
+    "vegetarian": {
+      "text": "Mimi sili nyama",
+      "say": "MEE-mee SEE-lee NYAH-mah"
+    },
+    "how_much": {
+      "text": "Bei gani?",
+      "say": "BAY GAH-nee"
+    },
+    "too_expensive": {
+      "text": "Ni ghali sana",
+      "say": "nee GAH-lee SAH-nah"
+    },
+    "pay_card": {
+      "text": "Naweza kulipa kwa kadi?",
+      "say": "nah-WEH-zah koo-LEE-pah kwah KAH-dee"
+    },
+    "help": {
+      "text": "Msaada!",
+      "say": "m-sah-AH-dah"
+    },
+    "need_doctor": {
+      "text": "Nahitaji daktari",
+      "say": "nah-hee-TAH-jee dahk-TAH-ree"
+    },
+    "lost": {
+      "text": "Nimepotea",
+      "say": "nee-meh-poh-TEH-ah"
+    },
+    "n1": {
+      "text": "moja",
+      "say": "MOH-jah"
+    },
+    "n2": {
+      "text": "mbili",
+      "say": "m-BEE-lee"
+    },
+    "n3": {
+      "text": "tatu",
+      "say": "TAH-too"
+    },
+    "n4": {
+      "text": "nne",
+      "say": "N-neh"
+    },
+    "n5": {
+      "text": "tano",
+      "say": "TAH-noh"
+    },
+    "n6": {
+      "text": "sita",
+      "say": "SEE-tah"
+    },
+    "n7": {
+      "text": "saba",
+      "say": "SAH-bah"
+    },
+    "n8": {
+      "text": "nane",
+      "say": "NAH-neh"
+    },
+    "n9": {
+      "text": "tisa",
+      "say": "TEE-sah"
+    },
+    "n10": {
+      "text": "kumi",
+      "say": "KOO-mee"
+    }
+  }
+}

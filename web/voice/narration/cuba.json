@@ -1,0 +1,59 @@
+{
+  "country": "Cuba",
+  "languages": ["en", "es-419"],
+  "segments": [
+    {
+      "en": "Sunset on the Malecón, the long seawall of Havana. Waves crash over the stones, a fisherman casts his line, and a shiny turquoise car from the nineteen fifties rumbles past, honking hello.",
+      "es-419": "Atardecer en el Malecón, el largo muro frente al mar de La Habana. Las olas saltan sobre las piedras, un pescador lanza su cordel y un carro turquesa de los años cincuenta pasa retumbando y saluda con un bocinazo."
+    },
+    {
+      "en": "Cuba is the largest island in the Caribbean, long and narrow, stretched across the sea like a sleeping crocodile. Many Cubans affectionately call it el caimán.",
+      "es-419": "Cuba es la isla más grande del Caribe, larga y estrecha, tendida sobre el mar como un cocodrilo dormido. Por eso muchos cubanos la llaman cariñosamente el caimán."
+    },
+    {
+      "en": "In Old Havana, pastel buildings with tall wooden shutters line the narrow streets. Look up and you'll see balconies full of plants, and neighbours chatting from one side of the street to the other.",
+      "es-419": "En La Habana Vieja, los edificios de colores pastel con altas persianas de madera bordean las calles estrechas. Mira hacia arriba y verás balcones llenos de matas y vecinas conversando de un lado de la calle al otro."
+    },
+    {
+      "en": "Music is everywhere. Son cubano, with guitars, bongos and a small guitar called the tres, gave birth to many of the rhythms the world later danced to as salsa.",
+      "es-419": "La música está en todas partes. El son cubano, con guitarras, bongós y el tres, dio origen a muchos de los ritmos que el mundo bailaría después como salsa."
+    },
+    {
+      "en": "Rumba, with its drums and call and response singing, grew from Afro-Cuban communities. Those African roots run deep in Cuban life, in dance, faith and food, woven together with Spanish traditions over centuries.",
+      "es-419": "La rumba, con sus tambores y sus cantos de llamada y respuesta, nació en las comunidades afrocubanas. Esas raíces africanas están muy presentes en la vida cubana, en el baile, la fe y la comida, entrelazadas con las tradiciones españolas a lo largo de los siglos."
+    },
+    {
+      "en": "On almost any corner you might find four friends slapping dominoes onto a little table, arguing cheerfully about every move.",
+      "es-419": "En casi cualquier esquina puedes encontrar a cuatro amigos golpeando las fichas de dominó sobre una mesita, discutiendo alegremente cada jugada."
+    },
+    {
+      "en": "And baseball, known here as la pelota, is the national passion. Children play in the street with sticks and bottle caps, dreaming of the big stadium.",
+      "es-419": "Y el béisbol, que aquí llaman la pelota, es la gran pasión nacional. Los niños juegan en la calle con palos y tapitas, soñando con el gran estadio."
+    },
+    {
+      "en": "At the table, try ropa vieja, which means old clothes, a dish of shredded beef stewed with tomatoes and peppers. It comes with moros y cristianos, black beans and rice cooked together, and sweet fried plantains.",
+      "es-419": "En la mesa, prueba la ropa vieja, carne deshebrada guisada con tomate y ají, que se llama así porque parece ropa hecha tiras. Se sirve con moros y cristianos, arroz y frijoles negros cocinados juntos, y maduros fritos."
+    },
+    {
+      "en": "Finish with a cafecito, a tiny cup of strong, very sweet coffee. It's shared, offered to neighbours, and always a good excuse to stop and talk.",
+      "es-419": "Termina con un cafecito, una tacita de café fuerte y bien dulce. Se comparte, se le brinda a los vecinos y siempre es un buen pretexto para detenerse a conversar."
+    },
+    {
+      "en": "West of Havana lies the Viñales Valley, where rounded limestone hills called mogotes rise from red earth. Farmers still plough with oxen and hang tobacco leaves to dry in tall wooden barns.",
+      "es-419": "Al oeste de La Habana está el valle de Viñales, donde unos cerros redondeados de piedra caliza, los mogotes, se alzan sobre la tierra roja. Los campesinos todavía aran con bueyes y cuelgan las hojas de tabaco a secar en altas casas de madera."
+    },
+    {
+      "en": "In the middle of the island, the town of Trinidad has cobbled streets that have barely changed in centuries. And in the far east, Santiago de Cuba throws a thundering summer carnival, with conga lines winding through the streets.",
+      "es-419": "En el centro de la isla, la villa de Trinidad conserva calles empedradas que casi no han cambiado en siglos. Y en el extremo oriental, Santiago de Cuba celebra un carnaval de verano estruendoso, con congas que serpentean por las calles."
+    },
+    {
+      "en": "Some everyday words began with the Taíno, the island's first people. Hammock and hurricane both started life here.",
+      "es-419": "Algunas palabras de todos los días vienen de los taínos, los primeros habitantes de la isla. Hamaca y huracán nacieron aquí."
+    },
+    {
+      "en": "Thanks for dancing through Cuba with me. Sail south across the Caribbean, and just over the horizon Jamaica is waiting with music of its own.",
+      "es-419": "Gracias por recorrer Cuba bailando conmigo. Navega hacia el sur por el Caribe y, justo detrás del horizonte, Jamaica te espera con su propia música."
+    }
+  ],
+  "next": ["Jamaica", "Mexico", "Bahamas"]
+}

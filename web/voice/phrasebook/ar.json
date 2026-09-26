@@ -1,0 +1,227 @@
+{
+  "book": "ar",
+  "name": "Arabic",
+  "native": "العربية",
+  "phrases": {
+    "hello": {
+      "text": "مرحبًا",
+      "roman": "marhaban",
+      "say": "MAR-ha-ban"
+    },
+    "good_morning": {
+      "text": "صباح الخير",
+      "roman": "sabah al-khayr",
+      "say": "sa-BAAH al-KHAYR"
+    },
+    "good_evening": {
+      "text": "مساء الخير",
+      "roman": "masa' al-khayr",
+      "say": "ma-SAA al-KHAYR"
+    },
+    "goodbye": {
+      "text": "مع السلامة",
+      "roman": "ma'a as-salama",
+      "say": "MA-a as-sa-LAA-ma"
+    },
+    "how_are_you": {
+      "text": "كيف حالك؟",
+      "roman": "kayfa haluk?",
+      "say": "KAY-fa HAA-luk"
+    },
+    "nice_to_meet": {
+      "text": "تشرفت بمعرفتك",
+      "roman": "tasharraftu bi-ma'rifatik",
+      "say": "ta-shar-RAF-tu bi-ma-ri-FA-tik"
+    },
+    "please": {
+      "text": "من فضلك",
+      "roman": "min fadlak",
+      "say": "min FAD-lak"
+    },
+    "thank_you": {
+      "text": "شكرًا",
+      "roman": "shukran",
+      "say": "SHOOK-ran"
+    },
+    "youre_welcome": {
+      "text": "عفوًا",
+      "roman": "'afwan",
+      "say": "AF-wan"
+    },
+    "excuse_me": {
+      "text": "لو سمحت",
+      "roman": "law samaht",
+      "say": "law sa-MAHT"
+    },
+    "sorry": {
+      "text": "آسفة",
+      "roman": "asifa",
+      "say": "AA-si-fa"
+    },
+    "yes": {
+      "text": "نعم",
+      "roman": "na'am",
+      "say": "NA-am"
+    },
+    "no": {
+      "text": "لا",
+      "roman": "la",
+      "say": "LAA"
+    },
+    "speak_english": {
+      "text": "هل تتكلم الإنجليزية؟",
+      "roman": "hal tatakallam al-injliziyya?",
+      "say": "hal ta-ta-KAL-lam al-in-glee-ZEE-ya"
+    },
+    "dont_understand": {
+      "text": "لا أفهم",
+      "roman": "la afham",
+      "say": "laa AF-ham"
+    },
+    "slowly": {
+      "text": "تكلم ببطء من فضلك",
+      "roman": "takallam bi-but' min fadlak",
+      "say": "ta-KAL-lam bi-BUT min FAD-lak"
+    },
+    "repeat": {
+      "text": "هل يمكنك أن تكرر ذلك؟",
+      "roman": "hal yumkinuka an tukarrir dhalik?",
+      "say": "hal YUM-ki-nu-ka an tu-KAR-rir THAA-lik"
+    },
+    "where_station": {
+      "text": "أين محطة القطار؟",
+      "roman": "ayna mahattat al-qitar?",
+      "say": "AY-na ma-HAT-tat al-qi-TAAR"
+    },
+    "where_toilet": {
+      "text": "أين دورة المياه؟",
+      "roman": "ayna dawrat al-miyah?",
+      "say": "AY-na DAW-rat al-mi-YAAH"
+    },
+    "is_it_far": {
+      "text": "هل هو بعيد؟",
+      "roman": "hal huwa ba'id?",
+      "say": "hal HU-wa ba-EED"
+    },
+    "left": {
+      "text": "يسار",
+      "roman": "yasar",
+      "say": "ya-SAAR"
+    },
+    "right": {
+      "text": "يمين",
+      "roman": "yamin",
+      "say": "ya-MEEN"
+    },
+    "straight": {
+      "text": "إلى الأمام مباشرةً",
+      "roman": "ila al-amam mubasharatan",
+      "say": "i-lal a-MAAM mu-BAA-sha-ra-tan"
+    },
+    "menu": {
+      "text": "قائمة الطعام من فضلك",
+      "roman": "qa'imat at-ta'am min fadlak",
+      "say": "QAA-i-mat at-ta-AAM min FAD-lak"
+    },
+    "water": {
+      "text": "ماء من فضلك",
+      "roman": "ma' min fadlak",
+      "say": "MAA min FAD-lak"
+    },
+    "bill": {
+      "text": "الحساب من فضلك",
+      "roman": "al-hisab min fadlak",
+      "say": "al-hi-SAAB min FAD-lak"
+    },
+    "delicious": {
+      "text": "لذيذ!",
+      "roman": "ladhidh!",
+      "say": "la-THEETH"
+    },
+    "vegetarian": {
+      "text": "أنا نباتية",
+      "roman": "ana nabatiyya",
+      "say": "A-na na-baa-TEE-ya"
+    },
+    "how_much": {
+      "text": "بكم هذا؟",
+      "roman": "bikam hadha?",
+      "say": "BI-kam HAA-tha"
+    },
+    "too_expensive": {
+      "text": "هذا غالٍ جدًا",
+      "roman": "hadha ghalin jiddan",
+      "say": "HAA-tha GHAA-lin JID-dan"
+    },
+    "pay_card": {
+      "text": "هل يمكنني الدفع بالبطاقة؟",
+      "roman": "hal yumkinuni ad-daf' bil-bitaqa?",
+      "say": "hal yum-KI-nu-nee ad-DAF bil-bi-TAA-qa"
+    },
+    "help": {
+      "text": "النجدة!",
+      "roman": "an-najda!",
+      "say": "an-NAJ-da"
+    },
+    "need_doctor": {
+      "text": "أحتاج إلى طبيب",
+      "roman": "ahtaju ila tabib",
+      "say": "ah-TAA-ju i-la ta-BEEB"
+    },
+    "lost": {
+      "text": "أنا تائهة",
+      "roman": "ana ta'iha",
+      "say": "A-na TAA-i-ha"
+    },
+    "n1": {
+      "text": "واحد",
+      "roman": "wahid",
+      "say": "WAA-hid"
+    },
+    "n2": {
+      "text": "اثنان",
+      "roman": "ithnan",
+      "say": "ith-NAAN"
+    },
+    "n3": {
+      "text": "ثلاثة",
+      "roman": "thalatha",
+      "say": "tha-LAA-tha"
+    },
+    "n4": {
+      "text": "أربعة",
+      "roman": "arba'a",
+      "say": "AR-ba-a"
+    },
+    "n5": {
+      "text": "خمسة",
+      "roman": "khamsa",
+      "say": "KHAM-sa"
+    },
+    "n6": {
+      "text": "ستة",
+      "roman": "sitta",
+      "say": "SIT-ta"
+    },
+    "n7": {
+      "text": "سبعة",
+      "roman": "sab'a",
+      "say": "SAB-a"
+    },
+    "n8": {
+      "text": "ثمانية",
+      "roman": "thamaniya",
+      "say": "tha-MAA-ni-ya"
+    },
+    "n9": {
+      "text": "تسعة",
+      "roman": "tis'a",
+      "say": "TIS-a"
+    },
+    "n10": {
+      "text": "عشرة",
+      "roman": "'ashara",
+      "say": "A-sha-ra"
+    }
+  }
+}

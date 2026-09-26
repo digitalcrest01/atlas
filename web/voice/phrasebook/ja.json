@@ -1,0 +1,227 @@
+{
+  "book": "ja",
+  "name": "Japanese",
+  "native": "日本語",
+  "phrases": {
+    "hello": {
+      "text": "こんにちは",
+      "roman": "konnichiwa",
+      "say": "kohn-NEE-chee-wah"
+    },
+    "good_morning": {
+      "text": "おはようございます",
+      "roman": "ohayō gozaimasu",
+      "say": "oh-HAH-yoh goh-ZAI-mahs"
+    },
+    "good_evening": {
+      "text": "こんばんは",
+      "roman": "konbanwa",
+      "say": "kohn-BAHN-wah"
+    },
+    "goodbye": {
+      "text": "さようなら",
+      "roman": "sayōnara",
+      "say": "sah-YOH-nah-rah"
+    },
+    "how_are_you": {
+      "text": "お元気ですか？",
+      "roman": "o-genki desu ka?",
+      "say": "oh-GEN-kee dess kah"
+    },
+    "nice_to_meet": {
+      "text": "はじめまして",
+      "roman": "hajimemashite",
+      "say": "hah-jee-meh-MAHSH-teh"
+    },
+    "please": {
+      "text": "お願いします",
+      "roman": "onegai shimasu",
+      "say": "oh-neh-GAI shee-mahs"
+    },
+    "thank_you": {
+      "text": "ありがとうございます",
+      "roman": "arigatō gozaimasu",
+      "say": "ah-ree-GAH-toh goh-ZAI-mahs"
+    },
+    "youre_welcome": {
+      "text": "どういたしまして",
+      "roman": "dō itashimashite",
+      "say": "doh ee-tah-shee-MAHSH-teh"
+    },
+    "excuse_me": {
+      "text": "すみません",
+      "roman": "sumimasen",
+      "say": "soo-mee-MAH-sen"
+    },
+    "sorry": {
+      "text": "ごめんなさい",
+      "roman": "gomen nasai",
+      "say": "goh-MEN nah-sai"
+    },
+    "yes": {
+      "text": "はい",
+      "roman": "hai",
+      "say": "HAI"
+    },
+    "no": {
+      "text": "いいえ",
+      "roman": "iie",
+      "say": "EE-eh"
+    },
+    "speak_english": {
+      "text": "英語を話せますか？",
+      "roman": "eigo o hanasemasu ka?",
+      "say": "AY-goh oh hah-nah-seh-MAHS kah"
+    },
+    "dont_understand": {
+      "text": "わかりません",
+      "roman": "wakarimasen",
+      "say": "wah-kah-ree-MAH-sen"
+    },
+    "slowly": {
+      "text": "ゆっくり話してください",
+      "roman": "yukkuri hanashite kudasai",
+      "say": "yook-KOO-ree hah-NAHSH-teh koo-DAH-sai"
+    },
+    "repeat": {
+      "text": "もう一度言ってください",
+      "roman": "mō ichido itte kudasai",
+      "say": "moh ee-CHEE-doh EET-teh koo-DAH-sai"
+    },
+    "where_station": {
+      "text": "駅はどこですか？",
+      "roman": "eki wa doko desu ka?",
+      "say": "EH-kee wah DOH-koh dess kah"
+    },
+    "where_toilet": {
+      "text": "トイレはどこですか？",
+      "roman": "toire wa doko desu ka?",
+      "say": "TOY-reh wah DOH-koh dess kah"
+    },
+    "is_it_far": {
+      "text": "遠いですか？",
+      "roman": "tōi desu ka?",
+      "say": "TOH-ee dess kah"
+    },
+    "left": {
+      "text": "左",
+      "roman": "hidari",
+      "say": "hee-DAH-ree"
+    },
+    "right": {
+      "text": "右",
+      "roman": "migi",
+      "say": "MEE-gee"
+    },
+    "straight": {
+      "text": "まっすぐ",
+      "roman": "massugu",
+      "say": "mahs-SOO-goo"
+    },
+    "menu": {
+      "text": "メニューをお願いします",
+      "roman": "menyū o onegai shimasu",
+      "say": "MEH-nyoo oh oh-neh-GAI shee-mahs"
+    },
+    "water": {
+      "text": "お水をお願いします",
+      "roman": "o-mizu o onegai shimasu",
+      "say": "oh-MEE-zoo oh oh-neh-GAI shee-mahs"
+    },
+    "bill": {
+      "text": "お会計をお願いします",
+      "roman": "o-kaikei o onegai shimasu",
+      "say": "oh-KAI-kay oh oh-neh-GAI shee-mahs"
+    },
+    "delicious": {
+      "text": "おいしい！",
+      "roman": "oishii!",
+      "say": "oy-SHEE"
+    },
+    "vegetarian": {
+      "text": "私はベジタリアンです",
+      "roman": "watashi wa bejitarian desu",
+      "say": "wah-TAH-shee wah beh-jee-TAH-ree-ahn dess"
+    },
+    "how_much": {
+      "text": "いくらですか？",
+      "roman": "ikura desu ka?",
+      "say": "ee-KOO-rah dess kah"
+    },
+    "too_expensive": {
+      "text": "高すぎます",
+      "roman": "takasugimasu",
+      "say": "tah-kah-soo-GEE-mahs"
+    },
+    "pay_card": {
+      "text": "カードで払えますか？",
+      "roman": "kādo de haraemasu ka?",
+      "say": "KAH-doh deh hah-rah-eh-MAHS kah"
+    },
+    "help": {
+      "text": "助けて！",
+      "roman": "tasukete!",
+      "say": "tah-SKEH-teh"
+    },
+    "need_doctor": {
+      "text": "医者が必要です",
+      "roman": "isha ga hitsuyō desu",
+      "say": "EE-shah gah hee-tsoo-YOH dess"
+    },
+    "lost": {
+      "text": "道に迷いました",
+      "roman": "michi ni mayoimashita",
+      "say": "MEE-chee nee mah-yoy-MAHSH-tah"
+    },
+    "n1": {
+      "text": "いち",
+      "roman": "ichi",
+      "say": "EE-chee"
+    },
+    "n2": {
+      "text": "に",
+      "roman": "ni",
+      "say": "NEE"
+    },
+    "n3": {
+      "text": "さん",
+      "roman": "san",
+      "say": "SAHN"
+    },
+    "n4": {
+      "text": "よん",
+      "roman": "yon",
+      "say": "YOHN"
+    },
+    "n5": {
+      "text": "ご",
+      "roman": "go",
+      "say": "GOH"
+    },
+    "n6": {
+      "text": "ろく",
+      "roman": "roku",
+      "say": "ROH-koo"
+    },
+    "n7": {
+      "text": "なな",
+      "roman": "nana",
+      "say": "NAH-nah"
+    },
+    "n8": {
+      "text": "はち",
+      "roman": "hachi",
+      "say": "HAH-chee"
+    },
+    "n9": {
+      "text": "きゅう",
+      "roman": "kyū",
+      "say": "KYOO"
+    },
+    "n10": {
+      "text": "じゅう",
+      "roman": "jū",
+      "say": "JOO"
+    }
+  }
+}

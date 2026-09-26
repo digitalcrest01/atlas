@@ -1,0 +1,183 @@
+{
+  "book": "ca",
+  "name": "Catalan",
+  "native": "català",
+  "phrases": {
+    "hello": {
+      "text": "Hola",
+      "say": "OH-luh"
+    },
+    "good_morning": {
+      "text": "Bon dia",
+      "say": "bon DEE-uh"
+    },
+    "good_evening": {
+      "text": "Bon vespre",
+      "say": "bon VES-pruh"
+    },
+    "goodbye": {
+      "text": "Adéu",
+      "say": "uh-DEH-oo"
+    },
+    "how_are_you": {
+      "text": "Com està?",
+      "say": "kom us-TAH"
+    },
+    "nice_to_meet": {
+      "text": "Molt de gust",
+      "say": "mol duh GOOST"
+    },
+    "please": {
+      "text": "Si us plau",
+      "say": "see oos PLOW"
+    },
+    "thank_you": {
+      "text": "Gràcies",
+      "say": "GRAH-see-uhs"
+    },
+    "youre_welcome": {
+      "text": "De res",
+      "say": "duh RES"
+    },
+    "excuse_me": {
+      "text": "Perdoni",
+      "say": "pur-DOH-nee"
+    },
+    "sorry": {
+      "text": "Ho sento",
+      "say": "oo SEN-too"
+    },
+    "yes": {
+      "text": "Sí",
+      "say": "SEE"
+    },
+    "no": {
+      "text": "No",
+      "say": "NOH"
+    },
+    "speak_english": {
+      "text": "Parla anglès?",
+      "say": "PAR-luh un-GLES"
+    },
+    "dont_understand": {
+      "text": "No ho entenc",
+      "say": "noh oo un-TENG"
+    },
+    "slowly": {
+      "text": "Pot parlar més a poc a poc, si us plau?",
+      "say": "pot pur-LAH MES uh POK uh POK see oos PLOW"
+    },
+    "repeat": {
+      "text": "Pot repetir-ho?",
+      "say": "pot reh-peh-TEE-roo"
+    },
+    "where_station": {
+      "text": "On és l'estació de tren?",
+      "say": "ON es les-tuh-see-OH duh TREN"
+    },
+    "where_toilet": {
+      "text": "On són els lavabos?",
+      "say": "ON son uls luh-VAH-boos"
+    },
+    "is_it_far": {
+      "text": "És lluny?",
+      "say": "es LYOON"
+    },
+    "left": {
+      "text": "Esquerra",
+      "say": "us-KEH-ruh"
+    },
+    "right": {
+      "text": "Dreta",
+      "say": "DREH-tuh"
+    },
+    "straight": {
+      "text": "Tot recte",
+      "say": "tot REK-tuh"
+    },
+    "menu": {
+      "text": "La carta, si us plau",
+      "say": "luh KAR-tuh see oos PLOW"
+    },
+    "water": {
+      "text": "Aigua, si us plau",
+      "say": "AI-gwuh see oos PLOW"
+    },
+    "bill": {
+      "text": "El compte, si us plau",
+      "say": "ul KOM-tuh see oos PLOW"
+    },
+    "delicious": {
+      "text": "Boníssim!",
+      "say": "boo-NEE-seem"
+    },
+    "vegetarian": {
+      "text": "Sóc vegetariana",
+      "say": "sok buh-zhuh-tuh-ree-AH-nuh"
+    },
+    "how_much": {
+      "text": "Quant costa?",
+      "say": "kwan KOS-tuh"
+    },
+    "too_expensive": {
+      "text": "És massa car",
+      "say": "es MAH-suh KAR"
+    },
+    "pay_card": {
+      "text": "Puc pagar amb targeta?",
+      "say": "pook puh-GAH um tur-ZHEH-tuh"
+    },
+    "help": {
+      "text": "Ajuda!",
+      "say": "uh-ZHOO-duh"
+    },
+    "need_doctor": {
+      "text": "Necessito un metge",
+      "say": "nuh-suh-SEE-too oon MED-zhuh"
+    },
+    "lost": {
+      "text": "M'he perdut",
+      "say": "muh pur-DOOT"
+    },
+    "n1": {
+      "text": "u",
+      "say": "OO"
+    },
+    "n2": {
+      "text": "dos",
+      "say": "DOS"
+    },
+    "n3": {
+      "text": "tres",
+      "say": "TRES"
+    },
+    "n4": {
+      "text": "quatre",
+      "say": "KWAH-truh"
+    },
+    "n5": {
+      "text": "cinc",
+      "say": "SEENK"
+    },
+    "n6": {
+      "text": "sis",
+      "say": "SEES"
+    },
+    "n7": {
+      "text": "set",
+      "say": "SET"
+    },
+    "n8": {
+      "text": "vuit",
+      "say": "VOO-eet"
+    },
+    "n9": {
+      "text": "nou",
+      "say": "NOH-oo"
+    },
+    "n10": {
+      "text": "deu",
+      "say": "DEH-oo"
+    }
+  }
+}

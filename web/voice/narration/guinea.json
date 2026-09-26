@@ -1,0 +1,55 @@
+{
+  "country": "Guinea",
+  "languages": ["en", "fr"],
+  "segments": [
+    {
+      "en": "High on the green plateau of the Fouta Djallon, rain gathers into streams, and the streams become rivers. Some of West Africa's greatest, the Niger, the Senegal and the Gambia, begin their journeys in Guinea's hills.",
+      "fr": "Sur le plateau verdoyant du Fouta-Djalon, la pluie se rassemble en ruisseaux, et les ruisseaux deviennent des fleuves. Parmi les plus grands d'Afrique de l'Ouest, le Niger, le Sénégal et la Gambie prennent leur source dans les collines de Guinée."
+    },
+    {
+      "en": "That's why Guinea is often called the water tower of West Africa. Waterfalls tumble down cliffs, and the air in the highlands is cool and fresh, a surprise so close to the equator.",
+      "fr": "C'est pour cela qu'on appelle souvent la Guinée le château d'eau de l'Afrique de l'Ouest. Des cascades dévalent les falaises, et l'air des hauts plateaux est frais, une surprise si près de l'équateur."
+    },
+    {
+      "en": "The country curves along the Atlantic coast, with mangroves and fishing villages. Inland, it rises into the Fouta Djallon, spreads into savanna in Upper Guinea, and ends in thick forest in the southeast.",
+      "fr": "Le pays s'étire en arc le long de la côte atlantique, avec ses mangroves et ses villages de pêcheurs. À l'intérieur, il s'élève vers le Fouta-Djalon, s'ouvre en savane en Haute-Guinée et se termine en forêt dense au sud-est."
+    },
+    {
+      "en": "Conakry, the capital, sits on a narrow peninsula reaching into the ocean. Just offshore lie the Loos Islands, with sandy beaches where families escape the city on weekends.",
+      "fr": "Conakry, la capitale, occupe une étroite presqu'île qui avance dans l'océan. Juste au large se trouvent les îles de Loos, avec leurs plages de sable où les familles fuient la ville le week-end."
+    },
+    {
+      "en": "French is the official language, but most people also speak Pular, Maninka, Susu or another of the country's languages, and many switch between several in the same conversation.",
+      "fr": "Le français est la langue officielle, mais la plupart des gens parlent aussi le pular, le malinké, le soussou ou une autre langue du pays, et beaucoup passent de l'une à l'autre dans la même conversation."
+    },
+    {
+      "en": "Greetings take time. People ask about your health, your family, your work, and wait to hear the answers. Rushing past a greeting is seen as impolite, so slow down and smile.",
+      "fr": "Les salutations prennent du temps. On demande des nouvelles de votre santé, de votre famille, de votre travail, et l'on attend la réponse. Expédier les salutations est impoli : ralentissez et souriez."
+    },
+    {
+      "en": "Guinea is famous for its music. Griots, the storytellers and singers of the Mande tradition, play the kora and the balafon, a wooden xylophone whose most treasured example has been guarded for centuries.",
+      "fr": "La Guinée est célèbre pour sa musique. Les griots, conteurs et chanteurs de la tradition mandingue, jouent de la kora et du balafon, un xylophone en bois dont l'exemplaire le plus précieux est gardé depuis des siècles."
+    },
+    {
+      "en": "Then there's the djembe, the goblet-shaped drum. Guinean drummers are counted among the best in the world, and the national ballet, Les Ballets Africains, has thrilled audiences on stages everywhere.",
+      "fr": "Et puis il y a le djembé, le tambour en forme de calice. Les percussionnistes guinéens comptent parmi les meilleurs du monde, et Les Ballets africains ont enthousiasmé le public sur toutes les scènes."
+    },
+    {
+      "en": "At mealtime, rice is king. It's often served with a rich peanut sauce or a sauce made from cassava or sweet potato leaves, shared from a big bowl with family and friends.",
+      "fr": "À table, le riz est roi. On le sert souvent avec une sauce d'arachide bien riche ou une sauce aux feuilles de manioc ou de patate douce, partagée dans un grand plat en famille ou entre amis."
+    },
+    {
+      "en": "In the southeast rise the Nimba Mountains, a protected wilderness shared with neighbouring countries. Rare animals live there, including chimpanzees known for using stones to crack open nuts.",
+      "fr": "Au sud-est se dressent les monts Nimba, une réserve naturelle partagée avec les pays voisins. Des animaux rares y vivent, dont des chimpanzés connus pour casser des noix avec des pierres."
+    },
+    {
+      "en": "Football is the great passion, and when the national team, the Syli, plays, streets empty and every radio is turned up loud. Syli means elephant in the Susu language.",
+      "fr": "Le football est la grande passion, et quand l'équipe nationale, le Syli, joue, les rues se vident et toutes les radios sont à fond. Syli veut dire éléphant en soussou."
+    },
+    {
+      "en": "Follow the rivers downstream and you'll reach new lands. The Niger flows northeast into Mali, a country bound to Guinea by a shared Mande history. Mali is waiting for you.",
+      "fr": "Suivez les fleuves vers l'aval et vous découvrirez de nouvelles terres. Le Niger coule vers le nord-est jusqu'au Mali, un pays lié à la Guinée par une histoire mandingue commune. Le Mali vous attend."
+    }
+  ],
+  "next": ["Mali", "Senegal", "Sierra Leone"]
+}

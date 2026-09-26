@@ -1,0 +1,183 @@
+{
+  "book": "zu",
+  "name": "Zulu",
+  "native": "isiZulu",
+  "phrases": {
+    "hello": {
+      "text": "Sawubona",
+      "say": "sa-woo-BO-na"
+    },
+    "good_morning": {
+      "text": "Sawubona",
+      "say": "sa-woo-BO-na"
+    },
+    "good_evening": {
+      "text": "Sawubona",
+      "say": "sa-woo-BO-na"
+    },
+    "goodbye": {
+      "text": "Sala kahle",
+      "say": "SA-la GA-shleh"
+    },
+    "how_are_you": {
+      "text": "Unjani?",
+      "say": "oon-JA-nee"
+    },
+    "nice_to_meet": {
+      "text": "Ngiyajabula ukukwazi",
+      "say": "ngee-ya-ja-BOO-la oo-koo-KWA-zee"
+    },
+    "please": {
+      "text": "Ngicela",
+      "say": "ngee-CHEH-la"
+    },
+    "thank_you": {
+      "text": "Ngiyabonga",
+      "say": "ngee-ya-BON-ga"
+    },
+    "youre_welcome": {
+      "text": "Wamukelekile",
+      "say": "wa-moo-keh-leh-KEE-leh"
+    },
+    "excuse_me": {
+      "text": "Uxolo",
+      "say": "oo-KO-lo"
+    },
+    "sorry": {
+      "text": "Ngiyaxolisa",
+      "say": "ngee-ya-ko-LEE-sa"
+    },
+    "yes": {
+      "text": "Yebo",
+      "say": "YEH-bo"
+    },
+    "no": {
+      "text": "Cha",
+      "say": "TSKA"
+    },
+    "speak_english": {
+      "text": "Uyasikhuluma isiNgisi?",
+      "say": "oo-ya-see-koo-LOO-ma ee-see-NGEE-see"
+    },
+    "dont_understand": {
+      "text": "Angiqondi",
+      "say": "a-ngee-KON-dee"
+    },
+    "slowly": {
+      "text": "Ngicela ukhulume kancane",
+      "say": "ngee-CHEH-la oo-koo-LOO-meh ka-NTSA-neh"
+    },
+    "repeat": {
+      "text": "Ngicela uphinde",
+      "say": "ngee-CHEH-la oo-PEEN-deh"
+    },
+    "where_station": {
+      "text": "Siphi isiteshi sesitimela?",
+      "say": "SEE-pee ee-see-TEH-shee seh-see-tee-MEH-la"
+    },
+    "where_toilet": {
+      "text": "Iphi indlu yangasese?",
+      "say": "EE-pee EEN-dloo ya-nga-SEH-seh"
+    },
+    "is_it_far": {
+      "text": "Kukude?",
+      "say": "koo-KOO-deh"
+    },
+    "left": {
+      "text": "Kwesobunxele",
+      "say": "kweh-so-boon-KEH-leh"
+    },
+    "right": {
+      "text": "Kwesokudla",
+      "say": "kweh-so-KOO-dla"
+    },
+    "straight": {
+      "text": "Qonde ngqo",
+      "say": "KON-deh NGKO"
+    },
+    "menu": {
+      "text": "Ngicela imenyu",
+      "say": "ngee-CHEH-la ee-MEH-nyoo"
+    },
+    "water": {
+      "text": "Ngicela amanzi",
+      "say": "ngee-CHEH-la a-MAN-zee"
+    },
+    "bill": {
+      "text": "Ngicela ibhili",
+      "say": "ngee-CHEH-la ee-BEE-lee"
+    },
+    "delicious": {
+      "text": "Kumnandi!",
+      "say": "koom-NAN-dee"
+    },
+    "vegetarian": {
+      "text": "Angiyidli inyama",
+      "say": "a-ngee-YEE-dlee ee-NYA-ma"
+    },
+    "how_much": {
+      "text": "Kungakanani?",
+      "say": "koo-nga-ka-NA-nee"
+    },
+    "too_expensive": {
+      "text": "Kubiza kakhulu",
+      "say": "koo-BEE-za ka-KOO-loo"
+    },
+    "pay_card": {
+      "text": "Ngingakhokha ngekhadi?",
+      "say": "ngee-nga-KO-ka ngeh-KA-dee"
+    },
+    "help": {
+      "text": "Ngisizeni!",
+      "say": "ngee-see-ZEH-nee"
+    },
+    "need_doctor": {
+      "text": "Ngidinga udokotela",
+      "say": "ngee-DEE-nga oo-do-ko-TEH-la"
+    },
+    "lost": {
+      "text": "Ngilahlekile",
+      "say": "ngee-la-shleh-KEE-leh"
+    },
+    "n1": {
+      "text": "kunye",
+      "say": "KOO-nyeh"
+    },
+    "n2": {
+      "text": "kubili",
+      "say": "koo-BEE-lee"
+    },
+    "n3": {
+      "text": "kuthathu",
+      "say": "koo-TA-too"
+    },
+    "n4": {
+      "text": "kune",
+      "say": "KOO-neh"
+    },
+    "n5": {
+      "text": "kuhlanu",
+      "say": "koo-SHLA-noo"
+    },
+    "n6": {
+      "text": "isithupha",
+      "say": "ee-see-TOO-pa"
+    },
+    "n7": {
+      "text": "isikhombisa",
+      "say": "ee-see-kom-BEE-sa"
+    },
+    "n8": {
+      "text": "isishiyagalombili",
+      "say": "ee-see-shee-ya-ga-lom-BEE-lee"
+    },
+    "n9": {
+      "text": "isishiyagalolunye",
+      "say": "ee-see-shee-ya-ga-lo-LOO-nyeh"
+    },
+    "n10": {
+      "text": "ishumi",
+      "say": "EE-shoo-mee"
+    }
+  }
+}

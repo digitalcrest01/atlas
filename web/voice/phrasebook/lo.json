@@ -1,0 +1,227 @@
+{
+  "book": "lo",
+  "name": "Lao",
+  "native": "ລາວ",
+  "phrases": {
+    "hello": {
+      "text": "ສະບາຍດີ",
+      "roman": "sabaidee",
+      "say": "sah-bai-DEE"
+    },
+    "good_morning": {
+      "text": "ສະບາຍດີຕອນເຊົ້າ",
+      "roman": "sabaidee ton xao",
+      "say": "sah-bai-DEE ton SAO"
+    },
+    "good_evening": {
+      "text": "ສະບາຍດີຕອນແລງ",
+      "roman": "sabaidee ton laeng",
+      "say": "sah-bai-DEE ton LAENG"
+    },
+    "goodbye": {
+      "text": "ລາກ່ອນ",
+      "roman": "la kon",
+      "say": "lah GAWN"
+    },
+    "how_are_you": {
+      "text": "ສະບາຍດີບໍ່?",
+      "roman": "sabaidee bo?",
+      "say": "sah-bai-DEE BAW"
+    },
+    "nice_to_meet": {
+      "text": "ຍິນດີທີ່ໄດ້ຮູ້ຈັກ",
+      "roman": "nyin dee thi dai hu chak",
+      "say": "nyin DEE tee dai hoo JAK"
+    },
+    "please": {
+      "text": "ກະລຸນາ",
+      "roman": "kaluna",
+      "say": "ka-loo-NAH"
+    },
+    "thank_you": {
+      "text": "ຂອບໃຈ",
+      "roman": "khop chai",
+      "say": "kawp JAI"
+    },
+    "youre_welcome": {
+      "text": "ບໍ່ເປັນຫຍັງ",
+      "roman": "bo pen nyang",
+      "say": "baw pen NYANG"
+    },
+    "excuse_me": {
+      "text": "ຂໍໂທດ",
+      "roman": "kho thot",
+      "say": "kaw TOHT"
+    },
+    "sorry": {
+      "text": "ຂໍໂທດ",
+      "roman": "kho thot",
+      "say": "kaw TOHT"
+    },
+    "yes": {
+      "text": "ແມ່ນ",
+      "roman": "maen",
+      "say": "MEN"
+    },
+    "no": {
+      "text": "ບໍ່",
+      "roman": "bo",
+      "say": "BAW"
+    },
+    "speak_english": {
+      "text": "ເຈົ້າເວົ້າພາສາອັງກິດໄດ້ບໍ່?",
+      "roman": "chao vao phasa angkit dai bo?",
+      "say": "jao vao pah-SAH ang-KIT dai BAW"
+    },
+    "dont_understand": {
+      "text": "ຂ້ອຍບໍ່ເຂົ້າໃຈ",
+      "roman": "khoy bo khao chai",
+      "say": "koy baw kao JAI"
+    },
+    "slowly": {
+      "text": "ກະລຸນາເວົ້າຊ້າໆແດ່",
+      "roman": "kaluna vao xa xa dae",
+      "say": "ka-loo-NAH vao SAH sah DAE"
+    },
+    "repeat": {
+      "text": "ເວົ້າອີກເທື່ອໜຶ່ງໄດ້ບໍ່?",
+      "roman": "vao ik thua neung dai bo?",
+      "say": "vao eek TUA nueng dai BAW"
+    },
+    "where_station": {
+      "text": "ສະຖານີລົດໄຟຢູ່ໃສ?",
+      "roman": "sathani lot fai yu sai?",
+      "say": "sa-tah-NEE lot FAI yoo SAI"
+    },
+    "where_toilet": {
+      "text": "ຫ້ອງນ້ຳຢູ່ໃສ?",
+      "roman": "hong nam yu sai?",
+      "say": "hong NAM yoo SAI"
+    },
+    "is_it_far": {
+      "text": "ໄກບໍ່?",
+      "roman": "kai bo?",
+      "say": "GAI baw"
+    },
+    "left": {
+      "text": "ຊ້າຍ",
+      "roman": "xai",
+      "say": "SAI"
+    },
+    "right": {
+      "text": "ຂວາ",
+      "roman": "khua",
+      "say": "KWAH"
+    },
+    "straight": {
+      "text": "ໄປຊື່ໆ",
+      "roman": "pai xeu xeu",
+      "say": "pai SUE sue"
+    },
+    "menu": {
+      "text": "ຂໍເມນູແດ່",
+      "roman": "kho menu dae",
+      "say": "kaw may-NOO DAE"
+    },
+    "water": {
+      "text": "ຂໍນ້ຳແດ່",
+      "roman": "kho nam dae",
+      "say": "kaw NAM DAE"
+    },
+    "bill": {
+      "text": "ເກັບເງິນແດ່",
+      "roman": "kep ngeun dae",
+      "say": "gep NGUHN DAE"
+    },
+    "delicious": {
+      "text": "ແຊບຫຼາຍ!",
+      "roman": "saep lai!",
+      "say": "SAEP LAI"
+    },
+    "vegetarian": {
+      "text": "ຂ້ອຍບໍ່ກິນຊີ້ນ",
+      "roman": "khoy bo kin xin",
+      "say": "koy baw kin SEEN"
+    },
+    "how_much": {
+      "text": "ອັນນີ້ເທົ່າໃດ?",
+      "roman": "an ni thao dai?",
+      "say": "an nee tao DAI"
+    },
+    "too_expensive": {
+      "text": "ແພງໂພດ",
+      "roman": "phaeng phot",
+      "say": "paeng POHT"
+    },
+    "pay_card": {
+      "text": "ຈ່າຍດ້ວຍບັດໄດ້ບໍ່?",
+      "roman": "chai duay bat dai bo?",
+      "say": "jai duay BAT dai BAW"
+    },
+    "help": {
+      "text": "ຊ່ວຍແດ່!",
+      "roman": "xuay dae!",
+      "say": "SUAY dae"
+    },
+    "need_doctor": {
+      "text": "ຂ້ອຍຕ້ອງການໝໍ",
+      "roman": "khoy tong kan mo",
+      "say": "koy tong KAHN MAW"
+    },
+    "lost": {
+      "text": "ຂ້ອຍຫຼົງທາງ",
+      "roman": "khoy long thang",
+      "say": "koy long TAHNG"
+    },
+    "n1": {
+      "text": "ໜຶ່ງ",
+      "roman": "neung",
+      "say": "NUENG"
+    },
+    "n2": {
+      "text": "ສອງ",
+      "roman": "song",
+      "say": "SAWNG"
+    },
+    "n3": {
+      "text": "ສາມ",
+      "roman": "sam",
+      "say": "SAHM"
+    },
+    "n4": {
+      "text": "ສີ່",
+      "roman": "si",
+      "say": "SEE"
+    },
+    "n5": {
+      "text": "ຫ້າ",
+      "roman": "ha",
+      "say": "HAH"
+    },
+    "n6": {
+      "text": "ຫົກ",
+      "roman": "hok",
+      "say": "HOK"
+    },
+    "n7": {
+      "text": "ເຈັດ",
+      "roman": "chet",
+      "say": "JET"
+    },
+    "n8": {
+      "text": "ແປດ",
+      "roman": "paet",
+      "say": "PAET"
+    },
+    "n9": {
+      "text": "ເກົ້າ",
+      "roman": "kao",
+      "say": "GAO"
+    },
+    "n10": {
+      "text": "ສິບ",
+      "roman": "sip",
+      "say": "SIP"
+    }
+  }
+}

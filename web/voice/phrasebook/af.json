@@ -1,0 +1,183 @@
+{
+  "book": "af",
+  "name": "Afrikaans",
+  "native": "Afrikaans",
+  "phrases": {
+    "hello": {
+      "text": "Hallo",
+      "say": "HAH-loh"
+    },
+    "good_morning": {
+      "text": "Goeie môre",
+      "say": "KHOO-yuh MAW-ruh"
+    },
+    "good_evening": {
+      "text": "Goeienaand",
+      "say": "KHOO-yuh-naant"
+    },
+    "goodbye": {
+      "text": "Totsiens",
+      "say": "TOT-seens"
+    },
+    "how_are_you": {
+      "text": "Hoe gaan dit?",
+      "say": "hoo KHAHN dit"
+    },
+    "nice_to_meet": {
+      "text": "Aangename kennis",
+      "say": "AHN-khuh-nah-muh KEN-nis"
+    },
+    "please": {
+      "text": "Asseblief",
+      "say": "ah-suh-BLEEF"
+    },
+    "thank_you": {
+      "text": "Dankie",
+      "say": "DUNK-ee"
+    },
+    "youre_welcome": {
+      "text": "Plesier",
+      "say": "pluh-SEER"
+    },
+    "excuse_me": {
+      "text": "Verskoon my",
+      "say": "fer-SKOO-uhn may"
+    },
+    "sorry": {
+      "text": "Jammer",
+      "say": "YUM-mer"
+    },
+    "yes": {
+      "text": "Ja",
+      "say": "YAH"
+    },
+    "no": {
+      "text": "Nee",
+      "say": "NEE-uh"
+    },
+    "speak_english": {
+      "text": "Praat jy Engels?",
+      "say": "praht yay ENG-uls"
+    },
+    "dont_understand": {
+      "text": "Ek verstaan nie",
+      "say": "ek fer-STAHN nee"
+    },
+    "slowly": {
+      "text": "Praat asseblief stadiger",
+      "say": "praht ah-suh-BLEEF STAH-duh-kher"
+    },
+    "repeat": {
+      "text": "Kan jy dit asseblief herhaal?",
+      "say": "kun yay dit ah-suh-BLEEF her-HAHL"
+    },
+    "where_station": {
+      "text": "Waar is die treinstasie?",
+      "say": "vahr is dee TRAYN-stah-see"
+    },
+    "where_toilet": {
+      "text": "Waar is die toilet?",
+      "say": "vahr is dee toy-LET"
+    },
+    "is_it_far": {
+      "text": "Is dit ver?",
+      "say": "is dit FER"
+    },
+    "left": {
+      "text": "Links",
+      "say": "LINKS"
+    },
+    "right": {
+      "text": "Regs",
+      "say": "REKHS"
+    },
+    "straight": {
+      "text": "Reguit vorentoe",
+      "say": "REKH-ayt FOR-un-too"
+    },
+    "menu": {
+      "text": "Die spyskaart, asseblief",
+      "say": "dee SPAYS-kahrt ah-suh-BLEEF"
+    },
+    "water": {
+      "text": "Water, asseblief",
+      "say": "VAH-ter ah-suh-BLEEF"
+    },
+    "bill": {
+      "text": "Die rekening, asseblief",
+      "say": "dee REE-kuh-ning ah-suh-BLEEF"
+    },
+    "delicious": {
+      "text": "Heerlik!",
+      "say": "HEER-luk"
+    },
+    "vegetarian": {
+      "text": "Ek is vegetariër",
+      "say": "ek is feh-khuh-TAH-ree-er"
+    },
+    "how_much": {
+      "text": "Hoeveel kos dit?",
+      "say": "HOO-feel KOS dit"
+    },
+    "too_expensive": {
+      "text": "Dis te duur",
+      "say": "dis tuh DEER"
+    },
+    "pay_card": {
+      "text": "Kan ek met 'n kaart betaal?",
+      "say": "kun ek met uh KAHRT buh-TAHL"
+    },
+    "help": {
+      "text": "Help!",
+      "say": "HELP"
+    },
+    "need_doctor": {
+      "text": "Ek het 'n dokter nodig",
+      "say": "ek het uh DOK-ter NOO-dukh"
+    },
+    "lost": {
+      "text": "Ek is verdwaal",
+      "say": "ek is fer-DWAHL"
+    },
+    "n1": {
+      "text": "een",
+      "say": "EE-un"
+    },
+    "n2": {
+      "text": "twee",
+      "say": "TWEE-uh"
+    },
+    "n3": {
+      "text": "drie",
+      "say": "DREE"
+    },
+    "n4": {
+      "text": "vier",
+      "say": "FEER"
+    },
+    "n5": {
+      "text": "vyf",
+      "say": "FAYF"
+    },
+    "n6": {
+      "text": "ses",
+      "say": "SES"
+    },
+    "n7": {
+      "text": "sewe",
+      "say": "SEE-vuh"
+    },
+    "n8": {
+      "text": "agt",
+      "say": "AKHT"
+    },
+    "n9": {
+      "text": "nege",
+      "say": "NEE-khuh"
+    },
+    "n10": {
+      "text": "tien",
+      "say": "TEEN"
+    }
+  }
+}

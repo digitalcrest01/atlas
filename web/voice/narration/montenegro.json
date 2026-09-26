@@ -1,0 +1,55 @@
+{
+  "country": "Montenegro",
+  "languages": ["en", "sr-Latn"],
+  "segments": [
+    {
+      "en": "Morning mist lifts from the Bay of Kotor, and mountains rise straight out of the water like dark stone walls. Those forested peaks, which looked almost black from the sea, gave Montenegro its name, the Black Mountain.",
+      "sr-Latn": "Jutarnja izmaglica diže se sa Bokokotorskog zaliva, a planine se uzdižu pravo iz vode kao tamni kameni zidovi. Upravo po tim šumovitim vrhovima, koji su s mora izgledali gotovo crni, Crna Gora je dobila ime."
+    },
+    {
+      "en": "Locals call their country Crna Gora. It is small, but you can swim in the Adriatic in the morning and hike among high mountain peaks by the afternoon.",
+      "sr-Latn": "Mještani svoju zemlju zovu Crna Gora. Mala je, ali ujutru možete plivati u Jadranu, a popodne pješačiti među visokim planinskim vrhovima."
+    },
+    {
+      "en": "Kotor is a walled medieval town of shiny stone lanes and little squares. Climb the zigzag path up to the fortress above it and the whole bay spreads out below. Look out for the town's many cats, which locals adore.",
+      "sr-Latn": "Kotor je srednjovjekovni grad opasan zidinama, pun uglačanih kamenih uličica i malih trgova. Popnite se krivudavom stazom do tvrđave iznad grada i cijeli zaliv će vam se prostrijeti pred očima. Obratite pažnju na brojne mačke, koje mještani obožavaju."
+    },
+    {
+      "en": "Off the little town of Perast sits the island church of Our Lady of the Rocks. Legend says sailors built the island by dropping stones into the sea, and every July local people row out to add more.",
+      "sr-Latn": "Ispred gradića Perasta nalazi se ostrvo sa crkvom Gospe od Škrpjela. Po legendi, pomorci su ostrvo napravili bacajući kamenje u more, a svakog jula mještani i dalje veslaju do njega da dodaju još kamena."
+    },
+    {
+      "en": "Further along the coast, Budva's old town sits beside sandy beaches, and Sveti Stefan is a tiny island village joined to the land by a narrow strip of sand.",
+      "sr-Latn": "Dalje niz obalu, stari grad Budva smjestio se pored pješčanih plaža, a Sveti Stefan je malo ostrvo-naselje koje s kopnom spaja uska pješčana prevlaka."
+    },
+    {
+      "en": "Inland lies Cetinje, the old royal capital. On Mount Lovćen above it rests Petar Petrović Njegoš, a prince-bishop and poet whose verses are known to every schoolchild.",
+      "sr-Latn": "U unutrašnjosti je Cetinje, stara prijestonica. Na Lovćenu iznad njega počiva Petar Petrović Njegoš, vladika i pjesnik čije stihove zna svako dijete u školi."
+    },
+    {
+      "en": "In the north, Durmitor National Park has glacial lakes and jagged peaks, and the canyon of the Tara River, one of the deepest in Europe, is a favourite for rafting.",
+      "sr-Latn": "Na sjeveru, Nacionalni park Durmitor krije glacijalna jezera i oštre vrhove, a kanjon rijeke Tare, jedan od najdubljih u Evropi, omiljen je za rafting."
+    },
+    {
+      "en": "Lake Skadar, shared with Albania, is covered in water lilies in summer and is home to rare Dalmatian pelicans.",
+      "sr-Latn": "Skadarsko jezero, koje Crna Gora dijeli s Albanijom, ljeti je prekriveno lokvanjima i dom je rijetkih kudravih pelikana."
+    },
+    {
+      "en": "People here love to take their time. Friends linger over coffee for hours, and Montenegrins happily joke about their relaxed pace of life.",
+      "sr-Latn": "Ovdje ljudi vole da se ne žure. Prijatelji satima sjede uz kafu, a Crnogorci se rado šale na račun svog opuštenog ritma života."
+    },
+    {
+      "en": "In the village of Njeguši, ham is smoked in the mountain air and served with local cheese. Up in the mountains, try kačamak, a hearty dish of cornmeal and potato with creamy cheese, and on the coast, grilled fish with olive oil.",
+      "sr-Latn": "U selu Njeguši pršut se suši na planinskom vazduhu i služi uz domaći sir. Na planini probajte kačamak, zasitno jelo od kukuruznog brašna i krompira sa kajmakom, a na primorju ribu sa roštilja i maslinovo ulje."
+    },
+    {
+      "en": "When it comes to sport, water polo is a national passion, and crowds pack the pools to cheer their teams.",
+      "sr-Latn": "Kad je sport u pitanju, vaterpolo je prava nacionalna strast, a navijači pune bazene da bodre svoje ekipe."
+    },
+    {
+      "en": "Doviđenja, goodbye! Follow the coast south past Lake Skadar, and Albania is waiting.",
+      "sr-Latn": "Doviđenja! Pratite obalu na jug, pored Skadarskog jezera, i Albanija vas čeka."
+    }
+  ],
+  "next": ["Albania", "Bosnia and Herzegovina", "Croatia"]
+}

@@ -1,0 +1,183 @@
+{
+  "book": "mt",
+  "name": "Maltese",
+  "native": "Malti",
+  "phrases": {
+    "hello": {
+      "text": "Merħba",
+      "say": "MER-hbah"
+    },
+    "good_morning": {
+      "text": "Bonġu",
+      "say": "BON-joo"
+    },
+    "good_evening": {
+      "text": "Bonswa",
+      "say": "bon-SWAH"
+    },
+    "goodbye": {
+      "text": "Saħħa",
+      "say": "SAH-hah"
+    },
+    "how_are_you": {
+      "text": "Kif int?",
+      "say": "keef INT"
+    },
+    "nice_to_meet": {
+      "text": "Għandi pjaċir",
+      "say": "AHN-dee pyah-CHEER"
+    },
+    "please": {
+      "text": "Jekk jogħġbok",
+      "say": "yek YOJ-bok"
+    },
+    "thank_you": {
+      "text": "Grazzi",
+      "say": "GRAHT-see"
+    },
+    "youre_welcome": {
+      "text": "M'hemmx għalxiex",
+      "say": "MEMSH ahl-SHEESH"
+    },
+    "excuse_me": {
+      "text": "Skużani",
+      "say": "skoo-ZAH-nee"
+    },
+    "sorry": {
+      "text": "Jiddispjaċini",
+      "say": "yid-dis-pyah-CHEE-nee"
+    },
+    "yes": {
+      "text": "Iva",
+      "say": "EE-vah"
+    },
+    "no": {
+      "text": "Le",
+      "say": "LEH"
+    },
+    "speak_english": {
+      "text": "Titkellem bl-Ingliż?",
+      "say": "tit-KEL-lem bil-in-GLEEZ"
+    },
+    "dont_understand": {
+      "text": "Ma nifhimx",
+      "say": "mah NIF-heemsh"
+    },
+    "slowly": {
+      "text": "Tista' titkellem iktar bil-mod, jekk jogħġbok?",
+      "say": "TIS-tah tit-KEL-lem IK-tar bil-MOHT, yek YOJ-bok"
+    },
+    "repeat": {
+      "text": "Tista' terġa' tgħidha?",
+      "say": "TIS-tah TER-jah TEED-hah"
+    },
+    "where_station": {
+      "text": "Fejn hu l-istazzjon tal-ferrovija?",
+      "say": "fayn hoo lis-tats-YON tal-fer-roh-VEE-yah"
+    },
+    "where_toilet": {
+      "text": "Fejn hu t-tojlit?",
+      "say": "fayn hoo TTOY-lit"
+    },
+    "is_it_far": {
+      "text": "Hu 'l bogħod?",
+      "say": "hoo il BOH-ot"
+    },
+    "left": {
+      "text": "Fuq ix-xellug",
+      "say": "fook ish-shel-LOOK"
+    },
+    "right": {
+      "text": "Fuq il-lemin",
+      "say": "fook il-leh-MEEN"
+    },
+    "straight": {
+      "text": "Dritt 'il quddiem",
+      "say": "DRIT il ood-DEEM"
+    },
+    "menu": {
+      "text": "Il-menu, jekk jogħġbok",
+      "say": "il-MEH-noo, yek YOJ-bok"
+    },
+    "water": {
+      "text": "Ilma, jekk jogħġbok",
+      "say": "IL-mah, yek YOJ-bok"
+    },
+    "bill": {
+      "text": "Il-kont, jekk jogħġbok",
+      "say": "il-KONT, yek YOJ-bok"
+    },
+    "delicious": {
+      "text": "Bnin ħafna!",
+      "say": "BNEEN HAF-nah"
+    },
+    "vegetarian": {
+      "text": "Jiena veġetarjana",
+      "say": "YEE-nah veh-jeh-tar-YAH-nah"
+    },
+    "how_much": {
+      "text": "Kemm jiswa?",
+      "say": "KEMM YIS-wah"
+    },
+    "too_expensive": {
+      "text": "Għali wisq",
+      "say": "AH-lee WISK"
+    },
+    "pay_card": {
+      "text": "Nista' nħallas bil-karta?",
+      "say": "NIS-tah n-HAL-las bil-KAR-tah"
+    },
+    "help": {
+      "text": "Ajjut!",
+      "say": "ay-YOOT"
+    },
+    "need_doctor": {
+      "text": "Għandi bżonn tabib",
+      "say": "AHN-dee b-ZONN tah-BEEP"
+    },
+    "lost": {
+      "text": "Intlift",
+      "say": "int-LIFT"
+    },
+    "n1": {
+      "text": "wieħed",
+      "say": "WEE-het"
+    },
+    "n2": {
+      "text": "tnejn",
+      "say": "TNAYN"
+    },
+    "n3": {
+      "text": "tlieta",
+      "say": "TLEE-tah"
+    },
+    "n4": {
+      "text": "erbgħa",
+      "say": "ER-bah"
+    },
+    "n5": {
+      "text": "ħamsa",
+      "say": "HAM-sah"
+    },
+    "n6": {
+      "text": "sitta",
+      "say": "SIT-tah"
+    },
+    "n7": {
+      "text": "sebgħa",
+      "say": "SEH-bah"
+    },
+    "n8": {
+      "text": "tmienja",
+      "say": "TMEEN-yah"
+    },
+    "n9": {
+      "text": "disgħa",
+      "say": "DIS-sah"
+    },
+    "n10": {
+      "text": "għaxra",
+      "say": "AHSH-rah"
+    }
+  }
+}

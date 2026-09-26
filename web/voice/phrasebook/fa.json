@@ -1,0 +1,227 @@
+{
+  "book": "fa",
+  "name": "Persian",
+  "native": "فارسی",
+  "phrases": {
+    "hello": {
+      "text": "سلام",
+      "roman": "salaam",
+      "say": "sah-LAHM"
+    },
+    "good_morning": {
+      "text": "صبح بخیر",
+      "roman": "sobh bekheyr",
+      "say": "SOBH beh-KHAIR"
+    },
+    "good_evening": {
+      "text": "عصر بخیر",
+      "roman": "asr bekheyr",
+      "say": "ASR beh-KHAIR"
+    },
+    "goodbye": {
+      "text": "خداحافظ",
+      "roman": "khodaahaafez",
+      "say": "kho-DAH-hah-fez"
+    },
+    "how_are_you": {
+      "text": "حال شما چطور است؟",
+      "roman": "haal-e shomaa chetor ast?",
+      "say": "HAHL-eh sho-MAH cheh-TOR ast"
+    },
+    "nice_to_meet": {
+      "text": "از آشنایی با شما خوشحالم",
+      "roman": "az aashnaayi baa shomaa khoshhaalam",
+      "say": "az ahsh-nah-YEE bah sho-MAH khosh-hah-LAM"
+    },
+    "please": {
+      "text": "لطفاً",
+      "roman": "lotfan",
+      "say": "LOT-fan"
+    },
+    "thank_you": {
+      "text": "متشکرم",
+      "roman": "motashakkeram",
+      "say": "mo-tah-shak-keh-RAM"
+    },
+    "youre_welcome": {
+      "text": "خواهش می‌کنم",
+      "roman": "khaahesh mikonam",
+      "say": "khah-HESH mee-ko-NAM"
+    },
+    "excuse_me": {
+      "text": "ببخشید",
+      "roman": "bebakhshid",
+      "say": "beh-bakh-SHEED"
+    },
+    "sorry": {
+      "text": "معذرت می‌خواهم",
+      "roman": "ma'zerat mikhaaham",
+      "say": "ma-ze-RAT mee-khah-HAM"
+    },
+    "yes": {
+      "text": "بله",
+      "roman": "bale",
+      "say": "BAH-leh"
+    },
+    "no": {
+      "text": "نه",
+      "roman": "na",
+      "say": "NAH"
+    },
+    "speak_english": {
+      "text": "انگلیسی صحبت می‌کنید؟",
+      "roman": "engelisi sohbat mikonid?",
+      "say": "en-geh-lee-SEE soh-BAT mee-ko-NEED"
+    },
+    "dont_understand": {
+      "text": "نمی‌فهمم",
+      "roman": "nemifahmam",
+      "say": "neh-mee-FAH-mam"
+    },
+    "slowly": {
+      "text": "لطفاً آهسته‌تر صحبت کنید",
+      "roman": "lotfan aahestetar sohbat konid",
+      "say": "LOT-fan ah-hes-teh-TAR soh-BAT ko-NEED"
+    },
+    "repeat": {
+      "text": "می‌شود دوباره بگویید؟",
+      "roman": "mishavad dobaare beguyid?",
+      "say": "mee-sha-VAD doh-bah-REH beh-goo-YEED"
+    },
+    "where_station": {
+      "text": "ایستگاه قطار کجاست؟",
+      "roman": "istgaah-e qataar kojaast?",
+      "say": "eest-GAH-eh gha-TAHR ko-JAHST"
+    },
+    "where_toilet": {
+      "text": "دستشویی کجاست؟",
+      "roman": "dastshuyi kojaast?",
+      "say": "dast-shoo-YEE ko-JAHST"
+    },
+    "is_it_far": {
+      "text": "دور است؟",
+      "roman": "dur ast?",
+      "say": "DOOR ast"
+    },
+    "left": {
+      "text": "چپ",
+      "roman": "chap",
+      "say": "CHAP"
+    },
+    "right": {
+      "text": "راست",
+      "roman": "raast",
+      "say": "RAHST"
+    },
+    "straight": {
+      "text": "مستقیم",
+      "roman": "mostaqim",
+      "say": "mos-ta-GHEEM"
+    },
+    "menu": {
+      "text": "لطفاً منو را بیاورید",
+      "roman": "lotfan menu raa biyaavarid",
+      "say": "LOT-fan meh-NOO rah bee-yah-va-REED"
+    },
+    "water": {
+      "text": "لطفاً آب بیاورید",
+      "roman": "lotfan aab biyaavarid",
+      "say": "LOT-fan AHB bee-yah-va-REED"
+    },
+    "bill": {
+      "text": "لطفاً صورت‌حساب را بیاورید",
+      "roman": "lotfan surat-hesaab raa biyaavarid",
+      "say": "LOT-fan soo-RAT-heh-sahb rah bee-yah-va-REED"
+    },
+    "delicious": {
+      "text": "خیلی خوشمزه است!",
+      "roman": "kheyli khoshmaze ast!",
+      "say": "khay-LEE khosh-ma-ZEH ast"
+    },
+    "vegetarian": {
+      "text": "من گیاه‌خوار هستم",
+      "roman": "man giyaahkhaar hastam",
+      "say": "man gee-yah-KHAHR HAS-tam"
+    },
+    "how_much": {
+      "text": "قیمتش چند است؟",
+      "roman": "qeymatash chand ast?",
+      "say": "ghay-ma-TASH CHAND ast"
+    },
+    "too_expensive": {
+      "text": "خیلی گران است",
+      "roman": "kheyli geraan ast",
+      "say": "khay-LEE geh-RAHN ast"
+    },
+    "pay_card": {
+      "text": "می‌توانم با کارت پرداخت کنم؟",
+      "roman": "mitavaanam baa kaart pardaakht konam?",
+      "say": "mee-ta-VAH-nam bah KART par-DAKHT ko-NAM"
+    },
+    "help": {
+      "text": "کمک!",
+      "roman": "komak!",
+      "say": "ko-MAK"
+    },
+    "need_doctor": {
+      "text": "به دکتر نیاز دارم",
+      "roman": "be doktor niyaaz daaram",
+      "say": "beh dok-TOR nee-YAHZ DAH-ram"
+    },
+    "lost": {
+      "text": "راهم را گم کرده‌ام",
+      "roman": "raaham raa gom kardeam",
+      "say": "rah-HAM rah GOM kar-deh-AM"
+    },
+    "n1": {
+      "text": "یک",
+      "roman": "yek",
+      "say": "YEK"
+    },
+    "n2": {
+      "text": "دو",
+      "roman": "do",
+      "say": "DOH"
+    },
+    "n3": {
+      "text": "سه",
+      "roman": "se",
+      "say": "SEH"
+    },
+    "n4": {
+      "text": "چهار",
+      "roman": "chahaar",
+      "say": "chah-HAHR"
+    },
+    "n5": {
+      "text": "پنج",
+      "roman": "panj",
+      "say": "PANJ"
+    },
+    "n6": {
+      "text": "شش",
+      "roman": "shesh",
+      "say": "SHESH"
+    },
+    "n7": {
+      "text": "هفت",
+      "roman": "haft",
+      "say": "HAFT"
+    },
+    "n8": {
+      "text": "هشت",
+      "roman": "hasht",
+      "say": "HASHT"
+    },
+    "n9": {
+      "text": "نه",
+      "roman": "noh",
+      "say": "NOH"
+    },
+    "n10": {
+      "text": "ده",
+      "roman": "dah",
+      "say": "DAH"
+    }
+  }
+}
