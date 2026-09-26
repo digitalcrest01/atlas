@@ -188,13 +188,21 @@
     .pane.globe { display: flex; flex: 1 1 auto; }
     .pane.details { display: flex; flex: 0 0 400px; border-left: 1px solid var(--line); }
   }
+  /* iPad landscape: slimmer side panes so the globe keeps room */
   @media (min-width: 901px) and (max-width: 1200px) {
-    .pane.list { flex-basis: 280px; }
+    .pane.list { flex-basis: 260px; }
     .pane.details { flex-basis: 340px; }
   }
-  /* Mobile: only the active pane visible */
+  /* iPhone and iPad portrait: the globe always stays on screen at the top;
+     the list or the country's details fill the space below it. */
   @media (max-width: 900px) {
-    .pane.mobile-active { display: flex; flex: 1 1 auto; }
+    .pane.globe { display: flex; flex: 0 0 34vh; min-height: 220px; border-bottom: 1px solid var(--line); }
+    .pane.list.mobile-active, .pane.details.mobile-active { display: flex; flex: 1 1 auto; }
+    .mobile-bar button[data-pane="globe"] { display: none; }
+  }
+  @media (min-width: 700px) and (max-width: 900px) {
+    .pane.globe { flex-basis: 46vh; }
+    .pane.details, .pane.list { font-size: 15px; }
   }
 
   /* ===== MOBILE BOTTOM BAR (only in explore mode) ===== */
@@ -667,20 +675,9 @@
   }
   .pb-lang small { font-size: 10px; color: var(--ink-dim); letter-spacing: 0.02em; }
   .pb-lang.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
-  .pb-lang:focus-visible, .pb-cat:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pb-lang:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .pb-single { font-size: 13px; color: var(--ink-dim); margin-bottom: 8px; }
   /* PHRASEBOOK */
-  .pb-cats {
-    display: flex; gap: 6px; overflow-x: auto; margin: 0 -14px 6px; padding: 2px 14px 6px;
-    scrollbar-width: none; -webkit-overflow-scrolling: touch;
-  }
-  .pb-cats::-webkit-scrollbar { display: none; }
-  .pb-cat {
-    flex: 0 0 auto; min-height: 34px; padding: 6px 12px;
-    background: none; border: 1px solid var(--line); border-radius: 999px;
-    color: var(--ink-dim); font: inherit; font-size: 12px; cursor: pointer; white-space: nowrap;
-  }
-  .pb-cat.on { background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 700; }
   .pb-row { display: flex; align-items: center; gap: 6px; padding: 9px 0; border-top: 1px solid var(--line); }
   .pb-list .pb-row:first-child { border-top: none; }
   .pb-main { flex: 1; min-width: 0; }
@@ -693,6 +690,17 @@
   .pb-say { font-size: 12px; color: var(--ink-dim); margin-top: 2px; overflow-wrap: anywhere; }
   .pb-say b { color: var(--accent-2); font-style: italic; font-weight: 600; }
   .pb-note { font-size: 12px; line-height: 1.45; color: var(--ink-dim); margin: 4px 0 8px; }
+  .pb-pick-label { display: block; font-size: 12px; color: var(--ink-dim); margin: 2px 0 6px; }
+  .pb-pick {
+    width: 100%; min-height: 46px; padding: 10px 40px 10px 12px;
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 10px;
+    font: inherit; font-size: 16px; appearance: none; -webkit-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--ink-dim) 50%), linear-gradient(135deg, var(--ink-dim) 50%, transparent 50%);
+    background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px, 6px 6px; background-repeat: no-repeat;
+  }
+  .pb-pick:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pb-card { display: flex; align-items: center; gap: 8px; margin-top: 10px; padding: 12px; border-radius: 10px; background: var(--panel); border: 1px solid var(--line); }
+  .pb-card .pb-text { font-size: 24px; }
   /* NATIONAL ANTHEM card */
   .anthem-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
   .anthem-head { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
@@ -807,14 +815,10 @@
   .tour-talk input[hidden], .tour-ask[hidden] { display: none; }
   .tour-sub-label { display: inline-block; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); margin-right: 4px; font-weight: 700; }
   #globe-canvas { transition: transform 0.6s ease; }
-  @media (max-width: 900px) {
-    /* During a tour the card fills the bottom; lift the globe so the country shows above it. */
-    body.touring #globe-canvas { transform: translateY(-9%); }
-  }
   @media (max-width: 700px) {
     .tour-stage { height: 120px; }
     .tour-animal { font-size: 34px; }
-    .tour-card { max-height: 56vh; padding: 14px 14px 10px; }
+    .tour-card { max-height: 52vh; padding: 14px 14px 10px; }
     .tour-card h2 { font-size: 20px; margin: 4px 0 6px; }
     .tour-overlay { padding: 8px 8px max(8px, env(safe-area-inset-bottom, 0px)); }
   }
@@ -948,6 +952,13 @@
   .pp-name { font-size: 12px; line-height: 1.25; overflow-wrap: anywhere; }
   .pp-open { max-width: 420px; }
   .pp-open-cover { position: relative; width: 58%; margin: 4px auto 14px; aspect-ratio: 5 / 7; border-radius: 6px 12px 12px 6px; overflow: hidden; background: #1b2433; box-shadow: 0 10px 24px rgba(0,0,0,0.45); }
+  .pp-visa { margin: 14px 0 4px; padding: 12px; border-radius: 10px; background: #f6f1e3; color: #3a3326;
+    background-image: repeating-linear-gradient(0deg, transparent 0 22px, rgba(58,51,38,0.06) 22px 23px); }
+  .pp-visa-head { display: flex; justify-content: space-between; font-family: 'Courier New', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: #7a6c52; margin-bottom: 8px; }
+  .pp-visa-stamps { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 6px; }
+  .imm-stamp { width: 100%; height: auto; display: block; }
+  .pp-visa-empty, .pp-visa-gold { margin: 4px 0; font-size: 13px; color: #6b5f48; }
+  .pp-visa-gold { color: #9a6b00; font-weight: 700; }
   .pp-your-stamp { margin: 14px 0 4px; padding: 10px 12px; border-radius: 10px; border: 1px dashed var(--line); color: var(--ink-dim); font-size: 13px; }
   .pp-your-stamp.got { border-style: solid; border-color: #c0392b; color: var(--ink); }
   .explorer-card {
@@ -1603,6 +1614,91 @@
     border: 1px solid var(--line); border-radius: 8px; font-size: 15px;
   }
   .welcome-hit.on { border-color: var(--accent); }
+  /* Phones and iPads: nothing smaller than comfortable reading size, and
+     every button a full finger's width. */
+  @media (max-width: 1200px), (pointer: coarse) {
+    .fact-label, .qf-label, .wow-label, .section h4, .badge, .kids-toggle, .share-btn,
+    .mobile-bar button, .detail-eyebrow, .lc-top h3, .pb-head h3, .pb-en, .pb-lang small,
+    .tour-sub-label, .tour-kicker, .count-pill, .badge-ds, .pp-drawn-word { font-size: 11.5px !important; }
+    .fav-btn, .share-btn { min-width: 40px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+    .fav-btn { font-size: 18px; }
+  }
+  /* ===== KIDS MODE — bright, rounded and playful ===== */
+  body.kids {
+    font-family: ui-rounded, 'SF Pro Rounded', 'Nunito', 'Trebuchet MS', system-ui, sans-serif;
+    background: linear-gradient(180deg, #dff3ff 0%, #fff6d8 55%, #ffe9f1 100%) fixed;
+  }
+  body.kids header {
+    background: linear-gradient(100deg, #ff8a3d 0%, #ff5fa2 55%, #8b5cf6 100%);
+    border-bottom: none;
+    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.25);
+  }
+  body.kids header, body.kids header .logo-sub, body.kids header .kids-toggle { color: #fff; }
+  body.kids .kids-toggle { border-color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.18); font-weight: 800; }
+  body.kids .kids-toggle.on { background: #fff; color: #ff5fa2; border-color: #fff; }
+  body.kids .tabs { background: transparent; border-bottom: none; gap: 6px; padding: 8px 8px 6px; }
+  body.kids .tabs button {
+    border-radius: 999px; border: none; margin: 0; padding: 8px 10px;
+    font-weight: 800; letter-spacing: 0.02em; text-transform: none; font-size: 14px;
+    color: #fff; box-shadow: 0 3px 0 rgba(0,0,0,0.12); transition: transform 0.12s ease;
+  }
+  body.kids .tabs button[data-mode="today"] { background: #ffb020; }
+  body.kids .tabs button[data-mode="explore"] { background: #22b8cf; }
+  body.kids .tabs button[data-mode="quiz"] { background: #ff6b6b; }
+  body.kids .tabs button[data-mode="puzzle"] { background: #51cf66; }
+  body.kids .tabs button[data-mode="passport"] { background: #845ef7; }
+  body.kids .tabs button[data-mode="today"]::before { content: '🌞 '; }
+  body.kids .tabs button[data-mode="explore"]::before { content: '🌍 '; }
+  body.kids .tabs button[data-mode="quiz"]::before { content: '❓ '; }
+  body.kids .tabs button[data-mode="puzzle"]::before { content: '🧩 '; }
+  body.kids .tabs button[data-mode="passport"]::before { content: '🛂 '; }
+  body.kids .tabs button.active { transform: translateY(-2px) scale(1.04); box-shadow: 0 5px 0 rgba(0,0,0,0.18); outline: 3px solid #fff; }
+  body.kids .pane, body.kids .view { background: transparent; }
+  body.kids .pane.list, body.kids .pane.details { background: rgba(255,255,255,0.72); }
+  body.kids .detail-name { font-size: 30px; font-weight: 900; }
+  body.kids .wow-fact { background: #fff3bf; border: 3px solid #ffd43b; border-radius: 20px; box-shadow: 0 4px 0 #ffd43b; }
+  body.kids .tour-cta { background: #e3f6ff; border: 3px solid #4dabf7; border-radius: 20px; box-shadow: 0 4px 0 #4dabf7; }
+  body.kids .phrasebook { background: #ebfbee; border: 3px solid #51cf66; border-radius: 20px; box-shadow: 0 4px 0 #51cf66; }
+  body.kids .qf-item, body.kids .landmark-card, body.kids .anthem-card { border-radius: 18px; border-width: 2px; }
+  body.kids .lc-top h3, body.kids .pb-head h3 { font-size: 14px !important; letter-spacing: 0.04em; color: #1c7ed6; }
+  body.kids .btn-primary {
+    border-radius: 999px; font-weight: 900; font-size: 16px; letter-spacing: 0.02em; text-transform: none;
+    background: linear-gradient(180deg, #ffa94d, #ff7a1a); color: #fff; border: none;
+    box-shadow: 0 5px 0 #d9480f; transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  body.kids .btn-primary:active { transform: translateY(3px); box-shadow: 0 2px 0 #d9480f; }
+  body.kids .chip { border-radius: 999px; font-weight: 800; }
+  body.kids .chip.active { background: #22b8cf; border-color: #22b8cf; color: #fff; }
+  body.kids .country-item { border-radius: 14px; margin: 3px 6px; }
+  body.kids .country-item.active { background: #fff3bf; border-left-color: #ff922b; }
+  body.kids .center-card, body.kids .quiz-card { border-radius: 24px; border: 3px solid #b197fc; box-shadow: 0 6px 0 #b197fc; background: #fff; }
+  body.kids .puzzle-board { background: linear-gradient(160deg, #74c0fc, #4dabf7); border: none; border-radius: 22px; }
+  body.kids .puzzle-flag { border-color: #fff; border-radius: 16px; }
+  body.kids .puzzle-piece { border-radius: 999px; background: #fff; border: 3px solid #ffd43b; color: #2b3142; }
+  body.kids .pp-card:hover .pp-cover { transform: translateY(-4px) rotate(-2deg) scale(1.03); }
+  body.kids .tour-card { border-radius: 24px; border: 3px solid #4dabf7; }
+  body.kids .mobile-bar { background: #fff; border-top: 3px solid #ffd43b; }
+  body.kids .mobile-bar button.active { color: #ff5fa2; }
+  body.kids .today-card { border-radius: 22px; border: 3px solid; background: #fff; }
+  body.kids .today-card:nth-child(5n+1) { border-color: #ffb020; box-shadow: 0 5px 0 #ffb020; background: #fff8e1; }
+  body.kids .today-card:nth-child(5n+2) { border-color: #51cf66; box-shadow: 0 5px 0 #51cf66; background: #ebfbee; }
+  body.kids .today-card:nth-child(5n+3) { border-color: #ff6b6b; box-shadow: 0 5px 0 #ff6b6b; background: #fff0f0; }
+  body.kids .today-card:nth-child(5n+4) { border-color: #845ef7; box-shadow: 0 5px 0 #845ef7; background: #f3f0ff; }
+  body.kids .today-card:nth-child(5n+5) { border-color: #22b8cf; box-shadow: 0 5px 0 #22b8cf; background: #e3fafc; }
+  body.kids .today-go { font-weight: 900; }
+  @media (max-width: 560px) {
+    body.kids .tabs { gap: 4px; padding: 6px 6px 4px; }
+    body.kids .tabs button {
+      flex: 1 1 0; min-width: 0; padding: 6px 2px; border-radius: 16px;
+      display: flex; flex-direction: column; align-items: center; gap: 1px;
+      font-size: 11px; line-height: 1.1;
+    }
+    body.kids .tabs button::before { font-size: 20px; line-height: 1; }
+    body.kids .tabs button.active { transform: translateY(-1px); outline-width: 2px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body.kids .tabs button, body.kids .btn-primary { transition: none; }
+  }
 </style>
 </head>
 <body class="mode-explore">
@@ -2679,7 +2775,7 @@ function sayQuietly(text) {
 
 /* ---------- Phrasebook: country -> language -> phrase -> play ---------- */
 const phraseChoice = {};      // country -> locale
-let phraseCategory = 'greet';
+let phraseChosen = 'hello';    // phrase id shown in the phrasebook
 
 function phraseLanguages(c) {
   return languagesOf(c).filter(l => l.lang !== 'en');
@@ -2693,7 +2789,7 @@ function phraseEntry(book, locale, id) {
 function phrasebookHtml(c) {
   if (phraseLanguages(c).length) {
     return '<section class="phrasebook" aria-labelledby="pb-title">' +
-      '<div class="pb-head"><h3 id="pb-title">Phrasebook</h3><span class="pb-hint">Tap a speaker to hear it</span></div>' +
+      '<div class="pb-head"><h3 id="pb-title">Phrasebook</h3></div>' +
       '<div id="pb-body" data-country="' + escapeHtml(c.n) + '"><div class="pb-note">Loading phrases…</div></div>' +
       '</section>';
   }
@@ -2723,6 +2819,8 @@ function mountPhrasebook(c) {
 
 function paintPhrasebook(root, c, langs, lang, book) {
   const speakable = Voice.canSpeak(lang.locale) !== false;
+  const phrases = PhraseCatalog.PHRASES.filter(p => { const e = phraseEntry(book, lang.locale, p.id); return e && e.text; });
+  if (!phrases.find(p => p.id === phraseChosen)) phraseChosen = phrases.length ? phrases[0].id : '';
   let html = '';
   if (langs.length > 1) {
     html += '<div class="pb-langs" role="radiogroup" aria-label="Phrasebook language">' +
@@ -2731,33 +2829,36 @@ function paintPhrasebook(root, c, langs, lang, book) {
         '<span lang="' + escapeHtml(l.locale) + '">' + escapeHtml(l.native) + '</span>' +
         (l.native !== l.name ? '<small>' + escapeHtml(l.name) + '</small>' : '') + '</button>').join('') +
       '</div>';
-  } else {
-    html += '<div class="pb-single"><span lang="' + escapeHtml(lang.locale) + '">' + escapeHtml(lang.native) + '</span>' +
-      (lang.native !== lang.name ? ' · ' + escapeHtml(lang.name) : '') + '</div>';
   }
-  html += '<div class="pb-cats" role="tablist" aria-label="Phrase topics">' +
-    PhraseCatalog.CATEGORIES.map(cat => '<button type="button" role="tab" class="pb-cat' + (cat.id === phraseCategory ? ' on' : '') + '"' +
-      ' aria-selected="' + (cat.id === phraseCategory) + '" data-cat="' + cat.id + '">' + escapeHtml(cat.label) + '</button>').join('') +
-    '</div>';
-  if (!speakable) {
-    html += '<div class="pb-note">Audio in ' + escapeHtml(lang.name) + " isn't available yet. The written phrases and pronunciation guide are all here.</div>";
-  }
-  html += '<div class="pb-list" role="tabpanel">';
-  PhraseCatalog.PHRASES.filter(p => p.cat === phraseCategory).forEach(p => {
-    const e = phraseEntry(book, lang.locale, p.id);
-    if (!e || !e.text) return;
-    const english = p.n ? p.n + ' · ' + p.en : p.en;
-    html += '<div class="pb-row">' +
+  // One dropdown: pick a word or phrase and hear it.
+  html += '<label class="pb-pick-label" for="pb-pick">' + (speakable ? 'Pick a phrase to hear it in ' : 'Pick a phrase in ') + escapeHtml(lang.name) + '</label>' +
+    '<select id="pb-pick" class="pb-pick">' +
+    PhraseCatalog.CATEGORIES.map(cat => {
+      const items = phrases.filter(p => p.cat === cat.id);
+      if (!items.length) return '';
+      return '<optgroup label="' + escapeHtml(cat.label) + '">' + items.map(p => {
+        const e = phraseEntry(book, lang.locale, p.id);
+        const english = p.n ? p.n + ' · ' + p.en : p.en;
+        return '<option value="' + p.id + '"' + (p.id === phraseChosen ? ' selected' : '') + '>' + escapeHtml(english + ' — ' + e.text) + '</option>';
+      }).join('') + '</optgroup>';
+    }).join('') +
+    '</select>';
+  const p = phrases.find(x => x.id === phraseChosen);
+  const e = p && phraseEntry(book, lang.locale, p.id);
+  if (e) {
+    html += '<div class="pb-card">' +
       '<div class="pb-main">' +
-        '<div class="pb-en">' + escapeHtml(english) + '</div>' +
+        '<div class="pb-en">' + escapeHtml(p.n ? p.n + ' · ' + p.en : p.en) + '</div>' +
         '<div class="pb-text" lang="' + escapeHtml(lang.locale) + '" dir="auto">' + escapeHtml(e.text) + '</div>' +
         (e.roman ? '<div class="pb-roman">' + escapeHtml(e.roman) + '</div>' : '') +
         (e.say ? '<div class="pb-say">say it: <b>' + escapeHtml(e.say) + '</b></div>' : '') +
       '</div>' +
-      (speakable ? voiceButton(e.text, lang.locale, 'Play "' + p.en + '" in ' + lang.name) : '') +
+      (speakable ? voiceButton(e.text, lang.locale, 'Hear "' + p.en + '" again in ' + lang.name, 'pb-again') : '') +
       '</div>';
-  });
-  html += '</div>';
+  }
+  if (!speakable) {
+    html += '<div class="pb-note">Audio in ' + escapeHtml(lang.name) + " isn't available yet. The written phrase and pronunciation guide are here.</div>";
+  }
   root.innerHTML = html;
   root.querySelectorAll('.pb-lang').forEach(b => {
     b.onclick = () => {
@@ -2766,14 +2867,16 @@ function paintPhrasebook(root, c, langs, lang, book) {
       mountPhrasebook(c);
     };
   });
-  root.querySelectorAll('.pb-cat').forEach(b => {
-    b.onclick = () => {
-      phraseCategory = b.dataset.cat;
-      paintPhrasebook(root, c, langs, lang, book);
-      const again = root.querySelector('.pb-cat.on');
-      if (again) again.focus();
-    };
-  });
+  const pick = root.querySelector('#pb-pick');
+  pick.onchange = () => {
+    phraseChosen = pick.value;
+    paintPhrasebook(root, c, langs, lang, book);
+    // Say it straight away, the way the user asked for it.
+    const again = root.querySelector('.pb-again');
+    if (again) again.click();
+    const sel = root.querySelector('#pb-pick');
+    if (sel) sel.focus();
+  };
 }
 
 /* ---------- The tour: one spoken visit per country ---------- */
@@ -3352,6 +3455,9 @@ function setMode(newMode) {
 }
 
 function setMobilePane(pane) {
+  // The globe is always visible on small screens; asking for it keeps
+  // whichever of the list or details is showing below.
+  if (pane === 'globe') pane = state.mobilePane === 'details' ? 'details' : 'list';
   state.mobilePane = pane;
   document.querySelectorAll('#view-explore .pane').forEach(p => {
     const matches = (
@@ -3364,9 +3470,7 @@ function setMobilePane(pane) {
   document.querySelectorAll('.mobile-bar button').forEach(b => {
     b.classList.toggle('active', b.dataset.pane === pane);
   });
-  if (pane === 'globe' && globeAPI && globeAPI.resize) {
-    requestAnimationFrame(() => globeAPI.resize());
-  }
+  if (globeAPI && globeAPI.resize) requestAnimationFrame(() => globeAPI.resize());
 }
 
 /* ============================================================
@@ -3481,7 +3585,7 @@ function renderDetails() {
   let html = '';
   recordCountryView(c.n);
   html += '<button class="back-btn detail-back" onclick="setMobilePane(\'list\')">← Back to list</button>';
-  html += '<div class="detail-eyebrow" style="display:flex;justify-content:space-between;align-items:center">' +
+  html += '<div class="detail-eyebrow" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:space-between;align-items:center">' +
     '<span>' + escapeHtml(c.c) + (free ? '' : ' · Pro preview') + '</span>' +
     '<div style="display:flex;gap:6px;align-items:center">' +
     '<span class="local-time" id="country-clock" data-country="' + escapeHtml(c.n) + '" title="Local time in ' + escapeHtml(c.n) + '">' +
@@ -3769,7 +3873,9 @@ function renderPassport() {
   const stamped = getStampedSet();
   const all = COUNTRIES.slice().sort((a, b) => a.n.localeCompare(b.n));
   const total = SOVEREIGN_COUNTRIES.length;
-  const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
+  const visitsAll = getVisits();
+  const visitedCount = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n) || (visitsAll[c.n] || []).length).length;
+  const stampTotal = Object.values(visitsAll).reduce((n, l) => n + l.length, 0);
   if (!passportCovers) {
     root.innerHTML = '<div class="passport-wrap"><p class="passport-hint">Opening the passport office…</p></div>';
     loadPassportCovers().then(() => { if (state.mode === 'passport') renderPassport(); });
@@ -3781,7 +3887,7 @@ function renderPassport() {
 
   let html = '<div class="passport-wrap">' +
     '<div class="pp-head"><div><h2>Passports of the world</h2>' +
-    '<div class="passport-hint">Every country\'s passport. Visit a country to get its stamp: ' + visitedCount + ' of ' + total + ' stamped.</div></div></div>' +
+    '<div class="passport-hint">Every country\'s passport. Each visit earns an entry stamp: ' + visitedCount + ' of ' + total + ' countries, ' + stampTotal + ' stamps in all.</div></div></div>' +
     '<div class="pp-tools">' +
       '<input id="pp-search" class="search-input" type="search" placeholder="Find a country" aria-label="Find a country\'s passport" value="' + escapeHtml(passportQuery) + '">' +
       '<div class="pp-chips" role="tablist" aria-label="Continent">' +
@@ -3790,11 +3896,12 @@ function renderPassport() {
     '</div>' +
     '<div class="pp-grid">';
   list.forEach(c => {
-    const got = viewed.has(c.n);
+    const count = (visitsAll[c.n] || []).length || (viewed.has(c.n) ? 1 : 0);
+    const got = count > 0;
     const gold = stamped.has(c.n);
-    html += '<button type="button" class="pp-card' + (got ? ' got' : '') + '" data-pp="' + escapeHtml(c.n) + '" aria-label="' + escapeHtml(c.n) + ' passport' + (got ? ', stamped' : '') + '">' +
+    html += '<button type="button" class="pp-card' + (got ? ' got' : '') + '" data-pp="' + escapeHtml(c.n) + '" aria-label="' + escapeHtml(c.n) + ' passport' + (got ? ', ' + count + (count === 1 ? ' stamp' : ' stamps') : '') + '">' +
       '<span class="pp-cover">' + passportCoverHtml(c, 240) +
-        (got ? '<span class="pp-stamp' + (gold ? ' gold' : '') + '" aria-hidden="true">' + (gold ? '★' : '✓') + '</span>' : '') +
+        (got ? '<span class="pp-stamp' + (gold ? ' gold' : '') + '" aria-hidden="true">' + (count > 1 ? '×' + count : (gold ? '★' : '✓')) + '</span>' : '') +
       '</span>' +
       '<span class="pp-name">' + (c.flag || '') + ' ' + escapeHtml(c.n) + '</span>' +
       '</button>';
@@ -3829,11 +3936,53 @@ function renderPassport() {
   root.querySelectorAll('.pp-card').forEach(b => { b.onclick = () => openPassport(b.dataset.pp, b); });
 }
 
-// One passport, opened: the cover, the country, and your stamp.
+// An immigration entry stamp, drawn in ink: shape, colour and tilt vary by
+// country and visit, with a worn-ink texture.
+const STAMP_INKS = ['#c0392b', '#1f5fa8', '#6a3d9a', '#1e7b4f', '#b3541e'];
+function stampCode(name) {
+  const words = String(name).replace(/[^A-Za-z ]/g, '').toUpperCase().split(/\s+/).filter(Boolean);
+  if (words.length >= 3) return words.map(w => w[0]).join('').slice(0, 3);
+  const w = words.join('');
+  return (w.slice(0, 1) + w.slice(1).replace(/[AEIOU]/g, '')).slice(0, 3).padEnd(3, 'X');
+}
+function stampDate(ms) {
+  const d = new Date(ms);
+  return String(d.getDate()).padStart(2, '0') + ' ' + ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][d.getMonth()] + ' ' + d.getFullYear();
+}
+function stampSvg(name, ms, n) {
+  let h = 7;
+  const key = name + ':' + n;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  // Mix the bits so consecutive visits look clearly different.
+  h ^= h >>> 16; h = Math.imul(h, 0x45d9f3b) >>> 0; h ^= h >>> 16; h = Math.imul(h, 0x45d9f3b) >>> 0; h = (h ^ (h >>> 16)) >>> 0;
+  const ink = STAMP_INKS[h % STAMP_INKS.length];
+  const tilt = ((h >>> 3) % 31) - 15;
+  const shape = (h >>> 8) % 3;
+  const label = String(name).toUpperCase();
+  const small = label.length > 14 ? 9 : 11;
+  const id = 'ink' + (h % 100000);
+  const frame = shape === 0
+    ? '<circle cx="60" cy="60" r="54" fill="none" stroke="' + ink + '" stroke-width="4"/><circle cx="60" cy="60" r="44" fill="none" stroke="' + ink + '" stroke-width="1.5"/>'
+    : shape === 1
+      ? '<rect x="6" y="18" width="108" height="84" rx="8" fill="none" stroke="' + ink + '" stroke-width="4"/><rect x="13" y="25" width="94" height="70" rx="4" fill="none" stroke="' + ink + '" stroke-width="1.5"/>'
+      : '<ellipse cx="60" cy="60" rx="56" ry="42" fill="none" stroke="' + ink + '" stroke-width="4"/><ellipse cx="60" cy="60" rx="47" ry="34" fill="none" stroke="' + ink + '" stroke-width="1.5"/>';
+  return '<svg class="imm-stamp" viewBox="0 0 120 120" role="img" aria-label="Entry stamp for ' + escapeHtml(name) + ', ' + stampDate(ms) + '" style="transform:rotate(' + tilt + 'deg)">' +
+    '<defs><filter id="' + id + '"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="' + (h % 97) + '"/>' +
+    '<feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.6"/><feComposite in="SourceGraphic" operator="in"/></filter></defs>' +
+    '<g filter="url(#' + id + ')" opacity="0.88">' + frame +
+      '<text x="60" y="' + (shape === 0 ? 40 : 44) + '" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="' + small + '" fill="' + ink + '">' + escapeHtml(label.slice(0, 18)) + '</text>' +
+      '<text x="60" y="63" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="17" letter-spacing="2" fill="' + ink + '">ENTRY</text>' +
+      '<text x="60" y="80" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="10" fill="' + ink + '">' + stampDate(ms) + '</text>' +
+      '<text x="60" y="' + (shape === 0 ? 96 : 93) + '" text-anchor="middle" font-family="Courier New, monospace" font-weight="700" font-size="9" fill="' + ink + '">✈ ' + stampCode(name) + ' · ' + (n + 1) + '</text>' +
+    '</g></svg>';
+}
+
+// One passport, opened: the cover, the country, and your stamps.
 function openPassport(name, opener) {
   const c = COUNTRIES.find(x => x.n === name);
   if (!c) return;
-  const viewed = getViewedSet().has(c.n);
+  const visits = visitsOf(c.n);
+  const viewed = visits.length > 0 || getViewedSet().has(c.n);
   const gold = getStampedSet().has(c.n);
   const cq = JSON.stringify(c.n).replace(/"/g, '&quot;');
   const modal = document.createElement('div');
@@ -3847,9 +3996,12 @@ function openPassport(name, opener) {
       '<div class="fact-label">Language</div><div class="fact-value">' + escapeHtml(c.lang || '—') + '</div>' +
       '<div class="fact-label">Currency</div><div class="fact-value">' + escapeHtml(c.cur || '—') + '</div>' +
     '</div>' +
-    '<div class="pp-your-stamp' + (viewed ? ' got' : '') + '">' +
-      (viewed ? (gold ? '★ Gold stamp: you answered a question about ' + escapeHtml(c.n) + ' correctly.' : '✓ Stamped: you have visited ' + escapeHtml(c.n) + '.')
-              : 'No stamp yet. Visit ' + escapeHtml(c.n) + ' to get one.') +
+    '<div class="pp-visa" aria-label="Visa page">' +
+      '<div class="pp-visa-head"><span>VISAS · ' + escapeHtml(c.n.toUpperCase()) + '</span><span>' + visits.length + (visits.length === 1 ? ' STAMP' : ' STAMPS') + '</span></div>' +
+      (visits.length
+        ? '<div class="pp-visa-stamps">' + visits.slice().reverse().map((t, k) => stampSvg(c.n, t, visits.length - 1 - k)).join('') + '</div>'
+        : '<p class="pp-visa-empty">No stamps yet. Visit ' + escapeHtml(c.n) + ' to get your first entry stamp.</p>') +
+      (gold ? '<p class="pp-visa-gold">★ Gold: you answered a question about ' + escapeHtml(c.n) + ' correctly.</p>' : '') +
     '</div>' +
     '<div class="tour-actions">' +
       '<button type="button" class="back-btn" id="pp-globe">Show on globe</button>' +
@@ -4321,7 +4473,27 @@ function updateExploreProgress() {
   bar.style.display = 'block';
   fill.style.width = pct + '%';
 }
+// Every visit earns an entry stamp; returning later earns another (at most one
+// every 30 minutes, so flicking between countries doesn't flood the passport).
+const VISIT_GAP_MS = 30 * 60 * 1000;
+function getVisits() {
+  try { return JSON.parse(localStorage.getItem('myatlastic_visits') || '{}') || {}; } catch (e) { return {}; }
+}
+function visitsOf(name) { return getVisits()[name] || []; }
+function recordVisit(name) {
+  try {
+    const all = getVisits();
+    const list = all[name] || [];
+    const now = Date.now();
+    if (list.length && now - list[list.length - 1] < VISIT_GAP_MS) return;
+    list.push(now);
+    all[name] = list.slice(-24);
+    localStorage.setItem('myatlastic_visits', JSON.stringify(all));
+  } catch (e) {}
+}
+
 function recordCountryView(name) {
+  recordVisit(name);
   try {
     const set = new Set(JSON.parse(localStorage.getItem('myatlastic_viewed') || '[]'));
     if (!set.has(name)) {
