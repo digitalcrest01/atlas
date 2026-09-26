@@ -976,12 +976,6 @@
   .passport-section h3 { font-size: 16px; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
   .count-pill { font-size: 11px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink-dim); border-radius: 10px; padding: 2px 8px; font-weight: 600; }
   .passport-hint { font-size: 13px; color: var(--ink-dim); line-height: 1.5; }
-  .badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
-  .badge-cell { background: var(--panel-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 12px; text-align: center; opacity: 0.5; }
-  .badge-cell.got { opacity: 1; border-color: var(--accent); }
-  .badge-ic { font-size: 30px; margin-bottom: 6px; }
-  .badge-nm { font-size: 13px; font-weight: 700; color: var(--ink); }
-  .badge-ds { font-size: 11px; color: var(--ink-dim); margin-top: 3px; line-height: 1.35; }
   .cont-row { display: flex; flex-wrap: wrap; gap: 8px; }
   .cont-chip { font-size: 13px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 20px; padding: 7px 13px; color: var(--ink-dim); }
   .cont-chip b { color: var(--ink); }
@@ -1544,7 +1538,7 @@
   }
   .share-btn:hover { border-color: var(--accent-2); }
 
-  /* ===== ACHIEVEMENT TOAST ===== */
+  /* ===== NOTICE (e.g. "Link copied!") ===== */
   .achievement-toast {
     position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%) translateY(20px);
     background: var(--panel); border: 1px solid var(--accent);
@@ -1618,7 +1612,7 @@
   @media (max-width: 1200px), (pointer: coarse) {
     .fact-label, .qf-label, .wow-label, .section h4, .badge, .kids-toggle, .share-btn,
     .mobile-bar button, .detail-eyebrow, .lc-top h3, .pb-head h3, .pb-en, .pb-lang small,
-    .tour-sub-label, .tour-kicker, .count-pill, .badge-ds, .pp-drawn-word { font-size: 11.5px !important; }
+    .tour-sub-label, .tour-kicker, .count-pill, .pp-drawn-word { font-size: 11.5px !important; }
     .fav-btn, .share-btn { min-width: 40px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
     .fav-btn { font-size: 18px; }
   }
@@ -1715,7 +1709,6 @@
     .quiz-prompt { font-size: 18px !important; }
     .quiz-prompt-flag { font-size: 72px; }
     .quiz-option { font-size: 14px; }
-    .badge-ic { font-size: 24px; }
     .pp-drawn-flag { font-size: 26px; }
     .tour-card .tour-story { font-size: 15px; }
     .tour-host-line { font-size: 13px; }
@@ -3748,7 +3741,6 @@ function toggleFav(countryName) {
   if (idx >= 0) favs.splice(idx, 1);
   else {
     favs.unshift(countryName);
-    checkAchievements();
   }
   setFavs(favs);
   renderDetails();
@@ -3768,7 +3760,7 @@ function shareCountry(country) {
     navigator.share({ title: 'Myatlastic · ' + country.n, text, url }).catch(() => {});
   } else {
     try { navigator.clipboard.writeText(url); } catch (e) {}
-    showAchievementToast({ icon: '📋', name: 'Link copied!', desc: url.slice(0, 40) + (url.length > 40 ? '…' : '') });
+    showToast({ icon: '📋', name: 'Link copied!', desc: url.slice(0, 40) + (url.length > 40 ? '…' : '') });
   }
 }
 window.__myatlasticShare = (name) => {
@@ -3777,7 +3769,7 @@ window.__myatlasticShare = (name) => {
 };
 
 /* ============================================================
- * ACHIEVEMENTS
+ * PROGRESS — countries visited and stamped
  * ============================================================ */
 /* Passport stamps — countries a child has "visited" (viewed) or answered
  * correctly about. Visited = browsed the detail; stamped = got it right. */
@@ -3793,7 +3785,6 @@ function stampCountry(name) {
     if (!set.has(name)) {
       set.add(name);
       localStorage.setItem('myatlastic_stamped', JSON.stringify([...set]));
-      checkAchievements();
     }
   } catch (e) {}
 }
@@ -3823,35 +3814,8 @@ function explorerLevel() {
   return lvl;
 }
 
-const ACHIEVEMENTS = [
-  { id: 'first_fav', icon: '⭐', name: 'First Favourite', desc: 'Saved your first country', check: () => getFavs().length >= 1 },
-  { id: 'five_favs', icon: '🌟', name: 'Five Stars', desc: 'Saved 5 favourite countries', check: () => getFavs().length >= 5 },
-  { id: 'streak_3', icon: '🔥', name: 'On Fire', desc: 'Built a 3-day daily streak', check: () => getStreak() >= 3 },
-  { id: 'streak_7', icon: '🏆', name: 'Week Champion', desc: 'Built a 7-day daily streak', check: () => getStreak() >= 7 },
-  { id: 'quiz_10', icon: '🧠', name: 'Quiz Buff', desc: 'Answered 10 quiz questions', check: () => state.quiz.total >= 10 },
-  { id: 'quiz_50', icon: '🎓', name: 'Geography Master', desc: 'Answered 50 quiz questions', check: () => state.quiz.total >= 50 },
-  // Goal badges tied to real progress
-  { id: 'flags_20', icon: '🏁', name: 'Flag Collector', desc: 'Learned 20 flags', check: () => getViewedSet().size >= 20 },
-  { id: 'stamps_10', icon: '🛂', name: 'Passport Holder', desc: 'Earned 10 passport stamps', check: () => getStampedSet().size >= 10 },
-  { id: 'continent_done', icon: '🗺️', name: 'Continent Complete', desc: 'Visited a whole continent', check: () => completedContinents().length >= 1 },
-  { id: 'globetrotter', icon: '🌍', name: 'Globetrotter', desc: 'Visited 50 countries', check: () => getViewedSet().size >= 50 },
-  { id: 'world_citizen', icon: '👑', name: 'World Citizen', desc: 'Visited every country in the world', check: () => SOVEREIGN_COUNTRIES.every(c => getViewedSet().has(c.n)) },
-];
-
-function getUnlockedAchievements() {
-  try { return JSON.parse(localStorage.getItem('myatlastic_ach') || '[]'); } catch (e) { return []; }
-}
-function checkAchievements() {
-  const unlocked = getUnlockedAchievements();
-  ACHIEVEMENTS.forEach(a => {
-    if (!unlocked.includes(a.id) && a.check()) {
-      unlocked.push(a.id);
-      try { localStorage.setItem('myatlastic_ach', JSON.stringify(unlocked)); } catch (e) {}
-      showAchievementToast(a);
-    }
-  });
-}
-function showAchievementToast(a) {
+// A short notice at the bottom of the screen (e.g. "Link copied!").
+function showToast(a) {
   let toast = document.getElementById('achievement-toast');
   if (!toast) {
     toast = document.createElement('div');
@@ -3866,7 +3830,7 @@ function showAchievementToast(a) {
 }
 
 /* ============================================================
- * PASSPORT — stamps, streak rewards, explorer avatar, badges
+ * PASSPORT — the passport of every country, stamped on each visit
  * ============================================================ */
 /* ---------- Passport: the real passport of every country ---------- */
 let passportCovers = null;
@@ -3931,17 +3895,6 @@ function renderPassport() {
   if (!list.length) html += '<p class="passport-hint">No country matches that.</p>';
   html += '</div>';
 
-  // Badges stay: they reward exploring, not coming back every day.
-  const badges = ACHIEVEMENTS.filter(a => a.id.indexOf('streak') !== 0);
-  const unlocked = getUnlockedAchievements().filter(id => badges.some(a => a.id === id));
-  html += '<div class="passport-section"><h3>🏅 Badges <span class="count-pill">' + unlocked.length + '/' + badges.length + '</span></h3><div class="badge-grid">';
-  badges.forEach(a => {
-    const gotB = unlocked.includes(a.id) || a.check();
-    html += '<div class="badge-cell' + (gotB ? ' got' : '') + '" title="' + escapeHtml(a.desc) + '">' +
-      '<div class="badge-ic">' + (gotB ? a.icon : '🔒') + '</div><div class="badge-nm">' + escapeHtml(a.name) + '</div>' +
-      '<div class="badge-ds">' + escapeHtml(a.desc) + '</div></div>';
-  });
-  html += '</div></div>';
   html += '<p class="footer-note">Passport images from Wikimedia Commons. Drawn covers are illustrations.</p></div>';
   root.innerHTML = html;
 
@@ -4156,7 +4109,6 @@ function renderMystery() {
           m.lastPoints = points;
           m.status = 'won';
           stampCountry(m.target.n);
-          checkAchievements();
         } else {
           m.wrong.push(name);
           btn.classList.add('wrong'); btn.disabled = true;
@@ -4724,7 +4676,6 @@ function renderQuiz() {
       state.quiz.total++;
       if (picked === correct) { state.quiz.score++; if (correct && correct.n) stampCountry(correct.n); }
       recordQuiz();
-      checkAchievements();
       card.querySelectorAll('.quiz-option').forEach((b, i) => {
         b.disabled = true;
         if (options[i] === correct) b.classList.add('correct');
@@ -4781,7 +4732,7 @@ function onHuntPick(country) {
   const g = globeHunt;
   if (!g || !g.active || g.status !== 'playing' || !country) return;
   const ok = country.n === g.target.n;
-  if (ok) { g.score++; stampCountry(g.target.n); checkAchievements(); g.feedback = { ok: true, text: '✓ Yes — ' + g.target.n + '!' }; }
+  if (ok) { g.score++; stampCountry(g.target.n); g.feedback = { ok: true, text: '✓ Yes — ' + g.target.n + '!' }; }
   else { g.feedback = { ok: false, text: '✗ That was ' + country.n + '. Here is ' + g.target.n + '.' }; }
   g.status = 'reveal';
   if (globeAPI) globeAPI.focus(g.target);   // fly to the answer so they learn where it is
@@ -5020,7 +4971,7 @@ function renderToday() {
   html += '<button type="button" class="today-card" id="today-passport">' +
     '<div class="today-kicker">Passport</div>' +
     '<h3>' + visited + ' / ' + total + ' countries</h3>' +
-    '<p>' + (streak > 0 ? streak + '-day streak. ' : '') + 'Stamps, badges, and the countries still to visit.</p>' +
+    '<p>' + (streak > 0 ? streak + '-day streak. ' : '') + 'An entry stamp for every visit, and the countries still to see.</p>' +
     '<span class="today-go">Open passport</span>' +
     '</button>';
   if (home) {
@@ -5131,7 +5082,6 @@ function renderDailyQuiz(c, completedToday, streak) {
         setStreak(newStreak);
         setLastDailyDay(todaySeed());
         stampCountry(c.n);
-        checkAchievements();
         updateStreakDisplay();
         msg.style.color = 'var(--success)';
         msg.textContent = '✓ Correct. Streak: ' + newStreak + ' 🔥';
