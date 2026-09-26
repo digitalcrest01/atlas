@@ -1,6 +1,6 @@
 {
   "name": "myatlastic",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Myatlastic — interactive geography app",
   "private": true,
   "scripts": {
