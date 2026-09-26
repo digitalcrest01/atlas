@@ -1,7 +1,7 @@
 {
   "name": "Myatlastic",
   "short_name": "Myatlastic",
-  "description": "Explore all 195 countries with a photorealistic 3D globe. Capitals, currencies, cultures, history, daily challenges and quizzes.",
+  "description": "Hear the world in its own voice: spoken tours of 195 countries in their own languages, a 3D globe of flags, a phrasebook you can hear and passports of the world.",
   "start_url": "/app",
   "display": "standalone",
   "background_color": "#0b0e13",
