@@ -2609,7 +2609,53 @@ if (speech.available) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
 }
 
-const ROBOT_VOICE = /compact|eloquence|novelty|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing|albert|bahh|deranged|hysterical|superstar/i;
+const ROBOT_VOICE = /eloquence|novelty|espeak|e-speak|festival|grandma|grandpa|whisper|bells|bad news|good news|bubbles|jester|organ|cellos|zarvox|trinoids|wobble|boing|albert|bahh|deranged|hysterical|superstar|fred|ralph|junior|princess|kathy|rocko|eddy/i;
+const HUMAN_VOICES = {
+  en: ['ava', 'allison', 'zoe', 'evan', 'nicky', 'aaron', 'nathan', 'samantha', 'daniel', 'serena', 'kate', 'martha', 'karen', 'moira', 'lee'],
+  fr: ['amelie', 'amélie', 'audrey', 'aurelie', 'thomas', 'denise', 'henri'],
+  es: ['monica', 'mónica', 'paulina', 'jorge', 'diego', 'marisol'],
+  de: ['anna', 'helena', 'markus', 'petra', 'yannick'],
+  it: ['alice', 'luca', 'federica'],
+  pt: ['luciana', 'joana', 'felipe', 'francisca'],
+  nl: ['xander', 'claire'],
+  sv: ['alva', 'oskar', 'klara'],
+  pl: ['zosia', 'ewa'],
+  ru: ['milena', 'yuri'],
+  ar: ['maged', 'tarik', 'laila'],
+  hi: ['lekha'],
+  ja: ['kyoko', 'otoya'],
+  ko: ['yuna', 'sora'],
+  zh: ['ting-ting', 'tingting', 'sin-ji', 'sinji', 'meijia', 'mei-jia'],
+  el: ['melina', 'nikos'],
+  tr: ['yelda', 'cem'],
+  th: ['kanya'],
+  id: ['damayanti']
+};
+
+function voiceBlob(v) {
+  return (((v && v.name) || '') + ' ' + ((v && v.voiceURI) || '')).toLowerCase();
+}
+
+function isRoboticVoice(v) {
+  const n = voiceBlob(v);
+  if (/premium|enhanced|natural|neural/.test(n) && !/\bcompact\b/.test(n)) return false;
+  if (/\bcompact\b|eloquence|\bnovelty\b|espeak|e-speak/.test(n)) return true;
+  if (/microsoft/.test(n) && /desktop/.test(n) && !/natural|online/.test(n)) return true;
+  return ROBOT_VOICE.test(n);
+}
+
+// Spoken text only. Em dashes and emoji are not said aloud.
+function forSpeech(s) {
+  return String(s || '')
+    .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{200D}]/gu, '')
+    .replace(/[—–―]/g, ', ')
+    .replace(/\(([^)]*)\)/g, ', $1, ')
+    .replace(/\s+,/g, ',')
+    .replace(/,{2,}/g, ',')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([.!?])/g, '$1')
+    .trim();
+}
 
 function tourLocale(c) {
   if (c && SPEECH_LOCALE[c.n]) return SPEECH_LOCALE[c.n];
@@ -2804,29 +2850,29 @@ function findVoice(locale) {
     return l === want || l.startsWith(lang + '-') || l === lang;
   });
   const pool = sameLang.length ? sameLang : [];
-  const usable = pool.filter(v => !ROBOT_VOICE.test(v.name || ''));
-  const list = usable.length ? usable : pool;
-  const named = {
-    'en-us': ['ava', 'allison', 'zoe', 'evan', 'nicky', 'aaron', 'samantha', 'google us english'],
-    'en-gb': ['daniel', 'kate', 'serena', 'martha', 'google uk english'],
-    'en-au': ['karen', 'lee', 'google australian'],
-    'en-ie': ['moira']
-  };
+  const human = pool.filter(v => !isRoboticVoice(v));
+  const list = human.length ? human : pool;
+  const named = HUMAN_VOICES[lang] || [];
   let best = null;
-  let bestScore = -1;
+  let bestScore = -Infinity;
   list.forEach(v => {
-    const n = (v.name || '').toLowerCase();
+    const n = voiceBlob(v);
     const l = (v.lang || '').toLowerCase().replace('_', '-');
     let score = 0;
     if (l === want) score += 30;
     else if (region && l.endsWith('-' + region)) score += 18;
     else if (l.startsWith(lang)) score += 8;
-    if (/premium|enhanced|natural|neural|siri/.test(n)) score += 40;
-    if (/google/.test(n)) score += 22;
-    if (/microsoft (aria|jenny|guy|michelle|sonia|ryan|libby)/.test(n)) score += 26;
-    (named[want] || []).forEach((name, i) => {
-      if (n.includes(name)) score += 20 - i;
+    if (/premium/.test(n)) score += 60;
+    if (/enhanced/.test(n)) score += 48;
+    if (/natural|neural/.test(n)) score += 40;
+    if (/siri/.test(n) && !/\bcompact\b/.test(n)) score += 28;
+    if (/google/.test(n)) score += 26;
+    if (/microsoft (aria|jenny|guy|michelle|sonia|ryan|libby)/.test(n)) score += 30;
+    if (v.localService === false && !isRoboticVoice(v)) score += 6;
+    named.forEach((name, i) => {
+      if (n.includes(name)) score += 18 - Math.min(i, 12);
     });
+    if (isRoboticVoice(v)) score -= 100;
     if (score > bestScore) { bestScore = score; best = v; }
   });
   return best;
@@ -2851,7 +2897,7 @@ function stopSpeaking() {
 // Short lines, queued, so the voice can pause the way a person does.
 function speakLines(lines, locale, buttons, rate, force, ondone) {
   if (!speech.available) return;
-  const clean = (lines || []).map(s => String(s || '').trim()).filter(Boolean);
+  const clean = (lines || []).map(s => forSpeech(s)).filter(Boolean);
   if (!clean.length) return;
   if (force) {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
@@ -2875,7 +2921,7 @@ function speakLines(lines, locale, buttons, rate, force, ondone) {
     const utt = new SpeechSynthesisUtterance(clean[i++]);
     utt.lang = locale || narrationLocale();
     if (voice) utt.voice = voice;
-    utt.rate = rate || 0.96;
+    utt.rate = rate || 1;
     utt.pitch = 1;
     utt.onend = step;
     utt.onerror = step;
@@ -3820,7 +3866,7 @@ window.__myatlasticReadAloud = (countryName) => {
   if (!c) return;
   const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
   const stops = tourStops(c);
-  speakLines(spokenTour(c), (stops[0] && stops[0].locale) || tourLocale(c), buttons, 0.96);
+  speakLines(spokenTour(c), (stops[0] && stops[0].locale) || tourLocale(c), buttons, 1);
 };
 
 let tourTimer = null;
@@ -3927,7 +3973,7 @@ window.__myatlasticTour = (countryName) => {
         return;
       }
       const safety = setTimeout(() => sayLine(n + 1), 22000);
-      speakLines([s.lines[n]], s.locale || tourLocale(c), [], 0.93, true, () => {
+      speakLines([s.lines[n]], s.locale || tourLocale(c), [], 1, true, () => {
         clearTimeout(safety);
         if (n + 1 < s.lines.length) sayLine(n + 1);
         else goOn();
@@ -5383,7 +5429,7 @@ function renderPuzzle() {
     pz.hint = name;
     pz.message = name + ' matches ' + ((c && c.flag) || 'this flag') + '.';
     pz.tone = '';
-    if (speech.available) speakLines([name + ' matches the glowing flag.'], narrationLocale(), [], 0.93, true);
+    if (speech.available) speakLines([name + ' matches the glowing flag.'], narrationLocale(), [], 1, true);
     renderPuzzle();
   };
   root.querySelectorAll('.puzzle-piece').forEach(btn => {
@@ -5410,7 +5456,7 @@ function tryPlacePuzzle(piece, target) {
     pz.selected = null;
     pz.message = 'Yes. That is ' + piece + '.';
     pz.tone = 'ok';
-    if (speech.available) speakLines(['Yes. That is ' + piece + '.'], narrationLocale(), [], 0.93, true);
+    if (speech.available) speakLines(['Yes. That is ' + piece + '.'], narrationLocale(), [], 1, true);
   } else {
     pz.message = 'That name does not match this flag.';
     pz.tone = 'no';
