@@ -1698,6 +1698,29 @@
   @media (prefers-reduced-motion: reduce) {
     body.kids .tabs button, body.kids .btn-primary { transition: none; }
   }
+  .quiz-why { margin: 14px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--panel-2); border: 1px solid var(--line); font-size: 14px; line-height: 1.5; color: var(--ink); text-align: left; }
+  .quiz-why::before { content: '💡 '; }
+  /* Phones: text sized for a small screen. Labels keep the 11.5px minimum above. */
+  @media (max-width: 480px) {
+    body { font-size: 14px; }
+    .logo-name { font-size: 18px !important; }
+    .today-card h3, .view h3 { font-size: 16px; }
+    .view h2, .puzzle-top h2, .pp-head h2 { font-size: 18px; }
+    .detail-name { font-size: 22px; gap: 8px; }
+    .detail-flag { font-size: 26px; }
+    body.kids .detail-name { font-size: 24px; }
+    .wow-fact { font-size: 14px; }
+    .pb-card .pb-text { font-size: 20px; }
+    .pb-text { font-size: 17px; }
+    .quiz-prompt { font-size: 18px !important; }
+    .quiz-prompt-flag { font-size: 72px; }
+    .quiz-option { font-size: 14px; }
+    .badge-ic { font-size: 24px; }
+    .pp-drawn-flag { font-size: 26px; }
+    .tour-card .tour-story { font-size: 15px; }
+    .tour-host-line { font-size: 13px; }
+    .lc-line, .section-body, .fact-value, .qf-body { font-size: 14px; }
+  }
 </style>
 </head>
 <body class="mode-explore">
@@ -4307,6 +4330,7 @@ function renderTwoPlayer() {
     case 'culture-hint': eyebrow = 'Which country fits?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px;font-style:italic">' + escapeHtml(correct.cul || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
     case 'food-to-country': eyebrow = 'Whose dishes are these?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px">🍽 ' + escapeHtml(correct.food || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
     case 'sport-to-country': eyebrow = 'Whose sports?'; promptHtml = '<div class="quiz-prompt" style="font-size:15px">⚽ ' + escapeHtml(correct.sport || '') + '</div>'; textFn = c => c.flag + ' ' + c.n; break;
+    case 'world-fact': eyebrow = '🌍 World facts'; promptHtml = '<div class="quiz-prompt" style="font-size:17px;line-height:1.4">' + escapeHtml(q.fact.q) + '</div>'; textFn = x => x; break;
   }
 
   if (twoP.phase === 'handoff') {
@@ -4536,6 +4560,62 @@ function handleDeepLink() {
  * ============================================================ */
 const QUIZ_TYPES = ['flag-to-country', 'country-to-capital', 'capital-to-country', 'culture-hint', 'food-to-country', 'sport-to-country'];
 
+// World facts: a simple answer, then one short line explaining it. Where
+// people count differently, the answer is the usual count and says so.
+const WORLD_FACTS = [
+  { id: 'continents', q: 'How many continents are there in the world?', a: '7', o: ['5', '6', '8'],
+    why: 'Africa, Antarctica, Asia, Australia (Oceania), Europe, North America and South America. Some schools join a few together and count 5 or 6.' },
+  { id: 'countries', q: 'How many countries are there in the world?', a: '195', o: ['150', '180', '220'],
+    why: '193 countries belong to the United Nations, plus 2 observer states: Vatican City and Palestine.' },
+  { id: 'oceans', q: 'How many oceans are there?', a: '5', o: ['3', '4', '7'],
+    why: 'The Pacific, Atlantic, Indian, Southern and Arctic oceans.' },
+  { id: 'africa', q: 'How many countries are in Africa?', a: '54', o: ['34', '48', '62'],
+    why: 'Africa has 54 countries, more than any other continent.' },
+  { id: 'europe', q: 'How many countries are in Europe?', a: '44', o: ['27', '36', '55'],
+    why: 'That is the United Nations count, including Russia and tiny Vatican City. Cyprus is in the European Union but sits in Asia, so our map shows it with Europe, making 45. (27 is the number in the European Union.)' },
+  { id: 'asia', q: 'How many countries are in Asia?', a: '48', o: ['30', '40', '58'],
+    why: 'The United Nations counts 48, including Cyprus. Our map shows Cyprus with Europe, so it lists 47 in Asia.' },
+  { id: 'east-asia', q: 'How many countries are in East Asia?', a: '5', o: ['3', '7', '9'],
+    why: 'China, Japan, Mongolia, North Korea and South Korea. Taiwan is sometimes counted too.' },
+  { id: 'south-asia', q: 'How many countries are in South Asia?', a: '8', o: ['5', '11', '14'],
+    why: 'Afghanistan, Bangladesh, Bhutan, India, the Maldives, Nepal, Pakistan and Sri Lanka. The United Nations also includes Iran, making 9.' },
+  { id: 'southeast-asia', q: 'How many countries are in South-East Asia?', a: '11', o: ['7', '9', '15'],
+    why: 'Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, the Philippines, Singapore, Thailand, Timor-Leste and Vietnam.' },
+  { id: 'central-asia', q: 'How many countries are in Central Asia?', a: '5', o: ['3', '7', '10'],
+    why: 'Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan and Uzbekistan. All five names end in "-stan", meaning "land of".' },
+  { id: 'south-america', q: 'How many countries are in South America?', a: '12', o: ['8', '15', '20'],
+    why: 'From Colombia and Venezuela in the north to Argentina and Chile in the south.' },
+  { id: 'north-america', q: 'How many countries are in North America?', a: '23', o: ['3', '12', '31'],
+    why: 'Canada, the United States and Mexico, plus the countries of Central America and the Caribbean islands.' },
+  { id: 'central-america', q: 'How many countries are in Central America?', a: '7', o: ['4', '10', '12'],
+    why: 'Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua and Panama.' },
+  { id: 'caribbean', q: 'How many island countries are in the Caribbean?', a: '13', o: ['7', '20', '25'],
+    why: 'From Cuba, the biggest, to tiny Saint Kitts and Nevis. Many other Caribbean islands belong to countries elsewhere.' },
+  { id: 'oceania', q: 'How many countries are in Oceania?', a: '14', o: ['6', '10', '22'],
+    why: 'Australia, New Zealand, Papua New Guinea and 11 Pacific island nations such as Fiji and Samoa.' },
+  { id: 'antarctica', q: 'How many countries are in Antarctica?', a: '0', o: ['1', '7', '12'],
+    why: 'Nobody owns Antarctica. It is kept for science and peace by an international treaty.' },
+  { id: 'most-islands', q: 'Which country has the most islands?', a: 'Sweden', o: ['Indonesia', 'Philippines', 'Japan'],
+    why: 'Sweden has more than 250,000 islands, most of them tiny and without anyone living on them.' },
+  { id: 'indonesia-islands', q: 'About how many islands make up Indonesia?', a: 'More than 17,000', o: ['About 500', 'About 3,000', 'About 100,000'],
+    why: 'Indonesia is the biggest island country in the world, stretching across more than 17,000 islands.' },
+  { id: 'largest-continent', q: 'Which is the largest continent?', a: 'Asia', o: ['Africa', 'North America', 'Europe'],
+    why: 'Asia covers about a third of all the land on Earth.' },
+  { id: 'smallest-continent', q: 'Which is the smallest continent?', a: 'Australia (Oceania)', o: ['Europe', 'Antarctica', 'South America'],
+    why: 'Australia is the smallest continent, which is why it is sometimes called an island continent.' },
+  { id: 'largest-country', q: 'Which is the largest country by area?', a: 'Russia', o: ['Canada', 'China', 'United States'],
+    why: 'Russia stretches across 11 time zones, from Europe all the way to the Pacific.' },
+  { id: 'smallest-country', q: 'Which is the smallest country in the world?', a: 'Vatican City', o: ['Monaco', 'San Marino', 'Nauru'],
+    why: 'Vatican City sits inside Rome and is smaller than many city parks.' },
+  { id: 'largest-ocean', q: 'Which is the largest ocean?', a: 'Pacific', o: ['Atlantic', 'Indian', 'Arctic'],
+    why: 'The Pacific is bigger than all the land on Earth put together.' },
+  { id: 'most-countries', q: 'Which continent has the most countries?', a: 'Africa', o: ['Asia', 'Europe', 'South America'],
+    why: 'Africa has 54 countries.' },
+  { id: 'highest-mountain', q: 'What is the highest mountain in the world?', a: 'Mount Everest', o: ['K2', 'Kilimanjaro', 'Mont Blanc'],
+    why: 'Mount Everest, on the border of Nepal and China, is about 8,849 metres high.' }
+];
+
+
 function pickN(pool, n, exclude) {
   const arr = pool.filter(x => x !== exclude);
   const out = [];
@@ -4545,7 +4625,18 @@ function pickN(pool, n, exclude) {
   return out;
 }
 
+let recentFacts = [];
+function newWorldFact() {
+  const fresh = WORLD_FACTS.filter(f => recentFacts.indexOf(f.id) === -1);
+  const fact = fresh[Math.floor(Math.random() * fresh.length)] || WORLD_FACTS[0];
+  recentFacts = recentFacts.concat(fact.id).slice(-Math.min(10, WORLD_FACTS.length - 1));
+  const options = [fact.a].concat(fact.o.slice(0, quizOptionCount() - 1)).sort(() => Math.random() - 0.5);
+  return { type: 'world-fact', fact: fact, correct: fact.a, options: options };
+}
+
 function newQuizQuestion() {
+  // About one question in three is a world fact.
+  if (Math.random() < 0.34) return newWorldFact();
   // Difficulty / age band shape the question pool, option count, and how close
   // the wrong answers are (harder = same-continent distractors).
   const diff = effectiveDifficulty();
@@ -4606,6 +4697,10 @@ function renderQuiz() {
       eyebrow = 'Which country eats these dishes?';
       promptHtml = '<div class="quiz-prompt" style="font-size:16px;line-height:1.5">🍽 ' + escapeHtml(correct.food || '') + '</div>';
       textFn = c => c.flag + ' ' + c.n; break;
+    case 'world-fact':
+      eyebrow = '🌍 World facts';
+      promptHtml = '<div class="quiz-prompt" style="font-size:20px;line-height:1.4">' + escapeHtml(state.quiz.current.fact.q) + '</div>';
+      textFn = x => x; break;
     case 'sport-to-country':
       eyebrow = 'Whose national sport(s) are these?';
       promptHtml = '<div class="quiz-prompt" style="font-size:16px;line-height:1.5">⚽ ' + escapeHtml(correct.sport || '') + '</div>';
@@ -4627,7 +4722,7 @@ function renderQuiz() {
       const idx = parseInt(btn.dataset.idx, 10);
       const picked = options[idx];
       state.quiz.total++;
-      if (picked === correct) { state.quiz.score++; stampCountry(correct.n); }
+      if (picked === correct) { state.quiz.score++; if (correct && correct.n) stampCountry(correct.n); }
       recordQuiz();
       checkAchievements();
       card.querySelectorAll('.quiz-option').forEach((b, i) => {
@@ -4635,6 +4730,13 @@ function renderQuiz() {
         if (options[i] === correct) b.classList.add('correct');
         else if (i === idx) b.classList.add('wrong');
       });
+      if (type === 'world-fact') {
+        const why = document.createElement('p');
+        why.className = 'quiz-why';
+        why.setAttribute('role', 'status');
+        why.textContent = (picked === correct ? '✓ ' : 'The answer is ' + correct + '. ') + state.quiz.current.fact.why;
+        card.appendChild(why);
+      }
       const next = document.createElement('button');
       next.className = 'btn-primary next-btn';
       next.textContent = 'Next →';
