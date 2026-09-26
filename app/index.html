@@ -161,7 +161,7 @@
 
   /* ===== EXPLORE VIEW ===== */
   #view-explore { flex-direction: row; }
-  @media (max-width: 900px) {
+  @media (max-width: 900px), (max-width: 1200px) and (orientation: portrait) {
     #view-explore { flex-direction: column; }
   }
   .pane {
@@ -171,25 +171,26 @@
     background: var(--panel);
     min-height: 0;
   }
-  /* Desktop: all three panes visible */
-  @media (min-width: 901px) {
+  /* Desktop and iPad landscape: all three panes visible */
+  @media (min-width: 1201px), (min-width: 901px) and (orientation: landscape) {
     .pane.list { display: flex; flex: 0 0 320px; border-right: 1px solid var(--line); }
     .pane.globe { display: flex; flex: 1 1 auto; }
     .pane.details { display: flex; flex: 0 0 400px; border-left: 1px solid var(--line); }
   }
   /* iPad landscape: slimmer side panes so the globe keeps room */
-  @media (min-width: 901px) and (max-width: 1200px) {
+  @media (min-width: 901px) and (max-width: 1200px) and (orientation: landscape) {
     .pane.list { flex-basis: 260px; }
     .pane.details { flex-basis: 340px; }
   }
   /* iPhone and iPad portrait: the globe always stays on screen at the top;
      the list or the country's details fill the space below it. */
-  @media (max-width: 900px) {
-    .pane.globe { display: flex; flex: 0 0 34vh; min-height: 220px; border-bottom: 1px solid var(--line); }
+  @media (max-width: 900px), (max-width: 1200px) and (orientation: portrait) {
+    .pane.globe { display: flex; flex: 0 0 34vh; min-height: 220px; border-bottom: 1px solid var(--line); order: -1; }
+    .globe-hint { display: none; }
     .pane.list.mobile-active, .pane.details.mobile-active { display: flex; flex: 1 1 auto; }
     .mobile-bar button[data-pane="globe"] { display: none; }
   }
-  @media (min-width: 700px) and (max-width: 900px) {
+  @media (min-width: 700px) and (max-width: 900px), (min-width: 901px) and (max-width: 1200px) and (orientation: portrait) {
     .pane.globe { flex-basis: 46vh; }
     .pane.details, .pane.list { font-size: 15px; }
   }
@@ -203,7 +204,7 @@
     background: var(--panel);
     border-top: 1px solid var(--line);
   }
-  @media (max-width: 900px) {
+  @media (max-width: 900px), (max-width: 1200px) and (orientation: portrait) {
     body.mode-explore .mobile-bar { display: flex; }
   }
   .mobile-bar button {
@@ -232,7 +233,7 @@
   }
   .back-btn:hover { border-color: var(--accent); color: var(--accent); }
   .detail-back { display: none; }
-  @media (max-width: 900px) {
+  @media (max-width: 900px), (max-width: 1200px) and (orientation: portrait) {
     body.mode-explore .detail-back { display: inline-flex; }
   }
 
@@ -2646,6 +2647,16 @@ const CONTINENTS = ['All', ...Array.from(new Set(COUNTRIES.map(c => c.c.split(' 
  * ============================================================ */
 const IS_NATIVE = !!(window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform());
 const IS_WEB = !IS_NATIVE;
+// Phones and portrait iPads: globe on top, list or details below (see the CSS).
+const SPLIT_LAYOUT = window.matchMedia('(max-width: 900px), (max-width: 1200px) and (orientation: portrait)');
+function isSplitLayout() { return SPLIT_LAYOUT.matches; }
+// Rotating an iPad switches layouts: show the right pane and refit the globe.
+try {
+  SPLIT_LAYOUT.addEventListener('change', () => {
+    if (isSplitLayout() && typeof setMobilePane === 'function') setMobilePane(state.mobilePane === 'details' ? 'details' : 'list');
+    if (typeof globeAPI !== 'undefined' && globeAPI && globeAPI.resize) requestAnimationFrame(() => globeAPI.resize());
+  });
+} catch (e) {}
 const APP_STORE_URL = 'https://apps.apple.com/app/id6773543267';
 let APP_LIVE = true; // app is live on the App Store
 // Modes that are app-only on the web (free taste stays: explore, daily, mystery, passport).
@@ -3099,7 +3110,7 @@ window.__myatlasticTour = (countryName) => {
   if (previous && previous.__close) previous.__close(true);
   Voice.stop();
   setMode('explore');
-  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (isSplitLayout()) setMobilePane('globe');
   state.activeCountry = c;
   renderList();
   renderDetails();
@@ -3285,7 +3296,7 @@ function setMode(newMode) {
   else if (newMode === 'puzzle') renderPuzzle();
   else if (newMode === 'passport') renderPassport();
   else if (newMode === 'paywall') renderPaywall();
-  else if (newMode === 'explore' && window.innerWidth <= 900) {
+  else if (newMode === 'explore' && isSplitLayout()) {
     // Globe may have been hidden — resize it
     if (state.mobilePane === 'globe' && globeAPI && globeAPI.resize) {
       requestAnimationFrame(() => globeAPI.resize());
@@ -3399,7 +3410,7 @@ function renderList() {
       renderList();
       renderDetails();
       if (globeAPI) globeAPI.focus(c);
-      if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+      if (isSplitLayout() && state.mode === 'explore') setMobilePane('details');
     };
 
     root.appendChild(item);
@@ -3531,7 +3542,7 @@ window.__myatlasticShowOnGlobe = (countryName) => {
   if (!c) return;
   state.activeCountry = c;
   if (state.mode !== 'explore') setMode('explore');
-  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (isSplitLayout()) setMobilePane('globe');
   if (globeAPI) globeAPI.focus(c);
 };
 
@@ -4528,7 +4539,7 @@ function huntPool() { return gameShuffle(SOVEREIGN_COUNTRIES.filter(c => c.flag 
 function startGlobeHunt() {
   globeHunt = { active: true, pool: huntPool(), round: 0, total: 10, score: 0, target: null, status: 'playing', feedback: null };
   setMode('explore');
-  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (isSplitLayout()) setMobilePane('globe');
   if (globeAPI && globeAPI.resize) requestAnimationFrame(() => globeAPI.resize());
   nextHuntRound();
 }
@@ -4821,7 +4832,7 @@ function renderToday() {
     renderList();
     renderDetails();
     setMode('explore');
-    if (window.innerWidth <= 900) setMobilePane('globe');
+    if (isSplitLayout()) setMobilePane('globe');
     if (globeAPI) globeAPI.focus(home);
   };
   root.querySelectorAll('.today-more button').forEach(b => {
@@ -5857,7 +5868,8 @@ function setupGlobe(THREE) {
     // the globe would overflow the sides. Widen the FOV when aspect < 1 so the
     // whole globe fits. On landscape/desktop (aspect >= 1) this resolves to
     // ~45deg, leaving the web size unchanged.
-    const BASE_D = 4, R = 1.5, margin = 1.1;
+    // A little more room on phones, portrait iPads and tall panes so the flags near the rim stay in view.
+    const BASE_D = 4, R = 1.5, margin = (isSplitLayout() || aspect < 1) ? 1.25 : 1.1;
     const fit = Math.min(1, aspect);
     camera.fov = 2 * Math.atan((R * margin) / (BASE_D * fit)) * (180 / Math.PI);
     camera.updateProjectionMatrix();
@@ -6059,7 +6071,7 @@ function setupGlobe(THREE) {
             state.activeCountry = c;
             renderList();
             renderDetails();
-            if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+            if (isSplitLayout() && state.mode === 'explore') setMobilePane('details');
           }
         }
       }
@@ -6119,7 +6131,7 @@ function setupGlobe(THREE) {
             state.activeCountry = c;
             renderList();
             renderDetails();
-            if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+            if (isSplitLayout() && state.mode === 'explore') setMobilePane('details');
           }
         }
       }
@@ -6206,7 +6218,7 @@ function setupGlobe(THREE) {
       targetZoom = 3.3;
       this.focus(c);
       // On a phone the tour card covers the lower half: tip the country up into view.
-      if (window.innerWidth <= 900) targetRotX -= 0.42;
+      if (isSplitLayout()) targetRotX -= 0.42;
     },
     clearTourFocus() {
       if (tourFlag) { globeGroup.remove(tourFlag); tourFlag = null; }
@@ -6291,7 +6303,7 @@ function renderFlatMap() {
       state.activeCountry = c;
       renderList();
       renderDetails();
-      if (window.innerWidth <= 900 && state.mode === 'explore') setMobilePane('details');
+      if (isSplitLayout() && state.mode === 'explore') setMobilePane('details');
     });
     svg.appendChild(dot);
   });
@@ -6390,7 +6402,7 @@ function showHomeOnGlobe(c, coach) {
   renderDetails();
   const active = document.querySelector('.country-item.active');
   if (active && active.scrollIntoView) active.scrollIntoView({ block: 'center' });
-  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (isSplitLayout()) setMobilePane('globe');
   whenGlobeReady(() => {
     if (globeAPI) globeAPI.focus(c);
     else if (document.body.classList.contains('flat-mode')) renderFlatMap();
@@ -6526,7 +6538,7 @@ try {
   renderList();
   renderDetails();
   setMode('explore');
-  if (window.innerWidth <= 900) setMobilePane('globe');
+  if (isSplitLayout()) setMobilePane('globe');
   initGlobe();
   Billing.init();
   handleDeepLink();
