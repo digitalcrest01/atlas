@@ -681,6 +681,8 @@
   }
   .tour-card {
     width: min(520px, 100%);
+    max-height: min(92vh, 820px);
+    overflow: auto;
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -726,6 +728,18 @@
   }
   .tour-actions { display: flex; gap: 8px; margin-top: 14px; }
   .tour-actions button { flex: 1; }
+  .tour-talk { display: flex; gap: 8px; margin-top: 10px; }
+  .tour-talk input {
+    flex: 1; min-width: 0;
+    background: var(--panel-2); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+    font: inherit; font-size: 15px;
+  }
+  .tour-mic.on { color: var(--accent); border-color: var(--accent); }
+  @media (max-width: 700px) {
+    .tour-stage { height: 140px; }
+    .tour-animal { font-size: 40px; }
+  }
   .puzzle-wrap {
     max-width: 1100px;
     width: 100%;
@@ -1646,6 +1660,7 @@
 <script src="attractions.js"></script>
 <script src="spot-history.js"></script>
 <script src="puzzle-shapes.js"></script>
+<script src="room-talk.js"></script>
 <script>
 'use strict';
 
@@ -2920,7 +2935,7 @@ function stopSpeaking() {
 }
 
 // Short lines, queued, so the voice can pause the way a person does.
-function speakLines(lines, locale, buttons, rate, force, ondone) {
+function speakLines(lines, locale, buttons, rate, force, ondone, voice) {
   if (!speech.available) return;
   const clean = (lines || []).map(s => forSpeech(s)).filter(Boolean);
   if (!clean.length) return;
@@ -2932,7 +2947,7 @@ function speakLines(lines, locale, buttons, rate, force, ondone) {
     return;
   }
   const token = ++speakToken;
-  const voice = findVoice(locale);
+  const chosen = voice || findVoice(locale);
   const btns = buttons || [];
   btns.forEach(b => b.classList.add('speaking'));
   let i = 0;
@@ -2944,8 +2959,8 @@ function speakLines(lines, locale, buttons, rate, force, ondone) {
       return;
     }
     const utt = new SpeechSynthesisUtterance(clean[i++]);
-    utt.lang = locale || narrationLocale();
-    if (voice) utt.voice = voice;
+    utt.lang = (chosen && chosen.lang) || locale || narrationLocale();
+    if (chosen) utt.voice = chosen;
     utt.rate = rate || 1;
     utt.pitch = 1;
     utt.onend = step;
@@ -3895,118 +3910,278 @@ window.__myatlasticReadAloud = (countryName) => {
 };
 
 let tourTimer = null;
+let roomMemory = { name: '', pattern: '' };
+let roomSessions = {};
+let roomEarGen = 0;
+let roomRec = null;
+
+function stopRoomEar() {
+  roomEarGen++;
+  const rec = roomRec;
+  roomRec = null;
+  if (!rec) return;
+  rec.onend = null;
+  rec.onresult = null;
+  try { rec.abort(); } catch (e) {}
+  try { rec.stop(); } catch (e2) {}
+}
+
+function normTalk(s) {
+  return String(s || '').toLowerCase().replace(/[^a-z0-9\u00c0-\u024f\s]/gi, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function roomEcho(text, session) {
+  const heard = normTalk(text);
+  if (!heard) return true;
+  const recent = normTalk((session.spoken || []).slice(-2).join(' '));
+  if (!recent) return false;
+  if (recent.indexOf(heard) !== -1) return true;
+  const words = heard.split(' ').filter(w => w.length > 3);
+  if (words.length < 3) return false;
+  const hit = words.filter(w => recent.indexOf(w) !== -1).length;
+  return hit / words.length > 0.72;
+}
+
+function bootRoom(c) {
+  if (roomSessions[c.n]) {
+    roomMemory = { name: c.n, pattern: roomSessions[c.n].pattern };
+    return roomSessions[c.n];
+  }
+  const locale = tourLocale(c);
+  const langKey = locale.split('-')[0];
+  if (speech.available && !speech.voices.length) loadVoices();
+  const prof = window.RoomTalk.profile(c.n, locale, speech.voices || [], isRoboticVoice);
+  const place = landmarkFor(c) || {};
+  const food = c.food ? c.food.split(',')[0].replace(/\s*\([^)]*\)/g, '').trim() : '';
+  const prevName = roomMemory.name && roomMemory.name !== c.n ? roomMemory.name : '';
+  const session = window.RoomTalk.boot({
+    name: c.n,
+    prevName: prevName,
+    prevPattern: prevName ? roomMemory.pattern : '',
+    city: c.cap || '',
+    place: place.name || '',
+    fact: place.fact || '',
+    food: food,
+    langName: primaryLang(c),
+    langKey: langKey,
+    locale: prof.locale || locale,
+    roster: COUNTRIES.map(x => x.n),
+    voice: prof.voice,
+    rate: prof.rate,
+    seed: Math.floor(Math.random() * 997)
+  });
+  session.voice = prof.voice;
+  session.rate = prof.rate;
+  session.queue = [];
+  session.qi = 0;
+  roomSessions[c.n] = session;
+  roomMemory = { name: c.n, pattern: session.pattern };
+  return session;
+}
+
+function silenceRoom(session) {
+  if (!session) return;
+  const rest = (session.queue || []).slice(session.qi || 0);
+  if (rest.length) session.paused = rest;
+  session.queue = [];
+  session.qi = 0;
+  stopSpeaking();
+}
+
+function playRoom(session, lines, story) {
+  const clean = (lines || []).map(s => String(s || '').trim()).filter(Boolean);
+  session.queue = clean;
+  session.qi = 0;
+  stopSpeaking();
+  session.playToken = speakToken;
+  const step = () => {
+    if (session.playToken !== speakToken) return;
+    if (!document.getElementById('tour-overlay')) return;
+    if (session.qi >= session.queue.length) return;
+    const line = session.queue[session.qi++];
+    session.spoken.push(line);
+    if (story) story.textContent = line;
+    if (!speech.available || !window.speechSynthesis) return;
+    const utt = new SpeechSynthesisUtterance(forSpeech(line));
+    const voice = session.voice;
+    utt.lang = (voice && voice.lang) || session.voiceLocale || session.locale || narrationLocale();
+    if (voice) utt.voice = voice;
+    utt.rate = session.rate || 1;
+    utt.pitch = 1;
+    utt.onend = step;
+    utt.onerror = step;
+    window.speechSynthesis.speak(utt);
+    window.speechSynthesis.resume();
+  };
+  step();
+}
+
+function armRoomEar(session, onText) {
+  stopRoomEar();
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) return false;
+  const gen = roomEarGen;
+  const rec = new SR();
+  roomRec = rec;
+  rec.continuous = true;
+  rec.interimResults = true;
+  rec.lang = narrationLocale();
+  let sent = '';
+  rec.onresult = (ev) => {
+    if (gen !== roomEarGen) return;
+    let interim = '';
+    let finalText = '';
+    for (let i = ev.resultIndex; i < ev.results.length; i++) {
+      const piece = ev.results[i][0].transcript || '';
+      if (ev.results[i].isFinal) finalText += piece;
+      else interim += piece;
+    }
+    const live = (interim || finalText).trim();
+    if (live && session.playToken === speakToken && !roomEcho(live, session) && normTalk(live).length >= 8) {
+      silenceRoom(session);
+    }
+    const said = finalText.trim();
+    if (!said || said === sent || roomEcho(said, session)) return;
+    sent = said;
+    onText(said);
+  };
+  rec.onend = () => {
+    if (gen !== roomEarGen) return;
+    if (!document.getElementById('tour-overlay')) return;
+    try { rec.start(); } catch (e) {}
+  };
+  try {
+    rec.start();
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
 window.__myatlasticTour = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
+  if (!c || !window.RoomTalk) return;
+  stopRoomEar();
+  stopSpeaking();
   setMode('explore');
   if (window.innerWidth <= 900) setMobilePane('globe');
   state.activeCountry = c;
   renderList();
   renderDetails();
   if (globeAPI) globeAPI.focus(c);
-  const visit = longTour(c);
+  const session = bootRoom(c);
+  const animal = animalFor(c) || ['guide', '🐾'];
   const placeNow = landmarkFor(c) || {};
+  const locale = tourLocale(c);
+  const lang = locale.split('-')[0];
+  const useLang = ANIMAL_HOST[lang] ? lang : 'en';
+  const animalName = String(animal[0] || 'guide').replace(/\s*\([^)]*\)/g, '').trim();
+  const host = fillTourLine(ANIMAL_HOST[useLang] || ANIMAL_HOST.en, {
+    animal: animalName,
+    place: placeNow.name || c.n
+  });
   const stops = [{
     kicker: c.n,
     title: placeNow.name || c.n,
-    lines: visit.lines,
-    locale: visit.locale,
-    body: visit.lines[0] || '',
     fact: placeNow.fact || '',
-    look: [placeNow.name, c.n, (animalFor(c) || [])[0], c.n === 'France' ? 'Louvre Museum' : '', c.n === 'France' ? 'Eiffel Tower' : '', c.cap].filter(Boolean),
-    emoji: visit.emoji,
-    host: visit.host,
+    look: [placeNow.name, c.n, animal[0], c.n === 'France' ? 'Louvre Museum' : '', c.n === 'France' ? 'Eiffel Tower' : '', c.cap].filter(Boolean),
+    emoji: animal[1] || '🐾',
+    host: host,
     frames: []
   }];
-  loadStoryFrames(c, stops).then(() => {
-    if (!overlay.isConnected) return;
-    const sNow = stops[step];
-    const n = Number(overlay.dataset.line || 0);
-    const pics = sNow && sNow.frames;
-    if (pics && pics.length) paintStoryFrame(pics[n % pics.length], n);
-  });
-  let step = 0;
   const old = document.getElementById('tour-overlay');
   if (old) old.remove();
   const overlay = document.createElement('div');
   overlay.id = 'tour-overlay';
   overlay.className = 'tour-overlay';
   document.body.appendChild(overlay);
+  const s = stops[0];
+  loadStoryFrames(c, stops).then(() => {
+    if (!overlay.isConnected) return;
+    let frameN = 0;
+    const spin = () => {
+      if (!overlay.isConnected) return;
+      const pics = (s.frames && s.frames.length) ? s.frames : [];
+      if (pics.length) paintStoryFrame(pics[frameN % pics.length], frameN);
+      frameN++;
+      tourTimer = setTimeout(spin, 8000);
+    };
+    spin();
+  });
   const close = () => {
     if (tourTimer) clearTimeout(tourTimer);
     tourTimer = null;
+    stopRoomEar();
     stopSpeaking();
     if (overlay.parentNode) overlay.remove();
   };
-  const show = () => {
-    if (tourTimer) { clearTimeout(tourTimer); tourTimer = null; }
-    const s = stops[step];
-    overlay.innerHTML =
-      '<div class="tour-card" role="dialog" aria-label="Tour of ' + escapeHtml(c.n) + '">' +
-        '<div style="display:flex;justify-content:space-between;align-items:center">' +
-          '<div class="tour-kicker">' + escapeHtml(s.kicker) + ' · ' + (step + 1) + ' of ' + stops.length + '</div>' +
-          '<span class="tour-pin" aria-hidden="true"></span>' +
-        '</div>' +
-        '<div class="tour-host"><span class="tour-animal">' + (s.emoji || '🐾') + '</span><span class="tour-host-line">' + escapeHtml(s.host || '') + '</span></div>' +
-        '<div class="tour-stage" id="tour-stage"></div>' +
-        '<h2>' + escapeHtml(s.title) + '</h2>' +
-        (s.fact ? '<p class="tour-fact">' + escapeHtml(s.fact) + '</p>' : '') +
-        '<p class="tour-story">' + escapeHtml(s.lines[0] || '') + '</p>' +
-        '<div class="tour-route">' + stops.map((_, n) => '<span class="tour-dot' + (n === step ? ' on' : '') + '"></span>').join('') + '</div>' +
-        '<div class="tour-actions">' +
-          '<button type="button" class="back-btn" id="tour-back"' + (step === 0 ? ' disabled' : '') + '>Back</button>' +
-          '<button type="button" class="btn-primary" id="tour-next">' + (s.lines && s.lines.length > 1 ? 'Next' : 'Finish') + '</button>' +
-          '<button type="button" class="back-btn" id="tour-close">Close</button>' +
-        '</div>' +
-      '</div>';
-    $('tour-close').onclick = close;
-    $('tour-back').onclick = () => {
-      const n = Number(overlay.dataset.line || 0);
-      if (n > 0) sayLine(n - 1);
-    };
-    $('tour-next').onclick = () => {
-      const n = Number(overlay.dataset.line || 0);
-      if (s.lines && n + 1 < s.lines.length) sayLine(n + 1);
-      else close();
-    };
-    overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
-    let moved = false;
-    const goOn = () => {
-      if (moved || !document.getElementById('tour-overlay')) return;
-      moved = true;
-      tourTimer = setTimeout(() => {
-        if (!document.getElementById('tour-overlay')) return;
-        if (step < stops.length - 1) { step++; show(); }
-        else close();
-      }, speech.available ? 1400 : 6500);
-    };
-    const frames = () => (s.frames && s.frames.length) ? s.frames : (c.img ? [wikiImage(c.img)] : []);
-    const sayLine = (n) => {
-      if (!document.getElementById('tour-overlay')) return;
-      overlay.dataset.line = String(n);
-      const pics = frames();
-      if (pics.length) paintStoryFrame(pics[Math.min(n, pics.length - 1)], n);
-      const story = overlay.querySelector('.tour-story');
-      if (story && s.lines && s.lines[n]) story.textContent = s.lines[n];
-      const kick = overlay.querySelector('.tour-kicker');
-      if (kick && s.lines) kick.textContent = c.n + ' · ' + (n + 1) + ' of ' + s.lines.length;
-      const nextBtn = document.getElementById('tour-next');
-      if (nextBtn && s.lines) nextBtn.textContent = (n + 1 < s.lines.length) ? 'Next' : 'Finish';
-      if (!s.lines || n >= s.lines.length) { goOn(); return; }
-      if (!speech.available) {
-        tourTimer = setTimeout(() => sayLine(n + 1), 4000);
+  const storyEl = () => overlay.querySelector('.tour-story');
+  const onUser = (text) => {
+    if (!overlay.isConnected) return;
+    silenceRoom(session);
+    const res = window.RoomTalk.reply(text, session);
+    session.turns++;
+    if (res.switchTo) {
+      const next = COUNTRIES.find(x => x.n === res.switchTo);
+      if (next) {
+        window.__myatlasticTour(next.n);
         return;
       }
-      const safety = setTimeout(() => sayLine(n + 1), 22000);
-      speakLines([s.lines[n]], s.locale || tourLocale(c), [], 1, true, () => {
-        clearTimeout(safety);
-        if (n + 1 < s.lines.length) sayLine(n + 1);
-        else goOn();
-      });
-    };
-    sayLine(0);
+    }
+    if (res.resume) session.paused = [];
+    playRoom(session, res.lines, storyEl());
   };
-  show();
+  const opening = session.spoken.length
+    ? (session.paused && session.paused.length ? session.paused.slice() : ['We can pick up from here.'])
+    : session.plan;
+  if (session.spoken.length && session.paused && session.paused.length) session.paused = [];
+  overlay.innerHTML =
+    '<div class="tour-card" role="dialog" aria-label="Tour of ' + escapeHtml(c.n) + '">' +
+      '<div style="display:flex;justify-content:space-between;align-items:center">' +
+        '<div class="tour-kicker">' + escapeHtml(s.kicker) + '</div>' +
+        '<span class="tour-pin" aria-hidden="true"></span>' +
+      '</div>' +
+      '<div class="tour-host"><span class="tour-animal">' + (s.emoji || '🐾') + '</span><span class="tour-host-line">' + escapeHtml(s.host || '') + '</span></div>' +
+      '<div class="tour-stage" id="tour-stage"></div>' +
+      '<h2>' + escapeHtml(s.title) + '</h2>' +
+      (s.fact ? '<p class="tour-fact">' + escapeHtml(s.fact) + '</p>' : '') +
+      '<p class="tour-story">' + escapeHtml(opening[0] || '') + '</p>' +
+      '<div class="tour-talk">' +
+        '<input id="tour-say" type="text" placeholder="Interrupt, ask, or name a country" autocomplete="off" enterkeyhint="send" />' +
+        '<button type="button" class="back-btn" id="tour-mic">Mic</button>' +
+      '</div>' +
+      '<div class="tour-actions">' +
+        '<button type="button" class="back-btn" id="tour-again">Again</button>' +
+        '<button type="button" class="btn-primary" id="tour-next">Continue</button>' +
+        '<button type="button" class="back-btn" id="tour-close">Close</button>' +
+      '</div>' +
+    '</div>';
+  $('tour-close').onclick = close;
+  $('tour-again').onclick = () => onUser('say that again');
+  $('tour-next').onclick = () => onUser('continue');
+  const sayBox = $('tour-say');
+  sayBox.addEventListener('keydown', (ev) => {
+    if (ev.key !== 'Enter') return;
+    ev.preventDefault();
+    const text = sayBox.value.trim();
+    if (!text) return;
+    sayBox.value = '';
+    onUser(text);
+  });
+  const earOn = armRoomEar(session, onUser);
+  const mic = $('tour-mic');
+  if (earOn) mic.classList.add('on');
+  mic.onclick = () => {
+    silenceRoom(session);
+    if (!earOn) {
+      sayBox.focus();
+      return;
+    }
+    mic.classList.add('on');
+    sayBox.focus();
+  };
+  overlay.onclick = (ev) => { if (ev.target === overlay) close(); };
+  playRoom(session, opening, storyEl());
 };
 
 function $(id) { return document.getElementById(id); }
