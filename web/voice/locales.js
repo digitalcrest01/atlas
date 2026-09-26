@@ -12,7 +12,7 @@
     bs: ['Bosnian', 'Bosanski'], ca: ['Catalan', 'Català'], cs: ['Czech', 'Čeština'],
     da: ['Danish', 'Dansk'], de: ['German', 'Deutsch'], el: ['Greek', 'Ελληνικά'],
     en: ['English', 'English'], es: ['Spanish', 'Español'], et: ['Estonian', 'Eesti'],
-    fa: ['Persian', 'فارسی'], fi: ['Finnish', 'Suomi'], fil: ['Filipino', 'Filipino'],
+    fa: ['Persian', 'فارسی'], fi: ['Finnish', 'Suomi'], fil: ['Filipino (Tagalog)', 'Filipino'],
     fr: ['French', 'Français'], ga: ['Irish', 'Gaeilge'], he: ['Hebrew', 'עברית'],
     hi: ['Hindi', 'हिन्दी'], hr: ['Croatian', 'Hrvatski'], hu: ['Hungarian', 'Magyar'],
     hy: ['Armenian', 'Հայերեն'], id: ['Indonesian', 'Bahasa Indonesia'], is: ['Icelandic', 'Íslenska'],
