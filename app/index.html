@@ -5488,6 +5488,7 @@ function renderPaywall() {
       '<div class="webwall-badge">📱 In the app</div>' +
       '<h2 class="webwall-title">Unlock Quiz &amp; Puzzle · ' + UNLOCK_PRICE + ' once</h2>' + features +
       '<button class="btn-primary webwall-cta" onclick="window.__getApp()">' + getAppCTA() + '</button>' +
+      '<div class="legal-note"><a href="/terms" target="_blank" rel="noopener">Terms of Use</a> · <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a></div>' +
       '</div>';
     return;
   }
@@ -5498,7 +5499,10 @@ function renderPaywall() {
     '<div class="one-price"><span class="one-price-amount">' + UNLOCK_PRICE + '</span><span class="one-price-detail">one payment · no subscription</span></div>' +
     '<button class="btn-primary" id="upgrade-btn" style="width:100%;padding:14px;font-size:14px">Unlock for ' + UNLOCK_PRICE + '</button>' +
     '<div class="restore-link" id="restore-link">Already unlocked, or had Pro before? Restore purchase</div>' +
-    '<div class="legal-note">Payment is handled securely by the Apple App Store.<br><br>Questions? <a href="mailto:support@myatlastic.com">support@myatlastic.com</a></div>' +
+    '<div class="legal-note">Payment is handled securely by the Apple App Store.<br><br>' +
+      '<a href="https://www.myatlastic.com/terms" target="_blank" rel="noopener">Terms of Use</a> · ' +
+      '<a href="https://www.myatlastic.com/privacy" target="_blank" rel="noopener">Privacy Policy</a><br><br>' +
+      'Questions? <a href="mailto:support@myatlastic.com">support@myatlastic.com</a></div>' +
     '</div>';
 
   const card = root.querySelector('.paywall-card');
