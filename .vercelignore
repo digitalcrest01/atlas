@@ -16,3 +16,8 @@ README.md
 .DS_Store
 *.bak
 node_modules/
+
+# Local tooling
+serve.js
+scripts/
+.claude/
