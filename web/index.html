@@ -103,12 +103,6 @@
     border-radius: 4px;
     border: none;
   }
-  .streak {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 11px;
-    color: var(--accent);
-    white-space: nowrap;
-  }
   .kids-toggle {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10px; color: var(--ink-dim);
@@ -1562,17 +1556,6 @@
     transition: width 0.4s ease; width: 0%;
   }
 
-  /* ===== QUIZ STREAK COUNTER ===== */
-  .quiz-streak-row {
-    display: flex; justify-content: center; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;
-  }
-  .quiz-streak-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-    background: var(--line);
-    transition: background 0.2s;
-  }
-  .quiz-streak-dot.correct { background: var(--success); }
-  .quiz-streak-dot.wrong { background: var(--danger); }
 
   /* ===== FIRST-RUN COACH MARK (sits on the home-country pin) ===== */
   .coach-mark {
@@ -1721,7 +1704,6 @@
 <header>
   <div class="logo"><svg class="logo-mark" viewBox="-26 -26 52 52" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="ring" r="22"/><path class="star" d="M0 -22 L5 -5 L22 0 L5 5 L0 22 L-5 5 L-22 0 L-5 -5 Z"/><path class="inner" d="M0 -10 L2.5 -2.5 L10 0 L2.5 2.5 L0 10 L-2.5 2.5 L-10 0 L-2.5 -2.5 Z"/><circle class="star" r="1.5"/></svg><span class="logo-text"><span class="logo-name">Myatlastic</span><span class="logo-slogan">The world at your finger tips</span></span></div>
   <div class="header-right">
-    <span class="streak" id="streak-display"></span>
     <button class="badge hidden" id="pro-badge">Upgrade</button>
     <button class="kids-toggle" id="kids-toggle">Kids: Off</button>
     <button class="kids-toggle" id="settings-btn" title="Settings, reading help, 2-player &amp; teacher tools" aria-label="Settings">⚙️</button>
@@ -2661,8 +2643,6 @@ function todaySeed() {
   return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
 }
 function getDaily() { return SOVEREIGN_COUNTRIES[todaySeed() % SOVEREIGN_COUNTRIES.length]; }
-function getStreak() { try { return parseInt(localStorage.getItem('myatlastic_streak') || '0', 10); } catch (e) { return 0; } }
-function setStreak(n) { try { localStorage.setItem('myatlastic_streak', String(n)); } catch (e) {} }
 function getLastDailyDay() { try { return parseInt(localStorage.getItem('myatlastic_lastday') || '0', 10); } catch (e) { return 0; } }
 function setLastDailyDay(d) { try { localStorage.setItem('myatlastic_lastday', String(d)); } catch (e) {} }
 
@@ -3700,7 +3680,7 @@ function renderDetails() {
   if (!free) {
     html += '<div class="upgrade-cta">';
     html += '<h3>🔓 Unlock every country in the world</h3>';
-    html += '<p>' + (IS_WEB ? 'The full Myatlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and full Daily streak.') + '</p>';
+    html += '<p>' + (IS_WEB ? 'The full Myatlastic on iPhone &amp; iPad unlocks every country with full depth, landmark images, all quizzes and games, and more.' : 'Myatlastic Pro unlocks every country with full depth, landmark images, unlimited quizzes, Compare mode, and the full Daily Challenge.') + '</p>';
     html += IS_WEB
       ? '<button class="btn-primary" onclick="window.__getApp()">' + getAppCTA() + '</button>'
       : '<button class="btn-primary" onclick="window.__myatlasticOpenPaywall()">See plans</button>';
@@ -4943,7 +4923,6 @@ function renderToday() {
   const root = $('view-today');
   const daily = getDaily();
   const done = getLastDailyDay() === todaySeed();
-  const streak = getStreak();
   const viewed = getViewedSet();
   const total = SOVEREIGN_COUNTRIES.length;
   const visited = SOVEREIGN_COUNTRIES.filter(c => viewed.has(c.n)).length;
@@ -4953,7 +4932,7 @@ function renderToday() {
     '<div class="today-kicker">Today\'s country' + (done ? ' · done' : '') + '</div>' +
     '<h3>' + (daily.flag || '') + ' ' + escapeHtml(daily.n) + '</h3>' +
     '<p>' + escapeHtml(wowFor(daily)) + '</p>' +
-    '<span class="today-go">' + (done ? 'Streak ' + streak + ' · see it again' : 'Answer today\'s question') + '</span>' +
+    '<span class="today-go">' + (done ? 'Done for today · see it again' : 'Answer today\'s question') + '</span>' +
     '</button>';
   const puzzleDone = puzzlePlacedCount();
   html += '<button type="button" class="today-card" id="today-puzzle">' +
@@ -4971,7 +4950,7 @@ function renderToday() {
   html += '<button type="button" class="today-card" id="today-passport">' +
     '<div class="today-kicker">Passport</div>' +
     '<h3>' + visited + ' / ' + total + ' countries</h3>' +
-    '<p>' + (streak > 0 ? streak + '-day streak. ' : '') + 'An entry stamp for every visit, and the countries still to see.</p>' +
+    '<p>An entry stamp for every visit, and the countries still to see.</p>' +
     '<span class="today-go">Open passport</span>' +
     '</button>';
   if (home) {
@@ -5016,7 +4995,6 @@ function renderDaily() {
   const today = new Date();
   const dateStr = today.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   const completedToday = getLastDailyDay() === todaySeed();
-  const streak = getStreak();
 
   let html = '<div class="center-card">';
   html += '<div class="quiz-eyebrow">Today · ' + escapeHtml(dateStr) + '</div>';
@@ -5051,13 +5029,13 @@ function renderDaily() {
   html += '<div id="daily-quiz-box"></div>';
   html += '</div></div>';
   root.innerHTML = html;
-  renderDailyQuiz(c, completedToday, streak);
+  renderDailyQuiz(c, completedToday);
 }
 
-function renderDailyQuiz(c, completedToday, streak) {
+function renderDailyQuiz(c, completedToday) {
   const box = $('daily-quiz-box');
   if (completedToday) {
-    box.innerHTML = '<div style="font-size:17px;color:var(--success)">✓ Today complete · streak: ' + streak + ' 🔥</div>';
+    box.innerHTML = '<div style="font-size:17px;color:var(--success)">✓ Done for today. Come back tomorrow for a new country.</div>';
     return;
   }
   const options = [c, ...pickN(COUNTRIES, 3, c)].sort(() => Math.random() - 0.5);
@@ -5078,16 +5056,11 @@ function renderDailyQuiz(c, completedToday, streak) {
       const msg = document.createElement('div');
       msg.style.cssText = 'margin-top:14px;font-size:15px';
       if (correct) {
-        const newStreak = streak + 1;
-        setStreak(newStreak);
         setLastDailyDay(todaySeed());
         stampCountry(c.n);
-        updateStreakDisplay();
         msg.style.color = 'var(--success)';
-        msg.textContent = '✓ Correct. Streak: ' + newStreak + ' 🔥';
+        msg.textContent = '✓ Correct! ' + c.cap + ' is the capital of ' + c.n + '.';
       } else {
-        setStreak(0);
-        updateStreakDisplay();
         msg.style.color = 'var(--danger)';
         msg.textContent = '✗ Wrong. The capital is ' + c.cap + '.';
       }
@@ -5694,7 +5667,7 @@ function renderPaywall() {
     '<li>Compare any two countries side by side</li>' +
     '<li>Currency converter with live exchange rates</li>' +
     '<li>Unlimited quizzes (free: 3 per day)</li>' +
-    '<li>Full Daily Challenge with streak history</li>' +
+    '<li>A new Daily Challenge country every day</li>' +
     '<li>Two-player pass &amp; play quiz for families</li>' +
     '<li>Teacher / class challenge links</li>' +
     '<li>Age bands, adjustable difficulty &amp; dyslexia-friendly reading mode</li>' +
@@ -6664,10 +6637,6 @@ function openWelcome() {
 /* ============================================================
  * UI HOOKUP
  * ============================================================ */
-function updateStreakDisplay() {
-  const s = getStreak();
-  $('streak-display').textContent = s > 0 ? '🔥 ' + s + '-day streak' : '';
-}
 function updateProBadge() {
   $('pro-badge').classList.toggle('hidden', state.isPro);
 }
@@ -6714,7 +6683,6 @@ if (setBtn) setBtn.onclick = () => openSettings();
 
 // Init — with diagnostic fallback so we never end up with "header only, nothing else"
 try {
-  updateStreakDisplay();
   updateProBadge();
   applySettings();
   updateExploreProgress();

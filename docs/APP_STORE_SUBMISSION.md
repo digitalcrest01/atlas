@@ -111,7 +111,7 @@ WHAT YOU CAN DO
 • Spin a 3D globe — drag to rotate, pinch to zoom, tap a pin to dive in
 • Explore all 197 countries with rich, readable detail and a landmark photo for each
 • Hear each country's name read aloud
-• Take a Daily Challenge and build a streak
+• Take a new Daily Challenge every day
 • Test yourself with quizzes — flags, capitals, culture, food and more
 • Compare any two countries side by side
 • Convert currencies with live exchange rates
@@ -134,7 +134,7 @@ MYATLASTIC PRO — unlock everything
 • Compare mode + currency converter
 • The Spell-the-Country game
 • Unlimited quizzes
-• Full Daily Challenge with streak history
+• The full Daily Challenge
 
 PRICING
 • Annual — $29.99 / year (save 50%)
@@ -179,7 +179,7 @@ Suggested order (lead with the most striking):
 4. Currency converter — a live conversion
 5. Spell-the-Country game — mid-round with the letter tiles
 6. A quiz question
-7. Daily Challenge with a streak
+7. Daily Challenge
 8. The "Myatlastic Pro" plans screen
 
 Tip: a short caption across the top of each shot (e.g. "Spin the globe", "Compare any two countries") noticeably lifts conversion — optional but recommended.

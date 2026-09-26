@@ -94,7 +94,7 @@ Vercel auto-provisions HTTPS, runs on a CDN, gives you preview URLs per branch.
 | SVG flat-map fallback | If WebGL fails (older devices), app degrades to a flat world map |
 | Voice | Neural speech via `/api/voice` (xAI, plus Azure for the languages xAI lacks). A spoken 2–3 minute visit to every country in English and its local language, and a phrasebook in 69 languages |
 | Expanded country data | Each country has: capital, currency, language, history, religion, culture, notable figures, food, sport, traditional attire, population, independence date, pronunciation guide |
-| Four modes | Explore (globe + facts), Quiz (6 question types), Daily challenge with streak, Compare two countries |
+| Four modes | Explore (globe + facts), Quiz (country questions + world facts), Daily challenge, Compare two countries |
 | Paywall | 10 free countries (alphabetical: Afghanistan-Australia). Pro unlocks all 195+ and deep sections |
 | Kids mode toggle | Brighter colour palette, simpler UI |
 | Debug HUD | Triple-tap the Myatlastic logo to expose state info for diagnosing render issues |
@@ -102,7 +102,7 @@ Vercel auto-provisions HTTPS, runs on a CDN, gives you preview URLs per branch.
 
 ## Architecture
 
-Static HTML + ES modules. Three.js loaded via import-map from `unpkg`. Earth texture from CDN with fallback chain. Country pins on the globe are raycaster-pickable (hover on desktop, tap on mobile). State (Pro status, streak, daily quiz count) lives entirely in `localStorage`. No backend. No analytics.
+Static HTML + ES modules. Three.js loaded via import-map from `unpkg`. Earth texture from CDN with fallback chain. Country pins on the globe are raycaster-pickable (hover on desktop, tap on mobile). State (Pro status, passport stamps, daily quiz count) lives entirely in `localStorage`. No backend. No analytics.
 
 The paywall is a UI simulation — production wiring to RevenueCat or native StoreKit/Play Billing is the biggest remaining technical task before App Store submission.
 
