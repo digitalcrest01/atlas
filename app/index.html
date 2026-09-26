@@ -689,6 +689,14 @@
     animation: tourIn 0.45s ease;
   }
   .tour-kicker { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  .tour-host { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+  .tour-animal { font-size: 56px; line-height: 1; display: inline-block; animation: animalShow 2.6s ease-in-out infinite; }
+  .tour-host-line { font-size: 15px; font-weight: 700; line-height: 1.3; }
+  .tour-fact { margin: 0 0 8px; color: var(--ink); font-size: 15px; line-height: 1.4; }
+  @keyframes animalShow {
+    0%, 100% { transform: translateY(0) rotate(-4deg); }
+    50% { transform: translateY(-7px) rotate(4deg); }
+  }
   .tour-card h2 { margin: 6px 0 8px; font-size: 26px; }
   .tour-card p { margin: 0; color: var(--ink-dim); line-height: 1.45; }
   .tour-stage {
@@ -1611,6 +1619,7 @@
 <noscript><div style="padding:40px;color:#fff;background:#0b0e13;text-align:center;">This app requires JavaScript. Please enable it.</div></noscript>
 
 <script src="attractions.js"></script>
+<script src="spot-history.js"></script>
 <script src="puzzle-shapes.js"></script>
 <script>
 'use strict';
@@ -2032,7 +2041,7 @@ const TZ_OFFSET = {
 
 function primaryLang(c) { return (c.lang || '').split(/[,/]/)[0].trim(); }
 function helloFor(c) { return HELLO_BY_LANG[primaryLang(c)] || {hi:'Hello', phon:'heh-LOH'}; }
-function animalFor(c) { return ANIMALS[c.n] || null; }
+function animalFor(c) { return (c && ANIMALS[c.n]) || ['guide', '🐾']; }
 function landmarkFor(c) {
   if (!c) return null;
   if (LANDMARKS[c.n]) return LANDMARKS[c.n];
@@ -3367,6 +3376,266 @@ function fillTourLine(tpl, vars) {
   return tpl.replace(/\{(\w+)\}/g, function (_, k) { return vars[k]; });
 }
 
+const ANIMAL_HOST = {
+  en: 'I am the {animal}. I am showing you {place} and its history.',
+  fr: 'Je suis le {animal}. Je te montre {place} et son histoire.',
+  es: 'Soy el {animal}. Te muestro {place} y su historia.',
+  de: 'Ich bin der {animal}. Ich zeige dir {place} und seine Geschichte.',
+  it: 'Sono il {animal}. Ti mostro {place} e la sua storia.',
+  pt: 'Eu sou o {animal}. Mostro-te {place} e a sua história.',
+  ar: 'أنا {animal}. أريك {place} وتاريخه.',
+  zh: '我是{animal}。我带你看{place}，并讲它的历史。',
+  ja: 'わたしは{animal}。{place}と、その歴史を見せるよ。',
+  ko: '나는 {animal}이에요. {place}와 그 역사를 보여 줄게요.',
+  hi: 'मैं {animal} हूँ। मैं तुम्हें {place} और उसका इतिहास दिखाता हूँ।',
+  ru: 'Я {animal}. Я показываю тебе {place} и его историю.',
+  nl: 'Ik ben de {animal}. Ik laat je {place} zien, en de geschiedenis.',
+  tr: 'Ben {animal}. Sana {place} ve tarihini gösteriyorum.',
+  el: 'Είμαι το {animal}. Σου δείχνω το {place} και την ιστορία του.',
+  pl: 'Jestem {animal}. Pokazuję ci {place} i jego historię.',
+  sv: 'Jag är {animal}. Jag visar dig {place} och dess historia.',
+  th: 'ฉันคือ {animal}. ฉันพาเธอไปดู {place} และประวัติของมัน.',
+  vi: 'Tôi là {animal}. Tôi chỉ cho bạn {place} và lịch sử của nó.',
+  id: 'Aku {animal}. Aku menunjukkan {place} dan sejarahnya.',
+  sw: 'Mimi ni {animal}. Ninakuonyesha {place} na historia yake.'
+};
+
+const ANIMAL_STORY = {
+  en: [
+    'I am the {animal} of {country}. Come with me. I will show you {place}, and I will tell you its history.',
+    'Long ago, people in {country} made {place} part of their story. I, the {animal}, still show it to visitors.',
+    'Listen. The history of {place} belongs to {country}. I am the one showing it to you.',
+    'The capital, {capital}, remembers this history. From there, the story of {place} spread.',
+    'Look at {place}. I, the {animal}, stand here so you do not forget it.',
+    'History is not only dates. It is this place, {place}, and the people who kept it.',
+    'Say it with me. {place}. I am the {animal}, and this is the story I show.',
+    'If you tell someone at home about {country}, tell them about {place}. I showed it to you.'
+  ],
+  fr: [
+    'Je suis le {animal} de ce pays. Viens. Je te montre {place}, et je te raconte son histoire.',
+    'Il y a longtemps, les gens ont mis {place} dans leur histoire. Moi, le {animal}, je la montre encore.',
+    'Écoute. L’histoire de {place} appartient à {country}. C’est moi qui te la montre.',
+    'La capitale, {capital}, se souvient de cette histoire. De là, l’histoire de {place} a voyagé.',
+    'Regarde {place}. Moi, le {animal}, je reste ici pour que tu n’oublies pas.',
+    'L’histoire, ce n’est pas seulement des dates. C’est ce lieu, {place}, et ceux qui l’ont gardé.',
+    'Dis-le avec moi. {place}. Je suis le {animal}, et voici l’histoire que je montre.',
+    'Si tu racontes {country} chez toi, parle de {place}. Je te l’ai montré.'
+  ],
+  es: [
+    'Soy el {animal} de este país. Ven. Te muestro {place} y te cuento su historia.',
+    'Hace mucho, la gente puso {place} en su historia. Yo, el {animal}, todavía la muestro.',
+    'Escucha. La historia de {place} pertenece a {country}. Yo te la estoy mostrando.',
+    'La capital, {capital}, recuerda esta historia. Desde allí viajó la historia de {place}.',
+    'Mira {place}. Yo, el {animal}, me quedo aquí para que no lo olvides.',
+    'La historia no son solo fechas. Es este lugar, {place}, y quienes lo cuidaron.',
+    'Dilo conmigo. {place}. Soy el {animal}, y esta es la historia que muestro.',
+    'Si cuentas {country} en casa, habla de {place}. Yo te lo mostré.'
+  ],
+  de: [
+    'Ich bin der {animal} dieses Landes. Komm. Ich zeige dir {place} und erzähle seine Geschichte.',
+    'Vor langer Zeit haben die Menschen {place} in ihre Geschichte gelegt. Ich, der {animal}, zeige sie noch.',
+    'Hör zu. Die Geschichte von {place} gehört zu {country}. Ich zeige sie dir.',
+    'Die Hauptstadt {capital} erinnert sich. Von dort reiste die Geschichte von {place}.',
+    'Schau auf {place}. Ich, der {animal}, bleibe hier, damit du es nicht vergisst.',
+    'Geschichte sind nicht nur Zahlen. Es ist dieser Ort, {place}, und die Menschen, die ihn bewahrt haben.',
+    'Sag es mit mir. {place}. Ich bin der {animal}, und das ist die Geschichte, die ich zeige.',
+    'Wenn du zu Hause von {country} erzählst, erzähl von {place}. Ich habe es dir gezeigt.'
+  ],
+  it: [
+    'Sono il {animal} di questo paese. Vieni. Ti mostro {place} e ti racconto la sua storia.',
+    'Tanto tempo fa la gente ha messo {place} nella sua storia. Io, il {animal}, la mostro ancora.',
+    'Ascolta. La storia di {place} appartiene a {country}. Sono io a mostrartela.',
+    'La capitale, {capital}, ricorda questa storia. Da lì è partita la storia di {place}.',
+    'Guarda {place}. Io, il {animal}, resto qui perché tu non lo dimentichi.',
+    'La storia non sono solo date. È questo luogo, {place}, e chi lo ha custodito.',
+    'Dillo con me. {place}. Sono il {animal}, e questa è la storia che mostro.',
+    'Se a casa racconti {country}, parla di {place}. Te l’ho mostrato io.'
+  ],
+  pt: [
+    'Eu sou o {animal} deste país. Vem. Mostro-te {place} e conto a sua história.',
+    'Há muito tempo, as pessoas puseram {place} na sua história. Eu, o {animal}, ainda a mostro.',
+    'Ouve. A história de {place} pertence a {country}. Sou eu que a mostro.',
+    'A capital, {capital}, lembra esta história. Dali partiu a história de {place}.',
+    'Olha para {place}. Eu, o {animal}, fico aqui para não esqueceres.',
+    'A história não são só datas. É este lugar, {place}, e quem o guardou.',
+    'Diz comigo. {place}. Eu sou o {animal}, e esta é a história que mostro.',
+    'Se em casa contares {country}, fala de {place}. Fui eu que te mostrei.'
+  ],
+  ar: [
+    'أنا {animal} في هذا البلد. تعال. أريك {place} وأحكي لك تاريخه.',
+    'منذ زمن بعيد، وضع الناس {place} في تاريخهم. أنا {animal} ما زلت أريه.',
+    'اسمع. تاريخ {place} يخص {country}. أنا الذي أريك إياه.',
+    'العاصمة {capital} تتذكر هذا التاريخ. ومن هناك سارت حكاية {place}.',
+    'انظر إلى {place}. أنا {animal} أبقى هنا كي لا تنسى.',
+    'التاريخ ليس تواريخ فقط. إنه هذا المكان، {place}، ومن حافظوا عليه.',
+    'قلها معي. {place}. أنا {animal}، وهذه هي الحكاية التي أريها.',
+    'إذا حكيت عن {country} في البيت، فاحكِ عن {place}. أنا أريتك إياه.'
+  ],
+  zh: [
+    '我是这个国家的{animal}。跟我来。我带你看{place}，并告诉你它的历史。',
+    '很久以前，人们把{place}写进了自己的故事。我这只{animal}，现在还在带人看它。',
+    '听着。{place}的历史属于{country}。是我在把它指给你看。',
+    '首都{capital}记得这段历史。{place}的故事从那里传开。',
+    '看{place}。我是{animal}，我站在这里，是为了让你不要忘记。',
+    '历史不只是年份。它是这个地方，{place}，和守住它的人。',
+    '跟我说。{place}。我是{animal}，这就是我讲的历史。',
+    '如果你回家讲{country}，一定要讲{place}。是我带你看的。'
+  ],
+  ja: [
+    'わたしはこの国の{animal}。おいで。{place}を見せて、その歴史を話すよ。',
+    'ずっと昔、人々は{place}を自分たちの物語に入れた。{animal}のわたしは、今もそれを見せている。',
+    '聞いて。{place}の歴史は{country}のもの。見せているのはわたし。',
+    '首都の{capital}はこの歴史を覚えている。{place}の話はそこから広がった。',
+    '{place}を見て。わたしは{animal}。忘れないように、ここにいるよ。',
+    '歴史は年号だけじゃない。この場所、{place}と、それを守った人たちだ。',
+    'いっしょに言って。{place}。わたしは{animal}。これがわたしの見せる歴史。',
+    '家で{country}の話をするなら、{place}を話して。わたしが見せたんだ。'
+  ],
+  ko: [
+    '나는 이 나라의 {animal}이에요. 와요. {place}를 보여주고 그 역사를 들려줄게요.',
+    '아주 오래전, 사람들은 {place}를 자기 이야기에 넣었어요. {animal}인 나는 아직도 그것을 보여 줘요.',
+    '들어요. {place}의 역사는 {country}의 것이에요. 보여 주는 사람은 나예요.',
+    '수도 {capital}은 이 역사를 기억해요. {place}의 이야기는 거기서 퍼졌어요.',
+    '{place}를 봐요. 나는 {animal}이에요. 잊지 말라고 여기 있어요.',
+    '역사는 연도만이 아니에요. 이 장소 {place}와 그것을 지킨 사람들이에요.',
+    '같이 말해요. {place}. 나는 {animal}이고, 이것이 내가 보여 주는 역사예요.',
+    '집에서 {country} 이야기를 한다면 {place}를 말해요. 내가 보여 줬어요.'
+  ],
+  hi: [
+    'मैं इस देश का {animal} हूँ। आओ। मैं तुम्हें {place} दिखाता हूँ और उसका इतिहास बताता हूँ।',
+    'बहुत पहले लोगों ने {place} को अपनी कहानी में रखा। मैं {animal} आज भी उसे दिखाता हूँ।',
+    'सुनो। {place} का इतिहास {country} का है। मैं ही उसे तुम्हें दिखा रहा हूँ।',
+    'राजधानी {capital} यह इतिहास याद रखती है। {place} की कथा वहीं से फैली।',
+    '{place} को देखो। मैं {animal} हूँ। मैं यहाँ हूँ ताकि तुम भूलो नहीं।',
+    'इतिहास केवल तारीखें नहीं। यह यह जगह है, {place}, और जिन्होंने उसे संभाला।',
+    'मेरे साथ कहो। {place}। मैं {animal} हूँ, और यही इतिहास मैं दिखाता हूँ।',
+    'अगर घर पर {country} की बात करो, तो {place} की बात करना। मैंने तुम्हें दिखाया।'
+  ],
+  ru: [
+    'Я {animal} этой страны. Иди со мной. Я покажу тебе {place} и расскажу его историю.',
+    'Давным-давно люди вписали {place} в свою историю. Я, {animal}, всё ещё показываю его.',
+    'Слушай. История {place} принадлежит {country}. Это я показываю её тебе.',
+    'Столица {capital} помнит эту историю. Оттуда разошёлся рассказ о {place}.',
+    'Смотри на {place}. Я {animal}. Я здесь, чтобы ты не забыл.',
+    'История — это не только даты. Это место {place} и люди, которые его хранили.',
+    'Скажи со мной. {place}. Я {animal}, и это история, которую я показываю.',
+    'Если дома расскажешь о {country}, расскажи о {place}. Это я тебе показал.'
+  ],
+  nl: [
+    'Ik ben de {animal} van dit land. Kom. Ik laat je {place} zien en vertel de geschiedenis.',
+    'Lang geleden zetten mensen {place} in hun verhaal. Ik, de {animal}, laat het nog steeds zien.',
+    'Luister. De geschiedenis van {place} hoort bij {country}. Ik ben degene die het je toont.',
+    'De hoofdstad {capital} herinnert zich dit. Vandaar reisde het verhaal van {place}.',
+    'Kijk naar {place}. Ik ben de {animal}. Ik blijf hier zodat je het niet vergeet.',
+    'Geschiedenis is niet alleen jaartallen. Het is deze plek, {place}, en wie haar bewaarden.',
+    'Zeg het met mij. {place}. Ik ben de {animal}, en dit is het verhaal dat ik laat zien.',
+    'Als je thuis over {country} vertelt, vertel dan over {place}. Ik heb het je laten zien.'
+  ],
+  tr: [
+    'Ben bu ülkenin {animal}. Gel. Sana {place} göstereyim ve tarihini anlatayım.',
+    'Çok eskiden insanlar {place} yerini hikâyelerine koydular. Ben {animal}, hâlâ gösteriyorum.',
+    'Dinle. {place} tarihi {country} ülkesine aittir. Sana gösteren benim.',
+    'Başkent {capital} bu tarihi hatırlar. {place} hikâyesi oradan yayıldı.',
+    '{place} yerine bak. Ben {animal}. Unutmaman için buradayım.',
+    'Tarih yalnızca tarihler değildir. Bu yerdir, {place}, ve onu koruyan insanlar.',
+    'Benimle söyle. {place}. Ben {animal}, gösterdiğim tarih bu.',
+    'Evde {country} ülkesini anlatırsan, {place} yerini de anlat. Ben sana gösterdim.'
+  ],
+  el: [
+    'Είμαι το {animal} αυτής της χώρας. Έλα. Σου δείχνω το {place} και σου λέω την ιστορία του.',
+    'Πολύ παλιά, οι άνθρωποι έβαλαν το {place} στην ιστορία τους. Εγώ, το {animal}, το δείχνω ακόμη.',
+    'Άκου. Η ιστορία του {place} ανήκει στη {country}. Εγώ σου τη δείχνω.',
+    'Η πρωτεύουσα {capital} θυμάται αυτή την ιστορία. Από εκεί ταξίδεψε η ιστορία του {place}.',
+    'Κοίτα το {place}. Είμαι το {animal}. Μένω εδώ για να μην το ξεχάσεις.',
+    'Η ιστορία δεν είναι μόνο χρονολογίες. Είναι αυτός ο τόπος, το {place}, και όσοι τον φύλαξαν.',
+    'Πες το μαζί μου. {place}. Είμαι το {animal}, και αυτή είναι η ιστορία που δείχνω.',
+    'Αν στο σπίτι μιλήσεις για τη {country}, μίλα για το {place}. Εγώ σου το έδειξα.'
+  ],
+  pl: [
+    'Jestem {animal} tego kraju. Chodź. Pokażę ci {place} i opowiem jego historię.',
+    'Dawno temu ludzie wpisali {place} w swoją historię. Ja, {animal}, wciąż je pokazuję.',
+    'Słuchaj. Historia {place} należy do {country}. To ja ci ją pokazuję.',
+    'Stolica {capital} pamięta tę historię. Stamtąd poszła opowieść o {place}.',
+    'Patrz na {place}. Jestem {animal}. Jestem tutaj, żebyś nie zapomniał.',
+    'Historia to nie tylko daty. To to miejsce, {place}, i ludzie, którzy je zachowali.',
+    'Powiedz ze mną. {place}. Jestem {animal}, i to jest historia, którą pokazuję.',
+    'Jeśli w domu opowiesz o {country}, opowiedz o {place}. To ja ci je pokazałem.'
+  ],
+  sv: [
+    'Jag är {animal} i det här landet. Kom. Jag visar dig {place} och berättar dess historia.',
+    'För länge sedan lade människor {place} i sin historia. Jag, {animal}, visar det fortfarande.',
+    'Lyssna. Historien om {place} tillhör {country}. Det är jag som visar den för dig.',
+    'Huvudstaden {capital} minns den här historien. Därifrån reste berättelsen om {place}.',
+    'Titta på {place}. Jag är {animal}. Jag är här så att du inte glömmer.',
+    'Historia är inte bara årtal. Det är den här platsen, {place}, och de som bevarade den.',
+    'Säg det med mig. {place}. Jag är {animal}, och det här är historien jag visar.',
+    'Om du hemma berättar om {country}, berätta om {place}. Jag visade det för dig.'
+  ],
+  th: [
+    'ฉันคือ {animal} ของประเทศนี้. มา. ฉันจะพาไปดู {place} และเล่าประวัติของมัน.',
+    'นานมาแล้วผู้คนใส่ {place} ไว้ในเรื่องราวของพวกเขา. ฉัน {animal} ยังพาไปดูอยู่.',
+    'ฟังนะ. ประวัติของ {place} เป็นของ {country}. ฉันเป็นคนที่แสดงให้เธอเห็น.',
+    'เมืองหลวง {capital} จำประวัตินี้. เรื่องของ {place} เดินทางจากที่นั่น.',
+    'มอง {place}. ฉันคือ {animal}. ฉันอยู่ที่นี่เพื่อไม่ให้เธอลืม.',
+    'ประวัติไม่ใช่แค่ปี. มันคือสถานที่นี้ {place} และผู้คนที่รักษามันไว้.',
+    'พูดตามฉัน. {place}. ฉันคือ {animal} และนี่คือประวัติที่ฉันแสดง.',
+    'ถ้ากลับบ้านแล้วเล่าเรื่อง {country} จงเล่าเรื่อง {place}. ฉันเป็นคนพาเธอไปดู.'
+  ],
+  vi: [
+    'Tôi là {animal} của đất nước này. Đi nào. Tôi chỉ cho bạn {place} và kể lịch sử của nó.',
+    'Từ rất lâu, người ta đặt {place} vào câu chuyện của họ. Tôi, {animal}, vẫn đang chỉ nó.',
+    'Hãy nghe. Lịch sử của {place} thuộc về {country}. Chính tôi đang chỉ nó cho bạn.',
+    'Thủ đô {capital} nhớ lịch sử này. Câu chuyện về {place} đi từ đó.',
+    'Nhìn {place}. Tôi là {animal}. Tôi ở đây để bạn không quên.',
+    'Lịch sử không chỉ là năm tháng. Đó là nơi này, {place}, và những người đã giữ nó.',
+    'Nói cùng tôi. {place}. Tôi là {animal}, và đây là lịch sử tôi chỉ.',
+    'Nếu về nhà kể về {country}, hãy kể về {place}. Tôi đã chỉ nó cho bạn.'
+  ],
+  id: [
+    'Aku {animal} negeri ini. Mari. Aku tunjukkan {place} dan kuceritakan sejarahnya.',
+    'Dulu sekali, orang memasukkan {place} ke dalam kisah mereka. Aku, {animal}, masih menunjukkannya.',
+    'Dengar. Sejarah {place} milik {country}. Akulah yang menunjukkannya padamu.',
+    'Ibu kota {capital} mengingat sejarah ini. Dari situ kisah {place} menyebar.',
+    'Lihat {place}. Aku {animal}. Aku di sini supaya kamu tidak lupa.',
+    'Sejarah bukan hanya angka tahun. Ia adalah tempat ini, {place}, dan orang yang menjaganya.',
+    'Ucapkan bersamaku. {place}. Aku {animal}, dan inilah sejarah yang kutunjukkan.',
+    'Jika di rumah kamu bercerita tentang {country}, ceritakan {place}. Aku yang menunjukkannya.'
+  ],
+  sw: [
+    'Mimi ni {animal} wa nchi hii. Njoo. Ninakuonyesha {place} na nakuambia historia yake.',
+    'Zamani sana, watu waliweka {place} katika hadithi yao. Mimi, {animal}, bado naionyesha.',
+    'Sikiliza. Historia ya {place} ni ya {country}. Mimi ndiye ninayeikuonyesha.',
+    'Mji mkuu {capital} unakumbuka historia hii. Kutoka huko hadithi ya {place} ilisafiri.',
+    'Angalia {place}. Mimi ni {animal}. Niko hapa usisahau.',
+    'Historia si tarehe tu. Ni mahali hapa, {place}, na watu walioihifadhi.',
+    'Sema nami. {place}. Mimi ni {animal}, na hii ndiyo historia ninayoonyesha.',
+    'Ukirudi nyumbani ukaeleze {country}, eleza {place}. Mimi nilikuonyesha.'
+  ]
+};
+
+function spotHistoryLines(c, place, useLang, animalName) {
+  const custom = (typeof window !== 'undefined' && window.SPOT_HISTORY && window.SPOT_HISTORY[c.n]) || null;
+  if (custom && custom.length) {
+    const vars = {
+      animal: animalName,
+      place: (place && place.name) || '',
+      country: c.n,
+      capital: c.cap || ''
+    };
+    return custom.map(function (line) { return fillTourLine(line, vars) || line; }).filter(Boolean);
+  }
+  if (useLang !== 'en' || !place || !place.name) return [];
+  const lines = [];
+  lines.push('I am the ' + animalName + ' of ' + c.n + '. I am showing you ' + place.name + '.');
+  if (place.fact) lines.push('Here is the history of ' + place.name + '. ' + guideLine(place.fact));
+  String(c.h || '').split(/(?<=[.!?])\s+/).forEach(function (sentence) {
+    const t = sentence.trim();
+    if (t.length > 24 && lines.length < 6) lines.push(t);
+  });
+  lines.push('Remember ' + place.name + '. I, the ' + animalName + ', showed you this history.');
+  return lines;
+}
+
 function longTour(c) {
   const place = landmarkFor(c);
   const locale = tourLocale(c);
@@ -3397,6 +3666,7 @@ function longTour(c) {
   };
   const talk = TOUR_TALK[useLang];
   const again = TOUR_AGAIN[useLang] || TOUR_AGAIN.en;
+  const animalTalk = ANIMAL_STORY[useLang] || ANIMAL_STORY.en;
   const paris = c.n === 'France' ? [
     'Nous sommes à Paris. Deux noms comptent. La tour Eiffel. Et le Louvre.',
     'La tour Eiffel est en fer. Elle monte au-dessus de la Seine. En été, le métal chauffe et la tour grandit un peu.',
@@ -3413,21 +3683,28 @@ function longTour(c) {
     'La tour Eiffel brille le soir. Le Louvre, lui, garde sa lumière dans les tableaux.',
     'Souviens-toi de Paris ainsi. Une tour de fer. Un palais de tableaux. La tour Eiffel et le Louvre.'
   ] : null;
+  const history = (paris && paris.length) ? paris : spotHistoryLines(c, place, useLang, vars.animal);
   const lines = [];
   let guard = 0;
   let cycle = 0;
   while (tourSpeechSeconds(lines, useLang) < 300 && guard < 800) {
     let filled = '';
-    if (paris && guard % 2 === 0) filled = paris[Math.floor(guard / 2) % paris.length];
-    else {
-      const tpl = talk[guard % talk.length];
-      filled = fillTourLine(tpl, Object.assign({}, vars, { fact: facts.length ? facts[guard % facts.length] : '' }));
-    }
+    const storyVars = Object.assign({}, vars, { fact: facts.length ? facts[guard % facts.length] : '' });
+    const slot = guard % 4;
+    if (slot === 1) filled = fillTourLine(animalTalk[guard % animalTalk.length], storyVars);
+    else if (history.length && (slot === 0 || slot === 2)) filled = history[Math.floor(guard / 2) % history.length];
+    else filled = fillTourLine(talk[guard % talk.length], storyVars);
     if (filled) lines.push(cycle ? (again + ' ' + filled) : filled);
     guard++;
     if (guard % talk.length === 0) cycle++;
   }
-  return { locale: useLang === 'en' ? speakAs : locale, lines: lines };
+  const hostPack = ANIMAL_HOST[useLang] || ANIMAL_HOST.en;
+  return {
+    locale: useLang === 'en' ? speakAs : locale,
+    lines: lines,
+    emoji: animal ? animal[1] : '🐾',
+    host: fillTourLine(hostPack, vars) || (animal ? animal[0] : '')
+  };
 }
 
 function tourStops(c) {
@@ -3557,13 +3834,17 @@ window.__myatlasticTour = (countryName) => {
   renderDetails();
   if (globeAPI) globeAPI.focus(c);
   const visit = longTour(c);
+  const placeNow = landmarkFor(c) || {};
   const stops = [{
-    kicker: 'Five minute visit',
-    title: c.n,
+    kicker: c.n,
+    title: placeNow.name || c.n,
     lines: visit.lines,
     locale: visit.locale,
     body: visit.lines[0] || '',
-    look: [c.n, (landmarkFor(c) || {}).name, c.n === 'France' ? 'Louvre Museum' : '', c.cap].filter(Boolean),
+    fact: placeNow.fact || '',
+    look: [placeNow.name, c.n, (animalFor(c) || [])[0], c.n === 'France' ? 'Louvre Museum' : '', c.n === 'France' ? 'Eiffel Tower' : '', c.cap].filter(Boolean),
+    emoji: visit.emoji,
+    host: visit.host,
     frames: []
   }];
   loadStoryFrames(c, stops).then(() => {
@@ -3595,13 +3876,15 @@ window.__myatlasticTour = (countryName) => {
           '<div class="tour-kicker">' + escapeHtml(s.kicker) + ' · ' + (step + 1) + ' of ' + stops.length + '</div>' +
           '<span class="tour-pin" aria-hidden="true"></span>' +
         '</div>' +
+        '<div class="tour-host"><span class="tour-animal">' + (s.emoji || '🐾') + '</span><span class="tour-host-line">' + escapeHtml(s.host || '') + '</span></div>' +
         '<div class="tour-stage" id="tour-stage"></div>' +
         '<h2>' + escapeHtml(s.title) + '</h2>' +
+        (s.fact ? '<p class="tour-fact">' + escapeHtml(s.fact) + '</p>' : '') +
         '<p class="tour-story">' + escapeHtml(s.lines[0] || '') + '</p>' +
         '<div class="tour-route">' + stops.map((_, n) => '<span class="tour-dot' + (n === step ? ' on' : '') + '"></span>').join('') + '</div>' +
         '<div class="tour-actions">' +
           '<button type="button" class="back-btn" id="tour-back"' + (step === 0 ? ' disabled' : '') + '>Back</button>' +
-          '<button type="button" class="btn-primary" id="tour-next">' + (step === stops.length - 1 ? 'Finish' : 'Next') + '</button>' +
+          '<button type="button" class="btn-primary" id="tour-next">' + (s.lines && s.lines.length > 1 ? 'Next' : 'Finish') + '</button>' +
           '<button type="button" class="back-btn" id="tour-close">Close</button>' +
         '</div>' +
       '</div>';
@@ -3635,7 +3918,9 @@ window.__myatlasticTour = (countryName) => {
       const story = overlay.querySelector('.tour-story');
       if (story && s.lines && s.lines[n]) story.textContent = s.lines[n];
       const kick = overlay.querySelector('.tour-kicker');
-      if (kick && s.lines) kick.textContent = 'Five minute visit · ' + (n + 1) + ' of ' + s.lines.length;
+      if (kick && s.lines) kick.textContent = c.n + ' · ' + (n + 1) + ' of ' + s.lines.length;
+      const nextBtn = document.getElementById('tour-next');
+      if (nextBtn && s.lines) nextBtn.textContent = (n + 1 < s.lines.length) ? 'Next' : 'Finish';
       if (!s.lines || n >= s.lines.length) { goOn(); return; }
       if (!speech.available) {
         tourTimer = setTimeout(() => sayLine(n + 1), 4000);

@@ -174,4 +174,6 @@ window.EXTRA_LANDMARKS = {
   "Suriname": { name: "Paramaribo's wooden city", fact: "A capital of painted wooden houses along the river." },
   "Uruguay": { name: "Rambla of Montevideo", fact: "A long seaside promenade where the city meets the river." },
   "Venezuela": { name: "Angel Falls", fact: "The world's tallest waterfall, dropping off a tabletop mountain." },
+  "Kosovo": { name: "Visoki Dečani", fact: "A stone monastery from the 1300s, still standing in a western valley." },
+  "Taiwan": { name: "Taipei 101", fact: "A tower that was once the tallest building on Earth, rising over Taipei." },
 };
