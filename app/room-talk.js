@@ -55,7 +55,7 @@
       bank[topic] = TOPIC_IDS[topic].map(function (id) {
         const v = book.variants && book.variants[locale] && book.variants[locale][id];
         const e = v || book.phrases[id];
-        return e && e.text ? [e.text, e.say || e.roman || '', english[id] || ''] : null;
+        return e && e.text ? [e.text, e.say || e.roman || '', english[id] || '', id] : null;
       }).filter(Boolean);
     });
     return bank;
@@ -67,13 +67,14 @@
     const leads = Array.isArray(lead) ? lead : (lead ? [lead] : ['You\'ll hear this one a lot.', 'Here\'s one worth remembering.', 'A useful expression here is', 'If you only remember one, make it this.', 'Listen to how this sounds.', 'You can use this when you need it.', 'If someone says this, they mean']);
     const head = String(leads[hash(p[0] + String(lead || '')) % leads.length]).replace(/\.$/, '');
     const meaning = String(p[2] || '').replace(/\.$/, '');
+    const meant = meaning + (/[.!?]$/.test(meaning) ? '' : '.');
     const said = '{{p:' + p[0] + '}}';
     const sound = '{{s:' + p[1] + '}}';
-    const end = /[.!?。？]$/.test(String(p[0] || '')) ? ' ' : '. ';
+    const end = /[.!?。？！؟]$/.test(String(p[0] || '')) ? ' ' : '. ';
     const styles = [
-      head + '. ' + said + end + 'That means ' + meaning + '. It sounds like ' + sound + '.',
-      said + end + 'Meaning, ' + meaning + '. The sound is ' + sound + '.',
-      head + ': ' + said + end + meaning + '.'
+      head + '. ' + said + end + 'That means ' + meant + ' It sounds like ' + sound + '.',
+      said + end + 'Meaning, ' + meant + ' The sound is ' + sound + '.',
+      head + ': ' + said + end + meant
     ];
     return styles[hash(p[1]) % styles.length];
   }
@@ -94,6 +95,61 @@
     session.lastPhrase = { native: u.p[0], phon: u.p[1], en: u.p[2], cat: u.cat };
     return phraseLine(u.p, lead);
   }
+  // The exact phrase someone asked for ("how do I ask for the bill?").
+  function teachExact(session, id, cat, lead) {
+    if (!session.bank) {
+      const en = session.catalog && session.catalog.PHRASES.find(function (p) { return p.id === id; });
+      if (en) {
+        session.lastPhrase = { native: en.en, phon: '', en: en.en, cat: cat };
+        return 'English works here, so just say it plainly: {{p:' + en.en + '}}.';
+      }
+    }
+    const bank = bankFor(session);
+    const cats = [cat].concat(Object.keys(bank));
+    for (let c = 0; c < cats.length; c++) {
+      const hit = (bank[cats[c]] || []).find(function (p) { return p[3] === id; });
+      if (hit) {
+        session.taught[cats[c] + ':' + hit[0]] = true;
+        session.lastPhrase = { native: hit[0], phon: hit[1], en: hit[2], cat: cat };
+        return phraseLine(hit, lead);
+      }
+    }
+    return teach(session, cat, lead);
+  }
+  const WANTS = [
+    [/\bbill\b|the check|pay(ing)? (for|at) (the )?(meal|restaurant)|for paying/, 'bill', 'food', 'When you are ready to pay, say this.'],
+    [/\bmenu\b/, 'menu', 'food', 'To see what they have, ask for the menu.'],
+    [/\bwater\b/, 'water', 'food', 'For water, just say this.'],
+    [/vegetarian|don'?t eat meat/, 'vegetarian', 'food', 'If you don\'t eat meat, say this.'],
+    [/delicious|tasty|compliment the (food|cook)/, 'delicious', 'food', 'To tell the cook you loved it, say this.'],
+    [/how much|price|what does (it|this) cost/, 'how_much', 'shop', 'To ask the price, say this.'],
+    [/too expensive|cheaper|bargain|haggle/, 'too_expensive', 'shop', 'If the price feels high, try this.'],
+    [/by card|credit card|pay with (a )?card/, 'pay_card', 'shop', 'To check if they take cards, ask this.'],
+    [/toilet|bathroom|restroom|\bloo\b|washroom/, 'where_toilet', 'nav', 'To find the restroom, ask this.'],
+    [/station|train/, 'where_station', 'nav', 'To find the station, ask this.'],
+    [/\bfar\b/, 'is_it_far', 'nav', 'To ask if it\'s far, say this.'],
+    [/doctor|feel (sick|ill)|hospital/, 'need_doctor', 'help', 'If you need a doctor, say this.'],
+    [/\blost\b/, 'lost', 'help', 'If you\'re lost, say this.'],
+    [/\bhelp\b/, 'help', 'help', 'To call for help, say this.'],
+    [/thank/, 'thank_you', 'polite', 'To say thank you, say this.'],
+    [/\bsorry\b|apologi/, 'sorry', 'polite', 'To say sorry, say this.'],
+    [/excuse me|get (someone'?s|their) attention/, 'excuse_me', 'polite', 'To get someone\'s attention, say this.'],
+    [/\bplease\b/, 'please', 'polite', 'For please, say this.'],
+    [/goodbye|\bbye\b/, 'goodbye', 'greet', 'To say goodbye, say this.'],
+    [/good morning/, 'good_morning', 'greet', 'In the morning, say this.'],
+    [/good evening/, 'good_evening', 'greet', 'In the evening, say this.'],
+    [/how are you/, 'how_are_you', 'greet', 'To ask how someone is, say this.'],
+    [/nice to meet|introduce/, 'nice_to_meet', 'greet', 'When you meet someone, say this.'],
+    [/\bhello\b|\bhi\b|greet/, 'hello', 'greet', 'To say hello, say this.'],
+    [/speak english/, 'speak_english', 'talk', 'To ask if they speak English, say this.'],
+    [/don'?t understand/, 'dont_understand', 'talk', 'If you don\'t understand, say this.']
+  ];
+  function wantedPhrase(t) {
+    if (!/how (do|would|can|should) (i|you)|what (do|should) i say|how to say|say .+ in|phrase|word for|teach me|what'?s the word/.test(t)) return null;
+    for (let i = 0; i < WANTS.length; i++) if (WANTS[i][0].test(t)) return WANTS[i];
+    return null;
+  }
+
   function cityOf(session) {
     return session.city || 'the capital';
   }
@@ -208,6 +264,11 @@
     if (named && named !== session.country && /go to|let's|lets |head to|switch|take me|how about|next stop|jump/.test(t)) {
       return { switchTo: named, lines: [] };
     }
+    const want = wantedPhrase(t);
+    if (want) {
+      session.topic = want[2];
+      return { lines: [teachExact(session, want[1], want[2], [want[3]])] };
+    }
     if (/^(yes|yeah|yep|got it|exactly|nice|cool|great|right|okay|ok)\b[.! ]*$/.test(t)) {
       const shorts = ['Exactly.', 'Yep, that works.', 'Right.', 'Good.'];
       return { lines: [shorts[hash(raw + session.turns) % shorts.length]] };
@@ -226,9 +287,6 @@
     }
     if (/what does that (phrase |word )?mean|what did that mean|what was that phrase/.test(t)) {
       return { lines: explainPhrase(session) };
-    }
-    if (/what was that phrase for paying|phrase for paying|ask for the bill|the check/.test(t)) {
-      return { lines: [teach(session, 'food', ['For paying, use this.'])] };
     }
     if (/another (useful )?phrase|something locals|one more phrase|give me another/.test(t)) {
       const cat = categoryFor(session.topic || '') || 'social';
@@ -330,7 +388,8 @@
       topic: '',
       turns: 0,
       roster: info.roster || [],
-      bank: bankFromBook(info.book, info.locale, info.catalog)
+      bank: bankFromBook(info.book, info.locale, info.catalog),
+      catalog: info.catalog || null
     };
     session.plan = opening(session);
     return session;

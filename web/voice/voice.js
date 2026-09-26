@@ -195,6 +195,8 @@
   function play(parts, opts) {
     const o = opts || {};
     stop();
+    // The anthem player is the app's only other sound; never talk over it.
+    if (typeof root.stopAnthem === 'function') { try { root.stopAnthem(); } catch (e) {} }
     const list = normalise(parts);
     return new Promise(resolve => {
       const pb = {
