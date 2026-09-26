@@ -3903,10 +3903,11 @@ function spokenTour(c) {
 
 window.__myatlasticReadAloud = (countryName) => {
   const c = COUNTRIES.find(x => x.n === countryName);
-  if (!c) return;
+  if (!c || !window.RoomTalk) return;
   const buttons = Array.from(document.querySelectorAll('.read-aloud-btn'));
-  const stops = tourStops(c);
-  speakLines(spokenTour(c), (stops[0] && stops[0].locale) || tourLocale(c), buttons, 1);
+  const session = bootRoom(c);
+  buttons.forEach(b => b.classList.add('speaking'));
+  playRoom(session, session.spoken.length ? ['We can pick up from here.'] : session.plan, null);
 };
 
 let tourTimer = null;
@@ -3994,9 +3995,9 @@ function playRoom(session, lines, story) {
   session.qi = 0;
   stopSpeaking();
   session.playToken = speakToken;
-  const step = () => {
+    const step = () => {
     if (session.playToken !== speakToken) return;
-    if (!document.getElementById('tour-overlay')) return;
+    if (story && !document.getElementById('tour-overlay')) return;
     if (session.qi >= session.queue.length) return;
     const line = session.queue[session.qi++];
     session.spoken.push(line);
@@ -4037,7 +4038,7 @@ function armRoomEar(session, onText) {
       else interim += piece;
     }
     const live = (interim || finalText).trim();
-    if (live && session.playToken === speakToken && !roomEcho(live, session) && normTalk(live).length >= 8) {
+    if (live && session.playToken === speakToken && !roomEcho(live, session) && normTalk(live).length >= 4) {
       silenceRoom(session);
     }
     const said = finalText.trim();

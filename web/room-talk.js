@@ -8,15 +8,15 @@
   };
   const BANK = {
     en: {
-      greet: [['Hello', 'heh-LOH', 'Hello'], ['Good morning', 'good MOR-ning', 'Good morning'], ['How are you?', 'how are YOU', 'How are you?']],
-      polite: [['Please', 'pleez', 'Please'], ['Thank you', 'THANK you', 'Thank you'], ['Excuse me', 'ex-KYOOZ me', 'Excuse me'], ["You're welcome", 'yor WEL-kum', "You're welcome"]],
-      talk: [["I don't understand", 'I dont un-der-STAND', "I don't understand"], ['Could you say that again?', 'could you say that a-GEN', 'Could you say that again?'], ['Could you speak more slowly?', 'could you speak more SLOW-lee', 'Could you speak more slowly?']],
-      nav: [['Where is the station?', 'where is the STAY-shun', 'Where is the station?'], ['Is it far?', 'iz it FAR', 'Is it far?'], ['Straight ahead', 'strayt a-HED', 'Straight ahead'], ['Left', 'LEFT', 'Left'], ['Right', 'RYTE', 'Right']],
-      food: [['Can I see the menu?', 'can I see the MEN-yoo', 'Can I see the menu?'], ['Water, please', 'WAW-ter pleez', 'Water, please'], ['The check, please', 'the CHEK pleez', 'The check, please']],
-      shop: [['How much is this?', 'how much is THIS', 'How much is this?'], ['Can I pay by card?', 'can I pay by CARD', 'Can I pay by card?']],
-      taxi: [['Where can I get a taxi?', 'where can I get a TAK-see', 'Where can I get a taxi?'], ["I'd like to go here", "I'd like to go HERE", "I'd like to go here"]],
-      help: [['Can you help me?', 'can you HELP me', 'Can you help me?'], ['I need help', 'I need HELP', 'I need help'], ['Where is the hospital?', 'where is the HOS-pi-tal', 'Where is the hospital?']],
-      social: [["I'm visiting", 'I\'m VIZ-it-ing', "I'm visiting"], ['This is my first time here', 'this is my first time HERE', 'This is my first time here']]
+      greet: [['Hello', 'heh-LOH', 'Hello'], ['Good morning', 'good MOR-ning', 'Good morning'], ['Good evening', 'good EEV-ning', 'Good evening'], ['How are you?', 'how are YOU', 'How are you?'], ['Nice to meet you', 'nice to MEET you', 'Nice to meet you'], ["What's your name?", 'whats your NAYM', "What's your name?"]],
+      polite: [['Please', 'pleez', 'Please'], ['Thank you', 'THANK you', 'Thank you'], ["You're welcome", 'yor WEL-kum', "You're welcome"], ['Excuse me', 'ex-KYOOZ me', 'Excuse me'], ['Sorry', 'SOR-ee', 'Sorry'], ['No problem', 'no PROB-lem', 'No problem']],
+      talk: [["I don't understand", 'I dont un-der-STAND', "I don't understand"], ['Do you speak English?', 'do you speak ING-glish', 'Do you speak English?'], ['Could you say that again?', 'could you say that a-GEN', 'Could you say that again?'], ['Could you speak more slowly?', 'could you speak more SLOW-lee', 'Could you speak more slowly?'], ['What does that mean?', 'what does that MEAN', 'What does that mean?']],
+      nav: [['Where is the station?', 'where is the STAY-shun', 'Where is the station?'], ['How do I get there?', 'how do I get THERE', 'How do I get there?'], ['Is it far?', 'iz it FAR', 'Is it far?'], ['Left', 'LEFT', 'Left'], ['Right', 'RYTE', 'Right'], ['Straight ahead', 'strayt a-HED', 'Straight ahead'], ['Where is the bathroom?', 'where is the BATH-room', 'Where is the bathroom?']],
+      food: [["I'd like this, please", "I'd like this PLEEZ", "I'd like this, please"], ['Can I see the menu?', 'can I see the MEN-yoo', 'Can I see the menu?'], ['What do you recommend?', 'what do you rek-uh-MEND', 'What do you recommend?'], ['Water, please', 'WAW-ter pleez', 'Water, please'], ['The check, please', 'the CHEK pleez', 'The check, please'], ['Is this spicy?', 'iz this SPY-see', 'Is this spicy?']],
+      shop: [['How much is this?', 'how much is THIS', 'How much is this?'], ["That's too expensive", 'thats too ex-PEN-siv', "That's too expensive"], ['Can I pay by card?', 'can I pay by CARD', 'Can I pay by card?'], ['Do you have another size?', 'do you have another SIZE', 'Do you have another size?']],
+      taxi: [['Where can I get a taxi?', 'where can I get a TAK-see', 'Where can I get a taxi?'], ['How much is the fare?', 'how much is the FAIR', 'How much is the fare?'], ["I'd like to go here", "I'd like to go HERE", "I'd like to go here"], ['What time does the train leave?', 'what time does the train LEEV', 'What time does the train leave?']],
+      help: [['Can you help me?', 'can you HELP me', 'Can you help me?'], ['I need help', 'I need HELP', 'I need help'], ['Where is the hospital?', 'where is the HOS-pi-tal', 'Where is the hospital?'], ['Please call the police', 'pleez call the puh-LEES', 'Please call the police']],
+      social: [["I'm visiting", "I'm VIZ-it-ing", "I'm visiting"], ['This is my first time here', 'this is my first time HERE', 'This is my first time here'], ['Where are you from?', 'where are you FROM', 'Where are you from?'], ['I really like it here', 'I really LIKE it here', 'I really like it here'], ['What do you recommend seeing?', 'what do you rek-uh-MEND SEE-ing', 'What do you recommend seeing?']]
     },
     fr: {
       greet: [['Bonjour', 'bon-ZHOOR', 'Hello'], ['Bonsoir', 'bon-SWAR', 'Good evening'], ['Comment allez-vous ?', 'kom-ahn tal-ay VOO', 'How are you?']],
@@ -178,13 +178,19 @@
     return BANK[key] || BANK.en;
   }
   function phraseLine(p, lead) {
-    const leads = Array.isArray(lead) ? lead : (lead ? [lead] : ['You\'ll hear this one a lot.', 'Here\'s one worth remembering.', 'A useful expression here is', 'If you only remember one, make it this.', 'Listen to how this sounds.']);
-    const head = leads[hash(p[0]) % leads.length];
-    return String(head).replace(/\.$/, '') + ': ' + p[0] + '. That\'s ' + p[2].replace(/\.$/, '') + '. It sounds like ' + p[1] + '.';
+    const leads = Array.isArray(lead) ? lead : (lead ? [lead] : ['You\'ll hear this one a lot.', 'Here\'s one worth remembering.', 'A useful expression here is', 'If you only remember one, make it this.', 'Listen to how this sounds.', 'You can use this when you need it.', 'If someone says this, they mean']);
+    const head = String(leads[hash(p[0] + String(lead || '')) % leads.length]).replace(/\.$/, '');
+    const meaning = String(p[2] || '').replace(/\.$/, '');
+    const styles = [
+      head + '. ' + p[0] + '. That means ' + meaning + '. It sounds like ' + p[1] + '.',
+      p[0] + '. Meaning, ' + meaning + '. The sound is ' + p[1] + '.',
+      head + ': ' + p[0] + '. ' + meaning + '.'
+    ];
+    return styles[hash(p[1]) % styles.length];
   }
   function unused(session, cat) {
     const bank = bankFor(session.langKey);
-    const list = bank[cat] || bank.greet || BANK.en.greet;
+    const list = (bank[cat] && bank[cat].length) ? bank[cat] : ((BANK.en[cat] && BANK.en[cat].length) ? BANK.en[cat] : (bank.greet || BANK.en.greet));
     for (let i = 0; i < list.length; i++) {
       const p = list[(hash(session.country) + session.seed + i) % list.length];
       const id = cat + ':' + p[0];
@@ -259,8 +265,21 @@
   }
 
   function continuation(session) {
-    const next = teach(session, session.lastPhrase ? 'nav' : 'polite', ['Picking that up.', 'So.', 'Here\'s the next useful piece.', 'One more, then you can steer.']);
-    return [next];
+    const order = ['greet', 'polite', 'talk', 'nav', 'food', 'shop', 'taxi', 'help', 'social'];
+    const current = (session.lastPhrase && session.lastPhrase.cat) || session.topic || 'greet';
+    const at = order.indexOf(current);
+    const nextCat = order[(at + 1 + session.turns) % order.length];
+    session.topic = nextCat;
+    return [teach(session, nextCat, ['So.', 'Here\'s the next useful piece.', 'One more, then you can steer.', 'The next one that actually helps.'])];
+  }
+
+  function resumeLines(session) {
+    const bridges = ['So.', 'Right, where we were.', 'Picking that up.', 'One thing you\'ll notice pretty quickly.'];
+    const bridge = bridges[hash(String(session.turns) + session.country) % bridges.length];
+    const rest = (session.paused || []).slice();
+    if (!rest.length) return continuation(session);
+    if (rest[0] === bridge) return rest;
+    return [bridge].concat(rest);
   }
 
   function explainPhrase(session) {
@@ -286,6 +305,9 @@
     const raw = String(text || '').trim();
     const t = raw.toLowerCase();
     if (!raw) return { lines: ['I\'m here. Ask for a phrase, the food, or another country.'] };
+    session.asked = session.asked || [];
+    session.asked.push(raw);
+    if (session.asked.length > 12) session.asked.shift();
     if (/previous country|go back|back to the last/.test(t) && !/\bto [a-z]/.test(t.replace('go back to the', ''))) {
       if (session.prevCountry) return { switchTo: session.prevCountry, lines: [] };
       return { lines: ['We haven\'t left anywhere yet.'] };
@@ -302,8 +324,7 @@
       return { lines: [shorts[hash(raw + session.turns) % shorts.length]] };
     }
     if (/^(ok(ay)?[,. ]*)?(continue|go on|carry on|keep going|pick (it|that) up)\b/.test(t) || /\bcontinue\b/.test(t)) {
-      if (session.paused && session.paused.length) return { lines: session.paused.slice(), resume: true };
-      return { lines: continuation(session), resume: true };
+      return { lines: resumeLines(session), resume: true };
     }
     if (/slow down|say that again|repeat that|one more time/.test(t)) {
       if (session.lastPhrase) return { lines: ['Once more. ' + session.lastPhrase.native + '. ' + session.lastPhrase.phon + '.'] };
@@ -353,6 +374,19 @@
       return { lines: ['Go ahead.'] };
     }
     if (named && named !== session.country) return { switchTo: named, lines: [] };
+    if (session.lastPhrase) {
+      const bits = session.lastPhrase.native.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 3; });
+      const tried = bits.some(function (w) { return t.indexOf(w) !== -1; });
+      if (tried) {
+        const notes = [
+          'Yep, that works.',
+          'Close. Soften the ending a little. ' + session.lastPhrase.native + '.',
+          'The stress sits like this: ' + session.lastPhrase.phon + '.',
+          'You\'re close. Listen once more. ' + session.lastPhrase.native + '.'
+        ];
+        return { lines: [notes[hash(raw + session.turns) % notes.length]] };
+      }
+    }
     session.topic = session.topic || 'greet';
     return { lines: [teach(session, session.topic, ['Here\'s a practical one for that.'])] };
   }
@@ -393,12 +427,31 @@
     });
     if (gendered.length) pool = gendered;
     const voice = pool.length ? pool[hash(name) % pool.length] : null;
-    const personalities = ['warm guide', 'relaxed traveler', 'calm narrator', 'practical companion', 'curious teacher'];
+    const personalities = [
+      { id: 'warm guide', rate: 0.98 },
+      { id: 'relaxed traveler', rate: 0.96 },
+      { id: 'calm narrator', rate: 0.94 },
+      { id: 'practical companion', rate: 1 },
+      { id: 'curious teacher', rate: 1.02 }
+    ];
+    const personality = personalities[hash(name + 'p') % personalities.length];
+    const fallback = (english[0] || list[0] || null);
+    const chosen = voice || fallback;
+    const idOf = function (v) { return v ? (v.voiceURI || v.name || '') : ''; };
     return {
-      voice: voice,
-      locale: voice && voice.lang ? voice.lang : (locale || 'en-US'),
-      rate: 0.98 + (hash(name) % 6) * 0.01,
-      personality: personalities[hash(name + 'p') % personalities.length]
+      country: name,
+      language: lang,
+      voiceProvider: 'speechSynthesis',
+      voice: chosen,
+      voiceId: idOf(chosen),
+      locale: chosen && chosen.lang ? chosen.lang : (locale || 'en-US'),
+      gender: wantWoman ? 'woman' : 'man',
+      personality: personality.id,
+      speakingRate: personality.rate,
+      rate: personality.rate,
+      energy: personality.rate > 1 ? 'brighter' : 'steady',
+      fallbackVoice: fallback,
+      fallbackVoiceId: idOf(fallback)
     };
   }
 
